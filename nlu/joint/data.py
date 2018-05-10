@@ -63,7 +63,6 @@ def load_data(dataset_name, mode='measures'):
 
     fold_files = os.listdir(path)
     fold_files = sorted([f for f in fold_files if f.startswith('fold_')])
-    final_test = 'final_test.json'
 
     data_splitted = []
     for file_name in fold_files:
@@ -73,13 +72,11 @@ def load_data(dataset_name, mode='measures'):
     if mode == 'measures':
         return data_splitted
     elif mode == 'runtime':
-        with open(path + '/' + final_test) as json_file:
-            result = json.load(json_file)
         for split in data_splitted:
             result['data'].extend(split['data'])
         return None, result
     elif mode == 'finaltest':
-        print('you are running on the validation fold!!!')
+        print('you are running on the validation fold!!! TODO Check this code!')
         try:
             with open(path + '/' + final_test) as json_file:
                 finaltest = json.load(json_file)
@@ -117,18 +114,17 @@ def adjust_sequences(data, length=50):
     return data
 
 
-def get_vocabularies(train_data):
+def get_vocabularies(data, meta_data):
     """Collect the input vocabulary, the slot vocabulary and the intent vocabulary"""
     # from a list of training examples, get three lists (columns)
-    data = train_data['data']
     seq_in = [sample['words'] for sample in data]
     vocab = flatten(seq_in)
     # removing duplicated but keeping the order
     v = ['<PAD>', '<SOS>', '<EOS>'] + vocab
     vocab = sorted(set(v), key=lambda x: v.index(x))
-    s = ['<PAD>', '<EOS>'] + train_data['meta']['slot_types']
+    s = ['<PAD>', '<EOS>'] + meta_data['slot_types']
     slot_tag = sorted(set(s), key=lambda x: s.index(x))
-    i = train_data['meta']['intent_types']
+    i = meta_data['intent_types']
     intent_tag = sorted(set(i), key=lambda x: i.index(x))
 
     return vocab, slot_tag, intent_tag

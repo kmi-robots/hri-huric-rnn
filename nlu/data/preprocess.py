@@ -7,290 +7,42 @@ import re
 import numpy as np
 import spacy
 import csv
+from itertools import groupby
 from spacy.gold import biluo_tags_from_offsets
-from sklearn.model_selection import StratifiedShuffleSplit
+from sklearn.model_selection import StratifiedKFold
+import xml.etree.ElementTree as ET 
 
+def huric_preprocess_old(path, nlp):
+    path_source = path + '/source'
 
-def atis_preprocess_old():
-    """
-    preprocesses the atis dataset, taking as source the files atis.test.w-intent.iob and
-    atis.train.w-intent.iob
+    tree = ET.parse('{}/example.xml'.format(path_source))
+    root = tree.getroot()
 
-    Produces in output the files entity_types.json, fold_train.json, fold_test.json
-
-    For joint NLU use atis_preprocess()
-    """
-    with open('atis/source/atis.test.w-intent.iob') as txt_file:
-        test_set = txt_file.readlines()
-    with open('atis/source/atis.train.w-intent.iob') as txt_file:
-        train_set = txt_file.readlines()
-    train_tagged, entity_types, intent_types = atis_lines_to_json(train_set)
-    test_tagged, test_entity_types, test_intent_types = atis_lines_to_json(test_set)
-
-    # some entities and intents may appear only in test
-    entity_types.update(test_entity_types)
-    intent_types.update(test_intent_types)
-    entity_types = list(sorted(entity_types))
-    intent_types = list(sorted(intent_types))
-
-    if not os.path.exists('atis/preprocessed_old'):
-        os.makedirs('atis/preprocessed_old')
-
-    with open('atis/preprocessed_old/intent_types.json', 'w') as outfile:
-        json.dump(intent_types, outfile)
-
-    with open('atis/preprocessed_old/entity_types.json', 'w') as outfile:
-        json.dump(entity_types, outfile)
-
-    with open('atis/preprocessed_old/fold_train.json', 'w') as outfile:
-        json.dump(train_tagged, outfile)
-
-    with open('atis/preprocessed_old/fold_test.json', 'w') as outfile:
-        json.dump(test_tagged, outfile)
-
-
-def atis_lines_to_json(content):
-    """Transforms the content (list of lines) in json,
-    detecting entity start and end indexes in sentences.
-    Returns the tagged dataset, the enitity_types and the intent_types
-    
-    Used in the old preprocessing"""
-
-    result = []
-
-    entity_types = set()
+    samples = []
     intent_types = set()
+    slot_types = set()
+    for command in root:
+        tokens = [t.attrib['surface'] for t in command.find('tokens').findall('token')]
+        frame_name = command.find('semantics/frameSemantics/frame').attrib['name']
+        frame_type = command.find('semantics/frameSemantics/frame/frameElement').attrib['type']
+        intent = '{}-{}'.format(frame_name,frame_type)
+        print(tokens)
+        print('intent: ' + intent)
+        slots = ['O'] * len(tokens)
+        for role in command.find('semantics/spatialSemantics').findall('spatialRelation/spatialRole'):
+            slot_type = role.attrib['type']
+            token_ids = [int(t.attrib['id']) - 1 for t in role.findall('token')]
+            for count, token_id in enumerate(token_ids):
+                prefix = 'B' if not count else 'I'
+                slots[token_id] = '{}-{}'.format(prefix, slot_type)
+        print(slots)
+        samples.append({'words': tokens,
+                        'intent': intent,
+                        'length': len(tokens),
+                        'slots':slots})
 
-    for line in content:
-        element = {}
-        start_text_idx = line.find('BOS ') + 4
-        end_text_idx = line.find('EOS', start_text_idx)
-        text = line[start_text_idx:end_text_idx]
-        text = text.strip()
-        element['text'] = text
-        start_annotations_idx = line.find('\t') + 1
-        annotations = line[start_annotations_idx:]
-        annotations = annotations.split()
-        entities_tags = annotations[1:-1]
-        intent = annotations[-1]
-        # multi-intent is not taken into consideration. Its value will be the concatenation of intents using '#'
         intent_types.add(intent)
-        element['intent'] = intent
-        # chunks are defined by the space, IOB notations correspond to this split
-        chunks = text[:start_annotations_idx - 1].split()
-        entities = []
-        state = 'O'
-        entity = {}
-        for idx, tag in enumerate(entities_tags):
-            tag = tag.split('-')
-            next_state = tag[0]
-            if len(tag) == 2:
-                simple_tag = tag[1]
-                if next_state == 'B':
-                    if state == 'B':
-                        # close previous entity
-                        entity['end'] = sum(map(len, chunks[:idx])) + idx - 1
-                        entity['value'] = element['text'][entity['start']:entity['end']]
-                        entities.append(entity)
-                    # beginning of new entity
-                    entity = {'type': simple_tag, 'start': sum(
-                        map(len, chunks[:idx])) + idx}
-                    entity_types.add(simple_tag)
-
-            if next_state == 'O' and state != 'O':
-                # end of entity inside the sentence
-                entity['end'] = sum(map(len, chunks[:idx])) + idx - 1
-                entity['value'] = element['text'][entity['start']:entity['end']]
-                entities.append(entity)
-                entity = {}
-
-            # update state
-            state = next_state
-
-        if state != 'O':
-            # last entity at the end of the sentence
-            idx = len(entities_tags)
-            entity['end'] = sum(map(len, chunks[:idx])) + idx - 1
-            entity['value'] = element['text'][entity['start']:entity['end']]
-            entities.append(entity)
-            entity = {}
-
-        element['entities'] = entities
-        result.append(element)
-
-    return result, entity_types, intent_types
-
-
-def wit_preprocess_old(path):
-    """Preprocesses the wit.ai dataset from the folder path passed as parameter.
-    To download the updated dataset, use the download.sh script.
-    Saves the tagged dataset, the enitity_types and the intent_types
-    
-    For joint NLU use wit_preprocess()"""
-    path_source = path + '/source'
-    enitites_path = '{}/entities'.format(path_source)
-
-    with open(enitites_path + '/intent.json') as json_file:
-        intents = json.load(json_file)
-    
-    intent_types = list(map(lambda val: val['value'], intents['data']['values']))
-
-    with open('{}/expressions.json'.format(path_source)) as json_file:
-        expressions = json.load(json_file)
-
-    dataset, entity_types = wit_get_normalized_data(expressions)
-
-    # perform the split on 5 folds
-    dataset = np.array(dataset)
-    # initialize the random generator seed to the size of the dataset, just to
-    # make it split always the same
-    np.random.seed(dataset.size)
-    np.random.shuffle(dataset)
-    fold_size = len(dataset) // 5
-    folds = [dataset[:fold_size], dataset[fold_size:2 * fold_size],
-             dataset[2 * fold_size:3 * fold_size], dataset[3 * fold_size:4 * fold_size], dataset[4 * fold_size:]]
-
-    if not os.path.exists('{}/preprocessed_old'.format(path)):
-        os.makedirs('{}/preprocessed_old'.format(path))
-
-    for idx, fold in enumerate(folds):
-        with open('{}/preprocessed_old/fold_{}.json'.format(path, idx + 1), 'w') as outfile:
-            json.dump(fold.tolist(), outfile)
-
-    with open('{}/preprocessed_old/intent_types.json'.format(path), 'w') as outfile:
-        json.dump(intent_types, outfile)
-
-    with open('{}/preprocessed_old/entity_types.json'.format(path), 'w') as outfile:
-        json.dump(entity_types, outfile)
-
-
-def wit_get_normalized_data(expressions):
-    """Returns a list of objects like `{'text': SENTENCE, 'intent': ,
-    'entities': [{'entity': (role.)?ENTITY_NAME, 'value': ENTITY_VALUE, 'start': INT, 'end', INT}]}`
-    
-    followed by the entity types
-    
-    Is part of the old preprocessing"""
-    entity_types = set()
-    items = expressions['data']
-    results = []
-    for item in items:
-        result = {'text': item['text'], 'intent': None, 'entities': []}
-        for e_or_i in item['entities']:
-            if e_or_i['entity'] == 'intent':
-                result['intent'] = e_or_i['value'].strip('"')
-            else:
-                entity_type = e_or_i['entity']
-                if 'role' in e_or_i:
-                    entity_type = e_or_i['role'] + '.' + entity_type
-                entity_types.add(entity_type)
-                entity = {'type': entity_type, 'value': e_or_i['value'].strip('"'), 'start': e_or_i['start'], 'end': e_or_i['end']}
-                result['entities'].append(entity)
-
-        results.append(result)
-
-    return results, list(sorted(entity_types))
-
-
-"""
-Methods below are for the preprocessing for joint task. Methods above are only for disjointed intent and entity tasks
-"""
-
-def atis_preprocess():
-    """"Preprocesses the ATIS dataset for joint NLU"""
-    # atis-2.train and atis-2.dev summed together make atis.train. atis.test is independent
-    with open('atis/source/atis-2.train.w-intent.iob') as txt_file:
-        train_set_raw = txt_file.readlines()
-    with open('atis/source/atis-2.dev.w-intent.iob') as txt_file:
-        dev_set_raw = txt_file.readlines()
-    with open('atis/source/atis.test.w-intent.iob') as txt_file:
-        test_set_raw = txt_file.readlines()
-
-    train_set = iob_lines_to_structured_iob(train_set_raw)
-    dev_set = iob_lines_to_structured_iob(dev_set_raw)
-    test_set = iob_lines_to_structured_iob(test_set_raw)
-
-    if not os.path.exists('atis/preprocessed'):
-        os.makedirs('atis/preprocessed')
-
-    with open('atis/preprocessed/fold_train.json', 'w') as outfile:
-        json.dump(train_set, outfile)
-
-    with open('atis/preprocessed/fold_test.json', 'w') as outfile:
-        json.dump(dev_set, outfile)
-
-    with open('atis/preprocessed/final_test.json', 'w') as outfile:
-        json.dump(test_set, outfile)
-
-
-def nlu_benchmark_preprocess(nlp):
-    """Preprocess the nlu-benchmark dataset for joint NLU"""
-    path = 'nlu-benchmark/2017-06-custom-intent-engines/'
-    # the data is splitted by intent using different folders
-    intent_folders = os.listdir(path)
-    train_samples = []
-    test_samples = []
-    train_slot_types = set()
-    test_slot_types = set()
-    intents = set()
-    for intent_type in intent_folders:
-        intent_path = path + intent_type
-        if os.path.isdir(intent_path):
-            print('train ' + intent_type)
-            with open(intent_path + '/train_' + intent_type + '_full.json') as json_file:
-                train_json = json.load(json_file)
-                train_iob, slot_types = nlu_benchmark_to_structured_iob(train_json, intent_type, nlp)
-                train_slot_types.update(slot_types)
-            print('test ' + intent_type)
-            with open(intent_path + '/validate_' + intent_type + '.json') as json_file:
-                test_json = json.load(json_file)
-                test_iob, slot_types = nlu_benchmark_to_structured_iob(test_json, intent_type, nlp)
-                test_slot_types.update(slot_types)
-            train_samples += train_iob
-            test_samples += test_iob
-            intents.add(intent_type)
-
-    train_slot_types = list(sorted(train_slot_types))
-    test_slot_types = list(sorted(test_slot_types))
-    intents = list(sorted(intents))
-
-    train_set = {
-        'data': train_samples,
-        'meta': {
-            'tokenizer': 'spacy',
-            'language': 'en',
-            'slot_types': train_slot_types,
-            'intent_types': intents
-        }
-    }
-    test_set = {
-        'data': test_samples,
-        'meta': {
-            'tokenizer': 'spacy',
-            'language': 'en',
-            'slot_types': test_slot_types,
-            'intent_types': intents
-        }
-    }
-
-    if not os.path.exists('nlu-benchmark/preprocessed'):
-        os.makedirs('nlu-benchmark/preprocessed')
-
-    with open('nlu-benchmark/preprocessed/fold_train.json', 'w') as outfile:
-        json.dump(train_set, outfile)
-
-    with open('nlu-benchmark/preprocessed/fold_test.json', 'w') as outfile:
-        json.dump(test_set, outfile)
-
-
-def wit_preprocess(path, nlp):
-    """Preprocess the wit dataset"""
-    path_source = path + '/source'
-
-    with open('{}/expressions.json'.format(path_source)) as json_file:
-        expressions = json.load(json_file)
-
-    samples, intent_types, slot_types = wit_to_structured_iob(expressions, nlp)
+        slot_types.update(slots)
 
     dataset = np.array(samples)
     # do the stratified split on 5 folds, fixing the random seed
@@ -298,17 +50,20 @@ def wit_preprocess(path, nlp):
     intent_types = list(sorted(intent_types))
     # the value of intent for each sample, necessary to perform the stratified split (keeping distribution of intents in splits)
     intent_values = [s['intent'] for s in samples]
+    return
+    # TODO this stuff is broken, see https://datascience.stackexchange.com/questions/15135/train-test-validation-set-splitting-in-sklearn
     sss = StratifiedShuffleSplit(n_splits=5, test_size=0.2, random_state=dataset.size)
     folds_indexes = []
     for train_idx, test_idx in sss.split(np.zeros(len(intent_values)), intent_values):
         #print('train idx', train_idx, 'test idx', test_idx)
         folds_indexes.append(test_idx.tolist())
+        #print(train_idx, test_idx)
     
     train, dev, final_test = (dataset[folds_indexes[0] + folds_indexes[1] + folds_indexes[2]], dataset[folds_indexes[3]],dataset[folds_indexes[4]])
 
     meta = {
-        'tokenizer': 'spacy',
-        'language': path[-2:],
+        'tokenizer': 'whitespace',
+        'language': 'en',
         'intent_types': intent_types,
         'slot_types': slot_types
     }
@@ -334,359 +89,349 @@ def wit_preprocess(path, nlp):
             'meta': meta
         }, outfile)
 
-def wit_to_structured_iob(expressions, nlp):
-    #samples, entity_types = wit_to_structured_iob(expressions)
-    slot_types = set()
-    intent_types = set()
-    items = expressions['data']
+def huric_preprocess_eb(path, nlp):
+    """Preprocess the huric dataset, passed by EB"""
+    def get_int_id(string_id):
+        #print(string_id)
+        return int(string_id.split('.')[3])
+
+
+    path_source = path + '/source'
+
     samples = []
-    for item in items:
-        sentence = item['text']
-        intent_type = None
-        annots = []
-        for e_or_i in item['entities']:
-            if e_or_i['entity'] == 'intent':
-                intent_type = e_or_i['value'].strip('"')
-            else:
-                entity_type = e_or_i['entity']
-                if 'role' in e_or_i:
-                    entity_type = e_or_i['role'] + '.' + entity_type
-                annots.append((e_or_i['start'], e_or_i['end'], entity_type))
-
-        words, slots = displacement_annotations_to_iob(sentence, annots, nlp)
-
-        intent_types.add(intent_type)
-        slot_types.update(slots)
-
-        samples.append({
-            'words': words,
-            'length': len(words),
-            'slots': slots,
-            'intent': intent_type
-        })
-
-    return samples, intent_types, slot_types
-
-def nlu_benchmark_to_structured_iob(data, intent_type, nlp):
-    #train_iob, slot_types = nlu_benchmark_to_structured_iob(train_json, intent_type)
-    iob_result = []
-    slot_types = set()
-    for sample in data[intent_type]:
-        # build the annotations (start, end, slot_type)
-        annots = []
-        start_idx = 0
-        sentence = ''
-        words = []
-        slots = []
-        for span in sample['data']:
-            slot = span.get('entity', None)
-            if slot:
-                annots.append((start_idx, start_idx + len(span['text']), slot))
-            sentence += span['text']
-            start_idx += len(span['text'])
-
-        words, slots = displacement_annotations_to_iob(sentence, annots, nlp)
-        slot_types.update(slots)
-
-        iob_result.append({
-            'words': words,
-            'length': len(words),
-            'slots': slots,
-            'intent': intent_type
-        })
-
-    return iob_result, slot_types
-
-def iob_lines_to_structured_iob(iob_lines):
-    """
-    Transforms an .iob file, whose lines are passed as parameters, to a structured representation.
-    Example:
-    BOS cheapest airfare from tacoma to orlando EOS	O B-cost_relative O O B-fromloc.city_name O B-toloc.city_name atis_airfare
-    becomes
-    {
-        'tokenized': ['cheapest', 'airfare', 'from', 'tacoma', 'to', 'orlando'],
-        'slots': ['B-cost_relative', 'O', 'O', 'B-fromloc.city_name', 'O', 'B-toloc.city_name'],
-        'length': 6
-        'intent': 'atis_airfare'
-    }
-
-    Each sample is put into a result object, together with an information about which tokenizer is used (on ATIS always space tokenizer):
-    {
-        'data': [LIST_OF_SAMPLES],
-        'meta':{
-            'tokenizer': 'spaces',
-            'slot_types': [LIST_OF_FOUND_SLOT_VALUES]
-            'intent_types': [LIST_OF FOUND_INTENT_VALUES]
-        }
-    }
-    """
-
-    slot_types = set()
     intent_types = set()
-    data = []
-    for line in iob_lines:
-        # input is separated from outputs by a tab
-        text, annotations = line.split('\t')
-        # tokenization by space, removing BOS and EOS
-        words = text.split()[1:-1]
-        # also for the annotations, space-separated
-        words_annotations = annotations.split()
-        # slots annotations, removing the ones corresponding to BOS and EOS
-        slots = words_annotations[1:-1]
-        # the intent is the annotation corresponding to EOS
-        intent = words_annotations[-1]
+    # a resume of how sentences are split into frames
+    splitting_resume = {}
+    slot_types = set()
+    for filename in sorted(os.listdir(path_source)):
+        tree = ET.parse('{}/{}'.format(path_source, filename))
+        root = tree.getroot()
+        # the main object used is xdg
+        xdg = root.find('PARAGRAPHS/P/XDGS/XDG')
 
-        assert len(words) == len(slots)
-        length = len(words)
+        # read the tokens, saving in a map indexed by the serializerID
+        tokens_map = {sc.attrib['serializerID']: sc.attrib['surface'] for sc in xdg.findall('CSTS/SC')}
 
-        # aggregated metadata
-        slot_types.update(slots)
-        intent_types.add(intent)
-        
-        data.append({
-            'words': words,
-            'slots': slots,
-            'length': length,
-            'intent': intent
-        })
+        # where the last frame is beginning
+        start_of_frame = 0
 
-    slot_types = list(sorted(slot_types))
-    intent_types = list(sorted(intent_types))
+        splitting_resume[filename] = {'all_words': ' '.join([value for (key, value) in tokens_map.items()]), 'frames':[]}
+        # multiple frames possible for each sentence. Frames are represented by items in the interpretation list
+        for item in xdg.findall('interpretations/interpretationList/item'):
+            intent = item.attrib['name']
+            #print('intent: ' + intent)
 
-    return {
-        'data': data,
-        'meta': {
-            'tokenizer': 'space',
-            'language': 'en',
-            'slot_types': slot_types,
-            'intent_types': intent_types
-        }
-    }
-
-def kvret_preprocess(nlp):
-    with open('kvret/source/kvret_entities.json') as file:
-        entities_raw = json.load(file)
-    with open('kvret/source/kvret_train_public.json') as file:
-        train_set_raw = json.load(file)
-    with open('kvret/source/kvret_dev_public.json') as file:
-        dev_set_raw = json.load(file)
-    with open('kvret/source/kvret_test_public.json') as file:
-        test_set_raw = json.load(file)
-
-    slot_types = list(entities_raw.keys())
-    slot_types = ['O'] + ['B-' + s for s in slot_types] + ['I-' + s for s in slot_types]
-
-    train_set = kvret_cleanup(nlp, train_set_raw, slot_types)
-    dev_set = kvret_cleanup(nlp, dev_set_raw, slot_types)
-    test_set = kvret_cleanup(nlp, test_set_raw, slot_types)
-
-    # dump json to files
-    with open('kvret/preprocessed/fold_train.json', 'w') as outfile:
-        json.dump(train_set, outfile)
-
-    with open('kvret/preprocessed/fold_test.json', 'w') as outfile:
-        json.dump(dev_set, outfile)
-
-    with open('kvret/preprocessed/final_test.json', 'w') as outfile:
-        json.dump(test_set, outfile)
-
-
-def kvret_cleanup(nlp, source_json, slot_types):
-    sessions = []
-    intent_types = set()
-    for source_session in source_json:
-        intent = source_session['scenario']['task']['intent']
-        intent_types.add(intent)
-        session = []
-        text_to_slot = {} # maps from text to slot name
-        # iterate backwards the dialogue to know what slots to search for
-        for message_raw in reversed(source_session['dialogue']):
-            # 'b' stands for bot, 'u' for user
-            turn = 'b' if message_raw['turn'] == 'assistant' else 'u'
-            sentence = message_raw['data']['utterance']
-            if message_raw['data'].get('slots'):
-                # add the slots that must be found backward
-                for k, v in message_raw['data']['slots'].items():
-                    # remember to strip spaces that randomly are there in data
-                    text_to_slot[v.strip()] = k
-            annots = []
-            # add annotation in style (start_idx, end_idx, type)
-            for k, v in text_to_slot.items():
-                match = re.search(re.escape(k), sentence, re.IGNORECASE)
-                if match:
-                    annots.append((match.start(), match.end(), v))
+            # accumulator for all the tokens mentioned in the current frame
+            frame_tokens_mentioned = item.find('constituentList').text
+            frame_tokens_mentioned = frame_tokens_mentioned.split(' ') if frame_tokens_mentioned else []
+            slots_map = {}
+            for arg in item.findall('ARGS/sem_arg'):
+                slot_type = arg.attrib['argumentType']
+                token_ids = arg.find('constituentList').text
+                token_ids = token_ids.split(' ') if token_ids else token_ids
+                frame_tokens_mentioned.extend(token_ids)
+                #words += [tokens_map[id] for id in token_ids]
+                for count, token_id in enumerate(token_ids):
+                    prefix = 'B' if not count else 'I'
+                    iob_label = '{}-{}'.format(prefix, slot_type)
+                    slots_map[token_id] = iob_label
+                    #print('found a slot', iob_label, token_id)
+                    #slots.append('{}-{}'.format(prefix, slot_type))
             
-            # TODO remove overlapping entities (should keep the largest spans)
+            # now find the part of the sentence that is related to the specific frame
+            #print(frame_tokens_mentioned)
+            frame_tokens_mentioned = [get_int_id(id) for id in frame_tokens_mentioned]
+            min_token_id, max_token_id = min(frame_tokens_mentioned), max(frame_tokens_mentioned)
+            #print('min max token id', min_token_id, max_token_id)
+            # the old division with min max
+            #frame_tokens = {key: value for (key, value) in tokens_map.items() if get_int_id(key) >= min_token_id and get_int_id(key) <= max_token_id}
+            # the correct division [0:max1],[max1:max2]. 'and' words between are part of the new frame. 'robot can you' words are part of the first frame
+            frame_tokens = {key: value for (key, value) in tokens_map.items() if get_int_id(key) >= start_of_frame and get_int_id(key) <= max_token_id}
+            words = [value for (key, value) in frame_tokens.items()]
+            slots = [slots_map.get(key, 'O') for (key, value) in frame_tokens.items()]
+            start_of_frame = max_token_id + 1
+            if not len(words):
+                print('len 0 for', frame_tokens_mentioned, tokens_map, frame_tokens, filename)
+            #print(words)
+            #print(slots)
+            sample = {'words': words,
+                            'intent': intent,
+                            'length': len(words),
+                            'slots':slots,
+                            'file': filename}
 
-            words, slots = displacement_annotations_to_iob(sentence, annots, nlp)
-            message = {'turn': turn, 'words': words, 'length': len(words), 'slots': slots, 'intent': intent}
-            session.insert(0, message)
-        sessions.append(session)
+            splitting_resume[filename]['frames'].append({'name': intent, 'words': ' '.join(words), 'slots': ' '.join(slots)})
 
+            samples.append(sample)
+            intent_types.add(intent)
+            slot_types.update(slots)
+        #print(tokens_map)
+        print('new file')
+
+    with open('{}/resume.json'.format(path), 'w') as outfile:
+        json.dump(splitting_resume, outfile, indent=2)
+
+    # do the stratified split on 5 folds, fixing the random seed
     slot_types = list(sorted(slot_types))
     intent_types = list(sorted(intent_types))
-
-    return {
-        'data': sessions,
-        'meta': {
-            'tokenizer': 'spacy',
-            'language': 'en',
-            'slot_types': slot_types,
-            'intent_types': intent_types,
-            'multi_turn': True
-        }
-    }
-
-def multiturn_preprocess(path, nlp):
-    """Preprocesses the TSV dataset to build properly structured json files as for the kvret preprocessed ones"""
-    sessions = []
-    intent_types = set()
-    session = []
-    source_dir = path + '/source/'
-    output_dir = path + '/preprocessed/'
-    with open(source_dir + 'tabular.tsv') as tsvfile:
-        reader = csv.DictReader(tsvfile, delimiter='\t')
-        fields = reader.fieldnames
-        # entities are placed after role, text, intent
-        slot_types = fields[3:]
-        for row in reader:
-            turn = row['role']
-            intent = row['intent']
-            sentence = row['text']
-            annots = []
-            if not turn:
-                # session separator
-                # save current session if necessary (some sentences)
-                if session:
-                    sessions.append(session)
-                # begin new session
-                session = []
-            else:
-                # continue session
-                if turn == 'u' and intent:
-                    # it's the user turn, the user sentences without intent are not considered
-                    intent_types.add(intent)
-                
-                    for slot_type in slot_types:
-                        entity = row[slot_type].strip()
-                        if entity:
-                            match = re.search(re.escape(entity), sentence)
-                            if match:
-                                annots.append((match.start(), match.end(), slot_type))
-                            else:
-                                print('entity didn\'t match:', entity)
-                
-                
-                words, slots = displacement_annotations_to_iob(sentence, annots, nlp)
-                message = {'turn': turn, 'words': words, 'length': len(words), 'slots': slots, 'intent': intent}
-                if turn == 'b' or (turn== 'u' and intent):
-                    session.append(message)
-
-        if session:
-            # append last session in case empty line was not here (should not happen)
-            sessions.append(session)
-            session = []
-
-    # IOB slot types now
-    slot_types = ['O'] + ['B-' + s for s in slot_types] + ['I-' + s for s in slot_types]
-
-    slot_types = list(sorted(slot_types))
-    intent_types = list(sorted(intent_types))
-    meta = {
-        'tokenizer': 'spacy',
-        'language': path[-2:],
-        'slot_types': slot_types,
-        'intent_types': intent_types,
-        'multi_turn': True
-    }
-    dataset = np.array(sessions)
-
-    # TODO: this is not stratified, because each session has different intents inside!!!
-    # look at sss.split y parameter, always the same 0
-    sss = StratifiedShuffleSplit(n_splits=5, test_size=0.2, random_state=dataset.size)
+    # the value of intent for each sample, necessary to perform the stratified split (keeping distribution of intents in splits)
+    intent_values = [s['intent'] for s in samples]
+    count_by_intent = {key:len(list(group)) for (key,group) in groupby(sorted(intent_values))}
+    # remove intents that have less members than the number of splits to make StratifiedKFold work
+    intent_remove = [key for (key, value) in count_by_intent.items() if value < 5]
+    print('removing samples with the following intents:', intent_remove)
+    samples = [s for s in samples if not s['intent'] in intent_remove]
+    intent_values = [s['intent'] for s in samples]
+    dataset = np.array(samples)
+    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=dataset.size)
     folds_indexes = []
-    for train_idx, test_idx in sss.split(np.zeros(dataset.size), np.zeros(dataset.size)):
+    for train_idx, test_idx in skf.split(np.zeros(len(intent_values)), intent_values):
+        #print('train idx', train_idx, 'test idx', test_idx)
         folds_indexes.append(test_idx.tolist())
+        #print(train_idx, test_idx)
     
-    train, dev, final_test = (dataset[folds_indexes[0] + folds_indexes[1] + folds_indexes[2]], dataset[folds_indexes[3]], dataset[folds_indexes[4]])
+    # TODO really store the 5 folds separately, not only train,dev,test
+    train, dev, final_test = (dataset[folds_indexes[0] + folds_indexes[1] + folds_indexes[2]], dataset[folds_indexes[3]],dataset[folds_indexes[4]])
 
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
+    meta = {
+        'tokenizer': 'whitespace',
+        'language': 'en',
+        'intent_types': intent_types,
+        'slot_types': slot_types
+    }
 
-    with open(output_dir + 'fold_train.json', 'w') as outfile:
+    if not os.path.exists('{}/preprocessed'.format(path)):
+        os.makedirs('{}/preprocessed'.format(path))
+
+    with open('{}/preprocessed/fold_train.json'.format(path), 'w') as outfile:
         json.dump({
             'data': train.tolist(),
             'meta': meta
         }, outfile)
     
-    with open(output_dir + 'fold_test.json', 'w') as outfile:
+    with open('{}/preprocessed/fold_test.json'.format(path), 'w') as outfile:
         json.dump({
             'data': dev.tolist(),
             'meta': meta
         }, outfile)
     
-    with open(output_dir + '/final_test.json', 'w') as outfile:
+    with open('{}/preprocessed/final_test.json'.format(path), 'w') as outfile:
         json.dump({
             'data': final_test.tolist(),
             'meta': meta
         }, outfile)
 
 
+def huric_preprocess(path):
+    """Preprocess the huric dataset, provided by Danilo Croce"""
+
+    def overlap(a, b):
+        return max(0, min(a['max'], b['max']) - max(a['min'], b['min']))
+
+    def covers(a, b):
+        return (a['max'] >= b['max']) and (a['min'] <= b['min'])
+
+    path_source = path + '/source'
+
+    samples = []
+    intent_types = set()
+    # a resume of how sentences are split into frames
+    splitting_resume = {}
+    slot_types = set()
+    file_locations = {}
+
+    # retrieve all the possible xml files in the three subfolders
+    for subfolder in ['GrammarGenerated', 'Robocup', 'S4R_Experiment']:
+        for filename in os.listdir('{}/{}/xml'.format(path_source, subfolder)):
+            file_locations[filename] = subfolder
+
+    # TODO remove this
+    file_locations.pop('2307.xml')
+    file_locations.pop('2353.xml')
+    file_locations.pop('2374.xml')
+    file_locations.pop('2377.xml')
+    file_locations.pop('2411.xml')
+    file_locations.pop('3395.xml')
+
+    for filename, subfolder in sorted(file_locations.items()):
+        tree = ET.parse('{}/{}/xml/{}'.format(path_source, subfolder, filename))
+        root = tree.getroot()
+
+        # read the tokens, saving in a map indexed by the serializerID
+        tokens_map = {int(sc.attrib['id']): sc.attrib['surface'] for sc in root.findall('tokens/token')}
 
 
-def load_nlp(lang_name='en'):
-    nlp = spacy.load(lang_name)
-    return nlp
+        splitting_resume[filename] = {'all_words': ' '.join([value for (key, value) in tokens_map.items()]), 'semantic_frames':[]}
+        # multiple frames possible for each sentence. Frames are represented by items in the interpretation list
 
-def displacement_annotations_to_iob(sentence, annotations, nlp):
-    doc = nlp.make_doc(sentence)
-    tags = biluo_tags_from_offsets(doc, annotations)
+        """
+        frames = {}
+        # first step look at each frame and its frame elements which portion of text it covers (min and max)
+        for frame in root.findall('semantics/frameSemantics/frame'):
+            frame_name = frame.attrib['name']
+            # accumulator for all the tokens mentioned in the current frame
+            frame_tokens_mentioned = [int(id.attrib['id']) for id in frame.findall('lexicalUnit/token')]
+            elements = {}
+            # compute min and max for each frame element
+            for frame_element in frame.findall('frameElement'):
+                element_name = frame_element.attrib['type']
+                element_tokens = [int(id.attrib['id']) for id inframe_element.findall('token')]
+                min_token_id, max_token_id = min(element_tokens), max(element_tokens)
+                frame_tokens_mentioned.extend(element_tokens)
+                elements[element_name] = {'min': min_token_id, 'max': max_token_id, 'name': element_name}
+            # now at frame level
+            min_token_id, max_token_id = min(frame_tokens_mentioned), max(frame_tokens_mentioned)
+            frames[frame_name] = {'min': min_token_id, 'max': max_token_id, 'elements': elements, 'name': frame_name}
 
-    words = []
-    slots = []
-    for word,tag in zip(doc,tags):
-        tag = re.sub(r'^U', "B", tag)
-        tag = re.sub(r'^L', "I", tag)
-        #this occurs when multiple spaces exist
-        word = word.text.strip()
-        # tokenization makes some word  like " ", removing them
-        if word:
-            words.append(word)
-            slots.append(tag)
-    
-    return words, slots
 
-#atis_preprocess_old()
-#wit_preprocess_old('wit_en')
-#wit_preprocess_old('wit_it')
+        # second step remove the elements that are expanded by other frames and select top level frame (tree flattening)
+        # the flattened frames do not overlap
+        flattened_frames = []
+        current_frame = None
+        for frame_name, frame in frames.items():
+            overlapping = False
+            # check for overlap with saved frames
+            for f2_name, f2 in flattened_frames:
+                if overlap(frame, f2):
+                    overlapping = True
+                    if covers(frame, f2):
+                        smaller, bigger = f2, frame
+                        flattened_frames.remove(f2)
+                        flattened_frames.append(frame)
+                    else:
+                        smaller, bigger = frame, f2
+                    bigger['top_level'] = True
+                    smaller['top_level'] = False
+
+
+            if not overlapping:
+                flattened_frames.append(frame)
+                
+        
+        # third step iterate over the sorted frames (2353 and 2374 were annotated in swapped order)
+        """
+        # where the last frame is beginning
+        start_of_frame = 0
+        for frame in root.findall('semantics/frameSemantics/frame'):
+            intent = frame.attrib['name']
+            #print('intent: ' + intent)
+
+            # accumulator for all the tokens mentioned in the current frame
+            frame_tokens_mentioned = frame.findall('lexicalUnit/token')
+            slots_map = {}
+            for frame_element in frame.findall('frameElement'):
+                slot_type = frame_element.attrib['type']
+                element_tokens = frame_element.findall('token')
+                frame_tokens_mentioned.extend(element_tokens)
+                #words += [tokens_map[id] for id in token_ids]
+                for count, token in enumerate(element_tokens):
+                    prefix = 'B' if not count else 'I'
+                    iob_label = '{}-{}'.format(prefix, slot_type)
+                    # TODO re-enable IOB
+                    #iob_label = slot_type
+                    slots_map[int(token.attrib['id'])] = iob_label
+                    
+                    #print('found a slot', iob_label, token_id)
+                    #slots.append('{}-{}'.format(prefix, slot_type))
+            
+            # now find the part of the sentence that is related to the specific frame
+            #print(frame_tokens_mentioned)
+            frame_tokens_mentioned = [int(id.attrib['id']) for id in frame_tokens_mentioned]
+            min_token_id, max_token_id = min(frame_tokens_mentioned), max(frame_tokens_mentioned)
+            #print('min max token id', min_token_id, max_token_id)
+            # the old division with min max
+            #frame_tokens = {key: value for (key, value) in tokens_map.items() if int(key) >= min_token_id and int(key) <= max_token_id}
+            # the correct division [0:max1],[max1:max2]. 'and' words between are part of the new frame. 'robot can you' words are part of the first frame
+            frame_tokens = {key: value for (key, value) in tokens_map.items() if int(key) >= start_of_frame and int(key) <= max_token_id}
+            words = [value for (key, value) in frame_tokens.items()]
+            slots = [slots_map.get(key, 'O') for (key, value) in frame_tokens.items()]
+            start_of_frame = max_token_id + 1
+            if not len(words):
+                print('len 0 for', frame_tokens_mentioned, tokens_map, frame_tokens, filename)
+            #print(words)
+            #print(slots)
+            sample = {'words': words,
+                            'intent': intent,
+                            'length': len(words),
+                            'slots':slots,
+                            'file': filename}
+
+            splitting_resume[filename]['semantic_frames'].append({'name': intent, 'words': ' '.join(words), 'slots': ' '.join(slots)})
+
+            samples.append(sample)
+            intent_types.add(intent)
+            slot_types.update(slots)
+        #print(tokens_map)
+        #print('new file')
+
+    with open('{}/resume.json'.format(path), 'w') as outfile:
+        json.dump(splitting_resume, outfile, indent=2)
+
+    # do the stratified split on 5 folds, fixing the random seed
+    # remove samples with empty word list
+    samples = [s for s in samples if len(s['words'])]
+    # the value of intent for each sample, necessary to perform the stratified split (keeping distribution of intents in splits)
+    intent_values = [s['intent'] for s in samples]
+    count_by_intent = {key:len(list(group)) for (key,group) in groupby(sorted(intent_values))}
+    # remove intents that have less members than the number of splits to make StratifiedKFold work
+    intent_remove = [key for (key, value) in count_by_intent.items() if value < 5]
+    print('removing samples with the following intents:', intent_remove)
+    samples = [s for s in samples if not s['intent'] in intent_remove]
+    intent_values = [s['intent'] for s in samples]
+    dataset = np.array(samples)
+    slot_types = list(sorted(slot_types))
+    intent_types = list(sorted(intent_types))
+    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=dataset.size)
+   
+    meta = {
+        'tokenizer': 'whitespace',
+        'language': 'en',
+        'intent_types': intent_types,
+        'slot_types': slot_types
+    }
+    if not os.path.exists('{}/preprocessed'.format(path)):
+        os.makedirs('{}/preprocessed'.format(path))
+
+    delete_me_accumulator = []
+    for i, (train_idx, test_idx) in enumerate(skf.split(np.zeros(len(intent_values)), intent_values)):
+        #print(i, train_idx, test_idx)
+        fold_data = dataset[test_idx]
+        """
+        # TODO real 5 folds:
+        if i < 2:
+            delete_me_accumulator.extend(fold_data.tolist())
+        elif i == 2:
+            delete_me_accumulator.extend(fold_data.tolist())
+            with open('{}/preprocessed/fold_{}.json'.format(path, i + 1), 'w') as outfile:
+                json.dump({
+                    'data': delete_me_accumulator,
+                    'meta': meta
+                }, outfile)
+        else:
+            with open('{}/preprocessed/fold_{}.json'.format(path, i + 1), 'w') as outfile:
+                json.dump({
+                    'data': fold_data.tolist(),
+                    'meta': meta
+                }, outfile)
+        """
+        with open('{}/preprocessed/fold_{}.json'.format(path, i + 1), 'w') as outfile:
+            json.dump({
+                'data': fold_data.tolist(),
+                'meta': meta
+            }, outfile)
+        
+
 
 def main():
-    nlp_en = load_nlp()
-    nlp_it = load_nlp('it')
+    #nlp_en = load_nlp()
+    #nlp_it = load_nlp('it')
     which = os.environ.get('DATASET', None)
     print(which)
-    if which is None:
-        atis_preprocess()
-        nlu_benchmark_preprocess(nlp_en)
-        wit_preprocess('wit_en', nlp_en)
-        wit_preprocess('wit_it', nlp_it)
-        kvret_preprocess(nlp_en)
-        multiturn_preprocess('multiturn_en', nlp_en)
-        multiturn_preprocess('multiturn_it', nlp_it)
-    elif which == 'atis':
-        atis_preprocess()
-    elif which == 'nlu-benchnark':
-        nlu_benchmark_preprocess(nlp_en)
-    elif which == 'wit_en':
-        wit_preprocess('wit_en', nlp_en)
-    elif which == 'wit_it':
-        wit_preprocess('wit_it', nlp_it)
-    elif which == 'kvret':
-        kvret_preprocess(nlp_en)
-    elif which == 'multiturn_en':
-        multiturn_preprocess('multiturn_en', nlp_en)
-    elif which  == 'multiturn_it':
-        multiturn_preprocess('multiturn_it', nlp_it)
+    
+    if which == 'huric_eb':
+        huric_preprocess_eb('huric_eb', None)
+    elif which == 'huric':
+        huric_preprocess('huric')
 
 
 if __name__ == '__main__':

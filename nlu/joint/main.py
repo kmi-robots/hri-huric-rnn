@@ -65,38 +65,40 @@ def train(mode):
     # maximum length of sentences
     input_steps = 50
     # load the train and dev datasets
-    test_data, train_data = data.load_data(DATASET, mode)
+    # TODO do cross validation
+    folds = data.load_data(DATASET, mode)
     # fix the random seeds
-    random_seed_init(len(train_data['data']))
+    random_seed_init(len(folds[0]['data']))
     # preprocess them to list of training/test samples
     # a sample is made up of a tuple that contains
     # - an input sentence (list of words --> strings, padded)
     # - the real length of the sentence (int) to be able to recognize padding
     # - an output sequence (list of IOB annotations --> strings, padded)
     # - an output intent (string)
-    multi_turn = train_data['meta'].get('multi_turn', False)
+    multi_turn = folds[0]['meta'].get('multi_turn', False)
     print('multi_turn:', multi_turn)
     if multi_turn:
         input_steps *=2
-        train_data = data.collapse_multi_turn_sessions(train_data, FORCE_SINGLE_TURN)
-    training_samples = data.adjust_sequences(train_data, input_steps)
-    print('train samples', len(training_samples['data']))
-    if test_data:
-        if multi_turn:
-            test_data = data.collapse_multi_turn_sessions(test_data, FORCE_SINGLE_TURN)
-        test_samples = data.adjust_sequences(test_data, input_steps)
-        print('test samples', len(test_samples['data']))
+        folds = [data.collapse_multi_turn_sessions(fold, FORCE_SINGLE_TURN) for fold in folds]
+    folds = [data.adjust_sequences(fold, input_steps) for fold in folds]
+    training_samples = folds[0]['data'] + folds[1]['data'] + folds[2]['data'] + folds[3]['data']
+    test_samples = folds[4]['data']
+    meta_data = folds[0]['meta']
 
+    print('train samples', len(training_samples))
+    if test_samples:
+        print('test samples', len(test_samples))
+    
     # turn off multi_turn for the required additional feeds and previous intent RNN
     if multi_turn and FORCE_SINGLE_TURN == 'no_all' or FORCE_SINGLE_TURN == 'no_previous_intent':
         multi_turn = False
     # get the vocabularies for input, slot and intent
-    vocabs = data.get_vocabularies(training_samples)
+    vocabs = data.get_vocabularies(training_samples, meta_data)
     # and get the model
     if FORCE_SINGLE_TURN == 'no_previous_intent':
         # changing this now, implies that the model doesn't have previous intent
         multi_turn = False
-    model = get_model(vocabs, training_samples['meta']['tokenizer'], training_samples['meta']['language'], multi_turn, input_steps)
+    model = get_model(vocabs, meta_data['tokenizer'], meta_data['language'], multi_turn, input_steps)
     global_init_op = tf.global_variables_initializer()
     table_init_op = tf.tables_initializer()
     saver = tf.train.Saver()
@@ -120,7 +122,7 @@ def train(mode):
     for epoch in range(epoch_num):
         mean_loss = 0.0
         train_loss = 0.0
-        for i, batch in enumerate(data.get_batch(batch_size, training_samples['data'])):
+        for i, batch in enumerate(data.get_batch(batch_size, training_samples)):
             # perform a batch of training
             _, loss, decoder_prediction, intent, mask = model.step(sess, "train", batch)
             mean_loss += loss
@@ -135,13 +137,13 @@ def train(mode):
         train_loss /= (i + 1)
         print("[Epoch {}] Average train loss: {}".format(epoch, train_loss))
 
-        if test_data:
+        if test_samples:
             # test each epoch once
             pred_iob = []
             pred_intents = []
             true_intents = []
             previous_intents = []
-            for j, batch in enumerate(data.get_batch(batch_size, test_samples['data'])):
+            for j, batch in enumerate(data.get_batch(batch_size, test_samples)):
                 decoder_prediction, intent = model.step(sess, "test", batch)
                 # from time-major matrix to sample-major
                 decoder_prediction = np.transpose(decoder_prediction, [1, 0])
@@ -180,7 +182,7 @@ def train(mode):
             pred_iob_a = np.vstack(pred_iob)
             # pred_iob_a is of shape (n_test_samples, sequence_len)
             #print("pred_iob_a: ", pred_iob_a.shape)
-            true_slots_iob = np.array([sample['slots'] for sample in test_samples['data']])[:pred_iob_a.shape[0]]
+            true_slots_iob = np.array([sample['slots'] for sample in test_samples])[:pred_iob_a.shape[0]]
             f1_intents = metrics.f1_for_intents(true_intents, pred_intents)
             #accuracy_intents = accuracy_score(true_intents, pred_intents)
             f1_slots_iob = metrics.f1_for_sequence_batch(true_slots_iob, pred_iob_a)
@@ -215,7 +217,7 @@ def train(mode):
     if not os.path.exists(real_folder):
         os.makedirs(real_folder)
     
-    if test_data:
+    if test_samples:
         metrics.plot_f1_history(real_folder + 'f1.png', history)
         save_history(history, real_folder + 'history.json')
     else:
