@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2417">
+<sentence>bring slowly the box near the counter of the kitchen</sentence>
+<tokens>
+	<token id="1" surface="bring" pos="VB" lemma="bring"/>
+	<token id="2" surface="slowly" pos="RB" lemma="slowly"/>
+	<token id="3" surface="the" pos="DT" lemma="the"/>
+	<token id="4" surface="box" pos="NN" lemma="box"/>
+	<token id="5" surface="near" pos="IN" lemma="near"/>
+	<token id="6" surface="the" pos="DT" lemma="the"/>
+	<token id="7" surface="counter" pos="NN" lemma="counter"/>
+	<token id="8" surface="of" pos="IN" lemma="of"/>
+	<token id="9" surface="the" pos="DT" lemma="the"/>
+	<token id="10" surface="kitchen" pos="NN" lemma="kitchen"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="advmod"/>
+	<dep from="4" to="3" type="det"/>
+	<dep from="1" to="4" type="pobj"/>
+	<dep from="1" to="5" type="prep"/>
+	<dep from="7" to="6" type="det"/>
+	<dep from="5" to="7" type="pobj"/>
+	<dep from="7" to="8" type="prep"/>
+	<dep from="10" to="9" type="det"/>
+	<dep from="8" to="10" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Bringing">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Manner">
+				<token id="2"/>
+			</frameElement>
+			<frameElement type="Theme">
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+			<frameElement type="Goal">
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+				<token id="8"/>
+				<token id="9"/>
+				<token id="10"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+		<spatialRelation name="Spatial_relation">
+			<spatialRole type="Trajector">
+				<token id="6"/>
+				<token id="7"/>
+			</spatialRole>
+			<spatialRole type="Spatial_Indicator">
+				<token id="8"/>
+			</spatialRole>
+			<spatialRole type="Landmark">
+				<token id="9"/>
+				<token id="10"/>
+			</spatialRole>
+		</spatialRelation>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="23_Dutch_no_fbb8b24bbcbb7b75c30e6fbf9100587b51c99bd6354f1_4_g_step2_audio1.wav"/>
+	<file name="24_Dutch_no_b83c30c1c71c08a70e76ad18d66aab1951c99eb935ddb_4_g_step2_audio2.wav"/>
+</audioFiles>
+</command>

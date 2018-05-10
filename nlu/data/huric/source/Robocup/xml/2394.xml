@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2394">
+<sentence>robot please follow the postman</sentence>
+<tokens>
+	<token id="1" surface="robot" pos="NN" lemma="robot"/>
+	<token id="2" surface="please" pos="UH" lemma="please"/>
+	<token id="3" surface="follow" pos="VB" lemma="follow"/>
+	<token id="4" surface="the" pos="DT" lemma="the"/>
+	<token id="5" surface="postman" pos="NN" lemma="postman"/>
+</tokens>
+<dependencies>
+	<dep from="3" to="1" type="nsubj"/>
+	<dep from="1" to="2" type="discourse"/>
+	<dep from="0" to="3" type="root"/>
+	<dep from="5" to="4" type="det"/>
+	<dep from="3" to="5" type="dobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Following">
+			<lexicalUnit>
+				<token id="3"/>
+			</lexicalUnit>
+			<frameElement type="Cotheme">
+				<token id="4"/>
+				<token id="5"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="35_brazilian_no_9cfc720e1ef717695363c84daf79016751d6e29e95566_step1_audio2.wav"/>
+</audioFiles>
+</command>

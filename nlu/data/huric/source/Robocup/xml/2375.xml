@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2375">
+<sentence>hey robot follow john everywhere he goes and keep the same pace as he has</sentence>
+<tokens>
+	<token id="1" surface="hey" pos="UH" lemma="hey"/>
+	<token id="2" surface="robot" pos="NN" lemma="robot"/>
+	<token id="3" surface="follow" pos="VB" lemma="follow"/>
+	<token id="4" surface="john" pos="NNP" lemma="john"/>
+	<token id="5" surface="everywhere" pos="RB" lemma="everywhere"/>
+	<token id="6" surface="he" pos="PRP" lemma="he"/>
+	<token id="7" surface="goes" pos="VBZ" lemma="go"/>
+	<token id="8" surface="and" pos="CC" lemma="and"/>
+	<token id="9" surface="keep" pos="VB" lemma="keep"/>
+	<token id="10" surface="the" pos="DT" lemma="the"/>
+	<token id="11" surface="same" pos="JJ" lemma="same"/>
+	<token id="12" surface="pace" pos="NN" lemma="pace"/>
+	<token id="13" surface="as" pos="RB" lemma="as"/>
+	<token id="14" surface="he" pos="PRP" lemma="he"/>
+	<token id="15" surface="has" pos="VBZ" lemma="have"/>
+</tokens>
+<dependencies>
+	<dep from="3" to="1" type="discourse"/>
+	<dep from="3" to="2" type="nsubj"/>
+	<dep from="0" to="3" type="root"/>
+	<dep from="3" to="4" type="dobj"/>
+	<dep from="7" to="5" type="advmod"/>
+	<dep from="7" to="6" type="nsubj"/>
+	<dep from="3" to="7" type="ccomp"/>
+	<dep from="3" to="8" type="cc"/>
+	<dep from="3" to="9" type="conj"/>
+	<dep from="12" to="10" type="det"/>
+	<dep from="12" to="11" type="amod"/>
+	<dep from="9" to="12" type="dobj"/>
+	<dep from="15" to="13" type="mark"/>
+	<dep from="15" to="14" type="nsubj"/>
+	<dep from="9" to="15" type="advcl"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Following">
+			<lexicalUnit>
+				<token id="3"/>
+			</lexicalUnit>
+			<frameElement type="Cotheme">
+				<token id="4"/>
+			</frameElement>
+			<frameElement type="Area">
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="25_Czech Republic_no_f48d4b716dbaf8dd0108f2fe899b3aae51d6d811e6a8d_step1_audio2.wav"/>
+</audioFiles>
+</command>

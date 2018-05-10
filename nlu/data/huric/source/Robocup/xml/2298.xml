@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2298">
+<sentence>take my phone and place it on the bench in the kitchen</sentence>
+<tokens>
+	<token id="1" surface="take" pos="VB" lemma="take"/>
+	<token id="2" surface="my" pos="PRP$" lemma="my"/>
+	<token id="3" surface="phone" pos="NN" lemma="phone"/>
+	<token id="4" surface="and" pos="CC" lemma="and"/>
+	<token id="5" surface="place" pos="VB" lemma="place"/>
+	<token id="6" surface="it" pos="PRP" lemma="it"/>
+	<token id="7" surface="on" pos="IN" lemma="on"/>
+	<token id="8" surface="the" pos="DT" lemma="the"/>
+	<token id="9" surface="bench" pos="NN" lemma="bench"/>
+	<token id="10" surface="in" pos="IN" lemma="in"/>
+	<token id="11" surface="the" pos="DT" lemma="the"/>
+	<token id="12" surface="kitchen" pos="NN" lemma="kitchen"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="3" to="2" type="poss"/>
+	<dep from="1" to="3" type="dep"/>
+	<dep from="1" to="4" type="cc"/>
+	<dep from="1" to="5" type="conj"/>
+	<dep from="5" to="6" type="dobj"/>
+	<dep from="5" to="7" type="prep"/>
+	<dep from="9" to="8" type="det"/>
+	<dep from="7" to="9" type="pobj"/>
+	<dep from="9" to="10" type="prep"/>
+	<dep from="12" to="11" type="det"/>
+	<dep from="10" to="12" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Taking">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="2"/>
+				<token id="3"/>
+			</frameElement>
+		</frame>
+		<frame name="Placing">
+			<lexicalUnit>
+				<token id="5"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="6"/>
+			</frameElement>
+			<frameElement type="Goal">
+				<token id="7"/>
+				<token id="8"/>
+				<token id="9"/>
+				<token id="10"/>
+				<token id="11"/>
+				<token id="12"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+		<spatialRelation name="Spatial_relation">
+			<spatialRole type="Trajector">
+				<token id="8"/>
+				<token id="9"/>
+			</spatialRole>
+			<spatialRole type="Spatial_Indicator">
+				<token id="10"/>
+			</spatialRole>
+			<spatialRole type="Landmark">
+				<token id="11"/>
+				<token id="12"/>
+			</spatialRole>
+		</spatialRelation>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="21_Australian_yes_46e69d8d080f80f7beedc314251bdd6751c9c76cdc0fd_step1_audio3.wav"/>
+	<file name="25_Czech Republic_no_f48d4b716dbaf8dd0108f2fe899b3aae51d6d811e6a8d_91_t_step2_audio4.wav"/>
+</audioFiles>
+</command>

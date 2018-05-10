@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2372">
+<sentence>search for the bottle of wine on the table</sentence>
+<tokens>
+	<token id="1" surface="search" pos="VB" lemma="search"/>
+	<token id="2" surface="for" pos="IN" lemma="for"/>
+	<token id="3" surface="the" pos="DT" lemma="the"/>
+	<token id="4" surface="bottle" pos="NN" lemma="bottle"/>
+	<token id="5" surface="of" pos="IN" lemma="of"/>
+	<token id="6" surface="wine" pos="NN" lemma="wine"/>
+	<token id="7" surface="on" pos="IN" lemma="on"/>
+	<token id="8" surface="the" pos="DT" lemma="the"/>
+	<token id="9" surface="table" pos="NN" lemma="table"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="prep"/>
+	<dep from="4" to="3" type="det"/>
+	<dep from="2" to="4" type="pobj"/>
+	<dep from="4" to="5" type="prep"/>
+	<dep from="5" to="6" type="pobj"/>
+	<dep from="1" to="7" type="prep"/>
+	<dep from="9" to="8" type="det"/>
+	<dep from="7" to="9" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Searching">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Phenomenon">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+			</frameElement>
+			<frameElement type="Ground">
+				<token id="7"/>
+				<token id="8"/>
+				<token id="9"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="25_Czech Republic_no_f48d4b716dbaf8dd0108f2fe899b3aae51d6d811e6a8d_step1_audio4.wav"/>
+	<file name="31_Spanish_no_8fe72d851c4deda661051ae47b93c4c251d6e004d3091_161_g_step2_audio2.wav"/>
+</audioFiles>
+</command>

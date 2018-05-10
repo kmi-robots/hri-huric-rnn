@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2739">
+<sentence>put the book on the bed</sentence>
+<tokens>
+	<token id="1" surface="put" pos="VBD" lemma="put"/>
+	<token id="2" surface="the" pos="DT" lemma="the"/>
+	<token id="3" surface="book" pos="NN" lemma="book"/>
+	<token id="4" surface="on" pos="IN" lemma="on"/>
+	<token id="5" surface="the" pos="DT" lemma="the"/>
+	<token id="6" surface="bed" pos="NN" lemma="bed"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="3" to="2" type="det"/>
+	<dep from="1" to="3" type="nsubj"/>
+	<dep from="1" to="4" type="prep"/>
+	<dep from="6" to="5" type="det"/>
+	<dep from="4" to="6" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Placing">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="2"/>
+				<token id="3"/>
+			</frameElement>
+			<frameElement type="Goal">
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="lesley05A.wav"/>
+	<file name="lesley05B.wav"/>
+	<file name="lesley05C.wav"/>
+	<file name="lesley05D.wav"/>
+	<file name="lesley05E.wav"/>
+</audioFiles>
+</command>

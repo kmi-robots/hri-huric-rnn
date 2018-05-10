@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2727">
+<sentence>move towards the kitchen</sentence>
+<tokens>
+	<token id="1" surface="move" pos="VB" lemma="move"/>
+	<token id="2" surface="towards" pos="IN" lemma="towards"/>
+	<token id="3" surface="the" pos="DT" lemma="the"/>
+	<token id="4" surface="kitchen" pos="NN" lemma="kitchen"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="prep"/>
+	<dep from="4" to="3" type="det"/>
+	<dep from="2" to="4" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Motion">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Goal">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="31_USA_yes_81f4bbc87bef2c5ca2aa89e96781c379517fd121db2c1_step1_audio1.wav"/>
+	<file name="64_italo-britannica_yes_661f54d1fde014662d7bf9de803c44e0518bae70830ee_step1_audio1.wav"/>
+	<file name="56_italoiana_no_c4a41e63681f9dd2ae6ecf732ec7a920517f97c6bf808_17_t_step2_audio3.wav"/>
+	<file name="64_italo-britannica_yes_661f54d1fde014662d7bf9de803c44e0518bae70830ee_17_t_step2_audio3.wav"/>
+</audioFiles>
+</command>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2673">
+<sentence>activate the television at the right of the console</sentence>
+<tokens>
+	<token id="1" surface="activate" pos="VB" lemma="activate"/>
+	<token id="2" surface="the" pos="DT" lemma="the"/>
+	<token id="3" surface="television" pos="NN" lemma="television"/>
+	<token id="4" surface="at" pos="IN" lemma="at"/>
+	<token id="5" surface="the" pos="DT" lemma="the"/>
+	<token id="6" surface="right" pos="NN" lemma="right"/>
+	<token id="7" surface="of" pos="IN" lemma="of"/>
+	<token id="8" surface="the" pos="DT" lemma="the"/>
+	<token id="9" surface="console" pos="NN" lemma="console"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="3" to="2" type="det"/>
+	<dep from="1" to="3" type="dobj"/>
+	<dep from="3" to="4" type="prep"/>
+	<dep from="6" to="5" type="det"/>
+	<dep from="4" to="6" type="pobj"/>
+	<dep from="6" to="7" type="prep"/>
+	<dep from="9" to="8" type="det"/>
+	<dep from="7" to="9" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Change_operational_state">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Device">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+				<token id="8"/>
+				<token id="9"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+		<spatialRelation name="Spatial_relation">
+			<spatialRole type="Trajector">
+				<token id="2"/>
+				<token id="3"/>
+			</spatialRole>
+			<spatialRole type="Spatial_Indicator">
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</spatialRole>
+			<spatialRole type="Landmark">
+				<token id="8"/>
+				<token id="9"/>
+			</spatialRole>
+		</spatialRelation>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="26_Romanian_no_b29554bd8e91f99b72390a3cfd29074e516d1de68fad3_3_t_step2_audio4.wav"/>
+</audioFiles>
+</command>

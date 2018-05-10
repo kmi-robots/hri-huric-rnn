@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2757">
+<sentence>leave the book in the bedroom</sentence>
+<tokens>
+	<token id="1" surface="leave" pos="VB" lemma="leave"/>
+	<token id="2" surface="the" pos="DT" lemma="the"/>
+	<token id="3" surface="book" pos="NN" lemma="book"/>
+	<token id="4" surface="in" pos="IN" lemma="in"/>
+	<token id="5" surface="the" pos="DT" lemma="the"/>
+	<token id="6" surface="bedroom" pos="NN" lemma="bedroom"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="3" to="2" type="det"/>
+	<dep from="1" to="3" type="dobj"/>
+	<dep from="1" to="4" type="prep"/>
+	<dep from="6" to="5" type="det"/>
+	<dep from="4" to="6" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Releasing">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="2"/>
+				<token id="3"/>
+			</frameElement>
+			<frameElement type="Goal">
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="claire10A.wav"/>
+	<file name="claire10B.wav"/>
+	<file name="claire10C.wav"/>
+</audioFiles>
+</command>

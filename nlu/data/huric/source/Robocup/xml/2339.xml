@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2339">
+<sentence>follow the man closely</sentence>
+<tokens>
+	<token id="1" surface="follow" pos="VB" lemma="follow"/>
+	<token id="2" surface="the" pos="DT" lemma="the"/>
+	<token id="3" surface="man" pos="NN" lemma="man"/>
+	<token id="4" surface="closely" pos="RB" lemma="closely"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="3" to="2" type="det"/>
+	<dep from="1" to="3" type="dobj"/>
+	<dep from="1" to="4" type="advmod"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Following">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Cotheme">
+				<token id="2"/>
+				<token id="3"/>
+			</frameElement>
+			<frameElement type="Manner">
+				<token id="4"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="20_USA_yes_234a4a464281bf32127d03c3ec1f28c451cb2a417a200_step1_audio2.wav"/>
+</audioFiles>
+</command>

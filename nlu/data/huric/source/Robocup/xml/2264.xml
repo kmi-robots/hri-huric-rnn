@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2264">
+<sentence>there is a bed with two lamps</sentence>
+<tokens>
+	<token id="1" surface="there" pos="EX" lemma="there"/>
+	<token id="2" surface="is" pos="VBZ" lemma="be"/>
+	<token id="3" surface="a" pos="DT" lemma="a"/>
+	<token id="4" surface="bed" pos="NN" lemma="bed"/>
+	<token id="5" surface="with" pos="IN" lemma="with"/>
+	<token id="6" surface="two" pos="CD" lemma="two"/>
+	<token id="7" surface="lamps" pos="NNS" lemma="lamp"/>
+</tokens>
+<dependencies>
+	<dep from="2" to="1" type="expl"/>
+	<dep from="0" to="2" type="root"/>
+	<dep from="4" to="3" type="det"/>
+	<dep from="2" to="4" type="nsubj"/>
+	<dep from="4" to="5" type="prep"/>
+	<dep from="7" to="6" type="num"/>
+	<dep from="5" to="7" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Being_located">
+			<lexicalUnit>
+				<token id="1"/>
+				<token id="2"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="20_USA_yes_234a4a464281bf32127d03c3ec1f28c451cb2a417a200_55_t_step2_audio4.wav"/>
+	<file name="29_Cypriot_no_8863837b6def5db227f899ea308a86fd51d6d323092bb_55_t_step2_audio4.wav"/>
+</audioFiles>
+</command>

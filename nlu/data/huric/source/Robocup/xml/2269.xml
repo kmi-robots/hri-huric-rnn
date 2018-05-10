@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2269">
+<sentence>please go to the table</sentence>
+<tokens>
+	<token id="1" surface="please" pos="UH" lemma="please"/>
+	<token id="2" surface="go" pos="VB" lemma="go"/>
+	<token id="3" surface="to" pos="TO" lemma="to"/>
+	<token id="4" surface="the" pos="DT" lemma="the"/>
+	<token id="5" surface="table" pos="NN" lemma="table"/>
+</tokens>
+<dependencies>
+	<dep from="2" to="1" type="discourse"/>
+	<dep from="0" to="2" type="root"/>
+	<dep from="2" to="3" type="prep"/>
+	<dep from="5" to="4" type="det"/>
+	<dep from="3" to="5" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Motion">
+			<lexicalUnit>
+				<token id="2"/>
+			</lexicalUnit>
+			<frameElement type="Goal">
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="24_Dutch_no_b83c30c1c71c08a70e76ad18d66aab1951c99eb935ddb_step1_audio1.wav"/>
+</audioFiles>
+</command>

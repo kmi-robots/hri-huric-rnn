@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2418">
+<sentence>could you please move the trash bin from the kitchen to the studio</sentence>
+<tokens>
+	<token id="1" surface="could" pos="MD" lemma="could"/>
+	<token id="2" surface="you" pos="PRP" lemma="you"/>
+	<token id="3" surface="please" pos="UH" lemma="please"/>
+	<token id="4" surface="move" pos="VB" lemma="move"/>
+	<token id="5" surface="the" pos="DT" lemma="the"/>
+	<token id="6" surface="trash" pos="NN" lemma="trash"/>
+	<token id="7" surface="bin" pos="NN" lemma="bin"/>
+	<token id="8" surface="from" pos="IN" lemma="from"/>
+	<token id="9" surface="the" pos="DT" lemma="the"/>
+	<token id="10" surface="kitchen" pos="NN" lemma="kitchen"/>
+	<token id="11" surface="to" pos="TO" lemma="to"/>
+	<token id="12" surface="the" pos="DT" lemma="the"/>
+	<token id="13" surface="studio" pos="NN" lemma="studio"/>
+</tokens>
+<dependencies>
+	<dep from="4" to="1" type="aux"/>
+	<dep from="4" to="2" type="nsubj"/>
+	<dep from="4" to="3" type="discourse"/>
+	<dep from="0" to="4" type="root"/>
+	<dep from="7" to="5" type="det"/>
+	<dep from="7" to="6" type="nn"/>
+	<dep from="4" to="7" type="dobj"/>
+	<dep from="4" to="8" type="prep"/>
+	<dep from="10" to="9" type="det"/>
+	<dep from="8" to="10" type="pobj"/>
+	<dep from="4" to="11" type="prep"/>
+	<dep from="13" to="12" type="det"/>
+	<dep from="11" to="13" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Bringing">
+			<lexicalUnit>
+				<token id="4"/>
+			</lexicalUnit>
+			<frameElement type="Agent">
+				<token id="2"/>
+			</frameElement>
+			<frameElement type="Theme">
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+			<frameElement type="Source">
+				<token id="8"/>
+				<token id="9"/>
+				<token id="10"/>
+			</frameElement>
+			<frameElement type="Goal">
+				<token id="11"/>
+				<token id="12"/>
+				<token id="13"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="24_Dutch_no_b83c30c1c71c08a70e76ad18d66aab1951c99eb935ddb_17_g_step2_audio1.wav"/>
+</audioFiles>
+</command>

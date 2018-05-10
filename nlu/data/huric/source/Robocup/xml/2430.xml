@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2430">
+<sentence>there are two abat jour next to the bed and seven pillows</sentence>
+<tokens>
+	<token id="1" surface="there" pos="EX" lemma="there"/>
+	<token id="2" surface="are" pos="VBP" lemma="be"/>
+	<token id="3" surface="two" pos="CD" lemma="two"/>
+	<token id="4" surface="abat" pos="JJ" lemma="abat"/>
+	<token id="5" surface="jour" pos="NN" lemma="jour"/>
+	<token id="6" surface="next" pos="JJ" lemma="next"/>
+	<token id="7" surface="to" pos="TO" lemma="to"/>
+	<token id="8" surface="the" pos="DT" lemma="the"/>
+	<token id="9" surface="bed" pos="NN" lemma="bed"/>
+	<token id="10" surface="and" pos="CC" lemma="and"/>
+	<token id="11" surface="seven" pos="CD" lemma="seven"/>
+	<token id="12" surface="pillows" pos="NNS" lemma="pillow"/>
+</tokens>
+<dependencies>
+	<dep from="2" to="1" type="expl"/>
+	<dep from="0" to="2" type="root"/>
+	<dep from="5" to="3" type="num"/>
+	<dep from="5" to="4" type="amod"/>
+	<dep from="2" to="5" type="nsubj"/>
+	<dep from="2" to="6" type="dep"/>
+	<dep from="6" to="7" type="prep"/>
+	<dep from="9" to="8" type="det"/>
+	<dep from="7" to="9" type="pobj"/>
+	<dep from="5" to="10" type="cc"/>
+	<dep from="12" to="11" type="num"/>
+	<dep from="5" to="12" type="conj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Being_located">
+			<lexicalUnit>
+				<token id="1"/>
+				<token id="2"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+			</frameElement>
+			<frameElement type="Location">
+				<token id="6"/>
+				<token id="7"/>
+				<token id="8"/>
+				<token id="9"/>
+			</frameElement>
+		</frame>
+		<frame name="Being_located">
+			<lexicalUnit>
+				<token id="1"/>
+				<token id="2"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="11"/>
+				<token id="12"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+		<spatialRelation name="Spatial_relation">
+			<spatialRole type="Trajector">
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+			</spatialRole>
+			<spatialRole type="Spatial_Indicator">
+				<token id="6"/>
+				<token id="7"/>
+			</spatialRole>
+			<spatialRole type="Landmark">
+				<token id="8"/>
+				<token id="9"/>
+			</spatialRole>
+		</spatialRelation>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="29_Cypriot_no_8863837b6def5db227f899ea308a86fd51d6d323092bb_step1_audio5.wav"/>
+</audioFiles>
+</command>

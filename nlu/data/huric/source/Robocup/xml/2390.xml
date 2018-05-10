@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2390">
+<sentence>robot please take the mug to the sink</sentence>
+<tokens>
+	<token id="1" surface="robot" pos="NN" lemma="robot"/>
+	<token id="2" surface="please" pos="UH" lemma="please"/>
+	<token id="3" surface="take" pos="VB" lemma="take"/>
+	<token id="4" surface="the" pos="DT" lemma="the"/>
+	<token id="5" surface="mug" pos="NN" lemma="mug"/>
+	<token id="6" surface="to" pos="TO" lemma="to"/>
+	<token id="7" surface="the" pos="DT" lemma="the"/>
+	<token id="8" surface="sink" pos="NN" lemma="sink"/>
+</tokens>
+<dependencies>
+	<dep from="3" to="1" type="nsubj"/>
+	<dep from="3" to="2" type="discourse"/>
+	<dep from="0" to="3" type="root"/>
+	<dep from="5" to="4" type="det"/>
+	<dep from="3" to="5" type="dobj"/>
+	<dep from="3" to="6" type="prep"/>
+	<dep from="8" to="7" type="det"/>
+	<dep from="6" to="8" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Bringing">
+			<lexicalUnit>
+				<token id="3"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="4"/>
+				<token id="5"/>
+			</frameElement>
+			<frameElement type="Goal">
+				<token id="6"/>
+				<token id="7"/>
+				<token id="8"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="35_brazilian_no_9cfc720e1ef717695363c84daf79016751d6e29e95566_step1_audio3.wav"/>
+</audioFiles>
+</command>

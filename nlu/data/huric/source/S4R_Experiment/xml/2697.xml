@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2697">
+<sentence>find the stove in the studio</sentence>
+<tokens>
+	<token id="1" surface="find" pos="VB" lemma="find"/>
+	<token id="2" surface="the" pos="DT" lemma="the"/>
+	<token id="3" surface="stove" pos="NN" lemma="stove"/>
+	<token id="4" surface="in" pos="IN" lemma="in"/>
+	<token id="5" surface="the" pos="DT" lemma="the"/>
+	<token id="6" surface="studio" pos="NN" lemma="studio"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="3" to="2" type="det"/>
+	<dep from="1" to="3" type="dobj"/>
+	<dep from="1" to="4" type="prep"/>
+	<dep from="6" to="5" type="det"/>
+	<dep from="4" to="6" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Searching">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Phenomenon">
+				<token id="2"/>
+				<token id="3"/>
+			</frameElement>
+			<frameElement type="Ground">
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="marco06.wav"/>
+</audioFiles>
+</command>

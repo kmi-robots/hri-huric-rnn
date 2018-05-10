@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2262">
+<sentence>move to the lamp on the right side of the bed</sentence>
+<tokens>
+	<token id="1" surface="move" pos="VB" lemma="move"/>
+	<token id="2" surface="to" pos="TO" lemma="to"/>
+	<token id="3" surface="the" pos="DT" lemma="the"/>
+	<token id="4" surface="lamp" pos="NN" lemma="lamp"/>
+	<token id="5" surface="on" pos="IN" lemma="on"/>
+	<token id="6" surface="the" pos="DT" lemma="the"/>
+	<token id="7" surface="right" pos="JJ" lemma="right"/>
+	<token id="8" surface="side" pos="NN" lemma="side"/>
+	<token id="9" surface="of" pos="IN" lemma="of"/>
+	<token id="10" surface="the" pos="DT" lemma="the"/>
+	<token id="11" surface="bed" pos="NN" lemma="bed"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="prep"/>
+	<dep from="4" to="3" type="det"/>
+	<dep from="2" to="4" type="pobj"/>
+	<dep from="4" to="5" type="prep"/>
+	<dep from="8" to="6" type="det"/>
+	<dep from="8" to="7" type="amod"/>
+	<dep from="5" to="8" type="pobj"/>
+	<dep from="8" to="9" type="prep"/>
+	<dep from="11" to="10" type="det"/>
+	<dep from="9" to="11" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Motion">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Goal">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+				<token id="8"/>
+				<token id="9"/>
+				<token id="10"/>
+				<token id="11"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+		<spatialRelation name="Spatial_relation">
+			<spatialRole type="Trajector">
+				<token id="3"/>
+				<token id="4"/>
+			</spatialRole>
+			<spatialRole type="Spatial_Indicator">
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+				<token id="8"/>
+				<token id="9"/>
+			</spatialRole>
+			<spatialRole type="Landmark">
+				<token id="10"/>
+				<token id="11"/>
+			</spatialRole>
+		</spatialRelation>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="31_Mexican_no_b3e130c8ea24a39ab224a2dcaccc117951c995bd1d780_step1_audio1.wav"/>
+	<file name="23_Dutch_no_fbb8b24bbcbb7b75c30e6fbf9100587b51c99bd6354f1_52_t_step2_audio3.wav"/>
+</audioFiles>
+</command>

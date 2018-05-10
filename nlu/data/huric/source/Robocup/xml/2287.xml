@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2287">
+<sentence>please move to the fridge</sentence>
+<tokens>
+	<token id="1" surface="please" pos="UH" lemma="please"/>
+	<token id="2" surface="move" pos="VB" lemma="move"/>
+	<token id="3" surface="to" pos="TO" lemma="to"/>
+	<token id="4" surface="the" pos="DT" lemma="the"/>
+	<token id="5" surface="fridge" pos="NN" lemma="fridge"/>
+</tokens>
+<dependencies>
+	<dep from="2" to="1" type="discourse"/>
+	<dep from="0" to="2" type="root"/>
+	<dep from="2" to="3" type="prep"/>
+	<dep from="5" to="4" type="det"/>
+	<dep from="3" to="5" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Motion">
+			<lexicalUnit>
+				<token id="2"/>
+			</lexicalUnit>
+			<frameElement type="Goal">
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="31_Chile_no_2aebd1501249d2c610043840f7a9702251c9a80f5885e_step1_audio1.wav"/>
+	<file name="22_United States of America_yes_f43cee248adf87a644db0fcebecf47fb51cb05369714c_79_g_step2_audio1.wav"/>
+</audioFiles>
+</command>

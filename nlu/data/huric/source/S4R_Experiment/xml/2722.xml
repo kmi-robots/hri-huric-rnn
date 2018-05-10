@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2722">
+<sentence>look for my phone</sentence>
+<tokens>
+	<token id="1" surface="look" pos="VB" lemma="look"/>
+	<token id="2" surface="for" pos="IN" lemma="for"/>
+	<token id="3" surface="my" pos="PRP$" lemma="my"/>
+	<token id="4" surface="phone" pos="NN" lemma="phone"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="prep"/>
+	<dep from="4" to="3" type="poss"/>
+	<dep from="2" to="4" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Searching">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Phenomenon">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="claire14.wav"/>
+</audioFiles>
+</command>

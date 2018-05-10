@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2726">
+<sentence>move towards the bedroom</sentence>
+<tokens>
+	<token id="1" surface="move" pos="VB" lemma="move"/>
+	<token id="2" surface="towards" pos="IN" lemma="towards"/>
+	<token id="3" surface="the" pos="DT" lemma="the"/>
+	<token id="4" surface="bedroom" pos="NN" lemma="bedroom"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="prep"/>
+	<dep from="4" to="3" type="det"/>
+	<dep from="2" to="4" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Motion">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Goal">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="60_Swiss_no_8ff74451b73537162862f51e0999faed51741cb9195f4_step1_audio1.wav"/>
+	<file name="31_USA_yes_81f4bbc87bef2c5ca2aa89e96781c379517fd121db2c1_19_t_step2_audio4.wav"/>
+</audioFiles>
+</command>

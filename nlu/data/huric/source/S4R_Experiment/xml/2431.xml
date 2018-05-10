@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2431">
+<sentence>could you please check if the coffee is ready</sentence>
+<tokens>
+	<token id="1" surface="could" pos="MD" lemma="could"/>
+	<token id="2" surface="you" pos="PRP" lemma="you"/>
+	<token id="3" surface="please" pos="UH" lemma="please"/>
+	<token id="4" surface="check" pos="VB" lemma="check"/>
+	<token id="5" surface="if" pos="IN" lemma="if"/>
+	<token id="6" surface="the" pos="DT" lemma="the"/>
+	<token id="7" surface="coffee" pos="NN" lemma="coffee"/>
+	<token id="8" surface="is" pos="VBZ" lemma="be"/>
+	<token id="9" surface="ready" pos="JJ" lemma="ready"/>
+</tokens>
+<dependencies>
+	<dep from="4" to="1" type="aux"/>
+	<dep from="4" to="2" type="nsubj"/>
+	<dep from="4" to="3" type="discourse"/>
+	<dep from="0" to="4" type="root"/>
+	<dep from="9" to="5" type="mark"/>
+	<dep from="7" to="6" type="det"/>
+	<dep from="9" to="7" type="nsubj"/>
+	<dep from="9" to="8" type="cop"/>
+	<dep from="4" to="9" type="advcl"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Inspecting">
+			<lexicalUnit>
+				<token id="4"/>
+			</lexicalUnit>
+			<frameElement type="Inspector">
+				<token id="2"/>
+			</frameElement>
+			<frameElement type="Ground">
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+			<frameElement type="Desired_state">
+				<token id="8"/>
+				<token id="9"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="55_American_yes_ed7ea8ade817d9417060e45942cfffc6518b9430bfb8b_19_g_step2_audio1.wav"/>
+</audioFiles>
+</command>

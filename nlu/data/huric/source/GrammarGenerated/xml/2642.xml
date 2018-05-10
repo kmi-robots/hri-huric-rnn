@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2642">
+<sentence>close the jar</sentence>
+<tokens>
+	<token id="1" surface="close" pos="VB" lemma="close"/>
+	<token id="2" surface="the" pos="DT" lemma="the"/>
+	<token id="3" surface="jar" pos="NN" lemma="jar"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="3" to="2" type="det"/>
+	<dep from="1" to="3" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Closure">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Containing_object">
+				<token id="2"/>
+				<token id="3"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="newCorpus46_daniele.wav"/>
+	<file name="newCorpus46_laalithya.wav"/>
+	<file name="newCorpus46_vittorio.wav"/>
+</audioFiles>
+</command>

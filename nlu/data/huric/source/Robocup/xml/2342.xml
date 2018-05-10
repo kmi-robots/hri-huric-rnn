@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2342">
+<sentence>can you find me the butcher knife</sentence>
+<tokens>
+	<token id="1" surface="can" pos="MD" lemma="can"/>
+	<token id="2" surface="you" pos="PRP" lemma="you"/>
+	<token id="3" surface="find" pos="VB" lemma="find"/>
+	<token id="4" surface="me" pos="PRP" lemma="I"/>
+	<token id="5" surface="the" pos="DT" lemma="the"/>
+	<token id="6" surface="butcher" pos="NN" lemma="butcher"/>
+	<token id="7" surface="knife" pos="NN" lemma="knife"/>
+</tokens>
+<dependencies>
+	<dep from="3" to="1" type="aux"/>
+	<dep from="3" to="2" type="nsubj"/>
+	<dep from="0" to="3" type="root"/>
+	<dep from="3" to="4" type="iobj"/>
+	<dep from="7" to="5" type="det"/>
+	<dep from="7" to="6" type="nn"/>
+	<dep from="3" to="7" type="dojb"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Searching">
+			<lexicalUnit>
+				<token id="3"/>
+			</lexicalUnit>
+			<frameElement type="Cognizer">
+				<token id="2"/>
+			</frameElement>
+			<frameElement type="Purpose">
+				<token id="4"/>
+			</frameElement>
+			<frameElement type="Phenomenon">
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="25_USA_yes_5e3142f5c296837b6583c0b8894e2f2251cb3f28b4697_step1_audio4.wav"/>
+</audioFiles>
+</command>

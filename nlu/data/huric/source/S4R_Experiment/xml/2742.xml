@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2742">
+<sentence>put the phone in the kitchen stove</sentence>
+<tokens>
+	<token id="1" surface="put" pos="VBD" lemma="put"/>
+	<token id="2" surface="the" pos="DT" lemma="the"/>
+	<token id="3" surface="phone" pos="NN" lemma="phone"/>
+	<token id="4" surface="in" pos="IN" lemma="in"/>
+	<token id="5" surface="the" pos="DT" lemma="the"/>
+	<token id="6" surface="kitchen" pos="NN" lemma="kitchen"/>
+	<token id="7" surface="stove" pos="NN" lemma="stove"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="3" to="2" type="det"/>
+	<dep from="1" to="3" type="nsubj"/>
+	<dep from="1" to="4" type="prep"/>
+	<dep from="7" to="5" type="det"/>
+	<dep from="7" to="6" type="nn"/>
+	<dep from="4" to="7" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Placing">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="2"/>
+				<token id="3"/>
+			</frameElement>
+			<frameElement type="Goal">
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="marco09.wav"/>
+</audioFiles>
+</command>

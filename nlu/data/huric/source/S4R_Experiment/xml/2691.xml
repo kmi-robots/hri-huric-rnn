@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2691">
+<sentence>find the bottle of wine in the kitchen</sentence>
+<tokens>
+	<token id="1" surface="find" pos="VB" lemma="find"/>
+	<token id="2" surface="the" pos="DT" lemma="the"/>
+	<token id="3" surface="bottle" pos="NN" lemma="bottle"/>
+	<token id="4" surface="of" pos="IN" lemma="of"/>
+	<token id="5" surface="wine" pos="NN" lemma="wine"/>
+	<token id="6" surface="in" pos="IN" lemma="in"/>
+	<token id="7" surface="the" pos="DT" lemma="the"/>
+	<token id="8" surface="kitchen" pos="NN" lemma="kitchen"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="3" to="2" type="det"/>
+	<dep from="1" to="3" type="dobj"/>
+	<dep from="3" to="4" type="prep"/>
+	<dep from="4" to="5" type="pobj"/>
+	<dep from="1" to="6" type="prep"/>
+	<dep from="8" to="7" type="det"/>
+	<dep from="6" to="8" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Searching">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Phenomenon">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+			</frameElement>
+			<frameElement type="Ground">
+				<token id="6"/>
+				<token id="7"/>
+				<token id="8"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="claire3.wav"/>
+</audioFiles>
+</command>

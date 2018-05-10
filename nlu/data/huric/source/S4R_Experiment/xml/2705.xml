@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2705">
+<sentence>follow the guy in the blue hoodie</sentence>
+<tokens>
+	<token id="1" surface="follow" pos="VB" lemma="follow"/>
+	<token id="2" surface="the" pos="DT" lemma="the"/>
+	<token id="3" surface="guy" pos="NN" lemma="guy"/>
+	<token id="4" surface="in" pos="IN" lemma="in"/>
+	<token id="5" surface="the" pos="DT" lemma="the"/>
+	<token id="6" surface="blue" pos="JJ" lemma="blue"/>
+	<token id="7" surface="hoodie" pos="NN" lemma="hoodie"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="3" to="2" type="det"/>
+	<dep from="1" to="3" type="dobj"/>
+	<dep from="3" to="4" type="prep"/>
+	<dep from="7" to="5" type="det"/>
+	<dep from="7" to="6" type="amod"/>
+	<dep from="4" to="7" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Following">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Cotheme">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="31_USA_yes_81f4bbc87bef2c5ca2aa89e96781c379517fd121db2c1_step1_audio2.wav"/>
+</audioFiles>
+</command>

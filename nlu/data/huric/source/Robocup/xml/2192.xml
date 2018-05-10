@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2192">
+<sentence>the fridge is on your right side</sentence>
+<tokens>
+	<token id="1" surface="the" pos="DT" lemma="the"/>
+	<token id="2" surface="fridge" pos="NN" lemma="fridge"/>
+	<token id="3" surface="is" pos="VBZ" lemma="be"/>
+	<token id="4" surface="on" pos="IN" lemma="on"/>
+	<token id="5" surface="your" pos="PRP$" lemma="you"/>
+	<token id="6" surface="right" pos="JJ" lemma="right"/>
+	<token id="7" surface="side" pos="NN" lemma="side"/>
+</tokens>
+<dependencies>
+	<dep from="2" to="1" type="det"/>
+	<dep from="3" to="2" type="nsubj"/>
+	<dep from="0" to="3" type="root"/>
+	<dep from="3" to="4" type="prep"/>
+	<dep from="7" to="5" type="poss"/>
+	<dep from="7" to="6" type="amod"/>
+	<dep from="4" to="7" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Being_located">
+			<lexicalUnit>
+				<token id="3"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="1"/>
+				<token id="2"/>
+			</frameElement>
+			<frameElement type="Location">
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+		<spatialRelation name="Spatial_relation">
+			<spatialRole type="Trajector">
+				<token id="1"/>
+				<token id="2"/>
+			</spatialRole>
+			<spatialRole type="Spatial_Indicator">
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</spatialRole>
+		</spatialRelation>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="23_German_no_1765325c043ab4fc4821285db0af7a2e51c95c59dc8f4_step1_audio5.wav"/>
+	<file name="31_Mexican_no_b3e130c8ea24a39ab224a2dcaccc117951c995bd1d780_28_t_step2_audio4.wav"/>
+</audioFiles>
+</command>

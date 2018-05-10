@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2424">
+<sentence>check the toilet paper</sentence>
+<tokens>
+	<token id="1" surface="check" pos="VB" lemma="check"/>
+	<token id="2" surface="the" pos="DT" lemma="the"/>
+	<token id="3" surface="toilet" pos="NN" lemma="toilet"/>
+	<token id="4" surface="paper" pos="NN" lemma="paper"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="4" to="2" type="det"/>
+	<dep from="4" to="3" type="nn"/>
+	<dep from="1" to="4" type="dobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Inspecting">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Ground">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="24_China_no_92bdd52397f9d1d130ec98eab371dcbe51c9658b05494_11_g_step2_audio1.wav"/>
+	<file name="23_Dutch_no_fbb8b24bbcbb7b75c30e6fbf9100587b51c99bd6354f1_11_g_step2_audio2.wav"/>
+	<file name="31_Chile_no_2aebd1501249d2c610043840f7a9702251c9a80f5885e_11_g_step2_audio2.wav"/>
+</audioFiles>
+</command>

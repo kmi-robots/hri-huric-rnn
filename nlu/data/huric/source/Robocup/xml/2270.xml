@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2270">
+<sentence>the living room is very light and bright</sentence>
+<tokens>
+	<token id="1" surface="the" pos="DT" lemma="the"/>
+	<token id="2" surface="living" pos="NN" lemma="living"/>
+	<token id="3" surface="room" pos="NN" lemma="room"/>
+	<token id="4" surface="is" pos="VBZ" lemma="be"/>
+	<token id="5" surface="very" pos="RB" lemma="very"/>
+	<token id="6" surface="light" pos="JJ" lemma="light"/>
+	<token id="7" surface="and" pos="CC" lemma="and"/>
+	<token id="8" surface="bright" pos="JJ" lemma="bright"/>
+</tokens>
+<dependencies>
+	<dep from="3" to="1" type="det"/>
+	<dep from="3" to="2" type="nn"/>
+	<dep from="6" to="3" type="nsubj"/>
+	<dep from="6" to="4" type="cop"/>
+	<dep from="6" to="5" type="advmod"/>
+	<dep from="0" to="6" type="root"/>
+	<dep from="6" to="7" type="cc"/>
+	<dep from="6" to="8" type="conj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Being_in_category">
+			<lexicalUnit>
+				<token id="4"/>
+			</lexicalUnit>
+			<frameElement type="Item">
+				<token id="1"/>
+				<token id="2"/>
+				<token id="3"/>
+			</frameElement>
+			<frameElement type="Category">
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+				<token id="8"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="24_Dutch_no_b83c30c1c71c08a70e76ad18d66aab1951c99eb935ddb_step1_audio5.wav"/>
+</audioFiles>
+</command>

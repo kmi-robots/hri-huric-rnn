@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2187">
+<sentence>drive to the fridge</sentence>
+<tokens>
+	<token id="1" surface="drive" pos="VB" lemma="drive"/>
+	<token id="2" surface="to" pos="TO" lemma="to"/>
+	<token id="3" surface="the" pos="DT" lemma="the"/>
+	<token id="4" surface="fridge" pos="NN" lemma="fridge"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="prep"/>
+	<dep from="4" to="3" type="det"/>
+	<dep from="2" to="4" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Motion">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Goal">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="23_German_no_863f47e880673cce47bf5bb5f6a896c651c959cf7eb0d_step1_audio1.wav"/>
+	<file name="23_German_no_1765325c043ab4fc4821285db0af7a2e51c95c59dc8f4_23_t_step2_audio4.wav"/>
+</audioFiles>
+</command>

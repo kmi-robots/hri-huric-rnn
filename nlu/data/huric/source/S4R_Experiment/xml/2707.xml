@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2707">
+<sentence>go find the book</sentence>
+<tokens>
+	<token id="1" surface="go" pos="VB" lemma="go"/>
+	<token id="2" surface="find" pos="VB" lemma="find"/>
+	<token id="3" surface="the" pos="DT" lemma="the"/>
+	<token id="4" surface="book" pos="NN" lemma="book"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="xcomp"/>
+	<dep from="4" to="3" type="det"/>
+	<dep from="2" to="4" type="dobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Searching">
+			<lexicalUnit>
+				<token id="2"/>
+			</lexicalUnit>
+			<frameElement type="Phenomenon">
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="david07A.wav"/>
+</audioFiles>
+</command>

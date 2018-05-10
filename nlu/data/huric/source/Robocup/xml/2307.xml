@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2307">
+<sentence>this is a bathroom where the door is on the right</sentence>
+<tokens>
+	<token id="1" surface="this" pos="DT" lemma="this"/>
+	<token id="2" surface="is" pos="VBZ" lemma="be"/>
+	<token id="3" surface="a" pos="DT" lemma="a"/>
+	<token id="4" surface="bathroom" pos="NN" lemma="bathroom"/>
+	<token id="5" surface="where" pos="WRB" lemma="where"/>
+	<token id="6" surface="the" pos="DT" lemma="the"/>
+	<token id="7" surface="door" pos="NN" lemma="door"/>
+	<token id="8" surface="is" pos="VBZ" lemma="be"/>
+	<token id="9" surface="on" pos="IN" lemma="on"/>
+	<token id="10" surface="the" pos="DT" lemma="the"/>
+	<token id="11" surface="right" pos="NN" lemma="right"/>
+</tokens>
+<dependencies>
+	<dep from="4" to="1" type="nsubj"/>
+	<dep from="4" to="2" type="cop"/>
+	<dep from="4" to="3" type="det"/>
+	<dep from="0" to="4" type="root"/>
+	<dep from="8" to="5" type="advmod"/>
+	<dep from="7" to="6" type="det"/>
+	<dep from="8" to="7" type="nsubj"/>
+	<dep from="4" to="8" type="rcmod"/>
+	<dep from="8" to="9" type="prep"/>
+	<dep from="11" to="10" type="det"/>
+	<dep from="9" to="11" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Being_in_category">
+			<lexicalUnit>
+				<token id="2"/>
+			</lexicalUnit>
+			<frameElement type="Item">
+				<token id="1"/>
+			</frameElement>
+			<frameElement type="Category">
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+				<token id="8"/>
+				<token id="9"/>
+				<token id="10"/>
+				<token id="11"/>
+			</frameElement>
+		</frame>
+		<frame name="Being_located">
+			<lexicalUnit>
+				<token id="8"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+			<frameElement type="Place">
+				<token id="9"/>
+				<token id="10"/>
+				<token id="11"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+		<spatialRelation name="Spatial_relation">
+			<spatialRole type="Trajector">
+				<token id="6"/>
+				<token id="7"/>
+			</spatialRole>
+			<spatialRole type="Spatial_Indicator">
+				<token id="9"/>
+				<token id="10"/>
+				<token id="11"/>
+			</spatialRole>
+		</spatialRelation>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="22_United States of America_yes_f43cee248adf87a644db0fcebecf47fb51cb05369714c_step1_audio5.wav"/>
+	<file name="36_British_yes_785d5a8a07003f15fca568bce95379e751d6dbf5b8f91_104_g_step2_audio2.wav"/>
+</audioFiles>
+</command>

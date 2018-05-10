@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2190">
+<sentence>bring mug to bedroom</sentence>
+<tokens>
+	<token id="1" surface="bring" pos="VB" lemma="bring"/>
+	<token id="2" surface="mug" pos="NN" lemma="mug"/>
+	<token id="3" surface="to" pos="TO" lemma="to"/>
+	<token id="4" surface="bedroom" pos="NN" lemma="bedroom"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="dobj"/>
+	<dep from="1" to="3" type="prep"/>
+	<dep from="3" to="4" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Bringing">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="2"/>
+			</frameElement>
+			<frameElement type="Goal">
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="23_German_no_1765325c043ab4fc4821285db0af7a2e51c95c59dc8f4_step1_audio3.wav"/>
+	<file name="36_Italian_no_4345a00b8bf46846088f73380b986b7851d6a997a4854_26_g_step2_audio2.wav"/>
+</audioFiles>
+</command>

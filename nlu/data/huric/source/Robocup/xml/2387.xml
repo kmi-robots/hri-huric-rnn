@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2387">
+<sentence>follow me very fast</sentence>
+<tokens>
+	<token id="1" surface="follow" pos="VB" lemma="follow"/>
+	<token id="2" surface="me" pos="PRP" lemma="I"/>
+	<token id="3" surface="very" pos="RB" lemma="very"/>
+	<token id="4" surface="fast" pos="RB" lemma="fast"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="dobj"/>
+	<dep from="4" to="3" type="advmod"/>
+	<dep from="1" to="4" type="advmod"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Following">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Cotheme">
+				<token id="2"/>
+			</frameElement>
+			<frameElement type="Manner">
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="31_Spanish_no_8fe72d851c4deda661051ae47b93c4c251d6e004d3091_step1_audio2.wav"/>
+</audioFiles>
+</command>

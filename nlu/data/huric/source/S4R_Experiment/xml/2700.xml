@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2700">
+<sentence>find the white vase</sentence>
+<tokens>
+	<token id="1" surface="find" pos="VB" lemma="find"/>
+	<token id="2" surface="the" pos="DT" lemma="the"/>
+	<token id="3" surface="white" pos="JJ" lemma="white"/>
+	<token id="4" surface="vase" pos="NN" lemma="vase"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="4" to="2" type="det"/>
+	<dep from="4" to="3" type="amod"/>
+	<dep from="1" to="4" type="dobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Searching">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Phenomenon">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="31_USA_yes_81f4bbc87bef2c5ca2aa89e96781c379517fd121db2c1_step1_audio4.wav"/>
+</audioFiles>
+</command>

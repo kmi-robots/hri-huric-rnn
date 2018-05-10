@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2256">
+<sentence>move to the living room</sentence>
+<tokens>
+	<token id="1" surface="move" pos="VB" lemma="move"/>
+	<token id="2" surface="to" pos="TO" lemma="to"/>
+	<token id="3" surface="the" pos="DT" lemma="the"/>
+	<token id="4" surface="living" pos="NN" lemma="living"/>
+	<token id="5" surface="room" pos="NN" lemma="room"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="prep"/>
+	<dep from="5" to="3" type="det"/>
+	<dep from="5" to="4" type="nn"/>
+	<dep from="2" to="5" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Motion">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Goal">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="32_German_no_ac47bd8bbd7e3d38f209b03a0ba74a6951c9705c9c48b_step1_audio1.wav"/>
+	<file name="36_Italian_no_4345a00b8bf46846088f73380b986b7851d6a997a4854_47_t_step2_audio4.wav"/>
+	<file name="28_Italian_no_0af191952617d3ac9e56641120871b2951d6cc30e7cd6_47_g_step2_audio1.wav"/>
+</audioFiles>
+</command>

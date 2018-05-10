@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2425">
+<sentence>there are two couches facing one another</sentence>
+<tokens>
+	<token id="1" surface="there" pos="EX" lemma="there"/>
+	<token id="2" surface="are" pos="VB" lemma="be"/>
+	<token id="3" surface="two" pos="CD" lemma="two"/>
+	<token id="4" surface="couches" pos="NNS" lemma="couch"/>
+	<token id="5" surface="facing" pos="VBG" lemma="face"/>
+	<token id="6" surface="one" pos="CD" lemma="one"/>
+	<token id="7" surface="another" pos="DT" lemma="another"/>
+</tokens>
+<dependencies>
+	<dep from="2" to="1" type="expl"/>
+	<dep from="0" to="2" type="root"/>
+	<dep from="4" to="3" type="num"/>
+	<dep from="2" to="4" type="nsubj"/>
+	<dep from="4" to="5" type="partmod"/>
+	<dep from="5" to="6" type="dobj"/>
+	<dep from="6" to="7" type="dep"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Being_located">
+			<lexicalUnit>
+				<token id="1"/>
+				<token id="2"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="21_Australian_yes_46e69d8d080f80f7beedc314251bdd6751c9c76cdc0fd_step1_audio5.wav"/>
+</audioFiles>
+</command>
