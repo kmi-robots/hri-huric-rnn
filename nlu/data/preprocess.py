@@ -8,6 +8,7 @@ import numpy as np
 import spacy
 import csv
 from itertools import groupby
+from collections import defaultdict
 from spacy.gold import biluo_tags_from_offsets
 from sklearn.model_selection import StratifiedKFold
 import xml.etree.ElementTree as ET 
@@ -222,7 +223,7 @@ def huric_preprocess_eb(path, nlp):
         }, outfile)
 
 
-def huric_preprocess(path):
+def huric_preprocess(path, invoke_frame_slot=False):
     """Preprocess the huric dataset, provided by Danilo Croce"""
 
     def overlap(a, b):
@@ -234,14 +235,13 @@ def huric_preprocess(path):
     path_source = path + '/source'
 
     samples = []
-    intent_types = set()
     # a resume of how sentences are split into frames
     splitting_resume = {}
     slot_types = set()
     file_locations = {}
 
     # retrieve all the possible xml files in the three subfolders
-    for subfolder in ['GrammarGenerated', 'Robocup', 'S4R_Experiment']:
+    for subfolder in ['GrammarGenerated', 'S4R_Experiment', 'Robocup']:
         for filename in os.listdir('{}/{}/xml'.format(path_source, subfolder)):
             file_locations[filename] = subfolder
 
@@ -252,6 +252,7 @@ def huric_preprocess(path):
     file_locations.pop('2377.xml')
     file_locations.pop('2411.xml')
     file_locations.pop('3395.xml')
+    print('#files: ', len(file_locations))
 
     for filename, subfolder in sorted(file_locations.items()):
         tree = ET.parse('{}/{}/xml/{}'.format(path_source, subfolder, filename))
@@ -319,6 +320,12 @@ def huric_preprocess(path):
             # accumulator for all the tokens mentioned in the current frame
             frame_tokens_mentioned = frame.findall('lexicalUnit/token')
             slots_map = {}
+            if invoke_frame_slot:
+                slot_type = 'invoke_{}'.format(intent)
+                for count, token in enumerate(frame_tokens_mentioned):
+                    prefix = 'B' if not count else 'I'
+                    iob_label = '{}-{}'.format(prefix, slot_type)
+                    slots_map[int(token.attrib['id'])] = iob_label
             for frame_element in frame.findall('frameElement'):
                 slot_type = frame_element.attrib['type']
                 element_tokens = frame_element.findall('token')
@@ -359,7 +366,6 @@ def huric_preprocess(path):
             splitting_resume[filename]['semantic_frames'].append({'name': intent, 'words': ' '.join(words), 'slots': ' '.join(slots)})
 
             samples.append(sample)
-            intent_types.add(intent)
             slot_types.update(slots)
         #print(tokens_map)
         #print('new file')
@@ -367,11 +373,25 @@ def huric_preprocess(path):
     with open('{}/resume.json'.format(path), 'w') as outfile:
         json.dump(splitting_resume, outfile, indent=2)
 
-    # do the stratified split on 5 folds, fixing the random seed
     # remove samples with empty word list
     samples = [s for s in samples if len(s['words'])]
-    # the value of intent for each sample, necessary to perform the stratified split (keeping distribution of intents in splits)
+
+    # save all data together, for alexa
     intent_values = [s['intent'] for s in samples]
+    meta = {
+        'tokenizer': 'whitespace',
+        'language': 'en',
+        'intent_types': sorted(set(intent_values)),
+        'slot_types': sorted(slot_types)
+    }
+    with open('{}/preprocessed/all_samples.json'.format(path), 'w') as outfile:
+        json.dump({
+            'data': samples,
+            'meta': meta
+        }, outfile)
+
+    # do the stratified split on 5 folds, fixing the random seed
+    # the value of intent for each sample, necessary to perform the stratified split (keeping distribution of intents in splits)
     count_by_intent = {key:len(list(group)) for (key,group) in groupby(sorted(intent_values))}
     # remove intents that have less members than the number of splits to make StratifiedKFold work
     intent_remove = [key for (key, value) in count_by_intent.items() if value < 5]
@@ -379,47 +399,142 @@ def huric_preprocess(path):
     samples = [s for s in samples if not s['intent'] in intent_remove]
     intent_values = [s['intent'] for s in samples]
     dataset = np.array(samples)
-    slot_types = list(sorted(slot_types))
-    intent_types = list(sorted(intent_types))
     skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=dataset.size)
    
     meta = {
         'tokenizer': 'whitespace',
         'language': 'en',
-        'intent_types': intent_types,
-        'slot_types': slot_types
+        'intent_types': sorted(set(intent_values)),
+        'slot_types': sorted(slot_types)
     }
     if not os.path.exists('{}/preprocessed'.format(path)):
         os.makedirs('{}/preprocessed'.format(path))
 
-    delete_me_accumulator = []
     for i, (train_idx, test_idx) in enumerate(skf.split(np.zeros(len(intent_values)), intent_values)):
         #print(i, train_idx, test_idx)
         fold_data = dataset[test_idx]
-        """
-        # TODO real 5 folds:
-        if i < 2:
-            delete_me_accumulator.extend(fold_data.tolist())
-        elif i == 2:
-            delete_me_accumulator.extend(fold_data.tolist())
-            with open('{}/preprocessed/fold_{}.json'.format(path, i + 1), 'w') as outfile:
-                json.dump({
-                    'data': delete_me_accumulator,
-                    'meta': meta
-                }, outfile)
-        else:
-            with open('{}/preprocessed/fold_{}.json'.format(path, i + 1), 'w') as outfile:
-                json.dump({
-                    'data': fold_data.tolist(),
-                    'meta': meta
-                }, outfile)
-        """
         with open('{}/preprocessed/fold_{}.json'.format(path, i + 1), 'w') as outfile:
             json.dump({
                 'data': fold_data.tolist(),
                 'meta': meta
             }, outfile)
+
+def alexa_prepare(path, invocation_name):
+    """Creates the interaction model schema from the annotation scheme"""     
+    result = { # https://developer.amazon.com/docs/smapi/interaction-model-schema.html
+        'interactionModel': { # Conversational primitives for the skill
+            'languageModel': {
+                'invocationName': invocation_name,
+                'intents': [
+                    #{ 'name': 'AMAZON.FallbackIntent', 'samples': [] },
+                    { 'name': 'AMAZON.CancelIntent', 'samples': [] },
+                    { 'name': 'AMAZON.StopIntent', 'samples': [] },
+                    { 'name': 'AMAZON.HelpIntent', 'samples': [] },
+                    # {name,slots{name,type,samples},samples}
+                ],
+                'types': [] # custom types {name,values}
+            }
+            #'dialog': [], # Rules for conducting a multi-turn dialog with the user
+            #'prompts': [] # Cues to the user on behalf of the skill for eliciting data or providing feedback
+        }
+    }
+
+    preprocessed_location = '{}/preprocessed'.format(path)
+    fold_files = os.listdir(preprocessed_location)
+    # change here between fold_ or all_samples
+    fold_files = sorted([f for f in fold_files if f.startswith('all_samples')])
+
+    folds = []
+    for file_name in fold_files:
+        with open('{}/{}'.format(preprocessed_location, file_name)) as json_file:
+            folds.append(json.load(json_file))
+
+    all_samples = [s for fold in folds for s in fold['data']]
+    meta_data = folds[0]['meta']
+
+    sort_property = lambda sample: sample['intent']
+    samples_by_intent = {intent_name: list(group) for intent_name, group in groupby(sorted(all_samples, key=sort_property), key=sort_property)}
+    
+    # shortcuts
+    languageModel = result['interactionModel']['languageModel']
+    intents = languageModel['intents']
+    types = languageModel['types']
+
+    total_slot_substitutions = defaultdict(set)
+
+    for intent_type in meta_data['intent_types']:
+        intent_slots = set()
+        sample_sentences = set()
+        for sample in samples_by_intent[intent_type]:
+            slot_types = get_slot_types(sample['slots'])
+            intent_slots.update(slot_types)
+            templated_sentence, substitutions = get_templated_sentence(sample['words'], sample['slots'])
+            sample_sentences.add(templated_sentence)
+            for key, values in substitutions.items():
+                total_slot_substitutions[key].update(values)
+
         
+        intent_slots.discard('O')
+        intent = {'name': intent_type,
+            'slots':[{'name': slot, 'type': slot} for slot in intent_slots],
+            'samples': list(sample_sentences)
+        }
+        intents.append(intent)
+    
+    for key, values in total_slot_substitutions.items():
+        type = {'name': key, 'values': [{'name': {'value': value}} for value in values]}
+        types.append(type)
+
+    with open('{}/alexa/interactionModel.json'.format(path), 'w') as out_file:
+        json.dump(result, out_file)
+    
+
+def get_slot_types(iob_list):
+    result = []
+    for iob_label in iob_list:
+        parts = iob_label.split('-')
+        if len(parts) > 1:
+            # 'B-something' or 'I-something
+            result.append(parts[1])
+        else:
+            # 'O'
+            result.append(parts[0])
+    return result
+
+def get_templated_sentence(words, iob_list):
+    """Returns a sentence with 'slot values' replaced by '{types}' and a dict {type:['slot values']}"""
+    last_slot = None
+    result_sentence = ''
+    last_slot_surface = None
+    result_dict = defaultdict(list)
+    for idx, iob in enumerate(iob_list):
+        iob_parts = iob.split('-')
+        slot_type = iob_parts[1] if len(iob_parts) > 1 else None
+        if iob == 'O':
+            result_sentence += ' ' + words[idx]
+            if last_slot_surface:
+                result_dict[last_slot].append(sentence_fix(last_slot_surface))
+                last_slot_surface = None
+        elif iob.startswith('B-'):
+            result_sentence += ' {' + slot_type + '}'
+            if last_slot_surface:
+                result_dict[last_slot].append(sentence_fix(last_slot_surface))
+            last_slot_surface = words[idx]
+        else:
+            last_slot_surface += ' ' + words[idx]
+
+        last_slot = slot_type
+
+    if last_slot_surface:
+        result_dict[last_slot].append(sentence_fix(last_slot_surface))
+
+    return sentence_fix(result_sentence), result_dict
+
+def sentence_fix(sentence):
+    sentence = re.sub('\'s', 'is', sentence)
+    sentence =re.sub('^\s+', '', sentence)
+    return sentence
+
 
 
 def main():
@@ -431,7 +546,9 @@ def main():
     if which == 'huric_eb':
         huric_preprocess_eb('huric_eb', None)
     elif which == 'huric':
-        huric_preprocess('huric')
+        huric_preprocess('huric', False)
+
+    alexa_prepare('huric', 'office robot')
 
 
 if __name__ == '__main__':

@@ -3,7 +3,7 @@
 
 # Info
 
-This folder comes from HuRIC v1.2 provided by Danilo Corce (Tor Vergata)
+This folder comes from HuRIC v1.2 provided by Danilo Croce (Tor Vergata)
 
 http://sag.art.uniroma2.it/download/huric-corpus_v1-2/
 
