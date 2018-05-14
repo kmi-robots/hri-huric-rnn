@@ -57,7 +57,7 @@ class Model:
             self.previous_intent = tf.placeholder(tf.string, [batch_size], name='previous_intent')
         
 
-    def build(self, tokenizer='space', language='en'):
+    def build(self, nlp, tokenizer='space', language='en'):
         # get the tensor for batch size
         batch_size_tensor = tf.shape(self.words_inputs)[1]
 
@@ -71,7 +71,7 @@ class Model:
         if self.word_embeddings == 'random':
             self.wordsEmbedder = EmbeddingsFromScratch(input_vocab, 'words', self.input_embedding_size, True)
         else:
-            self.wordsEmbedder = FixedEmbeddings(tokenizer, language, self.word_embeddings)
+            self.wordsEmbedder = FixedEmbeddings(tokenizer, language, nlp)
         self.input_embedding_size = self.wordsEmbedder.embedding_size
         self.slotEmbedder = EmbeddingsFromScratch(slot_vocab, 'slot', self.embedding_size, True)
         print('intent vocab', intent_vocab)

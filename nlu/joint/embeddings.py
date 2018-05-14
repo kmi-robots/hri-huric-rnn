@@ -1,6 +1,6 @@
 import tensorflow as tf
 import numpy as np
-from .data import spacy_wrapper, get_language_model_name
+from .data import spacy_wrapper
 
 class EmbeddingsFromScratch(object):
   
@@ -83,12 +83,10 @@ class WhitespaceTokenizer(object):
 
 
 class FixedEmbeddings(object):
-    def __init__(self, tokenizer, language, word_embeddings):
+    def __init__(self, tokenizer, language, nlp):
         self.language = language
-        language_model_name = get_language_model_name(language, word_embeddings)
 
-        import spacy
-        self.nlp = spacy.load(language_model_name)
+        self.nlp = nlp
         if self.language == 'it' and False:
             # load the pretrained glove italian vectors, changing False on previous line
             # glove_wiki_it or glove_wiki_it_whitespace for old pretrained by http://hlt.isti.cnr.it/wordembeddings/
@@ -101,7 +99,6 @@ class FixedEmbeddings(object):
             # context vectors only
             self.embedding_size = 384
 
-        print('tokenizer:', tokenizer, 'language_model_name:', language_model_name)
         if tokenizer == 'space':
             self.nlp.tokenizer = WhitespaceTokenizer(self.nlp.vocab)
 
