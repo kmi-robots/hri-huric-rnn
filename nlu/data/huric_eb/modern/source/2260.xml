@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2260">
+	<sentence>go to the sofa and search for the pillow</sentence>
+	<tokens>
+		<token id="1" lemma="go" pos="VB" surface="go"/>
+		<token id="2" lemma="to" pos="TO" surface="to"/>
+		<token id="3" lemma="the" pos="DT" surface="the"/>
+		<token id="4" lemma="sofa" pos="NN" surface="sofa"/>
+		<token id="5" lemma="and" pos="CC" surface="and"/>
+		<token id="6" lemma="search" pos="VB" surface="search"/>
+		<token id="7" lemma="for" pos="IN" surface="for"/>
+		<token id="8" lemma="the" pos="DT" surface="the"/>
+		<token id="9" lemma="pillow" pos="NN" surface="pillow"/>
+	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="1" to="2" type="prep"/>
+		<dep from="4" to="3" type="det"/>
+		<dep from="2" to="4" type="pobj"/>
+		<dep from="1" to="5" type="cc"/>
+		<dep from="1" to="6" type="conj"/>
+		<dep from="6" to="7" type="prep"/>
+		<dep from="9" to="8" type="det"/>
+		<dep from="7" to="9" type="pobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Motion">
+				<lexicalUnit>
+					<token id="1"/>
+				</lexicalUnit>
+				<frameElement type="Goal">
+					<token id="2"/>
+					<token id="3"/>
+					<token id="4"/>
+				</frameElement>
+			</frame>
+			<frame name="Searching">
+				<lexicalUnit>
+					<token id="6"/>
+				</lexicalUnit>
+				<frameElement type="Phenomenon">
+					<token id="7"/>
+					<token id="8"/>
+					<token id="9"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

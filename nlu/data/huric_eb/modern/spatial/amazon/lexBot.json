@@ -1,0 +1,456 @@
+{
+  "metadata": {
+    "schemaVersion": "1.0",
+    "importType": "LEX",
+    "importFormat": "JSON"
+  },
+  "resource": {
+    "name": "spatial_EB",
+    "version": "$LATEST",
+    "intents": [
+      {
+        "name": "Spatial_relation",
+        "slots": [
+          {
+            "name": "Landmark",
+            "slotConstraint": "Optional",
+            "slotType": "Landmark"
+          },
+          {
+            "name": "Spatial_Indicator",
+            "slotConstraint": "Optional",
+            "slotType": "Spatial_Indicator"
+          },
+          {
+            "name": "Trajector",
+            "slotConstraint": "Optional",
+            "slotType": "Trajector"
+          }
+        ],
+        "version": "$LATEST",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "a diningroom with {Trajector} {Spatial_Indicator} {Landmark} with six chairs",
+          "a double bedroom with {Trajector} {Spatial_Indicator} {Landmark}",
+          "from {Trajector} {Spatial_Indicator} {Landmark}",
+          "here and put them on {Trajector} {Spatial_Indicator} {Landmark}",
+          "in one of {Trajector} {Spatial_Indicator} {Landmark}",
+          "in {Trajector} {Spatial_Indicator} {Landmark}",
+          "near {Trajector} {Spatial_Indicator}",
+          "near {Trajector} {Spatial_Indicator} {Landmark}",
+          "on {Trajector} {Spatial_Indicator} {Landmark}",
+          "the bathroom and go towards {Trajector} {Spatial_Indicator}",
+          "the bedroom with a double bed with {Trajector} {Spatial_Indicator} {Landmark}",
+          "to {Trajector} {Spatial_Indicator}",
+          "to {Trajector} {Spatial_Indicator} {Landmark}",
+          "you are in the bedroom and {Trajector} is {Spatial_Indicator} {Landmark}",
+          "you go to the bedroom and take {Trajector} {Spatial_Indicator} {Landmark}",
+          "{Spatial_Indicator} {Landmark} there are {Trajector}",
+          "{Trajector} are {Spatial_Indicator} {Landmark}",
+          "{Trajector} is {Spatial_Indicator}",
+          "{Trajector} is {Spatial_Indicator} {Landmark}",
+          "{Trajector} that is {Spatial_Indicator} {Landmark}",
+          "{Trajector} which is {Spatial_Indicator} {Landmark}",
+          "{Trajector} {Spatial_Indicator}",
+          "{Trajector} {Spatial_Indicator} {Landmark}",
+          "{Trajector} {Spatial_Indicator} {Landmark} and bring it",
+          "{Trajector} {Spatial_Indicator} {Landmark} and put them"
+        ]
+      }
+    ],
+    "slotTypes": [
+      {
+        "name": "Landmark",
+        "enumerationValues": [
+          {
+            "value": "a very big bathroom"
+          },
+          {
+            "value": "it"
+          },
+          {
+            "value": "me"
+          },
+          {
+            "value": "my bedroom"
+          },
+          {
+            "value": "the bathroom"
+          },
+          {
+            "value": "the bed"
+          },
+          {
+            "value": "the bedroom"
+          },
+          {
+            "value": "the bedside table"
+          },
+          {
+            "value": "the console"
+          },
+          {
+            "value": "the corridor"
+          },
+          {
+            "value": "the couch"
+          },
+          {
+            "value": "the counter"
+          },
+          {
+            "value": "the cutting board"
+          },
+          {
+            "value": "the desk"
+          },
+          {
+            "value": "the desktop"
+          },
+          {
+            "value": "the dining room"
+          },
+          {
+            "value": "the dining table"
+          },
+          {
+            "value": "the fridge"
+          },
+          {
+            "value": "the kitchen"
+          },
+          {
+            "value": "the kitchen door"
+          },
+          {
+            "value": "the kitchen table"
+          },
+          {
+            "value": "the living room"
+          },
+          {
+            "value": "the nightstand"
+          },
+          {
+            "value": "the pc"
+          },
+          {
+            "value": "the phone"
+          },
+          {
+            "value": "the recorder"
+          },
+          {
+            "value": "the refrigerator"
+          },
+          {
+            "value": "the shower"
+          },
+          {
+            "value": "the studio"
+          },
+          {
+            "value": "the table"
+          },
+          {
+            "value": "the wall"
+          },
+          {
+            "value": "the window"
+          },
+          {
+            "value": "there"
+          },
+          {
+            "value": "this room"
+          },
+          {
+            "value": "two lamps"
+          },
+          {
+            "value": "you"
+          }
+        ]
+      },
+      {
+        "name": "Spatial_Indicator",
+        "enumerationValues": [
+          {
+            "value": "at the left of"
+          },
+          {
+            "value": "at the right of"
+          },
+          {
+            "value": "at your left"
+          },
+          {
+            "value": "behind"
+          },
+          {
+            "value": "between"
+          },
+          {
+            "value": "from"
+          },
+          {
+            "value": "in"
+          },
+          {
+            "value": "in front of"
+          },
+          {
+            "value": "in the center of"
+          },
+          {
+            "value": "inside"
+          },
+          {
+            "value": "near"
+          },
+          {
+            "value": "nearest to"
+          },
+          {
+            "value": "next to"
+          },
+          {
+            "value": "of"
+          },
+          {
+            "value": "on"
+          },
+          {
+            "value": "on the left"
+          },
+          {
+            "value": "on the left hand side"
+          },
+          {
+            "value": "on the left of"
+          },
+          {
+            "value": "on the left side"
+          },
+          {
+            "value": "on the right"
+          },
+          {
+            "value": "on the right side of"
+          },
+          {
+            "value": "on your left"
+          },
+          {
+            "value": "on your right side"
+          },
+          {
+            "value": "over"
+          }
+        ]
+      },
+      {
+        "name": "Trajector",
+        "enumerationValues": [
+          {
+            "value": "a lot of couches"
+          },
+          {
+            "value": "a radio"
+          },
+          {
+            "value": "a table"
+          },
+          {
+            "value": "a table of glass"
+          },
+          {
+            "value": "four pictures"
+          },
+          {
+            "value": "my book"
+          },
+          {
+            "value": "my catalogue"
+          },
+          {
+            "value": "my towel"
+          },
+          {
+            "value": "my trousers"
+          },
+          {
+            "value": "one apple"
+          },
+          {
+            "value": "six chairs"
+          },
+          {
+            "value": "some bread"
+          },
+          {
+            "value": "that guy"
+          },
+          {
+            "value": "the bath-tub"
+          },
+          {
+            "value": "the bed"
+          },
+          {
+            "value": "the beer cans"
+          },
+          {
+            "value": "the beer pack"
+          },
+          {
+            "value": "the bench"
+          },
+          {
+            "value": "the black cushion"
+          },
+          {
+            "value": "the bottle"
+          },
+          {
+            "value": "the bottle of water"
+          },
+          {
+            "value": "the box"
+          },
+          {
+            "value": "the brown envelope"
+          },
+          {
+            "value": "the case"
+          },
+          {
+            "value": "the chair"
+          },
+          {
+            "value": "the cigarettes"
+          },
+          {
+            "value": "the closet"
+          },
+          {
+            "value": "the coffee table"
+          },
+          {
+            "value": "the coke"
+          },
+          {
+            "value": "the corn can"
+          },
+          {
+            "value": "the couch"
+          },
+          {
+            "value": "the counter"
+          },
+          {
+            "value": "the curtains"
+          },
+          {
+            "value": "the cushion"
+          },
+          {
+            "value": "the door"
+          },
+          {
+            "value": "the drawers"
+          },
+          {
+            "value": "the fridge"
+          },
+          {
+            "value": "the glass table"
+          },
+          {
+            "value": "the jacket hook"
+          },
+          {
+            "value": "the knife"
+          },
+          {
+            "value": "the lamp"
+          },
+          {
+            "value": "the laptop"
+          },
+          {
+            "value": "the magazine"
+          },
+          {
+            "value": "the mug"
+          },
+          {
+            "value": "the pc"
+          },
+          {
+            "value": "the person"
+          },
+          {
+            "value": "the phone"
+          },
+          {
+            "value": "the pillow"
+          },
+          {
+            "value": "the postcard"
+          },
+          {
+            "value": "the sink"
+          },
+          {
+            "value": "the sofa"
+          },
+          {
+            "value": "the table"
+          },
+          {
+            "value": "the taps"
+          },
+          {
+            "value": "the television"
+          },
+          {
+            "value": "the window"
+          },
+          {
+            "value": "two lights"
+          },
+          {
+            "value": "two sinks"
+          },
+          {
+            "value": "you"
+          }
+        ]
+      }
+    ],
+    "voiceId": "Salli",
+    "childDirected": false,
+    "locale": "en-US",
+    "idleSessionTTLInSeconds": 300,
+    "clarificationPrompt": {
+      "messages": [
+        {
+          "contentType": "PlainText",
+          "content": "Sorry, can you please rephrase that?"
+        }
+      ],
+      "maxAttempts": 5
+    },
+    "abortStatement": {
+      "messages": [
+        {
+          "contentType": "PlainText",
+          "content": "Sorry, I could not understand. Goodbye."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="3150">
+	<sentence>there are some napkins on the kitchen table can you bring them here</sentence>
+	<tokens>
+		<token id="1" lemma="there" pos="EX" surface="there"/>
+		<token id="2" lemma="be" pos="VB" surface="are"/>
+		<token id="3" lemma="some" pos="DT" surface="some"/>
+		<token id="4" lemma="napkin" pos="NNS" surface="napkins"/>
+		<token id="5" lemma="on" pos="IN" surface="on"/>
+		<token id="6" lemma="the" pos="DT" surface="the"/>
+		<token id="7" lemma="kitchen" pos="NN" surface="kitchen"/>
+		<token id="8" lemma="table" pos="NN" surface="table"/>
+		<token id="9" lemma="can" pos="MD" surface="can"/>
+		<token id="10" lemma="you" pos="PRP" surface="you"/>
+		<token id="11" lemma="bring" pos="VB" surface="bring"/>
+		<token id="12" lemma="they" pos="PRP" surface="them"/>
+		<token id="13" lemma="here" pos="RB" surface="here"/>
+	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="expl"/>
+		<dep from="0" to="2" type="root"/>
+		<dep from="4" to="3" type="det"/>
+		<dep from="2" to="4" type="nsubj"/>
+		<dep from="2" to="5" type="prep"/>
+		<dep from="8" to="6" type="det"/>
+		<dep from="8" to="7" type="nn"/>
+		<dep from="5" to="8" type="pobj"/>
+		<dep from="11" to="9" type="aux"/>
+		<dep from="11" to="10" type="nsubj"/>
+		<dep from="2" to="11" type="conj"/>
+		<dep from="11" to="12" type="dobj"/>
+		<dep from="11" to="13" type="advmod"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Being_located">
+				<lexicalUnit>
+					<token id="1"/>
+					<token id="2"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="3"/>
+					<token id="4"/>
+				</frameElement>
+				<frameElement type="Location">
+					<token id="5"/>
+					<token id="6"/>
+					<token id="7"/>
+					<token id="8"/>
+				</frameElement>
+			</frame>
+			<frame name="Bringing">
+				<lexicalUnit>
+					<token id="11"/>
+				</lexicalUnit>
+				<frameElement type="Agent">
+					<token id="10"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="12"/>
+				</frameElement>
+				<frameElement type="Goal">
+					<token id="13"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

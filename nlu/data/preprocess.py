@@ -12,6 +12,7 @@ from itertools import groupby
 from collections import defaultdict
 from sklearn.model_selection import StratifiedKFold
 import xml.etree.ElementTree as ET
+from xml.dom import minidom
 
 n_folds = 3
 ALEXA_FILE_NAME = 'alexaInteractionModel.json'
@@ -19,7 +20,7 @@ LEX_FILE_NAME = 'lexBot.json'
 LEX_ZIP_NAME = 'lexBot.zip'
 
 
-def huric_preprocess(path, subfolder, invoke_frame_slot=False):
+def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
     """Preprocess the huric dataset, provided by Danilo Croce
     invoke_frame_slot adds a slot fot the lexical unit of invocation of the frame
     """
@@ -30,7 +31,10 @@ def huric_preprocess(path, subfolder, invoke_frame_slot=False):
     def covers(a, b):
         return (a['max'] >= b['max']) and (a['min'] <= b['min'])
 
-    path_source = path + '/source/' + subfolder
+    if subfolder:
+        path_source = path + '/source/' + subfolder
+    else:
+        path_source = path + '/source'
 
     samples = []
     spatial_samples = []
@@ -42,26 +46,44 @@ def huric_preprocess(path, subfolder, invoke_frame_slot=False):
     """ subfolder is a parameter of this function
     # retrieve all the possible xml files in the three subfolders
     for subfolder in ['GrammarGenerated', 'S4R_Experiment', 'Robocup']:
-        for filename in os.listdir('{}/{}/xml'.format(path_source, subfolder)):
-            file_locations[filename] = subfolder
+        for file_name in os.listdir('{}/{}/xml'.format(path_source, subfolder)):
+            file_locations[file_name] = subfolder
     """
-    files_list = os.listdir('{}/xml'.format(path_source))
+    if subfolder:
+        files_list = os.listdir('{}/xml'.format(path_source))
+    else:
+        files_list = os.listdir(path_source)
 
     # TODO remove this
-    for forbidden in ['2307.xml', '2353.xml', '2374.xml', '2377.xml', '2411.xml', '3395.xml', '3281.xml', '3283.xml', '3284.xml']:
+    # 2307: nested frame (no problem, discarded) 
+    # 2374: frames swapped
+    # 2377: nested frame (no problem, discarded)
+    # 2411: nested frame (no problem, discarded)
+    # 3395: nested frame (no problem, discarded)
+    # 3281, 3283, 3284: spatial problem
+    # 
+
+    for forbidden in ['2374.xml', '3281.xml', '3283.xml', '3284.xml']:
         if forbidden in files_list:
             files_list.remove(forbidden)
     print('#files: ', len(files_list))
 
-    for filename in sorted(files_list):
-        tree = ET.parse('{}/xml/{}'.format(path_source, filename))
+    for file_name in sorted(files_list):
+        if subfolder:
+            file_location = '{}/xml/{}'.format(path_source, file_name)
+        else:
+            file_location = '{}/{}'.format(path_source, file_name)
+        #print(file_location)
+        with open(file_location) as file_in:
+            tree = ET.parse(file_in)
+        
         root = tree.getroot()
 
         # read the tokens, saving in a map indexed by the id
         tokens_map = {int(sc.attrib['id']): sc.attrib['surface']
                       for sc in root.findall('tokens/token')}
 
-        splitting_resume[filename] = {'all_words': ' '.join(
+        splitting_resume[file_name] = {'all_words': ' '.join(
             [value for (key, value) in tokens_map.items()]), 'semantic_frames': []}
 
         # remember where the last semantic frame is beginning
@@ -100,14 +122,14 @@ def huric_preprocess(path, subfolder, invoke_frame_slot=False):
             slots = [slot['iob_label'] for slot in slots_objects]
             start_of_frame = max_token_id + 1
             if not len(words):
-                print('WARNING: len 0 for', frame_tokens_mentioned, tokens_map, frame_tokens, filename)
+                print('WARNING: len 0 for', intent, frame_tokens_mentioned, tokens_map, 'expected in [{},{}]'.format(start_of_frame, max_token_id) , file_name)
             sample = {'words': words,
                       'intent': intent,
                       'length': len(words),
                       'slots': slots,
-                      'file': filename}
+                      'file': file_name}
 
-            splitting_resume[filename]['semantic_frames'].append(
+            splitting_resume[file_name]['semantic_frames'].append(
                 {'name': intent, 'words': ' '.join(words), 'slots': ' '.join(slots)})
 
             samples.append(sample)
@@ -140,30 +162,33 @@ def huric_preprocess(path, subfolder, invoke_frame_slot=False):
             min_token_id, max_token_id = min(frame_tokens_mentioned), max(frame_tokens_mentioned)
             frame_element_min, frame_element_max = slots_map[min_token_id]['slot_type'], slots_map[max_token_id]['slot_type']
             if frame_element_min != frame_element_max:
-                print('Something is wrong: spatial frame is not contained in a single frame element: ', frame_tokens_mentioned, filename)
+                print('INFO: spatial relation spans multiple frame elements: ', frame_tokens_mentioned, file_name)
             
             parent_start, parent_end = tokenId_by_slotType[frame_element_min][0], tokenId_by_slotType[frame_element_max][-1]
             frame_tokens = {key: value for (key, value) in tokens_map.items() if int(key) >= parent_start and int(key) <= parent_end}
             words = [value for (key, value) in frame_tokens.items()]
             slots = [spatial_slots.get(key, 'O') for (key, value) in frame_tokens.items()]
             if not len(words):
-                print('WARNING: len 0 for', frame_tokens_mentioned, tokens_map, frame_tokens, filename)
+                print('WARNING: len 0 for', spatial_frame_name, frame_tokens_mentioned, tokens_map, 'expected in [{},{}]'.format(parent_start, parent_end) , file_name, ' --> frame will be discarded')
             sample = {'words': words,
                       'intent': spatial_frame_name,
                       'length': len(words),
                       'slots': slots,
-                      'file': filename}
+                      'file': file_name}
 
 
             spatial_samples.append(sample)
             spatial_slot_types.update(slots)
 
-    write_json(path, 'resume.json', splitting_resume)
+    #write_json(path, 'resume.json', splitting_resume)
 
     # remove samples with empty word list
     samples = [s for s in samples if len(s['words'])]
 
-    out_path = '{}/{}'.format(path, subfolder)
+    if subfolder:
+        out_path = '{}/{}'.format(path, subfolder)
+    else:
+        out_path = path
     out_path_preprocessed = '{}/preprocessed'.format(out_path)
 
     # save all data together, for alexa
@@ -205,7 +230,7 @@ def huric_preprocess(path, subfolder, invoke_frame_slot=False):
     # StratifiedKFold work
     intent_remove = [
         key for (key, value) in count_by_intent.items() if value < n_folds]
-    print('removing samples with the following intents:', intent_remove)
+    print('removing samples with the following intents:', intent_remove, 'reason: #samples < #folds')
     samples = [s for s in samples if not s['intent'] in intent_remove]
     intent_values = [s['intent'] for s in samples]
     dataset = np.array(samples)
@@ -237,13 +262,7 @@ def alexa_prepare(path, invocation_name):
         'interactionModel': {  # Conversational primitives for the skill
             'languageModel': {
                 'invocationName': invocation_name,
-                'intents': [
-                    #{ 'name': 'AMAZON.FallbackIntent', 'samples': [] },
-                    {'name': 'AMAZON.CancelIntent', 'samples': []},
-                    {'name': 'AMAZON.StopIntent', 'samples': []},
-                    {'name': 'AMAZON.HelpIntent', 'samples': []},
-                    # {name,slots{name,type,samples},samples}
-                ],
+                'intents': [],
                 'types': []  # custom types {name,values}
             }
             #'dialog': [], # Rules for conducting a multi-turn dialog with the user
@@ -266,7 +285,13 @@ def alexa_prepare(path, invocation_name):
 
     # shortcuts
     languageModel = result['interactionModel']['languageModel']
-    intents = []
+    intents = [
+        #{ 'name': 'AMAZON.FallbackIntent', 'samples': [] },
+        {'name': 'AMAZON.CancelIntent', 'samples': []},
+        {'name': 'AMAZON.StopIntent', 'samples': []},
+        {'name': 'AMAZON.HelpIntent', 'samples': []},
+        # {name,slots{name,type,samples},samples}
+    ]
     types = []
 
     total_slot_substitutions = defaultdict(set)
@@ -298,7 +323,7 @@ def alexa_prepare(path, invocation_name):
     languageModel['intents'] = sorted(intents, key=lambda k: k['name'])
     languageModel['types'] = sorted(types, key=lambda k: k['name'])
 
-    write_json(path, ALEXA_FILE_NAME, result)
+    write_json('{}/amazon'.format(path), ALEXA_FILE_NAME, result)
 
 
 def get_slot_types(iob_list):
@@ -346,6 +371,8 @@ def get_templated_sentence(words, iob_list):
 
 def sentence_fix(sentence):
     sentence = re.sub('\'s', 'is', sentence)
+    sentence = re.sub('\'m', 'am', sentence)
+    sentence = re.sub('\'d', 'would', sentence)
     sentence = re.sub('^\s+', '', sentence)
     return sentence
 
@@ -446,12 +473,91 @@ def combine_and_save(results, path):
     write_json(out_path, 'all_samples.json', merged)
 
 def write_json(out_path, file_name, serializable_content):
-    """Creates a file with `filename` on the `path` (checked for existence or created)
+    """Creates a file with `file_name` on the `path` (checked for existence or created)
     with the following json content"""
     if not os.path.exists(out_path):
         os.makedirs(out_path)
     with open('{}/{}'.format(out_path, file_name), 'w') as outfile:
         json.dump(serializable_content, outfile, indent=2)
+
+def modernize_huric_xml(source_path, dest_path):
+    """Translates from the old schema to the new one"""
+
+    def get_new_id(old_id):
+        return old_id.split('.')[3]
+    
+    def get_constituents(string):
+        if not string:
+            return []
+        return [get_new_id(old_id) for old_id in string.split(' ')]
+    
+    files_list = os.listdir('{}'.format(source_path))
+    if not os.path.exists(dest_path):
+        os.makedirs(dest_path)
+    
+    for file_name in sorted(files_list):
+        src_tree = ET.parse('{}/{}'.format(source_path, file_name))
+        src_root = src_tree.getroot()
+        xdg = src_root.find('PARAGRAPHS/P/XDGS/XDG')
+        command_id = xdg.attrib['oldID']
+        tokens = [{
+            'id': get_new_id(src_token.attrib['serializerID']),
+            'surface':src_token.attrib['surface'],
+            'pos': src_token.attrib['sctype'],
+            'lemma': src_token.find('LEMMAS/LM').attrib['surface']
+        } for src_token in xdg.findall('CSTS/SC')]
+        sentence = ' '.join([t['surface'] for t in tokens])
+        dependencies = [{
+            'from': src_dep.attrib['fromId'],
+            'to': src_dep.attrib['toId'],
+            'type': src_dep.attrib['type']
+        } for src_dep in xdg.findall('ICDS/ICD')]
+        frames = [{
+            'name': src_frame.attrib['name'],
+            'lexical_units': get_constituents(src_frame.find('constituentList').text),
+            'frame_elements': [{
+                'type': old_arg.attrib['argumentType'],
+                'tokens': get_constituents(old_arg.find('constituentList').text)
+            } for old_arg in src_frame.findall('ARGS/sem_arg')]
+        } for src_frame in xdg.findall('interpretations/interpretationList/item')]
+        # now generate the new xml
+        new_command = ET.Element('command', {'id': command_id})
+        ET.SubElement(new_command, 'sentence').text = sentence
+        new_tokens = ET.SubElement(new_command, 'tokens')
+        for token in tokens:
+            ET.SubElement(new_tokens, 'token', token)
+        new_dependencies = ET.SubElement(new_command, 'dependencies')
+        for dependency in dependencies:
+            ET.SubElement(new_dependencies, 'dep', dependency)
+        new_semantics = ET.SubElement(new_command, 'semantics')
+        new_semantic_frames = ET.SubElement(new_semantics, 'frameSemantics')
+        new_spatial_frames = ET.SubElement(new_semantics, 'spatialSemantics')
+        for frame in frames:
+            if frame['name'] == 'Spatial_relation':
+                frame_father = new_spatial_frames
+                new_frame_name = 'spatialRelation'
+                new_frame_element_name = 'spatialRole'
+            else:
+                frame_father = new_semantic_frames
+                new_frame_name = 'frame'
+                new_frame_element_name = 'frameElement'
+            new_frame = ET.SubElement(frame_father, new_frame_name, {'name': frame['name']})
+            new_lexical_unit = ET.SubElement(new_frame, 'lexicalUnit')
+            for token_id in frame['lexical_units']:
+                ET.SubElement(new_lexical_unit, 'token', {'id': token_id})
+            for frame_element in frame['frame_elements']:
+                new_frame_element = ET.SubElement(new_frame, new_frame_element_name, {'type': frame_element['type']})
+                for token_id in frame_element['tokens']:
+                    ET.SubElement(new_frame_element, 'token', {'id': token_id})
+        # generate pretty XML
+        pretty_string = minidom.parseString(ET.tostring(new_command, 'utf-8')).toprettyxml(encoding='utf-8').decode('utf-8')
+        with open('{}/{}'.format(dest_path, file_name), 'w') as out_file:
+            out_file.write(pretty_string)
+
+        #tree = ET.ElementTree(new_command)
+        #with open('{}/{}'.format(dest_path, file_name), 'w', encoding='utf-8') as out_file:
+        #    tree.write(out_file, encoding='unicode')
+
 
 def main():
     #nlp_en = load_nlp()
@@ -459,24 +565,32 @@ def main():
     which = os.environ.get('DATASET', None)
     print(which)
 
-    if which == 'huric':
+    if which == 'huric_tor':
         subfolder_results = []
         subfolder_spatial_results = []
         for subfolder in ['GrammarGenerated', 'S4R_Experiment', 'Robocup']:
-            res, spatial_res = huric_preprocess('huric', subfolder, False)
+            res, spatial_res = huric_preprocess('huric_tor', subfolder, False)
             subfolder_results.append(res)
             subfolder_spatial_results.append(spatial_res)
-            alexa_prepare('huric/{}'.format(subfolder), 'office robot {}'.format(subfolder))
-            alexa_prepare('huric/{}/spatial'.format(subfolder), 'office robot spatial {}'.format(subfolder))
-            lex_from_alexa('huric/{}/'.format(subfolder), 'kmi_{}'.format(subfolder))
-            lex_from_alexa('huric/{}/spatial'.format(subfolder), 'spatial_{}'.format(subfolder))
+            alexa_prepare('huric_tor/{}'.format(subfolder), 'office robot {}'.format(subfolder))
+            alexa_prepare('huric_tor/{}/spatial'.format(subfolder), 'office robot spatial {}'.format(subfolder))
+            lex_from_alexa('huric_tor/{}/'.format(subfolder), 'kmi_{}'.format(subfolder))
+            lex_from_alexa('huric_tor/{}/spatial'.format(subfolder), 'spatial_{}'.format(subfolder))
         
-        combine_and_save(subfolder_results, 'huric/combined')
-        combine_and_save(subfolder_spatial_results, 'huric/combined/spatial')
-        alexa_prepare('huric/combined', 'office robot')
-        alexa_prepare('huric/combined/spatial', 'office robot spatial')
-        lex_from_alexa('huric/combined', 'kmi')
-        lex_from_alexa('huric/combined/spatial', 'spatial')
+        combine_and_save(subfolder_results, 'huric_tor/combined')
+        combine_and_save(subfolder_spatial_results, 'huric_tor/combined/spatial')
+        alexa_prepare('huric_tor/combined', 'office robot')
+        alexa_prepare('huric_tor/combined/spatial', 'office robot spatial')
+        lex_from_alexa('huric_tor/combined', 'kmi')
+        lex_from_alexa('huric_tor/combined/spatial', 'spatial')
+
+    elif which == 'huric_eb':
+        modernize_huric_xml('huric_eb/source', 'huric_eb/modern/source')
+        res, spatial_res = huric_preprocess('huric_eb/modern', None, False)
+        alexa_prepare('huric_eb/modern', 'office robot')
+        alexa_prepare('huric_eb/modern/spatial', 'office robot spatial')
+        lex_from_alexa('huric_eb/modern/amazon', 'kmi_EB')
+        lex_from_alexa('huric_eb/modern/spatial/amazon', 'spatial_EB')
 
 
 if __name__ == '__main__':

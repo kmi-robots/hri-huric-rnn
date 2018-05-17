@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="3130">
+	<sentence>take a coffee mug</sentence>
+	<tokens>
+		<token id="1" lemma="take" pos="VB" surface="take"/>
+		<token id="2" lemma="a" pos="DT" surface="a"/>
+		<token id="3" lemma="coffee" pos="NN" surface="coffee"/>
+		<token id="4" lemma="mug" pos="NN" surface="mug"/>
+	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="4" to="2" type="det"/>
+		<dep from="4" to="3" type="nn"/>
+		<dep from="1" to="4" type="dobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Taking">
+				<lexicalUnit>
+					<token id="1"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="2"/>
+					<token id="3"/>
+					<token id="4"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

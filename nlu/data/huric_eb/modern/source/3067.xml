@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="3067">
+	<sentence>go in the dining room and remove the tablecloth</sentence>
+	<tokens>
+		<token id="1" lemma="go" pos="VB" surface="go"/>
+		<token id="2" lemma="in" pos="IN" surface="in"/>
+		<token id="3" lemma="the" pos="DT" surface="the"/>
+		<token id="4" lemma="dining" pos="NN" surface="dining"/>
+		<token id="5" lemma="room" pos="NN" surface="room"/>
+		<token id="6" lemma="and" pos="CC" surface="and"/>
+		<token id="7" lemma="remove" pos="VB" surface="remove"/>
+		<token id="8" lemma="the" pos="DT" surface="the"/>
+		<token id="9" lemma="tablecloth" pos="NN" surface="tablecloth"/>
+	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="1" to="2" type="prep"/>
+		<dep from="5" to="3" type="det"/>
+		<dep from="5" to="4" type="nn"/>
+		<dep from="2" to="5" type="pobj"/>
+		<dep from="1" to="6" type="cc"/>
+		<dep from="1" to="7" type="conj"/>
+		<dep from="9" to="8" type="det"/>
+		<dep from="7" to="9" type="dobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Motion">
+				<lexicalUnit>
+					<token id="1"/>
+				</lexicalUnit>
+				<frameElement type="Goal">
+					<token id="2"/>
+					<token id="3"/>
+					<token id="4"/>
+					<token id="5"/>
+				</frameElement>
+			</frame>
+			<frame name="Taking">
+				<lexicalUnit>
+					<token id="7"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="8"/>
+					<token id="9"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>
