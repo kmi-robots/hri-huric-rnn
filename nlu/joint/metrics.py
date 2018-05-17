@@ -84,3 +84,20 @@ def f1_slots(true_slots_batch, pred_slots_batch):
     except ZeroDivisionError:
         f1 = 0
     return f1
+
+def f1_slots_conditioned_intent(true_slots_batch, pred_slots_batch, true_intents_batch, pred_intents_batch):
+    """compute f1 from lists of slots, unordered. As what is said in 'What is left to be understood in ATIS'"""
+    true_positives_count = true_slots_count = found_slots_count = 0
+    for true_slots, pred_slots, true_intent, pred_intent in zip(true_slots_batch, pred_slots_batch, true_intents_batch, pred_intents_batch):
+        for ts in true_slots:
+            if ts in pred_slots and true_intent == pred_intent:
+                true_positives_count += 1
+        true_slots_count += len(true_slots)
+        found_slots_count += len(pred_slots)
+    try:
+        recall = true_positives_count / true_slots_count
+        precision = true_positives_count / found_slots_count
+        f1 = (2 * recall * precision) / (recall + precision)
+    except ZeroDivisionError:
+        f1 = 0
+    return f1

@@ -105,7 +105,8 @@ def train(mode):
         'intent_f1': np.zeros((epoch_num)),
         'slot_sequence_f1': np.zeros((epoch_num)),
         #'intent_accuracy': np.zeros((epoch_num)), # accuracy on single-label classification tasks is the same as micro-f1
-        'slots_f1': np.zeros((epoch_num)) # value+role+entity comparison
+        'slots_f1': np.zeros((epoch_num)), # value+role+entity comparison
+        'slots_f1_cond': np.zeros((epoch_num)) # value+role+entity comparison conditioned to correct intent
     }
 
     for fold_number in range(0, len(folds)):
@@ -206,14 +207,17 @@ def train(mode):
                 #print(true_slots)
                 #print(pred_slots)
                 f1_slots = metrics.f1_slots(true_slots, pred_slots)
+                f1_slots_cond = metrics.f1_slots_conditioned_intent(true_slots, pred_slots, true_intents, pred_intents)
                 # print("true_slots_iob: ", true_slots_iob.shape)
                 print('epoch {} ended'.format(epoch))
                 print("F1 score SEQUENCE for epoch {}: {}".format(epoch, f1_slots_iob))
                 print("F1 score INTENTS for epoch {}: {}".format(epoch, f1_intents))
                 print("F1 SLOTS for epoch {}: {}".format(epoch, f1_slots))
+                print("F1 SLOTS COND for epoch {}: {}".format(epoch, f1_slots_cond))
                 history['intent_f1'][epoch] += f1_intents
                 history['slot_sequence_f1'][epoch] += f1_slots_iob
                 history['slots_f1'][epoch] += f1_slots
+                history['slots_f1_cond'][epoch] += f1_slots_cond
 
                 if multi_turn:
                     # evaluate the intent transitions in samples and the transition inferred
