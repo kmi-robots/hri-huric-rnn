@@ -1,29 +1,9 @@
 import numpy as np
 import numpy.ma as ma
-from sklearn.metrics import f1_score
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import f1_score, precision_recall_fscore_support
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-
-
-def accuracy_score(true_data, pred_data, true_length=None):
-    true_data = np.array(true_data)
-    pred_data = np.array(pred_data)
-    assert true_data.shape == pred_data.shape
-    if true_length is not None:
-        val_num = np.sum(true_length)
-        assert val_num != 0
-        res = 0
-        for i in range(true_data.shape[0]):
-            res += np.sum(true_data[i, :true_length[i]] == pred_data[i, :true_length[i]])
-    else:
-        val_num = np.prod(true_data.shape)
-        assert val_num != 0
-        res = np.sum(true_data == pred_data)
-    res /= float(val_num)
-    return res
-
 
 def get_data_from_sequence_batch(true_batch, pred_batch, eos_token):
     """Extract data from a batch of sequences：
@@ -39,34 +19,17 @@ def get_data_from_sequence_batch(true_batch, pred_batch, eos_token):
         pred_ma.extend(pred.tolist())
     return true_ma, pred_ma
 
-
-def f1_for_sequence_batch(true_batch, pred_batch, average="micro", eos_token='<EOS>'):
+def precision_recall_f1_for_sequence(true_batch, pred_batch, average='micro', eos_token='<EOS>'):
     true, pred = get_data_from_sequence_batch(true_batch, pred_batch, eos_token)
     labels = list(set(true))
-    return f1_score(true, pred, labels=labels, average=average)
+    values = precision_recall_fscore_support(true, pred, labels=labels, average=average)
+    return {'precision': values[0], 'recall': values[1], 'f1': values[2]}
 
+def precision_recall_f1_for_intents(true, pred, average='micro'):
+    values = precision_recall_fscore_support(true, pred, average=average)
+    return {'precision': values[0], 'recall': values[1], 'f1': values[2]}
 
-def accuracy_for_sequence_batch(true_batch, pred_batch, eos_token='<EOS>'):
-    true, pred = get_data_from_sequence_batch(true_batch, pred_batch, eos_token)
-    return accuracy_score(true, pred)
-
-def f1_for_intents(true, pred, average='micro'):
-    return f1_score(true, pred, average=average)
-
-def plot_f1_history(file_name, history):
-    plt.clf()
-    for scores in history.values():
-        plt.plot(scores)
-    
-    plt.legend(list(history.keys()), loc='lower right')
-    plt.title('model f1')
-    plt.ylabel('f1')
-    plt.xlabel('epochs')
-    plt.grid()
-    print(file_name)
-    plt.savefig(file_name)
-
-def f1_slots(true_slots_batch, pred_slots_batch):
+def precision_recall_f1_slots(true_slots_batch, pred_slots_batch):
     """compute f1 from lists of slots, unordered. As what is said in 'What is left to be understood in ATIS'"""
     true_positives_count = true_slots_count = found_slots_count = 0
     for true_slots, pred_slots in zip(true_slots_batch, pred_slots_batch):
@@ -83,9 +46,9 @@ def f1_slots(true_slots_batch, pred_slots_batch):
         f1 = (2 * recall * precision) / (recall + precision)
     except ZeroDivisionError:
         f1 = 0
-    return f1
+    return {'precision': precision, 'recall': recall, 'f1': f1}
 
-def f1_slots_conditioned_intent(true_slots_batch, pred_slots_batch, true_intents_batch, pred_intents_batch):
+def precision_recall_f1_slots_conditioned_intent(true_slots_batch, pred_slots_batch, true_intents_batch, pred_intents_batch):
     """compute f1 from lists of slots, unordered. As what is said in 'What is left to be understood in ATIS'"""
     true_positives_count = true_slots_count = found_slots_count = 0
     for true_slots, pred_slots, true_intent, pred_intent in zip(true_slots_batch, pred_slots_batch, true_intents_batch, pred_intents_batch):
@@ -100,4 +63,17 @@ def f1_slots_conditioned_intent(true_slots_batch, pred_slots_batch, true_intents
         f1 = (2 * recall * precision) / (recall + precision)
     except ZeroDivisionError:
         f1 = 0
-    return f1
+    return {'precision': precision, 'recall': recall, 'f1': f1}
+
+def plot_history(file_name, history):
+    plt.clf()
+    for scores in history.values():
+        plt.plot(scores)
+    
+    plt.legend(list(history.keys()), loc='lower right')
+    plt.title('model f1')
+    plt.ylabel('f1')
+    plt.xlabel('epochs')
+    plt.grid()
+    print(file_name)
+    plt.savefig(file_name)
