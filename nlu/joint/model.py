@@ -9,7 +9,7 @@ from .embeddings import EmbeddingsFromScratch, FixedEmbeddings, FineTuneEmbeddin
 flatten = lambda l: [item for sublist in l for item in sublist]
 
 class Model:
-    def __init__(self, input_steps, embedding_size, hidden_size, vocabs, word_embeddings, recurrent_cell, attention, multi_turn=False, batch_size=None, intent_combination=None):
+    def __init__(self, input_steps, embedding_size, hidden_size, vocabs, word_embeddings, recurrent_cell, attention, loss_sum='both', multi_turn=False, batch_size=None, intent_combination=None):
         # save the parameters
         self.input_steps = input_steps
         self.embedding_size = embedding_size
@@ -32,6 +32,8 @@ class Model:
         else:
             self.slots_attention = False
 
+        # whether to consider 'both' losses or only 'intent' or 'slots'
+        self.loss_sum = loss_sum
         # this variable changes the architecture from single turn to multi-turn
         self.multi_turn = multi_turn
         # choose between RNN or CRF for the intent combination
@@ -302,7 +304,7 @@ class Model:
 
         # Losses definitions
         # for the slots, using builtin sequence_loss
-        loss_slot = tf.contrib.seq2seq.sequence_loss(
+        loss_slots = tf.contrib.seq2seq.sequence_loss(
             outputs.rnn_output, self.decoder_targets_true_length, weights=self.mask)
         # For the intent, using cross entropy
         cross_entropy = tf.nn.softmax_cross_entropy_with_logits(
@@ -310,10 +312,15 @@ class Model:
             logits=intent_logits)
         loss_intent = tf.reduce_mean(cross_entropy)
         # Combine the losses
-        if self.intent_combination == 'crf':
-            self.loss = loss_slot + loss_crf
-        else:
-            self.loss = loss_slot + loss_intent
+        consider_loss_intent = self.loss_sum != 'slots'
+        consider_loss_slots = self.loss_sum != 'intent'
+        if consider_loss_intent:
+            if self.intent_combination == 'crf':
+                self.loss = loss_crf
+            else:
+                self.loss = loss_intent
+        if consider_loss_slots:
+            self.loss += loss_slots
         optimizer = tf.train.AdamOptimizer(name="a_optimizer")
         self.grads, self.vars = zip(*optimizer.compute_gradients(self.loss))
         #print("vars for loss function: ", self.vars)

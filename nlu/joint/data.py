@@ -50,7 +50,7 @@ def collapse_multi_turn_sessions(dataset, force_single_turn=False):
     print('intent changes: {} over {} samples'.format(sum(intent_changes), len(intent_changes)))
     return dataset
 
-def load_data(dataset_name, mode='measures'):
+def load_data(dataset_name, mode='measures', slots_type='full'):
     """Loads the dataset and returns it.
     
     if mode='measures' (default), returns [test_data, train_data]
@@ -67,26 +67,37 @@ def load_data(dataset_name, mode='measures'):
     data_splitted = []
     for file_name in fold_files:
         with open(path + '/' + file_name) as json_file:
-            data_splitted.append(json.load(json_file))
+            file_content = json.load(json_file)
+            if slots_type != 'full':
+                file_content = reduce_slots(file_content, slots_type)
+            data_splitted.append(file_content)
 
     if mode == 'measures':
         return data_splitted
-    elif mode == 'runtime':
-        for split in data_splitted:
-            result['data'].extend(split['data'])
-        return None, result
-    elif mode == 'finaltest':
-        print('you are running on the validation fold!!! TODO Check this code!')
-        try:
-            with open(path + '/' + final_test) as json_file:
-                finaltest = json.load(json_file)
-                return [finaltest, data_splitted[1]]
-        except FileNotFoundError:
-            # some datasets don't have the final test set
-            return data_splitted
     else:
         raise ValueError('mode unsupported:' + mode)
 
+def reduce_slots(file_content, slots_type):
+    if slots_type == 'iob_only':
+        file_content['meta']['slot_types'] = sorted(set(slots_to_iob_only(file_content['meta']['slot_types'])))
+        for sample in file_content['data']:
+            sample['slots'] = slots_to_iob_only(sample['slots'])
+    elif slots_type == 'slot_only':
+        raise NotImplementedError()
+    else:
+        raise ValueError('{} is not supported'.format(slots_type))
+
+    return file_content
+
+def slots_to_iob_only(slots):
+    """takes things like ['O', 'B-Location', 'I-Location'] and returns things like ['O', 'B', 'I']"""
+    result = []
+    for slot in slots:
+        parts = slot.split('-')
+        if len(parts) > 1:
+            slot = '{}-_'.format(parts[0])
+        result.append(slot)
+    return result
 
 def adjust_sequences(data, length=50):
     """Fixes the input and output sequences in length, adding padding or truncating if necessary"""
