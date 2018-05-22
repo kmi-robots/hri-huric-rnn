@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2732">
+<sentence>please get the cushion from the bed</sentence>
+<tokens>
+	<token id="1" surface="please" pos="UH" lemma="please"/>
+	<token id="2" surface="get" pos="VB" lemma="get"/>
+	<token id="3" surface="the" pos="DT" lemma="the"/>
+	<token id="4" surface="cushion" pos="NN" lemma="cushion"/>
+	<token id="5" surface="from" pos="IN" lemma="from"/>
+	<token id="6" surface="the" pos="DT" lemma="the"/>
+	<token id="7" surface="bed" pos="NN" lemma="bed"/>
+</tokens>
+<dependencies>
+	<dep from="2" to="1" type="discourse"/>
+	<dep from="0" to="2" type="root"/>
+	<dep from="4" to="3" type="det"/>
+	<dep from="2" to="4" type="dobj"/>
+	<dep from="2" to="5" type="prep"/>
+	<dep from="7" to="6" type="det"/>
+	<dep from="5" to="7" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Taking">
+			<lexicalUnit>
+				<token id="2"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+			<frameElement type="Source">
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+		<spatialRelation name="Spatial_relation">
+			<spatialRole type="Trajector">
+				<token id="3"/>
+				<token id="4"/>
+			</spatialRole>
+			<spatialRole type="Spatial_Indicator">
+				<token id="5"/>
+			</spatialRole>
+			<spatialRole type="Landmark">
+				<token id="6"/>
+				<token id="7"/>
+			</spatialRole>
+		</spatialRelation>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="56_italoiana_no_c4a41e63681f9dd2ae6ecf732ec7a920517f97c6bf808_step1_audio4.wav"/>
+</audioFiles>
+</command>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2288">
+<sentence>go to the dining table</sentence>
+<tokens>
+	<token id="1" surface="go" pos="VB" lemma="go"/>
+	<token id="2" surface="to" pos="TO" lemma="to"/>
+	<token id="3" surface="the" pos="DT" lemma="the"/>
+	<token id="4" surface="dining" pos="NN" lemma="dining"/>
+	<token id="5" surface="table" pos="NN" lemma="table"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="prep"/>
+	<dep from="5" to="3" type="det"/>
+	<dep from="5" to="4" type="nn"/>
+	<dep from="2" to="5" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Motion">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Goal">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="35_Japan_no_73868ac3e3f00891e64225b06e8776fc51c9ac260f755_step1_audio1.wav"/>
+	<file name="35_brazilian_no_9cfc720e1ef717695363c84daf79016751d6e29e95566_80_t_step2_audio4.wav"/>
+</audioFiles>
+</command>

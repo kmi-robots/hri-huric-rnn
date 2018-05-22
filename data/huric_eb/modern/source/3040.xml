@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="3040">
+	<sentence>bring me the cookie jar</sentence>
+	<tokens>
+		<token id="1" lemma="bring" pos="VB" surface="bring"/>
+		<token id="2" lemma="I" pos="PRP" surface="me"/>
+		<token id="3" lemma="the" pos="DT" surface="the"/>
+		<token id="4" lemma="cookie" pos="NN" surface="cookie"/>
+		<token id="5" lemma="jar" pos="NN" surface="jar"/>
+	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="1" to="2" type="iobj"/>
+		<dep from="5" to="3" type="det"/>
+		<dep from="5" to="4" type="nn"/>
+		<dep from="1" to="5" type="dobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Bringing">
+				<lexicalUnit>
+					<token id="1"/>
+				</lexicalUnit>
+				<frameElement type="Beneficiary">
+					<token id="2"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="3"/>
+					<token id="4"/>
+					<token id="5"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

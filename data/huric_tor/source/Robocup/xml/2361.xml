@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2361">
+<sentence>follow me to the bedroom</sentence>
+<tokens>
+	<token id="1" surface="follow" pos="VB" lemma="follow"/>
+	<token id="2" surface="me" pos="PRP" lemma="I"/>
+	<token id="3" surface="to" pos="TO" lemma="to"/>
+	<token id="4" surface="the" pos="DT" lemma="the"/>
+	<token id="5" surface="bedroom" pos="NN" lemma="bedroom"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="dobj"/>
+	<dep from="1" to="3" type="prep"/>
+	<dep from="5" to="4" type="det"/>
+	<dep from="3" to="5" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Following">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Cotheme">
+				<token id="2"/>
+			</frameElement>
+			<frameElement type="Goal">
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="28_Italian_no_0af191952617d3ac9e56641120871b2951d6cc30e7cd6_step1_audio2.wav"/>
+</audioFiles>
+</command>

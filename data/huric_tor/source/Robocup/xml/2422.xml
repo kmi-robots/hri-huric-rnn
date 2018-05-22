@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2422">
+<sentence>hang this jacket in the closet of the corridor</sentence>
+<tokens>
+	<token id="1" surface="hang" pos="VB" lemma="hang"/>
+	<token id="2" surface="this" pos="DT" lemma="this"/>
+	<token id="3" surface="jacket" pos="NN" lemma="jacket"/>
+	<token id="4" surface="in" pos="IN" lemma="in"/>
+	<token id="5" surface="the" pos="DT" lemma="the"/>
+	<token id="6" surface="closet" pos="NN" lemma="closet"/>
+	<token id="7" surface="of" pos="IN" lemma="of"/>
+	<token id="8" surface="the" pos="DT" lemma="the"/>
+	<token id="9" surface="corridor" pos="NN" lemma="corridor"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="3" to="2" type="det"/>
+	<dep from="1" to="3" type="dobj"/>
+	<dep from="1" to="4" type="prep"/>
+	<dep from="6" to="5" type="det"/>
+	<dep from="4" to="6" type="pobj"/>
+	<dep from="6" to="7" type="prep"/>
+	<dep from="9" to="8" type="det"/>
+	<dep from="7" to="9" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Placing">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="2"/>
+				<token id="3"/>
+			</frameElement>
+			<frameElement type="Goal">
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+				<token id="8"/>
+				<token id="9"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+		<spatialRelation name="Spatial_relation">
+			<spatialRole type="Trajector">
+				<token id="5"/>
+				<token id="6"/>
+			</spatialRole>
+			<spatialRole type="Spatial_Indicator">
+				<token id="7"/>
+			</spatialRole>
+			<spatialRole type="Landmark">
+				<token id="8"/>
+				<token id="9"/>
+			</spatialRole>
+		</spatialRelation>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="25_Netherlands_no_bd624196ac97032682bd7590fe29def251c952cc28e60_18_g_step2_audio2.wav"/>
+	<file name="20_Netherlands_no_39496ce640091fe3eac2a661d11ff02351c95659678df_18_g_step2_audio2.wav"/>
+	<file name="24_China_no_92bdd52397f9d1d130ec98eab371dcbe51c9658b05494_18_g_step2_audio2.wav"/>
+</audioFiles>
+</command>

@@ -1,0 +1,644 @@
+{
+  "metadata": {
+    "schemaVersion": "1.0",
+    "importType": "LEX",
+    "importFormat": "JSON"
+  },
+  "resource": {
+    "name": "kmi_S4R_Experiment",
+    "version": "$LATEST",
+    "intents": [
+      {
+        "name": "Bringing",
+        "slots": [
+          {
+            "name": "Agent",
+            "slotConstraint": "Optional",
+            "slotType": "Agent"
+          },
+          {
+            "name": "Beneficiary",
+            "slotConstraint": "Optional",
+            "slotType": "Beneficiary"
+          },
+          {
+            "name": "Goal",
+            "slotConstraint": "Optional",
+            "slotType": "Goal"
+          },
+          {
+            "name": "Theme",
+            "slotConstraint": "Optional",
+            "slotType": "Theme"
+          }
+        ],
+        "version": "$LATEST",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "and take {Theme} {Goal}",
+          "bring {Beneficiary} {Theme}",
+          "bring {Theme} {Goal}",
+          "carry {Theme} {Goal}",
+          "could {Agent} bring {Theme} {Goal}",
+          "please take {Theme} {Goal}",
+          "take {Theme} {Goal}"
+        ]
+      },
+      {
+        "name": "Change_operational_state",
+        "slots": [
+          {
+            "name": "Device",
+            "slotConstraint": "Optional",
+            "slotType": "Device"
+          },
+          {
+            "name": "Operational_state",
+            "slotConstraint": "Optional",
+            "slotType": "Operational_state"
+          }
+        ],
+        "version": "$LATEST",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "activate {Device}",
+          "and turn {Operational_state} {Device}"
+        ]
+      },
+      {
+        "name": "Following",
+        "slots": [
+          {
+            "name": "Cotheme",
+            "slotConstraint": "Optional",
+            "slotType": "Cotheme"
+          },
+          {
+            "name": "Goal",
+            "slotConstraint": "Optional",
+            "slotType": "Goal"
+          },
+          {
+            "name": "Manner",
+            "slotConstraint": "Optional",
+            "slotType": "Manner"
+          }
+        ],
+        "version": "$LATEST",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "follow {Cotheme}",
+          "follow {Cotheme} {Manner}",
+          "please follow {Cotheme}",
+          "please follow {Cotheme} {Goal}"
+        ]
+      },
+      {
+        "name": "Inspecting",
+        "slots": [
+          {
+            "name": "Desired_state",
+            "slotConstraint": "Optional",
+            "slotType": "Desired_state"
+          },
+          {
+            "name": "Ground",
+            "slotConstraint": "Optional",
+            "slotType": "Ground"
+          },
+          {
+            "name": "Inspector",
+            "slotConstraint": "Optional",
+            "slotType": "Inspector"
+          }
+        ],
+        "version": "$LATEST",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "could {Inspector} please check if {Ground} {Desired_state}"
+        ]
+      },
+      {
+        "name": "Motion",
+        "slots": [
+          {
+            "name": "Goal",
+            "slotConstraint": "Optional",
+            "slotType": "Goal"
+          },
+          {
+            "name": "Manner",
+            "slotConstraint": "Optional",
+            "slotType": "Manner"
+          },
+          {
+            "name": "Path",
+            "slotConstraint": "Optional",
+            "slotType": "Path"
+          }
+        ],
+        "version": "$LATEST",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "come {Goal}",
+          "go {Goal}",
+          "move {Goal}",
+          "please move {Goal}",
+          "please walk {Manner} {Goal}",
+          "reach {Goal} {Path}"
+        ]
+      },
+      {
+        "name": "Placing",
+        "slots": [
+          {
+            "name": "Goal",
+            "slotConstraint": "Optional",
+            "slotType": "Goal"
+          },
+          {
+            "name": "Theme",
+            "slotConstraint": "Optional",
+            "slotType": "Theme"
+          }
+        ],
+        "version": "$LATEST",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "hang {Theme} {Goal}",
+          "please put {Theme} {Goal}",
+          "put {Theme} {Goal}"
+        ]
+      },
+      {
+        "name": "Releasing",
+        "slots": [
+          {
+            "name": "Goal",
+            "slotConstraint": "Optional",
+            "slotType": "Goal"
+          },
+          {
+            "name": "Theme",
+            "slotConstraint": "Optional",
+            "slotType": "Theme"
+          }
+        ],
+        "version": "$LATEST",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "drop {Theme} {Goal}",
+          "leave {Theme} {Goal}"
+        ]
+      },
+      {
+        "name": "Searching",
+        "slots": [
+          {
+            "name": "Ground",
+            "slotConstraint": "Optional",
+            "slotType": "Ground"
+          },
+          {
+            "name": "Phenomenon",
+            "slotConstraint": "Optional",
+            "slotType": "Phenomenon"
+          }
+        ],
+        "version": "$LATEST",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "find {Phenomenon}",
+          "find {Phenomenon} {Ground}",
+          "go find {Phenomenon}",
+          "look {Phenomenon}",
+          "look {Phenomenon} {Ground}",
+          "please find {Phenomenon}",
+          "please find {Phenomenon} {Ground}",
+          "search {Phenomenon}",
+          "search {Phenomenon} {Ground}"
+        ]
+      },
+      {
+        "name": "Taking",
+        "slots": [
+          {
+            "name": "Source",
+            "slotConstraint": "Optional",
+            "slotType": "Source"
+          },
+          {
+            "name": "Theme",
+            "slotConstraint": "Optional",
+            "slotType": "Theme"
+          }
+        ],
+        "version": "$LATEST",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "get {Theme}",
+          "go get {Theme}",
+          "grab {Theme}",
+          "please get {Theme} {Source}",
+          "take {Theme}"
+        ]
+      }
+    ],
+    "slotTypes": [
+      {
+        "name": "Agent",
+        "enumerationValues": [
+          {
+            "value": "you"
+          }
+        ]
+      },
+      {
+        "name": "Beneficiary",
+        "enumerationValues": [
+          {
+            "value": "me"
+          }
+        ]
+      },
+      {
+        "name": "Cotheme",
+        "enumerationValues": [
+          {
+            "value": "john"
+          },
+          {
+            "value": "mark"
+          },
+          {
+            "value": "me"
+          },
+          {
+            "value": "that person"
+          },
+          {
+            "value": "the guy in the blue hoodie"
+          }
+        ]
+      },
+      {
+        "name": "Desired_state",
+        "enumerationValues": [
+          {
+            "value": "is ready"
+          }
+        ]
+      },
+      {
+        "name": "Device",
+        "enumerationValues": [
+          {
+            "value": "the television"
+          },
+          {
+            "value": "the television at the right of the console"
+          },
+          {
+            "value": "the tv"
+          }
+        ]
+      },
+      {
+        "name": "Goal",
+        "enumerationValues": [
+          {
+            "value": "in the bedroom"
+          },
+          {
+            "value": "in the closet in my bedroom"
+          },
+          {
+            "value": "in the dining room"
+          },
+          {
+            "value": "in the kitchen fridge"
+          },
+          {
+            "value": "in the kitchen stove"
+          },
+          {
+            "value": "into the bathroom"
+          },
+          {
+            "value": "into the bedroom"
+          },
+          {
+            "value": "into the dining room"
+          },
+          {
+            "value": "martina"
+          },
+          {
+            "value": "near the couch"
+          },
+          {
+            "value": "near the counter on the right"
+          },
+          {
+            "value": "on the bed"
+          },
+          {
+            "value": "on the table in the dining room"
+          },
+          {
+            "value": "on the table in the studio"
+          },
+          {
+            "value": "to dining room"
+          },
+          {
+            "value": "to living room"
+          },
+          {
+            "value": "to studio"
+          },
+          {
+            "value": "to the bathroom"
+          },
+          {
+            "value": "to the bathroom sink"
+          },
+          {
+            "value": "to the bedroom"
+          },
+          {
+            "value": "to the closet of the dining room"
+          },
+          {
+            "value": "to the couch"
+          },
+          {
+            "value": "to the dining room"
+          },
+          {
+            "value": "to the fridge"
+          },
+          {
+            "value": "to the hall"
+          },
+          {
+            "value": "to the kitchen"
+          },
+          {
+            "value": "to the living room"
+          },
+          {
+            "value": "to the lounge"
+          },
+          {
+            "value": "to the studio"
+          },
+          {
+            "value": "to the table"
+          },
+          {
+            "value": "to the television in the living room"
+          },
+          {
+            "value": "to the television in the studio"
+          },
+          {
+            "value": "towards the bedroom"
+          },
+          {
+            "value": "towards the kitchen"
+          },
+          {
+            "value": "towards the living room"
+          }
+        ]
+      },
+      {
+        "name": "Ground",
+        "enumerationValues": [
+          {
+            "value": "in the bathroom"
+          },
+          {
+            "value": "in the bathroom and the bedroom"
+          },
+          {
+            "value": "in the bedroom"
+          },
+          {
+            "value": "in the dining room"
+          },
+          {
+            "value": "in the kitchen"
+          },
+          {
+            "value": "in the living room"
+          },
+          {
+            "value": "in the studio"
+          },
+          {
+            "value": "on the bed in the bedroom"
+          },
+          {
+            "value": "on the table"
+          },
+          {
+            "value": "the coffee"
+          }
+        ]
+      },
+      {
+        "name": "Inspector",
+        "enumerationValues": [
+          {
+            "value": "you"
+          }
+        ]
+      },
+      {
+        "name": "Manner",
+        "enumerationValues": [
+          {
+            "value": "slowly"
+          }
+        ]
+      },
+      {
+        "name": "Operational_state",
+        "enumerationValues": [
+          {
+            "value": "on"
+          }
+        ]
+      },
+      {
+        "name": "Path",
+        "enumerationValues": [
+          {
+            "value": "from behind"
+          }
+        ]
+      },
+      {
+        "name": "Phenomenon",
+        "enumerationValues": [
+          {
+            "value": "a bottle"
+          },
+          {
+            "value": "for a pillow"
+          },
+          {
+            "value": "for my handbag"
+          },
+          {
+            "value": "for my phone"
+          },
+          {
+            "value": "for the bed"
+          },
+          {
+            "value": "for the bottle"
+          },
+          {
+            "value": "for the soap"
+          },
+          {
+            "value": "for the stove"
+          },
+          {
+            "value": "my address book"
+          },
+          {
+            "value": "my hat"
+          },
+          {
+            "value": "the bed"
+          },
+          {
+            "value": "the book"
+          },
+          {
+            "value": "the bottle"
+          },
+          {
+            "value": "the bottle of wine"
+          },
+          {
+            "value": "the phone"
+          },
+          {
+            "value": "the pillow"
+          },
+          {
+            "value": "the plates"
+          },
+          {
+            "value": "the shower"
+          },
+          {
+            "value": "the stove"
+          },
+          {
+            "value": "the table"
+          },
+          {
+            "value": "the television"
+          },
+          {
+            "value": "the white vase"
+          },
+          {
+            "value": "vittorio is phone"
+          }
+        ]
+      },
+      {
+        "name": "Source",
+        "enumerationValues": [
+          {
+            "value": "from the bed"
+          }
+        ]
+      },
+      {
+        "name": "Theme",
+        "enumerationValues": [
+          {
+            "value": "it"
+          },
+          {
+            "value": "my coat"
+          },
+          {
+            "value": "the book"
+          },
+          {
+            "value": "the bottle"
+          },
+          {
+            "value": "the box on the left of the desktop"
+          },
+          {
+            "value": "the cigarettes"
+          },
+          {
+            "value": "the cushion"
+          },
+          {
+            "value": "the mobile"
+          },
+          {
+            "value": "the mug"
+          },
+          {
+            "value": "the phone"
+          },
+          {
+            "value": "the rag"
+          }
+        ]
+      }
+    ],
+    "voiceId": "Salli",
+    "childDirected": false,
+    "locale": "en-US",
+    "idleSessionTTLInSeconds": 300,
+    "clarificationPrompt": {
+      "messages": [
+        {
+          "contentType": "PlainText",
+          "content": "Sorry, can you please rephrase that?"
+        }
+      ],
+      "maxAttempts": 5
+    },
+    "abortStatement": {
+      "messages": [
+        {
+          "contentType": "PlainText",
+          "content": "Sorry, I could not understand. Goodbye."
+        }
+      ]
+    }
+  }
+}

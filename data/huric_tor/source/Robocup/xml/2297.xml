@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2297">
+<sentence>can you please follow that guy over there</sentence>
+<tokens>
+	<token id="1" surface="can" pos="MD" lemma="can"/>
+	<token id="2" surface="you" pos="PRP" lemma="you"/>
+	<token id="3" surface="please" pos="UH" lemma="please"/>
+	<token id="4" surface="follow" pos="VB" lemma="follow"/>
+	<token id="5" surface="that" pos="DT" lemma="that"/>
+	<token id="6" surface="guy" pos="NN" lemma="guy"/>
+	<token id="7" surface="over" pos="IN" lemma="over"/>
+	<token id="8" surface="there" pos="EX" lemma="there"/>
+</tokens>
+<dependencies>
+	<dep from="4" to="1" type="aux"/>
+	<dep from="4" to="2" type="nsubj"/>
+	<dep from="4" to="3" type="discourse"/>
+	<dep from="0" to="4" type="root"/>
+	<dep from="6" to="5" type="det"/>
+	<dep from="4" to="6" type="dobj"/>
+	<dep from="6" to="7" type="prep"/>
+	<dep from="7" to="8" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Following">
+			<lexicalUnit>
+				<token id="4"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="2"/>
+			</frameElement>
+			<frameElement type="Cotheme">
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+				<token id="8"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+		<spatialRelation name="Spatial_relation">
+			<spatialRole type="Trajector">
+				<token id="5"/>
+				<token id="6"/>
+			</spatialRole>
+			<spatialRole type="Spatial_Indicator">
+				<token id="7"/>
+			</spatialRole>
+			<spatialRole type="Landmark">
+				<token id="8"/>
+			</spatialRole>
+		</spatialRelation>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="21_Australian_yes_46e69d8d080f80f7beedc314251bdd6751c9c76cdc0fd_step1_audio2.wav"/>
+	<file name="25_Czech Republic_no_f48d4b716dbaf8dd0108f2fe899b3aae51d6d811e6a8d_90_t_step2_audio3.wav"/>
+</audioFiles>
+</command>

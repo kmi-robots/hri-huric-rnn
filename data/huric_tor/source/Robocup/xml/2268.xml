@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2268">
+<sentence>please bring the mug to the bedroom</sentence>
+<tokens>
+	<token id="1" surface="please" pos="UH" lemma="please"/>
+	<token id="2" surface="bring" pos="VB" lemma="bring"/>
+	<token id="3" surface="the" pos="DT" lemma="the"/>
+	<token id="4" surface="mug" pos="NN" lemma="mug"/>
+	<token id="5" surface="to" pos="TO" lemma="to"/>
+	<token id="6" surface="the" pos="DT" lemma="the"/>
+	<token id="7" surface="bedroom" pos="NN" lemma="bedroom"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="discourse"/>
+	<dep from="0" to="2" type="root"/>
+	<dep from="4" to="3" type="det"/>
+	<dep from="2" to="4" type="dobj"/>
+	<dep from="2" to="5" type="prep"/>
+	<dep from="7" to="6" type="det"/>
+	<dep from="5" to="7" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Bringing">
+			<lexicalUnit>
+				<token id="2"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+			<frameElement type="Goal">
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="23_Dutch_no_fbb8b24bbcbb7b75c30e6fbf9100587b51c99bd6354f1_step1_audio3.wav"/>
+	<file name="31_Chile_no_2aebd1501249d2c610043840f7a9702251c9a80f5885e_59_t_step2_audio3.wav"/>
+	<file name="27_Syrian_no_73c04eb622fe1aac97197219ee6ea12751d6c97632a52_59_t_step2_audio3.wav"/>
+</audioFiles>
+</command>

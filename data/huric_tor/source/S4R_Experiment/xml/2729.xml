@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2729">
+<sentence>please find the table in the bedroom</sentence>
+<tokens>
+	<token id="1" surface="please" pos="UH" lemma="please"/>
+	<token id="2" surface="find" pos="VB" lemma="find"/>
+	<token id="3" surface="the" pos="DT" lemma="the"/>
+	<token id="4" surface="table" pos="NN" lemma="table"/>
+	<token id="5" surface="in" pos="IN" lemma="in"/>
+	<token id="6" surface="the" pos="DT" lemma="the"/>
+	<token id="7" surface="bedroom" pos="NN" lemma="bedroom"/>
+</tokens>
+<dependencies>
+	<dep from="2" to="1" type="discourse"/>
+	<dep from="0" to="2" type="root"/>
+	<dep from="4" to="3" type="det"/>
+	<dep from="2" to="4" type="dobj"/>
+	<dep from="2" to="5" type="prep"/>
+	<dep from="7" to="6" type="det"/>
+	<dep from="5" to="7" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Searching">
+			<lexicalUnit>
+				<token id="2"/>
+			</lexicalUnit>
+			<frameElement type="Phenomenon">
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+			<frameElement type="Ground">
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="lesley13A.wav"/>
+	<file name="lesley13B.wav"/>
+</audioFiles>
+</command>

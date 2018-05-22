@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="3299">
+	<sentence>can you turn the shower on</sentence>
+	<tokens>
+		<token id="1" lemma="can" pos="MD" surface="can"/>
+		<token id="2" lemma="you" pos="PRP" surface="you"/>
+		<token id="3" lemma="turn" pos="VB" surface="turn"/>
+		<token id="4" lemma="the" pos="DT" surface="the"/>
+		<token id="5" lemma="shower" pos="NN" surface="shower"/>
+		<token id="6" lemma="on" pos="RP" surface="on"/>
+	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="aux"/>
+		<dep from="3" to="2" type="nsubj"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="5" to="4" type="det"/>
+		<dep from="3" to="5" type="dobj"/>
+		<dep from="3" to="6" type="prt"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Change_operational_state">
+				<lexicalUnit>
+					<token id="3"/>
+				</lexicalUnit>
+				<frameElement type="Agent">
+					<token id="2"/>
+				</frameElement>
+				<frameElement type="Device">
+					<token id="4"/>
+					<token id="5"/>
+				</frameElement>
+				<frameElement type="Operational_state">
+					<token id="6"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

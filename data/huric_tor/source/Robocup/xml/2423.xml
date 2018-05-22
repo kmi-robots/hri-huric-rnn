@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2423">
+<sentence>check main door status</sentence>
+<tokens>
+	<token id="1" surface="check" pos="VB" lemma="check"/>
+	<token id="2" surface="main" pos="JJ" lemma="main"/>
+	<token id="3" surface="door" pos="NN" lemma="door"/>
+	<token id="4" surface="status" pos="NN" lemma="status"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="4" to="2" type="amod"/>
+	<dep from="4" to="3" type="nn"/>
+	<dep from="1" to="4" type="dep"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Inspecting">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Ground">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="21_Australian_yes_46e69d8d080f80f7beedc314251bdd6751c9c76cdc0fd_15_g_step2_audio2.wav"/>
+</audioFiles>
+</command>

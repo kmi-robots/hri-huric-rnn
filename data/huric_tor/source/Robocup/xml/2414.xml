@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2414">
+<sentence>take the remote control and turn on the tv</sentence>
+<tokens>
+	<token id="1" surface="take" pos="VB" lemma="take"/>
+	<token id="2" surface="the" pos="DT" lemma="the"/>
+	<token id="3" surface="remote" pos="JJ" lemma="remote"/>
+	<token id="4" surface="control" pos="NN" lemma="control"/>
+	<token id="5" surface="and" pos="CC" lemma="and"/>
+	<token id="6" surface="turn" pos="VB" lemma="turn"/>
+	<token id="7" surface="on" pos="RP" lemma="on"/>
+	<token id="8" surface="the" pos="DT" lemma="the"/>
+	<token id="9" surface="tv" pos="NN" lemma="tv"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="4" to="2" type="det"/>
+	<dep from="4" to="3" type="amod"/>
+	<dep from="1" to="4" type="dobj"/>
+	<dep from="1" to="5" type="cc"/>
+	<dep from="1" to="6" type="conj"/>
+	<dep from="6" to="7" type="prt"/>
+	<dep from="9" to="8" type="det"/>
+	<dep from="6" to="9" type="dojb"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Taking">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+		</frame>
+		<frame name="Change_operational_state">
+			<lexicalUnit>
+				<token id="6"/>
+			</lexicalUnit>
+			<frameElement type="Operational_state">
+				<token id="7"/>
+			</frameElement>
+			<frameElement type="Device">
+				<token id="8"/>
+				<token id="9"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="32_German_no_ac47bd8bbd7e3d38f209b03a0ba74a6951c9705c9c48b_9_g_step2_audio1.wav"/>
+	<file name="31_Mexican_no_b3e130c8ea24a39ab224a2dcaccc117951c995bd1d780_9_g_step2_audio1.wav"/>
+	<file name="23_German_no_a4a1827aa8e7a9bc3af70c8c4ac5710951c9a22ab68e6_9_g_step2_audio1.wav"/>
+</audioFiles>
+</command>

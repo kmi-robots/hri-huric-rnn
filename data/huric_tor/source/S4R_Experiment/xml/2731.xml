@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2731">
+<sentence>please follow that person and do it slowly</sentence>
+<tokens>
+	<token id="1" surface="please" pos="UH" lemma="please"/>
+	<token id="2" surface="follow" pos="VB" lemma="follow"/>
+	<token id="3" surface="that" pos="DT" lemma="that"/>
+	<token id="4" surface="person" pos="NN" lemma="person"/>
+	<token id="5" surface="and" pos="CC" lemma="and"/>
+	<token id="6" surface="do" pos="VB" lemma="do"/>
+	<token id="7" surface="it" pos="PRP" lemma="it"/>
+	<token id="8" surface="slowly" pos="RB" lemma="slowly"/>
+</tokens>
+<dependencies>
+	<dep from="2" to="1" type="discourse"/>
+	<dep from="0" to="2" type="root"/>
+	<dep from="4" to="3" type="det"/>
+	<dep from="2" to="4" type="dobj"/>
+	<dep from="2" to="5" type="cc"/>
+	<dep from="2" to="6" type="conj"/>
+	<dep from="6" to="7" type="dobj"/>
+	<dep from="6" to="8" type="advmod"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Following">
+			<lexicalUnit>
+				<token id="2"/>
+			</lexicalUnit>
+			<frameElement type="Cotheme">
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="56_italoiana_no_c4a41e63681f9dd2ae6ecf732ec7a920517f97c6bf808_step1_audio2.wav"/>
+	<file name="55_American_yes_ed7ea8ade817d9417060e45942cfffc6518b9430bfb8b_step1_audio2.wav"/>
+</audioFiles>
+</command>

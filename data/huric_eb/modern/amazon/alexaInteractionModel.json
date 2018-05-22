@@ -1,0 +1,3474 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "office robot",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "Attaching",
+          "slots": [
+            {
+              "name": "Goal",
+              "type": "Goal"
+            }
+          ],
+          "samples": [
+            "connect {Goal}",
+            "disconnect {Goal}"
+          ]
+        },
+        {
+          "name": "Being_in_category",
+          "slots": [
+            {
+              "name": "Category",
+              "type": "Category"
+            },
+            {
+              "name": "Item",
+              "type": "Item"
+            }
+          ],
+          "samples": [
+            "robot {Item} is {Category}",
+            "{Item} is {Category}"
+          ]
+        },
+        {
+          "name": "Being_located",
+          "slots": [
+            {
+              "name": "Location",
+              "type": "Location"
+            },
+            {
+              "name": "Theme",
+              "type": "Theme"
+            }
+          ],
+          "samples": [
+            "and {Theme} is {Location}",
+            "there are {Theme}",
+            "there are {Theme} {Location}",
+            "there is {Theme}",
+            "there is {Theme} {Location}",
+            "{Location} there are {Theme}",
+            "{Theme} are {Location}",
+            "{Theme} is {Location}",
+            "{Theme} should be {Location}"
+          ]
+        },
+        {
+          "name": "Bringing",
+          "slots": [
+            {
+              "name": "Agent",
+              "type": "Agent"
+            },
+            {
+              "name": "Area",
+              "type": "Area"
+            },
+            {
+              "name": "Beneficiary",
+              "type": "Beneficiary"
+            },
+            {
+              "name": "Goal",
+              "type": "Goal"
+            },
+            {
+              "name": "Manner",
+              "type": "Manner"
+            },
+            {
+              "name": "Source",
+              "type": "Source"
+            },
+            {
+              "name": "Theme",
+              "type": "Theme"
+            }
+          ],
+          "samples": [
+            "and bring {Beneficiary} {Theme}",
+            "and bring {Beneficiary} {Theme} {Source}",
+            "and bring {Theme} {Beneficiary}",
+            "and bring {Theme} {Goal}",
+            "and get {Beneficiary} {Theme}",
+            "and take {Theme} {Goal}",
+            "bring {Area} {Theme}",
+            "bring {Beneficiary} {Theme}",
+            "bring {Beneficiary} {Theme} {Source}",
+            "bring {Manner} {Theme} {Goal}",
+            "bring {Theme} {Goal}",
+            "can {Agent} bring {Beneficiary} {Theme}",
+            "can {Agent} bring {Beneficiary} {Theme} {Source}",
+            "can {Agent} bring {Theme} {Beneficiary}",
+            "can {Agent} bring {Theme} {Goal}",
+            "can {Agent} please bring {Theme} {Goal}",
+            "can {Agent} please take {Goal} {Theme}",
+            "can {Agent} take {Theme} {Goal}",
+            "carry {Theme} {Beneficiary}",
+            "carry {Theme} {Goal}",
+            "could {Agent} bring {Theme} {Goal}",
+            "could {Agent} please bring {Beneficiary} {Theme}",
+            "could {Agent} please move {Theme} {Source} {Goal}",
+            "deliver {Theme} {Beneficiary}",
+            "fetch {Beneficiary} {Theme}",
+            "get {Beneficiary} {Theme}",
+            "get {Beneficiary} {Theme} {Source}",
+            "i need some toilet paper can {Agent} get {Beneficiary} {Theme}",
+            "i need some utensils could {Agent} take {Beneficiary} {Theme}",
+            "i really need you to bring {Beneficiary} {Theme}",
+            "i want some fruit bring {Beneficiary} {Theme}",
+            "i want to watch tv bring {Beneficiary} {Theme}",
+            "i would like some cutlery can {Agent} get {Beneficiary} {Theme}",
+            "i would like some loo roll can {Agent} get {Beneficiary} {Theme}",
+            "i would like to read an architecture magazine can {Agent} bring {Beneficiary} {Theme}",
+            "let {Agent} take {Theme} {Goal}",
+            "michael carry {Beneficiary} {Theme}",
+            "please bring {Theme} {Goal}",
+            "please carry {Theme} {Goal}",
+            "please take {Theme} {Goal}",
+            "robot can {Agent} bring {Beneficiary} {Theme}",
+            "robot can {Agent} bring {Beneficiary} {Theme} {Source}",
+            "robot can {Agent} bring {Theme} {Source}",
+            "robot can {Agent} get {Beneficiary} {Theme} {Source}",
+            "robot can {Agent} take {Theme} {Goal}",
+            "robot please take {Theme} {Goal}",
+            "take {Theme} {Beneficiary}",
+            "take {Theme} {Goal}",
+            "the trash needs to go out could {Agent} take {Theme} {Goal}",
+            "would {Agent} please bring {Beneficiary} {Theme} {Source}",
+            "{Agent} should bring {Beneficiary} {Theme}"
+          ]
+        },
+        {
+          "name": "Change_operational_state",
+          "slots": [
+            {
+              "name": "Agent",
+              "type": "Agent"
+            },
+            {
+              "name": "Device",
+              "type": "Device"
+            },
+            {
+              "name": "Operational_state",
+              "type": "Operational_state"
+            }
+          ],
+          "samples": [
+            "activate {Device}",
+            "and open {Device}",
+            "and switch {Operational_state} {Device}",
+            "and turn {Operational_state} {Device}",
+            "can {Agent} turn {Device} {Operational_state}",
+            "could {Agent} please turn {Operational_state} {Device}",
+            "could {Agent} switch {Operational_state} {Device}",
+            "could {Agent} turn {Operational_state} {Device}",
+            "i am tired switch {Operational_state} {Device}",
+            "i want to go to sleep turn {Operational_state} {Device}",
+            "i want to jump in the shower can {Agent} turn {Device} {Operational_state}",
+            "i would really like to take a shower could {Agent} turn {Device} {Operational_state}",
+            "restart {Device}",
+            "robot can {Agent} put {Device} {Operational_state}",
+            "robot can {Agent} start {Device}",
+            "robot can {Agent} turn {Device} {Operational_state}",
+            "shut {Operational_state} {Device}",
+            "stop {Device}",
+            "switch {Operational_state} {Device}",
+            "turn {Operational_state} {Device}"
+          ]
+        },
+        {
+          "name": "Closure",
+          "slots": [
+            {
+              "name": "Agent",
+              "type": "Agent"
+            },
+            {
+              "name": "Container_portal",
+              "type": "Container_portal"
+            },
+            {
+              "name": "Containing_object",
+              "type": "Containing_object"
+            },
+            {
+              "name": "Degree",
+              "type": "Degree"
+            }
+          ],
+          "samples": [
+            "and open {Container_portal}",
+            "close {Container_portal}",
+            "close {Containing_object}",
+            "could {Agent} close {Container_portal}",
+            "open {Containing_object}",
+            "please close {Container_portal}",
+            "please open {Containing_object}",
+            "robot can {Agent} open {Containing_object}",
+            "robot can {Agent} put {Container_portal} {Degree}",
+            "robot can {Agent} {Degree} lower {Container_portal}"
+          ]
+        },
+        {
+          "name": "Entering",
+          "slots": [
+            {
+              "name": "Goal",
+              "type": "Goal"
+            }
+          ],
+          "samples": [
+            "enter {Goal}",
+            "please enter {Goal}"
+          ]
+        },
+        {
+          "name": "Following",
+          "slots": [
+            {
+              "name": "Area",
+              "type": "Area"
+            },
+            {
+              "name": "Cotheme",
+              "type": "Cotheme"
+            },
+            {
+              "name": "Goal",
+              "type": "Goal"
+            },
+            {
+              "name": "Manner",
+              "type": "Manner"
+            },
+            {
+              "name": "Path",
+              "type": "Path"
+            },
+            {
+              "name": "Speed",
+              "type": "Speed"
+            },
+            {
+              "name": "Theme",
+              "type": "Theme"
+            }
+          ],
+          "samples": [
+            "and follow {Cotheme}",
+            "can {Theme} follow {Cotheme} {Goal}",
+            "can {Theme} please follow {Cotheme}",
+            "can {Theme} {Manner} follow {Cotheme}",
+            "come {Cotheme}",
+            "follow {Cotheme}",
+            "follow {Cotheme} {Goal}",
+            "follow {Cotheme} {Manner}",
+            "follow {Cotheme} {Speed}",
+            "go along {Cotheme}",
+            "go follow {Cotheme} {Path}",
+            "hey robot follow {Cotheme} {Area}",
+            "michael follow {Cotheme}",
+            "please follow {Cotheme}",
+            "please follow {Cotheme} {Goal}",
+            "please follow {Cotheme} {Manner}",
+            "robot come {Cotheme} {Goal}",
+            "robot follow {Cotheme} {Manner}",
+            "robot please follow {Cotheme}",
+            "would {Theme} please follow {Cotheme} {Goal}"
+          ]
+        },
+        {
+          "name": "Giving",
+          "slots": [
+            {
+              "name": "Donor",
+              "type": "Donor"
+            },
+            {
+              "name": "Reason",
+              "type": "Reason"
+            },
+            {
+              "name": "Recipient",
+              "type": "Recipient"
+            },
+            {
+              "name": "Theme",
+              "type": "Theme"
+            }
+          ],
+          "samples": [
+            "give {Recipient} {Theme}",
+            "robot can {Donor} pass {Recipient} {Theme}",
+            "robot can {Donor} pass {Recipient} {Theme} {Reason}"
+          ]
+        },
+        {
+          "name": "Inspecting",
+          "slots": [
+            {
+              "name": "Desired_state",
+              "type": "Desired_state"
+            },
+            {
+              "name": "Ground",
+              "type": "Ground"
+            },
+            {
+              "name": "Inspector",
+              "type": "Inspector"
+            },
+            {
+              "name": "Unwanted_entity",
+              "type": "Unwanted_entity"
+            }
+          ],
+          "samples": [
+            "and check {Unwanted_entity}",
+            "and control {Ground}",
+            "check if {Ground}",
+            "check if {Ground} {Desired_state}",
+            "check {Ground}",
+            "check {Ground} {Unwanted_entity}",
+            "could {Inspector} please check if {Ground} {Desired_state}",
+            "see if {Ground} {Desired_state}"
+          ]
+        },
+        {
+          "name": "Motion",
+          "slots": [
+            {
+              "name": "Area",
+              "type": "Area"
+            },
+            {
+              "name": "Distance",
+              "type": "Distance"
+            },
+            {
+              "name": "Goal",
+              "type": "Goal"
+            },
+            {
+              "name": "Manner",
+              "type": "Manner"
+            },
+            {
+              "name": "Path",
+              "type": "Path"
+            },
+            {
+              "name": "Source",
+              "type": "Source"
+            },
+            {
+              "name": "Theme",
+              "type": "Theme"
+            }
+          ],
+          "samples": [
+            "and go {Goal}",
+            "can {Theme} go {Goal}",
+            "can {Theme} move {Distance} {Area}",
+            "can {Theme} please go {Goal}",
+            "can {Theme} please move {Goal}",
+            "come {Goal}",
+            "could {Theme} go {Goal}",
+            "could {Theme} please go {Goal}",
+            "could {Theme} please move {Goal}",
+            "drive {Goal}",
+            "go {Goal}",
+            "go {Manner} {Goal}",
+            "i am hungry go {Goal}",
+            "let {Theme} go {Goal}",
+            "michael go {Goal}",
+            "move {Goal}",
+            "move {Goal} {Manner}",
+            "move {Path}",
+            "move {Source}",
+            "please go {Goal}",
+            "please move {Goal}",
+            "please move {Path}",
+            "please walk {Manner} {Goal}",
+            "reach {Goal} {Path}",
+            "robot can {Theme} come {Goal}",
+            "robot could {Theme} move {Goal}",
+            "robot go {Goal}",
+            "robot i need you in the bathroom go {Goal}",
+            "robot listen go {Goal}",
+            "robot why do n't {Theme} go {Area}",
+            "sorry robot can {Theme} go {Goal}",
+            "walk {Goal} {Manner}"
+          ]
+        },
+        {
+          "name": "Perception_active",
+          "slots": [
+            {
+              "name": "Phenomenon",
+              "type": "Phenomenon"
+            }
+          ],
+          "samples": [
+            "look {Phenomenon}"
+          ]
+        },
+        {
+          "name": "Placing",
+          "slots": [
+            {
+              "name": "Agent",
+              "type": "Agent"
+            },
+            {
+              "name": "Area",
+              "type": "Area"
+            },
+            {
+              "name": "Goal",
+              "type": "Goal"
+            },
+            {
+              "name": "Theme",
+              "type": "Theme"
+            }
+          ],
+          "samples": [
+            "and place {Theme} {Goal}",
+            "and put {Theme} {Goal}",
+            "can {Agent} place {Theme} {Goal}",
+            "can {Agent} put {Theme} {Goal}",
+            "could {Agent} hang {Theme} {Goal}",
+            "could {Agent} put {Theme} {Goal}",
+            "hang {Theme} {Goal}",
+            "place {Theme} {Goal}",
+            "please put {Theme} {Goal}",
+            "please robot put {Theme} {Goal}",
+            "put {Area} {Theme}",
+            "put {Theme} {Goal}",
+            "robot put {Theme} {Goal}"
+          ]
+        },
+        {
+          "name": "Releasing",
+          "slots": [
+            {
+              "name": "Goal",
+              "type": "Goal"
+            },
+            {
+              "name": "Theme",
+              "type": "Theme"
+            }
+          ],
+          "samples": [
+            "drop {Theme}",
+            "drop {Theme} {Goal}",
+            "leave {Theme} {Goal}",
+            "let go {Theme}",
+            "release {Theme}"
+          ]
+        },
+        {
+          "name": "Searching",
+          "slots": [
+            {
+              "name": "Cognizer",
+              "type": "Cognizer"
+            },
+            {
+              "name": "Ground",
+              "type": "Ground"
+            },
+            {
+              "name": "Manner",
+              "type": "Manner"
+            },
+            {
+              "name": "Phenomenon",
+              "type": "Phenomenon"
+            },
+            {
+              "name": "Purpose",
+              "type": "Purpose"
+            }
+          ],
+          "samples": [
+            "and find {Phenomenon}",
+            "and find {Phenomenon} {Purpose}",
+            "and search {Phenomenon}",
+            "can {Cognizer} find {Phenomenon} {Ground}",
+            "can {Cognizer} find {Phenomenon} {Purpose}",
+            "can {Cognizer} find {Purpose} {Phenomenon}",
+            "can {Cognizer} please search {Phenomenon}",
+            "could {Cognizer} find {Phenomenon} {Ground}",
+            "do you think {Cognizer} can find {Phenomenon}",
+            "find {Phenomenon}",
+            "find {Phenomenon} {Ground}",
+            "find {Purpose} {Phenomenon}",
+            "go find {Phenomenon}",
+            "i need my watch find {Phenomenon}",
+            "look {Phenomenon}",
+            "look {Phenomenon} {Ground}",
+            "michael find {Phenomenon} {Ground}",
+            "please find {Phenomenon}",
+            "please find {Phenomenon} {Ground}",
+            "please find {Purpose} {Phenomenon}",
+            "robot can {Cognizer} find {Phenomenon}",
+            "robot please search {Phenomenon}",
+            "robot {Manner} search {Ground} {Phenomenon}",
+            "search {Ground} {Phenomenon}",
+            "search {Phenomenon}",
+            "search {Phenomenon} {Ground}",
+            "{Cognizer} can find {Phenomenon} {Ground}",
+            "{Manner} search {Phenomenon}"
+          ]
+        },
+        {
+          "name": "Taking",
+          "slots": [
+            {
+              "name": "Agent",
+              "type": "Agent"
+            },
+            {
+              "name": "Purpose",
+              "type": "Purpose"
+            },
+            {
+              "name": "Source",
+              "type": "Source"
+            },
+            {
+              "name": "Theme",
+              "type": "Theme"
+            }
+          ],
+          "samples": [
+            "and remove {Theme}",
+            "and take {Theme}",
+            "can {Agent} grab {Theme} {Source}",
+            "can {Agent} take {Theme}",
+            "catch {Theme}",
+            "could {Agent} pick up {Theme}",
+            "could {Agent} take {Theme}",
+            "get {Theme}",
+            "get {Theme} {Source}",
+            "go get {Theme}",
+            "grab {Theme}",
+            "i would like some beer can {Agent} grab {Theme} {Source}",
+            "john can {Agent} take {Theme}",
+            "let is go get {Theme}",
+            "please get {Theme} {Source}",
+            "please pick up {Theme}",
+            "please pick {Theme}",
+            "please take {Theme} {Source}",
+            "robot go get {Theme} {Purpose}",
+            "take {Theme}",
+            "take {Theme} {Source}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "Agent",
+          "values": [
+            {
+              "name": {
+                "value": "is"
+              }
+            },
+            {
+              "name": {
+                "value": "you"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Area",
+          "values": [
+            {
+              "name": {
+                "value": "around"
+              }
+            },
+            {
+              "name": {
+                "value": "down"
+              }
+            },
+            {
+              "name": {
+                "value": "everywhere he goes"
+              }
+            },
+            {
+              "name": {
+                "value": "over"
+              }
+            },
+            {
+              "name": {
+                "value": "to the right"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Beneficiary",
+          "values": [
+            {
+              "name": {
+                "value": "me"
+              }
+            },
+            {
+              "name": {
+                "value": "to daniele"
+              }
+            },
+            {
+              "name": {
+                "value": "to me"
+              }
+            },
+            {
+              "name": {
+                "value": "to the person in the living room"
+              }
+            },
+            {
+              "name": {
+                "value": "us"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Category",
+          "values": [
+            {
+              "name": {
+                "value": "a bathroom where the door is on the right"
+              }
+            },
+            {
+              "name": {
+                "value": "a bathroom with a shower bath and double sink"
+              }
+            },
+            {
+              "name": {
+                "value": "a bed room"
+              }
+            },
+            {
+              "name": {
+                "value": "a bedroom with big double bed and two bedside tables"
+              }
+            },
+            {
+              "name": {
+                "value": "a bedroom with one bed and two night stands"
+              }
+            },
+            {
+              "name": {
+                "value": "a diningroom with a table of glass in it with six chairs"
+              }
+            },
+            {
+              "name": {
+                "value": "a double bedroom with four pictures on the wall"
+              }
+            },
+            {
+              "name": {
+                "value": "a living room with white furniture"
+              }
+            },
+            {
+              "name": {
+                "value": "a table with a glass deck"
+              }
+            },
+            {
+              "name": {
+                "value": "a very wide and bright livingroom"
+              }
+            },
+            {
+              "name": {
+                "value": "the bedroom with a double bed with two lights next to it"
+              }
+            },
+            {
+              "name": {
+                "value": "very light and bright"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Cognizer",
+          "values": [
+            {
+              "name": {
+                "value": "you"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Container_portal",
+          "values": [
+            {
+              "name": {
+                "value": "it"
+              }
+            },
+            {
+              "name": {
+                "value": "the blinds"
+              }
+            },
+            {
+              "name": {
+                "value": "the curtains in the living room"
+              }
+            },
+            {
+              "name": {
+                "value": "the door on the right"
+              }
+            },
+            {
+              "name": {
+                "value": "the shutters"
+              }
+            },
+            {
+              "name": {
+                "value": "the window blinds"
+              }
+            },
+            {
+              "name": {
+                "value": "the window on the left"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Containing_object",
+          "values": [
+            {
+              "name": {
+                "value": "the bottle"
+              }
+            },
+            {
+              "name": {
+                "value": "the box on the left of the recorder"
+              }
+            },
+            {
+              "name": {
+                "value": "the cabinet"
+              }
+            },
+            {
+              "name": {
+                "value": "the case on the bed"
+              }
+            },
+            {
+              "name": {
+                "value": "the jar"
+              }
+            },
+            {
+              "name": {
+                "value": "the laundry room cabinet"
+              }
+            },
+            {
+              "name": {
+                "value": "the pantry"
+              }
+            },
+            {
+              "name": {
+                "value": "the press"
+              }
+            },
+            {
+              "name": {
+                "value": "the storage cupboard"
+              }
+            },
+            {
+              "name": {
+                "value": "the washer"
+              }
+            },
+            {
+              "name": {
+                "value": "the washing machine"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Cotheme",
+          "values": [
+            {
+              "name": {
+                "value": "john"
+              }
+            },
+            {
+              "name": {
+                "value": "mark"
+              }
+            },
+            {
+              "name": {
+                "value": "me"
+              }
+            },
+            {
+              "name": {
+                "value": "my father"
+              }
+            },
+            {
+              "name": {
+                "value": "my friend"
+              }
+            },
+            {
+              "name": {
+                "value": "my mother"
+              }
+            },
+            {
+              "name": {
+                "value": "my sister"
+              }
+            },
+            {
+              "name": {
+                "value": "that guy over there"
+              }
+            },
+            {
+              "name": {
+                "value": "that person"
+              }
+            },
+            {
+              "name": {
+                "value": "the guy in the blue hoodie"
+              }
+            },
+            {
+              "name": {
+                "value": "the guy with the blue jacket"
+              }
+            },
+            {
+              "name": {
+                "value": "the guy with the red hoodie and the white shoes"
+              }
+            },
+            {
+              "name": {
+                "value": "the man"
+              }
+            },
+            {
+              "name": {
+                "value": "the man in black"
+              }
+            },
+            {
+              "name": {
+                "value": "the person behind me"
+              }
+            },
+            {
+              "name": {
+                "value": "the person behind you"
+              }
+            },
+            {
+              "name": {
+                "value": "the person in front of me"
+              }
+            },
+            {
+              "name": {
+                "value": "the person in front of you"
+              }
+            },
+            {
+              "name": {
+                "value": "the person with the blonde hair and the black pants"
+              }
+            },
+            {
+              "name": {
+                "value": "the postman"
+              }
+            },
+            {
+              "name": {
+                "value": "the skinny person"
+              }
+            },
+            {
+              "name": {
+                "value": "this guy"
+              }
+            },
+            {
+              "name": {
+                "value": "with me"
+              }
+            },
+            {
+              "name": {
+                "value": "with them"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Degree",
+          "values": [
+            {
+              "name": {
+                "value": "all the way down"
+              }
+            },
+            {
+              "name": {
+                "value": "fully"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Desired_state",
+          "values": [
+            {
+              "name": {
+                "value": "is empty"
+              }
+            },
+            {
+              "name": {
+                "value": "is on"
+              }
+            },
+            {
+              "name": {
+                "value": "is ready"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Device",
+          "values": [
+            {
+              "name": {
+                "value": "it"
+              }
+            },
+            {
+              "name": {
+                "value": "my laptop"
+              }
+            },
+            {
+              "name": {
+                "value": "my laptop computer"
+              }
+            },
+            {
+              "name": {
+                "value": "my pc"
+              }
+            },
+            {
+              "name": {
+                "value": "the boiler"
+              }
+            },
+            {
+              "name": {
+                "value": "the coffee machine"
+              }
+            },
+            {
+              "name": {
+                "value": "the coffee machine and the dishwasher"
+              }
+            },
+            {
+              "name": {
+                "value": "the cold water"
+              }
+            },
+            {
+              "name": {
+                "value": "the computer"
+              }
+            },
+            {
+              "name": {
+                "value": "the electric oven"
+              }
+            },
+            {
+              "name": {
+                "value": "the heating"
+              }
+            },
+            {
+              "name": {
+                "value": "the light"
+              }
+            },
+            {
+              "name": {
+                "value": "the oven"
+              }
+            },
+            {
+              "name": {
+                "value": "the shower"
+              }
+            },
+            {
+              "name": {
+                "value": "the switch"
+              }
+            },
+            {
+              "name": {
+                "value": "the tap"
+              }
+            },
+            {
+              "name": {
+                "value": "the taps in the shower"
+              }
+            },
+            {
+              "name": {
+                "value": "the television"
+              }
+            },
+            {
+              "name": {
+                "value": "the television at the right of the console"
+              }
+            },
+            {
+              "name": {
+                "value": "the thermostat"
+              }
+            },
+            {
+              "name": {
+                "value": "the tv"
+              }
+            },
+            {
+              "name": {
+                "value": "the wifi"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Distance",
+          "values": [
+            {
+              "name": {
+                "value": "a little bit"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Donor",
+          "values": [
+            {
+              "name": {
+                "value": "you"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Goal",
+          "values": [
+            {
+              "name": {
+                "value": "close to the shower"
+              }
+            },
+            {
+              "name": {
+                "value": "close to the window"
+              }
+            },
+            {
+              "name": {
+                "value": "from the laptop at the right of the counter"
+              }
+            },
+            {
+              "name": {
+                "value": "from the router"
+              }
+            },
+            {
+              "name": {
+                "value": "here"
+              }
+            },
+            {
+              "name": {
+                "value": "in front of the main door"
+              }
+            },
+            {
+              "name": {
+                "value": "in front of the poster"
+              }
+            },
+            {
+              "name": {
+                "value": "in the bathroom"
+              }
+            },
+            {
+              "name": {
+                "value": "in the bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "in the bin"
+              }
+            },
+            {
+              "name": {
+                "value": "in the center of the table"
+              }
+            },
+            {
+              "name": {
+                "value": "in the closet in my bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "in the closet of the corridor"
+              }
+            },
+            {
+              "name": {
+                "value": "in the dining room"
+              }
+            },
+            {
+              "name": {
+                "value": "in the dishwasher"
+              }
+            },
+            {
+              "name": {
+                "value": "in the fridge"
+              }
+            },
+            {
+              "name": {
+                "value": "in the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "in the kitchen fridge"
+              }
+            },
+            {
+              "name": {
+                "value": "in the kitchen stove"
+              }
+            },
+            {
+              "name": {
+                "value": "in the living room"
+              }
+            },
+            {
+              "name": {
+                "value": "in the nightstand"
+              }
+            },
+            {
+              "name": {
+                "value": "in the oven"
+              }
+            },
+            {
+              "name": {
+                "value": "in the sink"
+              }
+            },
+            {
+              "name": {
+                "value": "in the trash"
+              }
+            },
+            {
+              "name": {
+                "value": "in the wardrobe"
+              }
+            },
+            {
+              "name": {
+                "value": "in the washing machine"
+              }
+            },
+            {
+              "name": {
+                "value": "into the bathroom"
+              }
+            },
+            {
+              "name": {
+                "value": "into the bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "into the dining room"
+              }
+            },
+            {
+              "name": {
+                "value": "into the dishwasher"
+              }
+            },
+            {
+              "name": {
+                "value": "into the living room"
+              }
+            },
+            {
+              "name": {
+                "value": "martina"
+              }
+            },
+            {
+              "name": {
+                "value": "near the closet of the bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "near the couch"
+              }
+            },
+            {
+              "name": {
+                "value": "near the couch of the bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "near the counter"
+              }
+            },
+            {
+              "name": {
+                "value": "near the counter of the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "near the counter on the right"
+              }
+            },
+            {
+              "name": {
+                "value": "near the lamp"
+              }
+            },
+            {
+              "name": {
+                "value": "near the right lamp"
+              }
+            },
+            {
+              "name": {
+                "value": "near the table"
+              }
+            },
+            {
+              "name": {
+                "value": "near the television"
+              }
+            },
+            {
+              "name": {
+                "value": "near the television of the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "near the window"
+              }
+            },
+            {
+              "name": {
+                "value": "near the window of the bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "next to the door"
+              }
+            },
+            {
+              "name": {
+                "value": "next to the tv set"
+              }
+            },
+            {
+              "name": {
+                "value": "on the bathroom sink"
+              }
+            },
+            {
+              "name": {
+                "value": "on the bed"
+              }
+            },
+            {
+              "name": {
+                "value": "on the bench in the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "on the bookshelf"
+              }
+            },
+            {
+              "name": {
+                "value": "on the chair"
+              }
+            },
+            {
+              "name": {
+                "value": "on the chair near the dining table"
+              }
+            },
+            {
+              "name": {
+                "value": "on the chair near the table"
+              }
+            },
+            {
+              "name": {
+                "value": "on the cloth horse"
+              }
+            },
+            {
+              "name": {
+                "value": "on the coffee table"
+              }
+            },
+            {
+              "name": {
+                "value": "on the counter"
+              }
+            },
+            {
+              "name": {
+                "value": "on the dining room table"
+              }
+            },
+            {
+              "name": {
+                "value": "on the kitchen table"
+              }
+            },
+            {
+              "name": {
+                "value": "on the sink nearest to the refrigerator"
+              }
+            },
+            {
+              "name": {
+                "value": "on the stove"
+              }
+            },
+            {
+              "name": {
+                "value": "on the table"
+              }
+            },
+            {
+              "name": {
+                "value": "on the table in the dining room"
+              }
+            },
+            {
+              "name": {
+                "value": "on the table in the studio"
+              }
+            },
+            {
+              "name": {
+                "value": "on the table next to the couch"
+              }
+            },
+            {
+              "name": {
+                "value": "on the washing line"
+              }
+            },
+            {
+              "name": {
+                "value": "onto the dining table"
+              }
+            },
+            {
+              "name": {
+                "value": "out"
+              }
+            },
+            {
+              "name": {
+                "value": "over here"
+              }
+            },
+            {
+              "name": {
+                "value": "over to the sofa"
+              }
+            },
+            {
+              "name": {
+                "value": "straight to the living room"
+              }
+            },
+            {
+              "name": {
+                "value": "the bathroom"
+              }
+            },
+            {
+              "name": {
+                "value": "the door"
+              }
+            },
+            {
+              "name": {
+                "value": "the door of the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "there"
+              }
+            },
+            {
+              "name": {
+                "value": "to bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "to dining room"
+              }
+            },
+            {
+              "name": {
+                "value": "to kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "to living room"
+              }
+            },
+            {
+              "name": {
+                "value": "to my nightstand"
+              }
+            },
+            {
+              "name": {
+                "value": "to studio"
+              }
+            },
+            {
+              "name": {
+                "value": "to the bathroom"
+              }
+            },
+            {
+              "name": {
+                "value": "to the bathroom sink"
+              }
+            },
+            {
+              "name": {
+                "value": "to the bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "to the bedstand"
+              }
+            },
+            {
+              "name": {
+                "value": "to the chair"
+              }
+            },
+            {
+              "name": {
+                "value": "to the closet of the dining room"
+              }
+            },
+            {
+              "name": {
+                "value": "to the coffee machine"
+              }
+            },
+            {
+              "name": {
+                "value": "to the coffee table in the living room"
+              }
+            },
+            {
+              "name": {
+                "value": "to the computer"
+              }
+            },
+            {
+              "name": {
+                "value": "to the corner"
+              }
+            },
+            {
+              "name": {
+                "value": "to the couch"
+              }
+            },
+            {
+              "name": {
+                "value": "to the couch in the living room"
+              }
+            },
+            {
+              "name": {
+                "value": "to the couch of the bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "to the counter at your left"
+              }
+            },
+            {
+              "name": {
+                "value": "to the dining room"
+              }
+            },
+            {
+              "name": {
+                "value": "to the dining table"
+              }
+            },
+            {
+              "name": {
+                "value": "to the dinner table"
+              }
+            },
+            {
+              "name": {
+                "value": "to the door"
+              }
+            },
+            {
+              "name": {
+                "value": "to the far end of this table"
+              }
+            },
+            {
+              "name": {
+                "value": "to the fridge"
+              }
+            },
+            {
+              "name": {
+                "value": "to the fridge inside the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "to the front of the fridge"
+              }
+            },
+            {
+              "name": {
+                "value": "to the garden"
+              }
+            },
+            {
+              "name": {
+                "value": "to the guest bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "to the hall"
+              }
+            },
+            {
+              "name": {
+                "value": "to the head of the table"
+              }
+            },
+            {
+              "name": {
+                "value": "to the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "to the lamp on the right side of the bed"
+              }
+            },
+            {
+              "name": {
+                "value": "to the laundry room"
+              }
+            },
+            {
+              "name": {
+                "value": "to the left of the table"
+              }
+            },
+            {
+              "name": {
+                "value": "to the living room"
+              }
+            },
+            {
+              "name": {
+                "value": "to the livingroom"
+              }
+            },
+            {
+              "name": {
+                "value": "to the lounge"
+              }
+            },
+            {
+              "name": {
+                "value": "to the mirror"
+              }
+            },
+            {
+              "name": {
+                "value": "to the pc on your left"
+              }
+            },
+            {
+              "name": {
+                "value": "to the right of the sofa"
+              }
+            },
+            {
+              "name": {
+                "value": "to the shower"
+              }
+            },
+            {
+              "name": {
+                "value": "to the side of the bathtub"
+              }
+            },
+            {
+              "name": {
+                "value": "to the sink"
+              }
+            },
+            {
+              "name": {
+                "value": "to the sofa"
+              }
+            },
+            {
+              "name": {
+                "value": "to the stairs"
+              }
+            },
+            {
+              "name": {
+                "value": "to the studio"
+              }
+            },
+            {
+              "name": {
+                "value": "to the table"
+              }
+            },
+            {
+              "name": {
+                "value": "to the table of the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "to the telephone"
+              }
+            },
+            {
+              "name": {
+                "value": "to the television in the living room"
+              }
+            },
+            {
+              "name": {
+                "value": "to the television in the studio"
+              }
+            },
+            {
+              "name": {
+                "value": "to the toilet"
+              }
+            },
+            {
+              "name": {
+                "value": "towards the bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "towards the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "towards the living room"
+              }
+            },
+            {
+              "name": {
+                "value": "towards the sink on the left hand side"
+              }
+            },
+            {
+              "name": {
+                "value": "under the bed"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Ground",
+          "values": [
+            {
+              "name": {
+                "value": "in the bathroom"
+              }
+            },
+            {
+              "name": {
+                "value": "in the bathroom and the bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "in the bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "in the corridor"
+              }
+            },
+            {
+              "name": {
+                "value": "in the dining room"
+              }
+            },
+            {
+              "name": {
+                "value": "in the dresser"
+              }
+            },
+            {
+              "name": {
+                "value": "in the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "in the living room"
+              }
+            },
+            {
+              "name": {
+                "value": "in the lounge"
+              }
+            },
+            {
+              "name": {
+                "value": "in the red drawer"
+              }
+            },
+            {
+              "name": {
+                "value": "in the studio"
+              }
+            },
+            {
+              "name": {
+                "value": "it"
+              }
+            },
+            {
+              "name": {
+                "value": "on the bed in the bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "on the sofa near the window"
+              }
+            },
+            {
+              "name": {
+                "value": "on the table"
+              }
+            },
+            {
+              "name": {
+                "value": "on the table in the dining room"
+              }
+            },
+            {
+              "name": {
+                "value": "the answer machine"
+              }
+            },
+            {
+              "name": {
+                "value": "the bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "the coffee"
+              }
+            },
+            {
+              "name": {
+                "value": "the living room"
+              }
+            },
+            {
+              "name": {
+                "value": "the radio"
+              }
+            },
+            {
+              "name": {
+                "value": "the stereo"
+              }
+            },
+            {
+              "name": {
+                "value": "the toilet paper"
+              }
+            },
+            {
+              "name": {
+                "value": "the washing machine"
+              }
+            },
+            {
+              "name": {
+                "value": "there is clothes in the washing machine"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Inspector",
+          "values": [
+            {
+              "name": {
+                "value": "you"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Item",
+          "values": [
+            {
+              "name": {
+                "value": "it"
+              }
+            },
+            {
+              "name": {
+                "value": "the living room"
+              }
+            },
+            {
+              "name": {
+                "value": "this"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Location",
+          "values": [
+            {
+              "name": {
+                "value": "between two lamps"
+              }
+            },
+            {
+              "name": {
+                "value": "in a very big bathroom"
+              }
+            },
+            {
+              "name": {
+                "value": "in one of the drawers of the bathroom"
+              }
+            },
+            {
+              "name": {
+                "value": "in the bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "in the blue drawer"
+              }
+            },
+            {
+              "name": {
+                "value": "in the center of the dining room"
+              }
+            },
+            {
+              "name": {
+                "value": "in the dining room"
+              }
+            },
+            {
+              "name": {
+                "value": "in the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "in the kitchen drawer"
+              }
+            },
+            {
+              "name": {
+                "value": "in the living room"
+              }
+            },
+            {
+              "name": {
+                "value": "in this room"
+              }
+            },
+            {
+              "name": {
+                "value": "next to the bed"
+              }
+            },
+            {
+              "name": {
+                "value": "on the couch side table"
+              }
+            },
+            {
+              "name": {
+                "value": "on the desk"
+              }
+            },
+            {
+              "name": {
+                "value": "on the kitchen table"
+              }
+            },
+            {
+              "name": {
+                "value": "on the left side"
+              }
+            },
+            {
+              "name": {
+                "value": "on the nightstand"
+              }
+            },
+            {
+              "name": {
+                "value": "on your right side"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Manner",
+          "values": [
+            {
+              "name": {
+                "value": "carefully"
+              }
+            },
+            {
+              "name": {
+                "value": "closely"
+              }
+            },
+            {
+              "name": {
+                "value": "quickly"
+              }
+            },
+            {
+              "name": {
+                "value": "slowly"
+              }
+            },
+            {
+              "name": {
+                "value": "very fast"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Operational_state",
+          "values": [
+            {
+              "name": {
+                "value": "off"
+              }
+            },
+            {
+              "name": {
+                "value": "on"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Path",
+          "values": [
+            {
+              "name": {
+                "value": "along the fences"
+              }
+            },
+            {
+              "name": {
+                "value": "along the wall"
+              }
+            },
+            {
+              "name": {
+                "value": "around the house"
+              }
+            },
+            {
+              "name": {
+                "value": "from behind"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Phenomenon",
+          "values": [
+            {
+              "name": {
+                "value": "a bottle"
+              }
+            },
+            {
+              "name": {
+                "value": "a bottle of water"
+              }
+            },
+            {
+              "name": {
+                "value": "a cushion"
+              }
+            },
+            {
+              "name": {
+                "value": "a drink"
+              }
+            },
+            {
+              "name": {
+                "value": "a glass"
+              }
+            },
+            {
+              "name": {
+                "value": "a magazine"
+              }
+            },
+            {
+              "name": {
+                "value": "a pack of napkins"
+              }
+            },
+            {
+              "name": {
+                "value": "a plate"
+              }
+            },
+            {
+              "name": {
+                "value": "a red t-shirt"
+              }
+            },
+            {
+              "name": {
+                "value": "at me"
+              }
+            },
+            {
+              "name": {
+                "value": "for a blue book"
+              }
+            },
+            {
+              "name": {
+                "value": "for a blue plate"
+              }
+            },
+            {
+              "name": {
+                "value": "for a pillow"
+              }
+            },
+            {
+              "name": {
+                "value": "for my handbag"
+              }
+            },
+            {
+              "name": {
+                "value": "for my hat"
+              }
+            },
+            {
+              "name": {
+                "value": "for my mobile phone"
+              }
+            },
+            {
+              "name": {
+                "value": "for my phone"
+              }
+            },
+            {
+              "name": {
+                "value": "for my wallet"
+              }
+            },
+            {
+              "name": {
+                "value": "for the bed"
+              }
+            },
+            {
+              "name": {
+                "value": "for the bottle"
+              }
+            },
+            {
+              "name": {
+                "value": "for the bottle of wine"
+              }
+            },
+            {
+              "name": {
+                "value": "for the coffee cups"
+              }
+            },
+            {
+              "name": {
+                "value": "for the glass"
+              }
+            },
+            {
+              "name": {
+                "value": "for the horn glasses"
+              }
+            },
+            {
+              "name": {
+                "value": "for the jar"
+              }
+            },
+            {
+              "name": {
+                "value": "for the lamp"
+              }
+            },
+            {
+              "name": {
+                "value": "for the pillow"
+              }
+            },
+            {
+              "name": {
+                "value": "for the remote control"
+              }
+            },
+            {
+              "name": {
+                "value": "for the scissors"
+              }
+            },
+            {
+              "name": {
+                "value": "for the soap"
+              }
+            },
+            {
+              "name": {
+                "value": "for the stove"
+              }
+            },
+            {
+              "name": {
+                "value": "for the towel"
+              }
+            },
+            {
+              "name": {
+                "value": "for the wrench"
+              }
+            },
+            {
+              "name": {
+                "value": "for towel"
+              }
+            },
+            {
+              "name": {
+                "value": "it"
+              }
+            },
+            {
+              "name": {
+                "value": "my address book"
+              }
+            },
+            {
+              "name": {
+                "value": "my book"
+              }
+            },
+            {
+              "name": {
+                "value": "my hat"
+              }
+            },
+            {
+              "name": {
+                "value": "my tablet"
+              }
+            },
+            {
+              "name": {
+                "value": "my wallet"
+              }
+            },
+            {
+              "name": {
+                "value": "the bed"
+              }
+            },
+            {
+              "name": {
+                "value": "the black cushion which is on the bed"
+              }
+            },
+            {
+              "name": {
+                "value": "the black pen"
+              }
+            },
+            {
+              "name": {
+                "value": "the book"
+              }
+            },
+            {
+              "name": {
+                "value": "the bottle"
+              }
+            },
+            {
+              "name": {
+                "value": "the bottle of water"
+              }
+            },
+            {
+              "name": {
+                "value": "the bottle of wine"
+              }
+            },
+            {
+              "name": {
+                "value": "the butcher knife"
+              }
+            },
+            {
+              "name": {
+                "value": "the flowers"
+              }
+            },
+            {
+              "name": {
+                "value": "the fruit"
+              }
+            },
+            {
+              "name": {
+                "value": "the glasses"
+              }
+            },
+            {
+              "name": {
+                "value": "the keys"
+              }
+            },
+            {
+              "name": {
+                "value": "the lamp"
+              }
+            },
+            {
+              "name": {
+                "value": "the magazine"
+              }
+            },
+            {
+              "name": {
+                "value": "the newspaper"
+              }
+            },
+            {
+              "name": {
+                "value": "the phone"
+              }
+            },
+            {
+              "name": {
+                "value": "the pillow"
+              }
+            },
+            {
+              "name": {
+                "value": "the plates"
+              }
+            },
+            {
+              "name": {
+                "value": "the red pillow"
+              }
+            },
+            {
+              "name": {
+                "value": "the refrigerator"
+              }
+            },
+            {
+              "name": {
+                "value": "the shower"
+              }
+            },
+            {
+              "name": {
+                "value": "the stove"
+              }
+            },
+            {
+              "name": {
+                "value": "the sunglasses"
+              }
+            },
+            {
+              "name": {
+                "value": "the table"
+              }
+            },
+            {
+              "name": {
+                "value": "the television"
+              }
+            },
+            {
+              "name": {
+                "value": "the toilet paper"
+              }
+            },
+            {
+              "name": {
+                "value": "the towel"
+              }
+            },
+            {
+              "name": {
+                "value": "the wallet"
+              }
+            },
+            {
+              "name": {
+                "value": "the white vase"
+              }
+            },
+            {
+              "name": {
+                "value": "the wine"
+              }
+            },
+            {
+              "name": {
+                "value": "vittorio is phone"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Purpose",
+          "values": [
+            {
+              "name": {
+                "value": "for me"
+              }
+            },
+            {
+              "name": {
+                "value": "me"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Reason",
+          "values": [
+            {
+              "name": {
+                "value": "for the television"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Recipient",
+          "values": [
+            {
+              "name": {
+                "value": "me"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Source",
+          "values": [
+            {
+              "name": {
+                "value": "away from the oven"
+              }
+            },
+            {
+              "name": {
+                "value": "from the bathroom"
+              }
+            },
+            {
+              "name": {
+                "value": "from the bed"
+              }
+            },
+            {
+              "name": {
+                "value": "from the bed room"
+              }
+            },
+            {
+              "name": {
+                "value": "from the bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "from the bookshelf"
+              }
+            },
+            {
+              "name": {
+                "value": "from the closet"
+              }
+            },
+            {
+              "name": {
+                "value": "from the couch"
+              }
+            },
+            {
+              "name": {
+                "value": "from the dining room"
+              }
+            },
+            {
+              "name": {
+                "value": "from the dishwasher"
+              }
+            },
+            {
+              "name": {
+                "value": "from the drawer"
+              }
+            },
+            {
+              "name": {
+                "value": "from the fridge"
+              }
+            },
+            {
+              "name": {
+                "value": "from the jacket hook in my bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "from the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "from the kitchen cabinet"
+              }
+            },
+            {
+              "name": {
+                "value": "from the kitchen table"
+              }
+            },
+            {
+              "name": {
+                "value": "from the pantry"
+              }
+            },
+            {
+              "name": {
+                "value": "from the press"
+              }
+            },
+            {
+              "name": {
+                "value": "from the seat"
+              }
+            },
+            {
+              "name": {
+                "value": "from the stand"
+              }
+            },
+            {
+              "name": {
+                "value": "from the studio"
+              }
+            },
+            {
+              "name": {
+                "value": "from the table"
+              }
+            },
+            {
+              "name": {
+                "value": "on the bedside table"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Speed",
+          "values": [
+            {
+              "name": {
+                "value": "fast"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Theme",
+          "values": [
+            {
+              "name": {
+                "value": "a bath towel"
+              }
+            },
+            {
+              "name": {
+                "value": "a bed with two lamps"
+              }
+            },
+            {
+              "name": {
+                "value": "a book"
+              }
+            },
+            {
+              "name": {
+                "value": "a chair"
+              }
+            },
+            {
+              "name": {
+                "value": "a coffee mug"
+              }
+            },
+            {
+              "name": {
+                "value": "a fork"
+              }
+            },
+            {
+              "name": {
+                "value": "a glass of water"
+              }
+            },
+            {
+              "name": {
+                "value": "a lot of couches"
+              }
+            },
+            {
+              "name": {
+                "value": "a magazine"
+              }
+            },
+            {
+              "name": {
+                "value": "a plastic plate"
+              }
+            },
+            {
+              "name": {
+                "value": "a plate"
+              }
+            },
+            {
+              "name": {
+                "value": "a radio"
+              }
+            },
+            {
+              "name": {
+                "value": "a table"
+              }
+            },
+            {
+              "name": {
+                "value": "a towel"
+              }
+            },
+            {
+              "name": {
+                "value": "a wristwatch"
+              }
+            },
+            {
+              "name": {
+                "value": "a yellow jacket"
+              }
+            },
+            {
+              "name": {
+                "value": "all the plates"
+              }
+            },
+            {
+              "name": {
+                "value": "an apple or an orange"
+              }
+            },
+            {
+              "name": {
+                "value": "is"
+              }
+            },
+            {
+              "name": {
+                "value": "it"
+              }
+            },
+            {
+              "name": {
+                "value": "me"
+              }
+            },
+            {
+              "name": {
+                "value": "mug"
+              }
+            },
+            {
+              "name": {
+                "value": "my aspirin"
+              }
+            },
+            {
+              "name": {
+                "value": "my book"
+              }
+            },
+            {
+              "name": {
+                "value": "my book in the living room"
+              }
+            },
+            {
+              "name": {
+                "value": "my catalogue"
+              }
+            },
+            {
+              "name": {
+                "value": "my cellphone"
+              }
+            },
+            {
+              "name": {
+                "value": "my clothes"
+              }
+            },
+            {
+              "name": {
+                "value": "my coat"
+              }
+            },
+            {
+              "name": {
+                "value": "my computer"
+              }
+            },
+            {
+              "name": {
+                "value": "my eyeglass"
+              }
+            },
+            {
+              "name": {
+                "value": "my jacket"
+              }
+            },
+            {
+              "name": {
+                "value": "my laptop"
+              }
+            },
+            {
+              "name": {
+                "value": "my mobile phone"
+              }
+            },
+            {
+              "name": {
+                "value": "my phone"
+              }
+            },
+            {
+              "name": {
+                "value": "my reading glasses"
+              }
+            },
+            {
+              "name": {
+                "value": "my tablet"
+              }
+            },
+            {
+              "name": {
+                "value": "my telephone"
+              }
+            },
+            {
+              "name": {
+                "value": "my towel"
+              }
+            },
+            {
+              "name": {
+                "value": "my towel that is in the bathroom"
+              }
+            },
+            {
+              "name": {
+                "value": "my trash"
+              }
+            },
+            {
+              "name": {
+                "value": "my trousers on the bed"
+              }
+            },
+            {
+              "name": {
+                "value": "my water"
+              }
+            },
+            {
+              "name": {
+                "value": "my wine glass"
+              }
+            },
+            {
+              "name": {
+                "value": "my wristwatch"
+              }
+            },
+            {
+              "name": {
+                "value": "of the pack of beer"
+              }
+            },
+            {
+              "name": {
+                "value": "one"
+              }
+            },
+            {
+              "name": {
+                "value": "one apple from the table"
+              }
+            },
+            {
+              "name": {
+                "value": "six chairs"
+              }
+            },
+            {
+              "name": {
+                "value": "some"
+              }
+            },
+            {
+              "name": {
+                "value": "some bread"
+              }
+            },
+            {
+              "name": {
+                "value": "some loo roll"
+              }
+            },
+            {
+              "name": {
+                "value": "some mustard"
+              }
+            },
+            {
+              "name": {
+                "value": "some napkins"
+              }
+            },
+            {
+              "name": {
+                "value": "some pasta"
+              }
+            },
+            {
+              "name": {
+                "value": "some plastic bags"
+              }
+            },
+            {
+              "name": {
+                "value": "some water"
+              }
+            },
+            {
+              "name": {
+                "value": "the apple jam jar"
+              }
+            },
+            {
+              "name": {
+                "value": "the bag"
+              }
+            },
+            {
+              "name": {
+                "value": "the baking tray"
+              }
+            },
+            {
+              "name": {
+                "value": "the bath-tub"
+              }
+            },
+            {
+              "name": {
+                "value": "the bed"
+              }
+            },
+            {
+              "name": {
+                "value": "the beer cans in the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "the beer pack near the kitchen door"
+              }
+            },
+            {
+              "name": {
+                "value": "the beers"
+              }
+            },
+            {
+              "name": {
+                "value": "the black paperback"
+              }
+            },
+            {
+              "name": {
+                "value": "the blue slippers"
+              }
+            },
+            {
+              "name": {
+                "value": "the book"
+              }
+            },
+            {
+              "name": {
+                "value": "the book with the blue cover"
+              }
+            },
+            {
+              "name": {
+                "value": "the bottle"
+              }
+            },
+            {
+              "name": {
+                "value": "the bottle near the fridge"
+              }
+            },
+            {
+              "name": {
+                "value": "the bottle of water on the table"
+              }
+            },
+            {
+              "name": {
+                "value": "the box"
+              }
+            },
+            {
+              "name": {
+                "value": "the box on the left of the desktop"
+              }
+            },
+            {
+              "name": {
+                "value": "the brown envelope that is on the table"
+              }
+            },
+            {
+              "name": {
+                "value": "the cake plate"
+              }
+            },
+            {
+              "name": {
+                "value": "the can"
+              }
+            },
+            {
+              "name": {
+                "value": "the cell phone"
+              }
+            },
+            {
+              "name": {
+                "value": "the cereal box"
+              }
+            },
+            {
+              "name": {
+                "value": "the cereals and the milk"
+              }
+            },
+            {
+              "name": {
+                "value": "the cigarettes"
+              }
+            },
+            {
+              "name": {
+                "value": "the cigarettes next to the phone"
+              }
+            },
+            {
+              "name": {
+                "value": "the coffee mug"
+              }
+            },
+            {
+              "name": {
+                "value": "the coffee mugs"
+              }
+            },
+            {
+              "name": {
+                "value": "the coke"
+              }
+            },
+            {
+              "name": {
+                "value": "the coke that is in the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "the cookie jar"
+              }
+            },
+            {
+              "name": {
+                "value": "the corn can on the kitchen table"
+              }
+            },
+            {
+              "name": {
+                "value": "the cornflakes box"
+              }
+            },
+            {
+              "name": {
+                "value": "the cup"
+              }
+            },
+            {
+              "name": {
+                "value": "the cushion"
+              }
+            },
+            {
+              "name": {
+                "value": "the detergent"
+              }
+            },
+            {
+              "name": {
+                "value": "the forks"
+              }
+            },
+            {
+              "name": {
+                "value": "the fridge"
+              }
+            },
+            {
+              "name": {
+                "value": "the fruit"
+              }
+            },
+            {
+              "name": {
+                "value": "the garbage"
+              }
+            },
+            {
+              "name": {
+                "value": "the glass"
+              }
+            },
+            {
+              "name": {
+                "value": "the glass jar"
+              }
+            },
+            {
+              "name": {
+                "value": "the glasses"
+              }
+            },
+            {
+              "name": {
+                "value": "the gray folder"
+              }
+            },
+            {
+              "name": {
+                "value": "the jacket"
+              }
+            },
+            {
+              "name": {
+                "value": "the jar"
+              }
+            },
+            {
+              "name": {
+                "value": "the kettle"
+              }
+            },
+            {
+              "name": {
+                "value": "the key lanyard"
+              }
+            },
+            {
+              "name": {
+                "value": "the knife on the cutting board"
+              }
+            },
+            {
+              "name": {
+                "value": "the knife with the black handle"
+              }
+            },
+            {
+              "name": {
+                "value": "the laptop"
+              }
+            },
+            {
+              "name": {
+                "value": "the magazine that is in the bathroom"
+              }
+            },
+            {
+              "name": {
+                "value": "the mayo"
+              }
+            },
+            {
+              "name": {
+                "value": "the milk"
+              }
+            },
+            {
+              "name": {
+                "value": "the mobile"
+              }
+            },
+            {
+              "name": {
+                "value": "the mobile phone"
+              }
+            },
+            {
+              "name": {
+                "value": "the mug"
+              }
+            },
+            {
+              "name": {
+                "value": "the mug in the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "the newspaper"
+              }
+            },
+            {
+              "name": {
+                "value": "the orange juice"
+              }
+            },
+            {
+              "name": {
+                "value": "the pan"
+              }
+            },
+            {
+              "name": {
+                "value": "the paper"
+              }
+            },
+            {
+              "name": {
+                "value": "the phone"
+              }
+            },
+            {
+              "name": {
+                "value": "the phone at the right of the desk"
+              }
+            },
+            {
+              "name": {
+                "value": "the phone on the couch"
+              }
+            },
+            {
+              "name": {
+                "value": "the phone on the left of the pc"
+              }
+            },
+            {
+              "name": {
+                "value": "the phone that is on the glass table in the dining room"
+              }
+            },
+            {
+              "name": {
+                "value": "the pillow"
+              }
+            },
+            {
+              "name": {
+                "value": "the pillow at the left of the couch"
+              }
+            },
+            {
+              "name": {
+                "value": "the plate"
+              }
+            },
+            {
+              "name": {
+                "value": "the postcard on the nightstand"
+              }
+            },
+            {
+              "name": {
+                "value": "the pot"
+              }
+            },
+            {
+              "name": {
+                "value": "the rag"
+              }
+            },
+            {
+              "name": {
+                "value": "the remote"
+              }
+            },
+            {
+              "name": {
+                "value": "the remote control"
+              }
+            },
+            {
+              "name": {
+                "value": "the salt box"
+              }
+            },
+            {
+              "name": {
+                "value": "the screwdriver"
+              }
+            },
+            {
+              "name": {
+                "value": "the shampoo"
+              }
+            },
+            {
+              "name": {
+                "value": "the sink"
+              }
+            },
+            {
+              "name": {
+                "value": "the soap"
+              }
+            },
+            {
+              "name": {
+                "value": "the tablecloth"
+              }
+            },
+            {
+              "name": {
+                "value": "the telephone"
+              }
+            },
+            {
+              "name": {
+                "value": "the television remote"
+              }
+            },
+            {
+              "name": {
+                "value": "the tissue box"
+              }
+            },
+            {
+              "name": {
+                "value": "the toilet paper"
+              }
+            },
+            {
+              "name": {
+                "value": "the towel"
+              }
+            },
+            {
+              "name": {
+                "value": "the trash bin"
+              }
+            },
+            {
+              "name": {
+                "value": "the tray"
+              }
+            },
+            {
+              "name": {
+                "value": "the vase"
+              }
+            },
+            {
+              "name": {
+                "value": "them"
+              }
+            },
+            {
+              "name": {
+                "value": "they"
+              }
+            },
+            {
+              "name": {
+                "value": "this book"
+              }
+            },
+            {
+              "name": {
+                "value": "this jacket"
+              }
+            },
+            {
+              "name": {
+                "value": "this message"
+              }
+            },
+            {
+              "name": {
+                "value": "this mug"
+              }
+            },
+            {
+              "name": {
+                "value": "this pan"
+              }
+            },
+            {
+              "name": {
+                "value": "this plate"
+              }
+            },
+            {
+              "name": {
+                "value": "three coffee cups"
+              }
+            },
+            {
+              "name": {
+                "value": "two couches facing one another"
+              }
+            },
+            {
+              "name": {
+                "value": "two sinks"
+              }
+            },
+            {
+              "name": {
+                "value": "yogurt"
+              }
+            },
+            {
+              "name": {
+                "value": "you"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Unwanted_entity",
+          "values": [
+            {
+              "name": {
+                "value": "for any messages"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2348">
+<sentence>please move to the far end of this table</sentence>
+<tokens>
+	<token id="1" surface="please" pos="UH" lemma="please"/>
+	<token id="2" surface="move" pos="VB" lemma="move"/>
+	<token id="3" surface="to" pos="TO" lemma="to"/>
+	<token id="4" surface="the" pos="DT" lemma="the"/>
+	<token id="5" surface="far" pos="JJ" lemma="far"/>
+	<token id="6" surface="end" pos="NN" lemma="end"/>
+	<token id="7" surface="of" pos="IN" lemma="of"/>
+	<token id="8" surface="this" pos="DT" lemma="this"/>
+	<token id="9" surface="table" pos="NN" lemma="table"/>
+</tokens>
+<dependencies>
+	<dep from="2" to="1" type="discourse"/>
+	<dep from="0" to="2" type="root"/>
+	<dep from="2" to="3" type="prep"/>
+	<dep from="6" to="4" type="det"/>
+	<dep from="6" to="5" type="amod"/>
+	<dep from="3" to="6" type="pobj"/>
+	<dep from="6" to="7" type="prep"/>
+	<dep from="9" to="8" type="det"/>
+	<dep from="7" to="9" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Motion">
+			<lexicalUnit>
+				<token id="2"/>
+			</lexicalUnit>
+			<frameElement type="Goal">
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+				<token id="8"/>
+				<token id="9"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="23_Indian_no_f889c4f44c3a41e55f2f2603b183e84251cb415fc1a0d_step1_audio1.wav"/>
+</audioFiles>
+</command>

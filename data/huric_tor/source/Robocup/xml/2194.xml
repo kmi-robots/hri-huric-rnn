@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2194">
+<sentence>follow that person</sentence>
+<tokens>
+	<token id="1" surface="follow" pos="VB" lemma="follow"/>
+	<token id="2" surface="that" pos="DT" lemma="that"/>
+	<token id="3" surface="person" pos="NN" lemma="person"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="3" to="2" type="det"/>
+	<dep from="1" to="3" type="dobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Following">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Cotheme">
+				<token id="2"/>
+				<token id="3"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="28_Indonesia_no_86e52a12ed9bdf35cdf7bc6d9ce45dfc51c9629fbb3bb_step1_audio2.wav"/>
+	<file name="23_Dutch_no_fbb8b24bbcbb7b75c30e6fbf9100587b51c99bd6354f1_30_t_step2_audio4.wav"/>
+</audioFiles>
+</command>

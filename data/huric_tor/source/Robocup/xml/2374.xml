@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2374">
+<sentence>hey robot take the book and put it in the oven</sentence>
+<tokens>
+	<token id="1" surface="hey" pos="UH" lemma="hey"/>
+	<token id="2" surface="robot" pos="NN" lemma="robot"/>
+	<token id="3" surface="take" pos="VB" lemma="take"/>
+	<token id="4" surface="the" pos="DT" lemma="the"/>
+	<token id="5" surface="book" pos="NN" lemma="book"/>
+	<token id="6" surface="and" pos="CC" lemma="and"/>
+	<token id="7" surface="put" pos="VB" lemma="put"/>
+	<token id="8" surface="it" pos="PRP" lemma="it"/>
+	<token id="9" surface="in" pos="IN" lemma="in"/>
+	<token id="10" surface="the" pos="DT" lemma="the"/>
+	<token id="11" surface="oven" pos="NN" lemma="oven"/>
+</tokens>
+<dependencies>
+	<dep from="2" to="1" type="discourse"/>
+	<dep from="3" to="2" type="nsubj"/>
+	<dep from="0" to="3" type="root"/>
+	<dep from="5" to="4" type="det"/>
+	<dep from="3" to="5" type="dobj"/>
+	<dep from="3" to="6" type="cc"/>
+	<dep from="3" to="7" type="conj"/>
+	<dep from="7" to="8" type="dobj"/>
+	<dep from="7" to="9" type="prep"/>
+	<dep from="11" to="10" type="det"/>
+	<dep from="9" to="11" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Placing">
+			<lexicalUnit>
+				<token id="7"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="8"/>
+			</frameElement>
+			<frameElement type="Goal">
+				<token id="9"/>
+				<token id="10"/>
+				<token id="11"/>
+			</frameElement>
+		</frame>
+		<frame name="Taking">
+			<lexicalUnit>
+				<token id="3"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="4"/>
+				<token id="5"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="25_Czech Republic_no_f48d4b716dbaf8dd0108f2fe899b3aae51d6d811e6a8d_step1_audio3.wav"/>
+</audioFiles>
+</command>

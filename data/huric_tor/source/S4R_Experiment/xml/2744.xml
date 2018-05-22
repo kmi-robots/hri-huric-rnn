@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2744">
+<sentence>search for a pillow in the living room</sentence>
+<tokens>
+	<token id="1" surface="search" pos="VB" lemma="search"/>
+	<token id="2" surface="for" pos="IN" lemma="for"/>
+	<token id="3" surface="a" pos="DT" lemma="a"/>
+	<token id="4" surface="pillow" pos="NN" lemma="pillow"/>
+	<token id="5" surface="in" pos="IN" lemma="in"/>
+	<token id="6" surface="the" pos="DT" lemma="the"/>
+	<token id="7" surface="living" pos="NN" lemma="living"/>
+	<token id="8" surface="room" pos="NN" lemma="room"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="prep"/>
+	<dep from="4" to="3" type="det"/>
+	<dep from="2" to="4" type="pobj"/>
+	<dep from="1" to="5" type="prep"/>
+	<dep from="8" to="6" type="det"/>
+	<dep from="8" to="7" type="nn"/>
+	<dep from="5" to="8" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Searching">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Phenomenon">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+			<frameElement type="Ground">
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+				<token id="8"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="60_Swiss_no_8ff74451b73537162862f51e0999faed51741cb9195f4_step1_audio4.wav"/>
+</audioFiles>
+</command>

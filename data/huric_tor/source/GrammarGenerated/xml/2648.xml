@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2648">
+<sentence>go to the counter at your left</sentence>
+<tokens>
+	<token id="1" surface="go" pos="VB" lemma="go"/>
+	<token id="2" surface="to" pos="TO" lemma="to"/>
+	<token id="3" surface="the" pos="DT" lemma="the"/>
+	<token id="4" surface="counter" pos="NN" lemma="counter"/>
+	<token id="5" surface="at" pos="IN" lemma="at"/>
+	<token id="6" surface="your" pos="PRP$" lemma="you"/>
+	<token id="7" surface="left" pos="NN" lemma="left"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="prep"/>
+	<dep from="4" to="3" type="det"/>
+	<dep from="2" to="4" type="pobj"/>
+	<dep from="4" to="5" type="prep"/>
+	<dep from="7" to="6" type="poss"/>
+	<dep from="5" to="7" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Motion">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Goal">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+		<spatialRelation name="Spatial_relation">
+			<spatialRole type="Trajector">
+				<token id="3"/>
+				<token id="4"/>
+			</spatialRole>
+			<spatialRole type="Spatial_Indicator">
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</spatialRole>
+		</spatialRelation>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="newCorpus66_daniele.wav"/>
+	<file name="newCorpus66_laalithya.wav"/>
+	<file name="newCorpus66_vittorio.wav"/>
+</audioFiles>
+</command>

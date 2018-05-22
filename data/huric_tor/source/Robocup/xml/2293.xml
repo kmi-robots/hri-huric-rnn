@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2293">
+<sentence>go follow my sister around the house</sentence>
+<tokens>
+	<token id="1" surface="go" pos="VB" lemma="go"/>
+	<token id="2" surface="follow" pos="VB" lemma="follow"/>
+	<token id="3" surface="my" pos="PRP$" lemma="my"/>
+	<token id="4" surface="sister" pos="NN" lemma="sister"/>
+	<token id="5" surface="around" pos="IN" lemma="around"/>
+	<token id="6" surface="the" pos="DT" lemma="the"/>
+	<token id="7" surface="house" pos="NN" lemma="house"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="xcomp"/>
+	<dep from="4" to="3" type="poss"/>
+	<dep from="2" to="4" type="dobj"/>
+	<dep from="2" to="5" type="prep"/>
+	<dep from="7" to="6" type="det"/>
+	<dep from="5" to="7" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Following">
+			<lexicalUnit>
+				<token id="2"/>
+			</lexicalUnit>
+			<frameElement type="Cotheme">
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+			<frameElement type="Path">
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="19_Australian_yes_33bb0a966c8dbec089efd9324de3750251c9c560cc039_step1_audio2.wav"/>
+	<file name="22_United States of America_yes_f43cee248adf87a644db0fcebecf47fb51cb05369714c_86_t_step2_audio4.wav"/>
+</audioFiles>
+</command>

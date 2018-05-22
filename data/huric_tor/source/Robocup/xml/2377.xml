@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2377">
+<sentence>please find me the black cushion which is on the bed</sentence>
+<tokens>
+	<token id="1" surface="please" pos="UH" lemma="please"/>
+	<token id="2" surface="find" pos="VB" lemma="find"/>
+	<token id="3" surface="me" pos="PRP" lemma="I"/>
+	<token id="4" surface="the" pos="DT" lemma="the"/>
+	<token id="5" surface="black" pos="JJ" lemma="black"/>
+	<token id="6" surface="cushion" pos="NN" lemma="cushion"/>
+	<token id="7" surface="which" pos="WDT" lemma="which"/>
+	<token id="8" surface="is" pos="VBZ" lemma="be"/>
+	<token id="9" surface="on" pos="IN" lemma="on"/>
+	<token id="10" surface="the" pos="DT" lemma="the"/>
+	<token id="11" surface="bed" pos="NN" lemma="bed"/>
+</tokens>
+<dependencies>
+	<dep from="2" to="1" type="discourse"/>
+	<dep from="0" to="2" type="root"/>
+	<dep from="2" to="3" type="iobj"/>
+	<dep from="6" to="4" type="det"/>
+	<dep from="6" to="5" type="amod"/>
+	<dep from="2" to="6" type="dojb"/>
+	<dep from="8" to="7" type="nsubj"/>
+	<dep from="6" to="8" type="rcmod"/>
+	<dep from="8" to="9" type="prep"/>
+	<dep from="11" to="10" type="det"/>
+	<dep from="9" to="11" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Searching">
+			<lexicalUnit>
+				<token id="2"/>
+			</lexicalUnit>
+			<frameElement type="Purpose">
+				<token id="3"/>
+			</frameElement>
+			<frameElement type="Phenomenon">
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+				<token id="8"/>
+				<token id="9"/>
+				<token id="10"/>
+				<token id="11"/>
+			</frameElement>
+		</frame>
+		<frame name="Being_located">
+			<lexicalUnit>
+				<token id="8"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+			</frameElement>
+			<frameElement type="Location">
+				<token id="9"/>
+				<token id="10"/>
+				<token id="11"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+		<spatialRelation name="Spatial_relation">
+			<spatialRole type="Trajector">
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+			</spatialRole>
+			<spatialRole type="Spatial_Indicator">
+				<token id="9"/>
+			</spatialRole>
+			<spatialRole type="Landmark">
+				<token id="10"/>
+				<token id="11"/>
+			</spatialRole>
+		</spatialRelation>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="36_British_yes_785d5a8a07003f15fca568bce95379e751d6dbf5b8f91_step1_audio4.wav"/>
+</audioFiles>
+</command>

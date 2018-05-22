@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2174">
+<sentence>go to the kitchen</sentence>
+<tokens>
+	<token id="1" surface="go" pos="VB" lemma="go"/>
+	<token id="2" surface="to" pos="TO" lemma="to"/>
+	<token id="3" surface="the" pos="DT" lemma="the"/>
+	<token id="4" surface="kitchen" pos="NN" lemma="kitchen"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="prep"/>
+	<dep from="4" to="3" type="det"/>
+	<dep from="2" to="4" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Motion">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Goal">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="50_usa_yes_7e7e4c67d245b3b7d10d9fb0cbf5e01651cb0a9907f97_step1_audio1.wav"/>
+	<file name="25_Dutch_no_143875e5a8115f54de0a127ce2e7953b51c94c8629fed_9_t_step2_audio3.wav"/>
+	<file name="28_Italian_no_0af191952617d3ac9e56641120871b2951d6cc30e7cd6_107_g_step2_audio2.wav"/>
+</audioFiles>
+</command>

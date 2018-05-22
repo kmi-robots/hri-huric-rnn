@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2278">
+<sentence>could you please go to the door</sentence>
+<tokens>
+	<token id="1" surface="could" pos="MD" lemma="could"/>
+	<token id="2" surface="you" pos="PRP" lemma="you"/>
+	<token id="3" surface="please" pos="UH" lemma="please"/>
+	<token id="4" surface="go" pos="VB" lemma="go"/>
+	<token id="5" surface="to" pos="TO" lemma="to"/>
+	<token id="6" surface="the" pos="DT" lemma="the"/>
+	<token id="7" surface="door" pos="NN" lemma="door"/>
+</tokens>
+<dependencies>
+	<dep from="4" to="1" type="aux"/>
+	<dep from="4" to="2" type="nsubj"/>
+	<dep from="4" to="3" type="discourse"/>
+	<dep from="0" to="4" type="root"/>
+	<dep from="4" to="5" type="prep"/>
+	<dep from="7" to="6" type="det"/>
+	<dep from="5" to="7" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Motion">
+			<lexicalUnit>
+				<token id="4"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="2"/>
+			</frameElement>
+			<frameElement type="Goal">
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="23_German_no_a4a1827aa8e7a9bc3af70c8c4ac5710951c9a22ab68e6_step1_audio1.wav"/>
+	<file name="29_Cypriot_no_8863837b6def5db227f899ea308a86fd51d6d323092bb_69_g_step2_audio1.wav"/>
+	<file name="35_brazilian_no_9cfc720e1ef717695363c84daf79016751d6e29e95566_69_g_step2_audio1.wav"/>
+</audioFiles>
+</command>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2409">
+<sentence>go to the bathroom take the rag go to the hall and clean the mirror</sentence>
+<tokens>
+	<token id="1" surface="go" pos="VB" lemma="go"/>
+	<token id="2" surface="to" pos="TO" lemma="to"/>
+	<token id="3" surface="the" pos="DT" lemma="the"/>
+	<token id="4" surface="bathroom" pos="NN" lemma="bathroom"/>
+	<token id="5" surface="take" pos="VB" lemma="take"/>
+	<token id="6" surface="the" pos="DT" lemma="the"/>
+	<token id="7" surface="rag" pos="NN" lemma="rag"/>
+	<token id="8" surface="go" pos="VB" lemma="go"/>
+	<token id="9" surface="to" pos="TO" lemma="to"/>
+	<token id="10" surface="the" pos="DT" lemma="the"/>
+	<token id="11" surface="hall" pos="NN" lemma="hall"/>
+	<token id="12" surface="and" pos="CC" lemma="and"/>
+	<token id="13" surface="clean" pos="VB" lemma="clean"/>
+	<token id="14" surface="the" pos="DT" lemma="the"/>
+	<token id="15" surface="mirror" pos="NN" lemma="mirror"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="prep"/>
+	<dep from="4" to="3" type="det"/>
+	<dep from="2" to="4" type="pobj"/>
+	<dep from="1" to="5" type="conj"/>
+	<dep from="7" to="6" type="det"/>
+	<dep from="5" to="7" type="dojb"/>
+	<dep from="5" to="8" type="conj"/>
+	<dep from="8" to="9" type="prep"/>
+	<dep from="11" to="10" type="det"/>
+	<dep from="9" to="11" type="pobj"/>
+	<dep from="8" to="12" type="cc"/>
+	<dep from="8" to="13" type="conj"/>
+	<dep from="15" to="14" type="det"/>
+	<dep from="13" to="15" type="dep"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Motion">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Goal">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+			</frameElement>
+		</frame>
+		<frame name="Taking">
+			<lexicalUnit>
+				<token id="5"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+		</frame>
+		<frame name="Motion">
+			<lexicalUnit>
+				<token id="8"/>
+			</lexicalUnit>
+			<frameElement type="Goal">
+				<token id="9"/>
+				<token id="10"/>
+				<token id="11"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="30_Italian_no_07cdbd1895e65e745d2bc3487da220885172a9b6b7b0c_7_g_step2_audio2.wav"/>
+	<file name="31_USA_yes_81f4bbc87bef2c5ca2aa89e96781c379517fd121db2c1_7_g_step2_audio2.wav"/>
+	<file name="64_italo-britannica_yes_661f54d1fde014662d7bf9de803c44e0518bae70830ee_7_g_step2_audio1.wav"/>
+</audioFiles>
+</command>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2347">
+<sentence>put the book on the chair near the dining table</sentence>
+<tokens>
+	<token id="1" surface="put" pos="VB" lemma="put"/>
+	<token id="2" surface="the" pos="DT" lemma="the"/>
+	<token id="3" surface="book" pos="NN" lemma="book"/>
+	<token id="4" surface="on" pos="IN" lemma="on"/>
+	<token id="5" surface="the" pos="DT" lemma="the"/>
+	<token id="6" surface="chair" pos="NN" lemma="chair"/>
+	<token id="7" surface="near" pos="IN" lemma="near"/>
+	<token id="8" surface="the" pos="DT" lemma="the"/>
+	<token id="9" surface="dining" pos="NN" lemma="dining"/>
+	<token id="10" surface="table" pos="NN" lemma="table"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="3" to="2" type="det"/>
+	<dep from="1" to="3" type="nsubj"/>
+	<dep from="1" to="4" type="prep"/>
+	<dep from="6" to="5" type="det"/>
+	<dep from="4" to="6" type="pobj"/>
+	<dep from="6" to="7" type="prep"/>
+	<dep from="10" to="8" type="det"/>
+	<dep from="10" to="9" type="nn"/>
+	<dep from="7" to="10" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Placing">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="2"/>
+				<token id="3"/>
+			</frameElement>
+			<frameElement type="Goal">
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+				<token id="8"/>
+				<token id="9"/>
+				<token id="10"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+		<spatialRelation name="Spatial_relation">
+			<spatialRole type="Trajector">
+				<token id="5"/>
+				<token id="6"/>
+			</spatialRole>
+			<spatialRole type="Spatial_Indicator">
+				<token id="7"/>
+			</spatialRole>
+			<spatialRole type="Landmark">
+				<token id="8"/>
+				<token id="9"/>
+				<token id="10"/>
+			</spatialRole>
+		</spatialRelation>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="23_Indian_no_f889c4f44c3a41e55f2f2603b183e84251cb415fc1a0d_step1_audio3.wav"/>
+</audioFiles>
+</command>

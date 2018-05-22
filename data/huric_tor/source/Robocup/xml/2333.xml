@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2333">
+<sentence>find the refrigerator</sentence>
+<tokens>
+	<token id="1" surface="find" pos="VB" lemma="find"/>
+	<token id="2" surface="the" pos="DT" lemma="the"/>
+	<token id="3" surface="refrigerator" pos="NN" lemma="refrigerator"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="3" to="2" type="det"/>
+	<dep from="1" to="3" type="dobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Searching">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Phenomenon">
+				<token id="2"/>
+				<token id="3"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="50_usa_yes_7e7e4c67d245b3b7d10d9fb0cbf5e01651cb0a9907f97_step1_audio4.wav"/>
+</audioFiles>
+</command>

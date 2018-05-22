@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2650">
+<sentence>grab the cigarettes next to the phone</sentence>
+<tokens>
+	<token id="1" surface="grab" pos="VB" lemma="grab"/>
+	<token id="2" surface="the" pos="DT" lemma="the"/>
+	<token id="3" surface="cigarettes" pos="NNS" lemma="cigarette"/>
+	<token id="4" surface="next" pos="JJ" lemma="next"/>
+	<token id="5" surface="to" pos="TO" lemma="to"/>
+	<token id="6" surface="the" pos="DT" lemma="the"/>
+	<token id="7" surface="phone" pos="NN" lemma="phone"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="3" to="2" type="det"/>
+	<dep from="1" to="3" type="dobj"/>
+	<dep from="3" to="4" type="dep"/>
+	<dep from="4" to="5" type="pcomp"/>
+	<dep from="7" to="6" type="det"/>
+	<dep from="5" to="7" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Taking">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+		<spatialRelation name="Spatial_relation">
+			<spatialRole type="Trajector">
+				<token id="2"/>
+				<token id="3"/>
+			</spatialRole>
+			<spatialRole type="Spatial_Indicator">
+				<token id="4"/>
+				<token id="5"/>
+			</spatialRole>
+			<spatialRole type="Landmark">
+				<token id="6"/>
+				<token id="7"/>
+			</spatialRole>
+		</spatialRelation>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="newCorpus97_daniele.wav"/>
+	<file name="newCorpus97_laalithya.wav"/>
+	<file name="newCorpus97_vittorio.wav"/>
+</audioFiles>
+</command>

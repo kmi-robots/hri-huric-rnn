@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2716">
+<sentence>go to the living room</sentence>
+<tokens>
+	<token id="1" surface="go" pos="VB" lemma="go"/>
+	<token id="2" surface="to" pos="TO" lemma="to"/>
+	<token id="3" surface="the" pos="DT" lemma="the"/>
+	<token id="4" surface="living" pos="NN" lemma="living"/>
+	<token id="5" surface="room" pos="NN" lemma="room"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="1" to="2" type="prep"/>
+	<dep from="5" to="3" type="det"/>
+	<dep from="5" to="4" type="nn"/>
+	<dep from="2" to="5" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Motion">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Goal">
+				<token id="2"/>
+				<token id="3"/>
+				<token id="4"/>
+				<token id="5"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="jeremy03.wav"/>
+	<file name="jeremy03B.wav"/>
+	<file name="jeremy14.wav"/>
+	<file name="jeremy14B.wav"/>
+</audioFiles>
+</command>

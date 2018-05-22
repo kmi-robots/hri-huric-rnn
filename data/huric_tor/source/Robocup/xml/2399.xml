@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2399">
+<sentence>robot this is the bedroom with a double bed with two lights next to it</sentence>
+<tokens>
+	<token id="1" surface="robot" pos="NN" lemma="robot"/>
+	<token id="2" surface="this" pos="DT" lemma="this"/>
+	<token id="3" surface="is" pos="VBZ" lemma="be"/>
+	<token id="4" surface="the" pos="DT" lemma="the"/>
+	<token id="5" surface="bedroom" pos="NN" lemma="bedroom"/>
+	<token id="6" surface="with" pos="IN" lemma="with"/>
+	<token id="7" surface="a" pos="DT" lemma="a"/>
+	<token id="8" surface="double" pos="JJ" lemma="double"/>
+	<token id="9" surface="bed" pos="NN" lemma="bed"/>
+	<token id="10" surface="with" pos="IN" lemma="with"/>
+	<token id="11" surface="two" pos="CD" lemma="two"/>
+	<token id="12" surface="lights" pos="NNS" lemma="light"/>
+	<token id="13" surface="next" pos="JJ" lemma="next"/>
+	<token id="14" surface="to" pos="TO" lemma="to"/>
+	<token id="15" surface="it" pos="PRP" lemma="it"/>
+</tokens>
+<dependencies>
+	<dep from="5" to="1" type="discourse"/>
+	<dep from="5" to="2" type="nsubj"/>
+	<dep from="5" to="3" type="cop"/>
+	<dep from="5" to="4" type="det"/>
+	<dep from="0" to="5" type="root"/>
+	<dep from="5" to="6" type="prep"/>
+	<dep from="9" to="7" type="det"/>
+	<dep from="9" to="8" type="amod"/>
+	<dep from="6" to="9" type="pobj"/>
+	<dep from="9" to="10" type="prep"/>
+	<dep from="12" to="11" type="num"/>
+	<dep from="10" to="12" type="pobj"/>
+	<dep from="12" to="13" type="dep"/>
+	<dep from="13" to="14" type="prep"/>
+	<dep from="14" to="15" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Being_in_category">
+			<lexicalUnit>
+				<token id="3"/>
+			</lexicalUnit>
+			<frameElement type="Item">
+				<token id="2"/>
+			</frameElement>
+			<frameElement type="Category">
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+				<token id="8"/>
+				<token id="9"/>
+				<token id="10"/>
+				<token id="11"/>
+				<token id="12"/>
+				<token id="13"/>
+				<token id="14"/>
+				<token id="15"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+		<spatialRelation name="Spatial_relation">
+			<spatialRole type="Trajector">
+				<token id="11"/>
+				<token id="12"/>
+			</spatialRole>
+			<spatialRole type="Spatial_Indicator">
+				<token id="13"/>
+				<token id="14"/>
+			</spatialRole>
+			<spatialRole type="Landmark">
+				<token id="15"/>
+			</spatialRole>
+		</spatialRelation>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="35_brazilian_no_9cfc720e1ef717695363c84daf79016751d6e29e95566_step1_audio5.wav"/>
+</audioFiles>
+</command>

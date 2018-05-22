@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<command id="2680">
+<sentence>bring the mobile to the living room</sentence>
+<tokens>
+	<token id="1" surface="bring" pos="VB" lemma="bring"/>
+	<token id="2" surface="the" pos="DT" lemma="the"/>
+	<token id="3" surface="mobile" pos="JJ" lemma="mobile"/>
+	<token id="4" surface="to" pos="TO" lemma="to"/>
+	<token id="5" surface="the" pos="DT" lemma="the"/>
+	<token id="6" surface="living" pos="NN" lemma="living"/>
+	<token id="7" surface="room" pos="NN" lemma="room"/>
+</tokens>
+<dependencies>
+	<dep from="0" to="1" type="root"/>
+	<dep from="3" to="2" type="det"/>
+	<dep from="1" to="3" type="dojb"/>
+	<dep from="1" to="4" type="prep"/>
+	<dep from="7" to="5" type="det"/>
+	<dep from="7" to="6" type="nn"/>
+	<dep from="4" to="7" type="pobj"/>
+</dependencies>
+<semantics>
+	<frameSemantics>
+		<frame name="Bringing">
+			<lexicalUnit>
+				<token id="1"/>
+			</lexicalUnit>
+			<frameElement type="Theme">
+				<token id="2"/>
+				<token id="3"/>
+			</frameElement>
+			<frameElement type="Goal">
+				<token id="4"/>
+				<token id="5"/>
+				<token id="6"/>
+				<token id="7"/>
+			</frameElement>
+		</frame>
+	</frameSemantics>
+	<spatialSemantics>
+	</spatialSemantics>
+</semantics>
+<audioFiles>
+	<file name="30_Italian_no_07cdbd1895e65e745d2bc3487da220885172a9b6b7b0c_step1_audio3.wav"/>
+</audioFiles>
+</command>
