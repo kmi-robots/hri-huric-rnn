@@ -298,7 +298,6 @@ class Model:
         # Truncate them on the actual decoding maximum number of steps (to have same length as decoder outputs)
         self.decoder_targets_true_length = self.decoder_targets_time_majored[:decoder_max_steps]
         # Define mask so padding does not count towards loss calculation
-        # TODO 0 depends on the id associated to '<PAD>'. Change it to slotEmbedder.get_id('<PAD>')
         self.mask = tf.to_float(tf.not_equal(self.decoder_targets_true_length, self.slotEmbedder.get_indexes_from_words_list(['<PAD>'])[0]))
 
 

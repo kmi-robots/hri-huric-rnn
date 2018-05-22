@@ -71,7 +71,6 @@ def train(mode):
     # maximum length of sentences
     input_steps = 50
     # load the train and dev datasets
-    # TODO do cross validation
     folds = data.load_data(DATASET, mode, SLOTS_TYPE)
     # fix the random seeds
     random_seed_init(len(folds[0]['data']))
