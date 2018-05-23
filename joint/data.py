@@ -1,7 +1,6 @@
 """
 Module with functions related to data loading and processing.
 
-IMPORTANT: this file is hard-linked both at /nlu/joint/data.py and at /brain/botcycle/nlu/joint/data.py
 """
 
 import json
@@ -70,6 +69,10 @@ def load_data(dataset_name, mode='measures', slots_type='full'):
             file_content = json.load(json_file)
             if slots_type != 'full':
                 file_content = reduce_slots(file_content, slots_type)
+
+            # add anyway the boundaries
+            for sample in file_content['data']:
+                sample['boundaries'] = slots_to_iob_only(sample['slots'])
             data_splitted.append(file_content)
 
     if mode == 'measures':
@@ -122,6 +125,15 @@ def adjust_sequences(data, length=50):
             sample['slots'] = sample['slots'][:length]
             sample['slots'][-1] = '<EOS>'
 
+        # and also the boundaries
+        if len(sample['boundaries']) < length:
+            sample['boundaries'].append('<EOS>')
+            while len(sample['boundaries']) < length:
+                sample['boundaries'].append('<PAD>')
+        else:
+            sample['boundaries'] = sample['boundaries'][:length]
+            sample['boundaries'][-1] = '<EOS>'
+
     return data
 
 
@@ -135,10 +147,12 @@ def get_vocabularies(data, meta_data):
     vocab = sorted(set(v), key=lambda x: v.index(x))
     s = ['<PAD>', '<EOS>'] + meta_data['slot_types']
     slot_tag = sorted(set(s), key=lambda x: s.index(x))
+    boundaries = ['<PAD>', '<EOS>'] + slots_to_iob_only(meta_data['slot_types'])
+    boundaries = sorted(set(boundaries), key=lambda x: boundaries.index(x))
     i = meta_data['intent_types']
     intent_tag = sorted(set(i), key=lambda x: i.index(x))
 
-    return vocab, slot_tag, intent_tag
+    return {'words': vocab, 'slots': slot_tag, 'intents': intent_tag, 'boundaries': boundaries}
 
 
 def get_batch(batch_size, train_data):

@@ -9,7 +9,7 @@ from .embeddings import EmbeddingsFromScratch, FixedEmbeddings, FineTuneEmbeddin
 flatten = lambda l: [item for sublist in l for item in sublist]
 
 class Model:
-    def __init__(self, input_steps, embedding_size, hidden_size, vocabs, word_embeddings, recurrent_cell, attention, loss_sum='both', multi_turn=False, batch_size=None, intent_combination=None):
+    def __init__(self, input_steps, embedding_size, hidden_size, vocabs, word_embeddings, recurrent_cell, attention, loss_sum='both', multi_turn=False, batch_size=None, intent_combination=None, three_stages=False):
         # save the parameters
         self.input_steps = input_steps
         self.embedding_size = embedding_size
@@ -39,6 +39,8 @@ class Model:
         # choose between RNN or CRF for the intent combination
         self.intent_combination = (intent_combination or 'gru') if multi_turn else None
 
+        self.three_stages = three_stages
+
         # define the placeholders for inputs to the graph
         # the input words are a tensor of type string.
         # In this way the one_hot encoding stuff and embeddings are managed by the embedding classes.
@@ -47,10 +49,13 @@ class Model:
         self.words_inputs = tf.placeholder(tf.string, [input_steps, batch_size], name="words_inputs")
         # This placeholder is for the actual length of each sentence, used in decoding
         self.encoder_inputs_actual_length = tf.placeholder(tf.int32, [batch_size], name='encoder_inputs_actual_length')
-        # Placeholder for the output sequence, used in train mode as truth value
+        # Placeholder for the output slot sequence, used in train mode as truth value
         self.decoder_targets = tf.placeholder(tf.string, [batch_size, input_steps], name='decoder_targets')
         # Placeholder for the output intent, used in train mode as truth value
         self.intent_targets = tf.placeholder(tf.string, [batch_size], name='intent_targets')
+
+        # Placeholder for the Boundary Detection sequence ('O', 'B-_', 'I-_')
+        self.boundaries_targets = tf.placeholder(tf.string, [batch_size, input_steps], name='boundaries_targets')
 
         if self.multi_turn:
             # this parameter will help understanding what is bot turn and what is user turn, never used
@@ -64,7 +69,11 @@ class Model:
         batch_size_tensor = tf.shape(self.words_inputs)[1]
 
         # unpack the vocabularies
-        input_vocab, slot_vocab, intent_vocab = self.vocabs
+        input_vocab = self.vocabs['words']
+        slot_vocab = self.vocabs['slots']
+        intent_vocab = self.vocabs['intents']
+        boundary_vocab = self.vocabs['boundaries']
+        print(boundary_vocab)
 
         # then create the embeddings and mapper (one-hot index to words and viceversa) for each one of them
         # For input words embedder, can choose between EmbeddingsFromScratch, FixedEmbeddings, FineTueEmbeddings:
@@ -76,6 +85,8 @@ class Model:
             self.wordsEmbedder = FixedEmbeddings(tokenizer, language, nlp)
         self.input_embedding_size = self.wordsEmbedder.embedding_size
         self.slotEmbedder = EmbeddingsFromScratch(slot_vocab, 'slot', self.embedding_size, True)
+        if self.three_stages:
+            self.boundaryEmbedder = EmbeddingsFromScratch(boundary_vocab, 'boundaries', self.embedding_size)
         print('intent vocab', intent_vocab)
         self.intentEmbedder = EmbeddingsFromScratch(intent_vocab, 'intent', self.embedding_size)
 
@@ -203,9 +214,9 @@ class Model:
 
 
         # the following functions are used by the CustomHelper
-        def initial_fn():
+        def initial_fn_together():
             """
-            defines how to provide the input to the decoder RNN cell at time 0
+            defines how to provide the input to the decoder RNN cell at time 0, together means BD + AC in a single step
             """
             initial_elements_finished = (0 >= decoder_lengths)  # all False at the initial step
             # get the embedded representation of the initial fake previous-output-label
@@ -213,6 +224,15 @@ class Model:
             # then concatenate it with the encoder output at time 0
             initial_input = tf.concat((sos_step_embedded, encoder_outputs[0]), 1)
             return initial_elements_finished, initial_input
+
+        def initial_fn_bd():
+            initial_elements_finished = (0 >= decoder_lengths)  # all False at the initial step
+            # get the embedded representation of the initial fake previous-output-label
+            sos_step_embedded = self.boundaryEmbedder.get_word_embeddings(sos_time_slice)
+            # then concatenate it with the encoder output at time 0
+            initial_input = tf.concat((sos_step_embedded, encoder_outputs[0]), 1)
+            return initial_elements_finished, initial_input
+
 
         def sample_fn(time, outputs, state):
             """
@@ -222,7 +242,7 @@ class Model:
             prediction_id = tf.to_int32(tf.argmax(outputs, axis=1))
             return prediction_id
 
-        def next_inputs_fn(time, outputs, state, sample_ids):
+        def next_inputs_fn_together(time, outputs, state, sample_ids):
             """
             defines how to provide the input to the RNN cell at timesteps>0
             """
@@ -237,11 +257,24 @@ class Model:
             next_state = state
             return elements_finished, next_inputs, next_state
 
-        # Build the helper with the declared functions
-        my_helper = tf.contrib.seq2seq.CustomHelper(initial_fn, sample_fn, next_inputs_fn)
+        def next_inputs_fn_bd(time, outputs, state, sample_ids):
+            """
+            defines how to provide the input to the RNN cell at timesteps>0
+            """
+            # From the last output, represented by sample_ids, get its embedded value
+            pred_embedding = self.boundaryEmbedder.get_word_embeddings_from_ids(sample_ids)
+            # Now concatenate it with the output of the decoder at the current timestep.
+            # This is the new input to the RNN cell
+            next_inputs = tf.concat((pred_embedding, encoder_outputs[time]), 1)
+            # Establish which samples in the batch have already finished the decoding
+            elements_finished = (time >= decoder_lengths)  # this operation produces boolean tensor of [batch_size]
+            # don't modify the state
+            next_state = state
+            return elements_finished, next_inputs, next_state
+
 
         # Decoding function
-        def decode(helper):
+        def decode(helper, stage_n=3):
             # The decoding LSTM cell
             if self.recurrent_cell == 'lstm':
                 cell = BasicLSTMCell(num_units=self.hidden_state_size)
@@ -250,6 +283,7 @@ class Model:
             if self.slots_attention:
                 # Get the memory representation (for the attention) by making the
                 # encoder outputs dimensions from (time, batch, hidden_size) to (batch, time, hidden_size)
+                # TODO attention on the correct memory
                 memory = tf.transpose(encoder_outputs, [1, 0, 2])
                 # Use the BahdanauAttention on the memory
                 attention_mechanism = tf.contrib.seq2seq.BahdanauAttention(
@@ -263,8 +297,12 @@ class Model:
             else:
                 # no attention
                 attn_cell = cell
+            if stage_n == 3:
+                out_size = self.slotEmbedder.vocab_size
+            elif stage_n == 2:
+                out_size = self.boundaryEmbedder.vocab_size
             out_cell = tf.contrib.rnn.OutputProjectionWrapper(
-                attn_cell, self.slotEmbedder.vocab_size
+                attn_cell, out_size
             )
             # Define the decoder by combining the helper with the RNN cell
             decoder = tf.contrib.seq2seq.BasicDecoder(
@@ -278,8 +316,43 @@ class Model:
             )
             return final_outputs
 
-        outputs = decode(my_helper)
-        
+        if not self.three_stages:
+            # Build the helper with the declared functions
+            my_helper_together = tf.contrib.seq2seq.CustomHelper(initial_fn_together, sample_fn, next_inputs_fn_together)
+            outputs = decode(my_helper_together)
+        else:
+            my_helper_bd = tf.contrib.seq2seq.CustomHelper(initial_fn_bd, sample_fn, next_inputs_fn_bd)
+            bd_outputs = decode(my_helper_bd, 2)
+            print('bd_outputs', bd_outputs)
+
+            def initial_fn_ac():
+                initial_elements_finished = (0 >= decoder_lengths)  # all False at the initial step
+                # get the embedded representation of the initial fake previous-output-label
+                sos_step_embedded = self.slotEmbedder.get_word_embeddings(sos_time_slice)
+                # then concatenate it with the BD output at time 0 and encoder output cross-forward
+                bd_one_hot = tf.one_hot(bd_outputs.sample_id, self.boundaryEmbedder.vocab_size)
+                # initial_input = tf.concat((sos_step_embedded, bd_outputs.rnn_output[0], encoder_outputs[0]), 1)
+                initial_input = tf.concat((sos_step_embedded, bd_one_hot[0], encoder_outputs[0]), 1)
+                return initial_elements_finished, initial_input
+            
+            def next_inputs_fn_ac(time, outputs, state, sample_ids):
+                # From the last output, represented by sample_ids, get its embedded value
+                pred_embedding = self.slotEmbedder.get_word_embeddings_from_ids(sample_ids)
+                # Now concatenate it with the output of the decoder at the current timestep.
+                # This is the new input to the RNN cell
+                bd_one_hot = tf.one_hot(bd_outputs.sample_id, self.boundaryEmbedder.vocab_size)
+                # next_inputs = tf.concat((pred_embedding, bd_outputs.rnn_output[time], encoder_outputs[time]), 1)
+                next_inputs = tf.concat((pred_embedding, bd_one_hot[time], encoder_outputs[time]), 1)
+                # Establish which samples in the batch have already finished the decoding
+                elements_finished = (time >= decoder_lengths)  # this operation produces boolean tensor of [batch_size]
+                # don't modify the state
+                next_state = state
+                return elements_finished, next_inputs, next_state
+            
+            my_helper_ac = tf.contrib.seq2seq.CustomHelper(initial_fn_ac, sample_fn, next_inputs_fn_ac)
+            outputs = decode(my_helper_ac, 3)
+            print('outputs', outputs)
+            
         # Now from the slot decoder outputs, get the corresponding output word (slot label, from ids to words)
         self.decoder_prediction = self.slotEmbedder.get_words_from_indexes(tf.to_int64(outputs.sample_id))
         # make this tensor retrievable by name at test time
@@ -300,6 +373,17 @@ class Model:
         # Define mask so padding does not count towards loss calculation
         self.mask = tf.to_float(tf.not_equal(self.decoder_targets_true_length, self.slotEmbedder.get_indexes_from_words_list(['<PAD>'])[0]))
 
+        if self.three_stages:
+            # boundary detection stuff
+            self.bd_prediction = self.boundaryEmbedder.get_words_from_indexes(tf.to_int64(bd_outputs.sample_id))
+            self.bd_prediction = tf.identity(self.bd_prediction, name="bd_prediction")
+            bd_targets_ids = self.boundaryEmbedder.get_indexes_from_words_tensor(self.boundaries_targets)
+            self.bd_targets_time_majored = tf.transpose(bd_targets_ids, [1, 0])
+            self.bd_targets_true_length = self.bd_targets_time_majored[:decoder_max_steps]
+            bd_loss = tf.contrib.seq2seq.sequence_loss(
+                bd_outputs.rnn_output, self.bd_targets_true_length, weights=self.mask)
+        else:
+            self.bd_prediction = []
 
         # Losses definitions
         # for the slots, using builtin sequence_loss
@@ -320,6 +404,8 @@ class Model:
                 self.loss = loss_intent
         if consider_loss_slots:
             self.loss += loss_slots
+            if self.three_stages:
+                self.loss += bd_loss
         optimizer = tf.train.AdamOptimizer(name="a_optimizer")
         self.grads, self.vars = zip(*optimizer.compute_gradients(self.loss))
         #print("vars for loss function: ", self.vars)
@@ -333,7 +419,8 @@ class Model:
         if mode not in ['train', 'test']:
             print('mode is not supported', file=sys.stderr)
             sys.exit(1)
-        seq_in, length, seq_out, intent = list(zip(*[(sample['words'], sample['length'], sample['slots'], sample['intent']) for sample in train_batch]))
+        # TODO condition changes on self.three_steps
+        seq_in, length, seq_bd, seq_out, intent = list(zip(*[(sample['words'], sample['length'], sample['boundaries'], sample['slots'], sample['intent']) for sample in train_batch]))
         if self.multi_turn:
             previous_intent, bot_turn_length = list(zip(*[(sample['previous_intent'], sample['bot_turn_actual_length']) for sample in train_batch]))
         else:
@@ -341,14 +428,15 @@ class Model:
         #print(seq_in, length)
         #try:
         if mode == 'train':
-            output_feeds = [self.train_op, self.loss, self.decoder_prediction,
+            output_feeds = [self.train_op, self.loss, self.bd_prediction, self.decoder_prediction,
                             self.intent, self.mask]
             feed_dict = {self.words_inputs: np.transpose(seq_in, [1, 0]),
                         self.encoder_inputs_actual_length: length,
+                        self.boundaries_targets: seq_bd,
                         self.decoder_targets: seq_out,
                         self.intent_targets: intent}
         if mode in ['test']:
-            output_feeds = [self.decoder_prediction, self.intent]
+            output_feeds = [self.bd_prediction, self.decoder_prediction, self.intent]
             feed_dict = {self.words_inputs: np.transpose(seq_in, [1, 0]),
                         self.encoder_inputs_actual_length: length}
         
@@ -360,12 +448,14 @@ class Model:
 
         results = sess.run(output_feeds, feed_dict=feed_dict)
         if mode in ['test']:
-            slots_batch, intent_batch = results
+            bd_batch, slots_batch, intent_batch = results
             for idx, slots in enumerate(slots_batch):
                 slots_batch[idx] = np.array([slot.decode('utf-8') for slot in slots])
+            for idx, bds in enumerate(bd_batch):
+                bd_batch[idx] = np.array([bd.decode('utf-8') for bd in bds])
             for idx, intent in enumerate(intent_batch):
                 intent_batch[idx] = intent.decode('utf-8')
-            results = slots_batch, intent_batch
+            results = bd_batch, slots_batch, intent_batch
         #except Exception as e:
         #    traceback.print_exc()
         #    print(seq_in, length)

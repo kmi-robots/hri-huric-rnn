@@ -57,12 +57,15 @@ RECURRENT_CELL = os.environ.get('RECURRENT_CELL', 'lstm')
 OUTPUT_FOLDER += '_recurrent_cell_' + RECURRENT_CELL
 ATTENTION = os.environ.get('ATTENTION', 'slots') # intents, slots, both, none
 OUTPUT_FOLDER += '_attention_' + ATTENTION
+THREE_STAGES = os.environ.get('THREE_STAGES', False) # add Boundary Detection intermediate level
+if THREE_STAGES:
+    OUTPUT_FOLDER += '_three_stages'
 
 print('environment variables:')
 print('DATASET:', DATASET, '\nOUTPUT_FOLDER:', OUTPUT_FOLDER, '\nMODE:', MODE, '\nRECURRENT_MULTITURN:', RECURRENT_MULTITURN, '\nFORCE_SINGLE_TURN:', FORCE_SINGLE_TURN, '\nWORD_EMBEDDINGS:', WORD_EMBEDDINGS, '\nRECURRENT_CELL:', RECURRENT_CELL, '\nATTENTION:', ATTENTION)
 
 def get_model(vocabs, tokenizer, language, multi_turn, input_steps, nlp):
-    model = Model(input_steps, embedding_size, hidden_size, vocabs, WORD_EMBEDDINGS, RECURRENT_CELL, ATTENTION, LOSS_SUM, multi_turn, None, RECURRENT_MULTITURN)
+    model = Model(input_steps, embedding_size, hidden_size, vocabs, WORD_EMBEDDINGS, RECURRENT_CELL, ATTENTION, LOSS_SUM, multi_turn, None, RECURRENT_MULTITURN, THREE_STAGES)
     model.build(nlp, tokenizer, language)
     return model
 
@@ -146,7 +149,8 @@ def train(mode):
             train_loss = 0.0
             for i, batch in enumerate(data.get_batch(batch_size, training_samples)):
                 # perform a batch of training
-                _, loss, decoder_prediction, intent, mask = model.step(sess, 'train', batch)
+                #print(batch)
+                _, loss, bd_prediction, decoder_prediction, intent, mask = model.step(sess, 'train', batch)
                 mean_loss += loss
                 train_loss += loss
                 if i % 10 == 0:
@@ -166,15 +170,19 @@ def train(mode):
                 true_intents = []
                 previous_intents = []
                 for j, batch in enumerate(data.get_batch(batch_size, test_samples)):
-                    decoder_prediction, intent = model.step(sess, 'test', batch)
+                    bd_prediction, decoder_prediction, intent = model.step(sess, 'test', batch)
                     # from time-major matrix to sample-major
                     decoder_prediction = np.transpose(decoder_prediction, [1, 0])
+                    if THREE_STAGES:
+                        bd_prediction = np.transpose(bd_prediction, [1, 0])
                     if j == 0:
                         index = random.choice(range(len(batch)))
                         # index = 0
                         print('Input Sentence        : ', batch[index]['words'][:batch[index]['length']])
                         print('Slot Truth            : ', batch[index]['slots'][:batch[index]['length']])
                         print('Slot Prediction       : ', decoder_prediction[index][:batch[index]['length']].tolist())
+                        if THREE_STAGES:
+                            print('Boundary Prediction   : ', bd_prediction[index][:batch[index]['length']].tolist())
                         print('Intent Truth          : ', batch[index]['intent'])
                         print('Intent Prediction     : ', intent[index])
                     # the temporal length of prediction for this batch
@@ -183,6 +191,7 @@ def train(mode):
                     pred_padded = np.pad(decoder_prediction, ((0, 0), (0, input_steps-slot_pred_length)),
                                             mode='constant', constant_values=0)
                     pred_padded[pred_padded == 0] = '<PAD>'
+                    # TODO the same for bd
 
                     # save the results of prediction
                     # pred_padded is an array of shape (batch_size, pad_length)
@@ -233,6 +242,7 @@ def train(mode):
                 print('SLOTS BOUNDARIES COND : {}'.format(slots_boundaries_cond_scores))
                 print('SLOTS                 : {}'.format(slots_scores))
                 print('SLOTS COND            : {}'.format(slots_cond_scores))
+                # TODO compute properly on the intermediate stage of boundary detection
                 for score_name, scores in intents_scores.items(): history['intent'][score_name][epoch, fold_number] = scores
                 for score_name, scores in slots_iob_scores.items(): history['slot_sequence'][score_name][epoch, fold_number] = scores
                 for score_name, scores in slots_scores.items(): history['slots'][score_name][epoch, fold_number] = scores
