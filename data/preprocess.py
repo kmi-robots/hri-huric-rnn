@@ -127,7 +127,8 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
                       'intent': intent,
                       'length': len(words),
                       'slots': slots,
-                      'file': file_name}
+                      'file': file_name,
+                      'id': len(samples)}
 
             splitting_resume[file_name]['semantic_frames'].append(
                 {'name': intent, 'words': ' '.join(words), 'slots': ' '.join(slots)})
@@ -174,7 +175,8 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
                       'intent': spatial_frame_name,
                       'length': len(words),
                       'slots': slots,
-                      'file': file_name}
+                      'file': file_name,
+                      'id': len(spatial_samples)}
 
 
             spatial_samples.append(sample)
@@ -587,7 +589,7 @@ def main():
     elif which == 'huric_eb':
         modernize_huric_xml('huric_eb/source', 'huric_eb/modern/source')
         res, spatial_res = huric_preprocess('huric_eb/modern', None, False)
-        alexa_prepare('huric_eb/modern', 'office robot')
+        alexa_prepare('huric_eb/modern', 'roo bot')
         alexa_prepare('huric_eb/modern/spatial', 'office robot spatial')
         lex_from_alexa('huric_eb/modern/amazon', 'kmi_EB')
         lex_from_alexa('huric_eb/modern/spatial/amazon', 'spatial_EB')
