@@ -7,6 +7,11 @@ import json
 import os
 import random
 import numpy as np
+
+from shutil import copyfile
+import xml.etree.ElementTree as ET
+from xml.dom import minidom
+
 from spacy.gold import iob_to_biluo, tags_to_entities
 
 
@@ -249,3 +254,52 @@ def sequence_iob_to_ents(iob_sequence):
         entity_text = ['{}:{}-{}'.format(label, start, end) for (label, start, end) in entities_offsets]
         result.append(entity_text)
     return result
+
+def huric_add_json(out_path, json_preprocessed_list):
+
+    xml_files_list = set([sample['file'] for sample in json_preprocessed_list])
+    # load all xml files
+    xml_trees = {}
+    for xml_file_name in xml_files_list:
+        xml_trees[xml_file_name] = ET.parse('{}/{}'.format(out_path, xml_file_name))
+
+    # append the json for each sample
+    for sample in json_preprocessed_list:
+        xml_file_name = sample['file']
+        id = sample['id']
+        frame_semantics = xml_trees[xml_file_name].getroot().find('semantics/frameSemantics')
+        nn_frame = ET.SubElement(frame_semantics, 'nnFrame', {'id': str(id)})
+        nn_frame.text = json.dumps(sample)
+
+    # write the new xml files
+    if not os.path.exists(out_path):
+        os.makedirs(out_path)
+    for xml_file_name in xml_files_list:
+        xml_trees[xml_file_name].write('{}/{}'.format(out_path, xml_file_name), encoding='utf-8', xml_declaration=True)
+
+def save_predictions(out_path, fold_number, samples):
+    if not os.path.exists(out_path):
+        os.makedirs(out_path)
+    with open('{}/prediction_fold_{}.json'.format(out_path, fold_number), 'w') as outfile:
+        json.dump({'samples': samples}, outfile, indent=2)
+
+def merge_prediction_folds(epoch_path):
+    fold_files = [f for f in os.listdir(epoch_path) if f.startswith('prediction_fold_')]
+    results = []
+    for file_name in fold_files:
+        with open('{}/{}'.format(epoch_path, file_name), 'r') as f:
+            content = json.load(f)
+            results.extend(content['samples'])
+    
+    return results
+    
+def copy_huric_xml_to(destination):
+    xml_folder = 'data/huric_eb/modern/source'
+    if not os.path.exists(destination):
+        os.makedirs(destination)
+    
+    files = os.listdir(xml_folder)
+
+    for file_name in files:
+        copyfile('{}/{}'.format(xml_folder, file_name), '{}/{}'.format(destination, file_name))
+

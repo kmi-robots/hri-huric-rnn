@@ -87,7 +87,7 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
             [value for (key, value) in tokens_map.items()]), 'semantic_frames': []}
 
         # remember where the last semantic frame is beginning
-        start_of_frame = 0
+        start_of_frame = 1
         
         slots_map = {}
 
@@ -120,14 +120,19 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
             words = [value for (key, value) in frame_tokens.items()]
             slots_objects = [slots_map.get(key, {'iob_label': 'O'}) for (key, value) in frame_tokens.items()]
             slots = [slot['iob_label'] for slot in slots_objects]
-            start_of_frame = max_token_id + 1
             if not len(words):
                 print('WARNING: len 0 for', intent, frame_tokens_mentioned, tokens_map, 'expected in [{},{}]'.format(start_of_frame, max_token_id) , file_name)
-            sample = {'words': words,
-                      'intent': intent,
-                      'length': len(words),
-                      'slots': slots,
-                      'file': file_name}
+            sample = {
+                'words': words,
+                'intent': intent,
+                'length': len(words),
+                'slots': slots,
+                'file': file_name,
+                'start_token_id': start_of_frame,
+                'end_token_id': max_token_id,
+                'id': len(samples)
+            }
+            start_of_frame = max_token_id + 1
 
             splitting_resume[file_name]['semantic_frames'].append(
                 {'name': intent, 'words': ' '.join(words), 'slots': ' '.join(slots)})
@@ -170,11 +175,16 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
             slots = [spatial_slots.get(key, 'O') for (key, value) in frame_tokens.items()]
             if not len(words):
                 print('WARNING: len 0 for', spatial_frame_name, frame_tokens_mentioned, tokens_map, 'expected in [{},{}]'.format(parent_start, parent_end) , file_name, ' --> frame will be discarded')
-            sample = {'words': words,
-                      'intent': spatial_frame_name,
-                      'length': len(words),
-                      'slots': slots,
-                      'file': file_name}
+            sample = {
+                'words': words,
+                'intent': spatial_frame_name,
+                'length': len(words),
+                'slots': slots,
+                'file': file_name,
+                'start_token_id': parent_start,
+                'end_token_id': parent_end,
+                'id': len(spatial_samples)
+            }
 
 
             spatial_samples.append(sample)
@@ -587,7 +597,7 @@ def main():
     elif which == 'huric_eb':
         modernize_huric_xml('huric_eb/source', 'huric_eb/modern/source')
         res, spatial_res = huric_preprocess('huric_eb/modern', None, False)
-        alexa_prepare('huric_eb/modern', 'office robot')
+        alexa_prepare('huric_eb/modern', 'roo bot')
         alexa_prepare('huric_eb/modern/spatial', 'office robot spatial')
         lex_from_alexa('huric_eb/modern/amazon', 'kmi_EB')
         lex_from_alexa('huric_eb/modern/spatial/amazon', 'spatial_EB')

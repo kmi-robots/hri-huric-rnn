@@ -107,6 +107,10 @@ def train(mode):
     language_model_name = data.get_language_model_name(meta_data['language'], WORD_EMBEDDINGS)
     nlp = spacy.load(language_model_name)
 
+    real_folder = MY_PATH + '/results/' + OUTPUT_FOLDER + '/' + DATASET
+    if not os.path.exists(real_folder):
+        os.makedirs(real_folder)
+
     create_empty_array = lambda: np.zeros((epoch_num, len(folds)))
     
     # initialize the history that will collect some measures
@@ -169,8 +173,16 @@ def train(mode):
                 pred_intents = []
                 true_intents = []
                 previous_intents = []
+                if fold_number == 0:
+                    # copy just on the first fold, avoid overwriting
+                    data.copy_huric_xml_to('{}/xml/epoch_{}'.format(real_folder, epoch))
+                
+                predicted = []
                 for j, batch in enumerate(data.get_batch(batch_size, test_samples)):
                     bd_prediction, decoder_prediction, intent = model.step(sess, 'test', batch)
+                    predicted_batch = metrics.clean_predictions(decoder_prediction, intent, batch)
+                    predicted.extend(predicted_batch)
+                    data.huric_add_json('{}/xml/epoch_{}'.format(real_folder, epoch), predicted)
                     # from time-major matrix to sample-major
                     decoder_prediction = np.transpose(decoder_prediction, [1, 0])
                     if THREE_STAGES:
@@ -208,6 +220,8 @@ def train(mode):
                     print('.', end='')
                     if multi_turn:
                         previous_intents.extend([sample['previous_intent'] for sample in batch])
+
+                data.save_predictions('{}/json/epoch_{}'.format(real_folder, epoch), fold_number + 1, predicted)
                 # put together
                 pred_iob_a = np.vstack(pred_iob)
                 # pred_iob_a is of shape (n_test_samples, sequence_len)
@@ -260,20 +274,22 @@ def train(mode):
 
         # the iteration on the fold has completed
 
-    # compute aggregated values: output_type(intent, slots, ...) -> score_name(precision, recall, f1) -> mean/stddev
-    stats = defaultdict(lambda: defaultdict(dict))
-    for output_type, values in history.items():
-        for score_name, scores in values.items():
-            stats[output_type][score_name]['mean'] = np.mean(scores, axis=1)
-            stats[output_type][score_name]['stddev'] = np.std(scores, axis=1)
-
-    print('averages over the K folds have been computed')
-
-    real_folder = MY_PATH + '/results/' + OUTPUT_FOLDER + '/' + DATASET
-    if not os.path.exists(real_folder):
-        os.makedirs(real_folder)
-    
     if test_samples:
+        for epoch in range(epoch_num):
+            json_fold_location = '{}/json/epoch_{}'.format(real_folder, epoch)
+            merged_predicitons = data.merge_prediction_folds(json_fold_location)
+            epoch_metrics = metrics.evaluate_epoch(merged_predicitons)
+            with open('{}/epoch_{}.json'.format(real_folder, epoch), 'w') as f:
+                json.dump(epoch_metrics, f, indent=2)
+        # compute aggregated values: output_type(intent, slots, ...) -> score_name(precision, recall, f1) -> mean/stddev
+        stats = defaultdict(lambda: defaultdict(dict))
+        for output_type, values in history.items():
+            for score_name, scores in values.items():
+                stats[output_type][score_name]['mean'] = np.mean(scores, axis=1)
+                stats[output_type][score_name]['stddev'] = np.std(scores, axis=1)
+
+        print('averages over the K folds have been computed')
+    
         to_plot_f1_mean = {output_type: values['f1']['mean'] for output_type, values in stats.items()}
         to_plot_f1_stddev = {output_type: values['f1']['stddev'] for output_type, values in stats.items()}
         metrics.plot_history('{}/f1_mean.png'.format(real_folder) , to_plot_f1_mean)
