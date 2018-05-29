@@ -149,12 +149,14 @@ def train(mode):
         if multi_turn:
             print('i am multi turn')
         for epoch in range(epoch_num):
-            mean_loss = 0.0
-            train_loss = 0.0
+            #mean_loss = 0.0
+            #train_loss = 0.0
             for i, batch in enumerate(data.get_batch(batch_size, training_samples)):
                 # perform a batch of training
                 #print(batch)
-                _, loss, bd_prediction, decoder_prediction, intent, mask = model.step(sess, 'train', batch)
+                #_, loss, bd_prediction, decoder_prediction, intent, mask = model.step(sess, 'train', batch)
+                model.step(sess, 'train', batch)
+                """
                 mean_loss += loss
                 train_loss += loss
                 if i % 10 == 0:
@@ -164,8 +166,9 @@ def train(mode):
                     print('.', end='')
                     sys.stdout.flush()
                     mean_loss = 0
-            train_loss /= (i + 1)
-            print('[Epoch {}] Average train loss: {}'.format(epoch, train_loss))
+                """
+            #train_loss /= (i + 1)
+            #print('[Epoch {}] Average train loss: {}'.format(epoch, train_loss))
 
             if test_samples:
                 # test each epoch once
@@ -179,24 +182,37 @@ def train(mode):
                 
                 predicted = []
                 for j, batch in enumerate(data.get_batch(batch_size, test_samples)):
-                    bd_prediction, decoder_prediction, intent = model.step(sess, 'test', batch)
+                    results = model.step(sess, 'test', batch)
+                    intent = results['intent']
+                    if THREE_STAGES:
+                        bd_prediction = results['bd']
+                        ac_prediction = results['ac']
+                        bd_prediction = np.transpose(bd_prediction, [1, 0])
+                        ac_prediction = np.transpose(ac_prediction, [1, 0])
+                        decoder_prediction = [data.rebuild_slots_sequence(bd_seq, ac_seq) for bd_seq, ac_seq in zip(bd_prediction, ac_prediction)]
+                    else:
+                        decoder_prediction = results['slots']
+                        # from time-major matrix to sample-major
+                        decoder_prediction = np.transpose(decoder_prediction, [1, 0])
+                        decoder_prediction = decoder_prediction.tolist()
+
+                    #print(results)
                     predicted_batch = metrics.clean_predictions(decoder_prediction, intent, batch)
                     predicted.extend(predicted_batch)
                     data.huric_add_json('{}/xml/epoch_{}'.format(real_folder, epoch), predicted)
-                    # from time-major matrix to sample-major
-                    decoder_prediction = np.transpose(decoder_prediction, [1, 0])
-                    if THREE_STAGES:
-                        bd_prediction = np.transpose(bd_prediction, [1, 0])
                     if j == 0:
                         index = random.choice(range(len(batch)))
                         # index = 0
-                        print('Input Sentence        : ', batch[index]['words'][:batch[index]['length']])
-                        print('Slot Truth            : ', batch[index]['slots'][:batch[index]['length']])
-                        print('Slot Prediction       : ', decoder_prediction[index][:batch[index]['length']].tolist())
+                        print('Input Sentence        :', batch[index]['words'][:batch[index]['length']])
                         if THREE_STAGES:
-                            print('Boundary Prediction   : ', bd_prediction[index][:batch[index]['length']].tolist())
-                        print('Intent Truth          : ', batch[index]['intent'])
-                        print('Intent Prediction     : ', intent[index])
+                            print('BD Truth              :', batch[index]['boundaries'][:batch[index]['length']])
+                            print('BD Prediction         :', bd_prediction[index][:batch[index]['length']].tolist())
+                            print('AC Truth              :', batch[index]['types'][:batch[index]['length']])
+                            print('AC Prediction         :', ac_prediction[index][:batch[index]['length']].tolist())
+                        print('Slot Truth            :', batch[index]['slots'][:batch[index]['length']])
+                        print('Slot Prediction       :', decoder_prediction[index][:batch[index]['length']])
+                        print('Intent Truth          :', batch[index]['intent'])
+                        print('Intent Prediction     :', intent[index])
                     # the temporal length of prediction for this batch
                     slot_pred_length = list(np.shape(decoder_prediction))[1]
                     # pad with '<PAD>' (two steps because of numpy issues)

@@ -78,6 +78,7 @@ def load_data(dataset_name, mode='measures', slots_type='full'):
             # add anyway the boundaries
             for sample in file_content['data']:
                 sample['boundaries'] = slots_to_iob_only(sample['slots'])
+                sample['types'] = slots_to_types_only(sample['slots'])
             data_splitted.append(file_content)
 
     if mode == 'measures':
@@ -106,6 +107,31 @@ def slots_to_iob_only(slots):
             slot = '{}-_'.format(parts[0])
         result.append(slot)
     return result
+
+def slots_to_types_only(slots):
+    """ Returns the entity types"""
+    result = []
+    for slot in slots:
+        parts = slot.split('-')
+        if len(parts) > 1:
+            result.append(parts[1])
+        else:
+            result.append(parts[0])
+    return result
+
+def rebuild_slots_sequence(iobs, types):
+    results = []
+    # TODO voting for types
+    
+    for iob, en_type in zip(iobs, types):
+        parts = iob.split('-')
+        rebuilt = 'O'
+        if len(parts) > 1:
+            if en_type not in ['O', '<PAD>', '<EOS>']:
+                rebuilt = '{}-{}'.format(parts[0], en_type)
+        results.append(rebuilt)
+    
+    return results
 
 def adjust_sequences(data, length=50):
     """Fixes the input and output sequences in length, adding padding or truncating if necessary"""
@@ -138,6 +164,14 @@ def adjust_sequences(data, length=50):
         else:
             sample['boundaries'] = sample['boundaries'][:length]
             sample['boundaries'][-1] = '<EOS>'
+        
+        if len(sample['types']) < length:
+            sample['types'].append('<EOS>')
+            while len(sample['types']) < length:
+                sample['types'].append('<PAD>')
+        else:
+            sample['types'] = sample['types'][:length]
+            sample['types'][-1] = '<EOS>'
 
     return data
 
@@ -154,10 +188,12 @@ def get_vocabularies(data, meta_data):
     slot_tag = sorted(set(s), key=lambda x: s.index(x))
     boundaries = ['<PAD>', '<EOS>'] + slots_to_iob_only(meta_data['slot_types'])
     boundaries = sorted(set(boundaries), key=lambda x: boundaries.index(x))
+    types = ['<PAD>', '<EOS>'] + slots_to_types_only(meta_data['slot_types'])
+    types = sorted(set(types), key=lambda x: types.index(x))
     i = meta_data['intent_types']
     intent_tag = sorted(set(i), key=lambda x: i.index(x))
 
-    return {'words': vocab, 'slots': slot_tag, 'intents': intent_tag, 'boundaries': boundaries}
+    return {'words': vocab, 'slots': slot_tag, 'intents': intent_tag, 'boundaries': boundaries, 'types': types}
 
 
 def get_batch(batch_size, train_data):

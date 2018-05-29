@@ -83,8 +83,6 @@ def plot_history(file_name, history):
 
 def clean_predictions(decoder_prediction_batch, intent_prediction_batch, true_batch):
     """Given the raw outputs of the network, provides back a usable representation, with the same structure as the training samples"""
-    # from time-major matrix to sample-major
-    decoder_prediction_batch = np.transpose(decoder_prediction_batch, [1, 0])
 
     samples = [{
         'words': gold['words'][:gold['length']],
