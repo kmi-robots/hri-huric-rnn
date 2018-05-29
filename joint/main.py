@@ -14,13 +14,13 @@ from .model import Model
 from . import metrics
 
 # embedding size for labels
-embedding_size = 64
+embedding_size = int(os.environ.get('LABEL_EMB_SIZE', 64))
 # size of LSTM cells
-hidden_size = 100
+hidden_size = int(os.environ.get('LSTM_SIZE', 100))
 # size of batch
-batch_size = 16
+batch_size = int(os.environ.get('BATCH_SIZE', 16))
 # number of training epochs
-epoch_num = 50
+epoch_num = int(os.environ.get('MAX_EPOCHS', 100))
 
 MY_PATH = os.path.dirname(os.path.abspath(__file__))
 
@@ -60,6 +60,10 @@ OUTPUT_FOLDER += '_attention_' + ATTENTION
 THREE_STAGES = os.environ.get('THREE_STAGES', False) # add Boundary Detection intermediate level
 if THREE_STAGES:
     OUTPUT_FOLDER += '_three_stages'
+
+
+# hyperparams
+OUTPUT_FOLDER += '___hyper:LABEL_EMB_SIZE={},LSTM_SIZE={},BATCH_SIZE={},MAX_EPOCHS={}'.format(embedding_size, hidden_size, batch_size, epoch_num)
 
 print('environment variables:')
 print('DATASET:', DATASET, '\nOUTPUT_FOLDER:', OUTPUT_FOLDER, '\nMODE:', MODE, '\nRECURRENT_MULTITURN:', RECURRENT_MULTITURN, '\nFORCE_SINGLE_TURN:', FORCE_SINGLE_TURN, '\nWORD_EMBEDDINGS:', WORD_EMBEDDINGS, '\nRECURRENT_CELL:', RECURRENT_CELL, '\nATTENTION:', ATTENTION)
