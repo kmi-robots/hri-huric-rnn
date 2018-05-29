@@ -1,3 +1,4 @@
+import itertools
 import os
 import numpy as np
 import numpy.ma as ma
@@ -111,15 +112,48 @@ def evaluate_epoch(epoch_data):
     slots_measures = precision_recall_f1_slots(slots_arguments_true, slots_arguments_pred)
     slots_cond_measures = precision_recall_f1_slots_conditioned_intent(slots_arguments_true, slots_arguments_pred, intent_true, intent_pred)
 
+    # BD argument-based
+    bd_true = [data.slots_to_iob_only(s) for s in slots_true]
+    bd_pred = [data.slots_to_iob_only(s) for s in slots_pred]
+    bd_arguments_true = data.sequence_iob_to_ents(bd_true)
+    bd_arguments_pred = data.sequence_iob_to_ents(bd_pred)
+    bd_measures = precision_recall_f1_slots(bd_arguments_pred, bd_arguments_true)
+    bd_measures_cond = precision_recall_f1_slots_conditioned_intent(bd_arguments_true, bd_arguments_pred, intent_true, intent_pred)
+
+    # AC argument-based
+    ac_true = [data.slots_to_types_only(s) for s in slots_true]
+    ac_pred = [data.slots_to_types_only(s) for s in slots_pred]
+    # remove consecutive duplicates and 'O'
+    # TODO keep idx for considering the right order of entities? but what if a preceeding ent is missing, then counting 0 also for the following ones
+    ac_no_dup_true = [key for key, group in itertools.groupby(ac_true) if key != 'O']
+    ac_no_dup_pred = [key for key, group in itertools.groupby(ac_pred) if key != 'O']
+    ac_measures = precision_recall_f1_slots(ac_no_dup_true, ac_no_dup_pred)
+    ac_measures_cond = precision_recall_f1_slots_conditioned_intent(ac_no_dup_true, ac_no_dup_pred, intent_true, intent_pred)
+
+
     # token-based
     all_slots_true = [x for y in slots_true for x in y]
     all_slots_pred = [x for y in slots_pred for x in y]
     # TODO change the name of the function
     token_slots_measures = precision_recall_f1_for_intents(all_slots_true, all_slots_pred)
+    # BD token-based
+    all_bd_true = data.slots_to_iob_only(all_slots_true)
+    all_bd_pred = data.slots_to_iob_only(all_slots_pred)
+    token_bd_measures = precision_recall_f1_for_intents(all_bd_true, all_bd_pred)
+    # AC token-based
+    all_ac_true = data.slots_to_types_only(all_slots_true)
+    all_ac_pred = data.slots_to_types_only(all_slots_pred)
+    token_ac_measures = precision_recall_f1_for_intents(all_ac_true, all_ac_pred)
 
     return {
         'intent': intent_measures,
         'slots': slots_measures,
         'slots_cond': slots_cond_measures,
-        'token_based_slots': token_slots_measures
+        'token_based_slots': token_slots_measures,
+        'bd': bd_measures,
+        'bd_cond': bd_measures_cond,
+        'token_based_bd': token_bd_measures,
+        'ac': ac_measures,
+        'ac_cond': ac_measures_cond,
+        'token_based_ac': token_ac_measures
     }

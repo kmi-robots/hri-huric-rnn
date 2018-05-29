@@ -198,8 +198,8 @@ def train(mode):
 
                     #print(results)
                     predicted_batch = metrics.clean_predictions(decoder_prediction, intent, batch)
+                    data.huric_add_json('{}/xml/epoch_{}'.format(real_folder, epoch), predicted_batch)
                     predicted.extend(predicted_batch)
-                    data.huric_add_json('{}/xml/epoch_{}'.format(real_folder, epoch), predicted)
                     if j == 0:
                         index = random.choice(range(len(batch)))
                         # index = 0
@@ -238,6 +238,7 @@ def train(mode):
                         previous_intents.extend([sample['previous_intent'] for sample in batch])
 
                 data.save_predictions('{}/json/epoch_{}'.format(real_folder, epoch), fold_number + 1, predicted)
+                """
                 # put together
                 pred_iob_a = np.vstack(pred_iob)
                 # pred_iob_a is of shape (n_test_samples, sequence_len)
@@ -262,9 +263,17 @@ def train(mode):
                 pred_boundaries = data.sequence_iob_to_ents(pred_slots_iob_only)
                 slots_boundaries_scores = metrics.precision_recall_f1_slots(true_boundaries, pred_boundaries)
                 slots_boundaries_cond_scores = metrics.precision_recall_f1_slots_conditioned_intent(true_boundaries, pred_boundaries, true_intents, pred_intents)
-
+                """
                 # epoch resume
                 print('epoch {}/{} on fold {}/{} ended'.format(epoch + 1, epoch_num, fold_number + 1, len(folds)))
+                performance = metrics.evaluate_epoch(predicted)
+                print('INTENTS:  ', performance['intent']['f1'])
+                print('SLOTS:    ', performance['slots']['f1'])
+                print('BD:       ', performance['bd']['f1'])
+                print('BD COND:  ', performance['bd_cond']['f1'])
+                print('AC:       ', performance['ac']['f1'])
+                print('AC COND:  ', performance['ac_cond']['f1'])
+                """
                 print('INTENTS               : {}'.format(intents_scores))
                 print('SEQUENCE              : {}'.format(slots_iob_scores))
                 print('SEQUENCE BOUNDARIES   : {}'.format(sequence_boundaries_scores))
@@ -287,10 +296,12 @@ def train(mode):
                     true_intent_changes, pred_intent_changes = list(zip(*[(prev != true, prev != pred) for prev, pred, true in zip(previous_intents, pred_intents, true_intents)]))
                     true_positives, true_negatives = list(zip(*[(true and pred, not true and not pred) for true, pred in zip(true_intent_changes, pred_intent_changes)]))
                     print('INTENT CHANGE statistics for epoch {}: {} true positives and {} true negatives over {} samples'.format(epoch, sum(true_positives), sum(true_negatives), len(true_positives)))
+                """
 
         # the iteration on the fold has completed
 
     if test_samples:
+        print('computing the metrics for all epochs on all the folds merged')
         for epoch in range(epoch_num):
             json_fold_location = '{}/json/epoch_{}'.format(real_folder, epoch)
             merged_predicitons = data.merge_prediction_folds(json_fold_location)
