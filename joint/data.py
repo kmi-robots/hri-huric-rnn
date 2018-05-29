@@ -5,9 +5,11 @@ Module with functions related to data loading and processing.
 
 import json
 import os
+import operator
 import random
 import numpy as np
 
+from collections import defaultdict
 from shutil import copyfile
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
@@ -120,17 +122,48 @@ def slots_to_types_only(slots):
     return result
 
 def rebuild_slots_sequence(iobs, types):
-    results = []
-    # TODO voting for types
-    
-    for iob, en_type in zip(iobs, types):
+
+    def assign_winner(array, counts):
+        #print('assign_winner args', array, counts)
+        start_index = counts['first']
+        end_index = counts['last'] + 1
+        length = end_index - start_index
+        winner = max(counts['votes'].items(), key=operator.itemgetter(1))[0]
+        if winner != '<invalid>':
+            array[start_index] = 'B-{}'.format(winner)
+            array[start_index+1:end_index] = ['I-{}'.format(winner)] * (length -1)
+
+    results =['O'] * len(iobs)
+    # voting for types
+    current = None
+    for idx, (iob, en_type) in enumerate(zip(iobs, types)):
         parts = iob.split('-')
-        rebuilt = 'O'
         if len(parts) > 1:
+            if parts[0] == 'B':
+                if current:
+                    assign_winner(results, current)
+                current = {
+                    'first': idx,
+                    'last': idx,
+                    'votes': defaultdict(lambda: 0)
+                }
+                current['votes']['<invalid>'] = 0
+            else:
+                # 'I-_'
+                if current:
+                    current['last'] = idx
             if en_type not in ['O', '<PAD>', '<EOS>']:
-                rebuilt = '{}-{}'.format(parts[0], en_type)
-        results.append(rebuilt)
-    
+                if current:
+                    current['votes'][en_type] +=1
+        else:
+            if current:
+                assign_winner(results, current)
+                current = None
+    if current:
+        assign_winner(results, current)
+
+    results = np.array(results)
+
     return results
 
 def adjust_sequences(data, length=50):
