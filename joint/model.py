@@ -288,8 +288,10 @@ class Model:
             if self.slots_attention:
                 # Get the memory representation (for the attention) by making the
                 # encoder outputs dimensions from (time, batch, hidden_size) to (batch, time, hidden_size)
-                # TODO attention on the correct memory, use stage_n variable
-                memory = tf.transpose(encoder_outputs, [1, 0, 2])
+                if not stage_n or stage_n == 2:
+                    memory = tf.transpose(encoder_outputs, [1, 0, 2])
+                else:
+                    memory = tf.transpose(self.hidden_between_decoders, [1, 0, 2])
                 # Use the BahdanauAttention on the memory
                 attention_mechanism = tf.contrib.seq2seq.BahdanauAttention(
                     num_units=self.hidden_size, memory=memory,
@@ -330,26 +332,30 @@ class Model:
         else:
             my_helper_bd = tf.contrib.seq2seq.CustomHelper(initial_fn_bd, sample_fn, next_inputs_fn_bd)
             bd_outputs = decode(my_helper_bd, 2)
-            print('bd_outputs', bd_outputs)
+            # bd_outputs shaped (time, batch)
+            # pad in the first dimension (time) by adding requested_size - actual size, in the second dimension nothing
+            padding_size = [[0, self.input_steps - tf.shape(bd_outputs.sample_id)[0]], [0, 0]]
+            bd_outputs_id_padded = tf.pad(bd_outputs.sample_id, padding_size, constant_values= tf.to_int32(self.boundaryEmbedder.get_indexes_from_words_list(['<PAD>'])[0]))
+            bd_outputs_id_padded.set_shape([self.input_steps, bd_outputs.sample_id.get_shape()[1]])
+            # This is the new input to the RNN cell
+            print('bd_outputs.sample_id', bd_outputs.sample_id)
+            bd_one_hot = tf.one_hot(bd_outputs_id_padded, self.boundaryEmbedder.vocab_size)
+            print('bd_one_hot', bd_one_hot)
+            self.hidden_between_decoders = tf.concat((bd_one_hot, encoder_outputs), 2)
 
             def initial_fn_ac():
                 initial_elements_finished = (0 >= decoder_lengths)  # all False at the initial step
                 # get the embedded representation of the initial fake previous-output-label
                 sos_step_embedded = self.typesEmbedder.get_word_embeddings(sos_time_slice)
-                # then concatenate it with the BD output at time 0 and encoder output cross-forward
-                bd_one_hot = tf.one_hot(bd_outputs.sample_id, self.boundaryEmbedder.vocab_size)
                 # initial_input = tf.concat((sos_step_embedded, bd_outputs.rnn_output[0], encoder_outputs[0]), 1)
-                initial_input = tf.concat((sos_step_embedded, bd_one_hot[0], encoder_outputs[0]), 1)
+                initial_input = tf.concat((sos_step_embedded, self.hidden_between_decoders[0]), 1)
                 return initial_elements_finished, initial_input
             
             def next_inputs_fn_ac(time, outputs, state, sample_ids):
                 # From the last output, represented by sample_ids, get its embedded value
                 pred_embedding = self.typesEmbedder.get_word_embeddings_from_ids(sample_ids)
-                # Now concatenate it with the output of the decoder at the current timestep.
-                # This is the new input to the RNN cell
-                bd_one_hot = tf.one_hot(bd_outputs.sample_id, self.boundaryEmbedder.vocab_size)
                 # next_inputs = tf.concat((pred_embedding, bd_outputs.rnn_output[time], encoder_outputs[time]), 1)
-                next_inputs = tf.concat((pred_embedding, bd_one_hot[time], encoder_outputs[time]), 1)
+                next_inputs = tf.concat((pred_embedding, self.hidden_between_decoders[time]), 1)
                 # Establish which samples in the batch have already finished the decoding
                 elements_finished = (time >= decoder_lengths)  # this operation produces boolean tensor of [batch_size]
                 # don't modify the state
@@ -437,7 +443,6 @@ class Model:
         if mode not in ['train', 'test']:
             print('mode is not supported', file=sys.stderr)
             sys.exit(1)
-        # TODO condition changes on self.three_steps
         seq_in, length, seq_bd, seq_ac, seq_slots, intent = list(zip(*[(sample['words'], sample['length'], sample['boundaries'], sample['types'], sample['slots'], sample['intent']) for sample in train_batch]))
         if self.multi_turn:
             previous_intent, bot_turn_length = list(zip(*[(sample['previous_intent'], sample['bot_turn_actual_length']) for sample in train_batch]))

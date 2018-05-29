@@ -189,7 +189,7 @@ def train(mode):
                         ac_prediction = results['ac']
                         bd_prediction = np.transpose(bd_prediction, [1, 0])
                         ac_prediction = np.transpose(ac_prediction, [1, 0])
-                        decoder_prediction = [data.rebuild_slots_sequence(bd_seq, ac_seq) for bd_seq, ac_seq in zip(bd_prediction, ac_prediction)]
+                        decoder_prediction = np.array([data.rebuild_slots_sequence(bd_seq, ac_seq) for bd_seq, ac_seq in zip(bd_prediction, ac_prediction)])
                     else:
                         decoder_prediction = results['slots']
                         # from time-major matrix to sample-major
