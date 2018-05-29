@@ -111,18 +111,7 @@ def train(mode):
     if not os.path.exists(real_folder):
         os.makedirs(real_folder)
 
-    create_empty_array = lambda: np.zeros((epoch_num, len(folds)))
-    
-    # initialize the history that will collect some measures
-    history = {
-        'intent': defaultdict(create_empty_array), # the intents
-        'slot_sequence': defaultdict(create_empty_array), # the raw sequence on word level, considering full B-Type
-        'sequence_boundaries': defaultdict(create_empty_array), # the raw sequence on word level, but considering only IOB, not Types (Boundary Detection, not Argument Classification)
-        'slots_boundaries': defaultdict(create_empty_array), # the Boundary Detection: on slot level, but only considering IOB
-        'slots_boundaries_cond': defaultdict(create_empty_array), # as before, but true positive only if the intent is correct
-        'slots': defaultdict(create_empty_array), # value+role+entity (Boundary Detection + Argument Classification)
-        'slots_cond': defaultdict(create_empty_array), # as before, but conditioned to correct intent
-    }
+    create_empty_array = lambda: np.zeros((epoch_num, ))
 
     for fold_number in range(0, len(folds)):
         # reset the graph for next iteration
@@ -156,6 +145,7 @@ def train(mode):
                 #print(batch)
                 #_, loss, bd_prediction, decoder_prediction, intent, mask = model.step(sess, 'train', batch)
                 model.step(sess, 'train', batch)
+                print('.', end='')
                 """
                 mean_loss += loss
                 train_loss += loss
@@ -171,11 +161,6 @@ def train(mode):
             #print('[Epoch {}] Average train loss: {}'.format(epoch, train_loss))
 
             if test_samples:
-                # test each epoch once
-                pred_iob = []
-                pred_intents = []
-                true_intents = []
-                previous_intents = []
                 if fold_number == 0:
                     # copy just on the first fold, avoid overwriting
                     data.copy_huric_xml_to('{}/xml/epoch_{}'.format(real_folder, epoch))
@@ -183,6 +168,7 @@ def train(mode):
                 predicted = []
                 for j, batch in enumerate(data.get_batch(batch_size, test_samples)):
                     results = model.step(sess, 'test', batch)
+                    print('.', end='')
                     intent = results['intent']
                     if THREE_STAGES:
                         bd_prediction = results['bd']
@@ -213,117 +199,44 @@ def train(mode):
                         print('Slot Prediction       :', decoder_prediction[index][:batch[index]['length']])
                         print('Intent Truth          :', batch[index]['intent'])
                         print('Intent Prediction     :', intent[index])
-                    # the temporal length of prediction for this batch
-                    slot_pred_length = list(np.shape(decoder_prediction))[1]
-                    # pad with '<PAD>' (two steps because of numpy issues)
-                    pred_padded = np.pad(decoder_prediction, ((0, 0), (0, input_steps-slot_pred_length)),
-                                            mode='constant', constant_values=0)
-                    pred_padded[pred_padded == 0] = '<PAD>'
-                    # TODO the same for bd
-
-                    # save the results of prediction
-                    # pred_padded is an array of shape (batch_size, pad_length)
-                    pred_iob.append(pred_padded)
-                    pred_intents.extend(intent)
-                    # and save also the true values
-                    true_intent = [sample['intent'] for sample in batch]
-                    true_intents.extend(true_intent)
-                    true_slot = np.array([sample['slots'] for sample in batch])
-                    true_length = np.array([sample['length'] for sample in batch])
-                    true_slot = true_slot[:, :slot_pred_length]
-                    # print(np.shape(true_slot), np.shape(decoder_prediction))
-                    # print(true_slot, decoder_prediction)
-                    print('.', end='')
-                    if multi_turn:
-                        previous_intents.extend([sample['previous_intent'] for sample in batch])
+                
 
                 data.save_predictions('{}/json/epoch_{}'.format(real_folder, epoch), fold_number + 1, predicted)
-                """
-                # put together
-                pred_iob_a = np.vstack(pred_iob)
-                # pred_iob_a is of shape (n_test_samples, sequence_len)
-                #print('pred_iob_a: ', pred_iob_a.shape)
-                true_slots_iob = np.array([sample['slots'] for sample in test_samples])[:pred_iob_a.shape[0]]
-                intents_scores = metrics.precision_recall_f1_for_intents(true_intents, pred_intents)
-                #accuracy_intents = accuracy_score(true_intents, pred_intents)
-                slots_iob_scores = metrics.precision_recall_f1_for_sequence(true_slots_iob, pred_iob_a)
-                # convert IOB to slots stringified LABEL:START_IDX-END_IDX for comparison
-                true_slots = data.sequence_iob_to_ents(true_slots_iob)
-                pred_slots = data.sequence_iob_to_ents(pred_iob_a)
-                
-                # compute metrics: precision, recall, f1
-                slots_scores = metrics.precision_recall_f1_slots(true_slots, pred_slots)
-                slots_cond_scores = metrics.precision_recall_f1_slots_conditioned_intent(true_slots, pred_slots, true_intents, pred_intents)
-                
-                # only boundary detection measures
-                true_slots_iob_only = np.array([data.slots_to_iob_only(iob_seq) for iob_seq in true_slots_iob.tolist()])
-                pred_slots_iob_only = np.array([data.slots_to_iob_only(iob_seq) for iob_seq in pred_iob_a.tolist()])
-                sequence_boundaries_scores = metrics.precision_recall_f1_for_sequence(true_slots_iob_only, pred_slots_iob_only)
-                true_boundaries = data.sequence_iob_to_ents(true_slots_iob_only)
-                pred_boundaries = data.sequence_iob_to_ents(pred_slots_iob_only)
-                slots_boundaries_scores = metrics.precision_recall_f1_slots(true_boundaries, pred_boundaries)
-                slots_boundaries_cond_scores = metrics.precision_recall_f1_slots_conditioned_intent(true_boundaries, pred_boundaries, true_intents, pred_intents)
-                """
                 # epoch resume
                 print('epoch {}/{} on fold {}/{} ended'.format(epoch + 1, epoch_num, fold_number + 1, len(folds)))
                 performance = metrics.evaluate_epoch(predicted)
-                print('INTENTS:  ', performance['intent']['f1'])
-                print('SLOTS:    ', performance['slots']['f1'])
-                print('BD:       ', performance['bd']['f1'])
-                print('BD COND:  ', performance['bd_cond']['f1'])
-                print('AC:       ', performance['ac']['f1'])
-                print('AC COND:  ', performance['ac_cond']['f1'])
-                """
-                print('INTENTS               : {}'.format(intents_scores))
-                print('SEQUENCE              : {}'.format(slots_iob_scores))
-                print('SEQUENCE BOUNDARIES   : {}'.format(sequence_boundaries_scores))
-                print('SLOTS BOUNDARIES      : {}'.format(slots_boundaries_scores))
-                print('SLOTS BOUNDARIES COND : {}'.format(slots_boundaries_cond_scores))
-                print('SLOTS                 : {}'.format(slots_scores))
-                print('SLOTS COND            : {}'.format(slots_cond_scores))
-                # TODO compute properly on the intermediate stage of boundary detection
-                for score_name, scores in intents_scores.items(): history['intent'][score_name][epoch, fold_number] = scores
-                for score_name, scores in slots_iob_scores.items(): history['slot_sequence'][score_name][epoch, fold_number] = scores
-                for score_name, scores in slots_scores.items(): history['slots'][score_name][epoch, fold_number] = scores
-                for score_name, scores in slots_cond_scores.items(): history['slots_cond'][score_name][epoch, fold_number] = scores
-
-                for score_name, scores in sequence_boundaries_scores.items(): history['sequence_boundaries'][score_name][epoch, fold_number] = scores
-                for score_name, scores in slots_boundaries_scores.items(): history['slots_boundaries'][score_name][epoch, fold_number] = scores
-                for score_name, scores in slots_boundaries_cond_scores.items(): history['slots_boundaries_cond'][score_name][epoch, fold_number] = scores
-
-                if multi_turn:
-                    # evaluate the intent transitions in samples and the transition inferred
-                    true_intent_changes, pred_intent_changes = list(zip(*[(prev != true, prev != pred) for prev, pred, true in zip(previous_intents, pred_intents, true_intents)]))
-                    true_positives, true_negatives = list(zip(*[(true and pred, not true and not pred) for true, pred in zip(true_intent_changes, pred_intent_changes)]))
-                    print('INTENT CHANGE statistics for epoch {}: {} true positives and {} true negatives over {} samples'.format(epoch, sum(true_positives), sum(true_negatives), len(true_positives)))
-                """
+                print('INTENTS:    ', performance['intent']['f1'])
+                print('SLOTS:      ', performance['slots']['f1'])
+                print('SLOTS COND: ', performance['slots_cond']['f1'])
+                print('BD:         ', performance['bd']['f1'])
+                print('BD COND:    ', performance['bd_cond']['f1'])
+                print('AC:         ', performance['ac']['f1'])
+                print('AC COND:    ', performance['ac_cond']['f1'])
 
         # the iteration on the fold has completed
 
     if test_samples:
         print('computing the metrics for all epochs on all the folds merged')
+        
+        # initialize the history that will collect some measures
+        history = defaultdict(lambda:  defaultdict(create_empty_array))
         for epoch in range(epoch_num):
             json_fold_location = '{}/json/epoch_{}'.format(real_folder, epoch)
             merged_predicitons = data.merge_prediction_folds(json_fold_location)
+            data.save_predictions('{}/json/epoch_{}'.format(real_folder, epoch), 'full', merged_predicitons)
             epoch_metrics = metrics.evaluate_epoch(merged_predicitons)
-            with open('{}/epoch_{}.json'.format(real_folder, epoch), 'w') as f:
-                json.dump(epoch_metrics, f, indent=2)
-        # compute aggregated values: output_type(intent, slots, ...) -> score_name(precision, recall, f1) -> mean/stddev
-        stats = defaultdict(lambda: defaultdict(dict))
-        for output_type, values in history.items():
-            for score_name, scores in values.items():
-                stats[output_type][score_name]['mean'] = np.mean(scores, axis=1)
-                stats[output_type][score_name]['stddev'] = np.std(scores, axis=1)
+            save_file(epoch_metrics, '{}/scores'.format(real_folder), 'epoch_{}.json'.format(epoch))
+            for key, measures in epoch_metrics.items():
+                    for measure_name, value in measures.items():
+                        history[key][measure_name][epoch] = value
 
         print('averages over the K folds have been computed')
     
-        to_plot_f1_mean = {output_type: values['f1']['mean'] for output_type, values in stats.items()}
-        to_plot_f1_stddev = {output_type: values['f1']['stddev'] for output_type, values in stats.items()}
-        metrics.plot_history('{}/f1_mean.png'.format(real_folder) , to_plot_f1_mean)
-        metrics.plot_history('{}/f1_stddev.png'.format(real_folder) , to_plot_f1_stddev)
-        
-        save_file(stats, '{}/history_aggregated.json'.format(real_folder))
-        save_file(history, '{}/history_full.json'.format(real_folder))
+        to_plot_precision = {output_type: values['precision'] for output_type, values in history.items()}
+        to_plot_recall = {output_type: values['recall'] for output_type, values in history.items()}
+        to_plot_f1 = {output_type: values['f1'] for output_type, values in history.items()}
+        metrics.plot_history('{}/f1.png'.format(real_folder) , to_plot_f1)
+        save_file(history, real_folder, 'history_full.json')
     else:
         saver = tf.train.Saver()
         saver.save(sess, '{}/model.ckpt'.format(real_folder))
@@ -333,8 +246,10 @@ def random_seed_init(seed):
     random.seed(seed)
     tf.set_random_seed(seed)
 
-def save_file(file_content, file_path):
-    with open(file_path, 'w') as out_file:
+def save_file(file_content, file_path, file_name):
+    if not os.path.exists(file_path):
+        os.makedirs(file_path)
+    with open('{}/{}'.format(file_path, file_name) , 'w') as out_file:
         json.dump(file_content, out_file, indent=2, cls=NumpyEncoder)
 
 class NumpyEncoder(json.JSONEncoder):

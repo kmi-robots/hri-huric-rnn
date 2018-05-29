@@ -346,10 +346,10 @@ def huric_add_json(out_path, json_preprocessed_list):
     for xml_file_name in xml_files_list:
         xml_trees[xml_file_name].write('{}/{}'.format(out_path, xml_file_name), encoding='utf-8', xml_declaration=True)
 
-def save_predictions(out_path, fold_number, samples):
+def save_predictions(out_path, fold_id, samples):
     if not os.path.exists(out_path):
         os.makedirs(out_path)
-    with open('{}/prediction_fold_{}.json'.format(out_path, fold_number), 'w') as outfile:
+    with open('{}/prediction_fold_{}.json'.format(out_path, fold_id), 'w') as outfile:
         json.dump({'samples': samples}, outfile, indent=2)
 
 def merge_prediction_folds(epoch_path):

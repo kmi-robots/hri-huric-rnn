@@ -338,9 +338,9 @@ class Model:
             bd_outputs_id_padded = tf.pad(bd_outputs.sample_id, padding_size, constant_values= tf.to_int32(self.boundaryEmbedder.get_indexes_from_words_list(['<PAD>'])[0]))
             bd_outputs_id_padded.set_shape([self.input_steps, bd_outputs.sample_id.get_shape()[1]])
             # This is the new input to the RNN cell
-            print('bd_outputs.sample_id', bd_outputs.sample_id)
+            #print('bd_outputs.sample_id', bd_outputs.sample_id)
             bd_one_hot = tf.one_hot(bd_outputs_id_padded, self.boundaryEmbedder.vocab_size)
-            print('bd_one_hot', bd_one_hot)
+            #print('bd_one_hot', bd_one_hot)
             self.hidden_between_decoders = tf.concat((bd_one_hot, encoder_outputs), 2)
 
             def initial_fn_ac():
