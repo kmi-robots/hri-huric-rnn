@@ -94,6 +94,7 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
         # first loop: over the semantic frames
         for frame in root.findall('semantics/frameSemantics/frame'):
             intent = frame.attrib['name']
+            lexical_unit_ids = [int(t.attrib['id']) for t in frame.findall('lexicalUnit/token')]
 
             # accumulator for all the tokens mentioned in the current semantic frame
             frame_tokens_mentioned = frame.findall('lexicalUnit/token')
@@ -130,7 +131,8 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
                 'file': file_name,
                 'start_token_id': start_of_frame,
                 'end_token_id': max_token_id,
-                'id': len(samples)
+                'id': len(samples),
+                'lexical_unit_ids': lexical_unit_ids
             }
             start_of_frame = max_token_id + 1
 
