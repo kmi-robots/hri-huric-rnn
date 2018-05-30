@@ -99,7 +99,8 @@ def clean_predictions(decoder_prediction_batch, intent_prediction_batch, true_ba
         'file': gold['file'],
         'start_token_id': gold['start_token_id'],
         'end_token_id': gold['end_token_id'],
-        'id': gold['id']
+        'id': gold['id'],
+        'lexical_unit_ids': gold['lexical_unit_ids']
     } for (gold, decoder_prediction, intent_prediction) in zip(true_batch, decoder_prediction_batch, intent_prediction_batch)]
 
     return samples
