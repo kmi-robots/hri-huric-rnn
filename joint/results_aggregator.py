@@ -7,9 +7,18 @@ import matplotlib.pyplot as plt
 
 from pathlib import Path
 
+import re
+
+
+def natural_keys(text):
+    '''sorts strings with integer parts'''
+    def atoi(text):
+        return int(text) if text.isdigit() else text
+    return [ atoi(c) for c in re.split('(\d+)', text) ]
+
 def read_values(folder, dataset_name):
 
-    subfolder_list = [x for x in folder.iterdir() if x.is_dir()]
+    subfolder_list = sorted([x for x in folder.iterdir() if x.is_dir()], key=lambda folder: natural_keys(folder.name))
     intent_best = {}
     intent_last = {}
     slots_cond_best = {}
@@ -45,13 +54,8 @@ def read_values(folder, dataset_name):
     }
 
 
-def main(folder, dataset_name='huric_eb/modern'):
-    main_path = Path(folder)
-    aggregated = read_values(main_path, dataset_name)
 
-    with open(main_path / 'aggregated.json', 'w') as f:
-        json.dump(aggregated, f, indent=2)
-
+def plot_bars(main_path, aggregated):
     for name, values in aggregated.items():
         plt.clf()
         plt.figure(figsize=(10,10))
@@ -72,6 +76,26 @@ def main(folder, dataset_name='huric_eb/modern'):
         plt.grid()
         file_location = main_path / name
         plt.savefig(file_location)
+
+"""
+def group_by_param_changing(aggregated):
+    hyperparam_groups = {}
+
+    for measure_name, values in aggregated.items():
+        for experiment_full_name, value in values.items():
+            config_name, hyper_string_all = experiment_full_name.split('___hyper:')
+            hyper_param_strings = hyper_string_all.split(',')
+            hyper_param_name, hyper_param_value = zip(*[s.split('=')[0], s.split('=')[1] for s in hyper_param_strings])
+"""
+
+def main(folder, dataset_name='huric_eb/modern'):
+    main_path = Path(folder)
+    aggregated = read_values(main_path, dataset_name)
+
+    with open(main_path / 'aggregated.json', 'w') as f:
+        json.dump(aggregated, f, indent=2)
+
+    plot_bars(main_path, aggregated)
 
 
 if __name__ == '__main__':
