@@ -49,6 +49,9 @@ def main(folder, dataset_name='huric_eb/modern'):
     main_path = Path(folder)
     aggregated = read_values(main_path, dataset_name)
 
+    with open(main_path / 'aggregated.json', 'w') as f:
+        json.dump(aggregated, f, indent=2)
+
     for name, values in aggregated.items():
         plt.clf()
         plt.figure(figsize=(10,10))
