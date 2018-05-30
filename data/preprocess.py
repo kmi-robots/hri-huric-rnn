@@ -14,7 +14,7 @@ from sklearn.model_selection import StratifiedKFold
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
-n_folds = 3
+n_folds = 5
 ALEXA_FILE_NAME = 'alexaInteractionModel.json'
 LEX_FILE_NAME = 'lexBot.json'
 LEX_ZIP_NAME = 'lexBot.zip'
