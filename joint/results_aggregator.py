@@ -57,8 +57,10 @@ def read_values(folder, dataset_name):
 
 def plot_bars(main_path, aggregated):
     for name, values in aggregated.items():
+        n_bars = len(values)
+        height = n_bars / 3
         plt.clf()
-        plt.figure(figsize=(10,10))
+        plt.figure(figsize=(10,height))
         labels, y = zip(*[(setup, value) for setup, value in values.items()])
         x = np.arange(len(labels))
         # vertical bars
