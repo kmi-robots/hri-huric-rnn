@@ -51,6 +51,7 @@ def main(folder, dataset_name='huric_eb/modern'):
 
     for name, values in aggregated.items():
         plt.clf()
+        plt.figure(figsize=(10,10))
         labels, y = zip(*[(setup, value) for setup, value in values.items()])
         x = np.arange(len(labels))
         # vertical bars
