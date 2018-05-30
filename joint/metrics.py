@@ -50,6 +50,8 @@ def precision_recall_f1_slots(true_slots_batch, pred_slots_batch):
         f1 = (2 * recall * precision) / (recall + precision)
     except ZeroDivisionError:
         f1 = 0
+        precision = 0
+        recall = 0
     return {'precision': precision, 'recall': recall, 'f1': f1}
 
 def precision_recall_f1_slots_conditioned_intent(true_slots_batch, pred_slots_batch, true_intents_batch, pred_intents_batch):
@@ -67,6 +69,8 @@ def precision_recall_f1_slots_conditioned_intent(true_slots_batch, pred_slots_ba
         f1 = (2 * recall * precision) / (recall + precision)
     except ZeroDivisionError:
         f1 = 0
+        precision = 0
+        recall = 0
     return {'precision': precision, 'recall': recall, 'f1': f1}
 
 def plot_history(file_name, history):
