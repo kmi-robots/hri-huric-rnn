@@ -17,21 +17,25 @@ def read_values(folder, dataset_name):
     for subfolder in subfolder_list:
         folder_name = subfolder.name
         file_location = subfolder / dataset_name
-        with open(file_location / 'history_full.json') as f:
-            content = json.load(f)
-        f1_intent_scores = content['intent']['f1']
-        f1_slots_cond_scores = content['slots_cond']['f1']
-        f1_intent_best_value = max(f1_intent_scores)
-        f1_intent_best_index = f1_intent_scores.index(f1_intent_best_value)
-        f1_intent_last_value = f1_intent_scores[-1]
-        f1_slots_cond_best_value = max(f1_slots_cond_scores)
-        f1_slots_cond_best_index = f1_slots_cond_scores.index(f1_slots_cond_best_value)
-        f1_slots_cond_last_value = f1_slots_cond_scores[-1]
+        try:
+            with open(file_location / 'history_full.json') as f:
+                content = json.load(f)
+            f1_intent_scores = content['intent']['f1']
+            f1_slots_cond_scores = content['slots_cond']['f1']
+            f1_intent_best_value = max(f1_intent_scores)
+            f1_intent_best_index = f1_intent_scores.index(f1_intent_best_value)
+            f1_intent_last_value = f1_intent_scores[-1]
+            f1_slots_cond_best_value = max(f1_slots_cond_scores)
+            f1_slots_cond_best_index = f1_slots_cond_scores.index(f1_slots_cond_best_value)
+            f1_slots_cond_last_value = f1_slots_cond_scores[-1]
 
-        intent_best[folder_name] = f1_intent_best_value
-        intent_last[folder_name] = f1_intent_last_value
-        slots_cond_best[folder_name] = f1_slots_cond_best_value
-        slots_cond_last[folder_name] = f1_slots_cond_last_value
+            intent_best[folder_name] = f1_intent_best_value
+            intent_last[folder_name] = f1_intent_last_value
+            slots_cond_best[folder_name] = f1_slots_cond_best_value
+            slots_cond_last[folder_name] = f1_slots_cond_last_value
+        except FileNotFoundError:
+            print('not found file in subfolder', subfolder)
+            continue
 
     return {
         'intent_best': intent_best,
