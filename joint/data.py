@@ -1,14 +1,15 @@
 """
 Module with functions related to data loading and processing.
 
-IMPORTANT: this file is hard-linked both at /nlu/joint/data.py and at /brain/botcycle/nlu/joint/data.py
 """
 
 import json
 import os
+import operator
 import random
 import numpy as np
 
+from collections import defaultdict
 from shutil import copyfile
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
@@ -55,15 +56,8 @@ def collapse_multi_turn_sessions(dataset, force_single_turn=False):
     print('intent changes: {} over {} samples'.format(sum(intent_changes), len(intent_changes)))
     return dataset
 
-def load_data(dataset_name, mode='measures', slots_type='full'):
-    """Loads the dataset and returns it.
-    
-    if mode='measures' (default), returns [test_data, train_data]
-    
-    if mode='runtime', returns [None, all the data together], to do a full training to be used at runtime
-    
-    if mode='finaltest', returns[finaltest, train_data]
-        """
+def load_data(dataset_name, slots_type='full'):
+    """Loads the dataset and returns it."""
     path = 'data/' + dataset_name + '/preprocessed'
 
     fold_files = os.listdir(path)
@@ -75,12 +69,15 @@ def load_data(dataset_name, mode='measures', slots_type='full'):
             file_content = json.load(json_file)
             if slots_type != 'full':
                 file_content = reduce_slots(file_content, slots_type)
+
+            # add anyway the boundaries
+            for sample in file_content['data']:
+                sample['boundaries'] = slots_to_iob_only(sample['slots'])
+                sample['types'] = slots_to_types_only(sample['slots'])
             data_splitted.append(file_content)
 
-    if mode == 'measures':
-        return data_splitted
-    else:
-        raise ValueError('mode unsupported:' + mode)
+
+    return data_splitted
 
 def reduce_slots(file_content, slots_type):
     if slots_type == 'iob_only':
@@ -103,6 +100,62 @@ def slots_to_iob_only(slots):
             slot = '{}-_'.format(parts[0])
         result.append(slot)
     return result
+
+def slots_to_types_only(slots):
+    """ Returns the entity types"""
+    result = []
+    for slot in slots:
+        parts = slot.split('-')
+        if len(parts) > 1:
+            result.append(parts[1])
+        else:
+            result.append(parts[0])
+    return result
+
+def rebuild_slots_sequence(iobs, types):
+
+    def assign_winner(array, counts):
+        #print('assign_winner args', array, counts)
+        start_index = counts['first']
+        end_index = counts['last'] + 1
+        length = end_index - start_index
+        winner = max(counts['votes'].items(), key=operator.itemgetter(1))[0]
+        if winner != '<invalid>':
+            array[start_index] = 'B-{}'.format(winner)
+            array[start_index+1:end_index] = ['I-{}'.format(winner)] * (length -1)
+
+    results =['O'] * len(iobs)
+    # voting for types
+    current = None
+    for idx, (iob, en_type) in enumerate(zip(iobs, types)):
+        parts = iob.split('-')
+        if len(parts) > 1:
+            if parts[0] == 'B':
+                if current:
+                    assign_winner(results, current)
+                current = {
+                    'first': idx,
+                    'last': idx,
+                    'votes': defaultdict(lambda: 0)
+                }
+                current['votes']['<invalid>'] = 0
+            else:
+                # 'I-_'
+                if current:
+                    current['last'] = idx
+            if en_type not in ['O', '<PAD>', '<EOS>']:
+                if current:
+                    current['votes'][en_type] +=1
+        else:
+            if current:
+                assign_winner(results, current)
+                current = None
+    if current:
+        assign_winner(results, current)
+
+    results = np.array(results)
+
+    return results
 
 def adjust_sequences(data, length=50):
     """Fixes the input and output sequences in length, adding padding or truncating if necessary"""
@@ -127,6 +180,23 @@ def adjust_sequences(data, length=50):
             sample['slots'] = sample['slots'][:length]
             sample['slots'][-1] = '<EOS>'
 
+        # and also the boundaries
+        if len(sample['boundaries']) < length:
+            sample['boundaries'].append('<EOS>')
+            while len(sample['boundaries']) < length:
+                sample['boundaries'].append('<PAD>')
+        else:
+            sample['boundaries'] = sample['boundaries'][:length]
+            sample['boundaries'][-1] = '<EOS>'
+        
+        if len(sample['types']) < length:
+            sample['types'].append('<EOS>')
+            while len(sample['types']) < length:
+                sample['types'].append('<PAD>')
+        else:
+            sample['types'] = sample['types'][:length]
+            sample['types'][-1] = '<EOS>'
+
     return data
 
 
@@ -140,10 +210,14 @@ def get_vocabularies(data, meta_data):
     vocab = sorted(set(v), key=lambda x: v.index(x))
     s = ['<PAD>', '<EOS>'] + meta_data['slot_types']
     slot_tag = sorted(set(s), key=lambda x: s.index(x))
+    boundaries = ['<PAD>', '<EOS>'] + slots_to_iob_only(meta_data['slot_types'])
+    boundaries = sorted(set(boundaries), key=lambda x: boundaries.index(x))
+    types = ['<PAD>', '<EOS>'] + slots_to_types_only(meta_data['slot_types'])
+    types = sorted(set(types), key=lambda x: types.index(x))
     i = meta_data['intent_types']
     intent_tag = sorted(set(i), key=lambda x: i.index(x))
 
-    return vocab, slot_tag, intent_tag
+    return {'words': vocab, 'slots': slot_tag, 'intents': intent_tag, 'boundaries': boundaries, 'types': types}
 
 
 def get_batch(batch_size, train_data):
@@ -263,10 +337,10 @@ def huric_add_json(out_path, json_preprocessed_list):
     for xml_file_name in xml_files_list:
         xml_trees[xml_file_name].write('{}/{}'.format(out_path, xml_file_name), encoding='utf-8', xml_declaration=True)
 
-def save_predictions(out_path, fold_number, samples):
+def save_predictions(out_path, fold_id, samples):
     if not os.path.exists(out_path):
         os.makedirs(out_path)
-    with open('{}/prediction_fold_{}.json'.format(out_path, fold_number), 'w') as outfile:
+    with open('{}/prediction_fold_{}.json'.format(out_path, fold_id), 'w') as outfile:
         json.dump({'samples': samples}, outfile, indent=2)
 
 def merge_prediction_folds(epoch_path):
