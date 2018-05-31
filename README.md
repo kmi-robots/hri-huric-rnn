@@ -8,6 +8,13 @@ Some experiments with RNN and HuRIC dataset
 - virtualenv (recommended)
 - install `requirements.txt`
 
+## Scripts
+
+- [first_experiments.sh](first_experiment.sh) contains some first experiment with the dataset and the the network
+- [architectures_exploration.sh](architectures_exploration.sh) is for choosing which variation of the network (2 vs 3 stages, attention vs not attention)
+- [hyperparam_tuning.sh](hyperparam_tuning.sh) script for hyperparam tuning
+- [evaluate.sh](evaluate.sh) script for evaluation
+
 ## Transfer the results
 
 ```bash

@@ -12,12 +12,12 @@ export THREE_STAGES=true
 export ATTENTION=slots
 
 
-# hyper param tuning on folds 1-4, don't touch fold 5
+# this time test on folds 1-4 and test on 5
 export MODE=eval
 
 export BATCH_SIZE=2
 
 # the chosen hyperparams
-LABEL_EMB_SIZE=TODO
-LSTM_SIZE=TODO
+export LABEL_EMB_SIZE=TODO
+export LSTM_SIZE=TODO
 make train_joint
