@@ -1,5 +1,5 @@
 #!/bin/bash
-# this is the script for the evaluation of huric
+# testing some different network architectures to see how they behave with this dataset
 
 set -e
 

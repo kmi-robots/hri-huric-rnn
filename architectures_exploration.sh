@@ -1,5 +1,5 @@
 #!/bin/bash
-# this is the script for the evaluation of huric
+# search for good configurations, to make the choice of best architectures that will be used for hyperparam tuning
 
 set -e
 
