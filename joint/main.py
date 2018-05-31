@@ -24,15 +24,16 @@ epoch_num = int(os.environ.get('MAX_EPOCHS', 100))
 
 MY_PATH = os.path.dirname(os.path.abspath(__file__))
 
-DATASET = os.environ.get('DATASET', 'atis')
-OUTPUT_FOLDER = os.environ.get('OUTPUT_FOLDER', 'last')
-MODE = os.environ.get('MODE', None)
-if not MODE:
-    # for those two datasets, default to train full
-    if DATASET == 'wit_en' or DATASET == 'wit_it':
-        MODE = 'runtime'
-    else:
-        MODE = 'measures'
+OUTPUT_FOLDER = os.environ.get('OUTPUT_FOLDER', '')
+DATASET = os.environ.get('DATASET', 'huric_eb/modern')
+# possible MODE:
+# - 'dev_cross' that excludes the last fold and performs (k-1)-fold, last fold untouched
+# - 'cross' that performs k-fold
+# - 'eval' that does the train on k-1 and test on last (untouched fold)
+MODE = os.environ.get('MODE', 'dev_cross')
+OUTPUT_FOLDER += MODE
+
+
 # the type of recurrent unit on the multi-turn: rnn or CRF
 RECURRENT_MULTITURN=os.environ.get('RECURRENT_MULTITURN','gru')
 
@@ -42,10 +43,6 @@ if FORCE_SINGLE_TURN:
     OUTPUT_FOLDER += '_single_' + FORCE_SINGLE_TURN
 if RECURRENT_MULTITURN != 'gru':
     OUTPUT_FOLDER += '_' + RECURRENT_MULTITURN
-if MODE=='measures':
-    # don't overwrite anything
-    #OUTPUT_FOLDER += str(time.time())
-    pass
 
 LOSS_SUM = os.environ.get('LOSS_SUM', 'both') # 'both' if want to reduce loss of both intents and slots, otherwise 'intent' or 'slots'
 OUTPUT_FOLDER += '_loss_' + LOSS_SUM
@@ -78,7 +75,7 @@ def train(mode):
     # maximum length of sentences
     input_steps = 50
     # load the train and dev datasets
-    folds = data.load_data(DATASET, mode, SLOTS_TYPE)
+    folds = data.load_data(DATASET, SLOTS_TYPE)
     # fix the random seeds
     random_seed_init(len(folds[0]['data']))
     # preprocess them to list of training/test samples
@@ -117,12 +114,29 @@ def train(mode):
 
     create_empty_array = lambda: np.zeros((epoch_num, ))
 
-    for fold_number in range(0, len(folds)):
+    train_folds = []
+    test_folds = []
+    if mode == 'dev_cross':
+        # cross on 1...k-1
+        folds = folds[:-1]
+    if mode == 'cross' or mode == 'dev_cross':
+        for fold_number in range(0, len(folds)):
+            train = [s for (count,fold) in enumerate(folds) if count != fold_number for s in fold['data']]
+            test = folds[fold_number]['data']
+            train_folds.append(train)
+            test_folds.append(test)
+        pass
+    elif mode == 'eval':
+        # train on 1...k-1, test on k
+        train_folds.append([s for (count,fold) in enumerate(folds[:-1]) for s in fold['data']])
+        test_folds.append(folds[-1]['data'])
+    else:
+        raise ValueError('invalid mode')
+
+    for fold_number, (training_samples, test_samples) in enumerate(zip(train_folds, test_folds)):
         # reset the graph for next iteration
         tf.reset_default_graph()
-    
-        training_samples = [s for (count,fold) in enumerate(folds) if count != fold_number for s in fold['data']]
-        test_samples = folds[fold_number]['data']
+
         print('train samples', len(training_samples))
         if test_samples:
             print('test samples', len(test_samples))

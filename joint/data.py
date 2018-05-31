@@ -56,15 +56,8 @@ def collapse_multi_turn_sessions(dataset, force_single_turn=False):
     print('intent changes: {} over {} samples'.format(sum(intent_changes), len(intent_changes)))
     return dataset
 
-def load_data(dataset_name, mode='measures', slots_type='full'):
-    """Loads the dataset and returns it.
-    
-    if mode='measures' (default), returns [test_data, train_data]
-    
-    if mode='runtime', returns [None, all the data together], to do a full training to be used at runtime
-    
-    if mode='finaltest', returns[finaltest, train_data]
-        """
+def load_data(dataset_name, slots_type='full'):
+    """Loads the dataset and returns it."""
     path = 'data/' + dataset_name + '/preprocessed'
 
     fold_files = os.listdir(path)
@@ -83,10 +76,8 @@ def load_data(dataset_name, mode='measures', slots_type='full'):
                 sample['types'] = slots_to_types_only(sample['slots'])
             data_splitted.append(file_content)
 
-    if mode == 'measures':
-        return data_splitted
-    else:
-        raise ValueError('mode unsupported:' + mode)
+
+    return data_splitted
 
 def reduce_slots(file_content, slots_type):
     if slots_type == 'iob_only':
