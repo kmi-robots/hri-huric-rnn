@@ -172,8 +172,9 @@ def evaluate_epoch(epoch_data):
         # and also the ones that are in pred but not in true
         wrong_spans += [(bd[1], bd[2]) for bd in bd_arguments_pred_val if bd not in bd_arguments_true_val]
         overlaps = lambda a, b: (a[1] >= b[0] and a[0] <= b[1])
-        ac_true_filtered_span_based.append([ac for ac in ac_arguments_true_val if any([overlaps((ac[1], ac[2]), s) for s in wrong_spans])])
-        ac_pred_filtered_span_based.append([ac for ac in ac_arguments_pred_val if any([overlaps((ac[1], ac[2]), s) for s in wrong_spans])])
+        ac_true_filtered_span_based.append([ac for ac in ac_arguments_true_val if not any([overlaps((ac[1], ac[2]), s) for s in wrong_spans])])
+        ac_pred_filtered_span_based.append([ac for ac in ac_arguments_pred_val if not any([overlaps((ac[1], ac[2]), s) for s in wrong_spans])])
+        #print(bd_arguments_true_val, bd_arguments_pred_val, wrong_spans, sorted(bd_arguments_true_val) == sorted(bd_arguments_pred_val), [ac for ac in ac_arguments_true_val if not any([overlaps((ac[1], ac[2]), s) for s in wrong_spans])])
 
     ac_measures_cond_sent = precision_recall_f1_spans(ac_pred_filtered_sentence_based, ac_true_filtered_sentence_based)
     ac_measures_cond_span = precision_recall_f1_spans(ac_pred_filtered_span_based, ac_true_filtered_span_based)
