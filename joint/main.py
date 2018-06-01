@@ -125,7 +125,6 @@ def train(mode):
             test = folds[fold_number]['data']
             train_folds.append(train)
             test_folds.append(test)
-        pass
     elif mode == 'eval':
         # train on 1...k-1, test on k
         train_folds.append([s for (count,fold) in enumerate(folds[:-1]) for s in fold['data']])
@@ -221,7 +220,7 @@ def train(mode):
 
                 data.save_predictions('{}/json/epoch_{}'.format(real_folder, epoch), fold_number + 1, predicted)
                 # epoch resume
-                print('epoch {}/{} on fold {}/{} ended'.format(epoch + 1, epoch_num, fold_number + 1, len(folds)))
+                print('epoch {}/{} on fold {}/{} ended'.format(epoch + 1, epoch_num, fold_number + 1, len(train_folds)))
                 performance = metrics.evaluate_epoch(predicted)
                 print('INTENTS:    ', performance['intent']['f1'])
                 print('SLOTS:      ', performance['slots']['f1'])
