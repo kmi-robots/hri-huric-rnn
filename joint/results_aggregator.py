@@ -23,6 +23,10 @@ def read_values(folder, dataset_name):
     intent_last = {}
     slots_cond_best = {}
     slots_cond_last = {}
+    bd_cond_best = {}
+    bd_cond_last = {}
+    ac_cond_best = {}
+    ac_cond_last = {}
     for subfolder in subfolder_list:
         folder_name = subfolder.name
         file_location = subfolder / dataset_name
@@ -30,7 +34,9 @@ def read_values(folder, dataset_name):
             with open(file_location / 'history_full.json') as f:
                 content = json.load(f)
             f1_intent_scores = content['intent']['f1']
-            f1_slots_cond_scores = content['slots_cond']['f1']
+            f1_slots_cond_scores = content['slots_cond_old']['f1']
+            f1_bd_cond_scores = content['bd_cond']['f1']
+            f1_ac_cond_scores = content['ac_cond_sent']['f1']
             f1_intent_best_value = max(f1_intent_scores)
             f1_intent_best_index = f1_intent_scores.index(f1_intent_best_value)
             f1_intent_last_value = f1_intent_scores[-1]
@@ -38,10 +44,21 @@ def read_values(folder, dataset_name):
             f1_slots_cond_best_index = f1_slots_cond_scores.index(f1_slots_cond_best_value)
             f1_slots_cond_last_value = f1_slots_cond_scores[-1]
 
+            f1_bd_cond_best_value = max(f1_bd_cond_scores)
+            f1_bd_cond_best_index = f1_bd_cond_scores.index(f1_bd_cond_best_value)
+            f1_bd_cond_last_value = f1_bd_cond_scores[-1]
+            f1_ac_cond_best_value = max(f1_ac_cond_scores)
+            f1_ac_cond_best_index = f1_ac_cond_scores.index(f1_ac_cond_best_value)
+            f1_ac_cond_last_value = f1_ac_cond_scores[-1]
+
             intent_best[folder_name] = f1_intent_best_value
             intent_last[folder_name] = f1_intent_last_value
             slots_cond_best[folder_name] = f1_slots_cond_best_value
             slots_cond_last[folder_name] = f1_slots_cond_last_value
+            bd_cond_best[folder_name] = f1_bd_cond_best_value
+            bd_cond_last[folder_name] = f1_bd_cond_last_value
+            ac_cond_best[folder_name] = f1_ac_cond_best_value
+            ac_cond_last[folder_name] = f1_ac_cond_last_value
         except FileNotFoundError:
             print('not found file in subfolder', subfolder)
             continue
@@ -49,8 +66,12 @@ def read_values(folder, dataset_name):
     return {
         'intent_best': intent_best,
         'intent_last': intent_last,
-        'slots_cond_best': slots_cond_best,
-        'slots_cond_last': slots_cond_last
+        'slots_cond_old_best': slots_cond_best,
+        'slots_cond_old_last': slots_cond_last,
+        'bd_cond_best': bd_cond_best,
+        'bd_cond_last': bd_cond_last,
+        'ac_cond_best': ac_cond_best,
+        'ac_cond_last': ac_cond_last
     }
 
 
