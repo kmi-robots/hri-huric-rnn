@@ -18,6 +18,6 @@ export MODE=eval
 export BATCH_SIZE=2
 
 # the chosen hyperparams
-export LABEL_EMB_SIZE=TODO
-export LSTM_SIZE=TODO
+export LABEL_EMB_SIZE=64
+export LSTM_SIZE=128
 make train_joint
