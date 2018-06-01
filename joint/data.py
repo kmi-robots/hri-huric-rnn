@@ -311,8 +311,9 @@ def sequence_iob_to_ents(iob_sequence):
         #print(line)
         line = iob_to_biluo(line)
         entities_offsets = tags_to_entities(line)
-        entity_text = ['{}:{}-{}'.format(label, start, end) for (label, start, end) in entities_offsets]
-        result.append(entity_text)
+        # an entity is a tuple (label, start, end)
+        entity_tuples = [(label, start, end) for (label, start, end) in entities_offsets]
+        result.append(entity_tuples)
     return result
 
 def huric_add_json(out_path, json_preprocessed_list):

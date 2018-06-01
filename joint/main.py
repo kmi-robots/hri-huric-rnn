@@ -222,13 +222,8 @@ def train(mode):
                 # epoch resume
                 print('epoch {}/{} on fold {}/{} ended'.format(epoch + 1, epoch_num, fold_number + 1, len(train_folds)))
                 performance = metrics.evaluate_epoch(predicted)
-                print('INTENTS:    ', performance['intent']['f1'])
-                print('SLOTS:      ', performance['slots']['f1'])
-                print('SLOTS COND: ', performance['slots_cond']['f1'])
-                print('BD:         ', performance['bd']['f1'])
-                print('BD COND:    ', performance['bd_cond']['f1'])
-                print('AC:         ', performance['ac']['f1'])
-                print('AC COND:    ', performance['ac_cond']['f1'])
+                for metric_name, value in performance.items():
+                    print('%20s' % metric_name, value)
 
         # the iteration on the fold has completed
 
