@@ -5,11 +5,12 @@ from tensorflow.contrib import layers
 import numpy as np
 from tensorflow.contrib.rnn import BasicLSTMCell, LSTMStateTuple, GRUCell
 from .embeddings import EmbeddingsFromScratch, FixedEmbeddings, FineTuneEmbeddings, spacy_wrapper
+from .attention import attention
 
 flatten = lambda l: [item for sublist in l for item in sublist]
 
 class Model:
-    def __init__(self, input_steps, embedding_size, hidden_size, vocabs, word_embeddings, recurrent_cell, attention, loss_sum='both', multi_turn=False, batch_size=None, intent_combination=None, three_stages=False):
+    def __init__(self, input_steps, embedding_size, hidden_size, vocabs, word_embeddings, recurrent_cell, attention, loss_sum='both', multi_turn=False, batch_size=None, intent_combination=None, three_stages=False, intent_extraction_mode='bi-rnn'):
         # save the parameters
         self.input_steps = input_steps
         self.embedding_size = embedding_size
@@ -40,6 +41,8 @@ class Model:
         self.intent_combination = (intent_combination or 'gru') if multi_turn else None
 
         self.three_stages = three_stages
+        # 'bi-rnn', 'word-emb'
+        self.intent_extraction_mode = intent_extraction_mode
 
         # define the placeholders for inputs to the graph
         # the input words are a tensor of type string.
@@ -142,10 +145,32 @@ class Model:
             self.encoder_final_state = encoder_final_state_h
 
 
+        # the size of final *W+b
+        intent_input_size = self.hidden_size * 2
+        if self.intent_attention:
+            # get the attention out and the attention weights
+            # choose dinamically the input to attention:
+            if self.intent_extraction_mode == 'bi-rnn':
+                attention_input = encoder_outputs
+            elif self.intent_extraction_mode == 'word-emb':
+                # directly a weighted mean of word embeddings
+                attention_input = self.encoder_inputs_embedded
+                intent_input_size = 300
+            else:
+                raise ValueError(self.intent_extraction_mode)
+            # TODO attention_size=50 is a hyperparam
+            attention_out, alphas = attention(attention_input, 50, return_alphas=True, time_major=True)
+            # overwrite: no more final decoder stage but weighted on attention scores
+            self.encoder_final_state = encoder_final_state_h = attention_out
+            # make this tensor retrievable by name
+        else:
+            #alphas = tf.constant(0.0, shape=[self.batch_size, self.input_steps])
+            alphas = tf.fill((batch_size_tensor,self.input_steps), 0.0)
+        self.attention_scores_intent = tf.identity(alphas, name="attention_alpha_intent")
         # Intent output
         
         # Define the weights and biases to perform the output projection on the intent output
-        intent_W = tf.get_variable('intent_W', initializer=tf.random_uniform([self.hidden_size * 2, self.intentEmbedder.vocab_size], -0.1, 0.1),
+        intent_W = tf.get_variable('intent_W', initializer=tf.random_uniform([intent_input_size, self.intentEmbedder.vocab_size], -0.1, 0.1),
                                dtype=tf.float32)
         intent_b = tf.get_variable("intent_b", initializer=tf.zeros([self.intentEmbedder.vocab_size]), dtype=tf.float32)
 
@@ -298,7 +323,7 @@ class Model:
                     memory_sequence_length=self.encoder_inputs_actual_length)
                 # that gets wrapped inside the attention mechanism
                 attn_cell = tf.contrib.seq2seq.AttentionWrapper(
-                    cell, attention_mechanism, attention_layer_size=self.hidden_size)
+                    cell, attention_mechanism, attention_layer_size=self.hidden_size, alignment_history=True)
                 # and gets wrapped inside a output projection wrapper (weights+biases),
                 # to have an output with logits on the slot labels dimension
             else:
@@ -323,15 +348,20 @@ class Model:
                 decoder=decoder, output_time_major=True,
                 impute_finished=True, maximum_iterations=self.input_steps
             )
-            return final_outputs
+            return final_outputs, final_state
 
         if not self.three_stages:
             # Build the helper with the declared functions
             my_helper_together = tf.contrib.seq2seq.CustomHelper(initial_fn_together, sample_fn, next_inputs_fn_together)
-            outputs = decode(my_helper_together)
+            outputs, dec_states = decode(my_helper_together)
+            if self.slots_attention:
+                attention_scores = dec_states.alignment_history.stack()
+            else:
+                attention_scores = tf.constant(0, shape=[TODO])
+            self.attention_decoder_scores = tf.identity(attention_scores, name="attention_alpha_decoder")
         else:
             my_helper_bd = tf.contrib.seq2seq.CustomHelper(initial_fn_bd, sample_fn, next_inputs_fn_bd)
-            bd_outputs = decode(my_helper_bd, 2)
+            bd_outputs, bd_states = decode(my_helper_bd, 2)
             # bd_outputs shaped (time, batch)
             # pad in the first dimension (time) by adding requested_size - actual size, in the second dimension nothing
             padding_size = [[0, self.input_steps - tf.shape(bd_outputs.sample_id)[0]], [0, 0]]
@@ -363,7 +393,17 @@ class Model:
                 return elements_finished, next_inputs, next_state
             
             my_helper_ac = tf.contrib.seq2seq.CustomHelper(initial_fn_ac, sample_fn, next_inputs_fn_ac)
-            ac_outputs = decode(my_helper_ac, 3)
+            ac_outputs, ac_states = decode(my_helper_ac, 3)
+            if self.slots_attention:
+                attention_bd_scores = bd_states.alignment_history.stack()
+                attention_ac_scores = ac_states.alignment_history.stack()
+                print(attention_bd_scores)
+                print(attention_ac_scores)
+            else:
+                attention_bd_scores = tf.constant(0, shape=[TODO])
+                attention_ac_scores = tf.constant(0, shape=[TODO])
+            self.attention_bd_scores = tf.identity(attention_bd_scores, name="attention_alpha_bd")
+            self.attention_ac_scores = tf.identity(attention_ac_scores, name="attention_alpha_ac")
 
         if not self.three_stages: 
             # Now from the slot decoder outputs, get the corresponding output word (slot label, from ids to words)
@@ -470,11 +510,11 @@ class Model:
                 })
 
         if mode in ['test']:
-            output_feeds = [self.intent]
+            output_feeds = [self.intent, self.attention_scores_intent]
             if self.three_stages:
-                output_feeds += [self.bd_prediction, self.ac_prediction]
+                output_feeds += [self.bd_prediction, self.ac_prediction, self.attention_ac_scores, self.attention_bd_scores]
             else:
-                output_feeds += [self.decoder_prediction]
+                output_feeds += [self.decoder_prediction, self.attention_decoder_scores]
             feed_dict = {self.words_inputs: np.transpose(seq_in, [1, 0]),
                         self.encoder_inputs_actual_length: length}
         
@@ -488,21 +528,25 @@ class Model:
         results = {}
         if mode in ['test']:
             if self.three_stages:
-                intent_batch, bd_batch, ac_batch = results_tf
+                intent_batch, attention_intent_scores, bd_batch, ac_batch, attention_bd_scores, attention_ac_scores = results_tf
                 for idx, bds in enumerate(bd_batch):
                     bd_batch[idx] = np.array([bd.decode('utf-8') for bd in bds])
                 for idx, acs in enumerate(ac_batch):
                     ac_batch[idx] = np.array([ac.decode('utf-8') for ac in acs])
                 results['bd'] = bd_batch
                 results['ac'] = ac_batch
+                results['bd_attentions'] = attention_bd_scores
+                results['ac_attentions'] = attention_ac_scores
             else:
-                intent_batch, slots_batch = results_tf
+                intent_batch, attention_intent_scores, slots_batch, attention_decoder_scores = results_tf
                 for idx, slots in enumerate(slots_batch):
                     slots_batch[idx] = np.array([slot.decode('utf-8') for slot in slots])
                 results['slots'] = slots_batch
+                results['slots_attentions']
             for idx, intent in enumerate(intent_batch):
                 intent_batch[idx] = intent.decode('utf-8')
             results['intent'] = intent_batch
+            results['intent_attentions'] = attention_intent_scores
         #except Exception as e:
         #    traceback.print_exc()
         #    print(seq_in, length)

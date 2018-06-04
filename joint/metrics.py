@@ -87,7 +87,7 @@ def plot_history(file_name, history):
     print(file_name)
     plt.savefig(file_name)
 
-def clean_predictions(decoder_prediction_batch, intent_prediction_batch, true_batch):
+def clean_predictions(decoder_prediction_batch, intent_prediction_batch, true_batch, intent_attentions_batch):
     """Given the raw outputs of the network, provides back a usable representation, with the same structure as the training samples"""
 
     samples = [{
@@ -101,8 +101,9 @@ def clean_predictions(decoder_prediction_batch, intent_prediction_batch, true_ba
         'start_token_id': gold['start_token_id'],
         'end_token_id': gold['end_token_id'],
         'id': gold['id'],
-        'lexical_unit_ids': gold['lexical_unit_ids']
-    } for (gold, decoder_prediction, intent_prediction) in zip(true_batch, decoder_prediction_batch, intent_prediction_batch)]
+        'lexical_unit_ids': gold['lexical_unit_ids'],
+        'intent_attentions': [score for score in intent_attentions[:gold['length']]]
+    } for (gold, decoder_prediction, intent_prediction, intent_attentions) in zip(true_batch, decoder_prediction_batch, intent_prediction_batch, intent_attentions_batch)]
 
     return samples
 
