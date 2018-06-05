@@ -545,7 +545,7 @@ class Model:
                 for idx, slots in enumerate(slots_batch):
                     slots_batch[idx] = np.array([slot.decode('utf-8') for slot in slots])
                 results['slots'] = slots_batch
-                results['slots_attentions']
+                results['slots_attentions'] = attention_decoder_scores
             for idx, intent in enumerate(intent_batch):
                 intent_batch[idx] = intent.decode('utf-8')
             results['intent'] = intent_batch
