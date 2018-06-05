@@ -201,7 +201,7 @@ def train(mode):
                         bd_attentions = np.transpose(bd_attentions, [1, 0, 2])
                         ac_attentions = results['ac_attentions']
                         ac_attentions = np.transpose(ac_attentions, [1, 0, 2])
-                        print('bd_attentions.shape', bd_attentions.shape)
+                        #print('bd_attentions.shape', bd_attentions.shape)
                         decoder_prediction = np.array([data.rebuild_slots_sequence(bd_seq, ac_seq) for bd_seq, ac_seq in zip(bd_prediction, ac_prediction)])
                         slots_attentions = np.zeros((len(batch), input_steps, input_steps))
                     else:
