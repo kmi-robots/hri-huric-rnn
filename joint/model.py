@@ -233,10 +233,6 @@ class Model:
         intent_scores = tf.reduce_max(tf.nn.softmax(intent_logits), axis=1, name="intent_score")
 
 
-
-        # Define mask so padding does not count towards loss calculation and attention
-        self.mask = tf.to_float(tf.not_equal(self.decoder_targets_true_length, self.slotEmbedder.get_indexes_from_words_list(['<PAD>'])[0]))
-
         # Slot label decoder
 
         decoder_lengths = self.encoder_inputs_actual_length
@@ -324,7 +320,7 @@ class Model:
                 # Use the BahdanauAttention on the memory
                 attention_mechanism = tf.contrib.seq2seq.BahdanauAttention(
                     num_units=self.hidden_size, memory=memory,
-                    memory_sequence_length=self.encoder_inputs_actual_length, score_mask_calue=self.mask)
+                    memory_sequence_length=self.encoder_inputs_actual_length)
                 # that gets wrapped inside the attention mechanism
                 attn_cell = tf.contrib.seq2seq.AttentionWrapper(
                     cell, attention_mechanism, attention_layer_size=self.hidden_size, alignment_history=True)
@@ -425,6 +421,10 @@ class Model:
             self.decoder_targets_time_majored = tf.transpose(decoder_targets_ids, [1, 0])
             # Truncate them on the actual decoding maximum number of steps (to have same length as decoder outputs)
             self.decoder_targets_true_length = self.decoder_targets_time_majored[:decoder_max_steps]
+            # Define mask so padding does not count towards loss calculation
+            # TODO mask should be defined once for all
+            #self.mask = tf.sequence_mask(decoder_lengths, maxlen=self.input_steps, dtype=tf.bool)
+            self.mask = tf.to_float(tf.not_equal(self.decoder_targets_true_length, self.slotEmbedder.get_indexes_from_words_list(['<PAD>'])[0]))
             # Loss
             loss_slots = tf.contrib.seq2seq.sequence_loss(
                 outputs.rnn_output, self.decoder_targets_true_length, weights=self.mask)
@@ -438,8 +438,9 @@ class Model:
             bd_targets_ids = self.boundaryEmbedder.get_indexes_from_words_tensor(self.bd_targets)
             self.bd_targets_time_majored = tf.transpose(bd_targets_ids, [1, 0])
             self.bd_targets_true_length = self.bd_targets_time_majored[:bd_max_steps]
+            self.bd_mask = tf.to_float(tf.not_equal(self.bd_targets_true_length, self.boundaryEmbedder.get_indexes_from_words_list(['<PAD>'])[0]))
             bd_loss = tf.contrib.seq2seq.sequence_loss(
-                bd_outputs.rnn_output, self.bd_targets_true_length, weights=self.mask)
+                bd_outputs.rnn_output, self.bd_targets_true_length, weights=self.bd_mask)
 
             # argument classification stuff
             self.ac_prediction = self.typesEmbedder.get_words_from_indexes(tf.to_int64(ac_outputs.sample_id))
@@ -448,8 +449,9 @@ class Model:
             ac_targets_ids = self.typesEmbedder.get_indexes_from_words_tensor(self.ac_targets)
             self.ac_targets_time_majored = tf.transpose(ac_targets_ids, [1, 0])
             self.ac_targets_true_length = self.ac_targets_time_majored[:ac_max_steps]
+            self.ac_mask = tf.to_float(tf.not_equal(self.ac_targets_true_length, self.typesEmbedder.get_indexes_from_words_list(['<PAD>'])[0]))
             ac_loss = tf.contrib.seq2seq.sequence_loss(
-                ac_outputs.rnn_output, self.ac_targets_true_length, weights=self.mask)
+                ac_outputs.rnn_output, self.ac_targets_true_length, weights=self.ac_mask)
             
 
         # For the intent, using cross entropy
