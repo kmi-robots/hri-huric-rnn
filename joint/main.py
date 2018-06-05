@@ -215,7 +215,6 @@ def train(mode):
                         ac_attentions = np.zeros((len(batch), input_steps, input_steps))
 
                     #print(results)
-                    print(slots_attentions)
                     predicted_batch = metrics.clean_predictions(decoder_prediction, intent, batch, intent_attentions, bd_attentions, ac_attentions, slots_attentions)
                     data.huric_add_json('{}/xml/epoch_{}'.format(real_folder, epoch), predicted_batch)
                     predicted.extend(predicted_batch)
