@@ -193,21 +193,30 @@ def train(mode):
                     intent_attentions = results['intent_attentions']
                     if THREE_STAGES:
                         bd_prediction = results['bd']
-                        ac_prediction = results['ac']
-                        bd_attentions = results['bd_attentions']
-                        ac_attentions = results['ac_attentions']
                         bd_prediction = np.transpose(bd_prediction, [1, 0])
+                        ac_prediction = results['ac']
                         ac_prediction = np.transpose(ac_prediction, [1, 0])
+                        # all the attention matrices are in shape (time, batch, time)
+                        bd_attentions = results['bd_attentions']
+                        bd_attentions = np.transpose(bd_attentions, [1, 0, 2])
+                        ac_attentions = results['ac_attentions']
+                        ac_attentions = np.transpose(ac_attentions, [1, 0, 2])
+                        print('bd_attentions.shape', bd_attentions.shape)
                         decoder_prediction = np.array([data.rebuild_slots_sequence(bd_seq, ac_seq) for bd_seq, ac_seq in zip(bd_prediction, ac_prediction)])
+                        slots_attentions = np.zeros((len(batch), input_steps, input_steps))
                     else:
                         decoder_prediction = results['slots']
-                        slots_attentions = results['slots_attentions']
                         # from time-major matrix to sample-major
                         decoder_prediction = np.transpose(decoder_prediction, [1, 0])
+                        slots_attentions = results['slots_attentions']
+                        slots_attentions = np.transpose(slots_attentions, [1, 0, 2])
                         decoder_prediction = decoder_prediction.tolist()
+                        bd_attentions = np.zeros((len(batch), input_steps, input_steps))
+                        ac_attentions = np.zeros((len(batch), input_steps, input_steps))
 
                     #print(results)
-                    predicted_batch = metrics.clean_predictions(decoder_prediction, intent, batch, intent_attentions)
+                    print(slots_attentions)
+                    predicted_batch = metrics.clean_predictions(decoder_prediction, intent, batch, intent_attentions, bd_attentions, ac_attentions, slots_attentions)
                     data.huric_add_json('{}/xml/epoch_{}'.format(real_folder, epoch), predicted_batch)
                     predicted.extend(predicted_batch)
                     if j == 0:

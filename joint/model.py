@@ -357,7 +357,7 @@ class Model:
             if self.slots_attention:
                 attention_scores = dec_states.alignment_history.stack()
             else:
-                attention_scores = tf.constant(0, shape=[TODO])
+                attention_scores = tf.fill((batch_size_tensor, self.input_steps, self.input_steps), 0.0)
             self.attention_decoder_scores = tf.identity(attention_scores, name="attention_alpha_decoder")
         else:
             my_helper_bd = tf.contrib.seq2seq.CustomHelper(initial_fn_bd, sample_fn, next_inputs_fn_bd)
@@ -396,12 +396,13 @@ class Model:
             ac_outputs, ac_states = decode(my_helper_ac, 3)
             if self.slots_attention:
                 attention_bd_scores = bd_states.alignment_history.stack()
+                #print('attention_bd_scores', attention_bd_scores)
                 attention_ac_scores = ac_states.alignment_history.stack()
                 print(attention_bd_scores)
                 print(attention_ac_scores)
             else:
-                attention_bd_scores = tf.constant(0, shape=[TODO])
-                attention_ac_scores = tf.constant(0, shape=[TODO])
+                attention_bd_scores = tf.fill((batch_size_tensor, self.input_steps, self.input_steps), 0.0)
+                attention_ac_scores = tf.fill((batch_size_tensor, self.input_steps, self.input_steps), 0.0)
             self.attention_bd_scores = tf.identity(attention_bd_scores, name="attention_alpha_bd")
             self.attention_ac_scores = tf.identity(attention_ac_scores, name="attention_alpha_ac")
 
