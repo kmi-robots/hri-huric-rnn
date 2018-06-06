@@ -57,6 +57,9 @@ OUTPUT_FOLDER += '_attention_' + ATTENTION
 THREE_STAGES = os.environ.get('THREE_STAGES', False) # add Boundary Detection intermediate level
 if THREE_STAGES:
     OUTPUT_FOLDER += '_three_stages'
+INTENT_EXTRACTION_MODE = os.environ.get('INTENT_EXTRACTION_MODE', 'bi-rnn') # intent comes out of bi-rnn or only a weighted mean (attention intent must be turned on)
+if INTENT_EXTRACTION_MODE != 'bi-rnn':
+    OUTPUT_FOLDER += '_intentextraction_' + INTENT_EXTRACTION_MODE
 
 
 # hyperparams
@@ -66,7 +69,7 @@ print('environment variables:')
 print('DATASET:', DATASET, '\nOUTPUT_FOLDER:', OUTPUT_FOLDER, '\nMODE:', MODE, '\nRECURRENT_MULTITURN:', RECURRENT_MULTITURN, '\nFORCE_SINGLE_TURN:', FORCE_SINGLE_TURN, '\nWORD_EMBEDDINGS:', WORD_EMBEDDINGS, '\nRECURRENT_CELL:', RECURRENT_CELL, '\nATTENTION:', ATTENTION)
 
 def get_model(vocabs, tokenizer, language, multi_turn, input_steps, nlp):
-    model = Model(input_steps, embedding_size, hidden_size, vocabs, WORD_EMBEDDINGS, RECURRENT_CELL, ATTENTION, LOSS_SUM, multi_turn, None, RECURRENT_MULTITURN, THREE_STAGES)
+    model = Model(input_steps, embedding_size, hidden_size, vocabs, WORD_EMBEDDINGS, RECURRENT_CELL, ATTENTION, LOSS_SUM, multi_turn, None, RECURRENT_MULTITURN, THREE_STAGES, INTENT_EXTRACTION_MODE)
     model.build(nlp, tokenizer, language)
     return model
 
@@ -187,20 +190,32 @@ def train(mode):
                     results = model.step(sess, 'test', batch)
                     print('.', end='')
                     intent = results['intent']
+                    intent_attentions = results['intent_attentions']
                     if THREE_STAGES:
                         bd_prediction = results['bd']
-                        ac_prediction = results['ac']
                         bd_prediction = np.transpose(bd_prediction, [1, 0])
+                        ac_prediction = results['ac']
                         ac_prediction = np.transpose(ac_prediction, [1, 0])
+                        # all the attention matrices are in shape (time, batch, time)
+                        bd_attentions = results['bd_attentions']
+                        bd_attentions = np.transpose(bd_attentions, [1, 0, 2])
+                        ac_attentions = results['ac_attentions']
+                        ac_attentions = np.transpose(ac_attentions, [1, 0, 2])
+                        #print('bd_attentions.shape', bd_attentions.shape)
                         decoder_prediction = np.array([data.rebuild_slots_sequence(bd_seq, ac_seq) for bd_seq, ac_seq in zip(bd_prediction, ac_prediction)])
+                        slots_attentions = np.zeros((len(batch), input_steps, input_steps))
                     else:
                         decoder_prediction = results['slots']
                         # from time-major matrix to sample-major
                         decoder_prediction = np.transpose(decoder_prediction, [1, 0])
+                        slots_attentions = results['slots_attentions']
+                        slots_attentions = np.transpose(slots_attentions, [1, 0, 2])
                         decoder_prediction = decoder_prediction.tolist()
+                        bd_attentions = np.zeros((len(batch), input_steps, input_steps))
+                        ac_attentions = np.zeros((len(batch), input_steps, input_steps))
 
                     #print(results)
-                    predicted_batch = metrics.clean_predictions(decoder_prediction, intent, batch)
+                    predicted_batch = metrics.clean_predictions(decoder_prediction, intent, batch, intent_attentions, bd_attentions, ac_attentions, slots_attentions)
                     data.huric_add_json('{}/xml/epoch_{}'.format(real_folder, epoch), predicted_batch)
                     predicted.extend(predicted_batch)
                     if j == 0:
@@ -212,10 +227,13 @@ def train(mode):
                             print('BD Prediction         :', bd_prediction[index][:batch[index]['length']].tolist())
                             print('AC Truth              :', batch[index]['types'][:batch[index]['length']])
                             print('AC Prediction         :', ac_prediction[index][:batch[index]['length']].tolist())
+                            #print('BD atts', bd_attentions[index])
+                            #print('AC atts', ac_attentions[index])
                         print('Slot Truth            :', batch[index]['slots'][:batch[index]['length']])
                         print('Slot Prediction       :', decoder_prediction[index][:batch[index]['length']])
                         print('Intent Truth          :', batch[index]['intent'])
                         print('Intent Prediction     :', intent[index])
+                        print('Intent atts     :', intent_attentions[index][:batch[index]['length']])
                 
 
                 data.save_predictions('{}/json/epoch_{}'.format(real_folder, epoch), fold_number + 1, predicted)
@@ -226,6 +244,9 @@ def train(mode):
                     print('%20s' % metric_name, value)
 
         # the iteration on the fold has completed
+        # save the model
+        saver = tf.train.Saver()
+        saver.save(sess, '{}/model_fold_{}.ckpt'.format(real_folder, fold_number))
 
     if test_samples:
         print('computing the metrics for all epochs on all the folds merged')
@@ -239,8 +260,9 @@ def train(mode):
             epoch_metrics = metrics.evaluate_epoch(merged_predicitons)
             save_file(epoch_metrics, '{}/scores'.format(real_folder), 'epoch_{}.json'.format(epoch))
             for key, measures in epoch_metrics.items():
-                    for measure_name, value in measures.items():
-                        history[key][measure_name][epoch] = value
+                    if isinstance(measures, dict):
+                        for measure_name, value in measures.items():
+                            history[key][measure_name][epoch] = value
 
         print('averages over the K folds have been computed')
     
@@ -249,9 +271,7 @@ def train(mode):
         to_plot_f1 = {output_type: values['f1'] for output_type, values in history.items()}
         metrics.plot_history('{}/f1.png'.format(real_folder) , to_plot_f1)
         save_file(history, real_folder, 'history_full.json')
-    else:
-        saver = tf.train.Saver()
-        saver.save(sess, '{}/model.ckpt'.format(real_folder))
+
 
 
 def random_seed_init(seed):
@@ -262,13 +282,8 @@ def save_file(file_content, file_path, file_name):
     if not os.path.exists(file_path):
         os.makedirs(file_path)
     with open('{}/{}'.format(file_path, file_name) , 'w') as out_file:
-        json.dump(file_content, out_file, indent=2, cls=NumpyEncoder)
+        json.dump(file_content, out_file, indent=2, cls=data.NumpyEncoder)
 
-class NumpyEncoder(json.JSONEncoder):
-    def default(self, obj):
-        if isinstance(obj, np.ndarray):
-            return obj.tolist()
-        return json.JSONEncoder.default(self, obj)
 
 if __name__ == '__main__':
     train(MODE)
