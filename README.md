@@ -34,3 +34,22 @@ tmpfs     /tmp     tmpfs     defaults,size=10G,mode=1777     0     0
 ```
 
 Then reboot and check with `df -h`
+
+## Amazon lex test
+
+Take [this file](data/huric_eb/modern/amazon/lexTrainBot.json.zip), that contains the 4 train folds, upload to amazon lex console, build the model and set an alias.
+
+Then create an `.env` in the root folder file with content:
+```
+AWS_ACCESS_KEY=PUT_THERE_ACCESS_KEY
+AWS_SECRET_ACCESS_KEY=PUT_THERE_SECRET_ACCESS_KEY
+```
+
+Then execute:
+
+```bash
+python -m joint.lex_test
+python -m joint.evaluate_predictions_stored lex/results
+```
+
+And look at the results in `lex/results`.
