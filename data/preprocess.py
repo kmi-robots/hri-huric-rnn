@@ -15,9 +15,9 @@ import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
 n_folds = 5
-ALEXA_FILE_NAME = 'alexaInteractionModel.json'
-LEX_FILE_NAME = 'lexBot.json'
-LEX_ZIP_NAME = 'lexBot.zip'
+#ALEXA_FILE_NAME = 'alexaInteractionModel.json'
+#LEX_FILE_NAME = 'lexBot.json'
+#LEX_ZIP_NAME = 'lexBot.zip'
 
 
 def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
@@ -256,19 +256,31 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
         'slot_types': sorted(slot_types)
     }
 
+    folds = []
     for i, (train_idx, test_idx) in enumerate(skf.split(np.zeros(len(intent_values)), intent_values)):
         #print(i, train_idx, test_idx)
         fold_data = dataset[test_idx]
+        folds.append(fold_data)
         content = {
             'data': fold_data.tolist(),
             'meta': meta
         }
         write_json(out_path_preprocessed, 'fold_{}.json'.format(i + 1), content)
 
+    # save also the 4 folds of final train for lex evaluation
+    train_data = folds[:-1]
+    train_data = [s for f in train_data for s in f]
+    result_train = {
+            'data': train_data,
+            'meta': meta
+        }
+    
+    write_json(out_path_preprocessed, 'train_samples.json', result_train)
+
     return result_all, spatial_result
 
 
-def alexa_prepare(path, invocation_name):
+def alexa_prepare(path, invocation_name, input_file_name='all_samples.json', alexa_file_name='alexaInteractionModel.json'):
     """Creates the interaction model schema from the annotation scheme"""
     result = {  # https://developer.amazon.com/docs/smapi/interaction-model-schema.html
         'interactionModel': {  # Conversational primitives for the skill
@@ -283,7 +295,7 @@ def alexa_prepare(path, invocation_name):
     }
 
     preprocessed_location = '{}/preprocessed'.format(path)
-    with open('{}/{}'.format(preprocessed_location, 'all_samples.json')) as json_file:
+    with open('{}/{}'.format(preprocessed_location, input_file_name)) as json_file:
         file_content = json.load(json_file)
 
     all_samples = file_content['data']
@@ -335,7 +347,7 @@ def alexa_prepare(path, invocation_name):
     languageModel['intents'] = sorted(intents, key=lambda k: k['name'])
     languageModel['types'] = sorted(types, key=lambda k: k['name'])
 
-    write_json('{}/amazon'.format(path), ALEXA_FILE_NAME, result)
+    write_json('{}/amazon'.format(path), alexa_file_name, result)
 
 
 def get_slot_types(iob_list):
@@ -389,10 +401,10 @@ def sentence_fix(sentence):
     return sentence
 
 
-def lex_from_alexa(path, bot_name):
+def lex_from_alexa(path, bot_name, alexa_file_name='alexaInteractionModel.json', lex_file_name='lexBot.json'):
     """Builds the .zip file to be uploaded directly on lex portal"""
     
-    with open('{}/{}'.format(path, ALEXA_FILE_NAME)) as json_file:
+    with open('{}/{}'.format(path, alexa_file_name)) as json_file:
         alexa_content = json.load(json_file)
 
     intents = alexa_content['interactionModel']['languageModel']['intents']
@@ -449,11 +461,11 @@ def lex_from_alexa(path, bot_name):
         }
     }
 
-    write_json(path, LEX_FILE_NAME, lex_content)
+    write_json(path, lex_file_name, lex_content)
 
     # create zip
-    zf = zipfile.ZipFile('{}/{}'.format(path, LEX_ZIP_NAME), "w")
-    zf.write('{}/{}'.format(path, LEX_FILE_NAME), LEX_FILE_NAME)
+    zf = zipfile.ZipFile('{}/{}'.format(path, lex_file_name + '.zip'), "w")
+    zf.write('{}/{}'.format(path, lex_file_name), lex_file_name)
     zf.close()
 
 
@@ -603,6 +615,9 @@ def main():
         alexa_prepare('huric_eb/modern/spatial', 'office robot spatial')
         lex_from_alexa('huric_eb/modern/amazon', 'kmi_EB')
         lex_from_alexa('huric_eb/modern/spatial/amazon', 'spatial_EB')
+        # for lex evaluation
+        alexa_prepare('huric_eb/modern', 'roo bot train', 'train_samples.json', 'alexa_train.json')
+        lex_from_alexa('huric_eb/modern/amazon', 'train_only', 'alexa_train.json', 'lexTrainBot.json')
 
 
 if __name__ == '__main__':
