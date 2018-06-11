@@ -165,7 +165,7 @@ def train(mode):
                 #print(batch)
                 #_, loss, bd_prediction, decoder_prediction, intent, mask = model.step(sess, 'train', batch)
                 model.step(sess, 'train', batch)
-                print('.', end='')
+                print('.', end='', flush=True)
                 """
                 mean_loss += loss
                 train_loss += loss
@@ -188,7 +188,7 @@ def train(mode):
                 predicted = []
                 for j, batch in enumerate(data.get_batch(batch_size, test_samples)):
                     results = model.step(sess, 'test', batch)
-                    print('.', end='')
+                    print('.', end='', flush=True)
                     intent = results['intent']
                     intent_attentions = results['intent_attentions']
                     if THREE_STAGES:
@@ -216,7 +216,8 @@ def train(mode):
 
                     #print(results)
                     predicted_batch = metrics.clean_predictions(decoder_prediction, intent, batch, intent_attentions, bd_attentions, ac_attentions, slots_attentions)
-                    data.huric_add_json('{}/xml/epoch_{}'.format(real_folder, epoch), predicted_batch)
+                    if DATASET == 'huric':
+                        data.huric_add_json('{}/xml/epoch_{}'.format(real_folder, epoch), predicted_batch)
                     predicted.extend(predicted_batch)
                     if j == 0:
                         index = random.choice(range(len(batch)))

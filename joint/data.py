@@ -60,21 +60,28 @@ def load_data(dataset_name, slots_type='full'):
     """Loads the dataset and returns it."""
     path = 'data/' + dataset_name + '/preprocessed'
 
-    fold_files = os.listdir(path)
-    fold_files = sorted([f for f in fold_files if f.startswith('fold_')])
+    if dataset_name == 'huric_eb/preprocessed':
+        fold_files = os.listdir(path)
+        fold_files = sorted([f for f in fold_files if f.startswith('fold_')])
+    else:
+        fold_files = ['fold_train.json', 'fold_test.json', 'final_test.json']
 
     data_splitted = []
     for file_name in fold_files:
-        with open(path + '/' + file_name) as json_file:
-            file_content = json.load(json_file)
-            if slots_type != 'full':
-                file_content = reduce_slots(file_content, slots_type)
+        try:
+            with open(path + '/' + file_name) as json_file:
+                file_content = json.load(json_file)
+        except FileNotFoundError:
+            print('gotcha')
+            continue
+        if slots_type != 'full':
+            file_content = reduce_slots(file_content, slots_type)
 
-            # add anyway the boundaries
-            for sample in file_content['data']:
-                sample['boundaries'] = slots_to_iob_only(sample['slots'])
-                sample['types'] = slots_to_types_only(sample['slots'])
-            data_splitted.append(file_content)
+        # add anyway the boundaries
+        for sample in file_content['data']:
+            sample['boundaries'] = slots_to_iob_only(sample['slots'])
+            sample['types'] = slots_to_types_only(sample['slots'])
+        data_splitted.append(file_content)
 
 
     return data_splitted
