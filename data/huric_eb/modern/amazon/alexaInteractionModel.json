@@ -42,7 +42,8 @@
           ],
           "samples": [
             "robot {Item} is {Category}",
-            "{Item} is {Category}"
+            "{Item} is {Category}",
+            "{Item} {Category}"
           ]
         },
         {
@@ -63,6 +64,7 @@
             "there are {Theme} {Location}",
             "there is {Theme}",
             "there is {Theme} {Location}",
+            "there's {Theme} {Location}",
             "{Location} there are {Theme}",
             "{Theme} are {Location}",
             "{Theme} is {Location}",
@@ -180,10 +182,10 @@
             "could {Agent} please turn {Operational_state} {Device}",
             "could {Agent} switch {Operational_state} {Device}",
             "could {Agent} turn {Operational_state} {Device}",
-            "i am tired switch {Operational_state} {Device}",
             "i want to go to sleep turn {Operational_state} {Device}",
             "i want to jump in the shower can {Agent} turn {Device} {Operational_state}",
-            "i would really like to take a shower could {Agent} turn {Device} {Operational_state}",
+            "i'd really like to take a shower could {Agent} turn {Device} {Operational_state}",
+            "i'm tired switch {Operational_state} {Device}",
             "restart {Device}",
             "robot can {Agent} put {Device} {Operational_state}",
             "robot can {Agent} start {Device}",
@@ -397,7 +399,7 @@
             "drive {Goal}",
             "go {Goal}",
             "go {Manner} {Goal}",
-            "i am hungry go {Goal}",
+            "i'm hungry go {Goal}",
             "let {Theme} go {Goal}",
             "michael go {Goal}",
             "move {Goal}",
@@ -576,7 +578,7 @@
             "grab {Theme}",
             "i would like some beer can {Agent} grab {Theme} {Source}",
             "john can {Agent} take {Theme}",
-            "let is go get {Theme}",
+            "let's go get {Theme}",
             "please get {Theme} {Source}",
             "please pick up {Theme}",
             "please pick {Theme}",
@@ -593,7 +595,7 @@
           "values": [
             {
               "name": {
-                "value": "is"
+                "value": "'s"
               }
             },
             {
@@ -1938,7 +1940,7 @@
             },
             {
               "name": {
-                "value": "there is clothes in the washing machine"
+                "value": "there's clothes in the washing machine"
               }
             }
           ]
@@ -2493,7 +2495,7 @@
             },
             {
               "name": {
-                "value": "vittorio is phone"
+                "value": "vittorio's phone"
               }
             }
           ]
@@ -2668,6 +2670,11 @@
           "values": [
             {
               "name": {
+                "value": "'s"
+              }
+            },
+            {
+              "name": {
                 "value": "a bath towel"
               }
             },
@@ -2754,11 +2761,6 @@
             {
               "name": {
                 "value": "an apple or an orange"
-              }
-            },
-            {
-              "name": {
-                "value": "is"
               }
             },
             {

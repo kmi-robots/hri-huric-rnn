@@ -394,9 +394,10 @@ def get_templated_sentence(words, iob_list):
 
 
 def sentence_fix(sentence):
-    sentence = re.sub('\'s', 'is', sentence)
-    sentence = re.sub('\'m', 'am', sentence)
-    sentence = re.sub('\'d', 'would', sentence)
+    # remove spaces before apostrophes
+    sentence = re.sub('\s\'(\S)', r"'\1", sentence)
+    # this amazon thing does not want samples like "{Item}'s"
+    sentence = re.sub('}\'(\S)', "}", sentence)
     sentence = re.sub('^\s+', '', sentence)
     return sentence
 

@@ -28,7 +28,8 @@
         },
         "sampleUtterances": [
           "robot {Item} is {Category}",
-          "{Item} is {Category}"
+          "{Item} is {Category}",
+          "{Item} {Category}"
         ]
       },
       {
@@ -54,6 +55,7 @@
           "there are {Theme}",
           "there are {Theme} {Location}",
           "there is {Theme} {Location}",
+          "there's {Theme} {Location}",
           "{Location} there are {Theme}",
           "{Theme} are {Location}",
           "{Theme} is {Location}",
@@ -179,9 +181,9 @@
           "can {Agent} turn {Device} {Operational_state}",
           "could {Agent} switch {Operational_state} {Device}",
           "could {Agent} turn {Operational_state} {Device}",
-          "i am tired switch {Operational_state} {Device}",
           "i want to jump in the shower can {Agent} turn {Device} {Operational_state}",
-          "i would really like to take a shower could {Agent} turn {Device} {Operational_state}",
+          "i'd really like to take a shower could {Agent} turn {Device} {Operational_state}",
+          "i'm tired switch {Operational_state} {Device}",
           "robot can {Agent} put {Device} {Operational_state}",
           "robot can {Agent} start {Device}",
           "robot can {Agent} turn {Device} {Operational_state}",
@@ -426,7 +428,7 @@
           "drive {Goal}",
           "go {Goal}",
           "go {Manner} {Goal}",
-          "i am hungry go {Goal}",
+          "i'm hungry go {Goal}",
           "let {Theme} go {Goal}",
           "michael go {Goal}",
           "move {Goal}",
@@ -605,7 +607,7 @@
           "grab {Theme}",
           "i would like some beer can {Agent} grab {Theme} {Source}",
           "john can {Agent} take {Theme}",
-          "let is go get {Theme}",
+          "let's go get {Theme}",
           "please get {Theme} {Source}",
           "please pick up {Theme}",
           "please pick {Theme}",
@@ -1314,7 +1316,7 @@
             "value": "the washing machine"
           },
           {
-            "value": "there is clothes in the washing machine"
+            "value": "there's clothes in the washing machine"
           }
         ]
       },
@@ -1625,7 +1627,7 @@
             "value": "the wine"
           },
           {
-            "value": "vittorio is phone"
+            "value": "vittorio's phone"
           }
         ]
       },
@@ -1722,6 +1724,9 @@
         "name": "Theme",
         "enumerationValues": [
           {
+            "value": "'s"
+          },
+          {
             "value": "a bath towel"
           },
           {
@@ -1756,9 +1761,6 @@
           },
           {
             "value": "an apple or an orange"
-          },
-          {
-            "value": "is"
           },
           {
             "value": "it"
