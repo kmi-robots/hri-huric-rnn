@@ -53,3 +53,8 @@ python -m joint.evaluate_predictions_stored lex/results
 ```
 
 And look at the results in `lex/results`.
+
+## Run local server
+
+1. Build the model: `./build_full_model.sh`
+2. Run the server `FLASK_APP=server.py flask run`

@@ -60,7 +60,7 @@ def load_data(dataset_name, slots_type='full'):
     """Loads the dataset and returns it."""
     path = 'data/' + dataset_name + '/preprocessed'
 
-    if dataset_name == 'huric_eb/preprocessed':
+    if dataset_name == 'huric_eb/modern':
         fold_files = os.listdir(path)
         fold_files = sorted([f for f in fold_files if f.startswith('fold_')])
     else:
@@ -72,7 +72,7 @@ def load_data(dataset_name, slots_type='full'):
             with open(path + '/' + file_name) as json_file:
                 file_content = json.load(json_file)
         except FileNotFoundError:
-            print('gotcha')
+            print('gotcha', file_name)
             continue
         if slots_type != 'full':
             file_content = reduce_slots(file_content, slots_type)

@@ -30,6 +30,7 @@ DATASET = os.environ.get('DATASET', 'huric_eb/modern')
 # - 'dev_cross' that excludes the last fold and performs (k-1)-fold, last fold untouched
 # - 'cross' that performs k-fold
 # - 'eval' that does the train on k-1 and test on last (untouched fold)
+# - 'train_all' trains the network on all the folds
 MODE = os.environ.get('MODE', 'dev_cross')
 OUTPUT_FOLDER += MODE
 
@@ -132,6 +133,9 @@ def train(mode):
         # train on 1...k-1, test on k
         train_folds.append([s for (count,fold) in enumerate(folds[:-1]) for s in fold['data']])
         test_folds.append(folds[-1]['data'])
+    elif mode == 'train_all':
+        train_folds.append([s for (count,fold) in enumerate(folds) for s in fold['data']])
+        test_folds.append([])
     else:
         raise ValueError('invalid mode')
 
@@ -158,6 +162,7 @@ def train(mode):
         if multi_turn:
             print('i am multi turn')
         for epoch in range(epoch_num):
+            print('epoch {}/{}'.format(epoch + 1, epoch_num))
             #mean_loss = 0.0
             #train_loss = 0.0
             for i, batch in enumerate(data.get_batch(batch_size, training_samples)):
