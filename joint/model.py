@@ -6,6 +6,7 @@ import numpy as np
 from tensorflow.contrib.rnn import BasicLSTMCell, LSTMStateTuple, GRUCell
 from .embeddings import EmbeddingsFromScratch, FixedEmbeddings, FineTuneEmbeddings, spacy_wrapper
 from .attention import attention
+from . import layers
 
 flatten = lambda l: [item for sublist in l for item in sublist]
 
@@ -106,45 +107,9 @@ class Model:
         intent_ids_targets = self.intentEmbedder.get_indexes_from_words_tensor(self.intent_targets)
 
         # Encoder
+        encoder_outputs, encoder_final_state = layers.bidirectional_rnn(self.encoder_inputs_embedded, self.hidden_size, self.recurrent_cell, self.encoder_inputs_actual_length)
 
-        # Definition of cells used for bidirectional RNN encoder
-        if self.recurrent_cell == 'lstm':
-            encoder_f_cell = BasicLSTMCell(self.hidden_size)
-            encoder_b_cell = BasicLSTMCell(self.hidden_size)
-            self.hidden_state_size = self.hidden_size * 2
-        elif self.recurrent_cell == 'gru':
-            encoder_f_cell = GRUCell(self.hidden_size)
-            encoder_b_cell = GRUCell(self.hidden_size)
-            self.hidden_state_size = self.hidden_size
-        else:
-            raise ValueError('invalid cell of type ' + self.recurrent_cell)
-
-        # Bidirectional RNN
-        # The size of the following four variables：T*B*D，T*B*D，B*D，B*D
-        (encoder_fw_outputs, encoder_bw_outputs), (encoder_fw_final_state, encoder_bw_final_state) = \
-            tf.nn.bidirectional_dynamic_rnn(cell_fw=encoder_f_cell,
-                                            cell_bw=encoder_b_cell,
-                                            inputs=self.encoder_inputs_embedded,
-                                            sequence_length=self.encoder_inputs_actual_length,
-                                            dtype=tf.float32, time_major=True)
-
-        # Encoder outputs
-
-        # The encoder outputs are the concatenation of the outputs of each direction.
-        # The concatenation is done on the third dimension. Dimensions: (time, batch, hidden_size)
-        encoder_outputs = tf.concat((encoder_fw_outputs, encoder_bw_outputs), 2)
-        # Also concatenate things for the final state. Dimensions: (batch, hidden_size)
-        if self.recurrent_cell == 'lstm':
-            encoder_final_state_c = tf.concat(
-                (encoder_fw_final_state.c, encoder_bw_final_state.c), 1)
-            encoder_final_state_h = tf.concat(
-                (encoder_fw_final_state.h, encoder_bw_final_state.h), 1)
-            self.encoder_final_state = LSTMStateTuple(c=encoder_final_state_c, h=encoder_final_state_h)
-        elif self.recurrent_cell == 'gru':
-            encoder_final_state_h = tf.concat((encoder_fw_final_state, encoder_bw_final_state), 1)
-            self.encoder_final_state = encoder_final_state_h
-
-
+        
         # the size of final *W+b
         intent_input_size = self.hidden_size * 2
         if self.intent_attention:
@@ -161,21 +126,17 @@ class Model:
             # TODO attention_size=50 is a hyperparam
             attention_out, alphas = attention(attention_input, 50, return_alphas=True, time_major=True)
             # overwrite: no more final decoder stage but weighted on attention scores
-            self.encoder_final_state = encoder_final_state_h = attention_out
+            encoder_final_state = attention_out
             # make this tensor retrievable by name
         else:
             #alphas = tf.constant(0.0, shape=[self.batch_size, self.input_steps])
             alphas = tf.fill((batch_size_tensor,self.input_steps), 0.0)
         self.attention_scores_intent = tf.identity(alphas, name="attention_alpha_intent")
-        # Intent output
-        
-        # Define the weights and biases to perform the output projection on the intent output
-        intent_W = tf.get_variable('intent_W', initializer=tf.random_uniform([intent_input_size, self.intentEmbedder.vocab_size], -0.1, 0.1),
-                               dtype=tf.float32)
-        intent_b = tf.get_variable("intent_b", initializer=tf.zeros([self.intentEmbedder.vocab_size]), dtype=tf.float32)
 
-        # perform the feed-forward layer
-        intent_logits = tf.add(tf.matmul(encoder_final_state_h, intent_W), intent_b)
+        # Intent output
+        intent_logits = layers.feedforward(encoder_final_state, intent_input_size, self.intentEmbedder.vocab_size, 'intent_projection')
+
+
         if self.intent_combination == 'crf':
             previous_intent_ids = self.intentEmbedder.get_indexes_from_words_tensor(self.previous_intent)
             #print('shape of previous_intent_ids', tf.shape(previous_intent_ids))
@@ -307,9 +268,9 @@ class Model:
         def decode(helper, stage_n=False):
             # The decoding LSTM cell
             if self.recurrent_cell == 'lstm':
-                cell = BasicLSTMCell(num_units=self.hidden_state_size)
+                cell = BasicLSTMCell(num_units=self.hidden_size * 2)
             elif self.recurrent_cell == 'gru':
-                cell = GRUCell(num_units=self.hidden_state_size)
+                cell = GRUCell(num_units=self.hidden_size)
             if self.slots_attention:
                 # Get the memory representation (for the attention) by making the
                 # encoder outputs dimensions from (time, batch, hidden_size) to (batch, time, hidden_size)
