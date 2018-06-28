@@ -8,6 +8,7 @@ import tensorflow as tf
 import numpy as np
 from sklearn.metrics import accuracy_score
 from collections import defaultdict
+from tqdm import tqdm
 
 from . import data
 from .model import Model
@@ -165,25 +166,11 @@ def train(mode):
             print('epoch {}/{}'.format(epoch + 1, epoch_num))
             #mean_loss = 0.0
             #train_loss = 0.0
-            for i, batch in enumerate(data.get_batch(batch_size, training_samples)):
+            for i, batch in tqdm(enumerate(data.get_batch(batch_size, training_samples)), total=len(training_samples)//batch_size):
                 # perform a batch of training
                 #print(batch)
                 #_, loss, bd_prediction, decoder_prediction, intent, mask = model.step(sess, 'train', batch)
                 model.step(sess, 'train', batch)
-                print('.', end='', flush=True)
-                """
-                mean_loss += loss
-                train_loss += loss
-                if i % 10 == 0:
-                    if i > 0:
-                        mean_loss = mean_loss / 10.0
-                    #print('Average train loss at epoch %d, step %d: %f' % (epoch, i, mean_loss))
-                    print('.', end='')
-                    sys.stdout.flush()
-                    mean_loss = 0
-                """
-            #train_loss /= (i + 1)
-            #print('[Epoch {}] Average train loss: {}'.format(epoch, train_loss))
 
             if test_samples:
                 if fold_number == 0:
@@ -191,9 +178,8 @@ def train(mode):
                     data.copy_huric_xml_to('{}/xml/epoch_{}'.format(real_folder, epoch))
                 
                 predicted = []
-                for j, batch in enumerate(data.get_batch(batch_size, test_samples)):
+                for j, batch in tqdm(enumerate(data.get_batch(batch_size, test_samples)), total=len(test_samples)//batch_size):
                     results = model.step(sess, 'test', batch)
-                    print('.', end='', flush=True)
                     intent = results['intent']
                     intent_attentions = results['intent_attentions']
                     if THREE_STAGES:
@@ -236,7 +222,7 @@ def train(mode):
                             #print('BD atts', bd_attentions[index])
                             #print('AC atts', ac_attentions[index])
                         print('Slot Truth            :', batch[index]['slots'][:batch[index]['length']])
-                        print('Slot Prediction       :', decoder_prediction[index][:batch[index]['length']])
+                        print('Slot Prediction       :', decoder_prediction[index][:batch[index]['length']].tolist())
                         print('Intent Truth          :', batch[index]['intent'])
                         print('Intent Prediction     :', intent[index])
                         print('Intent atts     :', intent_attentions[index][:batch[index]['length']])
