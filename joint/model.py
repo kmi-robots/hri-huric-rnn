@@ -208,8 +208,11 @@ class Model:
         else:
             bd_logits, self.attention_bd_scores = layers.decoder(encoder_outputs, decoder_hidden_size, self.recurrent_cell, self.encoder_inputs_actual_length, self.boundaryEmbedder.get_word_embeddings_from_ids, self.boundaryEmbedder.get_indexes_from_words_list(['<PAD>'])[0], self.boundaryEmbedder.vocab_size, self.input_steps, 'attention_alpha_bd', self.slots_attention) # TODO slots_attention divide into two different flags
 
-            # WARNING you are using the logits, not the one-hot encodings: this should enable more backprop
-            hidden_between_decoders = tf.concat((bd_logits, encoder_outputs), 2)
+            # WARNING: do a argmax+one_hot just to loose the gradients in backprop:
+            # the bd predictions are already trained on their own
+            bd_ids = tf.argmax(bd_logits, axis=2)
+            bd_logits_no_backprop = tf.one_hot(bd_ids, depth=self.boundaryEmbedder.vocab_size)
+            hidden_between_decoders = tf.concat((bd_logits_no_backprop, encoder_outputs), 2)
 
             ac_logits, self.attention_ac_scores = layers.decoder(hidden_between_decoders, decoder_hidden_size, self.recurrent_cell, self.encoder_inputs_actual_length, self.typesEmbedder.get_word_embeddings_from_ids, self.typesEmbedder.get_indexes_from_words_list(['<PAD>'])[0], self.typesEmbedder.vocab_size, self.input_steps, 'attention_alpha_ac', self.slots_attention)
             
