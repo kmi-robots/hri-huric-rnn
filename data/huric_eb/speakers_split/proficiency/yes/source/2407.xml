@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2407">
+	<sentence>please follow me to the table</sentence>
+	<tokens>
+		<token id="1" lemma="please" pos="UH" surface="please"/>
+		<token id="2" lemma="follow" pos="VB" surface="follow"/>
+		<token id="3" lemma="I" pos="PRP" surface="me"/>
+		<token id="4" lemma="to" pos="TO" surface="to"/>
+		<token id="5" lemma="the" pos="DT" surface="the"/>
+		<token id="6" lemma="table" pos="NN" surface="table"/>
+	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="discourse"/>
+		<dep from="0" to="2" type="root"/>
+		<dep from="2" to="3" type="dobj"/>
+		<dep from="2" to="4" type="prep"/>
+		<dep from="6" to="5" type="det"/>
+		<dep from="4" to="6" type="pobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Following">
+				<lexicalUnit>
+					<token id="2"/>
+				</lexicalUnit>
+				<frameElement type="Cotheme">
+					<token id="3"/>
+				</frameElement>
+				<frameElement type="Goal">
+					<token id="4"/>
+					<token id="5"/>
+					<token id="6"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

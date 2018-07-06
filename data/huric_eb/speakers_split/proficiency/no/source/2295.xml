@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2295">
+	<sentence>can you go to the kitchen and bring me some bread from the pantry</sentence>
+	<tokens>
+		<token id="1" lemma="can" pos="MD" surface="can"/>
+		<token id="2" lemma="you" pos="PRP" surface="you"/>
+		<token id="3" lemma="go" pos="VB" surface="go"/>
+		<token id="4" lemma="to" pos="TO" surface="to"/>
+		<token id="5" lemma="the" pos="DT" surface="the"/>
+		<token id="6" lemma="kitchen" pos="NN" surface="kitchen"/>
+		<token id="7" lemma="and" pos="CC" surface="and"/>
+		<token id="8" lemma="bring" pos="VB" surface="bring"/>
+		<token id="9" lemma="I" pos="PRP" surface="me"/>
+		<token id="10" lemma="some" pos="DT" surface="some"/>
+		<token id="11" lemma="bread" pos="NN" surface="bread"/>
+		<token id="12" lemma="from" pos="IN" surface="from"/>
+		<token id="13" lemma="the" pos="DT" surface="the"/>
+		<token id="14" lemma="pantry" pos="NN" surface="pantry"/>
+	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="aux"/>
+		<dep from="3" to="2" type="nsubj"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="3" to="4" type="prep"/>
+		<dep from="6" to="5" type="det"/>
+		<dep from="4" to="6" type="pobj"/>
+		<dep from="3" to="7" type="cc"/>
+		<dep from="3" to="8" type="conj"/>
+		<dep from="8" to="9" type="iobj"/>
+		<dep from="11" to="10" type="det"/>
+		<dep from="8" to="11" type="dobj"/>
+		<dep from="8" to="12" type="prep"/>
+		<dep from="14" to="13" type="det"/>
+		<dep from="12" to="14" type="pobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Motion">
+				<lexicalUnit>
+					<token id="3"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="2"/>
+				</frameElement>
+				<frameElement type="Goal">
+					<token id="4"/>
+					<token id="5"/>
+					<token id="6"/>
+				</frameElement>
+			</frame>
+			<frame name="Bringing">
+				<lexicalUnit>
+					<token id="8"/>
+				</lexicalUnit>
+				<frameElement type="Beneficiary">
+					<token id="9"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="10"/>
+					<token id="11"/>
+				</frameElement>
+				<frameElement type="Source">
+					<token id="12"/>
+					<token id="13"/>
+					<token id="14"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

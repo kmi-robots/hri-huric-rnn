@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2358">
+	<sentence>michael follow the guy with the red hoodie and the white shoes</sentence>
+	<tokens>
+		<token id="1" lemma="michael" pos="NNP" surface="michael"/>
+		<token id="2" lemma="follow" pos="VB" surface="follow"/>
+		<token id="3" lemma="the" pos="DT" surface="the"/>
+		<token id="4" lemma="guy" pos="NN" surface="guy"/>
+		<token id="5" lemma="with" pos="IN" surface="with"/>
+		<token id="6" lemma="the" pos="DT" surface="the"/>
+		<token id="7" lemma="red" pos="JJ" surface="red"/>
+		<token id="8" lemma="hoodie" pos="NN" surface="hoodie"/>
+		<token id="9" lemma="and" pos="CC" surface="and"/>
+		<token id="10" lemma="the" pos="DT" surface="the"/>
+		<token id="11" lemma="white" pos="JJ" surface="white"/>
+		<token id="12" lemma="shoe" pos="NNS" surface="shoes"/>
+	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="nsubj"/>
+		<dep from="0" to="2" type="root"/>
+		<dep from="4" to="3" type="det"/>
+		<dep from="2" to="4" type="dobj"/>
+		<dep from="4" to="5" type="prep"/>
+		<dep from="8" to="6" type="det"/>
+		<dep from="8" to="7" type="amod"/>
+		<dep from="5" to="8" type="pobj"/>
+		<dep from="8" to="9" type="cc"/>
+		<dep from="12" to="10" type="det"/>
+		<dep from="12" to="11" type="amod"/>
+		<dep from="8" to="12" type="conj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Following">
+				<lexicalUnit>
+					<token id="2"/>
+				</lexicalUnit>
+				<frameElement type="Cotheme">
+					<token id="3"/>
+					<token id="4"/>
+					<token id="5"/>
+					<token id="6"/>
+					<token id="7"/>
+					<token id="8"/>
+					<token id="9"/>
+					<token id="10"/>
+					<token id="11"/>
+					<token id="12"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

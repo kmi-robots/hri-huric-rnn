@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="3308">
+	<sentence>could you pick up the telephone</sentence>
+	<tokens>
+		<token id="1" lemma="could" pos="MD" surface="could"/>
+		<token id="2" lemma="you" pos="PRP" surface="you"/>
+		<token id="3" lemma="pick" pos="VB" surface="pick"/>
+		<token id="4" lemma="up" pos="RP" surface="up"/>
+		<token id="5" lemma="the" pos="DT" surface="the"/>
+		<token id="6" lemma="telephone" pos="NN" surface="telephone"/>
+	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="aux"/>
+		<dep from="3" to="2" type="nsubj"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="3" to="4" type="prt"/>
+		<dep from="6" to="5" type="det"/>
+		<dep from="3" to="6" type="dobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Taking">
+				<lexicalUnit>
+					<token id="3"/>
+					<token id="4"/>
+				</lexicalUnit>
+				<frameElement type="Agent">
+					<token id="2"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="5"/>
+					<token id="6"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

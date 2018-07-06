@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="3042">
+	<sentence>bring the beers here and put them on the table next to the couch</sentence>
+	<tokens>
+		<token id="1" lemma="bring" pos="VB" surface="bring"/>
+		<token id="2" lemma="the" pos="DT" surface="the"/>
+		<token id="3" lemma="beer" pos="NNS" surface="beers"/>
+		<token id="4" lemma="here" pos="RB" surface="here"/>
+		<token id="5" lemma="and" pos="CC" surface="and"/>
+		<token id="6" lemma="put" pos="VB" surface="put"/>
+		<token id="7" lemma="they" pos="PRP" surface="them"/>
+		<token id="8" lemma="on" pos="IN" surface="on"/>
+		<token id="9" lemma="the" pos="DT" surface="the"/>
+		<token id="10" lemma="table" pos="NN" surface="table"/>
+		<token id="11" lemma="next" pos="JJ" surface="next"/>
+		<token id="12" lemma="to" pos="TO" surface="to"/>
+		<token id="13" lemma="the" pos="DT" surface="the"/>
+		<token id="14" lemma="couch" pos="NN" surface="couch"/>
+	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="3" to="2" type="det"/>
+		<dep from="1" to="3" type="dobj"/>
+		<dep from="1" to="4" type="advmod"/>
+		<dep from="1" to="5" type="cc"/>
+		<dep from="1" to="6" type="conj"/>
+		<dep from="6" to="7" type="dobj"/>
+		<dep from="6" to="8" type="prep"/>
+		<dep from="10" to="9" type="det"/>
+		<dep from="8" to="10" type="pobj"/>
+		<dep from="10" to="11" type="dep"/>
+		<dep from="11" to="12" type="prep"/>
+		<dep from="14" to="13" type="det"/>
+		<dep from="12" to="14" type="pobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Bringing">
+				<lexicalUnit>
+					<token id="1"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="2"/>
+					<token id="3"/>
+				</frameElement>
+				<frameElement type="Goal">
+					<token id="4"/>
+				</frameElement>
+			</frame>
+			<frame name="Placing">
+				<lexicalUnit>
+					<token id="6"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="7"/>
+				</frameElement>
+				<frameElement type="Goal">
+					<token id="8"/>
+					<token id="9"/>
+					<token id="10"/>
+					<token id="11"/>
+					<token id="12"/>
+					<token id="13"/>
+					<token id="14"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics>
+			<spatialRelation name="Spatial_relation">
+				<lexicalUnit/>
+				<spatialRole type="Trajector">
+					<token id="9"/>
+					<token id="10"/>
+				</spatialRole>
+				<spatialRole type="Spatial_Indicator">
+					<token id="11"/>
+					<token id="12"/>
+				</spatialRole>
+				<spatialRole type="Landmark">
+					<token id="13"/>
+					<token id="14"/>
+				</spatialRole>
+			</spatialRelation>
+		</spatialSemantics>
+	</semantics>
+</command>

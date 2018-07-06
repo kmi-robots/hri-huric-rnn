@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="3338">
+	<sentence>i 'm hungry go to the kitchen</sentence>
+	<tokens>
+		<token id="1" lemma="I" pos="PRP" surface="i"/>
+		<token id="2" lemma="be" pos="VB" surface="'m"/>
+		<token id="3" lemma="hungry" pos="JJ" surface="hungry"/>
+		<token id="4" lemma="go" pos="VB" surface="go"/>
+		<token id="5" lemma="to" pos="TO" surface="to"/>
+		<token id="6" lemma="the" pos="DT" surface="the"/>
+		<token id="7" lemma="kitchen" pos="NN" surface="kitchen"/>
+	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="nsubj"/>
+		<dep from="3" to="2" type="cop"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="3" to="4" type="conj"/>
+		<dep from="4" to="5" type="prep"/>
+		<dep from="7" to="6" type="det"/>
+		<dep from="5" to="7" type="pobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Motion">
+				<lexicalUnit>
+					<token id="4"/>
+				</lexicalUnit>
+				<frameElement type="Goal">
+					<token id="5"/>
+					<token id="6"/>
+					<token id="7"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

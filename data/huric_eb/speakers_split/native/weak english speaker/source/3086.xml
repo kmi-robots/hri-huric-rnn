@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="3086">
+	<sentence>i would like some beer can you grab one from the fridge and bring it here</sentence>
+	<tokens>
+		<token id="1" lemma="I" pos="PRP" surface="i"/>
+		<token id="2" lemma="would" pos="MD" surface="would"/>
+		<token id="3" lemma="like" pos="VB" surface="like"/>
+		<token id="4" lemma="some" pos="DT" surface="some"/>
+		<token id="5" lemma="beer" pos="NN" surface="beer"/>
+		<token id="6" lemma="can" pos="MD" surface="can"/>
+		<token id="7" lemma="you" pos="PRP" surface="you"/>
+		<token id="8" lemma="grab" pos="VB" surface="grab"/>
+		<token id="9" lemma="one" pos="CD" surface="one"/>
+		<token id="10" lemma="from" pos="IN" surface="from"/>
+		<token id="11" lemma="the" pos="DT" surface="the"/>
+		<token id="12" lemma="fridge" pos="NN" surface="fridge"/>
+		<token id="13" lemma="and" pos="CC" surface="and"/>
+		<token id="14" lemma="bring" pos="VB" surface="bring"/>
+		<token id="15" lemma="it" pos="PRP" surface="it"/>
+		<token id="16" lemma="here" pos="RB" surface="here"/>
+	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="nsubj"/>
+		<dep from="3" to="2" type="aux"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="5" to="4" type="det"/>
+		<dep from="3" to="5" type="dobj"/>
+		<dep from="8" to="6" type="aux"/>
+		<dep from="8" to="7" type="nsubj"/>
+		<dep from="3" to="8" type="conj"/>
+		<dep from="8" to="9" type="dobj"/>
+		<dep from="8" to="10" type="prep"/>
+		<dep from="12" to="11" type="det"/>
+		<dep from="10" to="12" type="pobj"/>
+		<dep from="8" to="13" type="cc"/>
+		<dep from="8" to="14" type="conj"/>
+		<dep from="14" to="15" type="dobj"/>
+		<dep from="14" to="16" type="advmod"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Taking">
+				<lexicalUnit>
+					<token id="8"/>
+				</lexicalUnit>
+				<frameElement type="Agent">
+					<token id="7"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="9"/>
+				</frameElement>
+				<frameElement type="Source">
+					<token id="10"/>
+					<token id="11"/>
+					<token id="12"/>
+				</frameElement>
+			</frame>
+			<frame name="Bringing">
+				<lexicalUnit>
+					<token id="14"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="15"/>
+				</frameElement>
+				<frameElement type="Goal">
+					<token id="16"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

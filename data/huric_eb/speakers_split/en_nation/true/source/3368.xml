@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="3368">
+	<sentence>robot can you put the blinds all the way down</sentence>
+	<tokens>
+		<token id="1" lemma="robot" pos="NN" surface="robot"/>
+		<token id="2" lemma="can" pos="MD" surface="can"/>
+		<token id="3" lemma="you" pos="PRP" surface="you"/>
+		<token id="4" lemma="put" pos="VB" surface="put"/>
+		<token id="5" lemma="the" pos="DT" surface="the"/>
+		<token id="6" lemma="blind" pos="NNS" surface="blinds"/>
+		<token id="7" lemma="all" pos="PDT" surface="all"/>
+		<token id="8" lemma="the" pos="DT" surface="the"/>
+		<token id="9" lemma="way" pos="NN" surface="way"/>
+		<token id="10" lemma="down" pos="IN" surface="down"/>
+	</tokens>
+	<dependencies>
+		<dep from="4" to="1" type="discourse"/>
+		<dep from="4" to="2" type="aux"/>
+		<dep from="4" to="3" type="nsubj"/>
+		<dep from="0" to="4" type="root"/>
+		<dep from="6" to="5" type="det"/>
+		<dep from="4" to="6" type="dobj"/>
+		<dep from="9" to="7" type="predet"/>
+		<dep from="9" to="8" type="det"/>
+		<dep from="10" to="9" type="npadvmod"/>
+		<dep from="4" to="10" type="advmod"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Closure">
+				<lexicalUnit>
+					<token id="4"/>
+				</lexicalUnit>
+				<frameElement type="Agent">
+					<token id="3"/>
+				</frameElement>
+				<frameElement type="Container_portal">
+					<token id="5"/>
+					<token id="6"/>
+				</frameElement>
+				<frameElement type="Degree">
+					<token id="7"/>
+					<token id="8"/>
+					<token id="9"/>
+					<token id="10"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

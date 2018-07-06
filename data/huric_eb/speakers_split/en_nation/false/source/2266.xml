@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2266">
+	<sentence>find me a cushion</sentence>
+	<tokens>
+		<token id="1" lemma="find" pos="VB" surface="find"/>
+		<token id="2" lemma="I" pos="PRP" surface="me"/>
+		<token id="3" lemma="a" pos="DT" surface="a"/>
+		<token id="4" lemma="cushion" pos="NN" surface="cushion"/>
+	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="1" to="2" type="dobj"/>
+		<dep from="4" to="3" type="det"/>
+		<dep from="1" to="4" type="nsubj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Searching">
+				<lexicalUnit>
+					<token id="1"/>
+				</lexicalUnit>
+				<frameElement type="Purpose">
+					<token id="2"/>
+				</frameElement>
+				<frameElement type="Phenomenon">
+					<token id="3"/>
+					<token id="4"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

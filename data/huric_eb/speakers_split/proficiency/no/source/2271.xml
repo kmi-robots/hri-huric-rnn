@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2271">
+	<sentence>can you slowly follow my father</sentence>
+	<tokens>
+		<token id="1" lemma="can" pos="MD" surface="can"/>
+		<token id="2" lemma="you" pos="PRP" surface="you"/>
+		<token id="3" lemma="slowly" pos="RB" surface="slowly"/>
+		<token id="4" lemma="follow" pos="VB" surface="follow"/>
+		<token id="5" lemma="my" pos="PRP$" surface="my"/>
+		<token id="6" lemma="father" pos="NN" surface="father"/>
+	</tokens>
+	<dependencies>
+		<dep from="4" to="1" type="aux"/>
+		<dep from="4" to="2" type="nsubj"/>
+		<dep from="4" to="3" type="advmod"/>
+		<dep from="0" to="4" type="root"/>
+		<dep from="6" to="5" type="poss"/>
+		<dep from="4" to="6" type="dobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Following">
+				<lexicalUnit>
+					<token id="4"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="2"/>
+				</frameElement>
+				<frameElement type="Manner">
+					<token id="3"/>
+				</frameElement>
+				<frameElement type="Cotheme">
+					<token id="5"/>
+					<token id="6"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

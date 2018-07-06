@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2704">
+	<sentence>follow me slowly</sentence>
+	<tokens>
+		<token id="1" lemma="follow" pos="VB" surface="follow"/>
+		<token id="2" lemma="I" pos="PRP" surface="me"/>
+		<token id="3" lemma="slowly" pos="RB" surface="slowly"/>
+	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="1" to="2" type="dobj"/>
+		<dep from="1" to="3" type="advmod"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Following">
+				<lexicalUnit>
+					<token id="1"/>
+				</lexicalUnit>
+				<frameElement type="Cotheme">
+					<token id="2"/>
+				</frameElement>
+				<frameElement type="Manner">
+					<token id="3"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

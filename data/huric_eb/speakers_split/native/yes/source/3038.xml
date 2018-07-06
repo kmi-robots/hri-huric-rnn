@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="3038">
+	<sentence>bring me a glass of water</sentence>
+	<tokens>
+		<token id="1" lemma="bring" pos="VB" surface="bring"/>
+		<token id="2" lemma="I" pos="PRP" surface="me"/>
+		<token id="3" lemma="a" pos="DT" surface="a"/>
+		<token id="4" lemma="glass" pos="NN" surface="glass"/>
+		<token id="5" lemma="of" pos="IN" surface="of"/>
+		<token id="6" lemma="water" pos="NN" surface="water"/>
+	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="1" to="2" type="iobj"/>
+		<dep from="4" to="3" type="det"/>
+		<dep from="1" to="4" type="dobj"/>
+		<dep from="4" to="5" type="prep"/>
+		<dep from="5" to="6" type="pobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Bringing">
+				<lexicalUnit>
+					<token id="1"/>
+				</lexicalUnit>
+				<frameElement type="Beneficiary">
+					<token id="2"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="3"/>
+					<token id="4"/>
+					<token id="5"/>
+					<token id="6"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

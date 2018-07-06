@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="3291">
+	<sentence>bring me the towel from the drawer</sentence>
+	<tokens>
+		<token id="1" lemma="bring" pos="VB" surface="bring"/>
+		<token id="2" lemma="I" pos="PRP" surface="me"/>
+		<token id="3" lemma="the" pos="DT" surface="the"/>
+		<token id="4" lemma="towel" pos="NN" surface="towel"/>
+		<token id="5" lemma="from" pos="IN" surface="from"/>
+		<token id="6" lemma="the" pos="DT" surface="the"/>
+		<token id="7" lemma="drawer" pos="NN" surface="drawer"/>
+	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="1" to="2" type="iobj"/>
+		<dep from="4" to="3" type="det"/>
+		<dep from="1" to="4" type="dobj"/>
+		<dep from="1" to="5" type="prep"/>
+		<dep from="7" to="6" type="det"/>
+		<dep from="5" to="7" type="pobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Bringing">
+				<lexicalUnit>
+					<token id="1"/>
+				</lexicalUnit>
+				<frameElement type="Beneficiary">
+					<token id="2"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="3"/>
+					<token id="4"/>
+				</frameElement>
+				<frameElement type="Source">
+					<token id="5"/>
+					<token id="6"/>
+					<token id="7"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

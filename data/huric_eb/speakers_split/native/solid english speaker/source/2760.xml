@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2760">
+	<sentence>it 's a diningroom with a table of glass in it with six chairs</sentence>
+	<tokens>
+		<token id="1" lemma="it" pos="PRP" surface="it"/>
+		<token id="2" lemma="be" pos="VBZ" surface="'s"/>
+		<token id="3" lemma="a" pos="DT" surface="a"/>
+		<token id="4" lemma="diningroom" pos="NN" surface="diningroom"/>
+		<token id="5" lemma="with" pos="IN" surface="with"/>
+		<token id="6" lemma="a" pos="DT" surface="a"/>
+		<token id="7" lemma="table" pos="NN" surface="table"/>
+		<token id="8" lemma="of" pos="IN" surface="of"/>
+		<token id="9" lemma="glass" pos="NN" surface="glass"/>
+		<token id="10" lemma="in" pos="IN" surface="in"/>
+		<token id="11" lemma="it" pos="PRP" surface="it"/>
+		<token id="12" lemma="with" pos="IN" surface="with"/>
+		<token id="13" lemma="six" pos="CD" surface="six"/>
+		<token id="14" lemma="chair" pos="NNS" surface="chairs"/>
+	</tokens>
+	<dependencies>
+		<dep from="4" to="1" type="nsubj"/>
+		<dep from="4" to="2" type="cop"/>
+		<dep from="4" to="3" type="det"/>
+		<dep from="0" to="4" type="root"/>
+		<dep from="7" to="5" type="prep"/>
+		<dep from="7" to="6" type="det"/>
+		<dep from="4" to="7" type="nn"/>
+		<dep from="7" to="8" type="prep"/>
+		<dep from="8" to="9" type="pobj"/>
+		<dep from="9" to="10" type="prep"/>
+		<dep from="10" to="11" type="pobj"/>
+		<dep from="7" to="12" type="prep"/>
+		<dep from="14" to="13" type="num"/>
+		<dep from="12" to="14" type="pobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Being_in_category">
+				<lexicalUnit>
+					<token id="2"/>
+				</lexicalUnit>
+				<frameElement type="Item">
+					<token id="1"/>
+				</frameElement>
+				<frameElement type="Category">
+					<token id="3"/>
+					<token id="4"/>
+					<token id="5"/>
+					<token id="6"/>
+					<token id="7"/>
+					<token id="8"/>
+					<token id="9"/>
+					<token id="10"/>
+					<token id="11"/>
+					<token id="12"/>
+					<token id="13"/>
+					<token id="14"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics>
+			<spatialRelation name="Spatial_relation">
+				<lexicalUnit/>
+				<spatialRole type="Trajector">
+					<token id="6"/>
+					<token id="7"/>
+					<token id="8"/>
+					<token id="9"/>
+				</spatialRole>
+				<spatialRole type="Spatial_Indicator">
+					<token id="10"/>
+				</spatialRole>
+				<spatialRole type="Landmark">
+					<token id="11"/>
+				</spatialRole>
+			</spatialRelation>
+		</spatialSemantics>
+	</semantics>
+</command>

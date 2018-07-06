@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="3306">
+	<sentence>could you close the shutters please</sentence>
+	<tokens>
+		<token id="1" lemma="could" pos="MD" surface="could"/>
+		<token id="2" lemma="you" pos="PRP" surface="you"/>
+		<token id="3" lemma="close" pos="VB" surface="close"/>
+		<token id="4" lemma="the" pos="DT" surface="the"/>
+		<token id="5" lemma="shutter" pos="NNS" surface="shutters"/>
+		<token id="6" lemma="please" pos="UH" surface="please"/>
+	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="aux"/>
+		<dep from="3" to="2" type="nsubj"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="5" to="4" type="det"/>
+		<dep from="6" to="5" type="nsubj"/>
+		<dep from="3" to="6" type="discourse"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Closure">
+				<lexicalUnit>
+					<token id="3"/>
+				</lexicalUnit>
+				<frameElement type="Agent">
+					<token id="2"/>
+				</frameElement>
+				<frameElement type="Container_portal">
+					<token id="4"/>
+					<token id="5"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>
