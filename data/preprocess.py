@@ -10,6 +10,7 @@ import csv
 import zipfile
 from itertools import groupby
 from collections import defaultdict
+from pathlib import Path
 from sklearn.model_selection import StratifiedKFold
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
@@ -584,6 +585,63 @@ def modernize_huric_xml(source_path, dest_path):
         #    tree.write(out_file, encoding='unicode')
 
 
+def framenet_preprocess(folder, subset=True):
+    """Preprocesses the framenet corpus, taking only the frames from the HuRIC set"""
+    # from framenet names to huric names
+    frame_names_mappings = {
+        'Attaching': 'Attaching',
+        'Being_in_category': 'Being_in_category',
+        'Being_located': 'Being_located',
+        'Bringing': 'Bringing',
+        'Change_operational_state': 'Change_operational_state',
+        'Closure': 'Closure',
+        'Arriving': 'Entering',
+        'Cotheme': 'Following',
+        'Giving': 'Giving',
+        'Inspecting': 'Inspecting',
+        'Motion': 'Motion',
+        'Perception_active': 'Perception_active',
+        'Placing': 'Placing',
+        'Releasing': 'Releasing',
+        'Scrutiny': 'Searching',
+        'Taking': 'Taking'
+    }
+    ns = {'ns': '{http://framenet.icsi.berkeley.edu}'}
+
+    if not subset:
+        # TODO generalize to not subset
+        raise ValueError('subset must be True')
+    xml_path = Path(folder) / 'source/fulltext'
+    xml_files_paths = [f for f in xml_path.iterdir() if f.is_file()]
+    sentences = []
+    for f in xml_files_paths:
+        with open(f) as file_in:
+            xmlstring = file_in.read()
+        # remove namespace that makes ET usage cumbersome
+        xmlstring = re.sub(r'\sxmlns="[^"]+"', '', xmlstring, count=1)
+        root = ET.fromstring(xmlstring)
+        #print(root)
+        #print([el for el in root])
+        # get the sentences elements
+        sentences.extend(root.findall('sentence'))
+    print('#sentences:', len(sentences))
+    # select the sentences that have an interesting frame name
+    sentences = [s for s in sentences if any([f.attrib.get('frameName', None) in frame_names_mappings and f.attrib['status'] == 'MANUAL' for f in s.findall('annotationSet')])]
+    print('#sentences_sel_frames:', len(sentences))
+    #exit(1)
+    samples = [{
+        'words': s.find('text').text.split(),
+        'intent_cnt': sum([f.attrib.get('frameName', None) in frame_names_mappings and f.attrib['status'] == 'MANUAL' for f in s.findall('annotationSet')]),
+        'intents': [f.attrib.get('frameName', None) for f in s.findall('annotationSet') if f.attrib.get('frameName', None) in frame_names_mappings]
+    } for s in sentences]
+
+    cnt = 0
+    for s in samples:
+        if s['intent_cnt'] > 1:
+            print(s['intents'], ' '.join(s['words']))
+            cnt+=1
+    print('#multiple:', cnt)
+
 def main():
     #nlp_en = load_nlp()
     #nlp_it = load_nlp('it')
@@ -620,6 +678,9 @@ def main():
         alexa_prepare('huric_eb/modern', 'roo bot train', 'train_samples.json', 'alexa_train.json')
         lex_from_alexa('huric_eb/modern/amazon', 'train_only', 'alexa_train.json', 'lexTrainBot.json')
 
+
+    elif which == 'framenet_subset':
+        framenet_preprocess('framenet', True)
 
 if __name__ == '__main__':
     main()
