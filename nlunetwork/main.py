@@ -10,9 +10,9 @@ from sklearn.metrics import accuracy_score
 from collections import defaultdict
 from tqdm import tqdm
 
-from . import data
-from .model import Model
-from . import metrics
+from nlunetwork import data
+from nlunetwork.model import Model
+from nlunetwork import metrics
 
 # embedding size for labels
 embedding_size = int(os.environ.get('LABEL_EMB_SIZE', 64))
@@ -201,7 +201,6 @@ def train(mode):
                         decoder_prediction = np.transpose(decoder_prediction, [1, 0])
                         slots_attentions = results['slots_attentions']
                         slots_attentions = np.transpose(slots_attentions, [1, 0, 2])
-                        decoder_prediction = decoder_prediction.tolist()
                         bd_attentions = np.zeros((len(batch), input_steps, input_steps))
                         ac_attentions = np.zeros((len(batch), input_steps, input_steps))
 

@@ -4,12 +4,12 @@ import numpy as np
 
 from spacy.gold import iob_to_biluo, offsets_from_biluo_tags
 
-from . import runtime_model
-from .data import get_language_model_name
+from nlunetwork import runtime_model
+from nlunetwork.data import get_language_model_name
 
 class NLUWrapper(object):
 
-    def __init__(self, intent_treshold_score=0.5,model_path='joint/results/train_all_loss_both_slottype_full_we_large_recurrent_cell_lstm_attention_both_three_stages___hyper:LABEL_EMB_SIZE=64,LSTM_SIZE=128,BATCH_SIZE=2,MAX_EPOCHS=100/huric_eb/modern/'):
+    def __init__(self, intent_treshold_score=0.5,model_path='nlunetwork/results/train_all_loss_both_slottype_full_we_large_recurrent_cell_lstm_attention_both_three_stages___hyper:LABEL_EMB_SIZE=64,LSTM_SIZE=128,BATCH_SIZE=2,MAX_EPOCHS=100/huric_eb/modern/'):
         self.language_model_name = get_language_model_name('en', 'large')
         self.intent_treshold_score = intent_treshold_score
         self.nlp = spacy.load(self.language_model_name)

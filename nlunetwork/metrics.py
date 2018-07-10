@@ -7,7 +7,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-from . import data
+from nlunetwork import data
 
 def get_data_from_sequence_batch(true_batch, pred_batch, eos_token):
     """Extract data from a batch of sequences：
