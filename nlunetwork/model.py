@@ -4,8 +4,8 @@ import tensorflow as tf
 from tensorflow.contrib import layers
 import numpy as np
 from tensorflow.contrib.rnn import BasicLSTMCell, LSTMStateTuple, GRUCell
-from .embeddings import EmbeddingsFromScratch, FixedEmbeddings, FineTuneEmbeddings, spacy_wrapper
-from .attention import attention
+from nlunetwork.embeddings import EmbeddingsFromScratch, FixedEmbeddings, FineTuneEmbeddings, spacy_wrapper
+from nlunetwork.attention import attention
 
 flatten = lambda l: [item for sublist in l for item in sublist]
 
@@ -41,8 +41,9 @@ class Model:
         self.intent_combination = (intent_combination or 'gru') if multi_turn else None
 
         self.three_stages = three_stages
-        # enable or not the highway between layer 1 and 3
-        self.highway = 'highway' in self.three_stages
+        if self.three_stages:
+            # enable or not the highway between layer 1 and 3
+            self.highway = isinstance(self.three_stages, str) and 'highway' in self.three_stages
         # 'bi-rnn', 'word-emb'
         self.intent_extraction_mode = intent_extraction_mode
 
