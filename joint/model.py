@@ -41,6 +41,8 @@ class Model:
         self.intent_combination = (intent_combination or 'gru') if multi_turn else None
 
         self.three_stages = three_stages
+        # enable or not the highway between layer 1 and 3
+        self.highway = 'highway' in self.three_stages
         # 'bi-rnn', 'word-emb'
         self.intent_extraction_mode = intent_extraction_mode
 
@@ -371,7 +373,11 @@ class Model:
             #print('bd_outputs.sample_id', bd_outputs.sample_id)
             bd_one_hot = tf.one_hot(bd_outputs_id_padded, self.boundaryEmbedder.vocab_size)
             #print('bd_one_hot', bd_one_hot)
-            self.hidden_between_decoders = tf.concat((bd_one_hot, encoder_outputs), 2)
+            if self.highway:
+                self.hidden_between_decoders = tf.concat((bd_one_hot, encoder_outputs), 2)
+            else:
+                # this variation is not very good, AC decoder can't classify correctly the arguments
+                self.hidden_between_decoders = bd_one_hot
 
             def initial_fn_ac():
                 initial_elements_finished = (0 >= decoder_lengths)  # all False at the initial step
