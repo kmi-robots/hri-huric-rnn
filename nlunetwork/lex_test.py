@@ -6,7 +6,7 @@ import numpy as np
 from dotenv import load_dotenv, find_dotenv
 from aws_requests_auth.aws_auth import AWSRequestsAuth
 
-from . import metrics, data
+from nlunetwork import metrics, data
 
 load_dotenv(find_dotenv())
 

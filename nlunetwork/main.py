@@ -10,9 +10,9 @@ from sklearn.metrics import accuracy_score
 from collections import defaultdict
 from tqdm import tqdm
 
-from . import data
-from .model import Model
-from . import metrics
+from nlunetwork import data
+from nlunetwork.model import Model
+from nlunetwork import metrics
 
 # embedding size for labels
 embedding_size = int(os.environ.get('LABEL_EMB_SIZE', 64))
@@ -56,9 +56,9 @@ RECURRENT_CELL = os.environ.get('RECURRENT_CELL', 'lstm')
 OUTPUT_FOLDER += '_recurrent_cell_' + RECURRENT_CELL
 ATTENTION = os.environ.get('ATTENTION', 'slots') # intents, slots, both, none
 OUTPUT_FOLDER += '_attention_' + ATTENTION
-THREE_STAGES = os.environ.get('THREE_STAGES', False) # add Boundary Detection intermediate level
+THREE_STAGES = os.environ.get('THREE_STAGES', False) # add Boundary Detection intermediate level. Can be False, True or truish with 'highway' inside
 if THREE_STAGES:
-    OUTPUT_FOLDER += '_three_stages'
+    OUTPUT_FOLDER += '_three_stages_{}'.format(THREE_STAGES)
 INTENT_EXTRACTION_MODE = os.environ.get('INTENT_EXTRACTION_MODE', 'bi-rnn') # intent comes out of bi-rnn or only a weighted mean (attention intent must be turned on)
 if INTENT_EXTRACTION_MODE != 'bi-rnn':
     OUTPUT_FOLDER += '_intentextraction_' + INTENT_EXTRACTION_MODE
@@ -201,7 +201,6 @@ def train(mode):
                         decoder_prediction = np.transpose(decoder_prediction, [1, 0])
                         slots_attentions = results['slots_attentions']
                         slots_attentions = np.transpose(slots_attentions, [1, 0, 2])
-                        decoder_prediction = decoder_prediction.tolist()
                         bd_attentions = np.zeros((len(batch), input_steps, input_steps))
                         ac_attentions = np.zeros((len(batch), input_steps, input_steps))
 

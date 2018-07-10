@@ -7,4 +7,4 @@ preprocess:
 	pushd data && python preprocess.py && popd
 
 train_joint:
-	python -m joint.main
+	python -m nlunetwork.main

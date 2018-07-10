@@ -4,9 +4,10 @@ import tensorflow as tf
 from tensorflow.contrib import layers
 import numpy as np
 from tensorflow.contrib.rnn import BasicLSTMCell, LSTMStateTuple, GRUCell
-from .embeddings import EmbeddingsFromScratch, FixedEmbeddings, FineTuneEmbeddings, spacy_wrapper
-from .attention import attention
-from . import layers
+
+from nlunetwork.embeddings import EmbeddingsFromScratch, FixedEmbeddings, FineTuneEmbeddings, spacy_wrapper
+from nlunetwork.attention import attention
+from nlunetwork import layers
 
 flatten = lambda l: [item for sublist in l for item in sublist]
 
@@ -42,6 +43,9 @@ class Model:
         self.intent_combination = (intent_combination or 'gru') if multi_turn else None
 
         self.three_stages = three_stages
+        if self.three_stages:
+            # enable or not the highway between layer 1 and 3
+            self.highway = isinstance(self.three_stages, str) and 'highway' in self.three_stages
         # 'bi-rnn', 'word-emb'
         self.intent_extraction_mode = intent_extraction_mode
 
@@ -212,9 +216,14 @@ class Model:
             # the bd predictions are already trained on their own
             bd_ids = tf.argmax(bd_logits, axis=2)
             bd_logits_no_backprop = tf.one_hot(bd_ids, depth=self.boundaryEmbedder.vocab_size)
-            hidden_between_decoders = tf.concat((bd_logits_no_backprop, encoder_outputs), 2)
+            if self.highway:
+                hidden_between_decoders = tf.concat((bd_logits_no_backprop, encoder_outputs), 2)
+            else:
+                # this variation is not very good, AC decoder can't classify correctly the arguments
+                hidden_between_decoders = bd_logits_no_backprop
 
             ac_logits, self.attention_ac_scores = layers.decoder(hidden_between_decoders, decoder_hidden_size, self.recurrent_cell, self.encoder_inputs_actual_length, self.typesEmbedder.get_word_embeddings_from_ids, self.typesEmbedder.get_indexes_from_words_list(['<PAD>'])[0], self.typesEmbedder.vocab_size, self.input_steps, 'attention_alpha_ac', self.slots_attention)
+
             
         # Define mask so padding does not count towards loss calculation
         self.mask = tf.sequence_mask(self.encoder_inputs_actual_length, self.input_steps, dtype=tf.float32)

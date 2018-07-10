@@ -6,7 +6,7 @@ import numpy as np
 from collections import defaultdict
 from pathlib import Path
 
-from . import metrics
+from nlunetwork import metrics
 
 # TODO this code is mostly copy-paste from main, do refactor
 
