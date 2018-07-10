@@ -1,6 +1,6 @@
 import tensorflow as tf
 import numpy as np
-from .data import spacy_wrapper
+from nlunetwork.data import spacy_wrapper
 
 class EmbeddingsFromScratch(object):
   

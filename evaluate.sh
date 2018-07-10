@@ -9,7 +9,7 @@ set -e
 export DATASET=huric_eb/modern
 # chosen architecture: three stages with attention
 export THREE_STAGES=true
-export ATTENTION=slots
+export ATTENTION=both
 
 
 # this time test on folds 1-4 and test on 5

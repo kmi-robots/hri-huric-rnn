@@ -6,7 +6,8 @@ Some experiments with RNN and HuRIC dataset
 
 - python3-pip
 - virtualenv (recommended)
-- install `requirements.txt`
+- install the dependencies `pip install -r requirements.txt`
+- install this package `pip install -e .`
 
 ## Scripts
 
