@@ -27,6 +27,11 @@ def read_values(folder, dataset_name):
     bd_cond_last = {}
     ac_cond_best = {}
     ac_cond_last = {}
+
+    intent_best_idx = {}
+    slots_cond_best_idx = {}
+    bd_cond_best_idx = {}
+    ac_cond_best_idx = {}
     for subfolder in subfolder_list:
         folder_name = subfolder.name
         file_location = subfolder / dataset_name
@@ -59,6 +64,13 @@ def read_values(folder, dataset_name):
             bd_cond_last[folder_name] = f1_bd_cond_last_value
             ac_cond_best[folder_name] = f1_ac_cond_best_value
             ac_cond_last[folder_name] = f1_ac_cond_last_value
+
+            # also save the indexes
+            intent_best_idx[folder_name] = f1_intent_best_index
+            slots_cond_best_idx[folder_name] = f1_slots_cond_best_index
+            bd_cond_best_idx[folder_name] = f1_bd_cond_best_index
+            ac_cond_best_idx[folder_name] = f1_ac_cond_best_index
+
         except FileNotFoundError:
             print('not found file in subfolder', subfolder)
             continue
@@ -71,7 +83,11 @@ def read_values(folder, dataset_name):
         'bd_cond_best': bd_cond_best,
         'bd_cond_last': bd_cond_last,
         'ac_cond_best': ac_cond_best,
-        'ac_cond_last': ac_cond_last
+        'ac_cond_last': ac_cond_last,
+        'intent_best_idx': intent_best_idx,
+        'slots_cond_best_idx': slots_cond_best_idx,
+        'bd_cond_best_idx': bd_cond_best_idx,
+        'ac_cond_best_idx': ac_cond_best_idx
     }
 
 
