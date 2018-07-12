@@ -1,7 +1,8 @@
 import json
 
 import numpy as np
-
+from collections import defaultdict
+from itertools import groupby
 from pathlib import Path
 from IPython.display import HTML, display
 import matplotlib.pyplot as plt
@@ -97,7 +98,7 @@ def align_score(samples):
         true_s = [1 if idx + 1 in s['lexical_unit_ids'] else 0 for idx in range(s['length'])]
         #print('t', true_s)
         true_lexical_units.extend(true_s)
-    print(np.shape(true_lexical_units))
+    #print(np.shape(true_lexical_units))
     
     precisions_vs_k = {}
     recalls_vs_k = {}
@@ -130,3 +131,18 @@ def display_alignment_vs_k(precisions, recalls, f1s):
     plt.xlabel('k-top')
     plt.legend(['precision', 'recall'], loc='lower right')
     plt.show()
+
+def group_samples_by_frame(samples):
+    groups = {k: list(v) for k,v in groupby(sorted(samples, key=lambda s: s['intent_true']), key=lambda s: s['intent_true'])}
+    return groups
+
+def get_words_by_attention(samples):
+    """Given a set of samples, returns a list of (word, average_attention) sorted by decreasing attention"""
+    bow_cumulative = defaultdict(lambda: 0)
+    for s in samples:
+        for w_idx, w in enumerate(s['words']):
+            bow_cumulative[w] += s['intent_attentions'][w_idx]
+        #print(s['intent_attentions'])
+    bow_cumulative = {k: score / len(samples) for k, score in bow_cumulative.items()}
+    result = sorted([(w, w_sum) for (w, w_sum) in bow_cumulative.items()], key=lambda x: x[1], reverse=True)
+    return result
