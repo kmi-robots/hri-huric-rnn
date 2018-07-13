@@ -259,7 +259,7 @@ def plot_measures(datasets_dict, show=True, path=None):
     width = 0.5 / len(datasets_dict.keys())
     #print('stats_by_measure', stats_by_measure)
     for measure_name, confs_measures in stats_by_measure.items():
-        fig, ax = plt.subplots()
+        fig, ax = plt.subplots(figsize=(16, 5))
         # merge all the measures indexes, that can have different values among the configurations
         # first get the set of all unique indexes
         all_indexes = sorted(set([m for measure in confs_measures.values() for m in measure.keys()]))
