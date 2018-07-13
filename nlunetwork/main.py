@@ -78,7 +78,7 @@ def get_model(vocabs, tokenizer, language, multi_turn, input_steps, nlp):
 
 def train(mode):
     # maximum length of sentences
-    input_steps = 50
+    input_steps = 100
     # load the train and dev datasets
     folds = data.load_data(DATASET, SLOTS_TYPE)
     # fix the random seeds

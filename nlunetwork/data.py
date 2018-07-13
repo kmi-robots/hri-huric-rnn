@@ -60,7 +60,7 @@ def load_data(dataset_name, slots_type='full'):
     """Loads the dataset and returns it."""
     path = 'data/' + dataset_name + '/preprocessed'
 
-    if dataset_name == 'huric_eb/modern':
+    if dataset_name == 'huric_eb/modern' or 'framenet' in dataset_name:
         fold_files = os.listdir(path)
         fold_files = sorted([f for f in fold_files if f.startswith('fold_')])
     else:
@@ -282,7 +282,6 @@ def spacy_wrapper(embedding_size, language, nlp, words_numpy):
                             embeddings_values[i,j,:] = np.ones((embedding_size))*punct_idx+2
                     else:
                         embeddings_values[i,j,:] = w.vector
-                
     return embeddings_values
 
 
