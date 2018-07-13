@@ -256,23 +256,24 @@ def plot_measures(datasets_dict, show=True, path=None):
         for measure_name, measure in measures.items():
             stats_by_measure[measure_name][conf_name] = measure
     # adjust the width of the columns
-    width = 0.35 / len(datasets_dict.keys())
-    #print(stats_by_measure)
+    width = 0.5 / len(datasets_dict.keys())
+    #print('stats_by_measure', stats_by_measure)
     for measure_name, confs_measures in stats_by_measure.items():
         fig, ax = plt.subplots()
         # merge all the measures indexes, that can have different values among the configurations
         # first get the set of all unique indexes
         all_indexes = sorted(set([m for measure in confs_measures.values() for m in measure.keys()]))
-        #print(all_indexes)
+        #print('all_idexes', all_indexes)
         # then build a map {index_value: position_in_all_indexes}
         all_indexes = {val: idx for idx, val in enumerate(all_indexes)}
-        #print(all_indexes)
+        #print('all_indexes', all_indexes)
         bars = []
         for idx, (conf_name, measure) in enumerate(confs_measures.items()):
             corresponding_x_indexes = [all_indexes[m] for m in measure]
-            bar = ax.bar(np.array(corresponding_x_indexes) + (idx * width), [m for m in measure.values()], width)
+            total_n_samples = sum(measure.values())
+            bar = ax.bar(np.array(corresponding_x_indexes) + (idx * width), np.array([m for m in measure.values()]) / total_n_samples, width)
             bars.append(bar)
-        ax.set_ylabel('counts')
+        ax.set_ylabel('%')
         ax.set_title(measure_name)
         ax.set_xticks(np.arange(len(all_indexes)) + (width / 2 * (len(datasets_dict) - 1)))
         ax.set_xticklabels(list(all_indexes.keys()))
