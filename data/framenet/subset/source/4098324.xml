@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098324">
+	<sentence>Some students came to school by car .</sentence>
+	<tokens>
+		<token id="1" lemma="Some" pos="dt" surface="Some"/>
+		<token id="2" lemma="students" pos="nns" surface="students"/>
+		<token id="3" lemma="came" pos="VVD" surface="came"/>
+		<token id="4" lemma="to" pos="to" surface="to"/>
+		<token id="5" lemma="school" pos="nn" surface="school"/>
+		<token id="6" lemma="by" pos="in" surface="by"/>
+		<token id="7" lemma="car" pos="nn" surface="car"/>
+		<token id="8" lemma="." pos="sent" surface="."/>
+	</tokens>
+	<semantics>
+		<frameSemantics>
+			<frame name="Entering">
+				<lexicalUnit>
+					<token id="3"/>
+				</lexicalUnit>
+				<frameElement type="Goal">
+					<token id="4"/>
+					<token id="5"/>
+				</frameElement>
+				<frameElement type="Mode_of_transportation">
+					<token id="6"/>
+					<token id="7"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="1"/>
+					<token id="2"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

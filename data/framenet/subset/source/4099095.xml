@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099095">
+	<sentence>QN : Who has given support to al-Qaeda ?</sentence>
+	<tokens>
+		<token id="1" lemma="QN" pos="NP" surface="QN"/>
+		<token id="2" lemma=":" pos=":" surface=":"/>
+		<token id="3" lemma="Who" pos="wp" surface="Who"/>
+		<token id="4" lemma="has" pos="VHZ" surface="has"/>
+		<token id="5" lemma="given" pos="VVN" surface="given"/>
+		<token id="6" lemma="support" pos="nn" surface="support"/>
+		<token id="7" lemma="to" pos="to" surface="to"/>
+		<token id="8" lemma="al-Qaeda" pos="nn" surface="al-Qaeda"/>
+		<token id="9" lemma="?" pos="sent" surface="?"/>
+	</tokens>
+	<semantics>
+		<frameSemantics>
+			<frame name="Giving">
+				<lexicalUnit>
+					<token id="5"/>
+				</lexicalUnit>
+				<frameElement type="Donor">
+					<token id="3"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="6"/>
+				</frameElement>
+				<frameElement type="Recipient">
+					<token id="7"/>
+					<token id="8"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

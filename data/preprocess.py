@@ -585,8 +585,8 @@ def modernize_huric_xml(source_path, dest_path):
         #    tree.write(out_file, encoding='unicode')
 
 
-def framenet_preprocess(folder, subset=True):
-    """Preprocesses the framenet corpus, taking only the frames from the HuRIC set"""
+def framenet_preprocess(folder, dest_path, subset=True):
+    """Preprocesses the framenet corpus, taking only the frames from the HuRIC set. Produces in output a HuRIC formatted dataset on out_path"""
     # from framenet names to huric names
     frame_names_mappings = {
         'Attaching': 'Attaching',
@@ -625,14 +625,15 @@ def framenet_preprocess(folder, subset=True):
         # get the sentences elements
         sentences.extend(root.findall('sentence'))
     print('#sentences:', len(sentences))
+    get_wanted_frames = lambda sentence: [f for f in sentence.findall('annotationSet') if f.attrib.get('frameName', None) in frame_names_mappings and f.attrib['status'] == 'MANUAL']
     # select the sentences that have an interesting frame name
-    sentences = [s for s in sentences if any([f.attrib.get('frameName', None) in frame_names_mappings and f.attrib['status'] == 'MANUAL' for f in s.findall('annotationSet')])]
+    sentences = [s for s in sentences if len(get_wanted_frames(s))]
     print('#sentences_sel_frames:', len(sentences))
     #exit(1)
     samples = [{
         'words': s.find('text').text.split(),
-        'intent_cnt': sum([f.attrib.get('frameName', None) in frame_names_mappings and f.attrib['status'] == 'MANUAL' for f in s.findall('annotationSet')]),
-        'intents': [f.attrib.get('frameName', None) for f in s.findall('annotationSet') if f.attrib.get('frameName', None) in frame_names_mappings]
+        'intent_cnt': len(get_wanted_frames(s)),
+        'intents': [f.attrib.get('frameName', None) for f in get_wanted_frames(s)],
     } for s in sentences]
 
     cnt = 0
@@ -641,6 +642,55 @@ def framenet_preprocess(folder, subset=True):
             print(s['intents'], ' '.join(s['words']))
             cnt+=1
     print('#multiple:', cnt)
+    # TODO transform to HuRIC
+    # - get the required attributes on the tree
+    # - translate the frame names
+    # - produce output files
+    for s in sentences:
+        command_id = s.attrib['ID']
+        text = s.find('text').text
+        words = text.split()
+        tokens = [{
+            'id': idx + 1,
+            'start': int(l.attrib['start']),
+            'end': int(l.attrib['end'])+1,
+            'lemma': text[int(l.attrib['start']):int(l.attrib['end'])+1], # TODO lemmatize
+            'pos': l.attrib['name'],
+            'surface': text[int(l.attrib['start']):int(l.attrib['end'])+1]
+        } for idx, l in enumerate(s.find("annotationSet[@status='UNANN']/layer").findall("label"))]
+        # TODO where are dependencies?
+
+        new_command = ET.Element('command', {'id': command_id})
+        ET.SubElement(new_command, 'sentence').text = text
+        new_tokens = ET.SubElement(new_command, 'tokens')
+        for t in tokens:
+            ET.SubElement(new_tokens, 'token', {'id': str(t['id']), 'lemma': t['lemma'], 'pos': t['pos'], 'surface': t['surface']})
+        new_semantic_frames = ET.SubElement(ET.SubElement(new_command, 'semantics'), 'frameSemantics')
+
+        wanted_frames = get_wanted_frames(s)
+        for f in wanted_frames:
+            frame_name = frame_names_mappings[f.attrib['frameName']]
+            lexical_unit = f.find("layer[@name='Target']/label")
+            start, end = int(lexical_unit.attrib['start']), int(lexical_unit.attrib['end'])
+            lexical_unit_ids = [t['id'] for t in tokens if (t['end']>=start and t['start']<=end)]
+            fes = f.findall("layer[@name='FE']/label")
+            #print(command_id, fes)
+            frame_elements = [{'type': f.attrib['name'], 'ids': [t['id'] for t in tokens if (f.attrib.get('start', None) != None and t['end']>=int(f.attrib['start']) and t['start']<=int(f.attrib['end'])+1)]} for f in fes]
+
+            new_frame = ET.SubElement(new_semantic_frames, 'frame', {'name': frame_name})
+            new_lexical_unit = ET.SubElement(new_frame, 'lexicalUnit')
+            for l in lexical_unit_ids:
+                ET.SubElement(new_lexical_unit, 'token', {'id': str(l)})
+            for fe in frame_elements:
+                if len(fe['ids']):
+                    new_frame_element = ET.SubElement(new_frame, 'frameElement', {'type': fe['type']})
+                    for t_id in fe['ids']:
+                        ET.SubElement(new_frame_element, 'token', {'id': str(t_id)})
+        
+        pretty_string = minidom.parseString(ET.tostring(new_command, 'utf-8')).toprettyxml(encoding='utf-8').decode('utf-8')
+        with open('{}/{}.xml'.format(dest_path, command_id), 'w') as out_file:
+            out_file.write(pretty_string)
+
 
 def main():
     #nlp_en = load_nlp()
@@ -680,7 +730,8 @@ def main():
 
 
     elif which == 'framenet_subset':
-        framenet_preprocess('framenet', True)
+        framenet_preprocess('framenet', 'framenet/subset/source', True)
+        huric_preprocess('framenet/subset', None, False)
 
 if __name__ == '__main__':
     main()
