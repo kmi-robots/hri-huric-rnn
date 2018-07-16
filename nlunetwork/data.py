@@ -351,7 +351,7 @@ def save_predictions(out_path, fold_id, samples):
         json.dump({'samples': samples}, outfile, indent=2, cls=NumpyEncoder)
 
 def merge_prediction_folds(epoch_path):
-    fold_files = [f for f in os.listdir(epoch_path) if f.startswith('prediction_fold_')]
+    fold_files = [f for f in os.listdir(epoch_path) if f.startswith('prediction_fold_') and not 'full' in f]
     results = []
     for file_name in fold_files:
         with open('{}/{}'.format(epoch_path, file_name), 'r') as f:
