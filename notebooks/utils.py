@@ -1,8 +1,10 @@
 import json
 
 import numpy as np
-
+from collections import defaultdict
+from itertools import groupby
 from pathlib import Path
+import xml.etree.ElementTree as ET
 from IPython.display import HTML, display
 import matplotlib.pyplot as plt
 
@@ -91,13 +93,13 @@ def align_accuracy_argmax(samples):
     return sum(compared) / len(compared)
 
         
-def align_score(samples):
+def align_score(samples, max_len=50):
     true_lexical_units = []
     for s in samples:
         true_s = [1 if idx + 1 in s['lexical_unit_ids'] else 0 for idx in range(s['length'])]
         #print('t', true_s)
         true_lexical_units.extend(true_s)
-    print(np.shape(true_lexical_units))
+    #print(np.shape(true_lexical_units))
     
     precisions_vs_k = {}
     recalls_vs_k = {}
@@ -106,7 +108,7 @@ def align_score(samples):
     for how_many in range(1, 10):
         pred_lexical_units = []
         for s in samples:
-            padded_intent_att = np.pad(s['intent_attentions'], (0, 50 - s['length']), 'constant')
+            padded_intent_att = np.pad(s['intent_attentions'], (0, max_len - s['length']), 'constant')
             pred_k_indexes = np.argpartition(padded_intent_att, -how_many)[-how_many:]
             #print(pred_k_indexes)
             pred_k = [1 if idx in pred_k_indexes else 0 for idx in range(s['length'])]
@@ -130,3 +132,154 @@ def display_alignment_vs_k(precisions, recalls, f1s):
     plt.xlabel('k-top')
     plt.legend(['precision', 'recall'], loc='lower right')
     plt.show()
+
+def group_samples_by_frame(samples):
+    groups = {k: list(v) for k,v in groupby(sorted(samples, key=lambda s: s['intent_true']), key=lambda s: s['intent_true'])}
+    return groups
+
+def get_words_by_attention(samples):
+    """Given a set of samples, returns a list of (word, average_attention) sorted by decreasing attention"""
+    bow_cumulative = defaultdict(lambda: 0)
+    for s in samples:
+        for w_idx, w in enumerate(s['words']):
+            bow_cumulative[w] += s['intent_attentions'][w_idx]
+        #print(s['intent_attentions'])
+    bow_cumulative = {k: score / len(samples) for k, score in bow_cumulative.items()}
+    result = sorted([(w, w_sum) for (w, w_sum) in bow_cumulative.items()], key=lambda x: x[1], reverse=True)
+    return result
+
+def load_xmls(folder):
+    path = Path(folder)
+    files_list = [el for el in path.iterdir() if el.is_file()]
+    file_contents = []
+    for file in sorted(files_list):
+        with open(file) as file_in:
+            tree = ET.parse(file_in)
+        root = tree.getroot()
+        file_contents.append(root)
+    return file_contents
+
+def get_lu_pos(root, verbose=False):
+    """Returns the POS for all the LU in the current document"""
+    w_id_to_pos = {t.attrib['id']: t.attrib['pos'] for t in root.findall('tokens/token')}
+    #print(w_id_to_pos)
+    lu_idxs = [lu.attrib['id'] for lu in root.findall('semantics/frameSemantics/frame/lexicalUnit/token')]
+    #print(lu_idxs)
+    lu_pos = [w_id_to_pos[id] for id in lu_idxs]
+    if verbose:
+        print(root.attrib['id'], lu_pos)
+    return lu_pos
+
+def get_lu_are_roots(root, verbose=False):
+    """Returns whether the lexicalUnits are the roots in dependencies"""
+    roots_id = [d.attrib['to'] for d in root.findall('dependencies/dep') if d.attrib['type'] == 'root']
+    lu_idxs = [lu.attrib['id'] for lu in root.findall('semantics/frameSemantics/frame/lexicalUnit/token')]
+    lu_are_roots = [str(l in roots_id) for l in lu_idxs]
+    if verbose:
+        print(root.attrib['id'], lu_are_roots)
+    return lu_are_roots
+
+def get_lengths(root, verbose=False):
+    """Returns the length of the command"""
+    # TODO shouldn't be frame-based? find min and max token id and do difference
+    return [len(root.findall('tokens/token'))]
+
+def get_lu_depths(root, verbose=False):
+    """Returns the depths in the dependency tree of the lexicalUnits"""
+    # TODO the depth should be relative to the frame
+    edges = [(d.attrib['from'], d.attrib['to'], d.attrib['type']) for d in root.findall('dependencies/dep')]
+    #print(edges)
+    to_father = {e[1]: e[0] for e in edges}
+    depths = {}
+    for el, f in to_father.items():
+        current_el = el
+        depth = 0
+        # the root has id == '0', the second condition is only to avoid infinite looping
+        while f != '0' and depth < len(edges):
+            depth += 1
+            current_el = f
+            f = to_father[current_el]
+        if f != '0':
+            # broken annotations
+            depth = -1
+        depths[el] = depth
+    lu_idxs = [lu.attrib['id'] for lu in root.findall('semantics/frameSemantics/frame/lexicalUnit/token')]
+    lu_depths = [depths[l] for l in lu_idxs]
+    if verbose:
+        print(root.attrib['id'], lu_depths)
+    return lu_depths
+
+def get_lu_positions(root, verbose=False):
+    """Get the position of lexicalUnits in the command"""
+    # TODO the position should be relative to the frame
+    lu_idxs = [lu.attrib['id'] for lu in root.findall('semantics/frameSemantics/frame/lexicalUnit/token')]
+    lu_positions = [int(l) for l in lu_idxs]
+    return lu_positions
+
+def get_corpus_complexity_statistics(dataset_location):
+    """Loads the dataset in xml format HuRIC 1.2 and computes some measures"""
+    xml_docs = load_xmls(dataset_location)
+    lu_pos_all = defaultdict(lambda: 0)
+    lu_are_roots_all = defaultdict(lambda: 0)
+    lengths_all = defaultdict(lambda: 0)
+    lu_depths_all = defaultdict(lambda: 0)
+    lu_positions_all = defaultdict(lambda: 0)
+    for doc in xml_docs:
+        lu_pos = get_lu_pos(doc)
+        for p in lu_pos:
+            lu_pos_all[p] += 1
+        lu_are_roots = get_lu_are_roots(doc)
+        for r in lu_are_roots:
+            lu_are_roots_all[r] += 1
+        lengths = get_lengths(doc)
+        for l in lengths:
+            lengths_all[l] += 1
+        lu_depths = get_lu_depths(doc)
+        for d in lu_depths:
+            lu_depths_all[d] += 1
+        lu_positions = get_lu_positions(doc)
+        for p in lu_positions:
+            lu_positions_all[p] += 1
+    return {
+        'lu_pos': lu_pos_all,
+        'lu_are_roots': lu_are_roots_all,
+        'lengths': lengths_all,
+        'lu_depths': lu_depths_all,
+        'lu_positions': lu_positions_all
+    }
+
+def plot_measures(datasets_dict, show=True, path=None):
+    """Given a dict {conf_name: measures} produces a set of plots, one for each measure, with all the configurations inside"""
+    # reverse the nested dict to {measure_name: {conf_name: {label: value}}
+    stats_by_measure = defaultdict(dict)
+    for conf_name, measures in datasets_dict.items():
+        for measure_name, measure in measures.items():
+            stats_by_measure[measure_name][conf_name] = measure
+    # adjust the width of the columns
+    width = 0.5 / len(datasets_dict.keys())
+    #print('stats_by_measure', stats_by_measure)
+    for measure_name, confs_measures in stats_by_measure.items():
+        fig, ax = plt.subplots(figsize=(16, 5))
+        # merge all the measures indexes, that can have different values among the configurations
+        # first get the set of all unique indexes
+        all_indexes = sorted(set([m for measure in confs_measures.values() for m in measure.keys()]))
+        #print('all_idexes', all_indexes)
+        # then build a map {index_value: position_in_all_indexes}
+        all_indexes = {val: idx for idx, val in enumerate(all_indexes)}
+        #print('all_indexes', all_indexes)
+        bars = []
+        for idx, (conf_name, measure) in enumerate(confs_measures.items()):
+            corresponding_x_indexes = [all_indexes[m] for m in measure]
+            total_n_samples = sum(measure.values())
+            bar = ax.bar(np.array(corresponding_x_indexes) + (idx * width), np.array([m for m in measure.values()]) / total_n_samples, width)
+            bars.append(bar)
+        ax.set_ylabel('%')
+        ax.set_title(measure_name)
+        ax.set_xticks(np.arange(len(all_indexes)) + (width / 2 * (len(datasets_dict) - 1)))
+        ax.set_xticklabels(list(all_indexes.keys()))
+        ax.legend(bars, confs_measures.keys())
+        if path:
+            _ = plt.savefig('{}_{}.png'.format(path, measure_name))
+        if show:
+            plt.show()
+        plt.close(fig)
