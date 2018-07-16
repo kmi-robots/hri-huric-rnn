@@ -21,8 +21,11 @@ n_folds = 5
 #LEX_ZIP_NAME = 'lexBot.zip'
 
 
-def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
-    """Preprocess the huric dataset, provided by Danilo Croce
+def huric_preprocess(path, trim='right', invoke_frame_slot=False):
+    """Preprocess the huric dataset
+    trim regulates how to split the sentences:
+    - 'right' finds the last reference on the right to tokens, while on the left takes up to the previous frame in the sentence
+    - 'both' finds the minimum and maximum mentioned token ids, producing a shorter sentence in output
     invoke_frame_slot adds a slot fot the lexical unit of invocation of the frame
     """
 
@@ -32,10 +35,7 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
     def covers(a, b):
         return (a['max'] >= b['max']) and (a['min'] <= b['min'])
 
-    if subfolder:
-        path_source = path + '/source/' + subfolder
-    else:
-        path_source = path + '/source'
+    path_source = path + '/source'
 
     samples = []
     spatial_samples = []
@@ -44,16 +44,7 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
     slot_types = set()
     spatial_slot_types = set()
 
-    """ subfolder is a parameter of this function
-    # retrieve all the possible xml files in the three subfolders
-    for subfolder in ['GrammarGenerated', 'S4R_Experiment', 'Robocup']:
-        for file_name in os.listdir('{}/{}/xml'.format(path_source, subfolder)):
-            file_locations[file_name] = subfolder
-    """
-    if subfolder:
-        files_list = os.listdir('{}/xml'.format(path_source))
-    else:
-        files_list = os.listdir(path_source)
+    files_list = os.listdir(path_source)
 
     # TODO remove this
     # 2307: nested frame (no problem, discarded) 
@@ -70,10 +61,7 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
     print('#files: ', len(files_list))
 
     for file_name in sorted(files_list):
-        if subfolder:
-            file_location = '{}/xml/{}'.format(path_source, file_name)
-        else:
-            file_location = '{}/{}'.format(path_source, file_name)
+        file_location = '{}/{}'.format(path_source, file_name)
         #print(file_location)
         with open(file_location) as file_in:
             tree = ET.parse(file_in)
@@ -118,7 +106,17 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
             frame_tokens_mentioned = [int(id.attrib['id']) for id in frame_tokens_mentioned]
             min_token_id, max_token_id = min(frame_tokens_mentioned), max(frame_tokens_mentioned)
             # the correct division [0:max1],[max1:max2]. 'and' words between are part of the new frame. 'robot can you' words are part of the first frame
-            frame_tokens = {key: value for (key, value) in tokens_map.items() if int(key) >= start_of_frame and int(key) <= max_token_id}
+            if trim == 'right':
+                # start considering from the end of the previous frame
+                start_considering = start_of_frame
+            elif trim == 'both':
+                # start considering from the minimum mentioned token
+                start_considering = min_token_id
+                # recompute the lexical unit ids
+                lexical_unit_ids = [l - start_considering + 1 for l in lexical_unit_ids]
+            else:
+                raise ValueError('trim' + str(trim))
+            frame_tokens = {key: value for (key, value) in tokens_map.items() if int(key) >= start_considering and int(key) <= max_token_id}
             words = [value for (key, value) in frame_tokens.items()]
             slots_objects = [slots_map.get(key, {'iob_label': 'O'}) for (key, value) in frame_tokens.items()]
             slots = [slot['iob_label'] for slot in slots_objects]
@@ -198,10 +196,7 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
     # remove samples with empty word list
     samples = [s for s in samples if len(s['words'])]
 
-    if subfolder:
-        out_path = '{}/{}'.format(path, subfolder)
-    else:
-        out_path = path
+    out_path = '{}_{}'.format(path, trim)
     out_path_preprocessed = '{}/preprocessed'.format(out_path)
 
     # save all data together, for alexa
@@ -698,28 +693,9 @@ def main():
     which = os.environ.get('DATASET', 'huric_eb')
     print(which)
 
-    if which == 'huric_tor':
-        subfolder_results = []
-        subfolder_spatial_results = []
-        for subfolder in ['GrammarGenerated', 'S4R_Experiment', 'Robocup']:
-            res, spatial_res = huric_preprocess('huric_tor', subfolder, False)
-            subfolder_results.append(res)
-            subfolder_spatial_results.append(spatial_res)
-            alexa_prepare('huric_tor/{}'.format(subfolder), 'office robot {}'.format(subfolder))
-            alexa_prepare('huric_tor/{}/spatial'.format(subfolder), 'office robot spatial {}'.format(subfolder))
-            lex_from_alexa('huric_tor/{}/'.format(subfolder), 'kmi_{}'.format(subfolder))
-            lex_from_alexa('huric_tor/{}/spatial'.format(subfolder), 'spatial_{}'.format(subfolder))
-        
-        combine_and_save(subfolder_results, 'huric_tor/combined')
-        combine_and_save(subfolder_spatial_results, 'huric_tor/combined/spatial')
-        alexa_prepare('huric_tor/combined', 'office robot')
-        alexa_prepare('huric_tor/combined/spatial', 'office robot spatial')
-        lex_from_alexa('huric_tor/combined', 'kmi')
-        lex_from_alexa('huric_tor/combined/spatial', 'spatial')
-
-    elif which == 'huric_eb':
+    if which == 'huric_eb':
         modernize_huric_xml('huric_eb/source', 'huric_eb/modern/source')
-        res, spatial_res = huric_preprocess('huric_eb/modern', None, False)
+        res, spatial_res = huric_preprocess('huric_eb/modern')
         alexa_prepare('huric_eb/modern', 'roo bot')
         alexa_prepare('huric_eb/modern/spatial', 'office robot spatial')
         lex_from_alexa('huric_eb/modern/amazon', 'kmi_EB')
@@ -731,7 +707,11 @@ def main():
 
     elif which == 'framenet_subset':
         framenet_preprocess('framenet', 'framenet/subset/source', True)
-        huric_preprocess('framenet/subset', None, False)
+        huric_preprocess('framenet/subset')
+
+    elif which == 'framenet_subset_short':
+        framenet_preprocess('framenet', 'framenet/subset/source', True)
+        huric_preprocess('framenet/subset', trim='both')
 
 if __name__ == '__main__':
     main()
