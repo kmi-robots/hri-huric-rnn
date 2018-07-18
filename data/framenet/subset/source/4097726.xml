@@ -2,27 +2,49 @@
 <command id="4097726">
 	<sentence>However , IAEA analysis indicated that Korean technicians reprocessed plutonium on three occasions -- 1989, 1990 , and 1991 .</sentence>
 	<tokens>
-		<token id="1" lemma="However" pos="rb" surface="However"/>
+		<token id="1" lemma="however" pos="RB" surface="However"/>
 		<token id="2" lemma="," pos="," surface=","/>
-		<token id="3" lemma="IAEA" pos="nn" surface="IAEA"/>
-		<token id="4" lemma="analysis" pos="nn" surface="analysis"/>
-		<token id="5" lemma="indicated" pos="VVD" surface="indicated"/>
-		<token id="6" lemma="that" pos="in" surface="that"/>
-		<token id="7" lemma="Korean" pos="jj" surface="Korean"/>
-		<token id="8" lemma="technicians" pos="nns" surface="technicians"/>
-		<token id="9" lemma="reprocessed" pos="VVN" surface="reprocessed"/>
-		<token id="10" lemma="plutonium" pos="nn" surface="plutonium"/>
-		<token id="11" lemma="on" pos="in" surface="on"/>
-		<token id="12" lemma="three" pos="cd" surface="three"/>
-		<token id="13" lemma="occasions" pos="nns" surface="occasions"/>
+		<token id="3" lemma="iaea" pos="NNP" surface="IAEA"/>
+		<token id="4" lemma="analysis" pos="NN" surface="analysis"/>
+		<token id="5" lemma="indicate" pos="VBD" surface="indicated"/>
+		<token id="6" lemma="that" pos="IN" surface="that"/>
+		<token id="7" lemma="korean" pos="JJ" surface="Korean"/>
+		<token id="8" lemma="technician" pos="NNS" surface="technicians"/>
+		<token id="9" lemma="reprocess" pos="VBD" surface="reprocessed"/>
+		<token id="10" lemma="plutonium" pos="NN" surface="plutonium"/>
+		<token id="11" lemma="on" pos="IN" surface="on"/>
+		<token id="12" lemma="three" pos="CD" surface="three"/>
+		<token id="13" lemma="occasion" pos="NNS" surface="occasions"/>
 		<token id="14" lemma="--" pos=":" surface="--"/>
-		<token id="15" lemma="1989," pos="cd" surface="1989,"/>
-		<token id="16" lemma="1990" pos="cd" surface="1990"/>
+		<token id="15" lemma="1989," pos="CD" surface="1989,"/>
+		<token id="16" lemma="1990" pos="CD" surface="1990"/>
 		<token id="17" lemma="," pos="," surface=","/>
-		<token id="18" lemma="and" pos="cc" surface="and"/>
-		<token id="19" lemma="1991" pos="cd" surface="1991"/>
-		<token id="20" lemma="." pos="sent" surface="."/>
+		<token id="18" lemma="and" pos="CC" surface="and"/>
+		<token id="19" lemma="1991" pos="CD" surface="1991"/>
+		<token id="20" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="5" to="1" type="advmod"/>
+		<dep from="5" to="2" type="punct"/>
+		<dep from="4" to="3" type="compound"/>
+		<dep from="5" to="4" type="nsubj"/>
+		<dep from="0" to="5" type="root"/>
+		<dep from="9" to="6" type="mark"/>
+		<dep from="8" to="7" type="amod"/>
+		<dep from="9" to="8" type="nsubj"/>
+		<dep from="5" to="9" type="ccomp"/>
+		<dep from="9" to="10" type="dobj"/>
+		<dep from="9" to="11" type="prep"/>
+		<dep from="13" to="12" type="nummod"/>
+		<dep from="11" to="13" type="pobj"/>
+		<dep from="13" to="14" type="punct"/>
+		<dep from="16" to="15" type="compound"/>
+		<dep from="13" to="16" type="appos"/>
+		<dep from="16" to="17" type="punct"/>
+		<dep from="16" to="18" type="cc"/>
+		<dep from="16" to="19" type="conj"/>
+		<dep from="5" to="20" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Searching">

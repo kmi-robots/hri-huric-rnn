@@ -2,21 +2,37 @@
 <command id="4098857">
 	<sentence>QN : Does Duke plan on giving every new student a free iPod ?</sentence>
 	<tokens>
-		<token id="1" lemma="QN" pos="NP" surface="QN"/>
+		<token id="1" lemma="qn" pos="NNP" surface="QN"/>
 		<token id="2" lemma=":" pos=":" surface=":"/>
-		<token id="3" lemma="Does" pos="NP" surface="Does"/>
-		<token id="4" lemma="Duke" pos="NP" surface="Duke"/>
-		<token id="5" lemma="plan" pos="nn" surface="plan"/>
-		<token id="6" lemma="on" pos="in" surface="on"/>
-		<token id="7" lemma="giving" pos="VVG" surface="giving"/>
-		<token id="8" lemma="every" pos="dt" surface="every"/>
-		<token id="9" lemma="new" pos="jj" surface="new"/>
-		<token id="10" lemma="student" pos="nn" surface="student"/>
-		<token id="11" lemma="a" pos="dt" surface="a"/>
-		<token id="12" lemma="free" pos="jj" surface="free"/>
-		<token id="13" lemma="iPod" pos="nn" surface="iPod"/>
-		<token id="14" lemma="?" pos="sent" surface="?"/>
+		<token id="3" lemma="do" pos="VBZ" surface="Does"/>
+		<token id="4" lemma="duke" pos="NNP" surface="Duke"/>
+		<token id="5" lemma="plan" pos="NN" surface="plan"/>
+		<token id="6" lemma="on" pos="IN" surface="on"/>
+		<token id="7" lemma="give" pos="VBG" surface="giving"/>
+		<token id="8" lemma="every" pos="DT" surface="every"/>
+		<token id="9" lemma="new" pos="JJ" surface="new"/>
+		<token id="10" lemma="student" pos="NN" surface="student"/>
+		<token id="11" lemma="a" pos="DT" surface="a"/>
+		<token id="12" lemma="free" pos="JJ" surface="free"/>
+		<token id="13" lemma="ipod" pos="NNP" surface="iPod"/>
+		<token id="14" lemma="?" pos="." surface="?"/>
 	</tokens>
+	<dependencies>
+		<dep from="5" to="1" type="dep"/>
+		<dep from="1" to="2" type="punct"/>
+		<dep from="5" to="3" type="aux"/>
+		<dep from="5" to="4" type="nsubj"/>
+		<dep from="0" to="5" type="root"/>
+		<dep from="5" to="6" type="prep"/>
+		<dep from="6" to="7" type="pcomp"/>
+		<dep from="10" to="8" type="det"/>
+		<dep from="10" to="9" type="amod"/>
+		<dep from="7" to="10" type="dative"/>
+		<dep from="13" to="11" type="det"/>
+		<dep from="13" to="12" type="amod"/>
+		<dep from="7" to="13" type="dobj"/>
+		<dep from="5" to="14" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Giving">

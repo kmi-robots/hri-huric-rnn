@@ -2,37 +2,69 @@
 <command id="4096641">
 	<sentence>And finally , on 18 December 2003 , Iran signed the Additional Protocol to the NPT , thus allowing snap inspections of its nuclear facilities by the IAEA experts .</sentence>
 	<tokens>
-		<token id="1" lemma="And" pos="cc" surface="And"/>
-		<token id="2" lemma="finally" pos="rb" surface="finally"/>
+		<token id="1" lemma="and" pos="CC" surface="And"/>
+		<token id="2" lemma="finally" pos="RB" surface="finally"/>
 		<token id="3" lemma="," pos="," surface=","/>
-		<token id="4" lemma="on" pos="in" surface="on"/>
-		<token id="5" lemma="18" pos="cd" surface="18"/>
-		<token id="6" lemma="December" pos="NP" surface="December"/>
-		<token id="7" lemma="2003" pos="cd" surface="2003"/>
+		<token id="4" lemma="on" pos="IN" surface="on"/>
+		<token id="5" lemma="18" pos="CD" surface="18"/>
+		<token id="6" lemma="december" pos="NNP" surface="December"/>
+		<token id="7" lemma="2003" pos="CD" surface="2003"/>
 		<token id="8" lemma="," pos="," surface=","/>
-		<token id="9" lemma="Iran" pos="NP" surface="Iran"/>
-		<token id="10" lemma="signed" pos="VVD" surface="signed"/>
-		<token id="11" lemma="the" pos="dt" surface="the"/>
-		<token id="12" lemma="Additional" pos="jj" surface="Additional"/>
-		<token id="13" lemma="Protocol" pos="NP" surface="Protocol"/>
-		<token id="14" lemma="to" pos="to" surface="to"/>
-		<token id="15" lemma="the" pos="dt" surface="the"/>
-		<token id="16" lemma="NPT" pos="nn" surface="NPT"/>
+		<token id="9" lemma="iran" pos="NNP" surface="Iran"/>
+		<token id="10" lemma="sign" pos="VBD" surface="signed"/>
+		<token id="11" lemma="the" pos="DT" surface="the"/>
+		<token id="12" lemma="additional" pos="NNP" surface="Additional"/>
+		<token id="13" lemma="protocol" pos="NNP" surface="Protocol"/>
+		<token id="14" lemma="to" pos="IN" surface="to"/>
+		<token id="15" lemma="the" pos="DT" surface="the"/>
+		<token id="16" lemma="npt" pos="NNP" surface="NPT"/>
 		<token id="17" lemma="," pos="," surface=","/>
-		<token id="18" lemma="thus" pos="rb" surface="thus"/>
-		<token id="19" lemma="allowing" pos="VVG" surface="allowing"/>
-		<token id="20" lemma="snap" pos="jj" surface="snap"/>
-		<token id="21" lemma="inspections" pos="nns" surface="inspections"/>
-		<token id="22" lemma="of" pos="in" surface="of"/>
-		<token id="23" lemma="its" pos="PP$" surface="its"/>
-		<token id="24" lemma="nuclear" pos="jj" surface="nuclear"/>
-		<token id="25" lemma="facilities" pos="nns" surface="facilities"/>
-		<token id="26" lemma="by" pos="in" surface="by"/>
-		<token id="27" lemma="the" pos="dt" surface="the"/>
-		<token id="28" lemma="IAEA" pos="NP" surface="IAEA"/>
-		<token id="29" lemma="experts" pos="nns" surface="experts"/>
-		<token id="30" lemma="." pos="sent" surface="."/>
+		<token id="18" lemma="thus" pos="RB" surface="thus"/>
+		<token id="19" lemma="allow" pos="VBG" surface="allowing"/>
+		<token id="20" lemma="snap" pos="JJ" surface="snap"/>
+		<token id="21" lemma="inspection" pos="NNS" surface="inspections"/>
+		<token id="22" lemma="of" pos="IN" surface="of"/>
+		<token id="23" lemma="-PRON-" pos="PRP$" surface="its"/>
+		<token id="24" lemma="nuclear" pos="JJ" surface="nuclear"/>
+		<token id="25" lemma="facility" pos="NNS" surface="facilities"/>
+		<token id="26" lemma="by" pos="IN" surface="by"/>
+		<token id="27" lemma="the" pos="DT" surface="the"/>
+		<token id="28" lemma="iaea" pos="NNP" surface="IAEA"/>
+		<token id="29" lemma="expert" pos="NNS" surface="experts"/>
+		<token id="30" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="10" to="1" type="cc"/>
+		<dep from="10" to="2" type="advmod"/>
+		<dep from="10" to="3" type="punct"/>
+		<dep from="10" to="4" type="prep"/>
+		<dep from="6" to="5" type="nummod"/>
+		<dep from="4" to="6" type="pobj"/>
+		<dep from="6" to="7" type="nummod"/>
+		<dep from="10" to="8" type="punct"/>
+		<dep from="10" to="9" type="nsubj"/>
+		<dep from="0" to="10" type="root"/>
+		<dep from="13" to="11" type="det"/>
+		<dep from="13" to="12" type="compound"/>
+		<dep from="10" to="13" type="dobj"/>
+		<dep from="10" to="14" type="prep"/>
+		<dep from="16" to="15" type="det"/>
+		<dep from="14" to="16" type="pobj"/>
+		<dep from="10" to="17" type="punct"/>
+		<dep from="19" to="18" type="advmod"/>
+		<dep from="10" to="19" type="advcl"/>
+		<dep from="21" to="20" type="amod"/>
+		<dep from="19" to="21" type="dobj"/>
+		<dep from="21" to="22" type="prep"/>
+		<dep from="25" to="23" type="poss"/>
+		<dep from="25" to="24" type="amod"/>
+		<dep from="22" to="25" type="pobj"/>
+		<dep from="21" to="26" type="prep"/>
+		<dep from="29" to="27" type="det"/>
+		<dep from="29" to="28" type="compound"/>
+		<dep from="26" to="29" type="pobj"/>
+		<dep from="10" to="30" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Inspecting">

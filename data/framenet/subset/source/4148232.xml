@@ -2,39 +2,75 @@
 <command id="4148232">
 	<sentence>&quot; Yes , &quot; he reported , after a short examination of the grass bed , &quot; a number twelve shoe , I should say .</sentence>
 	<tokens>
-		<token id="1" lemma="Yes" pos="rb" surface="Yes"/>
-		<token id="2" lemma="he" pos="PRP" surface="he"/>
-		<token id="3" lemma="reported" pos="VBD" surface="reported"/>
-		<token id="4" lemma="after" pos="in" surface="after"/>
-		<token id="5" lemma="a" pos="dt" surface="a"/>
-		<token id="6" lemma="short" pos="jj" surface="short"/>
-		<token id="7" lemma="examination" pos="nn" surface="examination"/>
-		<token id="8" lemma="of" pos="in" surface="of"/>
-		<token id="9" lemma="the" pos="dt" surface="the"/>
-		<token id="10" lemma="grass" pos="nn" surface="grass"/>
-		<token id="11" lemma="bed" pos="nn" surface="bed"/>
-		<token id="12" lemma="a" pos="dt" surface="a"/>
-		<token id="13" lemma="number" pos="nn" surface="number"/>
-		<token id="14" lemma="twelve" pos="nn" surface="twelve"/>
-		<token id="15" lemma="shoe" pos="nn" surface="shoe"/>
-		<token id="16" lemma="I" pos="PRP" surface="I"/>
-		<token id="17" lemma="should" pos="md" surface="should"/>
-		<token id="18" lemma="say" pos="vb" surface="say"/>
+		<token id="1" lemma="&quot;" pos="``" surface="&quot;"/>
+		<token id="2" lemma="yes" pos="UH" surface="Yes"/>
+		<token id="3" lemma="," pos="," surface=","/>
+		<token id="4" lemma="&quot;" pos="''" surface="&quot;"/>
+		<token id="5" lemma="-PRON-" pos="PRP" surface="he"/>
+		<token id="6" lemma="report" pos="VBD" surface="reported"/>
+		<token id="7" lemma="," pos="," surface=","/>
+		<token id="8" lemma="after" pos="IN" surface="after"/>
+		<token id="9" lemma="a" pos="DT" surface="a"/>
+		<token id="10" lemma="short" pos="JJ" surface="short"/>
+		<token id="11" lemma="examination" pos="NN" surface="examination"/>
+		<token id="12" lemma="of" pos="IN" surface="of"/>
+		<token id="13" lemma="the" pos="DT" surface="the"/>
+		<token id="14" lemma="grass" pos="NN" surface="grass"/>
+		<token id="15" lemma="bed" pos="NN" surface="bed"/>
+		<token id="16" lemma="," pos="," surface=","/>
+		<token id="17" lemma="&quot;" pos="''" surface="&quot;"/>
+		<token id="18" lemma="a" pos="DT" surface="a"/>
+		<token id="19" lemma="number" pos="NN" surface="number"/>
+		<token id="20" lemma="twelve" pos="CD" surface="twelve"/>
+		<token id="21" lemma="shoe" pos="NN" surface="shoe"/>
+		<token id="22" lemma="," pos="," surface=","/>
+		<token id="23" lemma="-PRON-" pos="PRP" surface="I"/>
+		<token id="24" lemma="should" pos="MD" surface="should"/>
+		<token id="25" lemma="say" pos="VB" surface="say"/>
+		<token id="26" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="25" to="1" type="punct"/>
+		<dep from="25" to="2" type="intj"/>
+		<dep from="6" to="3" type="punct"/>
+		<dep from="6" to="4" type="punct"/>
+		<dep from="6" to="5" type="nsubj"/>
+		<dep from="21" to="6" type="parataxis"/>
+		<dep from="6" to="7" type="punct"/>
+		<dep from="6" to="8" type="prep"/>
+		<dep from="11" to="9" type="det"/>
+		<dep from="11" to="10" type="amod"/>
+		<dep from="8" to="11" type="pobj"/>
+		<dep from="11" to="12" type="prep"/>
+		<dep from="15" to="13" type="det"/>
+		<dep from="15" to="14" type="compound"/>
+		<dep from="12" to="15" type="pobj"/>
+		<dep from="6" to="16" type="punct"/>
+		<dep from="21" to="17" type="punct"/>
+		<dep from="21" to="18" type="det"/>
+		<dep from="21" to="19" type="nmod"/>
+		<dep from="19" to="20" type="nummod"/>
+		<dep from="2" to="21" type="intj"/>
+		<dep from="25" to="22" type="punct"/>
+		<dep from="25" to="23" type="nsubj"/>
+		<dep from="25" to="24" type="aux"/>
+		<dep from="0" to="25" type="root"/>
+		<dep from="25" to="26" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Searching">
 				<lexicalUnit>
-					<token id="7"/>
+					<token id="11"/>
 				</lexicalUnit>
 				<frameElement type="Cognizer">
-					<token id="2"/>
+					<token id="5"/>
 				</frameElement>
 				<frameElement type="Ground">
-					<token id="8"/>
-					<token id="9"/>
-					<token id="10"/>
-					<token id="11"/>
+					<token id="12"/>
+					<token id="13"/>
+					<token id="14"/>
+					<token id="15"/>
 				</frameElement>
 			</frame>
 		</frameSemantics>

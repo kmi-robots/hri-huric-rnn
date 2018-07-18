@@ -2,28 +2,51 @@
 <command id="4101172">
 	<sentence>They eventually reached the islands , and founded colonies on the islands in the northernmost part of the Aegean Sea .</sentence>
 	<tokens>
-		<token id="1" lemma="They" pos="PP" surface="They"/>
-		<token id="2" lemma="eventually" pos="rb" surface="eventually"/>
-		<token id="3" lemma="reached" pos="VVD" surface="reached"/>
-		<token id="4" lemma="the" pos="dt" surface="the"/>
-		<token id="5" lemma="islands" pos="nns" surface="islands"/>
+		<token id="1" lemma="-PRON-" pos="PRP" surface="They"/>
+		<token id="2" lemma="eventually" pos="RB" surface="eventually"/>
+		<token id="3" lemma="reach" pos="VBD" surface="reached"/>
+		<token id="4" lemma="the" pos="DT" surface="the"/>
+		<token id="5" lemma="island" pos="NNS" surface="islands"/>
 		<token id="6" lemma="," pos="," surface=","/>
-		<token id="7" lemma="and" pos="cc" surface="and"/>
-		<token id="8" lemma="founded" pos="VVD" surface="founded"/>
-		<token id="9" lemma="colonies" pos="nns" surface="colonies"/>
-		<token id="10" lemma="on" pos="in" surface="on"/>
-		<token id="11" lemma="the" pos="dt" surface="the"/>
-		<token id="12" lemma="islands" pos="nns" surface="islands"/>
-		<token id="13" lemma="in" pos="in" surface="in"/>
-		<token id="14" lemma="the" pos="dt" surface="the"/>
-		<token id="15" lemma="northernmost" pos="jj" surface="northernmost"/>
-		<token id="16" lemma="part" pos="nn" surface="part"/>
-		<token id="17" lemma="of" pos="in" surface="of"/>
-		<token id="18" lemma="the" pos="dt" surface="the"/>
-		<token id="19" lemma="Aegean" pos="NP" surface="Aegean"/>
-		<token id="20" lemma="Sea" pos="NP" surface="Sea"/>
-		<token id="21" lemma="." pos="sent" surface="."/>
+		<token id="7" lemma="and" pos="CC" surface="and"/>
+		<token id="8" lemma="found" pos="VBD" surface="founded"/>
+		<token id="9" lemma="colony" pos="NNS" surface="colonies"/>
+		<token id="10" lemma="on" pos="IN" surface="on"/>
+		<token id="11" lemma="the" pos="DT" surface="the"/>
+		<token id="12" lemma="island" pos="NNS" surface="islands"/>
+		<token id="13" lemma="in" pos="IN" surface="in"/>
+		<token id="14" lemma="the" pos="DT" surface="the"/>
+		<token id="15" lemma="northernmost" pos="JJ" surface="northernmost"/>
+		<token id="16" lemma="part" pos="NN" surface="part"/>
+		<token id="17" lemma="of" pos="IN" surface="of"/>
+		<token id="18" lemma="the" pos="DT" surface="the"/>
+		<token id="19" lemma="aegean" pos="NNP" surface="Aegean"/>
+		<token id="20" lemma="sea" pos="NNP" surface="Sea"/>
+		<token id="21" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="nsubj"/>
+		<dep from="3" to="2" type="advmod"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="5" to="4" type="det"/>
+		<dep from="3" to="5" type="dobj"/>
+		<dep from="3" to="6" type="punct"/>
+		<dep from="3" to="7" type="cc"/>
+		<dep from="3" to="8" type="conj"/>
+		<dep from="8" to="9" type="dobj"/>
+		<dep from="8" to="10" type="prep"/>
+		<dep from="12" to="11" type="det"/>
+		<dep from="10" to="12" type="pobj"/>
+		<dep from="12" to="13" type="prep"/>
+		<dep from="16" to="14" type="det"/>
+		<dep from="16" to="15" type="amod"/>
+		<dep from="13" to="16" type="pobj"/>
+		<dep from="16" to="17" type="prep"/>
+		<dep from="20" to="18" type="det"/>
+		<dep from="20" to="19" type="compound"/>
+		<dep from="17" to="20" type="pobj"/>
+		<dep from="3" to="21" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

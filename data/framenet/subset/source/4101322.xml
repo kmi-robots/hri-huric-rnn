@@ -2,30 +2,55 @@
 <command id="4101322">
 	<sentence>U.S. Congressman Tony Hall arrived here Sunday evening , becoming the first U.S. lawmaker to visit Iraq since the 1991 Gulf War .</sentence>
 	<tokens>
-		<token id="1" lemma="U.S." pos="NP" surface="U.S."/>
-		<token id="2" lemma="Congressman" pos="NP" surface="Congressman"/>
-		<token id="3" lemma="Tony" pos="NP" surface="Tony"/>
-		<token id="4" lemma="Hall" pos="NP" surface="Hall"/>
-		<token id="5" lemma="arrived" pos="VVD" surface="arrived"/>
-		<token id="6" lemma="here" pos="rb" surface="here"/>
-		<token id="7" lemma="Sunday" pos="NP" surface="Sunday"/>
-		<token id="8" lemma="evening" pos="nn" surface="evening"/>
+		<token id="1" lemma="u.s." pos="NNP" surface="U.S."/>
+		<token id="2" lemma="congressman" pos="NNP" surface="Congressman"/>
+		<token id="3" lemma="tony" pos="NNP" surface="Tony"/>
+		<token id="4" lemma="hall" pos="NNP" surface="Hall"/>
+		<token id="5" lemma="arrive" pos="VBD" surface="arrived"/>
+		<token id="6" lemma="here" pos="RB" surface="here"/>
+		<token id="7" lemma="sunday" pos="NNP" surface="Sunday"/>
+		<token id="8" lemma="evening" pos="NN" surface="evening"/>
 		<token id="9" lemma="," pos="," surface=","/>
-		<token id="10" lemma="becoming" pos="VVG" surface="becoming"/>
-		<token id="11" lemma="the" pos="dt" surface="the"/>
-		<token id="12" lemma="first" pos="jj" surface="first"/>
-		<token id="13" lemma="U.S." pos="NP" surface="U.S."/>
-		<token id="14" lemma="lawmaker" pos="nn" surface="lawmaker"/>
-		<token id="15" lemma="to" pos="to" surface="to"/>
-		<token id="16" lemma="visit" pos="VV" surface="visit"/>
-		<token id="17" lemma="Iraq" pos="NP" surface="Iraq"/>
-		<token id="18" lemma="since" pos="in" surface="since"/>
-		<token id="19" lemma="the" pos="dt" surface="the"/>
-		<token id="20" lemma="1991" pos="cd" surface="1991"/>
-		<token id="21" lemma="Gulf" pos="NP" surface="Gulf"/>
-		<token id="22" lemma="War" pos="NP" surface="War"/>
-		<token id="23" lemma="." pos="sent" surface="."/>
+		<token id="10" lemma="become" pos="VBG" surface="becoming"/>
+		<token id="11" lemma="the" pos="DT" surface="the"/>
+		<token id="12" lemma="first" pos="JJ" surface="first"/>
+		<token id="13" lemma="u.s." pos="NNP" surface="U.S."/>
+		<token id="14" lemma="lawmaker" pos="NN" surface="lawmaker"/>
+		<token id="15" lemma="to" pos="TO" surface="to"/>
+		<token id="16" lemma="visit" pos="VB" surface="visit"/>
+		<token id="17" lemma="iraq" pos="NNP" surface="Iraq"/>
+		<token id="18" lemma="since" pos="IN" surface="since"/>
+		<token id="19" lemma="the" pos="DT" surface="the"/>
+		<token id="20" lemma="1991" pos="CD" surface="1991"/>
+		<token id="21" lemma="gulf" pos="NNP" surface="Gulf"/>
+		<token id="22" lemma="war" pos="NNP" surface="War"/>
+		<token id="23" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="compound"/>
+		<dep from="4" to="2" type="compound"/>
+		<dep from="4" to="3" type="compound"/>
+		<dep from="5" to="4" type="nsubj"/>
+		<dep from="0" to="5" type="root"/>
+		<dep from="5" to="6" type="advmod"/>
+		<dep from="8" to="7" type="compound"/>
+		<dep from="5" to="8" type="npadvmod"/>
+		<dep from="5" to="9" type="punct"/>
+		<dep from="5" to="10" type="advcl"/>
+		<dep from="14" to="11" type="det"/>
+		<dep from="14" to="12" type="amod"/>
+		<dep from="14" to="13" type="compound"/>
+		<dep from="10" to="14" type="attr"/>
+		<dep from="16" to="15" type="aux"/>
+		<dep from="14" to="16" type="acl"/>
+		<dep from="16" to="17" type="dobj"/>
+		<dep from="16" to="18" type="prep"/>
+		<dep from="22" to="19" type="det"/>
+		<dep from="22" to="20" type="nummod"/>
+		<dep from="22" to="21" type="compound"/>
+		<dep from="18" to="22" type="pobj"/>
+		<dep from="5" to="23" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

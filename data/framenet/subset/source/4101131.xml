@@ -2,20 +2,35 @@
 <command id="4101131">
 	<sentence>That would change dramatically with the 1966 arrival of billionaire Howard Hughes .</sentence>
 	<tokens>
-		<token id="1" lemma="That" pos="dt" surface="That"/>
-		<token id="2" lemma="would" pos="md" surface="would"/>
-		<token id="3" lemma="change" pos="VV" surface="change"/>
-		<token id="4" lemma="dramatically" pos="rb" surface="dramatically"/>
-		<token id="5" lemma="with" pos="in" surface="with"/>
-		<token id="6" lemma="the" pos="dt" surface="the"/>
-		<token id="7" lemma="1966" pos="cd" surface="1966"/>
-		<token id="8" lemma="arrival" pos="nn" surface="arrival"/>
-		<token id="9" lemma="of" pos="in" surface="of"/>
-		<token id="10" lemma="billionaire" pos="nn" surface="billionaire"/>
-		<token id="11" lemma="Howard" pos="NP" surface="Howard"/>
-		<token id="12" lemma="Hughes" pos="NP" surface="Hughes"/>
-		<token id="13" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="that" pos="DT" surface="That"/>
+		<token id="2" lemma="would" pos="MD" surface="would"/>
+		<token id="3" lemma="change" pos="VB" surface="change"/>
+		<token id="4" lemma="dramatically" pos="RB" surface="dramatically"/>
+		<token id="5" lemma="with" pos="IN" surface="with"/>
+		<token id="6" lemma="the" pos="DT" surface="the"/>
+		<token id="7" lemma="1966" pos="CD" surface="1966"/>
+		<token id="8" lemma="arrival" pos="NN" surface="arrival"/>
+		<token id="9" lemma="of" pos="IN" surface="of"/>
+		<token id="10" lemma="billionaire" pos="NN" surface="billionaire"/>
+		<token id="11" lemma="howard" pos="NNP" surface="Howard"/>
+		<token id="12" lemma="hughes" pos="NNP" surface="Hughes"/>
+		<token id="13" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="nsubj"/>
+		<dep from="3" to="2" type="aux"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="3" to="4" type="advmod"/>
+		<dep from="3" to="5" type="prep"/>
+		<dep from="8" to="6" type="det"/>
+		<dep from="8" to="7" type="nummod"/>
+		<dep from="5" to="8" type="pobj"/>
+		<dep from="8" to="9" type="prep"/>
+		<dep from="9" to="10" type="pobj"/>
+		<dep from="12" to="11" type="compound"/>
+		<dep from="10" to="12" type="appos"/>
+		<dep from="3" to="13" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

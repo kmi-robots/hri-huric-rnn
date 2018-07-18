@@ -2,14 +2,23 @@
 <command id="4103910">
 	<sentence>It comes out to meet you .</sentence>
 	<tokens>
-		<token id="1" lemma="It" pos="PP" surface="It"/>
-		<token id="2" lemma="comes" pos="VVZ" surface="comes"/>
-		<token id="3" lemma="out" pos="rp" surface="out"/>
-		<token id="4" lemma="to" pos="to" surface="to"/>
-		<token id="5" lemma="meet" pos="VV" surface="meet"/>
-		<token id="6" lemma="you" pos="PP" surface="you"/>
-		<token id="7" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="-PRON-" pos="PRP" surface="It"/>
+		<token id="2" lemma="come" pos="VBZ" surface="comes"/>
+		<token id="3" lemma="out" pos="RP" surface="out"/>
+		<token id="4" lemma="to" pos="TO" surface="to"/>
+		<token id="5" lemma="meet" pos="VB" surface="meet"/>
+		<token id="6" lemma="-PRON-" pos="PRP" surface="you"/>
+		<token id="7" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="nsubj"/>
+		<dep from="0" to="2" type="root"/>
+		<dep from="2" to="3" type="prt"/>
+		<dep from="5" to="4" type="aux"/>
+		<dep from="2" to="5" type="advcl"/>
+		<dep from="5" to="6" type="dobj"/>
+		<dep from="2" to="7" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

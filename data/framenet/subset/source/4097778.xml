@@ -2,31 +2,57 @@
 <command id="4097778">
 	<sentence>In wartime , formulated agents would have been loaded into a variety of delivery systems , including aerial bombs and ballistic missile warheads .</sentence>
 	<tokens>
-		<token id="1" lemma="In" pos="in" surface="In"/>
-		<token id="2" lemma="wartime" pos="nn" surface="wartime"/>
+		<token id="1" lemma="in" pos="IN" surface="In"/>
+		<token id="2" lemma="wartime" pos="JJ" surface="wartime"/>
 		<token id="3" lemma="," pos="," surface=","/>
-		<token id="4" lemma="formulated" pos="VVN" surface="formulated"/>
-		<token id="5" lemma="agents" pos="nns" surface="agents"/>
-		<token id="6" lemma="would" pos="md" surface="would"/>
-		<token id="7" lemma="have" pos="VH" surface="have"/>
-		<token id="8" lemma="been" pos="VBN" surface="been"/>
-		<token id="9" lemma="loaded" pos="VVN" surface="loaded"/>
-		<token id="10" lemma="into" pos="in" surface="into"/>
-		<token id="11" lemma="a" pos="dt" surface="a"/>
-		<token id="12" lemma="variety" pos="nn" surface="variety"/>
-		<token id="13" lemma="of" pos="in" surface="of"/>
-		<token id="14" lemma="delivery" pos="nn" surface="delivery"/>
-		<token id="15" lemma="systems" pos="nns" surface="systems"/>
+		<token id="4" lemma="formulate" pos="VBN" surface="formulated"/>
+		<token id="5" lemma="agent" pos="NNS" surface="agents"/>
+		<token id="6" lemma="would" pos="MD" surface="would"/>
+		<token id="7" lemma="have" pos="VB" surface="have"/>
+		<token id="8" lemma="be" pos="VBN" surface="been"/>
+		<token id="9" lemma="load" pos="VBN" surface="loaded"/>
+		<token id="10" lemma="into" pos="IN" surface="into"/>
+		<token id="11" lemma="a" pos="DT" surface="a"/>
+		<token id="12" lemma="variety" pos="NN" surface="variety"/>
+		<token id="13" lemma="of" pos="IN" surface="of"/>
+		<token id="14" lemma="delivery" pos="NN" surface="delivery"/>
+		<token id="15" lemma="system" pos="NNS" surface="systems"/>
 		<token id="16" lemma="," pos="," surface=","/>
-		<token id="17" lemma="including" pos="VVG" surface="including"/>
-		<token id="18" lemma="aerial" pos="jj" surface="aerial"/>
-		<token id="19" lemma="bombs" pos="nns" surface="bombs"/>
-		<token id="20" lemma="and" pos="cc" surface="and"/>
-		<token id="21" lemma="ballistic" pos="jj" surface="ballistic"/>
-		<token id="22" lemma="missile" pos="nn" surface="missile"/>
-		<token id="23" lemma="warheads" pos="nns" surface="warheads"/>
-		<token id="24" lemma="." pos="sent" surface="."/>
+		<token id="17" lemma="include" pos="VBG" surface="including"/>
+		<token id="18" lemma="aerial" pos="JJ" surface="aerial"/>
+		<token id="19" lemma="bomb" pos="NNS" surface="bombs"/>
+		<token id="20" lemma="and" pos="CC" surface="and"/>
+		<token id="21" lemma="ballistic" pos="JJ" surface="ballistic"/>
+		<token id="22" lemma="missile" pos="NN" surface="missile"/>
+		<token id="23" lemma="warhead" pos="NNS" surface="warheads"/>
+		<token id="24" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="9" to="1" type="prep"/>
+		<dep from="1" to="2" type="pobj"/>
+		<dep from="9" to="3" type="punct"/>
+		<dep from="5" to="4" type="amod"/>
+		<dep from="9" to="5" type="nsubjpass"/>
+		<dep from="9" to="6" type="aux"/>
+		<dep from="9" to="7" type="aux"/>
+		<dep from="9" to="8" type="auxpass"/>
+		<dep from="0" to="9" type="root"/>
+		<dep from="9" to="10" type="prep"/>
+		<dep from="12" to="11" type="det"/>
+		<dep from="10" to="12" type="pobj"/>
+		<dep from="12" to="13" type="prep"/>
+		<dep from="15" to="14" type="compound"/>
+		<dep from="13" to="15" type="pobj"/>
+		<dep from="15" to="16" type="punct"/>
+		<dep from="15" to="17" type="prep"/>
+		<dep from="19" to="18" type="amod"/>
+		<dep from="17" to="19" type="pobj"/>
+		<dep from="19" to="20" type="cc"/>
+		<dep from="23" to="21" type="amod"/>
+		<dep from="23" to="22" type="compound"/>
+		<dep from="19" to="23" type="conj"/>
+		<dep from="9" to="24" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Placing">

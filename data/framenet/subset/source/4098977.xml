@@ -2,25 +2,45 @@
 <command id="4098977">
 	<sentence>The stimulus package will jumpstart the economy and make sure it does n't slide into recession again .</sentence>
 	<tokens>
-		<token id="1" lemma="The" pos="dt" surface="The"/>
-		<token id="2" lemma="stimulus" pos="nn" surface="stimulus"/>
-		<token id="3" lemma="package" pos="nn" surface="package"/>
-		<token id="4" lemma="will" pos="md" surface="will"/>
-		<token id="5" lemma="jumpstart" pos="VV" surface="jumpstart"/>
-		<token id="6" lemma="the" pos="dt" surface="the"/>
-		<token id="7" lemma="economy" pos="nn" surface="economy"/>
-		<token id="8" lemma="and" pos="cc" surface="and"/>
-		<token id="9" lemma="make" pos="VV" surface="make"/>
-		<token id="10" lemma="sure" pos="jj" surface="sure"/>
-		<token id="11" lemma="it" pos="PP" surface="it"/>
-		<token id="12" lemma="does" pos="VVZ" surface="does"/>
-		<token id="13" lemma="n't" pos="rb" surface="n't"/>
-		<token id="14" lemma="slide" pos="VV" surface="slide"/>
-		<token id="15" lemma="into" pos="in" surface="into"/>
-		<token id="16" lemma="recession" pos="nn" surface="recession"/>
-		<token id="17" lemma="again" pos="rb" surface="again"/>
-		<token id="18" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="the" pos="DT" surface="The"/>
+		<token id="2" lemma="stimulus" pos="NN" surface="stimulus"/>
+		<token id="3" lemma="package" pos="NN" surface="package"/>
+		<token id="4" lemma="will" pos="MD" surface="will"/>
+		<token id="5" lemma="jumpstart" pos="VB" surface="jumpstart"/>
+		<token id="6" lemma="the" pos="DT" surface="the"/>
+		<token id="7" lemma="economy" pos="NN" surface="economy"/>
+		<token id="8" lemma="and" pos="CC" surface="and"/>
+		<token id="9" lemma="make" pos="VB" surface="make"/>
+		<token id="10" lemma="sure" pos="JJ" surface="sure"/>
+		<token id="11" lemma="-PRON-" pos="PRP" surface="it"/>
+		<token id="12" lemma="do" pos="VBZ" surface="does"/>
+		<token id="13" lemma="n't" pos="RB" surface="n't"/>
+		<token id="14" lemma="slide" pos="VB" surface="slide"/>
+		<token id="15" lemma="into" pos="IN" surface="into"/>
+		<token id="16" lemma="recession" pos="NN" surface="recession"/>
+		<token id="17" lemma="again" pos="RB" surface="again"/>
+		<token id="18" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="det"/>
+		<dep from="3" to="2" type="amod"/>
+		<dep from="5" to="3" type="nsubj"/>
+		<dep from="5" to="4" type="aux"/>
+		<dep from="0" to="5" type="root"/>
+		<dep from="7" to="6" type="det"/>
+		<dep from="5" to="7" type="dobj"/>
+		<dep from="5" to="8" type="cc"/>
+		<dep from="5" to="9" type="conj"/>
+		<dep from="9" to="10" type="ccomp"/>
+		<dep from="14" to="11" type="nsubj"/>
+		<dep from="14" to="12" type="aux"/>
+		<dep from="14" to="13" type="neg"/>
+		<dep from="10" to="14" type="ccomp"/>
+		<dep from="14" to="15" type="prep"/>
+		<dep from="15" to="16" type="pobj"/>
+		<dep from="14" to="17" type="advmod"/>
+		<dep from="5" to="18" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Motion">

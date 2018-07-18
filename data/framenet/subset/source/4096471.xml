@@ -2,54 +2,89 @@
 <command id="4096471">
 	<sentence>North Korea signed the Treaty on the Non-Proliferation of Nuclear Weapons ( NPT ) in 1985 but did not submit to International Atomic Energy Agency ( IAEA ) inspections until May 1992 . </sentence>
 	<tokens>
-		<token id="1" lemma="signed" pos="VVD" surface="signed"/>
-		<token id="2" lemma="the" pos="dt" surface="the"/>
-		<token id="3" lemma="(" pos="(" surface="("/>
-		<token id="4" lemma="NPT" pos="NNP" surface="NPT"/>
-		<token id="5" lemma=")" pos=")" surface=")"/>
-		<token id="6" lemma="in" pos="in" surface="in"/>
-		<token id="7" lemma="but" pos="cc" surface="but"/>
-		<token id="8" lemma="submit" pos="VV" surface="submit"/>
-		<token id="9" lemma="to" pos="to" surface="to"/>
-		<token id="10" lemma="(" pos="(" surface="("/>
-		<token id="11" lemma=")" pos=")" surface=")"/>
-		<token id="12" lemma="inspections" pos="nns" surface="inspections"/>
-		<token id="13" lemma="." pos="sent" surface="."/>
-		<token id="14" lemma="North" pos="NNP" surface="North"/>
-		<token id="15" lemma="Korea" pos="NNP" surface="Korea"/>
-		<token id="16" lemma="Treaty" pos="nn" surface="Treaty"/>
-		<token id="17" lemma="Nuclear" pos="jj" surface="Nuclear"/>
-		<token id="18" lemma="Weapons" pos="nns" surface="Weapons"/>
-		<token id="19" lemma="the" pos="dt" surface="the"/>
-		<token id="20" lemma="on" pos="in" surface="on"/>
-		<token id="21" lemma="Non-Proliferation" pos="nn" surface="Non-Proliferation"/>
-		<token id="22" lemma="of" pos="in" surface="of"/>
-		<token id="23" lemma="1985" pos="cd" surface="1985"/>
-		<token id="24" lemma="did" pos="VVD" surface="did"/>
-		<token id="25" lemma="not" pos="rb" surface="not"/>
-		<token id="26" lemma="International" pos="jj" surface="International"/>
-		<token id="27" lemma="Atomic" pos="jj" surface="Atomic"/>
-		<token id="28" lemma="Energy" pos="nn" surface="Energy"/>
-		<token id="29" lemma="Agency" pos="nn" surface="Agency"/>
-		<token id="30" lemma="IAEA" pos="NNP" surface="IAEA"/>
-		<token id="31" lemma="until" pos="in" surface="until"/>
-		<token id="32" lemma="May" pos="NNP" surface="May"/>
-		<token id="33" lemma="1992" pos="cd" surface="1992"/>
+		<token id="1" lemma="north" pos="NNP" surface="North"/>
+		<token id="2" lemma="korea" pos="NNP" surface="Korea"/>
+		<token id="3" lemma="sign" pos="VBD" surface="signed"/>
+		<token id="4" lemma="the" pos="DT" surface="the"/>
+		<token id="5" lemma="treaty" pos="NNP" surface="Treaty"/>
+		<token id="6" lemma="on" pos="IN" surface="on"/>
+		<token id="7" lemma="the" pos="DT" surface="the"/>
+		<token id="8" lemma="non-proliferation" pos="NNP" surface="Non-Proliferation"/>
+		<token id="9" lemma="of" pos="IN" surface="of"/>
+		<token id="10" lemma="nuclear" pos="NNP" surface="Nuclear"/>
+		<token id="11" lemma="weapons" pos="NNPS" surface="Weapons"/>
+		<token id="12" lemma="(" pos="-LRB-" surface="("/>
+		<token id="13" lemma="npt" pos="NNP" surface="NPT"/>
+		<token id="14" lemma=")" pos="-RRB-" surface=")"/>
+		<token id="15" lemma="in" pos="IN" surface="in"/>
+		<token id="16" lemma="1985" pos="CD" surface="1985"/>
+		<token id="17" lemma="but" pos="CC" surface="but"/>
+		<token id="18" lemma="do" pos="VBD" surface="did"/>
+		<token id="19" lemma="not" pos="RB" surface="not"/>
+		<token id="20" lemma="submit" pos="VB" surface="submit"/>
+		<token id="21" lemma="to" pos="IN" surface="to"/>
+		<token id="22" lemma="international" pos="NNP" surface="International"/>
+		<token id="23" lemma="atomic" pos="NNP" surface="Atomic"/>
+		<token id="24" lemma="energy" pos="NNP" surface="Energy"/>
+		<token id="25" lemma="agency" pos="NNP" surface="Agency"/>
+		<token id="26" lemma="(" pos="-LRB-" surface="("/>
+		<token id="27" lemma="iaea" pos="NNP" surface="IAEA"/>
+		<token id="28" lemma=")" pos="-RRB-" surface=")"/>
+		<token id="29" lemma="inspection" pos="NNS" surface="inspections"/>
+		<token id="30" lemma="until" pos="IN" surface="until"/>
+		<token id="31" lemma="may" pos="NNP" surface="May"/>
+		<token id="32" lemma="1992" pos="CD" surface="1992"/>
+		<token id="33" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="compound"/>
+		<dep from="3" to="2" type="nsubj"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="5" to="4" type="det"/>
+		<dep from="3" to="5" type="dobj"/>
+		<dep from="5" to="6" type="prep"/>
+		<dep from="8" to="7" type="det"/>
+		<dep from="6" to="8" type="pobj"/>
+		<dep from="8" to="9" type="prep"/>
+		<dep from="11" to="10" type="compound"/>
+		<dep from="9" to="11" type="pobj"/>
+		<dep from="13" to="12" type="punct"/>
+		<dep from="5" to="13" type="appos"/>
+		<dep from="13" to="14" type="punct"/>
+		<dep from="3" to="15" type="prep"/>
+		<dep from="15" to="16" type="pobj"/>
+		<dep from="3" to="17" type="cc"/>
+		<dep from="20" to="18" type="aux"/>
+		<dep from="20" to="19" type="neg"/>
+		<dep from="3" to="20" type="conj"/>
+		<dep from="20" to="21" type="prep"/>
+		<dep from="25" to="22" type="nmod"/>
+		<dep from="24" to="23" type="compound"/>
+		<dep from="25" to="24" type="compound"/>
+		<dep from="29" to="25" type="nmod"/>
+		<dep from="29" to="26" type="punct"/>
+		<dep from="29" to="27" type="nmod"/>
+		<dep from="29" to="28" type="punct"/>
+		<dep from="21" to="29" type="pobj"/>
+		<dep from="20" to="30" type="prep"/>
+		<dep from="30" to="31" type="pobj"/>
+		<dep from="31" to="32" type="nummod"/>
+		<dep from="3" to="33" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Inspecting">
 				<lexicalUnit>
-					<token id="12"/>
+					<token id="29"/>
 				</lexicalUnit>
 				<frameElement type="Inspector">
-					<token id="10"/>
-					<token id="11"/>
+					<token id="22"/>
+					<token id="23"/>
+					<token id="24"/>
+					<token id="25"/>
 					<token id="26"/>
 					<token id="27"/>
 					<token id="28"/>
-					<token id="29"/>
-					<token id="30"/>
 				</frameElement>
 			</frame>
 		</frameSemantics>

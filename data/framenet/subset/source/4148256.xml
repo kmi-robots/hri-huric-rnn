@@ -2,33 +2,62 @@
 <command id="4148256">
 	<sentence>&quot; Very interesting - very interesting , indeed ! &quot; said Holmes , peering at this sinister relic .</sentence>
 	<tokens>
-		<token id="1" lemma="Very" pos="jj" surface="Very"/>
-		<token id="2" lemma="interesting" pos="jj" surface="interesting"/>
-		<token id="3" lemma="very" pos="rb" surface="very"/>
-		<token id="4" lemma="interesting" pos="jj" surface="interesting"/>
-		<token id="5" lemma="indeed" pos="rb" surface="indeed"/>
-		<token id="6" lemma="said" pos="VBD" surface="said"/>
-		<token id="7" lemma="Holmes" pos="NNP" surface="Holmes"/>
-		<token id="8" lemma="peering" pos="VBG" surface="peering"/>
-		<token id="9" lemma="at" pos="in" surface="at"/>
-		<token id="10" lemma="this" pos="dt" surface="this"/>
-		<token id="11" lemma="sinister" pos="jj" surface="sinister"/>
-		<token id="12" lemma="relic" pos="nn" surface="relic"/>
+		<token id="1" lemma="&quot;" pos="``" surface="&quot;"/>
+		<token id="2" lemma="very" pos="RB" surface="Very"/>
+		<token id="3" lemma="interesting" pos="JJ" surface="interesting"/>
+		<token id="4" lemma="-" pos="HYPH" surface="-"/>
+		<token id="5" lemma="very" pos="RB" surface="very"/>
+		<token id="6" lemma="interesting" pos="JJ" surface="interesting"/>
+		<token id="7" lemma="," pos="," surface=","/>
+		<token id="8" lemma="indeed" pos="RB" surface="indeed"/>
+		<token id="9" lemma="!" pos="." surface="!"/>
+		<token id="10" lemma="&quot;" pos="''" surface="&quot;"/>
+		<token id="11" lemma="say" pos="VBD" surface="said"/>
+		<token id="12" lemma="holmes" pos="NNP" surface="Holmes"/>
+		<token id="13" lemma="," pos="," surface=","/>
+		<token id="14" lemma="peer" pos="VBG" surface="peering"/>
+		<token id="15" lemma="at" pos="IN" surface="at"/>
+		<token id="16" lemma="this" pos="DT" surface="this"/>
+		<token id="17" lemma="sinister" pos="JJ" surface="sinister"/>
+		<token id="18" lemma="relic" pos="NN" surface="relic"/>
+		<token id="19" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="11" to="1" type="punct"/>
+		<dep from="5" to="2" type="advmod"/>
+		<dep from="5" to="3" type="amod"/>
+		<dep from="5" to="4" type="punct"/>
+		<dep from="6" to="5" type="advmod"/>
+		<dep from="11" to="6" type="ccomp"/>
+		<dep from="6" to="7" type="punct"/>
+		<dep from="6" to="8" type="advmod"/>
+		<dep from="11" to="9" type="punct"/>
+		<dep from="11" to="10" type="punct"/>
+		<dep from="0" to="11" type="root"/>
+		<dep from="11" to="12" type="nsubj"/>
+		<dep from="11" to="13" type="punct"/>
+		<dep from="11" to="14" type="advcl"/>
+		<dep from="14" to="15" type="prep"/>
+		<dep from="18" to="16" type="det"/>
+		<dep from="18" to="17" type="compound"/>
+		<dep from="15" to="18" type="pobj"/>
+		<dep from="11" to="19" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Perception_active">
 				<lexicalUnit>
-					<token id="8"/>
+					<token id="14"/>
 				</lexicalUnit>
 				<frameElement type="Perceiver_agentive">
-					<token id="7"/>
+					<token id="12"/>
 				</frameElement>
 				<frameElement type="Phenomenon">
-					<token id="9"/>
-					<token id="10"/>
-					<token id="11"/>
-					<token id="12"/>
+					<token id="15"/>
+					<token id="16"/>
+					<token id="17"/>
+					<token id="18"/>
+					<token id="19"/>
 				</frameElement>
 			</frame>
 		</frameSemantics>

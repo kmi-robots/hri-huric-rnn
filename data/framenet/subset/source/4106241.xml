@@ -2,10 +2,15 @@
 <command id="4106241">
 	<sentence>Arriving in Guangzhou</sentence>
 	<tokens>
-		<token id="1" lemma="Arriving" pos="VVG" surface="Arriving"/>
-		<token id="2" lemma="in" pos="in" surface="in"/>
-		<token id="3" lemma="Guangzhou" pos="NP" surface="Guangzhou"/>
+		<token id="1" lemma="arrive" pos="VBG" surface="Arriving"/>
+		<token id="2" lemma="in" pos="IN" surface="in"/>
+		<token id="3" lemma="guangzhou" pos="NNP" surface="Guangzhou"/>
 	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="1" to="2" type="prep"/>
+		<dep from="2" to="3" type="pobj"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

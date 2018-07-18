@@ -2,25 +2,45 @@
 <command id="4101034">
 	<sentence>Many springs lay in areas that would eventually become the center of the modern Las Vegas metropolis .</sentence>
 	<tokens>
-		<token id="1" lemma="Many" pos="jj" surface="Many"/>
-		<token id="2" lemma="springs" pos="nns" surface="springs"/>
-		<token id="3" lemma="lay" pos="VVD" surface="lay"/>
-		<token id="4" lemma="in" pos="in" surface="in"/>
-		<token id="5" lemma="areas" pos="nns" surface="areas"/>
-		<token id="6" lemma="that" pos="wdt" surface="that"/>
-		<token id="7" lemma="would" pos="md" surface="would"/>
-		<token id="8" lemma="eventually" pos="rb" surface="eventually"/>
-		<token id="9" lemma="become" pos="VV" surface="become"/>
-		<token id="10" lemma="the" pos="dt" surface="the"/>
-		<token id="11" lemma="center" pos="nn" surface="center"/>
-		<token id="12" lemma="of" pos="in" surface="of"/>
-		<token id="13" lemma="the" pos="dt" surface="the"/>
-		<token id="14" lemma="modern" pos="jj" surface="modern"/>
-		<token id="15" lemma="Las" pos="NP" surface="Las"/>
-		<token id="16" lemma="Vegas" pos="NP" surface="Vegas"/>
-		<token id="17" lemma="metropolis" pos="nn" surface="metropolis"/>
-		<token id="18" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="many" pos="JJ" surface="Many"/>
+		<token id="2" lemma="spring" pos="NNS" surface="springs"/>
+		<token id="3" lemma="lie" pos="VBD" surface="lay"/>
+		<token id="4" lemma="in" pos="IN" surface="in"/>
+		<token id="5" lemma="area" pos="NNS" surface="areas"/>
+		<token id="6" lemma="that" pos="WDT" surface="that"/>
+		<token id="7" lemma="would" pos="MD" surface="would"/>
+		<token id="8" lemma="eventually" pos="RB" surface="eventually"/>
+		<token id="9" lemma="become" pos="VB" surface="become"/>
+		<token id="10" lemma="the" pos="DT" surface="the"/>
+		<token id="11" lemma="center" pos="NN" surface="center"/>
+		<token id="12" lemma="of" pos="IN" surface="of"/>
+		<token id="13" lemma="the" pos="DT" surface="the"/>
+		<token id="14" lemma="modern" pos="JJ" surface="modern"/>
+		<token id="15" lemma="las" pos="NNP" surface="Las"/>
+		<token id="16" lemma="vegas" pos="NNP" surface="Vegas"/>
+		<token id="17" lemma="metropolis" pos="NN" surface="metropolis"/>
+		<token id="18" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="amod"/>
+		<dep from="3" to="2" type="nsubj"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="3" to="4" type="prep"/>
+		<dep from="4" to="5" type="pobj"/>
+		<dep from="9" to="6" type="nsubj"/>
+		<dep from="9" to="7" type="aux"/>
+		<dep from="9" to="8" type="advmod"/>
+		<dep from="5" to="9" type="relcl"/>
+		<dep from="11" to="10" type="det"/>
+		<dep from="9" to="11" type="attr"/>
+		<dep from="11" to="12" type="prep"/>
+		<dep from="17" to="13" type="det"/>
+		<dep from="17" to="14" type="amod"/>
+		<dep from="16" to="15" type="compound"/>
+		<dep from="17" to="16" type="compound"/>
+		<dep from="12" to="17" type="pobj"/>
+		<dep from="3" to="18" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Being_located">

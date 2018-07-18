@@ -2,38 +2,71 @@
 <command id="4099859">
 	<sentence>The MNSR gives Syria the capability to produce neutrons for nuclear analysis , isotopes for industrial applications , and radioisotopes for training purposes , but is unsuitable for weapons production .</sentence>
 	<tokens>
-		<token id="1" lemma="The" pos="dt" surface="The"/>
-		<token id="2" lemma="MNSR" pos="NP" surface="MNSR"/>
-		<token id="3" lemma="gives" pos="VVZ" surface="gives"/>
-		<token id="4" lemma="Syria" pos="NP" surface="Syria"/>
-		<token id="5" lemma="the" pos="dt" surface="the"/>
-		<token id="6" lemma="capability" pos="nn" surface="capability"/>
-		<token id="7" lemma="to" pos="to" surface="to"/>
-		<token id="8" lemma="produce" pos="VV" surface="produce"/>
-		<token id="9" lemma="neutrons" pos="nns" surface="neutrons"/>
-		<token id="10" lemma="for" pos="in" surface="for"/>
-		<token id="11" lemma="nuclear" pos="jj" surface="nuclear"/>
-		<token id="12" lemma="analysis" pos="nn" surface="analysis"/>
+		<token id="1" lemma="the" pos="DT" surface="The"/>
+		<token id="2" lemma="mnsr" pos="NNP" surface="MNSR"/>
+		<token id="3" lemma="give" pos="VBZ" surface="gives"/>
+		<token id="4" lemma="syria" pos="NNP" surface="Syria"/>
+		<token id="5" lemma="the" pos="DT" surface="the"/>
+		<token id="6" lemma="capability" pos="NN" surface="capability"/>
+		<token id="7" lemma="to" pos="TO" surface="to"/>
+		<token id="8" lemma="produce" pos="VB" surface="produce"/>
+		<token id="9" lemma="neutron" pos="NNS" surface="neutrons"/>
+		<token id="10" lemma="for" pos="IN" surface="for"/>
+		<token id="11" lemma="nuclear" pos="JJ" surface="nuclear"/>
+		<token id="12" lemma="analysis" pos="NN" surface="analysis"/>
 		<token id="13" lemma="," pos="," surface=","/>
-		<token id="14" lemma="isotopes" pos="nns" surface="isotopes"/>
-		<token id="15" lemma="for" pos="in" surface="for"/>
-		<token id="16" lemma="industrial" pos="jj" surface="industrial"/>
-		<token id="17" lemma="applications" pos="nns" surface="applications"/>
+		<token id="14" lemma="isotope" pos="NNS" surface="isotopes"/>
+		<token id="15" lemma="for" pos="IN" surface="for"/>
+		<token id="16" lemma="industrial" pos="JJ" surface="industrial"/>
+		<token id="17" lemma="application" pos="NNS" surface="applications"/>
 		<token id="18" lemma="," pos="," surface=","/>
-		<token id="19" lemma="and" pos="cc" surface="and"/>
-		<token id="20" lemma="radioisotopes" pos="nns" surface="radioisotopes"/>
-		<token id="21" lemma="for" pos="in" surface="for"/>
-		<token id="22" lemma="training" pos="nn" surface="training"/>
-		<token id="23" lemma="purposes" pos="nns" surface="purposes"/>
+		<token id="19" lemma="and" pos="CC" surface="and"/>
+		<token id="20" lemma="radioisotope" pos="NNS" surface="radioisotopes"/>
+		<token id="21" lemma="for" pos="IN" surface="for"/>
+		<token id="22" lemma="training" pos="NN" surface="training"/>
+		<token id="23" lemma="purpose" pos="NNS" surface="purposes"/>
 		<token id="24" lemma="," pos="," surface=","/>
-		<token id="25" lemma="but" pos="cc" surface="but"/>
-		<token id="26" lemma="is" pos="VBZ" surface="is"/>
-		<token id="27" lemma="unsuitable" pos="jj" surface="unsuitable"/>
-		<token id="28" lemma="for" pos="in" surface="for"/>
-		<token id="29" lemma="weapons" pos="nns" surface="weapons"/>
-		<token id="30" lemma="production" pos="nn" surface="production"/>
-		<token id="31" lemma="." pos="sent" surface="."/>
+		<token id="25" lemma="but" pos="CC" surface="but"/>
+		<token id="26" lemma="be" pos="VBZ" surface="is"/>
+		<token id="27" lemma="unsuitable" pos="JJ" surface="unsuitable"/>
+		<token id="28" lemma="for" pos="IN" surface="for"/>
+		<token id="29" lemma="weapon" pos="NNS" surface="weapons"/>
+		<token id="30" lemma="production" pos="NN" surface="production"/>
+		<token id="31" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="det"/>
+		<dep from="3" to="2" type="nsubj"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="3" to="4" type="dative"/>
+		<dep from="6" to="5" type="det"/>
+		<dep from="3" to="6" type="dobj"/>
+		<dep from="8" to="7" type="aux"/>
+		<dep from="6" to="8" type="acl"/>
+		<dep from="8" to="9" type="dobj"/>
+		<dep from="9" to="10" type="prep"/>
+		<dep from="12" to="11" type="amod"/>
+		<dep from="10" to="12" type="pobj"/>
+		<dep from="6" to="13" type="punct"/>
+		<dep from="6" to="14" type="conj"/>
+		<dep from="14" to="15" type="prep"/>
+		<dep from="17" to="16" type="amod"/>
+		<dep from="15" to="17" type="pobj"/>
+		<dep from="14" to="18" type="punct"/>
+		<dep from="14" to="19" type="cc"/>
+		<dep from="14" to="20" type="conj"/>
+		<dep from="20" to="21" type="prep"/>
+		<dep from="23" to="22" type="compound"/>
+		<dep from="21" to="23" type="pobj"/>
+		<dep from="3" to="24" type="punct"/>
+		<dep from="3" to="25" type="cc"/>
+		<dep from="3" to="26" type="conj"/>
+		<dep from="26" to="27" type="acomp"/>
+		<dep from="27" to="28" type="prep"/>
+		<dep from="30" to="29" type="compound"/>
+		<dep from="28" to="30" type="pobj"/>
+		<dep from="3" to="31" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Searching">

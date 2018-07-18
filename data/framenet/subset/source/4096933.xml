@@ -2,29 +2,53 @@
 <command id="4096933">
 	<sentence>If covert activities had in fact been taking place at this location , these inspections would have significantly jeopardized such efforts .</sentence>
 	<tokens>
-		<token id="1" lemma="If" pos="in" surface="If"/>
-		<token id="2" lemma="covert" pos="jj" surface="covert"/>
-		<token id="3" lemma="activities" pos="nns" surface="activities"/>
-		<token id="4" lemma="had" pos="VHD" surface="had"/>
-		<token id="5" lemma="in" pos="in" surface="in"/>
-		<token id="6" lemma="fact" pos="nn" surface="fact"/>
-		<token id="7" lemma="been" pos="VBN" surface="been"/>
-		<token id="8" lemma="taking" pos="VVG" surface="taking"/>
-		<token id="9" lemma="place" pos="nn" surface="place"/>
-		<token id="10" lemma="at" pos="in" surface="at"/>
-		<token id="11" lemma="this" pos="dt" surface="this"/>
-		<token id="12" lemma="location" pos="nn" surface="location"/>
+		<token id="1" lemma="if" pos="IN" surface="If"/>
+		<token id="2" lemma="covert" pos="JJ" surface="covert"/>
+		<token id="3" lemma="activity" pos="NNS" surface="activities"/>
+		<token id="4" lemma="have" pos="VBD" surface="had"/>
+		<token id="5" lemma="in" pos="IN" surface="in"/>
+		<token id="6" lemma="fact" pos="NN" surface="fact"/>
+		<token id="7" lemma="be" pos="VBN" surface="been"/>
+		<token id="8" lemma="take" pos="VBG" surface="taking"/>
+		<token id="9" lemma="place" pos="NN" surface="place"/>
+		<token id="10" lemma="at" pos="IN" surface="at"/>
+		<token id="11" lemma="this" pos="DT" surface="this"/>
+		<token id="12" lemma="location" pos="NN" surface="location"/>
 		<token id="13" lemma="," pos="," surface=","/>
-		<token id="14" lemma="these" pos="dt" surface="these"/>
-		<token id="15" lemma="inspections" pos="nns" surface="inspections"/>
-		<token id="16" lemma="would" pos="md" surface="would"/>
-		<token id="17" lemma="have" pos="VH" surface="have"/>
-		<token id="18" lemma="significantly" pos="rb" surface="significantly"/>
-		<token id="19" lemma="jeopardized" pos="VVN" surface="jeopardized"/>
-		<token id="20" lemma="such" pos="jj" surface="such"/>
-		<token id="21" lemma="efforts" pos="nns" surface="efforts"/>
-		<token id="22" lemma="." pos="sent" surface="."/>
+		<token id="14" lemma="these" pos="DT" surface="these"/>
+		<token id="15" lemma="inspection" pos="NNS" surface="inspections"/>
+		<token id="16" lemma="would" pos="MD" surface="would"/>
+		<token id="17" lemma="have" pos="VB" surface="have"/>
+		<token id="18" lemma="significantly" pos="RB" surface="significantly"/>
+		<token id="19" lemma="jeopardize" pos="VBN" surface="jeopardized"/>
+		<token id="20" lemma="such" pos="JJ" surface="such"/>
+		<token id="21" lemma="effort" pos="NNS" surface="efforts"/>
+		<token id="22" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="8" to="1" type="mark"/>
+		<dep from="3" to="2" type="amod"/>
+		<dep from="8" to="3" type="nsubj"/>
+		<dep from="8" to="4" type="aux"/>
+		<dep from="8" to="5" type="prep"/>
+		<dep from="5" to="6" type="pobj"/>
+		<dep from="8" to="7" type="aux"/>
+		<dep from="19" to="8" type="advcl"/>
+		<dep from="8" to="9" type="dobj"/>
+		<dep from="8" to="10" type="prep"/>
+		<dep from="12" to="11" type="det"/>
+		<dep from="10" to="12" type="pobj"/>
+		<dep from="19" to="13" type="punct"/>
+		<dep from="15" to="14" type="det"/>
+		<dep from="19" to="15" type="nsubj"/>
+		<dep from="19" to="16" type="aux"/>
+		<dep from="19" to="17" type="aux"/>
+		<dep from="19" to="18" type="advmod"/>
+		<dep from="0" to="19" type="root"/>
+		<dep from="21" to="20" type="amod"/>
+		<dep from="19" to="21" type="dobj"/>
+		<dep from="19" to="22" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Inspecting">

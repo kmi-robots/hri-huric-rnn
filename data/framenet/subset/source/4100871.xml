@@ -3,43 +3,82 @@
 	<sentence>`` The Iranians are now willing to accept the installation of cameras only outside the cascade halls , which will not enable the IAEA to monitor the entire uranium enrichment process , '' the diplomat said .</sentence>
 	<tokens>
 		<token id="1" lemma="``" pos="``" surface="``"/>
-		<token id="2" lemma="The" pos="dt" surface="The"/>
-		<token id="3" lemma="Iranians" pos="nns" surface="Iranians"/>
-		<token id="4" lemma="are" pos="vbp" surface="are"/>
-		<token id="5" lemma="now" pos="rb" surface="now"/>
-		<token id="6" lemma="willing" pos="jj" surface="willing"/>
-		<token id="7" lemma="to" pos="to" surface="to"/>
-		<token id="8" lemma="accept" pos="VV" surface="accept"/>
-		<token id="9" lemma="the" pos="dt" surface="the"/>
-		<token id="10" lemma="installation" pos="nn" surface="installation"/>
-		<token id="11" lemma="of" pos="in" surface="of"/>
-		<token id="12" lemma="cameras" pos="nns" surface="cameras"/>
-		<token id="13" lemma="only" pos="rb" surface="only"/>
-		<token id="14" lemma="outside" pos="in" surface="outside"/>
-		<token id="15" lemma="the" pos="dt" surface="the"/>
-		<token id="16" lemma="cascade" pos="nn" surface="cascade"/>
-		<token id="17" lemma="halls" pos="nns" surface="halls"/>
+		<token id="2" lemma="the" pos="DT" surface="The"/>
+		<token id="3" lemma="iranians" pos="NNPS" surface="Iranians"/>
+		<token id="4" lemma="be" pos="VBP" surface="are"/>
+		<token id="5" lemma="now" pos="RB" surface="now"/>
+		<token id="6" lemma="willing" pos="JJ" surface="willing"/>
+		<token id="7" lemma="to" pos="TO" surface="to"/>
+		<token id="8" lemma="accept" pos="VB" surface="accept"/>
+		<token id="9" lemma="the" pos="DT" surface="the"/>
+		<token id="10" lemma="installation" pos="NN" surface="installation"/>
+		<token id="11" lemma="of" pos="IN" surface="of"/>
+		<token id="12" lemma="camera" pos="NNS" surface="cameras"/>
+		<token id="13" lemma="only" pos="RB" surface="only"/>
+		<token id="14" lemma="outside" pos="IN" surface="outside"/>
+		<token id="15" lemma="the" pos="DT" surface="the"/>
+		<token id="16" lemma="cascade" pos="NN" surface="cascade"/>
+		<token id="17" lemma="hall" pos="NNS" surface="halls"/>
 		<token id="18" lemma="," pos="," surface=","/>
-		<token id="19" lemma="which" pos="wdt" surface="which"/>
-		<token id="20" lemma="will" pos="md" surface="will"/>
-		<token id="21" lemma="not" pos="rb" surface="not"/>
-		<token id="22" lemma="enable" pos="VV" surface="enable"/>
-		<token id="23" lemma="the" pos="dt" surface="the"/>
-		<token id="24" lemma="IAEA" pos="nn" surface="IAEA"/>
-		<token id="25" lemma="to" pos="to" surface="to"/>
-		<token id="26" lemma="monitor" pos="VV" surface="monitor"/>
-		<token id="27" lemma="the" pos="dt" surface="the"/>
-		<token id="28" lemma="entire" pos="jj" surface="entire"/>
-		<token id="29" lemma="uranium" pos="nn" surface="uranium"/>
-		<token id="30" lemma="enrichment" pos="nn" surface="enrichment"/>
-		<token id="31" lemma="process" pos="nn" surface="process"/>
+		<token id="19" lemma="which" pos="WDT" surface="which"/>
+		<token id="20" lemma="will" pos="MD" surface="will"/>
+		<token id="21" lemma="not" pos="RB" surface="not"/>
+		<token id="22" lemma="enable" pos="VB" surface="enable"/>
+		<token id="23" lemma="the" pos="DT" surface="the"/>
+		<token id="24" lemma="iaea" pos="NNP" surface="IAEA"/>
+		<token id="25" lemma="to" pos="TO" surface="to"/>
+		<token id="26" lemma="monitor" pos="VB" surface="monitor"/>
+		<token id="27" lemma="the" pos="DT" surface="the"/>
+		<token id="28" lemma="entire" pos="JJ" surface="entire"/>
+		<token id="29" lemma="uranium" pos="NN" surface="uranium"/>
+		<token id="30" lemma="enrichment" pos="NN" surface="enrichment"/>
+		<token id="31" lemma="process" pos="NN" surface="process"/>
 		<token id="32" lemma="," pos="," surface=","/>
 		<token id="33" lemma="''" pos="''" surface="''"/>
-		<token id="34" lemma="the" pos="dt" surface="the"/>
-		<token id="35" lemma="diplomat" pos="nn" surface="diplomat"/>
-		<token id="36" lemma="said" pos="VVD" surface="said"/>
-		<token id="37" lemma="." pos="sent" surface="."/>
+		<token id="34" lemma="the" pos="DT" surface="the"/>
+		<token id="35" lemma="diplomat" pos="NN" surface="diplomat"/>
+		<token id="36" lemma="say" pos="VBD" surface="said"/>
+		<token id="37" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="4" to="1" type="punct"/>
+		<dep from="3" to="2" type="det"/>
+		<dep from="4" to="3" type="nsubj"/>
+		<dep from="36" to="4" type="ccomp"/>
+		<dep from="4" to="5" type="advmod"/>
+		<dep from="4" to="6" type="acomp"/>
+		<dep from="8" to="7" type="aux"/>
+		<dep from="6" to="8" type="xcomp"/>
+		<dep from="10" to="9" type="det"/>
+		<dep from="8" to="10" type="dobj"/>
+		<dep from="10" to="11" type="prep"/>
+		<dep from="11" to="12" type="pobj"/>
+		<dep from="14" to="13" type="advmod"/>
+		<dep from="10" to="14" type="prep"/>
+		<dep from="17" to="15" type="det"/>
+		<dep from="17" to="16" type="compound"/>
+		<dep from="14" to="17" type="pobj"/>
+		<dep from="17" to="18" type="punct"/>
+		<dep from="22" to="19" type="nsubj"/>
+		<dep from="22" to="20" type="aux"/>
+		<dep from="22" to="21" type="neg"/>
+		<dep from="17" to="22" type="relcl"/>
+		<dep from="24" to="23" type="det"/>
+		<dep from="22" to="24" type="dobj"/>
+		<dep from="26" to="25" type="aux"/>
+		<dep from="22" to="26" type="xcomp"/>
+		<dep from="31" to="27" type="det"/>
+		<dep from="31" to="28" type="amod"/>
+		<dep from="30" to="29" type="compound"/>
+		<dep from="31" to="30" type="compound"/>
+		<dep from="26" to="31" type="dobj"/>
+		<dep from="36" to="32" type="punct"/>
+		<dep from="36" to="33" type="punct"/>
+		<dep from="35" to="34" type="det"/>
+		<dep from="36" to="35" type="nsubj"/>
+		<dep from="0" to="36" type="root"/>
+		<dep from="36" to="37" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Searching">

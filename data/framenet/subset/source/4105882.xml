@@ -2,45 +2,85 @@
 <command id="4105882">
 	<sentence>Visitors entering the temple are confronted by a dense pall of smoke from all the burning joss sticks and the incense coils hanging from the ceiling ( these will burn for as long as a month ) .</sentence>
 	<tokens>
-		<token id="1" lemma="Visitors" pos="nns" surface="Visitors"/>
-		<token id="2" lemma="entering" pos="VVG" surface="entering"/>
-		<token id="3" lemma="the" pos="dt" surface="the"/>
-		<token id="4" lemma="temple" pos="nn" surface="temple"/>
-		<token id="5" lemma="are" pos="vbp" surface="are"/>
-		<token id="6" lemma="confronted" pos="VVN" surface="confronted"/>
-		<token id="7" lemma="by" pos="in" surface="by"/>
-		<token id="8" lemma="a" pos="dt" surface="a"/>
-		<token id="9" lemma="dense" pos="jj" surface="dense"/>
-		<token id="10" lemma="pall" pos="nn" surface="pall"/>
-		<token id="11" lemma="of" pos="in" surface="of"/>
-		<token id="12" lemma="smoke" pos="nn" surface="smoke"/>
-		<token id="13" lemma="from" pos="in" surface="from"/>
-		<token id="14" lemma="all" pos="pdt" surface="all"/>
-		<token id="15" lemma="the" pos="dt" surface="the"/>
-		<token id="16" lemma="burning" pos="nn" surface="burning"/>
-		<token id="17" lemma="joss" pos="nn" surface="joss"/>
-		<token id="18" lemma="sticks" pos="nns" surface="sticks"/>
-		<token id="19" lemma="and" pos="cc" surface="and"/>
-		<token id="20" lemma="the" pos="dt" surface="the"/>
-		<token id="21" lemma="incense" pos="nn" surface="incense"/>
-		<token id="22" lemma="coils" pos="VVZ" surface="coils"/>
-		<token id="23" lemma="hanging" pos="VVG" surface="hanging"/>
-		<token id="24" lemma="from" pos="in" surface="from"/>
-		<token id="25" lemma="the" pos="dt" surface="the"/>
-		<token id="26" lemma="ceiling" pos="nn" surface="ceiling"/>
-		<token id="27" lemma="(" pos="(" surface="("/>
-		<token id="28" lemma="these" pos="dt" surface="these"/>
-		<token id="29" lemma="will" pos="md" surface="will"/>
-		<token id="30" lemma="burn" pos="VV" surface="burn"/>
-		<token id="31" lemma="for" pos="in" surface="for"/>
-		<token id="32" lemma="as" pos="rb" surface="as"/>
-		<token id="33" lemma="long" pos="jj" surface="long"/>
-		<token id="34" lemma="as" pos="in" surface="as"/>
-		<token id="35" lemma="a" pos="dt" surface="a"/>
-		<token id="36" lemma="month" pos="nn" surface="month"/>
-		<token id="37" lemma=")" pos=")" surface=")"/>
-		<token id="38" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="visitor" pos="NNS" surface="Visitors"/>
+		<token id="2" lemma="enter" pos="VBG" surface="entering"/>
+		<token id="3" lemma="the" pos="DT" surface="the"/>
+		<token id="4" lemma="temple" pos="NN" surface="temple"/>
+		<token id="5" lemma="be" pos="VBP" surface="are"/>
+		<token id="6" lemma="confront" pos="VBN" surface="confronted"/>
+		<token id="7" lemma="by" pos="IN" surface="by"/>
+		<token id="8" lemma="a" pos="DT" surface="a"/>
+		<token id="9" lemma="dense" pos="JJ" surface="dense"/>
+		<token id="10" lemma="pall" pos="NN" surface="pall"/>
+		<token id="11" lemma="of" pos="IN" surface="of"/>
+		<token id="12" lemma="smoke" pos="NN" surface="smoke"/>
+		<token id="13" lemma="from" pos="IN" surface="from"/>
+		<token id="14" lemma="all" pos="PDT" surface="all"/>
+		<token id="15" lemma="the" pos="DT" surface="the"/>
+		<token id="16" lemma="burning" pos="JJ" surface="burning"/>
+		<token id="17" lemma="joss" pos="NN" surface="joss"/>
+		<token id="18" lemma="stick" pos="NNS" surface="sticks"/>
+		<token id="19" lemma="and" pos="CC" surface="and"/>
+		<token id="20" lemma="the" pos="DT" surface="the"/>
+		<token id="21" lemma="incense" pos="NN" surface="incense"/>
+		<token id="22" lemma="coil" pos="VBZ" surface="coils"/>
+		<token id="23" lemma="hang" pos="VBG" surface="hanging"/>
+		<token id="24" lemma="from" pos="IN" surface="from"/>
+		<token id="25" lemma="the" pos="DT" surface="the"/>
+		<token id="26" lemma="ceiling" pos="NN" surface="ceiling"/>
+		<token id="27" lemma="(" pos="-LRB-" surface="("/>
+		<token id="28" lemma="these" pos="DT" surface="these"/>
+		<token id="29" lemma="will" pos="MD" surface="will"/>
+		<token id="30" lemma="burn" pos="VB" surface="burn"/>
+		<token id="31" lemma="for" pos="IN" surface="for"/>
+		<token id="32" lemma="as" pos="RB" surface="as"/>
+		<token id="33" lemma="long" pos="RB" surface="long"/>
+		<token id="34" lemma="as" pos="IN" surface="as"/>
+		<token id="35" lemma="a" pos="DT" surface="a"/>
+		<token id="36" lemma="month" pos="NN" surface="month"/>
+		<token id="37" lemma=")" pos="-RRB-" surface=")"/>
+		<token id="38" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="6" to="1" type="nsubjpass"/>
+		<dep from="1" to="2" type="acl"/>
+		<dep from="4" to="3" type="det"/>
+		<dep from="2" to="4" type="dobj"/>
+		<dep from="6" to="5" type="auxpass"/>
+		<dep from="0" to="6" type="root"/>
+		<dep from="6" to="7" type="agent"/>
+		<dep from="10" to="8" type="det"/>
+		<dep from="10" to="9" type="amod"/>
+		<dep from="7" to="10" type="pobj"/>
+		<dep from="10" to="11" type="prep"/>
+		<dep from="11" to="12" type="pobj"/>
+		<dep from="12" to="13" type="prep"/>
+		<dep from="18" to="14" type="predet"/>
+		<dep from="18" to="15" type="det"/>
+		<dep from="18" to="16" type="amod"/>
+		<dep from="18" to="17" type="compound"/>
+		<dep from="13" to="18" type="pobj"/>
+		<dep from="18" to="19" type="cc"/>
+		<dep from="22" to="20" type="det"/>
+		<dep from="22" to="21" type="compound"/>
+		<dep from="18" to="22" type="conj"/>
+		<dep from="22" to="23" type="acl"/>
+		<dep from="23" to="24" type="prep"/>
+		<dep from="26" to="25" type="det"/>
+		<dep from="24" to="26" type="pobj"/>
+		<dep from="30" to="27" type="punct"/>
+		<dep from="30" to="28" type="nsubj"/>
+		<dep from="30" to="29" type="aux"/>
+		<dep from="6" to="30" type="parataxis"/>
+		<dep from="30" to="31" type="prep"/>
+		<dep from="33" to="32" type="advmod"/>
+		<dep from="30" to="33" type="advmod"/>
+		<dep from="33" to="34" type="prep"/>
+		<dep from="36" to="35" type="det"/>
+		<dep from="34" to="36" type="pobj"/>
+		<dep from="30" to="37" type="punct"/>
+		<dep from="6" to="38" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

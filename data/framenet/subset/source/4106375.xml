@@ -2,20 +2,35 @@
 <command id="4106375">
 	<sentence>Use the enclosed card and give a generous gift to Goodwill today !</sentence>
 	<tokens>
-		<token id="1" lemma="Use" pos="VV" surface="Use"/>
-		<token id="2" lemma="the" pos="dt" surface="the"/>
-		<token id="3" lemma="enclosed" pos="VVN" surface="enclosed"/>
-		<token id="4" lemma="card" pos="nn" surface="card"/>
-		<token id="5" lemma="and" pos="cc" surface="and"/>
-		<token id="6" lemma="give" pos="VV" surface="give"/>
-		<token id="7" lemma="a" pos="dt" surface="a"/>
-		<token id="8" lemma="generous" pos="jj" surface="generous"/>
-		<token id="9" lemma="gift" pos="nn" surface="gift"/>
-		<token id="10" lemma="to" pos="to" surface="to"/>
-		<token id="11" lemma="Goodwill" pos="NP" surface="Goodwill"/>
-		<token id="12" lemma="today" pos="nn" surface="today"/>
-		<token id="13" lemma="!" pos="sent" surface="!"/>
+		<token id="1" lemma="use" pos="VB" surface="Use"/>
+		<token id="2" lemma="the" pos="DT" surface="the"/>
+		<token id="3" lemma="enclose" pos="VBN" surface="enclosed"/>
+		<token id="4" lemma="card" pos="NN" surface="card"/>
+		<token id="5" lemma="and" pos="CC" surface="and"/>
+		<token id="6" lemma="give" pos="VB" surface="give"/>
+		<token id="7" lemma="a" pos="DT" surface="a"/>
+		<token id="8" lemma="generous" pos="JJ" surface="generous"/>
+		<token id="9" lemma="gift" pos="NN" surface="gift"/>
+		<token id="10" lemma="to" pos="IN" surface="to"/>
+		<token id="11" lemma="goodwill" pos="NNP" surface="Goodwill"/>
+		<token id="12" lemma="today" pos="NN" surface="today"/>
+		<token id="13" lemma="!" pos="." surface="!"/>
 	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="4" to="2" type="det"/>
+		<dep from="4" to="3" type="amod"/>
+		<dep from="1" to="4" type="dobj"/>
+		<dep from="1" to="5" type="cc"/>
+		<dep from="1" to="6" type="conj"/>
+		<dep from="9" to="7" type="det"/>
+		<dep from="9" to="8" type="amod"/>
+		<dep from="6" to="9" type="dobj"/>
+		<dep from="6" to="10" type="dative"/>
+		<dep from="10" to="11" type="pobj"/>
+		<dep from="6" to="12" type="npadvmod"/>
+		<dep from="1" to="13" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Giving">

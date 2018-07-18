@@ -2,37 +2,69 @@
 <command id="4099697">
 	<sentence>Seoul lies within easy striking distance of North Korea 's artillery and rocket systems and , today , the South Korean civilian population has no protection against CW attack .</sentence>
 	<tokens>
-		<token id="1" lemma="Seoul" pos="NP" surface="Seoul"/>
-		<token id="2" lemma="lies" pos="VVZ" surface="lies"/>
-		<token id="3" lemma="within" pos="in" surface="within"/>
-		<token id="4" lemma="easy" pos="jj" surface="easy"/>
-		<token id="5" lemma="striking" pos="jj" surface="striking"/>
-		<token id="6" lemma="distance" pos="nn" surface="distance"/>
-		<token id="7" lemma="of" pos="in" surface="of"/>
-		<token id="8" lemma="North" pos="NP" surface="North"/>
-		<token id="9" lemma="Korea" pos="NP" surface="Korea"/>
+		<token id="1" lemma="seoul" pos="NNP" surface="Seoul"/>
+		<token id="2" lemma="lie" pos="VBZ" surface="lies"/>
+		<token id="3" lemma="within" pos="IN" surface="within"/>
+		<token id="4" lemma="easy" pos="JJ" surface="easy"/>
+		<token id="5" lemma="striking" pos="JJ" surface="striking"/>
+		<token id="6" lemma="distance" pos="NN" surface="distance"/>
+		<token id="7" lemma="of" pos="IN" surface="of"/>
+		<token id="8" lemma="north" pos="NNP" surface="North"/>
+		<token id="9" lemma="korea" pos="NNP" surface="Korea"/>
 		<token id="10" lemma="'s" pos="POS" surface="'s"/>
-		<token id="11" lemma="artillery" pos="nn" surface="artillery"/>
-		<token id="12" lemma="and" pos="cc" surface="and"/>
-		<token id="13" lemma="rocket" pos="nn" surface="rocket"/>
-		<token id="14" lemma="systems" pos="nns" surface="systems"/>
-		<token id="15" lemma="and" pos="cc" surface="and"/>
+		<token id="11" lemma="artillery" pos="NN" surface="artillery"/>
+		<token id="12" lemma="and" pos="CC" surface="and"/>
+		<token id="13" lemma="rocket" pos="NN" surface="rocket"/>
+		<token id="14" lemma="system" pos="NNS" surface="systems"/>
+		<token id="15" lemma="and" pos="CC" surface="and"/>
 		<token id="16" lemma="," pos="," surface=","/>
-		<token id="17" lemma="today" pos="rb" surface="today"/>
+		<token id="17" lemma="today" pos="NN" surface="today"/>
 		<token id="18" lemma="," pos="," surface=","/>
-		<token id="19" lemma="the" pos="dt" surface="the"/>
-		<token id="20" lemma="South" pos="jj" surface="South"/>
-		<token id="21" lemma="Korean" pos="jj" surface="Korean"/>
-		<token id="22" lemma="civilian" pos="jj" surface="civilian"/>
-		<token id="23" lemma="population" pos="nn" surface="population"/>
-		<token id="24" lemma="has" pos="VHZ" surface="has"/>
-		<token id="25" lemma="no" pos="dt" surface="no"/>
-		<token id="26" lemma="protection" pos="nn" surface="protection"/>
-		<token id="27" lemma="against" pos="in" surface="against"/>
-		<token id="28" lemma="CW" pos="jj" surface="CW"/>
-		<token id="29" lemma="attack" pos="nn" surface="attack"/>
-		<token id="30" lemma="." pos="sent" surface="."/>
+		<token id="19" lemma="the" pos="DT" surface="the"/>
+		<token id="20" lemma="south" pos="JJ" surface="South"/>
+		<token id="21" lemma="korean" pos="JJ" surface="Korean"/>
+		<token id="22" lemma="civilian" pos="JJ" surface="civilian"/>
+		<token id="23" lemma="population" pos="NN" surface="population"/>
+		<token id="24" lemma="have" pos="VBZ" surface="has"/>
+		<token id="25" lemma="no" pos="DT" surface="no"/>
+		<token id="26" lemma="protection" pos="NN" surface="protection"/>
+		<token id="27" lemma="against" pos="IN" surface="against"/>
+		<token id="28" lemma="cw" pos="NNP" surface="CW"/>
+		<token id="29" lemma="attack" pos="NN" surface="attack"/>
+		<token id="30" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="nsubj"/>
+		<dep from="0" to="2" type="root"/>
+		<dep from="2" to="3" type="prep"/>
+		<dep from="6" to="4" type="amod"/>
+		<dep from="6" to="5" type="amod"/>
+		<dep from="3" to="6" type="pobj"/>
+		<dep from="6" to="7" type="prep"/>
+		<dep from="9" to="8" type="compound"/>
+		<dep from="14" to="9" type="poss"/>
+		<dep from="9" to="10" type="case"/>
+		<dep from="14" to="11" type="nmod"/>
+		<dep from="11" to="12" type="cc"/>
+		<dep from="11" to="13" type="conj"/>
+		<dep from="7" to="14" type="pobj"/>
+		<dep from="2" to="15" type="cc"/>
+		<dep from="24" to="16" type="punct"/>
+		<dep from="24" to="17" type="npadvmod"/>
+		<dep from="24" to="18" type="punct"/>
+		<dep from="23" to="19" type="det"/>
+		<dep from="21" to="20" type="amod"/>
+		<dep from="23" to="21" type="amod"/>
+		<dep from="23" to="22" type="amod"/>
+		<dep from="24" to="23" type="nsubj"/>
+		<dep from="2" to="24" type="conj"/>
+		<dep from="26" to="25" type="det"/>
+		<dep from="24" to="26" type="dobj"/>
+		<dep from="26" to="27" type="prep"/>
+		<dep from="29" to="28" type="compound"/>
+		<dep from="27" to="29" type="pobj"/>
+		<dep from="24" to="30" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Being_located">

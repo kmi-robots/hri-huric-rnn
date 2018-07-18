@@ -2,40 +2,67 @@
 <command id="4096472">
 	<sentence>Discrepancies between North Korean declarations and IAEA inspection findings indicate that North Korea might have reprocessed enough plutonium for one or two nuclear weapons . </sentence>
 	<tokens>
-		<token id="1" lemma="Discrepancies" pos="nns" surface="Discrepancies"/>
-		<token id="2" lemma="between" pos="in" surface="between"/>
-		<token id="3" lemma="declarations" pos="nns" surface="declarations"/>
-		<token id="4" lemma="and" pos="cc" surface="and"/>
-		<token id="5" lemma="inspection" pos="nn" surface="inspection"/>
-		<token id="6" lemma="findings" pos="nns" surface="findings"/>
-		<token id="7" lemma="indicate" pos="VVP" surface="indicate"/>
-		<token id="8" lemma="might" pos="md" surface="might"/>
-		<token id="9" lemma="reprocessed" pos="VVN" surface="reprocessed"/>
-		<token id="10" lemma="enough" pos="jj" surface="enough"/>
-		<token id="11" lemma="plutonium" pos="nn" surface="plutonium"/>
-		<token id="12" lemma="for" pos="in" surface="for"/>
-		<token id="13" lemma="one" pos="cd" surface="one"/>
-		<token id="14" lemma="or" pos="cc" surface="or"/>
-		<token id="15" lemma="two" pos="cd" surface="two"/>
-		<token id="16" lemma="nuclear" pos="jj" surface="nuclear"/>
-		<token id="17" lemma="weapons" pos="nns" surface="weapons"/>
-		<token id="18" lemma="." pos="sent" surface="."/>
-		<token id="19" lemma="North" pos="jj" surface="North"/>
-		<token id="20" lemma="Korean" pos="jj" surface="Korean"/>
-		<token id="21" lemma="IAEA" pos="NNP" surface="IAEA"/>
-		<token id="22" lemma="that" pos="in" surface="that"/>
-		<token id="23" lemma="North" pos="NNP" surface="North"/>
-		<token id="24" lemma="Korea" pos="NNP" surface="Korea"/>
-		<token id="25" lemma="have" pos="VH" surface="have"/>
+		<token id="1" lemma="discrepancy" pos="NNS" surface="Discrepancies"/>
+		<token id="2" lemma="between" pos="IN" surface="between"/>
+		<token id="3" lemma="north" pos="JJ" surface="North"/>
+		<token id="4" lemma="korean" pos="JJ" surface="Korean"/>
+		<token id="5" lemma="declaration" pos="NNS" surface="declarations"/>
+		<token id="6" lemma="and" pos="CC" surface="and"/>
+		<token id="7" lemma="iaea" pos="NNP" surface="IAEA"/>
+		<token id="8" lemma="inspection" pos="NN" surface="inspection"/>
+		<token id="9" lemma="finding" pos="NNS" surface="findings"/>
+		<token id="10" lemma="indicate" pos="VBP" surface="indicate"/>
+		<token id="11" lemma="that" pos="IN" surface="that"/>
+		<token id="12" lemma="north" pos="NNP" surface="North"/>
+		<token id="13" lemma="korea" pos="NNP" surface="Korea"/>
+		<token id="14" lemma="may" pos="MD" surface="might"/>
+		<token id="15" lemma="have" pos="VB" surface="have"/>
+		<token id="16" lemma="reprocess" pos="VBN" surface="reprocessed"/>
+		<token id="17" lemma="enough" pos="JJ" surface="enough"/>
+		<token id="18" lemma="plutonium" pos="NN" surface="plutonium"/>
+		<token id="19" lemma="for" pos="IN" surface="for"/>
+		<token id="20" lemma="one" pos="CD" surface="one"/>
+		<token id="21" lemma="or" pos="CC" surface="or"/>
+		<token id="22" lemma="two" pos="CD" surface="two"/>
+		<token id="23" lemma="nuclear" pos="JJ" surface="nuclear"/>
+		<token id="24" lemma="weapon" pos="NNS" surface="weapons"/>
+		<token id="25" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="10" to="1" type="nsubj"/>
+		<dep from="1" to="2" type="prep"/>
+		<dep from="4" to="3" type="amod"/>
+		<dep from="5" to="4" type="amod"/>
+		<dep from="2" to="5" type="pobj"/>
+		<dep from="5" to="6" type="cc"/>
+		<dep from="8" to="7" type="compound"/>
+		<dep from="9" to="8" type="compound"/>
+		<dep from="5" to="9" type="conj"/>
+		<dep from="0" to="10" type="root"/>
+		<dep from="16" to="11" type="mark"/>
+		<dep from="13" to="12" type="compound"/>
+		<dep from="16" to="13" type="nsubj"/>
+		<dep from="16" to="14" type="aux"/>
+		<dep from="16" to="15" type="aux"/>
+		<dep from="10" to="16" type="ccomp"/>
+		<dep from="18" to="17" type="amod"/>
+		<dep from="16" to="18" type="dobj"/>
+		<dep from="16" to="19" type="prep"/>
+		<dep from="24" to="20" type="nummod"/>
+		<dep from="20" to="21" type="cc"/>
+		<dep from="20" to="22" type="conj"/>
+		<dep from="24" to="23" type="amod"/>
+		<dep from="19" to="24" type="pobj"/>
+		<dep from="10" to="25" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Inspecting">
 				<lexicalUnit>
-					<token id="5"/>
+					<token id="8"/>
 				</lexicalUnit>
 				<frameElement type="Inspector">
-					<token id="21"/>
+					<token id="7"/>
 				</frameElement>
 			</frame>
 		</frameSemantics>

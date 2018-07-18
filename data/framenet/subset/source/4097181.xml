@@ -2,15 +2,25 @@
 <command id="4097181">
 	<sentence>The Shehab-3 is capable of reaching Israel .</sentence>
 	<tokens>
-		<token id="1" lemma="The" pos="dt" surface="The"/>
-		<token id="2" lemma="Shehab-3" pos="cd" surface="Shehab-3"/>
-		<token id="3" lemma="is" pos="VBZ" surface="is"/>
-		<token id="4" lemma="capable" pos="jj" surface="capable"/>
-		<token id="5" lemma="of" pos="in" surface="of"/>
-		<token id="6" lemma="reaching" pos="VVG" surface="reaching"/>
-		<token id="7" lemma="Israel" pos="NP" surface="Israel"/>
-		<token id="8" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="the" pos="DT" surface="The"/>
+		<token id="2" lemma="shehab-3" pos="NNP" surface="Shehab-3"/>
+		<token id="3" lemma="be" pos="VBZ" surface="is"/>
+		<token id="4" lemma="capable" pos="JJ" surface="capable"/>
+		<token id="5" lemma="of" pos="IN" surface="of"/>
+		<token id="6" lemma="reach" pos="VBG" surface="reaching"/>
+		<token id="7" lemma="israel" pos="NNP" surface="Israel"/>
+		<token id="8" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="det"/>
+		<dep from="3" to="2" type="nsubj"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="3" to="4" type="acomp"/>
+		<dep from="4" to="5" type="prep"/>
+		<dep from="5" to="6" type="pcomp"/>
+		<dep from="6" to="7" type="dobj"/>
+		<dep from="3" to="8" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

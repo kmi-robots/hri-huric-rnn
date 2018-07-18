@@ -2,16 +2,27 @@
 <command id="4100642">
 	<sentence>The Irish are actually beginning to come home .</sentence>
 	<tokens>
-		<token id="1" lemma="The" pos="dt" surface="The"/>
-		<token id="2" lemma="Irish" pos="jj" surface="Irish"/>
-		<token id="3" lemma="are" pos="vbp" surface="are"/>
-		<token id="4" lemma="actually" pos="rb" surface="actually"/>
-		<token id="5" lemma="beginning" pos="VVG" surface="beginning"/>
-		<token id="6" lemma="to" pos="to" surface="to"/>
-		<token id="7" lemma="come" pos="VV" surface="come"/>
-		<token id="8" lemma="home" pos="nn" surface="home"/>
-		<token id="9" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="the" pos="DT" surface="The"/>
+		<token id="2" lemma="irish" pos="NNP" surface="Irish"/>
+		<token id="3" lemma="be" pos="VBP" surface="are"/>
+		<token id="4" lemma="actually" pos="RB" surface="actually"/>
+		<token id="5" lemma="begin" pos="VBG" surface="beginning"/>
+		<token id="6" lemma="to" pos="TO" surface="to"/>
+		<token id="7" lemma="come" pos="VB" surface="come"/>
+		<token id="8" lemma="home" pos="RB" surface="home"/>
+		<token id="9" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="det"/>
+		<dep from="5" to="2" type="nsubj"/>
+		<dep from="5" to="3" type="aux"/>
+		<dep from="5" to="4" type="advmod"/>
+		<dep from="0" to="5" type="root"/>
+		<dep from="7" to="6" type="aux"/>
+		<dep from="5" to="7" type="xcomp"/>
+		<dep from="7" to="8" type="advmod"/>
+		<dep from="5" to="9" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

@@ -2,53 +2,77 @@
 <command id="4096480">
 	<sentence>North Korea expelled IAEA inspectors on 31 December 2002 , curtailing the Agency 's capacity to monitor Pyongyang 's nuclear activities . </sentence>
 	<tokens>
-		<token id="1" lemma="expelled" pos="VVD" surface="expelled"/>
-		<token id="2" lemma="inspectors" pos="nns" surface="inspectors"/>
-		<token id="3" lemma="on" pos="in" surface="on"/>
-		<token id="4" lemma="curtailing" pos="VVG" surface="curtailing"/>
-		<token id="5" lemma="the" pos="dt" surface="the"/>
-		<token id="6" lemma="'s" pos="POS" surface="'s"/>
-		<token id="7" lemma="capacity" pos="nn" surface="capacity"/>
-		<token id="8" lemma="to" pos="to" surface="to"/>
-		<token id="9" lemma="monitor" pos="nn" surface="monitor"/>
-		<token id="10" lemma="'s" pos="POS" surface="'s"/>
-		<token id="11" lemma="nuclear" pos="jj" surface="nuclear"/>
-		<token id="12" lemma="activities" pos="nns" surface="activities"/>
-		<token id="13" lemma="." pos="sent" surface="."/>
-		<token id="14" lemma="North" pos="NNP" surface="North"/>
-		<token id="15" lemma="Korea" pos="NNP" surface="Korea"/>
-		<token id="16" lemma="IAEA" pos="NNP" surface="IAEA"/>
-		<token id="17" lemma="December" pos="NNP" surface="December"/>
-		<token id="18" lemma="31" pos="cd" surface="31"/>
-		<token id="19" lemma="2002" pos="cd" surface="2002"/>
-		<token id="20" lemma="," pos="," surface=","/>
-		<token id="21" lemma="Agency" pos="nn" surface="Agency"/>
-		<token id="22" lemma="Pyongyang" pos="NNP" surface="Pyongyang"/>
+		<token id="1" lemma="north" pos="NNP" surface="North"/>
+		<token id="2" lemma="korea" pos="NNP" surface="Korea"/>
+		<token id="3" lemma="expel" pos="VBD" surface="expelled"/>
+		<token id="4" lemma="iaea" pos="NNP" surface="IAEA"/>
+		<token id="5" lemma="inspector" pos="NNS" surface="inspectors"/>
+		<token id="6" lemma="on" pos="IN" surface="on"/>
+		<token id="7" lemma="31" pos="CD" surface="31"/>
+		<token id="8" lemma="december" pos="NNP" surface="December"/>
+		<token id="9" lemma="2002" pos="CD" surface="2002"/>
+		<token id="10" lemma="," pos="," surface=","/>
+		<token id="11" lemma="curtail" pos="VBG" surface="curtailing"/>
+		<token id="12" lemma="the" pos="DT" surface="the"/>
+		<token id="13" lemma="agency" pos="NNP" surface="Agency"/>
+		<token id="14" lemma="'s" pos="POS" surface="'s"/>
+		<token id="15" lemma="capacity" pos="NN" surface="capacity"/>
+		<token id="16" lemma="to" pos="TO" surface="to"/>
+		<token id="17" lemma="monitor" pos="VB" surface="monitor"/>
+		<token id="18" lemma="pyongyang" pos="NNP" surface="Pyongyang"/>
+		<token id="19" lemma="'s" pos="POS" surface="'s"/>
+		<token id="20" lemma="nuclear" pos="JJ" surface="nuclear"/>
+		<token id="21" lemma="activity" pos="NNS" surface="activities"/>
+		<token id="22" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="compound"/>
+		<dep from="3" to="2" type="nsubj"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="5" to="4" type="compound"/>
+		<dep from="3" to="5" type="dobj"/>
+		<dep from="3" to="6" type="prep"/>
+		<dep from="8" to="7" type="nummod"/>
+		<dep from="6" to="8" type="pobj"/>
+		<dep from="8" to="9" type="nummod"/>
+		<dep from="3" to="10" type="punct"/>
+		<dep from="3" to="11" type="advcl"/>
+		<dep from="13" to="12" type="det"/>
+		<dep from="15" to="13" type="poss"/>
+		<dep from="13" to="14" type="case"/>
+		<dep from="11" to="15" type="dobj"/>
+		<dep from="17" to="16" type="aux"/>
+		<dep from="15" to="17" type="acl"/>
+		<dep from="21" to="18" type="poss"/>
+		<dep from="18" to="19" type="case"/>
+		<dep from="21" to="20" type="amod"/>
+		<dep from="17" to="21" type="dobj"/>
+		<dep from="3" to="22" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Searching">
 				<lexicalUnit>
-					<token id="9"/>
+					<token id="17"/>
 				</lexicalUnit>
 				<frameElement type="Cognizer">
-					<token id="5"/>
-					<token id="6"/>
-					<token id="21"/>
+					<token id="12"/>
+					<token id="13"/>
+					<token id="14"/>
 				</frameElement>
 				<frameElement type="Ground">
-					<token id="10"/>
-					<token id="11"/>
-					<token id="12"/>
-					<token id="22"/>
+					<token id="18"/>
+					<token id="19"/>
+					<token id="20"/>
+					<token id="21"/>
 				</frameElement>
 			</frame>
 			<frame name="Searching">
 				<lexicalUnit>
-					<token id="2"/>
+					<token id="5"/>
 				</lexicalUnit>
 				<frameElement type="Cognizer">
-					<token id="2"/>
+					<token id="5"/>
 				</frameElement>
 			</frame>
 		</frameSemantics>

@@ -2,37 +2,69 @@
 <command id="4100867">
 	<sentence>Hundreds of workers `` were working feverishly '' to place piping and wiring in Iran 's underground enrichment facility at Natanz , said a diplomat accredited to the agency .</sentence>
 	<tokens>
-		<token id="1" lemma="Hundreds" pos="nns" surface="Hundreds"/>
-		<token id="2" lemma="of" pos="in" surface="of"/>
-		<token id="3" lemma="workers" pos="nns" surface="workers"/>
+		<token id="1" lemma="hundred" pos="NNS" surface="Hundreds"/>
+		<token id="2" lemma="of" pos="IN" surface="of"/>
+		<token id="3" lemma="worker" pos="NNS" surface="workers"/>
 		<token id="4" lemma="``" pos="``" surface="``"/>
-		<token id="5" lemma="were" pos="VBD" surface="were"/>
-		<token id="6" lemma="working" pos="VVG" surface="working"/>
-		<token id="7" lemma="feverishly" pos="rb" surface="feverishly"/>
+		<token id="5" lemma="be" pos="VBD" surface="were"/>
+		<token id="6" lemma="work" pos="VBG" surface="working"/>
+		<token id="7" lemma="feverishly" pos="RB" surface="feverishly"/>
 		<token id="8" lemma="''" pos="''" surface="''"/>
-		<token id="9" lemma="to" pos="to" surface="to"/>
-		<token id="10" lemma="place" pos="VV" surface="place"/>
-		<token id="11" lemma="piping" pos="nn" surface="piping"/>
-		<token id="12" lemma="and" pos="cc" surface="and"/>
-		<token id="13" lemma="wiring" pos="nn" surface="wiring"/>
-		<token id="14" lemma="in" pos="in" surface="in"/>
-		<token id="15" lemma="Iran" pos="NP" surface="Iran"/>
+		<token id="9" lemma="to" pos="TO" surface="to"/>
+		<token id="10" lemma="place" pos="VB" surface="place"/>
+		<token id="11" lemma="piping" pos="NN" surface="piping"/>
+		<token id="12" lemma="and" pos="CC" surface="and"/>
+		<token id="13" lemma="wiring" pos="NN" surface="wiring"/>
+		<token id="14" lemma="in" pos="IN" surface="in"/>
+		<token id="15" lemma="iran" pos="NNP" surface="Iran"/>
 		<token id="16" lemma="'s" pos="POS" surface="'s"/>
-		<token id="17" lemma="underground" pos="jj" surface="underground"/>
-		<token id="18" lemma="enrichment" pos="nn" surface="enrichment"/>
-		<token id="19" lemma="facility" pos="nn" surface="facility"/>
-		<token id="20" lemma="at" pos="in" surface="at"/>
-		<token id="21" lemma="Natanz" pos="NP" surface="Natanz"/>
+		<token id="17" lemma="underground" pos="JJ" surface="underground"/>
+		<token id="18" lemma="enrichment" pos="NN" surface="enrichment"/>
+		<token id="19" lemma="facility" pos="NN" surface="facility"/>
+		<token id="20" lemma="at" pos="IN" surface="at"/>
+		<token id="21" lemma="natanz" pos="NNP" surface="Natanz"/>
 		<token id="22" lemma="," pos="," surface=","/>
-		<token id="23" lemma="said" pos="VVD" surface="said"/>
-		<token id="24" lemma="a" pos="dt" surface="a"/>
-		<token id="25" lemma="diplomat" pos="nn" surface="diplomat"/>
-		<token id="26" lemma="accredited" pos="VVD" surface="accredited"/>
-		<token id="27" lemma="to" pos="to" surface="to"/>
-		<token id="28" lemma="the" pos="dt" surface="the"/>
-		<token id="29" lemma="agency" pos="nn" surface="agency"/>
-		<token id="30" lemma="." pos="sent" surface="."/>
+		<token id="23" lemma="say" pos="VBD" surface="said"/>
+		<token id="24" lemma="a" pos="DT" surface="a"/>
+		<token id="25" lemma="diplomat" pos="NN" surface="diplomat"/>
+		<token id="26" lemma="accredit" pos="VBD" surface="accredited"/>
+		<token id="27" lemma="to" pos="IN" surface="to"/>
+		<token id="28" lemma="the" pos="DT" surface="the"/>
+		<token id="29" lemma="agency" pos="NN" surface="agency"/>
+		<token id="30" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="6" to="1" type="nsubj"/>
+		<dep from="1" to="2" type="prep"/>
+		<dep from="2" to="3" type="pobj"/>
+		<dep from="6" to="4" type="punct"/>
+		<dep from="6" to="5" type="aux"/>
+		<dep from="23" to="6" type="ccomp"/>
+		<dep from="6" to="7" type="advmod"/>
+		<dep from="6" to="8" type="punct"/>
+		<dep from="10" to="9" type="aux"/>
+		<dep from="6" to="10" type="advcl"/>
+		<dep from="10" to="11" type="dobj"/>
+		<dep from="11" to="12" type="cc"/>
+		<dep from="11" to="13" type="conj"/>
+		<dep from="11" to="14" type="prep"/>
+		<dep from="19" to="15" type="poss"/>
+		<dep from="15" to="16" type="case"/>
+		<dep from="19" to="17" type="amod"/>
+		<dep from="19" to="18" type="compound"/>
+		<dep from="14" to="19" type="pobj"/>
+		<dep from="10" to="20" type="prep"/>
+		<dep from="20" to="21" type="pobj"/>
+		<dep from="23" to="22" type="punct"/>
+		<dep from="0" to="23" type="root"/>
+		<dep from="25" to="24" type="det"/>
+		<dep from="23" to="25" type="nsubj"/>
+		<dep from="25" to="26" type="acl"/>
+		<dep from="26" to="27" type="prep"/>
+		<dep from="29" to="28" type="det"/>
+		<dep from="27" to="29" type="pobj"/>
+		<dep from="23" to="30" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Placing">

@@ -2,34 +2,63 @@
 <command id="4097613">
 	<sentence>Nonetheless , countries suspected of having clandestine nuclear weapons programs are the subject of intense scrutiny by nonproliferation analysts , intelligence agencies , and other observers .</sentence>
 	<tokens>
-		<token id="1" lemma="Nonetheless" pos="rb" surface="Nonetheless"/>
+		<token id="1" lemma="nonetheless" pos="RB" surface="Nonetheless"/>
 		<token id="2" lemma="," pos="," surface=","/>
-		<token id="3" lemma="countries" pos="nns" surface="countries"/>
-		<token id="4" lemma="suspected" pos="VVD" surface="suspected"/>
-		<token id="5" lemma="of" pos="in" surface="of"/>
-		<token id="6" lemma="having" pos="VHG" surface="having"/>
-		<token id="7" lemma="clandestine" pos="jj" surface="clandestine"/>
-		<token id="8" lemma="nuclear" pos="jj" surface="nuclear"/>
-		<token id="9" lemma="weapons" pos="nns" surface="weapons"/>
-		<token id="10" lemma="programs" pos="nns" surface="programs"/>
-		<token id="11" lemma="are" pos="vbp" surface="are"/>
-		<token id="12" lemma="the" pos="dt" surface="the"/>
-		<token id="13" lemma="subject" pos="nn" surface="subject"/>
-		<token id="14" lemma="of" pos="in" surface="of"/>
-		<token id="15" lemma="intense" pos="jj" surface="intense"/>
-		<token id="16" lemma="scrutiny" pos="nn" surface="scrutiny"/>
-		<token id="17" lemma="by" pos="in" surface="by"/>
-		<token id="18" lemma="nonproliferation" pos="nn" surface="nonproliferation"/>
-		<token id="19" lemma="analysts" pos="nns" surface="analysts"/>
+		<token id="3" lemma="country" pos="NNS" surface="countries"/>
+		<token id="4" lemma="suspect" pos="VBN" surface="suspected"/>
+		<token id="5" lemma="of" pos="IN" surface="of"/>
+		<token id="6" lemma="have" pos="VBG" surface="having"/>
+		<token id="7" lemma="clandestine" pos="JJ" surface="clandestine"/>
+		<token id="8" lemma="nuclear" pos="JJ" surface="nuclear"/>
+		<token id="9" lemma="weapon" pos="NNS" surface="weapons"/>
+		<token id="10" lemma="program" pos="NNS" surface="programs"/>
+		<token id="11" lemma="be" pos="VBP" surface="are"/>
+		<token id="12" lemma="the" pos="DT" surface="the"/>
+		<token id="13" lemma="subject" pos="NN" surface="subject"/>
+		<token id="14" lemma="of" pos="IN" surface="of"/>
+		<token id="15" lemma="intense" pos="JJ" surface="intense"/>
+		<token id="16" lemma="scrutiny" pos="NN" surface="scrutiny"/>
+		<token id="17" lemma="by" pos="IN" surface="by"/>
+		<token id="18" lemma="nonproliferation" pos="NN" surface="nonproliferation"/>
+		<token id="19" lemma="analyst" pos="NNS" surface="analysts"/>
 		<token id="20" lemma="," pos="," surface=","/>
-		<token id="21" lemma="intelligence" pos="nn" surface="intelligence"/>
-		<token id="22" lemma="agencies" pos="nns" surface="agencies"/>
+		<token id="21" lemma="intelligence" pos="NN" surface="intelligence"/>
+		<token id="22" lemma="agency" pos="NNS" surface="agencies"/>
 		<token id="23" lemma="," pos="," surface=","/>
-		<token id="24" lemma="and" pos="cc" surface="and"/>
-		<token id="25" lemma="other" pos="jj" surface="other"/>
-		<token id="26" lemma="observers" pos="nns" surface="observers"/>
-		<token id="27" lemma="." pos="sent" surface="."/>
+		<token id="24" lemma="and" pos="CC" surface="and"/>
+		<token id="25" lemma="other" pos="JJ" surface="other"/>
+		<token id="26" lemma="observer" pos="NNS" surface="observers"/>
+		<token id="27" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="11" to="1" type="advmod"/>
+		<dep from="11" to="2" type="punct"/>
+		<dep from="11" to="3" type="nsubj"/>
+		<dep from="3" to="4" type="acl"/>
+		<dep from="4" to="5" type="prep"/>
+		<dep from="5" to="6" type="pcomp"/>
+		<dep from="10" to="7" type="amod"/>
+		<dep from="9" to="8" type="amod"/>
+		<dep from="10" to="9" type="compound"/>
+		<dep from="6" to="10" type="dobj"/>
+		<dep from="0" to="11" type="root"/>
+		<dep from="13" to="12" type="det"/>
+		<dep from="11" to="13" type="attr"/>
+		<dep from="13" to="14" type="prep"/>
+		<dep from="16" to="15" type="amod"/>
+		<dep from="14" to="16" type="pobj"/>
+		<dep from="13" to="17" type="prep"/>
+		<dep from="19" to="18" type="compound"/>
+		<dep from="17" to="19" type="pobj"/>
+		<dep from="19" to="20" type="punct"/>
+		<dep from="22" to="21" type="compound"/>
+		<dep from="19" to="22" type="conj"/>
+		<dep from="22" to="23" type="punct"/>
+		<dep from="22" to="24" type="cc"/>
+		<dep from="26" to="25" type="amod"/>
+		<dep from="22" to="26" type="conj"/>
+		<dep from="11" to="27" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Searching">

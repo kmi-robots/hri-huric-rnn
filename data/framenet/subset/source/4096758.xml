@@ -2,47 +2,89 @@
 <command id="4096758">
 	<sentence>Upon arrival , the missiles were assigned to a newly created battalion - sized missile unit of the Islamic Revolution Guard Corps ( IRGC ) Air Force , whose personnel had received preliminary training in both Libya and Syria .</sentence>
 	<tokens>
-		<token id="1" lemma="Upon" pos="in" surface="Upon"/>
-		<token id="2" lemma="arrival" pos="nn" surface="arrival"/>
+		<token id="1" lemma="upon" pos="IN" surface="Upon"/>
+		<token id="2" lemma="arrival" pos="NN" surface="arrival"/>
 		<token id="3" lemma="," pos="," surface=","/>
-		<token id="4" lemma="the" pos="dt" surface="the"/>
-		<token id="5" lemma="missiles" pos="nns" surface="missiles"/>
-		<token id="6" lemma="were" pos="VBD" surface="were"/>
-		<token id="7" lemma="assigned" pos="VVN" surface="assigned"/>
-		<token id="8" lemma="to" pos="to" surface="to"/>
-		<token id="9" lemma="a" pos="dt" surface="a"/>
-		<token id="10" lemma="newly" pos="rb" surface="newly"/>
-		<token id="11" lemma="created" pos="VVN" surface="created"/>
-		<token id="12" lemma="battalion" pos="nn" surface="battalion"/>
-		<token id="13" lemma="-" pos=":" surface="-"/>
-		<token id="14" lemma="sized" pos="VVD" surface="sized"/>
-		<token id="15" lemma="missile" pos="nn" surface="missile"/>
-		<token id="16" lemma="unit" pos="nn" surface="unit"/>
-		<token id="17" lemma="of" pos="in" surface="of"/>
-		<token id="18" lemma="the" pos="dt" surface="the"/>
-		<token id="19" lemma="Islamic" pos="NP" surface="Islamic"/>
-		<token id="20" lemma="Revolution" pos="NP" surface="Revolution"/>
-		<token id="21" lemma="Guard" pos="NP" surface="Guard"/>
-		<token id="22" lemma="Corps" pos="NP" surface="Corps"/>
-		<token id="23" lemma="(" pos="(" surface="("/>
-		<token id="24" lemma="IRGC" pos="NP" surface="IRGC"/>
-		<token id="25" lemma=")" pos=")" surface=")"/>
-		<token id="26" lemma="Air" pos="NP" surface="Air"/>
-		<token id="27" lemma="Force" pos="NP" surface="Force"/>
+		<token id="4" lemma="the" pos="DT" surface="the"/>
+		<token id="5" lemma="missile" pos="NNS" surface="missiles"/>
+		<token id="6" lemma="be" pos="VBD" surface="were"/>
+		<token id="7" lemma="assign" pos="VBN" surface="assigned"/>
+		<token id="8" lemma="to" pos="IN" surface="to"/>
+		<token id="9" lemma="a" pos="DT" surface="a"/>
+		<token id="10" lemma="newly" pos="RB" surface="newly"/>
+		<token id="11" lemma="create" pos="VBN" surface="created"/>
+		<token id="12" lemma="battalion" pos="NN" surface="battalion"/>
+		<token id="13" lemma="-" pos="HYPH" surface="-"/>
+		<token id="14" lemma="sized" pos="JJ" surface="sized"/>
+		<token id="15" lemma="missile" pos="NN" surface="missile"/>
+		<token id="16" lemma="unit" pos="NN" surface="unit"/>
+		<token id="17" lemma="of" pos="IN" surface="of"/>
+		<token id="18" lemma="the" pos="DT" surface="the"/>
+		<token id="19" lemma="islamic" pos="NNP" surface="Islamic"/>
+		<token id="20" lemma="revolution" pos="NNP" surface="Revolution"/>
+		<token id="21" lemma="guard" pos="NNP" surface="Guard"/>
+		<token id="22" lemma="corps" pos="NNP" surface="Corps"/>
+		<token id="23" lemma="(" pos="-LRB-" surface="("/>
+		<token id="24" lemma="irgc" pos="NNP" surface="IRGC"/>
+		<token id="25" lemma=")" pos="-RRB-" surface=")"/>
+		<token id="26" lemma="air" pos="NNP" surface="Air"/>
+		<token id="27" lemma="force" pos="NNP" surface="Force"/>
 		<token id="28" lemma="," pos="," surface=","/>
-		<token id="29" lemma="whose" pos="wp$" surface="whose"/>
-		<token id="30" lemma="personnel" pos="nns" surface="personnel"/>
-		<token id="31" lemma="had" pos="VHD" surface="had"/>
-		<token id="32" lemma="received" pos="VVN" surface="received"/>
-		<token id="33" lemma="preliminary" pos="jj" surface="preliminary"/>
-		<token id="34" lemma="training" pos="nn" surface="training"/>
-		<token id="35" lemma="in" pos="in" surface="in"/>
-		<token id="36" lemma="both" pos="dt" surface="both"/>
-		<token id="37" lemma="Libya" pos="NP" surface="Libya"/>
-		<token id="38" lemma="and" pos="cc" surface="and"/>
-		<token id="39" lemma="Syria" pos="NP" surface="Syria"/>
-		<token id="40" lemma="." pos="sent" surface="."/>
+		<token id="29" lemma="whose" pos="WP$" surface="whose"/>
+		<token id="30" lemma="personnel" pos="NNS" surface="personnel"/>
+		<token id="31" lemma="have" pos="VBD" surface="had"/>
+		<token id="32" lemma="receive" pos="VBN" surface="received"/>
+		<token id="33" lemma="preliminary" pos="JJ" surface="preliminary"/>
+		<token id="34" lemma="training" pos="NN" surface="training"/>
+		<token id="35" lemma="in" pos="IN" surface="in"/>
+		<token id="36" lemma="both" pos="CC" surface="both"/>
+		<token id="37" lemma="libya" pos="NNP" surface="Libya"/>
+		<token id="38" lemma="and" pos="CC" surface="and"/>
+		<token id="39" lemma="syria" pos="NNP" surface="Syria"/>
+		<token id="40" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="7" to="1" type="prep"/>
+		<dep from="1" to="2" type="pobj"/>
+		<dep from="7" to="3" type="punct"/>
+		<dep from="5" to="4" type="det"/>
+		<dep from="7" to="5" type="nsubjpass"/>
+		<dep from="7" to="6" type="auxpass"/>
+		<dep from="0" to="7" type="root"/>
+		<dep from="7" to="8" type="prep"/>
+		<dep from="16" to="9" type="det"/>
+		<dep from="11" to="10" type="advmod"/>
+		<dep from="16" to="11" type="amod"/>
+		<dep from="14" to="12" type="npadvmod"/>
+		<dep from="14" to="13" type="punct"/>
+		<dep from="16" to="14" type="amod"/>
+		<dep from="16" to="15" type="compound"/>
+		<dep from="8" to="16" type="pobj"/>
+		<dep from="16" to="17" type="prep"/>
+		<dep from="24" to="18" type="det"/>
+		<dep from="20" to="19" type="compound"/>
+		<dep from="21" to="20" type="compound"/>
+		<dep from="24" to="21" type="nmod"/>
+		<dep from="24" to="22" type="nmod"/>
+		<dep from="24" to="23" type="punct"/>
+		<dep from="17" to="24" type="pobj"/>
+		<dep from="16" to="25" type="punct"/>
+		<dep from="27" to="26" type="compound"/>
+		<dep from="0" to="27" type="root"/>
+		<dep from="27" to="28" type="punct"/>
+		<dep from="30" to="29" type="poss"/>
+		<dep from="32" to="30" type="nsubj"/>
+		<dep from="32" to="31" type="aux"/>
+		<dep from="27" to="32" type="relcl"/>
+		<dep from="34" to="33" type="amod"/>
+		<dep from="32" to="34" type="dobj"/>
+		<dep from="32" to="35" type="prep"/>
+		<dep from="37" to="36" type="det"/>
+		<dep from="35" to="37" type="pobj"/>
+		<dep from="37" to="38" type="cc"/>
+		<dep from="37" to="39" type="conj"/>
+		<dep from="27" to="40" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

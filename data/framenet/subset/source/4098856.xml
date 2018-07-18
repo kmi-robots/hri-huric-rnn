@@ -2,32 +2,59 @@
 <command id="4098856">
 	<sentence>Duke initially planned on giving every new student a free iPod , but now only plans on giving iPods to students in certain classes .</sentence>
 	<tokens>
-		<token id="1" lemma="Duke" pos="NP" surface="Duke"/>
-		<token id="2" lemma="initially" pos="rb" surface="initially"/>
-		<token id="3" lemma="planned" pos="VVD" surface="planned"/>
-		<token id="4" lemma="on" pos="in" surface="on"/>
-		<token id="5" lemma="giving" pos="VVG" surface="giving"/>
-		<token id="6" lemma="every" pos="dt" surface="every"/>
-		<token id="7" lemma="new" pos="jj" surface="new"/>
-		<token id="8" lemma="student" pos="nn" surface="student"/>
-		<token id="9" lemma="a" pos="dt" surface="a"/>
-		<token id="10" lemma="free" pos="jj" surface="free"/>
-		<token id="11" lemma="iPod" pos="nn" surface="iPod"/>
+		<token id="1" lemma="duke" pos="NNP" surface="Duke"/>
+		<token id="2" lemma="initially" pos="RB" surface="initially"/>
+		<token id="3" lemma="plan" pos="VBD" surface="planned"/>
+		<token id="4" lemma="on" pos="IN" surface="on"/>
+		<token id="5" lemma="give" pos="VBG" surface="giving"/>
+		<token id="6" lemma="every" pos="DT" surface="every"/>
+		<token id="7" lemma="new" pos="JJ" surface="new"/>
+		<token id="8" lemma="student" pos="NN" surface="student"/>
+		<token id="9" lemma="a" pos="DT" surface="a"/>
+		<token id="10" lemma="free" pos="JJ" surface="free"/>
+		<token id="11" lemma="ipod" pos="NNP" surface="iPod"/>
 		<token id="12" lemma="," pos="," surface=","/>
-		<token id="13" lemma="but" pos="cc" surface="but"/>
-		<token id="14" lemma="now" pos="rb" surface="now"/>
-		<token id="15" lemma="only" pos="rb" surface="only"/>
-		<token id="16" lemma="plans" pos="VVZ" surface="plans"/>
-		<token id="17" lemma="on" pos="in" surface="on"/>
-		<token id="18" lemma="giving" pos="VVG" surface="giving"/>
-		<token id="19" lemma="iPods" pos="nns" surface="iPods"/>
-		<token id="20" lemma="to" pos="to" surface="to"/>
-		<token id="21" lemma="students" pos="nns" surface="students"/>
-		<token id="22" lemma="in" pos="in" surface="in"/>
-		<token id="23" lemma="certain" pos="jj" surface="certain"/>
-		<token id="24" lemma="classes" pos="nns" surface="classes"/>
-		<token id="25" lemma="." pos="sent" surface="."/>
+		<token id="13" lemma="but" pos="CC" surface="but"/>
+		<token id="14" lemma="now" pos="RB" surface="now"/>
+		<token id="15" lemma="only" pos="RB" surface="only"/>
+		<token id="16" lemma="plan" pos="VBZ" surface="plans"/>
+		<token id="17" lemma="on" pos="IN" surface="on"/>
+		<token id="18" lemma="give" pos="VBG" surface="giving"/>
+		<token id="19" lemma="ipods" pos="NNPS" surface="iPods"/>
+		<token id="20" lemma="to" pos="IN" surface="to"/>
+		<token id="21" lemma="student" pos="NNS" surface="students"/>
+		<token id="22" lemma="in" pos="IN" surface="in"/>
+		<token id="23" lemma="certain" pos="JJ" surface="certain"/>
+		<token id="24" lemma="class" pos="NNS" surface="classes"/>
+		<token id="25" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="nsubj"/>
+		<dep from="3" to="2" type="advmod"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="3" to="4" type="prep"/>
+		<dep from="4" to="5" type="pcomp"/>
+		<dep from="8" to="6" type="det"/>
+		<dep from="8" to="7" type="amod"/>
+		<dep from="5" to="8" type="dative"/>
+		<dep from="11" to="9" type="det"/>
+		<dep from="11" to="10" type="amod"/>
+		<dep from="5" to="11" type="dobj"/>
+		<dep from="3" to="12" type="punct"/>
+		<dep from="3" to="13" type="cc"/>
+		<dep from="16" to="14" type="advmod"/>
+		<dep from="16" to="15" type="advmod"/>
+		<dep from="3" to="16" type="conj"/>
+		<dep from="16" to="17" type="prep"/>
+		<dep from="17" to="18" type="pcomp"/>
+		<dep from="18" to="19" type="dobj"/>
+		<dep from="18" to="20" type="dative"/>
+		<dep from="20" to="21" type="pobj"/>
+		<dep from="21" to="22" type="prep"/>
+		<dep from="24" to="23" type="amod"/>
+		<dep from="22" to="24" type="pobj"/>
+		<dep from="16" to="25" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Giving">

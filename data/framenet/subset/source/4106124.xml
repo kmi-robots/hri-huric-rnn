@@ -2,27 +2,49 @@
 <command id="4106124">
 	<sentence>Entry procedures are similar to those in Hong Kong - most nationalities need only a passport to enter Macau .</sentence>
 	<tokens>
-		<token id="1" lemma="Entry" pos="nn" surface="Entry"/>
-		<token id="2" lemma="procedures" pos="nns" surface="procedures"/>
-		<token id="3" lemma="are" pos="vbp" surface="are"/>
-		<token id="4" lemma="similar" pos="jj" surface="similar"/>
-		<token id="5" lemma="to" pos="to" surface="to"/>
-		<token id="6" lemma="those" pos="dt" surface="those"/>
-		<token id="7" lemma="in" pos="in" surface="in"/>
-		<token id="8" lemma="Hong" pos="NP" surface="Hong"/>
-		<token id="9" lemma="Kong" pos="NP" surface="Kong"/>
-		<token id="10" lemma="-" pos=":" surface="-"/>
-		<token id="11" lemma="most" pos="jjs" surface="most"/>
-		<token id="12" lemma="nationalities" pos="nns" surface="nationalities"/>
-		<token id="13" lemma="need" pos="VVP" surface="need"/>
-		<token id="14" lemma="only" pos="rb" surface="only"/>
-		<token id="15" lemma="a" pos="dt" surface="a"/>
-		<token id="16" lemma="passport" pos="nn" surface="passport"/>
-		<token id="17" lemma="to" pos="to" surface="to"/>
-		<token id="18" lemma="enter" pos="VV" surface="enter"/>
-		<token id="19" lemma="Macau" pos="NP" surface="Macau"/>
-		<token id="20" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="entry" pos="NN" surface="Entry"/>
+		<token id="2" lemma="procedure" pos="NNS" surface="procedures"/>
+		<token id="3" lemma="be" pos="VBP" surface="are"/>
+		<token id="4" lemma="similar" pos="JJ" surface="similar"/>
+		<token id="5" lemma="to" pos="IN" surface="to"/>
+		<token id="6" lemma="those" pos="DT" surface="those"/>
+		<token id="7" lemma="in" pos="IN" surface="in"/>
+		<token id="8" lemma="hong" pos="NNP" surface="Hong"/>
+		<token id="9" lemma="kong" pos="NNP" surface="Kong"/>
+		<token id="10" lemma="-" pos="HYPH" surface="-"/>
+		<token id="11" lemma="most" pos="JJS" surface="most"/>
+		<token id="12" lemma="nationality" pos="NNS" surface="nationalities"/>
+		<token id="13" lemma="need" pos="VBP" surface="need"/>
+		<token id="14" lemma="only" pos="RB" surface="only"/>
+		<token id="15" lemma="a" pos="DT" surface="a"/>
+		<token id="16" lemma="passport" pos="NN" surface="passport"/>
+		<token id="17" lemma="to" pos="TO" surface="to"/>
+		<token id="18" lemma="enter" pos="VB" surface="enter"/>
+		<token id="19" lemma="macau" pos="NNP" surface="Macau"/>
+		<token id="20" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="compound"/>
+		<dep from="3" to="2" type="nsubj"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="3" to="4" type="acomp"/>
+		<dep from="4" to="5" type="prep"/>
+		<dep from="5" to="6" type="pobj"/>
+		<dep from="6" to="7" type="prep"/>
+		<dep from="9" to="8" type="compound"/>
+		<dep from="7" to="9" type="pobj"/>
+		<dep from="12" to="10" type="punct"/>
+		<dep from="12" to="11" type="amod"/>
+		<dep from="13" to="12" type="nsubj"/>
+		<dep from="3" to="13" type="conj"/>
+		<dep from="16" to="14" type="advmod"/>
+		<dep from="16" to="15" type="det"/>
+		<dep from="13" to="16" type="dobj"/>
+		<dep from="18" to="17" type="aux"/>
+		<dep from="16" to="18" type="acl"/>
+		<dep from="18" to="19" type="dobj"/>
+		<dep from="3" to="20" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

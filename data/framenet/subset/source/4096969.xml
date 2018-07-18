@@ -2,31 +2,57 @@
 <command id="4096969">
 	<sentence>It has 14 engineering departments , five research centers , and an associate university complex located at the town of Tafresh near Tehran .</sentence>
 	<tokens>
-		<token id="1" lemma="It" pos="PP" surface="It"/>
-		<token id="2" lemma="has" pos="VHZ" surface="has"/>
-		<token id="3" lemma="14" pos="cd" surface="14"/>
-		<token id="4" lemma="engineering" pos="nn" surface="engineering"/>
-		<token id="5" lemma="departments" pos="nns" surface="departments"/>
+		<token id="1" lemma="-PRON-" pos="PRP" surface="It"/>
+		<token id="2" lemma="have" pos="VBZ" surface="has"/>
+		<token id="3" lemma="14" pos="CD" surface="14"/>
+		<token id="4" lemma="engineering" pos="NN" surface="engineering"/>
+		<token id="5" lemma="department" pos="NNS" surface="departments"/>
 		<token id="6" lemma="," pos="," surface=","/>
-		<token id="7" lemma="five" pos="cd" surface="five"/>
-		<token id="8" lemma="research" pos="nn" surface="research"/>
-		<token id="9" lemma="centers" pos="nns" surface="centers"/>
+		<token id="7" lemma="five" pos="CD" surface="five"/>
+		<token id="8" lemma="research" pos="NN" surface="research"/>
+		<token id="9" lemma="center" pos="NNS" surface="centers"/>
 		<token id="10" lemma="," pos="," surface=","/>
-		<token id="11" lemma="and" pos="cc" surface="and"/>
-		<token id="12" lemma="an" pos="dt" surface="an"/>
-		<token id="13" lemma="associate" pos="jj" surface="associate"/>
-		<token id="14" lemma="university" pos="nn" surface="university"/>
-		<token id="15" lemma="complex" pos="nn" surface="complex"/>
-		<token id="16" lemma="located" pos="VVN" surface="located"/>
-		<token id="17" lemma="at" pos="in" surface="at"/>
-		<token id="18" lemma="the" pos="dt" surface="the"/>
-		<token id="19" lemma="town" pos="nn" surface="town"/>
-		<token id="20" lemma="of" pos="in" surface="of"/>
-		<token id="21" lemma="Tafresh" pos="NP" surface="Tafresh"/>
-		<token id="22" lemma="near" pos="in" surface="near"/>
-		<token id="23" lemma="Tehran" pos="NP" surface="Tehran"/>
-		<token id="24" lemma="." pos="sent" surface="."/>
+		<token id="11" lemma="and" pos="CC" surface="and"/>
+		<token id="12" lemma="an" pos="DT" surface="an"/>
+		<token id="13" lemma="associate" pos="JJ" surface="associate"/>
+		<token id="14" lemma="university" pos="NN" surface="university"/>
+		<token id="15" lemma="complex" pos="NN" surface="complex"/>
+		<token id="16" lemma="locate" pos="VBN" surface="located"/>
+		<token id="17" lemma="at" pos="IN" surface="at"/>
+		<token id="18" lemma="the" pos="DT" surface="the"/>
+		<token id="19" lemma="town" pos="NN" surface="town"/>
+		<token id="20" lemma="of" pos="IN" surface="of"/>
+		<token id="21" lemma="tafresh" pos="NNP" surface="Tafresh"/>
+		<token id="22" lemma="near" pos="IN" surface="near"/>
+		<token id="23" lemma="tehran" pos="NNP" surface="Tehran"/>
+		<token id="24" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="nsubj"/>
+		<dep from="0" to="2" type="root"/>
+		<dep from="5" to="3" type="nummod"/>
+		<dep from="5" to="4" type="compound"/>
+		<dep from="2" to="5" type="dobj"/>
+		<dep from="5" to="6" type="punct"/>
+		<dep from="9" to="7" type="nummod"/>
+		<dep from="9" to="8" type="compound"/>
+		<dep from="5" to="9" type="conj"/>
+		<dep from="9" to="10" type="punct"/>
+		<dep from="9" to="11" type="cc"/>
+		<dep from="15" to="12" type="det"/>
+		<dep from="15" to="13" type="amod"/>
+		<dep from="15" to="14" type="compound"/>
+		<dep from="9" to="15" type="conj"/>
+		<dep from="15" to="16" type="acl"/>
+		<dep from="16" to="17" type="prep"/>
+		<dep from="19" to="18" type="det"/>
+		<dep from="17" to="19" type="pobj"/>
+		<dep from="19" to="20" type="prep"/>
+		<dep from="20" to="21" type="pobj"/>
+		<dep from="21" to="22" type="prep"/>
+		<dep from="22" to="23" type="pobj"/>
+		<dep from="2" to="24" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Being_located">

@@ -2,44 +2,83 @@
 <command id="4101267">
 	<sentence>In 1770 , Russia came to aid the Greeks ( defined by their Orthodox religion rather than by historical geographical boundaries ) , declaring war on the Ottoman Empire and occupying several Aegean islands until 1774 .</sentence>
 	<tokens>
-		<token id="1" lemma="In" pos="in" surface="In"/>
-		<token id="2" lemma="1770" pos="cd" surface="1770"/>
+		<token id="1" lemma="in" pos="IN" surface="In"/>
+		<token id="2" lemma="1770" pos="CD" surface="1770"/>
 		<token id="3" lemma="," pos="," surface=","/>
-		<token id="4" lemma="Russia" pos="NP" surface="Russia"/>
-		<token id="5" lemma="came" pos="VVD" surface="came"/>
-		<token id="6" lemma="to" pos="to" surface="to"/>
-		<token id="7" lemma="aid" pos="VV" surface="aid"/>
-		<token id="8" lemma="the" pos="dt" surface="the"/>
-		<token id="9" lemma="Greeks" pos="NPS" surface="Greeks"/>
-		<token id="10" lemma="(" pos="(" surface="("/>
-		<token id="11" lemma="defined" pos="VVN" surface="defined"/>
-		<token id="12" lemma="by" pos="in" surface="by"/>
-		<token id="13" lemma="their" pos="PP$" surface="their"/>
-		<token id="14" lemma="Orthodox" pos="NP" surface="Orthodox"/>
-		<token id="15" lemma="religion" pos="nn" surface="religion"/>
-		<token id="16" lemma="rather" pos="rb" surface="rather"/>
-		<token id="17" lemma="than" pos="in" surface="than"/>
-		<token id="18" lemma="by" pos="in" surface="by"/>
-		<token id="19" lemma="historical" pos="jj" surface="historical"/>
-		<token id="20" lemma="geographical" pos="jj" surface="geographical"/>
-		<token id="21" lemma="boundaries" pos="nns" surface="boundaries"/>
-		<token id="22" lemma=")" pos=")" surface=")"/>
+		<token id="4" lemma="russia" pos="NNP" surface="Russia"/>
+		<token id="5" lemma="come" pos="VBD" surface="came"/>
+		<token id="6" lemma="to" pos="TO" surface="to"/>
+		<token id="7" lemma="aid" pos="VB" surface="aid"/>
+		<token id="8" lemma="the" pos="DT" surface="the"/>
+		<token id="9" lemma="greeks" pos="NNPS" surface="Greeks"/>
+		<token id="10" lemma="(" pos="-LRB-" surface="("/>
+		<token id="11" lemma="define" pos="VBN" surface="defined"/>
+		<token id="12" lemma="by" pos="IN" surface="by"/>
+		<token id="13" lemma="-PRON-" pos="PRP$" surface="their"/>
+		<token id="14" lemma="orthodox" pos="NNP" surface="Orthodox"/>
+		<token id="15" lemma="religion" pos="NN" surface="religion"/>
+		<token id="16" lemma="rather" pos="RB" surface="rather"/>
+		<token id="17" lemma="than" pos="IN" surface="than"/>
+		<token id="18" lemma="by" pos="IN" surface="by"/>
+		<token id="19" lemma="historical" pos="JJ" surface="historical"/>
+		<token id="20" lemma="geographical" pos="JJ" surface="geographical"/>
+		<token id="21" lemma="boundary" pos="NNS" surface="boundaries"/>
+		<token id="22" lemma=")" pos="-RRB-" surface=")"/>
 		<token id="23" lemma="," pos="," surface=","/>
-		<token id="24" lemma="declaring" pos="VVG" surface="declaring"/>
-		<token id="25" lemma="war" pos="nn" surface="war"/>
-		<token id="26" lemma="on" pos="in" surface="on"/>
-		<token id="27" lemma="the" pos="dt" surface="the"/>
-		<token id="28" lemma="Ottoman" pos="NP" surface="Ottoman"/>
-		<token id="29" lemma="Empire" pos="NP" surface="Empire"/>
-		<token id="30" lemma="and" pos="cc" surface="and"/>
-		<token id="31" lemma="occupying" pos="jj" surface="occupying"/>
-		<token id="32" lemma="several" pos="jj" surface="several"/>
-		<token id="33" lemma="Aegean" pos="jj" surface="Aegean"/>
-		<token id="34" lemma="islands" pos="nns" surface="islands"/>
-		<token id="35" lemma="until" pos="in" surface="until"/>
-		<token id="36" lemma="1774" pos="cd" surface="1774"/>
-		<token id="37" lemma="." pos="sent" surface="."/>
+		<token id="24" lemma="declare" pos="VBG" surface="declaring"/>
+		<token id="25" lemma="war" pos="NN" surface="war"/>
+		<token id="26" lemma="on" pos="IN" surface="on"/>
+		<token id="27" lemma="the" pos="DT" surface="the"/>
+		<token id="28" lemma="ottoman" pos="NNP" surface="Ottoman"/>
+		<token id="29" lemma="empire" pos="NNP" surface="Empire"/>
+		<token id="30" lemma="and" pos="CC" surface="and"/>
+		<token id="31" lemma="occupy" pos="VBG" surface="occupying"/>
+		<token id="32" lemma="several" pos="JJ" surface="several"/>
+		<token id="33" lemma="aegean" pos="JJ" surface="Aegean"/>
+		<token id="34" lemma="island" pos="NNS" surface="islands"/>
+		<token id="35" lemma="until" pos="IN" surface="until"/>
+		<token id="36" lemma="1774" pos="CD" surface="1774"/>
+		<token id="37" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="5" to="1" type="prep"/>
+		<dep from="1" to="2" type="pobj"/>
+		<dep from="5" to="3" type="punct"/>
+		<dep from="5" to="4" type="nsubj"/>
+		<dep from="0" to="5" type="root"/>
+		<dep from="7" to="6" type="aux"/>
+		<dep from="5" to="7" type="advcl"/>
+		<dep from="9" to="8" type="det"/>
+		<dep from="7" to="9" type="dobj"/>
+		<dep from="9" to="10" type="punct"/>
+		<dep from="9" to="11" type="acl"/>
+		<dep from="11" to="12" type="agent"/>
+		<dep from="15" to="13" type="poss"/>
+		<dep from="15" to="14" type="compound"/>
+		<dep from="12" to="15" type="pobj"/>
+		<dep from="17" to="16" type="advmod"/>
+		<dep from="9" to="17" type="cc"/>
+		<dep from="7" to="18" type="prep"/>
+		<dep from="21" to="19" type="amod"/>
+		<dep from="21" to="20" type="amod"/>
+		<dep from="18" to="21" type="pobj"/>
+		<dep from="5" to="22" type="punct"/>
+		<dep from="5" to="23" type="punct"/>
+		<dep from="5" to="24" type="advcl"/>
+		<dep from="24" to="25" type="dobj"/>
+		<dep from="24" to="26" type="prep"/>
+		<dep from="29" to="27" type="det"/>
+		<dep from="29" to="28" type="compound"/>
+		<dep from="26" to="29" type="pobj"/>
+		<dep from="24" to="30" type="cc"/>
+		<dep from="24" to="31" type="conj"/>
+		<dep from="34" to="32" type="amod"/>
+		<dep from="34" to="33" type="amod"/>
+		<dep from="31" to="34" type="dobj"/>
+		<dep from="31" to="35" type="prep"/>
+		<dep from="35" to="36" type="pobj"/>
+		<dep from="5" to="37" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

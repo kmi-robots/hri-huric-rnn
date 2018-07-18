@@ -2,13 +2,21 @@
 <command id="4101258">
 	<sentence>The Coming of the Ottoman Turks</sentence>
 	<tokens>
-		<token id="1" lemma="The" pos="dt" surface="The"/>
-		<token id="2" lemma="Coming" pos="VVG" surface="Coming"/>
-		<token id="3" lemma="of" pos="in" surface="of"/>
-		<token id="4" lemma="the" pos="dt" surface="the"/>
-		<token id="5" lemma="Ottoman" pos="NP" surface="Ottoman"/>
-		<token id="6" lemma="Turks" pos="NPS" surface="Turks"/>
+		<token id="1" lemma="the" pos="DT" surface="The"/>
+		<token id="2" lemma="coming" pos="NN" surface="Coming"/>
+		<token id="3" lemma="of" pos="IN" surface="of"/>
+		<token id="4" lemma="the" pos="DT" surface="the"/>
+		<token id="5" lemma="ottoman" pos="NNP" surface="Ottoman"/>
+		<token id="6" lemma="turks" pos="NNPS" surface="Turks"/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="det"/>
+		<dep from="0" to="2" type="root"/>
+		<dep from="2" to="3" type="prep"/>
+		<dep from="6" to="4" type="det"/>
+		<dep from="6" to="5" type="compound"/>
+		<dep from="3" to="6" type="pobj"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

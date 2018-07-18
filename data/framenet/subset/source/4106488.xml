@@ -2,22 +2,39 @@
 <command id="4106488">
 	<sentence>Please use the enclosed response card and envelope to give generously to Goodwill today .</sentence>
 	<tokens>
-		<token id="1" lemma="Please" pos="VV" surface="Please"/>
-		<token id="2" lemma="use" pos="VV" surface="use"/>
-		<token id="3" lemma="the" pos="dt" surface="the"/>
-		<token id="4" lemma="enclosed" pos="VVN" surface="enclosed"/>
-		<token id="5" lemma="response" pos="nn" surface="response"/>
-		<token id="6" lemma="card" pos="nn" surface="card"/>
-		<token id="7" lemma="and" pos="cc" surface="and"/>
-		<token id="8" lemma="envelope" pos="nn" surface="envelope"/>
-		<token id="9" lemma="to" pos="to" surface="to"/>
-		<token id="10" lemma="give" pos="VV" surface="give"/>
-		<token id="11" lemma="generously" pos="rb" surface="generously"/>
-		<token id="12" lemma="to" pos="to" surface="to"/>
-		<token id="13" lemma="Goodwill" pos="NP" surface="Goodwill"/>
-		<token id="14" lemma="today" pos="nn" surface="today"/>
-		<token id="15" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="please" pos="UH" surface="Please"/>
+		<token id="2" lemma="use" pos="VB" surface="use"/>
+		<token id="3" lemma="the" pos="DT" surface="the"/>
+		<token id="4" lemma="enclose" pos="VBN" surface="enclosed"/>
+		<token id="5" lemma="response" pos="NN" surface="response"/>
+		<token id="6" lemma="card" pos="NN" surface="card"/>
+		<token id="7" lemma="and" pos="CC" surface="and"/>
+		<token id="8" lemma="envelope" pos="NN" surface="envelope"/>
+		<token id="9" lemma="to" pos="TO" surface="to"/>
+		<token id="10" lemma="give" pos="VB" surface="give"/>
+		<token id="11" lemma="generously" pos="RB" surface="generously"/>
+		<token id="12" lemma="to" pos="IN" surface="to"/>
+		<token id="13" lemma="goodwill" pos="NNP" surface="Goodwill"/>
+		<token id="14" lemma="today" pos="NN" surface="today"/>
+		<token id="15" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="intj"/>
+		<dep from="0" to="2" type="root"/>
+		<dep from="6" to="3" type="det"/>
+		<dep from="6" to="4" type="amod"/>
+		<dep from="6" to="5" type="compound"/>
+		<dep from="2" to="6" type="dobj"/>
+		<dep from="6" to="7" type="cc"/>
+		<dep from="6" to="8" type="conj"/>
+		<dep from="10" to="9" type="aux"/>
+		<dep from="2" to="10" type="xcomp"/>
+		<dep from="10" to="11" type="advmod"/>
+		<dep from="10" to="12" type="dative"/>
+		<dep from="12" to="13" type="pobj"/>
+		<dep from="10" to="14" type="npadvmod"/>
+		<dep from="2" to="15" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Placing">

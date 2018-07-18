@@ -2,29 +2,53 @@
 <command id="4106069">
 	<sentence>To get here , follow the path from the southwest end of Discovery Bay ; the walk takes about 30 minutes .</sentence>
 	<tokens>
-		<token id="1" lemma="To" pos="to" surface="To"/>
-		<token id="2" lemma="get" pos="VV" surface="get"/>
-		<token id="3" lemma="here" pos="rb" surface="here"/>
+		<token id="1" lemma="to" pos="TO" surface="To"/>
+		<token id="2" lemma="get" pos="VB" surface="get"/>
+		<token id="3" lemma="here" pos="RB" surface="here"/>
 		<token id="4" lemma="," pos="," surface=","/>
-		<token id="5" lemma="follow" pos="VVP" surface="follow"/>
-		<token id="6" lemma="the" pos="dt" surface="the"/>
-		<token id="7" lemma="path" pos="nn" surface="path"/>
-		<token id="8" lemma="from" pos="in" surface="from"/>
-		<token id="9" lemma="the" pos="dt" surface="the"/>
-		<token id="10" lemma="southwest" pos="jjs" surface="southwest"/>
-		<token id="11" lemma="end" pos="nn" surface="end"/>
-		<token id="12" lemma="of" pos="in" surface="of"/>
-		<token id="13" lemma="Discovery" pos="NP" surface="Discovery"/>
-		<token id="14" lemma="Bay" pos="NP" surface="Bay"/>
+		<token id="5" lemma="follow" pos="VB" surface="follow"/>
+		<token id="6" lemma="the" pos="DT" surface="the"/>
+		<token id="7" lemma="path" pos="NN" surface="path"/>
+		<token id="8" lemma="from" pos="IN" surface="from"/>
+		<token id="9" lemma="the" pos="DT" surface="the"/>
+		<token id="10" lemma="southwest" pos="JJ" surface="southwest"/>
+		<token id="11" lemma="end" pos="NN" surface="end"/>
+		<token id="12" lemma="of" pos="IN" surface="of"/>
+		<token id="13" lemma="discovery" pos="NNP" surface="Discovery"/>
+		<token id="14" lemma="bay" pos="NNP" surface="Bay"/>
 		<token id="15" lemma=";" pos=":" surface=";"/>
-		<token id="16" lemma="the" pos="dt" surface="the"/>
-		<token id="17" lemma="walk" pos="nn" surface="walk"/>
-		<token id="18" lemma="takes" pos="VVZ" surface="takes"/>
-		<token id="19" lemma="about" pos="in" surface="about"/>
-		<token id="20" lemma="30" pos="cd" surface="30"/>
-		<token id="21" lemma="minutes" pos="nns" surface="minutes"/>
-		<token id="22" lemma="." pos="sent" surface="."/>
+		<token id="16" lemma="the" pos="DT" surface="the"/>
+		<token id="17" lemma="walk" pos="NN" surface="walk"/>
+		<token id="18" lemma="take" pos="VBZ" surface="takes"/>
+		<token id="19" lemma="about" pos="RB" surface="about"/>
+		<token id="20" lemma="30" pos="CD" surface="30"/>
+		<token id="21" lemma="minute" pos="NNS" surface="minutes"/>
+		<token id="22" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="aux"/>
+		<dep from="5" to="2" type="advcl"/>
+		<dep from="2" to="3" type="advmod"/>
+		<dep from="5" to="4" type="punct"/>
+		<dep from="18" to="5" type="ccomp"/>
+		<dep from="7" to="6" type="det"/>
+		<dep from="5" to="7" type="dobj"/>
+		<dep from="7" to="8" type="prep"/>
+		<dep from="11" to="9" type="det"/>
+		<dep from="11" to="10" type="amod"/>
+		<dep from="8" to="11" type="pobj"/>
+		<dep from="11" to="12" type="prep"/>
+		<dep from="14" to="13" type="compound"/>
+		<dep from="12" to="14" type="pobj"/>
+		<dep from="18" to="15" type="punct"/>
+		<dep from="17" to="16" type="det"/>
+		<dep from="18" to="17" type="nsubj"/>
+		<dep from="0" to="18" type="root"/>
+		<dep from="20" to="19" type="advmod"/>
+		<dep from="21" to="20" type="nummod"/>
+		<dep from="18" to="21" type="dobj"/>
+		<dep from="18" to="22" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

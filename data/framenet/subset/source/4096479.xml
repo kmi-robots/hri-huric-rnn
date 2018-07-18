@@ -2,43 +2,72 @@
 <command id="4096479">
 	<sentence>In late December 2002 , North Korean technicians broke seals and disabled cameras that had been installed by the IAEA in order to monitor the freeze . </sentence>
 	<tokens>
-		<token id="1" lemma="In" pos="in" surface="In"/>
-		<token id="2" lemma="late" pos="jj" surface="late"/>
-		<token id="3" lemma="technicians" pos="nns" surface="technicians"/>
-		<token id="4" lemma="broke" pos="VVD" surface="broke"/>
-		<token id="5" lemma="seals" pos="nns" surface="seals"/>
-		<token id="6" lemma="and" pos="cc" surface="and"/>
-		<token id="7" lemma="disabled" pos="jj" surface="disabled"/>
-		<token id="8" lemma="cameras" pos="nns" surface="cameras"/>
-		<token id="9" lemma="that" pos="wdt" surface="that"/>
-		<token id="10" lemma="installed" pos="VVN" surface="installed"/>
-		<token id="11" lemma="the" pos="dt" surface="the"/>
-		<token id="12" lemma="in" pos="in" surface="in"/>
-		<token id="13" lemma="order" pos="nn" surface="order"/>
-		<token id="14" lemma="to" pos="to" surface="to"/>
-		<token id="15" lemma="monitor" pos="VV" surface="monitor"/>
-		<token id="16" lemma="the" pos="dt" surface="the"/>
-		<token id="17" lemma="freeze" pos="nn" surface="freeze"/>
-		<token id="18" lemma="." pos="sent" surface="."/>
-		<token id="19" lemma="December" pos="NNP" surface="December"/>
-		<token id="20" lemma="2002" pos="cd" surface="2002"/>
-		<token id="21" lemma="," pos="," surface=","/>
-		<token id="22" lemma="North" pos="NNP" surface="North"/>
-		<token id="23" lemma="Korean" pos="NNP" surface="Korean"/>
-		<token id="24" lemma="had" pos="VHD" surface="had"/>
-		<token id="25" lemma="been" pos="VBN" surface="been"/>
-		<token id="26" lemma="by" pos="in" surface="by"/>
-		<token id="27" lemma="IAEA" pos="NNP" surface="IAEA"/>
+		<token id="1" lemma="in" pos="IN" surface="In"/>
+		<token id="2" lemma="late" pos="JJ" surface="late"/>
+		<token id="3" lemma="december" pos="NNP" surface="December"/>
+		<token id="4" lemma="2002" pos="CD" surface="2002"/>
+		<token id="5" lemma="," pos="," surface=","/>
+		<token id="6" lemma="north" pos="JJ" surface="North"/>
+		<token id="7" lemma="korean" pos="JJ" surface="Korean"/>
+		<token id="8" lemma="technician" pos="NNS" surface="technicians"/>
+		<token id="9" lemma="break" pos="VBD" surface="broke"/>
+		<token id="10" lemma="seal" pos="NNS" surface="seals"/>
+		<token id="11" lemma="and" pos="CC" surface="and"/>
+		<token id="12" lemma="disabled" pos="JJ" surface="disabled"/>
+		<token id="13" lemma="camera" pos="NNS" surface="cameras"/>
+		<token id="14" lemma="that" pos="WDT" surface="that"/>
+		<token id="15" lemma="have" pos="VBD" surface="had"/>
+		<token id="16" lemma="be" pos="VBN" surface="been"/>
+		<token id="17" lemma="instal" pos="VBN" surface="installed"/>
+		<token id="18" lemma="by" pos="IN" surface="by"/>
+		<token id="19" lemma="the" pos="DT" surface="the"/>
+		<token id="20" lemma="iaea" pos="NNP" surface="IAEA"/>
+		<token id="21" lemma="in" pos="IN" surface="in"/>
+		<token id="22" lemma="order" pos="NN" surface="order"/>
+		<token id="23" lemma="to" pos="TO" surface="to"/>
+		<token id="24" lemma="monitor" pos="VB" surface="monitor"/>
+		<token id="25" lemma="the" pos="DT" surface="the"/>
+		<token id="26" lemma="freeze" pos="NN" surface="freeze"/>
+		<token id="27" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="9" to="1" type="prep"/>
+		<dep from="3" to="2" type="amod"/>
+		<dep from="1" to="3" type="pobj"/>
+		<dep from="3" to="4" type="nummod"/>
+		<dep from="9" to="5" type="punct"/>
+		<dep from="7" to="6" type="amod"/>
+		<dep from="8" to="7" type="amod"/>
+		<dep from="9" to="8" type="nsubj"/>
+		<dep from="0" to="9" type="root"/>
+		<dep from="9" to="10" type="dobj"/>
+		<dep from="10" to="11" type="cc"/>
+		<dep from="13" to="12" type="amod"/>
+		<dep from="10" to="13" type="conj"/>
+		<dep from="17" to="14" type="nsubjpass"/>
+		<dep from="17" to="15" type="aux"/>
+		<dep from="17" to="16" type="auxpass"/>
+		<dep from="10" to="17" type="relcl"/>
+		<dep from="17" to="18" type="agent"/>
+		<dep from="20" to="19" type="det"/>
+		<dep from="18" to="20" type="pobj"/>
+		<dep from="9" to="21" type="prep"/>
+		<dep from="21" to="22" type="pobj"/>
+		<dep from="24" to="23" type="aux"/>
+		<dep from="22" to="24" type="acl"/>
+		<dep from="26" to="25" type="det"/>
+		<dep from="24" to="26" type="dobj"/>
+		<dep from="9" to="27" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Searching">
 				<lexicalUnit>
-					<token id="15"/>
+					<token id="24"/>
 				</lexicalUnit>
 				<frameElement type="Ground">
-					<token id="16"/>
-					<token id="17"/>
+					<token id="25"/>
+					<token id="26"/>
 				</frameElement>
 			</frame>
 		</frameSemantics>

@@ -2,19 +2,33 @@
 <command id="4101384">
 	<sentence>A Second Century Society response card and return envelope are enclosed .</sentence>
 	<tokens>
-		<token id="1" lemma="A" pos="dt" surface="A"/>
-		<token id="2" lemma="Second" pos="NP" surface="Second"/>
-		<token id="3" lemma="Century" pos="NP" surface="Century"/>
-		<token id="4" lemma="Society" pos="NP" surface="Society"/>
-		<token id="5" lemma="response" pos="nn" surface="response"/>
-		<token id="6" lemma="card" pos="nn" surface="card"/>
-		<token id="7" lemma="and" pos="cc" surface="and"/>
-		<token id="8" lemma="return" pos="nn" surface="return"/>
-		<token id="9" lemma="envelope" pos="nn" surface="envelope"/>
-		<token id="10" lemma="are" pos="vbp" surface="are"/>
-		<token id="11" lemma="enclosed" pos="VVN" surface="enclosed"/>
-		<token id="12" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="a" pos="DT" surface="A"/>
+		<token id="2" lemma="second" pos="NNP" surface="Second"/>
+		<token id="3" lemma="century" pos="NNP" surface="Century"/>
+		<token id="4" lemma="society" pos="NNP" surface="Society"/>
+		<token id="5" lemma="response" pos="NN" surface="response"/>
+		<token id="6" lemma="card" pos="NN" surface="card"/>
+		<token id="7" lemma="and" pos="CC" surface="and"/>
+		<token id="8" lemma="return" pos="NN" surface="return"/>
+		<token id="9" lemma="envelope" pos="NN" surface="envelope"/>
+		<token id="10" lemma="be" pos="VBP" surface="are"/>
+		<token id="11" lemma="enclose" pos="VBN" surface="enclosed"/>
+		<token id="12" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="6" to="1" type="det"/>
+		<dep from="3" to="2" type="compound"/>
+		<dep from="4" to="3" type="compound"/>
+		<dep from="6" to="4" type="compound"/>
+		<dep from="6" to="5" type="compound"/>
+		<dep from="11" to="6" type="nsubjpass"/>
+		<dep from="6" to="7" type="cc"/>
+		<dep from="9" to="8" type="compound"/>
+		<dep from="6" to="9" type="conj"/>
+		<dep from="11" to="10" type="auxpass"/>
+		<dep from="0" to="11" type="root"/>
+		<dep from="11" to="12" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Placing">

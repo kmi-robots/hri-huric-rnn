@@ -2,25 +2,45 @@
 <command id="4101592">
 	<sentence>Later , another high-ranking trafficker , Leonidas Vargas , was arrested and 1,000 pounds of dynamite seized .</sentence>
 	<tokens>
-		<token id="1" lemma="Later" pos="rb" surface="Later"/>
+		<token id="1" lemma="later" pos="RB" surface="Later"/>
 		<token id="2" lemma="," pos="," surface=","/>
-		<token id="3" lemma="another" pos="dt" surface="another"/>
-		<token id="4" lemma="high-ranking" pos="jj" surface="high-ranking"/>
-		<token id="5" lemma="trafficker" pos="nn" surface="trafficker"/>
+		<token id="3" lemma="another" pos="DT" surface="another"/>
+		<token id="4" lemma="high-rank" pos="VBG" surface="high-ranking"/>
+		<token id="5" lemma="trafficker" pos="NN" surface="trafficker"/>
 		<token id="6" lemma="," pos="," surface=","/>
-		<token id="7" lemma="Leonidas" pos="NP" surface="Leonidas"/>
-		<token id="8" lemma="Vargas" pos="NP" surface="Vargas"/>
+		<token id="7" lemma="leonidas" pos="NNP" surface="Leonidas"/>
+		<token id="8" lemma="vargas" pos="NNP" surface="Vargas"/>
 		<token id="9" lemma="," pos="," surface=","/>
-		<token id="10" lemma="was" pos="VBD" surface="was"/>
-		<token id="11" lemma="arrested" pos="VVN" surface="arrested"/>
-		<token id="12" lemma="and" pos="cc" surface="and"/>
-		<token id="13" lemma="1,000" pos="cd" surface="1,000"/>
-		<token id="14" lemma="pounds" pos="nns" surface="pounds"/>
-		<token id="15" lemma="of" pos="in" surface="of"/>
-		<token id="16" lemma="dynamite" pos="nn" surface="dynamite"/>
-		<token id="17" lemma="seized" pos="VVD" surface="seized"/>
-		<token id="18" lemma="." pos="sent" surface="."/>
+		<token id="10" lemma="be" pos="VBD" surface="was"/>
+		<token id="11" lemma="arrest" pos="VBN" surface="arrested"/>
+		<token id="12" lemma="and" pos="CC" surface="and"/>
+		<token id="13" lemma="1,000" pos="CD" surface="1,000"/>
+		<token id="14" lemma="pound" pos="NNS" surface="pounds"/>
+		<token id="15" lemma="of" pos="IN" surface="of"/>
+		<token id="16" lemma="dynamite" pos="NN" surface="dynamite"/>
+		<token id="17" lemma="seize" pos="VBN" surface="seized"/>
+		<token id="18" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="11" to="1" type="advmod"/>
+		<dep from="11" to="2" type="punct"/>
+		<dep from="5" to="3" type="det"/>
+		<dep from="5" to="4" type="amod"/>
+		<dep from="11" to="5" type="nsubjpass"/>
+		<dep from="5" to="6" type="punct"/>
+		<dep from="8" to="7" type="compound"/>
+		<dep from="5" to="8" type="appos"/>
+		<dep from="5" to="9" type="punct"/>
+		<dep from="11" to="10" type="auxpass"/>
+		<dep from="0" to="11" type="root"/>
+		<dep from="11" to="12" type="cc"/>
+		<dep from="14" to="13" type="nummod"/>
+		<dep from="17" to="14" type="nsubj"/>
+		<dep from="14" to="15" type="prep"/>
+		<dep from="15" to="16" type="pobj"/>
+		<dep from="11" to="17" type="conj"/>
+		<dep from="17" to="18" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Taking">

@@ -2,23 +2,41 @@
 <command id="4102851">
 	<sentence>1- Kiosks should be placed at entrance gates to check visitors when approaching the building .</sentence>
 	<tokens>
-		<token id="1" lemma="1-" pos="cd" surface="1-"/>
-		<token id="2" lemma="Kiosks" pos="nns" surface="Kiosks"/>
-		<token id="3" lemma="should" pos="md" surface="should"/>
-		<token id="4" lemma="be" pos="vb" surface="be"/>
-		<token id="5" lemma="placed" pos="VVN" surface="placed"/>
-		<token id="6" lemma="at" pos="in" surface="at"/>
-		<token id="7" lemma="entrance" pos="nn" surface="entrance"/>
-		<token id="8" lemma="gates" pos="nns" surface="gates"/>
-		<token id="9" lemma="to" pos="to" surface="to"/>
-		<token id="10" lemma="check" pos="VV" surface="check"/>
-		<token id="11" lemma="visitors" pos="nns" surface="visitors"/>
-		<token id="12" lemma="when" pos="wrb" surface="when"/>
-		<token id="13" lemma="approaching" pos="VVG" surface="approaching"/>
-		<token id="14" lemma="the" pos="dt" surface="the"/>
-		<token id="15" lemma="building" pos="nn" surface="building"/>
-		<token id="16" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="1-" pos="LS" surface="1-"/>
+		<token id="2" lemma="kiosks" pos="NNP" surface="Kiosks"/>
+		<token id="3" lemma="should" pos="MD" surface="should"/>
+		<token id="4" lemma="be" pos="VB" surface="be"/>
+		<token id="5" lemma="place" pos="VBN" surface="placed"/>
+		<token id="6" lemma="at" pos="IN" surface="at"/>
+		<token id="7" lemma="entrance" pos="NN" surface="entrance"/>
+		<token id="8" lemma="gate" pos="NNS" surface="gates"/>
+		<token id="9" lemma="to" pos="TO" surface="to"/>
+		<token id="10" lemma="check" pos="VB" surface="check"/>
+		<token id="11" lemma="visitor" pos="NNS" surface="visitors"/>
+		<token id="12" lemma="when" pos="WRB" surface="when"/>
+		<token id="13" lemma="approach" pos="VBG" surface="approaching"/>
+		<token id="14" lemma="the" pos="DT" surface="the"/>
+		<token id="15" lemma="building" pos="NN" surface="building"/>
+		<token id="16" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="5" to="1" type="meta"/>
+		<dep from="5" to="2" type="nsubjpass"/>
+		<dep from="5" to="3" type="aux"/>
+		<dep from="5" to="4" type="auxpass"/>
+		<dep from="0" to="5" type="root"/>
+		<dep from="5" to="6" type="prep"/>
+		<dep from="8" to="7" type="compound"/>
+		<dep from="6" to="8" type="pobj"/>
+		<dep from="10" to="9" type="aux"/>
+		<dep from="5" to="10" type="advcl"/>
+		<dep from="10" to="11" type="dobj"/>
+		<dep from="13" to="12" type="advmod"/>
+		<dep from="10" to="13" type="advcl"/>
+		<dep from="15" to="14" type="det"/>
+		<dep from="13" to="15" type="dobj"/>
+		<dep from="5" to="16" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Placing">

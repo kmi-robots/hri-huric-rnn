@@ -2,19 +2,33 @@
 <command id="4106613">
 	<sentence>Your gift will give children and families hope for improved tomorrows .</sentence>
 	<tokens>
-		<token id="1" lemma="Your" pos="PP$" surface="Your"/>
-		<token id="2" lemma="gift" pos="nn" surface="gift"/>
-		<token id="3" lemma="will" pos="md" surface="will"/>
-		<token id="4" lemma="give" pos="VV" surface="give"/>
-		<token id="5" lemma="children" pos="nns" surface="children"/>
-		<token id="6" lemma="and" pos="cc" surface="and"/>
-		<token id="7" lemma="families" pos="nns" surface="families"/>
-		<token id="8" lemma="hope" pos="VVP" surface="hope"/>
-		<token id="9" lemma="for" pos="in" surface="for"/>
-		<token id="10" lemma="improved" pos="jj" surface="improved"/>
-		<token id="11" lemma="tomorrows" pos="nns" surface="tomorrows"/>
-		<token id="12" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="-PRON-" pos="PRP$" surface="Your"/>
+		<token id="2" lemma="gift" pos="NN" surface="gift"/>
+		<token id="3" lemma="will" pos="MD" surface="will"/>
+		<token id="4" lemma="give" pos="VB" surface="give"/>
+		<token id="5" lemma="child" pos="NNS" surface="children"/>
+		<token id="6" lemma="and" pos="CC" surface="and"/>
+		<token id="7" lemma="family" pos="NNS" surface="families"/>
+		<token id="8" lemma="hope" pos="VBP" surface="hope"/>
+		<token id="9" lemma="for" pos="IN" surface="for"/>
+		<token id="10" lemma="improved" pos="JJ" surface="improved"/>
+		<token id="11" lemma="tomorrow" pos="NNS" surface="tomorrows"/>
+		<token id="12" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="poss"/>
+		<dep from="4" to="2" type="nsubj"/>
+		<dep from="4" to="3" type="aux"/>
+		<dep from="0" to="4" type="root"/>
+		<dep from="4" to="5" type="dative"/>
+		<dep from="5" to="6" type="cc"/>
+		<dep from="5" to="7" type="conj"/>
+		<dep from="4" to="8" type="dobj"/>
+		<dep from="8" to="9" type="prep"/>
+		<dep from="11" to="10" type="amod"/>
+		<dep from="9" to="11" type="pobj"/>
+		<dep from="4" to="12" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Giving">

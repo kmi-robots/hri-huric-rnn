@@ -2,20 +2,35 @@
 <command id="4097923">
 	<sentence>These claims have yet to be fully investigated , much less verified .</sentence>
 	<tokens>
-		<token id="1" lemma="These" pos="dt" surface="These"/>
-		<token id="2" lemma="claims" pos="nns" surface="claims"/>
-		<token id="3" lemma="have" pos="VHP" surface="have"/>
-		<token id="4" lemma="yet" pos="rb" surface="yet"/>
-		<token id="5" lemma="to" pos="to" surface="to"/>
-		<token id="6" lemma="be" pos="vb" surface="be"/>
-		<token id="7" lemma="fully" pos="rb" surface="fully"/>
-		<token id="8" lemma="investigated" pos="VVN" surface="investigated"/>
+		<token id="1" lemma="these" pos="DT" surface="These"/>
+		<token id="2" lemma="claim" pos="NNS" surface="claims"/>
+		<token id="3" lemma="have" pos="VBP" surface="have"/>
+		<token id="4" lemma="yet" pos="RB" surface="yet"/>
+		<token id="5" lemma="to" pos="TO" surface="to"/>
+		<token id="6" lemma="be" pos="VB" surface="be"/>
+		<token id="7" lemma="fully" pos="RB" surface="fully"/>
+		<token id="8" lemma="investigate" pos="VBN" surface="investigated"/>
 		<token id="9" lemma="," pos="," surface=","/>
-		<token id="10" lemma="much" pos="rb" surface="much"/>
-		<token id="11" lemma="less" pos="rbr" surface="less"/>
-		<token id="12" lemma="verified" pos="VVN" surface="verified"/>
-		<token id="13" lemma="." pos="sent" surface="."/>
+		<token id="10" lemma="much" pos="RB" surface="much"/>
+		<token id="11" lemma="less" pos="RBR" surface="less"/>
+		<token id="12" lemma="verified" pos="JJ" surface="verified"/>
+		<token id="13" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="det"/>
+		<dep from="3" to="2" type="nsubj"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="3" to="4" type="advmod"/>
+		<dep from="8" to="5" type="aux"/>
+		<dep from="8" to="6" type="auxpass"/>
+		<dep from="8" to="7" type="advmod"/>
+		<dep from="3" to="8" type="xcomp"/>
+		<dep from="8" to="9" type="punct"/>
+		<dep from="11" to="10" type="advmod"/>
+		<dep from="12" to="11" type="advmod"/>
+		<dep from="8" to="12" type="conj"/>
+		<dep from="3" to="13" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Searching">

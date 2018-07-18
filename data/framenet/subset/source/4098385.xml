@@ -2,19 +2,33 @@
 <command id="4098385">
 	<sentence>QN : Did any students arrive at the school on Sunday ?</sentence>
 	<tokens>
-		<token id="1" lemma="QN" pos="NP" surface="QN"/>
+		<token id="1" lemma="qn" pos="NNP" surface="QN"/>
 		<token id="2" lemma=":" pos=":" surface=":"/>
-		<token id="3" lemma="Did" pos="VVD" surface="Did"/>
-		<token id="4" lemma="any" pos="dt" surface="any"/>
-		<token id="5" lemma="students" pos="nns" surface="students"/>
-		<token id="6" lemma="arrive" pos="VVP" surface="arrive"/>
-		<token id="7" lemma="at" pos="in" surface="at"/>
-		<token id="8" lemma="the" pos="dt" surface="the"/>
-		<token id="9" lemma="school" pos="nn" surface="school"/>
-		<token id="10" lemma="on" pos="in" surface="on"/>
-		<token id="11" lemma="Sunday" pos="NP" surface="Sunday"/>
-		<token id="12" lemma="?" pos="sent" surface="?"/>
+		<token id="3" lemma="do" pos="VBD" surface="Did"/>
+		<token id="4" lemma="any" pos="DT" surface="any"/>
+		<token id="5" lemma="student" pos="NNS" surface="students"/>
+		<token id="6" lemma="arrive" pos="VB" surface="arrive"/>
+		<token id="7" lemma="at" pos="IN" surface="at"/>
+		<token id="8" lemma="the" pos="DT" surface="the"/>
+		<token id="9" lemma="school" pos="NN" surface="school"/>
+		<token id="10" lemma="on" pos="IN" surface="on"/>
+		<token id="11" lemma="sunday" pos="NNP" surface="Sunday"/>
+		<token id="12" lemma="?" pos="." surface="?"/>
 	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="1" to="2" type="punct"/>
+		<dep from="6" to="3" type="aux"/>
+		<dep from="5" to="4" type="det"/>
+		<dep from="6" to="5" type="nsubj"/>
+		<dep from="0" to="6" type="root"/>
+		<dep from="6" to="7" type="prep"/>
+		<dep from="9" to="8" type="det"/>
+		<dep from="7" to="9" type="pobj"/>
+		<dep from="6" to="10" type="prep"/>
+		<dep from="10" to="11" type="pobj"/>
+		<dep from="6" to="12" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

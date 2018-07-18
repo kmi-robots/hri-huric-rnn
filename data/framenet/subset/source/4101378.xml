@@ -2,39 +2,73 @@
 <command id="4101378">
 	<sentence>The SCS brochure I am enclosing will give you the historic significance of SCS , as well as listing activities and specific benefits awarded to donors at the Georgia O'Keeffe level .</sentence>
 	<tokens>
-		<token id="1" lemma="The" pos="dt" surface="The"/>
-		<token id="2" lemma="SCS" pos="jj" surface="SCS"/>
-		<token id="3" lemma="brochure" pos="nn" surface="brochure"/>
-		<token id="4" lemma="I" pos="PP" surface="I"/>
-		<token id="5" lemma="am" pos="vbp" surface="am"/>
-		<token id="6" lemma="enclosing" pos="VVG" surface="enclosing"/>
-		<token id="7" lemma="will" pos="md" surface="will"/>
-		<token id="8" lemma="give" pos="VV" surface="give"/>
-		<token id="9" lemma="you" pos="PP" surface="you"/>
-		<token id="10" lemma="the" pos="dt" surface="the"/>
-		<token id="11" lemma="historic" pos="jj" surface="historic"/>
-		<token id="12" lemma="significance" pos="nn" surface="significance"/>
-		<token id="13" lemma="of" pos="in" surface="of"/>
-		<token id="14" lemma="SCS" pos="nn" surface="SCS"/>
+		<token id="1" lemma="the" pos="DT" surface="The"/>
+		<token id="2" lemma="scs" pos="NNP" surface="SCS"/>
+		<token id="3" lemma="brochure" pos="NN" surface="brochure"/>
+		<token id="4" lemma="-PRON-" pos="PRP" surface="I"/>
+		<token id="5" lemma="be" pos="VBP" surface="am"/>
+		<token id="6" lemma="enclose" pos="VBG" surface="enclosing"/>
+		<token id="7" lemma="will" pos="MD" surface="will"/>
+		<token id="8" lemma="give" pos="VB" surface="give"/>
+		<token id="9" lemma="-PRON-" pos="PRP" surface="you"/>
+		<token id="10" lemma="the" pos="DT" surface="the"/>
+		<token id="11" lemma="historic" pos="JJ" surface="historic"/>
+		<token id="12" lemma="significance" pos="NN" surface="significance"/>
+		<token id="13" lemma="of" pos="IN" surface="of"/>
+		<token id="14" lemma="scs" pos="NNP" surface="SCS"/>
 		<token id="15" lemma="," pos="," surface=","/>
-		<token id="16" lemma="as" pos="rb" surface="as"/>
-		<token id="17" lemma="well" pos="rb" surface="well"/>
-		<token id="18" lemma="as" pos="in" surface="as"/>
-		<token id="19" lemma="listing" pos="VVG" surface="listing"/>
-		<token id="20" lemma="activities" pos="nns" surface="activities"/>
-		<token id="21" lemma="and" pos="cc" surface="and"/>
-		<token id="22" lemma="specific" pos="jj" surface="specific"/>
-		<token id="23" lemma="benefits" pos="nns" surface="benefits"/>
-		<token id="24" lemma="awarded" pos="VVD" surface="awarded"/>
-		<token id="25" lemma="to" pos="to" surface="to"/>
-		<token id="26" lemma="donors" pos="nns" surface="donors"/>
-		<token id="27" lemma="at" pos="in" surface="at"/>
-		<token id="28" lemma="the" pos="dt" surface="the"/>
-		<token id="29" lemma="Georgia" pos="NP" surface="Georgia"/>
-		<token id="30" lemma="O'Keeffe" pos="NP" surface="O'Keeffe"/>
-		<token id="31" lemma="level" pos="nn" surface="level"/>
-		<token id="32" lemma="." pos="sent" surface="."/>
+		<token id="16" lemma="as" pos="RB" surface="as"/>
+		<token id="17" lemma="well" pos="RB" surface="well"/>
+		<token id="18" lemma="as" pos="IN" surface="as"/>
+		<token id="19" lemma="list" pos="VBG" surface="listing"/>
+		<token id="20" lemma="activity" pos="NNS" surface="activities"/>
+		<token id="21" lemma="and" pos="CC" surface="and"/>
+		<token id="22" lemma="specific" pos="JJ" surface="specific"/>
+		<token id="23" lemma="benefit" pos="NNS" surface="benefits"/>
+		<token id="24" lemma="award" pos="VBN" surface="awarded"/>
+		<token id="25" lemma="to" pos="IN" surface="to"/>
+		<token id="26" lemma="donor" pos="NNS" surface="donors"/>
+		<token id="27" lemma="at" pos="IN" surface="at"/>
+		<token id="28" lemma="the" pos="DT" surface="the"/>
+		<token id="29" lemma="georgia" pos="NNP" surface="Georgia"/>
+		<token id="30" lemma="o'keeffe" pos="NNP" surface="O'Keeffe"/>
+		<token id="31" lemma="level" pos="NN" surface="level"/>
+		<token id="32" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="det"/>
+		<dep from="3" to="2" type="compound"/>
+		<dep from="8" to="3" type="nsubj"/>
+		<dep from="6" to="4" type="nsubj"/>
+		<dep from="6" to="5" type="aux"/>
+		<dep from="3" to="6" type="relcl"/>
+		<dep from="8" to="7" type="aux"/>
+		<dep from="0" to="8" type="root"/>
+		<dep from="8" to="9" type="dative"/>
+		<dep from="12" to="10" type="det"/>
+		<dep from="12" to="11" type="amod"/>
+		<dep from="8" to="12" type="dobj"/>
+		<dep from="12" to="13" type="prep"/>
+		<dep from="13" to="14" type="pobj"/>
+		<dep from="12" to="15" type="punct"/>
+		<dep from="18" to="16" type="advmod"/>
+		<dep from="18" to="17" type="advmod"/>
+		<dep from="12" to="18" type="cc"/>
+		<dep from="12" to="19" type="conj"/>
+		<dep from="19" to="20" type="dobj"/>
+		<dep from="20" to="21" type="cc"/>
+		<dep from="23" to="22" type="amod"/>
+		<dep from="20" to="23" type="conj"/>
+		<dep from="23" to="24" type="acl"/>
+		<dep from="24" to="25" type="dative"/>
+		<dep from="25" to="26" type="pobj"/>
+		<dep from="24" to="27" type="prep"/>
+		<dep from="31" to="28" type="det"/>
+		<dep from="30" to="29" type="compound"/>
+		<dep from="31" to="30" type="compound"/>
+		<dep from="27" to="31" type="pobj"/>
+		<dep from="8" to="32" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Giving">

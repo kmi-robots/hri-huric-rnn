@@ -2,46 +2,87 @@
 <command id="4096631">
 	<sentence>Upon visiting suspected facilities in February 2003 , and with new declarations by Iran , the International Atomic Energy Agency ( IAEA ) concluded that several sensitive technology facilities are either operational , under construction , or planned .</sentence>
 	<tokens>
-		<token id="1" lemma="Upon" pos="in" surface="Upon"/>
-		<token id="2" lemma="visiting" pos="VVG" surface="visiting"/>
-		<token id="3" lemma="suspected" pos="jj" surface="suspected"/>
-		<token id="4" lemma="facilities" pos="nns" surface="facilities"/>
-		<token id="5" lemma="in" pos="in" surface="in"/>
-		<token id="6" lemma="February" pos="NP" surface="February"/>
-		<token id="7" lemma="2003" pos="cd" surface="2003"/>
+		<token id="1" lemma="upon" pos="IN" surface="Upon"/>
+		<token id="2" lemma="visit" pos="VBG" surface="visiting"/>
+		<token id="3" lemma="suspect" pos="VBN" surface="suspected"/>
+		<token id="4" lemma="facility" pos="NNS" surface="facilities"/>
+		<token id="5" lemma="in" pos="IN" surface="in"/>
+		<token id="6" lemma="february" pos="NNP" surface="February"/>
+		<token id="7" lemma="2003" pos="CD" surface="2003"/>
 		<token id="8" lemma="," pos="," surface=","/>
-		<token id="9" lemma="and" pos="cc" surface="and"/>
-		<token id="10" lemma="with" pos="in" surface="with"/>
-		<token id="11" lemma="new" pos="jj" surface="new"/>
-		<token id="12" lemma="declarations" pos="nns" surface="declarations"/>
-		<token id="13" lemma="by" pos="in" surface="by"/>
-		<token id="14" lemma="Iran" pos="NP" surface="Iran"/>
+		<token id="9" lemma="and" pos="CC" surface="and"/>
+		<token id="10" lemma="with" pos="IN" surface="with"/>
+		<token id="11" lemma="new" pos="JJ" surface="new"/>
+		<token id="12" lemma="declaration" pos="NNS" surface="declarations"/>
+		<token id="13" lemma="by" pos="IN" surface="by"/>
+		<token id="14" lemma="iran" pos="NNP" surface="Iran"/>
 		<token id="15" lemma="," pos="," surface=","/>
-		<token id="16" lemma="the" pos="dt" surface="the"/>
-		<token id="17" lemma="International" pos="NP" surface="International"/>
-		<token id="18" lemma="Atomic" pos="jj" surface="Atomic"/>
-		<token id="19" lemma="Energy" pos="NP" surface="Energy"/>
-		<token id="20" lemma="Agency" pos="NP" surface="Agency"/>
-		<token id="21" lemma="(" pos="(" surface="("/>
-		<token id="22" lemma="IAEA" pos="NP" surface="IAEA"/>
-		<token id="23" lemma=")" pos=")" surface=")"/>
-		<token id="24" lemma="concluded" pos="VVD" surface="concluded"/>
-		<token id="25" lemma="that" pos="in" surface="that"/>
-		<token id="26" lemma="several" pos="jj" surface="several"/>
-		<token id="27" lemma="sensitive" pos="jj" surface="sensitive"/>
-		<token id="28" lemma="technology" pos="nn" surface="technology"/>
-		<token id="29" lemma="facilities" pos="nns" surface="facilities"/>
-		<token id="30" lemma="are" pos="vbp" surface="are"/>
-		<token id="31" lemma="either" pos="rb" surface="either"/>
-		<token id="32" lemma="operational" pos="jj" surface="operational"/>
+		<token id="16" lemma="the" pos="DT" surface="the"/>
+		<token id="17" lemma="international" pos="NNP" surface="International"/>
+		<token id="18" lemma="atomic" pos="NNP" surface="Atomic"/>
+		<token id="19" lemma="energy" pos="NNP" surface="Energy"/>
+		<token id="20" lemma="agency" pos="NNP" surface="Agency"/>
+		<token id="21" lemma="(" pos="-LRB-" surface="("/>
+		<token id="22" lemma="iaea" pos="NNP" surface="IAEA"/>
+		<token id="23" lemma=")" pos="-RRB-" surface=")"/>
+		<token id="24" lemma="conclude" pos="VBD" surface="concluded"/>
+		<token id="25" lemma="that" pos="IN" surface="that"/>
+		<token id="26" lemma="several" pos="JJ" surface="several"/>
+		<token id="27" lemma="sensitive" pos="JJ" surface="sensitive"/>
+		<token id="28" lemma="technology" pos="NN" surface="technology"/>
+		<token id="29" lemma="facility" pos="NNS" surface="facilities"/>
+		<token id="30" lemma="be" pos="VBP" surface="are"/>
+		<token id="31" lemma="either" pos="CC" surface="either"/>
+		<token id="32" lemma="operational" pos="JJ" surface="operational"/>
 		<token id="33" lemma="," pos="," surface=","/>
-		<token id="34" lemma="under" pos="in" surface="under"/>
-		<token id="35" lemma="construction" pos="nn" surface="construction"/>
+		<token id="34" lemma="under" pos="IN" surface="under"/>
+		<token id="35" lemma="construction" pos="NN" surface="construction"/>
 		<token id="36" lemma="," pos="," surface=","/>
-		<token id="37" lemma="or" pos="cc" surface="or"/>
-		<token id="38" lemma="planned" pos="VVD" surface="planned"/>
-		<token id="39" lemma="." pos="sent" surface="."/>
+		<token id="37" lemma="or" pos="CC" surface="or"/>
+		<token id="38" lemma="plan" pos="VBN" surface="planned"/>
+		<token id="39" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="24" to="1" type="prep"/>
+		<dep from="1" to="2" type="pcomp"/>
+		<dep from="4" to="3" type="amod"/>
+		<dep from="2" to="4" type="dobj"/>
+		<dep from="2" to="5" type="prep"/>
+		<dep from="5" to="6" type="pobj"/>
+		<dep from="6" to="7" type="nummod"/>
+		<dep from="1" to="8" type="punct"/>
+		<dep from="1" to="9" type="cc"/>
+		<dep from="1" to="10" type="conj"/>
+		<dep from="12" to="11" type="amod"/>
+		<dep from="10" to="12" type="pobj"/>
+		<dep from="12" to="13" type="prep"/>
+		<dep from="13" to="14" type="pobj"/>
+		<dep from="14" to="15" type="punct"/>
+		<dep from="20" to="16" type="det"/>
+		<dep from="20" to="17" type="compound"/>
+		<dep from="19" to="18" type="compound"/>
+		<dep from="20" to="19" type="compound"/>
+		<dep from="14" to="20" type="conj"/>
+		<dep from="22" to="21" type="punct"/>
+		<dep from="20" to="22" type="appos"/>
+		<dep from="22" to="23" type="punct"/>
+		<dep from="0" to="24" type="root"/>
+		<dep from="30" to="25" type="mark"/>
+		<dep from="29" to="26" type="amod"/>
+		<dep from="28" to="27" type="amod"/>
+		<dep from="29" to="28" type="compound"/>
+		<dep from="30" to="29" type="nsubj"/>
+		<dep from="24" to="30" type="ccomp"/>
+		<dep from="32" to="31" type="preconj"/>
+		<dep from="30" to="32" type="acomp"/>
+		<dep from="32" to="33" type="punct"/>
+		<dep from="32" to="34" type="conj"/>
+		<dep from="34" to="35" type="pobj"/>
+		<dep from="34" to="36" type="punct"/>
+		<dep from="34" to="37" type="cc"/>
+		<dep from="34" to="38" type="conj"/>
+		<dep from="24" to="39" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

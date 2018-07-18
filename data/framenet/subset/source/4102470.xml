@@ -2,30 +2,55 @@
 <command id="4102470">
 	<sentence>Dr _Gupto : But we only know that it might work because of laboratory studies and animal studies uh uh in particular .</sentence>
 	<tokens>
-		<token id="1" lemma="Dr" pos="NP" surface="Dr"/>
-		<token id="2" lemma="_Gupto" pos="nn" surface="_Gupto"/>
+		<token id="1" lemma="dr" pos="UH" surface="Dr"/>
+		<token id="2" lemma="_gupto" pos="VB" surface="_Gupto"/>
 		<token id="3" lemma=":" pos=":" surface=":"/>
-		<token id="4" lemma="But" pos="cc" surface="But"/>
-		<token id="5" lemma="we" pos="PP" surface="we"/>
-		<token id="6" lemma="only" pos="rb" surface="only"/>
-		<token id="7" lemma="know" pos="VVP" surface="know"/>
-		<token id="8" lemma="that" pos="in" surface="that"/>
-		<token id="9" lemma="it" pos="PP" surface="it"/>
-		<token id="10" lemma="might" pos="md" surface="might"/>
-		<token id="11" lemma="work" pos="VV" surface="work"/>
-		<token id="12" lemma="because" pos="in" surface="because"/>
-		<token id="13" lemma="of" pos="in" surface="of"/>
-		<token id="14" lemma="laboratory" pos="nn" surface="laboratory"/>
-		<token id="15" lemma="studies" pos="nns" surface="studies"/>
-		<token id="16" lemma="and" pos="cc" surface="and"/>
-		<token id="17" lemma="animal" pos="jj" surface="animal"/>
-		<token id="18" lemma="studies" pos="nns" surface="studies"/>
-		<token id="19" lemma="uh" pos="uh" surface="uh"/>
-		<token id="20" lemma="uh" pos="uh" surface="uh"/>
-		<token id="21" lemma="in" pos="in" surface="in"/>
-		<token id="22" lemma="particular" pos="jj" surface="particular"/>
-		<token id="23" lemma="." pos="sent" surface="."/>
+		<token id="4" lemma="but" pos="CC" surface="But"/>
+		<token id="5" lemma="-PRON-" pos="PRP" surface="we"/>
+		<token id="6" lemma="only" pos="RB" surface="only"/>
+		<token id="7" lemma="know" pos="VBP" surface="know"/>
+		<token id="8" lemma="that" pos="IN" surface="that"/>
+		<token id="9" lemma="-PRON-" pos="PRP" surface="it"/>
+		<token id="10" lemma="may" pos="MD" surface="might"/>
+		<token id="11" lemma="work" pos="VB" surface="work"/>
+		<token id="12" lemma="because" pos="IN" surface="because"/>
+		<token id="13" lemma="of" pos="IN" surface="of"/>
+		<token id="14" lemma="laboratory" pos="NN" surface="laboratory"/>
+		<token id="15" lemma="study" pos="NNS" surface="studies"/>
+		<token id="16" lemma="and" pos="CC" surface="and"/>
+		<token id="17" lemma="animal" pos="NN" surface="animal"/>
+		<token id="18" lemma="study" pos="NNS" surface="studies"/>
+		<token id="19" lemma="uh" pos="UH" surface="uh"/>
+		<token id="20" lemma="uh" pos="UH" surface="uh"/>
+		<token id="21" lemma="in" pos="IN" surface="in"/>
+		<token id="22" lemma="particular" pos="JJ" surface="particular"/>
+		<token id="23" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="1" to="2" type="nummod"/>
+		<dep from="1" to="3" type="punct"/>
+		<dep from="7" to="4" type="cc"/>
+		<dep from="7" to="5" type="nsubj"/>
+		<dep from="7" to="6" type="advmod"/>
+		<dep from="0" to="7" type="root"/>
+		<dep from="11" to="8" type="mark"/>
+		<dep from="11" to="9" type="nsubj"/>
+		<dep from="11" to="10" type="aux"/>
+		<dep from="7" to="11" type="ccomp"/>
+		<dep from="11" to="12" type="prep"/>
+		<dep from="12" to="13" type="pcomp"/>
+		<dep from="15" to="14" type="compound"/>
+		<dep from="12" to="15" type="pobj"/>
+		<dep from="15" to="16" type="cc"/>
+		<dep from="18" to="17" type="compound"/>
+		<dep from="15" to="18" type="conj"/>
+		<dep from="15" to="19" type="intj"/>
+		<dep from="15" to="20" type="intj"/>
+		<dep from="15" to="21" type="prep"/>
+		<dep from="21" to="22" type="amod"/>
+		<dep from="7" to="23" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Searching">

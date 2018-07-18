@@ -2,20 +2,35 @@
 <command id="4101290">
 	<sentence>Later the Germans came in force and occupied many of the islands .</sentence>
 	<tokens>
-		<token id="1" lemma="Later" pos="rbr" surface="Later"/>
-		<token id="2" lemma="the" pos="dt" surface="the"/>
-		<token id="3" lemma="Germans" pos="NPS" surface="Germans"/>
-		<token id="4" lemma="came" pos="VVD" surface="came"/>
-		<token id="5" lemma="in" pos="in" surface="in"/>
-		<token id="6" lemma="force" pos="nn" surface="force"/>
-		<token id="7" lemma="and" pos="cc" surface="and"/>
-		<token id="8" lemma="occupied" pos="VVD" surface="occupied"/>
-		<token id="9" lemma="many" pos="jj" surface="many"/>
-		<token id="10" lemma="of" pos="in" surface="of"/>
-		<token id="11" lemma="the" pos="dt" surface="the"/>
-		<token id="12" lemma="islands" pos="nns" surface="islands"/>
-		<token id="13" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="later" pos="RBR" surface="Later"/>
+		<token id="2" lemma="the" pos="DT" surface="the"/>
+		<token id="3" lemma="germans" pos="NNPS" surface="Germans"/>
+		<token id="4" lemma="come" pos="VBD" surface="came"/>
+		<token id="5" lemma="in" pos="IN" surface="in"/>
+		<token id="6" lemma="force" pos="NN" surface="force"/>
+		<token id="7" lemma="and" pos="CC" surface="and"/>
+		<token id="8" lemma="occupy" pos="VBD" surface="occupied"/>
+		<token id="9" lemma="many" pos="JJ" surface="many"/>
+		<token id="10" lemma="of" pos="IN" surface="of"/>
+		<token id="11" lemma="the" pos="DT" surface="the"/>
+		<token id="12" lemma="island" pos="NNS" surface="islands"/>
+		<token id="13" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="4" to="1" type="advmod"/>
+		<dep from="3" to="2" type="det"/>
+		<dep from="4" to="3" type="nsubj"/>
+		<dep from="0" to="4" type="root"/>
+		<dep from="4" to="5" type="prep"/>
+		<dep from="5" to="6" type="pobj"/>
+		<dep from="4" to="7" type="cc"/>
+		<dep from="4" to="8" type="conj"/>
+		<dep from="8" to="9" type="dobj"/>
+		<dep from="9" to="10" type="prep"/>
+		<dep from="12" to="11" type="det"/>
+		<dep from="10" to="12" type="pobj"/>
+		<dep from="4" to="13" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

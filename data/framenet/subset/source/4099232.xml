@@ -2,39 +2,73 @@
 <command id="4099232">
 	<sentence>The United Nations says Somali gunmen who hijacked a U.N. - chartered vessel carrying food aid for tsunami victims have released the ship after holding it for more than two months .</sentence>
 	<tokens>
-		<token id="1" lemma="The" pos="dt" surface="The"/>
-		<token id="2" lemma="United" pos="NP" surface="United"/>
-		<token id="3" lemma="Nations" pos="NPS" surface="Nations"/>
-		<token id="4" lemma="says" pos="VVZ" surface="says"/>
-		<token id="5" lemma="Somali" pos="jj" surface="Somali"/>
-		<token id="6" lemma="gunmen" pos="nns" surface="gunmen"/>
-		<token id="7" lemma="who" pos="wp" surface="who"/>
-		<token id="8" lemma="hijacked" pos="VVD" surface="hijacked"/>
-		<token id="9" lemma="a" pos="dt" surface="a"/>
-		<token id="10" lemma="U.N." pos="NP" surface="U.N."/>
-		<token id="11" lemma="-" pos=":" surface="-"/>
-		<token id="12" lemma="chartered" pos="jj" surface="chartered"/>
-		<token id="13" lemma="vessel" pos="nn" surface="vessel"/>
-		<token id="14" lemma="carrying" pos="VVG" surface="carrying"/>
-		<token id="15" lemma="food" pos="nn" surface="food"/>
-		<token id="16" lemma="aid" pos="nn" surface="aid"/>
-		<token id="17" lemma="for" pos="in" surface="for"/>
-		<token id="18" lemma="tsunami" pos="nn" surface="tsunami"/>
-		<token id="19" lemma="victims" pos="nns" surface="victims"/>
-		<token id="20" lemma="have" pos="VHP" surface="have"/>
-		<token id="21" lemma="released" pos="VVN" surface="released"/>
-		<token id="22" lemma="the" pos="dt" surface="the"/>
-		<token id="23" lemma="ship" pos="nn" surface="ship"/>
-		<token id="24" lemma="after" pos="in" surface="after"/>
-		<token id="25" lemma="holding" pos="VVG" surface="holding"/>
-		<token id="26" lemma="it" pos="PP" surface="it"/>
-		<token id="27" lemma="for" pos="in" surface="for"/>
-		<token id="28" lemma="more" pos="jjr" surface="more"/>
-		<token id="29" lemma="than" pos="in" surface="than"/>
-		<token id="30" lemma="two" pos="cd" surface="two"/>
-		<token id="31" lemma="months" pos="nns" surface="months"/>
-		<token id="32" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="the" pos="DT" surface="The"/>
+		<token id="2" lemma="united" pos="NNP" surface="United"/>
+		<token id="3" lemma="nations" pos="NNP" surface="Nations"/>
+		<token id="4" lemma="say" pos="VBZ" surface="says"/>
+		<token id="5" lemma="somali" pos="JJ" surface="Somali"/>
+		<token id="6" lemma="gunman" pos="NNS" surface="gunmen"/>
+		<token id="7" lemma="who" pos="WP" surface="who"/>
+		<token id="8" lemma="hijack" pos="VBD" surface="hijacked"/>
+		<token id="9" lemma="a" pos="DT" surface="a"/>
+		<token id="10" lemma="u.n." pos="NNP" surface="U.N."/>
+		<token id="11" lemma="-" pos="HYPH" surface="-"/>
+		<token id="12" lemma="charter" pos="VBN" surface="chartered"/>
+		<token id="13" lemma="vessel" pos="NN" surface="vessel"/>
+		<token id="14" lemma="carry" pos="VBG" surface="carrying"/>
+		<token id="15" lemma="food" pos="NN" surface="food"/>
+		<token id="16" lemma="aid" pos="NN" surface="aid"/>
+		<token id="17" lemma="for" pos="IN" surface="for"/>
+		<token id="18" lemma="tsunami" pos="NN" surface="tsunami"/>
+		<token id="19" lemma="victim" pos="NNS" surface="victims"/>
+		<token id="20" lemma="have" pos="VBP" surface="have"/>
+		<token id="21" lemma="release" pos="VBN" surface="released"/>
+		<token id="22" lemma="the" pos="DT" surface="the"/>
+		<token id="23" lemma="ship" pos="NN" surface="ship"/>
+		<token id="24" lemma="after" pos="IN" surface="after"/>
+		<token id="25" lemma="hold" pos="VBG" surface="holding"/>
+		<token id="26" lemma="-PRON-" pos="PRP" surface="it"/>
+		<token id="27" lemma="for" pos="IN" surface="for"/>
+		<token id="28" lemma="more" pos="JJR" surface="more"/>
+		<token id="29" lemma="than" pos="IN" surface="than"/>
+		<token id="30" lemma="two" pos="CD" surface="two"/>
+		<token id="31" lemma="month" pos="NNS" surface="months"/>
+		<token id="32" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="det"/>
+		<dep from="3" to="2" type="compound"/>
+		<dep from="4" to="3" type="nsubj"/>
+		<dep from="0" to="4" type="root"/>
+		<dep from="6" to="5" type="amod"/>
+		<dep from="21" to="6" type="nsubj"/>
+		<dep from="8" to="7" type="nsubj"/>
+		<dep from="6" to="8" type="relcl"/>
+		<dep from="13" to="9" type="det"/>
+		<dep from="12" to="10" type="npadvmod"/>
+		<dep from="12" to="11" type="punct"/>
+		<dep from="13" to="12" type="amod"/>
+		<dep from="8" to="13" type="dobj"/>
+		<dep from="13" to="14" type="acl"/>
+		<dep from="16" to="15" type="compound"/>
+		<dep from="14" to="16" type="dobj"/>
+		<dep from="16" to="17" type="prep"/>
+		<dep from="19" to="18" type="compound"/>
+		<dep from="17" to="19" type="pobj"/>
+		<dep from="21" to="20" type="aux"/>
+		<dep from="4" to="21" type="ccomp"/>
+		<dep from="23" to="22" type="det"/>
+		<dep from="21" to="23" type="dobj"/>
+		<dep from="21" to="24" type="prep"/>
+		<dep from="24" to="25" type="pcomp"/>
+		<dep from="25" to="26" type="dobj"/>
+		<dep from="25" to="27" type="prep"/>
+		<dep from="30" to="28" type="amod"/>
+		<dep from="30" to="29" type="quantmod"/>
+		<dep from="31" to="30" type="nummod"/>
+		<dep from="27" to="31" type="pobj"/>
+		<dep from="4" to="32" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Bringing">

@@ -2,20 +2,35 @@
 <command id="4148473">
 	<sentence>&quot; They 've gone , Mr . Holmes .</sentence>
 	<tokens>
-		<token id="1" lemma="They" pos="PRP" surface="They"/>
-		<token id="2" lemma="'ve" pos="vbp" surface="'ve"/>
-		<token id="3" lemma="gone" pos="VBN" surface="gone"/>
-		<token id="4" lemma="Mr" pos="NNP" surface="Mr"/>
-		<token id="5" lemma="Holmes" pos="NNP" surface="Holmes"/>
+		<token id="1" lemma="&quot;" pos="``" surface="&quot;"/>
+		<token id="2" lemma="-PRON-" pos="PRP" surface="They"/>
+		<token id="3" lemma="'ve" pos="VBP" surface="'ve"/>
+		<token id="4" lemma="go" pos="VBN" surface="gone"/>
+		<token id="5" lemma="," pos="," surface=","/>
+		<token id="6" lemma="mr" pos="NNP" surface="Mr"/>
+		<token id="7" lemma="." pos="." surface="."/>
+		<token id="8" lemma="holme" pos="NNS" surface="Holmes"/>
+		<token id="9" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="4" to="1" type="punct"/>
+		<dep from="4" to="2" type="nsubj"/>
+		<dep from="4" to="3" type="aux"/>
+		<dep from="0" to="4" type="root"/>
+		<dep from="4" to="5" type="punct"/>
+		<dep from="4" to="6" type="npadvmod"/>
+		<dep from="4" to="7" type="punct"/>
+		<dep from="0" to="8" type="root"/>
+		<dep from="8" to="9" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Motion">
 				<lexicalUnit>
-					<token id="3"/>
+					<token id="4"/>
 				</lexicalUnit>
 				<frameElement type="Theme">
-					<token id="1"/>
+					<token id="2"/>
 				</frameElement>
 			</frame>
 		</frameSemantics>

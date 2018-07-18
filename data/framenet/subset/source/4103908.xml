@@ -2,27 +2,49 @@
 <command id="4103908">
 	<sentence>There 's an abundance of nature , history , art , and modern culture to be explored and enjoyed .</sentence>
 	<tokens>
-		<token id="1" lemma="There" pos="ex" surface="There"/>
-		<token id="2" lemma="'s" pos="VBZ" surface="'s"/>
-		<token id="3" lemma="an" pos="dt" surface="an"/>
-		<token id="4" lemma="abundance" pos="nn" surface="abundance"/>
-		<token id="5" lemma="of" pos="in" surface="of"/>
-		<token id="6" lemma="nature" pos="nn" surface="nature"/>
+		<token id="1" lemma="there" pos="EX" surface="There"/>
+		<token id="2" lemma="be" pos="VBZ" surface="'s"/>
+		<token id="3" lemma="an" pos="DT" surface="an"/>
+		<token id="4" lemma="abundance" pos="NN" surface="abundance"/>
+		<token id="5" lemma="of" pos="IN" surface="of"/>
+		<token id="6" lemma="nature" pos="NN" surface="nature"/>
 		<token id="7" lemma="," pos="," surface=","/>
-		<token id="8" lemma="history" pos="nn" surface="history"/>
+		<token id="8" lemma="history" pos="NN" surface="history"/>
 		<token id="9" lemma="," pos="," surface=","/>
-		<token id="10" lemma="art" pos="nn" surface="art"/>
+		<token id="10" lemma="art" pos="NN" surface="art"/>
 		<token id="11" lemma="," pos="," surface=","/>
-		<token id="12" lemma="and" pos="cc" surface="and"/>
-		<token id="13" lemma="modern" pos="jj" surface="modern"/>
-		<token id="14" lemma="culture" pos="nn" surface="culture"/>
-		<token id="15" lemma="to" pos="to" surface="to"/>
-		<token id="16" lemma="be" pos="vb" surface="be"/>
-		<token id="17" lemma="explored" pos="VVN" surface="explored"/>
-		<token id="18" lemma="and" pos="cc" surface="and"/>
-		<token id="19" lemma="enjoyed" pos="VVN" surface="enjoyed"/>
-		<token id="20" lemma="." pos="sent" surface="."/>
+		<token id="12" lemma="and" pos="CC" surface="and"/>
+		<token id="13" lemma="modern" pos="JJ" surface="modern"/>
+		<token id="14" lemma="culture" pos="NN" surface="culture"/>
+		<token id="15" lemma="to" pos="TO" surface="to"/>
+		<token id="16" lemma="be" pos="VB" surface="be"/>
+		<token id="17" lemma="explore" pos="VBN" surface="explored"/>
+		<token id="18" lemma="and" pos="CC" surface="and"/>
+		<token id="19" lemma="enjoy" pos="VBN" surface="enjoyed"/>
+		<token id="20" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="expl"/>
+		<dep from="0" to="2" type="root"/>
+		<dep from="4" to="3" type="det"/>
+		<dep from="2" to="4" type="attr"/>
+		<dep from="4" to="5" type="prep"/>
+		<dep from="5" to="6" type="pobj"/>
+		<dep from="6" to="7" type="punct"/>
+		<dep from="6" to="8" type="conj"/>
+		<dep from="8" to="9" type="punct"/>
+		<dep from="8" to="10" type="conj"/>
+		<dep from="10" to="11" type="punct"/>
+		<dep from="10" to="12" type="cc"/>
+		<dep from="14" to="13" type="amod"/>
+		<dep from="10" to="14" type="conj"/>
+		<dep from="17" to="15" type="aux"/>
+		<dep from="17" to="16" type="auxpass"/>
+		<dep from="4" to="17" type="relcl"/>
+		<dep from="17" to="18" type="cc"/>
+		<dep from="17" to="19" type="conj"/>
+		<dep from="2" to="20" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Searching">

@@ -2,38 +2,60 @@
 <command id="4148576">
 	<sentence>They had gagged me , and Murillo twisted my arm round until I gave him the address .</sentence>
 	<tokens>
-		<token id="1" lemma="They" pos="PRP" surface="They"/>
-		<token id="2" lemma="had" pos="VBD" surface="had"/>
-		<token id="3" lemma="gagged" pos="VBN" surface="gagged"/>
-		<token id="4" lemma="me" pos="PRP" surface="me"/>
-		<token id="5" lemma="and" pos="cc" surface="and"/>
-		<token id="6" lemma="Murillo" pos="NNP" surface="Murillo"/>
-		<token id="7" lemma="twisted" pos="VBN" surface="twisted"/>
-		<token id="8" lemma="my" pos="PRP$" surface="my"/>
-		<token id="9" lemma="arm" pos="nn" surface="arm"/>
-		<token id="10" lemma="round" pos="nn" surface="round"/>
-		<token id="11" lemma="until" pos="in" surface="until"/>
-		<token id="12" lemma="I" pos="PRP" surface="I"/>
-		<token id="13" lemma="gave" pos="VBD" surface="gave"/>
-		<token id="14" lemma="him" pos="PRP" surface="him"/>
-		<token id="15" lemma="the" pos="dt" surface="the"/>
-		<token id="16" lemma="address" pos="nn" surface="address"/>
+		<token id="1" lemma="-PRON-" pos="PRP" surface="They"/>
+		<token id="2" lemma="have" pos="VBD" surface="had"/>
+		<token id="3" lemma="gag" pos="VBN" surface="gagged"/>
+		<token id="4" lemma="-PRON-" pos="PRP" surface="me"/>
+		<token id="5" lemma="," pos="," surface=","/>
+		<token id="6" lemma="and" pos="CC" surface="and"/>
+		<token id="7" lemma="murillo" pos="NNP" surface="Murillo"/>
+		<token id="8" lemma="twist" pos="VBD" surface="twisted"/>
+		<token id="9" lemma="-PRON-" pos="PRP$" surface="my"/>
+		<token id="10" lemma="arm" pos="NN" surface="arm"/>
+		<token id="11" lemma="round" pos="RB" surface="round"/>
+		<token id="12" lemma="until" pos="IN" surface="until"/>
+		<token id="13" lemma="-PRON-" pos="PRP" surface="I"/>
+		<token id="14" lemma="give" pos="VBD" surface="gave"/>
+		<token id="15" lemma="-PRON-" pos="PRP" surface="him"/>
+		<token id="16" lemma="the" pos="DT" surface="the"/>
+		<token id="17" lemma="address" pos="NN" surface="address"/>
+		<token id="18" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="nsubj"/>
+		<dep from="3" to="2" type="aux"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="3" to="4" type="dobj"/>
+		<dep from="3" to="5" type="punct"/>
+		<dep from="3" to="6" type="cc"/>
+		<dep from="8" to="7" type="nsubj"/>
+		<dep from="3" to="8" type="conj"/>
+		<dep from="10" to="9" type="poss"/>
+		<dep from="8" to="10" type="dobj"/>
+		<dep from="8" to="11" type="dobj"/>
+		<dep from="14" to="12" type="mark"/>
+		<dep from="14" to="13" type="nsubj"/>
+		<dep from="8" to="14" type="advcl"/>
+		<dep from="14" to="15" type="dative"/>
+		<dep from="17" to="16" type="det"/>
+		<dep from="14" to="17" type="dobj"/>
+		<dep from="8" to="18" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Giving">
 				<lexicalUnit>
-					<token id="13"/>
+					<token id="14"/>
 				</lexicalUnit>
 				<frameElement type="Donor">
-					<token id="12"/>
+					<token id="13"/>
 				</frameElement>
 				<frameElement type="Recipient">
-					<token id="14"/>
+					<token id="15"/>
 				</frameElement>
 				<frameElement type="Theme">
-					<token id="15"/>
 					<token id="16"/>
+					<token id="17"/>
 				</frameElement>
 			</frame>
 			<frame name="Placing">

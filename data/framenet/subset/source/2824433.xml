@@ -2,35 +2,65 @@
 <command id="2824433">
 	<sentence>Got back to Bolinas , and everything had fallen : broken poster frames with glass on the floor , file cabinets open or dumped onto the floor .</sentence>
 	<tokens>
-		<token id="1" lemma="Got" pos="VVD" surface="Got"/>
-		<token id="2" lemma="back" pos="rb" surface="back"/>
-		<token id="3" lemma="to" pos="to" surface="to"/>
-		<token id="4" lemma="Bolinas" pos="NP" surface="Bolinas"/>
+		<token id="1" lemma="get" pos="VBD" surface="Got"/>
+		<token id="2" lemma="back" pos="RB" surface="back"/>
+		<token id="3" lemma="to" pos="IN" surface="to"/>
+		<token id="4" lemma="bolinas" pos="NNP" surface="Bolinas"/>
 		<token id="5" lemma="," pos="," surface=","/>
-		<token id="6" lemma="and" pos="cc" surface="and"/>
-		<token id="7" lemma="everything" pos="nn" surface="everything"/>
-		<token id="8" lemma="had" pos="VHD" surface="had"/>
-		<token id="9" lemma="fallen" pos="VVN" surface="fallen"/>
+		<token id="6" lemma="and" pos="CC" surface="and"/>
+		<token id="7" lemma="everything" pos="NN" surface="everything"/>
+		<token id="8" lemma="have" pos="VBD" surface="had"/>
+		<token id="9" lemma="fall" pos="VBN" surface="fallen"/>
 		<token id="10" lemma=":" pos=":" surface=":"/>
-		<token id="11" lemma="broken" pos="jj" surface="broken"/>
-		<token id="12" lemma="poster" pos="nn" surface="poster"/>
-		<token id="13" lemma="frames" pos="nns" surface="frames"/>
-		<token id="14" lemma="with" pos="in" surface="with"/>
-		<token id="15" lemma="glass" pos="nn" surface="glass"/>
-		<token id="16" lemma="on" pos="in" surface="on"/>
-		<token id="17" lemma="the" pos="dt" surface="the"/>
-		<token id="18" lemma="floor" pos="nn" surface="floor"/>
+		<token id="11" lemma="break" pos="VBN" surface="broken"/>
+		<token id="12" lemma="poster" pos="NN" surface="poster"/>
+		<token id="13" lemma="frame" pos="NNS" surface="frames"/>
+		<token id="14" lemma="with" pos="IN" surface="with"/>
+		<token id="15" lemma="glass" pos="NN" surface="glass"/>
+		<token id="16" lemma="on" pos="IN" surface="on"/>
+		<token id="17" lemma="the" pos="DT" surface="the"/>
+		<token id="18" lemma="floor" pos="NN" surface="floor"/>
 		<token id="19" lemma="," pos="," surface=","/>
-		<token id="20" lemma="file" pos="nn" surface="file"/>
-		<token id="21" lemma="cabinets" pos="nns" surface="cabinets"/>
-		<token id="22" lemma="open" pos="jj" surface="open"/>
-		<token id="23" lemma="or" pos="cc" surface="or"/>
-		<token id="24" lemma="dumped" pos="VVN" surface="dumped"/>
-		<token id="25" lemma="onto" pos="in" surface="onto"/>
-		<token id="26" lemma="the" pos="dt" surface="the"/>
-		<token id="27" lemma="floor" pos="nn" surface="floor"/>
-		<token id="28" lemma="." pos="sent" surface="."/>
+		<token id="20" lemma="file" pos="NN" surface="file"/>
+		<token id="21" lemma="cabinet" pos="NNS" surface="cabinets"/>
+		<token id="22" lemma="open" pos="JJ" surface="open"/>
+		<token id="23" lemma="or" pos="CC" surface="or"/>
+		<token id="24" lemma="dump" pos="VBN" surface="dumped"/>
+		<token id="25" lemma="onto" pos="IN" surface="onto"/>
+		<token id="26" lemma="the" pos="DT" surface="the"/>
+		<token id="27" lemma="floor" pos="NN" surface="floor"/>
+		<token id="28" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="1" to="2" type="advmod"/>
+		<dep from="2" to="3" type="prep"/>
+		<dep from="3" to="4" type="pobj"/>
+		<dep from="1" to="5" type="punct"/>
+		<dep from="1" to="6" type="cc"/>
+		<dep from="9" to="7" type="nsubj"/>
+		<dep from="9" to="8" type="aux"/>
+		<dep from="1" to="9" type="conj"/>
+		<dep from="9" to="10" type="punct"/>
+		<dep from="13" to="11" type="amod"/>
+		<dep from="13" to="12" type="compound"/>
+		<dep from="7" to="13" type="appos"/>
+		<dep from="13" to="14" type="prep"/>
+		<dep from="14" to="15" type="pobj"/>
+		<dep from="15" to="16" type="prep"/>
+		<dep from="18" to="17" type="det"/>
+		<dep from="16" to="18" type="pobj"/>
+		<dep from="13" to="19" type="punct"/>
+		<dep from="21" to="20" type="compound"/>
+		<dep from="13" to="21" type="conj"/>
+		<dep from="21" to="22" type="amod"/>
+		<dep from="22" to="23" type="cc"/>
+		<dep from="22" to="24" type="conj"/>
+		<dep from="24" to="25" type="prep"/>
+		<dep from="27" to="26" type="det"/>
+		<dep from="25" to="27" type="pobj"/>
+		<dep from="9" to="28" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

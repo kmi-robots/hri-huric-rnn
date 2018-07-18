@@ -2,30 +2,55 @@
 <command id="2824269">
 	<sentence>He should consider his victory a mandate to continue his growth-oriented economic reforms and not a demand that he move further left .</sentence>
 	<tokens>
-		<token id="1" lemma="He" pos="PP" surface="He"/>
-		<token id="2" lemma="should" pos="md" surface="should"/>
-		<token id="3" lemma="consider" pos="VV" surface="consider"/>
-		<token id="4" lemma="his" pos="PP$" surface="his"/>
-		<token id="5" lemma="victory" pos="nn" surface="victory"/>
-		<token id="6" lemma="a" pos="dt" surface="a"/>
-		<token id="7" lemma="mandate" pos="nn" surface="mandate"/>
-		<token id="8" lemma="to" pos="to" surface="to"/>
-		<token id="9" lemma="continue" pos="VV" surface="continue"/>
-		<token id="10" lemma="his" pos="PP$" surface="his"/>
-		<token id="11" lemma="growth-oriented" pos="jj" surface="growth-oriented"/>
-		<token id="12" lemma="economic" pos="jj" surface="economic"/>
-		<token id="13" lemma="reforms" pos="nns" surface="reforms"/>
-		<token id="14" lemma="and" pos="cc" surface="and"/>
-		<token id="15" lemma="not" pos="rb" surface="not"/>
-		<token id="16" lemma="a" pos="dt" surface="a"/>
-		<token id="17" lemma="demand" pos="nn" surface="demand"/>
-		<token id="18" lemma="that" pos="in" surface="that"/>
-		<token id="19" lemma="he" pos="PP" surface="he"/>
-		<token id="20" lemma="move" pos="VVP" surface="move"/>
-		<token id="21" lemma="further" pos="rb" surface="further"/>
-		<token id="22" lemma="left" pos="VVN" surface="left"/>
-		<token id="23" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+		<token id="2" lemma="should" pos="MD" surface="should"/>
+		<token id="3" lemma="consider" pos="VB" surface="consider"/>
+		<token id="4" lemma="-PRON-" pos="PRP$" surface="his"/>
+		<token id="5" lemma="victory" pos="NN" surface="victory"/>
+		<token id="6" lemma="a" pos="DT" surface="a"/>
+		<token id="7" lemma="mandate" pos="NN" surface="mandate"/>
+		<token id="8" lemma="to" pos="TO" surface="to"/>
+		<token id="9" lemma="continue" pos="VB" surface="continue"/>
+		<token id="10" lemma="-PRON-" pos="PRP$" surface="his"/>
+		<token id="11" lemma="growth-oriented" pos="JJ" surface="growth-oriented"/>
+		<token id="12" lemma="economic" pos="JJ" surface="economic"/>
+		<token id="13" lemma="reform" pos="NNS" surface="reforms"/>
+		<token id="14" lemma="and" pos="CC" surface="and"/>
+		<token id="15" lemma="not" pos="RB" surface="not"/>
+		<token id="16" lemma="a" pos="DT" surface="a"/>
+		<token id="17" lemma="demand" pos="NN" surface="demand"/>
+		<token id="18" lemma="that" pos="IN" surface="that"/>
+		<token id="19" lemma="-PRON-" pos="PRP" surface="he"/>
+		<token id="20" lemma="move" pos="VBP" surface="move"/>
+		<token id="21" lemma="further" pos="RB" surface="further"/>
+		<token id="22" lemma="leave" pos="VBN" surface="left"/>
+		<token id="23" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="nsubj"/>
+		<dep from="3" to="2" type="aux"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="5" to="4" type="poss"/>
+		<dep from="7" to="5" type="nsubj"/>
+		<dep from="7" to="6" type="det"/>
+		<dep from="22" to="7" type="nsubj"/>
+		<dep from="9" to="8" type="aux"/>
+		<dep from="7" to="9" type="acl"/>
+		<dep from="13" to="10" type="poss"/>
+		<dep from="13" to="11" type="amod"/>
+		<dep from="13" to="12" type="amod"/>
+		<dep from="9" to="13" type="dobj"/>
+		<dep from="13" to="14" type="cc"/>
+		<dep from="17" to="15" type="neg"/>
+		<dep from="17" to="16" type="det"/>
+		<dep from="13" to="17" type="conj"/>
+		<dep from="20" to="18" type="dobj"/>
+		<dep from="20" to="19" type="nsubj"/>
+		<dep from="17" to="20" type="acl"/>
+		<dep from="22" to="21" type="advmod"/>
+		<dep from="3" to="22" type="ccomp"/>
+		<dep from="3" to="23" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Motion">

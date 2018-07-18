@@ -2,31 +2,57 @@
 <command id="4112800">
 	<sentence>Latin America as a whole contributed only 5.45% to the total number of scientific publications in these ten years ( RICYT 2002 ) .</sentence>
 	<tokens>
-		<token id="1" lemma="Latin" pos="NP" surface="Latin"/>
-		<token id="2" lemma="America" pos="NP" surface="America"/>
-		<token id="3" lemma="as" pos="in" surface="as"/>
-		<token id="4" lemma="a" pos="dt" surface="a"/>
-		<token id="5" lemma="whole" pos="nn" surface="whole"/>
-		<token id="6" lemma="contributed" pos="VVD" surface="contributed"/>
-		<token id="7" lemma="only" pos="rb" surface="only"/>
-		<token id="8" lemma="5.45%" pos="cd" surface="5.45%"/>
-		<token id="9" lemma="to" pos="to" surface="to"/>
-		<token id="10" lemma="the" pos="dt" surface="the"/>
-		<token id="11" lemma="total" pos="jj" surface="total"/>
-		<token id="12" lemma="number" pos="nn" surface="number"/>
-		<token id="13" lemma="of" pos="in" surface="of"/>
-		<token id="14" lemma="scientific" pos="jj" surface="scientific"/>
-		<token id="15" lemma="publications" pos="nns" surface="publications"/>
-		<token id="16" lemma="in" pos="in" surface="in"/>
-		<token id="17" lemma="these" pos="dt" surface="these"/>
-		<token id="18" lemma="ten" pos="cd" surface="ten"/>
-		<token id="19" lemma="years" pos="nns" surface="years"/>
-		<token id="20" lemma="(" pos="(" surface="("/>
-		<token id="21" lemma="RICYT" pos="NP" surface="RICYT"/>
-		<token id="22" lemma="2002" pos="cd" surface="2002"/>
-		<token id="23" lemma=")" pos=")" surface=")"/>
-		<token id="24" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="latin" pos="NNP" surface="Latin"/>
+		<token id="2" lemma="america" pos="NNP" surface="America"/>
+		<token id="3" lemma="as" pos="IN" surface="as"/>
+		<token id="4" lemma="a" pos="DT" surface="a"/>
+		<token id="5" lemma="whole" pos="NN" surface="whole"/>
+		<token id="6" lemma="contribute" pos="VBD" surface="contributed"/>
+		<token id="7" lemma="only" pos="RB" surface="only"/>
+		<token id="8" lemma="5.45%" pos="CD" surface="5.45%"/>
+		<token id="9" lemma="to" pos="IN" surface="to"/>
+		<token id="10" lemma="the" pos="DT" surface="the"/>
+		<token id="11" lemma="total" pos="JJ" surface="total"/>
+		<token id="12" lemma="number" pos="NN" surface="number"/>
+		<token id="13" lemma="of" pos="IN" surface="of"/>
+		<token id="14" lemma="scientific" pos="JJ" surface="scientific"/>
+		<token id="15" lemma="publication" pos="NNS" surface="publications"/>
+		<token id="16" lemma="in" pos="IN" surface="in"/>
+		<token id="17" lemma="these" pos="DT" surface="these"/>
+		<token id="18" lemma="ten" pos="CD" surface="ten"/>
+		<token id="19" lemma="year" pos="NNS" surface="years"/>
+		<token id="20" lemma="(" pos="-LRB-" surface="("/>
+		<token id="21" lemma="ricyt" pos="NNP" surface="RICYT"/>
+		<token id="22" lemma="2002" pos="CD" surface="2002"/>
+		<token id="23" lemma=")" pos="-RRB-" surface=")"/>
+		<token id="24" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="compound"/>
+		<dep from="6" to="2" type="nsubj"/>
+		<dep from="2" to="3" type="prep"/>
+		<dep from="5" to="4" type="det"/>
+		<dep from="3" to="5" type="pobj"/>
+		<dep from="0" to="6" type="root"/>
+		<dep from="8" to="7" type="advmod"/>
+		<dep from="6" to="8" type="dobj"/>
+		<dep from="6" to="9" type="prep"/>
+		<dep from="12" to="10" type="det"/>
+		<dep from="12" to="11" type="amod"/>
+		<dep from="9" to="12" type="pobj"/>
+		<dep from="12" to="13" type="prep"/>
+		<dep from="15" to="14" type="amod"/>
+		<dep from="13" to="15" type="pobj"/>
+		<dep from="12" to="16" type="prep"/>
+		<dep from="19" to="17" type="det"/>
+		<dep from="19" to="18" type="nummod"/>
+		<dep from="16" to="19" type="pobj"/>
+		<dep from="21" to="20" type="punct"/>
+		<dep from="12" to="21" type="appos"/>
+		<dep from="21" to="22" type="npadvmod"/>
+		<dep from="21" to="23" type="punct"/>
+		<dep from="6" to="24" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Giving">

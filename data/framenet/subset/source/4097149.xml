@@ -2,21 +2,37 @@
 <command id="4097149">
 	<sentence>The inspection team learned that Iran has the capability to build more centrifuges .</sentence>
 	<tokens>
-		<token id="1" lemma="The" pos="dt" surface="The"/>
-		<token id="2" lemma="inspection" pos="nn" surface="inspection"/>
-		<token id="3" lemma="team" pos="nn" surface="team"/>
-		<token id="4" lemma="learned" pos="VVN" surface="learned"/>
-		<token id="5" lemma="that" pos="in" surface="that"/>
-		<token id="6" lemma="Iran" pos="NP" surface="Iran"/>
-		<token id="7" lemma="has" pos="VHZ" surface="has"/>
-		<token id="8" lemma="the" pos="dt" surface="the"/>
-		<token id="9" lemma="capability" pos="nn" surface="capability"/>
-		<token id="10" lemma="to" pos="to" surface="to"/>
-		<token id="11" lemma="build" pos="VV" surface="build"/>
-		<token id="12" lemma="more" pos="jjr" surface="more"/>
-		<token id="13" lemma="centrifuges" pos="nns" surface="centrifuges"/>
-		<token id="14" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="the" pos="DT" surface="The"/>
+		<token id="2" lemma="inspection" pos="NN" surface="inspection"/>
+		<token id="3" lemma="team" pos="NN" surface="team"/>
+		<token id="4" lemma="learn" pos="VBD" surface="learned"/>
+		<token id="5" lemma="that" pos="IN" surface="that"/>
+		<token id="6" lemma="iran" pos="NNP" surface="Iran"/>
+		<token id="7" lemma="have" pos="VBZ" surface="has"/>
+		<token id="8" lemma="the" pos="DT" surface="the"/>
+		<token id="9" lemma="capability" pos="NN" surface="capability"/>
+		<token id="10" lemma="to" pos="TO" surface="to"/>
+		<token id="11" lemma="build" pos="VB" surface="build"/>
+		<token id="12" lemma="more" pos="JJR" surface="more"/>
+		<token id="13" lemma="centrifuge" pos="NNS" surface="centrifuges"/>
+		<token id="14" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="det"/>
+		<dep from="3" to="2" type="compound"/>
+		<dep from="4" to="3" type="nsubj"/>
+		<dep from="0" to="4" type="root"/>
+		<dep from="7" to="5" type="mark"/>
+		<dep from="7" to="6" type="nsubj"/>
+		<dep from="4" to="7" type="ccomp"/>
+		<dep from="9" to="8" type="det"/>
+		<dep from="7" to="9" type="dobj"/>
+		<dep from="11" to="10" type="aux"/>
+		<dep from="9" to="11" type="acl"/>
+		<dep from="13" to="12" type="amod"/>
+		<dep from="11" to="13" type="dobj"/>
+		<dep from="4" to="14" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Inspecting">

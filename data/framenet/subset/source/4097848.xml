@@ -2,28 +2,51 @@
 <command id="4097848">
 	<sentence>Taiwan is currently developing the Tien Chi , a short-range ballistic missile system that can reach the coast of China .</sentence>
 	<tokens>
-		<token id="1" lemma="Taiwan" pos="NP" surface="Taiwan"/>
-		<token id="2" lemma="is" pos="VBZ" surface="is"/>
-		<token id="3" lemma="currently" pos="rb" surface="currently"/>
-		<token id="4" lemma="developing" pos="VVG" surface="developing"/>
-		<token id="5" lemma="the" pos="dt" surface="the"/>
-		<token id="6" lemma="Tien" pos="NP" surface="Tien"/>
-		<token id="7" lemma="Chi" pos="NP" surface="Chi"/>
+		<token id="1" lemma="taiwan" pos="NNP" surface="Taiwan"/>
+		<token id="2" lemma="be" pos="VBZ" surface="is"/>
+		<token id="3" lemma="currently" pos="RB" surface="currently"/>
+		<token id="4" lemma="develop" pos="VBG" surface="developing"/>
+		<token id="5" lemma="the" pos="DT" surface="the"/>
+		<token id="6" lemma="tien" pos="NNP" surface="Tien"/>
+		<token id="7" lemma="chi" pos="NNP" surface="Chi"/>
 		<token id="8" lemma="," pos="," surface=","/>
-		<token id="9" lemma="a" pos="dt" surface="a"/>
-		<token id="10" lemma="short-range" pos="jj" surface="short-range"/>
-		<token id="11" lemma="ballistic" pos="jj" surface="ballistic"/>
-		<token id="12" lemma="missile" pos="nn" surface="missile"/>
-		<token id="13" lemma="system" pos="nn" surface="system"/>
-		<token id="14" lemma="that" pos="wdt" surface="that"/>
-		<token id="15" lemma="can" pos="md" surface="can"/>
-		<token id="16" lemma="reach" pos="VV" surface="reach"/>
-		<token id="17" lemma="the" pos="dt" surface="the"/>
-		<token id="18" lemma="coast" pos="nn" surface="coast"/>
-		<token id="19" lemma="of" pos="in" surface="of"/>
-		<token id="20" lemma="China" pos="NP" surface="China"/>
-		<token id="21" lemma="." pos="sent" surface="."/>
+		<token id="9" lemma="a" pos="DT" surface="a"/>
+		<token id="10" lemma="short-range" pos="JJ" surface="short-range"/>
+		<token id="11" lemma="ballistic" pos="JJ" surface="ballistic"/>
+		<token id="12" lemma="missile" pos="NN" surface="missile"/>
+		<token id="13" lemma="system" pos="NN" surface="system"/>
+		<token id="14" lemma="that" pos="WDT" surface="that"/>
+		<token id="15" lemma="can" pos="MD" surface="can"/>
+		<token id="16" lemma="reach" pos="VB" surface="reach"/>
+		<token id="17" lemma="the" pos="DT" surface="the"/>
+		<token id="18" lemma="coast" pos="NN" surface="coast"/>
+		<token id="19" lemma="of" pos="IN" surface="of"/>
+		<token id="20" lemma="china" pos="NNP" surface="China"/>
+		<token id="21" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="4" to="1" type="nsubj"/>
+		<dep from="4" to="2" type="aux"/>
+		<dep from="4" to="3" type="advmod"/>
+		<dep from="0" to="4" type="root"/>
+		<dep from="7" to="5" type="det"/>
+		<dep from="7" to="6" type="compound"/>
+		<dep from="4" to="7" type="dobj"/>
+		<dep from="7" to="8" type="punct"/>
+		<dep from="13" to="9" type="det"/>
+		<dep from="13" to="10" type="amod"/>
+		<dep from="13" to="11" type="amod"/>
+		<dep from="13" to="12" type="compound"/>
+		<dep from="7" to="13" type="appos"/>
+		<dep from="16" to="14" type="nsubj"/>
+		<dep from="16" to="15" type="aux"/>
+		<dep from="13" to="16" type="relcl"/>
+		<dep from="18" to="17" type="det"/>
+		<dep from="16" to="18" type="dobj"/>
+		<dep from="18" to="19" type="prep"/>
+		<dep from="19" to="20" type="pobj"/>
+		<dep from="4" to="21" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

@@ -2,11 +2,17 @@
 <command id="4106451">
 	<sentence>Dear Personal Donor :</sentence>
 	<tokens>
-		<token id="1" lemma="Dear" pos="NP" surface="Dear"/>
-		<token id="2" lemma="Personal" pos="NP" surface="Personal"/>
-		<token id="3" lemma="Donor" pos="nn" surface="Donor"/>
+		<token id="1" lemma="dear" pos="JJ" surface="Dear"/>
+		<token id="2" lemma="personal" pos="NNP" surface="Personal"/>
+		<token id="3" lemma="donor" pos="NNP" surface="Donor"/>
 		<token id="4" lemma=":" pos=":" surface=":"/>
 	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="compound"/>
+		<dep from="3" to="2" type="compound"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="3" to="4" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Giving">

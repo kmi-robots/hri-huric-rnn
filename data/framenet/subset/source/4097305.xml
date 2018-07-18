@@ -2,28 +2,51 @@
 <command id="4097305">
 	<sentence>Many Iranian scientists familiar with uranium enrichment and plutonium manufacturing have returned to Iran after initially fleeing the Khomeini regime .</sentence>
 	<tokens>
-		<token id="1" lemma="Many" pos="jj" surface="Many"/>
-		<token id="2" lemma="Iranian" pos="jj" surface="Iranian"/>
-		<token id="3" lemma="scientists" pos="nns" surface="scientists"/>
-		<token id="4" lemma="familiar" pos="jj" surface="familiar"/>
-		<token id="5" lemma="with" pos="in" surface="with"/>
-		<token id="6" lemma="uranium" pos="nn" surface="uranium"/>
-		<token id="7" lemma="enrichment" pos="nn" surface="enrichment"/>
-		<token id="8" lemma="and" pos="cc" surface="and"/>
-		<token id="9" lemma="plutonium" pos="nn" surface="plutonium"/>
-		<token id="10" lemma="manufacturing" pos="nn" surface="manufacturing"/>
-		<token id="11" lemma="have" pos="VHP" surface="have"/>
-		<token id="12" lemma="returned" pos="VVN" surface="returned"/>
-		<token id="13" lemma="to" pos="to" surface="to"/>
-		<token id="14" lemma="Iran" pos="NP" surface="Iran"/>
-		<token id="15" lemma="after" pos="in" surface="after"/>
-		<token id="16" lemma="initially" pos="rb" surface="initially"/>
-		<token id="17" lemma="fleeing" pos="VVG" surface="fleeing"/>
-		<token id="18" lemma="the" pos="dt" surface="the"/>
-		<token id="19" lemma="Khomeini" pos="NP" surface="Khomeini"/>
-		<token id="20" lemma="regime" pos="nn" surface="regime"/>
-		<token id="21" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="many" pos="JJ" surface="Many"/>
+		<token id="2" lemma="iranian" pos="JJ" surface="Iranian"/>
+		<token id="3" lemma="scientist" pos="NNS" surface="scientists"/>
+		<token id="4" lemma="familiar" pos="JJ" surface="familiar"/>
+		<token id="5" lemma="with" pos="IN" surface="with"/>
+		<token id="6" lemma="uranium" pos="NN" surface="uranium"/>
+		<token id="7" lemma="enrichment" pos="NN" surface="enrichment"/>
+		<token id="8" lemma="and" pos="CC" surface="and"/>
+		<token id="9" lemma="plutonium" pos="NN" surface="plutonium"/>
+		<token id="10" lemma="manufacturing" pos="NN" surface="manufacturing"/>
+		<token id="11" lemma="have" pos="VBP" surface="have"/>
+		<token id="12" lemma="return" pos="VBN" surface="returned"/>
+		<token id="13" lemma="to" pos="IN" surface="to"/>
+		<token id="14" lemma="iran" pos="NNP" surface="Iran"/>
+		<token id="15" lemma="after" pos="IN" surface="after"/>
+		<token id="16" lemma="initially" pos="RB" surface="initially"/>
+		<token id="17" lemma="flee" pos="VBG" surface="fleeing"/>
+		<token id="18" lemma="the" pos="DT" surface="the"/>
+		<token id="19" lemma="khomeini" pos="NNP" surface="Khomeini"/>
+		<token id="20" lemma="regime" pos="NN" surface="regime"/>
+		<token id="21" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="amod"/>
+		<dep from="3" to="2" type="amod"/>
+		<dep from="12" to="3" type="nsubj"/>
+		<dep from="3" to="4" type="amod"/>
+		<dep from="4" to="5" type="prep"/>
+		<dep from="7" to="6" type="compound"/>
+		<dep from="5" to="7" type="pobj"/>
+		<dep from="7" to="8" type="cc"/>
+		<dep from="10" to="9" type="compound"/>
+		<dep from="7" to="10" type="conj"/>
+		<dep from="12" to="11" type="aux"/>
+		<dep from="0" to="12" type="root"/>
+		<dep from="12" to="13" type="prep"/>
+		<dep from="13" to="14" type="pobj"/>
+		<dep from="12" to="15" type="prep"/>
+		<dep from="17" to="16" type="advmod"/>
+		<dep from="15" to="17" type="pcomp"/>
+		<dep from="20" to="18" type="det"/>
+		<dep from="20" to="19" type="compound"/>
+		<dep from="17" to="20" type="dobj"/>
+		<dep from="12" to="21" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

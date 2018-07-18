@@ -2,32 +2,59 @@
 <command id="4106098">
 	<sentence>The story of the Western discovery of Macau begins in 1513 when Portuguese explorer , Jorge Alvares , reached the south coast of China .</sentence>
 	<tokens>
-		<token id="1" lemma="The" pos="dt" surface="The"/>
-		<token id="2" lemma="story" pos="nn" surface="story"/>
-		<token id="3" lemma="of" pos="in" surface="of"/>
-		<token id="4" lemma="the" pos="dt" surface="the"/>
-		<token id="5" lemma="Western" pos="jj" surface="Western"/>
-		<token id="6" lemma="discovery" pos="nn" surface="discovery"/>
-		<token id="7" lemma="of" pos="in" surface="of"/>
-		<token id="8" lemma="Macau" pos="NP" surface="Macau"/>
-		<token id="9" lemma="begins" pos="VVZ" surface="begins"/>
-		<token id="10" lemma="in" pos="in" surface="in"/>
-		<token id="11" lemma="1513" pos="cd" surface="1513"/>
-		<token id="12" lemma="when" pos="wrb" surface="when"/>
-		<token id="13" lemma="Portuguese" pos="jj" surface="Portuguese"/>
-		<token id="14" lemma="explorer" pos="nn" surface="explorer"/>
+		<token id="1" lemma="the" pos="DT" surface="The"/>
+		<token id="2" lemma="story" pos="NN" surface="story"/>
+		<token id="3" lemma="of" pos="IN" surface="of"/>
+		<token id="4" lemma="the" pos="DT" surface="the"/>
+		<token id="5" lemma="western" pos="JJ" surface="Western"/>
+		<token id="6" lemma="discovery" pos="NN" surface="discovery"/>
+		<token id="7" lemma="of" pos="IN" surface="of"/>
+		<token id="8" lemma="macau" pos="NNP" surface="Macau"/>
+		<token id="9" lemma="begin" pos="VBZ" surface="begins"/>
+		<token id="10" lemma="in" pos="IN" surface="in"/>
+		<token id="11" lemma="1513" pos="CD" surface="1513"/>
+		<token id="12" lemma="when" pos="WRB" surface="when"/>
+		<token id="13" lemma="portuguese" pos="JJ" surface="Portuguese"/>
+		<token id="14" lemma="explorer" pos="NN" surface="explorer"/>
 		<token id="15" lemma="," pos="," surface=","/>
-		<token id="16" lemma="Jorge" pos="NP" surface="Jorge"/>
-		<token id="17" lemma="Alvares" pos="NP" surface="Alvares"/>
+		<token id="16" lemma="jorge" pos="NNP" surface="Jorge"/>
+		<token id="17" lemma="alvares" pos="NNPS" surface="Alvares"/>
 		<token id="18" lemma="," pos="," surface=","/>
-		<token id="19" lemma="reached" pos="VVD" surface="reached"/>
-		<token id="20" lemma="the" pos="dt" surface="the"/>
-		<token id="21" lemma="south" pos="jj" surface="south"/>
-		<token id="22" lemma="coast" pos="nn" surface="coast"/>
-		<token id="23" lemma="of" pos="in" surface="of"/>
-		<token id="24" lemma="China" pos="NP" surface="China"/>
-		<token id="25" lemma="." pos="sent" surface="."/>
+		<token id="19" lemma="reach" pos="VBD" surface="reached"/>
+		<token id="20" lemma="the" pos="DT" surface="the"/>
+		<token id="21" lemma="south" pos="JJ" surface="south"/>
+		<token id="22" lemma="coast" pos="NN" surface="coast"/>
+		<token id="23" lemma="of" pos="IN" surface="of"/>
+		<token id="24" lemma="china" pos="NNP" surface="China"/>
+		<token id="25" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="det"/>
+		<dep from="9" to="2" type="nsubj"/>
+		<dep from="2" to="3" type="prep"/>
+		<dep from="6" to="4" type="det"/>
+		<dep from="6" to="5" type="amod"/>
+		<dep from="3" to="6" type="pobj"/>
+		<dep from="6" to="7" type="prep"/>
+		<dep from="7" to="8" type="pobj"/>
+		<dep from="0" to="9" type="root"/>
+		<dep from="9" to="10" type="prep"/>
+		<dep from="10" to="11" type="pobj"/>
+		<dep from="19" to="12" type="advmod"/>
+		<dep from="14" to="13" type="amod"/>
+		<dep from="19" to="14" type="nsubj"/>
+		<dep from="14" to="15" type="punct"/>
+		<dep from="17" to="16" type="compound"/>
+		<dep from="14" to="17" type="appos"/>
+		<dep from="14" to="18" type="punct"/>
+		<dep from="9" to="19" type="advcl"/>
+		<dep from="22" to="20" type="det"/>
+		<dep from="22" to="21" type="amod"/>
+		<dep from="19" to="22" type="dobj"/>
+		<dep from="22" to="23" type="prep"/>
+		<dep from="23" to="24" type="pobj"/>
+		<dep from="9" to="25" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

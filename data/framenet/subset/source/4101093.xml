@@ -2,37 +2,69 @@
 <command id="4101093">
 	<sentence>Providing an influx of $165 million to the southwestern economy , Hoover Dam played a major role in preventing Las Vegas from drying up , both financially and literally .</sentence>
 	<tokens>
-		<token id="1" lemma="Providing" pos="VVG" surface="Providing"/>
-		<token id="2" lemma="an" pos="dt" surface="an"/>
-		<token id="3" lemma="influx" pos="nn" surface="influx"/>
-		<token id="4" lemma="of" pos="in" surface="of"/>
-		<token id="5" lemma="$165" pos="nn" surface="$165"/>
-		<token id="6" lemma="million" pos="cd" surface="million"/>
-		<token id="7" lemma="to" pos="to" surface="to"/>
-		<token id="8" lemma="the" pos="dt" surface="the"/>
-		<token id="9" lemma="southwestern" pos="jj" surface="southwestern"/>
-		<token id="10" lemma="economy" pos="nn" surface="economy"/>
+		<token id="1" lemma="provide" pos="VBG" surface="Providing"/>
+		<token id="2" lemma="an" pos="DT" surface="an"/>
+		<token id="3" lemma="influx" pos="NN" surface="influx"/>
+		<token id="4" lemma="of" pos="IN" surface="of"/>
+		<token id="5" lemma="$165" pos="$" surface="$165"/>
+		<token id="6" lemma="million" pos="CD" surface="million"/>
+		<token id="7" lemma="to" pos="IN" surface="to"/>
+		<token id="8" lemma="the" pos="DT" surface="the"/>
+		<token id="9" lemma="southwestern" pos="JJ" surface="southwestern"/>
+		<token id="10" lemma="economy" pos="NN" surface="economy"/>
 		<token id="11" lemma="," pos="," surface=","/>
-		<token id="12" lemma="Hoover" pos="NP" surface="Hoover"/>
-		<token id="13" lemma="Dam" pos="NP" surface="Dam"/>
-		<token id="14" lemma="played" pos="VVD" surface="played"/>
-		<token id="15" lemma="a" pos="dt" surface="a"/>
-		<token id="16" lemma="major" pos="jj" surface="major"/>
-		<token id="17" lemma="role" pos="nn" surface="role"/>
-		<token id="18" lemma="in" pos="in" surface="in"/>
-		<token id="19" lemma="preventing" pos="VVG" surface="preventing"/>
-		<token id="20" lemma="Las" pos="NP" surface="Las"/>
-		<token id="21" lemma="Vegas" pos="NP" surface="Vegas"/>
-		<token id="22" lemma="from" pos="in" surface="from"/>
-		<token id="23" lemma="drying" pos="VVG" surface="drying"/>
-		<token id="24" lemma="up" pos="rp" surface="up"/>
+		<token id="12" lemma="hoover" pos="NNP" surface="Hoover"/>
+		<token id="13" lemma="dam" pos="NNP" surface="Dam"/>
+		<token id="14" lemma="play" pos="VBD" surface="played"/>
+		<token id="15" lemma="a" pos="DT" surface="a"/>
+		<token id="16" lemma="major" pos="JJ" surface="major"/>
+		<token id="17" lemma="role" pos="NN" surface="role"/>
+		<token id="18" lemma="in" pos="IN" surface="in"/>
+		<token id="19" lemma="prevent" pos="VBG" surface="preventing"/>
+		<token id="20" lemma="las" pos="NNP" surface="Las"/>
+		<token id="21" lemma="vegas" pos="NNP" surface="Vegas"/>
+		<token id="22" lemma="from" pos="IN" surface="from"/>
+		<token id="23" lemma="dry" pos="VBG" surface="drying"/>
+		<token id="24" lemma="up" pos="RP" surface="up"/>
 		<token id="25" lemma="," pos="," surface=","/>
-		<token id="26" lemma="both" pos="cc" surface="both"/>
-		<token id="27" lemma="financially" pos="rb" surface="financially"/>
-		<token id="28" lemma="and" pos="cc" surface="and"/>
-		<token id="29" lemma="literally" pos="rb" surface="literally"/>
-		<token id="30" lemma="." pos="sent" surface="."/>
+		<token id="26" lemma="both" pos="CC" surface="both"/>
+		<token id="27" lemma="financially" pos="RB" surface="financially"/>
+		<token id="28" lemma="and" pos="CC" surface="and"/>
+		<token id="29" lemma="literally" pos="RB" surface="literally"/>
+		<token id="30" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="14" to="1" type="advcl"/>
+		<dep from="3" to="2" type="det"/>
+		<dep from="1" to="3" type="dobj"/>
+		<dep from="3" to="4" type="prep"/>
+		<dep from="6" to="5" type="compound"/>
+		<dep from="4" to="6" type="pobj"/>
+		<dep from="1" to="7" type="dative"/>
+		<dep from="10" to="8" type="det"/>
+		<dep from="10" to="9" type="amod"/>
+		<dep from="7" to="10" type="pobj"/>
+		<dep from="14" to="11" type="punct"/>
+		<dep from="13" to="12" type="compound"/>
+		<dep from="14" to="13" type="nsubj"/>
+		<dep from="0" to="14" type="root"/>
+		<dep from="17" to="15" type="det"/>
+		<dep from="17" to="16" type="amod"/>
+		<dep from="14" to="17" type="dobj"/>
+		<dep from="17" to="18" type="prep"/>
+		<dep from="18" to="19" type="pcomp"/>
+		<dep from="21" to="20" type="compound"/>
+		<dep from="19" to="21" type="dobj"/>
+		<dep from="19" to="22" type="prep"/>
+		<dep from="22" to="23" type="pcomp"/>
+		<dep from="23" to="24" type="prt"/>
+		<dep from="14" to="25" type="punct"/>
+		<dep from="27" to="26" type="preconj"/>
+		<dep from="14" to="27" type="advmod"/>
+		<dep from="27" to="28" type="cc"/>
+		<dep from="27" to="29" type="conj"/>
+		<dep from="14" to="30" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

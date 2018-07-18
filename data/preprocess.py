@@ -15,6 +15,13 @@ from sklearn.model_selection import StratifiedKFold
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
+import spacy
+
+from nlunetwork.embeddings import WhitespaceTokenizer
+
+nlp = spacy.load('en')
+nlp.tokenizer = WhitespaceTokenizer(nlp.vocab)
+
 n_folds = 5
 #ALEXA_FILE_NAME = 'alexaInteractionModel.json'
 #LEX_FILE_NAME = 'lexBot.json'
@@ -645,21 +652,42 @@ def framenet_preprocess(folder, dest_path, subset=True):
         command_id = s.attrib['ID']
         text = s.find('text').text
         words = text.split()
+        try:
+            doc = nlp(text)
+        except AssertionError as e:
+            print(command_id, text, e)
+            raise e
+        framenet_annotations = s.find("annotationSet[@status='UNANN']/layer").findall("label")
+        #print([t.text for t in doc], words)
+        try:
+            assert len(doc) == len(framenet_annotations)
+        except AssertionError as e:
+            print('different lengths', len(doc), len(framenet_annotations), ' for', text)
+            #raise e
+        # FrameNet annotations sometimes are missing some tokens. See frame 312908 for example
         tokens = [{
-            'id': idx + 1,
-            'start': int(l.attrib['start']),
-            'end': int(l.attrib['end'])+1,
-            'lemma': text[int(l.attrib['start']):int(l.attrib['end'])+1], # TODO lemmatize
-            'pos': l.attrib['name'],
-            'surface': text[int(l.attrib['start']):int(l.attrib['end'])+1]
-        } for idx, l in enumerate(s.find("annotationSet[@status='UNANN']/layer").findall("label"))]
+            'id': t.i + 1,
+            'start': t.idx,
+            'end': t.idx + len(t.text),
+            'lemma': t.lemma_,
+            'pos': t.tag_, # or l.attrib['name']
+            'surface': t.text
+        } for t in doc]
         # TODO where are dependencies?
+        dependencies = [{
+            'from': str(t.head.i + 1) if t.dep_.lower() != 'root' else str(0),
+            'to': str(t.i + 1),
+            'type': t.dep_.lower()
+        } for t in doc]
 
         new_command = ET.Element('command', {'id': command_id})
         ET.SubElement(new_command, 'sentence').text = text
         new_tokens = ET.SubElement(new_command, 'tokens')
         for t in tokens:
             ET.SubElement(new_tokens, 'token', {'id': str(t['id']), 'lemma': t['lemma'], 'pos': t['pos'], 'surface': t['surface']})
+        new_dependencies = ET.SubElement(new_command, 'dependencies')
+        for d in dependencies:
+            ET.SubElement(new_dependencies, 'dep', d)
         new_semantic_frames = ET.SubElement(ET.SubElement(new_command, 'semantics'), 'frameSemantics')
 
         wanted_frames = get_wanted_frames(s)

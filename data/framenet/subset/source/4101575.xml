@@ -2,22 +2,39 @@
 <command id="4101575">
 	<sentence>This comes from a man whose brother , Guillermo , was murdered in 1986 .</sentence>
 	<tokens>
-		<token id="1" lemma="This" pos="dt" surface="This"/>
-		<token id="2" lemma="comes" pos="VVZ" surface="comes"/>
-		<token id="3" lemma="from" pos="in" surface="from"/>
-		<token id="4" lemma="a" pos="dt" surface="a"/>
-		<token id="5" lemma="man" pos="nn" surface="man"/>
-		<token id="6" lemma="whose" pos="wp$" surface="whose"/>
-		<token id="7" lemma="brother" pos="nn" surface="brother"/>
+		<token id="1" lemma="this" pos="DT" surface="This"/>
+		<token id="2" lemma="come" pos="VBZ" surface="comes"/>
+		<token id="3" lemma="from" pos="IN" surface="from"/>
+		<token id="4" lemma="a" pos="DT" surface="a"/>
+		<token id="5" lemma="man" pos="NN" surface="man"/>
+		<token id="6" lemma="whose" pos="WP$" surface="whose"/>
+		<token id="7" lemma="brother" pos="NN" surface="brother"/>
 		<token id="8" lemma="," pos="," surface=","/>
-		<token id="9" lemma="Guillermo" pos="NP" surface="Guillermo"/>
+		<token id="9" lemma="guillermo" pos="NNP" surface="Guillermo"/>
 		<token id="10" lemma="," pos="," surface=","/>
-		<token id="11" lemma="was" pos="VBD" surface="was"/>
-		<token id="12" lemma="murdered" pos="VVN" surface="murdered"/>
-		<token id="13" lemma="in" pos="in" surface="in"/>
-		<token id="14" lemma="1986" pos="cd" surface="1986"/>
-		<token id="15" lemma="." pos="sent" surface="."/>
+		<token id="11" lemma="be" pos="VBD" surface="was"/>
+		<token id="12" lemma="murder" pos="VBN" surface="murdered"/>
+		<token id="13" lemma="in" pos="IN" surface="in"/>
+		<token id="14" lemma="1986" pos="CD" surface="1986"/>
+		<token id="15" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="nsubj"/>
+		<dep from="0" to="2" type="root"/>
+		<dep from="2" to="3" type="prep"/>
+		<dep from="5" to="4" type="det"/>
+		<dep from="3" to="5" type="pobj"/>
+		<dep from="7" to="6" type="poss"/>
+		<dep from="12" to="7" type="nsubjpass"/>
+		<dep from="7" to="8" type="punct"/>
+		<dep from="7" to="9" type="appos"/>
+		<dep from="12" to="10" type="punct"/>
+		<dep from="12" to="11" type="auxpass"/>
+		<dep from="5" to="12" type="relcl"/>
+		<dep from="12" to="13" type="prep"/>
+		<dep from="13" to="14" type="pobj"/>
+		<dep from="2" to="15" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">

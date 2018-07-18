@@ -2,17 +2,29 @@
 <command id="4099040">
 	<sentence>QN : Can a Scud C fly 500 kilometers ?</sentence>
 	<tokens>
-		<token id="1" lemma="QN" pos="NP" surface="QN"/>
+		<token id="1" lemma="qn" pos="NNP" surface="QN"/>
 		<token id="2" lemma=":" pos=":" surface=":"/>
-		<token id="3" lemma="Can" pos="md" surface="Can"/>
-		<token id="4" lemma="a" pos="dt" surface="a"/>
-		<token id="5" lemma="Scud" pos="nn" surface="Scud"/>
-		<token id="6" lemma="C" pos="NP" surface="C"/>
-		<token id="7" lemma="fly" pos="VVP" surface="fly"/>
-		<token id="8" lemma="500" pos="cd" surface="500"/>
-		<token id="9" lemma="kilometers" pos="nns" surface="kilometers"/>
-		<token id="10" lemma="?" pos="sent" surface="?"/>
+		<token id="3" lemma="can" pos="MD" surface="Can"/>
+		<token id="4" lemma="a" pos="DT" surface="a"/>
+		<token id="5" lemma="scud" pos="NNP" surface="Scud"/>
+		<token id="6" lemma="c" pos="NNP" surface="C"/>
+		<token id="7" lemma="fly" pos="VB" surface="fly"/>
+		<token id="8" lemma="500" pos="CD" surface="500"/>
+		<token id="9" lemma="kilometer" pos="NNS" surface="kilometers"/>
+		<token id="10" lemma="?" pos="." surface="?"/>
 	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="1" to="2" type="punct"/>
+		<dep from="7" to="3" type="aux"/>
+		<dep from="6" to="4" type="det"/>
+		<dep from="6" to="5" type="compound"/>
+		<dep from="7" to="6" type="nsubj"/>
+		<dep from="1" to="7" type="ccomp"/>
+		<dep from="9" to="8" type="nummod"/>
+		<dep from="7" to="9" type="npadvmod"/>
+		<dep from="7" to="10" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Motion">

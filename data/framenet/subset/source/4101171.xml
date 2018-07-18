@@ -2,25 +2,45 @@
 <command id="4101171">
 	<sentence>Around 7000 b.c. , the Phoenicians set out from what is now Iran to explore their surroundings .</sentence>
 	<tokens>
-		<token id="1" lemma="Around" pos="in" surface="Around"/>
-		<token id="2" lemma="7000" pos="cd" surface="7000"/>
-		<token id="3" lemma="b.c." pos="nn" surface="b.c."/>
+		<token id="1" lemma="around" pos="IN" surface="Around"/>
+		<token id="2" lemma="7000" pos="CD" surface="7000"/>
+		<token id="3" lemma="b.c." pos="NN" surface="b.c."/>
 		<token id="4" lemma="," pos="," surface=","/>
-		<token id="5" lemma="the" pos="dt" surface="the"/>
-		<token id="6" lemma="Phoenicians" pos="NP" surface="Phoenicians"/>
-		<token id="7" lemma="set" pos="VVD" surface="set"/>
-		<token id="8" lemma="out" pos="rp" surface="out"/>
-		<token id="9" lemma="from" pos="in" surface="from"/>
-		<token id="10" lemma="what" pos="wp" surface="what"/>
-		<token id="11" lemma="is" pos="VBZ" surface="is"/>
-		<token id="12" lemma="now" pos="rb" surface="now"/>
-		<token id="13" lemma="Iran" pos="NP" surface="Iran"/>
-		<token id="14" lemma="to" pos="to" surface="to"/>
-		<token id="15" lemma="explore" pos="VV" surface="explore"/>
-		<token id="16" lemma="their" pos="PP$" surface="their"/>
-		<token id="17" lemma="surroundings" pos="nn" surface="surroundings"/>
-		<token id="18" lemma="." pos="sent" surface="."/>
+		<token id="5" lemma="the" pos="DT" surface="the"/>
+		<token id="6" lemma="phoenicians" pos="NNPS" surface="Phoenicians"/>
+		<token id="7" lemma="set" pos="VBD" surface="set"/>
+		<token id="8" lemma="out" pos="RP" surface="out"/>
+		<token id="9" lemma="from" pos="IN" surface="from"/>
+		<token id="10" lemma="what" pos="WP" surface="what"/>
+		<token id="11" lemma="be" pos="VBZ" surface="is"/>
+		<token id="12" lemma="now" pos="RB" surface="now"/>
+		<token id="13" lemma="iran" pos="NNP" surface="Iran"/>
+		<token id="14" lemma="to" pos="TO" surface="to"/>
+		<token id="15" lemma="explore" pos="VB" surface="explore"/>
+		<token id="16" lemma="-PRON-" pos="PRP$" surface="their"/>
+		<token id="17" lemma="surrounding" pos="NNS" surface="surroundings"/>
+		<token id="18" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="7" to="1" type="prep"/>
+		<dep from="3" to="2" type="nummod"/>
+		<dep from="1" to="3" type="pobj"/>
+		<dep from="7" to="4" type="punct"/>
+		<dep from="6" to="5" type="det"/>
+		<dep from="7" to="6" type="nsubj"/>
+		<dep from="0" to="7" type="root"/>
+		<dep from="7" to="8" type="prt"/>
+		<dep from="7" to="9" type="prep"/>
+		<dep from="11" to="10" type="nsubj"/>
+		<dep from="9" to="11" type="pcomp"/>
+		<dep from="11" to="12" type="advmod"/>
+		<dep from="11" to="13" type="attr"/>
+		<dep from="15" to="14" type="aux"/>
+		<dep from="7" to="15" type="advcl"/>
+		<dep from="17" to="16" type="poss"/>
+		<dep from="15" to="17" type="dobj"/>
+		<dep from="7" to="18" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Searching">

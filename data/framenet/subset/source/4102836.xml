@@ -2,31 +2,57 @@
 <command id="4102836">
 	<sentence>5- Cars parked inside the location should have their front facing the fence so they could be used quickly in case of emergency .</sentence>
 	<tokens>
-		<token id="1" lemma="5-" pos="cd" surface="5-"/>
-		<token id="2" lemma="Cars" pos="nns" surface="Cars"/>
-		<token id="3" lemma="parked" pos="VVN" surface="parked"/>
-		<token id="4" lemma="inside" pos="in" surface="inside"/>
-		<token id="5" lemma="the" pos="dt" surface="the"/>
-		<token id="6" lemma="location" pos="nn" surface="location"/>
-		<token id="7" lemma="should" pos="md" surface="should"/>
-		<token id="8" lemma="have" pos="VH" surface="have"/>
-		<token id="9" lemma="their" pos="PP$" surface="their"/>
-		<token id="10" lemma="front" pos="nn" surface="front"/>
-		<token id="11" lemma="facing" pos="VVG" surface="facing"/>
-		<token id="12" lemma="the" pos="dt" surface="the"/>
-		<token id="13" lemma="fence" pos="nn" surface="fence"/>
-		<token id="14" lemma="so" pos="in" surface="so"/>
-		<token id="15" lemma="they" pos="PP" surface="they"/>
-		<token id="16" lemma="could" pos="md" surface="could"/>
-		<token id="17" lemma="be" pos="vb" surface="be"/>
-		<token id="18" lemma="used" pos="VVN" surface="used"/>
-		<token id="19" lemma="quickly" pos="rb" surface="quickly"/>
-		<token id="20" lemma="in" pos="in" surface="in"/>
-		<token id="21" lemma="case" pos="nn" surface="case"/>
-		<token id="22" lemma="of" pos="in" surface="of"/>
-		<token id="23" lemma="emergency" pos="nn" surface="emergency"/>
-		<token id="24" lemma="." pos="sent" surface="."/>
+		<token id="1" lemma="5-" pos="LS" surface="5-"/>
+		<token id="2" lemma="car" pos="NNS" surface="Cars"/>
+		<token id="3" lemma="park" pos="VBN" surface="parked"/>
+		<token id="4" lemma="inside" pos="IN" surface="inside"/>
+		<token id="5" lemma="the" pos="DT" surface="the"/>
+		<token id="6" lemma="location" pos="NN" surface="location"/>
+		<token id="7" lemma="should" pos="MD" surface="should"/>
+		<token id="8" lemma="have" pos="VB" surface="have"/>
+		<token id="9" lemma="-PRON-" pos="PRP$" surface="their"/>
+		<token id="10" lemma="front" pos="JJ" surface="front"/>
+		<token id="11" lemma="face" pos="VBG" surface="facing"/>
+		<token id="12" lemma="the" pos="DT" surface="the"/>
+		<token id="13" lemma="fence" pos="NN" surface="fence"/>
+		<token id="14" lemma="so" pos="IN" surface="so"/>
+		<token id="15" lemma="-PRON-" pos="PRP" surface="they"/>
+		<token id="16" lemma="could" pos="MD" surface="could"/>
+		<token id="17" lemma="be" pos="VB" surface="be"/>
+		<token id="18" lemma="use" pos="VBN" surface="used"/>
+		<token id="19" lemma="quickly" pos="RB" surface="quickly"/>
+		<token id="20" lemma="in" pos="IN" surface="in"/>
+		<token id="21" lemma="case" pos="NN" surface="case"/>
+		<token id="22" lemma="of" pos="IN" surface="of"/>
+		<token id="23" lemma="emergency" pos="NN" surface="emergency"/>
+		<token id="24" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="8" to="1" type="meta"/>
+		<dep from="8" to="2" type="nsubj"/>
+		<dep from="2" to="3" type="acl"/>
+		<dep from="3" to="4" type="prep"/>
+		<dep from="6" to="5" type="det"/>
+		<dep from="4" to="6" type="pobj"/>
+		<dep from="8" to="7" type="aux"/>
+		<dep from="0" to="8" type="root"/>
+		<dep from="10" to="9" type="poss"/>
+		<dep from="8" to="10" type="dobj"/>
+		<dep from="10" to="11" type="acl"/>
+		<dep from="13" to="12" type="det"/>
+		<dep from="11" to="13" type="dobj"/>
+		<dep from="18" to="14" type="mark"/>
+		<dep from="18" to="15" type="nsubjpass"/>
+		<dep from="18" to="16" type="aux"/>
+		<dep from="18" to="17" type="auxpass"/>
+		<dep from="8" to="18" type="advcl"/>
+		<dep from="18" to="19" type="advmod"/>
+		<dep from="18" to="20" type="prep"/>
+		<dep from="20" to="21" type="pobj"/>
+		<dep from="21" to="22" type="prep"/>
+		<dep from="22" to="23" type="pobj"/>
+		<dep from="8" to="24" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Placing">

@@ -2,31 +2,57 @@
 <command id="4165038">
 	<sentence>Firefighters were working to keep the base of the crane cool , and the stability of the structure was being monitored with lasers .</sentence>
 	<tokens>
-		<token id="1" lemma="Firefighters" pos="nns" surface="Firefighters"/>
-		<token id="2" lemma="were" pos="VBD" surface="were"/>
-		<token id="3" lemma="working" pos="VVG" surface="working"/>
-		<token id="4" lemma="to" pos="to" surface="to"/>
-		<token id="5" lemma="keep" pos="VV" surface="keep"/>
-		<token id="6" lemma="the" pos="dt" surface="the"/>
-		<token id="7" lemma="base" pos="nn" surface="base"/>
-		<token id="8" lemma="of" pos="in" surface="of"/>
-		<token id="9" lemma="the" pos="dt" surface="the"/>
-		<token id="10" lemma="crane" pos="nn" surface="crane"/>
-		<token id="11" lemma="cool" pos="nn" surface="cool"/>
+		<token id="1" lemma="firefighter" pos="NNS" surface="Firefighters"/>
+		<token id="2" lemma="be" pos="VBD" surface="were"/>
+		<token id="3" lemma="work" pos="VBG" surface="working"/>
+		<token id="4" lemma="to" pos="TO" surface="to"/>
+		<token id="5" lemma="keep" pos="VB" surface="keep"/>
+		<token id="6" lemma="the" pos="DT" surface="the"/>
+		<token id="7" lemma="base" pos="NN" surface="base"/>
+		<token id="8" lemma="of" pos="IN" surface="of"/>
+		<token id="9" lemma="the" pos="DT" surface="the"/>
+		<token id="10" lemma="crane" pos="NN" surface="crane"/>
+		<token id="11" lemma="cool" pos="NN" surface="cool"/>
 		<token id="12" lemma="," pos="," surface=","/>
-		<token id="13" lemma="and" pos="cc" surface="and"/>
-		<token id="14" lemma="the" pos="dt" surface="the"/>
-		<token id="15" lemma="stability" pos="nn" surface="stability"/>
-		<token id="16" lemma="of" pos="in" surface="of"/>
-		<token id="17" lemma="the" pos="dt" surface="the"/>
-		<token id="18" lemma="structure" pos="nn" surface="structure"/>
-		<token id="19" lemma="was" pos="VBD" surface="was"/>
-		<token id="20" lemma="being" pos="VBG" surface="being"/>
-		<token id="21" lemma="monitored" pos="VVN" surface="monitored"/>
-		<token id="22" lemma="with" pos="in" surface="with"/>
-		<token id="23" lemma="lasers" pos="nns" surface="lasers"/>
-		<token id="24" lemma="." pos="sent" surface="."/>
+		<token id="13" lemma="and" pos="CC" surface="and"/>
+		<token id="14" lemma="the" pos="DT" surface="the"/>
+		<token id="15" lemma="stability" pos="NN" surface="stability"/>
+		<token id="16" lemma="of" pos="IN" surface="of"/>
+		<token id="17" lemma="the" pos="DT" surface="the"/>
+		<token id="18" lemma="structure" pos="NN" surface="structure"/>
+		<token id="19" lemma="be" pos="VBD" surface="was"/>
+		<token id="20" lemma="be" pos="VBG" surface="being"/>
+		<token id="21" lemma="monitor" pos="VBN" surface="monitored"/>
+		<token id="22" lemma="with" pos="IN" surface="with"/>
+		<token id="23" lemma="laser" pos="NNS" surface="lasers"/>
+		<token id="24" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="nsubj"/>
+		<dep from="3" to="2" type="aux"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="5" to="4" type="aux"/>
+		<dep from="3" to="5" type="xcomp"/>
+		<dep from="7" to="6" type="det"/>
+		<dep from="5" to="7" type="dobj"/>
+		<dep from="7" to="8" type="prep"/>
+		<dep from="11" to="9" type="det"/>
+		<dep from="11" to="10" type="compound"/>
+		<dep from="8" to="11" type="pobj"/>
+		<dep from="3" to="12" type="punct"/>
+		<dep from="3" to="13" type="cc"/>
+		<dep from="15" to="14" type="det"/>
+		<dep from="21" to="15" type="nsubjpass"/>
+		<dep from="15" to="16" type="prep"/>
+		<dep from="18" to="17" type="det"/>
+		<dep from="16" to="18" type="pobj"/>
+		<dep from="21" to="19" type="aux"/>
+		<dep from="21" to="20" type="auxpass"/>
+		<dep from="3" to="21" type="conj"/>
+		<dep from="21" to="22" type="prep"/>
+		<dep from="22" to="23" type="pobj"/>
+		<dep from="21" to="24" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Searching">

@@ -2,33 +2,61 @@
 <command id="4106607">
 	<sentence>The children and families who come to Pleasant Run are given the opportunity to become happy , loving , and productive members of our society .</sentence>
 	<tokens>
-		<token id="1" lemma="The" pos="dt" surface="The"/>
-		<token id="2" lemma="children" pos="nns" surface="children"/>
-		<token id="3" lemma="and" pos="cc" surface="and"/>
-		<token id="4" lemma="families" pos="nns" surface="families"/>
-		<token id="5" lemma="who" pos="wp" surface="who"/>
-		<token id="6" lemma="come" pos="VVP" surface="come"/>
-		<token id="7" lemma="to" pos="to" surface="to"/>
-		<token id="8" lemma="Pleasant" pos="NP" surface="Pleasant"/>
-		<token id="9" lemma="Run" pos="nn" surface="Run"/>
-		<token id="10" lemma="are" pos="vbp" surface="are"/>
-		<token id="11" lemma="given" pos="VVN" surface="given"/>
-		<token id="12" lemma="the" pos="dt" surface="the"/>
-		<token id="13" lemma="opportunity" pos="nn" surface="opportunity"/>
-		<token id="14" lemma="to" pos="to" surface="to"/>
-		<token id="15" lemma="become" pos="VV" surface="become"/>
-		<token id="16" lemma="happy" pos="jj" surface="happy"/>
+		<token id="1" lemma="the" pos="DT" surface="The"/>
+		<token id="2" lemma="child" pos="NNS" surface="children"/>
+		<token id="3" lemma="and" pos="CC" surface="and"/>
+		<token id="4" lemma="family" pos="NNS" surface="families"/>
+		<token id="5" lemma="who" pos="WP" surface="who"/>
+		<token id="6" lemma="come" pos="VBP" surface="come"/>
+		<token id="7" lemma="to" pos="IN" surface="to"/>
+		<token id="8" lemma="pleasant" pos="JJ" surface="Pleasant"/>
+		<token id="9" lemma="run" pos="NNP" surface="Run"/>
+		<token id="10" lemma="be" pos="VBP" surface="are"/>
+		<token id="11" lemma="give" pos="VBN" surface="given"/>
+		<token id="12" lemma="the" pos="DT" surface="the"/>
+		<token id="13" lemma="opportunity" pos="NN" surface="opportunity"/>
+		<token id="14" lemma="to" pos="TO" surface="to"/>
+		<token id="15" lemma="become" pos="VB" surface="become"/>
+		<token id="16" lemma="happy" pos="JJ" surface="happy"/>
 		<token id="17" lemma="," pos="," surface=","/>
-		<token id="18" lemma="loving" pos="jj" surface="loving"/>
+		<token id="18" lemma="loving" pos="JJ" surface="loving"/>
 		<token id="19" lemma="," pos="," surface=","/>
-		<token id="20" lemma="and" pos="cc" surface="and"/>
-		<token id="21" lemma="productive" pos="jj" surface="productive"/>
-		<token id="22" lemma="members" pos="nns" surface="members"/>
-		<token id="23" lemma="of" pos="in" surface="of"/>
-		<token id="24" lemma="our" pos="PP$" surface="our"/>
-		<token id="25" lemma="society" pos="nn" surface="society"/>
-		<token id="26" lemma="." pos="sent" surface="."/>
+		<token id="20" lemma="and" pos="CC" surface="and"/>
+		<token id="21" lemma="productive" pos="JJ" surface="productive"/>
+		<token id="22" lemma="member" pos="NNS" surface="members"/>
+		<token id="23" lemma="of" pos="IN" surface="of"/>
+		<token id="24" lemma="-PRON-" pos="PRP$" surface="our"/>
+		<token id="25" lemma="society" pos="NN" surface="society"/>
+		<token id="26" lemma="." pos="." surface="."/>
 	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="det"/>
+		<dep from="11" to="2" type="nsubjpass"/>
+		<dep from="2" to="3" type="cc"/>
+		<dep from="2" to="4" type="conj"/>
+		<dep from="6" to="5" type="nsubj"/>
+		<dep from="2" to="6" type="relcl"/>
+		<dep from="6" to="7" type="prep"/>
+		<dep from="9" to="8" type="compound"/>
+		<dep from="7" to="9" type="pobj"/>
+		<dep from="11" to="10" type="auxpass"/>
+		<dep from="0" to="11" type="root"/>
+		<dep from="13" to="12" type="det"/>
+		<dep from="11" to="13" type="dobj"/>
+		<dep from="15" to="14" type="aux"/>
+		<dep from="13" to="15" type="acl"/>
+		<dep from="22" to="16" type="amod"/>
+		<dep from="16" to="17" type="punct"/>
+		<dep from="16" to="18" type="conj"/>
+		<dep from="18" to="19" type="punct"/>
+		<dep from="18" to="20" type="cc"/>
+		<dep from="18" to="21" type="conj"/>
+		<dep from="15" to="22" type="attr"/>
+		<dep from="22" to="23" type="prep"/>
+		<dep from="25" to="24" type="poss"/>
+		<dep from="23" to="25" type="pobj"/>
+		<dep from="11" to="26" type="punct"/>
+	</dependencies>
 	<semantics>
 		<frameSemantics>
 			<frame name="Entering">
