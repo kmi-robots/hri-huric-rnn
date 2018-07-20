@@ -93,7 +93,7 @@ def align_accuracy_argmax(samples):
     return sum(compared) / len(compared)
 
         
-def align_score(samples):
+def align_score(samples, max_len=50):
     true_lexical_units = []
     for s in samples:
         true_s = [1 if idx + 1 in s['lexical_unit_ids'] else 0 for idx in range(s['length'])]
@@ -108,7 +108,7 @@ def align_score(samples):
     for how_many in range(1, 10):
         pred_lexical_units = []
         for s in samples:
-            padded_intent_att = np.pad(s['intent_attentions'], (0, 50 - s['length']), 'constant')
+            padded_intent_att = np.pad(s['intent_attentions'], (0, max_len - s['length']), 'constant')
             pred_k_indexes = np.argpartition(padded_intent_att, -how_many)[-how_many:]
             #print(pred_k_indexes)
             pred_k = [1 if idx in pred_k_indexes else 0 for idx in range(s['length'])]

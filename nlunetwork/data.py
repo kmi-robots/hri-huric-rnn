@@ -282,7 +282,7 @@ def spacy_wrapper(embedding_size, language, nlp, words_numpy):
                             embeddings_values[i,j,:] = np.ones((embedding_size))*punct_idx+2
                     else:
                         embeddings_values[i,j,:] = w.vector
-                
+
     return embeddings_values
 
 
@@ -352,7 +352,7 @@ def save_predictions(out_path, fold_id, samples):
         json.dump({'samples': samples}, outfile, indent=2, cls=NumpyEncoder)
 
 def merge_prediction_folds(epoch_path):
-    fold_files = [f for f in os.listdir(epoch_path) if f.startswith('prediction_fold_')]
+    fold_files = [f for f in os.listdir(epoch_path) if f.startswith('prediction_fold_') and not 'full' in f]
     results = []
     for file_name in fold_files:
         with open('{}/{}'.format(epoch_path, file_name), 'r') as f:

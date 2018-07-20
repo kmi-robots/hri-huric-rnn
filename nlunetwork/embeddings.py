@@ -76,7 +76,8 @@ class WhitespaceTokenizer(object):
         self.vocab = vocab
 
     def __call__(self, text):
-        words = text.split(' ')
+        # strip because otherwise spaces at the end are problems
+        words = text.strip().split(' ')
         # All tokens 'own' a subsequent space character in this tokenizer
         spaces = [True] * len(words)
         return Doc(self.vocab, words=words, spaces=spaces)

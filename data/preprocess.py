@@ -64,10 +64,6 @@ def huric_preprocess(path, also_spatial=False, subfolder=None, invoke_frame_slot
     # 3395: nested frame (no problem, discarded)
     # 3281, 3283, 3284: spatial problem
     # 
-
-    for forbidden in ['2374.xml', '3281.xml', '3283.xml', '3284.xml']:
-        if forbidden in files_list:
-            files_list.remove(forbidden)
     print('#files: ', len(files_list))
 
     for file_name in sorted(files_list):
@@ -94,7 +90,9 @@ def huric_preprocess(path, also_spatial=False, subfolder=None, invoke_frame_slot
         slots_map = {}
 
         # first loop: over the semantic frames
-        for frame in root.findall('semantics/frameSemantics/frame'):
+        semantic_frames = root.findall('semantics/frameSemantics/frame')
+        semantic_frames = sorted(semantic_frames, key=lambda f: int(f.findall('lexicalUnit/token')[0].attrib['id']))
+        for frame in semantic_frames:
             intent = frame.attrib['name']
             lexical_unit_ids = [int(t.attrib['id']) for t in frame.findall('lexicalUnit/token')]
 
@@ -152,6 +150,9 @@ def huric_preprocess(path, also_spatial=False, subfolder=None, invoke_frame_slot
         if also_spatial:
             # second loop: over the spatial frames
             for frame in root.findall('semantics/spatialSemantics/spatialRelation'):
+                # problems in spatial frames for these files
+                if file_name in ['3281.xml', '3283.xml', '3284.xml']:
+                    continue
                 spatial_frame_name = frame.attrib['name']
                 frame_tokens_mentioned = []
 

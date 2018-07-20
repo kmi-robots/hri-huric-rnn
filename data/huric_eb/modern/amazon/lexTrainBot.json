@@ -51,9 +51,9 @@
           "type": "ReturnIntent"
         },
         "sampleUtterances": [
-          "and {Theme} is {Location}",
           "there are {Theme}",
           "there are {Theme} {Location}",
+          "there is {Theme}",
           "there is {Theme} {Location}",
           "there's {Theme} {Location}",
           "{Location} there are {Theme}",
@@ -69,11 +69,6 @@
             "name": "Agent",
             "slotConstraint": "Optional",
             "slotType": "Agent"
-          },
-          {
-            "name": "Area",
-            "slotConstraint": "Optional",
-            "slotType": "Area"
           },
           {
             "name": "Beneficiary",
@@ -106,22 +101,19 @@
           "type": "ReturnIntent"
         },
         "sampleUtterances": [
-          "and bring {Beneficiary} {Theme}",
           "and bring {Beneficiary} {Theme} {Source}",
           "and bring {Theme} {Beneficiary}",
           "and bring {Theme} {Goal}",
           "and get {Beneficiary} {Theme}",
-          "and take {Theme} {Goal}",
-          "bring {Area} {Theme}",
           "bring {Beneficiary} {Theme}",
           "bring {Beneficiary} {Theme} {Source}",
           "bring {Manner} {Theme} {Goal}",
           "bring {Theme} {Goal}",
-          "can {Agent} bring {Beneficiary} {Theme}",
-          "can {Agent} bring {Beneficiary} {Theme} {Source}",
           "can {Agent} bring {Theme} {Beneficiary}",
           "can {Agent} bring {Theme} {Goal}",
-          "carry {Theme} {Beneficiary}",
+          "can {Agent} please bring {Theme} {Goal}",
+          "can {Agent} please take {Goal} {Theme}",
+          "can {Agent} take {Theme} {Goal}",
           "carry {Theme} {Goal}",
           "could {Agent} bring {Theme} {Goal}",
           "could {Agent} please bring {Beneficiary} {Theme}",
@@ -129,24 +121,29 @@
           "deliver {Theme} {Beneficiary}",
           "fetch {Beneficiary} {Theme}",
           "get {Beneficiary} {Theme}",
+          "get {Beneficiary} {Theme} {Source}",
           "i need some toilet paper can {Agent} get {Beneficiary} {Theme}",
           "i need some utensils could {Agent} take {Beneficiary} {Theme}",
           "i really need you to bring {Beneficiary} {Theme}",
           "i want some fruit bring {Beneficiary} {Theme}",
           "i want to watch tv bring {Beneficiary} {Theme}",
           "i would like some cutlery can {Agent} get {Beneficiary} {Theme}",
+          "i would like some loo roll can {Agent} get {Beneficiary} {Theme}",
           "i would like to read an architecture magazine can {Agent} bring {Beneficiary} {Theme}",
+          "let {Agent} take {Theme} {Goal}",
           "michael carry {Beneficiary} {Theme}",
           "please bring {Theme} {Goal}",
+          "please carry {Theme} {Goal}",
           "please take {Theme} {Goal}",
           "robot can {Agent} bring {Beneficiary} {Theme}",
-          "robot can {Agent} bring {Beneficiary} {Theme} {Source}",
           "robot can {Agent} bring {Theme} {Source}",
+          "robot can {Agent} get {Beneficiary} {Theme} {Source}",
           "robot can {Agent} take {Theme} {Goal}",
           "robot please take {Theme} {Goal}",
           "take {Theme} {Beneficiary}",
           "take {Theme} {Goal}",
           "the trash needs to go out could {Agent} take {Theme} {Goal}",
+          "would {Agent} please bring {Beneficiary} {Theme} {Source}",
           "{Agent} should bring {Beneficiary} {Theme}"
         ]
       },
@@ -181,6 +178,7 @@
           "can {Agent} turn {Device} {Operational_state}",
           "could {Agent} switch {Operational_state} {Device}",
           "could {Agent} turn {Operational_state} {Device}",
+          "i want to go to sleep turn {Operational_state} {Device}",
           "i want to jump in the shower can {Agent} turn {Device} {Operational_state}",
           "i'd really like to take a shower could {Agent} turn {Device} {Operational_state}",
           "i'm tired switch {Operational_state} {Device}",
@@ -188,7 +186,7 @@
           "robot can {Agent} start {Device}",
           "robot can {Agent} turn {Device} {Operational_state}",
           "shut {Operational_state} {Device}",
-          "switch {Operational_state} {Device}",
+          "stop {Device}",
           "turn {Operational_state} {Device}"
         ]
       },
@@ -221,15 +219,13 @@
           "type": "ReturnIntent"
         },
         "sampleUtterances": [
-          "and open {Container_portal}",
           "close {Container_portal}",
           "close {Containing_object}",
-          "could {Agent} close {Container_portal}",
           "open {Containing_object}",
-          "please close {Container_portal}",
           "please open {Containing_object}",
           "robot can {Agent} open {Containing_object}",
-          "robot can {Agent} put {Container_portal} {Degree}"
+          "robot can {Agent} put {Container_portal} {Degree}",
+          "robot can {Agent} {Degree} lower {Container_portal}"
         ]
       },
       {
@@ -253,6 +249,11 @@
       {
         "name": "Following",
         "slots": [
+          {
+            "name": "Area",
+            "slotConstraint": "Optional",
+            "slotType": "Area"
+          },
           {
             "name": "Cotheme",
             "slotConstraint": "Optional",
@@ -289,21 +290,23 @@
           "type": "ReturnIntent"
         },
         "sampleUtterances": [
+          "can {Theme} follow {Cotheme} {Goal}",
           "can {Theme} please follow {Cotheme}",
           "can {Theme} {Manner} follow {Cotheme}",
+          "come {Cotheme}",
           "follow {Cotheme}",
           "follow {Cotheme} {Goal}",
           "follow {Cotheme} {Manner}",
           "follow {Cotheme} {Speed}",
           "go along {Cotheme}",
           "go follow {Cotheme} {Path}",
+          "hey robot follow {Cotheme} {Area}",
           "michael follow {Cotheme}",
           "please follow {Cotheme}",
           "please follow {Cotheme} {Goal}",
           "please follow {Cotheme} {Manner}",
           "robot follow {Cotheme} {Manner}",
-          "robot please follow {Cotheme}",
-          "would {Theme} please follow {Cotheme} {Goal}"
+          "robot please follow {Cotheme}"
         ]
       },
       {
@@ -313,6 +316,11 @@
             "name": "Donor",
             "slotConstraint": "Optional",
             "slotType": "Donor"
+          },
+          {
+            "name": "Reason",
+            "slotConstraint": "Optional",
+            "slotType": "Reason"
           },
           {
             "name": "Recipient",
@@ -331,7 +339,8 @@
         },
         "sampleUtterances": [
           "give {Recipient} {Theme}",
-          "robot can {Donor} pass {Recipient} {Theme}"
+          "robot can {Donor} pass {Recipient} {Theme}",
+          "robot can {Donor} pass {Recipient} {Theme} {Reason}"
         ]
       },
       {
@@ -363,10 +372,10 @@
           "type": "ReturnIntent"
         },
         "sampleUtterances": [
-          "and check {Unwanted_entity}",
           "and control {Ground}",
           "check if {Ground}",
           "check if {Ground} {Desired_state}",
+          "check {Ground}",
           "check {Ground} {Unwanted_entity}",
           "could {Inspector} please check if {Ground} {Desired_state}",
           "see if {Ground} {Desired_state}"
@@ -401,11 +410,6 @@
             "slotType": "Path"
           },
           {
-            "name": "Source",
-            "slotConstraint": "Optional",
-            "slotType": "Source"
-          },
-          {
             "name": "Theme",
             "slotConstraint": "Optional",
             "slotType": "Theme"
@@ -424,7 +428,6 @@
           "come {Goal}",
           "could {Theme} go {Goal}",
           "could {Theme} please go {Goal}",
-          "could {Theme} please move {Goal}",
           "drive {Goal}",
           "go {Goal}",
           "go {Manner} {Goal}",
@@ -434,14 +437,15 @@
           "move {Goal}",
           "move {Goal} {Manner}",
           "move {Path}",
-          "move {Source}",
           "please go {Goal}",
           "please move {Goal}",
           "please move {Path}",
           "reach {Goal} {Path}",
           "robot can {Theme} come {Goal}",
+          "robot could {Theme} move {Goal}",
           "robot go {Goal}",
           "robot i need you in the bathroom go {Goal}",
+          "robot listen go {Goal}",
           "robot why do n't {Theme} go {Area}",
           "sorry robot can {Theme} go {Goal}",
           "walk {Goal} {Manner}"
@@ -480,6 +484,7 @@
           "and put {Theme} {Goal}",
           "can {Agent} place {Theme} {Goal}",
           "can {Agent} put {Theme} {Goal}",
+          "could {Agent} hang {Theme} {Goal}",
           "could {Agent} put {Theme} {Goal}",
           "hang {Theme} {Goal}",
           "place {Theme} {Goal}",
@@ -509,8 +514,8 @@
           "type": "ReturnIntent"
         },
         "sampleUtterances": [
-          "drop {Theme}",
           "drop {Theme} {Goal}",
+          "leave {Theme} {Goal}",
           "let go {Theme}",
           "release {Theme}"
         ]
@@ -553,11 +558,14 @@
           "and find {Phenomenon} {Purpose}",
           "and search {Phenomenon}",
           "can {Cognizer} find {Phenomenon} {Ground}",
+          "can {Cognizer} find {Phenomenon} {Purpose}",
           "can {Cognizer} find {Purpose} {Phenomenon}",
-          "can {Cognizer} please search {Phenomenon}",
+          "could {Cognizer} find {Phenomenon} {Ground}",
           "do you think {Cognizer} can find {Phenomenon}",
           "find {Phenomenon}",
           "find {Phenomenon} {Ground}",
+          "go find {Phenomenon}",
+          "i need my watch find {Phenomenon}",
           "look {Phenomenon}",
           "look {Phenomenon} {Ground}",
           "michael find {Phenomenon} {Ground}",
@@ -582,6 +590,11 @@
             "slotType": "Agent"
           },
           {
+            "name": "Purpose",
+            "slotConstraint": "Optional",
+            "slotType": "Purpose"
+          },
+          {
             "name": "Source",
             "slotConstraint": "Optional",
             "slotType": "Source"
@@ -600,18 +613,20 @@
           "and remove {Theme}",
           "and take {Theme}",
           "can {Agent} grab {Theme} {Source}",
+          "can {Agent} take {Theme}",
           "catch {Theme}",
           "could {Agent} pick up {Theme}",
-          "could {Agent} take {Theme}",
           "get {Theme} {Source}",
+          "go get {Theme}",
           "grab {Theme}",
+          "hey robot take {Theme}",
           "i would like some beer can {Agent} grab {Theme} {Source}",
-          "john can {Agent} take {Theme}",
           "let's go get {Theme}",
           "please get {Theme} {Source}",
           "please pick up {Theme}",
           "please pick {Theme}",
           "please take {Theme} {Source}",
+          "robot go get {Theme} {Purpose}",
           "take {Theme}",
           "take {Theme} {Source}"
         ]
@@ -621,6 +636,9 @@
       {
         "name": "Agent",
         "enumerationValues": [
+          {
+            "value": "'s"
+          },
           {
             "value": "you"
           }
@@ -636,7 +654,7 @@
             "value": "down"
           },
           {
-            "value": "over"
+            "value": "everywhere he goes"
           },
           {
             "value": "to the right"
@@ -685,7 +703,7 @@
             "value": "a double bedroom with four pictures on the wall"
           },
           {
-            "value": "a table with a glass deck"
+            "value": "a living room with white furniture"
           },
           {
             "value": "a very wide and bright livingroom"
@@ -710,9 +728,6 @@
         "name": "Container_portal",
         "enumerationValues": [
           {
-            "value": "it"
-          },
-          {
             "value": "the blinds"
           },
           {
@@ -722,7 +737,7 @@
             "value": "the door on the right"
           },
           {
-            "value": "the shutters"
+            "value": "the window blinds"
           },
           {
             "value": "the window on the left"
@@ -751,6 +766,9 @@
             "value": "the laundry room cabinet"
           },
           {
+            "value": "the pantry"
+          },
+          {
             "value": "the press"
           },
           {
@@ -758,6 +776,9 @@
           },
           {
             "value": "the washer"
+          },
+          {
+            "value": "the washing machine"
           }
         ]
       },
@@ -768,13 +789,16 @@
             "value": "john"
           },
           {
+            "value": "mark"
+          },
+          {
             "value": "me"
           },
           {
             "value": "my father"
           },
           {
-            "value": "my friend"
+            "value": "my mother"
           },
           {
             "value": "my sister"
@@ -784,6 +808,9 @@
           },
           {
             "value": "that person"
+          },
+          {
+            "value": "the guy in the blue hoodie"
           },
           {
             "value": "the guy with the blue jacket"
@@ -819,6 +846,9 @@
             "value": "this guy"
           },
           {
+            "value": "with me"
+          },
+          {
             "value": "with them"
           }
         ]
@@ -828,6 +858,9 @@
         "enumerationValues": [
           {
             "value": "all the way down"
+          },
+          {
+            "value": "fully"
           }
         ]
       },
@@ -876,13 +909,13 @@
             "value": "the computer"
           },
           {
-            "value": "the electric oven"
-          },
-          {
             "value": "the heating"
           },
           {
             "value": "the light"
+          },
+          {
+            "value": "the oven"
           },
           {
             "value": "the shower"
@@ -898,6 +931,9 @@
           },
           {
             "value": "the television"
+          },
+          {
+            "value": "the television at the right of the console"
           },
           {
             "value": "the thermostat"
@@ -942,7 +978,7 @@
             "value": "in front of the poster"
           },
           {
-            "value": "in the bathroom"
+            "value": "in the bedroom"
           },
           {
             "value": "in the bin"
@@ -960,13 +996,10 @@
             "value": "in the dishwasher"
           },
           {
-            "value": "in the kitchen"
+            "value": "in the fridge"
           },
           {
             "value": "in the kitchen fridge"
-          },
-          {
-            "value": "in the living room"
           },
           {
             "value": "in the oven"
@@ -984,10 +1017,10 @@
             "value": "in the washing machine"
           },
           {
-            "value": "into the bathroom"
+            "value": "into the bedroom"
           },
           {
-            "value": "into the bedroom"
+            "value": "into the dining room"
           },
           {
             "value": "into the dishwasher"
@@ -1023,10 +1056,10 @@
             "value": "near the right lamp"
           },
           {
-            "value": "near the television"
+            "value": "near the table"
           },
           {
-            "value": "near the television of the kitchen"
+            "value": "near the television"
           },
           {
             "value": "near the window"
@@ -1044,6 +1077,9 @@
             "value": "on the bench in the kitchen"
           },
           {
+            "value": "on the bookshelf"
+          },
+          {
             "value": "on the chair"
           },
           {
@@ -1053,7 +1089,7 @@
             "value": "on the chair near the table"
           },
           {
-            "value": "on the coffee table"
+            "value": "on the cloth horse"
           },
           {
             "value": "on the counter"
@@ -1077,7 +1113,10 @@
             "value": "on the table in the studio"
           },
           {
-            "value": "on the table next to the couch"
+            "value": "on the washing line"
+          },
+          {
+            "value": "onto the dining table"
           },
           {
             "value": "out"
@@ -1089,10 +1128,10 @@
             "value": "over to the sofa"
           },
           {
-            "value": "the bathroom"
+            "value": "straight to the living room"
           },
           {
-            "value": "the door"
+            "value": "the bathroom"
           },
           {
             "value": "the door of the kitchen"
@@ -1108,6 +1147,9 @@
           },
           {
             "value": "to kitchen"
+          },
+          {
+            "value": "to my nightstand"
           },
           {
             "value": "to studio"
@@ -1131,7 +1173,10 @@
             "value": "to the closet of the dining room"
           },
           {
-            "value": "to the coffee machine"
+            "value": "to the coffee table in the living room"
+          },
+          {
+            "value": "to the computer"
           },
           {
             "value": "to the corner"
@@ -1143,7 +1188,16 @@
             "value": "to the couch in the living room"
           },
           {
+            "value": "to the couch of the bedroom"
+          },
+          {
+            "value": "to the counter at your left"
+          },
+          {
             "value": "to the dining room"
+          },
+          {
+            "value": "to the dining table"
           },
           {
             "value": "to the dinner table"
@@ -1159,6 +1213,9 @@
           },
           {
             "value": "to the fridge inside the kitchen"
+          },
+          {
+            "value": "to the front of the fridge"
           },
           {
             "value": "to the garden"
@@ -1182,10 +1239,10 @@
             "value": "to the laundry room"
           },
           {
-            "value": "to the living room"
+            "value": "to the left of the table"
           },
           {
-            "value": "to the livingroom"
+            "value": "to the living room"
           },
           {
             "value": "to the lounge"
@@ -1218,19 +1275,13 @@
             "value": "to the table"
           },
           {
-            "value": "to the telephone"
-          },
-          {
             "value": "to the television in the living room"
           },
           {
-            "value": "to the toilet"
+            "value": "to the television in the studio"
           },
           {
             "value": "towards the bedroom"
-          },
-          {
-            "value": "towards the kitchen"
           },
           {
             "value": "towards the living room"
@@ -1274,9 +1325,6 @@
             "value": "in the lounge"
           },
           {
-            "value": "in the red drawer"
-          },
-          {
             "value": "in the studio"
           },
           {
@@ -1313,6 +1361,9 @@
             "value": "the stereo"
           },
           {
+            "value": "the toilet paper"
+          },
+          {
             "value": "the washing machine"
           },
           {
@@ -1346,9 +1397,6 @@
         "name": "Location",
         "enumerationValues": [
           {
-            "value": "between two lamps"
-          },
-          {
             "value": "in a very big bathroom"
           },
           {
@@ -1364,6 +1412,9 @@
             "value": "in the center of the dining room"
           },
           {
+            "value": "in the dining room"
+          },
+          {
             "value": "in the kitchen"
           },
           {
@@ -1373,19 +1424,16 @@
             "value": "in this room"
           },
           {
+            "value": "next to the bed"
+          },
+          {
             "value": "on the couch side table"
           },
           {
             "value": "on the desk"
           },
           {
-            "value": "on the kitchen table"
-          },
-          {
             "value": "on the left side"
-          },
-          {
-            "value": "on the nightstand"
           },
           {
             "value": "on your right side"
@@ -1444,9 +1492,6 @@
         "name": "Phenomenon",
         "enumerationValues": [
           {
-            "value": "a bottle"
-          },
-          {
             "value": "a bottle of water"
           },
           {
@@ -1471,16 +1516,10 @@
             "value": "for a blue book"
           },
           {
-            "value": "for a blue plate"
-          },
-          {
             "value": "for a pillow"
           },
           {
             "value": "for my handbag"
-          },
-          {
-            "value": "for my hat"
           },
           {
             "value": "for my mobile phone"
@@ -1504,9 +1543,6 @@
             "value": "for the coffee cups"
           },
           {
-            "value": "for the glass"
-          },
-          {
             "value": "for the jar"
           },
           {
@@ -1514,9 +1550,6 @@
           },
           {
             "value": "for the pillow"
-          },
-          {
-            "value": "for the remote control"
           },
           {
             "value": "for the scissors"
@@ -1546,9 +1579,6 @@
             "value": "my hat"
           },
           {
-            "value": "my tablet"
-          },
-          {
             "value": "my wallet"
           },
           {
@@ -1556,6 +1586,9 @@
           },
           {
             "value": "the black cushion which is on the bed"
+          },
+          {
+            "value": "the black pen"
           },
           {
             "value": "the book"
@@ -1573,13 +1606,7 @@
             "value": "the butcher knife"
           },
           {
-            "value": "the flowers"
-          },
-          {
             "value": "the fruit"
-          },
-          {
-            "value": "the glasses"
           },
           {
             "value": "the keys"
@@ -1618,6 +1645,12 @@
             "value": "the table"
           },
           {
+            "value": "the toilet paper"
+          },
+          {
+            "value": "the towel"
+          },
+          {
             "value": "the wallet"
           },
           {
@@ -1643,6 +1676,14 @@
         ]
       },
       {
+        "name": "Reason",
+        "enumerationValues": [
+          {
+            "value": "for the television"
+          }
+        ]
+      },
+      {
         "name": "Recipient",
         "enumerationValues": [
           {
@@ -1654,16 +1695,13 @@
         "name": "Source",
         "enumerationValues": [
           {
-            "value": "away from the oven"
-          },
-          {
             "value": "from the bathroom"
           },
           {
             "value": "from the bed"
           },
           {
-            "value": "from the bedroom"
+            "value": "from the bed room"
           },
           {
             "value": "from the bookshelf"
@@ -1702,13 +1740,16 @@
             "value": "from the pantry"
           },
           {
-            "value": "from the seat"
+            "value": "from the press"
           },
           {
             "value": "from the studio"
           },
           {
             "value": "from the table"
+          },
+          {
+            "value": "on the bedside table"
           }
         ]
       },
@@ -1727,7 +1768,10 @@
             "value": "'s"
           },
           {
-            "value": "a bath towel"
+            "value": "a bed with two lamps"
+          },
+          {
+            "value": "a book"
           },
           {
             "value": "a chair"
@@ -1745,16 +1789,19 @@
             "value": "a lot of couches"
           },
           {
-            "value": "a plastic plate"
+            "value": "a plate"
           },
           {
-            "value": "a plate"
+            "value": "a radio"
           },
           {
             "value": "a table"
           },
           {
             "value": "a wristwatch"
+          },
+          {
+            "value": "a yellow jacket"
           },
           {
             "value": "all the plates"
@@ -1775,13 +1822,10 @@
             "value": "my aspirin"
           },
           {
-            "value": "my book"
-          },
-          {
             "value": "my book in the living room"
           },
           {
-            "value": "my cellphone"
+            "value": "my catalogue"
           },
           {
             "value": "my clothes"
@@ -1790,28 +1834,13 @@
             "value": "my coat"
           },
           {
-            "value": "my computer"
-          },
-          {
-            "value": "my eyeglass"
-          },
-          {
             "value": "my jacket"
-          },
-          {
-            "value": "my laptop"
           },
           {
             "value": "my mobile phone"
           },
           {
             "value": "my phone"
-          },
-          {
-            "value": "my reading glasses"
-          },
-          {
-            "value": "my tablet"
           },
           {
             "value": "my telephone"
@@ -1823,7 +1852,13 @@
             "value": "my towel that is in the bathroom"
           },
           {
+            "value": "my trash"
+          },
+          {
             "value": "my trousers on the bed"
+          },
+          {
+            "value": "my water"
           },
           {
             "value": "my wine glass"
@@ -1850,10 +1885,10 @@
             "value": "some bread"
           },
           {
-            "value": "some mustard"
+            "value": "some loo roll"
           },
           {
-            "value": "some napkins"
+            "value": "some mustard"
           },
           {
             "value": "some pasta"
@@ -1874,9 +1909,6 @@
             "value": "the bath-tub"
           },
           {
-            "value": "the bed"
-          },
-          {
             "value": "the beer cans in the kitchen"
           },
           {
@@ -1895,13 +1927,10 @@
             "value": "the book"
           },
           {
+            "value": "the book with the blue cover"
+          },
+          {
             "value": "the bottle"
-          },
-          {
-            "value": "the bottle near the fridge"
-          },
-          {
-            "value": "the bottle of water on the table"
           },
           {
             "value": "the box"
@@ -1940,12 +1969,6 @@
             "value": "the coffee mugs"
           },
           {
-            "value": "the coke"
-          },
-          {
-            "value": "the coke that is in the kitchen"
-          },
-          {
             "value": "the cookie jar"
           },
           {
@@ -1961,10 +1984,19 @@
             "value": "the cushion"
           },
           {
+            "value": "the detergent"
+          },
+          {
             "value": "the forks"
           },
           {
             "value": "the fridge"
+          },
+          {
+            "value": "the fruit"
+          },
+          {
+            "value": "the garbage"
           },
           {
             "value": "the glass"
@@ -1973,40 +2005,43 @@
             "value": "the glass jar"
           },
           {
-            "value": "the gray folder"
-          },
-          {
             "value": "the jacket"
           },
           {
             "value": "the kettle"
           },
           {
-            "value": "the knife on the cutting board"
+            "value": "the key lanyard"
           },
           {
             "value": "the knife with the black handle"
           },
           {
-            "value": "the laptop"
+            "value": "the laptop near the table of the dining room"
+          },
+          {
+            "value": "the magazine that is in the bathroom"
           },
           {
             "value": "the mayo"
           },
           {
-            "value": "the mobile"
+            "value": "the milk"
           },
           {
-            "value": "the mobile phone"
+            "value": "the mobile"
           },
           {
             "value": "the mug"
           },
           {
-            "value": "the mug in the kitchen"
+            "value": "the mug on the table in the living room"
           },
           {
             "value": "the newspaper"
+          },
+          {
+            "value": "the orange juice"
           },
           {
             "value": "the pan"
@@ -2021,16 +2056,13 @@
             "value": "the phone at the right of the desk"
           },
           {
-            "value": "the phone on the left of the pc"
+            "value": "the phone near the table at your right"
           },
           {
             "value": "the phone that is on the glass table in the dining room"
           },
           {
             "value": "the pillow"
-          },
-          {
-            "value": "the pillow at the left of the couch"
           },
           {
             "value": "the plate"
@@ -2055,6 +2087,9 @@
           },
           {
             "value": "the screwdriver"
+          },
+          {
+            "value": "the shampoo"
           },
           {
             "value": "the sink"
@@ -2096,6 +2131,9 @@
             "value": "they"
           },
           {
+            "value": "this book"
+          },
+          {
             "value": "this jacket"
           },
           {
@@ -2103,9 +2141,6 @@
           },
           {
             "value": "this mug"
-          },
-          {
-            "value": "this pan"
           },
           {
             "value": "this plate"
