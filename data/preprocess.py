@@ -120,7 +120,6 @@ def huric_preprocess(path, trim='right', also_spatial=False, invoke_frame_slot=F
                 # start considering from the minimum mentioned token
                 start_considering = min_token_id
                 # recompute the lexical unit ids
-                lexical_unit_ids = [l - start_considering + 1 for l in lexical_unit_ids]
             else:
                 raise ValueError('trim' + str(trim))
             frame_tokens = {key: value for (key, value) in tokens_map.items() if int(key) >= start_considering and int(key) <= max_token_id}
