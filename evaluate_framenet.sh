@@ -7,7 +7,7 @@
 set -e
 
 # chosen architecture: three stages with attention
-export THREE_STAGES=true
+export THREE_STAGES=true_highway
 export ATTENTION=both
 
 
