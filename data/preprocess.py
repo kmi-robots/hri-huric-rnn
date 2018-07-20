@@ -742,5 +742,8 @@ def main():
         framenet_preprocess('framenet', 'framenet/subset/source', True)
         huric_preprocess('framenet/subset', trim='both')
 
+    else:
+        raise ValueError(which)
+
 if __name__ == '__main__':
     main()
