@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824242">
+	<sentence>`` But C.J.B. Marshall , vicar of a nearby church , feels the fault is in the stairs from the bell tower that are located next to the altar .</sentence>
+	<tokens>
+		<token id="1" lemma="``" pos="``" surface="``"/>
+		<token id="2" lemma="but" pos="CC" surface="But"/>
+		<token id="3" lemma="c.j.b." pos="NNP" surface="C.J.B."/>
+		<token id="4" lemma="marshall" pos="NNP" surface="Marshall"/>
+		<token id="5" lemma="," pos="," surface=","/>
+		<token id="6" lemma="vicar" pos="NN" surface="vicar"/>
+		<token id="7" lemma="of" pos="IN" surface="of"/>
+		<token id="8" lemma="a" pos="DT" surface="a"/>
+		<token id="9" lemma="nearby" pos="JJ" surface="nearby"/>
+		<token id="10" lemma="church" pos="NN" surface="church"/>
+		<token id="11" lemma="," pos="," surface=","/>
+		<token id="12" lemma="feel" pos="VBZ" surface="feels"/>
+		<token id="13" lemma="the" pos="DT" surface="the"/>
+		<token id="14" lemma="fault" pos="NN" surface="fault"/>
+		<token id="15" lemma="be" pos="VBZ" surface="is"/>
+		<token id="16" lemma="in" pos="IN" surface="in"/>
+		<token id="17" lemma="the" pos="DT" surface="the"/>
+		<token id="18" lemma="stair" pos="NNS" surface="stairs"/>
+		<token id="19" lemma="from" pos="IN" surface="from"/>
+		<token id="20" lemma="the" pos="DT" surface="the"/>
+		<token id="21" lemma="bell" pos="NN" surface="bell"/>
+		<token id="22" lemma="tower" pos="NN" surface="tower"/>
+		<token id="23" lemma="that" pos="WDT" surface="that"/>
+		<token id="24" lemma="be" pos="VBP" surface="are"/>
+		<token id="25" lemma="locate" pos="VBN" surface="located"/>
+		<token id="26" lemma="next" pos="RB" surface="next"/>
+		<token id="27" lemma="to" pos="IN" surface="to"/>
+		<token id="28" lemma="the" pos="DT" surface="the"/>
+		<token id="29" lemma="altar" pos="NN" surface="altar"/>
+		<token id="30" lemma="." pos="." surface="."/>
+	</tokens>
+	<dependencies>
+		<dep from="12" to="1" type="punct"/>
+		<dep from="12" to="2" type="cc"/>
+		<dep from="4" to="3" type="compound"/>
+		<dep from="12" to="4" type="nsubj"/>
+		<dep from="4" to="5" type="punct"/>
+		<dep from="4" to="6" type="appos"/>
+		<dep from="6" to="7" type="prep"/>
+		<dep from="10" to="8" type="det"/>
+		<dep from="10" to="9" type="amod"/>
+		<dep from="7" to="10" type="pobj"/>
+		<dep from="12" to="11" type="punct"/>
+		<dep from="0" to="12" type="root"/>
+		<dep from="14" to="13" type="det"/>
+		<dep from="15" to="14" type="nsubj"/>
+		<dep from="12" to="15" type="ccomp"/>
+		<dep from="15" to="16" type="prep"/>
+		<dep from="18" to="17" type="det"/>
+		<dep from="16" to="18" type="pobj"/>
+		<dep from="18" to="19" type="prep"/>
+		<dep from="22" to="20" type="det"/>
+		<dep from="22" to="21" type="compound"/>
+		<dep from="19" to="22" type="pobj"/>
+		<dep from="25" to="23" type="nsubjpass"/>
+		<dep from="25" to="24" type="auxpass"/>
+		<dep from="18" to="25" type="relcl"/>
+		<dep from="25" to="26" type="advmod"/>
+		<dep from="26" to="27" type="prep"/>
+		<dep from="29" to="28" type="det"/>
+		<dep from="27" to="29" type="pobj"/>
+		<dep from="12" to="30" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Being_located">
+				<lexicalUnit>
+					<token id="25"/>
+				</lexicalUnit>
+				<frameElement type="Place">
+					<token id="26"/>
+					<token id="27"/>
+					<token id="28"/>
+					<token id="29"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="17"/>
+					<token id="18"/>
+					<token id="19"/>
+					<token id="20"/>
+					<token id="21"/>
+					<token id="22"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="23"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

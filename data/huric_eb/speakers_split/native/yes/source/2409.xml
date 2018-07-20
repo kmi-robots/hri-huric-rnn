@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2409">
+	<sentence>go to the bathroom take the rag go to the hall and clean the mirror</sentence>
+	<tokens>
+		<token id="1" lemma="go" pos="VB" surface="go"/>
+		<token id="2" lemma="to" pos="TO" surface="to"/>
+		<token id="3" lemma="the" pos="DT" surface="the"/>
+		<token id="4" lemma="bathroom" pos="NN" surface="bathroom"/>
+		<token id="5" lemma="take" pos="VB" surface="take"/>
+		<token id="6" lemma="the" pos="DT" surface="the"/>
+		<token id="7" lemma="rag" pos="NN" surface="rag"/>
+		<token id="8" lemma="go" pos="VB" surface="go"/>
+		<token id="9" lemma="to" pos="TO" surface="to"/>
+		<token id="10" lemma="the" pos="DT" surface="the"/>
+		<token id="11" lemma="hall" pos="NN" surface="hall"/>
+		<token id="12" lemma="and" pos="CC" surface="and"/>
+		<token id="13" lemma="clean" pos="VB" surface="clean"/>
+		<token id="14" lemma="the" pos="DT" surface="the"/>
+		<token id="15" lemma="mirror" pos="NN" surface="mirror"/>
+	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="1" to="2" type="prep"/>
+		<dep from="4" to="3" type="det"/>
+		<dep from="2" to="4" type="pobj"/>
+		<dep from="1" to="5" type="conj"/>
+		<dep from="7" to="6" type="det"/>
+		<dep from="5" to="7" type="dojb"/>
+		<dep from="5" to="8" type="conj"/>
+		<dep from="8" to="9" type="prep"/>
+		<dep from="11" to="10" type="det"/>
+		<dep from="9" to="11" type="pobj"/>
+		<dep from="8" to="12" type="cc"/>
+		<dep from="8" to="13" type="conj"/>
+		<dep from="15" to="14" type="det"/>
+		<dep from="13" to="15" type="dep"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Motion">
+				<lexicalUnit>
+					<token id="1"/>
+				</lexicalUnit>
+				<frameElement type="Goal">
+					<token id="2"/>
+					<token id="3"/>
+					<token id="4"/>
+				</frameElement>
+			</frame>
+			<frame name="Taking">
+				<lexicalUnit>
+					<token id="5"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="6"/>
+					<token id="7"/>
+				</frameElement>
+			</frame>
+			<frame name="Motion">
+				<lexicalUnit>
+					<token id="8"/>
+				</lexicalUnit>
+				<frameElement type="Goal">
+					<token id="9"/>
+					<token id="10"/>
+					<token id="11"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

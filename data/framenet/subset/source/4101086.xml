@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101086">
+	<sentence>But such heady progress would soon come to a halt .</sentence>
+	<tokens>
+		<token id="1" lemma="but" pos="CC" surface="But"/>
+		<token id="2" lemma="such" pos="JJ" surface="such"/>
+		<token id="3" lemma="heady" pos="JJ" surface="heady"/>
+		<token id="4" lemma="progress" pos="NN" surface="progress"/>
+		<token id="5" lemma="would" pos="MD" surface="would"/>
+		<token id="6" lemma="soon" pos="RB" surface="soon"/>
+		<token id="7" lemma="come" pos="VB" surface="come"/>
+		<token id="8" lemma="to" pos="IN" surface="to"/>
+		<token id="9" lemma="a" pos="DT" surface="a"/>
+		<token id="10" lemma="halt" pos="NN" surface="halt"/>
+		<token id="11" lemma="." pos="." surface="."/>
+	</tokens>
+	<dependencies>
+		<dep from="7" to="1" type="cc"/>
+		<dep from="4" to="2" type="amod"/>
+		<dep from="4" to="3" type="amod"/>
+		<dep from="7" to="4" type="nsubj"/>
+		<dep from="7" to="5" type="aux"/>
+		<dep from="7" to="6" type="advmod"/>
+		<dep from="0" to="7" type="root"/>
+		<dep from="7" to="8" type="prep"/>
+		<dep from="10" to="9" type="det"/>
+		<dep from="8" to="10" type="pobj"/>
+		<dep from="7" to="11" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Entering">
+				<lexicalUnit>
+					<token id="7"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="3"/>
+					<token id="4"/>
+				</frameElement>
+				<frameElement type="Goal">
+					<token id="8"/>
+					<token id="9"/>
+					<token id="10"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

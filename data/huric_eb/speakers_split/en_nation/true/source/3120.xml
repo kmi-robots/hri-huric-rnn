@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="3120">
+	<sentence>robot listen go into the bedroom and find the black pen it should be on the nightstand</sentence>
+	<tokens>
+		<token id="1" lemma="robot" pos="NN" surface="robot"/>
+		<token id="2" lemma="listen" pos="VB" surface="listen"/>
+		<token id="3" lemma="go" pos="VB" surface="go"/>
+		<token id="4" lemma="into" pos="IN" surface="into"/>
+		<token id="5" lemma="the" pos="DT" surface="the"/>
+		<token id="6" lemma="bedroom" pos="NN" surface="bedroom"/>
+		<token id="7" lemma="and" pos="CC" surface="and"/>
+		<token id="8" lemma="find" pos="VB" surface="find"/>
+		<token id="9" lemma="the" pos="DT" surface="the"/>
+		<token id="10" lemma="black" pos="JJ" surface="black"/>
+		<token id="11" lemma="pen" pos="NN" surface="pen"/>
+		<token id="12" lemma="it" pos="PRP" surface="it"/>
+		<token id="13" lemma="shall" pos="MD" surface="should"/>
+		<token id="14" lemma="be" pos="VB" surface="be"/>
+		<token id="15" lemma="on" pos="IN" surface="on"/>
+		<token id="16" lemma="the" pos="DT" surface="the"/>
+		<token id="17" lemma="nightstand" pos="NN" surface="nightstand"/>
+	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="discourse"/>
+		<dep from="3" to="2" type="discourse"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="3" to="4" type="prep"/>
+		<dep from="6" to="5" type="det"/>
+		<dep from="4" to="6" type="pobj"/>
+		<dep from="3" to="7" type="cc"/>
+		<dep from="3" to="8" type="conj"/>
+		<dep from="11" to="9" type="det"/>
+		<dep from="11" to="10" type="amod"/>
+		<dep from="8" to="11" type="dobj"/>
+		<dep from="14" to="12" type="nsubj"/>
+		<dep from="14" to="13" type="aux"/>
+		<dep from="11" to="14" type="conj"/>
+		<dep from="14" to="15" type="prep"/>
+		<dep from="17" to="16" type="det"/>
+		<dep from="15" to="17" type="pobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Motion">
+				<lexicalUnit>
+					<token id="3"/>
+				</lexicalUnit>
+				<frameElement type="Goal">
+					<token id="4"/>
+					<token id="5"/>
+					<token id="6"/>
+				</frameElement>
+			</frame>
+			<frame name="Searching">
+				<lexicalUnit>
+					<token id="8"/>
+				</lexicalUnit>
+				<frameElement type="Phenomenon">
+					<token id="9"/>
+					<token id="10"/>
+					<token id="11"/>
+				</frameElement>
+			</frame>
+			<frame name="Being_located">
+				<lexicalUnit>
+					<token id="14"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="12"/>
+				</frameElement>
+				<frameElement type="Location">
+					<token id="15"/>
+					<token id="16"/>
+					<token id="17"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

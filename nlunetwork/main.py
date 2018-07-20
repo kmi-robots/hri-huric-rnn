@@ -26,7 +26,7 @@ epoch_num = int(os.environ.get('MAX_EPOCHS', 100))
 MY_PATH = os.path.dirname(os.path.abspath(__file__))
 
 OUTPUT_FOLDER = os.environ.get('OUTPUT_FOLDER', '')
-DATASET = os.environ.get('DATASET', 'huric_eb/modern')
+DATASET = os.environ.get('DATASET', 'huric_eb/modern_right')
 # possible MODE:
 # - 'dev_cross' that excludes the last fold and performs (k-1)-fold, last fold untouched
 # - 'cross' that performs k-fold
@@ -78,11 +78,9 @@ def get_model(vocabs, tokenizer, language, multi_turn, input_steps, nlp):
 
 def train(mode):
     # maximum length of sentences
-    input_steps = 50
+    input_steps = 100
     # load the train and dev datasets
     folds = data.load_data(DATASET, SLOTS_TYPE)
-    # fix the random seeds
-    random_seed_init(len(folds[0]['data']))
     # preprocess them to list of training/test samples
     # a sample is made up of a tuple that contains
     # - an input sentence (list of words --> strings, padded)
@@ -143,6 +141,8 @@ def train(mode):
     for fold_number, (training_samples, test_samples) in enumerate(zip(train_folds, test_folds)):
         # reset the graph for next iteration
         tf.reset_default_graph()
+        # fix the random seeds
+        random_seed_init(len(folds[0]['data']))
 
         print('train samples', len(training_samples))
         if test_samples:
@@ -267,6 +267,7 @@ def train(mode):
 
 def random_seed_init(seed):
     random.seed(seed)
+    np.random.seed(seed)
     tf.set_random_seed(seed)
 
 def save_file(file_content, file_path, file_name):

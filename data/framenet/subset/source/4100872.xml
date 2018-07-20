@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100872">
+	<sentence>`` This way the IAEA will only be able to see the crates that are taken into the hall and the workers coming and going . ''</sentence>
+	<tokens>
+		<token id="1" lemma="``" pos="``" surface="``"/>
+		<token id="2" lemma="this" pos="DT" surface="This"/>
+		<token id="3" lemma="way" pos="NN" surface="way"/>
+		<token id="4" lemma="the" pos="DT" surface="the"/>
+		<token id="5" lemma="iaea" pos="NNP" surface="IAEA"/>
+		<token id="6" lemma="will" pos="MD" surface="will"/>
+		<token id="7" lemma="only" pos="RB" surface="only"/>
+		<token id="8" lemma="be" pos="VB" surface="be"/>
+		<token id="9" lemma="able" pos="JJ" surface="able"/>
+		<token id="10" lemma="to" pos="TO" surface="to"/>
+		<token id="11" lemma="see" pos="VB" surface="see"/>
+		<token id="12" lemma="the" pos="DT" surface="the"/>
+		<token id="13" lemma="crate" pos="NNS" surface="crates"/>
+		<token id="14" lemma="that" pos="WDT" surface="that"/>
+		<token id="15" lemma="be" pos="VBP" surface="are"/>
+		<token id="16" lemma="take" pos="VBN" surface="taken"/>
+		<token id="17" lemma="into" pos="IN" surface="into"/>
+		<token id="18" lemma="the" pos="DT" surface="the"/>
+		<token id="19" lemma="hall" pos="NN" surface="hall"/>
+		<token id="20" lemma="and" pos="CC" surface="and"/>
+		<token id="21" lemma="the" pos="DT" surface="the"/>
+		<token id="22" lemma="worker" pos="NNS" surface="workers"/>
+		<token id="23" lemma="come" pos="VBG" surface="coming"/>
+		<token id="24" lemma="and" pos="CC" surface="and"/>
+		<token id="25" lemma="go" pos="VBG" surface="going"/>
+		<token id="26" lemma="." pos="." surface="."/>
+		<token id="27" lemma="''" pos="''" surface="''"/>
+	</tokens>
+	<dependencies>
+		<dep from="8" to="1" type="punct"/>
+		<dep from="3" to="2" type="det"/>
+		<dep from="8" to="3" type="npadvmod"/>
+		<dep from="5" to="4" type="det"/>
+		<dep from="8" to="5" type="nsubj"/>
+		<dep from="8" to="6" type="aux"/>
+		<dep from="8" to="7" type="advmod"/>
+		<dep from="0" to="8" type="root"/>
+		<dep from="8" to="9" type="acomp"/>
+		<dep from="11" to="10" type="aux"/>
+		<dep from="9" to="11" type="xcomp"/>
+		<dep from="13" to="12" type="det"/>
+		<dep from="11" to="13" type="dobj"/>
+		<dep from="16" to="14" type="nsubjpass"/>
+		<dep from="16" to="15" type="auxpass"/>
+		<dep from="13" to="16" type="relcl"/>
+		<dep from="16" to="17" type="prep"/>
+		<dep from="19" to="18" type="det"/>
+		<dep from="17" to="19" type="pobj"/>
+		<dep from="13" to="20" type="cc"/>
+		<dep from="22" to="21" type="det"/>
+		<dep from="23" to="22" type="nsubj"/>
+		<dep from="11" to="23" type="ccomp"/>
+		<dep from="23" to="24" type="cc"/>
+		<dep from="23" to="25" type="conj"/>
+		<dep from="8" to="26" type="punct"/>
+		<dep from="8" to="27" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Bringing">
+				<lexicalUnit>
+					<token id="16"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="14"/>
+				</frameElement>
+				<frameElement type="Goal">
+					<token id="17"/>
+					<token id="18"/>
+					<token id="19"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="12"/>
+					<token id="13"/>
+				</frameElement>
+			</frame>
+			<frame name="Entering">
+				<lexicalUnit>
+					<token id="23"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="21"/>
+					<token id="22"/>
+				</frameElement>
+			</frame>
+			<frame name="Motion">
+				<lexicalUnit>
+					<token id="25"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="21"/>
+					<token id="22"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

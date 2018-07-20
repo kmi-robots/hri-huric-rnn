@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2641">
+	<sentence>close the door on the right</sentence>
+	<tokens>
+		<token id="1" lemma="close" pos="VB" surface="close"/>
+		<token id="2" lemma="the" pos="DT" surface="the"/>
+		<token id="3" lemma="door" pos="NN" surface="door"/>
+		<token id="4" lemma="on" pos="IN" surface="on"/>
+		<token id="5" lemma="the" pos="DT" surface="the"/>
+		<token id="6" lemma="right" pos="NN" surface="right"/>
+	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="3" to="2" type="det"/>
+		<dep from="1" to="3" type="pobj"/>
+		<dep from="3" to="4" type="prep"/>
+		<dep from="6" to="5" type="det"/>
+		<dep from="4" to="6" type="pobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Closure">
+				<lexicalUnit>
+					<token id="1"/>
+				</lexicalUnit>
+				<frameElement type="Container_portal">
+					<token id="2"/>
+					<token id="3"/>
+					<token id="4"/>
+					<token id="5"/>
+					<token id="6"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics>
+			<spatialRelation name="Spatial_relation">
+				<lexicalUnit/>
+				<spatialRole type="Trajector">
+					<token id="2"/>
+					<token id="3"/>
+				</spatialRole>
+				<spatialRole type="Spatial_Indicator">
+					<token id="4"/>
+					<token id="5"/>
+					<token id="6"/>
+				</spatialRole>
+			</spatialRelation>
+		</spatialSemantics>
+	</semantics>
+</command>

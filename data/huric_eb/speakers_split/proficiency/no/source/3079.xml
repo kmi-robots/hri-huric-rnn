@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="3079">
+	<sentence>grab the cake plate</sentence>
+	<tokens>
+		<token id="1" lemma="grab" pos="VB" surface="grab"/>
+		<token id="2" lemma="the" pos="DT" surface="the"/>
+		<token id="3" lemma="cake" pos="NN" surface="cake"/>
+		<token id="4" lemma="plate" pos="NN" surface="plate"/>
+	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="4" to="2" type="det"/>
+		<dep from="4" to="3" type="nn"/>
+		<dep from="1" to="4" type="dobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Taking">
+				<lexicalUnit>
+					<token id="1"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="2"/>
+					<token id="3"/>
+					<token id="4"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

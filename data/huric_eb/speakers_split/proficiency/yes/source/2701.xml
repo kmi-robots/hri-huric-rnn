@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2701">
+	<sentence>find vittorio 's phone</sentence>
+	<tokens>
+		<token id="1" lemma="find" pos="VB" surface="find"/>
+		<token id="2" lemma="vittorio" pos="NNP" surface="vittorio"/>
+		<token id="3" lemma="'s" pos="POS" surface="'s"/>
+		<token id="4" lemma="phone" pos="NN" surface="phone"/>
+	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="4" to="2" type="poss"/>
+		<dep from="2" to="3" type="possessive"/>
+		<dep from="1" to="4" type="dobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Searching">
+				<lexicalUnit>
+					<token id="1"/>
+				</lexicalUnit>
+				<frameElement type="Phenomenon">
+					<token id="2"/>
+					<token id="3"/>
+					<token id="4"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

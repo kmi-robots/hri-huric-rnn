@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099095">
+	<sentence>QN : Who has given support to al-Qaeda ?</sentence>
+	<tokens>
+		<token id="1" lemma="qn" pos="NNP" surface="QN"/>
+		<token id="2" lemma=":" pos=":" surface=":"/>
+		<token id="3" lemma="who" pos="WP" surface="Who"/>
+		<token id="4" lemma="have" pos="VBZ" surface="has"/>
+		<token id="5" lemma="give" pos="VBN" surface="given"/>
+		<token id="6" lemma="support" pos="NN" surface="support"/>
+		<token id="7" lemma="to" pos="IN" surface="to"/>
+		<token id="8" lemma="al-qaeda" pos="NN" surface="al-Qaeda"/>
+		<token id="9" lemma="?" pos="." surface="?"/>
+	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="1" to="2" type="punct"/>
+		<dep from="5" to="3" type="nsubj"/>
+		<dep from="5" to="4" type="aux"/>
+		<dep from="1" to="5" type="relcl"/>
+		<dep from="5" to="6" type="dobj"/>
+		<dep from="5" to="7" type="dative"/>
+		<dep from="7" to="8" type="pobj"/>
+		<dep from="1" to="9" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Giving">
+				<lexicalUnit>
+					<token id="5"/>
+				</lexicalUnit>
+				<frameElement type="Donor">
+					<token id="3"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="6"/>
+				</frameElement>
+				<frameElement type="Recipient">
+					<token id="7"/>
+					<token id="8"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

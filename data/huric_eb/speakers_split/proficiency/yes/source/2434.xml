@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2434">
+	<sentence>give me the towel</sentence>
+	<tokens>
+		<token id="1" lemma="give" pos="VB" surface="give"/>
+		<token id="2" lemma="I" pos="PRP" surface="me"/>
+		<token id="3" lemma="the" pos="DT" surface="the"/>
+		<token id="4" lemma="towel" pos="NN" surface="towel"/>
+	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="1" to="2" type="iobj"/>
+		<dep from="4" to="3" type="det"/>
+		<dep from="1" to="4" type="dobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Giving">
+				<lexicalUnit>
+					<token id="1"/>
+				</lexicalUnit>
+				<frameElement type="Recipient">
+					<token id="2"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="3"/>
+					<token id="4"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

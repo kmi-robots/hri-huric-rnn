@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="3047">
+	<sentence>can you bring me my tablet</sentence>
+	<tokens>
+		<token id="1" lemma="can" pos="MD" surface="can"/>
+		<token id="2" lemma="you" pos="PRP" surface="you"/>
+		<token id="3" lemma="bring" pos="VB" surface="bring"/>
+		<token id="4" lemma="I" pos="PRP" surface="me"/>
+		<token id="5" lemma="my" pos="PRP$" surface="my"/>
+		<token id="6" lemma="tablet" pos="NN" surface="tablet"/>
+	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="aux"/>
+		<dep from="3" to="2" type="nsubj"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="3" to="4" type="iobj"/>
+		<dep from="6" to="5" type="poss"/>
+		<dep from="3" to="6" type="dobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Bringing">
+				<lexicalUnit>
+					<token id="3"/>
+				</lexicalUnit>
+				<frameElement type="Agent">
+					<token id="2"/>
+				</frameElement>
+				<frameElement type="Beneficiary">
+					<token id="4"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="5"/>
+					<token id="6"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

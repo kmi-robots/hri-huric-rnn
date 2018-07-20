@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="3053">
+	<sentence>carefully search for my wallet please</sentence>
+	<tokens>
+		<token id="1" lemma="carefully" pos="RB" surface="carefully"/>
+		<token id="2" lemma="search" pos="VB" surface="search"/>
+		<token id="3" lemma="for" pos="IN" surface="for"/>
+		<token id="4" lemma="my" pos="PRP$" surface="my"/>
+		<token id="5" lemma="wallet" pos="NN" surface="wallet"/>
+		<token id="6" lemma="please" pos="UH" surface="please"/>
+	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="advmod"/>
+		<dep from="0" to="2" type="root"/>
+		<dep from="2" to="3" type="prep"/>
+		<dep from="5" to="4" type="poss"/>
+		<dep from="3" to="5" type="pobj"/>
+		<dep from="2" to="6" type="discourse"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Searching">
+				<lexicalUnit>
+					<token id="2"/>
+				</lexicalUnit>
+				<frameElement type="Manner">
+					<token id="1"/>
+				</frameElement>
+				<frameElement type="Phenomenon">
+					<token id="3"/>
+					<token id="4"/>
+					<token id="5"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

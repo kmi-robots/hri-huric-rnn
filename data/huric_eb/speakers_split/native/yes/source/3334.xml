@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="3334">
+	<sentence>i would like some cutlery can you get me some</sentence>
+	<tokens>
+		<token id="1" lemma="I" pos="PRP" surface="i"/>
+		<token id="2" lemma="would" pos="MD" surface="would"/>
+		<token id="3" lemma="like" pos="VB" surface="like"/>
+		<token id="4" lemma="some" pos="DT" surface="some"/>
+		<token id="5" lemma="cutlery" pos="NN" surface="cutlery"/>
+		<token id="6" lemma="can" pos="MD" surface="can"/>
+		<token id="7" lemma="you" pos="PRP" surface="you"/>
+		<token id="8" lemma="get" pos="VB" surface="get"/>
+		<token id="9" lemma="I" pos="PRP" surface="me"/>
+		<token id="10" lemma="some" pos="DT" surface="some"/>
+	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="nsubj"/>
+		<dep from="3" to="2" type="aux"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="5" to="4" type="det"/>
+		<dep from="3" to="5" type="dobj"/>
+		<dep from="8" to="6" type="aux"/>
+		<dep from="8" to="7" type="nsubj"/>
+		<dep from="3" to="8" type="conj"/>
+		<dep from="8" to="9" type="iobj"/>
+		<dep from="8" to="10" type="dojb"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Bringing">
+				<lexicalUnit>
+					<token id="8"/>
+				</lexicalUnit>
+				<frameElement type="Agent">
+					<token id="7"/>
+				</frameElement>
+				<frameElement type="Beneficiary">
+					<token id="9"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="10"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>

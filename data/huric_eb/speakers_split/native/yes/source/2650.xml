@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2650">
+	<sentence>grab the cigarettes next to the phone</sentence>
+	<tokens>
+		<token id="1" lemma="grab" pos="VB" surface="grab"/>
+		<token id="2" lemma="the" pos="DT" surface="the"/>
+		<token id="3" lemma="cigarette" pos="NNS" surface="cigarettes"/>
+		<token id="4" lemma="next" pos="JJ" surface="next"/>
+		<token id="5" lemma="to" pos="TO" surface="to"/>
+		<token id="6" lemma="the" pos="DT" surface="the"/>
+		<token id="7" lemma="phone" pos="NN" surface="phone"/>
+	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="3" to="2" type="det"/>
+		<dep from="1" to="3" type="dobj"/>
+		<dep from="3" to="4" type="dep"/>
+		<dep from="4" to="5" type="pcomp"/>
+		<dep from="7" to="6" type="det"/>
+		<dep from="5" to="7" type="pobj"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Taking">
+				<lexicalUnit>
+					<token id="1"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="2"/>
+					<token id="3"/>
+					<token id="4"/>
+					<token id="5"/>
+					<token id="6"/>
+					<token id="7"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics>
+			<spatialRelation name="Spatial_relation">
+				<lexicalUnit/>
+				<spatialRole type="Trajector">
+					<token id="2"/>
+					<token id="3"/>
+				</spatialRole>
+				<spatialRole type="Spatial_Indicator">
+					<token id="4"/>
+					<token id="5"/>
+				</spatialRole>
+				<spatialRole type="Landmark">
+					<token id="6"/>
+					<token id="7"/>
+				</spatialRole>
+			</spatialRelation>
+		</spatialSemantics>
+	</semantics>
+</command>

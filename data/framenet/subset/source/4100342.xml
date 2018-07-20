@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100342">
+	<sentence>In time , the kingdom of Babylon was overthrown and the Israelites were permitted to return to Jerusalem in 539 b.c. The city was now under the more tolerant rule of the Persians , but rebuilding was slow work .</sentence>
+	<tokens>
+		<token id="1" lemma="in" pos="IN" surface="In"/>
+		<token id="2" lemma="time" pos="NN" surface="time"/>
+		<token id="3" lemma="," pos="," surface=","/>
+		<token id="4" lemma="the" pos="DT" surface="the"/>
+		<token id="5" lemma="kingdom" pos="NN" surface="kingdom"/>
+		<token id="6" lemma="of" pos="IN" surface="of"/>
+		<token id="7" lemma="babylon" pos="NNP" surface="Babylon"/>
+		<token id="8" lemma="be" pos="VBD" surface="was"/>
+		<token id="9" lemma="overthrow" pos="VBN" surface="overthrown"/>
+		<token id="10" lemma="and" pos="CC" surface="and"/>
+		<token id="11" lemma="the" pos="DT" surface="the"/>
+		<token id="12" lemma="israelites" pos="NNPS" surface="Israelites"/>
+		<token id="13" lemma="be" pos="VBD" surface="were"/>
+		<token id="14" lemma="permit" pos="VBN" surface="permitted"/>
+		<token id="15" lemma="to" pos="TO" surface="to"/>
+		<token id="16" lemma="return" pos="VB" surface="return"/>
+		<token id="17" lemma="to" pos="IN" surface="to"/>
+		<token id="18" lemma="jerusalem" pos="NNP" surface="Jerusalem"/>
+		<token id="19" lemma="in" pos="IN" surface="in"/>
+		<token id="20" lemma="539" pos="CD" surface="539"/>
+		<token id="21" lemma="b.c." pos="NN" surface="b.c."/>
+		<token id="22" lemma="the" pos="DT" surface="The"/>
+		<token id="23" lemma="city" pos="NN" surface="city"/>
+		<token id="24" lemma="be" pos="VBD" surface="was"/>
+		<token id="25" lemma="now" pos="RB" surface="now"/>
+		<token id="26" lemma="under" pos="IN" surface="under"/>
+		<token id="27" lemma="the" pos="DT" surface="the"/>
+		<token id="28" lemma="more" pos="RBR" surface="more"/>
+		<token id="29" lemma="tolerant" pos="JJ" surface="tolerant"/>
+		<token id="30" lemma="rule" pos="NN" surface="rule"/>
+		<token id="31" lemma="of" pos="IN" surface="of"/>
+		<token id="32" lemma="the" pos="DT" surface="the"/>
+		<token id="33" lemma="persians" pos="NNPS" surface="Persians"/>
+		<token id="34" lemma="," pos="," surface=","/>
+		<token id="35" lemma="but" pos="CC" surface="but"/>
+		<token id="36" lemma="rebuilding" pos="NN" surface="rebuilding"/>
+		<token id="37" lemma="be" pos="VBD" surface="was"/>
+		<token id="38" lemma="slow" pos="JJ" surface="slow"/>
+		<token id="39" lemma="work" pos="NN" surface="work"/>
+		<token id="40" lemma="." pos="." surface="."/>
+	</tokens>
+	<dependencies>
+		<dep from="9" to="1" type="prep"/>
+		<dep from="1" to="2" type="pobj"/>
+		<dep from="9" to="3" type="punct"/>
+		<dep from="5" to="4" type="det"/>
+		<dep from="9" to="5" type="nsubjpass"/>
+		<dep from="5" to="6" type="prep"/>
+		<dep from="6" to="7" type="pobj"/>
+		<dep from="9" to="8" type="auxpass"/>
+		<dep from="0" to="9" type="root"/>
+		<dep from="9" to="10" type="cc"/>
+		<dep from="12" to="11" type="det"/>
+		<dep from="14" to="12" type="nsubjpass"/>
+		<dep from="14" to="13" type="auxpass"/>
+		<dep from="9" to="14" type="conj"/>
+		<dep from="16" to="15" type="aux"/>
+		<dep from="14" to="16" type="xcomp"/>
+		<dep from="16" to="17" type="prep"/>
+		<dep from="17" to="18" type="pobj"/>
+		<dep from="16" to="19" type="prep"/>
+		<dep from="21" to="20" type="nummod"/>
+		<dep from="19" to="21" type="pobj"/>
+		<dep from="23" to="22" type="det"/>
+		<dep from="24" to="23" type="nsubj"/>
+		<dep from="0" to="24" type="root"/>
+		<dep from="24" to="25" type="advmod"/>
+		<dep from="24" to="26" type="prep"/>
+		<dep from="30" to="27" type="det"/>
+		<dep from="29" to="28" type="advmod"/>
+		<dep from="30" to="29" type="amod"/>
+		<dep from="26" to="30" type="pobj"/>
+		<dep from="30" to="31" type="prep"/>
+		<dep from="33" to="32" type="det"/>
+		<dep from="31" to="33" type="pobj"/>
+		<dep from="24" to="34" type="punct"/>
+		<dep from="24" to="35" type="cc"/>
+		<dep from="37" to="36" type="nsubj"/>
+		<dep from="24" to="37" type="conj"/>
+		<dep from="39" to="38" type="amod"/>
+		<dep from="37" to="39" type="attr"/>
+		<dep from="37" to="40" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Entering">
+				<lexicalUnit>
+					<token id="16"/>
+				</lexicalUnit>
+				<frameElement type="Goal">
+					<token id="17"/>
+					<token id="18"/>
+				</frameElement>
+				<frameElement type="Time">
+					<token id="19"/>
+					<token id="20"/>
+					<token id="21"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="11"/>
+					<token id="12"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

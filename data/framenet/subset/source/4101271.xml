@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101271">
+	<sentence>Lesvos , Chios , and Samos lay in the important shipping lanes , and patriots began disrupting Ottoman cargo traffic .</sentence>
+	<tokens>
+		<token id="1" lemma="lesvos" pos="NNP" surface="Lesvos"/>
+		<token id="2" lemma="," pos="," surface=","/>
+		<token id="3" lemma="chios" pos="NNP" surface="Chios"/>
+		<token id="4" lemma="," pos="," surface=","/>
+		<token id="5" lemma="and" pos="CC" surface="and"/>
+		<token id="6" lemma="samos" pos="NNP" surface="Samos"/>
+		<token id="7" lemma="lie" pos="VBD" surface="lay"/>
+		<token id="8" lemma="in" pos="IN" surface="in"/>
+		<token id="9" lemma="the" pos="DT" surface="the"/>
+		<token id="10" lemma="important" pos="JJ" surface="important"/>
+		<token id="11" lemma="shipping" pos="NN" surface="shipping"/>
+		<token id="12" lemma="lane" pos="NNS" surface="lanes"/>
+		<token id="13" lemma="," pos="," surface=","/>
+		<token id="14" lemma="and" pos="CC" surface="and"/>
+		<token id="15" lemma="patriot" pos="NNS" surface="patriots"/>
+		<token id="16" lemma="begin" pos="VBD" surface="began"/>
+		<token id="17" lemma="disrupt" pos="VBG" surface="disrupting"/>
+		<token id="18" lemma="ottoman" pos="NNP" surface="Ottoman"/>
+		<token id="19" lemma="cargo" pos="NN" surface="cargo"/>
+		<token id="20" lemma="traffic" pos="NN" surface="traffic"/>
+		<token id="21" lemma="." pos="." surface="."/>
+	</tokens>
+	<dependencies>
+		<dep from="7" to="1" type="nsubj"/>
+		<dep from="1" to="2" type="punct"/>
+		<dep from="1" to="3" type="conj"/>
+		<dep from="3" to="4" type="punct"/>
+		<dep from="3" to="5" type="cc"/>
+		<dep from="3" to="6" type="conj"/>
+		<dep from="0" to="7" type="root"/>
+		<dep from="7" to="8" type="prep"/>
+		<dep from="12" to="9" type="det"/>
+		<dep from="12" to="10" type="amod"/>
+		<dep from="12" to="11" type="compound"/>
+		<dep from="8" to="12" type="pobj"/>
+		<dep from="7" to="13" type="punct"/>
+		<dep from="7" to="14" type="cc"/>
+		<dep from="16" to="15" type="nsubj"/>
+		<dep from="7" to="16" type="conj"/>
+		<dep from="16" to="17" type="xcomp"/>
+		<dep from="20" to="18" type="compound"/>
+		<dep from="20" to="19" type="compound"/>
+		<dep from="17" to="20" type="dobj"/>
+		<dep from="16" to="21" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Being_located">
+				<lexicalUnit>
+					<token id="7"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="1"/>
+					<token id="2"/>
+					<token id="3"/>
+					<token id="4"/>
+					<token id="5"/>
+					<token id="6"/>
+				</frameElement>
+				<frameElement type="Location">
+					<token id="8"/>
+					<token id="9"/>
+					<token id="10"/>
+					<token id="11"/>
+					<token id="12"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

@@ -1,18 +1,27 @@
 """
 This module preprocesses the datasets in equivalent formats
 """
+import csv
 import json
+import numpy as np
+import shutil
 import os
 import re
-import numpy as np
 import spacy
-import csv
 import zipfile
 from itertools import groupby
 from collections import defaultdict
+from pathlib import Path
 from sklearn.model_selection import StratifiedKFold
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
+
+import spacy
+
+from nlunetwork.embeddings import WhitespaceTokenizer
+
+nlp = spacy.load('en')
+nlp.tokenizer = WhitespaceTokenizer(nlp.vocab)
 
 n_folds = 5
 #ALEXA_FILE_NAME = 'alexaInteractionModel.json'
@@ -20,8 +29,12 @@ n_folds = 5
 #LEX_ZIP_NAME = 'lexBot.zip'
 
 
-def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
-    """Preprocess the huric dataset, provided by Danilo Croce
+
+def huric_preprocess(path, trim='right', also_spatial=False, invoke_frame_slot=False):
+    """Preprocess the huric dataset
+    trim regulates how to split the sentences:
+    - 'right' finds the last reference on the right to tokens, while on the left takes up to the previous frame in the sentence
+    - 'both' finds the minimum and maximum mentioned token ids, producing a shorter sentence in output
     invoke_frame_slot adds a slot fot the lexical unit of invocation of the frame
     """
 
@@ -31,10 +44,7 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
     def covers(a, b):
         return (a['max'] >= b['max']) and (a['min'] <= b['min'])
 
-    if subfolder:
-        path_source = path + '/source/' + subfolder
-    else:
-        path_source = path + '/source'
+    path_source = path + '/source'
 
     samples = []
     spatial_samples = []
@@ -43,16 +53,7 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
     slot_types = set()
     spatial_slot_types = set()
 
-    """ subfolder is a parameter of this function
-    # retrieve all the possible xml files in the three subfolders
-    for subfolder in ['GrammarGenerated', 'S4R_Experiment', 'Robocup']:
-        for file_name in os.listdir('{}/{}/xml'.format(path_source, subfolder)):
-            file_locations[file_name] = subfolder
-    """
-    if subfolder:
-        files_list = os.listdir('{}/xml'.format(path_source))
-    else:
-        files_list = os.listdir(path_source)
+    files_list = os.listdir(path_source)
 
     # TODO remove this
     # 2307: nested frame (no problem, discarded) 
@@ -65,10 +66,7 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
     print('#files: ', len(files_list))
 
     for file_name in sorted(files_list):
-        if subfolder:
-            file_location = '{}/xml/{}'.format(path_source, file_name)
-        else:
-            file_location = '{}/{}'.format(path_source, file_name)
+        file_location = '{}/{}'.format(path_source, file_name)
         #print(file_location)
         with open(file_location) as file_in:
             tree = ET.parse(file_in)
@@ -115,7 +113,17 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
             frame_tokens_mentioned = [int(id.attrib['id']) for id in frame_tokens_mentioned]
             min_token_id, max_token_id = min(frame_tokens_mentioned), max(frame_tokens_mentioned)
             # the correct division [0:max1],[max1:max2]. 'and' words between are part of the new frame. 'robot can you' words are part of the first frame
-            frame_tokens = {key: value for (key, value) in tokens_map.items() if int(key) >= start_of_frame and int(key) <= max_token_id}
+            if trim == 'right':
+                # start considering from the end of the previous frame
+                start_considering = start_of_frame
+            elif trim == 'both':
+                # start considering from the minimum mentioned token
+                start_considering = min_token_id
+                # recompute the lexical unit ids
+                lexical_unit_ids = [l - start_considering + 1 for l in lexical_unit_ids]
+            else:
+                raise ValueError('trim' + str(trim))
+            frame_tokens = {key: value for (key, value) in tokens_map.items() if int(key) >= start_considering and int(key) <= max_token_id}
             words = [value for (key, value) in frame_tokens.items()]
             slots_objects = [slots_map.get(key, {'iob_label': 'O'}) for (key, value) in frame_tokens.items()]
             slots = [slot['iob_label'] for slot in slots_objects]
@@ -127,7 +135,7 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
                 'length': len(words),
                 'slots': slots,
                 'file': file_name,
-                'start_token_id': start_of_frame,
+                'start_token_id': start_considering,
                 'end_token_id': max_token_id,
                 'id': len(samples),
                 'lexical_unit_ids': lexical_unit_ids
@@ -145,63 +153,61 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
             tokenId_by_slotType[slot['slot_type']].append(id)
 
         spatial_slots = {}
-        # second loop: over the spatial frames
-        for frame in root.findall('semantics/spatialSemantics/spatialRelation'):
-            # problems in spatial frames for these files
-            if file_name in ['3281.xml', '3283.xml', '3284.xml']:
-                continue
-            spatial_frame_name = frame.attrib['name']
-            frame_tokens_mentioned = []
+        if also_spatial:
+            # second loop: over the spatial frames
+            for frame in root.findall('semantics/spatialSemantics/spatialRelation'):
+                # problems in spatial frames for these files
+                if file_name in ['3281.xml', '3283.xml', '3284.xml']:
+                    continue
+                spatial_frame_name = frame.attrib['name']
+                frame_tokens_mentioned = []
 
-            # accumulator for all the tokens mentioned in the current spatial frame
-            frame_tokens = []
-            for frame_element in frame.findall('spatialRole'):
-                slot_type = frame_element.attrib['type']
-                element_tokens = frame_element.findall('token')
-                frame_tokens_mentioned.extend(element_tokens)
-                for count, token in enumerate(element_tokens):
-                    prefix = 'B' if not count else 'I'
-                    iob_label = '{}-{}'.format(prefix, slot_type)
-                    # to remove IOB prefix, set iob_label = slot_type
-                    spatial_slots[int(token.attrib['id'])] = iob_label
+                # accumulator for all the tokens mentioned in the current spatial frame
+                frame_tokens = []
+                for frame_element in frame.findall('spatialRole'):
+                    slot_type = frame_element.attrib['type']
+                    element_tokens = frame_element.findall('token')
+                    frame_tokens_mentioned.extend(element_tokens)
+                    for count, token in enumerate(element_tokens):
+                        prefix = 'B' if not count else 'I'
+                        iob_label = '{}-{}'.format(prefix, slot_type)
+                        # to remove IOB prefix, set iob_label = slot_type
+                        spatial_slots[int(token.attrib['id'])] = iob_label
 
-            # now find the part of the sentence that is related to the specific frame
-            frame_tokens_mentioned = [int(id.attrib['id']) for id in frame_tokens_mentioned]
-            min_token_id, max_token_id = min(frame_tokens_mentioned), max(frame_tokens_mentioned)
-            frame_element_min, frame_element_max = slots_map[min_token_id]['slot_type'], slots_map[max_token_id]['slot_type']
-            if frame_element_min != frame_element_max:
-                print('INFO: spatial relation spans multiple frame elements: ', frame_tokens_mentioned, file_name)
-            
-            parent_start, parent_end = tokenId_by_slotType[frame_element_min][0], tokenId_by_slotType[frame_element_max][-1]
-            frame_tokens = {key: value for (key, value) in tokens_map.items() if int(key) >= parent_start and int(key) <= parent_end}
-            words = [value for (key, value) in frame_tokens.items()]
-            slots = [spatial_slots.get(key, 'O') for (key, value) in frame_tokens.items()]
-            if not len(words):
-                print('WARNING: len 0 for', spatial_frame_name, frame_tokens_mentioned, tokens_map, 'expected in [{},{}]'.format(parent_start, parent_end) , file_name, ' --> frame will be discarded')
-            sample = {
-                'words': words,
-                'intent': spatial_frame_name,
-                'length': len(words),
-                'slots': slots,
-                'file': file_name,
-                'start_token_id': parent_start,
-                'end_token_id': parent_end,
-                'id': len(spatial_samples)
-            }
+                # now find the part of the sentence that is related to the specific frame
+                frame_tokens_mentioned = [int(id.attrib['id']) for id in frame_tokens_mentioned]
+                min_token_id, max_token_id = min(frame_tokens_mentioned), max(frame_tokens_mentioned)
+                frame_element_min, frame_element_max = slots_map[min_token_id]['slot_type'], slots_map[max_token_id]['slot_type']
+                if frame_element_min != frame_element_max:
+                    print('INFO: spatial relation spans multiple frame elements: ', frame_tokens_mentioned, file_name)
+                
+                parent_start, parent_end = tokenId_by_slotType[frame_element_min][0], tokenId_by_slotType[frame_element_max][-1]
+                frame_tokens = {key: value for (key, value) in tokens_map.items() if int(key) >= parent_start and int(key) <= parent_end}
+                words = [value for (key, value) in frame_tokens.items()]
+                slots = [spatial_slots.get(key, 'O') for (key, value) in frame_tokens.items()]
+                if not len(words):
+                    print('WARNING: len 0 for', spatial_frame_name, frame_tokens_mentioned, tokens_map, 'expected in [{},{}]'.format(parent_start, parent_end) , file_name, ' --> frame will be discarded')
+                sample = {
+                    'words': words,
+                    'intent': spatial_frame_name,
+                    'length': len(words),
+                    'slots': slots,
+                    'file': file_name,
+                    'start_token_id': parent_start,
+                    'end_token_id': parent_end,
+                    'id': len(spatial_samples)
+                }
 
 
-            spatial_samples.append(sample)
-            spatial_slot_types.update(slots)
+                spatial_samples.append(sample)
+                spatial_slot_types.update(slots)
 
     #write_json(path, 'resume.json', splitting_resume)
 
     # remove samples with empty word list
     samples = [s for s in samples if len(s['words'])]
 
-    if subfolder:
-        out_path = '{}/{}'.format(path, subfolder)
-    else:
-        out_path = path
+    out_path = '{}_{}'.format(path, trim)
     out_path_preprocessed = '{}/preprocessed'.format(out_path)
 
     # save all data together, for alexa
@@ -219,20 +225,23 @@ def huric_preprocess(path, subfolder=None, invoke_frame_slot=False):
     
     write_json(out_path_preprocessed, 'all_samples.json', result_all)
 
-    # save also spatial submodel
-    spatial_out_path = '{}/spatial/preprocessed'.format(out_path)
-    spatial_intent_values = [s['intent'] for s in spatial_samples]
-    spatial_meta = {
-        'tokenizer': 'whitespace',
-        'language': 'en',
-        'intent_types': sorted(set(spatial_intent_values)),
-        'slot_types': sorted(spatial_slot_types)
-    }
-    spatial_result = {
-        'data': spatial_samples,
-        'meta': spatial_meta
-    }
-    write_json(spatial_out_path, 'all_samples.json', spatial_result)
+    if also_spatial:
+        # save also spatial submodel
+        spatial_out_path = '{}/spatial/preprocessed'.format(out_path)
+        spatial_intent_values = [s['intent'] for s in spatial_samples]
+        spatial_meta = {
+            'tokenizer': 'whitespace',
+            'language': 'en',
+            'intent_types': sorted(set(spatial_intent_values)),
+            'slot_types': sorted(spatial_slot_types)
+        }
+        spatial_result = {
+            'data': spatial_samples,
+            'meta': spatial_meta
+        }
+        write_json(spatial_out_path, 'all_samples.json', spatial_result)
+    else:
+        spatial_result = None
 
     # do the stratified split on k folds, fixing the random seed
     # the value of intent for each sample, necessary to perform the stratified
@@ -584,6 +593,158 @@ def modernize_huric_xml(source_path, dest_path):
         #with open('{}/{}'.format(dest_path, file_name), 'w', encoding='utf-8') as out_file:
         #    tree.write(out_file, encoding='unicode')
 
+def speakers_split(source_folder, dest_folder):
+    # splits_subfolders = speakers_split('huric_eb/modern/source', 'huric_eb/speakers_split')
+    source_path = Path(source_folder)
+    dest_path = Path(dest_folder)
+    xml_file_names = sorted([x.name for x in source_path.iterdir() if x.is_file()])
+
+    with open(dest_path / 'groups.json') as groups_file:
+        groups = json.load(groups_file)
+
+    results = list()
+    
+    for group_criterion, groups in groups.items():
+        for group_name, group in groups.items():
+            destination_subfolder = '{}/{}'.format(group_criterion, group_name)
+            results.append(destination_subfolder)
+            dest_file_location = dest_path / destination_subfolder / 'source'
+            if not os.path.exists(dest_file_location):
+                os.makedirs(dest_file_location)
+            for f in group:
+                shutil.copy2(source_path / f, dest_file_location / f)
+
+    return results
+
+
+
+def framenet_preprocess(folder, dest_path, subset=True):
+    """Preprocesses the framenet corpus, taking only the frames from the HuRIC set. Produces in output a HuRIC formatted dataset on out_path"""
+    # from framenet names to huric names
+    frame_names_mappings = {
+        'Attaching': 'Attaching',
+        'Being_in_category': 'Being_in_category',
+        'Being_located': 'Being_located',
+        'Bringing': 'Bringing',
+        'Change_operational_state': 'Change_operational_state',
+        'Closure': 'Closure',
+        'Arriving': 'Entering',
+        'Cotheme': 'Following',
+        'Giving': 'Giving',
+        'Inspecting': 'Inspecting',
+        'Motion': 'Motion',
+        'Perception_active': 'Perception_active',
+        'Placing': 'Placing',
+        'Releasing': 'Releasing',
+        'Scrutiny': 'Searching',
+        'Taking': 'Taking'
+    }
+    ns = {'ns': '{http://framenet.icsi.berkeley.edu}'}
+
+    if not subset:
+        # TODO generalize to not subset
+        raise ValueError('subset must be True')
+    xml_path = Path(folder) / 'source/fulltext'
+    xml_files_paths = [f for f in xml_path.iterdir() if f.is_file()]
+    sentences = []
+    for f in xml_files_paths:
+        with open(f) as file_in:
+            xmlstring = file_in.read()
+        # remove namespace that makes ET usage cumbersome
+        xmlstring = re.sub(r'\sxmlns="[^"]+"', '', xmlstring, count=1)
+        root = ET.fromstring(xmlstring)
+        #print(root)
+        #print([el for el in root])
+        # get the sentences elements
+        sentences.extend(root.findall('sentence'))
+    print('#sentences:', len(sentences))
+    get_wanted_frames = lambda sentence: [f for f in sentence.findall('annotationSet') if f.attrib.get('frameName', None) in frame_names_mappings and f.attrib['status'] == 'MANUAL']
+    # select the sentences that have an interesting frame name
+    sentences = [s for s in sentences if len(get_wanted_frames(s))]
+    print('#sentences_sel_frames:', len(sentences))
+    #exit(1)
+    samples = [{
+        'words': s.find('text').text.split(),
+        'intent_cnt': len(get_wanted_frames(s)),
+        'intents': [f.attrib.get('frameName', None) for f in get_wanted_frames(s)],
+    } for s in sentences]
+
+    cnt = 0
+    for s in samples:
+        if s['intent_cnt'] > 1:
+            print(s['intents'], ' '.join(s['words']))
+            cnt+=1
+    print('#multiple:', cnt)
+    # TODO transform to HuRIC
+    # - get the required attributes on the tree
+    # - translate the frame names
+    # - produce output files
+    for s in sentences:
+        command_id = s.attrib['ID']
+        text = s.find('text').text
+        words = text.split()
+        try:
+            doc = nlp(text)
+        except AssertionError as e:
+            print(command_id, text, e)
+            raise e
+        framenet_annotations = s.find("annotationSet[@status='UNANN']/layer").findall("label")
+        #print([t.text for t in doc], words)
+        try:
+            assert len(doc) == len(framenet_annotations)
+        except AssertionError as e:
+            print('different lengths', len(doc), len(framenet_annotations), ' for', text)
+            #raise e
+        # FrameNet annotations sometimes are missing some tokens. See frame 312908 for example
+        tokens = [{
+            'id': t.i + 1,
+            'start': t.idx,
+            'end': t.idx + len(t.text),
+            'lemma': t.lemma_,
+            'pos': t.tag_, # or l.attrib['name']
+            'surface': t.text
+        } for t in doc]
+        # TODO where are dependencies?
+        dependencies = [{
+            'from': str(t.head.i + 1) if t.dep_.lower() != 'root' else str(0),
+            'to': str(t.i + 1),
+            'type': t.dep_.lower()
+        } for t in doc]
+
+        new_command = ET.Element('command', {'id': command_id})
+        ET.SubElement(new_command, 'sentence').text = text
+        new_tokens = ET.SubElement(new_command, 'tokens')
+        for t in tokens:
+            ET.SubElement(new_tokens, 'token', {'id': str(t['id']), 'lemma': t['lemma'], 'pos': t['pos'], 'surface': t['surface']})
+        new_dependencies = ET.SubElement(new_command, 'dependencies')
+        for d in dependencies:
+            ET.SubElement(new_dependencies, 'dep', d)
+        new_semantic_frames = ET.SubElement(ET.SubElement(new_command, 'semantics'), 'frameSemantics')
+
+        wanted_frames = get_wanted_frames(s)
+        for f in wanted_frames:
+            frame_name = frame_names_mappings[f.attrib['frameName']]
+            lexical_unit = f.find("layer[@name='Target']/label")
+            start, end = int(lexical_unit.attrib['start']), int(lexical_unit.attrib['end'])
+            lexical_unit_ids = [t['id'] for t in tokens if (t['end']>=start and t['start']<=end)]
+            fes = f.findall("layer[@name='FE']/label")
+            #print(command_id, fes)
+            frame_elements = [{'type': f.attrib['name'], 'ids': [t['id'] for t in tokens if (f.attrib.get('start', None) != None and t['end']>=int(f.attrib['start']) and t['start']<=int(f.attrib['end'])+1)]} for f in fes]
+
+            new_frame = ET.SubElement(new_semantic_frames, 'frame', {'name': frame_name})
+            new_lexical_unit = ET.SubElement(new_frame, 'lexicalUnit')
+            for l in lexical_unit_ids:
+                ET.SubElement(new_lexical_unit, 'token', {'id': str(l)})
+            for fe in frame_elements:
+                if len(fe['ids']):
+                    new_frame_element = ET.SubElement(new_frame, 'frameElement', {'type': fe['type']})
+                    for t_id in fe['ids']:
+                        ET.SubElement(new_frame_element, 'token', {'id': str(t_id)})
+        
+        pretty_string = minidom.parseString(ET.tostring(new_command, 'utf-8')).toprettyxml(encoding='utf-8').decode('utf-8')
+        with open('{}/{}.xml'.format(dest_path, command_id), 'w') as out_file:
+            out_file.write(pretty_string)
+
 
 def main():
     #nlp_en = load_nlp()
@@ -591,36 +752,30 @@ def main():
     which = os.environ.get('DATASET', 'huric_eb')
     print(which)
 
-    if which == 'huric_tor':
-        subfolder_results = []
-        subfolder_spatial_results = []
-        for subfolder in ['GrammarGenerated', 'S4R_Experiment', 'Robocup']:
-            res, spatial_res = huric_preprocess('huric_tor', subfolder, False)
-            subfolder_results.append(res)
-            subfolder_spatial_results.append(spatial_res)
-            alexa_prepare('huric_tor/{}'.format(subfolder), 'office robot {}'.format(subfolder))
-            alexa_prepare('huric_tor/{}/spatial'.format(subfolder), 'office robot spatial {}'.format(subfolder))
-            lex_from_alexa('huric_tor/{}/'.format(subfolder), 'kmi_{}'.format(subfolder))
-            lex_from_alexa('huric_tor/{}/spatial'.format(subfolder), 'spatial_{}'.format(subfolder))
-        
-        combine_and_save(subfolder_results, 'huric_tor/combined')
-        combine_and_save(subfolder_spatial_results, 'huric_tor/combined/spatial')
-        alexa_prepare('huric_tor/combined', 'office robot')
-        alexa_prepare('huric_tor/combined/spatial', 'office robot spatial')
-        lex_from_alexa('huric_tor/combined', 'kmi')
-        lex_from_alexa('huric_tor/combined/spatial', 'spatial')
-
-    elif which == 'huric_eb':
+    if which == 'huric_eb':
         modernize_huric_xml('huric_eb/source', 'huric_eb/modern/source')
-        res, spatial_res = huric_preprocess('huric_eb/modern', None, False)
-        alexa_prepare('huric_eb/modern', 'roo bot')
-        alexa_prepare('huric_eb/modern/spatial', 'office robot spatial')
-        lex_from_alexa('huric_eb/modern/amazon', 'kmi_EB')
-        lex_from_alexa('huric_eb/modern/spatial/amazon', 'spatial_EB')
+        res, spatial_res = huric_preprocess('huric_eb/modern', also_spatial=True)
+        alexa_prepare('huric_eb/modern_right', 'roo bot')
+        alexa_prepare('huric_eb/modern_right/spatial', 'office robot spatial')
+        lex_from_alexa('huric_eb/modern_right/amazon', 'kmi_EB')
+        lex_from_alexa('huric_eb/modern_right/spatial/amazon', 'spatial_EB')
         # for lex evaluation
-        alexa_prepare('huric_eb/modern', 'roo bot train', 'train_samples.json', 'alexa_train.json')
-        lex_from_alexa('huric_eb/modern/amazon', 'train_only', 'alexa_train.json', 'lexTrainBot.json')
+        alexa_prepare('huric_eb/modern_right', 'roo bot train', 'train_samples.json', 'alexa_train.json')
+        lex_from_alexa('huric_eb/modern_right/amazon', 'train_only', 'alexa_train.json', 'lexTrainBot.json')
 
+    elif which == 'huric_eb_speakers_split':
+        # language-bias experiment
+        splits_subfolders = speakers_split('huric_eb/modern/source', 'huric_eb/speakers_split')
+        for subfolder in splits_subfolders:
+            huric_preprocess('huric_eb/speakers_split/{}'.format(subfolder))
+
+    elif which == 'framenet_subset':
+        framenet_preprocess('framenet', 'framenet/subset/source', True)
+        huric_preprocess('framenet/subset')
+        huric_preprocess('framenet/subset', trim='both')
+
+    else:
+        raise ValueError(which)
 
 if __name__ == '__main__':
     main()

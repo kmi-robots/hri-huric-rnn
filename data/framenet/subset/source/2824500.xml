@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824500">
+	<sentence>The three of us stopped breathing for a moment , and then when it kept on coming we lunged for the doorway .</sentence>
+	<tokens>
+		<token id="1" lemma="the" pos="DT" surface="The"/>
+		<token id="2" lemma="three" pos="CD" surface="three"/>
+		<token id="3" lemma="of" pos="IN" surface="of"/>
+		<token id="4" lemma="-PRON-" pos="PRP" surface="us"/>
+		<token id="5" lemma="stop" pos="VBD" surface="stopped"/>
+		<token id="6" lemma="breathe" pos="VBG" surface="breathing"/>
+		<token id="7" lemma="for" pos="IN" surface="for"/>
+		<token id="8" lemma="a" pos="DT" surface="a"/>
+		<token id="9" lemma="moment" pos="NN" surface="moment"/>
+		<token id="10" lemma="," pos="," surface=","/>
+		<token id="11" lemma="and" pos="CC" surface="and"/>
+		<token id="12" lemma="then" pos="RB" surface="then"/>
+		<token id="13" lemma="when" pos="WRB" surface="when"/>
+		<token id="14" lemma="-PRON-" pos="PRP" surface="it"/>
+		<token id="15" lemma="keep" pos="VBD" surface="kept"/>
+		<token id="16" lemma="on" pos="RP" surface="on"/>
+		<token id="17" lemma="come" pos="VBG" surface="coming"/>
+		<token id="18" lemma="-PRON-" pos="PRP" surface="we"/>
+		<token id="19" lemma="lunge" pos="VBD" surface="lunged"/>
+		<token id="20" lemma="for" pos="IN" surface="for"/>
+		<token id="21" lemma="the" pos="DT" surface="the"/>
+		<token id="22" lemma="doorway" pos="NN" surface="doorway"/>
+		<token id="23" lemma="." pos="." surface="."/>
+	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="det"/>
+		<dep from="5" to="2" type="nsubj"/>
+		<dep from="2" to="3" type="prep"/>
+		<dep from="3" to="4" type="pobj"/>
+		<dep from="0" to="5" type="root"/>
+		<dep from="5" to="6" type="xcomp"/>
+		<dep from="6" to="7" type="prep"/>
+		<dep from="9" to="8" type="det"/>
+		<dep from="7" to="9" type="pobj"/>
+		<dep from="5" to="10" type="punct"/>
+		<dep from="5" to="11" type="cc"/>
+		<dep from="19" to="12" type="advmod"/>
+		<dep from="15" to="13" type="advmod"/>
+		<dep from="15" to="14" type="nsubj"/>
+		<dep from="19" to="15" type="advcl"/>
+		<dep from="15" to="16" type="prt"/>
+		<dep from="15" to="17" type="xcomp"/>
+		<dep from="19" to="18" type="nsubj"/>
+		<dep from="5" to="19" type="conj"/>
+		<dep from="19" to="20" type="prep"/>
+		<dep from="22" to="21" type="det"/>
+		<dep from="20" to="22" type="pobj"/>
+		<dep from="19" to="23" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Entering">
+				<lexicalUnit>
+					<token id="17"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="14"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

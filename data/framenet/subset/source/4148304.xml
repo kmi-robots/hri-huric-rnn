@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148304">
+	<sentence>All would come round to me in due time .</sentence>
+	<tokens>
+		<token id="1" lemma="all" pos="DT" surface="All"/>
+		<token id="2" lemma="would" pos="MD" surface="would"/>
+		<token id="3" lemma="come" pos="VB" surface="come"/>
+		<token id="4" lemma="round" pos="RB" surface="round"/>
+		<token id="5" lemma="to" pos="IN" surface="to"/>
+		<token id="6" lemma="-PRON-" pos="PRP" surface="me"/>
+		<token id="7" lemma="in" pos="IN" surface="in"/>
+		<token id="8" lemma="due" pos="JJ" surface="due"/>
+		<token id="9" lemma="time" pos="NN" surface="time"/>
+		<token id="10" lemma="." pos="." surface="."/>
+	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="nsubj"/>
+		<dep from="3" to="2" type="aux"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="3" to="4" type="acomp"/>
+		<dep from="4" to="5" type="prep"/>
+		<dep from="5" to="6" type="pobj"/>
+		<dep from="3" to="7" type="prep"/>
+		<dep from="9" to="8" type="amod"/>
+		<dep from="7" to="9" type="pobj"/>
+		<dep from="3" to="10" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Entering">
+				<lexicalUnit>
+					<token id="3"/>
+				</lexicalUnit>
+				<frameElement type="Path">
+					<token id="4"/>
+				</frameElement>
+				<frameElement type="Goal">
+					<token id="5"/>
+					<token id="6"/>
+				</frameElement>
+				<frameElement type="Time">
+					<token id="7"/>
+					<token id="8"/>
+					<token id="9"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="1"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

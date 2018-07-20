@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2745">
+	<sentence>reach martina from behind</sentence>
+	<tokens>
+		<token id="1" lemma="reach" pos="VB" surface="reach"/>
+		<token id="2" lemma="martina" pos="NNP" surface="martina"/>
+		<token id="3" lemma="from" pos="IN" surface="from"/>
+		<token id="4" lemma="behind" pos="IN" surface="behind"/>
+	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="1" to="2" type="dojb"/>
+		<dep from="1" to="3" type="prep"/>
+		<dep from="3" to="4" type="pcomp"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Motion">
+				<lexicalUnit>
+					<token id="1"/>
+				</lexicalUnit>
+				<frameElement type="Goal">
+					<token id="2"/>
+				</frameElement>
+				<frameElement type="Path">
+					<token id="3"/>
+					<token id="4"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+		<spatialSemantics/>
+	</semantics>
+</command>
