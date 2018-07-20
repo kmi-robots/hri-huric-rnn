@@ -7,7 +7,7 @@
 set -e
 
 # chosen architecture: three stages with attention
-export THREE_STAGES=true
+export THREE_STAGES=true_highway
 export ATTENTION=both
 
 
@@ -19,8 +19,6 @@ export BATCH_SIZE=2
 # the chosen hyperparams
 export LABEL_EMB_SIZE=64
 export LSTM_SIZE=128
-
-export MAX_EPOCHS=50
 
 DATASET="huric_eb/speakers_split/en_nation/true" make train_joint
 DATASET="huric_eb/speakers_split/en_nation/false" make train_joint

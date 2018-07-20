@@ -2,31 +2,77 @@
   "data": [
     {
       "words": [
-        "this",
-        "is",
-        "a",
-        "table",
-        "with",
-        "a",
-        "glass",
-        "deck"
+        "go",
+        "to",
+        "the",
+        "kitchen"
       ],
-      "intent": "Being_in_category",
+      "intent": "Motion",
+      "length": 4,
+      "slots": [
+        "O",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2174.xml",
+      "start_token_id": 1,
+      "end_token_id": 4,
+      "id": 4,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "please",
+        "find",
+        "the",
+        "lamp"
+      ],
+      "intent": "Searching",
+      "length": 4,
+      "slots": [
+        "O",
+        "O",
+        "B-Phenomenon",
+        "I-Phenomenon"
+      ],
+      "file": "2176.xml",
+      "start_token_id": 1,
+      "end_token_id": 4,
+      "id": 6,
+      "lexical_unit_ids": [
+        2
+      ]
+    },
+    {
+      "words": [
+        "please",
+        "bring",
+        "the",
+        "mobile",
+        "phone",
+        "to",
+        "the",
+        "livingroom"
+      ],
+      "intent": "Bringing",
       "length": 8,
       "slots": [
-        "B-Item",
         "O",
-        "B-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category"
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "I-Theme",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal"
       ],
-      "file": "2171.xml",
+      "file": "2177.xml",
       "start_token_id": 1,
       "end_token_id": 8,
-      "id": 1,
+      "id": 7,
       "lexical_unit_ids": [
         2
       ]
@@ -35,31 +81,68 @@
       "words": [
         "can",
         "you",
-        "please",
-        "move",
-        "near",
+        "find",
         "the",
-        "right",
-        "lamp"
+        "refrigerator",
+        "for",
+        "me"
       ],
-      "intent": "Motion",
-      "length": 8,
+      "intent": "Searching",
+      "length": 7,
       "slots": [
         "O",
-        "B-Theme",
+        "B-Cognizer",
         "O",
-        "O",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal"
+        "B-Phenomenon",
+        "I-Phenomenon",
+        "B-Purpose",
+        "I-Purpose"
       ],
-      "file": "2182.xml",
+      "file": "2178.xml",
       "start_token_id": 1,
-      "end_token_id": 8,
-      "id": 10,
+      "end_token_id": 7,
+      "id": 8,
       "lexical_unit_ids": [
-        4
+        3
+      ]
+    },
+    {
+      "words": [
+        "follow",
+        "the",
+        "person",
+        "with",
+        "the",
+        "blonde",
+        "hair",
+        "and",
+        "the",
+        "black",
+        "pants",
+        "fast"
+      ],
+      "intent": "Following",
+      "length": 12,
+      "slots": [
+        "O",
+        "B-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "B-Speed"
+      ],
+      "file": "2181.xml",
+      "start_token_id": 1,
+      "end_token_id": 12,
+      "id": 9,
+      "lexical_unit_ids": [
+        1
       ]
     },
     {
@@ -85,52 +168,6 @@
       "start_token_id": 1,
       "end_token_id": 6,
       "id": 13,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "drive",
-        "to",
-        "the",
-        "fridge"
-      ],
-      "intent": "Motion",
-      "length": 4,
-      "slots": [
-        "O",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2187.xml",
-      "start_token_id": 1,
-      "end_token_id": 4,
-      "id": 15,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "search",
-        "for",
-        "the",
-        "lamp"
-      ],
-      "intent": "Searching",
-      "length": 4,
-      "slots": [
-        "O",
-        "B-Phenomenon",
-        "I-Phenomenon",
-        "I-Phenomenon"
-      ],
-      "file": "2188.xml",
-      "start_token_id": 1,
-      "end_token_id": 4,
-      "id": 16,
       "lexical_unit_ids": [
         1
       ]
@@ -189,36 +226,76 @@
     },
     {
       "words": [
-        "follow",
-        "that",
-        "person"
+        "there",
+        "are",
+        "a",
+        "lot",
+        "of",
+        "couches",
+        "in",
+        "the",
+        "living",
+        "room"
       ],
-      "intent": "Following",
-      "length": 3,
+      "intent": "Being_located",
+      "length": 10,
       "slots": [
         "O",
-        "B-Cotheme",
-        "I-Cotheme"
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "I-Theme",
+        "I-Theme",
+        "B-Location",
+        "I-Location",
+        "I-Location",
+        "I-Location"
       ],
-      "file": "2194.xml",
+      "file": "2198.xml",
       "start_token_id": 1,
-      "end_token_id": 3,
-      "id": 22,
+      "end_token_id": 10,
+      "id": 26,
+      "lexical_unit_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "words": [
+        "go",
+        "to",
+        "the",
+        "living",
+        "room"
+      ],
+      "intent": "Motion",
+      "length": 5,
+      "slots": [
+        "O",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2199.xml",
+      "start_token_id": 1,
+      "end_token_id": 5,
+      "id": 27,
       "lexical_unit_ids": [
         1
       ]
     },
     {
       "words": [
-        "put",
+        "carry",
         "the",
         "mug",
-        "in",
+        "to",
         "the",
-        "living",
+        "dining",
         "room"
       ],
-      "intent": "Placing",
+      "intent": "Bringing",
       "length": 7,
       "slots": [
         "O",
@@ -229,41 +306,37 @@
         "I-Goal",
         "I-Goal"
       ],
-      "file": "2195.xml",
+      "file": "2248.xml",
       "start_token_id": 1,
       "end_token_id": 7,
-      "id": 23,
+      "id": 30,
       "lexical_unit_ids": [
         1
       ]
     },
     {
       "words": [
-        "and",
+        "you",
+        "are",
+        "in",
         "the",
-        "bed",
-        "is",
-        "between",
-        "two",
-        "lamps"
+        "bedroom"
       ],
       "intent": "Being_located",
-      "length": 7,
+      "length": 5,
       "slots": [
-        "O",
         "B-Theme",
-        "I-Theme",
         "O",
         "B-Location",
         "I-Location",
         "I-Location"
       ],
       "file": "2250.xml",
-      "start_token_id": 6,
-      "end_token_id": 12,
-      "id": 33,
+      "start_token_id": 1,
+      "end_token_id": 5,
+      "id": 32,
       "lexical_unit_ids": [
-        9
+        2
       ]
     },
     {
@@ -301,85 +374,27 @@
     },
     {
       "words": [
-        "bring",
-        "the",
-        "phone",
-        "to",
-        "the",
-        "dinner",
-        "table"
+        "this",
+        "is",
+        "a",
+        "bed",
+        "room"
       ],
-      "intent": "Bringing",
-      "length": 7,
+      "intent": "Being_in_category",
+      "length": 5,
       "slots": [
+        "B-Item",
         "O",
-        "B-Theme",
-        "I-Theme",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal"
+        "B-Category",
+        "I-Category",
+        "I-Category"
       ],
-      "file": "2258.xml",
+      "file": "2254.xml",
       "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 41,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "please",
-        "follow",
-        "the",
-        "person",
-        "in",
-        "front",
-        "of",
-        "you"
-      ],
-      "intent": "Following",
-      "length": 8,
-      "slots": [
-        "O",
-        "O",
-        "B-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme"
-      ],
-      "file": "2259.xml",
-      "start_token_id": 1,
-      "end_token_id": 8,
-      "id": 42,
+      "end_token_id": 5,
+      "id": 37,
       "lexical_unit_ids": [
         2
-      ]
-    },
-    {
-      "words": [
-        "go",
-        "to",
-        "the",
-        "sofa"
-      ],
-      "intent": "Motion",
-      "length": 4,
-      "slots": [
-        "O",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2260.xml",
-      "start_token_id": 1,
-      "end_token_id": 4,
-      "id": 43,
-      "lexical_unit_ids": [
-        1
       ]
     },
     {
@@ -409,99 +424,34 @@
     },
     {
       "words": [
-        "go",
-        "along",
-        "with",
-        "them"
+        "find",
+        "me",
+        "a",
+        "cushion"
       ],
-      "intent": "Following",
+      "intent": "Searching",
       "length": 4,
       "slots": [
         "O",
-        "O",
-        "B-Cotheme",
-        "I-Cotheme"
+        "B-Purpose",
+        "B-Phenomenon",
+        "I-Phenomenon"
       ],
-      "file": "2267.xml",
+      "file": "2266.xml",
       "start_token_id": 1,
       "end_token_id": 4,
-      "id": 52,
+      "id": 51,
       "lexical_unit_ids": [
-        1,
-        2
-      ]
-    },
-    {
-      "words": [
-        "this",
-        "is",
-        "a",
-        "very",
-        "wide",
-        "and",
-        "bright",
-        "livingroom"
-      ],
-      "intent": "Being_in_category",
-      "length": 8,
-      "slots": [
-        "B-Item",
-        "O",
-        "B-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category"
-      ],
-      "file": "2281.xml",
-      "start_token_id": 1,
-      "end_token_id": 8,
-      "id": 66,
-      "lexical_unit_ids": [
-        2
-      ]
-    },
-    {
-      "words": [
-        "could",
-        "you",
-        "find",
-        "a",
-        "glass",
-        "in",
-        "the",
-        "dining",
-        "room"
-      ],
-      "intent": "Searching",
-      "length": 9,
-      "slots": [
-        "O",
-        "B-Cognizer",
-        "O",
-        "B-Phenomenon",
-        "I-Phenomenon",
-        "B-Ground",
-        "I-Ground",
-        "I-Ground",
-        "I-Ground"
-      ],
-      "file": "2285.xml",
-      "start_token_id": 1,
-      "end_token_id": 9,
-      "id": 69,
-      "lexical_unit_ids": [
-        3
+        1
       ]
     },
     {
       "words": [
         "please",
-        "move",
+        "go",
         "to",
         "the",
-        "fridge"
+        "table"
       ],
       "intent": "Motion",
       "length": 5,
@@ -512,29 +462,56 @@
         "I-Goal",
         "I-Goal"
       ],
-      "file": "2287.xml",
+      "file": "2269.xml",
       "start_token_id": 1,
       "end_token_id": 5,
-      "id": 70,
+      "id": 54,
       "lexical_unit_ids": [
         2
       ]
     },
     {
       "words": [
-        "and",
-        "bring",
-        "me",
-        "some",
-        "bread",
-        "from",
+        "could",
+        "you",
+        "please",
+        "go",
+        "to",
         "the",
-        "pantry"
+        "door"
       ],
-      "intent": "Bringing",
-      "length": 8,
+      "intent": "Motion",
+      "length": 7,
       "slots": [
         "O",
+        "B-Theme",
+        "O",
+        "O",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2278.xml",
+      "start_token_id": 1,
+      "end_token_id": 7,
+      "id": 63,
+      "lexical_unit_ids": [
+        4
+      ]
+    },
+    {
+      "words": [
+        "bring",
+        "me",
+        "the",
+        "towel",
+        "from",
+        "the",
+        "bathroom"
+      ],
+      "intent": "Bringing",
+      "length": 7,
+      "slots": [
         "O",
         "B-Beneficiary",
         "B-Theme",
@@ -543,41 +520,84 @@
         "I-Source",
         "I-Source"
       ],
-      "file": "2295.xml",
-      "start_token_id": 7,
-      "end_token_id": 14,
-      "id": 79,
+      "file": "2282.xml",
+      "start_token_id": 1,
+      "end_token_id": 7,
+      "id": 67,
       "lexical_unit_ids": [
-        8
+        1
       ]
     },
     {
       "words": [
-        "go",
-        "to",
-        "the",
-        "fridge",
-        "inside",
-        "the",
-        "kitchen"
+        "this",
+        "is",
+        "a",
+        "bathroom",
+        "with",
+        "a",
+        "shower",
+        "bath",
+        "and",
+        "double",
+        "sink"
       ],
-      "intent": "Motion",
-      "length": 7,
+      "intent": "Being_in_category",
+      "length": 11,
+      "slots": [
+        "B-Item",
+        "O",
+        "B-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category"
+      ],
+      "file": "2290.xml",
+      "start_token_id": 1,
+      "end_token_id": 11,
+      "id": 73,
+      "lexical_unit_ids": [
+        2
+      ]
+    },
+    {
+      "words": [
+        "can",
+        "you",
+        "grab",
+        "my",
+        "wine",
+        "glass",
+        "from",
+        "the",
+        "dining",
+        "room"
+      ],
+      "intent": "Taking",
+      "length": 10,
       "slots": [
         "O",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal"
+        "B-Agent",
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "I-Theme",
+        "B-Source",
+        "I-Source",
+        "I-Source",
+        "I-Source"
       ],
-      "file": "2296.xml",
+      "file": "2294.xml",
       "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 80,
+      "end_token_id": 10,
+      "id": 77,
       "lexical_unit_ids": [
-        1
+        3
       ]
     },
     {
@@ -613,102 +633,64 @@
     },
     {
       "words": [
-        "get",
-        "my",
-        "coat",
-        "from",
+        "put",
         "the",
-        "closet"
-      ],
-      "intent": "Taking",
-      "length": 6,
-      "slots": [
-        "O",
-        "B-Theme",
-        "I-Theme",
-        "B-Source",
-        "I-Source",
-        "I-Source"
-      ],
-      "file": "2300.xml",
-      "start_token_id": 1,
-      "end_token_id": 6,
-      "id": 85,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "take",
-        "the",
-        "mug",
-        "to",
-        "the",
-        "bedroom"
-      ],
-      "intent": "Bringing",
-      "length": 6,
-      "slots": [
-        "O",
-        "B-Theme",
-        "I-Theme",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2302.xml",
-      "start_token_id": 1,
-      "end_token_id": 6,
-      "id": 87,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "find",
-        "the",
-        "refrigerator"
-      ],
-      "intent": "Searching",
-      "length": 3,
-      "slots": [
-        "O",
-        "B-Phenomenon",
-        "I-Phenomenon"
-      ],
-      "file": "2333.xml",
-      "start_token_id": 1,
-      "end_token_id": 3,
-      "id": 95,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "go",
-        "to",
+        "cell",
+        "phone",
+        "on",
         "the",
         "dining",
-        "room"
+        "room",
+        "table"
+      ],
+      "intent": "Placing",
+      "length": 9,
+      "slots": [
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "I-Theme",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2336.xml",
+      "start_token_id": 1,
+      "end_token_id": 9,
+      "id": 97,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "can",
+        "you",
+        "go",
+        "over",
+        "to",
+        "the",
+        "sofa"
       ],
       "intent": "Motion",
-      "length": 5,
+      "length": 7,
       "slots": [
+        "O",
+        "B-Theme",
         "O",
         "B-Goal",
         "I-Goal",
         "I-Goal",
         "I-Goal"
       ],
-      "file": "2337.xml",
+      "file": "2343.xml",
       "start_token_id": 1,
-      "end_token_id": 5,
-      "id": 98,
+      "end_token_id": 7,
+      "id": 103,
       "lexical_unit_ids": [
-        1
+        3
       ]
     },
     {
@@ -744,29 +726,87 @@
     },
     {
       "words": [
-        "you",
-        "are",
-        "in",
-        "a",
-        "very",
-        "big",
-        "bathroom"
+        "follow",
+        "my",
+        "friend",
+        "into",
+        "the",
+        "living",
+        "room"
       ],
-      "intent": "Being_located",
+      "intent": "Following",
       "length": 7,
       "slots": [
-        "B-Theme",
         "O",
-        "B-Location",
-        "I-Location",
-        "I-Location",
-        "I-Location",
-        "I-Location"
+        "B-Cotheme",
+        "I-Cotheme",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal"
       ],
-      "file": "2350.xml",
+      "file": "2346.xml",
       "start_token_id": 1,
       "end_token_id": 7,
-      "id": 110,
+      "id": 106,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "please",
+        "move",
+        "to",
+        "the",
+        "far",
+        "end",
+        "of",
+        "this",
+        "table"
+      ],
+      "intent": "Motion",
+      "length": 9,
+      "slots": [
+        "O",
+        "O",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2348.xml",
+      "start_token_id": 1,
+      "end_token_id": 9,
+      "id": 108,
+      "lexical_unit_ids": [
+        2
+      ]
+    },
+    {
+      "words": [
+        "please",
+        "pick",
+        "my",
+        "mobile",
+        "phone"
+      ],
+      "intent": "Taking",
+      "length": 5,
+      "slots": [
+        "O",
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "I-Theme"
+      ],
+      "file": "2351.xml",
+      "start_token_id": 1,
+      "end_token_id": 5,
+      "id": 111,
       "lexical_unit_ids": [
         2
       ]
@@ -806,392 +846,187 @@
     },
     {
       "words": [
-        "john",
-        "can",
-        "you",
-        "take",
-        "the",
-        "mug",
-        "in",
-        "the",
-        "kitchen"
-      ],
-      "intent": "Taking",
-      "length": 9,
-      "slots": [
-        "O",
-        "O",
-        "B-Agent",
-        "O",
-        "B-Theme",
-        "I-Theme",
-        "I-Theme",
-        "I-Theme",
-        "I-Theme"
-      ],
-      "file": "2354.xml",
-      "start_token_id": 1,
-      "end_token_id": 9,
-      "id": 115,
-      "lexical_unit_ids": [
-        4
-      ]
-    },
-    {
-      "words": [
-        "search",
-        "for",
-        "the",
-        "coffee",
-        "cups"
-      ],
-      "intent": "Searching",
-      "length": 5,
-      "slots": [
-        "O",
-        "B-Phenomenon",
-        "I-Phenomenon",
-        "I-Phenomenon",
-        "I-Phenomenon"
-      ],
-      "file": "2172.xml",
-      "start_token_id": 1,
-      "end_token_id": 5,
-      "id": 2,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "go",
-        "to",
-        "the",
-        "kitchen"
-      ],
-      "intent": "Motion",
-      "length": 4,
-      "slots": [
-        "O",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2174.xml",
-      "start_token_id": 1,
-      "end_token_id": 4,
-      "id": 4,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "please",
-        "carry",
-        "the",
-        "mug",
-        "to",
-        "the",
-        "bathroom"
-      ],
-      "intent": "Bringing",
-      "length": 7,
-      "slots": [
-        "O",
-        "O",
-        "B-Theme",
-        "I-Theme",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2175.xml",
-      "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 5,
-      "lexical_unit_ids": [
-        2
-      ]
-    },
-    {
-      "words": [
-        "please",
-        "find",
-        "the",
-        "lamp"
-      ],
-      "intent": "Searching",
-      "length": 4,
-      "slots": [
-        "O",
-        "O",
-        "B-Phenomenon",
-        "I-Phenomenon"
-      ],
-      "file": "2176.xml",
-      "start_token_id": 1,
-      "end_token_id": 4,
-      "id": 6,
-      "lexical_unit_ids": [
-        2
-      ]
-    },
-    {
-      "words": [
-        "there",
-        "are",
-        "two",
-        "sinks",
-        "in",
-        "the",
-        "kitchen"
-      ],
-      "intent": "Being_located",
-      "length": 7,
-      "slots": [
-        "O",
-        "O",
-        "B-Theme",
-        "I-Theme",
-        "B-Location",
-        "I-Location",
-        "I-Location"
-      ],
-      "file": "2184.xml",
-      "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 12,
-      "lexical_unit_ids": [
-        1,
-        2
-      ]
-    },
-    {
-      "words": [
-        "follow",
-        "the",
-        "person",
-        "behind",
-        "you"
-      ],
-      "intent": "Following",
-      "length": 5,
-      "slots": [
-        "O",
-        "B-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme"
-      ],
-      "file": "2186.xml",
-      "start_token_id": 1,
-      "end_token_id": 5,
-      "id": 14,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "there",
-        "is",
-        "some",
-        "bread",
-        "on",
-        "the",
-        "desk"
-      ],
-      "intent": "Being_located",
-      "length": 7,
-      "slots": [
-        "O",
-        "O",
-        "B-Theme",
-        "I-Theme",
-        "B-Location",
-        "I-Location",
-        "I-Location"
-      ],
-      "file": "2200.xml",
-      "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 29,
-      "lexical_unit_ids": [
-        1,
-        2
-      ]
-    },
-    {
-      "words": [
-        "carry",
-        "the",
-        "mug",
-        "to",
-        "the",
-        "dining",
-        "room"
-      ],
-      "intent": "Bringing",
-      "length": 7,
-      "slots": [
-        "O",
-        "B-Theme",
-        "I-Theme",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2248.xml",
-      "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 30,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
+        "michael",
         "follow",
         "the",
         "guy",
         "with",
         "the",
-        "blue",
-        "jacket"
+        "red",
+        "hoodie",
+        "and",
+        "the",
+        "white",
+        "shoes"
       ],
       "intent": "Following",
-      "length": 7,
+      "length": 12,
       "slots": [
+        "O",
         "O",
         "B-Cotheme",
         "I-Cotheme",
         "I-Cotheme",
         "I-Cotheme",
         "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
         "I-Cotheme"
       ],
-      "file": "2252.xml",
+      "file": "2358.xml",
       "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 35,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "place",
-        "the",
-        "mug",
-        "on",
-        "the",
-        "sink",
-        "nearest",
-        "to",
-        "the",
-        "refrigerator"
-      ],
-      "intent": "Placing",
-      "length": 10,
-      "slots": [
-        "O",
-        "B-Theme",
-        "I-Theme",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2263.xml",
-      "start_token_id": 1,
-      "end_token_id": 10,
-      "id": 48,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "please",
-        "go",
-        "to",
-        "the",
-        "table"
-      ],
-      "intent": "Motion",
-      "length": 5,
-      "slots": [
-        "O",
-        "O",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2269.xml",
-      "start_token_id": 1,
-      "end_token_id": 5,
-      "id": 54,
+      "end_token_id": 12,
+      "id": 120,
       "lexical_unit_ids": [
         2
       ]
     },
     {
       "words": [
-        "can",
-        "you",
-        "slowly",
         "follow",
-        "my",
-        "father"
+        "this",
+        "guy"
       ],
       "intent": "Following",
-      "length": 6,
+      "length": 3,
       "slots": [
-        "O",
-        "B-Theme",
-        "B-Manner",
         "O",
         "B-Cotheme",
         "I-Cotheme"
       ],
-      "file": "2271.xml",
+      "file": "2170.xml",
       "start_token_id": 1,
-      "end_token_id": 6,
-      "id": 56,
+      "end_token_id": 3,
+      "id": 0,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "follow",
+        "me",
+        "carefully"
+      ],
+      "intent": "Following",
+      "length": 3,
+      "slots": [
+        "O",
+        "B-Cotheme",
+        "B-Manner"
+      ],
+      "file": "2189.xml",
+      "start_token_id": 1,
+      "end_token_id": 3,
+      "id": 17,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "drive",
+        "to",
+        "kitchen"
+      ],
+      "intent": "Motion",
+      "length": 3,
+      "slots": [
+        "O",
+        "B-Goal",
+        "I-Goal"
+      ],
+      "file": "2193.xml",
+      "start_token_id": 1,
+      "end_token_id": 3,
+      "id": 21,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "put",
+        "the",
+        "mug",
+        "in",
+        "the",
+        "living",
+        "room"
+      ],
+      "intent": "Placing",
+      "length": 7,
+      "slots": [
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2195.xml",
+      "start_token_id": 1,
+      "end_token_id": 7,
+      "id": 23,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "can",
+        "you",
+        "please",
+        "go",
+        "to",
+        "the",
+        "living",
+        "room"
+      ],
+      "intent": "Motion",
+      "length": 8,
+      "slots": [
+        "O",
+        "B-Theme",
+        "O",
+        "O",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2249.xml",
+      "start_token_id": 1,
+      "end_token_id": 8,
+      "id": 31,
       "lexical_unit_ids": [
         4
       ]
     },
     {
       "words": [
-        "get",
+        "move",
+        "to",
         "the",
-        "blue",
-        "slippers",
-        "from",
-        "the",
-        "bathroom"
+        "living",
+        "room"
       ],
-      "intent": "Taking",
-      "length": 7,
+      "intent": "Motion",
+      "length": 5,
       "slots": [
         "O",
-        "B-Theme",
-        "I-Theme",
-        "I-Theme",
-        "B-Source",
-        "I-Source",
-        "I-Source"
+        "B-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal"
       ],
-      "file": "2273.xml",
+      "file": "2256.xml",
       "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 58,
+      "end_token_id": 5,
+      "id": 39,
       "lexical_unit_ids": [
         1
       ]
@@ -1200,27 +1035,54 @@
       "words": [
         "bring",
         "the",
-        "book",
-        "near",
+        "phone",
+        "to",
         "the",
-        "lamp"
+        "dinner",
+        "table"
       ],
       "intent": "Bringing",
-      "length": 6,
+      "length": 7,
       "slots": [
         "O",
         "B-Theme",
         "I-Theme",
         "B-Goal",
         "I-Goal",
+        "I-Goal",
         "I-Goal"
       ],
-      "file": "2274.xml",
+      "file": "2258.xml",
       "start_token_id": 1,
-      "end_token_id": 6,
-      "id": 59,
+      "end_token_id": 7,
+      "id": 41,
       "lexical_unit_ids": [
         1
+      ]
+    },
+    {
+      "words": [
+        "and",
+        "follow",
+        "the",
+        "skinny",
+        "person"
+      ],
+      "intent": "Following",
+      "length": 5,
+      "slots": [
+        "O",
+        "O",
+        "B-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme"
+      ],
+      "file": "2261.xml",
+      "start_token_id": 6,
+      "end_token_id": 10,
+      "id": 46,
+      "lexical_unit_ids": [
+        7
       ]
     },
     {
@@ -1254,91 +1116,23 @@
     },
     {
       "words": [
-        "bring",
-        "me",
+        "please",
+        "find",
         "the",
-        "towel",
-        "from",
-        "the",
-        "bathroom"
+        "flowers"
       ],
-      "intent": "Bringing",
-      "length": 7,
+      "intent": "Searching",
+      "length": 4,
       "slots": [
         "O",
-        "B-Beneficiary",
-        "B-Theme",
-        "I-Theme",
-        "B-Source",
-        "I-Source",
-        "I-Source"
-      ],
-      "file": "2282.xml",
-      "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 67,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "go",
-        "to",
-        "the",
-        "dining",
-        "table"
-      ],
-      "intent": "Motion",
-      "length": 5,
-      "slots": [
         "O",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal"
+        "B-Phenomenon",
+        "I-Phenomenon"
       ],
-      "file": "2288.xml",
+      "file": "2276.xml",
       "start_token_id": 1,
-      "end_token_id": 5,
-      "id": 71,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "this",
-        "is",
-        "a",
-        "bathroom",
-        "with",
-        "a",
-        "shower",
-        "bath",
-        "and",
-        "double",
-        "sink"
-      ],
-      "intent": "Being_in_category",
-      "length": 11,
-      "slots": [
-        "B-Item",
-        "O",
-        "B-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category"
-      ],
-      "file": "2290.xml",
-      "start_token_id": 1,
-      "end_token_id": 11,
-      "id": 73,
+      "end_token_id": 4,
+      "id": 61,
       "lexical_unit_ids": [
         2
       ]
@@ -1415,23 +1209,33 @@
     },
     {
       "words": [
-        "take",
-        "my",
-        "phone"
+        "and",
+        "bring",
+        "me",
+        "some",
+        "bread",
+        "from",
+        "the",
+        "pantry"
       ],
-      "intent": "Taking",
-      "length": 3,
+      "intent": "Bringing",
+      "length": 8,
       "slots": [
         "O",
+        "O",
+        "B-Beneficiary",
         "B-Theme",
-        "I-Theme"
+        "I-Theme",
+        "B-Source",
+        "I-Source",
+        "I-Source"
       ],
-      "file": "2298.xml",
-      "start_token_id": 1,
-      "end_token_id": 3,
-      "id": 82,
+      "file": "2295.xml",
+      "start_token_id": 7,
+      "end_token_id": 14,
+      "id": 79,
       "lexical_unit_ids": [
-        1
+        8
       ]
     },
     {
@@ -1457,91 +1261,83 @@
     },
     {
       "words": [
+        "carry",
         "this",
-        "is",
-        "a",
-        "living",
-        "room",
-        "with",
-        "white",
-        "furniture"
-      ],
-      "intent": "Being_in_category",
-      "length": 8,
-      "slots": [
-        "B-Item",
-        "O",
-        "B-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category"
-      ],
-      "file": "2335.xml",
-      "start_token_id": 1,
-      "end_token_id": 8,
-      "id": 96,
-      "lexical_unit_ids": [
-        2
-      ]
-    },
-    {
-      "words": [
-        "can",
-        "you",
-        "find",
-        "me",
-        "the",
-        "butcher",
-        "knife"
-      ],
-      "intent": "Searching",
-      "length": 7,
-      "slots": [
-        "O",
-        "B-Cognizer",
-        "O",
-        "B-Purpose",
-        "B-Phenomenon",
-        "I-Phenomenon",
-        "I-Phenomenon"
-      ],
-      "file": "2342.xml",
-      "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 102,
-      "lexical_unit_ids": [
-        3
-      ]
-    },
-    {
-      "words": [
-        "can",
-        "you",
-        "go",
-        "over",
+        "mug",
         "to",
         "the",
-        "sofa"
+        "bedstand"
       ],
-      "intent": "Motion",
-      "length": 7,
+      "intent": "Bringing",
+      "length": 6,
       "slots": [
         "O",
         "B-Theme",
+        "I-Theme",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2304.xml",
+      "start_token_id": 1,
+      "end_token_id": 6,
+      "id": 89,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "go",
+        "to",
+        "the",
+        "dining",
+        "room"
+      ],
+      "intent": "Motion",
+      "length": 5,
+      "slots": [
         "O",
         "B-Goal",
         "I-Goal",
         "I-Goal",
         "I-Goal"
       ],
-      "file": "2343.xml",
+      "file": "2337.xml",
+      "start_token_id": 1,
+      "end_token_id": 5,
+      "id": 98,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "find",
+        "the",
+        "lamp",
+        "in",
+        "the",
+        "living",
+        "room"
+      ],
+      "intent": "Searching",
+      "length": 7,
+      "slots": [
+        "O",
+        "B-Phenomenon",
+        "I-Phenomenon",
+        "B-Ground",
+        "I-Ground",
+        "I-Ground",
+        "I-Ground"
+      ],
+      "file": "2338.xml",
       "start_token_id": 1,
       "end_token_id": 7,
-      "id": 103,
+      "id": 99,
       "lexical_unit_ids": [
-        3
+        1
       ]
     },
     {
@@ -1583,764 +1379,64 @@
     },
     {
       "words": [
-        "could",
-        "you",
-        "please",
-        "move",
-        "to",
-        "the",
-        "sink"
-      ],
-      "intent": "Motion",
-      "length": 7,
-      "slots": [
-        "O",
-        "B-Theme",
-        "O",
-        "O",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2352.xml",
-      "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 113,
-      "lexical_unit_ids": [
-        4
-      ]
-    },
-    {
-      "words": [
-        "michael",
-        "follow",
-        "the",
-        "guy",
-        "with",
-        "the",
-        "red",
-        "hoodie",
-        "and",
-        "the",
-        "white",
-        "shoes"
-      ],
-      "intent": "Following",
-      "length": 12,
-      "slots": [
-        "O",
-        "O",
-        "B-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme"
-      ],
-      "file": "2358.xml",
-      "start_token_id": 1,
-      "end_token_id": 12,
-      "id": 120,
-      "lexical_unit_ids": [
-        2
-      ]
-    },
-    {
-      "words": [
-        "take",
-        "my",
-        "phone",
-        "into",
-        "the",
-        "living",
-        "room"
-      ],
-      "intent": "Bringing",
-      "length": 7,
-      "slots": [
-        "O",
-        "B-Theme",
-        "I-Theme",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2376.xml",
-      "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 128,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "follow",
-        "this",
-        "guy"
-      ],
-      "intent": "Following",
-      "length": 3,
-      "slots": [
-        "O",
-        "B-Cotheme",
-        "I-Cotheme"
-      ],
-      "file": "2170.xml",
-      "start_token_id": 1,
-      "end_token_id": 3,
-      "id": 0,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "can",
-        "you",
-        "bring",
-        "the",
-        "mug",
-        "to",
-        "the",
-        "couch",
-        "in",
-        "the",
-        "living",
-        "room"
-      ],
-      "intent": "Bringing",
-      "length": 12,
-      "slots": [
-        "O",
-        "B-Agent",
-        "O",
-        "B-Theme",
-        "I-Theme",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2183.xml",
-      "start_token_id": 1,
-      "end_token_id": 12,
-      "id": 11,
-      "lexical_unit_ids": [
-        3
-      ]
-    },
-    {
-      "words": [
-        "search",
-        "for",
-        "towel"
-      ],
-      "intent": "Searching",
-      "length": 3,
-      "slots": [
-        "O",
-        "B-Phenomenon",
-        "I-Phenomenon"
-      ],
-      "file": "2191.xml",
-      "start_token_id": 1,
-      "end_token_id": 3,
-      "id": 19,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "drive",
-        "to",
-        "kitchen"
-      ],
-      "intent": "Motion",
-      "length": 3,
-      "slots": [
-        "O",
-        "B-Goal",
-        "I-Goal"
-      ],
-      "file": "2193.xml",
-      "start_token_id": 1,
-      "end_token_id": 3,
-      "id": 21,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "go",
-        "to",
-        "the",
-        "bathroom"
-      ],
-      "intent": "Motion",
-      "length": 4,
-      "slots": [
-        "O",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2197.xml",
-      "start_token_id": 1,
-      "end_token_id": 4,
-      "id": 25,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "go",
-        "to",
-        "the",
-        "living",
-        "room"
-      ],
-      "intent": "Motion",
-      "length": 5,
-      "slots": [
-        "O",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2199.xml",
-      "start_token_id": 1,
-      "end_token_id": 5,
-      "id": 27,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "and",
-        "find",
-        "a",
-        "drink",
-        "for",
-        "me"
-      ],
-      "intent": "Searching",
-      "length": 6,
-      "slots": [
-        "O",
-        "O",
-        "B-Phenomenon",
-        "I-Phenomenon",
-        "B-Purpose",
-        "I-Purpose"
-      ],
-      "file": "2199.xml",
-      "start_token_id": 6,
-      "end_token_id": 11,
-      "id": 28,
-      "lexical_unit_ids": [
-        7
-      ]
-    },
-    {
-      "words": [
         "you",
         "are",
         "in",
-        "the",
-        "bedroom"
+        "a",
+        "very",
+        "big",
+        "bathroom"
       ],
       "intent": "Being_located",
-      "length": 5,
+      "length": 7,
       "slots": [
         "B-Theme",
         "O",
         "B-Location",
         "I-Location",
+        "I-Location",
+        "I-Location",
         "I-Location"
       ],
-      "file": "2250.xml",
+      "file": "2350.xml",
       "start_token_id": 1,
-      "end_token_id": 5,
-      "id": 32,
+      "end_token_id": 7,
+      "id": 110,
       "lexical_unit_ids": [
         2
       ]
     },
     {
       "words": [
-        "follow",
-        "the",
-        "person",
-        "in",
-        "front",
-        "of",
-        "you"
-      ],
-      "intent": "Following",
-      "length": 7,
-      "slots": [
-        "O",
-        "B-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme"
-      ],
-      "file": "2255.xml",
-      "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 38,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "there",
-        "is",
-        "a",
-        "bed",
-        "with",
-        "two",
-        "lamps"
-      ],
-      "intent": "Being_located",
-      "length": 7,
-      "slots": [
-        "O",
-        "O",
-        "B-Theme",
-        "I-Theme",
-        "I-Theme",
-        "I-Theme",
-        "I-Theme"
-      ],
-      "file": "2264.xml",
-      "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 49,
-      "lexical_unit_ids": [
-        1,
-        2
-      ]
-    },
-    {
-      "words": [
-        "find",
-        "me",
-        "a",
-        "cushion"
-      ],
-      "intent": "Searching",
-      "length": 4,
-      "slots": [
-        "O",
-        "B-Purpose",
-        "B-Phenomenon",
-        "I-Phenomenon"
-      ],
-      "file": "2266.xml",
-      "start_token_id": 1,
-      "end_token_id": 4,
-      "id": 51,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "bring",
-        "the",
-        "phone",
-        "to",
-        "the",
-        "living",
-        "room"
-      ],
-      "intent": "Bringing",
-      "length": 7,
-      "slots": [
-        "O",
-        "B-Theme",
-        "I-Theme",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2272.xml",
-      "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 57,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "please",
-        "follow",
-        "me",
-        "slowly"
-      ],
-      "intent": "Following",
-      "length": 4,
-      "slots": [
-        "O",
-        "O",
-        "B-Cotheme",
-        "B-Manner"
-      ],
-      "file": "2277.xml",
-      "start_token_id": 1,
-      "end_token_id": 4,
-      "id": 62,
-      "lexical_unit_ids": [
-        2
-      ]
-    },
-    {
-      "words": [
-        "bring",
-        "me",
-        "my",
-        "telephone",
-        "from",
-        "the",
-        "couch"
-      ],
-      "intent": "Bringing",
-      "length": 7,
-      "slots": [
-        "O",
-        "B-Beneficiary",
-        "B-Theme",
-        "I-Theme",
-        "B-Source",
-        "I-Source",
-        "I-Source"
-      ],
-      "file": "2280.xml",
-      "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 65,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
+        "john",
         "can",
         "you",
-        "go",
-        "to",
+        "take",
         "the",
-        "bathroom"
-      ],
-      "intent": "Motion",
-      "length": 6,
-      "slots": [
-        "O",
-        "B-Theme",
-        "O",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2292.xml",
-      "start_token_id": 1,
-      "end_token_id": 6,
-      "id": 75,
-      "lexical_unit_ids": [
-        3
-      ]
-    },
-    {
-      "words": [
-        "carry",
-        "this",
         "mug",
-        "to",
-        "the",
-        "bedstand"
-      ],
-      "intent": "Bringing",
-      "length": 6,
-      "slots": [
-        "O",
-        "B-Theme",
-        "I-Theme",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2304.xml",
-      "start_token_id": 1,
-      "end_token_id": 6,
-      "id": 89,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "this",
-        "is",
-        "a",
-        "bathroom",
-        "where",
-        "the",
-        "door",
-        "is",
-        "on",
-        "the",
-        "right"
-      ],
-      "intent": "Being_in_category",
-      "length": 11,
-      "slots": [
-        "B-Item",
-        "O",
-        "B-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category"
-      ],
-      "file": "2307.xml",
-      "start_token_id": 1,
-      "end_token_id": 11,
-      "id": 92,
-      "lexical_unit_ids": [
-        2
-      ]
-    },
-    {
-      "words": [
-        "put",
-        "the",
-        "cell",
-        "phone",
-        "on",
-        "the",
-        "dining",
-        "room",
-        "table"
-      ],
-      "intent": "Placing",
-      "length": 9,
-      "slots": [
-        "O",
-        "B-Theme",
-        "I-Theme",
-        "I-Theme",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2336.xml",
-      "start_token_id": 1,
-      "end_token_id": 9,
-      "id": 97,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "find",
-        "the",
-        "lamp",
         "in",
         "the",
-        "living",
-        "room"
+        "kitchen"
       ],
-      "intent": "Searching",
-      "length": 7,
-      "slots": [
-        "O",
-        "B-Phenomenon",
-        "I-Phenomenon",
-        "B-Ground",
-        "I-Ground",
-        "I-Ground",
-        "I-Ground"
-      ],
-      "file": "2338.xml",
-      "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 99,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "follow",
-        "my",
-        "friend",
-        "into",
-        "the",
-        "living",
-        "room"
-      ],
-      "intent": "Following",
-      "length": 7,
-      "slots": [
-        "O",
-        "B-Cotheme",
-        "I-Cotheme",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2346.xml",
-      "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 106,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "put",
-        "the",
-        "book",
-        "on",
-        "the",
-        "chair",
-        "near",
-        "the",
-        "dining",
-        "table"
-      ],
-      "intent": "Placing",
-      "length": 10,
-      "slots": [
-        "O",
-        "B-Theme",
-        "I-Theme",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2347.xml",
-      "start_token_id": 1,
-      "end_token_id": 10,
-      "id": 107,
-      "lexical_unit_ids": [
-        1
-      ]
-    },
-    {
-      "words": [
-        "please",
-        "move",
-        "to",
-        "the",
-        "far",
-        "end",
-        "of",
-        "this",
-        "table"
-      ],
-      "intent": "Motion",
+      "intent": "Taking",
       "length": 9,
       "slots": [
         "O",
         "O",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2348.xml",
-      "start_token_id": 1,
-      "end_token_id": 9,
-      "id": 108,
-      "lexical_unit_ids": [
-        2
-      ]
-    },
-    {
-      "words": [
-        "please",
-        "pick",
-        "my",
-        "mobile",
-        "phone"
-      ],
-      "intent": "Taking",
-      "length": 5,
-      "slots": [
-        "O",
+        "B-Agent",
         "O",
         "B-Theme",
         "I-Theme",
+        "I-Theme",
+        "I-Theme",
         "I-Theme"
       ],
-      "file": "2351.xml",
+      "file": "2354.xml",
       "start_token_id": 1,
-      "end_token_id": 5,
-      "id": 111,
+      "end_token_id": 9,
+      "id": 115,
       "lexical_unit_ids": [
-        2
-      ]
-    },
-    {
-      "words": [
-        "and",
-        "get",
-        "me",
-        "some",
-        "water"
-      ],
-      "intent": "Bringing",
-      "length": 5,
-      "slots": [
-        "O",
-        "O",
-        "B-Beneficiary",
-        "B-Theme",
-        "I-Theme"
-      ],
-      "file": "2355.xml",
-      "start_token_id": 6,
-      "end_token_id": 10,
-      "id": 118,
-      "lexical_unit_ids": [
-        7
+        4
       ]
     },
     {
@@ -2348,30 +1444,69 @@
         "would",
         "you",
         "please",
-        "follow",
+        "bring",
         "me",
-        "to",
+        "my",
+        "phone",
+        "from",
         "the",
-        "kitchen"
+        "bed",
+        "room"
       ],
-      "intent": "Following",
-      "length": 8,
+      "intent": "Bringing",
+      "length": 11,
       "slots": [
         "O",
+        "B-Agent",
+        "O",
+        "O",
+        "B-Beneficiary",
         "B-Theme",
-        "O",
-        "O",
-        "B-Cotheme",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal"
+        "I-Theme",
+        "B-Source",
+        "I-Source",
+        "I-Source",
+        "I-Source"
       ],
-      "file": "2359.xml",
+      "file": "2360.xml",
       "start_token_id": 1,
-      "end_token_id": 8,
-      "id": 121,
+      "end_token_id": 11,
+      "id": 122,
       "lexical_unit_ids": [
         4
+      ]
+    },
+    {
+      "words": [
+        "search",
+        "for",
+        "the",
+        "bottle",
+        "of",
+        "wine",
+        "on",
+        "the",
+        "table"
+      ],
+      "intent": "Searching",
+      "length": 9,
+      "slots": [
+        "O",
+        "B-Phenomenon",
+        "I-Phenomenon",
+        "I-Phenomenon",
+        "I-Phenomenon",
+        "I-Phenomenon",
+        "B-Ground",
+        "I-Ground",
+        "I-Ground"
+      ],
+      "file": "2372.xml",
+      "start_token_id": 1,
+      "end_token_id": 9,
+      "id": 125,
+      "lexical_unit_ids": [
+        1
       ]
     },
     {
@@ -2415,6 +1550,955 @@
     },
     {
       "words": [
+        "hey",
+        "robot",
+        "take",
+        "the",
+        "book"
+      ],
+      "intent": "Taking",
+      "length": 5,
+      "slots": [
+        "O",
+        "O",
+        "O",
+        "B-Theme",
+        "I-Theme"
+      ],
+      "file": "2374.xml",
+      "start_token_id": 1,
+      "end_token_id": 5,
+      "id": 127,
+      "lexical_unit_ids": [
+        3
+      ]
+    },
+    {
+      "words": [
+        "hey",
+        "robot",
+        "follow",
+        "john",
+        "everywhere",
+        "he",
+        "goes"
+      ],
+      "intent": "Following",
+      "length": 7,
+      "slots": [
+        "O",
+        "O",
+        "O",
+        "B-Cotheme",
+        "B-Area",
+        "I-Area",
+        "I-Area"
+      ],
+      "file": "2375.xml",
+      "start_token_id": 1,
+      "end_token_id": 7,
+      "id": 129,
+      "lexical_unit_ids": [
+        3
+      ]
+    },
+    {
+      "words": [
+        "take",
+        "my",
+        "phone",
+        "into",
+        "the",
+        "living",
+        "room"
+      ],
+      "intent": "Bringing",
+      "length": 7,
+      "slots": [
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2376.xml",
+      "start_token_id": 1,
+      "end_token_id": 7,
+      "id": 130,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "there",
+        "are",
+        "two",
+        "couches",
+        "facing",
+        "one",
+        "another"
+      ],
+      "intent": "Being_located",
+      "length": 7,
+      "slots": [
+        "O",
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "I-Theme",
+        "I-Theme",
+        "I-Theme"
+      ],
+      "file": "2425.xml",
+      "start_token_id": 1,
+      "end_token_id": 7,
+      "id": 131,
+      "lexical_unit_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "words": [
+        "please",
+        "move",
+        "to",
+        "the",
+        "front",
+        "of",
+        "the",
+        "fridge"
+      ],
+      "intent": "Motion",
+      "length": 8,
+      "slots": [
+        "O",
+        "O",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2427.xml",
+      "start_token_id": 1,
+      "end_token_id": 8,
+      "id": 133,
+      "lexical_unit_ids": [
+        2
+      ]
+    },
+    {
+      "words": [
+        "it",
+        "'s",
+        "a",
+        "diningroom",
+        "with",
+        "a",
+        "table",
+        "of",
+        "glass",
+        "in",
+        "it",
+        "with",
+        "six",
+        "chairs"
+      ],
+      "intent": "Being_in_category",
+      "length": 14,
+      "slots": [
+        "B-Item",
+        "O",
+        "B-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category"
+      ],
+      "file": "2760.xml",
+      "start_token_id": 1,
+      "end_token_id": 14,
+      "id": 135,
+      "lexical_unit_ids": [
+        2
+      ]
+    },
+    {
+      "words": [
+        "can",
+        "you",
+        "please",
+        "move",
+        "near",
+        "the",
+        "right",
+        "lamp"
+      ],
+      "intent": "Motion",
+      "length": 8,
+      "slots": [
+        "O",
+        "B-Theme",
+        "O",
+        "O",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2182.xml",
+      "start_token_id": 1,
+      "end_token_id": 8,
+      "id": 10,
+      "lexical_unit_ids": [
+        4
+      ]
+    },
+    {
+      "words": [
+        "follow",
+        "the",
+        "person",
+        "behind",
+        "you"
+      ],
+      "intent": "Following",
+      "length": 5,
+      "slots": [
+        "O",
+        "B-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme"
+      ],
+      "file": "2186.xml",
+      "start_token_id": 1,
+      "end_token_id": 5,
+      "id": 14,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "search",
+        "for",
+        "the",
+        "lamp"
+      ],
+      "intent": "Searching",
+      "length": 4,
+      "slots": [
+        "O",
+        "B-Phenomenon",
+        "I-Phenomenon",
+        "I-Phenomenon"
+      ],
+      "file": "2188.xml",
+      "start_token_id": 1,
+      "end_token_id": 4,
+      "id": 16,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "follow",
+        "that",
+        "person"
+      ],
+      "intent": "Following",
+      "length": 3,
+      "slots": [
+        "O",
+        "B-Cotheme",
+        "I-Cotheme"
+      ],
+      "file": "2194.xml",
+      "start_token_id": 1,
+      "end_token_id": 3,
+      "id": 22,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "go",
+        "to",
+        "the",
+        "bathroom"
+      ],
+      "intent": "Motion",
+      "length": 4,
+      "slots": [
+        "O",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2197.xml",
+      "start_token_id": 1,
+      "end_token_id": 4,
+      "id": 25,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "follow",
+        "the",
+        "guy",
+        "with",
+        "the",
+        "blue",
+        "jacket"
+      ],
+      "intent": "Following",
+      "length": 7,
+      "slots": [
+        "O",
+        "B-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme"
+      ],
+      "file": "2252.xml",
+      "start_token_id": 1,
+      "end_token_id": 7,
+      "id": 35,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "go",
+        "to",
+        "the",
+        "sofa"
+      ],
+      "intent": "Motion",
+      "length": 4,
+      "slots": [
+        "O",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2260.xml",
+      "start_token_id": 1,
+      "end_token_id": 4,
+      "id": 43,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "place",
+        "the",
+        "mug",
+        "on",
+        "the",
+        "sink",
+        "nearest",
+        "to",
+        "the",
+        "refrigerator"
+      ],
+      "intent": "Placing",
+      "length": 10,
+      "slots": [
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2263.xml",
+      "start_token_id": 1,
+      "end_token_id": 10,
+      "id": 48,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "please",
+        "bring",
+        "the",
+        "mug",
+        "to",
+        "the",
+        "bedroom"
+      ],
+      "intent": "Bringing",
+      "length": 7,
+      "slots": [
+        "O",
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2268.xml",
+      "start_token_id": 1,
+      "end_token_id": 7,
+      "id": 53,
+      "lexical_unit_ids": [
+        2
+      ]
+    },
+    {
+      "words": [
+        "the",
+        "living",
+        "room",
+        "is",
+        "very",
+        "light",
+        "and",
+        "bright"
+      ],
+      "intent": "Being_in_category",
+      "length": 8,
+      "slots": [
+        "B-Item",
+        "I-Item",
+        "I-Item",
+        "O",
+        "B-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category"
+      ],
+      "file": "2270.xml",
+      "start_token_id": 1,
+      "end_token_id": 8,
+      "id": 55,
+      "lexical_unit_ids": [
+        4
+      ]
+    },
+    {
+      "words": [
+        "can",
+        "you",
+        "slowly",
+        "follow",
+        "my",
+        "father"
+      ],
+      "intent": "Following",
+      "length": 6,
+      "slots": [
+        "O",
+        "B-Theme",
+        "B-Manner",
+        "O",
+        "B-Cotheme",
+        "I-Cotheme"
+      ],
+      "file": "2271.xml",
+      "start_token_id": 1,
+      "end_token_id": 6,
+      "id": 56,
+      "lexical_unit_ids": [
+        4
+      ]
+    },
+    {
+      "words": [
+        "bring",
+        "the",
+        "phone",
+        "to",
+        "the",
+        "living",
+        "room"
+      ],
+      "intent": "Bringing",
+      "length": 7,
+      "slots": [
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2272.xml",
+      "start_token_id": 1,
+      "end_token_id": 7,
+      "id": 57,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "get",
+        "the",
+        "blue",
+        "slippers",
+        "from",
+        "the",
+        "bathroom"
+      ],
+      "intent": "Taking",
+      "length": 7,
+      "slots": [
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "I-Theme",
+        "B-Source",
+        "I-Source",
+        "I-Source"
+      ],
+      "file": "2273.xml",
+      "start_token_id": 1,
+      "end_token_id": 7,
+      "id": 58,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "please",
+        "follow",
+        "me"
+      ],
+      "intent": "Following",
+      "length": 3,
+      "slots": [
+        "O",
+        "O",
+        "B-Cotheme"
+      ],
+      "file": "2283.xml",
+      "start_token_id": 1,
+      "end_token_id": 3,
+      "id": 68,
+      "lexical_unit_ids": [
+        2
+      ]
+    },
+    {
+      "words": [
+        "could",
+        "you",
+        "find",
+        "a",
+        "glass",
+        "in",
+        "the",
+        "dining",
+        "room"
+      ],
+      "intent": "Searching",
+      "length": 9,
+      "slots": [
+        "O",
+        "B-Cognizer",
+        "O",
+        "B-Phenomenon",
+        "I-Phenomenon",
+        "B-Ground",
+        "I-Ground",
+        "I-Ground",
+        "I-Ground"
+      ],
+      "file": "2285.xml",
+      "start_token_id": 1,
+      "end_token_id": 9,
+      "id": 69,
+      "lexical_unit_ids": [
+        3
+      ]
+    },
+    {
+      "words": [
+        "go",
+        "to",
+        "the",
+        "dining",
+        "table"
+      ],
+      "intent": "Motion",
+      "length": 5,
+      "slots": [
+        "O",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2288.xml",
+      "start_token_id": 1,
+      "end_token_id": 5,
+      "id": 71,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "go",
+        "to",
+        "the",
+        "fridge",
+        "inside",
+        "the",
+        "kitchen"
+      ],
+      "intent": "Motion",
+      "length": 7,
+      "slots": [
+        "O",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2296.xml",
+      "start_token_id": 1,
+      "end_token_id": 7,
+      "id": 80,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "the",
+        "sink",
+        "is",
+        "in",
+        "the",
+        "kitchen"
+      ],
+      "intent": "Being_located",
+      "length": 6,
+      "slots": [
+        "B-Theme",
+        "I-Theme",
+        "O",
+        "B-Location",
+        "I-Location",
+        "I-Location"
+      ],
+      "file": "2299.xml",
+      "start_token_id": 1,
+      "end_token_id": 6,
+      "id": 84,
+      "lexical_unit_ids": [
+        3
+      ]
+    },
+    {
+      "words": [
+        "get",
+        "my",
+        "coat",
+        "from",
+        "the",
+        "closet"
+      ],
+      "intent": "Taking",
+      "length": 6,
+      "slots": [
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "B-Source",
+        "I-Source",
+        "I-Source"
+      ],
+      "file": "2300.xml",
+      "start_token_id": 1,
+      "end_token_id": 6,
+      "id": 85,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "this",
+        "is",
+        "a",
+        "bathroom",
+        "where",
+        "the",
+        "door",
+        "is",
+        "on",
+        "the",
+        "right"
+      ],
+      "intent": "Being_in_category",
+      "length": 11,
+      "slots": [
+        "B-Item",
+        "O",
+        "B-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category"
+      ],
+      "file": "2307.xml",
+      "start_token_id": 1,
+      "end_token_id": 11,
+      "id": 92,
+      "lexical_unit_ids": [
+        2
+      ]
+    },
+    {
+      "words": [
+        "take",
+        "my",
+        "cellphone",
+        "to",
+        "the",
+        "bedroom"
+      ],
+      "intent": "Bringing",
+      "length": 6,
+      "slots": [
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2332.xml",
+      "start_token_id": 1,
+      "end_token_id": 6,
+      "id": 94,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "find",
+        "the",
+        "refrigerator"
+      ],
+      "intent": "Searching",
+      "length": 3,
+      "slots": [
+        "O",
+        "B-Phenomenon",
+        "I-Phenomenon"
+      ],
+      "file": "2333.xml",
+      "start_token_id": 1,
+      "end_token_id": 3,
+      "id": 95,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "fetch",
+        "me",
+        "the",
+        "tissue",
+        "box"
+      ],
+      "intent": "Bringing",
+      "length": 5,
+      "slots": [
+        "O",
+        "B-Beneficiary",
+        "B-Theme",
+        "I-Theme",
+        "I-Theme"
+      ],
+      "file": "2340.xml",
+      "start_token_id": 1,
+      "end_token_id": 5,
+      "id": 101,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "put",
+        "the",
+        "book",
+        "on",
+        "the",
+        "chair",
+        "near",
+        "the",
+        "dining",
+        "table"
+      ],
+      "intent": "Placing",
+      "length": 10,
+      "slots": [
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2347.xml",
+      "start_token_id": 1,
+      "end_token_id": 10,
+      "id": 107,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "michael",
+        "find",
+        "my",
+        "book",
+        "on",
+        "the",
+        "sofa",
+        "near",
+        "the",
+        "window"
+      ],
+      "intent": "Searching",
+      "length": 10,
+      "slots": [
+        "O",
+        "O",
+        "B-Phenomenon",
+        "I-Phenomenon",
+        "B-Ground",
+        "I-Ground",
+        "I-Ground",
+        "I-Ground",
+        "I-Ground",
+        "I-Ground"
+      ],
+      "file": "2356.xml",
+      "start_token_id": 1,
+      "end_token_id": 10,
+      "id": 119,
+      "lexical_unit_ids": [
+        2
+      ]
+    },
+    {
+      "words": [
+        "bring",
+        "me",
+        "yogurt",
+        "from",
+        "the",
+        "fridge"
+      ],
+      "intent": "Bringing",
+      "length": 6,
+      "slots": [
+        "O",
+        "B-Beneficiary",
+        "B-Theme",
+        "B-Source",
+        "I-Source",
+        "I-Source"
+      ],
+      "file": "2370.xml",
+      "start_token_id": 1,
+      "end_token_id": 6,
+      "id": 123,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "there",
+        "is",
+        "a",
+        "table",
+        "in",
+        "the",
+        "center",
+        "of",
+        "the",
+        "dining",
+        "room"
+      ],
+      "intent": "Being_located",
+      "length": 11,
+      "slots": [
+        "O",
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "B-Location",
+        "I-Location",
+        "I-Location",
+        "I-Location",
+        "I-Location",
+        "I-Location",
+        "I-Location"
+      ],
+      "file": "2426.xml",
+      "start_token_id": 1,
+      "end_token_id": 11,
+      "id": 132,
+      "lexical_unit_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "words": [
         "michael",
         "carry",
         "me",
@@ -2453,9 +2537,65 @@
       "file": "3395.xml",
       "start_token_id": 1,
       "end_token_id": 15,
-      "id": 134,
+      "id": 136,
       "lexical_unit_ids": [
         2
+      ]
+    },
+    {
+      "words": [
+        "this",
+        "is",
+        "a",
+        "table",
+        "with",
+        "a",
+        "glass",
+        "deck"
+      ],
+      "intent": "Being_in_category",
+      "length": 8,
+      "slots": [
+        "B-Item",
+        "O",
+        "B-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category"
+      ],
+      "file": "2171.xml",
+      "start_token_id": 1,
+      "end_token_id": 8,
+      "id": 1,
+      "lexical_unit_ids": [
+        2
+      ]
+    },
+    {
+      "words": [
+        "search",
+        "for",
+        "the",
+        "coffee",
+        "cups"
+      ],
+      "intent": "Searching",
+      "length": 5,
+      "slots": [
+        "O",
+        "B-Phenomenon",
+        "I-Phenomenon",
+        "I-Phenomenon",
+        "I-Phenomenon"
+      ],
+      "file": "2172.xml",
+      "start_token_id": 1,
+      "end_token_id": 5,
+      "id": 2,
+      "lexical_unit_ids": [
+        1
       ]
     },
     {
@@ -2488,92 +2628,113 @@
     {
       "words": [
         "please",
-        "bring",
+        "carry",
         "the",
-        "mobile",
-        "phone",
+        "mug",
         "to",
         "the",
-        "livingroom"
+        "bathroom"
       ],
       "intent": "Bringing",
-      "length": 8,
+      "length": 7,
       "slots": [
         "O",
         "O",
         "B-Theme",
         "I-Theme",
-        "I-Theme",
         "B-Goal",
         "I-Goal",
         "I-Goal"
       ],
-      "file": "2177.xml",
+      "file": "2175.xml",
       "start_token_id": 1,
-      "end_token_id": 8,
-      "id": 7,
+      "end_token_id": 7,
+      "id": 5,
       "lexical_unit_ids": [
         2
       ]
     },
     {
       "words": [
-        "follow",
+        "there",
+        "are",
+        "two",
+        "sinks",
+        "in",
         "the",
-        "person",
-        "with",
-        "the",
-        "blonde",
-        "hair",
-        "and",
-        "the",
-        "black",
-        "pants",
-        "fast"
+        "kitchen"
       ],
-      "intent": "Following",
-      "length": 12,
+      "intent": "Being_located",
+      "length": 7,
       "slots": [
         "O",
-        "B-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme",
-        "B-Speed"
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "B-Location",
+        "I-Location",
+        "I-Location"
       ],
-      "file": "2181.xml",
+      "file": "2184.xml",
       "start_token_id": 1,
-      "end_token_id": 12,
-      "id": 9,
+      "end_token_id": 7,
+      "id": 12,
+      "lexical_unit_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "words": [
+        "drive",
+        "to",
+        "the",
+        "fridge"
+      ],
+      "intent": "Motion",
+      "length": 4,
+      "slots": [
+        "O",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal"
+      ],
+      "file": "2187.xml",
+      "start_token_id": 1,
+      "end_token_id": 4,
+      "id": 15,
       "lexical_unit_ids": [
         1
       ]
     },
     {
       "words": [
-        "follow",
-        "me",
-        "carefully"
+        "there",
+        "is",
+        "some",
+        "bread",
+        "on",
+        "the",
+        "desk"
       ],
-      "intent": "Following",
-      "length": 3,
+      "intent": "Being_located",
+      "length": 7,
       "slots": [
         "O",
-        "B-Cotheme",
-        "B-Manner"
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "B-Location",
+        "I-Location",
+        "I-Location"
       ],
-      "file": "2189.xml",
+      "file": "2200.xml",
       "start_token_id": 1,
-      "end_token_id": 3,
-      "id": 17,
+      "end_token_id": 7,
+      "id": 29,
       "lexical_unit_ids": [
-        1
+        1,
+        2
       ]
     },
     {
@@ -2611,52 +2772,60 @@
     },
     {
       "words": [
-        "move",
-        "to",
+        "follow",
         "the",
-        "living",
-        "room"
+        "person",
+        "in",
+        "front",
+        "of",
+        "you"
       ],
-      "intent": "Motion",
-      "length": 5,
+      "intent": "Following",
+      "length": 7,
       "slots": [
         "O",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal"
+        "B-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme"
       ],
-      "file": "2256.xml",
+      "file": "2255.xml",
       "start_token_id": 1,
-      "end_token_id": 5,
-      "id": 39,
+      "end_token_id": 7,
+      "id": 38,
       "lexical_unit_ids": [
         1
       ]
     },
     {
       "words": [
-        "and",
-        "follow",
+        "bring",
+        "me",
         "the",
-        "skinny",
-        "person"
+        "pillow",
+        "from",
+        "the",
+        "bed"
       ],
-      "intent": "Following",
-      "length": 5,
+      "intent": "Bringing",
+      "length": 7,
       "slots": [
         "O",
-        "O",
-        "B-Cotheme",
-        "I-Cotheme",
-        "I-Cotheme"
+        "B-Beneficiary",
+        "B-Theme",
+        "I-Theme",
+        "B-Source",
+        "I-Source",
+        "I-Source"
       ],
-      "file": "2261.xml",
-      "start_token_id": 6,
-      "end_token_id": 10,
-      "id": 46,
+      "file": "2257.xml",
+      "start_token_id": 1,
+      "end_token_id": 7,
+      "id": 40,
       "lexical_unit_ids": [
-        7
+        1
       ]
     },
     {
@@ -2723,104 +2892,209 @@
     },
     {
       "words": [
-        "the",
-        "living",
-        "room",
-        "is",
-        "very",
-        "light",
-        "and",
-        "bright"
+        "go",
+        "along",
+        "with",
+        "them"
       ],
-      "intent": "Being_in_category",
-      "length": 8,
-      "slots": [
-        "B-Item",
-        "I-Item",
-        "I-Item",
-        "O",
-        "B-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category"
-      ],
-      "file": "2270.xml",
-      "start_token_id": 1,
-      "end_token_id": 8,
-      "id": 55,
-      "lexical_unit_ids": [
-        4
-      ]
-    },
-    {
-      "words": [
-        "please",
-        "find",
-        "the",
-        "flowers"
-      ],
-      "intent": "Searching",
+      "intent": "Following",
       "length": 4,
       "slots": [
         "O",
         "O",
-        "B-Phenomenon",
-        "I-Phenomenon"
+        "B-Cotheme",
+        "I-Cotheme"
       ],
-      "file": "2276.xml",
+      "file": "2267.xml",
       "start_token_id": 1,
       "end_token_id": 4,
-      "id": 61,
+      "id": 52,
       "lexical_unit_ids": [
+        1,
         2
       ]
     },
     {
       "words": [
-        "could",
-        "you",
-        "please",
-        "go",
-        "to",
-        "the",
-        "door"
+        "follow",
+        "me"
       ],
-      "intent": "Motion",
+      "intent": "Following",
+      "length": 2,
+      "slots": [
+        "O",
+        "B-Cotheme"
+      ],
+      "file": "2279.xml",
+      "start_token_id": 1,
+      "end_token_id": 2,
+      "id": 64,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "bring",
+        "me",
+        "my",
+        "telephone",
+        "from",
+        "the",
+        "couch"
+      ],
+      "intent": "Bringing",
       "length": 7,
       "slots": [
         "O",
+        "B-Beneficiary",
         "B-Theme",
+        "I-Theme",
+        "B-Source",
+        "I-Source",
+        "I-Source"
+      ],
+      "file": "2280.xml",
+      "start_token_id": 1,
+      "end_token_id": 7,
+      "id": 65,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "robot",
+        "go",
+        "get",
+        "a",
+        "book",
+        "for",
+        "me"
+      ],
+      "intent": "Taking",
+      "length": 7,
+      "slots": [
         "O",
+        "O",
+        "O",
+        "B-Theme",
+        "I-Theme",
+        "B-Purpose",
+        "I-Purpose"
+      ],
+      "file": "2289.xml",
+      "start_token_id": 1,
+      "end_token_id": 7,
+      "id": 72,
+      "lexical_unit_ids": [
+        3
+      ]
+    },
+    {
+      "words": [
+        "can",
+        "you",
+        "go",
+        "to",
+        "the",
+        "bathroom"
+      ],
+      "intent": "Motion",
+      "length": 6,
+      "slots": [
+        "O",
+        "B-Theme",
         "O",
         "B-Goal",
         "I-Goal",
         "I-Goal"
       ],
-      "file": "2278.xml",
+      "file": "2292.xml",
       "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 63,
+      "end_token_id": 6,
+      "id": 75,
       "lexical_unit_ids": [
-        4
+        3
       ]
     },
     {
       "words": [
-        "please",
-        "follow",
+        "come",
+        "with",
         "me"
       ],
       "intent": "Following",
       "length": 3,
       "slots": [
         "O",
-        "O",
-        "B-Cotheme"
+        "B-Cotheme",
+        "I-Cotheme"
       ],
-      "file": "2283.xml",
+      "file": "2301.xml",
       "start_token_id": 1,
       "end_token_id": 3,
-      "id": 68,
+      "id": 86,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "follow",
+        "the",
+        "person",
+        "in",
+        "front",
+        "of",
+        "me"
+      ],
+      "intent": "Following",
+      "length": 7,
+      "slots": [
+        "O",
+        "B-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme",
+        "I-Cotheme"
+      ],
+      "file": "2306.xml",
+      "start_token_id": 1,
+      "end_token_id": 7,
+      "id": 91,
+      "lexical_unit_ids": [
+        1
+      ]
+    },
+    {
+      "words": [
+        "this",
+        "is",
+        "a",
+        "living",
+        "room",
+        "with",
+        "white",
+        "furniture"
+      ],
+      "intent": "Being_in_category",
+      "length": 8,
+      "slots": [
+        "B-Item",
+        "O",
+        "B-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category",
+        "I-Category"
+      ],
+      "file": "2335.xml",
+      "start_token_id": 1,
+      "end_token_id": 8,
+      "id": 96,
       "lexical_unit_ids": [
         2
       ]
@@ -2829,93 +3103,27 @@
       "words": [
         "can",
         "you",
-        "grab",
-        "my",
-        "wine",
-        "glass",
-        "from",
+        "find",
+        "me",
         "the",
-        "dining",
-        "room"
+        "butcher",
+        "knife"
       ],
-      "intent": "Taking",
-      "length": 10,
+      "intent": "Searching",
+      "length": 7,
       "slots": [
         "O",
-        "B-Agent",
+        "B-Cognizer",
         "O",
-        "B-Theme",
-        "I-Theme",
-        "I-Theme",
-        "B-Source",
-        "I-Source",
-        "I-Source",
-        "I-Source"
+        "B-Purpose",
+        "B-Phenomenon",
+        "I-Phenomenon",
+        "I-Phenomenon"
       ],
-      "file": "2294.xml",
+      "file": "2342.xml",
       "start_token_id": 1,
-      "end_token_id": 10,
-      "id": 77,
-      "lexical_unit_ids": [
-        3
-      ]
-    },
-    {
-      "words": [
-        "and",
-        "place",
-        "it",
-        "on",
-        "the",
-        "bench",
-        "in",
-        "the",
-        "kitchen"
-      ],
-      "intent": "Placing",
-      "length": 9,
-      "slots": [
-        "O",
-        "O",
-        "B-Theme",
-        "B-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal",
-        "I-Goal"
-      ],
-      "file": "2298.xml",
-      "start_token_id": 4,
-      "end_token_id": 12,
-      "id": 83,
-      "lexical_unit_ids": [
-        5
-      ]
-    },
-    {
-      "words": [
-        "the",
-        "sink",
-        "is",
-        "in",
-        "the",
-        "kitchen"
-      ],
-      "intent": "Being_located",
-      "length": 6,
-      "slots": [
-        "B-Theme",
-        "I-Theme",
-        "O",
-        "B-Location",
-        "I-Location",
-        "I-Location"
-      ],
-      "file": "2299.xml",
-      "start_token_id": 1,
-      "end_token_id": 6,
-      "id": 84,
+      "end_token_id": 7,
+      "id": 102,
       "lexical_unit_ids": [
         3
       ]
@@ -2970,203 +3178,58 @@
     },
     {
       "words": [
-        "michael",
-        "find",
-        "my",
-        "book",
-        "on",
+        "put",
         "the",
-        "sofa",
-        "near",
+        "coffee",
+        "mug",
+        "into",
         "the",
-        "window"
+        "dishwasher"
       ],
-      "intent": "Searching",
-      "length": 10,
+      "intent": "Placing",
+      "length": 7,
       "slots": [
         "O",
-        "O",
-        "B-Phenomenon",
-        "I-Phenomenon",
-        "B-Ground",
-        "I-Ground",
-        "I-Ground",
-        "I-Ground",
-        "I-Ground",
-        "I-Ground"
-      ],
-      "file": "2356.xml",
-      "start_token_id": 1,
-      "end_token_id": 10,
-      "id": 119,
-      "lexical_unit_ids": [
-        2
-      ]
-    },
-    {
-      "words": [
-        "would",
-        "you",
-        "please",
-        "bring",
-        "me",
-        "my",
-        "phone",
-        "from",
-        "the",
-        "bed",
-        "room"
-      ],
-      "intent": "Bringing",
-      "length": 11,
-      "slots": [
-        "O",
-        "B-Agent",
-        "O",
-        "O",
-        "B-Beneficiary",
         "B-Theme",
         "I-Theme",
-        "B-Source",
-        "I-Source",
-        "I-Source",
-        "I-Source"
+        "I-Theme",
+        "B-Goal",
+        "I-Goal",
+        "I-Goal"
       ],
-      "file": "2360.xml",
+      "file": "2371.xml",
       "start_token_id": 1,
-      "end_token_id": 11,
-      "id": 122,
-      "lexical_unit_ids": [
-        4
-      ]
-    },
-    {
-      "words": [
-        "bring",
-        "me",
-        "yogurt",
-        "from",
-        "the",
-        "fridge"
-      ],
-      "intent": "Bringing",
-      "length": 6,
-      "slots": [
-        "O",
-        "B-Beneficiary",
-        "B-Theme",
-        "B-Source",
-        "I-Source",
-        "I-Source"
-      ],
-      "file": "2370.xml",
-      "start_token_id": 1,
-      "end_token_id": 6,
-      "id": 123,
+      "end_token_id": 7,
+      "id": 124,
       "lexical_unit_ids": [
         1
       ]
     },
     {
       "words": [
-        "hey",
-        "robot",
-        "follow",
-        "john",
-        "everywhere",
-        "he",
-        "goes"
+        "and",
+        "put",
+        "it",
+        "in",
+        "the",
+        "oven"
       ],
-      "intent": "Following",
-      "length": 7,
-      "slots": [
-        "O",
-        "O",
-        "O",
-        "B-Cotheme",
-        "B-Area",
-        "I-Area",
-        "I-Area"
-      ],
-      "file": "2375.xml",
-      "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 127,
-      "lexical_unit_ids": [
-        3
-      ]
-    },
-    {
-      "words": [
-        "there",
-        "are",
-        "two",
-        "couches",
-        "facing",
-        "one",
-        "another"
-      ],
-      "intent": "Being_located",
-      "length": 7,
+      "intent": "Placing",
+      "length": 6,
       "slots": [
         "O",
         "O",
         "B-Theme",
-        "I-Theme",
-        "I-Theme",
-        "I-Theme",
-        "I-Theme"
+        "B-Goal",
+        "I-Goal",
+        "I-Goal"
       ],
-      "file": "2425.xml",
-      "start_token_id": 1,
-      "end_token_id": 7,
-      "id": 129,
+      "file": "2374.xml",
+      "start_token_id": 6,
+      "end_token_id": 11,
+      "id": 128,
       "lexical_unit_ids": [
-        1,
-        2
-      ]
-    },
-    {
-      "words": [
-        "it",
-        "'s",
-        "a",
-        "diningroom",
-        "with",
-        "a",
-        "table",
-        "of",
-        "glass",
-        "in",
-        "it",
-        "with",
-        "six",
-        "chairs"
-      ],
-      "intent": "Being_in_category",
-      "length": 14,
-      "slots": [
-        "B-Item",
-        "O",
-        "B-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category",
-        "I-Category"
-      ],
-      "file": "2760.xml",
-      "start_token_id": 1,
-      "end_token_id": 14,
-      "id": 133,
-      "lexical_unit_ids": [
-        2
+        7
       ]
     }
   ],
