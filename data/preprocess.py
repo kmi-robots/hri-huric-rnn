@@ -621,6 +621,8 @@ def main():
         alexa_prepare('huric_eb/modern', 'roo bot train', 'train_samples.json', 'alexa_train.json')
         lex_from_alexa('huric_eb/modern/amazon', 'train_only', 'alexa_train.json', 'lexTrainBot.json')
 
+    else:
+        raise ValueError(which)
 
 if __name__ == '__main__':
     main()
