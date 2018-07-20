@@ -656,6 +656,8 @@ def main():
         for subfolder in splits_subfolders:
             huric_preprocess('huric_eb/speakers_split/{}'.format(subfolder))
 
+    else:
+        raise ValueError(which)
 
 if __name__ == '__main__':
     main()
