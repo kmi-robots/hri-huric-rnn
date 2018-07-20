@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import json
 import os
 from itertools import groupby
@@ -65,24 +67,28 @@ def group_by_criterions():
     # should do something not to have code around
     pass
 
-groups = {
-    'en_nation': group_by(speakers, speaker_to_en_countries, S_UID_COLUMN, True),
-    'native': group_by(speakers, speaker_to_proficiency, S_UID_COLUMN, True),
-    'proficiency': group_by(speakers, speaker_to_native, S_UID_COLUMN, True)
-}
-xml_existing_files = sorted([x.name for x in XML_LOCATION.iterdir() if x.is_file()])
-print('existing XML files:', len(xml_existing_files))
-results = {}
-for group_criterion, groups in groups.items():
-    print('group_criterion:', group_criterion)
-    results[group_criterion] = {}
-    for group_name, group in groups.items():
-        commands = get_command_ids_from_speakers_uid(group)
-        commands = ['{}.xml'.format(c) for c in commands]
-        # filter by existing XML files in HuRIC
-        existing_commands = [c for c in commands if c in xml_existing_files]
-        print('\t', group_name, 'commands all:', len(commands), 'commands existing:', len(existing_commands))
-        results[group_criterion][group_name] = sorted(existing_commands)
-# save the groups
-with open('{}/{}'.format(MY_LOCATION, 'groups.json'), 'w') as json_file:
-    json.dump(results, json_file)
+def main():
+    groups = {
+        'en_nation': group_by(speakers, speaker_to_en_countries, S_UID_COLUMN, True),
+        'native': group_by(speakers, speaker_to_proficiency, S_UID_COLUMN, True),
+        'proficiency': group_by(speakers, speaker_to_native, S_UID_COLUMN, True)
+    }
+    xml_existing_files = sorted([x.name for x in XML_LOCATION.iterdir() if x.is_file()])
+    print('existing XML files:', len(xml_existing_files))
+    results = {}
+    for group_criterion, groups in groups.items():
+        print('group_criterion:', group_criterion)
+        results[group_criterion] = {}
+        for group_name, group in groups.items():
+            commands = get_command_ids_from_speakers_uid(group)
+            commands = ['{}.xml'.format(c) for c in commands]
+            # filter by existing XML files in HuRIC
+            existing_commands = [c for c in commands if c in xml_existing_files]
+            print('\t', group_name, 'commands all:', len(commands), 'commands existing:', len(existing_commands))
+            results[group_criterion][group_name] = sorted(existing_commands)
+    # save the groups
+    with open('{}/{}'.format(MY_LOCATION, 'groups.json'), 'w') as json_file:
+        json.dump(results, json_file)
+
+if __name__ == '__main__':
+    main()
