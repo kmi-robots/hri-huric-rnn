@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106247">
+	<sentence>You will need a visa to enter China ( see page 109 for information ) .</sentence>
+	<tokens>
+		<token id="1" lemma="-PRON-" pos="PRP" surface="You"/>
+		<token id="2" lemma="will" pos="MD" surface="will"/>
+		<token id="3" lemma="need" pos="VB" surface="need"/>
+		<token id="4" lemma="a" pos="DT" surface="a"/>
+		<token id="5" lemma="visa" pos="NN" surface="visa"/>
+		<token id="6" lemma="to" pos="TO" surface="to"/>
+		<token id="7" lemma="enter" pos="VB" surface="enter"/>
+		<token id="8" lemma="china" pos="NNP" surface="China"/>
+		<token id="9" lemma="(" pos="-LRB-" surface="("/>
+		<token id="10" lemma="see" pos="VB" surface="see"/>
+		<token id="11" lemma="page" pos="NN" surface="page"/>
+		<token id="12" lemma="109" pos="CD" surface="109"/>
+		<token id="13" lemma="for" pos="IN" surface="for"/>
+		<token id="14" lemma="information" pos="NN" surface="information"/>
+		<token id="15" lemma=")" pos="-RRB-" surface=")"/>
+		<token id="16" lemma="." pos="." surface="."/>
+	</tokens>
+	<dependencies>
+		<dep from="3" to="1" type="nsubj"/>
+		<dep from="3" to="2" type="aux"/>
+		<dep from="0" to="3" type="root"/>
+		<dep from="5" to="4" type="det"/>
+		<dep from="3" to="5" type="dobj"/>
+		<dep from="7" to="6" type="aux"/>
+		<dep from="3" to="7" type="advcl"/>
+		<dep from="7" to="8" type="dobj"/>
+		<dep from="10" to="9" type="punct"/>
+		<dep from="3" to="10" type="parataxis"/>
+		<dep from="10" to="11" type="dobj"/>
+		<dep from="11" to="12" type="nummod"/>
+		<dep from="10" to="13" type="prep"/>
+		<dep from="13" to="14" type="pobj"/>
+		<dep from="10" to="15" type="punct"/>
+		<dep from="3" to="16" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Entering">
+				<lexicalUnit>
+					<token id="7"/>
+				</lexicalUnit>
+				<frameElement type="Goal">
+					<token id="8"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

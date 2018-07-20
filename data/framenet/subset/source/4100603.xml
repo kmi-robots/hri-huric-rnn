@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100603">
+	<sentence>To the south and east is St . Stephen 's Green and Georgian Dublin where the national museums are located .</sentence>
+	<tokens>
+		<token id="1" lemma="to" pos="IN" surface="To"/>
+		<token id="2" lemma="the" pos="DT" surface="the"/>
+		<token id="3" lemma="south" pos="NN" surface="south"/>
+		<token id="4" lemma="and" pos="CC" surface="and"/>
+		<token id="5" lemma="east" pos="NN" surface="east"/>
+		<token id="6" lemma="be" pos="VBZ" surface="is"/>
+		<token id="7" lemma="st" pos="NNP" surface="St"/>
+		<token id="8" lemma="." pos="." surface="."/>
+		<token id="9" lemma="stephen" pos="NNP" surface="Stephen"/>
+		<token id="10" lemma="'s" pos="POS" surface="'s"/>
+		<token id="11" lemma="green" pos="NNP" surface="Green"/>
+		<token id="12" lemma="and" pos="CC" surface="and"/>
+		<token id="13" lemma="georgian" pos="NNP" surface="Georgian"/>
+		<token id="14" lemma="dublin" pos="NNP" surface="Dublin"/>
+		<token id="15" lemma="where" pos="WRB" surface="where"/>
+		<token id="16" lemma="the" pos="DT" surface="the"/>
+		<token id="17" lemma="national" pos="JJ" surface="national"/>
+		<token id="18" lemma="museum" pos="NNS" surface="museums"/>
+		<token id="19" lemma="be" pos="VBP" surface="are"/>
+		<token id="20" lemma="locate" pos="VBN" surface="located"/>
+		<token id="21" lemma="." pos="." surface="."/>
+	</tokens>
+	<dependencies>
+		<dep from="6" to="1" type="prep"/>
+		<dep from="3" to="2" type="det"/>
+		<dep from="1" to="3" type="pobj"/>
+		<dep from="3" to="4" type="cc"/>
+		<dep from="3" to="5" type="conj"/>
+		<dep from="0" to="6" type="root"/>
+		<dep from="6" to="7" type="nsubj"/>
+		<dep from="6" to="8" type="punct"/>
+		<dep from="11" to="9" type="poss"/>
+		<dep from="9" to="10" type="case"/>
+		<dep from="0" to="11" type="root"/>
+		<dep from="11" to="12" type="cc"/>
+		<dep from="14" to="13" type="compound"/>
+		<dep from="11" to="14" type="conj"/>
+		<dep from="20" to="15" type="advmod"/>
+		<dep from="18" to="16" type="det"/>
+		<dep from="18" to="17" type="amod"/>
+		<dep from="20" to="18" type="nsubjpass"/>
+		<dep from="20" to="19" type="auxpass"/>
+		<dep from="11" to="20" type="relcl"/>
+		<dep from="11" to="21" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Being_located">
+				<lexicalUnit>
+					<token id="20"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="16"/>
+					<token id="17"/>
+					<token id="18"/>
+				</frameElement>
+				<frameElement type="Location">
+					<token id="7"/>
+					<token id="8"/>
+					<token id="9"/>
+					<token id="10"/>
+					<token id="11"/>
+					<token id="12"/>
+					<token id="13"/>
+					<token id="14"/>
+				</frameElement>
+				<frameElement type="Location">
+					<token id="15"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

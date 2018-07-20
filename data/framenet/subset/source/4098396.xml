@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098396">
+	<sentence>The president has n't gone to Iraq since the diplomat left Baghdad .</sentence>
+	<tokens>
+		<token id="1" lemma="the" pos="DT" surface="The"/>
+		<token id="2" lemma="president" pos="NN" surface="president"/>
+		<token id="3" lemma="have" pos="VBZ" surface="has"/>
+		<token id="4" lemma="n't" pos="RB" surface="n't"/>
+		<token id="5" lemma="go" pos="VBN" surface="gone"/>
+		<token id="6" lemma="to" pos="IN" surface="to"/>
+		<token id="7" lemma="iraq" pos="NNP" surface="Iraq"/>
+		<token id="8" lemma="since" pos="IN" surface="since"/>
+		<token id="9" lemma="the" pos="DT" surface="the"/>
+		<token id="10" lemma="diplomat" pos="NN" surface="diplomat"/>
+		<token id="11" lemma="leave" pos="VBD" surface="left"/>
+		<token id="12" lemma="baghdad" pos="NNP" surface="Baghdad"/>
+		<token id="13" lemma="." pos="." surface="."/>
+	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="det"/>
+		<dep from="5" to="2" type="nsubj"/>
+		<dep from="5" to="3" type="aux"/>
+		<dep from="5" to="4" type="neg"/>
+		<dep from="0" to="5" type="root"/>
+		<dep from="5" to="6" type="prep"/>
+		<dep from="6" to="7" type="pobj"/>
+		<dep from="11" to="8" type="mark"/>
+		<dep from="10" to="9" type="det"/>
+		<dep from="11" to="10" type="nsubj"/>
+		<dep from="5" to="11" type="advcl"/>
+		<dep from="11" to="12" type="dobj"/>
+		<dep from="5" to="13" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Motion">
+				<lexicalUnit>
+					<token id="5"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="1"/>
+					<token id="2"/>
+				</frameElement>
+				<frameElement type="Goal">
+					<token id="6"/>
+					<token id="7"/>
+				</frameElement>
+				<frameElement type="Time">
+					<token id="8"/>
+					<token id="9"/>
+					<token id="10"/>
+					<token id="11"/>
+					<token id="12"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

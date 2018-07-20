@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096672">
+	<sentence>In addition to these , there have been new revelations about Iran 's centrifuge enrichment program located in Natanz and heavy water related activity in Arak .</sentence>
+	<tokens>
+		<token id="1" lemma="in" pos="IN" surface="In"/>
+		<token id="2" lemma="addition" pos="NN" surface="addition"/>
+		<token id="3" lemma="to" pos="IN" surface="to"/>
+		<token id="4" lemma="these" pos="DT" surface="these"/>
+		<token id="5" lemma="," pos="," surface=","/>
+		<token id="6" lemma="there" pos="EX" surface="there"/>
+		<token id="7" lemma="have" pos="VBP" surface="have"/>
+		<token id="8" lemma="be" pos="VBN" surface="been"/>
+		<token id="9" lemma="new" pos="JJ" surface="new"/>
+		<token id="10" lemma="revelation" pos="NNS" surface="revelations"/>
+		<token id="11" lemma="about" pos="IN" surface="about"/>
+		<token id="12" lemma="iran" pos="NNP" surface="Iran"/>
+		<token id="13" lemma="'s" pos="POS" surface="'s"/>
+		<token id="14" lemma="centrifuge" pos="NN" surface="centrifuge"/>
+		<token id="15" lemma="enrichment" pos="NN" surface="enrichment"/>
+		<token id="16" lemma="program" pos="NN" surface="program"/>
+		<token id="17" lemma="locate" pos="VBN" surface="located"/>
+		<token id="18" lemma="in" pos="IN" surface="in"/>
+		<token id="19" lemma="natanz" pos="NNP" surface="Natanz"/>
+		<token id="20" lemma="and" pos="CC" surface="and"/>
+		<token id="21" lemma="heavy" pos="JJ" surface="heavy"/>
+		<token id="22" lemma="water" pos="NN" surface="water"/>
+		<token id="23" lemma="relate" pos="VBN" surface="related"/>
+		<token id="24" lemma="activity" pos="NN" surface="activity"/>
+		<token id="25" lemma="in" pos="IN" surface="in"/>
+		<token id="26" lemma="arak" pos="NNP" surface="Arak"/>
+		<token id="27" lemma="." pos="." surface="."/>
+	</tokens>
+	<dependencies>
+		<dep from="8" to="1" type="prep"/>
+		<dep from="1" to="2" type="pobj"/>
+		<dep from="2" to="3" type="prep"/>
+		<dep from="3" to="4" type="pobj"/>
+		<dep from="8" to="5" type="punct"/>
+		<dep from="8" to="6" type="expl"/>
+		<dep from="8" to="7" type="aux"/>
+		<dep from="0" to="8" type="root"/>
+		<dep from="10" to="9" type="amod"/>
+		<dep from="8" to="10" type="attr"/>
+		<dep from="10" to="11" type="prep"/>
+		<dep from="16" to="12" type="poss"/>
+		<dep from="12" to="13" type="case"/>
+		<dep from="15" to="14" type="compound"/>
+		<dep from="16" to="15" type="compound"/>
+		<dep from="11" to="16" type="pobj"/>
+		<dep from="16" to="17" type="acl"/>
+		<dep from="17" to="18" type="prep"/>
+		<dep from="18" to="19" type="pobj"/>
+		<dep from="19" to="20" type="cc"/>
+		<dep from="24" to="21" type="amod"/>
+		<dep from="23" to="22" type="npadvmod"/>
+		<dep from="24" to="23" type="amod"/>
+		<dep from="19" to="24" type="conj"/>
+		<dep from="17" to="25" type="prep"/>
+		<dep from="25" to="26" type="pobj"/>
+		<dep from="8" to="27" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Being_located">
+				<lexicalUnit>
+					<token id="17"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="12"/>
+					<token id="13"/>
+					<token id="14"/>
+					<token id="15"/>
+					<token id="16"/>
+				</frameElement>
+				<frameElement type="Location">
+					<token id="18"/>
+					<token id="19"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

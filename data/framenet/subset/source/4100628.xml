@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100628">
+	<sentence>On the coast , Sandymount , Dollymount , and Killiney strands are the places to go .</sentence>
+	<tokens>
+		<token id="1" lemma="on" pos="IN" surface="On"/>
+		<token id="2" lemma="the" pos="DT" surface="the"/>
+		<token id="3" lemma="coast" pos="NN" surface="coast"/>
+		<token id="4" lemma="," pos="," surface=","/>
+		<token id="5" lemma="sandymount" pos="NNP" surface="Sandymount"/>
+		<token id="6" lemma="," pos="," surface=","/>
+		<token id="7" lemma="dollymount" pos="NNP" surface="Dollymount"/>
+		<token id="8" lemma="," pos="," surface=","/>
+		<token id="9" lemma="and" pos="CC" surface="and"/>
+		<token id="10" lemma="killiney" pos="NNP" surface="Killiney"/>
+		<token id="11" lemma="strand" pos="NNS" surface="strands"/>
+		<token id="12" lemma="be" pos="VBP" surface="are"/>
+		<token id="13" lemma="the" pos="DT" surface="the"/>
+		<token id="14" lemma="place" pos="NNS" surface="places"/>
+		<token id="15" lemma="to" pos="TO" surface="to"/>
+		<token id="16" lemma="go" pos="VB" surface="go"/>
+		<token id="17" lemma="." pos="." surface="."/>
+	</tokens>
+	<dependencies>
+		<dep from="12" to="1" type="prep"/>
+		<dep from="3" to="2" type="det"/>
+		<dep from="1" to="3" type="pobj"/>
+		<dep from="12" to="4" type="punct"/>
+		<dep from="12" to="5" type="nsubj"/>
+		<dep from="5" to="6" type="punct"/>
+		<dep from="5" to="7" type="conj"/>
+		<dep from="7" to="8" type="punct"/>
+		<dep from="7" to="9" type="cc"/>
+		<dep from="11" to="10" type="compound"/>
+		<dep from="7" to="11" type="conj"/>
+		<dep from="0" to="12" type="root"/>
+		<dep from="14" to="13" type="det"/>
+		<dep from="12" to="14" type="nsubj"/>
+		<dep from="16" to="15" type="aux"/>
+		<dep from="14" to="16" type="relcl"/>
+		<dep from="12" to="17" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Motion">
+				<lexicalUnit>
+					<token id="16"/>
+				</lexicalUnit>
+				<frameElement type="Goal">
+					<token id="13"/>
+					<token id="14"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

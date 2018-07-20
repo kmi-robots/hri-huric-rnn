@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098825">
+	<sentence>The mistake most beginners make is in loading too much paint on the bristles .</sentence>
+	<tokens>
+		<token id="1" lemma="the" pos="DT" surface="The"/>
+		<token id="2" lemma="mistake" pos="NN" surface="mistake"/>
+		<token id="3" lemma="most" pos="JJS" surface="most"/>
+		<token id="4" lemma="beginner" pos="NNS" surface="beginners"/>
+		<token id="5" lemma="make" pos="VBP" surface="make"/>
+		<token id="6" lemma="be" pos="VBZ" surface="is"/>
+		<token id="7" lemma="in" pos="IN" surface="in"/>
+		<token id="8" lemma="load" pos="VBG" surface="loading"/>
+		<token id="9" lemma="too" pos="RB" surface="too"/>
+		<token id="10" lemma="much" pos="JJ" surface="much"/>
+		<token id="11" lemma="paint" pos="NN" surface="paint"/>
+		<token id="12" lemma="on" pos="IN" surface="on"/>
+		<token id="13" lemma="the" pos="DT" surface="the"/>
+		<token id="14" lemma="bristle" pos="NNS" surface="bristles"/>
+		<token id="15" lemma="." pos="." surface="."/>
+	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="det"/>
+		<dep from="6" to="2" type="nsubj"/>
+		<dep from="4" to="3" type="amod"/>
+		<dep from="5" to="4" type="nsubj"/>
+		<dep from="2" to="5" type="relcl"/>
+		<dep from="0" to="6" type="root"/>
+		<dep from="6" to="7" type="prep"/>
+		<dep from="7" to="8" type="pcomp"/>
+		<dep from="10" to="9" type="advmod"/>
+		<dep from="11" to="10" type="amod"/>
+		<dep from="8" to="11" type="dobj"/>
+		<dep from="8" to="12" type="prep"/>
+		<dep from="14" to="13" type="det"/>
+		<dep from="12" to="14" type="pobj"/>
+		<dep from="6" to="15" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Placing">
+				<lexicalUnit>
+					<token id="8"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="9"/>
+					<token id="10"/>
+					<token id="11"/>
+				</frameElement>
+				<frameElement type="Goal">
+					<token id="12"/>
+					<token id="13"/>
+					<token id="14"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

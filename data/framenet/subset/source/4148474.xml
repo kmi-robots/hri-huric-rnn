@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148474">
+	<sentence>They went by the last train .</sentence>
+	<tokens>
+		<token id="1" lemma="-PRON-" pos="PRP" surface="They"/>
+		<token id="2" lemma="go" pos="VBD" surface="went"/>
+		<token id="3" lemma="by" pos="IN" surface="by"/>
+		<token id="4" lemma="the" pos="DT" surface="the"/>
+		<token id="5" lemma="last" pos="JJ" surface="last"/>
+		<token id="6" lemma="train" pos="NN" surface="train"/>
+		<token id="7" lemma="." pos="." surface="."/>
+	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="nsubj"/>
+		<dep from="0" to="2" type="root"/>
+		<dep from="2" to="3" type="prep"/>
+		<dep from="6" to="4" type="det"/>
+		<dep from="6" to="5" type="amod"/>
+		<dep from="3" to="6" type="pobj"/>
+		<dep from="2" to="7" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Motion">
+				<lexicalUnit>
+					<token id="2"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="1"/>
+				</frameElement>
+				<frameElement type="Carrier">
+					<token id="3"/>
+					<token id="4"/>
+					<token id="5"/>
+					<token id="6"/>
+					<token id="7"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

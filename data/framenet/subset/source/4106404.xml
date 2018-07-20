@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106404">
+	<sentence>Please use the enclosed envelope to give a generous gift to Goodwill today !</sentence>
+	<tokens>
+		<token id="1" lemma="please" pos="UH" surface="Please"/>
+		<token id="2" lemma="use" pos="VB" surface="use"/>
+		<token id="3" lemma="the" pos="DT" surface="the"/>
+		<token id="4" lemma="enclose" pos="VBN" surface="enclosed"/>
+		<token id="5" lemma="envelope" pos="NN" surface="envelope"/>
+		<token id="6" lemma="to" pos="TO" surface="to"/>
+		<token id="7" lemma="give" pos="VB" surface="give"/>
+		<token id="8" lemma="a" pos="DT" surface="a"/>
+		<token id="9" lemma="generous" pos="JJ" surface="generous"/>
+		<token id="10" lemma="gift" pos="NN" surface="gift"/>
+		<token id="11" lemma="to" pos="IN" surface="to"/>
+		<token id="12" lemma="goodwill" pos="NNP" surface="Goodwill"/>
+		<token id="13" lemma="today" pos="NN" surface="today"/>
+		<token id="14" lemma="!" pos="." surface="!"/>
+	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="intj"/>
+		<dep from="0" to="2" type="root"/>
+		<dep from="5" to="3" type="det"/>
+		<dep from="5" to="4" type="amod"/>
+		<dep from="2" to="5" type="dobj"/>
+		<dep from="7" to="6" type="aux"/>
+		<dep from="2" to="7" type="xcomp"/>
+		<dep from="10" to="8" type="det"/>
+		<dep from="10" to="9" type="amod"/>
+		<dep from="7" to="10" type="dobj"/>
+		<dep from="7" to="11" type="dative"/>
+		<dep from="11" to="12" type="pobj"/>
+		<dep from="7" to="13" type="npadvmod"/>
+		<dep from="2" to="14" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Placing">
+				<lexicalUnit>
+					<token id="4"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="5"/>
+				</frameElement>
+			</frame>
+			<frame name="Giving">
+				<lexicalUnit>
+					<token id="7"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="8"/>
+					<token id="9"/>
+					<token id="10"/>
+				</frameElement>
+				<frameElement type="Recipient">
+					<token id="11"/>
+					<token id="12"/>
+				</frameElement>
+				<frameElement type="Time">
+					<token id="13"/>
+				</frameElement>
+			</frame>
+			<frame name="Giving">
+				<lexicalUnit>
+					<token id="10"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="10"/>
+				</frameElement>
+				<frameElement type="Recipient">
+					<token id="11"/>
+					<token id="12"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

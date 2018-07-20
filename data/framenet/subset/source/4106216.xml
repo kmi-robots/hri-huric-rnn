@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106216">
+	<sentence>Bridges link Macau with its two islands .</sentence>
+	<tokens>
+		<token id="1" lemma="bridge" pos="NNS" surface="Bridges"/>
+		<token id="2" lemma="link" pos="VBP" surface="link"/>
+		<token id="3" lemma="macau" pos="NNP" surface="Macau"/>
+		<token id="4" lemma="with" pos="IN" surface="with"/>
+		<token id="5" lemma="-PRON-" pos="PRP$" surface="its"/>
+		<token id="6" lemma="two" pos="CD" surface="two"/>
+		<token id="7" lemma="island" pos="NNS" surface="islands"/>
+		<token id="8" lemma="." pos="." surface="."/>
+	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="nsubj"/>
+		<dep from="0" to="2" type="root"/>
+		<dep from="2" to="3" type="dobj"/>
+		<dep from="2" to="4" type="prep"/>
+		<dep from="7" to="5" type="poss"/>
+		<dep from="7" to="6" type="nummod"/>
+		<dep from="4" to="7" type="pobj"/>
+		<dep from="2" to="8" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Attaching">
+				<lexicalUnit>
+					<token id="2"/>
+				</lexicalUnit>
+				<frameElement type="Connector">
+					<token id="1"/>
+				</frameElement>
+				<frameElement type="Items">
+					<token id="3"/>
+					<token id="4"/>
+					<token id="5"/>
+					<token id="6"/>
+					<token id="7"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

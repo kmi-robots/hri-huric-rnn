@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100331">
+	<sentence>The site of the Temple eventually became identified as Mt. Moriah , on which it stood , where Abraham was called to sacrifice his son Isaac .</sentence>
+	<tokens>
+		<token id="1" lemma="the" pos="DT" surface="The"/>
+		<token id="2" lemma="site" pos="NN" surface="site"/>
+		<token id="3" lemma="of" pos="IN" surface="of"/>
+		<token id="4" lemma="the" pos="DT" surface="the"/>
+		<token id="5" lemma="temple" pos="NNP" surface="Temple"/>
+		<token id="6" lemma="eventually" pos="RB" surface="eventually"/>
+		<token id="7" lemma="become" pos="VBD" surface="became"/>
+		<token id="8" lemma="identify" pos="VBN" surface="identified"/>
+		<token id="9" lemma="as" pos="IN" surface="as"/>
+		<token id="10" lemma="mt." pos="NNP" surface="Mt."/>
+		<token id="11" lemma="moriah" pos="NNP" surface="Moriah"/>
+		<token id="12" lemma="," pos="," surface=","/>
+		<token id="13" lemma="on" pos="IN" surface="on"/>
+		<token id="14" lemma="which" pos="WDT" surface="which"/>
+		<token id="15" lemma="-PRON-" pos="PRP" surface="it"/>
+		<token id="16" lemma="stand" pos="VBD" surface="stood"/>
+		<token id="17" lemma="," pos="," surface=","/>
+		<token id="18" lemma="where" pos="WRB" surface="where"/>
+		<token id="19" lemma="abraham" pos="NNP" surface="Abraham"/>
+		<token id="20" lemma="be" pos="VBD" surface="was"/>
+		<token id="21" lemma="call" pos="VBN" surface="called"/>
+		<token id="22" lemma="to" pos="TO" surface="to"/>
+		<token id="23" lemma="sacrifice" pos="VB" surface="sacrifice"/>
+		<token id="24" lemma="-PRON-" pos="PRP$" surface="his"/>
+		<token id="25" lemma="son" pos="NN" surface="son"/>
+		<token id="26" lemma="isaac" pos="NNP" surface="Isaac"/>
+		<token id="27" lemma="." pos="." surface="."/>
+	</tokens>
+	<dependencies>
+		<dep from="2" to="1" type="det"/>
+		<dep from="8" to="2" type="nsubjpass"/>
+		<dep from="2" to="3" type="prep"/>
+		<dep from="5" to="4" type="det"/>
+		<dep from="3" to="5" type="pobj"/>
+		<dep from="8" to="6" type="advmod"/>
+		<dep from="8" to="7" type="auxpass"/>
+		<dep from="0" to="8" type="root"/>
+		<dep from="8" to="9" type="prep"/>
+		<dep from="11" to="10" type="compound"/>
+		<dep from="9" to="11" type="pobj"/>
+		<dep from="11" to="12" type="punct"/>
+		<dep from="16" to="13" type="prep"/>
+		<dep from="13" to="14" type="pobj"/>
+		<dep from="16" to="15" type="nsubj"/>
+		<dep from="11" to="16" type="relcl"/>
+		<dep from="16" to="17" type="punct"/>
+		<dep from="21" to="18" type="advmod"/>
+		<dep from="21" to="19" type="nsubjpass"/>
+		<dep from="21" to="20" type="auxpass"/>
+		<dep from="16" to="21" type="advcl"/>
+		<dep from="23" to="22" type="aux"/>
+		<dep from="21" to="23" type="xcomp"/>
+		<dep from="25" to="24" type="poss"/>
+		<dep from="23" to="25" type="dobj"/>
+		<dep from="25" to="26" type="appos"/>
+		<dep from="8" to="27" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Being_located">
+				<lexicalUnit>
+					<token id="16"/>
+				</lexicalUnit>
+				<frameElement type="Theme">
+					<token id="15"/>
+				</frameElement>
+				<frameElement type="Location">
+					<token id="10"/>
+					<token id="11"/>
+				</frameElement>
+				<frameElement type="Location">
+					<token id="13"/>
+					<token id="14"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>

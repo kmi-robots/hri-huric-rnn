@@ -26,7 +26,7 @@ epoch_num = int(os.environ.get('MAX_EPOCHS', 100))
 MY_PATH = os.path.dirname(os.path.abspath(__file__))
 
 OUTPUT_FOLDER = os.environ.get('OUTPUT_FOLDER', '')
-DATASET = os.environ.get('DATASET', 'huric_eb/modern')
+DATASET = os.environ.get('DATASET', 'huric_eb/modern_right')
 # possible MODE:
 # - 'dev_cross' that excludes the last fold and performs (k-1)-fold, last fold untouched
 # - 'cross' that performs k-fold
@@ -78,7 +78,7 @@ def get_model(vocabs, tokenizer, language, multi_turn, input_steps, nlp):
 
 def train(mode):
     # maximum length of sentences
-    input_steps = 50
+    input_steps = 100
     # load the train and dev datasets
     folds = data.load_data(DATASET, SLOTS_TYPE)
     # preprocess them to list of training/test samples

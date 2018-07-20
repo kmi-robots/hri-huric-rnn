@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098705">
+	<sentence>QN : Can he go to Paris on Dec 14th ?</sentence>
+	<tokens>
+		<token id="1" lemma="qn" pos="NNP" surface="QN"/>
+		<token id="2" lemma=":" pos=":" surface=":"/>
+		<token id="3" lemma="can" pos="MD" surface="Can"/>
+		<token id="4" lemma="-PRON-" pos="PRP" surface="he"/>
+		<token id="5" lemma="go" pos="VB" surface="go"/>
+		<token id="6" lemma="to" pos="IN" surface="to"/>
+		<token id="7" lemma="paris" pos="NNP" surface="Paris"/>
+		<token id="8" lemma="on" pos="IN" surface="on"/>
+		<token id="9" lemma="dec" pos="NNP" surface="Dec"/>
+		<token id="10" lemma="14th" pos="NN" surface="14th"/>
+		<token id="11" lemma="?" pos="." surface="?"/>
+	</tokens>
+	<dependencies>
+		<dep from="0" to="1" type="root"/>
+		<dep from="1" to="2" type="punct"/>
+		<dep from="5" to="3" type="aux"/>
+		<dep from="5" to="4" type="nsubj"/>
+		<dep from="0" to="5" type="root"/>
+		<dep from="5" to="6" type="prep"/>
+		<dep from="6" to="7" type="pobj"/>
+		<dep from="5" to="8" type="prep"/>
+		<dep from="10" to="9" type="compound"/>
+		<dep from="8" to="10" type="pobj"/>
+		<dep from="5" to="11" type="punct"/>
+	</dependencies>
+	<semantics>
+		<frameSemantics>
+			<frame name="Motion">
+				<lexicalUnit>
+					<token id="5"/>
+				</lexicalUnit>
+				<frameElement type="Goal">
+					<token id="6"/>
+					<token id="7"/>
+				</frameElement>
+				<frameElement type="Time">
+					<token id="8"/>
+					<token id="9"/>
+					<token id="10"/>
+				</frameElement>
+				<frameElement type="Theme">
+					<token id="4"/>
+				</frameElement>
+			</frame>
+		</frameSemantics>
+	</semantics>
+</command>
