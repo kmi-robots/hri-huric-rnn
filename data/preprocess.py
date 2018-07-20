@@ -621,26 +621,7 @@ def main():
     which = os.environ.get('DATASET', 'huric_eb')
     print(which)
 
-    if which == 'huric_tor':
-        subfolder_results = []
-        subfolder_spatial_results = []
-        for subfolder in ['GrammarGenerated', 'S4R_Experiment', 'Robocup']:
-            res, spatial_res = huric_preprocess('huric_tor', True, subfolder, False)
-            subfolder_results.append(res)
-            subfolder_spatial_results.append(spatial_res)
-            alexa_prepare('huric_tor/{}'.format(subfolder), 'office robot {}'.format(subfolder))
-            alexa_prepare('huric_tor/{}/spatial'.format(subfolder), 'office robot spatial {}'.format(subfolder))
-            lex_from_alexa('huric_tor/{}/'.format(subfolder), 'kmi_{}'.format(subfolder))
-            lex_from_alexa('huric_tor/{}/spatial'.format(subfolder), 'spatial_{}'.format(subfolder))
-        
-        combine_and_save(subfolder_results, 'huric_tor/combined')
-        combine_and_save(subfolder_spatial_results, 'huric_tor/combined/spatial')
-        alexa_prepare('huric_tor/combined', 'office robot')
-        alexa_prepare('huric_tor/combined/spatial', 'office robot spatial')
-        lex_from_alexa('huric_tor/combined', 'kmi')
-        lex_from_alexa('huric_tor/combined/spatial', 'spatial')
-
-    elif which == 'huric_eb':
+    if which == 'huric_eb':
         modernize_huric_xml('huric_eb/source', 'huric_eb/modern/source')
         res, spatial_res = huric_preprocess('huric_eb/modern', True, None, False)
         alexa_prepare('huric_eb/modern', 'roo bot')
