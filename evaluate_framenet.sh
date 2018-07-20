@@ -6,6 +6,10 @@
 
 set -e
 
+# preprocessing steps
+DATASET=framenet_subset_right make preprocess
+DATASET=framenet_subset_both make preprocess
+
 # chosen architecture: three stages with attention
 export THREE_STAGES=true_highway
 export ATTENTION=both
@@ -25,3 +29,5 @@ make train_joint
 
 export DATASET=framenet/subset_both
 make train_joint
+
+# evaluation steps

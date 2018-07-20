@@ -133,7 +133,7 @@ def huric_preprocess(path, trim='right', invoke_frame_slot=False):
                 'length': len(words),
                 'slots': slots,
                 'file': file_name,
-                'start_token_id': start_of_frame,
+                'start_token_id': start_considering,
                 'end_token_id': max_token_id,
                 'id': len(samples),
                 'lexical_unit_ids': lexical_unit_ids
@@ -734,11 +734,11 @@ def main():
         lex_from_alexa('huric_eb/modern/amazon', 'train_only', 'alexa_train.json', 'lexTrainBot.json')
 
 
-    elif which == 'framenet_subset':
+    elif which == 'framenet_subset_right':
         framenet_preprocess('framenet', 'framenet/subset/source', True)
         huric_preprocess('framenet/subset')
 
-    elif which == 'framenet_subset_short':
+    elif which == 'framenet_subset_both':
         framenet_preprocess('framenet', 'framenet/subset/source', True)
         huric_preprocess('framenet/subset', trim='both')
 
