@@ -728,7 +728,7 @@ def framenet_preprocess(folder, dest_path, subset=True):
             lexical_unit_ids = [t['id'] for t in tokens if (t['end']>=start and t['start']<=end)]
             fes = f.findall("layer[@name='FE']/label")
             #print(command_id, fes)
-            frame_elements = [{'type': f.attrib['name'], 'ids': [t['id'] for t in tokens if (f.attrib.get('start', None) != None and t['end']>=int(f.attrib['start']) and t['start']<=int(f.attrib['end'])+1)]} for f in fes]
+            frame_elements = [{'type': f.attrib['name'].replace('-', ''), 'ids': [t['id'] for t in tokens if (f.attrib.get('start', None) != None and t['end']>=int(f.attrib['start']) and t['start']<=int(f.attrib['end'])+1)]} for f in fes]
 
             new_frame = ET.SubElement(new_semantic_frames, 'frame', {'name': frame_name})
             new_lexical_unit = ET.SubElement(new_frame, 'lexicalUnit')
