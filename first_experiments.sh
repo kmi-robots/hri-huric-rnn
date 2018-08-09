@@ -3,7 +3,7 @@
 
 set -e
 
-export DATASET=huric_eb/modern
+export DATASET=huric_eb/modern_right
 
 # evaluate by only training the intents (mm-nn#1)
 LOSS_SUM=intent make train_joint
