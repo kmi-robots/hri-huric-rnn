@@ -4,10 +4,11 @@ Some experiments with RNN and HuRIC dataset
 
 ## Requirements
 
-- python3-pip
-- virtualenv (recommended)
-- install the dependencies `pip install -r requirements.txt`
-- install this package `pip install -e .`
+Python 3.6 is required, because python2 has not been tested and tensorflow does not support python3.7.
+
+- python3-pip: use your package manager e.g. `apt`
+- virtualenv (recommended): to use python 3.6 do `virtualenv venv --python=python3.6`
+- install the dependencies: `pip install -r requirements.txt`
 
 ## Scripts
 
@@ -59,3 +60,7 @@ And look at the results in `lex/results`.
 
 1. Build the model: `./build_full_model.sh`
 2. Run the server `FLASK_APP=server.py flask run`
+
+## Notebooks
+
+In the folder [notebooks](notebooks) there are jupyter notebooks for the analysis of results.
