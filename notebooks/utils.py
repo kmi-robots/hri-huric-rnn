@@ -1,5 +1,6 @@
 import json
 
+import math
 import numpy as np
 from collections import defaultdict
 from itertools import groupby
@@ -9,6 +10,7 @@ from IPython.display import HTML, display
 import matplotlib.pyplot as plt
 
 from sklearn.metrics import precision_recall_fscore_support
+from textstat.textstat import textstat
 
 from nlunetwork import data
 
@@ -224,6 +226,11 @@ def get_corpus_complexity_statistics(dataset_location):
     lengths_all = defaultdict(lambda: 0)
     lu_depths_all = defaultdict(lambda: 0)
     lu_positions_all = defaultdict(lambda: 0)
+    flesch_ease_all = defaultdict(lambda: 0)
+    fog_all = defaultdict(lambda: 0)
+    smog_all = defaultdict(lambda: 0)
+    automated_all = defaultdict(lambda: 0)
+
     for doc in xml_docs:
         lu_pos = get_lu_pos(doc)
         for p in lu_pos:
@@ -240,13 +247,49 @@ def get_corpus_complexity_statistics(dataset_location):
         lu_positions = get_lu_positions(doc)
         for p in lu_positions:
             lu_positions_all[p] += 1
-    return {
+        # readability scores
+        text = doc.find('sentence').text
+        flesch = textstat.flesch_reading_ease(text)
+        school_level = flesch_to_school_level(flesch)
+        flesch_ease_all[school_level] += 1
+        fog = math.floor(textstat.gunning_fog(text))
+        fog_all[fog] += 1
+        smog = math.floor(textstat.smog_index(text))
+        smog_all[smog] += 1
+        automated = math.floor(textstat.automated_readability_index(text))
+        automated_all[automated] += 1
+
+
+
+    result = {
         'lu_pos': lu_pos_all,
         'lu_are_roots': lu_are_roots_all,
         'lengths': lengths_all,
         'lu_depths': lu_depths_all,
-        'lu_positions': lu_positions_all
+        'lu_positions': lu_positions_all,
+        'flesch_reading_ease': flesch_ease_all,
+        'gunning_fog_grade': fog_all,
+        'smog_grade': smog_all,
+        'automated_readability_index_grade': automated_all
     }
+
+    return result
+
+def flesch_to_school_level(p):
+    if p <= 30:
+        return 'College graduate'
+    elif p > 30 and p <= 50:
+        return 'College'
+    elif p > 50 and p <= 60:
+        return '10th to 12th grade'
+    elif p > 60 and p <= 70:
+        return '08th to 9th grade'
+    elif p > 70 and p <= 80:
+        return '07th grade'
+    elif p > 80 and p <= 90:
+        return '06th grade'
+    elif p > 90:
+        return '05th grade'
 
 def plot_measures(datasets_dict, show=True, path=None):
     """Given a dict {conf_name: measures} produces a set of plots, one for each measure, with all the configurations inside"""
