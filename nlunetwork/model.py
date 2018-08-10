@@ -343,7 +343,11 @@ class Model:
                 self.bot_turn_actual_length: bot_turn_length
             })
 
-        results_tf = sess.run(output_feeds, feed_dict=feed_dict)
+        try:
+            results_tf = sess.run(output_feeds, feed_dict=feed_dict)
+        except Exception as e:
+            print(feed_dict)
+            raise e
         results = {}
         if mode in ['test']:
             if self.three_stages:

@@ -1,1 +1,1 @@
-DATASET=huric_eb/modern THREE_STAGES=true ATTENTION=both MODE=train_all BATCH_SIZE=2 LABEL_EMB_SIZE=64 LSTM_SIZE=128 make train_joint
+DATASET=huric_eb/modern_right THREE_STAGES=true ATTENTION=both MODE=train_all BATCH_SIZE=2 LABEL_EMB_SIZE=64 LSTM_SIZE=128 make train_joint
