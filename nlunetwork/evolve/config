@@ -1,0 +1,36 @@
+[NEAT]
+fitness_criterion = max
+fitness_threshold = 100
+pop_size = 20
+reset_on_extinction = False
+
+[DefaultReproduction]
+elitism            = 2
+survival_threshold = 0.2
+
+[DefaultGenome_deep]
+#num_inputs = 1
+#num_outputs = 2
+num_hidden = 10
+feed_forward = True
+compatibility_disjoint_coefficient = 1
+compatibility_weight_coefficient = 1
+conn_add_prob = 0.3
+conn_delete_prob = 0.2
+node_add_prob = 0.1
+node_delete_prob = 0.05
+type_of_layer_mutate_rate = 0
+activation_mutate_rate = 0.2
+hidden_size_mutate_rate = 0.2
+enabled_default = True
+enabled_mutate_rate = 0.2
+initial_connection = predefined
+templates = (embeddings,rnn_bidir),(rnn_bidir:seq,yang_att),(yang_att,dense),(dense,out_single.intent),(rnn_bidir:seq,decoder.bd),(decoder.bd,out_seq.bd),(decoder.bd,decoder.ac),(decoder.ac,out_seq.ac)
+    (embeddings,rnn_bidir),(rnn_bidir:seq,yang_att),(yang_att,dense),(dense,out_single.intent),(rnn_bidir:seq,decoder.bd),(decoder.bd,out_seq.bd),(rnn_bidir:seq,decoder.ac),(decoder.bd,decoder.ac),(decoder.ac,out_seq.ac)
+    (embeddings,rnn_bidir),(rnn_bidir:single,dense),(dense,out_single.intent),(rnn_bidir:seq,decoder.bd),(decoder.bd,out_seq.bd),(rnn_bidir:seq,decoder.ac),(decoder.bd,decoder.ac),(decoder.ac,out_seq.ac)
+#initial_connection = full
+
+[DefaultSpeciesSet]
+compatibility_threshold = 3
+
+[DefaultStagnation]
