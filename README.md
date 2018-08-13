@@ -9,6 +9,7 @@ Python 3.6 is required, because python2 has not been tested and tensorflow does 
 - python3-pip: use your package manager e.g. `apt`
 - virtualenv (recommended): to use python 3.6 do `virtualenv venv --python=python3.6`
 - install the dependencies: `pip install -r requirements.txt`
+- for running the preprocessing, you need the spacy model with dependency parsing: `spacy download en`
 
 ## Scripts
 

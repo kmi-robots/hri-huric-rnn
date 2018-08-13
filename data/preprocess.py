@@ -758,31 +758,41 @@ def load_folds(location):
 
 
 def enrich_huric_train_with_framenet(huric_source_location, framenet_location, huric_dest_location):
-    """This function retrieves additional training data from the preprocessed framenet dataset and enriches the huric dataset by adding more training data (TODO not testing also?) into the first 4 folds"""
+    """This function retrieves additional training data from the preprocessed framenet dataset and enriches the huric dataset by adding more training data into the first 4 folds"""
     # load the huric_source dataset
     huric_folds = load_folds(huric_source_location)
     # load the framenet dataset
-    framenet_folds = load_folds(framenet_location)
+    framenet_subset = load_json('{}/all_samples.json'.format(framenet_location))
     # cleanup the framenet to have a proper subset of frame elements
     # first of all by substituting from the mappings (for now only Desired_state_of_affairs --> Desired_state so simpler to work with strings)
-    framenet_folds = [json.loads(re.sub('Desired_state_of_affairs', 'Desired_state', json.dumps(fold))) for fold in framenet_folds]
+    framenet_subset = json.loads(re.sub('Desired_state_of_affairs', 'Desired_state', json.dumps(framenet_subset)))
     # then select only the ones that appear in huric
     get_fe_types = lambda fold: set([fe.split('-')[1] for fe in fold['meta']['slot_types'] if len(fe.split('-'))>1])
-    frame_elements_to_remove = get_fe_types(framenet_folds[0]) - get_fe_types(huric_folds[0])
-    new_framenet_folds = []
-    for fold in framenet_folds:
-        fold_stringified = json.dumps(fold)
-        for forbidden in frame_elements_to_remove:
-            fold_stringified = re.sub('([BI]-){}"'.format(forbidden), 'O"', fold_stringified)
-        
-        new_framenet_folds.append(json.loads(fold_stringified))
+    frame_elements_to_remove = get_fe_types(framenet_subset) - get_fe_types(huric_folds[0])
+    # easier to work on strings
+    framenet_stringified = json.dumps(framenet_subset)
+    # substitute every '[IOB]-Something' with 'O' if 'Something' is not one of the Frame Elements of HuRIC
+    for forbidden in frame_elements_to_remove:
+        framenet_stringified = re.sub('([BI]-){}"'.format(forbidden), 'O"', framenet_stringified)
+    # go back to structured data
+    framenet_data = json.loads(framenet_stringified)['data']
+    # split the samples in only 4 folds, to enrich the 4 training folds of HuRIC
+    skf = StratifiedKFold(n_splits=len(huric_folds) - 1, shuffle=True,
+                          random_state=len(framenet_data))
+    framenet_new_folds = []
+    intent_values = [s['intent'] for s in framenet_data]
+    framenet_data = np.array(framenet_data)
+    for i, (train_idx, test_idx) in enumerate(skf.split(np.zeros(len(intent_values)), intent_values)):
+        fold_data = framenet_data[test_idx].tolist()
+        framenet_new_folds.append(fold_data)
+
 
     # add the selected commands to the folds 1...k-1 for training only
     for fold_number in range(len(huric_folds)):
         fold = huric_folds[fold_number]
-        additional = new_framenet_folds[fold_number]
         if fold_number != 4:
-            fold['data'] += additional['data']
+            additional = framenet_new_folds[fold_number]
+            fold['data'] += additional
         write_json(huric_dest_location, 'fold_{}.json'.format(fold_number + 1), fold)
         #with open('{}/fold_{}.json'.format(huric_dest_location, fold_number + 1), 'w') as f:
         #    json.dump(fold, f)
