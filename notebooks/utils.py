@@ -18,7 +18,7 @@ def load_json(folder, epoch=99):
     json_location = Path(folder) / 'json' / 'epoch_{}'.format(epoch) / 'prediction_fold_full.json'
     with open(json_location) as f:
         content = json.load(f)
-    return content['samples']
+    return sorted(content['samples'], key=lambda el: el['file'])
 
 def get_intent_attention_arrays(sentence_data):
     """returns true (lexical units) and pred attentions"""

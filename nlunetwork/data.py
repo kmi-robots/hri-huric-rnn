@@ -348,7 +348,7 @@ def save_predictions(out_path, fold_id, samples):
     if not os.path.exists(out_path):
         os.makedirs(out_path)
     with open('{}/prediction_fold_{}.json'.format(out_path, fold_id), 'w') as outfile:
-        json.dump({'samples': samples}, outfile, indent=2, cls=NumpyEncoder)
+        json.dump({'samples': sorted(samples, key=lambda el: el['file'])}, outfile, indent=2, cls=NumpyEncoder)
 
 def merge_prediction_folds(epoch_path):
     fold_files = [f for f in os.listdir(epoch_path) if f.startswith('prediction_fold_') and not 'full' in f]
