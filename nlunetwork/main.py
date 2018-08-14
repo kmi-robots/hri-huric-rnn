@@ -13,6 +13,7 @@ from tqdm import tqdm
 from nlunetwork import data
 from nlunetwork.model import Model
 from nlunetwork import metrics
+from nlunetwork import runtime_model
 
 # embedding size for labels
 embedding_size = int(os.environ.get('LABEL_EMB_SIZE', 64))
@@ -32,8 +33,13 @@ DATASET = os.environ.get('DATASET', 'huric_eb/modern_right')
 # - 'cross' that performs k-fold
 # - 'eval' that does the train on k-1 and test on last (untouched fold)
 # - 'train_all' trains the network on all the folds
+# - 'test' takes a pretrained model (path default or `MODEL_PATH`) and runs it on the specified samples (default or `TEST_PATH`)
+# - 'test_all' takes a pretrained model (path default or `MODEL_PATH`) and runs it on the specified samples (default or `TEST_PATH`)
 MODE = os.environ.get('MODE', 'dev_cross')
 OUTPUT_FOLDER += MODE
+
+# specific to test mode
+MODEL_PATH = os.environ.get('MODEL_PATH', 'nlunetwork/results/framenet/results/train_all_loss_both_slottype_full_we_large_recurrent_cell_lstm_attention_both_three_stages_true_highway___hyper:LABEL_EMB_SIZE=64,LSTM_SIZE=128,BATCH_SIZE=2,MAX_EPOCHS=100/framenet/subset_both/')
 
 
 # the type of recurrent unit on the multi-turn: rnn or CRF
@@ -54,9 +60,9 @@ WORD_EMBEDDINGS = os.environ.get('WORD_EMBEDDINGS', 'large')
 OUTPUT_FOLDER += '_we_' + WORD_EMBEDDINGS
 RECURRENT_CELL = os.environ.get('RECURRENT_CELL', 'lstm')
 OUTPUT_FOLDER += '_recurrent_cell_' + RECURRENT_CELL
-ATTENTION = os.environ.get('ATTENTION', 'slots') # intents, slots, both, none
+ATTENTION = os.environ.get('ATTENTION', 'both') # intents, slots, both, none
 OUTPUT_FOLDER += '_attention_' + ATTENTION
-THREE_STAGES = os.environ.get('THREE_STAGES', False) # add Boundary Detection intermediate level. Can be False, True or truish with 'highway' inside
+THREE_STAGES = os.environ.get('THREE_STAGES', 'true_highway') # add Boundary Detection intermediate level. Can be False, True or truish with 'highway' inside
 if THREE_STAGES:
     OUTPUT_FOLDER += '_three_stages_{}'.format(THREE_STAGES)
 INTENT_EXTRACTION_MODE = os.environ.get('INTENT_EXTRACTION_MODE', 'bi-rnn') # intent comes out of bi-rnn or only a weighted mean (attention intent must be turned on)
@@ -135,6 +141,12 @@ def train(mode):
     elif mode == 'train_all':
         train_folds.append([s for (count,fold) in enumerate(folds) for s in fold['data']])
         test_folds.append([])
+    elif mode.startswith('test'):
+        train_folds.append([])
+        if mode == 'test':
+            test_folds.append(folds[-1]['data'])
+        elif mode == 'test_all':
+            test_folds.append([s for (count,fold) in enumerate(folds) for s in fold['data']])
     else:
         raise ValueError('invalid mode')
 
@@ -148,96 +160,32 @@ def train(mode):
         if test_samples:
             print('test samples', len(test_samples))
 
+        if mode.startswith('test'):
+            # restore a model
+            model, sess = restore_graph(MODEL_PATH, nlp)
+            epoch_num = 1
+        else:
+            model, sess = build_graph(nlp, vocabs, meta_data, multi_turn, input_steps)
 
-        model = get_model(vocabs, meta_data['tokenizer'], meta_data['language'], multi_turn, input_steps, nlp)
-        
-        global_init_op = tf.global_variables_initializer()
-        table_init_op = tf.tables_initializer()
-        saver = tf.train.Saver()
-        sess = tf.Session()
-        
-        # initialize the required parameters
-        sess.run(global_init_op)
-        sess.run(table_init_op)
-
-        if multi_turn:
-            print('i am multi turn')
         for epoch in range(epoch_num):
             print('epoch {}/{}'.format(epoch + 1, epoch_num))
             #mean_loss = 0.0
             #train_loss = 0.0
-            for i, batch in tqdm(enumerate(data.get_batch(batch_size, training_samples)), total=len(training_samples)//batch_size):
-                # perform a batch of training
-                #print(batch)
-                #_, loss, bd_prediction, decoder_prediction, intent, mask = model.step(sess, 'train', batch)
-                model.step(sess, 'train', batch)
+            if not mode.startswith('test'):
+                for i, batch in tqdm(enumerate(data.get_batch(batch_size, training_samples)), total=len(training_samples)//batch_size):
+                    # perform a batch of training
+                    #print(batch)
+                    #_, loss, bd_prediction, decoder_prediction, intent, mask = model.step(sess, 'train', batch)
+                    model.step(sess, 'train', batch)
 
             if test_samples:
-                if fold_number == 0:
-                    # copy just on the first fold, avoid overwriting
-                    data.copy_huric_xml_to('{}/xml/epoch_{}'.format(real_folder, epoch))
-                
-                predicted = []
-                for j, batch in tqdm(enumerate(data.get_batch(batch_size, test_samples)), total=len(test_samples)//batch_size):
-                    results = model.step(sess, 'test', batch)
-                    intent = results['intent']
-                    intent_attentions = results['intent_attentions']
-                    if THREE_STAGES:
-                        bd_prediction = results['bd']
-                        bd_prediction = np.transpose(bd_prediction, [1, 0])
-                        ac_prediction = results['ac']
-                        ac_prediction = np.transpose(ac_prediction, [1, 0])
-                        # all the attention matrices are in shape (time, batch, time)
-                        bd_attentions = results['bd_attentions']
-                        bd_attentions = np.transpose(bd_attentions, [1, 0, 2])
-                        ac_attentions = results['ac_attentions']
-                        ac_attentions = np.transpose(ac_attentions, [1, 0, 2])
-                        #print('bd_attentions.shape', bd_attentions.shape)
-                        decoder_prediction = np.array([data.rebuild_slots_sequence(bd_seq, ac_seq) for bd_seq, ac_seq in zip(bd_prediction, ac_prediction)])
-                        slots_attentions = np.zeros((len(batch), input_steps, input_steps))
-                    else:
-                        decoder_prediction = results['slots']
-                        # from time-major matrix to sample-major
-                        decoder_prediction = np.transpose(decoder_prediction, [1, 0])
-                        slots_attentions = results['slots_attentions']
-                        slots_attentions = np.transpose(slots_attentions, [1, 0, 2])
-                        bd_attentions = np.zeros((len(batch), input_steps, input_steps))
-                        ac_attentions = np.zeros((len(batch), input_steps, input_steps))
+                test_epoch(model, sess, test_samples, fold_number, real_folder, epoch, input_steps)
 
-                    #print(results)
-                    predicted_batch = metrics.clean_predictions(decoder_prediction, intent, batch, intent_attentions, bd_attentions, ac_attentions, slots_attentions)
-                    if DATASET == 'huric':
-                        data.huric_add_json('{}/xml/epoch_{}'.format(real_folder, epoch), predicted_batch)
-                    predicted.extend(predicted_batch)
-                    if j == 0:
-                        index = random.choice(range(len(batch)))
-                        # index = 0
-                        print('Input Sentence        :', batch[index]['words'][:batch[index]['length']])
-                        if THREE_STAGES:
-                            print('BD Truth              :', batch[index]['boundaries'][:batch[index]['length']])
-                            print('BD Prediction         :', bd_prediction[index][:batch[index]['length']].tolist())
-                            print('AC Truth              :', batch[index]['types'][:batch[index]['length']])
-                            print('AC Prediction         :', ac_prediction[index][:batch[index]['length']].tolist())
-                            #print('BD atts', bd_attentions[index])
-                            #print('AC atts', ac_attentions[index])
-                        print('Slot Truth            :', batch[index]['slots'][:batch[index]['length']])
-                        print('Slot Prediction       :', decoder_prediction[index][:batch[index]['length']].tolist())
-                        print('Intent Truth          :', batch[index]['intent'])
-                        print('Intent Prediction     :', intent[index])
-                        print('Intent atts     :', intent_attentions[index][:batch[index]['length']])
-                
-
-                data.save_predictions('{}/json/epoch_{}'.format(real_folder, epoch), fold_number + 1, predicted)
-                # epoch resume
-                print('epoch {}/{} on fold {}/{} ended'.format(epoch + 1, epoch_num, fold_number + 1, len(train_folds)))
-                performance = metrics.evaluate_epoch(predicted)
-                for metric_name, value in performance.items():
-                    print('%20s' % metric_name, value)
-
-        # the iteration on the fold has completed
-        # save the model
-        saver = tf.train.Saver()
-        saver.save(sess, '{}/model_fold_{}.ckpt'.format(real_folder, fold_number))
+        if not mode.startswith('test'):
+            # the iteration on the fold has completed
+            # save the model
+            saver = tf.train.Saver()
+            saver.save(sess, '{}/model_fold_{}.ckpt'.format(real_folder, fold_number))
 
     if test_samples:
         print('computing the metrics for all epochs on all the folds merged')
@@ -263,7 +211,92 @@ def train(mode):
         metrics.plot_history('{}/f1.png'.format(real_folder) , to_plot_f1)
         save_file(history, real_folder, 'history_full.json')
 
+def build_graph(nlp, vocabs, meta_data, multi_turn, input_steps):
+    """Builds the computational graph"""
+    model = get_model(vocabs, meta_data['tokenizer'], meta_data['language'], multi_turn, input_steps, nlp)
+        
+    global_init_op = tf.global_variables_initializer()
+    table_init_op = tf.tables_initializer()
+    sess = tf.Session()
+    
+    # initialize the required parameters
+    sess.run(global_init_op)
+    sess.run(table_init_op)
+    
+    return model, sess
 
+def restore_graph(model_path, nlp):
+    """Restores the stored computational graph, together with the optimized weights"""
+    model = runtime_model.RuntimeModel(model_path, 300, 'en', nlp)
+
+    return model, model.sess
+
+def train_epoch(model, data):
+    """Perform an epoch of training"""
+    pass # TODO
+
+def test_epoch(model, sess, test_samples, fold_number, real_folder, epoch, input_steps):
+    """Perform an epoch of testing"""
+    if fold_number == 0:
+        # copy just on the first fold, avoid overwriting
+        data.copy_huric_xml_to('{}/xml/epoch_{}'.format(real_folder, epoch))
+    
+    predicted = []
+    for j, batch in tqdm(enumerate(data.get_batch(batch_size, test_samples)), total=len(test_samples)//batch_size):
+        results = model.step(sess, 'test', batch)
+        intent = results['intent']
+        intent_attentions = results['intent_attentions']
+        if THREE_STAGES:
+            bd_prediction = results['bd']
+            bd_prediction = np.transpose(bd_prediction, [1, 0])
+            ac_prediction = results['ac']
+            ac_prediction = np.transpose(ac_prediction, [1, 0])
+            # all the attention matrices are in shape (time, batch, time)
+            bd_attentions = results['bd_attentions']
+            bd_attentions = np.transpose(bd_attentions, [1, 0, 2])
+            ac_attentions = results['ac_attentions']
+            ac_attentions = np.transpose(ac_attentions, [1, 0, 2])
+            #print('bd_attentions.shape', bd_attentions.shape)
+            decoder_prediction = np.array([data.rebuild_slots_sequence(bd_seq, ac_seq) for bd_seq, ac_seq in zip(bd_prediction, ac_prediction)])
+            slots_attentions = np.zeros((len(batch), input_steps, input_steps))
+        else:
+            decoder_prediction = results['slots']
+            # from time-major matrix to sample-major
+            decoder_prediction = np.transpose(decoder_prediction, [1, 0])
+            slots_attentions = results['slots_attentions']
+            slots_attentions = np.transpose(slots_attentions, [1, 0, 2])
+            bd_attentions = np.zeros((len(batch), input_steps, input_steps))
+            ac_attentions = np.zeros((len(batch), input_steps, input_steps))
+
+        #print(results)
+        predicted_batch = metrics.clean_predictions(decoder_prediction, intent, batch, intent_attentions, bd_attentions, ac_attentions, slots_attentions)
+        if DATASET == 'huric':
+            data.huric_add_json('{}/xml/epoch_{}'.format(real_folder, epoch), predicted_batch)
+        predicted.extend(predicted_batch)
+        if j == 0:
+            index = random.choice(range(len(batch)))
+            # index = 0
+            print('Input Sentence        :', batch[index]['words'][:batch[index]['length']])
+            if THREE_STAGES:
+                print('BD Truth              :', batch[index]['boundaries'][:batch[index]['length']])
+                print('BD Prediction         :', bd_prediction[index][:batch[index]['length']].tolist())
+                print('AC Truth              :', batch[index]['types'][:batch[index]['length']])
+                print('AC Prediction         :', ac_prediction[index][:batch[index]['length']].tolist())
+                #print('BD atts', bd_attentions[index])
+                #print('AC atts', ac_attentions[index])
+            print('Slot Truth            :', batch[index]['slots'][:batch[index]['length']])
+            print('Slot Prediction       :', decoder_prediction[index][:batch[index]['length']].tolist())
+            print('Intent Truth          :', batch[index]['intent'])
+            print('Intent Prediction     :', intent[index])
+            print('Intent atts     :', intent_attentions[index][:batch[index]['length']])
+    
+
+    data.save_predictions('{}/json/epoch_{}'.format(real_folder, epoch), fold_number + 1, predicted)
+    # epoch resume
+    print('epoch {}/{} on fold {}'.format(epoch + 1, epoch_num, fold_number + 1))
+    performance = metrics.evaluate_epoch(predicted)
+    for metric_name, value in performance.items():
+        print('%20s' % metric_name, value)
 
 def random_seed_init(seed):
     random.seed(seed)

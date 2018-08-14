@@ -1,14 +1,17 @@
 import tensorflow as tf
 import numpy as np
 from nlunetwork import data
+from nlunetwork.model import Model
 
-class RuntimeModel(object):
+class RuntimeModel(Model):
     """
     Restores a model from a checkpoint
     """
 
-    def __init__(self, model_path, embedding_size, language, nlp):
-
+    def __init__(self, model_path, embedding_size, language, nlp, multi_turn=False, three_stages=True):
+        # TODO would be better to store things like multi_turn into the model serialization
+        self.multi_turn = multi_turn
+        self.three_stages = three_stages
         # Step 1: restore the meta graph
 
         with tf.Graph().as_default() as graph:
@@ -23,8 +26,10 @@ class RuntimeModel(object):
             self.intent = graph.get_tensor_by_name('intent:0')
             self.intent_score = graph.get_tensor_by_name('intent_score:0')
             self.words_inputs = graph.get_tensor_by_name('words_inputs:0')
+            self.attention_ac_scores = graph.get_tensor_by_name('attention_alpha_ac:0')
+            self.attention_bd_scores = graph.get_tensor_by_name('attention_alpha_bd:0')
             self.encoder_inputs_actual_length = graph.get_tensor_by_name('encoder_inputs_actual_length:0')
-            self.intent_attentions = graph.get_tensor_by_name('attention_alpha_intent:0')
+            self.attention_scores_intent = graph.get_tensor_by_name('attention_alpha_intent:0')
             # redefine the py_func that is not serializable
             def static_wrapper(words):
                 return data.spacy_wrapper(embedding_size, language, nlp, words)
@@ -41,12 +46,12 @@ class RuntimeModel(object):
 
         seq_in, length = list(zip(*[(sample['words'], sample['length']) for sample in inputs]))
         
-        output_feeds = [self.intent, self.intent_score, self.intent_attentions, self.bd_prediction, self.ac_prediction]
+        output_feeds = [self.intent, self.intent_score, self.attention_scores_intent, self.bd_prediction, self.ac_prediction]
         feed_dict = {self.words_inputs: np.transpose(seq_in, [1, 0]), self.encoder_inputs_actual_length: length}
 
         results = self.sess.run(output_feeds, feed_dict=feed_dict)
 
-        intent_batch, intent_score_batch, intent_attentions, bd_batch, ac_batch = results
+        intent_batch, intent_score_batch, attention_scores_intent, bd_batch, ac_batch = results
         bd_batch = np.transpose(bd_batch, [1, 0])
         ac_batch = np.transpose(ac_batch, [1, 0])
         for idx, bd in enumerate(bd_batch):
@@ -60,7 +65,7 @@ class RuntimeModel(object):
             'slots': slots_batch,
             'intent': intent_batch,
             'intent_confidence': intent_score_batch,
-            'intent_attentions': intent_attentions,
+            'intent_attentions': attention_scores_intent,
             #'_bd': [bd.tolist() for bd in bd_batch],
             #'_ac': [ac.tolist() for ac in ac_batch]
         }
