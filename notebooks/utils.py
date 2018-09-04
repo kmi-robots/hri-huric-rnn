@@ -12,6 +12,9 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import precision_recall_fscore_support
 from textstat.textstat import textstat
 
+import nltk
+from nltk.tag import pos_tag, map_tag
+
 from nlunetwork import data
 
 def load_json(folder, epoch=99):
@@ -29,23 +32,23 @@ def get_intent_attention_arrays(sentence_data):
 
 #def get_bd_attention_arrays(sentence_data):
 #    return sentence_data['words'], sentence_data['slots_pred']
-   
+
 def get_color(value):
     """Colors a cell by the value provided [0,1] if value is number, otherwise white"""
-    
+
     if isinstance(value, str):
         return 'rgb(255,255,255)'
         print('str', value)
     else:
         v = "%.4f" %  (255 - value * 255)
         return 'rgb({}, 255,{})'.format(v, v)
-    
+
 def float_to_str(value):
     if isinstance(value, str):
         return value
     else:
         return "%.4f" % float(value)
-    
+
 def display_sequences(row_names, sequences):
     html_str = '<table><tr>{}</tr></table>'.format(
         '</tr><tr>'.join(
@@ -94,7 +97,7 @@ def align_accuracy_argmax(samples):
     compared = [1 if t == p else 0 for t, p in zip(true_lexical_units, pred_lexical_units)]
     return sum(compared) / len(compared)
 
-        
+
 def align_score(samples, max_len=50):
     true_lexical_units = []
     for s in samples:
@@ -102,11 +105,11 @@ def align_score(samples, max_len=50):
         #print('t', true_s)
         true_lexical_units.extend(true_s)
     #print(np.shape(true_lexical_units))
-    
+
     precisions_vs_k = {}
     recalls_vs_k = {}
     f1_vs_k = {}
-    
+
     for how_many in range(1, 10):
         pred_lexical_units = []
         for s in samples:
@@ -123,12 +126,15 @@ def align_score(samples, max_len=50):
         precisions_vs_k[how_many] = p # with average='binary' the scores are for the 1 label, the interesting one
         recalls_vs_k[how_many] = r
         f1_vs_k[how_many] = f1
-        
+
     display_alignment_vs_k(precisions_vs_k, recalls_vs_k, f1_vs_k)
     return precisions_vs_k, recalls_vs_k, f1_vs_k
 
 def display_alignment_vs_k(precisions, recalls, f1s):
     plt.clf()
+    # TODO for ROC computation should have TPR and FPR, not precision and recall!!
+    # tprs = recalls
+    # fprs =
     plt.plot(precisions.keys(), precisions.values(), label='precision')
     plt.plot(recalls.keys(), recalls.values(), label='recall')
     plt.xlabel('k-top')
@@ -168,6 +174,8 @@ def get_lu_pos(root, verbose=False):
     lu_idxs = [lu.attrib['id'] for lu in root.findall('semantics/frameSemantics/frame/lexicalUnit/token')]
     #print(lu_idxs)
     lu_pos = [w_id_to_pos[id] for id in lu_idxs]
+    # get the simplified universal tags
+    lu_pos = [map_tag('en-ptb', 'universal', t) for t in lu_pos]
     if verbose:
         print(root.attrib['id'], lu_pos)
     return lu_pos
