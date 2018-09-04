@@ -3,7 +3,7 @@ import json
 import math
 import numpy as np
 from collections import defaultdict
-from itertools import groupby
+from itertools import groupby, product
 from pathlib import Path
 import xml.etree.ElementTree as ET
 from IPython.display import HTML, display
@@ -14,6 +14,8 @@ from textstat.textstat import textstat
 
 import nltk
 from nltk.tag import pos_tag, map_tag
+
+from spacy.gold import tags_to_entities, iob_to_biluo
 
 from nlunetwork import data
 
@@ -334,3 +336,78 @@ def plot_measures(datasets_dict, show=True, path=None):
         if show:
             plt.show()
         plt.close(fig)
+
+def get_frame_elements_span(samples):
+    """Returns a list of spans that contain gold frame elements"""
+    result = []
+    for s in samples:
+        biluo = iob_to_biluo(s['slots_true'])
+        entities = tags_to_entities(biluo)
+        #print(entities)
+        for e in entities:
+            result.append({
+                'sample_id': s['id'],
+                'type': e[0],
+                'start': e[1],
+                'end': e[2]
+            })
+    return result
+
+def get_attention_average_from_word_indexes(sample, observer_indexes, observed_indexes, task='bd'):
+    """For n x n tasks ('bd' and 'ac'), returns the average value of the attentions from the indexes 'observer_indexes' on the 'observed_indexes'"""
+    if task == 'bd':
+        attention_key = 'bd_attentions'
+    elif task == 'ac':
+        attention_key = 'ac_attentions'
+    else:
+        raise ValueError(task)
+    attention_matrix = np.array(sample[attention_key])
+    #points = list(product(observer_indexes, observed_indexes))
+    #values = attention_matrix(points)
+    #mean_value = np.mean(values)
+    # TODO need also a counting of how many times gets the most of attention
+    mean_value = sum([np.mean([attention_matrix[obs, obd] for obs in observer_indexes]) for obd in observed_indexes])
+    return mean_value
+
+def get_attention_score_on_task(samples, gold_missing, task):
+    spans = get_frame_elements_span(samples)
+    samples_by_id = {s['id']: s for s in samples}
+    overall_totals = defaultdict(lambda: 0)
+    for span in spans:
+        sample = samples_by_id[span['sample_id']]
+        sample_missing = gold_missing[sample['file']]
+        sample_pos_list = sample_missing['pos'][sample['start_token_id']:sample['end_token_id']+1]
+        # define the interesting things
+        interesting = {
+            'first_word_of_span': [span['start']], # the first word in the span is usually a preposition, very important for Boundary Detection
+            'lexical_unit': [el - sample['start_token_id'] for el in sample['lexical_unit_ids']],
+            'nouns': [i for i, value in enumerate(sample_pos_list) if value == 'NOUN']
+        }
+        for why, observed in interesting.items():
+            value = get_attention_average_from_word_indexes(sample, range(span['start'], span['end'] + 1), observed, task)
+            #print(s, value)
+            overall_totals[why] += value
+    result = {k: v / len(spans) for k,v in overall_totals.items()}
+
+    return result
+
+def get_samples_pos_and_deps(gold_location):
+    """Returns a map {file_name: {'pos': [POS_LIST], 'deps': [{'from':FROM, 'to':TO, 'type':TYPE}]}}
+    all these informations are missing in the json files"""
+    docs = load_xmls(gold_location)
+    result = {
+        doc.attrib['id'] + '.xml': {
+            'pos': [map_tag('en-ptb', 'universal', t.attrib['pos']) for t in doc.findall('tokens/token')],
+            'deps': [d for d in doc.findall('dependencies/dep')]
+        }
+    for doc in docs}
+
+    return result
+
+def get_attention_scores(samples, gold_missing):
+    result = {
+        'ad': align_accuracy_argmax(samples),
+        'ai': get_attention_score_on_task(samples, gold_missing, 'bd'),
+        'ac': get_attention_score_on_task(samples, gold_missing, 'ac')
+    }
+    return result
