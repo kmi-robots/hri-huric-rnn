@@ -23,7 +23,7 @@ def load_json(folder, epoch=99):
     json_location = Path(folder) / 'json' / 'epoch_{}'.format(epoch) / 'prediction_fold_full.json'
     with open(json_location) as f:
         content = json.load(f)
-    return sorted(content['samples'], key=lambda el: el['file'])
+    return sorted(content['samples'], key=lambda el: el['file'] if el.get('file', None) else 0)
 
 def get_intent_attention_arrays(sentence_data):
     """returns true (lexical units) and pred attentions"""
@@ -93,12 +93,24 @@ def display_all(samples, display_bd=True, display_ac=True, display_slots=True, m
         if max_show and idx > max_show:
             return
 
-def align_accuracy_argmax(samples):
-    true_lexical_units = [s['lexical_unit_ids'][0] - 1 for s in samples]
+def ad_align_accuracy_argmax(samples):
+    """Returns a measure of how many times the highest value of attention is captured by the Lexical Unit"""
+    true_lexical_units = [s['lexical_unit_ids'][0] - s['start_token_id'] for s in samples]
     pred_lexical_units = [np.argmax(s['intent_attentions']) for s in samples]
     compared = [1 if t == p else 0 for t, p in zip(true_lexical_units, pred_lexical_units)]
     return sum(compared) / len(compared)
 
+def ad_average_attention(samples):
+    """Returns the average value of attention on the Lexical Units"""
+    total = 0.
+    for s in samples:
+        # get the indexes of the lexical units in the sentence
+        true_lexical_units = [val - s['start_token_id'] for val in s['lexical_unit_ids']]
+        # get their value of attention (summing them if more than one LU is there)
+        attn_val = np.sum(np.array(s['intent_attentions'])[true_lexical_units])
+        total += attn_val
+
+    return total / len(samples)
 
 def align_score(samples, max_len=50):
     true_lexical_units = []
@@ -362,12 +374,37 @@ def get_attention_average_from_word_indexes(sample, observer_indexes, observed_i
     else:
         raise ValueError(task)
     attention_matrix = np.array(sample[attention_key])
-    #points = list(product(observer_indexes, observed_indexes))
-    #values = attention_matrix(points)
-    #mean_value = np.mean(values)
-    # TODO need also a counting of how many times gets the most of attention
     mean_value = sum([np.mean([attention_matrix[obs, obd] for obs in observer_indexes]) for obd in observed_indexes])
     return mean_value
+
+def get_attention_argmax_percentage_from_word_indexes(sample, observer_indexes, observed_indexes, task='bd'):
+    """For n x n tasks ('bd' and 'ac'), returns a percentage of how many times the 'observed_indexes' get the attention from the 'observer_indexes'"""
+    if task == 'bd':
+        attention_key = 'bd_attentions'
+    elif task == 'ac':
+        attention_key = 'ac_attentions'
+    else:
+        raise ValueError(task)
+    attention_matrix = np.array(sample[attention_key])
+    # get the length of the observed
+    observed_length = len(observed_indexes)
+    if not observed_length:
+        # sometimes we are looking for nouns on spans that have no nouns, so add a shortcut
+        return 0.
+    # based on K, the length of the observed, get the K-top highest values for each row of the matrix
+    # - argsort returns the indices that would sort the matrix rows
+    # - the [:,::-1] is to reverse (want high values) each row
+    # - the [:,:K] is to get the K-top for each row
+    top_k_for_rows = attention_matrix.argsort()[:,::-1][:,:observed_length]
+    total_count = 0
+    # iterate on the rows of the observers
+    for row in top_k_for_rows[observer_indexes]:
+        # count how many observed are K-top for the row
+        present = sum([el in observed_indexes for el in row])
+        total_count += present
+    # and normalize the score
+    #print(observed_length, len(observer_indexes))
+    return total_count / (observed_length * len(observer_indexes))
 
 def get_attention_score_on_task(samples, gold_missing, task):
     spans = get_frame_elements_span(samples)
@@ -384,9 +421,12 @@ def get_attention_score_on_task(samples, gold_missing, task):
             'nouns': [i for i, value in enumerate(sample_pos_list) if value == 'NOUN']
         }
         for why, observed in interesting.items():
-            value = get_attention_average_from_word_indexes(sample, range(span['start'], span['end'] + 1), observed, task)
+            #print(span, why, sample)
+            average_value = get_attention_average_from_word_indexes(sample, range(span['start'], span['end'] + 1), observed, task)
+            argmax_value = get_attention_argmax_percentage_from_word_indexes(sample, range(span['start'], span['end'] + 1), observed, task)
             #print(s, value)
-            overall_totals[why] += value
+            overall_totals[why + '_average'] += average_value
+            overall_totals[why + '_argmax'] += argmax_value
     result = {k: v / len(spans) for k,v in overall_totals.items()}
 
     return result
@@ -406,7 +446,10 @@ def get_samples_pos_and_deps(gold_location):
 
 def get_attention_scores(samples, gold_missing):
     result = {
-        'ad': align_accuracy_argmax(samples),
+        'ad': {
+            'argmax': ad_align_accuracy_argmax(samples),
+            'average': ad_average_attention(samples)
+        },
         'ai': get_attention_score_on_task(samples, gold_missing, 'bd'),
         'ac': get_attention_score_on_task(samples, gold_missing, 'ac')
     }
