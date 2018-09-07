@@ -92,7 +92,9 @@ def reduce_slots(file_content, slots_type):
         for sample in file_content['data']:
             sample['slots'] = slots_to_iob_only(sample['slots'])
     elif slots_type == 'slot_only':
-        raise NotImplementedError()
+        file_content['meta']['slot_types'] = sorted(set(slots_to_types_only(file_content['meta']['slot_types'])))
+        for sample in file_content['data']:
+            sample['slots'] = slots_to_types_only(sample['slots'])
     else:
         raise ValueError('{} is not supported'.format(slots_type))
 
@@ -195,7 +197,7 @@ def adjust_sequences(data, length=50):
         else:
             sample['boundaries'] = sample['boundaries'][:length]
             sample['boundaries'][-1] = '<EOS>'
-        
+
         if len(sample['types']) < length:
             sample['types'].append('<EOS>')
             while len(sample['types']) < length:
@@ -357,14 +359,14 @@ def merge_prediction_folds(epoch_path):
         with open('{}/{}'.format(epoch_path, file_name), 'r') as f:
             content = json.load(f)
             results.extend(content['samples'])
-    
+
     return results
-    
+
 def copy_huric_xml_to(destination):
     xml_folder = 'data/huric_eb/modern/source'
     if not os.path.exists(destination):
         os.makedirs(destination)
-    
+
     files = os.listdir(xml_folder)
 
     for file_name in files:
