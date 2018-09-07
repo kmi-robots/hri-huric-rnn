@@ -63,8 +63,9 @@ OUTPUT_FOLDER += '_recurrent_cell_' + RECURRENT_CELL
 ATTENTION = os.environ.get('ATTENTION', 'both') # intents, slots, both, none
 OUTPUT_FOLDER += '_attention_' + ATTENTION
 THREE_STAGES = os.environ.get('THREE_STAGES', 'true_highway') # add Boundary Detection intermediate level. Can be False, True or truish with 'highway' inside
-if THREE_STAGES:
-    OUTPUT_FOLDER += '_three_stages_{}'.format(THREE_STAGES)
+if THREE_STAGES.lower() in ('false', 'no', '0'):
+    THREE_STAGES = False
+OUTPUT_FOLDER += '_three_stages_{}'.format(THREE_STAGES)
 INTENT_EXTRACTION_MODE = os.environ.get('INTENT_EXTRACTION_MODE', 'bi-rnn') # intent comes out of bi-rnn or only a weighted mean (attention intent must be turned on)
 if INTENT_EXTRACTION_MODE != 'bi-rnn':
     OUTPUT_FOLDER += '_intentextraction_' + INTENT_EXTRACTION_MODE
@@ -83,6 +84,7 @@ def get_model(vocabs, tokenizer, language, multi_turn, input_steps, nlp):
 
 
 def train(mode):
+    global epoch_num
     # maximum length of sentences
     input_steps = 100
     # load the train and dev datasets
@@ -100,10 +102,10 @@ def train(mode):
         folds = [data.collapse_multi_turn_sessions(fold, FORCE_SINGLE_TURN) for fold in folds]
     folds = [data.adjust_sequences(fold, input_steps) for fold in folds]
 
-    all_samples = [s for fold in folds for s in fold['data']] 
+    all_samples = [s for fold in folds for s in fold['data']]
     meta_data = folds[0]['meta']
 
-    
+
     # turn off multi_turn for the required additional feeds and previous intent RNN
     if multi_turn and FORCE_SINGLE_TURN == 'no_all' or FORCE_SINGLE_TURN == 'no_previous_intent':
         multi_turn = False
@@ -113,7 +115,7 @@ def train(mode):
     if FORCE_SINGLE_TURN == 'no_previous_intent':
         # changing this now, implies that the model doesn't have previous intent
         multi_turn = False
-    
+
     language_model_name = data.get_language_model_name(meta_data['language'], WORD_EMBEDDINGS)
     nlp = spacy.load(language_model_name)
 
@@ -189,7 +191,7 @@ def train(mode):
 
     if test_samples:
         print('computing the metrics for all epochs on all the folds merged')
-        
+
         # initialize the history that will collect some measures
         history = defaultdict(lambda:  defaultdict(create_empty_array))
         for epoch in range(epoch_num):
@@ -204,7 +206,7 @@ def train(mode):
                             history[key][measure_name][epoch] = value
 
         print('averages over the K folds have been computed')
-    
+
         to_plot_precision = {output_type: values['precision'] for output_type, values in history.items()}
         to_plot_recall = {output_type: values['recall'] for output_type, values in history.items()}
         to_plot_f1 = {output_type: values['f1'] for output_type, values in history.items()}
@@ -214,15 +216,15 @@ def train(mode):
 def build_graph(nlp, vocabs, meta_data, multi_turn, input_steps):
     """Builds the computational graph"""
     model = get_model(vocabs, meta_data['tokenizer'], meta_data['language'], multi_turn, input_steps, nlp)
-        
+
     global_init_op = tf.global_variables_initializer()
     table_init_op = tf.tables_initializer()
     sess = tf.Session()
-    
+
     # initialize the required parameters
     sess.run(global_init_op)
     sess.run(table_init_op)
-    
+
     return model, sess
 
 def restore_graph(model_path, nlp):
@@ -240,7 +242,7 @@ def test_epoch(model, sess, test_samples, fold_number, real_folder, epoch, input
     if fold_number == 0:
         # copy just on the first fold, avoid overwriting
         data.copy_huric_xml_to('{}/xml/epoch_{}'.format(real_folder, epoch))
-    
+
     predicted = []
     for j, batch in tqdm(enumerate(data.get_batch(batch_size, test_samples)), total=len(test_samples)//batch_size):
         results = model.step(sess, 'test', batch)
@@ -289,7 +291,7 @@ def test_epoch(model, sess, test_samples, fold_number, real_folder, epoch, input
             print('Intent Truth          :', batch[index]['intent'])
             print('Intent Prediction     :', intent[index])
             print('Intent atts     :', intent_attentions[index][:batch[index]['length']])
-    
+
 
     data.save_predictions('{}/json/epoch_{}'.format(real_folder, epoch), fold_number + 1, predicted)
     # epoch resume
