@@ -46,6 +46,7 @@
             }
           ],
           "samples": [
+            "and {Theme} is {Location}",
             "there are {Theme}",
             "there are {Theme} {Location}",
             "there is {Theme}",
@@ -63,6 +64,10 @@
             {
               "name": "Agent",
               "type": "Agent"
+            },
+            {
+              "name": "Area",
+              "type": "Area"
             },
             {
               "name": "Beneficiary",
@@ -86,32 +91,30 @@
             }
           ],
           "samples": [
+            "and bring {Beneficiary} {Theme}",
             "and bring {Beneficiary} {Theme} {Source}",
             "and bring {Theme} {Beneficiary}",
-            "and bring {Theme} {Goal}",
             "and get {Beneficiary} {Theme}",
+            "and take {Theme} {Goal}",
+            "bring {Area} {Theme}",
             "bring {Beneficiary} {Theme}",
             "bring {Beneficiary} {Theme} {Source}",
             "bring {Manner} {Theme} {Goal}",
             "bring {Theme} {Goal}",
+            "can {Agent} bring {Beneficiary} {Theme}",
             "can {Agent} bring {Theme} {Beneficiary}",
             "can {Agent} bring {Theme} {Goal}",
-            "can {Agent} please bring {Theme} {Goal}",
             "can {Agent} please take {Goal} {Theme}",
             "can {Agent} take {Theme} {Goal}",
             "carry {Theme} {Goal}",
             "could {Agent} bring {Theme} {Goal}",
             "could {Agent} please bring {Beneficiary} {Theme}",
             "could {Agent} please move {Theme} {Source} {Goal}",
-            "deliver {Theme} {Beneficiary}",
-            "fetch {Beneficiary} {Theme}",
             "get {Beneficiary} {Theme}",
             "get {Beneficiary} {Theme} {Source}",
             "i need some toilet paper can {Agent} get {Beneficiary} {Theme}",
             "i need some utensils could {Agent} take {Beneficiary} {Theme}",
             "i really need you to bring {Beneficiary} {Theme}",
-            "i want some fruit bring {Beneficiary} {Theme}",
-            "i want to watch tv bring {Beneficiary} {Theme}",
             "i would like some cutlery can {Agent} get {Beneficiary} {Theme}",
             "i would like some loo roll can {Agent} get {Beneficiary} {Theme}",
             "i would like to read an architecture magazine can {Agent} bring {Beneficiary} {Theme}",
@@ -121,6 +124,7 @@
             "please carry {Theme} {Goal}",
             "please take {Theme} {Goal}",
             "robot can {Agent} bring {Beneficiary} {Theme}",
+            "robot can {Agent} bring {Beneficiary} {Theme} {Source}",
             "robot can {Agent} bring {Theme} {Source}",
             "robot can {Agent} get {Beneficiary} {Theme} {Source}",
             "robot can {Agent} take {Theme} {Goal}",
@@ -151,20 +155,21 @@
           "samples": [
             "activate {Device}",
             "and open {Device}",
-            "and switch {Operational_state} {Device}",
             "and turn {Operational_state} {Device}",
             "can {Agent} turn {Device} {Operational_state}",
+            "could {Agent} please turn {Operational_state} {Device}",
             "could {Agent} switch {Operational_state} {Device}",
             "could {Agent} turn {Operational_state} {Device}",
-            "i want to go to sleep turn {Operational_state} {Device}",
             "i want to jump in the shower can {Agent} turn {Device} {Operational_state}",
             "i'd really like to take a shower could {Agent} turn {Device} {Operational_state}",
             "i'm tired switch {Operational_state} {Device}",
+            "restart {Device}",
             "robot can {Agent} put {Device} {Operational_state}",
             "robot can {Agent} start {Device}",
             "robot can {Agent} turn {Device} {Operational_state}",
             "shut {Operational_state} {Device}",
             "stop {Device}",
+            "switch {Operational_state} {Device}",
             "turn {Operational_state} {Device}"
           ]
         },
@@ -191,7 +196,9 @@
           "samples": [
             "close {Container_portal}",
             "close {Containing_object}",
+            "could {Agent} close {Container_portal}",
             "open {Containing_object}",
+            "please close {Container_portal}",
             "please open {Containing_object}",
             "robot can {Agent} open {Containing_object}",
             "robot can {Agent} put {Container_portal} {Degree}",
@@ -207,8 +214,7 @@
             }
           ],
           "samples": [
-            "enter {Goal}",
-            "please enter {Goal}"
+            "enter {Goal}"
           ]
         },
         {
@@ -247,7 +253,6 @@
             "can {Theme} follow {Cotheme} {Goal}",
             "can {Theme} please follow {Cotheme}",
             "can {Theme} {Manner} follow {Cotheme}",
-            "come {Cotheme}",
             "follow {Cotheme}",
             "follow {Cotheme} {Goal}",
             "follow {Cotheme} {Manner}",
@@ -259,6 +264,7 @@
             "please follow {Cotheme}",
             "please follow {Cotheme} {Goal}",
             "please follow {Cotheme} {Manner}",
+            "robot come {Cotheme} {Goal}",
             "robot follow {Cotheme} {Manner}",
             "robot please follow {Cotheme}"
           ]
@@ -310,10 +316,10 @@
             }
           ],
           "samples": [
+            "and check {Unwanted_entity}",
             "and control {Ground}",
             "check if {Ground}",
             "check if {Ground} {Desired_state}",
-            "check {Ground}",
             "check {Ground} {Unwanted_entity}",
             "could {Inspector} please check if {Ground} {Desired_state}",
             "see if {Ground} {Desired_state}"
@@ -325,10 +331,6 @@
             {
               "name": "Area",
               "type": "Area"
-            },
-            {
-              "name": "Distance",
-              "type": "Distance"
             },
             {
               "name": "Goal",
@@ -343,6 +345,10 @@
               "type": "Path"
             },
             {
+              "name": "Source",
+              "type": "Source"
+            },
+            {
               "name": "Theme",
               "type": "Theme"
             }
@@ -350,12 +356,12 @@
           "samples": [
             "and go {Goal}",
             "can {Theme} go {Goal}",
-            "can {Theme} move {Distance} {Area}",
             "can {Theme} please go {Goal}",
             "can {Theme} please move {Goal}",
             "come {Goal}",
             "could {Theme} go {Goal}",
             "could {Theme} please go {Goal}",
+            "could {Theme} please move {Goal}",
             "drive {Goal}",
             "go {Goal}",
             "go {Manner} {Goal}",
@@ -365,9 +371,11 @@
             "move {Goal}",
             "move {Goal} {Manner}",
             "move {Path}",
+            "move {Source}",
             "please go {Goal}",
             "please move {Goal}",
             "please move {Path}",
+            "please walk {Manner} {Goal}",
             "reach {Goal} {Path}",
             "robot can {Theme} come {Goal}",
             "robot could {Theme} move {Goal}",
@@ -385,10 +393,6 @@
             {
               "name": "Agent",
               "type": "Agent"
-            },
-            {
-              "name": "Area",
-              "type": "Area"
             },
             {
               "name": "Goal",
@@ -410,7 +414,6 @@
             "place {Theme} {Goal}",
             "please put {Theme} {Goal}",
             "please robot put {Theme} {Goal}",
-            "put {Area} {Theme}",
             "put {Theme} {Goal}",
             "robot put {Theme} {Goal}"
           ]
@@ -428,7 +431,7 @@
             }
           ],
           "samples": [
-            "drop {Theme} {Goal}",
+            "drop {Theme}",
             "leave {Theme} {Goal}",
             "let go {Theme}",
             "release {Theme}"
@@ -462,15 +465,14 @@
             "and find {Phenomenon}",
             "and find {Phenomenon} {Purpose}",
             "and search {Phenomenon}",
-            "can {Cognizer} find {Phenomenon} {Ground}",
             "can {Cognizer} find {Phenomenon} {Purpose}",
             "can {Cognizer} find {Purpose} {Phenomenon}",
+            "can {Cognizer} please search {Phenomenon}",
             "could {Cognizer} find {Phenomenon} {Ground}",
             "do you think {Cognizer} can find {Phenomenon}",
             "find {Phenomenon}",
             "find {Phenomenon} {Ground}",
             "go find {Phenomenon}",
-            "i need my watch find {Phenomenon}",
             "look {Phenomenon}",
             "look {Phenomenon} {Ground}",
             "michael find {Phenomenon} {Ground}",
@@ -478,6 +480,7 @@
             "please find {Phenomenon} {Ground}",
             "please find {Purpose} {Phenomenon}",
             "robot can {Cognizer} find {Phenomenon}",
+            "robot please search {Phenomenon}",
             "robot {Manner} search {Ground} {Phenomenon}",
             "search {Ground} {Phenomenon}",
             "search {Phenomenon}",
@@ -508,21 +511,21 @@
           ],
           "samples": [
             "and remove {Theme}",
-            "and take {Theme}",
             "can {Agent} grab {Theme} {Source}",
-            "can {Agent} take {Theme}",
             "catch {Theme}",
             "could {Agent} pick up {Theme}",
+            "could {Agent} take {Theme}",
+            "get {Theme}",
             "get {Theme} {Source}",
             "go get {Theme}",
             "grab {Theme}",
             "hey robot take {Theme}",
             "i would like some beer can {Agent} grab {Theme} {Source}",
+            "john can {Agent} take {Theme}",
             "let's go get {Theme}",
             "please get {Theme} {Source}",
             "please pick up {Theme}",
             "please pick {Theme}",
-            "please take {Theme} {Source}",
             "robot go get {Theme} {Purpose}",
             "take {Theme}",
             "take {Theme} {Source}"
@@ -555,17 +558,12 @@
             },
             {
               "name": {
-                "value": "down"
-              }
-            },
-            {
-              "name": {
                 "value": "everywhere he goes"
               }
             },
             {
               "name": {
-                "value": "to the right"
+                "value": "over"
               }
             }
           ]
@@ -586,11 +584,6 @@
             {
               "name": {
                 "value": "to me"
-              }
-            },
-            {
-              "name": {
-                "value": "to the person in the living room"
               }
             },
             {
@@ -685,6 +678,11 @@
             },
             {
               "name": {
+                "value": "the shutters"
+              }
+            },
+            {
+              "name": {
                 "value": "the window blinds"
               }
             },
@@ -742,16 +740,6 @@
               "name": {
                 "value": "the storage cupboard"
               }
-            },
-            {
-              "name": {
-                "value": "the washer"
-              }
-            },
-            {
-              "name": {
-                "value": "the washing machine"
-              }
             }
           ]
         },
@@ -765,17 +753,17 @@
             },
             {
               "name": {
-                "value": "mark"
-              }
-            },
-            {
-              "name": {
                 "value": "me"
               }
             },
             {
               "name": {
                 "value": "my father"
+              }
+            },
+            {
+              "name": {
+                "value": "my friend"
               }
             },
             {
@@ -855,11 +843,6 @@
             },
             {
               "name": {
-                "value": "this guy"
-              }
-            },
-            {
-              "name": {
                 "value": "with me"
               }
             },
@@ -925,22 +908,12 @@
             },
             {
               "name": {
-                "value": "my pc"
-              }
-            },
-            {
-              "name": {
                 "value": "the boiler"
               }
             },
             {
               "name": {
                 "value": "the coffee machine"
-              }
-            },
-            {
-              "name": {
-                "value": "the coffee machine and the dishwasher"
               }
             },
             {
@@ -955,17 +928,17 @@
             },
             {
               "name": {
+                "value": "the electric oven"
+              }
+            },
+            {
+              "name": {
                 "value": "the heating"
               }
             },
             {
               "name": {
                 "value": "the light"
-              }
-            },
-            {
-              "name": {
-                "value": "the oven"
               }
             },
             {
@@ -981,11 +954,6 @@
             {
               "name": {
                 "value": "the tap"
-              }
-            },
-            {
-              "name": {
-                "value": "the taps in the shower"
               }
             },
             {
@@ -1007,15 +975,10 @@
               "name": {
                 "value": "the tv"
               }
-            }
-          ]
-        },
-        {
-          "name": "Distance",
-          "values": [
+            },
             {
               "name": {
-                "value": "a little bit"
+                "value": "the wifi"
               }
             }
           ]
@@ -1060,6 +1023,11 @@
             },
             {
               "name": {
+                "value": "in the bathroom"
+              }
+            },
+            {
+              "name": {
                 "value": "in the bedroom"
               }
             },
@@ -1071,6 +1039,11 @@
             {
               "name": {
                 "value": "in the center of the table"
+              }
+            },
+            {
+              "name": {
+                "value": "in the closet in my bedroom"
               }
             },
             {
@@ -1095,7 +1068,22 @@
             },
             {
               "name": {
-                "value": "in the kitchen fridge"
+                "value": "in the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "in the kitchen stove"
+              }
+            },
+            {
+              "name": {
+                "value": "in the living room"
+              }
+            },
+            {
+              "name": {
+                "value": "in the nightstand"
               }
             },
             {
@@ -1125,12 +1113,12 @@
             },
             {
               "name": {
-                "value": "into the bedroom"
+                "value": "into the bathroom"
               }
             },
             {
               "name": {
-                "value": "into the dining room"
+                "value": "into the bedroom"
               }
             },
             {
@@ -1155,11 +1143,6 @@
             },
             {
               "name": {
-                "value": "near the couch"
-              }
-            },
-            {
-              "name": {
                 "value": "near the couch of the bedroom"
               }
             },
@@ -1171,11 +1154,6 @@
             {
               "name": {
                 "value": "near the counter of the kitchen"
-              }
-            },
-            {
-              "name": {
-                "value": "near the counter on the right"
               }
             },
             {
@@ -1200,6 +1178,11 @@
             },
             {
               "name": {
+                "value": "near the television of the kitchen"
+              }
+            },
+            {
+              "name": {
                 "value": "near the window"
               }
             },
@@ -1210,7 +1193,7 @@
             },
             {
               "name": {
-                "value": "on the bathroom sink"
+                "value": "next to the door"
               }
             },
             {
@@ -1250,12 +1233,17 @@
             },
             {
               "name": {
-                "value": "on the counter"
+                "value": "on the coffee table"
               }
             },
             {
               "name": {
                 "value": "on the dining room table"
+              }
+            },
+            {
+              "name": {
+                "value": "on the kitchen table"
               }
             },
             {
@@ -1280,7 +1268,7 @@
             },
             {
               "name": {
-                "value": "on the table in the studio"
+                "value": "on the table next to the couch"
               }
             },
             {
@@ -1300,22 +1288,17 @@
             },
             {
               "name": {
-                "value": "over here"
-              }
-            },
-            {
-              "name": {
-                "value": "over to the sofa"
-              }
-            },
-            {
-              "name": {
                 "value": "straight to the living room"
               }
             },
             {
               "name": {
                 "value": "the bathroom"
+              }
+            },
+            {
+              "name": {
+                "value": "the door"
               }
             },
             {
@@ -1340,27 +1323,22 @@
             },
             {
               "name": {
+                "value": "to dining room"
+              }
+            },
+            {
+              "name": {
                 "value": "to kitchen"
               }
             },
             {
               "name": {
-                "value": "to my nightstand"
-              }
-            },
-            {
-              "name": {
-                "value": "to studio"
+                "value": "to living room"
               }
             },
             {
               "name": {
                 "value": "to the bathroom"
-              }
-            },
-            {
-              "name": {
-                "value": "to the bathroom sink"
               }
             },
             {
@@ -1380,7 +1358,7 @@
             },
             {
               "name": {
-                "value": "to the closet of the dining room"
+                "value": "to the coffee machine"
               }
             },
             {
@@ -1410,16 +1388,6 @@
             },
             {
               "name": {
-                "value": "to the couch of the bedroom"
-              }
-            },
-            {
-              "name": {
-                "value": "to the counter at your left"
-              }
-            },
-            {
-              "name": {
                 "value": "to the dining room"
               }
             },
@@ -1440,11 +1408,6 @@
             },
             {
               "name": {
-                "value": "to the far end of this table"
-              }
-            },
-            {
-              "name": {
                 "value": "to the fridge"
               }
             },
@@ -1461,16 +1424,6 @@
             {
               "name": {
                 "value": "to the garden"
-              }
-            },
-            {
-              "name": {
-                "value": "to the guest bedroom"
-              }
-            },
-            {
-              "name": {
-                "value": "to the hall"
               }
             },
             {
@@ -1505,6 +1458,11 @@
             },
             {
               "name": {
+                "value": "to the livingroom"
+              }
+            },
+            {
+              "name": {
                 "value": "to the lounge"
               }
             },
@@ -1525,17 +1483,7 @@
             },
             {
               "name": {
-                "value": "to the side of the bathtub"
-              }
-            },
-            {
-              "name": {
                 "value": "to the sink"
-              }
-            },
-            {
-              "name": {
-                "value": "to the sofa"
               }
             },
             {
@@ -1555,6 +1503,16 @@
             },
             {
               "name": {
+                "value": "to the table of the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "to the telephone"
+              }
+            },
+            {
+              "name": {
                 "value": "to the television in the living room"
               }
             },
@@ -1566,6 +1524,11 @@
             {
               "name": {
                 "value": "towards the bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "towards the kitchen"
               }
             },
             {
@@ -1615,11 +1578,6 @@
             },
             {
               "name": {
-                "value": "in the dresser"
-              }
-            },
-            {
-              "name": {
                 "value": "in the kitchen"
               }
             },
@@ -1631,6 +1589,11 @@
             {
               "name": {
                 "value": "in the lounge"
+              }
+            },
+            {
+              "name": {
+                "value": "in the red drawer"
               }
             },
             {
@@ -1695,11 +1658,6 @@
             },
             {
               "name": {
-                "value": "the toilet paper"
-              }
-            },
-            {
-              "name": {
                 "value": "the washing machine"
               }
             },
@@ -1745,22 +1703,17 @@
           "values": [
             {
               "name": {
+                "value": "between two lamps"
+              }
+            },
+            {
+              "name": {
                 "value": "in a very big bathroom"
               }
             },
             {
               "name": {
-                "value": "in one of the drawers of the bathroom"
-              }
-            },
-            {
-              "name": {
                 "value": "in the bedroom"
-              }
-            },
-            {
-              "name": {
-                "value": "in the blue drawer"
               }
             },
             {
@@ -1776,6 +1729,11 @@
             {
               "name": {
                 "value": "in the kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "in the kitchen drawer"
               }
             },
             {
@@ -1806,6 +1764,11 @@
             {
               "name": {
                 "value": "on the left side"
+              }
+            },
+            {
+              "name": {
+                "value": "on the nightstand"
               }
             },
             {
@@ -1890,6 +1853,11 @@
           "values": [
             {
               "name": {
+                "value": "a bottle"
+              }
+            },
+            {
+              "name": {
                 "value": "a bottle of water"
               }
             },
@@ -1920,22 +1888,22 @@
             },
             {
               "name": {
-                "value": "a red t-shirt"
-              }
-            },
-            {
-              "name": {
                 "value": "for a blue book"
               }
             },
             {
               "name": {
-                "value": "for a pillow"
+                "value": "for a blue plate"
               }
             },
             {
               "name": {
                 "value": "for my handbag"
+              }
+            },
+            {
+              "name": {
+                "value": "for my hat"
               }
             },
             {
@@ -1960,17 +1928,12 @@
             },
             {
               "name": {
-                "value": "for the bottle"
-              }
-            },
-            {
-              "name": {
                 "value": "for the bottle of wine"
               }
             },
             {
               "name": {
-                "value": "for the coffee cups"
+                "value": "for the horn glasses"
               }
             },
             {
@@ -1985,17 +1948,12 @@
             },
             {
               "name": {
-                "value": "for the pillow"
+                "value": "for the remote control"
               }
             },
             {
               "name": {
                 "value": "for the scissors"
-              }
-            },
-            {
-              "name": {
-                "value": "for the soap"
               }
             },
             {
@@ -2011,6 +1969,11 @@
             {
               "name": {
                 "value": "for the wrench"
+              }
+            },
+            {
+              "name": {
+                "value": "for towel"
               }
             },
             {
@@ -2031,6 +1994,11 @@
             {
               "name": {
                 "value": "my hat"
+              }
+            },
+            {
+              "name": {
+                "value": "my tablet"
               }
             },
             {
@@ -2070,17 +2038,17 @@
             },
             {
               "name": {
-                "value": "the bottle of wine"
-              }
-            },
-            {
-              "name": {
                 "value": "the butcher knife"
               }
             },
             {
               "name": {
-                "value": "the fruit"
+                "value": "the flowers"
+              }
+            },
+            {
+              "name": {
+                "value": "the glasses"
               }
             },
             {
@@ -2091,6 +2059,11 @@
             {
               "name": {
                 "value": "the lamp"
+              }
+            },
+            {
+              "name": {
+                "value": "the magazine"
               }
             },
             {
@@ -2146,11 +2119,6 @@
             {
               "name": {
                 "value": "the toilet paper"
-              }
-            },
-            {
-              "name": {
-                "value": "the towel"
               }
             },
             {
@@ -2215,6 +2183,11 @@
           "values": [
             {
               "name": {
+                "value": "away from the oven"
+              }
+            },
+            {
+              "name": {
                 "value": "from the bathroom"
               }
             },
@@ -2230,7 +2203,7 @@
             },
             {
               "name": {
-                "value": "from the bookshelf"
+                "value": "from the bedroom"
               }
             },
             {
@@ -2265,11 +2238,6 @@
             },
             {
               "name": {
-                "value": "from the jacket hook in my bedroom"
-              }
-            },
-            {
-              "name": {
                 "value": "from the kitchen"
               }
             },
@@ -2291,6 +2259,16 @@
             {
               "name": {
                 "value": "from the press"
+              }
+            },
+            {
+              "name": {
+                "value": "from the seat"
+              }
+            },
+            {
+              "name": {
+                "value": "from the stand"
               }
             },
             {
@@ -2330,6 +2308,11 @@
             },
             {
               "name": {
+                "value": "a bath towel"
+              }
+            },
+            {
+              "name": {
                 "value": "a bed with two lamps"
               }
             },
@@ -2365,6 +2348,16 @@
             },
             {
               "name": {
+                "value": "a magazine"
+              }
+            },
+            {
+              "name": {
+                "value": "a plastic plate"
+              }
+            },
+            {
+              "name": {
                 "value": "a plate"
               }
             },
@@ -2380,6 +2373,11 @@
             },
             {
               "name": {
+                "value": "a towel"
+              }
+            },
+            {
+              "name": {
                 "value": "a wristwatch"
               }
             },
@@ -2391,11 +2389,6 @@
             {
               "name": {
                 "value": "all the plates"
-              }
-            },
-            {
-              "name": {
-                "value": "an apple or an orange"
               }
             },
             {
@@ -2430,6 +2423,11 @@
             },
             {
               "name": {
+                "value": "my cellphone"
+              }
+            },
+            {
+              "name": {
                 "value": "my clothes"
               }
             },
@@ -2440,7 +2438,17 @@
             },
             {
               "name": {
+                "value": "my computer"
+              }
+            },
+            {
+              "name": {
                 "value": "my jacket"
+              }
+            },
+            {
+              "name": {
+                "value": "my laptop"
               }
             },
             {
@@ -2451,6 +2459,16 @@
             {
               "name": {
                 "value": "my phone"
+              }
+            },
+            {
+              "name": {
+                "value": "my reading glasses"
+              }
+            },
+            {
+              "name": {
+                "value": "my tablet"
               }
             },
             {
@@ -2535,7 +2553,7 @@
             },
             {
               "name": {
-                "value": "some pasta"
+                "value": "some plastic bags"
               }
             },
             {
@@ -2565,6 +2583,11 @@
             },
             {
               "name": {
+                "value": "the bed"
+              }
+            },
+            {
+              "name": {
                 "value": "the beer cans in the kitchen"
               }
             },
@@ -2576,11 +2599,6 @@
             {
               "name": {
                 "value": "the beers"
-              }
-            },
-            {
-              "name": {
-                "value": "the black paperback"
               }
             },
             {
@@ -2601,6 +2619,11 @@
             {
               "name": {
                 "value": "the bottle"
+              }
+            },
+            {
+              "name": {
+                "value": "the bottle of water on the table"
               }
             },
             {
@@ -2645,11 +2668,6 @@
             },
             {
               "name": {
-                "value": "the cigarettes"
-              }
-            },
-            {
-              "name": {
                 "value": "the cigarettes next to the phone"
               }
             },
@@ -2665,12 +2683,12 @@
             },
             {
               "name": {
-                "value": "the cookie jar"
+                "value": "the coke that is in the kitchen"
               }
             },
             {
               "name": {
-                "value": "the corn can on the kitchen table"
+                "value": "the cookie jar"
               }
             },
             {
@@ -2686,11 +2704,6 @@
             {
               "name": {
                 "value": "the cushion"
-              }
-            },
-            {
-              "name": {
-                "value": "the detergent"
               }
             },
             {
@@ -2725,7 +2738,22 @@
             },
             {
               "name": {
+                "value": "the glasses"
+              }
+            },
+            {
+              "name": {
+                "value": "the gray folder"
+              }
+            },
+            {
+              "name": {
                 "value": "the jacket"
+              }
+            },
+            {
+              "name": {
+                "value": "the jar"
               }
             },
             {
@@ -2740,22 +2768,12 @@
             },
             {
               "name": {
-                "value": "the knife with the black handle"
+                "value": "the knife on the cutting board"
               }
             },
             {
               "name": {
                 "value": "the laptop near the table of the dining room"
-              }
-            },
-            {
-              "name": {
-                "value": "the magazine that is in the bathroom"
-              }
-            },
-            {
-              "name": {
-                "value": "the mayo"
               }
             },
             {
@@ -2770,7 +2788,17 @@
             },
             {
               "name": {
+                "value": "the mobile phone"
+              }
+            },
+            {
+              "name": {
                 "value": "the mug"
+              }
+            },
+            {
+              "name": {
+                "value": "the mug in the kitchen"
               }
             },
             {
@@ -2815,6 +2843,16 @@
             },
             {
               "name": {
+                "value": "the phone on the couch"
+              }
+            },
+            {
+              "name": {
+                "value": "the phone on the left of the pc"
+              }
+            },
+            {
+              "name": {
                 "value": "the phone that is on the glass table in the dining room"
               }
             },
@@ -2825,12 +2863,7 @@
             },
             {
               "name": {
-                "value": "the plate"
-              }
-            },
-            {
-              "name": {
-                "value": "the postcard on the nightstand"
+                "value": "the pillow at the left of the couch"
               }
             },
             {
@@ -2851,11 +2884,6 @@
             {
               "name": {
                 "value": "the remote control"
-              }
-            },
-            {
-              "name": {
-                "value": "the salt box"
               }
             },
             {
@@ -2895,11 +2923,6 @@
             },
             {
               "name": {
-                "value": "the tissue box"
-              }
-            },
-            {
-              "name": {
                 "value": "the toilet paper"
               }
             },
@@ -2930,11 +2953,6 @@
             },
             {
               "name": {
-                "value": "they"
-              }
-            },
-            {
-              "name": {
                 "value": "this book"
               }
             },
@@ -2945,12 +2963,12 @@
             },
             {
               "name": {
-                "value": "this message"
+                "value": "this mug"
               }
             },
             {
               "name": {
-                "value": "this mug"
+                "value": "this pan"
               }
             },
             {
@@ -2966,11 +2984,6 @@
             {
               "name": {
                 "value": "two couches facing one another"
-              }
-            },
-            {
-              "name": {
-                "value": "two sinks"
               }
             },
             {
