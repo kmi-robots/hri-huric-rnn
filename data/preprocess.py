@@ -56,13 +56,13 @@ def huric_preprocess(path, trim='right', also_spatial=False, invoke_frame_slot=F
     files_list = os.listdir(path_source)
 
     # TODO remove this
-    # 2307: nested frame (no problem, discarded) 
+    # 2307: nested frame (no problem, discarded)
     # 2374: frames swapped
     # 2377: nested frame (no problem, discarded)
     # 2411: nested frame (no problem, discarded)
     # 3395: nested frame (no problem, discarded)
     # 3281, 3283, 3284: spatial problem
-    # 
+    #
     print('#files: ', len(files_list))
 
     for file_name in sorted(files_list):
@@ -70,7 +70,7 @@ def huric_preprocess(path, trim='right', also_spatial=False, invoke_frame_slot=F
         #print(file_location)
         with open(file_location) as file_in:
             tree = ET.parse(file_in)
-        
+
         root = tree.getroot()
 
         # read the tokens, saving in a map indexed by the id
@@ -82,7 +82,7 @@ def huric_preprocess(path, trim='right', also_spatial=False, invoke_frame_slot=F
 
         # remember where the last semantic frame is beginning
         start_of_frame = 1
-        
+
         slots_map = {}
 
         # first loop: over the semantic frames
@@ -116,6 +116,10 @@ def huric_preprocess(path, trim='right', also_spatial=False, invoke_frame_slot=F
             if trim == 'right':
                 # start considering from the end of the previous frame
                 start_considering = start_of_frame
+                # remove the initial 'and' that is in between two frames
+                # the None fallback is for nested frames, where start_considering may be outside of the sentence
+                if tokens_map.get(start_considering, None) == 'and':
+                    start_considering += 1
             elif trim == 'both':
                 # start considering from the minimum mentioned token
                 start_considering = min_token_id
@@ -146,7 +150,7 @@ def huric_preprocess(path, trim='right', also_spatial=False, invoke_frame_slot=F
 
             samples.append(sample)
             slot_types.update(slots)
-        
+
         tokenId_by_slotType = defaultdict(list)
         for id, slot in slots_map.items():
             tokenId_by_slotType[slot['slot_type']].append(id)
@@ -179,7 +183,7 @@ def huric_preprocess(path, trim='right', also_spatial=False, invoke_frame_slot=F
                 frame_element_min, frame_element_max = slots_map[min_token_id]['slot_type'], slots_map[max_token_id]['slot_type']
                 if frame_element_min != frame_element_max:
                     print('INFO: spatial relation spans multiple frame elements: ', frame_tokens_mentioned, file_name)
-                
+
                 parent_start, parent_end = tokenId_by_slotType[frame_element_min][0], tokenId_by_slotType[frame_element_max][-1]
                 frame_tokens = {key: value for (key, value) in tokens_map.items() if int(key) >= parent_start and int(key) <= parent_end}
                 words = [value for (key, value) in frame_tokens.items()]
@@ -221,7 +225,7 @@ def huric_preprocess(path, trim='right', also_spatial=False, invoke_frame_slot=F
             'data': samples,
             'meta': meta
         }
-    
+
     write_json(out_path_preprocessed, 'all_samples.json', result_all)
 
     if also_spatial:
@@ -283,7 +287,7 @@ def huric_preprocess(path, trim='right', also_spatial=False, invoke_frame_slot=F
             'data': train_data,
             'meta': meta
         }
-    
+
     write_json(out_path_preprocessed, 'train_samples.json', result_train)
 
     return result_all, spatial_result
@@ -413,7 +417,7 @@ def sentence_fix(sentence):
 
 def lex_from_alexa(path, bot_name, alexa_file_name='alexaInteractionModel.json', lex_file_name='lexBot.json'):
     """Builds the .zip file to be uploaded directly on lex portal"""
-    
+
     with open('{}/{}'.format(path, alexa_file_name)) as json_file:
         alexa_content = json.load(json_file)
 
@@ -432,7 +436,7 @@ def lex_from_alexa(path, bot_name, alexa_file_name='alexaInteractionModel.json',
     types = alexa_content['interactionModel']['languageModel']['types']
     for slotType in types:
         slotType['enumerationValues'] = [value['name'] for value in slotType.pop('values')]
-    
+
     lex_content = {
         'metadata': {
             'schemaVersion': '1.0',
@@ -482,7 +486,7 @@ def lex_from_alexa(path, bot_name, alexa_file_name='alexaInteractionModel.json',
 def combine_and_save(results, path):
     if not results:
         raise ValueError('no results passed')
-    
+
     samples = []
     slot_types = []
     intent_types = []
@@ -519,16 +523,16 @@ def modernize_huric_xml(source_path, dest_path):
 
     def get_new_id(old_id):
         return old_id.split('.')[3]
-    
+
     def get_constituents(string):
         if not string:
             return []
         return [get_new_id(old_id) for old_id in string.split(' ')]
-    
+
     files_list = os.listdir('{}'.format(source_path))
     if not os.path.exists(dest_path):
         os.makedirs(dest_path)
-    
+
     for file_name in sorted(files_list):
         src_tree = ET.parse('{}/{}'.format(source_path, file_name))
         src_root = src_tree.getroot()
@@ -602,7 +606,7 @@ def speakers_split(source_folder, dest_folder):
         groups = json.load(groups_file)
 
     results = list()
-    
+
     for group_criterion, groups in groups.items():
         for group_name, group in groups.items():
             destination_subfolder = '{}/{}'.format(group_criterion, group_name)
@@ -739,7 +743,7 @@ def framenet_preprocess(folder, dest_path, subset=True):
                     new_frame_element = ET.SubElement(new_frame, 'frameElement', {'type': fe['type']})
                     for t_id in fe['ids']:
                         ET.SubElement(new_frame_element, 'token', {'id': str(t_id)})
-        
+
         pretty_string = minidom.parseString(ET.tostring(new_command, 'utf-8')).toprettyxml(encoding='utf-8').decode('utf-8')
         with open('{}/{}.xml'.format(dest_path, command_id), 'w') as out_file:
             out_file.write(pretty_string)
@@ -753,7 +757,7 @@ def load_folds(location):
     for fold_number in range(5):
         f = load_json('{}/fold_{}.json'.format(location, fold_number + 1))
         results.append(f)
-    
+
     return results
 
 
@@ -824,7 +828,7 @@ def main():
         framenet_preprocess('framenet', 'framenet/subset/source', True)
         huric_preprocess('framenet/subset')
         huric_preprocess('framenet/subset', trim='both')
-    
+
     elif which == 'huric_with_framenet':
         enrich_huric_train_with_framenet('huric_eb/modern_right/preprocessed', 'framenet/subset_both/preprocessed', 'huric_eb/with_framenet/preprocessed')
 
