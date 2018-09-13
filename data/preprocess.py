@@ -619,6 +619,110 @@ def speakers_split(source_folder, dest_folder):
 
     return results
 
+def fate_preprocess(folder, dest_path, subset=False):
+    """Preprocess the FATE corpus, producing a HuRIC formatted dataset """
+    flatten = lambda l: [item for sublist in l for item in sublist]
+    location = Path(str(folder)) / 'FATEv09.xml'
+    with open(str(location)) as f:
+        xmlstring = f.read()
+    # remove namespace that makes ET usage cumbersome
+    xmlstring = re.sub(r'\sxmlns="[^"]+"', '', xmlstring, count = 1)
+    root = ET.fromstring(xmlstring)
+
+    samples = []
+
+    for s in root.findall('body/s'):
+        tokens = {idx + 1: t.attrib for idx, t in enumerate(s.findall('graph/terminals/t'))}
+        sentence = ' '.join([t['word'] for t in tokens.values()])
+        print(sentence)
+        # for each edge_id, the list of terminal tokens that make it
+        # start populating it from terminals
+        edge_tokens = {t['id']: [idx] for idx, t in tokens.items()}
+        # and now the nonterminals
+        nonterminals = s.findall('graph/nonterminals/nt')
+        idx = 0
+        # TODO build dependency tree from constituent tree
+        #print(edge_tokens)
+        #deps = {}
+        while nonterminals:
+            idx %= len(nonterminals)
+            nt = nonterminals[idx]
+            parts = [e.attrib['idref'] for e in nt.findall('edge')]
+            try:
+                parts_ids = [edge_tokens[p] for p in parts]
+                nonterminals.remove(nt)
+            except KeyError:
+                # if this nonterminal cannot be resolved, go ahead
+                idx += 1
+                continue
+            edge_tokens[nt.attrib['id']] = flatten(parts_ids)
+            #head = ??
+        # the last nonterminal is the root
+
+        frames = []
+
+        for f in s.findall('sem/frames/frame'):
+            frame_name = f.attrib['name']
+            lu_ids = [edge_tokens[c.attrib['idref']] for c in f.findall('target/fenode')]
+            lu_ids = sorted(flatten(lu_ids))
+            print('\t', frame_name, [tokens[id]['word'] for id in lu_ids])
+
+            fes = []
+
+            for fe in f.findall('fe'):
+                fe_name = fe.attrib['name']
+                fe_ids = [edge_tokens[c.attrib['idref']] for c in fe.findall('fenode')]
+                fe_ids = sorted(flatten(fe_ids))
+                print('\t\t', fe_name, [tokens[id]['word'] for id in fe_ids])
+                fes.append({
+                    'name': fe_name,
+                    'fe_ids': fe_ids
+                })
+
+            frames.append({
+                'name': frame_name,
+                'lu_ids': lu_ids,
+                'fes': fes
+            })
+
+        samples.append({
+            'id': s.attrib['id'],
+            'sentence': sentence,
+            'tokens': sorted([{'id': str(idx), 'lemma': t['lemma'], 'pos': t.get('pos', 'MISSING'), 'surface': t['word']} for idx, t in tokens.items()], key=lambda el: el['id']),
+            'dependencies': [], #TODO
+            'frames': frames
+        })
+
+    # second part: to HuRIC xml
+    if not os.path.exists(dest_path):
+        os.makedirs(dest_path)
+    for s in samples:
+        new_command = ET.Element('command', {'id': s['id']})
+        ET.SubElement(new_command, 'sentence').text = s['sentence']
+        new_tokens = ET.SubElement(new_command, 'tokens')
+        for t in s['tokens']:
+            ET.SubElement(new_tokens, 'token', t)
+        new_dependencies = ET.SubElement(new_command, 'dependencies')
+        for d in s['dependencies']:
+            ET.SubElement(new_dependencies, 'dep', d)
+        new_semantic_frames = ET.SubElement(ET.SubElement(new_command, 'semantics'), 'frameSemantics')
+
+        for f in s['frames']:
+            new_frame = ET.SubElement(new_semantic_frames, 'frame', {'name': f['name']})
+            new_lexical_unit = ET.SubElement(new_frame, 'lexicalUnit')
+            for l in f['lu_ids']:
+                ET.SubElement(new_lexical_unit, 'token', {'id': str(l)})
+            for fe in f['fes']:
+                if len(fe['fe_ids']):
+                    new_frame_element = ET.SubElement(new_frame, 'frameElement', {'type': fe['name']})
+                    for t_id in fe['fe_ids']:
+                        ET.SubElement(new_frame_element, 'token', {'id': str(t_id)})
+
+        pretty_string = minidom.parseString(ET.tostring(new_command, 'utf-8')).toprettyxml(encoding='utf-8').decode('utf-8')
+        with open('{}/{}.xml'.format(dest_path, s['id']), 'w') as out_file:
+            out_file.write(pretty_string)
+
+
 
 
 def framenet_preprocess(folder, dest_path, subset=True):
@@ -804,7 +908,7 @@ def enrich_huric_train_with_framenet(huric_source_location, framenet_location, h
 def main():
     #nlp_en = load_nlp()
     #nlp_it = load_nlp('it')
-    which = os.environ.get('DATASET', 'huric_eb')
+    which = os.environ.get('DATASET', None)
     print(which)
 
     if which == 'huric_eb':
@@ -831,6 +935,10 @@ def main():
 
     elif which == 'huric_with_framenet':
         enrich_huric_train_with_framenet('huric_eb/modern_right/preprocessed', 'framenet/subset_both/preprocessed', 'huric_eb/with_framenet/preprocessed')
+
+    elif which == 'fate':
+        fate_preprocess('fate/origin', 'fate/modern/source')
+        huric_preprocess('fate/modern')
 
     else:
         raise ValueError(which)
