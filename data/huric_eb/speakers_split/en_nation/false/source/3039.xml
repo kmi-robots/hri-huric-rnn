@@ -1,42 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3039">
-	<sentence>bring me the cereals and the milk</sentence>
-	<tokens>
-		<token id="1" lemma="bring" pos="VB" surface="bring"/>
-		<token id="2" lemma="I" pos="PRP" surface="me"/>
-		<token id="3" lemma="the" pos="DT" surface="the"/>
-		<token id="4" lemma="cereal" pos="NNS" surface="cereals"/>
-		<token id="5" lemma="and" pos="CC" surface="and"/>
-		<token id="6" lemma="the" pos="DT" surface="the"/>
-		<token id="7" lemma="milk" pos="NN" surface="milk"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="nsubj"/>
-		<dep from="4" to="3" type="det"/>
-		<dep from="1" to="4" type="xcomp"/>
-		<dep from="4" to="5" type="cc"/>
-		<dep from="7" to="6" type="det"/>
-		<dep from="4" to="7" type="conj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Bringing">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Beneficiary">
-					<token id="2"/>
-				</frameElement>
-				<frameElement type="Theme">
-					<token id="3"/>
-					<token id="4"/>
-					<token id="5"/>
-					<token id="6"/>
-					<token id="7"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  bring me the cereals and the milk
+ </sentence>
+ <tokens>
+  <token id="1" lemma="bring" pos="VB" surface="bring"/>
+  <token id="2" lemma="I" pos="PRP" surface="me"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="cereal" pos="NNS" surface="cereals"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="milk" pos="NN" surface="milk"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="1" to="4" type="xcomp"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="4" to="7" type="conj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Beneficiary">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

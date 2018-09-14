@@ -1,55 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3385">
-	<sentence>turn off the light and turn off the computer</sentence>
-	<tokens>
-		<token id="1" lemma="turn" pos="VB" surface="turn"/>
-		<token id="2" lemma="off" pos="RP" surface="off"/>
-		<token id="3" lemma="the" pos="DT" surface="the"/>
-		<token id="4" lemma="light" pos="NN" surface="light"/>
-		<token id="5" lemma="and" pos="CC" surface="and"/>
-		<token id="6" lemma="turn" pos="VB" surface="turn"/>
-		<token id="7" lemma="off" pos="RP" surface="off"/>
-		<token id="8" lemma="the" pos="DT" surface="the"/>
-		<token id="9" lemma="computer" pos="NN" surface="computer"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="prt"/>
-		<dep from="4" to="3" type="det"/>
-		<dep from="1" to="4" type="dobj"/>
-		<dep from="1" to="5" type="cc"/>
-		<dep from="1" to="6" type="conj"/>
-		<dep from="6" to="7" type="prt"/>
-		<dep from="9" to="8" type="det"/>
-		<dep from="6" to="9" type="dobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Change_operational_state">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Operational_state">
-					<token id="2"/>
-				</frameElement>
-				<frameElement type="Device">
-					<token id="3"/>
-					<token id="4"/>
-				</frameElement>
-			</frame>
-			<frame name="Change_operational_state">
-				<lexicalUnit>
-					<token id="6"/>
-				</lexicalUnit>
-				<frameElement type="Operational_state">
-					<token id="7"/>
-				</frameElement>
-				<frameElement type="Device">
-					<token id="8"/>
-					<token id="9"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  turn off the light and turn off the computer
+ </sentence>
+ <tokens>
+  <token id="1" lemma="turn" pos="VB" surface="turn"/>
+  <token id="2" lemma="off" pos="RP" surface="off"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="light" pos="NN" surface="light"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="turn" pos="VB" surface="turn"/>
+  <token id="7" lemma="off" pos="RP" surface="off"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="computer" pos="NN" surface="computer"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prt"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="1" to="4" type="dobj"/>
+  <dep from="1" to="5" type="cc"/>
+  <dep from="1" to="6" type="conj"/>
+  <dep from="6" to="7" type="prt"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="6" to="9" type="dobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_operational_state">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Operational_state">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Device">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_operational_state">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Operational_state">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Device">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

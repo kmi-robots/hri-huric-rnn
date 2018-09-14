@@ -1,36 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3292">
-	<sentence>bring over the gray folder</sentence>
-	<tokens>
-		<token id="1" lemma="bring" pos="VB" surface="bring"/>
-		<token id="2" lemma="over" pos="RP" surface="over"/>
-		<token id="3" lemma="the" pos="DT" surface="the"/>
-		<token id="4" lemma="gray" pos="JJ" surface="gray"/>
-		<token id="5" lemma="folder" pos="NN" surface="folder"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="prt"/>
-		<dep from="5" to="3" type="det"/>
-		<dep from="5" to="4" type="amod"/>
-		<dep from="1" to="5" type="dobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Bringing">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Area">
-					<token id="2"/>
-				</frameElement>
-				<frameElement type="Theme">
-					<token id="3"/>
-					<token id="4"/>
-					<token id="5"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  bring over the gray folder
+ </sentence>
+ <tokens>
+  <token id="1" lemma="bring" pos="VB" surface="bring"/>
+  <token id="2" lemma="over" pos="RP" surface="over"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="gray" pos="JJ" surface="gray"/>
+  <token id="5" lemma="folder" pos="NN" surface="folder"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prt"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="1" to="5" type="dobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Area">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

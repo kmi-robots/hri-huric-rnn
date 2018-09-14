@@ -1,57 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="2758">
-	<sentence>give me one apple from the table</sentence>
-	<tokens>
-		<token id="1" lemma="give" pos="VB" surface="give"/>
-		<token id="2" lemma="I" pos="PRP" surface="me"/>
-		<token id="3" lemma="one" pos="CD" surface="one"/>
-		<token id="4" lemma="apple" pos="NN" surface="apple"/>
-		<token id="5" lemma="from" pos="IN" surface="from"/>
-		<token id="6" lemma="the" pos="DT" surface="the"/>
-		<token id="7" lemma="table" pos="NN" surface="table"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="iobj"/>
-		<dep from="4" to="3" type="num"/>
-		<dep from="1" to="4" type="dobj"/>
-		<dep from="4" to="5" type="prep"/>
-		<dep from="7" to="6" type="det"/>
-		<dep from="5" to="7" type="pobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Giving">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Recipient">
-					<token id="2"/>
-				</frameElement>
-				<frameElement type="Theme">
-					<token id="3"/>
-					<token id="4"/>
-					<token id="5"/>
-					<token id="6"/>
-					<token id="7"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics>
-			<spatialRelation name="Spatial_relation">
-				<lexicalUnit/>
-				<spatialRole type="Trajector">
-					<token id="3"/>
-					<token id="4"/>
-				</spatialRole>
-				<spatialRole type="Spatial_Indicator">
-					<token id="5"/>
-				</spatialRole>
-				<spatialRole type="Landmark">
-					<token id="6"/>
-					<token id="7"/>
-				</spatialRole>
-			</spatialRelation>
-		</spatialSemantics>
-	</semantics>
+ <sentence>
+  give me one apple from the table
+ </sentence>
+ <tokens>
+  <token id="1" lemma="give" pos="VB" surface="give"/>
+  <token id="2" lemma="I" pos="PRP" surface="me"/>
+  <token id="3" lemma="one" pos="CD" surface="one"/>
+  <token id="4" lemma="apple" pos="NN" surface="apple"/>
+  <token id="5" lemma="from" pos="IN" surface="from"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="table" pos="NN" surface="table"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="iobj"/>
+  <dep from="4" to="3" type="num"/>
+  <dep from="1" to="4" type="dobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics>
+   <spatialRelation name="Spatial_relation">
+    <lexicalUnit/>
+    <spatialRole type="Trajector">
+     <token id="3"/>
+     <token id="4"/>
+    </spatialRole>
+    <spatialRole type="Spatial_Indicator">
+     <token id="5"/>
+    </spatialRole>
+    <spatialRole type="Landmark">
+     <token id="6"/>
+     <token id="7"/>
+    </spatialRole>
+   </spatialRelation>
+  </spatialSemantics>
+ </semantics>
 </command>

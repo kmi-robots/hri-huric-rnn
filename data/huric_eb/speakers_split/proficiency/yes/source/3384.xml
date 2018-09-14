@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3384">
-	<sentence>turn off the boiler</sentence>
-	<tokens>
-		<token id="1" lemma="turn" pos="VB" surface="turn"/>
-		<token id="2" lemma="off" pos="RP" surface="off"/>
-		<token id="3" lemma="the" pos="DT" surface="the"/>
-		<token id="4" lemma="boiler" pos="NN" surface="boiler"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="prt"/>
-		<dep from="4" to="3" type="det"/>
-		<dep from="1" to="4" type="dobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Change_operational_state">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Operational_state">
-					<token id="2"/>
-				</frameElement>
-				<frameElement type="Device">
-					<token id="3"/>
-					<token id="4"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  turn off the boiler
+ </sentence>
+ <tokens>
+  <token id="1" lemma="turn" pos="VB" surface="turn"/>
+  <token id="2" lemma="off" pos="RP" surface="off"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="boiler" pos="NN" surface="boiler"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prt"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="1" to="4" type="dobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_operational_state">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Operational_state">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Device">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

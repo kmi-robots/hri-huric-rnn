@@ -1,40 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="4098110">
-	<sentence>QN : Are foodstuffs getting into Iraq ?</sentence>
-	<tokens>
-		<token id="1" lemma="qn" pos="NNP" surface="QN"/>
-		<token id="2" lemma=":" pos=":" surface=":"/>
-		<token id="3" lemma="be" pos="VBP" surface="Are"/>
-		<token id="4" lemma="foodstuff" pos="NNS" surface="foodstuffs"/>
-		<token id="5" lemma="get" pos="VBG" surface="getting"/>
-		<token id="6" lemma="into" pos="IN" surface="into"/>
-		<token id="7" lemma="iraq" pos="NNP" surface="Iraq"/>
-		<token id="8" lemma="?" pos="." surface="?"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="punct"/>
-		<dep from="5" to="3" type="aux"/>
-		<dep from="3" to="4" type="attr"/>
-		<dep from="0" to="5" type="root"/>
-		<dep from="5" to="6" type="prep"/>
-		<dep from="6" to="7" type="pobj"/>
-		<dep from="5" to="8" type="punct"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Entering">
-				<lexicalUnit>
-					<token id="5"/>
-				</lexicalUnit>
-				<frameElement type="Theme">
-					<token id="4"/>
-				</frameElement>
-				<frameElement type="Goal">
-					<token id="6"/>
-					<token id="7"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-	</semantics>
+ <sentence>
+  QN : Are foodstuffs getting into Iraq ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="be" pos="VBP" surface="Are"/>
+  <token id="4" lemma="foodstuff" pos="NNS" surface="foodstuffs"/>
+  <token id="5" lemma="get" pos="VBG" surface="getting"/>
+  <token id="6" lemma="into" pos="IN" surface="into"/>
+  <token id="7" lemma="iraq" pos="NNP" surface="Iraq"/>
+  <token id="8" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="3" to="4" type="attr"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="5" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
 </command>

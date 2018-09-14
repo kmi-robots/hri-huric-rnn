@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3045">
-	<sentence>bring us some mustard</sentence>
-	<tokens>
-		<token id="1" lemma="bring" pos="VB" surface="bring"/>
-		<token id="2" lemma="we" pos="PRP" surface="us"/>
-		<token id="3" lemma="some" pos="DT" surface="some"/>
-		<token id="4" lemma="mustard" pos="NN" surface="mustard"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="iobj"/>
-		<dep from="4" to="3" type="det"/>
-		<dep from="1" to="4" type="dobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Bringing">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Beneficiary">
-					<token id="2"/>
-				</frameElement>
-				<frameElement type="Theme">
-					<token id="3"/>
-					<token id="4"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  bring us some mustard
+ </sentence>
+ <tokens>
+  <token id="1" lemma="bring" pos="VB" surface="bring"/>
+  <token id="2" lemma="we" pos="PRP" surface="us"/>
+  <token id="3" lemma="some" pos="DT" surface="some"/>
+  <token id="4" lemma="mustard" pos="NN" surface="mustard"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="iobj"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="1" to="4" type="dobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Beneficiary">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

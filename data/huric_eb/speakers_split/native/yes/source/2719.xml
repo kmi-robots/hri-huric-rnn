@@ -1,59 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="2719">
-	<sentence>go to the television in the living room</sentence>
-	<tokens>
-		<token id="1" lemma="go" pos="VB" surface="go"/>
-		<token id="2" lemma="to" pos="TO" surface="to"/>
-		<token id="3" lemma="the" pos="DT" surface="the"/>
-		<token id="4" lemma="television" pos="NN" surface="television"/>
-		<token id="5" lemma="in" pos="IN" surface="in"/>
-		<token id="6" lemma="the" pos="DT" surface="the"/>
-		<token id="7" lemma="living" pos="NN" surface="living"/>
-		<token id="8" lemma="room" pos="NN" surface="room"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="prep"/>
-		<dep from="4" to="3" type="det"/>
-		<dep from="2" to="4" type="pobj"/>
-		<dep from="4" to="5" type="prep"/>
-		<dep from="8" to="6" type="det"/>
-		<dep from="8" to="7" type="nn"/>
-		<dep from="5" to="8" type="pobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Motion">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Goal">
-					<token id="2"/>
-					<token id="3"/>
-					<token id="4"/>
-					<token id="5"/>
-					<token id="6"/>
-					<token id="7"/>
-					<token id="8"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics>
-			<spatialRelation name="Spatial_relation">
-				<lexicalUnit/>
-				<spatialRole type="Trajector">
-					<token id="3"/>
-					<token id="4"/>
-				</spatialRole>
-				<spatialRole type="Spatial_Indicator">
-					<token id="5"/>
-				</spatialRole>
-				<spatialRole type="Landmark">
-					<token id="6"/>
-					<token id="7"/>
-					<token id="8"/>
-				</spatialRole>
-			</spatialRelation>
-		</spatialSemantics>
-	</semantics>
+ <sentence>
+  go to the television in the living room
+ </sentence>
+ <tokens>
+  <token id="1" lemma="go" pos="VB" surface="go"/>
+  <token id="2" lemma="to" pos="TO" surface="to"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="television" pos="NN" surface="television"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="living" pos="NN" surface="living"/>
+  <token id="8" lemma="room" pos="NN" surface="room"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="nn"/>
+  <dep from="5" to="8" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics>
+   <spatialRelation name="Spatial_relation">
+    <lexicalUnit/>
+    <spatialRole type="Trajector">
+     <token id="3"/>
+     <token id="4"/>
+    </spatialRole>
+    <spatialRole type="Spatial_Indicator">
+     <token id="5"/>
+    </spatialRole>
+    <spatialRole type="Landmark">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </spatialRole>
+   </spatialRelation>
+  </spatialSemantics>
+ </semantics>
 </command>

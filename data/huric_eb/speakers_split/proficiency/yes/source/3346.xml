@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3346">
-	<sentence>please close the blinds</sentence>
-	<tokens>
-		<token id="1" lemma="please" pos="UH" surface="please"/>
-		<token id="2" lemma="close" pos="VB" surface="close"/>
-		<token id="3" lemma="the" pos="DT" surface="the"/>
-		<token id="4" lemma="blind" pos="NNS" surface="blinds"/>
-	</tokens>
-	<dependencies>
-		<dep from="2" to="1" type="discourse"/>
-		<dep from="0" to="2" type="root"/>
-		<dep from="4" to="3" type="det"/>
-		<dep from="2" to="4" type="dobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Closure">
-				<lexicalUnit>
-					<token id="2"/>
-				</lexicalUnit>
-				<frameElement type="Container_portal">
-					<token id="3"/>
-					<token id="4"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  please close the blinds
+ </sentence>
+ <tokens>
+  <token id="1" lemma="please" pos="UH" surface="please"/>
+  <token id="2" lemma="close" pos="VB" surface="close"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="blind" pos="NNS" surface="blinds"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="discourse"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Closure">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Container_portal">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

@@ -1,81 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3054">
-	<sentence>could you go to the bedroom and take the postcard on the nightstand please</sentence>
-	<tokens>
-		<token id="1" lemma="could" pos="MD" surface="could"/>
-		<token id="2" lemma="you" pos="PRP" surface="you"/>
-		<token id="3" lemma="go" pos="VB" surface="go"/>
-		<token id="4" lemma="to" pos="TO" surface="to"/>
-		<token id="5" lemma="the" pos="DT" surface="the"/>
-		<token id="6" lemma="bedroom" pos="NN" surface="bedroom"/>
-		<token id="7" lemma="and" pos="CC" surface="and"/>
-		<token id="8" lemma="take" pos="VB" surface="take"/>
-		<token id="9" lemma="the" pos="DT" surface="the"/>
-		<token id="10" lemma="postcard" pos="NN" surface="postcard"/>
-		<token id="11" lemma="on" pos="IN" surface="on"/>
-		<token id="12" lemma="the" pos="DT" surface="the"/>
-		<token id="13" lemma="nightstand" pos="NN" surface="nightstand"/>
-		<token id="14" lemma="please" pos="UH" surface="please"/>
-	</tokens>
-	<dependencies>
-		<dep from="3" to="1" type="aux"/>
-		<dep from="3" to="2" type="nsubj"/>
-		<dep from="0" to="3" type="root"/>
-		<dep from="3" to="4" type="prep"/>
-		<dep from="6" to="5" type="det"/>
-		<dep from="4" to="6" type="pobj"/>
-		<dep from="3" to="7" type="cc"/>
-		<dep from="3" to="8" type="conj"/>
-		<dep from="10" to="9" type="det"/>
-		<dep from="8" to="10" type="dojb"/>
-		<dep from="10" to="11" type="prep"/>
-		<dep from="13" to="12" type="det"/>
-		<dep from="11" to="13" type="pobj"/>
-		<dep from="3" to="14" type="discourse"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Motion">
-				<lexicalUnit>
-					<token id="3"/>
-				</lexicalUnit>
-				<frameElement type="Theme">
-					<token id="2"/>
-				</frameElement>
-				<frameElement type="Goal">
-					<token id="4"/>
-					<token id="5"/>
-					<token id="6"/>
-				</frameElement>
-			</frame>
-			<frame name="Taking">
-				<lexicalUnit>
-					<token id="8"/>
-				</lexicalUnit>
-				<frameElement type="Theme">
-					<token id="9"/>
-					<token id="10"/>
-					<token id="11"/>
-					<token id="12"/>
-					<token id="13"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics>
-			<spatialRelation name="Spatial_relation">
-				<lexicalUnit/>
-				<spatialRole type="Trajector">
-					<token id="9"/>
-					<token id="10"/>
-				</spatialRole>
-				<spatialRole type="Spatial_Indicator">
-					<token id="11"/>
-				</spatialRole>
-				<spatialRole type="Landmark">
-					<token id="12"/>
-					<token id="13"/>
-				</spatialRole>
-			</spatialRelation>
-		</spatialSemantics>
-	</semantics>
+ <sentence>
+  could you go to the bedroom and take the postcard on the nightstand please
+ </sentence>
+ <tokens>
+  <token id="1" lemma="could" pos="MD" surface="could"/>
+  <token id="2" lemma="you" pos="PRP" surface="you"/>
+  <token id="3" lemma="go" pos="VB" surface="go"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="bedroom" pos="NN" surface="bedroom"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="take" pos="VB" surface="take"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="postcard" pos="NN" surface="postcard"/>
+  <token id="11" lemma="on" pos="IN" surface="on"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="nightstand" pos="NN" surface="nightstand"/>
+  <token id="14" lemma="please" pos="UH" surface="please"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="aux"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="3" to="7" type="cc"/>
+  <dep from="3" to="8" type="conj"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="dojb"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="3" to="14" type="discourse"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Taking">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics>
+   <spatialRelation name="Spatial_relation">
+    <lexicalUnit/>
+    <spatialRole type="Trajector">
+     <token id="9"/>
+     <token id="10"/>
+    </spatialRole>
+    <spatialRole type="Spatial_Indicator">
+     <token id="11"/>
+    </spatialRole>
+    <spatialRole type="Landmark">
+     <token id="12"/>
+     <token id="13"/>
+    </spatialRole>
+   </spatialRelation>
+  </spatialSemantics>
+ </semantics>
 </command>

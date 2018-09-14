@@ -1,49 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="4098367">
-	<sentence>QN : Did the diplomat arrive before the president left ?</sentence>
-	<tokens>
-		<token id="1" lemma="qn" pos="NNP" surface="QN"/>
-		<token id="2" lemma=":" pos=":" surface=":"/>
-		<token id="3" lemma="do" pos="VBD" surface="Did"/>
-		<token id="4" lemma="the" pos="DT" surface="the"/>
-		<token id="5" lemma="diplomat" pos="NN" surface="diplomat"/>
-		<token id="6" lemma="arrive" pos="VB" surface="arrive"/>
-		<token id="7" lemma="before" pos="IN" surface="before"/>
-		<token id="8" lemma="the" pos="DT" surface="the"/>
-		<token id="9" lemma="president" pos="NN" surface="president"/>
-		<token id="10" lemma="leave" pos="VBD" surface="left"/>
-		<token id="11" lemma="?" pos="." surface="?"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="punct"/>
-		<dep from="6" to="3" type="aux"/>
-		<dep from="5" to="4" type="det"/>
-		<dep from="6" to="5" type="nsubj"/>
-		<dep from="0" to="6" type="root"/>
-		<dep from="10" to="7" type="mark"/>
-		<dep from="9" to="8" type="det"/>
-		<dep from="10" to="9" type="nsubj"/>
-		<dep from="6" to="10" type="advcl"/>
-		<dep from="6" to="11" type="punct"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Entering">
-				<lexicalUnit>
-					<token id="6"/>
-				</lexicalUnit>
-				<frameElement type="Theme">
-					<token id="4"/>
-					<token id="5"/>
-				</frameElement>
-				<frameElement type="Time">
-					<token id="7"/>
-					<token id="8"/>
-					<token id="9"/>
-					<token id="10"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-	</semantics>
+ <sentence>
+  QN : Did the diplomat arrive before the president left ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="do" pos="VBD" surface="Did"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="diplomat" pos="NN" surface="diplomat"/>
+  <token id="6" lemma="arrive" pos="VB" surface="arrive"/>
+  <token id="7" lemma="before" pos="IN" surface="before"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="president" pos="NN" surface="president"/>
+  <token id="10" lemma="leave" pos="VBD" surface="left"/>
+  <token id="11" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="10" to="7" type="mark"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="6" to="10" type="advcl"/>
+  <dep from="6" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
 </command>

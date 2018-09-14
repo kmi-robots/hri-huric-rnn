@@ -1,60 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="2656">
-	<sentence>move near the couch of the bedroom slowly</sentence>
-	<tokens>
-		<token id="1" lemma="move" pos="VB" surface="move"/>
-		<token id="2" lemma="near" pos="IN" surface="near"/>
-		<token id="3" lemma="the" pos="DT" surface="the"/>
-		<token id="4" lemma="couch" pos="NN" surface="couch"/>
-		<token id="5" lemma="of" pos="IN" surface="of"/>
-		<token id="6" lemma="the" pos="DT" surface="the"/>
-		<token id="7" lemma="bedroom" pos="NN" surface="bedroom"/>
-		<token id="8" lemma="slowly" pos="RB" surface="slowly"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="prep"/>
-		<dep from="4" to="3" type="det"/>
-		<dep from="2" to="4" type="pobj"/>
-		<dep from="4" to="5" type="prep"/>
-		<dep from="7" to="6" type="det"/>
-		<dep from="5" to="7" type="pobj"/>
-		<dep from="7" to="8" type="advmod"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Motion">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Goal">
-					<token id="2"/>
-					<token id="3"/>
-					<token id="4"/>
-					<token id="5"/>
-					<token id="6"/>
-					<token id="7"/>
-				</frameElement>
-				<frameElement type="Manner">
-					<token id="8"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics>
-			<spatialRelation name="Spatial_relation">
-				<lexicalUnit/>
-				<spatialRole type="Trajector">
-					<token id="3"/>
-					<token id="4"/>
-				</spatialRole>
-				<spatialRole type="Spatial_Indicator">
-					<token id="5"/>
-				</spatialRole>
-				<spatialRole type="Landmark">
-					<token id="6"/>
-					<token id="7"/>
-				</spatialRole>
-			</spatialRelation>
-		</spatialSemantics>
-	</semantics>
+ <sentence>
+  move near the couch of the bedroom slowly
+ </sentence>
+ <tokens>
+  <token id="1" lemma="move" pos="VB" surface="move"/>
+  <token id="2" lemma="near" pos="IN" surface="near"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="couch" pos="NN" surface="couch"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="bedroom" pos="NN" surface="bedroom"/>
+  <token id="8" lemma="slowly" pos="RB" surface="slowly"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="7" to="8" type="advmod"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics>
+   <spatialRelation name="Spatial_relation">
+    <lexicalUnit/>
+    <spatialRole type="Trajector">
+     <token id="3"/>
+     <token id="4"/>
+    </spatialRole>
+    <spatialRole type="Spatial_Indicator">
+     <token id="5"/>
+    </spatialRole>
+    <spatialRole type="Landmark">
+     <token id="6"/>
+     <token id="7"/>
+    </spatialRole>
+   </spatialRelation>
+  </spatialSemantics>
+ </semantics>
 </command>

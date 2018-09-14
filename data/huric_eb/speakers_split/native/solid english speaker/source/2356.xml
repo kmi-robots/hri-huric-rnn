@@ -1,65 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="2356">
-	<sentence>michael find my book on the sofa near the window</sentence>
-	<tokens>
-		<token id="1" lemma="michael" pos="NNP" surface="michael"/>
-		<token id="2" lemma="find" pos="VB" surface="find"/>
-		<token id="3" lemma="my" pos="PRP$" surface="my"/>
-		<token id="4" lemma="book" pos="NN" surface="book"/>
-		<token id="5" lemma="on" pos="IN" surface="on"/>
-		<token id="6" lemma="the" pos="DT" surface="the"/>
-		<token id="7" lemma="sofa" pos="NN" surface="sofa"/>
-		<token id="8" lemma="near" pos="IN" surface="near"/>
-		<token id="9" lemma="the" pos="DT" surface="the"/>
-		<token id="10" lemma="window" pos="NN" surface="window"/>
-	</tokens>
-	<dependencies>
-		<dep from="2" to="1" type="nsubj"/>
-		<dep from="0" to="2" type="root"/>
-		<dep from="4" to="3" type="poss"/>
-		<dep from="2" to="4" type="dobj"/>
-		<dep from="2" to="5" type="prep"/>
-		<dep from="7" to="6" type="det"/>
-		<dep from="5" to="7" type="pobj"/>
-		<dep from="7" to="8" type="prep"/>
-		<dep from="10" to="9" type="det"/>
-		<dep from="8" to="10" type="pobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Searching">
-				<lexicalUnit>
-					<token id="2"/>
-				</lexicalUnit>
-				<frameElement type="Phenomenon">
-					<token id="3"/>
-					<token id="4"/>
-				</frameElement>
-				<frameElement type="Ground">
-					<token id="5"/>
-					<token id="6"/>
-					<token id="7"/>
-					<token id="8"/>
-					<token id="9"/>
-					<token id="10"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics>
-			<spatialRelation name="Spatial_relation">
-				<lexicalUnit/>
-				<spatialRole type="Trajector">
-					<token id="6"/>
-					<token id="7"/>
-				</spatialRole>
-				<spatialRole type="Spatial_Indicator">
-					<token id="8"/>
-				</spatialRole>
-				<spatialRole type="Landmark">
-					<token id="9"/>
-					<token id="10"/>
-				</spatialRole>
-			</spatialRelation>
-		</spatialSemantics>
-	</semantics>
+ <sentence>
+  michael find my book on the sofa near the window
+ </sentence>
+ <tokens>
+  <token id="1" lemma="michael" pos="NNP" surface="michael"/>
+  <token id="2" lemma="find" pos="VB" surface="find"/>
+  <token id="3" lemma="my" pos="PRP$" surface="my"/>
+  <token id="4" lemma="book" pos="NN" surface="book"/>
+  <token id="5" lemma="on" pos="IN" surface="on"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="sofa" pos="NN" surface="sofa"/>
+  <token id="8" lemma="near" pos="IN" surface="near"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="window" pos="NN" surface="window"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="poss"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics>
+   <spatialRelation name="Spatial_relation">
+    <lexicalUnit/>
+    <spatialRole type="Trajector">
+     <token id="6"/>
+     <token id="7"/>
+    </spatialRole>
+    <spatialRole type="Spatial_Indicator">
+     <token id="8"/>
+    </spatialRole>
+    <spatialRole type="Landmark">
+     <token id="9"/>
+     <token id="10"/>
+    </spatialRole>
+   </spatialRelation>
+  </spatialSemantics>
+ </semantics>
 </command>

@@ -1,45 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3330">
-	<sentence>i need some utensils could you take me some</sentence>
-	<tokens>
-		<token id="1" lemma="i" pos="FW" surface="i"/>
-		<token id="2" lemma="need" pos="VB" surface="need"/>
-		<token id="3" lemma="some" pos="DT" surface="some"/>
-		<token id="4" lemma="utensil" pos="NNS" surface="utensils"/>
-		<token id="5" lemma="could" pos="MD" surface="could"/>
-		<token id="6" lemma="you" pos="PRP" surface="you"/>
-		<token id="7" lemma="take" pos="VB" surface="take"/>
-		<token id="8" lemma="I" pos="PRP" surface="me"/>
-		<token id="9" lemma="some" pos="DT" surface="some"/>
-	</tokens>
-	<dependencies>
-		<dep from="2" to="1" type="nsubj"/>
-		<dep from="0" to="2" type="root"/>
-		<dep from="4" to="3" type="det"/>
-		<dep from="2" to="4" type="dojb"/>
-		<dep from="7" to="5" type="aux"/>
-		<dep from="7" to="6" type="nsubj"/>
-		<dep from="2" to="7" type="conj"/>
-		<dep from="7" to="8" type="iobj"/>
-		<dep from="7" to="9" type="dojb"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Bringing">
-				<lexicalUnit>
-					<token id="7"/>
-				</lexicalUnit>
-				<frameElement type="Agent">
-					<token id="6"/>
-				</frameElement>
-				<frameElement type="Beneficiary">
-					<token id="8"/>
-				</frameElement>
-				<frameElement type="Theme">
-					<token id="9"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  i need some utensils could you take me some
+ </sentence>
+ <tokens>
+  <token id="1" lemma="i" pos="FW" surface="i"/>
+  <token id="2" lemma="need" pos="VB" surface="need"/>
+  <token id="3" lemma="some" pos="DT" surface="some"/>
+  <token id="4" lemma="utensil" pos="NNS" surface="utensils"/>
+  <token id="5" lemma="could" pos="MD" surface="could"/>
+  <token id="6" lemma="you" pos="PRP" surface="you"/>
+  <token id="7" lemma="take" pos="VB" surface="take"/>
+  <token id="8" lemma="I" pos="PRP" surface="me"/>
+  <token id="9" lemma="some" pos="DT" surface="some"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dojb"/>
+  <dep from="7" to="5" type="aux"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="2" to="7" type="conj"/>
+  <dep from="7" to="8" type="iobj"/>
+  <dep from="7" to="9" type="dojb"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Beneficiary">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

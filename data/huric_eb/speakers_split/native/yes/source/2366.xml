@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="2366">
-	<sentence>go close to the shower</sentence>
-	<tokens>
-		<token id="1" lemma="go" pos="VB" surface="go"/>
-		<token id="2" lemma="close" pos="RB" surface="close"/>
-		<token id="3" lemma="to" pos="TO" surface="to"/>
-		<token id="4" lemma="the" pos="DT" surface="the"/>
-		<token id="5" lemma="shower" pos="NN" surface="shower"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="advmod"/>
-		<dep from="2" to="3" type="prep"/>
-		<dep from="5" to="4" type="det"/>
-		<dep from="3" to="5" type="pobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Motion">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Goal">
-					<token id="2"/>
-					<token id="3"/>
-					<token id="4"/>
-					<token id="5"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  go close to the shower
+ </sentence>
+ <tokens>
+  <token id="1" lemma="go" pos="VB" surface="go"/>
+  <token id="2" lemma="close" pos="RB" surface="close"/>
+  <token id="3" lemma="to" pos="TO" surface="to"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="shower" pos="NN" surface="shower"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="advmod"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

@@ -1,71 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="4100337">
-	<sentence>In 701 b.c. the Assyrian armies of Sennacherib destroyed Israel and moved southward to besiege Jerusalem .</sentence>
-	<tokens>
-		<token id="1" lemma="in" pos="IN" surface="In"/>
-		<token id="2" lemma="701" pos="CD" surface="701"/>
-		<token id="3" lemma="b.c." pos="NN" surface="b.c."/>
-		<token id="4" lemma="the" pos="DT" surface="the"/>
-		<token id="5" lemma="assyrian" pos="JJ" surface="Assyrian"/>
-		<token id="6" lemma="army" pos="NNS" surface="armies"/>
-		<token id="7" lemma="of" pos="IN" surface="of"/>
-		<token id="8" lemma="sennacherib" pos="NNP" surface="Sennacherib"/>
-		<token id="9" lemma="destroy" pos="VBD" surface="destroyed"/>
-		<token id="10" lemma="israel" pos="NNP" surface="Israel"/>
-		<token id="11" lemma="and" pos="CC" surface="and"/>
-		<token id="12" lemma="move" pos="VBD" surface="moved"/>
-		<token id="13" lemma="southward" pos="RB" surface="southward"/>
-		<token id="14" lemma="to" pos="TO" surface="to"/>
-		<token id="15" lemma="besiege" pos="VB" surface="besiege"/>
-		<token id="16" lemma="jerusalem" pos="NNP" surface="Jerusalem"/>
-		<token id="17" lemma="." pos="." surface="."/>
-	</tokens>
-	<dependencies>
-		<dep from="9" to="1" type="prep"/>
-		<dep from="3" to="2" type="nummod"/>
-		<dep from="1" to="3" type="pobj"/>
-		<dep from="6" to="4" type="det"/>
-		<dep from="6" to="5" type="amod"/>
-		<dep from="9" to="6" type="nsubj"/>
-		<dep from="6" to="7" type="prep"/>
-		<dep from="7" to="8" type="pobj"/>
-		<dep from="0" to="9" type="root"/>
-		<dep from="9" to="10" type="dobj"/>
-		<dep from="9" to="11" type="cc"/>
-		<dep from="9" to="12" type="conj"/>
-		<dep from="12" to="13" type="advmod"/>
-		<dep from="15" to="14" type="aux"/>
-		<dep from="12" to="15" type="advcl"/>
-		<dep from="15" to="16" type="dobj"/>
-		<dep from="9" to="17" type="punct"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Motion">
-				<lexicalUnit>
-					<token id="12"/>
-				</lexicalUnit>
-				<frameElement type="Time">
-					<token id="1"/>
-					<token id="2"/>
-					<token id="3"/>
-				</frameElement>
-				<frameElement type="Path">
-					<token id="13"/>
-				</frameElement>
-				<frameElement type="Purpose">
-					<token id="14"/>
-					<token id="15"/>
-					<token id="16"/>
-				</frameElement>
-				<frameElement type="Theme">
-					<token id="4"/>
-					<token id="5"/>
-					<token id="6"/>
-					<token id="7"/>
-					<token id="8"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-	</semantics>
+ <sentence>
+  In 701 b.c. the Assyrian armies of Sennacherib destroyed Israel and moved southward to besiege Jerusalem .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="701" pos="CD" surface="701"/>
+  <token id="3" lemma="b.c." pos="NN" surface="b.c."/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="assyrian" pos="JJ" surface="Assyrian"/>
+  <token id="6" lemma="army" pos="NNS" surface="armies"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="sennacherib" pos="NNP" surface="Sennacherib"/>
+  <token id="9" lemma="destroy" pos="VBD" surface="destroyed"/>
+  <token id="10" lemma="israel" pos="NNP" surface="Israel"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="move" pos="VBD" surface="moved"/>
+  <token id="13" lemma="southward" pos="RB" surface="southward"/>
+  <token id="14" lemma="to" pos="TO" surface="to"/>
+  <token id="15" lemma="besiege" pos="VB" surface="besiege"/>
+  <token id="16" lemma="jerusalem" pos="NNP" surface="Jerusalem"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="prep"/>
+  <dep from="3" to="2" type="nummod"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="9" to="6" type="nsubj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="9" to="11" type="cc"/>
+  <dep from="9" to="12" type="conj"/>
+  <dep from="12" to="13" type="advmod"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="12" to="15" type="advcl"/>
+  <dep from="15" to="16" type="dobj"/>
+  <dep from="9" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
 </command>

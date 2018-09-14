@@ -1,42 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3366">
-	<sentence>robot can you pass me a plate</sentence>
-	<tokens>
-		<token id="1" lemma="robot" pos="NN" surface="robot"/>
-		<token id="2" lemma="can" pos="MD" surface="can"/>
-		<token id="3" lemma="you" pos="PRP" surface="you"/>
-		<token id="4" lemma="pass" pos="VB" surface="pass"/>
-		<token id="5" lemma="I" pos="PRP" surface="me"/>
-		<token id="6" lemma="a" pos="DT" surface="a"/>
-		<token id="7" lemma="plate" pos="NN" surface="plate"/>
-	</tokens>
-	<dependencies>
-		<dep from="4" to="1" type="discourse"/>
-		<dep from="4" to="2" type="aux"/>
-		<dep from="4" to="3" type="nsubj"/>
-		<dep from="0" to="4" type="root"/>
-		<dep from="7" to="5" type="nsubj"/>
-		<dep from="7" to="6" type="det"/>
-		<dep from="4" to="7" type="xcomp"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Giving">
-				<lexicalUnit>
-					<token id="4"/>
-				</lexicalUnit>
-				<frameElement type="Donor">
-					<token id="3"/>
-				</frameElement>
-				<frameElement type="Recipient">
-					<token id="5"/>
-				</frameElement>
-				<frameElement type="Theme">
-					<token id="6"/>
-					<token id="7"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  robot can you pass me a plate
+ </sentence>
+ <tokens>
+  <token id="1" lemma="robot" pos="NN" surface="robot"/>
+  <token id="2" lemma="can" pos="MD" surface="can"/>
+  <token id="3" lemma="you" pos="PRP" surface="you"/>
+  <token id="4" lemma="pass" pos="VB" surface="pass"/>
+  <token id="5" lemma="I" pos="PRP" surface="me"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="plate" pos="NN" surface="plate"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="discourse"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="nsubj"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="4" to="7" type="xcomp"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

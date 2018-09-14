@@ -1,45 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="4098324">
-	<sentence>Some students came to school by car .</sentence>
-	<tokens>
-		<token id="1" lemma="some" pos="DT" surface="Some"/>
-		<token id="2" lemma="student" pos="NNS" surface="students"/>
-		<token id="3" lemma="come" pos="VBD" surface="came"/>
-		<token id="4" lemma="to" pos="IN" surface="to"/>
-		<token id="5" lemma="school" pos="NN" surface="school"/>
-		<token id="6" lemma="by" pos="IN" surface="by"/>
-		<token id="7" lemma="car" pos="NN" surface="car"/>
-		<token id="8" lemma="." pos="." surface="."/>
-	</tokens>
-	<dependencies>
-		<dep from="2" to="1" type="det"/>
-		<dep from="3" to="2" type="nsubj"/>
-		<dep from="0" to="3" type="root"/>
-		<dep from="3" to="4" type="prep"/>
-		<dep from="4" to="5" type="pobj"/>
-		<dep from="3" to="6" type="prep"/>
-		<dep from="6" to="7" type="pobj"/>
-		<dep from="3" to="8" type="punct"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Entering">
-				<lexicalUnit>
-					<token id="3"/>
-				</lexicalUnit>
-				<frameElement type="Goal">
-					<token id="4"/>
-					<token id="5"/>
-				</frameElement>
-				<frameElement type="Mode_of_transportation">
-					<token id="6"/>
-					<token id="7"/>
-				</frameElement>
-				<frameElement type="Theme">
-					<token id="1"/>
-					<token id="2"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-	</semantics>
+ <sentence>
+  Some students came to school by car .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="some" pos="DT" surface="Some"/>
+  <token id="2" lemma="student" pos="NNS" surface="students"/>
+  <token id="3" lemma="come" pos="VBD" surface="came"/>
+  <token id="4" lemma="to" pos="IN" surface="to"/>
+  <token id="5" lemma="school" pos="NN" surface="school"/>
+  <token id="6" lemma="by" pos="IN" surface="by"/>
+  <token id="7" lemma="car" pos="NN" surface="car"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="3" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Mode_of_transportation">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
 </command>

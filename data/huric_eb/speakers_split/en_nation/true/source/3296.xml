@@ -1,42 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3296">
-	<sentence>can you please take out the garbage</sentence>
-	<tokens>
-		<token id="1" lemma="can" pos="MD" surface="can"/>
-		<token id="2" lemma="you" pos="PRP" surface="you"/>
-		<token id="3" lemma="please" pos="UH" surface="please"/>
-		<token id="4" lemma="take" pos="VB" surface="take"/>
-		<token id="5" lemma="out" pos="RP" surface="out"/>
-		<token id="6" lemma="the" pos="DT" surface="the"/>
-		<token id="7" lemma="garbage" pos="NN" surface="garbage"/>
-	</tokens>
-	<dependencies>
-		<dep from="3" to="1" type="aux"/>
-		<dep from="3" to="2" type="nsubj"/>
-		<dep from="4" to="3" type="discourse"/>
-		<dep from="0" to="4" type="root"/>
-		<dep from="4" to="5" type="prt"/>
-		<dep from="7" to="6" type="det"/>
-		<dep from="4" to="7" type="dobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Bringing">
-				<lexicalUnit>
-					<token id="4"/>
-				</lexicalUnit>
-				<frameElement type="Agent">
-					<token id="2"/>
-				</frameElement>
-				<frameElement type="Goal">
-					<token id="5"/>
-				</frameElement>
-				<frameElement type="Theme">
-					<token id="6"/>
-					<token id="7"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  can you please take out the garbage
+ </sentence>
+ <tokens>
+  <token id="1" lemma="can" pos="MD" surface="can"/>
+  <token id="2" lemma="you" pos="PRP" surface="you"/>
+  <token id="3" lemma="please" pos="UH" surface="please"/>
+  <token id="4" lemma="take" pos="VB" surface="take"/>
+  <token id="5" lemma="out" pos="RP" surface="out"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="garbage" pos="NN" surface="garbage"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="aux"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="discourse"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prt"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="4" to="7" type="dobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="2190">
-	<sentence>bring mug to bedroom</sentence>
-	<tokens>
-		<token id="1" lemma="bring" pos="VB" surface="bring"/>
-		<token id="2" lemma="mug" pos="NN" surface="mug"/>
-		<token id="3" lemma="to" pos="TO" surface="to"/>
-		<token id="4" lemma="bedroom" pos="NN" surface="bedroom"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="dobj"/>
-		<dep from="1" to="3" type="prep"/>
-		<dep from="3" to="4" type="pobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Bringing">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Theme">
-					<token id="2"/>
-				</frameElement>
-				<frameElement type="Goal">
-					<token id="3"/>
-					<token id="4"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  bring mug to bedroom
+ </sentence>
+ <tokens>
+  <token id="1" lemma="bring" pos="VB" surface="bring"/>
+  <token id="2" lemma="mug" pos="NN" surface="mug"/>
+  <token id="3" lemma="to" pos="TO" surface="to"/>
+  <token id="4" lemma="bedroom" pos="NN" surface="bedroom"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="dobj"/>
+  <dep from="1" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

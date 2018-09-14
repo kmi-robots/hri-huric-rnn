@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3060">
-	<sentence>find a magazine</sentence>
-	<tokens>
-		<token id="1" lemma="find" pos="VB" surface="find"/>
-		<token id="2" lemma="a" pos="DT" surface="a"/>
-		<token id="3" lemma="magazine" pos="NN" surface="magazine"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="3" to="2" type="det"/>
-		<dep from="1" to="3" type="dobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Searching">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Phenomenon">
-					<token id="2"/>
-					<token id="3"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  find a magazine
+ </sentence>
+ <tokens>
+  <token id="1" lemma="find" pos="VB" surface="find"/>
+  <token id="2" lemma="a" pos="DT" surface="a"/>
+  <token id="3" lemma="magazine" pos="NN" surface="magazine"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="dobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

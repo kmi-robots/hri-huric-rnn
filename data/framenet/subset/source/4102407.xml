@@ -1,44 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="4102407">
-	<sentence>Harry_Reed : Mr. President enough time has gone by .</sentence>
-	<tokens>
-		<token id="1" lemma="harry_reed" pos="NN" surface="Harry_Reed"/>
-		<token id="2" lemma=":" pos=":" surface=":"/>
-		<token id="3" lemma="mr." pos="NNP" surface="Mr."/>
-		<token id="4" lemma="president" pos="NNP" surface="President"/>
-		<token id="5" lemma="enough" pos="JJ" surface="enough"/>
-		<token id="6" lemma="time" pos="NN" surface="time"/>
-		<token id="7" lemma="have" pos="VBZ" surface="has"/>
-		<token id="8" lemma="go" pos="VBN" surface="gone"/>
-		<token id="9" lemma="by" pos="RB" surface="by"/>
-		<token id="10" lemma="." pos="." surface="."/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="8" to="2" type="punct"/>
-		<dep from="4" to="3" type="compound"/>
-		<dep from="8" to="4" type="nsubj"/>
-		<dep from="6" to="5" type="amod"/>
-		<dep from="4" to="6" type="appos"/>
-		<dep from="8" to="7" type="aux"/>
-		<dep from="0" to="8" type="root"/>
-		<dep from="8" to="9" type="advmod"/>
-		<dep from="8" to="10" type="punct"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Motion">
-				<lexicalUnit>
-					<token id="8"/>
-				</lexicalUnit>
-				<frameElement type="Theme">
-					<token id="5"/>
-					<token id="6"/>
-				</frameElement>
-				<frameElement type="Path">
-					<token id="9"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-	</semantics>
+ <sentence>
+  Harry_Reed : Mr. President enough time has gone by .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="harry_reed" pos="NN" surface="Harry_Reed"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="mr." pos="NNP" surface="Mr."/>
+  <token id="4" lemma="president" pos="NNP" surface="President"/>
+  <token id="5" lemma="enough" pos="JJ" surface="enough"/>
+  <token id="6" lemma="time" pos="NN" surface="time"/>
+  <token id="7" lemma="have" pos="VBZ" surface="has"/>
+  <token id="8" lemma="go" pos="VBN" surface="gone"/>
+  <token id="9" lemma="by" pos="RB" surface="by"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="8" to="2" type="punct"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="8" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="4" to="6" type="appos"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="advmod"/>
+  <dep from="8" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
 </command>

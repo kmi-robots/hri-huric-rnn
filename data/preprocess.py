@@ -15,6 +15,7 @@ from pathlib import Path
 from sklearn.model_selection import StratifiedKFold
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
+from bs4 import BeautifulSoup
 import html.parser as htmlparser
 parser = htmlparser.HTMLParser()
 
@@ -30,6 +31,25 @@ n_folds = 5
 #LEX_FILE_NAME = 'lexBot.json'
 #LEX_ZIP_NAME = 'lexBot.zip'
 
+# from framenet names to huric names
+frame_names_mappings = {
+    'Attaching': 'Attaching',
+    'Being_in_category': 'Being_in_category',
+    'Being_located': 'Being_located',
+    'Bringing': 'Bringing',
+    'Change_operational_state': 'Change_operational_state',
+    'Closure': 'Closure',
+    'Arriving': 'Entering',
+    'Cotheme': 'Following',
+    'Giving': 'Giving',
+    'Inspecting': 'Inspecting',
+    'Motion': 'Motion',
+    'Perception_active': 'Perception_active',
+    'Placing': 'Placing',
+    'Releasing': 'Releasing',
+    'Scrutiny': 'Searching',
+    'Taking': 'Taking'
+}
 
 
 def huric_preprocess(path, trim='right', also_spatial=False, invoke_frame_slot=False):
@@ -589,14 +609,8 @@ def modernize_huric_xml(source_path, dest_path):
                 new_frame_element = ET.SubElement(new_frame, new_frame_element_name, {'type': frame_element['type']})
                 for token_id in frame_element['tokens']:
                     ET.SubElement(new_frame_element, 'token', {'id': token_id})
-        # generate pretty XML
-        pretty_string = minidom.parseString(ET.tostring(new_command, 'utf-8')).toprettyxml(encoding='utf-8').decode('utf-8')
-        with open('{}/{}'.format(dest_path, file_name), 'w') as out_file:
-            out_file.write(pretty_string)
 
-        #tree = ET.ElementTree(new_command)
-        #with open('{}/{}'.format(dest_path, file_name), 'w', encoding='utf-8') as out_file:
-        #    tree.write(out_file, encoding='unicode')
+        write_pretty_xml(new_command, dest_path, file_name)
 
 def speakers_split(source_folder, dest_folder):
     # splits_subfolders = speakers_split('huric_eb/modern/source', 'huric_eb/speakers_split')
@@ -781,41 +795,22 @@ def fate_preprocess(folder, dest_path, subset=False):
                     for t_id in fe['fe_ids']:
                         ET.SubElement(new_frame_element, 'token', {'id': str(t_id)})
 
-        pretty_string = minidom.parseString(ET.tostring(new_command, 'utf-8')).toprettyxml(encoding='utf-8').decode('utf-8')
-        with open('{}/{}.xml'.format(dest_path, s['id']), 'w') as out_file:
-            out_file.write(pretty_string)
+        write_pretty_xml(new_command, dest_path, s['id'] + '.xml')
 
+def write_pretty_xml(root_element, dst_path, file_name):
+    if not os.path.exists(dst_path):
+        os.makedirs(dst_path)
+    pretty_string = BeautifulSoup(ET.tostring(root_element, 'utf-8'), features='xml').prettify()
+    with open('{}/{}'.format(dst_path, file_name), 'w') as out_file:
+        out_file.write(pretty_string)
 
-
-
-def framenet_preprocess(folder, dest_path, subset=True):
+def framenet_preprocess(folder, dest_path):
     """Preprocesses the framenet corpus, taking only the frames from the HuRIC set. Produces in output a HuRIC formatted dataset on out_path"""
-    # from framenet names to huric names
-    frame_names_mappings = {
-        'Attaching': 'Attaching',
-        'Being_in_category': 'Being_in_category',
-        'Being_located': 'Being_located',
-        'Bringing': 'Bringing',
-        'Change_operational_state': 'Change_operational_state',
-        'Closure': 'Closure',
-        'Arriving': 'Entering',
-        'Cotheme': 'Following',
-        'Giving': 'Giving',
-        'Inspecting': 'Inspecting',
-        'Motion': 'Motion',
-        'Perception_active': 'Perception_active',
-        'Placing': 'Placing',
-        'Releasing': 'Releasing',
-        'Scrutiny': 'Searching',
-        'Taking': 'Taking'
-    }
+
     ns = {'ns': '{http://framenet.icsi.berkeley.edu}'}
 
-    if not subset:
-        # TODO generalize to not subset
-        raise ValueError('subset must be True')
     xml_path = Path(folder) / 'source/fulltext'
-    xml_files_paths = [f for f in xml_path.iterdir() if f.is_file()]
+    xml_files_paths = [f for f in xml_path.glob('*.xml') if f.is_file()]
     sentences = []
     for f in xml_files_paths:
         with open(f) as file_in:
@@ -828,44 +823,21 @@ def framenet_preprocess(folder, dest_path, subset=True):
         # get the sentences elements
         sentences.extend(root.findall('sentence'))
     print('#sentences:', len(sentences))
-    get_wanted_frames = lambda sentence: [f for f in sentence.findall('annotationSet') if f.attrib.get('frameName', None) in frame_names_mappings and f.attrib['status'] == 'MANUAL']
-    # select the sentences that have an interesting frame name
-    sentences = [s for s in sentences if len(get_wanted_frames(s))]
-    print('#sentences_sel_frames:', len(sentences))
-    #exit(1)
-    samples = [{
-        'words': s.find('text').text.split(),
-        'intent_cnt': len(get_wanted_frames(s)),
-        'intents': [f.attrib.get('frameName', None) for f in get_wanted_frames(s)],
-    } for s in sentences]
+    get_wanted_frames = lambda sentence: [f for f in sentence.findall('annotationSet') if f.attrib.get('frameName', None) and f.attrib['status'] == 'MANUAL']
 
-    cnt = 0
-    for s in samples:
-        if s['intent_cnt'] > 1:
-            print(s['intents'], ' '.join(s['words']))
-            cnt+=1
-    print('#multiple:', cnt)
-    # TODO transform to HuRIC
+    # steps for transforming to HuRIC
     # - get the required attributes on the tree
-    # - translate the frame names
     # - produce output files
     for s in sentences:
         command_id = s.attrib['ID']
         text = s.find('text').text
+        wanted_frames = get_wanted_frames(s)
+        if not len(wanted_frames):
+            # select the sentences that have an interesting frames
+            continue
         words = text.split()
-        try:
-            doc = nlp(text)
-        except AssertionError as e:
-            print(command_id, text, e)
-            raise e
-        framenet_annotations = s.find("annotationSet[@status='UNANN']/layer").findall("label")
-        #print([t.text for t in doc], words)
-        try:
-            assert len(doc) == len(framenet_annotations)
-        except AssertionError as e:
-            print('different lengths', len(doc), len(framenet_annotations), ' for', text)
-            #raise e
-        # FrameNet annotations sometimes are missing some tokens. See frame 312908 for example
+        doc = nlp(text)
+        # FrameNet annotations sometimes are missing some tokens. See frame 312908 for example. For this reason the POS annotations are taken from spaCy
         tokens = [{
             'id': t.i + 1,
             'start': t.idx,
@@ -874,7 +846,7 @@ def framenet_preprocess(folder, dest_path, subset=True):
             'pos': t.tag_, # or l.attrib['name']
             'surface': t.text
         } for t in doc]
-        # TODO where are dependencies?
+        # look at the dependencies
         dependencies = [{
             'from': str(t.head.i + 1) if t.dep_.lower() != 'root' else str(0),
             'to': str(t.i + 1),
@@ -891,9 +863,8 @@ def framenet_preprocess(folder, dest_path, subset=True):
             ET.SubElement(new_dependencies, 'dep', d)
         new_semantic_frames = ET.SubElement(ET.SubElement(new_command, 'semantics'), 'frameSemantics')
 
-        wanted_frames = get_wanted_frames(s)
         for f in wanted_frames:
-            frame_name = frame_names_mappings[f.attrib['frameName']]
+            frame_name = f.attrib['frameName']
             lexical_unit = f.find("layer[@name='Target']/label")
             start, end = int(lexical_unit.attrib['start']), int(lexical_unit.attrib['end'])
             lexical_unit_ids = [t['id'] for t in tokens if (t['end']>=start and t['start']<=end)]
@@ -911,9 +882,7 @@ def framenet_preprocess(folder, dest_path, subset=True):
                     for t_id in fe['ids']:
                         ET.SubElement(new_frame_element, 'token', {'id': str(t_id)})
 
-        pretty_string = minidom.parseString(ET.tostring(new_command, 'utf-8')).toprettyxml(encoding='utf-8').decode('utf-8')
-        with open('{}/{}.xml'.format(dest_path, command_id), 'w') as out_file:
-            out_file.write(pretty_string)
+        write_pretty_xml(new_command, dest_path, command_id + '.xml')
 
 def load_json(file_path):
     with open(file_path) as f:
@@ -965,8 +934,44 @@ def enrich_huric_train_with_framenet(huric_source_location, framenet_location, h
             additional = framenet_new_folds[fold_number]
             fold['data'] += additional
         write_json(huric_dest_location, 'fold_{}.json'.format(fold_number + 1), fold)
-        #with open('{}/fold_{}.json'.format(huric_dest_location, fold_number + 1), 'w') as f:
-        #    json.dump(fold, f)
+
+def create_subset_with_frames_mapped(src_path, dst_path, frame_mappings):
+    """Creates a subset of HuRIC-annotated files with only the wanted frame mappings.
+
+    Parameters:
+    src_path: the location of the input files
+    dst_path: the location of the output files
+    frame_mappings: a map {src_frame_name: dst_frame_name} that acts both as filter and as name-translator
+    """
+
+    xml_path = Path(src_path)
+    xml_files_paths = [f for f in xml_path.glob('*.xml') if f.is_file()]
+    migrated, discarded = 0, 0
+    if not os.path.exists(dst_path):
+        os.makedirs(dst_path)
+    for f in xml_files_paths:
+        file_name = f.name
+        with open(str(f)) as file_in:
+            root = ET.parse(file_in).getroot()
+
+        frames_parent_node = root.find('semantics/frameSemantics')
+        subset_frame_count = 0
+        for frame in frames_parent_node.findall('frame'):
+            frame_name = frame.attrib['name']
+            huric_frame_name = frame_mappings.get(frame_name, None)
+            if huric_frame_name:
+                frame.attrib['name'] = huric_frame_name
+                subset_frame_count += 1
+            else:
+                frames_parent_node.remove(frame)
+        if subset_frame_count:
+            write_pretty_xml(root, dst_path, file_name)
+            migrated += 1
+        else:
+            discarded += 1
+
+    print('migrated', migrated, 'discarded', discarded)
+
 
 def main():
     #nlp_en = load_nlp()
@@ -991,8 +996,11 @@ def main():
         for subfolder in splits_subfolders:
             huric_preprocess('huric_eb/speakers_split/{}'.format(subfolder))
 
+    elif which == 'framenet':
+        framenet_preprocess('framenet', 'framenet/modern/source')
     elif which == 'framenet_subset':
-        framenet_preprocess('framenet', 'framenet/subset/source', True)
+        framenet_preprocess('framenet', 'framenet/modern/source')
+        create_subset_with_frames_mapped('framenet/modern/source', 'framenet/subset/source', frame_names_mappings)
         huric_preprocess('framenet/subset')
         huric_preprocess('framenet/subset', trim='both')
 
@@ -1000,8 +1008,12 @@ def main():
         enrich_huric_train_with_framenet('huric_eb/modern_right/preprocessed', 'framenet/subset_both/preprocessed', 'huric_eb/with_framenet/preprocessed')
 
     elif which == 'fate':
-        fate_preprocess('fate/origin', 'fate/modern/source')
-        #huric_preprocess('fate/modern')
+        fate_preprocess('fate/source', 'fate/modern/source')
+        huric_preprocess('fate/modern')
+
+    elif which == 'fate_subset':
+        fate_preprocess('fate/source', 'fate/modern/source')
+        create_subset_with_frames_mapped('fate/modern/source', 'fate/subset/source', frame_names_mappings)
 
     else:
         raise ValueError(which)

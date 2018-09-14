@@ -1,59 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3126">
-	<sentence>search for the scissors they should be in the blue drawer</sentence>
-	<tokens>
-		<token id="1" lemma="search" pos="VB" surface="search"/>
-		<token id="2" lemma="for" pos="IN" surface="for"/>
-		<token id="3" lemma="the" pos="DT" surface="the"/>
-		<token id="4" lemma="scissors" pos="NNS" surface="scissors"/>
-		<token id="5" lemma="they" pos="PRP" surface="they"/>
-		<token id="6" lemma="should" pos="MD" surface="should"/>
-		<token id="7" lemma="be" pos="VB" surface="be"/>
-		<token id="8" lemma="in" pos="IN" surface="in"/>
-		<token id="9" lemma="the" pos="DT" surface="the"/>
-		<token id="10" lemma="blue" pos="JJ" surface="blue"/>
-		<token id="11" lemma="drawer" pos="NN" surface="drawer"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="prep"/>
-		<dep from="4" to="3" type="det"/>
-		<dep from="2" to="4" type="pobj"/>
-		<dep from="7" to="5" type="nsubj"/>
-		<dep from="7" to="6" type="aux"/>
-		<dep from="1" to="7" type="conj"/>
-		<dep from="7" to="8" type="prep"/>
-		<dep from="11" to="9" type="det"/>
-		<dep from="11" to="10" type="amod"/>
-		<dep from="8" to="11" type="pobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Searching">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Phenomenon">
-					<token id="2"/>
-					<token id="3"/>
-					<token id="4"/>
-				</frameElement>
-			</frame>
-			<frame name="Being_located">
-				<lexicalUnit>
-					<token id="7"/>
-				</lexicalUnit>
-				<frameElement type="Theme">
-					<token id="5"/>
-				</frameElement>
-				<frameElement type="Location">
-					<token id="8"/>
-					<token id="9"/>
-					<token id="10"/>
-					<token id="11"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  search for the scissors they should be in the blue drawer
+ </sentence>
+ <tokens>
+  <token id="1" lemma="search" pos="VB" surface="search"/>
+  <token id="2" lemma="for" pos="IN" surface="for"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="scissors" pos="NNS" surface="scissors"/>
+  <token id="5" lemma="they" pos="PRP" surface="they"/>
+  <token id="6" lemma="should" pos="MD" surface="should"/>
+  <token id="7" lemma="be" pos="VB" surface="be"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="blue" pos="JJ" surface="blue"/>
+  <token id="11" lemma="drawer" pos="NN" surface="drawer"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="7" to="5" type="nsubj"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="1" to="7" type="conj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_located">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

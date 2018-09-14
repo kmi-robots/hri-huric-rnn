@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3061">
-	<sentence>find my tablet</sentence>
-	<tokens>
-		<token id="1" lemma="find" pos="VB" surface="find"/>
-		<token id="2" lemma="my" pos="PRP$" surface="my"/>
-		<token id="3" lemma="tablet" pos="NN" surface="tablet"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="3" to="2" type="poss"/>
-		<dep from="1" to="3" type="dobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Searching">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Phenomenon">
-					<token id="2"/>
-					<token id="3"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  find my tablet
+ </sentence>
+ <tokens>
+  <token id="1" lemma="find" pos="VB" surface="find"/>
+  <token id="2" lemma="my" pos="PRP$" surface="my"/>
+  <token id="3" lemma="tablet" pos="NN" surface="tablet"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="poss"/>
+  <dep from="1" to="3" type="dobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

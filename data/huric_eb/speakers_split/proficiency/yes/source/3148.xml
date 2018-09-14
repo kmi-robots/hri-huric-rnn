@@ -1,53 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3148">
-	<sentence>take three coffee cups and bring them to me</sentence>
-	<tokens>
-		<token id="1" lemma="take" pos="VB" surface="take"/>
-		<token id="2" lemma="three" pos="CD" surface="three"/>
-		<token id="3" lemma="coffee" pos="NN" surface="coffee"/>
-		<token id="4" lemma="cup" pos="NNS" surface="cups"/>
-		<token id="5" lemma="and" pos="CC" surface="and"/>
-		<token id="6" lemma="bring" pos="VB" surface="bring"/>
-		<token id="7" lemma="they" pos="PRP" surface="them"/>
-		<token id="8" lemma="to" pos="TO" surface="to"/>
-		<token id="9" lemma="I" pos="PRP" surface="me"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="4" to="2" type="num"/>
-		<dep from="4" to="3" type="nn"/>
-		<dep from="1" to="4" type="dobj"/>
-		<dep from="1" to="5" type="cc"/>
-		<dep from="1" to="6" type="conj"/>
-		<dep from="6" to="7" type="dobj"/>
-		<dep from="6" to="8" type="prep"/>
-		<dep from="8" to="9" type="pobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Taking">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Theme">
-					<token id="2"/>
-					<token id="3"/>
-					<token id="4"/>
-				</frameElement>
-			</frame>
-			<frame name="Bringing">
-				<lexicalUnit>
-					<token id="6"/>
-				</lexicalUnit>
-				<frameElement type="Theme">
-					<token id="7"/>
-				</frameElement>
-				<frameElement type="Beneficiary">
-					<token id="8"/>
-					<token id="9"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  take three coffee cups and bring them to me
+ </sentence>
+ <tokens>
+  <token id="1" lemma="take" pos="VB" surface="take"/>
+  <token id="2" lemma="three" pos="CD" surface="three"/>
+  <token id="3" lemma="coffee" pos="NN" surface="coffee"/>
+  <token id="4" lemma="cup" pos="NNS" surface="cups"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="bring" pos="VB" surface="bring"/>
+  <token id="7" lemma="they" pos="PRP" surface="them"/>
+  <token id="8" lemma="to" pos="TO" surface="to"/>
+  <token id="9" lemma="I" pos="PRP" surface="me"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="4" to="2" type="num"/>
+  <dep from="4" to="3" type="nn"/>
+  <dep from="1" to="4" type="dobj"/>
+  <dep from="1" to="5" type="cc"/>
+  <dep from="1" to="6" type="conj"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="6" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Taking">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Beneficiary">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

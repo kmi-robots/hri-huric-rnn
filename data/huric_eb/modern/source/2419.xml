@@ -1,67 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="2419">
-	<sentence>disconnect from the laptop at the right of the counter</sentence>
-	<tokens>
-		<token id="1" lemma="disconnect" pos="VB" surface="disconnect"/>
-		<token id="2" lemma="from" pos="IN" surface="from"/>
-		<token id="3" lemma="the" pos="DT" surface="the"/>
-		<token id="4" lemma="laptop" pos="NN" surface="laptop"/>
-		<token id="5" lemma="at" pos="IN" surface="at"/>
-		<token id="6" lemma="the" pos="DT" surface="the"/>
-		<token id="7" lemma="right" pos="NN" surface="right"/>
-		<token id="8" lemma="of" pos="IN" surface="of"/>
-		<token id="9" lemma="the" pos="DT" surface="the"/>
-		<token id="10" lemma="counter" pos="NN" surface="counter"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="prep"/>
-		<dep from="4" to="3" type="det"/>
-		<dep from="2" to="4" type="pobj"/>
-		<dep from="4" to="5" type="prep"/>
-		<dep from="7" to="6" type="det"/>
-		<dep from="5" to="7" type="pobj"/>
-		<dep from="7" to="8" type="prep"/>
-		<dep from="10" to="9" type="det"/>
-		<dep from="8" to="10" type="pobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Attaching">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Goal">
-					<token id="2"/>
-					<token id="3"/>
-					<token id="4"/>
-					<token id="5"/>
-					<token id="6"/>
-					<token id="7"/>
-					<token id="8"/>
-					<token id="9"/>
-					<token id="10"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics>
-			<spatialRelation name="Spatial_relation">
-				<lexicalUnit/>
-				<spatialRole type="Trajector">
-					<token id="3"/>
-					<token id="4"/>
-				</spatialRole>
-				<spatialRole type="Spatial_Indicator">
-					<token id="5"/>
-					<token id="6"/>
-					<token id="7"/>
-					<token id="8"/>
-				</spatialRole>
-				<spatialRole type="Landmark">
-					<token id="9"/>
-					<token id="10"/>
-				</spatialRole>
-			</spatialRelation>
-		</spatialSemantics>
-	</semantics>
+ <sentence>
+  disconnect from the laptop at the right of the counter
+ </sentence>
+ <tokens>
+  <token id="1" lemma="disconnect" pos="VB" surface="disconnect"/>
+  <token id="2" lemma="from" pos="IN" surface="from"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="laptop" pos="NN" surface="laptop"/>
+  <token id="5" lemma="at" pos="IN" surface="at"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="right" pos="NN" surface="right"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="counter" pos="NN" surface="counter"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics>
+   <spatialRelation name="Spatial_relation">
+    <lexicalUnit/>
+    <spatialRole type="Trajector">
+     <token id="3"/>
+     <token id="4"/>
+    </spatialRole>
+    <spatialRole type="Spatial_Indicator">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </spatialRole>
+    <spatialRole type="Landmark">
+     <token id="9"/>
+     <token id="10"/>
+    </spatialRole>
+   </spatialRelation>
+  </spatialSemantics>
+ </semantics>
 </command>

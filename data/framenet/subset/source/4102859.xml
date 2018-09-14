@@ -1,44 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="4102859">
-	<sentence>Going up the tower should be from inside .</sentence>
-	<tokens>
-		<token id="1" lemma="go" pos="VBG" surface="Going"/>
-		<token id="2" lemma="up" pos="RP" surface="up"/>
-		<token id="3" lemma="the" pos="DT" surface="the"/>
-		<token id="4" lemma="tower" pos="NN" surface="tower"/>
-		<token id="5" lemma="should" pos="MD" surface="should"/>
-		<token id="6" lemma="be" pos="VB" surface="be"/>
-		<token id="7" lemma="from" pos="IN" surface="from"/>
-		<token id="8" lemma="inside" pos="RB" surface="inside"/>
-		<token id="9" lemma="." pos="." surface="."/>
-	</tokens>
-	<dependencies>
-		<dep from="6" to="1" type="csubj"/>
-		<dep from="1" to="2" type="prt"/>
-		<dep from="4" to="3" type="det"/>
-		<dep from="1" to="4" type="dobj"/>
-		<dep from="6" to="5" type="aux"/>
-		<dep from="0" to="6" type="root"/>
-		<dep from="6" to="7" type="prep"/>
-		<dep from="7" to="8" type="pcomp"/>
-		<dep from="6" to="9" type="punct"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Motion">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Path">
-					<token id="2"/>
-					<token id="3"/>
-					<token id="4"/>
-				</frameElement>
-				<frameElement type="Source">
-					<token id="7"/>
-					<token id="8"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-	</semantics>
+ <sentence>
+  Going up the tower should be from inside .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="go" pos="VBG" surface="Going"/>
+  <token id="2" lemma="up" pos="RP" surface="up"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="tower" pos="NN" surface="tower"/>
+  <token id="5" lemma="should" pos="MD" surface="should"/>
+  <token id="6" lemma="be" pos="VB" surface="be"/>
+  <token id="7" lemma="from" pos="IN" surface="from"/>
+  <token id="8" lemma="inside" pos="RB" surface="inside"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="csubj"/>
+  <dep from="1" to="2" type="prt"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="1" to="4" type="dobj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pcomp"/>
+  <dep from="6" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Path">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
 </command>

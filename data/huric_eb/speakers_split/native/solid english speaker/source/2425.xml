@@ -1,40 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="2425">
-	<sentence>there are two couches facing one another</sentence>
-	<tokens>
-		<token id="1" lemma="there" pos="EX" surface="there"/>
-		<token id="2" lemma="be" pos="VB" surface="are"/>
-		<token id="3" lemma="two" pos="CD" surface="two"/>
-		<token id="4" lemma="couch" pos="NNS" surface="couches"/>
-		<token id="5" lemma="face" pos="VBG" surface="facing"/>
-		<token id="6" lemma="one" pos="CD" surface="one"/>
-		<token id="7" lemma="another" pos="DT" surface="another"/>
-	</tokens>
-	<dependencies>
-		<dep from="2" to="1" type="expl"/>
-		<dep from="0" to="2" type="root"/>
-		<dep from="4" to="3" type="num"/>
-		<dep from="2" to="4" type="nsubj"/>
-		<dep from="4" to="5" type="partmod"/>
-		<dep from="5" to="6" type="dobj"/>
-		<dep from="6" to="7" type="dep"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Being_located">
-				<lexicalUnit>
-					<token id="1"/>
-					<token id="2"/>
-				</lexicalUnit>
-				<frameElement type="Theme">
-					<token id="3"/>
-					<token id="4"/>
-					<token id="5"/>
-					<token id="6"/>
-					<token id="7"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  there are two couches facing one another
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="there"/>
+  <token id="2" lemma="be" pos="VB" surface="are"/>
+  <token id="3" lemma="two" pos="CD" surface="two"/>
+  <token id="4" lemma="couch" pos="NNS" surface="couches"/>
+  <token id="5" lemma="face" pos="VBG" surface="facing"/>
+  <token id="6" lemma="one" pos="CD" surface="one"/>
+  <token id="7" lemma="another" pos="DT" surface="another"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="num"/>
+  <dep from="2" to="4" type="nsubj"/>
+  <dep from="4" to="5" type="partmod"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="6" to="7" type="dep"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_located">
+    <lexicalUnit>
+     <token id="1"/>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

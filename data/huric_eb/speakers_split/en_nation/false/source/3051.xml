@@ -1,75 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3051">
-	<sentence>can you go to the kitchen find a glass and bring it to me</sentence>
-	<tokens>
-		<token id="1" lemma="can" pos="MD" surface="can"/>
-		<token id="2" lemma="you" pos="PRP" surface="you"/>
-		<token id="3" lemma="go" pos="VB" surface="go"/>
-		<token id="4" lemma="to" pos="TO" surface="to"/>
-		<token id="5" lemma="the" pos="DT" surface="the"/>
-		<token id="6" lemma="kitchen" pos="NN" surface="kitchen"/>
-		<token id="7" lemma="find" pos="VB" surface="find"/>
-		<token id="8" lemma="a" pos="DT" surface="a"/>
-		<token id="9" lemma="glass" pos="NN" surface="glass"/>
-		<token id="10" lemma="and" pos="CC" surface="and"/>
-		<token id="11" lemma="bring" pos="VB" surface="bring"/>
-		<token id="12" lemma="it" pos="PRP" surface="it"/>
-		<token id="13" lemma="to" pos="TO" surface="to"/>
-		<token id="14" lemma="I" pos="PRP" surface="me"/>
-	</tokens>
-	<dependencies>
-		<dep from="3" to="1" type="aux"/>
-		<dep from="3" to="2" type="nsubj"/>
-		<dep from="0" to="3" type="root"/>
-		<dep from="3" to="4" type="prep"/>
-		<dep from="6" to="5" type="det"/>
-		<dep from="4" to="6" type="pobj"/>
-		<dep from="3" to="7" type="conj"/>
-		<dep from="9" to="8" type="det"/>
-		<dep from="7" to="9" type="dobj"/>
-		<dep from="7" to="10" type="cc"/>
-		<dep from="7" to="11" type="conj"/>
-		<dep from="11" to="12" type="dobj"/>
-		<dep from="11" to="13" type="prep"/>
-		<dep from="13" to="14" type="pobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Motion">
-				<lexicalUnit>
-					<token id="3"/>
-				</lexicalUnit>
-				<frameElement type="Theme">
-					<token id="2"/>
-				</frameElement>
-				<frameElement type="Goal">
-					<token id="4"/>
-					<token id="5"/>
-					<token id="6"/>
-				</frameElement>
-			</frame>
-			<frame name="Searching">
-				<lexicalUnit>
-					<token id="7"/>
-				</lexicalUnit>
-				<frameElement type="Phenomenon">
-					<token id="8"/>
-					<token id="9"/>
-				</frameElement>
-			</frame>
-			<frame name="Bringing">
-				<lexicalUnit>
-					<token id="11"/>
-				</lexicalUnit>
-				<frameElement type="Theme">
-					<token id="12"/>
-				</frameElement>
-				<frameElement type="Beneficiary">
-					<token id="13"/>
-					<token id="14"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  can you go to the kitchen find a glass and bring it to me
+ </sentence>
+ <tokens>
+  <token id="1" lemma="can" pos="MD" surface="can"/>
+  <token id="2" lemma="you" pos="PRP" surface="you"/>
+  <token id="3" lemma="go" pos="VB" surface="go"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="kitchen" pos="NN" surface="kitchen"/>
+  <token id="7" lemma="find" pos="VB" surface="find"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="glass" pos="NN" surface="glass"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="bring" pos="VB" surface="bring"/>
+  <token id="12" lemma="it" pos="PRP" surface="it"/>
+  <token id="13" lemma="to" pos="TO" surface="to"/>
+  <token id="14" lemma="I" pos="PRP" surface="me"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="aux"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="3" to="7" type="conj"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="7" to="10" type="cc"/>
+  <dep from="7" to="11" type="conj"/>
+  <dep from="11" to="12" type="dobj"/>
+  <dep from="11" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Beneficiary">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

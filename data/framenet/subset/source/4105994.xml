@@ -1,113 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="4105994">
-	<sentence>The New Territories can be explored by taking the Kowloon - Canton Railway ( KCR ) , which makes 10 stops between the station in Kowloon and Sheung Shui , the last stop before entering China .</sentence>
-	<tokens>
-		<token id="1" lemma="the" pos="DT" surface="The"/>
-		<token id="2" lemma="new" pos="NNP" surface="New"/>
-		<token id="3" lemma="territories" pos="NNPS" surface="Territories"/>
-		<token id="4" lemma="can" pos="MD" surface="can"/>
-		<token id="5" lemma="be" pos="VB" surface="be"/>
-		<token id="6" lemma="explore" pos="VBN" surface="explored"/>
-		<token id="7" lemma="by" pos="IN" surface="by"/>
-		<token id="8" lemma="take" pos="VBG" surface="taking"/>
-		<token id="9" lemma="the" pos="DT" surface="the"/>
-		<token id="10" lemma="kowloon" pos="NNP" surface="Kowloon"/>
-		<token id="11" lemma="-" pos="HYPH" surface="-"/>
-		<token id="12" lemma="canton" pos="NNP" surface="Canton"/>
-		<token id="13" lemma="railway" pos="NNP" surface="Railway"/>
-		<token id="14" lemma="(" pos="-LRB-" surface="("/>
-		<token id="15" lemma="kcr" pos="NNP" surface="KCR"/>
-		<token id="16" lemma=")" pos="-RRB-" surface=")"/>
-		<token id="17" lemma="," pos="," surface=","/>
-		<token id="18" lemma="which" pos="WDT" surface="which"/>
-		<token id="19" lemma="make" pos="VBZ" surface="makes"/>
-		<token id="20" lemma="10" pos="CD" surface="10"/>
-		<token id="21" lemma="stop" pos="NNS" surface="stops"/>
-		<token id="22" lemma="between" pos="IN" surface="between"/>
-		<token id="23" lemma="the" pos="DT" surface="the"/>
-		<token id="24" lemma="station" pos="NN" surface="station"/>
-		<token id="25" lemma="in" pos="IN" surface="in"/>
-		<token id="26" lemma="kowloon" pos="NNP" surface="Kowloon"/>
-		<token id="27" lemma="and" pos="CC" surface="and"/>
-		<token id="28" lemma="sheung" pos="NNP" surface="Sheung"/>
-		<token id="29" lemma="shui" pos="NNP" surface="Shui"/>
-		<token id="30" lemma="," pos="," surface=","/>
-		<token id="31" lemma="the" pos="DT" surface="the"/>
-		<token id="32" lemma="last" pos="JJ" surface="last"/>
-		<token id="33" lemma="stop" pos="NN" surface="stop"/>
-		<token id="34" lemma="before" pos="IN" surface="before"/>
-		<token id="35" lemma="enter" pos="VBG" surface="entering"/>
-		<token id="36" lemma="china" pos="NNP" surface="China"/>
-		<token id="37" lemma="." pos="." surface="."/>
-	</tokens>
-	<dependencies>
-		<dep from="3" to="1" type="det"/>
-		<dep from="3" to="2" type="compound"/>
-		<dep from="6" to="3" type="nsubjpass"/>
-		<dep from="6" to="4" type="aux"/>
-		<dep from="6" to="5" type="auxpass"/>
-		<dep from="0" to="6" type="root"/>
-		<dep from="6" to="7" type="prep"/>
-		<dep from="7" to="8" type="pcomp"/>
-		<dep from="15" to="9" type="det"/>
-		<dep from="12" to="10" type="compound"/>
-		<dep from="12" to="11" type="punct"/>
-		<dep from="15" to="12" type="nmod"/>
-		<dep from="15" to="13" type="nmod"/>
-		<dep from="15" to="14" type="punct"/>
-		<dep from="8" to="15" type="dobj"/>
-		<dep from="15" to="16" type="punct"/>
-		<dep from="8" to="17" type="punct"/>
-		<dep from="19" to="18" type="nsubj"/>
-		<dep from="6" to="19" type="advcl"/>
-		<dep from="21" to="20" type="nummod"/>
-		<dep from="19" to="21" type="ccomp"/>
-		<dep from="21" to="22" type="prep"/>
-		<dep from="24" to="23" type="det"/>
-		<dep from="22" to="24" type="pobj"/>
-		<dep from="24" to="25" type="prep"/>
-		<dep from="25" to="26" type="pobj"/>
-		<dep from="26" to="27" type="cc"/>
-		<dep from="29" to="28" type="compound"/>
-		<dep from="26" to="29" type="conj"/>
-		<dep from="21" to="30" type="punct"/>
-		<dep from="33" to="31" type="det"/>
-		<dep from="33" to="32" type="amod"/>
-		<dep from="21" to="33" type="appos"/>
-		<dep from="33" to="34" type="prep"/>
-		<dep from="34" to="35" type="pcomp"/>
-		<dep from="35" to="36" type="dobj"/>
-		<dep from="6" to="37" type="punct"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Searching">
-				<lexicalUnit>
-					<token id="6"/>
-				</lexicalUnit>
-				<frameElement type="Ground">
-					<token id="1"/>
-					<token id="2"/>
-					<token id="3"/>
-				</frameElement>
-				<frameElement type="Means">
-					<token id="7"/>
-					<token id="8"/>
-					<token id="9"/>
-					<token id="10"/>
-					<token id="11"/>
-					<token id="12"/>
-					<token id="13"/>
-				</frameElement>
-			</frame>
-			<frame name="Entering">
-				<lexicalUnit>
-					<token id="35"/>
-				</lexicalUnit>
-				<frameElement type="Goal">
-					<token id="36"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-	</semantics>
+ <sentence>
+  The New Territories can be explored by taking the Kowloon - Canton Railway ( KCR ) , which makes 10 stops between the station in Kowloon and Sheung Shui , the last stop before entering China .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="new" pos="NNP" surface="New"/>
+  <token id="3" lemma="territories" pos="NNPS" surface="Territories"/>
+  <token id="4" lemma="can" pos="MD" surface="can"/>
+  <token id="5" lemma="be" pos="VB" surface="be"/>
+  <token id="6" lemma="explore" pos="VBN" surface="explored"/>
+  <token id="7" lemma="by" pos="IN" surface="by"/>
+  <token id="8" lemma="take" pos="VBG" surface="taking"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="kowloon" pos="NNP" surface="Kowloon"/>
+  <token id="11" lemma="-" pos="HYPH" surface="-"/>
+  <token id="12" lemma="canton" pos="NNP" surface="Canton"/>
+  <token id="13" lemma="railway" pos="NNP" surface="Railway"/>
+  <token id="14" lemma="(" pos="-LRB-" surface="("/>
+  <token id="15" lemma="kcr" pos="NNP" surface="KCR"/>
+  <token id="16" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="which" pos="WDT" surface="which"/>
+  <token id="19" lemma="make" pos="VBZ" surface="makes"/>
+  <token id="20" lemma="10" pos="CD" surface="10"/>
+  <token id="21" lemma="stop" pos="NNS" surface="stops"/>
+  <token id="22" lemma="between" pos="IN" surface="between"/>
+  <token id="23" lemma="the" pos="DT" surface="the"/>
+  <token id="24" lemma="station" pos="NN" surface="station"/>
+  <token id="25" lemma="in" pos="IN" surface="in"/>
+  <token id="26" lemma="kowloon" pos="NNP" surface="Kowloon"/>
+  <token id="27" lemma="and" pos="CC" surface="and"/>
+  <token id="28" lemma="sheung" pos="NNP" surface="Sheung"/>
+  <token id="29" lemma="shui" pos="NNP" surface="Shui"/>
+  <token id="30" lemma="," pos="," surface=","/>
+  <token id="31" lemma="the" pos="DT" surface="the"/>
+  <token id="32" lemma="last" pos="JJ" surface="last"/>
+  <token id="33" lemma="stop" pos="NN" surface="stop"/>
+  <token id="34" lemma="before" pos="IN" surface="before"/>
+  <token id="35" lemma="enter" pos="VBG" surface="entering"/>
+  <token id="36" lemma="china" pos="NNP" surface="China"/>
+  <token id="37" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="6" to="3" type="nsubjpass"/>
+  <dep from="6" to="4" type="aux"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pcomp"/>
+  <dep from="15" to="9" type="det"/>
+  <dep from="12" to="10" type="compound"/>
+  <dep from="12" to="11" type="punct"/>
+  <dep from="15" to="12" type="nmod"/>
+  <dep from="15" to="13" type="nmod"/>
+  <dep from="15" to="14" type="punct"/>
+  <dep from="8" to="15" type="dobj"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="8" to="17" type="punct"/>
+  <dep from="19" to="18" type="nsubj"/>
+  <dep from="6" to="19" type="advcl"/>
+  <dep from="21" to="20" type="nummod"/>
+  <dep from="19" to="21" type="ccomp"/>
+  <dep from="21" to="22" type="prep"/>
+  <dep from="24" to="23" type="det"/>
+  <dep from="22" to="24" type="pobj"/>
+  <dep from="24" to="25" type="prep"/>
+  <dep from="25" to="26" type="pobj"/>
+  <dep from="26" to="27" type="cc"/>
+  <dep from="29" to="28" type="compound"/>
+  <dep from="26" to="29" type="conj"/>
+  <dep from="21" to="30" type="punct"/>
+  <dep from="33" to="31" type="det"/>
+  <dep from="33" to="32" type="amod"/>
+  <dep from="21" to="33" type="appos"/>
+  <dep from="33" to="34" type="prep"/>
+  <dep from="34" to="35" type="pcomp"/>
+  <dep from="35" to="36" type="dobj"/>
+  <dep from="6" to="37" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="35"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="36"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
 </command>

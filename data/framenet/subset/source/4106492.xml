@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="4106492">
-	<sentence>Dear Mailhouse donor reminder :</sentence>
-	<tokens>
-		<token id="1" lemma="dear" pos="JJ" surface="Dear"/>
-		<token id="2" lemma="mailhouse" pos="NNP" surface="Mailhouse"/>
-		<token id="3" lemma="donor" pos="NN" surface="donor"/>
-		<token id="4" lemma="reminder" pos="NN" surface="reminder"/>
-		<token id="5" lemma=":" pos=":" surface=":"/>
-	</tokens>
-	<dependencies>
-		<dep from="2" to="1" type="compound"/>
-		<dep from="4" to="2" type="compound"/>
-		<dep from="4" to="3" type="compound"/>
-		<dep from="0" to="4" type="root"/>
-		<dep from="4" to="5" type="punct"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Giving">
-				<lexicalUnit>
-					<token id="3"/>
-				</lexicalUnit>
-			</frame>
-		</frameSemantics>
-	</semantics>
+ <sentence>
+  Dear Mailhouse donor reminder :
+ </sentence>
+ <tokens>
+  <token id="1" lemma="dear" pos="JJ" surface="Dear"/>
+  <token id="2" lemma="mailhouse" pos="NNP" surface="Mailhouse"/>
+  <token id="3" lemma="donor" pos="NN" surface="donor"/>
+  <token id="4" lemma="reminder" pos="NN" surface="reminder"/>
+  <token id="5" lemma=":" pos=":" surface=":"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="4" to="2" type="compound"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
 </command>

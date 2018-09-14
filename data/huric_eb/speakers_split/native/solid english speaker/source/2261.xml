@@ -1,56 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="2261">
-	<sentence>go quickly to the corner and follow the skinny person</sentence>
-	<tokens>
-		<token id="1" lemma="go" pos="VB" surface="go"/>
-		<token id="2" lemma="quickly" pos="RB" surface="quickly"/>
-		<token id="3" lemma="to" pos="TO" surface="to"/>
-		<token id="4" lemma="the" pos="DT" surface="the"/>
-		<token id="5" lemma="corner" pos="NN" surface="corner"/>
-		<token id="6" lemma="and" pos="CC" surface="and"/>
-		<token id="7" lemma="follow" pos="VB" surface="follow"/>
-		<token id="8" lemma="the" pos="DT" surface="the"/>
-		<token id="9" lemma="skinny" pos="JJ" surface="skinny"/>
-		<token id="10" lemma="person" pos="NN" surface="person"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="advmod"/>
-		<dep from="1" to="3" type="prep"/>
-		<dep from="5" to="4" type="det"/>
-		<dep from="3" to="5" type="pobj"/>
-		<dep from="1" to="6" type="cc"/>
-		<dep from="1" to="7" type="conj"/>
-		<dep from="10" to="8" type="det"/>
-		<dep from="10" to="9" type="amod"/>
-		<dep from="7" to="10" type="dobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Motion">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Manner">
-					<token id="2"/>
-				</frameElement>
-				<frameElement type="Goal">
-					<token id="3"/>
-					<token id="4"/>
-					<token id="5"/>
-				</frameElement>
-			</frame>
-			<frame name="Following">
-				<lexicalUnit>
-					<token id="7"/>
-				</lexicalUnit>
-				<frameElement type="Cotheme">
-					<token id="8"/>
-					<token id="9"/>
-					<token id="10"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  go quickly to the corner and follow the skinny person
+ </sentence>
+ <tokens>
+  <token id="1" lemma="go" pos="VB" surface="go"/>
+  <token id="2" lemma="quickly" pos="RB" surface="quickly"/>
+  <token id="3" lemma="to" pos="TO" surface="to"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="corner" pos="NN" surface="corner"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="follow" pos="VB" surface="follow"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="skinny" pos="JJ" surface="skinny"/>
+  <token id="10" lemma="person" pos="NN" surface="person"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="advmod"/>
+  <dep from="1" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="1" to="6" type="cc"/>
+  <dep from="1" to="7" type="conj"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="7" to="10" type="dobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Manner">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Cotheme">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

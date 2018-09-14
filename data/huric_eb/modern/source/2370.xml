@@ -1,41 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="2370">
-	<sentence>bring me yogurt from the fridge</sentence>
-	<tokens>
-		<token id="1" lemma="bring" pos="VB" surface="bring"/>
-		<token id="2" lemma="I" pos="PRP" surface="me"/>
-		<token id="3" lemma="yogurt" pos="NN" surface="yogurt"/>
-		<token id="4" lemma="from" pos="IN" surface="from"/>
-		<token id="5" lemma="the" pos="DT" surface="the"/>
-		<token id="6" lemma="fridge" pos="NN" surface="fridge"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="iobj"/>
-		<dep from="1" to="3" type="dojb"/>
-		<dep from="1" to="4" type="prep"/>
-		<dep from="6" to="5" type="det"/>
-		<dep from="4" to="6" type="pobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Bringing">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Beneficiary">
-					<token id="2"/>
-				</frameElement>
-				<frameElement type="Theme">
-					<token id="3"/>
-				</frameElement>
-				<frameElement type="Source">
-					<token id="4"/>
-					<token id="5"/>
-					<token id="6"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  bring me yogurt from the fridge
+ </sentence>
+ <tokens>
+  <token id="1" lemma="bring" pos="VB" surface="bring"/>
+  <token id="2" lemma="I" pos="PRP" surface="me"/>
+  <token id="3" lemma="yogurt" pos="NN" surface="yogurt"/>
+  <token id="4" lemma="from" pos="IN" surface="from"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="fridge" pos="NN" surface="fridge"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="iobj"/>
+  <dep from="1" to="3" type="dojb"/>
+  <dep from="1" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Beneficiary">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

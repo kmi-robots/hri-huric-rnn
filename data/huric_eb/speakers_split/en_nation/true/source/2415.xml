@@ -1,54 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="2415">
-	<sentence>go in front of the main door and open it</sentence>
-	<tokens>
-		<token id="1" lemma="go" pos="VB" surface="go"/>
-		<token id="2" lemma="in" pos="IN" surface="in"/>
-		<token id="3" lemma="front" pos="NN" surface="front"/>
-		<token id="4" lemma="of" pos="IN" surface="of"/>
-		<token id="5" lemma="the" pos="DT" surface="the"/>
-		<token id="6" lemma="main" pos="JJ" surface="main"/>
-		<token id="7" lemma="door" pos="NN" surface="door"/>
-		<token id="8" lemma="and" pos="CC" surface="and"/>
-		<token id="9" lemma="open" pos="VB" surface="open"/>
-		<token id="10" lemma="it" pos="PRP" surface="it"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="prep"/>
-		<dep from="2" to="3" type="pobj"/>
-		<dep from="3" to="4" type="prep"/>
-		<dep from="7" to="5" type="det"/>
-		<dep from="7" to="6" type="amod"/>
-		<dep from="4" to="7" type="pobj"/>
-		<dep from="1" to="8" type="cc"/>
-		<dep from="1" to="9" type="conj"/>
-		<dep from="9" to="10" type="dobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Motion">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Goal">
-					<token id="2"/>
-					<token id="3"/>
-					<token id="4"/>
-					<token id="5"/>
-					<token id="6"/>
-					<token id="7"/>
-				</frameElement>
-			</frame>
-			<frame name="Closure">
-				<lexicalUnit>
-					<token id="9"/>
-				</lexicalUnit>
-				<frameElement type="Container_portal">
-					<token id="10"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  go in front of the main door and open it
+ </sentence>
+ <tokens>
+  <token id="1" lemma="go" pos="VB" surface="go"/>
+  <token id="2" lemma="in" pos="IN" surface="in"/>
+  <token id="3" lemma="front" pos="NN" surface="front"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="main" pos="JJ" surface="main"/>
+  <token id="7" lemma="door" pos="NN" surface="door"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="open" pos="VB" surface="open"/>
+  <token id="10" lemma="it" pos="PRP" surface="it"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="2" to="3" type="pobj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="pobj"/>
+  <dep from="1" to="8" type="cc"/>
+  <dep from="1" to="9" type="conj"/>
+  <dep from="9" to="10" type="dobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Closure">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Container_portal">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

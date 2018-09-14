@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="4106241">
-	<sentence>Arriving in Guangzhou</sentence>
-	<tokens>
-		<token id="1" lemma="arrive" pos="VBG" surface="Arriving"/>
-		<token id="2" lemma="in" pos="IN" surface="in"/>
-		<token id="3" lemma="guangzhou" pos="NNP" surface="Guangzhou"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="prep"/>
-		<dep from="2" to="3" type="pobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Entering">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Goal">
-					<token id="2"/>
-					<token id="3"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-	</semantics>
+ <sentence>
+  Arriving in Guangzhou
+ </sentence>
+ <tokens>
+  <token id="1" lemma="arrive" pos="VBG" surface="Arriving"/>
+  <token id="2" lemma="in" pos="IN" surface="in"/>
+  <token id="3" lemma="guangzhou" pos="NNP" surface="Guangzhou"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="2" to="3" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
 </command>

@@ -1,42 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3369">
-	<sentence>robot can you put the tv on</sentence>
-	<tokens>
-		<token id="1" lemma="robot" pos="NN" surface="robot"/>
-		<token id="2" lemma="can" pos="MD" surface="can"/>
-		<token id="3" lemma="you" pos="PRP" surface="you"/>
-		<token id="4" lemma="put" pos="VB" surface="put"/>
-		<token id="5" lemma="the" pos="DT" surface="the"/>
-		<token id="6" lemma="tv" pos="NN" surface="tv"/>
-		<token id="7" lemma="on" pos="RP" surface="on"/>
-	</tokens>
-	<dependencies>
-		<dep from="4" to="1" type="discourse"/>
-		<dep from="4" to="2" type="aux"/>
-		<dep from="4" to="3" type="nsubj"/>
-		<dep from="0" to="4" type="root"/>
-		<dep from="6" to="5" type="det"/>
-		<dep from="4" to="6" type="dobj"/>
-		<dep from="4" to="7" type="prt"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Change_operational_state">
-				<lexicalUnit>
-					<token id="4"/>
-				</lexicalUnit>
-				<frameElement type="Agent">
-					<token id="3"/>
-				</frameElement>
-				<frameElement type="Device">
-					<token id="5"/>
-					<token id="6"/>
-				</frameElement>
-				<frameElement type="Operational_state">
-					<token id="7"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  robot can you put the tv on
+ </sentence>
+ <tokens>
+  <token id="1" lemma="robot" pos="NN" surface="robot"/>
+  <token id="2" lemma="can" pos="MD" surface="can"/>
+  <token id="3" lemma="you" pos="PRP" surface="you"/>
+  <token id="4" lemma="put" pos="VB" surface="put"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="tv" pos="NN" surface="tv"/>
+  <token id="7" lemma="on" pos="RP" surface="on"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="discourse"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="4" to="7" type="prt"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_operational_state">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Device">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Operational_state">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

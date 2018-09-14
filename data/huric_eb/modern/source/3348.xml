@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3348">
-	<sentence>please open the storage cupboard</sentence>
-	<tokens>
-		<token id="1" lemma="please" pos="UH" surface="please"/>
-		<token id="2" lemma="open" pos="VB" surface="open"/>
-		<token id="3" lemma="the" pos="DT" surface="the"/>
-		<token id="4" lemma="storage" pos="NN" surface="storage"/>
-		<token id="5" lemma="cupboard" pos="NN" surface="cupboard"/>
-	</tokens>
-	<dependencies>
-		<dep from="2" to="1" type="discourse"/>
-		<dep from="0" to="2" type="root"/>
-		<dep from="5" to="3" type="det"/>
-		<dep from="5" to="4" type="nn"/>
-		<dep from="2" to="5" type="dobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Closure">
-				<lexicalUnit>
-					<token id="2"/>
-				</lexicalUnit>
-				<frameElement type="Containing_object">
-					<token id="3"/>
-					<token id="4"/>
-					<token id="5"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  please open the storage cupboard
+ </sentence>
+ <tokens>
+  <token id="1" lemma="please" pos="UH" surface="please"/>
+  <token id="2" lemma="open" pos="VB" surface="open"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="storage" pos="NN" surface="storage"/>
+  <token id="5" lemma="cupboard" pos="NN" surface="cupboard"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="discourse"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="nn"/>
+  <dep from="2" to="5" type="dobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Closure">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Containing_object">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

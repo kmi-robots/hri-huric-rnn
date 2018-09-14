@@ -1,48 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="2365">
-	<sentence>follow the person behind me</sentence>
-	<tokens>
-		<token id="1" lemma="follow" pos="VB" surface="follow"/>
-		<token id="2" lemma="the" pos="DT" surface="the"/>
-		<token id="3" lemma="person" pos="NN" surface="person"/>
-		<token id="4" lemma="behind" pos="IN" surface="behind"/>
-		<token id="5" lemma="I" pos="PRP" surface="me"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="3" to="2" type="det"/>
-		<dep from="1" to="3" type="dobj"/>
-		<dep from="3" to="4" type="prep"/>
-		<dep from="4" to="5" type="pobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Following">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Cotheme">
-					<token id="2"/>
-					<token id="3"/>
-					<token id="4"/>
-					<token id="5"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics>
-			<spatialRelation name="Spatial_relation">
-				<lexicalUnit/>
-				<spatialRole type="Trajector">
-					<token id="2"/>
-					<token id="3"/>
-				</spatialRole>
-				<spatialRole type="Spatial_Indicator">
-					<token id="4"/>
-				</spatialRole>
-				<spatialRole type="Landmark">
-					<token id="5"/>
-				</spatialRole>
-			</spatialRelation>
-		</spatialSemantics>
-	</semantics>
+ <sentence>
+  follow the person behind me
+ </sentence>
+ <tokens>
+  <token id="1" lemma="follow" pos="VB" surface="follow"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="person" pos="NN" surface="person"/>
+  <token id="4" lemma="behind" pos="IN" surface="behind"/>
+  <token id="5" lemma="I" pos="PRP" surface="me"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="dobj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Cotheme">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics>
+   <spatialRelation name="Spatial_relation">
+    <lexicalUnit/>
+    <spatialRole type="Trajector">
+     <token id="2"/>
+     <token id="3"/>
+    </spatialRole>
+    <spatialRole type="Spatial_Indicator">
+     <token id="4"/>
+    </spatialRole>
+    <spatialRole type="Landmark">
+     <token id="5"/>
+    </spatialRole>
+   </spatialRelation>
+  </spatialSemantics>
+ </semantics>
 </command>

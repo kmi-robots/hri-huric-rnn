@@ -1,52 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="4100586">
-	<sentence>Prosperity has brought with it a new emphasis on historic preservation .</sentence>
-	<tokens>
-		<token id="1" lemma="prosperity" pos="NN" surface="Prosperity"/>
-		<token id="2" lemma="have" pos="VBZ" surface="has"/>
-		<token id="3" lemma="bring" pos="VBN" surface="brought"/>
-		<token id="4" lemma="with" pos="IN" surface="with"/>
-		<token id="5" lemma="-PRON-" pos="PRP" surface="it"/>
-		<token id="6" lemma="a" pos="DT" surface="a"/>
-		<token id="7" lemma="new" pos="JJ" surface="new"/>
-		<token id="8" lemma="emphasis" pos="NN" surface="emphasis"/>
-		<token id="9" lemma="on" pos="IN" surface="on"/>
-		<token id="10" lemma="historic" pos="JJ" surface="historic"/>
-		<token id="11" lemma="preservation" pos="NN" surface="preservation"/>
-		<token id="12" lemma="." pos="." surface="."/>
-	</tokens>
-	<dependencies>
-		<dep from="3" to="1" type="nsubj"/>
-		<dep from="3" to="2" type="aux"/>
-		<dep from="0" to="3" type="root"/>
-		<dep from="3" to="4" type="prep"/>
-		<dep from="4" to="5" type="pobj"/>
-		<dep from="8" to="6" type="det"/>
-		<dep from="8" to="7" type="amod"/>
-		<dep from="3" to="8" type="dobj"/>
-		<dep from="8" to="9" type="prep"/>
-		<dep from="11" to="10" type="amod"/>
-		<dep from="9" to="11" type="pobj"/>
-		<dep from="3" to="12" type="punct"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Bringing">
-				<lexicalUnit>
-					<token id="3"/>
-				</lexicalUnit>
-				<frameElement type="Agent">
-					<token id="1"/>
-				</frameElement>
-				<frameElement type="Theme">
-					<token id="6"/>
-					<token id="7"/>
-					<token id="8"/>
-					<token id="9"/>
-					<token id="10"/>
-					<token id="11"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-	</semantics>
+ <sentence>
+  Prosperity has brought with it a new emphasis on historic preservation .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="prosperity" pos="NN" surface="Prosperity"/>
+  <token id="2" lemma="have" pos="VBZ" surface="has"/>
+  <token id="3" lemma="bring" pos="VBN" surface="brought"/>
+  <token id="4" lemma="with" pos="IN" surface="with"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="new" pos="JJ" surface="new"/>
+  <token id="8" lemma="emphasis" pos="NN" surface="emphasis"/>
+  <token id="9" lemma="on" pos="IN" surface="on"/>
+  <token id="10" lemma="historic" pos="JJ" surface="historic"/>
+  <token id="11" lemma="preservation" pos="NN" surface="preservation"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="3" to="8" type="dobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="3" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
 </command>

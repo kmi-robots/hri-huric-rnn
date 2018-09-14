@@ -1,42 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="4148385">
-	<sentence>&quot; But why should one servant return ? &quot;</sentence>
-	<tokens>
-		<token id="1" lemma="&quot;" pos="``" surface="&quot;"/>
-		<token id="2" lemma="but" pos="CC" surface="But"/>
-		<token id="3" lemma="why" pos="WRB" surface="why"/>
-		<token id="4" lemma="should" pos="MD" surface="should"/>
-		<token id="5" lemma="one" pos="CD" surface="one"/>
-		<token id="6" lemma="servant" pos="NN" surface="servant"/>
-		<token id="7" lemma="return" pos="VB" surface="return"/>
-		<token id="8" lemma="?" pos="." surface="?"/>
-		<token id="9" lemma="&quot;" pos="''" surface="&quot;"/>
-	</tokens>
-	<dependencies>
-		<dep from="7" to="1" type="punct"/>
-		<dep from="7" to="2" type="cc"/>
-		<dep from="7" to="3" type="advmod"/>
-		<dep from="7" to="4" type="aux"/>
-		<dep from="6" to="5" type="nummod"/>
-		<dep from="7" to="6" type="nsubj"/>
-		<dep from="0" to="7" type="root"/>
-		<dep from="7" to="8" type="punct"/>
-		<dep from="7" to="9" type="punct"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Entering">
-				<lexicalUnit>
-					<token id="7"/>
-				</lexicalUnit>
-				<frameElement type="Theme">
-					<token id="5"/>
-					<token id="6"/>
-				</frameElement>
-				<frameElement type="Purpose">
-					<token id="3"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-	</semantics>
+ <sentence>
+  " But why should one servant return ? "
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="but" pos="CC" surface="But"/>
+  <token id="3" lemma="why" pos="WRB" surface="why"/>
+  <token id="4" lemma="should" pos="MD" surface="should"/>
+  <token id="5" lemma="one" pos="CD" surface="one"/>
+  <token id="6" lemma="servant" pos="NN" surface="servant"/>
+  <token id="7" lemma="return" pos="VB" surface="return"/>
+  <token id="8" lemma="?" pos="." surface="?"/>
+  <token id="9" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="punct"/>
+  <dep from="7" to="2" type="cc"/>
+  <dep from="7" to="3" type="advmod"/>
+  <dep from="7" to="4" type="aux"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="7" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
 </command>

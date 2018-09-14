@@ -1,75 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="4098718">
-	<sentence>John , who travels abroad often , is at home in Boston and receives a call that he must immediately go to Paris .</sentence>
-	<tokens>
-		<token id="1" lemma="john" pos="NNP" surface="John"/>
-		<token id="2" lemma="," pos="," surface=","/>
-		<token id="3" lemma="who" pos="WP" surface="who"/>
-		<token id="4" lemma="travel" pos="VBZ" surface="travels"/>
-		<token id="5" lemma="abroad" pos="RB" surface="abroad"/>
-		<token id="6" lemma="often" pos="RB" surface="often"/>
-		<token id="7" lemma="," pos="," surface=","/>
-		<token id="8" lemma="be" pos="VBZ" surface="is"/>
-		<token id="9" lemma="at" pos="IN" surface="at"/>
-		<token id="10" lemma="home" pos="NN" surface="home"/>
-		<token id="11" lemma="in" pos="IN" surface="in"/>
-		<token id="12" lemma="boston" pos="NNP" surface="Boston"/>
-		<token id="13" lemma="and" pos="CC" surface="and"/>
-		<token id="14" lemma="receive" pos="VBZ" surface="receives"/>
-		<token id="15" lemma="a" pos="DT" surface="a"/>
-		<token id="16" lemma="call" pos="NN" surface="call"/>
-		<token id="17" lemma="that" pos="IN" surface="that"/>
-		<token id="18" lemma="-PRON-" pos="PRP" surface="he"/>
-		<token id="19" lemma="must" pos="MD" surface="must"/>
-		<token id="20" lemma="immediately" pos="RB" surface="immediately"/>
-		<token id="21" lemma="go" pos="VB" surface="go"/>
-		<token id="22" lemma="to" pos="IN" surface="to"/>
-		<token id="23" lemma="paris" pos="NNP" surface="Paris"/>
-		<token id="24" lemma="." pos="." surface="."/>
-	</tokens>
-	<dependencies>
-		<dep from="8" to="1" type="nsubj"/>
-		<dep from="1" to="2" type="punct"/>
-		<dep from="4" to="3" type="nsubj"/>
-		<dep from="1" to="4" type="relcl"/>
-		<dep from="4" to="5" type="advmod"/>
-		<dep from="4" to="6" type="advmod"/>
-		<dep from="8" to="7" type="punct"/>
-		<dep from="0" to="8" type="root"/>
-		<dep from="8" to="9" type="prep"/>
-		<dep from="9" to="10" type="pobj"/>
-		<dep from="10" to="11" type="prep"/>
-		<dep from="11" to="12" type="pobj"/>
-		<dep from="8" to="13" type="cc"/>
-		<dep from="8" to="14" type="conj"/>
-		<dep from="16" to="15" type="det"/>
-		<dep from="14" to="16" type="dobj"/>
-		<dep from="21" to="17" type="mark"/>
-		<dep from="21" to="18" type="nsubj"/>
-		<dep from="21" to="19" type="aux"/>
-		<dep from="21" to="20" type="advmod"/>
-		<dep from="16" to="21" type="relcl"/>
-		<dep from="21" to="22" type="prep"/>
-		<dep from="22" to="23" type="pobj"/>
-		<dep from="8" to="24" type="punct"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Motion">
-				<lexicalUnit>
-					<token id="21"/>
-				</lexicalUnit>
-				<frameElement type="Theme">
-					<token id="18"/>
-				</frameElement>
-				<frameElement type="Time">
-					<token id="20"/>
-				</frameElement>
-				<frameElement type="Goal">
-					<token id="22"/>
-					<token id="23"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-	</semantics>
+ <sentence>
+  John , who travels abroad often , is at home in Boston and receives a call that he must immediately go to Paris .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="john" pos="NNP" surface="John"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="who" pos="WP" surface="who"/>
+  <token id="4" lemma="travel" pos="VBZ" surface="travels"/>
+  <token id="5" lemma="abroad" pos="RB" surface="abroad"/>
+  <token id="6" lemma="often" pos="RB" surface="often"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="be" pos="VBZ" surface="is"/>
+  <token id="9" lemma="at" pos="IN" surface="at"/>
+  <token id="10" lemma="home" pos="NN" surface="home"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="boston" pos="NNP" surface="Boston"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="receive" pos="VBZ" surface="receives"/>
+  <token id="15" lemma="a" pos="DT" surface="a"/>
+  <token id="16" lemma="call" pos="NN" surface="call"/>
+  <token id="17" lemma="that" pos="IN" surface="that"/>
+  <token id="18" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="19" lemma="must" pos="MD" surface="must"/>
+  <token id="20" lemma="immediately" pos="RB" surface="immediately"/>
+  <token id="21" lemma="go" pos="VB" surface="go"/>
+  <token id="22" lemma="to" pos="IN" surface="to"/>
+  <token id="23" lemma="paris" pos="NNP" surface="Paris"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="1" to="4" type="relcl"/>
+  <dep from="4" to="5" type="advmod"/>
+  <dep from="4" to="6" type="advmod"/>
+  <dep from="8" to="7" type="punct"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="8" to="13" type="cc"/>
+  <dep from="8" to="14" type="conj"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="dobj"/>
+  <dep from="21" to="17" type="mark"/>
+  <dep from="21" to="18" type="nsubj"/>
+  <dep from="21" to="19" type="aux"/>
+  <dep from="21" to="20" type="advmod"/>
+  <dep from="16" to="21" type="relcl"/>
+  <dep from="21" to="22" type="prep"/>
+  <dep from="22" to="23" type="pobj"/>
+  <dep from="8" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
 </command>

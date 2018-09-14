@@ -1,45 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="2691">
-	<sentence>find the bottle of wine in the kitchen</sentence>
-	<tokens>
-		<token id="1" lemma="find" pos="VB" surface="find"/>
-		<token id="2" lemma="the" pos="DT" surface="the"/>
-		<token id="3" lemma="bottle" pos="NN" surface="bottle"/>
-		<token id="4" lemma="of" pos="IN" surface="of"/>
-		<token id="5" lemma="wine" pos="NN" surface="wine"/>
-		<token id="6" lemma="in" pos="IN" surface="in"/>
-		<token id="7" lemma="the" pos="DT" surface="the"/>
-		<token id="8" lemma="kitchen" pos="NN" surface="kitchen"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="3" to="2" type="det"/>
-		<dep from="1" to="3" type="dobj"/>
-		<dep from="3" to="4" type="prep"/>
-		<dep from="4" to="5" type="pobj"/>
-		<dep from="1" to="6" type="prep"/>
-		<dep from="8" to="7" type="det"/>
-		<dep from="6" to="8" type="pobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Searching">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Phenomenon">
-					<token id="2"/>
-					<token id="3"/>
-					<token id="4"/>
-					<token id="5"/>
-				</frameElement>
-				<frameElement type="Ground">
-					<token id="6"/>
-					<token id="7"/>
-					<token id="8"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  find the bottle of wine in the kitchen
+ </sentence>
+ <tokens>
+  <token id="1" lemma="find" pos="VB" surface="find"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="bottle" pos="NN" surface="bottle"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="wine" pos="NN" surface="wine"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="kitchen" pos="NN" surface="kitchen"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="dobj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="1" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

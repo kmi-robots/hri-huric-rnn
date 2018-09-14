@@ -1,36 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="4106509">
-	<sentence>Support Goodwill with a generous donation today .</sentence>
-	<tokens>
-		<token id="1" lemma="support" pos="NNP" surface="Support"/>
-		<token id="2" lemma="goodwill" pos="NNP" surface="Goodwill"/>
-		<token id="3" lemma="with" pos="IN" surface="with"/>
-		<token id="4" lemma="a" pos="DT" surface="a"/>
-		<token id="5" lemma="generous" pos="JJ" surface="generous"/>
-		<token id="6" lemma="donation" pos="NN" surface="donation"/>
-		<token id="7" lemma="today" pos="NN" surface="today"/>
-		<token id="8" lemma="." pos="." surface="."/>
-	</tokens>
-	<dependencies>
-		<dep from="2" to="1" type="compound"/>
-		<dep from="0" to="2" type="root"/>
-		<dep from="2" to="3" type="prep"/>
-		<dep from="6" to="4" type="det"/>
-		<dep from="6" to="5" type="amod"/>
-		<dep from="3" to="6" type="pobj"/>
-		<dep from="2" to="7" type="npadvmod"/>
-		<dep from="2" to="8" type="punct"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Giving">
-				<lexicalUnit>
-					<token id="6"/>
-				</lexicalUnit>
-				<frameElement type="Depictive">
-					<token id="5"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-	</semantics>
+ <sentence>
+  Support Goodwill with a generous donation today .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="support" pos="NNP" surface="Support"/>
+  <token id="2" lemma="goodwill" pos="NNP" surface="Goodwill"/>
+  <token id="3" lemma="with" pos="IN" surface="with"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="generous" pos="JJ" surface="generous"/>
+  <token id="6" lemma="donation" pos="NN" surface="donation"/>
+  <token id="7" lemma="today" pos="NN" surface="today"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="pobj"/>
+  <dep from="2" to="7" type="npadvmod"/>
+  <dep from="2" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Depictive">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
 </command>

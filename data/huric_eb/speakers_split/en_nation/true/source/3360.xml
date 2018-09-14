@@ -1,45 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3360">
-	<sentence>robot can you fully lower the window blinds</sentence>
-	<tokens>
-		<token id="1" lemma="robot" pos="NN" surface="robot"/>
-		<token id="2" lemma="can" pos="MD" surface="can"/>
-		<token id="3" lemma="you" pos="PRP" surface="you"/>
-		<token id="4" lemma="fully" pos="RB" surface="fully"/>
-		<token id="5" lemma="lower" pos="VB" surface="lower"/>
-		<token id="6" lemma="the" pos="DT" surface="the"/>
-		<token id="7" lemma="window" pos="NN" surface="window"/>
-		<token id="8" lemma="blind" pos="NNS" surface="blinds"/>
-	</tokens>
-	<dependencies>
-		<dep from="5" to="1" type="discourse"/>
-		<dep from="5" to="2" type="aux"/>
-		<dep from="5" to="3" type="nsubj"/>
-		<dep from="5" to="4" type="advmod"/>
-		<dep from="0" to="5" type="root"/>
-		<dep from="8" to="6" type="det"/>
-		<dep from="8" to="7" type="nn"/>
-		<dep from="5" to="8" type="dobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Closure">
-				<lexicalUnit>
-					<token id="5"/>
-				</lexicalUnit>
-				<frameElement type="Agent">
-					<token id="3"/>
-				</frameElement>
-				<frameElement type="Degree">
-					<token id="4"/>
-				</frameElement>
-				<frameElement type="Container_portal">
-					<token id="6"/>
-					<token id="7"/>
-					<token id="8"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  robot can you fully lower the window blinds
+ </sentence>
+ <tokens>
+  <token id="1" lemma="robot" pos="NN" surface="robot"/>
+  <token id="2" lemma="can" pos="MD" surface="can"/>
+  <token id="3" lemma="you" pos="PRP" surface="you"/>
+  <token id="4" lemma="fully" pos="RB" surface="fully"/>
+  <token id="5" lemma="lower" pos="VB" surface="lower"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="window" pos="NN" surface="window"/>
+  <token id="8" lemma="blind" pos="NNS" surface="blinds"/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="discourse"/>
+  <dep from="5" to="2" type="aux"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="nn"/>
+  <dep from="5" to="8" type="dobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Closure">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Container_portal">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

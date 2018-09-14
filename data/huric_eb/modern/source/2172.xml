@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="2172">
-	<sentence>search for the coffee cups</sentence>
-	<tokens>
-		<token id="1" lemma="search" pos="VB" surface="search"/>
-		<token id="2" lemma="for" pos="IN" surface="for"/>
-		<token id="3" lemma="the" pos="DT" surface="the"/>
-		<token id="4" lemma="coffee" pos="NN" surface="coffee"/>
-		<token id="5" lemma="cup" pos="NNS" surface="cups"/>
-	</tokens>
-	<dependencies>
-		<dep from="0" to="1" type="root"/>
-		<dep from="1" to="2" type="prep"/>
-		<dep from="5" to="3" type="det"/>
-		<dep from="5" to="4" type="nn"/>
-		<dep from="2" to="5" type="pobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Searching">
-				<lexicalUnit>
-					<token id="1"/>
-				</lexicalUnit>
-				<frameElement type="Phenomenon">
-					<token id="2"/>
-					<token id="3"/>
-					<token id="4"/>
-					<token id="5"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  search for the coffee cups
+ </sentence>
+ <tokens>
+  <token id="1" lemma="search" pos="VB" surface="search"/>
+  <token id="2" lemma="for" pos="IN" surface="for"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="coffee" pos="NN" surface="coffee"/>
+  <token id="5" lemma="cup" pos="NNS" surface="cups"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="nn"/>
+  <dep from="2" to="5" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

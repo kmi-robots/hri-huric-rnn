@@ -1,44 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="3099">
-	<sentence>please take some pasta from the kitchen cabinet</sentence>
-	<tokens>
-		<token id="1" lemma="please" pos="UH" surface="please"/>
-		<token id="2" lemma="take" pos="VB" surface="take"/>
-		<token id="3" lemma="some" pos="DT" surface="some"/>
-		<token id="4" lemma="pasta" pos="NN" surface="pasta"/>
-		<token id="5" lemma="from" pos="IN" surface="from"/>
-		<token id="6" lemma="the" pos="DT" surface="the"/>
-		<token id="7" lemma="kitchen" pos="NN" surface="kitchen"/>
-		<token id="8" lemma="cabinet" pos="NN" surface="cabinet"/>
-	</tokens>
-	<dependencies>
-		<dep from="2" to="1" type="discourse"/>
-		<dep from="0" to="2" type="root"/>
-		<dep from="4" to="3" type="det"/>
-		<dep from="2" to="4" type="dobj"/>
-		<dep from="2" to="5" type="prep"/>
-		<dep from="8" to="6" type="det"/>
-		<dep from="8" to="7" type="nn"/>
-		<dep from="5" to="8" type="pobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Taking">
-				<lexicalUnit>
-					<token id="2"/>
-				</lexicalUnit>
-				<frameElement type="Theme">
-					<token id="3"/>
-					<token id="4"/>
-				</frameElement>
-				<frameElement type="Source">
-					<token id="5"/>
-					<token id="6"/>
-					<token id="7"/>
-					<token id="8"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics/>
-	</semantics>
+ <sentence>
+  please take some pasta from the kitchen cabinet
+ </sentence>
+ <tokens>
+  <token id="1" lemma="please" pos="UH" surface="please"/>
+  <token id="2" lemma="take" pos="VB" surface="take"/>
+  <token id="3" lemma="some" pos="DT" surface="some"/>
+  <token id="4" lemma="pasta" pos="NN" surface="pasta"/>
+  <token id="5" lemma="from" pos="IN" surface="from"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="kitchen" pos="NN" surface="kitchen"/>
+  <token id="8" lemma="cabinet" pos="NN" surface="cabinet"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="discourse"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="nn"/>
+  <dep from="5" to="8" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Taking">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics/>
+ </semantics>
 </command>

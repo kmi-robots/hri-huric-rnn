@@ -1,69 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <command id="2735">
-	<sentence>please put the book on the table in the dining room</sentence>
-	<tokens>
-		<token id="1" lemma="please" pos="UH" surface="please"/>
-		<token id="2" lemma="put" pos="VB" surface="put"/>
-		<token id="3" lemma="the" pos="DT" surface="the"/>
-		<token id="4" lemma="book" pos="NN" surface="book"/>
-		<token id="5" lemma="on" pos="IN" surface="on"/>
-		<token id="6" lemma="the" pos="DT" surface="the"/>
-		<token id="7" lemma="table" pos="NN" surface="table"/>
-		<token id="8" lemma="in" pos="IN" surface="in"/>
-		<token id="9" lemma="the" pos="DT" surface="the"/>
-		<token id="10" lemma="dining" pos="NN" surface="dining"/>
-		<token id="11" lemma="room" pos="NN" surface="room"/>
-	</tokens>
-	<dependencies>
-		<dep from="2" to="1" type="discourse"/>
-		<dep from="0" to="2" type="root"/>
-		<dep from="4" to="3" type="det"/>
-		<dep from="2" to="4" type="dobj"/>
-		<dep from="2" to="5" type="prep"/>
-		<dep from="7" to="6" type="det"/>
-		<dep from="5" to="7" type="pobj"/>
-		<dep from="7" to="8" type="prep"/>
-		<dep from="11" to="9" type="det"/>
-		<dep from="11" to="10" type="nn"/>
-		<dep from="8" to="11" type="pobj"/>
-	</dependencies>
-	<semantics>
-		<frameSemantics>
-			<frame name="Placing">
-				<lexicalUnit>
-					<token id="2"/>
-				</lexicalUnit>
-				<frameElement type="Theme">
-					<token id="3"/>
-					<token id="4"/>
-				</frameElement>
-				<frameElement type="Goal">
-					<token id="5"/>
-					<token id="6"/>
-					<token id="7"/>
-					<token id="8"/>
-					<token id="9"/>
-					<token id="10"/>
-					<token id="11"/>
-				</frameElement>
-			</frame>
-		</frameSemantics>
-		<spatialSemantics>
-			<spatialRelation name="Spatial_relation">
-				<lexicalUnit/>
-				<spatialRole type="Trajector">
-					<token id="6"/>
-					<token id="7"/>
-				</spatialRole>
-				<spatialRole type="Spatial_Indicator">
-					<token id="8"/>
-				</spatialRole>
-				<spatialRole type="Landmark">
-					<token id="9"/>
-					<token id="10"/>
-					<token id="11"/>
-				</spatialRole>
-			</spatialRelation>
-		</spatialSemantics>
-	</semantics>
+ <sentence>
+  please put the book on the table in the dining room
+ </sentence>
+ <tokens>
+  <token id="1" lemma="please" pos="UH" surface="please"/>
+  <token id="2" lemma="put" pos="VB" surface="put"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="book" pos="NN" surface="book"/>
+  <token id="5" lemma="on" pos="IN" surface="on"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="table" pos="NN" surface="table"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="dining" pos="NN" surface="dining"/>
+  <token id="11" lemma="room" pos="NN" surface="room"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="discourse"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="nn"/>
+  <dep from="8" to="11" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+  <spatialSemantics>
+   <spatialRelation name="Spatial_relation">
+    <lexicalUnit/>
+    <spatialRole type="Trajector">
+     <token id="6"/>
+     <token id="7"/>
+    </spatialRole>
+    <spatialRole type="Spatial_Indicator">
+     <token id="8"/>
+    </spatialRole>
+    <spatialRole type="Landmark">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </spatialRole>
+   </spatialRelation>
+  </spatialSemantics>
+ </semantics>
 </command>
