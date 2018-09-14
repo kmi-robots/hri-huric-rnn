@@ -15,6 +15,8 @@ from pathlib import Path
 from sklearn.model_selection import StratifiedKFold
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
+import html.parser as htmlparser
+parser = htmlparser.HTMLParser()
 
 import spacy
 
@@ -633,47 +635,108 @@ def fate_preprocess(folder, dest_path, subset=False):
 
     for s in root.findall('body/s'):
         tokens = {idx + 1: t.attrib for idx, t in enumerate(s.findall('graph/terminals/t'))}
+        for k, v in tokens.items():
+            v['word'] = parser.unescape(v['word'])
         sentence = ' '.join([t['word'] for t in tokens.values()])
-        print(sentence)
+        if sentence == '"' or len(tokens) < 2:
+            # these sentences don't deserve to be there
+            continue
+        #print(sentence)
         # for each edge_id, the list of terminal tokens that make it
         # start populating it from terminals
-        edge_tokens = {t['id']: [idx] for idx, t in tokens.items()}
+        edge_tokens = {t['id']: {'word_ids': [idx], 'head': {'id': t['id'], 'word': t['word']}} for idx, t in tokens.items()}
+        terminals = {t['id']: idx for idx, t in tokens.items()}
         # and now the nonterminals
         nonterminals = s.findall('graph/nonterminals/nt')
         idx = 0
+        consecutive_failures = 0
         # TODO build dependency tree from constituent tree
+        # deps are the terminal-terminal edges
+        deps = {}
+        # flag for missing constituency tree
+        has_constituency_tree = True
         #print(edge_tokens)
-        #deps = {}
         while nonterminals:
             idx %= len(nonterminals)
             nt = nonterminals[idx]
-            parts = [e.attrib['idref'] for e in nt.findall('edge')]
+            children = [e.attrib['idref'] for e in nt.findall('edge')]
             try:
-                parts_ids = [edge_tokens[p] for p in parts]
+                parts_ids = [edge_tokens[c]['word_ids'] for c in children]
+                consecutive_failures = 0
                 nonterminals.remove(nt)
             except KeyError:
                 # if this nonterminal cannot be resolved, go ahead
                 idx += 1
+                consecutive_failures += 1
+                if consecutive_failures > len(nonterminals):
+                    raise ValueError('reached max number of retrials')
                 continue
-            edge_tokens[nt.attrib['id']] = flatten(parts_ids)
+            head_word = nt.attrib['head']
+            #children_terminals = [el for el in children if el in terminals.keys()]
+            #head_candidates = [el for el in children_terminals]
+            #print(children)
+            children_edges_ids_by_word = {str(edge_tokens[id]['head']['word']): id for id in children}
+            #print(children_edges_ids_by_word)
+            if not has_constituency_tree:
+                pass
+                #print('again')
+            elif head_word == '--':
+                print('missing constituency tree', s.attrib['id'])
+                has_constituency_tree = False
+                head_id = None
+                # TODO use spacy
+            else:
+                #print(children_edges_ids_by_word)
+                head_child_id = children_edges_ids_by_word[head_word]
+                head_id = edge_tokens[head_child_id]['head']['id']
+
+
+                for child in [c for c in children if (c != head_child_id)]:
+                    child_head = edge_tokens[child]['head']['id']
+
+                    deps[child_head] = head_id
+                    #print(child_head, tokens[child_head])
+
+            #
+            edge_tokens[nt.attrib['id']] = {
+                'word_ids': flatten(parts_ids),
+                'head': {
+                    'id': head_id,
+                    'word': head_word
+                }
+            }
+
             #head = ??
-        # the last nonterminal is the root
+        # get the new format
+        if deps and has_constituency_tree:
+            dependencies = [{'from': str(terminals[src]), 'to': str(terminals[dst]), 'type': 'unknown'} for dst, src in deps.items()]
+            # the last nonterminal is the root
+            dependencies.append({'from': '0', 'to': str(terminals[head_id]), 'type': 'root'})
+        else:
+            # TODO this is a fake dependency tree
+            print('fake dependencies for', s.attrib['id'])
+            dependencies = [{'from': '0', 'to': str(t), 'type': 'unknown'} for t in terminals.values()]
+        dependencies = sorted(dependencies, key=lambda x: int(x['to']))
+
+        #print(tokens)
+        #print(dependencies)
+        #exit(1)
 
         frames = []
 
         for f in s.findall('sem/frames/frame'):
             frame_name = f.attrib['name']
-            lu_ids = [edge_tokens[c.attrib['idref']] for c in f.findall('target/fenode')]
+            lu_ids = [edge_tokens[c.attrib['idref']]['word_ids'] for c in f.findall('target/fenode')]
             lu_ids = sorted(flatten(lu_ids))
-            print('\t', frame_name, [tokens[id]['word'] for id in lu_ids])
+            #print('\t', frame_name, [tokens[id]['word'] for id in lu_ids])
 
             fes = []
 
             for fe in f.findall('fe'):
                 fe_name = fe.attrib['name']
-                fe_ids = [edge_tokens[c.attrib['idref']] for c in fe.findall('fenode')]
+                fe_ids = [edge_tokens[c.attrib['idref']]['word_ids'] for c in fe.findall('fenode')]
                 fe_ids = sorted(flatten(fe_ids))
-                print('\t\t', fe_name, [tokens[id]['word'] for id in fe_ids])
+                #print('\t\t', fe_name, [tokens[id]['word'] for id in fe_ids])
                 fes.append({
                     'name': fe_name,
                     'fe_ids': fe_ids
@@ -688,8 +751,8 @@ def fate_preprocess(folder, dest_path, subset=False):
         samples.append({
             'id': s.attrib['id'],
             'sentence': sentence,
-            'tokens': sorted([{'id': str(idx), 'lemma': t['lemma'], 'pos': t.get('pos', 'MISSING'), 'surface': t['word']} for idx, t in tokens.items()], key=lambda el: el['id']),
-            'dependencies': [], #TODO
+            'tokens': [{'id': str(idx), 'lemma': t['lemma'], 'pos': t.get('pos', 'MISSING'), 'surface': t['word']} for idx, t in sorted([(k,v) for (k,v) in tokens.items()], key=lambda el: el[0])],
+            'dependencies': dependencies,
             'frames': frames
         })
 
@@ -938,7 +1001,7 @@ def main():
 
     elif which == 'fate':
         fate_preprocess('fate/origin', 'fate/modern/source')
-        huric_preprocess('fate/modern')
+        #huric_preprocess('fate/modern')
 
     else:
         raise ValueError(which)
