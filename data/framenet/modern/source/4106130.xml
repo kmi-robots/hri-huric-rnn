@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106130">
+ <sentence>
+  Sights in Macau
+ </sentence>
+ <tokens>
+  <token id="1" lemma="sight" pos="NNS" surface="Sights"/>
+  <token id="2" lemma="in" pos="IN" surface="in"/>
+  <token id="3" lemma="macau" pos="NNP" surface="Macau"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="2" to="3" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Touring">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Attraction">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

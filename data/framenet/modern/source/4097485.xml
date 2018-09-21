@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097485">
+ <sentence>
+  Iran may have received other nuclear - related assistance and material from Argentina ( 6883 , 6897 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="2" lemma="may" pos="MD" surface="may"/>
+  <token id="3" lemma="have" pos="VB" surface="have"/>
+  <token id="4" lemma="receive" pos="VBN" surface="received"/>
+  <token id="5" lemma="other" pos="JJ" surface="other"/>
+  <token id="6" lemma="nuclear" pos="NN" surface="nuclear"/>
+  <token id="7" lemma="-" pos="HYPH" surface="-"/>
+  <token id="8" lemma="relate" pos="VBN" surface="related"/>
+  <token id="9" lemma="assistance" pos="NN" surface="assistance"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="material" pos="NN" surface="material"/>
+  <token id="12" lemma="from" pos="IN" surface="from"/>
+  <token id="13" lemma="argentina" pos="NNP" surface="Argentina"/>
+  <token id="14" lemma="(" pos="-LRB-" surface="("/>
+  <token id="15" lemma="6883" pos="CD" surface="6883"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="6897" pos="CD" surface="6897"/>
+  <token id="18" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="9" to="5" type="amod"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="punct"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="4" to="9" type="dobj"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="9" to="11" type="conj"/>
+  <dep from="4" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="13" to="15" type="appos"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="15" to="17" type="npadvmod"/>
+  <dep from="13" to="18" type="punct"/>
+  <dep from="4" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Benefited_party">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Helper">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Domain">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Receiving">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Donor">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Ingredients">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Material">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Class">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Cognitive_connection">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Concept_2">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Concept_1">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

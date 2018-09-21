@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102277">
+ <sentence>
+  Okay thanks a lot .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="okay" pos="UH" surface="Okay"/>
+  <token id="2" lemma="thank" pos="NNS" surface="thanks"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="lot" pos="NN" surface="lot"/>
+  <token id="5" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="intj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="npadvmod"/>
+  <dep from="2" to="5" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Judgment_direct_address">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Mass">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

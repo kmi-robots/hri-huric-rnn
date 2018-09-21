@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097219">
+ <sentence>
+  Does Iran have the infrastructure necessary to produce nuclear weapons ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="do" pos="VBZ" surface="Does"/>
+  <token id="2" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="3" lemma="have" pos="VB" surface="have"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="infrastructure" pos="NN" surface="infrastructure"/>
+  <token id="6" lemma="necessary" pos="JJ" surface="necessary"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="produce" pos="VB" surface="produce"/>
+  <token id="9" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="10" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="11" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="aux"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="5" to="6" type="amod"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="5" to="8" type="relcl"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="3" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_necessary">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Requirement">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Dependent">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Infrastructure">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Possessor">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148422">
+ <sentence>
+  It 's a double-winged house , and the servants live on one side , the family on the other .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="It"/>
+  <token id="2" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="double-winged" pos="JJ" surface="double-winged"/>
+  <token id="5" lemma="house" pos="NN" surface="house"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="servant" pos="NNS" surface="servants"/>
+  <token id="10" lemma="live" pos="VBP" surface="live"/>
+  <token id="11" lemma="on" pos="IN" surface="on"/>
+  <token id="12" lemma="one" pos="CD" surface="one"/>
+  <token id="13" lemma="side" pos="NN" surface="side"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="family" pos="NN" surface="family"/>
+  <token id="17" lemma="on" pos="IN" surface="on"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="other" pos="JJ" surface="other"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="attr"/>
+  <dep from="2" to="6" type="punct"/>
+  <dep from="2" to="7" type="cc"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="2" to="10" type="conj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="nummod"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="10" to="14" type="punct"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="9" to="16" type="appos"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="10" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Kinship">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Relatives">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Residence">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Resident">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_orientational">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

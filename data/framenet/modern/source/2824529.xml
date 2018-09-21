@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824529">
+ <sentence>
+  Last year catastrophe losses totaled $ 5 million , when net was $ 235.5 million , or $ 2.07 a share .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="last" pos="JJ" surface="Last"/>
+  <token id="2" lemma="year" pos="NN" surface="year"/>
+  <token id="3" lemma="catastrophe" pos="NN" surface="catastrophe"/>
+  <token id="4" lemma="loss" pos="NNS" surface="losses"/>
+  <token id="5" lemma="total" pos="VBD" surface="totaled"/>
+  <token id="6" lemma="$" pos="$" surface="$"/>
+  <token id="7" lemma="5" pos="CD" surface="5"/>
+  <token id="8" lemma="million" pos="CD" surface="million"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="when" pos="WRB" surface="when"/>
+  <token id="11" lemma="net" pos="NN" surface="net"/>
+  <token id="12" lemma="be" pos="VBD" surface="was"/>
+  <token id="13" lemma="$" pos="$" surface="$"/>
+  <token id="14" lemma="235.5" pos="CD" surface="235.5"/>
+  <token id="15" lemma="million" pos="CD" surface="million"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="or" pos="CC" surface="or"/>
+  <token id="18" lemma="$" pos="$" surface="$"/>
+  <token id="19" lemma="2.07" pos="CD" surface="2.07"/>
+  <token id="20" lemma="a" pos="DT" surface="a"/>
+  <token id="21" lemma="share" pos="NN" surface="share"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="4" to="2" type="compound"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="8" to="6" type="quantmod"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="dobj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="12" to="10" type="advmod"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="5" to="12" type="advcl"/>
+  <dep from="15" to="13" type="quantmod"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="12" to="15" type="attr"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="15" to="17" type="cc"/>
+  <dep from="19" to="18" type="nmod"/>
+  <dep from="15" to="19" type="conj"/>
+  <dep from="21" to="20" type="det"/>
+  <dep from="19" to="21" type="npadvmod"/>
+  <dep from="5" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Catastrophe">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Undesirable_event">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Amounting_to">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Time_span">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Attribute">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Value">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Time_span">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Earnings_and_losses">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Earnings">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Earnings_and_losses">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Earnings">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Relative_time">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Focal_occasion">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Relative_time">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

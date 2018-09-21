@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106031">
+ <sentence>
+  Teaching here is conducted in both Chinese and English .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="teach" pos="VBG" surface="Teaching"/>
+  <token id="2" lemma="here" pos="RB" surface="here"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="conduct" pos="VBN" surface="conducted"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="both" pos="CC" surface="both"/>
+  <token id="7" lemma="chinese" pos="JJ" surface="Chinese"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="english" pos="NNP" surface="English"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubjpass"/>
+  <dep from="1" to="2" type="advmod"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="preconj"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="7" to="9" type="conj"/>
+  <dep from="4" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Act">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165048">
+ <sentence>
+  At least one cat and one dog had to receive CPR and oxygen , but both are reported to be in stable condition .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="at" pos="RB" surface="At"/>
+  <token id="2" lemma="least" pos="RBS" surface="least"/>
+  <token id="3" lemma="one" pos="CD" surface="one"/>
+  <token id="4" lemma="cat" pos="NN" surface="cat"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="one" pos="CD" surface="one"/>
+  <token id="7" lemma="dog" pos="NN" surface="dog"/>
+  <token id="8" lemma="have" pos="VBD" surface="had"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="receive" pos="VB" surface="receive"/>
+  <token id="11" lemma="cpr" pos="NNP" surface="CPR"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="oxygen" pos="NN" surface="oxygen"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="but" pos="CC" surface="but"/>
+  <token id="16" lemma="both" pos="DT" surface="both"/>
+  <token id="17" lemma="be" pos="VBP" surface="are"/>
+  <token id="18" lemma="report" pos="VBN" surface="reported"/>
+  <token id="19" lemma="to" pos="TO" surface="to"/>
+  <token id="20" lemma="be" pos="VB" surface="be"/>
+  <token id="21" lemma="in" pos="IN" surface="in"/>
+  <token id="22" lemma="stable" pos="JJ" surface="stable"/>
+  <token id="23" lemma="condition" pos="NN" surface="condition"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="advmod"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="4" to="3" type="nummod"/>
+  <dep from="8" to="4" type="nsubj"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="7" to="6" type="nummod"/>
+  <dep from="4" to="7" type="conj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="8" to="10" type="xcomp"/>
+  <dep from="10" to="11" type="dobj"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="11" to="13" type="conj"/>
+  <dep from="8" to="14" type="punct"/>
+  <dep from="8" to="15" type="cc"/>
+  <dep from="18" to="16" type="nsubjpass"/>
+  <dep from="18" to="17" type="auxpass"/>
+  <dep from="8" to="18" type="conj"/>
+  <dep from="20" to="19" type="aux"/>
+  <dep from="18" to="20" type="xcomp"/>
+  <dep from="20" to="21" type="prep"/>
+  <dep from="23" to="22" type="amod"/>
+  <dep from="21" to="23" type="pobj"/>
+  <dep from="18" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Denoted_quantity">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Denoted_quantity">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Number">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Precision">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Precision">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="State_of_entity">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="State">
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Evaluation">
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Animals">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Animal">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Animals">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Animal">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

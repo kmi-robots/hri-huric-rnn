@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100345">
+ <sentence>
+  When Seleucid rulers outlawed Judaism , Jews led by Judah Maccabee and his brothers staged a revolution in 167 b.c. and , against all odds , restored the primacy of Jewish religious life in Jerusalem .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="when" pos="WRB" surface="When"/>
+  <token id="2" lemma="seleucid" pos="NNP" surface="Seleucid"/>
+  <token id="3" lemma="ruler" pos="NNS" surface="rulers"/>
+  <token id="4" lemma="outlaw" pos="VBD" surface="outlawed"/>
+  <token id="5" lemma="judaism" pos="NNP" surface="Judaism"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="jews" pos="NNPS" surface="Jews"/>
+  <token id="8" lemma="lead" pos="VBD" surface="led"/>
+  <token id="9" lemma="by" pos="IN" surface="by"/>
+  <token id="10" lemma="judah" pos="NNP" surface="Judah"/>
+  <token id="11" lemma="maccabee" pos="NNP" surface="Maccabee"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="14" lemma="brother" pos="NNS" surface="brothers"/>
+  <token id="15" lemma="stag" pos="VBD" surface="staged"/>
+  <token id="16" lemma="a" pos="DT" surface="a"/>
+  <token id="17" lemma="revolution" pos="NN" surface="revolution"/>
+  <token id="18" lemma="in" pos="IN" surface="in"/>
+  <token id="19" lemma="167" pos="CD" surface="167"/>
+  <token id="20" lemma="b.c." pos="NN" surface="b.c."/>
+  <token id="21" lemma="and" pos="CC" surface="and"/>
+  <token id="22" lemma="," pos="," surface=","/>
+  <token id="23" lemma="against" pos="IN" surface="against"/>
+  <token id="24" lemma="all" pos="DT" surface="all"/>
+  <token id="25" lemma="odd" pos="NNS" surface="odds"/>
+  <token id="26" lemma="," pos="," surface=","/>
+  <token id="27" lemma="restore" pos="VBD" surface="restored"/>
+  <token id="28" lemma="the" pos="DT" surface="the"/>
+  <token id="29" lemma="primacy" pos="NN" surface="primacy"/>
+  <token id="30" lemma="of" pos="IN" surface="of"/>
+  <token id="31" lemma="jewish" pos="JJ" surface="Jewish"/>
+  <token id="32" lemma="religious" pos="JJ" surface="religious"/>
+  <token id="33" lemma="life" pos="NN" surface="life"/>
+  <token id="34" lemma="in" pos="IN" surface="in"/>
+  <token id="35" lemma="jerusalem" pos="NNP" surface="Jerusalem"/>
+  <token id="36" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="15" to="4" type="advcl"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="15" to="6" type="punct"/>
+  <dep from="15" to="7" type="nsubj"/>
+  <dep from="7" to="8" type="acl"/>
+  <dep from="8" to="9" type="agent"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="7" to="12" type="cc"/>
+  <dep from="14" to="13" type="poss"/>
+  <dep from="7" to="14" type="conj"/>
+  <dep from="0" to="15" type="root"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="dobj"/>
+  <dep from="15" to="18" type="prep"/>
+  <dep from="20" to="19" type="nummod"/>
+  <dep from="18" to="20" type="pobj"/>
+  <dep from="15" to="21" type="cc"/>
+  <dep from="15" to="22" type="punct"/>
+  <dep from="27" to="23" type="prep"/>
+  <dep from="25" to="24" type="det"/>
+  <dep from="23" to="25" type="pobj"/>
+  <dep from="27" to="26" type="punct"/>
+  <dep from="15" to="27" type="conj"/>
+  <dep from="29" to="28" type="det"/>
+  <dep from="27" to="29" type="dobj"/>
+  <dep from="29" to="30" type="prep"/>
+  <dep from="33" to="31" type="amod"/>
+  <dep from="33" to="32" type="amod"/>
+  <dep from="30" to="33" type="pobj"/>
+  <dep from="27" to="34" type="prep"/>
+  <dep from="34" to="35" type="pobj"/>
+  <dep from="15" to="36" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Leader">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Kinship">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Ego">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Alter">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Governed">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Leader">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_of_leadership">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

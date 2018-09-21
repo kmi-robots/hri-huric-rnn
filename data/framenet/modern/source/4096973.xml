@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096973">
+ <sentence>
+  Founded in 1958 , AKU underwent a series of reforms after the revolution to align its teachings with Islamic principles .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="found" pos="VBN" surface="Founded"/>
+  <token id="2" lemma="in" pos="IN" surface="in"/>
+  <token id="3" lemma="1958" pos="CD" surface="1958"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="aku" pos="NNP" surface="AKU"/>
+  <token id="6" lemma="undergo" pos="VBD" surface="underwent"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="series" pos="NN" surface="series"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="reform" pos="NNS" surface="reforms"/>
+  <token id="11" lemma="after" pos="IN" surface="after"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="revolution" pos="NN" surface="revolution"/>
+  <token id="14" lemma="to" pos="TO" surface="to"/>
+  <token id="15" lemma="align" pos="VB" surface="align"/>
+  <token id="16" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="17" lemma="teaching" pos="NNS" surface="teachings"/>
+  <token id="18" lemma="with" pos="IN" surface="with"/>
+  <token id="19" lemma="islamic" pos="JJ" surface="Islamic"/>
+  <token id="20" lemma="principle" pos="NNS" surface="principles"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="advcl"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="2" to="3" type="pobj"/>
+  <dep from="6" to="4" type="punct"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="6" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="13" to="15" type="acl"/>
+  <dep from="17" to="16" type="poss"/>
+  <dep from="15" to="17" type="dobj"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="20" to="19" type="amod"/>
+  <dep from="18" to="20" type="pobj"/>
+  <dep from="6" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_of_leadership">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Intentionally_create">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Created_entity">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Undergoing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

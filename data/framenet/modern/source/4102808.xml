@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102808">
+ <sentence>
+  The ditch should be 30 centimeters deep and 20 centimeters wide .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="ditch" pos="NN" surface="ditch"/>
+  <token id="3" lemma="should" pos="MD" surface="should"/>
+  <token id="4" lemma="be" pos="VB" surface="be"/>
+  <token id="5" lemma="30" pos="CD" surface="30"/>
+  <token id="6" lemma="centimeter" pos="NNS" surface="centimeters"/>
+  <token id="7" lemma="deep" pos="JJ" surface="deep"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="20" pos="CD" surface="20"/>
+  <token id="10" lemma="centimeter" pos="NNS" surface="centimeters"/>
+  <token id="11" lemma="wide" pos="JJ" surface="wide"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="7" to="6" type="npadvmod"/>
+  <dep from="4" to="7" type="acomp"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="10" to="9" type="nummod"/>
+  <dep from="11" to="10" type="npadvmod"/>
+  <dep from="7" to="11" type="conj"/>
+  <dep from="4" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Desirable_event">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="State_of_affairs">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_linear_extent">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_linear_extent">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Count">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Dimension">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Dimension">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Measurement">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

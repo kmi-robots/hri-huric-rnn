@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101521">
+ <sentence>
+  I LEFT OILSTATES BACK IN MARCH WITH ANOTHER COMPANY .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="leave" pos="VBD" surface="LEFT"/>
+  <token id="3" lemma="oilstate" pos="NNS" surface="OILSTATES"/>
+  <token id="4" lemma="back" pos="RB" surface="BACK"/>
+  <token id="5" lemma="in" pos="IN" surface="IN"/>
+  <token id="6" lemma="march" pos="NNP" surface="MARCH"/>
+  <token id="7" lemma="with" pos="IN" surface="WITH"/>
+  <token id="8" lemma="another" pos="DT" surface="ANOTHER"/>
+  <token id="9" lemma="company" pos="NNP" surface="COMPANY"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="advmod"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="2" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="2" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_period">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Class">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

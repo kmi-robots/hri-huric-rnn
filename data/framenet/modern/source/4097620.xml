@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097620">
+ <sentence>
+  Virtually all weapons programs use some foreign inputs , if only technical information culled from scientific and engineering sources .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="virtually" pos="RB" surface="Virtually"/>
+  <token id="2" lemma="all" pos="DT" surface="all"/>
+  <token id="3" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="4" lemma="program" pos="NNS" surface="programs"/>
+  <token id="5" lemma="use" pos="VBP" surface="use"/>
+  <token id="6" lemma="some" pos="DT" surface="some"/>
+  <token id="7" lemma="foreign" pos="JJ" surface="foreign"/>
+  <token id="8" lemma="input" pos="NNS" surface="inputs"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="if" pos="IN" surface="if"/>
+  <token id="11" lemma="only" pos="JJ" surface="only"/>
+  <token id="12" lemma="technical" pos="JJ" surface="technical"/>
+  <token id="13" lemma="information" pos="NN" surface="information"/>
+  <token id="14" lemma="cull" pos="VBN" surface="culled"/>
+  <token id="15" lemma="from" pos="IN" surface="from"/>
+  <token id="16" lemma="scientific" pos="JJ" surface="scientific"/>
+  <token id="17" lemma="and" pos="CC" surface="and"/>
+  <token id="18" lemma="engineering" pos="NN" surface="engineering"/>
+  <token id="19" lemma="source" pos="NNS" surface="sources"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="advmod"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="dobj"/>
+  <dep from="5" to="9" type="punct"/>
+  <dep from="5" to="10" type="prep"/>
+  <dep from="13" to="11" type="advmod"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="13" to="14" type="acl"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="19" to="16" type="amod"/>
+  <dep from="16" to="17" type="cc"/>
+  <dep from="16" to="18" type="conj"/>
+  <dep from="15" to="19" type="pobj"/>
+  <dep from="5" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Salient_entity">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Foreign_or_domestic_country">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Current_country">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Information">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Information">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Source_of_getting">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Sole_instance">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Using">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Instrument">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

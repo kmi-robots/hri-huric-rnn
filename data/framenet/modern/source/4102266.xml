@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102266">
+ <sentence>
+  No , i 'm at home with two little kids preschoolers .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="no" pos="UH" surface="No"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="i" pos="PRP" surface="i"/>
+  <token id="4" lemma="'m" pos="VBP" surface="'m"/>
+  <token id="5" lemma="at" pos="IN" surface="at"/>
+  <token id="6" lemma="home" pos="NN" surface="home"/>
+  <token id="7" lemma="with" pos="IN" surface="with"/>
+  <token id="8" lemma="two" pos="CD" surface="two"/>
+  <token id="9" lemma="little" pos="JJ" surface="little"/>
+  <token id="10" lemma="kid" pos="NNS" surface="kids"/>
+  <token id="11" lemma="preschooler" pos="NNS" surface="preschoolers"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="intj"/>
+  <dep from="4" to="2" type="punct"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="11" to="8" type="nummod"/>
+  <dep from="11" to="9" type="amod"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="7" to="11" type="pobj"/>
+  <dep from="4" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_age">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Age">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Person">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

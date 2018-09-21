@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106188">
+ <sentence>
+  Dai-Siu ( Big and Small ) is a dice game in which the croupier throws three dice inside a glass container .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="dai-siu" pos="NNP" surface="Dai-Siu"/>
+  <token id="2" lemma="(" pos="-LRB-" surface="("/>
+  <token id="3" lemma="big" pos="JJ" surface="Big"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="small" pos="NNP" surface="Small"/>
+  <token id="6" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="7" lemma="be" pos="VBZ" surface="is"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="dice" pos="NN" surface="dice"/>
+  <token id="10" lemma="game" pos="NN" surface="game"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="which" pos="WDT" surface="which"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="croupier" pos="NN" surface="croupier"/>
+  <token id="15" lemma="throw" pos="VBZ" surface="throws"/>
+  <token id="16" lemma="three" pos="CD" surface="three"/>
+  <token id="17" lemma="dice" pos="NN" surface="dice"/>
+  <token id="18" lemma="inside" pos="IN" surface="inside"/>
+  <token id="19" lemma="a" pos="DT" surface="a"/>
+  <token id="20" lemma="glass" pos="NN" surface="glass"/>
+  <token id="21" lemma="container" pos="NN" surface="container"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="1" to="3" type="appos"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="3" to="5" type="conj"/>
+  <dep from="1" to="6" type="punct"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="attr"/>
+  <dep from="15" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="10" to="15" type="relcl"/>
+  <dep from="17" to="16" type="nummod"/>
+  <dep from="15" to="17" type="dobj"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="21" to="19" type="det"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="18" to="21" type="pobj"/>
+  <dep from="7" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Size">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Size">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_motion">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Inherent_purpose">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Containers">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Container">
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Material">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

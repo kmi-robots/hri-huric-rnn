@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102480">
+ <sentence>
+  I can assure you that Paula .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="can" pos="MD" surface="can"/>
+  <token id="3" lemma="assure" pos="VB" surface="assure"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="5" lemma="that" pos="IN" surface="that"/>
+  <token id="6" lemma="paula" pos="NNP" surface="Paula"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Capability">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Telling">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Addressee">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

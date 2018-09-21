@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099751">
+ <sentence>
+  US FDA [ United States Food and Drug Administration ] grants Orphan Drug status to Elusys ' anthrax drug
+ </sentence>
+ <tokens>
+  <token id="1" lemma="us" pos="NNP" surface="US"/>
+  <token id="2" lemma="fda" pos="NNP" surface="FDA"/>
+  <token id="3" lemma="[" pos="-LRB-" surface="["/>
+  <token id="4" lemma="united" pos="NNP" surface="United"/>
+  <token id="5" lemma="states" pos="NNP" surface="States"/>
+  <token id="6" lemma="food" pos="NNP" surface="Food"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="drug" pos="NNP" surface="Drug"/>
+  <token id="9" lemma="administration" pos="NNP" surface="Administration"/>
+  <token id="10" lemma="]" pos="-RRB-" surface="]"/>
+  <token id="11" lemma="grant" pos="VBZ" surface="grants"/>
+  <token id="12" lemma="orphan" pos="NNP" surface="Orphan"/>
+  <token id="13" lemma="drug" pos="NNP" surface="Drug"/>
+  <token id="14" lemma="status" pos="NN" surface="status"/>
+  <token id="15" lemma="to" pos="IN" surface="to"/>
+  <token id="16" lemma="elusys" pos="NNP" surface="Elusys"/>
+  <token id="17" lemma="'" pos="POS" surface="'"/>
+  <token id="18" lemma="anthrax" pos="NN" surface="anthrax"/>
+  <token id="19" lemma="drug" pos="NN" surface="drug"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="9" to="4" type="compound"/>
+  <dep from="9" to="5" type="nmod"/>
+  <dep from="9" to="6" type="nmod"/>
+  <dep from="6" to="7" type="cc"/>
+  <dep from="6" to="8" type="conj"/>
+  <dep from="2" to="9" type="appos"/>
+  <dep from="9" to="10" type="punct"/>
+  <dep from="2" to="11" type="appos"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="11" to="14" type="dobj"/>
+  <dep from="11" to="15" type="prep"/>
+  <dep from="19" to="16" type="poss"/>
+  <dep from="16" to="17" type="case"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="15" to="19" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Food">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Food">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

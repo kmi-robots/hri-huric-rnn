@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101160">
+ <sentence>
+  As it changed from mob gambling town to corporate gaming venue , the population of Las Vegas skyrocketed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="as" pos="IN" surface="As"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="3" lemma="change" pos="VBD" surface="changed"/>
+  <token id="4" lemma="from" pos="IN" surface="from"/>
+  <token id="5" lemma="mob" pos="NN" surface="mob"/>
+  <token id="6" lemma="gambling" pos="NN" surface="gambling"/>
+  <token id="7" lemma="town" pos="NN" surface="town"/>
+  <token id="8" lemma="to" pos="IN" surface="to"/>
+  <token id="9" lemma="corporate" pos="JJ" surface="corporate"/>
+  <token id="10" lemma="gaming" pos="NN" surface="gaming"/>
+  <token id="11" lemma="venue" pos="NN" surface="venue"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="population" pos="NN" surface="population"/>
+  <token id="15" lemma="of" pos="IN" surface="of"/>
+  <token id="16" lemma="las" pos="NNP" surface="Las"/>
+  <token id="17" lemma="vegas" pos="NNP" surface="Vegas"/>
+  <token id="18" lemma="skyrocket" pos="VBD" surface="skyrocketed"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="mark"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="18" to="3" type="advcl"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="7" to="5" type="compound"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="4" to="7" type="pobj"/>
+  <dep from="3" to="8" type="prep"/>
+  <dep from="11" to="9" type="amod"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="18" to="12" type="punct"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="18" to="14" type="nsubj"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="0" to="18" type="root"/>
+  <dep from="18" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Undergo_change">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Final_category">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Initial_category">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Population">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_event">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Defining_event">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

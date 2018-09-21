@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106245">
+ <sentence>
+  Turbo Cat ferries leave the China Hong Kong City ( CHKC ) terminal twice a day ; the journey takes two hours .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="turbo" pos="NNP" surface="Turbo"/>
+  <token id="2" lemma="cat" pos="NNP" surface="Cat"/>
+  <token id="3" lemma="ferry" pos="NNS" surface="ferries"/>
+  <token id="4" lemma="leave" pos="VBP" surface="leave"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="china" pos="NNP" surface="China"/>
+  <token id="7" lemma="hong" pos="NNP" surface="Hong"/>
+  <token id="8" lemma="kong" pos="NNP" surface="Kong"/>
+  <token id="9" lemma="city" pos="NNP" surface="City"/>
+  <token id="10" lemma="(" pos="-LRB-" surface="("/>
+  <token id="11" lemma="chkc" pos="NNP" surface="CHKC"/>
+  <token id="12" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="13" lemma="terminal" pos="NN" surface="terminal"/>
+  <token id="14" lemma="twice" pos="PDT" surface="twice"/>
+  <token id="15" lemma="a" pos="DT" surface="a"/>
+  <token id="16" lemma="day" pos="NN" surface="day"/>
+  <token id="17" lemma=";" pos=":" surface=";"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="journey" pos="NN" surface="journey"/>
+  <token id="20" lemma="take" pos="VBZ" surface="takes"/>
+  <token id="21" lemma="two" pos="CD" surface="two"/>
+  <token id="22" lemma="hour" pos="NNS" surface="hours"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="20" to="4" type="ccomp"/>
+  <dep from="11" to="5" type="det"/>
+  <dep from="9" to="6" type="compound"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="11" to="9" type="nmod"/>
+  <dep from="11" to="10" type="punct"/>
+  <dep from="4" to="11" type="dobj"/>
+  <dep from="11" to="12" type="punct"/>
+  <dep from="4" to="13" type="oprd"/>
+  <dep from="16" to="14" type="predet"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="4" to="16" type="npadvmod"/>
+  <dep from="20" to="17" type="punct"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="20" to="19" type="nsubj"/>
+  <dep from="0" to="20" type="root"/>
+  <dep from="22" to="21" type="nummod"/>
+  <dep from="20" to="22" type="dobj"/>
+  <dep from="20" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Vehicle">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Possessor">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Departing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Frequency">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Event_instance">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Instance">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Travel">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Taking_time">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Time_length">
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Number">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Process">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101242">
+ <sentence>
+  As the Byzantine Empire weakened at the end of the first millennium , Crusader forces were sent from Western Europe to counter the Muslim forces and retake Jerusalem for the Christian faith .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="as" pos="IN" surface="As"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="byzantine" pos="NNP" surface="Byzantine"/>
+  <token id="4" lemma="empire" pos="NNP" surface="Empire"/>
+  <token id="5" lemma="weaken" pos="VBD" surface="weakened"/>
+  <token id="6" lemma="at" pos="IN" surface="at"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="end" pos="NN" surface="end"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="first" pos="JJ" surface="first"/>
+  <token id="12" lemma="millennium" pos="NN" surface="millennium"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="crusader" pos="NNP" surface="Crusader"/>
+  <token id="15" lemma="force" pos="NNS" surface="forces"/>
+  <token id="16" lemma="be" pos="VBD" surface="were"/>
+  <token id="17" lemma="send" pos="VBN" surface="sent"/>
+  <token id="18" lemma="from" pos="IN" surface="from"/>
+  <token id="19" lemma="western" pos="NNP" surface="Western"/>
+  <token id="20" lemma="europe" pos="NNP" surface="Europe"/>
+  <token id="21" lemma="to" pos="TO" surface="to"/>
+  <token id="22" lemma="counter" pos="VB" surface="counter"/>
+  <token id="23" lemma="the" pos="DT" surface="the"/>
+  <token id="24" lemma="muslim" pos="JJ" surface="Muslim"/>
+  <token id="25" lemma="force" pos="NNS" surface="forces"/>
+  <token id="26" lemma="and" pos="CC" surface="and"/>
+  <token id="27" lemma="retake" pos="VB" surface="retake"/>
+  <token id="28" lemma="jerusalem" pos="NNP" surface="Jerusalem"/>
+  <token id="29" lemma="for" pos="IN" surface="for"/>
+  <token id="30" lemma="the" pos="DT" surface="the"/>
+  <token id="31" lemma="christian" pos="JJ" surface="Christian"/>
+  <token id="32" lemma="faith" pos="NN" surface="faith"/>
+  <token id="33" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="mark"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="17" to="5" type="advcl"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="17" to="13" type="punct"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="17" to="15" type="nsubjpass"/>
+  <dep from="17" to="16" type="auxpass"/>
+  <dep from="0" to="17" type="root"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="18" to="20" type="pobj"/>
+  <dep from="22" to="21" type="aux"/>
+  <dep from="17" to="22" type="advcl"/>
+  <dep from="25" to="23" type="det"/>
+  <dep from="25" to="24" type="amod"/>
+  <dep from="22" to="25" type="dobj"/>
+  <dep from="22" to="26" type="cc"/>
+  <dep from="22" to="27" type="conj"/>
+  <dep from="27" to="28" type="dobj"/>
+  <dep from="27" to="29" type="prep"/>
+  <dep from="32" to="30" type="det"/>
+  <dep from="32" to="31" type="amod"/>
+  <dep from="29" to="32" type="pobj"/>
+  <dep from="17" to="33" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_subregion">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Subpart">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Time_period">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Ordinal_numbers">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Military">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Force">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Members">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_orientational">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_religion">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Military">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Force">
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Members">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_religion">
+    <lexicalUnit>
+     <token id="31"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="31"/>
+    </frameElement>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Affected">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+     <token id="31"/>
+     <token id="32"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_change_of_strength">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Relative_time">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Thwarting">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

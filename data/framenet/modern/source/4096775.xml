@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096775">
+ <sentence>
+  Beginning in June 1986 , Iran initiated isolated Scud-B attacks against Baghdad and Kirkuk .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="begin" pos="VBG" surface="Beginning"/>
+  <token id="2" lemma="in" pos="IN" surface="in"/>
+  <token id="3" lemma="june" pos="NNP" surface="June"/>
+  <token id="4" lemma="1986" pos="CD" surface="1986"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="7" lemma="initiate" pos="VBD" surface="initiated"/>
+  <token id="8" lemma="isolate" pos="VBN" surface="isolated"/>
+  <token id="9" lemma="scud-b" pos="NNP" surface="Scud-B"/>
+  <token id="10" lemma="attack" pos="NNS" surface="attacks"/>
+  <token id="11" lemma="against" pos="IN" surface="against"/>
+  <token id="12" lemma="baghdad" pos="NNP" surface="Baghdad"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="kirkuk" pos="NNP" surface="Kirkuk"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="advcl"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="2" to="3" type="pobj"/>
+  <dep from="3" to="4" type="nummod"/>
+  <dep from="7" to="5" type="punct"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="10" to="8" type="amod"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="dobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="12" to="14" type="conj"/>
+  <dep from="7" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Assailant">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Activity_start">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Process_start">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

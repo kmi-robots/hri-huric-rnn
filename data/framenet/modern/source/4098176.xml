@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098176">
+ <sentence>
+  QN : Are helicopters locating people stranded without food ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="be" pos="VBP" surface="Are"/>
+  <token id="4" lemma="helicopter" pos="NNS" surface="helicopters"/>
+  <token id="5" lemma="locate" pos="VBG" surface="locating"/>
+  <token id="6" lemma="people" pos="NNS" surface="people"/>
+  <token id="7" lemma="strand" pos="VBN" surface="stranded"/>
+  <token id="8" lemma="without" pos="IN" surface="without"/>
+  <token id="9" lemma="food" pos="NN" surface="food"/>
+  <token id="10" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="attr"/>
+  <dep from="4" to="5" type="acl"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="6" to="7" type="acl"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="3" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locating">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Sought_entity">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

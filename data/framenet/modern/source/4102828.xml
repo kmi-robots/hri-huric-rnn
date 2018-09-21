@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102828">
+ <sentence>
+  Parking areas are of importance because most sabotage operations are done with cars .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="parking" pos="NN" surface="Parking"/>
+  <token id="2" lemma="area" pos="NNS" surface="areas"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="importance" pos="NN" surface="importance"/>
+  <token id="6" lemma="because" pos="IN" surface="because"/>
+  <token id="7" lemma="most" pos="JJS" surface="most"/>
+  <token id="8" lemma="sabotage" pos="NN" surface="sabotage"/>
+  <token id="9" lemma="operation" pos="NNS" surface="operations"/>
+  <token id="10" lemma="be" pos="VBP" surface="are"/>
+  <token id="11" lemma="do" pos="VBN" surface="done"/>
+  <token id="12" lemma="with" pos="IN" surface="with"/>
+  <token id="13" lemma="car" pos="NNS" surface="cars"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="11" to="6" type="mark"/>
+  <dep from="9" to="7" type="amod"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="11" to="9" type="nsubjpass"/>
+  <dep from="11" to="10" type="auxpass"/>
+  <dep from="3" to="11" type="advcl"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Importance">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Factor">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Explanation">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Service_provider">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Vehicle">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Means">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Act">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

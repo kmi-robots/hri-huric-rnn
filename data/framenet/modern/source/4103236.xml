@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103236">
+ <sentence>
+  ALQAEDA may deny his request for vacation in certain cases .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="alqaeda" pos="NN" surface="ALQAEDA"/>
+  <token id="2" lemma="may" pos="MD" surface="may"/>
+  <token id="3" lemma="deny" pos="VB" surface="deny"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="5" lemma="request" pos="NN" surface="request"/>
+  <token id="6" lemma="for" pos="IN" surface="for"/>
+  <token id="7" lemma="vacation" pos="NN" surface="vacation"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="certain" pos="JJ" surface="certain"/>
+  <token id="10" lemma="case" pos="NNS" surface="cases"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="poss"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="3" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Request">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Topic">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Idiosyncrasy">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Instance">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Instance">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Instance_prop">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

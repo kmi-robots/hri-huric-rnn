@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097454">
+ <sentence>
+  The PRC installs uranium enrichment equipment at Darkovin ( Timmerman , 44 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="prc" pos="NNP" surface="PRC"/>
+  <token id="3" lemma="install" pos="VBZ" surface="installs"/>
+  <token id="4" lemma="uranium" pos="NN" surface="uranium"/>
+  <token id="5" lemma="enrichment" pos="NN" surface="enrichment"/>
+  <token id="6" lemma="equipment" pos="NN" surface="equipment"/>
+  <token id="7" lemma="at" pos="IN" surface="at"/>
+  <token id="8" lemma="darkovin" pos="NNP" surface="Darkovin"/>
+  <token id="9" lemma="(" pos="-LRB-" surface="("/>
+  <token id="10" lemma="timmerman" pos="NNP" surface="Timmerman"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="44" pos="CD" surface="44"/>
+  <token id="13" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="8" to="10" type="appos"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="10" to="12" type="appos"/>
+  <dep from="10" to="13" type="punct"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Processing_materials">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Material">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Gizmo">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Use">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

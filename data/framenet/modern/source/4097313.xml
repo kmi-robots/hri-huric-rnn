@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097313">
+ <sentence>
+  The suit was settled in late 1991 , but Iran still retains ownership of Eurodif shares .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="suit" pos="NN" surface="suit"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="settle" pos="VBN" surface="settled"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="late" pos="JJ" surface="late"/>
+  <token id="7" lemma="1991" pos="CD" surface="1991"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="but" pos="CC" surface="but"/>
+  <token id="10" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="11" lemma="still" pos="RB" surface="still"/>
+  <token id="12" lemma="retain" pos="VBZ" surface="retains"/>
+  <token id="13" lemma="ownership" pos="NN" surface="ownership"/>
+  <token id="14" lemma="of" pos="IN" surface="of"/>
+  <token id="15" lemma="eurodif" pos="NNP" surface="Eurodif"/>
+  <token id="16" lemma="share" pos="NNS" surface="shares"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="4" to="8" type="punct"/>
+  <dep from="4" to="9" type="cc"/>
+  <dep from="12" to="10" type="nsubj"/>
+  <dep from="12" to="11" type="advmod"/>
+  <dep from="4" to="12" type="conj"/>
+  <dep from="12" to="13" type="dobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="12" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_subregion">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Time_period">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Subpart">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

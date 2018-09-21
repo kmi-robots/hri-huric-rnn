@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105980">
+ <sentence>
+  Hong Kong 's liveliest market scene is the Temple Street Night Market ( see page 55 ) , near Jordan Road .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="hong" pos="NNP" surface="Hong"/>
+  <token id="2" lemma="kong" pos="NNP" surface="Kong"/>
+  <token id="3" lemma="'s" pos="POS" surface="'s"/>
+  <token id="4" lemma="lively" pos="JJS" surface="liveliest"/>
+  <token id="5" lemma="market" pos="NN" surface="market"/>
+  <token id="6" lemma="scene" pos="NN" surface="scene"/>
+  <token id="7" lemma="be" pos="VBZ" surface="is"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="temple" pos="NNP" surface="Temple"/>
+  <token id="10" lemma="street" pos="NNP" surface="Street"/>
+  <token id="11" lemma="night" pos="NNP" surface="Night"/>
+  <token id="12" lemma="market" pos="NNP" surface="Market"/>
+  <token id="13" lemma="(" pos="-LRB-" surface="("/>
+  <token id="14" lemma="see" pos="VB" surface="see"/>
+  <token id="15" lemma="page" pos="NN" surface="page"/>
+  <token id="16" lemma="55" pos="CD" surface="55"/>
+  <token id="17" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="near" pos="IN" surface="near"/>
+  <token id="20" lemma="jordan" pos="NNP" surface="Jordan"/>
+  <token id="21" lemma="road" pos="NNP" surface="Road"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="6" to="2" type="poss"/>
+  <dep from="2" to="3" type="case"/>
+  <dep from="6" to="4" type="amod"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="12" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="12" to="10" type="compound"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="7" to="12" type="attr"/>
+  <dep from="14" to="13" type="punct"/>
+  <dep from="7" to="14" type="parataxis"/>
+  <dep from="14" to="15" type="dobj"/>
+  <dep from="15" to="16" type="nummod"/>
+  <dep from="14" to="17" type="punct"/>
+  <dep from="14" to="18" type="punct"/>
+  <dep from="7" to="19" type="prep"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="19" to="21" type="pobj"/>
+  <dep from="7" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Lively_place">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_event">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Defining_event">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Reference_text">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Source_of_information">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Name">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Roadway">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Name">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Roadway">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

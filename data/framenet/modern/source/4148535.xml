@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148535">
+ <sentence>
+  " How can an English lady join in such a murderous affair ? "
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="how" pos="WRB" surface="How"/>
+  <token id="3" lemma="can" pos="MD" surface="can"/>
+  <token id="4" lemma="an" pos="DT" surface="an"/>
+  <token id="5" lemma="english" pos="NNP" surface="English"/>
+  <token id="6" lemma="lady" pos="NN" surface="lady"/>
+  <token id="7" lemma="join" pos="VB" surface="join"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="such" pos="PDT" surface="such"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="murderous" pos="JJ" surface="murderous"/>
+  <token id="12" lemma="affair" pos="NN" surface="affair"/>
+  <token id="13" lemma="?" pos="." surface="?"/>
+  <token id="14" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="punct"/>
+  <dep from="7" to="2" type="advmod"/>
+  <dep from="7" to="3" type="aux"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="12" to="9" type="predet"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="8" to="12" type="pobj"/>
+  <dep from="7" to="13" type="punct"/>
+  <dep from="7" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Becoming_a_member">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="New_member">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Group">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

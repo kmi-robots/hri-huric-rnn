@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106199">
+ <sentence>
+  Look for jewelry shops along Avenida do Infante D. Henrique and Avenida de Almeida Ribeiro .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="look" pos="VB" surface="Look"/>
+  <token id="2" lemma="for" pos="IN" surface="for"/>
+  <token id="3" lemma="jewelry" pos="NN" surface="jewelry"/>
+  <token id="4" lemma="shop" pos="NNS" surface="shops"/>
+  <token id="5" lemma="along" pos="IN" surface="along"/>
+  <token id="6" lemma="avenida" pos="NNP" surface="Avenida"/>
+  <token id="7" lemma="do" pos="VBP" surface="do"/>
+  <token id="8" lemma="infante" pos="NNP" surface="Infante"/>
+  <token id="9" lemma="d." pos="NNP" surface="D."/>
+  <token id="10" lemma="henrique" pos="NNP" surface="Henrique"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="avenida" pos="NNP" surface="Avenida"/>
+  <token id="13" lemma="de" pos="NNP" surface="de"/>
+  <token id="14" lemma="almeida" pos="NNP" surface="Almeida"/>
+  <token id="15" lemma="ribeiro" pos="NNP" surface="Ribeiro"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="1" to="7" type="dep"/>
+  <dep from="10" to="8" type="compound"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="dobj"/>
+  <dep from="10" to="11" type="cc"/>
+  <dep from="15" to="12" type="compound"/>
+  <dep from="15" to="13" type="compound"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="10" to="15" type="conj"/>
+  <dep from="7" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Seeking">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Sought_entity">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Accoutrements">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Accoutrement">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

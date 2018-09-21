@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098297">
+ <sentence>
+  Libya remains a significant proliferation concern .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="libya" pos="NNP" surface="Libya"/>
+  <token id="2" lemma="remain" pos="VBZ" surface="remains"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="significant" pos="JJ" surface="significant"/>
+  <token id="5" lemma="proliferation" pos="NN" surface="proliferation"/>
+  <token id="6" lemma="concern" pos="NN" surface="concern"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="6" to="3" type="det"/>
+  <dep from="6" to="4" type="amod"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="2" to="6" type="attr"/>
+  <dep from="2" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="State_continue">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="State">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Importance">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Factor">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Proliferating_in_number">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

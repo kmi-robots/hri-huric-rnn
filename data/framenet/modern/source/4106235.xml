@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106235">
+ <sentence>
+  The river also irrigates the carefully tended surrounding farmlands , creating a beautifully lush , subtropical scene .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="river" pos="NN" surface="river"/>
+  <token id="3" lemma="also" pos="RB" surface="also"/>
+  <token id="4" lemma="irrigate" pos="VBZ" surface="irrigates"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="carefully" pos="RB" surface="carefully"/>
+  <token id="7" lemma="tend" pos="VBN" surface="tended"/>
+  <token id="8" lemma="surround" pos="VBG" surface="surrounding"/>
+  <token id="9" lemma="farmland" pos="NNS" surface="farmlands"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="create" pos="VBG" surface="creating"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="beautifully" pos="RB" surface="beautifully"/>
+  <token id="14" lemma="lush" pos="JJ" surface="lush"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="subtropical" pos="JJ" surface="subtropical"/>
+  <token id="17" lemma="scene" pos="NN" surface="scene"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="9" to="5" type="det"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="9" to="7" type="amod"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="4" to="9" type="dobj"/>
+  <dep from="4" to="10" type="punct"/>
+  <dep from="4" to="11" type="advcl"/>
+  <dep from="17" to="12" type="det"/>
+  <dep from="14" to="13" type="advmod"/>
+  <dep from="17" to="14" type="amod"/>
+  <dep from="17" to="15" type="punct"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="11" to="17" type="dobj"/>
+  <dep from="4" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Creating">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_event">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Mental_property">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Behavior">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

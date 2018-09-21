@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103238">
+ <sentence>
+  The request would only be considered if it had been submitted in a timely manner as indicated , except in special cases .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="request" pos="NN" surface="request"/>
+  <token id="3" lemma="would" pos="MD" surface="would"/>
+  <token id="4" lemma="only" pos="RB" surface="only"/>
+  <token id="5" lemma="be" pos="VB" surface="be"/>
+  <token id="6" lemma="consider" pos="VBN" surface="considered"/>
+  <token id="7" lemma="if" pos="IN" surface="if"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="9" lemma="have" pos="VBD" surface="had"/>
+  <token id="10" lemma="be" pos="VBN" surface="been"/>
+  <token id="11" lemma="submit" pos="VBN" surface="submitted"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="timely" pos="JJ" surface="timely"/>
+  <token id="15" lemma="manner" pos="NN" surface="manner"/>
+  <token id="16" lemma="as" pos="IN" surface="as"/>
+  <token id="17" lemma="indicate" pos="VBN" surface="indicated"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="except" pos="IN" surface="except"/>
+  <token id="20" lemma="in" pos="IN" surface="in"/>
+  <token id="21" lemma="special" pos="JJ" surface="special"/>
+  <token id="22" lemma="case" pos="NNS" surface="cases"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="6" to="2" type="nsubjpass"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="6" to="4" type="advmod"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="11" to="7" type="mark"/>
+  <dep from="11" to="8" type="nsubjpass"/>
+  <dep from="11" to="9" type="aux"/>
+  <dep from="11" to="10" type="auxpass"/>
+  <dep from="6" to="11" type="advcl"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="12" to="15" type="pobj"/>
+  <dep from="17" to="16" type="mark"/>
+  <dep from="11" to="17" type="advcl"/>
+  <dep from="17" to="18" type="punct"/>
+  <dep from="17" to="19" type="prep"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="22" to="21" type="amod"/>
+  <dep from="20" to="22" type="pobj"/>
+  <dep from="6" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Request">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Cogitation">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Topic">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Submitting_documents">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Documents">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Conduct">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Manner">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Evidence">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Instance">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Instance">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165065">
+ <sentence>
+  Commissioner of the NSW Rural Fire Service said fire fighters had made a brave effort to contain the fire .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="commissioner" pos="NNP" surface="Commissioner"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="nsw" pos="NNP" surface="NSW"/>
+  <token id="5" lemma="rural" pos="NNP" surface="Rural"/>
+  <token id="6" lemma="fire" pos="NNP" surface="Fire"/>
+  <token id="7" lemma="service" pos="NNP" surface="Service"/>
+  <token id="8" lemma="say" pos="VBD" surface="said"/>
+  <token id="9" lemma="fire" pos="NN" surface="fire"/>
+  <token id="10" lemma="fighter" pos="NNS" surface="fighters"/>
+  <token id="11" lemma="have" pos="VBD" surface="had"/>
+  <token id="12" lemma="make" pos="VBN" surface="made"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="brave" pos="JJ" surface="brave"/>
+  <token id="15" lemma="effort" pos="NN" surface="effort"/>
+  <token id="16" lemma="to" pos="TO" surface="to"/>
+  <token id="17" lemma="contain" pos="VB" surface="contain"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="fire" pos="NN" surface="fire"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="7" to="3" type="det"/>
+  <dep from="7" to="4" type="compound"/>
+  <dep from="7" to="5" type="compound"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="2" to="7" type="pobj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="12" to="10" type="nsubj"/>
+  <dep from="12" to="11" type="aux"/>
+  <dep from="8" to="12" type="ccomp"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="12" to="15" type="dobj"/>
+  <dep from="17" to="16" type="aux"/>
+  <dep from="15" to="17" type="acl"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="17" to="19" type="dobj"/>
+  <dep from="8" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Attempt">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Fire_burning">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Fire">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="9"/>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Governed">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

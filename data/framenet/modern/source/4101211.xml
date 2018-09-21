@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101211">
+ <sentence>
+  The island communities were undecided about which side to back for a time .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="island" pos="NN" surface="island"/>
+  <token id="3" lemma="community" pos="NNS" surface="communities"/>
+  <token id="4" lemma="be" pos="VBD" surface="were"/>
+  <token id="5" lemma="undecided" pos="JJ" surface="undecided"/>
+  <token id="6" lemma="about" pos="IN" surface="about"/>
+  <token id="7" lemma="which" pos="WDT" surface="which"/>
+  <token id="8" lemma="side" pos="NN" surface="side"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="back" pos="VB" surface="back"/>
+  <token id="11" lemma="for" pos="IN" surface="for"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="time" pos="NN" surface="time"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="acomp"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="10" to="8" type="dobj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="6" to="10" type="pcomp"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Aggregate_property">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Taking_sides">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Side">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Taking_sides">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Side">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

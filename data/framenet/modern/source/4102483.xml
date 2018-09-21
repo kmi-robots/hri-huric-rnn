@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102483">
+ <sentence>
+  Just what the doctor ordered .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="just" pos="RB" surface="Just"/>
+  <token id="2" lemma="what" pos="WP" surface="what"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="doctor" pos="NN" surface="doctor"/>
+  <token id="5" lemma="order" pos="VBD" surface="ordered"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="advmod"/>
+  <dep from="5" to="2" type="dobj"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Medical_professionals">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Professional">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Request">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

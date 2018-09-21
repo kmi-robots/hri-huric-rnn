@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106400">
+ <sentence>
+  `` I rode a bike to Goodwill in the rain and snow .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="``" pos="``" surface="``"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="3" lemma="ride" pos="VBD" surface="rode"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="bike" pos="NN" surface="bike"/>
+  <token id="6" lemma="to" pos="IN" surface="to"/>
+  <token id="7" lemma="goodwill" pos="NNP" surface="Goodwill"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="rain" pos="NN" surface="rain"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="snow" pos="NN" surface="snow"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="punct"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="3" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="10" to="11" type="cc"/>
+  <dep from="10" to="12" type="conj"/>
+  <dep from="3" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Operate_vehicle">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Driver">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Vehicle">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Circumstances">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Vehicle">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Precipitation">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Goal">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Landmark">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Trajector">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

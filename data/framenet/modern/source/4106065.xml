@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106065">
+ <sentence>
+  Visitors are welcome to visit the 24 - hectare ( 60 - acre ) establishment , and may sample the end product , Lantau tea .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="visitor" pos="NNS" surface="Visitors"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="welcome" pos="JJ" surface="welcome"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="visit" pos="VB" surface="visit"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="24" pos="CD" surface="24"/>
+  <token id="8" lemma="-" pos="HYPH" surface="-"/>
+  <token id="9" lemma="hectare" pos="NN" surface="hectare"/>
+  <token id="10" lemma="(" pos="-LRB-" surface="("/>
+  <token id="11" lemma="60" pos="CD" surface="60"/>
+  <token id="12" lemma="-" pos="HYPH" surface="-"/>
+  <token id="13" lemma="acre" pos="NN" surface="acre"/>
+  <token id="14" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="15" lemma="establishment" pos="NN" surface="establishment"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="and" pos="CC" surface="and"/>
+  <token id="18" lemma="may" pos="MD" surface="may"/>
+  <token id="19" lemma="sample" pos="VB" surface="sample"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="end" pos="NN" surface="end"/>
+  <token id="22" lemma="product" pos="NN" surface="product"/>
+  <token id="23" lemma="," pos="," surface=","/>
+  <token id="24" lemma="lantau" pos="NNP" surface="Lantau"/>
+  <token id="25" lemma="tea" pos="NN" surface="tea"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="acomp"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="xcomp"/>
+  <dep from="15" to="6" type="det"/>
+  <dep from="9" to="7" type="nummod"/>
+  <dep from="9" to="8" type="punct"/>
+  <dep from="15" to="9" type="amod"/>
+  <dep from="15" to="10" type="punct"/>
+  <dep from="13" to="11" type="nummod"/>
+  <dep from="13" to="12" type="punct"/>
+  <dep from="15" to="13" type="nmod"/>
+  <dep from="15" to="14" type="punct"/>
+  <dep from="5" to="15" type="dobj"/>
+  <dep from="2" to="16" type="punct"/>
+  <dep from="2" to="17" type="cc"/>
+  <dep from="19" to="18" type="aux"/>
+  <dep from="2" to="19" type="conj"/>
+  <dep from="22" to="20" type="det"/>
+  <dep from="22" to="21" type="compound"/>
+  <dep from="19" to="22" type="dobj"/>
+  <dep from="22" to="23" type="punct"/>
+  <dep from="25" to="24" type="compound"/>
+  <dep from="22" to="25" type="appos"/>
+  <dep from="2" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Visiting">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Visiting">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_area">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Area">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Depictive">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Food">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Food">
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

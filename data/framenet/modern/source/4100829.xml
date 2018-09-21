@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100829">
+ <sentence>
+  China transferred 36 DF-3 medium - range missiles to Saudi Arabia in 1988 , and supplied Pakistan with 34 M-11 short - range missiles in 1992 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="china" pos="NNP" surface="China"/>
+  <token id="2" lemma="transfer" pos="VBD" surface="transferred"/>
+  <token id="3" lemma="36" pos="CD" surface="36"/>
+  <token id="4" lemma="df-3" pos="CD" surface="DF-3"/>
+  <token id="5" lemma="medium" pos="JJ" surface="medium"/>
+  <token id="6" lemma="-" pos="HYPH" surface="-"/>
+  <token id="7" lemma="range" pos="NN" surface="range"/>
+  <token id="8" lemma="missile" pos="NNS" surface="missiles"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="saudi" pos="NNP" surface="Saudi"/>
+  <token id="11" lemma="arabia" pos="NNP" surface="Arabia"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="1988" pos="CD" surface="1988"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="supply" pos="VBD" surface="supplied"/>
+  <token id="17" lemma="pakistan" pos="NNP" surface="Pakistan"/>
+  <token id="18" lemma="with" pos="IN" surface="with"/>
+  <token id="19" lemma="34" pos="CD" surface="34"/>
+  <token id="20" lemma="m-11" pos="NNP" surface="M-11"/>
+  <token id="21" lemma="short" pos="JJ" surface="short"/>
+  <token id="22" lemma="-" pos="HYPH" surface="-"/>
+  <token id="23" lemma="range" pos="NN" surface="range"/>
+  <token id="24" lemma="missile" pos="NNS" surface="missiles"/>
+  <token id="25" lemma="in" pos="IN" surface="in"/>
+  <token id="26" lemma="1992" pos="CD" surface="1992"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="8" to="3" type="nummod"/>
+  <dep from="8" to="4" type="amod"/>
+  <dep from="7" to="5" type="amod"/>
+  <dep from="7" to="6" type="punct"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="2" to="8" type="dobj"/>
+  <dep from="2" to="9" type="prep"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="2" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="2" to="14" type="punct"/>
+  <dep from="2" to="15" type="cc"/>
+  <dep from="2" to="16" type="conj"/>
+  <dep from="16" to="17" type="dobj"/>
+  <dep from="16" to="18" type="prep"/>
+  <dep from="23" to="19" type="nummod"/>
+  <dep from="23" to="20" type="punct"/>
+  <dep from="23" to="21" type="amod"/>
+  <dep from="23" to="22" type="punct"/>
+  <dep from="24" to="23" type="compound"/>
+  <dep from="18" to="24" type="pobj"/>
+  <dep from="16" to="25" type="prep"/>
+  <dep from="25" to="26" type="pobj"/>
+  <dep from="2" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Transfer">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Range">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Distance">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+    <frameElement type="Supplier">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Range">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Distance">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Position_on_a_scale">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Value">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_period">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_period">
+     <token id="26"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

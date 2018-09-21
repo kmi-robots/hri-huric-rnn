@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148460">
+ <sentence>
+  We can 't let such a situation continue .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="We"/>
+  <token id="2" lemma="can" pos="MD" surface="can"/>
+  <token id="3" lemma="'t" pos="PRP" surface="'t"/>
+  <token id="4" lemma="let" pos="VB" surface="let"/>
+  <token id="5" lemma="such" pos="PDT" surface="such"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="situation" pos="NN" surface="situation"/>
+  <token id="8" lemma="continue" pos="VBP" surface="continue"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="predet"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="4" to="8" type="ccomp"/>
+  <dep from="4" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Process_continue">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Preventing_or_letting">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Potential_hindrance">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

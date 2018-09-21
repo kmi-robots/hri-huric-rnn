@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096727">
+ <sentence>
+  Among a number of joint Israeli - Iranian military projects discussed at these meetings was `` Project Flower . ''
+ </sentence>
+ <tokens>
+  <token id="1" lemma="among" pos="IN" surface="Among"/>
+  <token id="2" lemma="a" pos="DT" surface="a"/>
+  <token id="3" lemma="number" pos="NN" surface="number"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="joint" pos="JJ" surface="joint"/>
+  <token id="6" lemma="israeli" pos="JJ" surface="Israeli"/>
+  <token id="7" lemma="-" pos="HYPH" surface="-"/>
+  <token id="8" lemma="iranian" pos="JJ" surface="Iranian"/>
+  <token id="9" lemma="military" pos="JJ" surface="military"/>
+  <token id="10" lemma="project" pos="NNS" surface="projects"/>
+  <token id="11" lemma="discuss" pos="VBN" surface="discussed"/>
+  <token id="12" lemma="at" pos="IN" surface="at"/>
+  <token id="13" lemma="these" pos="DT" surface="these"/>
+  <token id="14" lemma="meeting" pos="NNS" surface="meetings"/>
+  <token id="15" lemma="be" pos="VBD" surface="was"/>
+  <token id="16" lemma="``" pos="``" surface="``"/>
+  <token id="17" lemma="project" pos="NNP" surface="Project"/>
+  <token id="18" lemma="flower" pos="NNP" surface="Flower"/>
+  <token id="19" lemma="." pos="." surface="."/>
+  <token id="20" lemma="''" pos="''" surface="''"/>
+ </tokens>
+ <dependencies>
+  <dep from="15" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="10" to="5" type="amod"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="punct"/>
+  <dep from="10" to="8" type="amod"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="4" to="10" type="pobj"/>
+  <dep from="10" to="11" type="acl"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="0" to="15" type="root"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="15" to="18" type="attr"/>
+  <dep from="15" to="19" type="punct"/>
+  <dep from="15" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Field">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Discussion">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Topic">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Military">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Force">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

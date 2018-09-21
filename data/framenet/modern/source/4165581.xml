@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165581">
+ <sentence>
+  There have also been some power outages due to power lines being damaged .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="have" pos="VBP" surface="have"/>
+  <token id="3" lemma="also" pos="RB" surface="also"/>
+  <token id="4" lemma="be" pos="VBN" surface="been"/>
+  <token id="5" lemma="some" pos="DT" surface="some"/>
+  <token id="6" lemma="power" pos="NN" surface="power"/>
+  <token id="7" lemma="outage" pos="NNS" surface="outages"/>
+  <token id="8" lemma="due" pos="IN" surface="due"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="power" pos="NN" surface="power"/>
+  <token id="11" lemma="line" pos="NNS" surface="lines"/>
+  <token id="12" lemma="be" pos="VBG" surface="being"/>
+  <token id="13" lemma="damage" pos="VBN" surface="damaged"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="expl"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="4" to="7" type="attr"/>
+  <dep from="7" to="8" type="amod"/>
+  <dep from="8" to="9" type="pcomp"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="13" to="12" type="auxpass"/>
+  <dep from="11" to="13" type="acl"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Effect">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Damaging">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

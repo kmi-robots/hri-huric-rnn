@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098267">
+ <sentence>
+  QN : Has Iran offered to cooperate with the IAEA ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="have" pos="VBZ" surface="Has"/>
+  <token id="4" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="5" lemma="offer" pos="VBD" surface="offered"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="cooperate" pos="VB" surface="cooperate"/>
+  <token id="8" lemma="with" pos="IN" surface="with"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="iaea" pos="NNP" surface="IAEA"/>
+  <token id="11" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="1" to="5" type="acl"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="5" to="7" type="xcomp"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="1" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Collaboration">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Partner_1">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Partner_2">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

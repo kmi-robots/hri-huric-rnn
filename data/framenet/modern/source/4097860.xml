@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097860">
+ <sentence>
+  This report , of questionable reliability , was vigorously denied by the Ministry of National Defense ( MND ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="this" pos="DT" surface="This"/>
+  <token id="2" lemma="report" pos="NN" surface="report"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="questionable" pos="JJ" surface="questionable"/>
+  <token id="6" lemma="reliability" pos="NN" surface="reliability"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="be" pos="VBD" surface="was"/>
+  <token id="9" lemma="vigorously" pos="RB" surface="vigorously"/>
+  <token id="10" lemma="deny" pos="VBN" surface="denied"/>
+  <token id="11" lemma="by" pos="IN" surface="by"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="ministry" pos="NNP" surface="Ministry"/>
+  <token id="14" lemma="of" pos="IN" surface="of"/>
+  <token id="15" lemma="national" pos="NNP" surface="National"/>
+  <token id="16" lemma="defense" pos="NNP" surface="Defense"/>
+  <token id="17" lemma="(" pos="-LRB-" surface="("/>
+  <token id="18" lemma="mnd" pos="NNP" surface="MND"/>
+  <token id="19" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="10" to="2" type="nsubjpass"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="10" to="7" type="punct"/>
+  <dep from="10" to="8" type="auxpass"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="agent"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="16" to="17" type="punct"/>
+  <dep from="16" to="18" type="appos"/>
+  <dep from="16" to="19" type="punct"/>
+  <dep from="10" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_questionable">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Behavior">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Affirm_or_deny">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Text">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Text">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Trust">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Information">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

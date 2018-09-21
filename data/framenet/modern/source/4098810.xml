@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098810">
+ <sentence>
+  Goldstein was born on Sept. 23, 1922 , in Denver and died in Chicago on June 20, 1944 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="goldstein" pos="NNP" surface="Goldstein"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="bear" pos="VBN" surface="born"/>
+  <token id="4" lemma="on" pos="IN" surface="on"/>
+  <token id="5" lemma="sept." pos="NNP" surface="Sept."/>
+  <token id="6" lemma="23," pos="CD" surface="23,"/>
+  <token id="7" lemma="1922" pos="CD" surface="1922"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="denver" pos="NNP" surface="Denver"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="die" pos="VBD" surface="died"/>
+  <token id="13" lemma="in" pos="IN" surface="in"/>
+  <token id="14" lemma="chicago" pos="NNP" surface="Chicago"/>
+  <token id="15" lemma="on" pos="IN" surface="on"/>
+  <token id="16" lemma="june" pos="NNP" surface="June"/>
+  <token id="17" lemma="20," pos="CD" surface="20,"/>
+  <token id="18" lemma="1944" pos="CD" surface="1944"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="5" to="6" type="nummod"/>
+  <dep from="5" to="7" type="nummod"/>
+  <dep from="3" to="8" type="punct"/>
+  <dep from="3" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="3" to="11" type="cc"/>
+  <dep from="3" to="12" type="conj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="12" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="16" to="17" type="nummod"/>
+  <dep from="16" to="18" type="nummod"/>
+  <dep from="3" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_born">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Child">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Death">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Protagonist">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

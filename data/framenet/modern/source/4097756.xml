@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097756">
+ <sentence>
+  Initially , North Korea claimed it had no intention of producing nuclear weapons , and that the lifting of the nuclear freeze was necessary to generate needed electricity .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="initially" pos="RB" surface="Initially"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="north" pos="NNP" surface="North"/>
+  <token id="4" lemma="korea" pos="NNP" surface="Korea"/>
+  <token id="5" lemma="claim" pos="VBD" surface="claimed"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="7" lemma="have" pos="VBD" surface="had"/>
+  <token id="8" lemma="no" pos="DT" surface="no"/>
+  <token id="9" lemma="intention" pos="NN" surface="intention"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="produce" pos="VBG" surface="producing"/>
+  <token id="12" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="13" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="that" pos="IN" surface="that"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="lifting" pos="NN" surface="lifting"/>
+  <token id="19" lemma="of" pos="IN" surface="of"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="22" lemma="freeze" pos="NN" surface="freeze"/>
+  <token id="23" lemma="be" pos="VBD" surface="was"/>
+  <token id="24" lemma="necessary" pos="JJ" surface="necessary"/>
+  <token id="25" lemma="to" pos="TO" surface="to"/>
+  <token id="26" lemma="generate" pos="VB" surface="generate"/>
+  <token id="27" lemma="need" pos="VBN" surface="needed"/>
+  <token id="28" lemma="electricity" pos="NN" surface="electricity"/>
+  <token id="29" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="advmod"/>
+  <dep from="5" to="2" type="punct"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="5" to="7" type="ccomp"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pcomp"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="11" to="13" type="dobj"/>
+  <dep from="5" to="14" type="punct"/>
+  <dep from="5" to="15" type="cc"/>
+  <dep from="23" to="16" type="mark"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="23" to="18" type="nsubj"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="22" to="20" type="det"/>
+  <dep from="22" to="21" type="amod"/>
+  <dep from="19" to="22" type="pobj"/>
+  <dep from="5" to="23" type="conj"/>
+  <dep from="23" to="24" type="acomp"/>
+  <dep from="26" to="25" type="aux"/>
+  <dep from="24" to="26" type="xcomp"/>
+  <dep from="28" to="27" type="amod"/>
+  <dep from="26" to="28" type="dobj"/>
+  <dep from="5" to="29" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+    </frameElement>
+   </frame>
+   <frame name="Purpose">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Producer">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Product">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Activity_pause">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_necessary">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Requirement">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Dependent">
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_necessary">
+    <lexicalUnit>
+     <token id="27"/>
+    </lexicalUnit>
+    <frameElement type="Requirement">
+     <token id="28"/>
+    </frameElement>
+   </frame>
+   <frame name="Electricity">
+    <lexicalUnit>
+     <token id="28"/>
+    </lexicalUnit>
+    <frameElement type="Electricity">
+     <token id="28"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="27"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_to_end">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Process">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Creating">
+    <lexicalUnit>
+     <token id="26"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="27"/>
+     <token id="28"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099079">
+ <sentence>
+  Two Al Qaeda computers have been found in Kabul .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="two" pos="CD" surface="Two"/>
+  <token id="2" lemma="al" pos="NNP" surface="Al"/>
+  <token id="3" lemma="qaeda" pos="NNP" surface="Qaeda"/>
+  <token id="4" lemma="computer" pos="NNS" surface="computers"/>
+  <token id="5" lemma="have" pos="VBP" surface="have"/>
+  <token id="6" lemma="be" pos="VBN" surface="been"/>
+  <token id="7" lemma="find" pos="VBN" surface="found"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="kabul" pos="NNP" surface="Kabul"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nummod"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="7" to="4" type="nsubjpass"/>
+  <dep from="7" to="5" type="aux"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="7" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locating">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Sought_entity">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

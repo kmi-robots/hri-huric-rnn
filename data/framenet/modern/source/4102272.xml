@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102272">
+ <sentence>
+  That 's good .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="that" pos="DT" surface="That"/>
+  <token id="2" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="3" lemma="good" pos="JJ" surface="good"/>
+  <token id="4" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="acomp"/>
+  <dep from="2" to="4" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Desirability">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101877">
+ <sentence>
+  9 RICH : The third !
+ </sentence>
+ <tokens>
+  <token id="1" lemma="9" pos="CD" surface="9"/>
+  <token id="2" lemma="rich" pos="NN" surface="RICH"/>
+  <token id="3" lemma=":" pos=":" surface=":"/>
+  <token id="4" lemma="the" pos="DT" surface="The"/>
+  <token id="5" lemma="third" pos="JJ" surface="third"/>
+  <token id="6" lemma="!" pos="." surface="!"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Ordinal_numbers">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

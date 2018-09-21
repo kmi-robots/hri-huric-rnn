@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106485">
+ <sentence>
+  The people who can benefit most directly from your generosity have no time to waste .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="people" pos="NNS" surface="people"/>
+  <token id="3" lemma="who" pos="WP" surface="who"/>
+  <token id="4" lemma="can" pos="MD" surface="can"/>
+  <token id="5" lemma="benefit" pos="VB" surface="benefit"/>
+  <token id="6" lemma="most" pos="RBS" surface="most"/>
+  <token id="7" lemma="directly" pos="RB" surface="directly"/>
+  <token id="8" lemma="from" pos="IN" surface="from"/>
+  <token id="9" lemma="-PRON-" pos="PRP$" surface="your"/>
+  <token id="10" lemma="generosity" pos="NN" surface="generosity"/>
+  <token id="11" lemma="have" pos="VBP" surface="have"/>
+  <token id="12" lemma="no" pos="DT" surface="no"/>
+  <token id="13" lemma="time" pos="NN" surface="time"/>
+  <token id="14" lemma="to" pos="TO" surface="to"/>
+  <token id="15" lemma="waste" pos="VB" surface="waste"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="11" to="2" type="nsubj"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="2" to="5" type="relcl"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="5" to="7" type="advmod"/>
+  <dep from="5" to="8" type="prep"/>
+  <dep from="10" to="9" type="poss"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="dobj"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="13" to="15" type="relcl"/>
+  <dep from="11" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Possibility">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Possible_event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Possible_event">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Possible_event">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Possession">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Owner">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Mass">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Frugality">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

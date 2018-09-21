@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148499">
+ <sentence>
+  Baynes chuckled .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="bayne" pos="NNS" surface="Baynes"/>
+  <token id="2" lemma="chuckle" pos="VBN" surface="chuckled"/>
+  <token id="3" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Make_noise">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Sound_source">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

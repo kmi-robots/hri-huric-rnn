@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165569">
+ <sentence>
+  '' More than 120,000 stremmas [ 30,000 acres ] have been burnt .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="''" pos="``" surface="''"/>
+  <token id="2" lemma="more" pos="JJR" surface="More"/>
+  <token id="3" lemma="than" pos="IN" surface="than"/>
+  <token id="4" lemma="120,000" pos="CD" surface="120,000"/>
+  <token id="5" lemma="stremma" pos="NNS" surface="stremmas"/>
+  <token id="6" lemma="[" pos="-LRB-" surface="["/>
+  <token id="7" lemma="30,000" pos="CD" surface="30,000"/>
+  <token id="8" lemma="acre" pos="NNS" surface="acres"/>
+  <token id="9" lemma="]" pos="-RRB-" surface="]"/>
+  <token id="10" lemma="have" pos="VBP" surface="have"/>
+  <token id="11" lemma="be" pos="VBN" surface="been"/>
+  <token id="12" lemma="burn" pos="VBN" surface="burnt"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="12" to="1" type="punct"/>
+  <dep from="4" to="2" type="amod"/>
+  <dep from="4" to="3" type="quantmod"/>
+  <dep from="8" to="4" type="nummod"/>
+  <dep from="4" to="5" type="quantmod"/>
+  <dep from="8" to="6" type="punct"/>
+  <dep from="8" to="7" type="nummod"/>
+  <dep from="12" to="8" type="nsubjpass"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="12" to="10" type="aux"/>
+  <dep from="12" to="11" type="auxpass"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Measure_area">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Count">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Fire_burning">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Fuel">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

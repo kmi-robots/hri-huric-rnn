@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148530">
+ <sentence>
+  " Once already his life has been attempted , but some evil spirit shielded him .
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="once" pos="RB" surface="Once"/>
+  <token id="3" lemma="already" pos="RB" surface="already"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="5" lemma="life" pos="NN" surface="life"/>
+  <token id="6" lemma="have" pos="VBZ" surface="has"/>
+  <token id="7" lemma="be" pos="VBN" surface="been"/>
+  <token id="8" lemma="attempt" pos="VBN" surface="attempted"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="but" pos="CC" surface="but"/>
+  <token id="11" lemma="some" pos="DT" surface="some"/>
+  <token id="12" lemma="evil" pos="JJ" surface="evil"/>
+  <token id="13" lemma="spirit" pos="NN" surface="spirit"/>
+  <token id="14" lemma="shield" pos="VBD" surface="shielded"/>
+  <token id="15" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="punct"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="8" to="3" type="advmod"/>
+  <dep from="5" to="4" type="poss"/>
+  <dep from="8" to="5" type="nsubjpass"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="8" to="10" type="cc"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="14" to="13" type="nsubj"/>
+  <dep from="8" to="14" type="conj"/>
+  <dep from="14" to="15" type="dobj"/>
+  <dep from="14" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Morality_evaluation">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Protecting">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Protection">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Asset">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

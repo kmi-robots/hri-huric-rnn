@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099873">
+ <sentence>
+  These allegations were never confirmed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="these" pos="DT" surface="These"/>
+  <token id="2" lemma="allegation" pos="NNS" surface="allegations"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="never" pos="RB" surface="never"/>
+  <token id="5" lemma="confirm" pos="VBN" surface="confirmed"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="auxpass"/>
+  <dep from="5" to="4" type="neg"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Verification">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Unconfirmed_content">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

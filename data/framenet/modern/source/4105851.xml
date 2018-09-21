@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105851">
+ <sentence>
+  Since the tram 's inauguration in 1888 it has stopped only for typhoons and World War II .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="since" pos="IN" surface="Since"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="tram" pos="NN" surface="tram"/>
+  <token id="4" lemma="'s" pos="POS" surface="'s"/>
+  <token id="5" lemma="inauguration" pos="NN" surface="inauguration"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="1888" pos="CD" surface="1888"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="9" lemma="have" pos="VBZ" surface="has"/>
+  <token id="10" lemma="stop" pos="VBN" surface="stopped"/>
+  <token id="11" lemma="only" pos="RB" surface="only"/>
+  <token id="12" lemma="for" pos="IN" surface="for"/>
+  <token id="13" lemma="typhoon" pos="NNS" surface="typhoons"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="world" pos="NNP" surface="World"/>
+  <token id="16" lemma="war" pos="NNP" surface="War"/>
+  <token id="17" lemma="ii" pos="NNP" surface="II"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="5" to="3" type="poss"/>
+  <dep from="3" to="4" type="case"/>
+  <dep from="1" to="5" type="pobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="10" to="8" type="nsubj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="12" to="11" type="advmod"/>
+  <dep from="10" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="17" to="15" type="compound"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="13" to="17" type="conj"/>
+  <dep from="10" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Time_vector">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_event">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Vehicle">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_period">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Halt">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Explanation">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Period_of_iterations">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4217211">
+ <sentence>
+  In a statement , President Jacob Zuma said Mandela 's condition was unchanged .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="a" pos="DT" surface="a"/>
+  <token id="3" lemma="statement" pos="NN" surface="statement"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="president" pos="NNP" surface="President"/>
+  <token id="6" lemma="jacob" pos="NNP" surface="Jacob"/>
+  <token id="7" lemma="zuma" pos="NNP" surface="Zuma"/>
+  <token id="8" lemma="say" pos="VBD" surface="said"/>
+  <token id="9" lemma="mandela" pos="NNP" surface="Mandela"/>
+  <token id="10" lemma="'s" pos="POS" surface="'s"/>
+  <token id="11" lemma="condition" pos="NN" surface="condition"/>
+  <token id="12" lemma="be" pos="VBD" surface="was"/>
+  <token id="13" lemma="unchanged" pos="JJ" surface="unchanged"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="8" to="4" type="punct"/>
+  <dep from="7" to="5" type="compound"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="11" to="9" type="poss"/>
+  <dep from="9" to="10" type="case"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="8" to="12" type="ccomp"/>
+  <dep from="12" to="13" type="acomp"/>
+  <dep from="8" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Medium">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Ailment">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Patient">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_post-state">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

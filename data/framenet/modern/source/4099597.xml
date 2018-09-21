@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099597">
+ <sentence>
+  ' There was excellent participation and cooperation .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="'" pos="``" surface="'"/>
+  <token id="2" lemma="there" pos="EX" surface="There"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="excellent" pos="JJ" surface="excellent"/>
+  <token id="5" lemma="participation" pos="NN" surface="participation"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="cooperation" pos="NN" surface="cooperation"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="punct"/>
+  <dep from="3" to="2" type="expl"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="3" to="5" type="attr"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="5" to="7" type="conj"/>
+  <dep from="3" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirability">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Participation">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Degree_of_involvement">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Collaboration">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Degree">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

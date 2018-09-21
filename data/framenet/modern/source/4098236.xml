@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098236">
+ <sentence>
+  In 1986 , the Soviet government constructed a demonstration destruction facility in Chapayevsk that utilized neutralization and incineration technology .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="1986" pos="CD" surface="1986"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="soviet" pos="JJ" surface="Soviet"/>
+  <token id="6" lemma="government" pos="NN" surface="government"/>
+  <token id="7" lemma="construct" pos="VBD" surface="constructed"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="demonstration" pos="NN" surface="demonstration"/>
+  <token id="10" lemma="destruction" pos="NN" surface="destruction"/>
+  <token id="11" lemma="facility" pos="NN" surface="facility"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="chapayevsk" pos="NNP" surface="Chapayevsk"/>
+  <token id="14" lemma="that" pos="WDT" surface="that"/>
+  <token id="15" lemma="utilize" pos="VBD" surface="utilized"/>
+  <token id="16" lemma="neutralization" pos="NN" surface="neutralization"/>
+  <token id="17" lemma="and" pos="CC" surface="and"/>
+  <token id="18" lemma="incineration" pos="NN" surface="incineration"/>
+  <token id="19" lemma="technology" pos="NN" surface="technology"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="7" to="3" type="punct"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="11" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="7" to="11" type="dobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="7" to="16" type="dobj"/>
+  <dep from="16" to="17" type="cc"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="16" to="19" type="conj"/>
+  <dep from="7" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Building">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Created_entity">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Created_entity">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Using">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Instrument">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Artifact">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Use">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Artifact">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Governed">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Leader">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Destroying">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

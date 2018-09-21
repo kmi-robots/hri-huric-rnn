@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105950">
+ <sentence>
+  In many areas , the density reaches the equivalent of 150,000 inhabitants per square km ( a quarter square mile ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="many" pos="JJ" surface="many"/>
+  <token id="3" lemma="area" pos="NNS" surface="areas"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="density" pos="NN" surface="density"/>
+  <token id="7" lemma="reach" pos="VBZ" surface="reaches"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="equivalent" pos="NN" surface="equivalent"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="150,000" pos="CD" surface="150,000"/>
+  <token id="12" lemma="inhabitant" pos="NNS" surface="inhabitants"/>
+  <token id="13" lemma="per" pos="IN" surface="per"/>
+  <token id="14" lemma="square" pos="JJ" surface="square"/>
+  <token id="15" lemma="km" pos="NN" surface="km"/>
+  <token id="16" lemma="(" pos="-LRB-" surface="("/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="quarter" pos="NN" surface="quarter"/>
+  <token id="19" lemma="square" pos="JJ" surface="square"/>
+  <token id="20" lemma="mile" pos="NN" surface="mile"/>
+  <token id="21" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="prep"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="7" to="4" type="punct"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="nummod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="12" to="16" type="punct"/>
+  <dep from="20" to="17" type="det"/>
+  <dep from="20" to="18" type="nmod"/>
+  <dep from="20" to="19" type="amod"/>
+  <dep from="12" to="20" type="appos"/>
+  <dep from="12" to="21" type="punct"/>
+  <dep from="7" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Residence">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Resident">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_linear_extent">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Dimension">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_linear_extent">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Dimension">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

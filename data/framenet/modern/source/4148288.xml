@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148288">
+ <sentence>
+  Yes , sir , my own views are very different . "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="yes" pos="UH" surface="Yes"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="sir" pos="NN" surface="sir"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="6" lemma="own" pos="JJ" surface="own"/>
+  <token id="7" lemma="view" pos="NNS" surface="views"/>
+  <token id="8" lemma="be" pos="VBP" surface="are"/>
+  <token id="9" lemma="very" pos="RB" surface="very"/>
+  <token id="10" lemma="different" pos="JJ" surface="different"/>
+  <token id="11" lemma="." pos="." surface="."/>
+  <token id="12" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="intj"/>
+  <dep from="8" to="2" type="punct"/>
+  <dep from="8" to="3" type="npadvmod"/>
+  <dep from="8" to="4" type="punct"/>
+  <dep from="7" to="5" type="poss"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="8" to="10" type="acomp"/>
+  <dep from="8" to="11" type="punct"/>
+  <dep from="8" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Similarity">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Entity_1">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Opinion">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Opinion">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

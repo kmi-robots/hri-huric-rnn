@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101829">
+ <sentence>
+  Conservative israelis are skeptical .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="conservative" pos="JJ" surface="Conservative"/>
+  <token id="2" lemma="israelis" pos="NN" surface="israelis"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="skeptical" pos="JJ" surface="skeptical"/>
+  <token id="5" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="acomp"/>
+  <dep from="3" to="5" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Certainty">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

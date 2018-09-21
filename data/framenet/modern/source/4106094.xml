@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106094">
+ <sentence>
+  Macau , the final bastion of Portugal 's great 16th - century empire , is much more than just a quirk of history .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="macau" pos="NNP" surface="Macau"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="final" pos="JJ" surface="final"/>
+  <token id="5" lemma="bastion" pos="NN" surface="bastion"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="portugal" pos="NNP" surface="Portugal"/>
+  <token id="8" lemma="'s" pos="POS" surface="'s"/>
+  <token id="9" lemma="great" pos="JJ" surface="great"/>
+  <token id="10" lemma="16th" pos="JJ" surface="16th"/>
+  <token id="11" lemma="-" pos="HYPH" surface="-"/>
+  <token id="12" lemma="century" pos="NN" surface="century"/>
+  <token id="13" lemma="empire" pos="NN" surface="empire"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="be" pos="VBZ" surface="is"/>
+  <token id="16" lemma="much" pos="RB" surface="much"/>
+  <token id="17" lemma="more" pos="JJR" surface="more"/>
+  <token id="18" lemma="than" pos="IN" surface="than"/>
+  <token id="19" lemma="just" pos="RB" surface="just"/>
+  <token id="20" lemma="a" pos="DT" surface="a"/>
+  <token id="21" lemma="quirk" pos="NN" surface="quirk"/>
+  <token id="22" lemma="of" pos="IN" surface="of"/>
+  <token id="23" lemma="history" pos="NN" surface="history"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="15" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="1" to="5" type="appos"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="13" to="7" type="poss"/>
+  <dep from="7" to="8" type="case"/>
+  <dep from="13" to="9" type="amod"/>
+  <dep from="12" to="10" type="amod"/>
+  <dep from="12" to="11" type="punct"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="6" to="13" type="pobj"/>
+  <dep from="15" to="14" type="punct"/>
+  <dep from="0" to="15" type="root"/>
+  <dep from="17" to="16" type="advmod"/>
+  <dep from="15" to="17" type="acomp"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="21" to="19" type="advmod"/>
+  <dep from="21" to="20" type="det"/>
+  <dep from="18" to="21" type="pobj"/>
+  <dep from="21" to="22" type="prep"/>
+  <dep from="22" to="23" type="pobj"/>
+  <dep from="15" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Ordinal_numbers">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Container_possessor">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="History">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

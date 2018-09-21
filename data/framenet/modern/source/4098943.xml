@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098943">
+ <sentence>
+  While Pakistan does not possess biological weapons ( BW ) , it has talented biomedical and biochemical scientists and well-equipped laboratories .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="while" pos="IN" surface="While"/>
+  <token id="2" lemma="pakistan" pos="NNP" surface="Pakistan"/>
+  <token id="3" lemma="do" pos="VBZ" surface="does"/>
+  <token id="4" lemma="not" pos="RB" surface="not"/>
+  <token id="5" lemma="possess" pos="VB" surface="possess"/>
+  <token id="6" lemma="biological" pos="JJ" surface="biological"/>
+  <token id="7" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="8" lemma="(" pos="-LRB-" surface="("/>
+  <token id="9" lemma="bw" pos="NNP" surface="BW"/>
+  <token id="10" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="13" lemma="have" pos="VBZ" surface="has"/>
+  <token id="14" lemma="talent" pos="VBN" surface="talented"/>
+  <token id="15" lemma="biomedical" pos="JJ" surface="biomedical"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="biochemical" pos="JJ" surface="biochemical"/>
+  <token id="18" lemma="scientist" pos="NNS" surface="scientists"/>
+  <token id="19" lemma="and" pos="CC" surface="and"/>
+  <token id="20" lemma="well-equipped" pos="JJ" surface="well-equipped"/>
+  <token id="21" lemma="laboratory" pos="NNS" surface="laboratories"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="mark"/>
+  <dep from="5" to="2" type="nsubj"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="neg"/>
+  <dep from="14" to="5" type="advcl"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="7" to="9" type="appos"/>
+  <dep from="7" to="10" type="punct"/>
+  <dep from="14" to="11" type="punct"/>
+  <dep from="14" to="12" type="nsubj"/>
+  <dep from="14" to="13" type="aux"/>
+  <dep from="0" to="14" type="root"/>
+  <dep from="18" to="15" type="amod"/>
+  <dep from="15" to="16" type="cc"/>
+  <dep from="15" to="17" type="conj"/>
+  <dep from="14" to="18" type="dobj"/>
+  <dep from="18" to="19" type="cc"/>
+  <dep from="21" to="20" type="amod"/>
+  <dep from="18" to="21" type="conj"/>
+  <dep from="14" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

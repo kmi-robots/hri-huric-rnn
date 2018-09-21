@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098848">
+ <sentence>
+  QN : Are fabric awning prices more varied than aluminum awning prices ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="be" pos="VBP" surface="Are"/>
+  <token id="4" lemma="fabric" pos="NN" surface="fabric"/>
+  <token id="5" lemma="awn" pos="VBG" surface="awning"/>
+  <token id="6" lemma="price" pos="NNS" surface="prices"/>
+  <token id="7" lemma="more" pos="RBR" surface="more"/>
+  <token id="8" lemma="varied" pos="JJ" surface="varied"/>
+  <token id="9" lemma="than" pos="IN" surface="than"/>
+  <token id="10" lemma="aluminum" pos="NN" surface="aluminum"/>
+  <token id="11" lemma="awn" pos="VBG" surface="awning"/>
+  <token id="12" lemma="price" pos="NNS" surface="prices"/>
+  <token id="13" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="npadvmod"/>
+  <dep from="1" to="5" type="dep"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="8" to="7" type="advmod"/>
+  <dep from="6" to="8" type="amod"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="compound"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="1" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

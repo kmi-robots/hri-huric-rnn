@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106107">
+ <sentence>
+  The Dutch sent an invasion flotilla to Macau in 1622 , but the defenders triumphed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="dutch" pos="NNPS" surface="Dutch"/>
+  <token id="3" lemma="send" pos="VBD" surface="sent"/>
+  <token id="4" lemma="an" pos="DT" surface="an"/>
+  <token id="5" lemma="invasion" pos="NN" surface="invasion"/>
+  <token id="6" lemma="flotilla" pos="NN" surface="flotilla"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="macau" pos="NNP" surface="Macau"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="1622" pos="CD" surface="1622"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="but" pos="CC" surface="but"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="defender" pos="NNS" surface="defenders"/>
+  <token id="15" lemma="triumph" pos="VBD" surface="triumphed"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="dative"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="3" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="3" to="11" type="punct"/>
+  <dep from="3" to="12" type="cc"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="3" to="15" type="conj"/>
+  <dep from="15" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Sending">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Sender">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Invading">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Aggregate_property">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_period">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Concessive">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Conceded_state_of_affairs">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Main_assertion">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Defending">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Defender">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

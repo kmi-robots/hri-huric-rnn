@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4164982">
+ <sentence>
+  Four hundred troops are currently in the northwestern county guarding densely-populated areas , airports and power stations .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="four" pos="CD" surface="Four"/>
+  <token id="2" lemma="hundred" pos="CD" surface="hundred"/>
+  <token id="3" lemma="troop" pos="NNS" surface="troops"/>
+  <token id="4" lemma="be" pos="VBP" surface="are"/>
+  <token id="5" lemma="currently" pos="RB" surface="currently"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="northwestern" pos="JJ" surface="northwestern"/>
+  <token id="9" lemma="county" pos="NN" surface="county"/>
+  <token id="10" lemma="guard" pos="VBG" surface="guarding"/>
+  <token id="11" lemma="densely-populated" pos="JJ" surface="densely-populated"/>
+  <token id="12" lemma="area" pos="NNS" surface="areas"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="airport" pos="NNS" surface="airports"/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="power" pos="NN" surface="power"/>
+  <token id="17" lemma="station" pos="NNS" surface="stations"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nummod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="advmod"/>
+  <dep from="4" to="6" type="prep"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="6" to="9" type="pobj"/>
+  <dep from="9" to="10" type="acl"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="12" to="14" type="conj"/>
+  <dep from="14" to="15" type="cc"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="14" to="17" type="conj"/>
+  <dep from="4" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Member_of_military">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Protecting">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Asset">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Asset">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Asset">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Protection">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Relative_location">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Trajector_event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Landmark_period">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

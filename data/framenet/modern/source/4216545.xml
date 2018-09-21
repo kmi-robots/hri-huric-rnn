@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4216545">
+ <sentence>
+  Rard was a car engineer but by 1946 he was running his mother 's lingerie boutique near Les Folies Bergres in Paris .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="rard" pos="NNP" surface="Rard"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="car" pos="NN" surface="car"/>
+  <token id="5" lemma="engineer" pos="NN" surface="engineer"/>
+  <token id="6" lemma="but" pos="CC" surface="but"/>
+  <token id="7" lemma="by" pos="IN" surface="by"/>
+  <token id="8" lemma="1946" pos="CD" surface="1946"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="10" lemma="be" pos="VBD" surface="was"/>
+  <token id="11" lemma="run" pos="VBG" surface="running"/>
+  <token id="12" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="13" lemma="mother" pos="NN" surface="mother"/>
+  <token id="14" lemma="'s" pos="POS" surface="'s"/>
+  <token id="15" lemma="lingerie" pos="NN" surface="lingerie"/>
+  <token id="16" lemma="boutique" pos="NN" surface="boutique"/>
+  <token id="17" lemma="near" pos="IN" surface="near"/>
+  <token id="18" lemma="les" pos="NNP" surface="Les"/>
+  <token id="19" lemma="folies" pos="NNP" surface="Folies"/>
+  <token id="20" lemma="bergres" pos="NNPS" surface="Bergres"/>
+  <token id="21" lemma="in" pos="IN" surface="in"/>
+  <token id="22" lemma="paris" pos="NNP" surface="Paris"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="2" to="5" type="attr"/>
+  <dep from="2" to="6" type="cc"/>
+  <dep from="11" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="11" to="9" type="nsubj"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="2" to="11" type="conj"/>
+  <dep from="13" to="12" type="poss"/>
+  <dep from="16" to="13" type="poss"/>
+  <dep from="13" to="14" type="case"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="11" to="16" type="dobj"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="20" to="18" type="compound"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="17" to="20" type="pobj"/>
+  <dep from="20" to="21" type="prep"/>
+  <dep from="21" to="22" type="pobj"/>
+  <dep from="11" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Proprietor">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Product">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Business">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

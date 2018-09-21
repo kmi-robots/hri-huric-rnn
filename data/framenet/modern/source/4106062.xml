@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106062">
+ <sentence>
+  You can have a delicious vegetarian lunch here .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="You"/>
+  <token id="2" lemma="can" pos="MD" surface="can"/>
+  <token id="3" lemma="have" pos="VB" surface="have"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="delicious" pos="JJ" surface="delicious"/>
+  <token id="6" lemma="vegetarian" pos="JJ" surface="vegetarian"/>
+  <token id="7" lemma="lunch" pos="NN" surface="lunch"/>
+  <token id="8" lemma="here" pos="RB" surface="here"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="7" to="4" type="det"/>
+  <dep from="7" to="5" type="amod"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="3" to="7" type="dobj"/>
+  <dep from="3" to="8" type="advmod"/>
+  <dep from="3" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Possibility">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Possible_event">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Possible_event">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Ingestion">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Ingestor">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ingestibles">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Chemical-sense_description">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Perceptual_source">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

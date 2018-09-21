@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4216608">
+ <sentence>
+  These include clothing boutiques and restaurants .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="these" pos="DT" surface="These"/>
+  <token id="2" lemma="include" pos="VBP" surface="include"/>
+  <token id="3" lemma="clothing" pos="NN" surface="clothing"/>
+  <token id="4" lemma="boutique" pos="NNS" surface="boutiques"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="restaurant" pos="NNS" surface="restaurants"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="4" to="6" type="conj"/>
+  <dep from="2" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103903">
+ <sentence>
+  Sample the taste of ackee cooked with saltfish , Jamaica 's national dish , and the smell of hot jerk pork cooked in a pit barbecue .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="sample" pos="VB" surface="Sample"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="taste" pos="NN" surface="taste"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="ackee" pos="NN" surface="ackee"/>
+  <token id="6" lemma="cook" pos="VBN" surface="cooked"/>
+  <token id="7" lemma="with" pos="IN" surface="with"/>
+  <token id="8" lemma="saltfish" pos="NN" surface="saltfish"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="jamaica" pos="NNP" surface="Jamaica"/>
+  <token id="11" lemma="'s" pos="POS" surface="'s"/>
+  <token id="12" lemma="national" pos="JJ" surface="national"/>
+  <token id="13" lemma="dish" pos="NN" surface="dish"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="smell" pos="NN" surface="smell"/>
+  <token id="18" lemma="of" pos="IN" surface="of"/>
+  <token id="19" lemma="hot" pos="JJ" surface="hot"/>
+  <token id="20" lemma="jerk" pos="NN" surface="jerk"/>
+  <token id="21" lemma="pork" pos="NN" surface="pork"/>
+  <token id="22" lemma="cook" pos="VBN" surface="cooked"/>
+  <token id="23" lemma="in" pos="IN" surface="in"/>
+  <token id="24" lemma="a" pos="DT" surface="a"/>
+  <token id="25" lemma="pit" pos="NN" surface="pit"/>
+  <token id="26" lemma="barbecue" pos="NN" surface="barbecue"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="dobj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="5" to="6" type="acl"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="3" to="9" type="punct"/>
+  <dep from="13" to="10" type="poss"/>
+  <dep from="10" to="11" type="case"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="3" to="13" type="conj"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="13" to="15" type="cc"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="13" to="17" type="conj"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="20" to="19" type="amod"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="18" to="21" type="pobj"/>
+  <dep from="17" to="22" type="acl"/>
+  <dep from="22" to="23" type="prep"/>
+  <dep from="26" to="24" type="det"/>
+  <dep from="26" to="25" type="compound"/>
+  <dep from="23" to="26" type="pobj"/>
+  <dep from="1" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Sensation">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Source">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Apply_heat">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Food">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Coparticipant">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Sensation">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Source">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Apply_heat">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Food">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Heating_instrument">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

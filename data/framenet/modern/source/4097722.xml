@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097722">
+ <sentence>
+  North Korea finally signed an IAEA safeguards agreement on 30 January 1992 , and the Supreme People's Assembly ratified the agreement on 9 April .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="north" pos="NNP" surface="North"/>
+  <token id="2" lemma="korea" pos="NNP" surface="Korea"/>
+  <token id="3" lemma="finally" pos="RB" surface="finally"/>
+  <token id="4" lemma="sign" pos="VBD" surface="signed"/>
+  <token id="5" lemma="an" pos="DT" surface="an"/>
+  <token id="6" lemma="iaea" pos="NNP" surface="IAEA"/>
+  <token id="7" lemma="safeguard" pos="NNS" surface="safeguards"/>
+  <token id="8" lemma="agreement" pos="NN" surface="agreement"/>
+  <token id="9" lemma="on" pos="IN" surface="on"/>
+  <token id="10" lemma="30" pos="CD" surface="30"/>
+  <token id="11" lemma="january" pos="NNP" surface="January"/>
+  <token id="12" lemma="1992" pos="CD" surface="1992"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="supreme" pos="NNP" surface="Supreme"/>
+  <token id="17" lemma="people's" pos="NNP" surface="People's"/>
+  <token id="18" lemma="assembly" pos="NNP" surface="Assembly"/>
+  <token id="19" lemma="ratify" pos="VBD" surface="ratified"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="agreement" pos="NN" surface="agreement"/>
+  <token id="22" lemma="on" pos="IN" surface="on"/>
+  <token id="23" lemma="9" pos="CD" surface="9"/>
+  <token id="24" lemma="april" pos="NNP" surface="April"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="8" to="5" type="det"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="4" to="8" type="dobj"/>
+  <dep from="4" to="9" type="prep"/>
+  <dep from="11" to="10" type="nummod"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="nummod"/>
+  <dep from="4" to="13" type="punct"/>
+  <dep from="4" to="14" type="cc"/>
+  <dep from="18" to="15" type="det"/>
+  <dep from="18" to="16" type="compound"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="19" to="18" type="nsubj"/>
+  <dep from="4" to="19" type="conj"/>
+  <dep from="21" to="20" type="det"/>
+  <dep from="19" to="21" type="dobj"/>
+  <dep from="19" to="22" type="prep"/>
+  <dep from="24" to="23" type="nummod"/>
+  <dep from="22" to="24" type="pobj"/>
+  <dep from="19" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Sign_agreement">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Signatory">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Agreement">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Ratification">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Ratifier">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Proposal">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Be_in_agreement_on_action">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Be_in_agreement_on_action">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Party_2">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Topic">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

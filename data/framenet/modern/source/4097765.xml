@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097765">
+ <sentence>
+  Russia , as the successor of the Soviet Union , is a nuclear weapon state party to the Non - Proliferation Treaty ( NPT ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="russia" pos="NNP" surface="Russia"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="as" pos="IN" surface="as"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="successor" pos="NN" surface="successor"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="soviet" pos="NNP" surface="Soviet"/>
+  <token id="9" lemma="union" pos="NNP" surface="Union"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="be" pos="VBZ" surface="is"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="14" lemma="weapon" pos="NN" surface="weapon"/>
+  <token id="15" lemma="state" pos="NN" surface="state"/>
+  <token id="16" lemma="party" pos="NN" surface="party"/>
+  <token id="17" lemma="to" pos="IN" surface="to"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="non" pos="NNP" surface="Non"/>
+  <token id="20" lemma="-" pos="HYPH" surface="-"/>
+  <token id="21" lemma="proliferation" pos="NNP" surface="Proliferation"/>
+  <token id="22" lemma="treaty" pos="NNP" surface="Treaty"/>
+  <token id="23" lemma="(" pos="-LRB-" surface="("/>
+  <token id="24" lemma="npt" pos="NNP" surface="NPT"/>
+  <token id="25" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="11" to="1" type="nsubj"/>
+  <dep from="11" to="2" type="punct"/>
+  <dep from="11" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="pobj"/>
+  <dep from="11" to="10" type="punct"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="16" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="16" to="14" type="compound"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="11" to="16" type="attr"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="22" to="18" type="det"/>
+  <dep from="21" to="19" type="compound"/>
+  <dep from="21" to="20" type="punct"/>
+  <dep from="22" to="21" type="compound"/>
+  <dep from="17" to="22" type="pobj"/>
+  <dep from="22" to="23" type="punct"/>
+  <dep from="22" to="24" type="appos"/>
+  <dep from="22" to="25" type="punct"/>
+  <dep from="11" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

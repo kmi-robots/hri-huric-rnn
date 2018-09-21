@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101066">
+ <sentence>
+  Though the two cities remained unlinked by rail , this was about to change quickly .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="though" pos="IN" surface="Though"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="two" pos="CD" surface="two"/>
+  <token id="4" lemma="city" pos="NNS" surface="cities"/>
+  <token id="5" lemma="remain" pos="VBD" surface="remained"/>
+  <token id="6" lemma="unlinked" pos="JJ" surface="unlinked"/>
+  <token id="7" lemma="by" pos="IN" surface="by"/>
+  <token id="8" lemma="rail" pos="NN" surface="rail"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="this" pos="DT" surface="this"/>
+  <token id="11" lemma="be" pos="VBD" surface="was"/>
+  <token id="12" lemma="about" pos="JJ" surface="about"/>
+  <token id="13" lemma="to" pos="TO" surface="to"/>
+  <token id="14" lemma="change" pos="VB" surface="change"/>
+  <token id="15" lemma="quickly" pos="RB" surface="quickly"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="mark"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="nummod"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="11" to="5" type="advcl"/>
+  <dep from="5" to="6" type="acomp"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="11" to="9" type="punct"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="acomp"/>
+  <dep from="14" to="13" type="aux"/>
+  <dep from="12" to="14" type="xcomp"/>
+  <dep from="14" to="15" type="advmod"/>
+  <dep from="11" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="State_continue">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="State">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Means">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Means">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Undergo_change">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Roadway">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

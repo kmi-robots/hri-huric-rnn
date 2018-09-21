@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096908">
+ <sentence>
+  European firms have been targeted by Iranians for technology and equipment .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="european" pos="JJ" surface="European"/>
+  <token id="2" lemma="firm" pos="NNS" surface="firms"/>
+  <token id="3" lemma="have" pos="VBP" surface="have"/>
+  <token id="4" lemma="be" pos="VBN" surface="been"/>
+  <token id="5" lemma="target" pos="VBN" surface="targeted"/>
+  <token id="6" lemma="by" pos="IN" surface="by"/>
+  <token id="7" lemma="iranians" pos="NNPS" surface="Iranians"/>
+  <token id="8" lemma="for" pos="IN" surface="for"/>
+  <token id="9" lemma="technology" pos="NN" surface="technology"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="equipment" pos="NN" surface="equipment"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="agent"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="5" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="9" to="11" type="conj"/>
+  <dep from="5" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Business">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Artifact">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Artifact">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

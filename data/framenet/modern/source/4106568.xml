@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106568">
+ <sentence>
+  Some are blind , deaf or have other physical disabilities .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="some" pos="DT" surface="Some"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="blind" pos="JJ" surface="blind"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="deaf" pos="JJ" surface="deaf"/>
+  <token id="6" lemma="or" pos="CC" surface="or"/>
+  <token id="7" lemma="have" pos="VBP" surface="have"/>
+  <token id="8" lemma="other" pos="JJ" surface="other"/>
+  <token id="9" lemma="physical" pos="JJ" surface="physical"/>
+  <token id="10" lemma="disability" pos="NNS" surface="disabilities"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="acomp"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="3" to="5" type="conj"/>
+  <dep from="2" to="6" type="cc"/>
+  <dep from="2" to="7" type="conj"/>
+  <dep from="10" to="8" type="amod"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="7" to="10" type="dobj"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Denoted_quantity">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Class">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

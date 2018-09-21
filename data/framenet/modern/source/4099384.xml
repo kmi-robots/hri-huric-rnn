@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099384">
+ <sentence>
+  Characteristics of CBW Terrorists
+ </sentence>
+ <tokens>
+  <token id="1" lemma="characteristics" pos="NNP" surface="Characteristics"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="cbw" pos="NNP" surface="CBW"/>
+  <token id="4" lemma="terrorists" pos="NNPS" surface="Terrorists"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="2" to="4" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Distinctiveness">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Terrorism">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Terrorist">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Instrument">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

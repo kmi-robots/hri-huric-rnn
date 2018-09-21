@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098805">
+ <sentence>
+  QN : Was Catherine Wood Campbell born in Atlanta ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="be" pos="VBD" surface="Was"/>
+  <token id="4" lemma="catherine" pos="NNP" surface="Catherine"/>
+  <token id="5" lemma="wood" pos="NNP" surface="Wood"/>
+  <token id="6" lemma="campbell" pos="NNP" surface="Campbell"/>
+  <token id="7" lemma="bear" pos="VBN" surface="born"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="atlanta" pos="NNP" surface="Atlanta"/>
+  <token id="10" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="6" to="3" type="compound"/>
+  <dep from="6" to="4" type="compound"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="acl"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="6" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_born">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Child">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

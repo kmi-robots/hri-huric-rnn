@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097001">
+ <sentence>
+  From approximately 1983 - 1988 during the war with Iraq , Iran suffered extensive CW attacks , including blister ( mustard ) and nerve agents .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="from" pos="IN" surface="From"/>
+  <token id="2" lemma="approximately" pos="RB" surface="approximately"/>
+  <token id="3" lemma="1983" pos="CD" surface="1983"/>
+  <token id="4" lemma="-" pos="SYM" surface="-"/>
+  <token id="5" lemma="1988" pos="CD" surface="1988"/>
+  <token id="6" lemma="during" pos="IN" surface="during"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="war" pos="NN" surface="war"/>
+  <token id="9" lemma="with" pos="IN" surface="with"/>
+  <token id="10" lemma="iraq" pos="NNP" surface="Iraq"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="13" lemma="suffer" pos="VBD" surface="suffered"/>
+  <token id="14" lemma="extensive" pos="JJ" surface="extensive"/>
+  <token id="15" lemma="cw" pos="NNP" surface="CW"/>
+  <token id="16" lemma="attack" pos="NNS" surface="attacks"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="include" pos="VBG" surface="including"/>
+  <token id="19" lemma="blister" pos="NN" surface="blister"/>
+  <token id="20" lemma="(" pos="-LRB-" surface="("/>
+  <token id="21" lemma="mustard" pos="NN" surface="mustard"/>
+  <token id="22" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="23" lemma="and" pos="CC" surface="and"/>
+  <token id="24" lemma="nerve" pos="NN" surface="nerve"/>
+  <token id="25" lemma="agent" pos="NNS" surface="agents"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="13" to="1" type="prep"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="5" to="3" type="nummod"/>
+  <dep from="5" to="4" type="punct"/>
+  <dep from="1" to="5" type="pobj"/>
+  <dep from="1" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="13" to="11" type="punct"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="16" to="14" type="amod"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="13" to="16" type="dobj"/>
+  <dep from="16" to="17" type="punct"/>
+  <dep from="16" to="18" type="prep"/>
+  <dep from="18" to="19" type="pobj"/>
+  <dep from="19" to="20" type="punct"/>
+  <dep from="19" to="21" type="appos"/>
+  <dep from="21" to="22" type="punct"/>
+  <dep from="21" to="23" type="cc"/>
+  <dep from="25" to="24" type="compound"/>
+  <dep from="21" to="25" type="conj"/>
+  <dep from="13" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Catastrophe">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Patient">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Undesirable_event">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Inclusion">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Total">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Active_substance">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Side_2">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

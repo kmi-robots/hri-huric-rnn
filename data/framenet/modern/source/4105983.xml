@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105983">
+ <sentence>
+  The temple is one of the many dedicated to Tin Hau , goddess of seafarers ; this one also houses an altar to Shing Wong , the city 's god .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="temple" pos="NN" surface="temple"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="one" pos="CD" surface="one"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="many" pos="JJ" surface="many"/>
+  <token id="8" lemma="dedicated" pos="JJ" surface="dedicated"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="tin" pos="NNP" surface="Tin"/>
+  <token id="11" lemma="hau" pos="NNP" surface="Hau"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="goddess" pos="NN" surface="goddess"/>
+  <token id="14" lemma="of" pos="IN" surface="of"/>
+  <token id="15" lemma="seafarer" pos="NNS" surface="seafarers"/>
+  <token id="16" lemma=";" pos=":" surface=";"/>
+  <token id="17" lemma="this" pos="DT" surface="this"/>
+  <token id="18" lemma="one" pos="NN" surface="one"/>
+  <token id="19" lemma="also" pos="RB" surface="also"/>
+  <token id="20" lemma="house" pos="VBZ" surface="houses"/>
+  <token id="21" lemma="an" pos="DT" surface="an"/>
+  <token id="22" lemma="altar" pos="NN" surface="altar"/>
+  <token id="23" lemma="to" pos="IN" surface="to"/>
+  <token id="24" lemma="shing" pos="NNP" surface="Shing"/>
+  <token id="25" lemma="wong" pos="NNP" surface="Wong"/>
+  <token id="26" lemma="," pos="," surface=","/>
+  <token id="27" lemma="the" pos="DT" surface="the"/>
+  <token id="28" lemma="city" pos="NN" surface="city"/>
+  <token id="29" lemma="'s" pos="POS" surface="'s"/>
+  <token id="30" lemma="god" pos="NN" surface="god"/>
+  <token id="31" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="20" to="3" type="ccomp"/>
+  <dep from="3" to="4" type="attr"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="7" to="8" type="acl"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="punct"/>
+  <dep from="11" to="13" type="appos"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="20" to="16" type="punct"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="20" to="18" type="nsubj"/>
+  <dep from="20" to="19" type="advmod"/>
+  <dep from="0" to="20" type="root"/>
+  <dep from="22" to="21" type="det"/>
+  <dep from="20" to="22" type="dobj"/>
+  <dep from="20" to="23" type="prep"/>
+  <dep from="25" to="24" type="compound"/>
+  <dep from="23" to="25" type="pobj"/>
+  <dep from="25" to="26" type="punct"/>
+  <dep from="28" to="27" type="det"/>
+  <dep from="30" to="28" type="poss"/>
+  <dep from="28" to="29" type="case"/>
+  <dep from="25" to="30" type="appos"/>
+  <dep from="20" to="31" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Containing">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Container">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Container">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Building_subparts">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Building_part">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="28"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="28"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

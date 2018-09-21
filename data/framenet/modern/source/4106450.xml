@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106450">
+ <sentence>
+  November 15 , 1996
+ </sentence>
+ <tokens>
+  <token id="1" lemma="november" pos="NNP" surface="November"/>
+  <token id="2" lemma="15" pos="CD" surface="15"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="1996" pos="CD" surface="1996"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="nummod"/>
+  <dep from="1" to="3" type="punct"/>
+  <dep from="1" to="4" type="npadvmod"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

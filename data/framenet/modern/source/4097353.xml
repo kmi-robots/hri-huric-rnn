@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097353">
+ <sentence>
+  Argentina 's president approves negotiations between Argentina and Iran on nuclear supply contracts .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="argentina" pos="NNP" surface="Argentina"/>
+  <token id="2" lemma="'s" pos="POS" surface="'s"/>
+  <token id="3" lemma="president" pos="NN" surface="president"/>
+  <token id="4" lemma="approve" pos="VBZ" surface="approves"/>
+  <token id="5" lemma="negotiation" pos="NNS" surface="negotiations"/>
+  <token id="6" lemma="between" pos="IN" surface="between"/>
+  <token id="7" lemma="argentina" pos="NNP" surface="Argentina"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="10" lemma="on" pos="IN" surface="on"/>
+  <token id="11" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="12" lemma="supply" pos="NN" surface="supply"/>
+  <token id="13" lemma="contract" pos="NNS" surface="contracts"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="poss"/>
+  <dep from="1" to="2" type="case"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="7" to="9" type="conj"/>
+  <dep from="5" to="10" type="prep"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Governed">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Deny_or_grant_permission">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Authority">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Action">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Discussion">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Interlocutors">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Topic">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

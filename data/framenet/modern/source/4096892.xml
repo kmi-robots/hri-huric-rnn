@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096892">
+ <sentence>
+  Canadian and Dutch scientists were approached by Iranian personnel looking to acquire mycotoxin - producing fungi ( Fusarium spp. ) in 1989 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="canadian" pos="JJ" surface="Canadian"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="dutch" pos="JJ" surface="Dutch"/>
+  <token id="4" lemma="scientist" pos="NNS" surface="scientists"/>
+  <token id="5" lemma="be" pos="VBD" surface="were"/>
+  <token id="6" lemma="approach" pos="VBN" surface="approached"/>
+  <token id="7" lemma="by" pos="IN" surface="by"/>
+  <token id="8" lemma="iranian" pos="JJ" surface="Iranian"/>
+  <token id="9" lemma="personnel" pos="NNS" surface="personnel"/>
+  <token id="10" lemma="look" pos="VBG" surface="looking"/>
+  <token id="11" lemma="to" pos="TO" surface="to"/>
+  <token id="12" lemma="acquire" pos="VB" surface="acquire"/>
+  <token id="13" lemma="mycotoxin" pos="NN" surface="mycotoxin"/>
+  <token id="14" lemma="-" pos="HYPH" surface="-"/>
+  <token id="15" lemma="produce" pos="VBG" surface="producing"/>
+  <token id="16" lemma="fungus" pos="NNS" surface="fungi"/>
+  <token id="17" lemma="(" pos="-LRB-" surface="("/>
+  <token id="18" lemma="fusarium" pos="NN" surface="Fusarium"/>
+  <token id="19" lemma="spp." pos="FW" surface="spp."/>
+  <token id="20" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="21" lemma="in" pos="IN" surface="in"/>
+  <token id="22" lemma="1989" pos="CD" surface="1989"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="amod"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="6" to="4" type="nsubjpass"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="agent"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="acl"/>
+  <dep from="12" to="11" type="aux"/>
+  <dep from="10" to="12" type="xcomp"/>
+  <dep from="15" to="13" type="npadvmod"/>
+  <dep from="15" to="14" type="punct"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="12" to="16" type="dobj"/>
+  <dep from="16" to="17" type="punct"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="16" to="19" type="appos"/>
+  <dep from="16" to="20" type="punct"/>
+  <dep from="12" to="21" type="prep"/>
+  <dep from="21" to="22" type="pobj"/>
+  <dep from="6" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Getting">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Seeking">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer_agent">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Sought_entity">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Creating">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Creator">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Employing">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Employee">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

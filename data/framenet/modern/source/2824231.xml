@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824231">
+ <sentence>
+  It is a passion that usually stays in the tower , however .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="It"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="passion" pos="NN" surface="passion"/>
+  <token id="5" lemma="that" pos="WDT" surface="that"/>
+  <token id="6" lemma="usually" pos="RB" surface="usually"/>
+  <token id="7" lemma="stay" pos="VBZ" surface="stays"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="tower" pos="NN" surface="tower"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="however" pos="RB" surface="however"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="attr"/>
+  <dep from="7" to="5" type="nsubj"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="4" to="7" type="relcl"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="7" to="11" type="punct"/>
+  <dep from="7" to="12" type="advmod"/>
+  <dep from="2" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Building_subparts">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Building_part">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Residence">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Resident">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Resident">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Frequency">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Concessive">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Main_assertion">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

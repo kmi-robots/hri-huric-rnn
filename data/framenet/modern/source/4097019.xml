@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097019">
+ <sentence>
+  India also agreed to sell Iran phosphorous pentasulfide , a dual - use chemical used in the production of pesticides as well as the nerve agent VX .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="india" pos="NNP" surface="India"/>
+  <token id="2" lemma="also" pos="RB" surface="also"/>
+  <token id="3" lemma="agree" pos="VBD" surface="agreed"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="sell" pos="VB" surface="sell"/>
+  <token id="6" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="7" lemma="phosphorous" pos="JJ" surface="phosphorous"/>
+  <token id="8" lemma="pentasulfide" pos="NN" surface="pentasulfide"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="dual" pos="JJ" surface="dual"/>
+  <token id="12" lemma="-" pos="HYPH" surface="-"/>
+  <token id="13" lemma="use" pos="NN" surface="use"/>
+  <token id="14" lemma="chemical" pos="NN" surface="chemical"/>
+  <token id="15" lemma="use" pos="VBN" surface="used"/>
+  <token id="16" lemma="in" pos="IN" surface="in"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="production" pos="NN" surface="production"/>
+  <token id="19" lemma="of" pos="IN" surface="of"/>
+  <token id="20" lemma="pesticide" pos="NNS" surface="pesticides"/>
+  <token id="21" lemma="as" pos="RB" surface="as"/>
+  <token id="22" lemma="well" pos="RB" surface="well"/>
+  <token id="23" lemma="as" pos="IN" surface="as"/>
+  <token id="24" lemma="the" pos="DT" surface="the"/>
+  <token id="25" lemma="nerve" pos="NN" surface="nerve"/>
+  <token id="26" lemma="agent" pos="NN" surface="agent"/>
+  <token id="27" lemma="vx" pos="NNP" surface="VX"/>
+  <token id="28" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="xcomp"/>
+  <dep from="5" to="6" type="dative"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="dobj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="14" to="10" type="det"/>
+  <dep from="13" to="11" type="amod"/>
+  <dep from="13" to="12" type="punct"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="8" to="14" type="appos"/>
+  <dep from="14" to="15" type="acl"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="19" to="20" type="pobj"/>
+  <dep from="23" to="21" type="advmod"/>
+  <dep from="23" to="22" type="advmod"/>
+  <dep from="18" to="23" type="cc"/>
+  <dep from="27" to="24" type="det"/>
+  <dep from="26" to="25" type="compound"/>
+  <dep from="27" to="26" type="compound"/>
+  <dep from="18" to="27" type="conj"/>
+  <dep from="3" to="28" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Make_agreement_on_action">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Party_1">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Obligation">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+   </frame>
+   <frame name="Commerce_sell">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Seller">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Buyer">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+   </frame>
+   <frame name="Purpose">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Using">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Instrument">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+   </frame>
+   <frame name="Active_substance">
+    <lexicalUnit>
+     <token id="26"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="26"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="27"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

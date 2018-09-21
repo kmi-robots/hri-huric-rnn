@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098487">
+ <sentence>
+  QN : Will the US invade Syria ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="will" pos="MD" surface="Will"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="us" pos="NNP" surface="US"/>
+  <token id="6" lemma="invade" pos="VB" surface="invade"/>
+  <token id="7" lemma="syria" pos="NNP" surface="Syria"/>
+  <token id="8" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="dep"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="6" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Invading">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Invader">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Land">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

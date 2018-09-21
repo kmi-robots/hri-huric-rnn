@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824445">
+ <sentence>
+  A lot of car alarms went off .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="lot" pos="NN" surface="lot"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="car" pos="NN" surface="car"/>
+  <token id="5" lemma="alarm" pos="NNS" surface="alarms"/>
+  <token id="6" lemma="go" pos="VBD" surface="went"/>
+  <token id="7" lemma="off" pos="RP" surface="off"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="6" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prt"/>
+  <dep from="6" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Vehicle">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

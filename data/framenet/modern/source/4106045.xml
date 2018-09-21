@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106045">
+ <sentence>
+  It really looks the part ; the tourists know its name even before the guide can translate it .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="It"/>
+  <token id="2" lemma="really" pos="RB" surface="really"/>
+  <token id="3" lemma="look" pos="VBZ" surface="looks"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="part" pos="NN" surface="part"/>
+  <token id="6" lemma=";" pos=":" surface=";"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="tourist" pos="NNS" surface="tourists"/>
+  <token id="9" lemma="know" pos="VBP" surface="know"/>
+  <token id="10" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="11" lemma="name" pos="NN" surface="name"/>
+  <token id="12" lemma="even" pos="RB" surface="even"/>
+  <token id="13" lemma="before" pos="IN" surface="before"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="guide" pos="NN" surface="guide"/>
+  <token id="16" lemma="can" pos="MD" surface="can"/>
+  <token id="17" lemma="translate" pos="VB" surface="translate"/>
+  <token id="18" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="9" to="3" type="ccomp"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="attr"/>
+  <dep from="9" to="6" type="punct"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="11" to="10" type="poss"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="17" to="12" type="advmod"/>
+  <dep from="17" to="13" type="mark"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="17" to="15" type="nsubj"/>
+  <dep from="17" to="16" type="aux"/>
+  <dep from="9" to="17" type="advcl"/>
+  <dep from="17" to="18" type="dobj"/>
+  <dep from="9" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Touring">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Tourist">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Awareness">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_named">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Time_vector">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Direction">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Landmark_event">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Possibility">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Possible_event">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Possible_event">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Translating">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

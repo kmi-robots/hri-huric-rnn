@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102862">
+ <sentence>
+  3- Entrances to the towers should be totally camouflaged .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="3-" pos="LS" surface="3-"/>
+  <token id="2" lemma="entrance" pos="NNS" surface="Entrances"/>
+  <token id="3" lemma="to" pos="IN" surface="to"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="tower" pos="NNS" surface="towers"/>
+  <token id="6" lemma="should" pos="MD" surface="should"/>
+  <token id="7" lemma="be" pos="VB" surface="be"/>
+  <token id="8" lemma="totally" pos="RB" surface="totally"/>
+  <token id="9" lemma="camouflage" pos="VBN" surface="camouflaged"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="nsubjpass"/>
+  <dep from="1" to="2" type="nsubj"/>
+  <dep from="1" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="9" to="6" type="aux"/>
+  <dep from="9" to="7" type="auxpass"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Arriving">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirable_event">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="State_of_affairs">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

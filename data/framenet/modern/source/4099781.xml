@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099781">
+ <sentence>
+  Bush accords top priority to India nuclear deal
+ </sentence>
+ <tokens>
+  <token id="1" lemma="bush" pos="NNP" surface="Bush"/>
+  <token id="2" lemma="accord" pos="VBZ" surface="accords"/>
+  <token id="3" lemma="top" pos="JJ" surface="top"/>
+  <token id="4" lemma="priority" pos="NN" surface="priority"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="india" pos="NNP" surface="India"/>
+  <token id="7" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="8" lemma="deal" pos="NN" surface="deal"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="nmod"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Make_agreement_on_action">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Obligation">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Topic">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

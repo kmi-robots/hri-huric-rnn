@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106299">
+ <sentence>
+  An Excursion to Shenzhen
+ </sentence>
+ <tokens>
+  <token id="1" lemma="an" pos="DT" surface="An"/>
+  <token id="2" lemma="excursion" pos="NNP" surface="Excursion"/>
+  <token id="3" lemma="to" pos="IN" surface="to"/>
+  <token id="4" lemma="shenzhen" pos="NNP" surface="Shenzhen"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Travel">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103616">
+ <sentence>
+  Donaldson suggests that on 60 Minutes Clinton had admitted to infidelity .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="donaldson" pos="NNP" surface="Donaldson"/>
+  <token id="2" lemma="suggest" pos="VBZ" surface="suggests"/>
+  <token id="3" lemma="that" pos="IN" surface="that"/>
+  <token id="4" lemma="on" pos="IN" surface="on"/>
+  <token id="5" lemma="60" pos="CD" surface="60"/>
+  <token id="6" lemma="minutes" pos="NNPS" surface="Minutes"/>
+  <token id="7" lemma="clinton" pos="NNP" surface="Clinton"/>
+  <token id="8" lemma="have" pos="VBD" surface="had"/>
+  <token id="9" lemma="admit" pos="VBN" surface="admitted"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="infidelity" pos="NN" surface="infidelity"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="9" to="3" type="mark"/>
+  <dep from="9" to="4" type="prep"/>
+  <dep from="7" to="5" type="nummod"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="9" to="7" type="nsubj"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="2" to="9" type="ccomp"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="2" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Reveal_secret">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Information">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Containing_event">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

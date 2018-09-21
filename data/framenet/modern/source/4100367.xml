@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100367">
+ <sentence>
+  For four years Jewish zealots fought against the might of Rome .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="for" pos="IN" surface="For"/>
+  <token id="2" lemma="four" pos="CD" surface="four"/>
+  <token id="3" lemma="year" pos="NNS" surface="years"/>
+  <token id="4" lemma="jewish" pos="JJ" surface="Jewish"/>
+  <token id="5" lemma="zealot" pos="NNS" surface="zealots"/>
+  <token id="6" lemma="fight" pos="VBD" surface="fought"/>
+  <token id="7" lemma="against" pos="IN" surface="against"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="might" pos="NN" surface="might"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="rome" pos="NNP" surface="Rome"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="3" to="2" type="nummod"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="6" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Duration">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Side_1">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Side_2">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Count">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Taking_sides">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Side">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Action">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

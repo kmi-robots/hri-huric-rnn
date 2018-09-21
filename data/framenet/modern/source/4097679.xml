@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097679">
+ <sentence>
+  There is no reason , however , to believe that this allegation is true .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="no" pos="DT" surface="no"/>
+  <token id="4" lemma="reason" pos="NN" surface="reason"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="however" pos="RB" surface="however"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="to" pos="TO" surface="to"/>
+  <token id="9" lemma="believe" pos="VB" surface="believe"/>
+  <token id="10" lemma="that" pos="IN" surface="that"/>
+  <token id="11" lemma="this" pos="DT" surface="this"/>
+  <token id="12" lemma="allegation" pos="NN" surface="allegation"/>
+  <token id="13" lemma="be" pos="VBZ" surface="is"/>
+  <token id="14" lemma="true" pos="JJ" surface="true"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="attr"/>
+  <dep from="2" to="5" type="punct"/>
+  <dep from="2" to="6" type="advmod"/>
+  <dep from="2" to="7" type="punct"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="2" to="9" type="xcomp"/>
+  <dep from="13" to="10" type="mark"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="9" to="13" type="ccomp"/>
+  <dep from="13" to="14" type="acomp"/>
+  <dep from="2" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Reason">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Action">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Certainty">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Content">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

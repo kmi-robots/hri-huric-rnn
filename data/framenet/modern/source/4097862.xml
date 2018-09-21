@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097862">
+ <sentence>
+  Taiwan has not been permitted to join the Australia Group .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="taiwan" pos="NNP" surface="Taiwan"/>
+  <token id="2" lemma="have" pos="VBZ" surface="has"/>
+  <token id="3" lemma="not" pos="RB" surface="not"/>
+  <token id="4" lemma="be" pos="VBN" surface="been"/>
+  <token id="5" lemma="permit" pos="VBN" surface="permitted"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="join" pos="VB" surface="join"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="australia" pos="NNP" surface="Australia"/>
+  <token id="10" lemma="group" pos="NNP" surface="Group"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="nsubjpass"/>
+  <dep from="5" to="2" type="aux"/>
+  <dep from="5" to="3" type="neg"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="5" to="7" type="xcomp"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="dobj"/>
+  <dep from="5" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Deny_or_grant_permission">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Action">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Becoming_a_member">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="New_member">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Group">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

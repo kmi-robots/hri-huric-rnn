@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102479">
+ <sentence>
+  Not bird flu though .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="not" pos="RB" surface="Not"/>
+  <token id="2" lemma="bird" pos="NN" surface="bird"/>
+  <token id="3" lemma="flu" pos="NN" surface="flu"/>
+  <token id="4" lemma="though" pos="RB" surface="though"/>
+  <token id="5" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="neg"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="advmod"/>
+  <dep from="3" to="5" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Ailment">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

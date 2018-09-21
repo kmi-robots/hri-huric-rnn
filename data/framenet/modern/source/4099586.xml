@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099586">
+ <sentence>
+  Homeland security panel drops in
+ </sentence>
+ <tokens>
+  <token id="1" lemma="homeland" pos="NN" surface="Homeland"/>
+  <token id="2" lemma="security" pos="NN" surface="security"/>
+  <token id="3" lemma="panel" pos="NN" surface="panel"/>
+  <token id="4" lemma="drop" pos="VBZ" surface="drops"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_at_risk">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Asset">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Foreign_or_domestic_country">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Current_country">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

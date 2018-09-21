@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148222">
+ <sentence>
+  " I know , sir , I know ; but it shook me , sir , and there 's no use to deny it .
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="3" lemma="know" pos="VBP" surface="know"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="sir" pos="NN" surface="sir"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="8" lemma="know" pos="VBP" surface="know"/>
+  <token id="9" lemma=";" pos=":" surface=";"/>
+  <token id="10" lemma="but" pos="CC" surface="but"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="12" lemma="shake" pos="VBD" surface="shook"/>
+  <token id="13" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="sir" pos="NN" surface="sir"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="and" pos="CC" surface="and"/>
+  <token id="18" lemma="there" pos="EX" surface="there"/>
+  <token id="19" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="20" lemma="no" pos="DT" surface="no"/>
+  <token id="21" lemma="use" pos="NN" surface="use"/>
+  <token id="22" lemma="to" pos="TO" surface="to"/>
+  <token id="23" lemma="deny" pos="VB" surface="deny"/>
+  <token id="24" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="12" to="1" type="punct"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="12" to="3" type="ccomp"/>
+  <dep from="8" to="4" type="punct"/>
+  <dep from="8" to="5" type="npadvmod"/>
+  <dep from="8" to="6" type="punct"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="3" to="8" type="parataxis"/>
+  <dep from="12" to="9" type="punct"/>
+  <dep from="12" to="10" type="cc"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="dobj"/>
+  <dep from="12" to="14" type="punct"/>
+  <dep from="12" to="15" type="npadvmod"/>
+  <dep from="12" to="16" type="punct"/>
+  <dep from="12" to="17" type="cc"/>
+  <dep from="19" to="18" type="expl"/>
+  <dep from="12" to="19" type="conj"/>
+  <dep from="21" to="20" type="det"/>
+  <dep from="19" to="21" type="attr"/>
+  <dep from="23" to="22" type="aux"/>
+  <dep from="21" to="23" type="acl"/>
+  <dep from="23" to="24" type="dobj"/>
+  <dep from="12" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Affirm_or_deny">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Awareness">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Awareness">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Experiencer_obj">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Experiencer">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Stimulus">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Purpose">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

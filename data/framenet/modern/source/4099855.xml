@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099855">
+ <sentence>
+  That facility came online in 2001 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="that" pos="DT" surface="That"/>
+  <token id="2" lemma="facility" pos="NN" surface="facility"/>
+  <token id="3" lemma="come" pos="VBD" surface="came"/>
+  <token id="4" lemma="online" pos="RB" surface="online"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="2001" pos="CD" surface="2001"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="advmod"/>
+  <dep from="3" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="3" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

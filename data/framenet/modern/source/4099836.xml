@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099836">
+ <sentence>
+  Additionally , over the years , Syria has solicited proposals from other countries including Argentina , India , and Italy .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="additionally" pos="RB" surface="Additionally"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="over" pos="IN" surface="over"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="year" pos="NNS" surface="years"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="syria" pos="NNP" surface="Syria"/>
+  <token id="8" lemma="have" pos="VBZ" surface="has"/>
+  <token id="9" lemma="solicit" pos="VBN" surface="solicited"/>
+  <token id="10" lemma="proposal" pos="NNS" surface="proposals"/>
+  <token id="11" lemma="from" pos="IN" surface="from"/>
+  <token id="12" lemma="other" pos="JJ" surface="other"/>
+  <token id="13" lemma="country" pos="NNS" surface="countries"/>
+  <token id="14" lemma="include" pos="VBG" surface="including"/>
+  <token id="15" lemma="argentina" pos="NNP" surface="Argentina"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="india" pos="NNP" surface="India"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="and" pos="CC" surface="and"/>
+  <token id="20" lemma="italy" pos="NNP" surface="Italy"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="advmod"/>
+  <dep from="9" to="2" type="punct"/>
+  <dep from="9" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="9" to="6" type="punct"/>
+  <dep from="9" to="7" type="nsubj"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="15" to="17" type="conj"/>
+  <dep from="17" to="18" type="punct"/>
+  <dep from="17" to="19" type="cc"/>
+  <dep from="17" to="20" type="conj"/>
+  <dep from="9" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Inclusion">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Total">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

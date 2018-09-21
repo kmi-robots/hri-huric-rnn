@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099391">
+ <sentence>
+  Some groups in the past have tried to acquire a CBW capability , but have lacked the technical expertise to do so .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="some" pos="DT" surface="Some"/>
+  <token id="2" lemma="group" pos="NNS" surface="groups"/>
+  <token id="3" lemma="in" pos="IN" surface="in"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="past" pos="NN" surface="past"/>
+  <token id="6" lemma="have" pos="VBP" surface="have"/>
+  <token id="7" lemma="try" pos="VBN" surface="tried"/>
+  <token id="8" lemma="to" pos="TO" surface="to"/>
+  <token id="9" lemma="acquire" pos="VB" surface="acquire"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="cbw" pos="NNP" surface="CBW"/>
+  <token id="12" lemma="capability" pos="NN" surface="capability"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="but" pos="CC" surface="but"/>
+  <token id="15" lemma="have" pos="VBP" surface="have"/>
+  <token id="16" lemma="lack" pos="VBN" surface="lacked"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="technical" pos="JJ" surface="technical"/>
+  <token id="19" lemma="expertise" pos="NN" surface="expertise"/>
+  <token id="20" lemma="to" pos="TO" surface="to"/>
+  <token id="21" lemma="do" pos="VB" surface="do"/>
+  <token id="22" lemma="so" pos="RB" surface="so"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="7" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="7" to="9" type="xcomp"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="9" to="12" type="dobj"/>
+  <dep from="7" to="13" type="punct"/>
+  <dep from="7" to="14" type="cc"/>
+  <dep from="16" to="15" type="aux"/>
+  <dep from="7" to="16" type="conj"/>
+  <dep from="19" to="17" type="det"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="16" to="19" type="dobj"/>
+  <dep from="21" to="20" type="aux"/>
+  <dep from="19" to="21" type="relcl"/>
+  <dep from="21" to="22" type="advmod"/>
+  <dep from="7" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Attempt">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Getting">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Expertise">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Knowledge">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Protagonist">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Behavior_product">
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Capability">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Act">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

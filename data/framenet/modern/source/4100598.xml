@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100598">
+ <sentence>
+  Farther out , both north and south , are the sweeping curves of the Royal and Grand Canals .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="farther" pos="RB" surface="Farther"/>
+  <token id="2" lemma="out" pos="RB" surface="out"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="both" pos="CC" surface="both"/>
+  <token id="5" lemma="north" pos="NN" surface="north"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="south" pos="NN" surface="south"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="be" pos="VBP" surface="are"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="sweeping" pos="JJ" surface="sweeping"/>
+  <token id="12" lemma="curve" pos="NNS" surface="curves"/>
+  <token id="13" lemma="of" pos="IN" surface="of"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="royal" pos="NNP" surface="Royal"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="grand" pos="NNP" surface="Grand"/>
+  <token id="18" lemma="canals" pos="NNPS" surface="Canals"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="advmod"/>
+  <dep from="9" to="2" type="advmod"/>
+  <dep from="9" to="3" type="punct"/>
+  <dep from="5" to="4" type="preconj"/>
+  <dep from="9" to="5" type="nsubj"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="5" to="7" type="conj"/>
+  <dep from="9" to="8" type="punct"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="attr"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="18" to="14" type="det"/>
+  <dep from="18" to="15" type="nmod"/>
+  <dep from="15" to="16" type="cc"/>
+  <dep from="15" to="17" type="conj"/>
+  <dep from="13" to="18" type="pobj"/>
+  <dep from="9" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Shapes">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Shape_prop">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Distance">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

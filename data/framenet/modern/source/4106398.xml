@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106398">
+ <sentence>
+  Goodwill provides jobs at Goodwill .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="goodwill" pos="NNP" surface="Goodwill"/>
+  <token id="2" lemma="provide" pos="VBZ" surface="provides"/>
+  <token id="3" lemma="job" pos="NNS" surface="jobs"/>
+  <token id="4" lemma="at" pos="IN" surface="at"/>
+  <token id="5" lemma="goodwill" pos="NNP" surface="Goodwill"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Supplier">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_employed">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Employer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

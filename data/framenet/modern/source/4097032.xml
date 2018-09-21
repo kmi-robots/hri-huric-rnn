@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097032">
+ <sentence>
+  There are several delivery routes Iran could take for its chemical agents .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="several" pos="JJ" surface="several"/>
+  <token id="4" lemma="delivery" pos="NN" surface="delivery"/>
+  <token id="5" lemma="route" pos="NNS" surface="routes"/>
+  <token id="6" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="7" lemma="could" pos="MD" surface="could"/>
+  <token id="8" lemma="take" pos="VB" surface="take"/>
+  <token id="9" lemma="for" pos="IN" surface="for"/>
+  <token id="10" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="11" lemma="chemical" pos="JJ" surface="chemical"/>
+  <token id="12" lemma="agent" pos="NNS" surface="agents"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="amod"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="2" to="5" type="attr"/>
+  <dep from="8" to="6" type="nsubj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="5" to="8" type="relcl"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="poss"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="2" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Active_substance">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

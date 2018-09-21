@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099615">
+ <sentence>
+  Toxic gas mishap at APG [ Aberdeen Proving Ground ]
+ </sentence>
+ <tokens>
+  <token id="1" lemma="toxic" pos="JJ" surface="Toxic"/>
+  <token id="2" lemma="gas" pos="NN" surface="gas"/>
+  <token id="3" lemma="mishap" pos="NN" surface="mishap"/>
+  <token id="4" lemma="at" pos="IN" surface="at"/>
+  <token id="5" lemma="apg" pos="NNP" surface="APG"/>
+  <token id="6" lemma="[" pos="-LRB-" surface="["/>
+  <token id="7" lemma="aberdeen" pos="NNP" surface="Aberdeen"/>
+  <token id="8" lemma="proving" pos="NNP" surface="Proving"/>
+  <token id="9" lemma="ground" pos="NNP" surface="Ground"/>
+  <token id="10" lemma="]" pos="-RRB-" surface="]"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="amod"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="9" to="6" type="punct"/>
+  <dep from="9" to="7" type="compound"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Toxic_substance">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Toxic_substance">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Catastrophe">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Undesirable_event">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

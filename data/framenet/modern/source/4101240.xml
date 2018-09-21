@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101240">
+ <sentence>
+  Disease took a further toll .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="disease" pos="NNP" surface="Disease"/>
+  <token id="2" lemma="take" pos="VBD" surface="took"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="further" pos="JJ" surface="further"/>
+  <token id="5" lemma="toll" pos="NN" surface="toll"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Ailment">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Class">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

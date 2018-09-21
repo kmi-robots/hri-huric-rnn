@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4104022">
+ <sentence>
+  The business and financial center and the signature soaring architecture are on Hong Kong Island .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="business" pos="NN" surface="business"/>
+  <token id="3" lemma="and" pos="CC" surface="and"/>
+  <token id="4" lemma="financial" pos="JJ" surface="financial"/>
+  <token id="5" lemma="center" pos="NN" surface="center"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="signature" pos="NN" surface="signature"/>
+  <token id="9" lemma="soar" pos="VBG" surface="soaring"/>
+  <token id="10" lemma="architecture" pos="NN" surface="architecture"/>
+  <token id="11" lemma="be" pos="VBP" surface="are"/>
+  <token id="12" lemma="on" pos="IN" surface="on"/>
+  <token id="13" lemma="hong" pos="NNP" surface="Hong"/>
+  <token id="14" lemma="kong" pos="NNP" surface="Kong"/>
+  <token id="15" lemma="island" pos="NNP" surface="Island"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="det"/>
+  <dep from="5" to="2" type="nmod"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="11" to="5" type="nsubj"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="10" to="8" type="nmod"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="5" to="10" type="conj"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="12" to="15" type="pobj"/>
+  <dep from="11" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Distinctiveness">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Feature">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Spatial_contact">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101103">
+ <sentence>
+  Additional catalysts for the valley 's growth came from World War II .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="additional" pos="JJ" surface="Additional"/>
+  <token id="2" lemma="catalyst" pos="NNS" surface="catalysts"/>
+  <token id="3" lemma="for" pos="IN" surface="for"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="valley" pos="NN" surface="valley"/>
+  <token id="6" lemma="'s" pos="POS" surface="'s"/>
+  <token id="7" lemma="growth" pos="NN" surface="growth"/>
+  <token id="8" lemma="come" pos="VBD" surface="came"/>
+  <token id="9" lemma="from" pos="IN" surface="from"/>
+  <token id="10" lemma="world" pos="NNP" surface="World"/>
+  <token id="11" lemma="war" pos="NNP" surface="War"/>
+  <token id="12" lemma="ii" pos="NNP" surface="II"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="8" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="7" to="5" type="poss"/>
+  <dep from="5" to="6" type="case"/>
+  <dep from="3" to="7" type="pobj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="compound"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="8" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Class">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Cause_expansion">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

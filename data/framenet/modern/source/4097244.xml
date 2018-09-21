@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097244">
+ <sentence>
+  The shortest route , depending on weapon design , could be to purchase or steal fissile material .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="short" pos="JJS" surface="shortest"/>
+  <token id="3" lemma="route" pos="NN" surface="route"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="depend" pos="VBG" surface="depending"/>
+  <token id="6" lemma="on" pos="IN" surface="on"/>
+  <token id="7" lemma="weapon" pos="NN" surface="weapon"/>
+  <token id="8" lemma="design" pos="NN" surface="design"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="could" pos="MD" surface="could"/>
+  <token id="11" lemma="be" pos="VB" surface="be"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="purchase" pos="VB" surface="purchase"/>
+  <token id="14" lemma="or" pos="CC" surface="or"/>
+  <token id="15" lemma="steal" pos="VB" surface="steal"/>
+  <token id="16" lemma="fissile" pos="NN" surface="fissile"/>
+  <token id="17" lemma="material" pos="NN" surface="material"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="11" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="3" to="5" type="acl"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="3" to="9" type="punct"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="11" to="13" type="xcomp"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="15" to="17" type="dobj"/>
+  <dep from="11" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Contingency">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Determinant">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Coming_up_with">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Idea">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Commerce_buy">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Theft">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102443">
+ <sentence>
+  Paula_Zahn : Speeding up production of vaccines and buying the anti-viral drugs ( ( Tamoflu ) ) and ( ( Rolenzo ) ) which in some cases prevent flu infection .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="paula_zahn" pos="VB" surface="Paula_Zahn"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="speed" pos="VBG" surface="Speeding"/>
+  <token id="4" lemma="up" pos="RP" surface="up"/>
+  <token id="5" lemma="production" pos="NN" surface="production"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="vaccine" pos="NNS" surface="vaccines"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="buy" pos="VBG" surface="buying"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="anti-viral" pos="JJ" surface="anti-viral"/>
+  <token id="12" lemma="drug" pos="NNS" surface="drugs"/>
+  <token id="13" lemma="(" pos="-LRB-" surface="("/>
+  <token id="14" lemma="(" pos="-LRB-" surface="("/>
+  <token id="15" lemma="tamoflu" pos="NNP" surface="Tamoflu"/>
+  <token id="16" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="17" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="18" lemma="and" pos="CC" surface="and"/>
+  <token id="19" lemma="(" pos="-LRB-" surface="("/>
+  <token id="20" lemma="(" pos="-LRB-" surface="("/>
+  <token id="21" lemma="rolenzo" pos="NNP" surface="Rolenzo"/>
+  <token id="22" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="23" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="24" lemma="which" pos="WDT" surface="which"/>
+  <token id="25" lemma="in" pos="IN" surface="in"/>
+  <token id="26" lemma="some" pos="DT" surface="some"/>
+  <token id="27" lemma="case" pos="NNS" surface="cases"/>
+  <token id="28" lemma="prevent" pos="VBP" surface="prevent"/>
+  <token id="29" lemma="flu" pos="NN" surface="flu"/>
+  <token id="30" lemma="infection" pos="NN" surface="infection"/>
+  <token id="31" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prt"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="3" to="8" type="cc"/>
+  <dep from="3" to="9" type="conj"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="dobj"/>
+  <dep from="15" to="13" type="punct"/>
+  <dep from="15" to="14" type="punct"/>
+  <dep from="12" to="15" type="appos"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="3" to="17" type="punct"/>
+  <dep from="3" to="18" type="cc"/>
+  <dep from="21" to="19" type="punct"/>
+  <dep from="21" to="20" type="punct"/>
+  <dep from="3" to="21" type="conj"/>
+  <dep from="21" to="22" type="punct"/>
+  <dep from="21" to="23" type="punct"/>
+  <dep from="28" to="24" type="nsubj"/>
+  <dep from="28" to="25" type="prep"/>
+  <dep from="27" to="26" type="det"/>
+  <dep from="25" to="27" type="pobj"/>
+  <dep from="21" to="28" type="relcl"/>
+  <dep from="30" to="29" type="compound"/>
+  <dep from="28" to="30" type="dobj"/>
+  <dep from="3" to="31" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Commerce_buy">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="26"/>
+    </lexicalUnit>
+    <frameElement type="Denoted_quantity">
+     <token id="26"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="27"/>
+    </frameElement>
+   </frame>
+   <frame name="Preventing_or_letting">
+    <lexicalUnit>
+     <token id="28"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="29"/>
+     <token id="30"/>
+    </frameElement>
+    <frameElement type="Potential_hindrance">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Potential_hindrance">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

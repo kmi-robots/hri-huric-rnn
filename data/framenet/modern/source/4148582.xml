@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148582">
+ <sentence>
+  With the death of Garcia , the pursuit might cease , since such a death might frighten others from the task .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="with" pos="IN" surface="With"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="death" pos="NN" surface="death"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="garcia" pos="NNP" surface="Garcia"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="pursuit" pos="NN" surface="pursuit"/>
+  <token id="9" lemma="may" pos="MD" surface="might"/>
+  <token id="10" lemma="cease" pos="VB" surface="cease"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="since" pos="IN" surface="since"/>
+  <token id="13" lemma="such" pos="PDT" surface="such"/>
+  <token id="14" lemma="a" pos="DT" surface="a"/>
+  <token id="15" lemma="death" pos="NN" surface="death"/>
+  <token id="16" lemma="may" pos="MD" surface="might"/>
+  <token id="17" lemma="frighten" pos="VB" surface="frighten"/>
+  <token id="18" lemma="other" pos="NNS" surface="others"/>
+  <token id="19" lemma="from" pos="IN" surface="from"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="task" pos="NN" surface="task"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="10" to="6" type="punct"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="10" to="8" type="nsubj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="17" to="12" type="mark"/>
+  <dep from="15" to="13" type="predet"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="17" to="15" type="nsubj"/>
+  <dep from="17" to="16" type="aux"/>
+  <dep from="10" to="17" type="advcl"/>
+  <dep from="17" to="18" type="dobj"/>
+  <dep from="17" to="19" type="prep"/>
+  <dep from="21" to="20" type="det"/>
+  <dep from="19" to="21" type="pobj"/>
+  <dep from="10" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Process_stop">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Process">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Death">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Death">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Cotheme">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Experiencer_obj">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Experiencer">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Stimulus">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Result">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Added_set">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

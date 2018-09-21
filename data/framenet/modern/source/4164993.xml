@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4164993">
+ <sentence>
+  So far there have been no injuries and no homes have yet been damaged , but one building storing equipment used by firefighters was burned to the ground .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="so" pos="RB" surface="So"/>
+  <token id="2" lemma="far" pos="RB" surface="far"/>
+  <token id="3" lemma="there" pos="EX" surface="there"/>
+  <token id="4" lemma="have" pos="VBP" surface="have"/>
+  <token id="5" lemma="be" pos="VBN" surface="been"/>
+  <token id="6" lemma="no" pos="DT" surface="no"/>
+  <token id="7" lemma="injury" pos="NNS" surface="injuries"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="no" pos="DT" surface="no"/>
+  <token id="10" lemma="home" pos="NNS" surface="homes"/>
+  <token id="11" lemma="have" pos="VBP" surface="have"/>
+  <token id="12" lemma="yet" pos="RB" surface="yet"/>
+  <token id="13" lemma="be" pos="VBN" surface="been"/>
+  <token id="14" lemma="damage" pos="VBN" surface="damaged"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="but" pos="CC" surface="but"/>
+  <token id="17" lemma="one" pos="CD" surface="one"/>
+  <token id="18" lemma="building" pos="NN" surface="building"/>
+  <token id="19" lemma="store" pos="VBG" surface="storing"/>
+  <token id="20" lemma="equipment" pos="NN" surface="equipment"/>
+  <token id="21" lemma="use" pos="VBN" surface="used"/>
+  <token id="22" lemma="by" pos="IN" surface="by"/>
+  <token id="23" lemma="firefighter" pos="NNS" surface="firefighters"/>
+  <token id="24" lemma="be" pos="VBD" surface="was"/>
+  <token id="25" lemma="burn" pos="VBN" surface="burned"/>
+  <token id="26" lemma="to" pos="IN" surface="to"/>
+  <token id="27" lemma="the" pos="DT" surface="the"/>
+  <token id="28" lemma="ground" pos="NN" surface="ground"/>
+  <token id="29" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="advmod"/>
+  <dep from="5" to="2" type="advmod"/>
+  <dep from="5" to="3" type="expl"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="attr"/>
+  <dep from="5" to="8" type="cc"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="14" to="10" type="nsubjpass"/>
+  <dep from="14" to="11" type="aux"/>
+  <dep from="14" to="12" type="advmod"/>
+  <dep from="14" to="13" type="auxpass"/>
+  <dep from="5" to="14" type="conj"/>
+  <dep from="14" to="15" type="punct"/>
+  <dep from="14" to="16" type="cc"/>
+  <dep from="20" to="17" type="nummod"/>
+  <dep from="20" to="18" type="compound"/>
+  <dep from="20" to="19" type="amod"/>
+  <dep from="25" to="20" type="nsubjpass"/>
+  <dep from="20" to="21" type="acl"/>
+  <dep from="21" to="22" type="agent"/>
+  <dep from="22" to="23" type="pobj"/>
+  <dep from="25" to="24" type="auxpass"/>
+  <dep from="14" to="25" type="conj"/>
+  <dep from="25" to="26" type="prep"/>
+  <dep from="28" to="27" type="det"/>
+  <dep from="26" to="28" type="pobj"/>
+  <dep from="25" to="29" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Experience_bodily_harm">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Damaging">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Fire_burning">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Fuel">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Subregion">
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Using">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Instrument">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Continued_state_of_affairs">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Reference_occasion">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="State_of_affairs">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Containing">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Contents">
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Container">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

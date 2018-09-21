@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097764">
+ <sentence>
+  The Soviet nuclear weapon program began during World War II and culminated in a successful atomic bomb test in 1949 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="soviet" pos="JJ" surface="Soviet"/>
+  <token id="3" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="4" lemma="weapon" pos="NN" surface="weapon"/>
+  <token id="5" lemma="program" pos="NN" surface="program"/>
+  <token id="6" lemma="begin" pos="VBD" surface="began"/>
+  <token id="7" lemma="during" pos="IN" surface="during"/>
+  <token id="8" lemma="world" pos="NNP" surface="World"/>
+  <token id="9" lemma="war" pos="NNP" surface="War"/>
+  <token id="10" lemma="ii" pos="NNP" surface="II"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="culminate" pos="VBD" surface="culminated"/>
+  <token id="13" lemma="in" pos="IN" surface="in"/>
+  <token id="14" lemma="a" pos="DT" surface="a"/>
+  <token id="15" lemma="successful" pos="JJ" surface="successful"/>
+  <token id="16" lemma="atomic" pos="JJ" surface="atomic"/>
+  <token id="17" lemma="bomb" pos="NN" surface="bomb"/>
+  <token id="18" lemma="test" pos="NN" surface="test"/>
+  <token id="19" lemma="in" pos="IN" surface="in"/>
+  <token id="20" lemma="1949" pos="CD" surface="1949"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="det"/>
+  <dep from="5" to="2" type="amod"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="10" to="8" type="compound"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="6" to="11" type="cc"/>
+  <dep from="6" to="12" type="conj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="18" to="14" type="det"/>
+  <dep from="18" to="15" type="amod"/>
+  <dep from="18" to="16" type="amod"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="13" to="18" type="pobj"/>
+  <dep from="12" to="19" type="prep"/>
+  <dep from="19" to="20" type="pobj"/>
+  <dep from="6" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Salient_entity">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Process_start">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Successful_action">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Means">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Operational_testing">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

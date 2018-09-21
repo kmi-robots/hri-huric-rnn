@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101924">
+ <sentence>
+  15 BILL : [ laughs ]
+ </sentence>
+ <tokens>
+  <token id="1" lemma="15" pos="CD" surface="15"/>
+  <token id="2" lemma="bill" pos="NN" surface="BILL"/>
+  <token id="3" lemma=":" pos=":" surface=":"/>
+  <token id="4" lemma="[" pos="-LRB-" surface="["/>
+  <token id="5" lemma="laugh" pos="NNS" surface="laughs"/>
+  <token id="6" lemma="]" pos="-RRB-" surface="]"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="5" to="4" type="punct"/>
+  <dep from="2" to="5" type="appos"/>
+  <dep from="5" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Make_noise">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

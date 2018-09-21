@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101030">
+ <sentence>
+  Around 3000 b.c. , native Archaic Indians began to develop a lasting hunting and gathering culture .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="around" pos="RB" surface="Around"/>
+  <token id="2" lemma="3000" pos="CD" surface="3000"/>
+  <token id="3" lemma="b.c." pos="NN" surface="b.c."/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="native" pos="JJ" surface="native"/>
+  <token id="6" lemma="archaic" pos="NNP" surface="Archaic"/>
+  <token id="7" lemma="indians" pos="NNPS" surface="Indians"/>
+  <token id="8" lemma="begin" pos="VBD" surface="began"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="develop" pos="VB" surface="develop"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="last" pos="VBG" surface="lasting"/>
+  <token id="13" lemma="hunting" pos="NN" surface="hunting"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="gathering" pos="NN" surface="gathering"/>
+  <token id="16" lemma="culture" pos="NN" surface="culture"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="advmod"/>
+  <dep from="3" to="2" type="nummod"/>
+  <dep from="8" to="3" type="npadvmod"/>
+  <dep from="8" to="4" type="punct"/>
+  <dep from="7" to="5" type="amod"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="8" to="10" type="xcomp"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="dobj"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="15" to="16" type="dobj"/>
+  <dep from="8" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Indigenous_origin">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Activity_start">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_to_make_progress">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Project">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Reference_quantity">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Denoted_quantity">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Food_gathering">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Hunting">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Duration_description">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Eventuality">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

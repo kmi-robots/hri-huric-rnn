@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097441">
+ <sentence>
+  He said Pakistan would not export nuclear technology ( 7212 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="say" pos="VBD" surface="said"/>
+  <token id="3" lemma="pakistan" pos="NNP" surface="Pakistan"/>
+  <token id="4" lemma="would" pos="MD" surface="would"/>
+  <token id="5" lemma="not" pos="RB" surface="not"/>
+  <token id="6" lemma="export" pos="VB" surface="export"/>
+  <token id="7" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="8" lemma="technology" pos="NN" surface="technology"/>
+  <token id="9" lemma="(" pos="-LRB-" surface="("/>
+  <token id="10" lemma="7212" pos="CD" surface="7212"/>
+  <token id="11" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="6" to="3" type="nsubj"/>
+  <dep from="6" to="4" type="aux"/>
+  <dep from="6" to="5" type="neg"/>
+  <dep from="2" to="6" type="ccomp"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="8" to="10" type="appos"/>
+  <dep from="8" to="11" type="punct"/>
+  <dep from="2" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Exporting">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Exporter">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Artifact">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Artifact">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

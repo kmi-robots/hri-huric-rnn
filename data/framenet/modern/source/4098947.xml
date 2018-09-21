@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098947">
+ <sentence>
+  QN : Does Pakistan possess the technology to produce biological weapons ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="do" pos="VBZ" surface="Does"/>
+  <token id="4" lemma="pakistan" pos="NNP" surface="Pakistan"/>
+  <token id="5" lemma="possess" pos="VB" surface="possess"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="technology" pos="NN" surface="technology"/>
+  <token id="8" lemma="to" pos="TO" surface="to"/>
+  <token id="9" lemma="produce" pos="VB" surface="produce"/>
+  <token id="10" lemma="biological" pos="JJ" surface="biological"/>
+  <token id="11" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="12" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="5" to="9" type="xcomp"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="5" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Artifact">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Use">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Artifact">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Producer">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Product">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

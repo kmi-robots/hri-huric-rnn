@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097076">
+ <sentence>
+  The delivery was made in 10 consignments of 50 tons each , for an estimated $924,000 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="delivery" pos="NN" surface="delivery"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="make" pos="VBN" surface="made"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="10" pos="CD" surface="10"/>
+  <token id="7" lemma="consignment" pos="NNS" surface="consignments"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="50" pos="CD" surface="50"/>
+  <token id="10" lemma="ton" pos="NNS" surface="tons"/>
+  <token id="11" lemma="each" pos="DT" surface="each"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="for" pos="IN" surface="for"/>
+  <token id="14" lemma="an" pos="DT" surface="an"/>
+  <token id="15" lemma="estimate" pos="VBN" surface="estimated"/>
+  <token id="16" lemma="$924,000" pos="NN" surface="$924,000"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="nummod"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="nummod"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="7" to="11" type="appos"/>
+  <dep from="4" to="12" type="punct"/>
+  <dep from="4" to="13" type="prep"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="13" to="16" type="pobj"/>
+  <dep from="4" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Delivery">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Manner">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_mass">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Estimating">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Value">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

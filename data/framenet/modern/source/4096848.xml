@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096848">
+ <sentence>
+  A true nuclear weapons delivery capability could be obtained within the next five years .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="true" pos="JJ" surface="true"/>
+  <token id="3" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="4" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="5" lemma="delivery" pos="NN" surface="delivery"/>
+  <token id="6" lemma="capability" pos="NN" surface="capability"/>
+  <token id="7" lemma="could" pos="MD" surface="could"/>
+  <token id="8" lemma="be" pos="VB" surface="be"/>
+  <token id="9" lemma="obtain" pos="VBN" surface="obtained"/>
+  <token id="10" lemma="within" pos="IN" surface="within"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="next" pos="JJ" surface="next"/>
+  <token id="13" lemma="five" pos="CD" surface="five"/>
+  <token id="14" lemma="year" pos="NNS" surface="years"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="det"/>
+  <dep from="6" to="2" type="amod"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="9" to="6" type="nsubjpass"/>
+  <dep from="9" to="7" type="aux"/>
+  <dep from="9" to="8" type="auxpass"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="14" to="11" type="det"/>
+  <dep from="14" to="12" type="amod"/>
+  <dep from="14" to="13" type="nummod"/>
+  <dep from="10" to="14" type="pobj"/>
+  <dep from="9" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Delivery">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Capability">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Getting">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Count">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Relative_time">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

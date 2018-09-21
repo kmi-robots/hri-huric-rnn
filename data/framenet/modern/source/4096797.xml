@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096797">
+ <sentence>
+  For a variety of reasons , Iraq -- feeling victorious -- declared a unilateral cease-fire on 21 April 1988 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="for" pos="IN" surface="For"/>
+  <token id="2" lemma="a" pos="DT" surface="a"/>
+  <token id="3" lemma="variety" pos="NN" surface="variety"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="reason" pos="NNS" surface="reasons"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="iraq" pos="NNP" surface="Iraq"/>
+  <token id="8" lemma="--" pos=":" surface="--"/>
+  <token id="9" lemma="feel" pos="VBG" surface="feeling"/>
+  <token id="10" lemma="victorious" pos="JJ" surface="victorious"/>
+  <token id="11" lemma="--" pos=":" surface="--"/>
+  <token id="12" lemma="declare" pos="VBD" surface="declared"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="unilateral" pos="JJ" surface="unilateral"/>
+  <token id="15" lemma="cease-fire" pos="NN" surface="cease-fire"/>
+  <token id="16" lemma="on" pos="IN" surface="on"/>
+  <token id="17" lemma="21" pos="CD" surface="21"/>
+  <token id="18" lemma="april" pos="NNP" surface="April"/>
+  <token id="19" lemma="1988" pos="CD" surface="1988"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="12" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="12" to="6" type="punct"/>
+  <dep from="12" to="7" type="nsubj"/>
+  <dep from="12" to="8" type="punct"/>
+  <dep from="12" to="9" type="advcl"/>
+  <dep from="9" to="10" type="acomp"/>
+  <dep from="12" to="11" type="punct"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="12" to="15" type="dobj"/>
+  <dep from="12" to="16" type="prep"/>
+  <dep from="18" to="17" type="nummod"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="18" to="19" type="nummod"/>
+  <dep from="12" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Feeling">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Experiencer">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Emotional_state">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Depictive">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Finish_competition">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Competitor">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

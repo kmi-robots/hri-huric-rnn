@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100281">
+ <sentence>
+  The Entrepreneur Is the New Madonna
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="entrepreneur" pos="NNP" surface="Entrepreneur"/>
+  <token id="3" lemma="be" pos="VBZ" surface="Is"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="new" pos="NNP" surface="New"/>
+  <token id="6" lemma="madonna" pos="NNP" surface="Madonna"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="3" to="6" type="attr"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Age">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

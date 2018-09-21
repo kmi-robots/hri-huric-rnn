@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097098">
+ <sentence>
+  Iran allegedly supplied Libya with chemical agents in 1987 in exchange for naval mines .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="2" lemma="allegedly" pos="RB" surface="allegedly"/>
+  <token id="3" lemma="supply" pos="VBD" surface="supplied"/>
+  <token id="4" lemma="libya" pos="NNP" surface="Libya"/>
+  <token id="5" lemma="with" pos="IN" surface="with"/>
+  <token id="6" lemma="chemical" pos="JJ" surface="chemical"/>
+  <token id="7" lemma="agent" pos="NNS" surface="agents"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="1987" pos="CD" surface="1987"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="exchange" pos="NN" surface="exchange"/>
+  <token id="12" lemma="for" pos="IN" surface="for"/>
+  <token id="13" lemma="naval" pos="JJ" surface="naval"/>
+  <token id="14" lemma="mine" pos="NNS" surface="mines"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="3" to="5" type="prep"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="3" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="3" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="3" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Unattributed_information">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Reported_fact">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Reported_fact">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Supplier">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Circumstances">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Active_substance">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Exchange">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme_2">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

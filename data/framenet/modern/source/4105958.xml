@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105958">
+ <sentence>
+  The interior is a comfortable amalgam of Chinese and Western design , with an impressive main lobby .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="interior" pos="NNP" surface="interior"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="comfortable" pos="JJ" surface="comfortable"/>
+  <token id="6" lemma="amalgam" pos="NN" surface="amalgam"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="chinese" pos="JJ" surface="Chinese"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="western" pos="JJ" surface="Western"/>
+  <token id="11" lemma="design" pos="NN" surface="design"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="with" pos="IN" surface="with"/>
+  <token id="14" lemma="an" pos="DT" surface="an"/>
+  <token id="15" lemma="impressive" pos="JJ" surface="impressive"/>
+  <token id="16" lemma="main" pos="JJ" surface="main"/>
+  <token id="17" lemma="lobby" pos="NN" surface="lobby"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="attr"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="11" to="8" type="amod"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="7" to="11" type="pobj"/>
+  <dep from="3" to="12" type="punct"/>
+  <dep from="3" to="13" type="prep"/>
+  <dep from="17" to="14" type="det"/>
+  <dep from="17" to="15" type="amod"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="13" to="17" type="pobj"/>
+  <dep from="3" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Part_inner_outer">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Stimulus_focus">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Stimulus">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Building_subparts">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Building_part">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

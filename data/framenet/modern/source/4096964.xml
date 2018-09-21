@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096964">
+ <sentence>
+  Other Names : Tehran Polytechnic ; Amirkabir University of Technology
+ </sentence>
+ <tokens>
+  <token id="1" lemma="other" pos="JJ" surface="Other"/>
+  <token id="2" lemma="names" pos="NNPS" surface="Names"/>
+  <token id="3" lemma=":" pos=":" surface=":"/>
+  <token id="4" lemma="tehran" pos="NNP" surface="Tehran"/>
+  <token id="5" lemma="polytechnic" pos="NNP" surface="Polytechnic"/>
+  <token id="6" lemma=";" pos=":" surface=";"/>
+  <token id="7" lemma="amirkabir" pos="NNP" surface="Amirkabir"/>
+  <token id="8" lemma="university" pos="NNP" surface="University"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="technology" pos="NNP" surface="Technology"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="2" to="5" type="appos"/>
+  <dep from="5" to="6" type="punct"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="conj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_named">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Name">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

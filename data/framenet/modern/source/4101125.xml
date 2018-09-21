@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101125">
+ <sentence>
+  As a result , more casinos emerged along the Strip .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="as" pos="IN" surface="As"/>
+  <token id="2" lemma="a" pos="DT" surface="a"/>
+  <token id="3" lemma="result" pos="NN" surface="result"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="more" pos="JJR" surface="more"/>
+  <token id="6" lemma="casino" pos="NNS" surface="casinos"/>
+  <token id="7" lemma="emerge" pos="VBD" surface="emerged"/>
+  <token id="8" lemma="along" pos="IN" surface="along"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="strip" pos="NNP" surface="Strip"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="7" to="4" type="punct"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="7" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Effect">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Class">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Coming_to_be">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

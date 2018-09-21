@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101150">
+ <sentence>
+  Wynn 's casinos have also set new standards .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="wynn" pos="NNP" surface="Wynn"/>
+  <token id="2" lemma="'s" pos="POS" surface="'s"/>
+  <token id="3" lemma="casino" pos="NNS" surface="casinos"/>
+  <token id="4" lemma="have" pos="VBP" surface="have"/>
+  <token id="5" lemma="also" pos="RB" surface="also"/>
+  <token id="6" lemma="set" pos="VBN" surface="set"/>
+  <token id="7" lemma="new" pos="JJ" surface="new"/>
+  <token id="8" lemma="standard" pos="NNS" surface="standards"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="poss"/>
+  <dep from="1" to="2" type="case"/>
+  <dep from="6" to="3" type="nsubj"/>
+  <dep from="6" to="4" type="aux"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="6" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Age">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101570">
+ <sentence>
+  The drug lords who claimed responsibility said they would blow up the Bogota newspaper 's offices if it continued to distribute in Medellin .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="drug" pos="NN" surface="drug"/>
+  <token id="3" lemma="lord" pos="NNS" surface="lords"/>
+  <token id="4" lemma="who" pos="WP" surface="who"/>
+  <token id="5" lemma="claim" pos="VBD" surface="claimed"/>
+  <token id="6" lemma="responsibility" pos="NN" surface="responsibility"/>
+  <token id="7" lemma="say" pos="VBD" surface="said"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="9" lemma="would" pos="MD" surface="would"/>
+  <token id="10" lemma="blow" pos="VB" surface="blow"/>
+  <token id="11" lemma="up" pos="RP" surface="up"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="bogota" pos="NNP" surface="Bogota"/>
+  <token id="14" lemma="newspaper" pos="NN" surface="newspaper"/>
+  <token id="15" lemma="'s" pos="POS" surface="'s"/>
+  <token id="16" lemma="office" pos="NNS" surface="offices"/>
+  <token id="17" lemma="if" pos="IN" surface="if"/>
+  <token id="18" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="19" lemma="continue" pos="VBD" surface="continued"/>
+  <token id="20" lemma="to" pos="TO" surface="to"/>
+  <token id="21" lemma="distribute" pos="VB" surface="distribute"/>
+  <token id="22" lemma="in" pos="IN" surface="in"/>
+  <token id="23" lemma="medellin" pos="NNP" surface="Medellin"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="7" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="3" to="5" type="relcl"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="10" to="8" type="nsubj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="7" to="10" type="ccomp"/>
+  <dep from="10" to="11" type="prt"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="16" to="14" type="poss"/>
+  <dep from="14" to="15" type="case"/>
+  <dep from="10" to="16" type="dobj"/>
+  <dep from="19" to="17" type="mark"/>
+  <dep from="19" to="18" type="nsubj"/>
+  <dep from="10" to="19" type="advcl"/>
+  <dep from="21" to="20" type="aux"/>
+  <dep from="19" to="21" type="xcomp"/>
+  <dep from="21" to="22" type="prep"/>
+  <dep from="22" to="23" type="pobj"/>
+  <dep from="7" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Claim_ownership">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Claimant">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Claimant">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Property">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_obligated">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Responsible_party">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Responsible_party">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Text">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Text">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Building_subparts">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Building_part">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Activity_ongoing">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Dispersal">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

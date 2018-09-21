@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099043">
+ <sentence>
+  QN : Was an associate of bin Laden arrested in the Middle East ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="be" pos="VBD" surface="Was"/>
+  <token id="4" lemma="an" pos="DT" surface="an"/>
+  <token id="5" lemma="associate" pos="NN" surface="associate"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="bin" pos="NNP" surface="bin"/>
+  <token id="8" lemma="laden" pos="NNP" surface="Laden"/>
+  <token id="9" lemma="arrest" pos="VBN" surface="arrested"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="middle" pos="NNP" surface="Middle"/>
+  <token id="13" lemma="east" pos="NNP" surface="East"/>
+  <token id="14" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="attr"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="acl"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Collaboration">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Partner_2">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Partner_1">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Arrest">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Suspect">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Offense">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

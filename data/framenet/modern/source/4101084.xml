@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101084">
+ <sentence>
+  The railroad needed a way station , and Las Vegas was the place .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="railroad" pos="NN" surface="railroad"/>
+  <token id="3" lemma="need" pos="VBD" surface="needed"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="way" pos="NN" surface="way"/>
+  <token id="6" lemma="station" pos="NN" surface="station"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="las" pos="NNP" surface="Las"/>
+  <token id="10" lemma="vegas" pos="NNP" surface="Vegas"/>
+  <token id="11" lemma="be" pos="VBD" surface="was"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="place" pos="NN" surface="place"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="punct"/>
+  <dep from="3" to="8" type="cc"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="3" to="11" type="conj"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="attr"/>
+  <dep from="11" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Roadway">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Have_as_requirement">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Dependent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Required_entity">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

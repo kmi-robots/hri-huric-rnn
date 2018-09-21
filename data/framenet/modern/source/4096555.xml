@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096555">
+ <sentence>
+  Under Cooperative Threat Reduction ( CTR ) programs , Biomedpreparat has been dismantled and safety and security have been upgraded at SCQZI and SRAI .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="under" pos="IN" surface="Under"/>
+  <token id="2" lemma="cooperative" pos="NNP" surface="Cooperative"/>
+  <token id="3" lemma="threat" pos="NNP" surface="Threat"/>
+  <token id="4" lemma="reduction" pos="NNP" surface="Reduction"/>
+  <token id="5" lemma="(" pos="-LRB-" surface="("/>
+  <token id="6" lemma="ctr" pos="NNP" surface="CTR"/>
+  <token id="7" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="8" lemma="program" pos="NNS" surface="programs"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="biomedpreparat" pos="NNP" surface="Biomedpreparat"/>
+  <token id="11" lemma="have" pos="VBZ" surface="has"/>
+  <token id="12" lemma="be" pos="VBN" surface="been"/>
+  <token id="13" lemma="dismantle" pos="VBN" surface="dismantled"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="safety" pos="NN" surface="safety"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="security" pos="NN" surface="security"/>
+  <token id="18" lemma="have" pos="VBP" surface="have"/>
+  <token id="19" lemma="be" pos="VBN" surface="been"/>
+  <token id="20" lemma="upgrade" pos="VBN" surface="upgraded"/>
+  <token id="21" lemma="at" pos="IN" surface="at"/>
+  <token id="22" lemma="scqzi" pos="JJ" surface="SCQZI"/>
+  <token id="23" lemma="and" pos="CC" surface="and"/>
+  <token id="24" lemma="srai" pos="JJ" surface="SRAI"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="13" to="1" type="prep"/>
+  <dep from="4" to="2" type="compound"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="8" to="4" type="nmod"/>
+  <dep from="8" to="5" type="punct"/>
+  <dep from="8" to="6" type="nmod"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="1" to="8" type="pobj"/>
+  <dep from="13" to="9" type="punct"/>
+  <dep from="13" to="10" type="nsubjpass"/>
+  <dep from="13" to="11" type="aux"/>
+  <dep from="13" to="12" type="auxpass"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="20" to="15" type="nsubjpass"/>
+  <dep from="15" to="16" type="cc"/>
+  <dep from="15" to="17" type="conj"/>
+  <dep from="20" to="18" type="aux"/>
+  <dep from="20" to="19" type="auxpass"/>
+  <dep from="13" to="20" type="conj"/>
+  <dep from="20" to="21" type="prep"/>
+  <dep from="21" to="22" type="pobj"/>
+  <dep from="22" to="23" type="cc"/>
+  <dep from="22" to="24" type="conj"/>
+  <dep from="20" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cause_change_of_position_on_a_scale">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Destroying">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_at_risk">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

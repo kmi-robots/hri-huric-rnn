@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099698">
+ <sentence>
+  Delivery Systems
+ </sentence>
+ <tokens>
+  <token id="1" lemma="delivery" pos="NN" surface="Delivery"/>
+  <token id="2" lemma="system" pos="NNS" surface="Systems"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="0" to="2" type="root"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Gizmo">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Use">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Gizmo">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

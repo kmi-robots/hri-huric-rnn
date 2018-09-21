@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102456">
+ <sentence>
+  Pandemic flu does n't exist yet .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="pandemic" pos="JJ" surface="Pandemic"/>
+  <token id="2" lemma="flu" pos="NN" surface="flu"/>
+  <token id="3" lemma="do" pos="VBZ" surface="does"/>
+  <token id="4" lemma="n't" pos="RB" surface="n't"/>
+  <token id="5" lemma="exist" pos="VB" surface="exist"/>
+  <token id="6" lemma="yet" pos="RB" surface="yet"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="5" to="2" type="nsubj"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="neg"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="advmod"/>
+  <dep from="5" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Ailment">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

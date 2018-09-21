@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099871">
+ <sentence>
+  The SRI has allegedly taken in Iraqi scientists prior to the recent Gulf War .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="sri" pos="NNP" surface="SRI"/>
+  <token id="3" lemma="have" pos="VBZ" surface="has"/>
+  <token id="4" lemma="allegedly" pos="RB" surface="allegedly"/>
+  <token id="5" lemma="take" pos="VBN" surface="taken"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="iraqi" pos="JJ" surface="Iraqi"/>
+  <token id="8" lemma="scientist" pos="NNS" surface="scientists"/>
+  <token id="9" lemma="prior" pos="RB" surface="prior"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="recent" pos="JJ" surface="recent"/>
+  <token id="13" lemma="gulf" pos="NNP" surface="Gulf"/>
+  <token id="14" lemma="war" pos="NNP" surface="War"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="5" to="2" type="nsubj"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="5" to="9" type="advmod"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="14" to="11" type="det"/>
+  <dep from="14" to="12" type="amod"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="10" to="14" type="pobj"/>
+  <dep from="5" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Unattributed_information">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Reported_fact">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Reported_fact">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Ethnicity">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Time_vector">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_event">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Relative_time">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Focal_occasion">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

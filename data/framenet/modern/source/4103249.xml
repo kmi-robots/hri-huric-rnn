@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103249">
+ <sentence>
+  And accordingly : 1- AL-QAEDA missions and its different plans proceed according to Islamic law provision .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="and" pos="CC" surface="And"/>
+  <token id="2" lemma="accordingly" pos="RB" surface="accordingly"/>
+  <token id="3" lemma=":" pos=":" surface=":"/>
+  <token id="4" lemma="1-" pos="LS" surface="1-"/>
+  <token id="5" lemma="al-qaeda" pos="JJ" surface="AL-QAEDA"/>
+  <token id="6" lemma="mission" pos="NNS" surface="missions"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="9" lemma="different" pos="JJ" surface="different"/>
+  <token id="10" lemma="plan" pos="NNS" surface="plans"/>
+  <token id="11" lemma="proceed" pos="VBP" surface="proceed"/>
+  <token id="12" lemma="accord" pos="VBG" surface="according"/>
+  <token id="13" lemma="to" pos="IN" surface="to"/>
+  <token id="14" lemma="islamic" pos="JJ" surface="Islamic"/>
+  <token id="15" lemma="law" pos="NN" surface="law"/>
+  <token id="16" lemma="provision" pos="NN" surface="provision"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="11" to="1" type="cc"/>
+  <dep from="11" to="2" type="advmod"/>
+  <dep from="11" to="3" type="punct"/>
+  <dep from="6" to="4" type="nummod"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="11" to="6" type="nsubj"/>
+  <dep from="6" to="7" type="cc"/>
+  <dep from="10" to="8" type="poss"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="6" to="10" type="conj"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="16" to="14" type="amod"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="13" to="16" type="pobj"/>
+  <dep from="11" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Similarity">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Entities">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Project">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Process_continue">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Attributed_information">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Proposition">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Law">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Law">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

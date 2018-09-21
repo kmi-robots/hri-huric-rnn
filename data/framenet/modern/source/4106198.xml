@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106198">
+ <sentence>
+  You should always ask for a certificate of guarantee when you buy gold or jewelry .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="You"/>
+  <token id="2" lemma="should" pos="MD" surface="should"/>
+  <token id="3" lemma="always" pos="RB" surface="always"/>
+  <token id="4" lemma="ask" pos="VB" surface="ask"/>
+  <token id="5" lemma="for" pos="IN" surface="for"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="certificate" pos="NN" surface="certificate"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="guarantee" pos="NN" surface="guarantee"/>
+  <token id="10" lemma="when" pos="WRB" surface="when"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="12" lemma="buy" pos="VBP" surface="buy"/>
+  <token id="13" lemma="gold" pos="NN" surface="gold"/>
+  <token id="14" lemma="or" pos="CC" surface="or"/>
+  <token id="15" lemma="jewelry" pos="NN" surface="jewelry"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="12" to="10" type="advmod"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="4" to="12" type="advcl"/>
+  <dep from="12" to="13" type="dobj"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="4" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Request">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Containing_event">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Iterations">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Frequency">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Salient_entity">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Rate">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Documents">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Document">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Status">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Commerce_buy">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Buyer">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Accoutrements">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Accoutrement">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

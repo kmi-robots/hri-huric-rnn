@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106274">
+ <sentence>
+  Porcelain friezes adorn the rooftops and ridgepoles , telling the story of the Romance of the Three Kingdoms .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="porcelain" pos="NN" surface="Porcelain"/>
+  <token id="2" lemma="friez" pos="VBZ" surface="friezes"/>
+  <token id="3" lemma="adorn" pos="VB" surface="adorn"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="rooftop" pos="NNS" surface="rooftops"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="ridgepole" pos="NNS" surface="ridgepoles"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="tell" pos="VBG" surface="telling"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="story" pos="NN" surface="story"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="romance" pos="NNP" surface="Romance"/>
+  <token id="15" lemma="of" pos="IN" surface="of"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="three" pos="NNP" surface="Three"/>
+  <token id="18" lemma="kingdoms" pos="NNPS" surface="Kingdoms"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="5" to="7" type="conj"/>
+  <dep from="3" to="8" type="punct"/>
+  <dep from="3" to="9" type="advcl"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="18" to="16" type="det"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="15" to="18" type="pobj"/>
+  <dep from="3" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Distributed_position">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Personal_relationship">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

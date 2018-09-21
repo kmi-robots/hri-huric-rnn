@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101878">
+ <sentence>
+  What 's happenin ' Bill the Third .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="what" pos="WP" surface="What"/>
+  <token id="2" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="3" lemma="happenin" pos="NN" surface="happenin"/>
+  <token id="4" lemma="'" pos="''" surface="'"/>
+  <token id="5" lemma="bill" pos="NNP" surface="Bill"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="third" pos="NNP" surface="Third"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="attr"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="punct"/>
+  <dep from="2" to="5" type="nsubj"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="2" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Ordinal_numbers">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

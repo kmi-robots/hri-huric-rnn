@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101217">
+ <sentence>
+  The alliance became known as the Delian League .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="alliance" pos="NN" surface="alliance"/>
+  <token id="3" lemma="become" pos="VBD" surface="became"/>
+  <token id="4" lemma="know" pos="VBN" surface="known"/>
+  <token id="5" lemma="as" pos="IN" surface="as"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="delian" pos="NNP" surface="Delian"/>
+  <token id="8" lemma="league" pos="NNP" surface="League"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="4" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Alliance">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Alliance">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Becoming">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Final_quality">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_named">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Organization">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Name">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Organization">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

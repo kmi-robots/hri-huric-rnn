@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099626">
+ <sentence>
+  New Stryker model tooled for detection
+ </sentence>
+ <tokens>
+  <token id="1" lemma="new" pos="NNP" surface="New"/>
+  <token id="2" lemma="stryker" pos="NNP" surface="Stryker"/>
+  <token id="3" lemma="model" pos="NN" surface="model"/>
+  <token id="4" lemma="tool" pos="VBD" surface="tooled"/>
+  <token id="5" lemma="for" pos="IN" surface="for"/>
+  <token id="6" lemma="detection" pos="NN" surface="detection"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Age">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

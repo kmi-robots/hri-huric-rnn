@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824474">
+ <sentence>
+  Duck swarms .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="duck" pos="NN" surface="Duck"/>
+  <token id="2" lemma="swarm" pos="NNS" surface="swarms"/>
+  <token id="3" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Aggregate">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824442">
+ <sentence>
+  12:07 a.m. ONEZIE : My younger daughter and I are fine .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="12:07" pos="CD" surface="12:07"/>
+  <token id="2" lemma="a.m." pos="RB" surface="a.m."/>
+  <token id="3" lemma="onezie" pos="NNP" surface="ONEZIE"/>
+  <token id="4" lemma=":" pos=":" surface=":"/>
+  <token id="5" lemma="-PRON-" pos="PRP$" surface="My"/>
+  <token id="6" lemma="young" pos="JJR" surface="younger"/>
+  <token id="7" lemma="daughter" pos="NN" surface="daughter"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="10" lemma="be" pos="VBP" surface="are"/>
+  <token id="11" lemma="fine" pos="JJ" surface="fine"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="7" to="5" type="poss"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="10" to="7" type="nsubj"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="7" to="9" type="conj"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="acomp"/>
+  <dep from="10" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Kinship">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Ego">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Alter">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

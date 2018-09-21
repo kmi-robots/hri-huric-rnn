@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098907">
+ <sentence>
+  There are indications that Iran has been trying to acquire BW delivery systems .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="indication" pos="NNS" surface="indications"/>
+  <token id="4" lemma="that" pos="IN" surface="that"/>
+  <token id="5" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="6" lemma="have" pos="VBZ" surface="has"/>
+  <token id="7" lemma="be" pos="VBN" surface="been"/>
+  <token id="8" lemma="try" pos="VBG" surface="trying"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="acquire" pos="VB" surface="acquire"/>
+  <token id="11" lemma="bw" pos="NNP" surface="BW"/>
+  <token id="12" lemma="delivery" pos="NN" surface="delivery"/>
+  <token id="13" lemma="system" pos="NNS" surface="systems"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="attr"/>
+  <dep from="8" to="4" type="mark"/>
+  <dep from="8" to="5" type="nsubj"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="3" to="8" type="acl"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="8" to="10" type="xcomp"/>
+  <dep from="13" to="11" type="compound"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="10" to="13" type="dobj"/>
+  <dep from="2" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Sign">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Indicated">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Attempt">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Getting">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="System">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Function">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Salient_entity">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

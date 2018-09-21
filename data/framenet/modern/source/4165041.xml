@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165041">
+ <sentence>
+  People catching buses were advised to expect long delays .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="people" pos="NNS" surface="People"/>
+  <token id="2" lemma="catch" pos="VBG" surface="catching"/>
+  <token id="3" lemma="bus" pos="NNS" surface="buses"/>
+  <token id="4" lemma="be" pos="VBD" surface="were"/>
+  <token id="5" lemma="advise" pos="VBN" surface="advised"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="expect" pos="VB" surface="expect"/>
+  <token id="8" lemma="long" pos="JJ" surface="long"/>
+  <token id="9" lemma="delay" pos="NNS" surface="delays"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="nsubjpass"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="2" to="5" type="ccomp"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="5" to="7" type="xcomp"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="2" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Vehicle">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Telling">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Addressee">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Expectation">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Duration_description">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Period">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_event_time">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Interval">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

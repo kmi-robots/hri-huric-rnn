@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099939">
+ <sentence>
+  Stephanopoulos skillfully bullies and cajoles him into keeping quiet .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="stephanopoulos" pos="NNP" surface="Stephanopoulos"/>
+  <token id="2" lemma="skillfully" pos="RB" surface="skillfully"/>
+  <token id="3" lemma="bully" pos="VBZ" surface="bullies"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="cajole" pos="VBZ" surface="cajoles"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="7" lemma="into" pos="IN" surface="into"/>
+  <token id="8" lemma="keep" pos="VBG" surface="keeping"/>
+  <token id="9" lemma="quiet" pos="JJ" surface="quiet"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="3" to="5" type="conj"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="8" to="9" type="acomp"/>
+  <dep from="3" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Manipulate_into_doing">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Manipulator">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Resulting_action">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Manipulate_into_doing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Manipulator">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Resulting_action">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Activity_ongoing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Becoming_silent">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

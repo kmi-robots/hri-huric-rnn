@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148294">
+ <sentence>
+  Holmes laughed good-humoredly .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="holme" pos="NNS" surface="Holmes"/>
+  <token id="2" lemma="laugh" pos="VBD" surface="laughed"/>
+  <token id="3" lemma="good-humoredly" pos="RB" surface="good-humoredly"/>
+  <token id="4" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="advmod"/>
+  <dep from="2" to="4" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Make_noise">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Sound_source">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

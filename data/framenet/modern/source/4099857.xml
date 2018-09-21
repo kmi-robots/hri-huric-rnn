@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099857">
+ <sentence>
+  China provided Syria with approximately 980 grams of 89% enriched U235 to operate the reactor .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="china" pos="NNP" surface="China"/>
+  <token id="2" lemma="provide" pos="VBD" surface="provided"/>
+  <token id="3" lemma="syria" pos="NNP" surface="Syria"/>
+  <token id="4" lemma="with" pos="IN" surface="with"/>
+  <token id="5" lemma="approximately" pos="RB" surface="approximately"/>
+  <token id="6" lemma="980" pos="CD" surface="980"/>
+  <token id="7" lemma="gram" pos="NNS" surface="grams"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="89%" pos="CD" surface="89%"/>
+  <token id="10" lemma="enrich" pos="VBN" surface="enriched"/>
+  <token id="11" lemma="u235" pos="NNP" surface="U235"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="operate" pos="VB" surface="operate"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="reactor" pos="NN" surface="reactor"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="7" to="6" type="nummod"/>
+  <dep from="4" to="7" type="pobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="11" to="9" type="nmod"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="2" to="13" type="advcl"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="dobj"/>
+  <dep from="2" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Supplier">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Imposed_purpose">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_mass">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Count">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Stuff">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Degree_of_processing">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Degree">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Material">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Operating_a_system">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="System">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

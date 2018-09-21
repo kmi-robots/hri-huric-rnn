@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097235">
+ <sentence>
+  Produces SCUDs with North Korean help .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="produces" pos="NNP" surface="Produces"/>
+  <token id="2" lemma="scuds" pos="NN" surface="SCUDs"/>
+  <token id="3" lemma="with" pos="IN" surface="with"/>
+  <token id="4" lemma="north" pos="JJ" surface="North"/>
+  <token id="5" lemma="korean" pos="JJ" surface="Korean"/>
+  <token id="6" lemma="help" pos="NN" surface="help"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="dobj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="pobj"/>
+  <dep from="1" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Helper">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

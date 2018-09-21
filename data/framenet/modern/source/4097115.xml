@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097115">
+ <sentence>
+  According to Michael Eisenstadt , Iran initially obtained chemical agent precursors from the United States , Germany , and Japan .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="accord" pos="VBG" surface="According"/>
+  <token id="2" lemma="to" pos="IN" surface="to"/>
+  <token id="3" lemma="michael" pos="NNP" surface="Michael"/>
+  <token id="4" lemma="eisenstadt" pos="NNP" surface="Eisenstadt"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="7" lemma="initially" pos="RB" surface="initially"/>
+  <token id="8" lemma="obtain" pos="VBD" surface="obtained"/>
+  <token id="9" lemma="chemical" pos="JJ" surface="chemical"/>
+  <token id="10" lemma="agent" pos="NN" surface="agent"/>
+  <token id="11" lemma="precursor" pos="NNS" surface="precursors"/>
+  <token id="12" lemma="from" pos="IN" surface="from"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="united" pos="NNP" surface="United"/>
+  <token id="15" lemma="states" pos="NNP" surface="States"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="germany" pos="NNP" surface="Germany"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="and" pos="CC" surface="and"/>
+  <token id="20" lemma="japan" pos="NNP" surface="Japan"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="prep"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="8" to="5" type="punct"/>
+  <dep from="8" to="6" type="nsubj"/>
+  <dep from="8" to="7" type="advmod"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="8" to="11" type="dobj"/>
+  <dep from="8" to="12" type="prep"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="12" to="15" type="pobj"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="15" to="17" type="conj"/>
+  <dep from="17" to="18" type="punct"/>
+  <dep from="17" to="19" type="cc"/>
+  <dep from="17" to="20" type="conj"/>
+  <dep from="8" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attributed_information">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Proposition">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Getting">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Ingredients">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Material">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096813">
+ <sentence>
+  PRC - US agreements have apparently been the primary reason for the missiles not being delivered .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="prc" pos="NNP" surface="PRC"/>
+  <token id="2" lemma="-" pos="HYPH" surface="-"/>
+  <token id="3" lemma="us" pos="NNP" surface="US"/>
+  <token id="4" lemma="agreement" pos="NNS" surface="agreements"/>
+  <token id="5" lemma="have" pos="VBP" surface="have"/>
+  <token id="6" lemma="apparently" pos="RB" surface="apparently"/>
+  <token id="7" lemma="be" pos="VBN" surface="been"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="primary" pos="JJ" surface="primary"/>
+  <token id="10" lemma="reason" pos="NN" surface="reason"/>
+  <token id="11" lemma="for" pos="IN" surface="for"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="missile" pos="NNS" surface="missiles"/>
+  <token id="14" lemma="not" pos="RB" surface="not"/>
+  <token id="15" lemma="be" pos="VBG" surface="being"/>
+  <token id="16" lemma="deliver" pos="VBN" surface="delivered"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="compound"/>
+  <dep from="3" to="2" type="punct"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="7" to="4" type="nsubj"/>
+  <dep from="7" to="5" type="aux"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="7" to="10" type="attr"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="16" to="14" type="neg"/>
+  <dep from="16" to="15" type="auxpass"/>
+  <dep from="10" to="16" type="relcl"/>
+  <dep from="7" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Make_agreement_on_action">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Party_2">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="First_rank">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Effect">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Delivery">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

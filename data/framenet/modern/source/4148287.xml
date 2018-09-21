@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148287">
+ <sentence>
+  But my own views are different .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="but" pos="CC" surface="But"/>
+  <token id="2" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="3" lemma="own" pos="JJ" surface="own"/>
+  <token id="4" lemma="view" pos="NNS" surface="views"/>
+  <token id="5" lemma="be" pos="VBP" surface="are"/>
+  <token id="6" lemma="different" pos="JJ" surface="different"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="cc"/>
+  <dep from="4" to="2" type="poss"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="acomp"/>
+  <dep from="5" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Similarity">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Entity_1">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Opinion">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Opinion">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Cognizer">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

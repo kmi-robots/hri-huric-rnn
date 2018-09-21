@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098834">
+ <sentence>
+  The FDA has no authority to regulate creatine unless it 's first proved to be dangerous .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="fda" pos="NNP" surface="FDA"/>
+  <token id="3" lemma="have" pos="VBZ" surface="has"/>
+  <token id="4" lemma="no" pos="DT" surface="no"/>
+  <token id="5" lemma="authority" pos="NN" surface="authority"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="regulate" pos="VB" surface="regulate"/>
+  <token id="8" lemma="creatine" pos="NN" surface="creatine"/>
+  <token id="9" lemma="unless" pos="IN" surface="unless"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="11" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="12" lemma="first" pos="RB" surface="first"/>
+  <token id="13" lemma="prove" pos="VBN" surface="proved"/>
+  <token id="14" lemma="to" pos="TO" surface="to"/>
+  <token id="15" lemma="be" pos="VB" surface="be"/>
+  <token id="16" lemma="dangerous" pos="JJ" surface="dangerous"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="5" to="7" type="acl"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="13" to="9" type="mark"/>
+  <dep from="13" to="10" type="nsubjpass"/>
+  <dep from="13" to="11" type="auxpass"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="3" to="13" type="advcl"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="13" to="15" type="xcomp"/>
+  <dep from="15" to="16" type="acomp"/>
+  <dep from="3" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Reasoning">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Content">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

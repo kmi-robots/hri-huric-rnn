@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101525">
+ <sentence>
+  SOUNDS LIKE THIS IS GOING TO BE A GREAT BACHELOR PARTY .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="sound" pos="VBZ" surface="SOUNDS"/>
+  <token id="2" lemma="like" pos="IN" surface="LIKE"/>
+  <token id="3" lemma="this" pos="DT" surface="THIS"/>
+  <token id="4" lemma="be" pos="VBZ" surface="IS"/>
+  <token id="5" lemma="go" pos="VBG" surface="GOING"/>
+  <token id="6" lemma="to" pos="TO" surface="TO"/>
+  <token id="7" lemma="be" pos="VB" surface="BE"/>
+  <token id="8" lemma="a" pos="DT" surface="A"/>
+  <token id="9" lemma="great" pos="JJ" surface="GREAT"/>
+  <token id="10" lemma="bachelor" pos="NNP" surface="BACHELOR"/>
+  <token id="11" lemma="party" pos="NNP" surface="PARTY"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="5" to="7" type="xcomp"/>
+  <dep from="11" to="8" type="det"/>
+  <dep from="11" to="9" type="amod"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="7" to="11" type="attr"/>
+  <dep from="5" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Give_impression">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Inference">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirability">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Personal_relationship">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Partner_1">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Social_event">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Beneficiary">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Social_event">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

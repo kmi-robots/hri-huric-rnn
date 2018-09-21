@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101220">
+ <sentence>
+  In 431 b.c. , Athens began a war with its neighbor and league member Sparta .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="431" pos="CD" surface="431"/>
+  <token id="3" lemma="b.c." pos="NN" surface="b.c."/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="athens" pos="NNP" surface="Athens"/>
+  <token id="6" lemma="begin" pos="VBD" surface="began"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="war" pos="NN" surface="war"/>
+  <token id="9" lemma="with" pos="IN" surface="with"/>
+  <token id="10" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="11" lemma="neighbor" pos="NN" surface="neighbor"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="league" pos="NN" surface="league"/>
+  <token id="14" lemma="member" pos="NN" surface="member"/>
+  <token id="15" lemma="sparta" pos="NNP" surface="Sparta"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="3" to="2" type="nummod"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="6" to="4" type="punct"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="14" to="10" type="poss"/>
+  <dep from="14" to="11" type="nmod"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="11" to="13" type="conj"/>
+  <dep from="9" to="14" type="pobj"/>
+  <dep from="14" to="15" type="appos"/>
+  <dep from="6" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Activity_start">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Side_2">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_residence">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Known_resident">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Indicated_resident">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Organization">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Organization">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Group">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Member">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_period">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102897">
+ <sentence>
+  Eighth : Provide security to top dignitaries .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="eighth" pos="JJ" surface="Eighth"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="provide" pos="VB" surface="Provide"/>
+  <token id="4" lemma="security" pos="NN" surface="security"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="top" pos="JJ" surface="top"/>
+  <token id="7" lemma="dignitary" pos="NNS" surface="dignitaries"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="3" to="5" type="prep"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="3" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_at_risk">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Asset">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Occupy_rank">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Rank">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

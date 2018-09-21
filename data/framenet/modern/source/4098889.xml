@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098889">
+ <sentence>
+  Iran purchased plans for building a nuclear reactor from A.Q. Khan .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="2" lemma="purchase" pos="VBD" surface="purchased"/>
+  <token id="3" lemma="plan" pos="NNS" surface="plans"/>
+  <token id="4" lemma="for" pos="IN" surface="for"/>
+  <token id="5" lemma="build" pos="VBG" surface="building"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="8" lemma="reactor" pos="NN" surface="reactor"/>
+  <token id="9" lemma="from" pos="IN" surface="from"/>
+  <token id="10" lemma="a.q." pos="NNP" surface="A.Q."/>
+  <token id="11" lemma="khan" pos="NNP" surface="Khan"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pcomp"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="dobj"/>
+  <dep from="5" to="9" type="prep"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="2" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_buy">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Buyer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Seller">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Building">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

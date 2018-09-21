@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098569">
+ <sentence>
+  QN : According to several cardinals , will Pope John Paul soon be canonized ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="accord" pos="VBG" surface="According"/>
+  <token id="4" lemma="to" pos="IN" surface="to"/>
+  <token id="5" lemma="several" pos="JJ" surface="several"/>
+  <token id="6" lemma="cardinal" pos="NNS" surface="cardinals"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="will" pos="MD" surface="will"/>
+  <token id="9" lemma="pope" pos="NNP" surface="Pope"/>
+  <token id="10" lemma="john" pos="NNP" surface="John"/>
+  <token id="11" lemma="paul" pos="NNP" surface="Paul"/>
+  <token id="12" lemma="soon" pos="RB" surface="soon"/>
+  <token id="13" lemma="be" pos="VB" surface="be"/>
+  <token id="14" lemma="canonize" pos="VBN" surface="canonized"/>
+  <token id="15" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="14" to="3" type="prep"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="14" to="7" type="punct"/>
+  <dep from="14" to="8" type="aux"/>
+  <dep from="11" to="9" type="compound"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="14" to="11" type="nsubjpass"/>
+  <dep from="14" to="12" type="advmod"/>
+  <dep from="14" to="13" type="auxpass"/>
+  <dep from="0" to="14" type="root"/>
+  <dep from="14" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attributed_information">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Proposition">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096554">
+ <sentence>
+  Both SCQZI and SRAI house extensive collections of virulent strains .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="both" pos="DT" surface="Both"/>
+  <token id="2" lemma="scqzi" pos="JJ" surface="SCQZI"/>
+  <token id="3" lemma="and" pos="CC" surface="and"/>
+  <token id="4" lemma="srai" pos="JJ" surface="SRAI"/>
+  <token id="5" lemma="house" pos="NN" surface="house"/>
+  <token id="6" lemma="extensive" pos="JJ" surface="extensive"/>
+  <token id="7" lemma="collection" pos="NNS" surface="collections"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="virulent" pos="NN" surface="virulent"/>
+  <token id="10" lemma="strain" pos="NNS" surface="strains"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="det"/>
+  <dep from="5" to="2" type="nmod"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="7" to="5" type="nmod"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="7" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate_property">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Aggregate">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Type">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Item_property">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Subtype">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Containing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Container">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Contents">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

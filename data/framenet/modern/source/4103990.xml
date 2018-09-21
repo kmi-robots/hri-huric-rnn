@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103990">
+ <sentence>
+  Exciting , mysterious , glamorous - these words have described Hong Kong for at least a century .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="exciting" pos="JJ" surface="Exciting"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="mysterious" pos="JJ" surface="mysterious"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="glamorous" pos="JJ" surface="glamorous"/>
+  <token id="6" lemma="-" pos=":" surface="-"/>
+  <token id="7" lemma="these" pos="DT" surface="these"/>
+  <token id="8" lemma="word" pos="NNS" surface="words"/>
+  <token id="9" lemma="have" pos="VBP" surface="have"/>
+  <token id="10" lemma="describe" pos="VBN" surface="described"/>
+  <token id="11" lemma="hong" pos="NNP" surface="Hong"/>
+  <token id="12" lemma="kong" pos="NNP" surface="Kong"/>
+  <token id="13" lemma="for" pos="IN" surface="for"/>
+  <token id="14" lemma="at" pos="IN" surface="at"/>
+  <token id="15" lemma="least" pos="JJS" surface="least"/>
+  <token id="16" lemma="a" pos="DT" surface="a"/>
+  <token id="17" lemma="century" pos="NN" surface="century"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="advcl"/>
+  <dep from="10" to="2" type="punct"/>
+  <dep from="8" to="3" type="amod"/>
+  <dep from="8" to="4" type="punct"/>
+  <dep from="8" to="5" type="amod"/>
+  <dep from="8" to="6" type="punct"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="10" to="8" type="nsubj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="10" to="13" type="prep"/>
+  <dep from="15" to="14" type="advmod"/>
+  <dep from="16" to="15" type="advmod"/>
+  <dep from="17" to="16" type="nummod"/>
+  <dep from="13" to="17" type="pobj"/>
+  <dep from="10" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Stimulus_focus">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Simple_name">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Term">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Communicate_categorization">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Medium">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Duration">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Denoted_quantity">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

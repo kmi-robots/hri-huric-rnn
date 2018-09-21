@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097872">
+ <sentence>
+  Taiwan has two SRBM programs .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="taiwan" pos="NNP" surface="Taiwan"/>
+  <token id="2" lemma="have" pos="VBZ" surface="has"/>
+  <token id="3" lemma="two" pos="CD" surface="two"/>
+  <token id="4" lemma="srbm" pos="NN" surface="SRBM"/>
+  <token id="5" lemma="program" pos="NNS" surface="programs"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="nummod"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Salient_entity">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Number">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

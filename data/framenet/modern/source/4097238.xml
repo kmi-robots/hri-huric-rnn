@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097238">
+ <sentence>
+  Other Means Of Delivery Available
+ </sentence>
+ <tokens>
+  <token id="1" lemma="other" pos="JJ" surface="Other"/>
+  <token id="2" lemma="means" pos="NNPS" surface="Means"/>
+  <token id="3" lemma="of" pos="IN" surface="Of"/>
+  <token id="4" lemma="delivery" pos="NNP" surface="Delivery"/>
+  <token id="5" lemma="available" pos="JJ" surface="Available"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="3" to="5" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Class">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

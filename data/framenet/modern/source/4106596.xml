@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106596">
+ <sentence>
+  Families are being torn apart , and too often , children are the victims .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="family" pos="NNS" surface="Families"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="be" pos="VBG" surface="being"/>
+  <token id="4" lemma="tear" pos="VBN" surface="torn"/>
+  <token id="5" lemma="apart" pos="RB" surface="apart"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="too" pos="RB" surface="too"/>
+  <token id="9" lemma="often" pos="RB" surface="often"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="child" pos="NNS" surface="children"/>
+  <token id="12" lemma="be" pos="VBP" surface="are"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="victim" pos="NNS" surface="victims"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubjpass"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="advmod"/>
+  <dep from="4" to="6" type="punct"/>
+  <dep from="4" to="7" type="cc"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="12" to="9" type="advmod"/>
+  <dep from="12" to="10" type="punct"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="4" to="12" type="conj"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="attr"/>
+  <dep from="12" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Frequency">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Degree">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Rate">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_age">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Catastrophe">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Kinship">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Relatives">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

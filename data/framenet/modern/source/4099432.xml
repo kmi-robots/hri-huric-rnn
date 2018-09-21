@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099432">
+ <sentence>
+  Timothy McVeigh , who perpetrated the April 1995 bombing of the federal building in Oklahoma City , was not a member of a Patriot organization but identified strongly with the anti - government community of belief .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="timothy" pos="NNP" surface="Timothy"/>
+  <token id="2" lemma="mcveigh" pos="NNP" surface="McVeigh"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="who" pos="WP" surface="who"/>
+  <token id="5" lemma="perpetrate" pos="VBD" surface="perpetrated"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="april" pos="NNP" surface="April"/>
+  <token id="8" lemma="1995" pos="CD" surface="1995"/>
+  <token id="9" lemma="bombing" pos="NN" surface="bombing"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="federal" pos="JJ" surface="federal"/>
+  <token id="13" lemma="building" pos="NN" surface="building"/>
+  <token id="14" lemma="in" pos="IN" surface="in"/>
+  <token id="15" lemma="oklahoma" pos="NNP" surface="Oklahoma"/>
+  <token id="16" lemma="city" pos="NNP" surface="City"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="be" pos="VBD" surface="was"/>
+  <token id="19" lemma="not" pos="RB" surface="not"/>
+  <token id="20" lemma="a" pos="DT" surface="a"/>
+  <token id="21" lemma="member" pos="NN" surface="member"/>
+  <token id="22" lemma="of" pos="IN" surface="of"/>
+  <token id="23" lemma="a" pos="DT" surface="a"/>
+  <token id="24" lemma="patriot" pos="NNP" surface="Patriot"/>
+  <token id="25" lemma="organization" pos="NN" surface="organization"/>
+  <token id="26" lemma="but" pos="CC" surface="but"/>
+  <token id="27" lemma="identify" pos="VBD" surface="identified"/>
+  <token id="28" lemma="strongly" pos="RB" surface="strongly"/>
+  <token id="29" lemma="with" pos="IN" surface="with"/>
+  <token id="30" lemma="the" pos="DT" surface="the"/>
+  <token id="31" lemma="anti" pos="RB" surface="anti"/>
+  <token id="32" lemma="-" pos="HYPH" surface="-"/>
+  <token id="33" lemma="government" pos="NN" surface="government"/>
+  <token id="34" lemma="community" pos="NN" surface="community"/>
+  <token id="35" lemma="of" pos="IN" surface="of"/>
+  <token id="36" lemma="belief" pos="NN" surface="belief"/>
+  <token id="37" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="18" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="2" to="5" type="relcl"/>
+  <dep from="9" to="6" type="det"/>
+  <dep from="9" to="7" type="nmod"/>
+  <dep from="7" to="8" type="nummod"/>
+  <dep from="5" to="9" type="dobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="2" to="17" type="punct"/>
+  <dep from="0" to="18" type="root"/>
+  <dep from="18" to="19" type="neg"/>
+  <dep from="21" to="20" type="det"/>
+  <dep from="18" to="21" type="attr"/>
+  <dep from="21" to="22" type="prep"/>
+  <dep from="25" to="23" type="det"/>
+  <dep from="25" to="24" type="compound"/>
+  <dep from="22" to="25" type="pobj"/>
+  <dep from="18" to="26" type="cc"/>
+  <dep from="18" to="27" type="conj"/>
+  <dep from="27" to="28" type="advmod"/>
+  <dep from="27" to="29" type="prep"/>
+  <dep from="34" to="30" type="det"/>
+  <dep from="32" to="31" type="amod"/>
+  <dep from="33" to="32" type="punct"/>
+  <dep from="34" to="33" type="compound"/>
+  <dep from="29" to="34" type="pobj"/>
+  <dep from="34" to="35" type="prep"/>
+  <dep from="35" to="36" type="pobj"/>
+  <dep from="18" to="37" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Committing_crime">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Perpetrator">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Perpetrator">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Crime">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Assailant">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Assailant">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Member">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Group">
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Organization">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Name">
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Organization">
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="34"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate_property">
+     <token id="31"/>
+     <token id="32"/>
+     <token id="33"/>
+    </frameElement>
+    <frameElement type="Aggregate">
+     <token id="34"/>
+    </frameElement>
+    <frameElement type="Aggregate_property">
+     <token id="35"/>
+     <token id="36"/>
+    </frameElement>
+   </frame>
+   <frame name="Opinion">
+    <lexicalUnit>
+     <token id="36"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="33"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="33"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

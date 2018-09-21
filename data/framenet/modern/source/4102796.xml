@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102796">
+ <sentence>
+  1- Choosing mountainous locations , preferably 1-3 hours from main cities , which have water resources .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="1-" pos="LS" surface="1-"/>
+  <token id="2" lemma="choose" pos="VBG" surface="Choosing"/>
+  <token id="3" lemma="mountainous" pos="JJ" surface="mountainous"/>
+  <token id="4" lemma="location" pos="NNS" surface="locations"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="preferably" pos="RB" surface="preferably"/>
+  <token id="7" lemma="1-3" pos="CD" surface="1-3"/>
+  <token id="8" lemma="hour" pos="NNS" surface="hours"/>
+  <token id="9" lemma="from" pos="IN" surface="from"/>
+  <token id="10" lemma="main" pos="JJ" surface="main"/>
+  <token id="11" lemma="city" pos="NNS" surface="cities"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="which" pos="WDT" surface="which"/>
+  <token id="14" lemma="have" pos="VBP" surface="have"/>
+  <token id="15" lemma="water" pos="NN" surface="water"/>
+  <token id="16" lemma="resource" pos="NNS" surface="resources"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="meta"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="4" to="5" type="punct"/>
+  <dep from="8" to="6" type="advmod"/>
+  <dep from="8" to="7" type="nummod"/>
+  <dep from="4" to="8" type="appos"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="punct"/>
+  <dep from="14" to="13" type="nsubj"/>
+  <dep from="11" to="14" type="relcl"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="14" to="16" type="dobj"/>
+  <dep from="2" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Choosing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Chosen">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Count">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Importance">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Factor">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Possession">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Owner">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Owner">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

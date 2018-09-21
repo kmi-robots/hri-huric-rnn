@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148352">
+ <sentence>
+  He chewed Downing 's thumb nearly off before they could master him .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="chew" pos="VBD" surface="chewed"/>
+  <token id="3" lemma="downing" pos="NNP" surface="Downing"/>
+  <token id="4" lemma="'s" pos="POS" surface="'s"/>
+  <token id="5" lemma="thumb" pos="NN" surface="thumb"/>
+  <token id="6" lemma="nearly" pos="RB" surface="nearly"/>
+  <token id="7" lemma="off" pos="RB" surface="off"/>
+  <token id="8" lemma="before" pos="IN" surface="before"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="10" lemma="could" pos="MD" surface="could"/>
+  <token id="11" lemma="master" pos="VB" surface="master"/>
+  <token id="12" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="poss"/>
+  <dep from="3" to="4" type="case"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="2" to="7" type="advmod"/>
+  <dep from="11" to="8" type="mark"/>
+  <dep from="11" to="9" type="nsubj"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="2" to="11" type="advcl"/>
+  <dep from="11" to="12" type="dobj"/>
+  <dep from="2" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Body_parts">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Possessor">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Grinding">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Grinder">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Patient">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Result">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Result">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Spatial_contact">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

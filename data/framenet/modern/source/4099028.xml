@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099028">
+ <sentence>
+  QN : Will a terrorist set off a chemical or biological weapon ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="will" pos="MD" surface="Will"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="terrorist" pos="NN" surface="terrorist"/>
+  <token id="6" lemma="set" pos="VBN" surface="set"/>
+  <token id="7" lemma="off" pos="RP" surface="off"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="chemical" pos="JJ" surface="chemical"/>
+  <token id="10" lemma="or" pos="CC" surface="or"/>
+  <token id="11" lemma="biological" pos="JJ" surface="biological"/>
+  <token id="12" lemma="weapon" pos="NN" surface="weapon"/>
+  <token id="13" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="1" to="6" type="acl"/>
+  <dep from="6" to="7" type="prt"/>
+  <dep from="12" to="8" type="det"/>
+  <dep from="12" to="9" type="amod"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="9" to="11" type="conj"/>
+  <dep from="6" to="12" type="dobj"/>
+  <dep from="1" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Wielder">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Wielder">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

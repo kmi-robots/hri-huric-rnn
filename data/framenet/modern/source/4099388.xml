@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099388">
+ <sentence>
+  Organizational Structure : The terrorist groups of greatest concern have an organizational structure and internal control mechanisms that enable them to prevent penetration by government agents or defection by group members .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="organizational" pos="NNP" surface="Organizational"/>
+  <token id="2" lemma="structure" pos="NNP" surface="Structure"/>
+  <token id="3" lemma=":" pos=":" surface=":"/>
+  <token id="4" lemma="the" pos="DT" surface="The"/>
+  <token id="5" lemma="terrorist" pos="JJ" surface="terrorist"/>
+  <token id="6" lemma="group" pos="NNS" surface="groups"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="great" pos="JJS" surface="greatest"/>
+  <token id="9" lemma="concern" pos="NN" surface="concern"/>
+  <token id="10" lemma="have" pos="VBP" surface="have"/>
+  <token id="11" lemma="an" pos="DT" surface="an"/>
+  <token id="12" lemma="organizational" pos="JJ" surface="organizational"/>
+  <token id="13" lemma="structure" pos="NN" surface="structure"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="internal" pos="JJ" surface="internal"/>
+  <token id="16" lemma="control" pos="NN" surface="control"/>
+  <token id="17" lemma="mechanism" pos="NNS" surface="mechanisms"/>
+  <token id="18" lemma="that" pos="WDT" surface="that"/>
+  <token id="19" lemma="enable" pos="VBP" surface="enable"/>
+  <token id="20" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="21" lemma="to" pos="TO" surface="to"/>
+  <token id="22" lemma="prevent" pos="VB" surface="prevent"/>
+  <token id="23" lemma="penetration" pos="NN" surface="penetration"/>
+  <token id="24" lemma="by" pos="IN" surface="by"/>
+  <token id="25" lemma="government" pos="NN" surface="government"/>
+  <token id="26" lemma="agent" pos="NNS" surface="agents"/>
+  <token id="27" lemma="or" pos="CC" surface="or"/>
+  <token id="28" lemma="defection" pos="NN" surface="defection"/>
+  <token id="29" lemma="by" pos="IN" surface="by"/>
+  <token id="30" lemma="group" pos="NN" surface="group"/>
+  <token id="31" lemma="member" pos="NNS" surface="members"/>
+  <token id="32" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="10" to="6" type="nsubj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="dobj"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="13" to="17" type="conj"/>
+  <dep from="19" to="18" type="nsubj"/>
+  <dep from="13" to="19" type="relcl"/>
+  <dep from="19" to="20" type="dobj"/>
+  <dep from="22" to="21" type="aux"/>
+  <dep from="19" to="22" type="xcomp"/>
+  <dep from="22" to="23" type="dobj"/>
+  <dep from="22" to="24" type="prep"/>
+  <dep from="26" to="25" type="compound"/>
+  <dep from="24" to="26" type="pobj"/>
+  <dep from="26" to="27" type="cc"/>
+  <dep from="26" to="28" type="conj"/>
+  <dep from="22" to="29" type="prep"/>
+  <dep from="31" to="30" type="compound"/>
+  <dep from="29" to="31" type="pobj"/>
+  <dep from="10" to="32" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Aggregate">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Emotion_directed">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Degree">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Preventing_or_letting">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+     <token id="31"/>
+    </frameElement>
+   </frame>
+   <frame name="Quitting_a_place">
+    <lexicalUnit>
+     <token id="28"/>
+    </lexicalUnit>
+    <frameElement type="Self_mover">
+     <token id="29"/>
+     <token id="30"/>
+     <token id="31"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="30"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="30"/>
+    </frameElement>
+   </frame>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="31"/>
+    </lexicalUnit>
+    <frameElement type="Group">
+     <token id="30"/>
+    </frameElement>
+    <frameElement type="Member">
+     <token id="31"/>
+    </frameElement>
+   </frame>
+   <frame name="Terrorism">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Terrorist">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Means">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Purpose">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Organization">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Organization">
+     <token id="25"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099604">
+ <sentence>
+  Reduction in beds puts city [ Sydney ] at risk : hospital official
+ </sentence>
+ <tokens>
+  <token id="1" lemma="reduction" pos="NN" surface="Reduction"/>
+  <token id="2" lemma="in" pos="IN" surface="in"/>
+  <token id="3" lemma="bed" pos="NNS" surface="beds"/>
+  <token id="4" lemma="put" pos="VBZ" surface="puts"/>
+  <token id="5" lemma="city" pos="NN" surface="city"/>
+  <token id="6" lemma="[" pos="-LRB-" surface="["/>
+  <token id="7" lemma="sydney" pos="NNP" surface="Sydney"/>
+  <token id="8" lemma="]" pos="-RRB-" surface="]"/>
+  <token id="9" lemma="at" pos="IN" surface="at"/>
+  <token id="10" lemma="risk" pos="NN" surface="risk"/>
+  <token id="11" lemma=":" pos=":" surface=":"/>
+  <token id="12" lemma="hospital" pos="NN" surface="hospital"/>
+  <token id="13" lemma="official" pos="NN" surface="official"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="2" to="3" type="pobj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="7" to="6" type="punct"/>
+  <dep from="5" to="7" type="appos"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="4" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="4" to="11" type="punct"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="4" to="13" type="appos"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cause_change_of_position_on_a_scale">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Run_risk">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Asset">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Governed">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

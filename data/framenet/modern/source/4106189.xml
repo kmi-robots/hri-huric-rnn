@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106189">
+ <sentence>
+  Players bet on the numbers that will come up , and on whether the result will be `` big '' or `` small . ''
+ </sentence>
+ <tokens>
+  <token id="1" lemma="player" pos="NNS" surface="Players"/>
+  <token id="2" lemma="bet" pos="VBP" surface="bet"/>
+  <token id="3" lemma="on" pos="IN" surface="on"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="number" pos="NNS" surface="numbers"/>
+  <token id="6" lemma="that" pos="WDT" surface="that"/>
+  <token id="7" lemma="will" pos="MD" surface="will"/>
+  <token id="8" lemma="come" pos="VB" surface="come"/>
+  <token id="9" lemma="up" pos="RP" surface="up"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="on" pos="IN" surface="on"/>
+  <token id="13" lemma="whether" pos="IN" surface="whether"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="result" pos="NN" surface="result"/>
+  <token id="16" lemma="will" pos="MD" surface="will"/>
+  <token id="17" lemma="be" pos="VB" surface="be"/>
+  <token id="18" lemma="``" pos="``" surface="``"/>
+  <token id="19" lemma="big" pos="JJ" surface="big"/>
+  <token id="20" lemma="''" pos="''" surface="''"/>
+  <token id="21" lemma="or" pos="CC" surface="or"/>
+  <token id="22" lemma="``" pos="``" surface="``"/>
+  <token id="23" lemma="small" pos="JJ" surface="small"/>
+  <token id="24" lemma="." pos="." surface="."/>
+  <token id="25" lemma="''" pos="''" surface="''"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="8" to="6" type="nsubj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="5" to="8" type="relcl"/>
+  <dep from="8" to="9" type="prt"/>
+  <dep from="2" to="10" type="punct"/>
+  <dep from="2" to="11" type="cc"/>
+  <dep from="2" to="12" type="conj"/>
+  <dep from="17" to="13" type="mark"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="17" to="15" type="nsubj"/>
+  <dep from="17" to="16" type="aux"/>
+  <dep from="12" to="17" type="pcomp"/>
+  <dep from="17" to="18" type="punct"/>
+  <dep from="17" to="19" type="acomp"/>
+  <dep from="19" to="20" type="punct"/>
+  <dep from="19" to="21" type="cc"/>
+  <dep from="23" to="22" type="punct"/>
+  <dep from="19" to="23" type="conj"/>
+  <dep from="2" to="24" type="punct"/>
+  <dep from="2" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Participation">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Participants">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Earnings_and_losses">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Size">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Size">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

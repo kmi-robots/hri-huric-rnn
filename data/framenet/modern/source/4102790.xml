@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102790">
+ <sentence>
+  External : All actions and methods adopted to confront dangers from outside .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="external" pos="JJ" surface="External"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="all" pos="DT" surface="All"/>
+  <token id="4" lemma="action" pos="NNS" surface="actions"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="method" pos="NNS" surface="methods"/>
+  <token id="7" lemma="adopt" pos="VBN" surface="adopted"/>
+  <token id="8" lemma="to" pos="TO" surface="to"/>
+  <token id="9" lemma="confront" pos="VB" surface="confront"/>
+  <token id="10" lemma="danger" pos="NNS" surface="dangers"/>
+  <token id="11" lemma="from" pos="IN" surface="from"/>
+  <token id="12" lemma="outside" pos="RB" surface="outside"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="7" to="4" type="nsubj"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="4" to="6" type="conj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pcomp"/>
+  <dep from="7" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Act">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Means">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Means">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Adopt_selection">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Side_2">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_inner_outer">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Risky_situation">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Situation">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

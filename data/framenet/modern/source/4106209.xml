@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106209">
+ <sentence>
+  A delicate , delicious fish is Macau sole ( linguado ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="delicate" pos="JJ" surface="delicate"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="delicious" pos="JJ" surface="delicious"/>
+  <token id="5" lemma="fish" pos="NN" surface="fish"/>
+  <token id="6" lemma="be" pos="VBZ" surface="is"/>
+  <token id="7" lemma="macau" pos="NNP" surface="Macau"/>
+  <token id="8" lemma="sole" pos="JJ" surface="sole"/>
+  <token id="9" lemma="(" pos="-LRB-" surface="("/>
+  <token id="10" lemma="linguado" pos="NN" surface="linguado"/>
+  <token id="11" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="det"/>
+  <dep from="5" to="2" type="amod"/>
+  <dep from="5" to="3" type="punct"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="6" to="8" type="attr"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="8" to="10" type="appos"/>
+  <dep from="8" to="11" type="punct"/>
+  <dep from="6" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Chemical-sense_description">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Perceptual_source">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Sensory_attribute">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Food">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Food">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

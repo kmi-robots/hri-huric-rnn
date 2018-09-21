@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824480">
+ <sentence>
+  It runs out frantically now and then , and is clearly pretty distressed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="It"/>
+  <token id="2" lemma="run" pos="VBZ" surface="runs"/>
+  <token id="3" lemma="out" pos="IN" surface="out"/>
+  <token id="4" lemma="frantically" pos="RB" surface="frantically"/>
+  <token id="5" lemma="now" pos="RB" surface="now"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="then" pos="RB" surface="then"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="be" pos="VBZ" surface="is"/>
+  <token id="11" lemma="clearly" pos="RB" surface="clearly"/>
+  <token id="12" lemma="pretty" pos="RB" surface="pretty"/>
+  <token id="13" lemma="distressed" pos="JJ" surface="distressed"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prt"/>
+  <dep from="2" to="4" type="advmod"/>
+  <dep from="2" to="5" type="advmod"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="5" to="7" type="conj"/>
+  <dep from="2" to="8" type="punct"/>
+  <dep from="2" to="9" type="cc"/>
+  <dep from="2" to="10" type="conj"/>
+  <dep from="10" to="11" type="advmod"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="10" to="13" type="acomp"/>
+  <dep from="2" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Self_motion">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Self_mover">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Emotion_directed">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Degree">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Experiencer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="State">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Obviousness">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Attribute">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

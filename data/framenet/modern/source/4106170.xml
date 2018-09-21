@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106170">
+ <sentence>
+  The museum also offers boat tours aboard a fishing junk .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="museum" pos="NN" surface="museum"/>
+  <token id="3" lemma="also" pos="RB" surface="also"/>
+  <token id="4" lemma="offer" pos="VBZ" surface="offers"/>
+  <token id="5" lemma="boat" pos="NN" surface="boat"/>
+  <token id="6" lemma="tour" pos="NNS" surface="tours"/>
+  <token id="7" lemma="aboard" pos="IN" surface="aboard"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="fishing" pos="NN" surface="fishing"/>
+  <token id="10" lemma="junk" pos="NN" surface="junk"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="4" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Offering">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Offerer">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Vehicle">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Touring">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Attraction">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

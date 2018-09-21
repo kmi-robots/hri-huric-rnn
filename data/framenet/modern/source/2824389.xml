@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824389">
+ <sentence>
+  Each legislator , after all , is only one out of 535 when it comes to national policy making .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="each" pos="DT" surface="Each"/>
+  <token id="2" lemma="legislator" pos="NN" surface="legislator"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="after" pos="RB" surface="after"/>
+  <token id="5" lemma="all" pos="RB" surface="all"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="be" pos="VBZ" surface="is"/>
+  <token id="8" lemma="only" pos="RB" surface="only"/>
+  <token id="9" lemma="one" pos="CD" surface="one"/>
+  <token id="10" lemma="out" pos="IN" surface="out"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="535" pos="CD" surface="535"/>
+  <token id="13" lemma="when" pos="WRB" surface="when"/>
+  <token id="14" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="15" lemma="come" pos="VBZ" surface="comes"/>
+  <token id="16" lemma="to" pos="IN" surface="to"/>
+  <token id="17" lemma="national" pos="JJ" surface="national"/>
+  <token id="18" lemma="policy" pos="NN" surface="policy"/>
+  <token id="19" lemma="making" pos="NN" surface="making"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="7" to="2" type="nsubj"/>
+  <dep from="7" to="3" type="punct"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="7" to="5" type="advmod"/>
+  <dep from="7" to="6" type="punct"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="7" to="9" type="attr"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="15" to="13" type="advmod"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="7" to="15" type="advcl"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="19" to="17" type="amod"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="16" to="19" type="pobj"/>
+  <dep from="7" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Partitive">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Subset">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Group">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_create">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Law">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Law">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

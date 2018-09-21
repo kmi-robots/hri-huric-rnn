@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824393">
+ <sentence>
+  While this theory is exceedingly simple , it appears to explain several things .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="while" pos="IN" surface="While"/>
+  <token id="2" lemma="this" pos="DT" surface="this"/>
+  <token id="3" lemma="theory" pos="NN" surface="theory"/>
+  <token id="4" lemma="be" pos="VBZ" surface="is"/>
+  <token id="5" lemma="exceedingly" pos="RB" surface="exceedingly"/>
+  <token id="6" lemma="simple" pos="JJ" surface="simple"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="9" lemma="appear" pos="VBZ" surface="appears"/>
+  <token id="10" lemma="to" pos="TO" surface="to"/>
+  <token id="11" lemma="explain" pos="VB" surface="explain"/>
+  <token id="12" lemma="several" pos="JJ" surface="several"/>
+  <token id="13" lemma="thing" pos="NNS" surface="things"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="mark"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="9" to="4" type="advcl"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="4" to="6" type="acomp"/>
+  <dep from="9" to="7" type="punct"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="9" to="11" type="xcomp"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="11" to="13" type="dobj"/>
+  <dep from="9" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Give_impression">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Inference">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Medium">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Concessive">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Conceded_state_of_affairs">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Main_assertion">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

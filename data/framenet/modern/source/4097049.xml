@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097049">
+ <sentence>
+  However , Iran continues to retain a strong incentive for developing a defensive CW program .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="however" pos="RB" surface="However"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="4" lemma="continue" pos="VBZ" surface="continues"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="retain" pos="VB" surface="retain"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="strong" pos="JJ" surface="strong"/>
+  <token id="9" lemma="incentive" pos="NN" surface="incentive"/>
+  <token id="10" lemma="for" pos="IN" surface="for"/>
+  <token id="11" lemma="develop" pos="VBG" surface="developing"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="defensive" pos="JJ" surface="defensive"/>
+  <token id="14" lemma="cw" pos="NNP" surface="CW"/>
+  <token id="15" lemma="program" pos="NN" surface="program"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="4" to="2" type="punct"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="4" to="6" type="xcomp"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="6" to="9" type="dobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pcomp"/>
+  <dep from="15" to="12" type="det"/>
+  <dep from="15" to="13" type="amod"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="11" to="15" type="dobj"/>
+  <dep from="4" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Activity_ongoing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_to_make_progress">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Project">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Salient_entity">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

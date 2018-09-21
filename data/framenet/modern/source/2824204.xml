@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824204">
+ <sentence>
+  Now , only one local ringer remains : 64-year-old Derek Hammond .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="now" pos="RB" surface="Now"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="only" pos="RB" surface="only"/>
+  <token id="4" lemma="one" pos="CD" surface="one"/>
+  <token id="5" lemma="local" pos="JJ" surface="local"/>
+  <token id="6" lemma="ringer" pos="NN" surface="ringer"/>
+  <token id="7" lemma="remain" pos="VBZ" surface="remains"/>
+  <token id="8" lemma=":" pos=":" surface=":"/>
+  <token id="9" lemma="64-year-old" pos="CD" surface="64-year-old"/>
+  <token id="10" lemma="derek" pos="NNP" surface="Derek"/>
+  <token id="11" lemma="hammond" pos="NNP" surface="Hammond"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="advmod"/>
+  <dep from="7" to="2" type="punct"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="6" to="4" type="nummod"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="11" to="9" type="compound"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="7" to="11" type="attr"/>
+  <dep from="7" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Remainder">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Remainder">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_to_make_noise">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Trajector_event">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Landmark_period">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Sole_instance">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

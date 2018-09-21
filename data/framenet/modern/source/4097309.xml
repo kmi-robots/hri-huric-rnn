@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097309">
+ <sentence>
+  From 1980 to 1990 Iran refused to pay for ar accept delivery of uranium enriched to 3% U-235 processed by Eurodif .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="from" pos="IN" surface="From"/>
+  <token id="2" lemma="1980" pos="CD" surface="1980"/>
+  <token id="3" lemma="to" pos="IN" surface="to"/>
+  <token id="4" lemma="1990" pos="CD" surface="1990"/>
+  <token id="5" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="6" lemma="refuse" pos="VBD" surface="refused"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="pay" pos="VB" surface="pay"/>
+  <token id="9" lemma="for" pos="IN" surface="for"/>
+  <token id="10" lemma="ar" pos="IN" surface="ar"/>
+  <token id="11" lemma="accept" pos="VB" surface="accept"/>
+  <token id="12" lemma="delivery" pos="NN" surface="delivery"/>
+  <token id="13" lemma="of" pos="IN" surface="of"/>
+  <token id="14" lemma="uranium" pos="NN" surface="uranium"/>
+  <token id="15" lemma="enrich" pos="VBN" surface="enriched"/>
+  <token id="16" lemma="to" pos="IN" surface="to"/>
+  <token id="17" lemma="3%" pos="NNP" surface="3%"/>
+  <token id="18" lemma="u-235" pos="NNP" surface="U-235"/>
+  <token id="19" lemma="process" pos="VBN" surface="processed"/>
+  <token id="20" lemma="by" pos="IN" surface="by"/>
+  <token id="21" lemma="eurodif" pos="NNP" surface="Eurodif"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="1" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="6" to="8" type="xcomp"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="6" to="11" type="conj"/>
+  <dep from="11" to="12" type="dobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="12" to="15" type="acl"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="18" to="17" type="nummod"/>
+  <dep from="19" to="18" type="punct"/>
+  <dep from="22" to="19" type="punct"/>
+  <dep from="19" to="20" type="agent"/>
+  <dep from="20" to="21" type="pobj"/>
+  <dep from="6" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_pay">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Buyer">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Delivery">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Processing_materials">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Material">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Processing_materials">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Material">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Result">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Receiving">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106041">
+ <sentence>
+  Two natural rock formations are always pointed out on excursions .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="two" pos="CD" surface="Two"/>
+  <token id="2" lemma="natural" pos="JJ" surface="natural"/>
+  <token id="3" lemma="rock" pos="NN" surface="rock"/>
+  <token id="4" lemma="formation" pos="NNS" surface="formations"/>
+  <token id="5" lemma="be" pos="VBP" surface="are"/>
+  <token id="6" lemma="always" pos="RB" surface="always"/>
+  <token id="7" lemma="point" pos="VBN" surface="pointed"/>
+  <token id="8" lemma="out" pos="RP" surface="out"/>
+  <token id="9" lemma="on" pos="IN" surface="on"/>
+  <token id="10" lemma="excursion" pos="NNS" surface="excursions"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nummod"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="7" to="4" type="nsubjpass"/>
+  <dep from="7" to="5" type="auxpass"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prt"/>
+  <dep from="7" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="7" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Pattern">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Entities">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Frequency">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Travel">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

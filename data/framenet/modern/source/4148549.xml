@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148549">
+ <sentence>
+  A nobler man never lived upon earth .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="noble" pos="JJR" surface="nobler"/>
+  <token id="3" lemma="man" pos="NN" surface="man"/>
+  <token id="4" lemma="never" pos="RB" surface="never"/>
+  <token id="5" lemma="live" pos="VBD" surface="lived"/>
+  <token id="6" lemma="upon" pos="IN" surface="upon"/>
+  <token id="7" lemma="earth" pos="NN" surface="earth"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="neg"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="5" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Residence">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Resident">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Persistent_characteristic">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

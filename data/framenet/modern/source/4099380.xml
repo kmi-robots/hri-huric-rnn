@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099380">
+ <sentence>
+  CBW can have a greater psychological impact than conventional explosives , as suggested by the 2001 anthrax letter attacks , which killed only five people but frightened millions of Americans .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="cbw" pos="NNP" surface="CBW"/>
+  <token id="2" lemma="can" pos="MD" surface="can"/>
+  <token id="3" lemma="have" pos="VB" surface="have"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="great" pos="JJR" surface="greater"/>
+  <token id="6" lemma="psychological" pos="JJ" surface="psychological"/>
+  <token id="7" lemma="impact" pos="NN" surface="impact"/>
+  <token id="8" lemma="than" pos="IN" surface="than"/>
+  <token id="9" lemma="conventional" pos="JJ" surface="conventional"/>
+  <token id="10" lemma="explosive" pos="NNS" surface="explosives"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="as" pos="IN" surface="as"/>
+  <token id="13" lemma="suggest" pos="VBN" surface="suggested"/>
+  <token id="14" lemma="by" pos="IN" surface="by"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="2001" pos="CD" surface="2001"/>
+  <token id="17" lemma="anthrax" pos="NN" surface="anthrax"/>
+  <token id="18" lemma="letter" pos="NN" surface="letter"/>
+  <token id="19" lemma="attack" pos="NNS" surface="attacks"/>
+  <token id="20" lemma="," pos="," surface=","/>
+  <token id="21" lemma="which" pos="WDT" surface="which"/>
+  <token id="22" lemma="kill" pos="VBD" surface="killed"/>
+  <token id="23" lemma="only" pos="RB" surface="only"/>
+  <token id="24" lemma="five" pos="CD" surface="five"/>
+  <token id="25" lemma="people" pos="NNS" surface="people"/>
+  <token id="26" lemma="but" pos="CC" surface="but"/>
+  <token id="27" lemma="frightened" pos="JJ" surface="frightened"/>
+  <token id="28" lemma="million" pos="NNS" surface="millions"/>
+  <token id="29" lemma="of" pos="IN" surface="of"/>
+  <token id="30" lemma="americans" pos="NNPS" surface="Americans"/>
+  <token id="31" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="7" to="4" type="det"/>
+  <dep from="7" to="5" type="amod"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="3" to="7" type="dobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="3" to="11" type="punct"/>
+  <dep from="13" to="12" type="mark"/>
+  <dep from="3" to="13" type="advcl"/>
+  <dep from="13" to="14" type="agent"/>
+  <dep from="19" to="15" type="det"/>
+  <dep from="19" to="16" type="nummod"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="14" to="19" type="pobj"/>
+  <dep from="19" to="20" type="punct"/>
+  <dep from="22" to="21" type="nsubj"/>
+  <dep from="19" to="22" type="relcl"/>
+  <dep from="24" to="23" type="advmod"/>
+  <dep from="25" to="24" type="nummod"/>
+  <dep from="22" to="25" type="dobj"/>
+  <dep from="22" to="26" type="cc"/>
+  <dep from="22" to="27" type="conj"/>
+  <dep from="27" to="28" type="dobj"/>
+  <dep from="28" to="29" type="prep"/>
+  <dep from="29" to="30" type="pobj"/>
+  <dep from="3" to="31" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Text">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Text">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Number">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Experiencer_obj">
+    <lexicalUnit>
+     <token id="27"/>
+    </lexicalUnit>
+    <frameElement type="Stimulus">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Stimulus">
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Experiencer">
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="28"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="28"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="29"/>
+     <token id="30"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_origin">
+    <lexicalUnit>
+     <token id="30"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="30"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="30"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="25"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101078">
+ <sentence>
+  Las Vegas was no longer a small pioneer settlement .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="las" pos="NNP" surface="Las"/>
+  <token id="2" lemma="vegas" pos="NNP" surface="Vegas"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="no" pos="RB" surface="no"/>
+  <token id="5" lemma="longer" pos="RBR" surface="longer"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="small" pos="JJ" surface="small"/>
+  <token id="8" lemma="pioneer" pos="NN" surface="pioneer"/>
+  <token id="9" lemma="settlement" pos="NN" surface="settlement"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="neg"/>
+  <dep from="3" to="5" type="advmod"/>
+  <dep from="9" to="6" type="det"/>
+  <dep from="9" to="7" type="amod"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="3" to="9" type="attr"/>
+  <dep from="3" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Trajector_event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Size">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Achieving_first">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Formational_cause">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

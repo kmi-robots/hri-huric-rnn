@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097308">
+ <sentence>
+  In 1974 , the Shah bought shares in Eurodif in accordance with a nuclear cooperation agreement with France .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="1974" pos="CD" surface="1974"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="shah" pos="NNP" surface="Shah"/>
+  <token id="6" lemma="buy" pos="VBD" surface="bought"/>
+  <token id="7" lemma="share" pos="NNS" surface="shares"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="eurodif" pos="NNP" surface="Eurodif"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="accordance" pos="NN" surface="accordance"/>
+  <token id="12" lemma="with" pos="IN" surface="with"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="15" lemma="cooperation" pos="NN" surface="cooperation"/>
+  <token id="16" lemma="agreement" pos="NN" surface="agreement"/>
+  <token id="17" lemma="with" pos="IN" surface="with"/>
+  <token id="18" lemma="france" pos="NNP" surface="France"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="6" to="3" type="punct"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="6" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="6" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="16" to="13" type="det"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="12" to="16" type="pobj"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="17" to="18" type="pobj"/>
+  <dep from="6" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_buy">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Buyer">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Collaboration">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Undertaking">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Make_agreement_on_action">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Obligation">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Party_2">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

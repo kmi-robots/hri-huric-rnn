@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096495">
+ <sentence>
+  Production of biological weapon agents appears to have begun in the early 1980s .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="production" pos="NN" surface="Production"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="biological" pos="JJ" surface="biological"/>
+  <token id="4" lemma="weapon" pos="NN" surface="weapon"/>
+  <token id="5" lemma="agent" pos="NNS" surface="agents"/>
+  <token id="6" lemma="appear" pos="VBZ" surface="appears"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="have" pos="VB" surface="have"/>
+  <token id="9" lemma="begin" pos="VBN" surface="begun"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="early" pos="JJ" surface="early"/>
+  <token id="13" lemma="1980s" pos="CD" surface="1980s"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="2" to="5" type="pobj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="9" to="7" type="aux"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="6" to="9" type="xcomp"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="6" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Give_impression">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Inference">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Process_start">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

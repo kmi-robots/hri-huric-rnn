@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148543">
+ <sentence>
+  I have heard that he was atrocious .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="have" pos="VBP" surface="have"/>
+  <token id="3" lemma="hear" pos="VBN" surface="heard"/>
+  <token id="4" lemma="that" pos="IN" surface="that"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="6" lemma="be" pos="VBD" surface="was"/>
+  <token id="7" lemma="atrocious" pos="JJ" surface="atrocious"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="mark"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="3" to="6" type="ccomp"/>
+  <dep from="6" to="7" type="acomp"/>
+  <dep from="3" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Hearsay">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Hearer">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Social_interaction_evaluation">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

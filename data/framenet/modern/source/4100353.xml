@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100353">
+ <sentence>
+  Several palaces were built and a water system installed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="several" pos="JJ" surface="Several"/>
+  <token id="2" lemma="palace" pos="NNS" surface="palaces"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="build" pos="VBN" surface="built"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="water" pos="NN" surface="water"/>
+  <token id="8" lemma="system" pos="NN" surface="system"/>
+  <token id="9" lemma="instal" pos="VBN" surface="installed"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="4" to="9" type="conj"/>
+  <dep from="9" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Building">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="System">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Component_entities">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Complex">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Installing">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Component">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

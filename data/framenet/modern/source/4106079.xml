@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106079">
+ <sentence>
+  By way of formal tourist attractions , Pak Tai Temple , built in 1783 , has some fine carvings and a great iron sword said to be 600 years old .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="by" pos="IN" surface="By"/>
+  <token id="2" lemma="way" pos="NN" surface="way"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="formal" pos="JJ" surface="formal"/>
+  <token id="5" lemma="tourist" pos="NN" surface="tourist"/>
+  <token id="6" lemma="attraction" pos="NNS" surface="attractions"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="pak" pos="NNP" surface="Pak"/>
+  <token id="9" lemma="tai" pos="NNP" surface="Tai"/>
+  <token id="10" lemma="temple" pos="NNP" surface="Temple"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="build" pos="VBN" surface="built"/>
+  <token id="13" lemma="in" pos="IN" surface="in"/>
+  <token id="14" lemma="1783" pos="CD" surface="1783"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="have" pos="VBZ" surface="has"/>
+  <token id="17" lemma="some" pos="DT" surface="some"/>
+  <token id="18" lemma="fine" pos="JJ" surface="fine"/>
+  <token id="19" lemma="carving" pos="NNS" surface="carvings"/>
+  <token id="20" lemma="and" pos="CC" surface="and"/>
+  <token id="21" lemma="a" pos="DT" surface="a"/>
+  <token id="22" lemma="great" pos="JJ" surface="great"/>
+  <token id="23" lemma="iron" pos="NN" surface="iron"/>
+  <token id="24" lemma="sword" pos="NN" surface="sword"/>
+  <token id="25" lemma="say" pos="VBD" surface="said"/>
+  <token id="26" lemma="to" pos="TO" surface="to"/>
+  <token id="27" lemma="be" pos="VB" surface="be"/>
+  <token id="28" lemma="600" pos="CD" surface="600"/>
+  <token id="29" lemma="year" pos="NNS" surface="years"/>
+  <token id="30" lemma="old" pos="JJ" surface="old"/>
+  <token id="31" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="16" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="6" to="4" type="amod"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="3" to="6" type="pobj"/>
+  <dep from="16" to="7" type="punct"/>
+  <dep from="10" to="8" type="compound"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="16" to="10" type="nsubj"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="10" to="12" type="acl"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="10" to="15" type="punct"/>
+  <dep from="25" to="16" type="aux"/>
+  <dep from="19" to="17" type="det"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="16" to="19" type="dobj"/>
+  <dep from="19" to="20" type="cc"/>
+  <dep from="24" to="21" type="det"/>
+  <dep from="24" to="22" type="amod"/>
+  <dep from="24" to="23" type="compound"/>
+  <dep from="19" to="24" type="conj"/>
+  <dep from="0" to="25" type="root"/>
+  <dep from="27" to="26" type="aux"/>
+  <dep from="25" to="27" type="xcomp"/>
+  <dep from="29" to="28" type="nummod"/>
+  <dep from="30" to="29" type="npadvmod"/>
+  <dep from="27" to="30" type="acomp"/>
+  <dep from="25" to="31" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Touring">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Tourist">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Attraction">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Building">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Trajector_event">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Landmark_period">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Denoted_quantity">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirability">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Material">
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="30"/>
+    </lexicalUnit>
+    <frameElement type="Age">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Age">
+     <token id="28"/>
+     <token id="29"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="29"/>
+    </lexicalUnit>
+    <frameElement type="Count">
+     <token id="28"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="29"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

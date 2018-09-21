@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103849">
+ <sentence>
+  Fresh water from tropical storms feeds 120 rivers and some of the most celebrated waterfalls and cascades on earth .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="fresh" pos="JJ" surface="Fresh"/>
+  <token id="2" lemma="water" pos="NN" surface="water"/>
+  <token id="3" lemma="from" pos="IN" surface="from"/>
+  <token id="4" lemma="tropical" pos="JJ" surface="tropical"/>
+  <token id="5" lemma="storm" pos="NNS" surface="storms"/>
+  <token id="6" lemma="feed" pos="VBZ" surface="feeds"/>
+  <token id="7" lemma="120" pos="CD" surface="120"/>
+  <token id="8" lemma="river" pos="NNS" surface="rivers"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="some" pos="DT" surface="some"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="most" pos="RBS" surface="most"/>
+  <token id="14" lemma="celebrated" pos="JJ" surface="celebrated"/>
+  <token id="15" lemma="waterfall" pos="NNS" surface="waterfalls"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="cascade" pos="VBZ" surface="cascades"/>
+  <token id="18" lemma="on" pos="IN" surface="on"/>
+  <token id="19" lemma="earth" pos="NN" surface="earth"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="6" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="nummod"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="15" to="12" type="det"/>
+  <dep from="14" to="13" type="advmod"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="11" to="15" type="pobj"/>
+  <dep from="6" to="16" type="cc"/>
+  <dep from="6" to="17" type="conj"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="18" to="19" type="pobj"/>
+  <dep from="6" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weather">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Specification">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Spatial_contact">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

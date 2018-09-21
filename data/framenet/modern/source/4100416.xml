@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100416">
+ <sentence>
+  Jerusalem flourished during the early years of the Mandate .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="jerusalem" pos="NNP" surface="Jerusalem"/>
+  <token id="2" lemma="flourish" pos="VBD" surface="flourished"/>
+  <token id="3" lemma="during" pos="IN" surface="during"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="early" pos="JJ" surface="early"/>
+  <token id="6" lemma="year" pos="NNS" surface="years"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="mandate" pos="NNP" surface="Mandate"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="pobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="2" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Thriving">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_subregion">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Subpart">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time_period">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Deny_or_grant_permission">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Action">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

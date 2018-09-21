@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099399">
+ <sentence>
+  In the past , politically motivated terrorist organizations , such as the Provisional Irish Republican Army ( PIRA ) or the Palestinian Liberation Organization ( PLO ) , have not sought to inflict indiscriminate mass casualties .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="past" pos="NN" surface="past"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="politically" pos="RB" surface="politically"/>
+  <token id="6" lemma="motivated" pos="JJ" surface="motivated"/>
+  <token id="7" lemma="terrorist" pos="JJ" surface="terrorist"/>
+  <token id="8" lemma="organization" pos="NNS" surface="organizations"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="such" pos="JJ" surface="such"/>
+  <token id="11" lemma="as" pos="IN" surface="as"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="provisional" pos="NNP" surface="Provisional"/>
+  <token id="14" lemma="irish" pos="NNP" surface="Irish"/>
+  <token id="15" lemma="republican" pos="NNP" surface="Republican"/>
+  <token id="16" lemma="army" pos="NNP" surface="Army"/>
+  <token id="17" lemma="(" pos="-LRB-" surface="("/>
+  <token id="18" lemma="pira" pos="NNP" surface="PIRA"/>
+  <token id="19" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="20" lemma="or" pos="CC" surface="or"/>
+  <token id="21" lemma="the" pos="DT" surface="the"/>
+  <token id="22" lemma="palestinian" pos="NNP" surface="Palestinian"/>
+  <token id="23" lemma="liberation" pos="NNP" surface="Liberation"/>
+  <token id="24" lemma="organization" pos="NNP" surface="Organization"/>
+  <token id="25" lemma="(" pos="-LRB-" surface="("/>
+  <token id="26" lemma="plo" pos="NNP" surface="PLO"/>
+  <token id="27" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="28" lemma="," pos="," surface=","/>
+  <token id="29" lemma="have" pos="VBP" surface="have"/>
+  <token id="30" lemma="not" pos="RB" surface="not"/>
+  <token id="31" lemma="seek" pos="VBN" surface="sought"/>
+  <token id="32" lemma="to" pos="TO" surface="to"/>
+  <token id="33" lemma="inflict" pos="VB" surface="inflict"/>
+  <token id="34" lemma="indiscriminate" pos="JJ" surface="indiscriminate"/>
+  <token id="35" lemma="mass" pos="NN" surface="mass"/>
+  <token id="36" lemma="casualty" pos="NNS" surface="casualties"/>
+  <token id="37" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="31" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="8" to="4" type="punct"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="31" to="8" type="nsubj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="prep"/>
+  <dep from="16" to="12" type="det"/>
+  <dep from="16" to="13" type="nmod"/>
+  <dep from="16" to="14" type="compound"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="11" to="16" type="pobj"/>
+  <dep from="16" to="17" type="punct"/>
+  <dep from="16" to="18" type="appos"/>
+  <dep from="16" to="19" type="punct"/>
+  <dep from="16" to="20" type="cc"/>
+  <dep from="24" to="21" type="det"/>
+  <dep from="24" to="22" type="compound"/>
+  <dep from="24" to="23" type="compound"/>
+  <dep from="16" to="24" type="conj"/>
+  <dep from="24" to="25" type="punct"/>
+  <dep from="24" to="26" type="appos"/>
+  <dep from="24" to="27" type="punct"/>
+  <dep from="8" to="28" type="punct"/>
+  <dep from="31" to="29" type="aux"/>
+  <dep from="31" to="30" type="neg"/>
+  <dep from="0" to="31" type="root"/>
+  <dep from="33" to="32" type="aux"/>
+  <dep from="31" to="33" type="xcomp"/>
+  <dep from="36" to="34" type="amod"/>
+  <dep from="36" to="35" type="compound"/>
+  <dep from="33" to="36" type="dobj"/>
+  <dep from="31" to="37" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Organization">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Members">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Seeking_to_achieve">
+    <lexicalUnit>
+     <token id="31"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+    <frameElement type="State_of_affairs">
+     <token id="32"/>
+     <token id="33"/>
+     <token id="34"/>
+     <token id="35"/>
+     <token id="36"/>
+    </frameElement>
+   </frame>
+   <frame name="Terrorism">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Terrorist">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

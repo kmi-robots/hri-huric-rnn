@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103840">
+ <sentence>
+  Jamaica and Its People
+ </sentence>
+ <tokens>
+  <token id="1" lemma="jamaica" pos="NNP" surface="Jamaica"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="-PRON-" pos="PRP$" surface="Its"/>
+  <token id="4" lemma="people" pos="NNS" surface="People"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="4" to="3" type="poss"/>
+  <dep from="1" to="4" type="conj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

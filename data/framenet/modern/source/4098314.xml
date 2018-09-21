@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098314">
+ <sentence>
+  Libya ?s government strongly denies acquiring or producing BW .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="libya" pos="NNP" surface="Libya"/>
+  <token id="2" lemma="?s" pos="." surface="?s"/>
+  <token id="3" lemma="government" pos="NN" surface="government"/>
+  <token id="4" lemma="strongly" pos="RB" surface="strongly"/>
+  <token id="5" lemma="deny" pos="VBZ" surface="denies"/>
+  <token id="6" lemma="acquire" pos="VBG" surface="acquiring"/>
+  <token id="7" lemma="or" pos="CC" surface="or"/>
+  <token id="8" lemma="produce" pos="VBG" surface="producing"/>
+  <token id="9" lemma="bw" pos="NNP" surface="BW"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nmod"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="xcomp"/>
+  <dep from="6" to="7" type="cc"/>
+  <dep from="6" to="8" type="conj"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="5" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Affirm_or_deny">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Getting">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Producer">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Creator">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Governed">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

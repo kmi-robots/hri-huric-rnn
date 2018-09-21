@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106366">
+ <sentence>
+  Each year , we help thousands of people who face tremendous obstacles .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="each" pos="DT" surface="Each"/>
+  <token id="2" lemma="year" pos="NN" surface="year"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="5" lemma="help" pos="VBP" surface="help"/>
+  <token id="6" lemma="thousand" pos="NNS" surface="thousands"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="people" pos="NNS" surface="people"/>
+  <token id="9" lemma="who" pos="WP" surface="who"/>
+  <token id="10" lemma="face" pos="VBP" surface="face"/>
+  <token id="11" lemma="tremendous" pos="JJ" surface="tremendous"/>
+  <token id="12" lemma="obstacle" pos="NNS" surface="obstacles"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="5" to="2" type="npadvmod"/>
+  <dep from="5" to="3" type="punct"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="6" to="10" type="relcl"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="5" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Whole">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Helper">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Benefited_party">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Partitive">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Subset">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Group">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Persistent_characteristic">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Confronting_problem">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Issue">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824429">
+ <sentence>
+  Following are excerpts from the electronic traffic that night .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="follow" pos="VBG" surface="Following"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="excerpt" pos="NNS" surface="excerpts"/>
+  <token id="4" lemma="from" pos="IN" surface="from"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="electronic" pos="JJ" surface="electronic"/>
+  <token id="7" lemma="traffic" pos="NN" surface="traffic"/>
+  <token id="8" lemma="that" pos="DT" surface="that"/>
+  <token id="9" lemma="night" pos="NN" surface="night"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="pobj"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="2" to="9" type="npadvmod"/>
+  <dep from="2" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Relative_time">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

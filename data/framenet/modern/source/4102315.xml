@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102315">
+ <sentence>
+  Thank God .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="thank" pos="VBP" surface="Thank"/>
+  <token id="2" lemma="god" pos="NNP" surface="God"/>
+  <token id="3" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="dobj"/>
+  <dep from="1" to="3" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Judgment_direct_address">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Addressee">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

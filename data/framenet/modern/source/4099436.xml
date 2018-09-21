@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099436">
+ <sentence>
+  On September 11, 2001 , nineteen Al Qa'ida terrorists hijacked four commercial aircraft and flew three of them into the World Trade Center and the Pentagon ; the fourth crashed into a field in Shanksville , Pennsylvania .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="on" pos="IN" surface="On"/>
+  <token id="2" lemma="september" pos="NNP" surface="September"/>
+  <token id="3" lemma="11," pos="CD" surface="11,"/>
+  <token id="4" lemma="2001" pos="CD" surface="2001"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="nineteen" pos="CD" surface="nineteen"/>
+  <token id="7" lemma="al" pos="NNP" surface="Al"/>
+  <token id="8" lemma="qa'ida" pos="NNP" surface="Qa'ida"/>
+  <token id="9" lemma="terrorist" pos="NNS" surface="terrorists"/>
+  <token id="10" lemma="hijack" pos="VBD" surface="hijacked"/>
+  <token id="11" lemma="four" pos="CD" surface="four"/>
+  <token id="12" lemma="commercial" pos="JJ" surface="commercial"/>
+  <token id="13" lemma="aircraft" pos="NN" surface="aircraft"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="fly" pos="VBD" surface="flew"/>
+  <token id="16" lemma="three" pos="CD" surface="three"/>
+  <token id="17" lemma="of" pos="IN" surface="of"/>
+  <token id="18" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="19" lemma="into" pos="IN" surface="into"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="world" pos="NNP" surface="World"/>
+  <token id="22" lemma="trade" pos="NNP" surface="Trade"/>
+  <token id="23" lemma="center" pos="NNP" surface="Center"/>
+  <token id="24" lemma="and" pos="CC" surface="and"/>
+  <token id="25" lemma="the" pos="DT" surface="the"/>
+  <token id="26" lemma="pentagon" pos="NNP" surface="Pentagon"/>
+  <token id="27" lemma=";" pos=":" surface=";"/>
+  <token id="28" lemma="the" pos="DT" surface="the"/>
+  <token id="29" lemma="fourth" pos="JJ" surface="fourth"/>
+  <token id="30" lemma="crash" pos="VBD" surface="crashed"/>
+  <token id="31" lemma="into" pos="IN" surface="into"/>
+  <token id="32" lemma="a" pos="DT" surface="a"/>
+  <token id="33" lemma="field" pos="NN" surface="field"/>
+  <token id="34" lemma="in" pos="IN" surface="in"/>
+  <token id="35" lemma="shanksville" pos="NNP" surface="Shanksville"/>
+  <token id="36" lemma="," pos="," surface=","/>
+  <token id="37" lemma="pennsylvania" pos="NNP" surface="Pennsylvania"/>
+  <token id="38" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="2" to="3" type="nummod"/>
+  <dep from="3" to="4" type="nummod"/>
+  <dep from="10" to="5" type="punct"/>
+  <dep from="9" to="6" type="nummod"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="30" to="10" type="ccomp"/>
+  <dep from="13" to="11" type="nummod"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="dobj"/>
+  <dep from="10" to="14" type="cc"/>
+  <dep from="10" to="15" type="conj"/>
+  <dep from="15" to="16" type="dobj"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="17" to="18" type="pobj"/>
+  <dep from="15" to="19" type="prep"/>
+  <dep from="23" to="20" type="det"/>
+  <dep from="23" to="21" type="compound"/>
+  <dep from="23" to="22" type="compound"/>
+  <dep from="19" to="23" type="pobj"/>
+  <dep from="23" to="24" type="cc"/>
+  <dep from="26" to="25" type="det"/>
+  <dep from="23" to="26" type="conj"/>
+  <dep from="30" to="27" type="punct"/>
+  <dep from="29" to="28" type="det"/>
+  <dep from="30" to="29" type="nsubj"/>
+  <dep from="0" to="30" type="root"/>
+  <dep from="30" to="31" type="prep"/>
+  <dep from="33" to="32" type="det"/>
+  <dep from="31" to="33" type="pobj"/>
+  <dep from="33" to="34" type="prep"/>
+  <dep from="34" to="35" type="pobj"/>
+  <dep from="35" to="36" type="punct"/>
+  <dep from="35" to="37" type="appos"/>
+  <dep from="30" to="38" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Piracy">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Perpetrator">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Vehicle">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Operate_vehicle">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Driver">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Vehicle">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_impact">
+    <lexicalUnit>
+     <token id="30"/>
+    </lexicalUnit>
+    <frameElement type="Impactor">
+     <token id="28"/>
+     <token id="29"/>
+    </frameElement>
+    <frameElement type="Impactee">
+     <token id="31"/>
+     <token id="32"/>
+     <token id="33"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="34"/>
+     <token id="35"/>
+     <token id="36"/>
+     <token id="37"/>
+    </frameElement>
+   </frame>
+   <frame name="Terrorism">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Terrorist">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

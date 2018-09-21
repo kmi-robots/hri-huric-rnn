@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101095">
+ <sentence>
+  More Government Help
+ </sentence>
+ <tokens>
+  <token id="1" lemma="more" pos="JJR" surface="More"/>
+  <token id="2" lemma="government" pos="NNP" surface="Government"/>
+  <token id="3" lemma="help" pos="NNP" surface="Help"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="amod"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="0" to="3" type="root"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Helper">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Added_set">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Class">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

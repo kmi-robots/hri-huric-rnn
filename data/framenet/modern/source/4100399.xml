@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100399">
+ <sentence>
+  The Christians , however , could not hold the city .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="christians" pos="NNPS" surface="Christians"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="however" pos="RB" surface="however"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="could" pos="MD" surface="could"/>
+  <token id="7" lemma="not" pos="RB" surface="not"/>
+  <token id="8" lemma="hold" pos="VB" surface="hold"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="city" pos="NN" surface="city"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="8" to="2" type="nsubj"/>
+  <dep from="8" to="3" type="punct"/>
+  <dep from="8" to="4" type="advmod"/>
+  <dep from="8" to="5" type="punct"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="neg"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="8" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People_by_religion">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Defending">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Defender">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165032">
+ <sentence>
+  The construction company said fire broke out at about 2:10pm local time ( 0310 UTC ) and appeared to have been caused by a welding accident in the basement of a building .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="construction" pos="NN" surface="construction"/>
+  <token id="3" lemma="company" pos="NN" surface="company"/>
+  <token id="4" lemma="say" pos="VBD" surface="said"/>
+  <token id="5" lemma="fire" pos="NN" surface="fire"/>
+  <token id="6" lemma="break" pos="VBD" surface="broke"/>
+  <token id="7" lemma="out" pos="RP" surface="out"/>
+  <token id="8" lemma="at" pos="IN" surface="at"/>
+  <token id="9" lemma="about" pos="IN" surface="about"/>
+  <token id="10" lemma="2:10pm" pos="JJ" surface="2:10pm"/>
+  <token id="11" lemma="local" pos="JJ" surface="local"/>
+  <token id="12" lemma="time" pos="NN" surface="time"/>
+  <token id="13" lemma="(" pos="-LRB-" surface="("/>
+  <token id="14" lemma="0310" pos="CD" surface="0310"/>
+  <token id="15" lemma="utc" pos="NN" surface="UTC"/>
+  <token id="16" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="17" lemma="and" pos="CC" surface="and"/>
+  <token id="18" lemma="appear" pos="VBD" surface="appeared"/>
+  <token id="19" lemma="to" pos="TO" surface="to"/>
+  <token id="20" lemma="have" pos="VB" surface="have"/>
+  <token id="21" lemma="be" pos="VBN" surface="been"/>
+  <token id="22" lemma="cause" pos="VBN" surface="caused"/>
+  <token id="23" lemma="by" pos="IN" surface="by"/>
+  <token id="24" lemma="a" pos="DT" surface="a"/>
+  <token id="25" lemma="welding" pos="NN" surface="welding"/>
+  <token id="26" lemma="accident" pos="NN" surface="accident"/>
+  <token id="27" lemma="in" pos="IN" surface="in"/>
+  <token id="28" lemma="the" pos="DT" surface="the"/>
+  <token id="29" lemma="basement" pos="NN" surface="basement"/>
+  <token id="30" lemma="of" pos="IN" surface="of"/>
+  <token id="31" lemma="a" pos="DT" surface="a"/>
+  <token id="32" lemma="building" pos="NN" surface="building"/>
+  <token id="33" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="4" to="6" type="ccomp"/>
+  <dep from="6" to="7" type="prt"/>
+  <dep from="6" to="8" type="prep"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="12" to="10" type="nummod"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="8" to="12" type="pobj"/>
+  <dep from="15" to="13" type="punct"/>
+  <dep from="15" to="14" type="nummod"/>
+  <dep from="12" to="15" type="appos"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="6" to="17" type="cc"/>
+  <dep from="6" to="18" type="conj"/>
+  <dep from="22" to="19" type="aux"/>
+  <dep from="22" to="20" type="aux"/>
+  <dep from="22" to="21" type="auxpass"/>
+  <dep from="18" to="22" type="xcomp"/>
+  <dep from="22" to="23" type="agent"/>
+  <dep from="26" to="24" type="det"/>
+  <dep from="26" to="25" type="compound"/>
+  <dep from="23" to="26" type="pobj"/>
+  <dep from="26" to="27" type="prep"/>
+  <dep from="29" to="28" type="det"/>
+  <dep from="27" to="29" type="pobj"/>
+  <dep from="29" to="30" type="prep"/>
+  <dep from="32" to="31" type="det"/>
+  <dep from="30" to="32" type="pobj"/>
+  <dep from="4" to="33" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Building">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Service_provider">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+     <token id="31"/>
+     <token id="32"/>
+    </frameElement>
+   </frame>
+   <frame name="Fire_burning">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Fire">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Catching_fire">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Fire">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Give_impression">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Inference">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Inference">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+     <token id="31"/>
+     <token id="32"/>
+    </frameElement>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+     <token id="31"/>
+     <token id="32"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Building_subparts">
+    <lexicalUnit>
+     <token id="29"/>
+    </lexicalUnit>
+    <frameElement type="Building_part">
+     <token id="29"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="30"/>
+     <token id="31"/>
+     <token id="32"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="32"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="32"/>
+    </frameElement>
+   </frame>
+   <frame name="Catastrophe">
+    <lexicalUnit>
+     <token id="26"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Undesirable_event">
+     <token id="26"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+     <token id="31"/>
+     <token id="32"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="27"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+     <token id="31"/>
+     <token id="32"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Trajector_event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Landmark_period">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

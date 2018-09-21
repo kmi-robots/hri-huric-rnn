@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102406">
+ <sentence>
+  Ed_Henry : A Democratic sneak attack that sent shock waves through the Senate .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="ed_henry" pos="NNS" surface="Ed_Henry"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="a" pos="DT" surface="A"/>
+  <token id="4" lemma="democratic" pos="JJ" surface="Democratic"/>
+  <token id="5" lemma="sneak" pos="NN" surface="sneak"/>
+  <token id="6" lemma="attack" pos="NN" surface="attack"/>
+  <token id="7" lemma="that" pos="WDT" surface="that"/>
+  <token id="8" lemma="send" pos="VBD" surface="sent"/>
+  <token id="9" lemma="shock" pos="NN" surface="shock"/>
+  <token id="10" lemma="wave" pos="NNS" surface="waves"/>
+  <token id="11" lemma="through" pos="IN" surface="through"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="senate" pos="NNP" surface="Senate"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="6" to="3" type="det"/>
+  <dep from="6" to="4" type="amod"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="6" to="8" type="relcl"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="8" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="6" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Assailant">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Sending">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Sender">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Sender">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

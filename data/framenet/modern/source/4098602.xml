@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098602">
+ <sentence>
+  QN : Has Al-Jazeera television broadcasted a video that showed an American who had been kidnapped ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="have" pos="VBZ" surface="Has"/>
+  <token id="4" lemma="al-jazeera" pos="NN" surface="Al-Jazeera"/>
+  <token id="5" lemma="television" pos="NN" surface="television"/>
+  <token id="6" lemma="broadcast" pos="VBD" surface="broadcasted"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="video" pos="NN" surface="video"/>
+  <token id="9" lemma="that" pos="WDT" surface="that"/>
+  <token id="10" lemma="show" pos="VBD" surface="showed"/>
+  <token id="11" lemma="an" pos="DT" surface="an"/>
+  <token id="12" lemma="american" pos="NNP" surface="American"/>
+  <token id="13" lemma="who" pos="WP" surface="who"/>
+  <token id="14" lemma="have" pos="VBD" surface="had"/>
+  <token id="15" lemma="be" pos="VBN" surface="been"/>
+  <token id="16" lemma="kidnap" pos="VBN" surface="kidnapped"/>
+  <token id="17" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="8" to="10" type="relcl"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="16" to="13" type="nsubjpass"/>
+  <dep from="16" to="14" type="aux"/>
+  <dep from="16" to="15" type="auxpass"/>
+  <dep from="12" to="16" type="relcl"/>
+  <dep from="6" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Kidnapping">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

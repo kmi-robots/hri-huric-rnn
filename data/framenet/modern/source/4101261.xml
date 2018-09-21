@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101261">
+ <sentence>
+  In 1453 , they took Constantinople , and immediately made it their capital , renaming it Istanbul .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="1453" pos="CD" surface="1453"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="5" lemma="take" pos="VBD" surface="took"/>
+  <token id="6" lemma="constantinople" pos="NNP" surface="Constantinople"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="immediately" pos="RB" surface="immediately"/>
+  <token id="10" lemma="make" pos="VBD" surface="made"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="12" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="13" lemma="capital" pos="NN" surface="capital"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="rename" pos="VBG" surface="renaming"/>
+  <token id="16" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="17" lemma="istanbul" pos="NNP" surface="Istanbul"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="5" to="3" type="punct"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="punct"/>
+  <dep from="5" to="8" type="cc"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="5" to="10" type="conj"/>
+  <dep from="13" to="11" type="nsubj"/>
+  <dep from="13" to="12" type="poss"/>
+  <dep from="10" to="13" type="ccomp"/>
+  <dep from="10" to="14" type="punct"/>
+  <dep from="10" to="15" type="advcl"/>
+  <dep from="17" to="16" type="nmod"/>
+  <dep from="15" to="17" type="dobj"/>
+  <dep from="5" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Relational_political_locales">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Population">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_period">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_change">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Final_category">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Name_conferral">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Conquering">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Conqueror">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

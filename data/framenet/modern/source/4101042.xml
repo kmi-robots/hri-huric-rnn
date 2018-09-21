@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101042">
+ <sentence>
+  In the early nineteenth century , America 's western territories were still largely unexplored .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="early" pos="JJ" surface="early"/>
+  <token id="4" lemma="nineteenth" pos="JJ" surface="nineteenth"/>
+  <token id="5" lemma="century" pos="NN" surface="century"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="america" pos="NNP" surface="America"/>
+  <token id="8" lemma="'s" pos="POS" surface="'s"/>
+  <token id="9" lemma="western" pos="JJ" surface="western"/>
+  <token id="10" lemma="territory" pos="NNS" surface="territories"/>
+  <token id="11" lemma="be" pos="VBD" surface="were"/>
+  <token id="12" lemma="still" pos="RB" surface="still"/>
+  <token id="13" lemma="largely" pos="RB" surface="largely"/>
+  <token id="14" lemma="unexplored" pos="JJ" surface="unexplored"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="11" to="1" type="prep"/>
+  <dep from="5" to="2" type="det"/>
+  <dep from="5" to="3" type="amod"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="1" to="5" type="pobj"/>
+  <dep from="11" to="6" type="punct"/>
+  <dep from="10" to="7" type="poss"/>
+  <dep from="7" to="8" type="case"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="advmod"/>
+  <dep from="14" to="13" type="advmod"/>
+  <dep from="11" to="14" type="acomp"/>
+  <dep from="11" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Temporal_subregion">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Time_period">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Subpart">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Ordinal_numbers">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_orientational">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Continued_state_of_affairs">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="State_of_affairs">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Reference_occasion">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Relative_location">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Relative_time">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

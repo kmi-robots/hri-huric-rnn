@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148368">
+ <sentence>
+  There are gaps in that direction which we have still to fill .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="gap" pos="NNS" surface="gaps"/>
+  <token id="4" lemma="in" pos="IN" surface="in"/>
+  <token id="5" lemma="that" pos="DT" surface="that"/>
+  <token id="6" lemma="direction" pos="NN" surface="direction"/>
+  <token id="7" lemma="which" pos="WDT" surface="which"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="9" lemma="have" pos="VBP" surface="have"/>
+  <token id="10" lemma="still" pos="RB" surface="still"/>
+  <token id="11" lemma="to" pos="TO" surface="to"/>
+  <token id="12" lemma="fill" pos="VB" surface="fill"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="attr"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="9" to="7" type="dobj"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="3" to="9" type="relcl"/>
+  <dep from="9" to="10" type="advmod"/>
+  <dep from="12" to="11" type="aux"/>
+  <dep from="9" to="12" type="xcomp"/>
+  <dep from="2" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Filling">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

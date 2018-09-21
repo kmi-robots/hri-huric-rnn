@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102814">
+ <sentence>
+  The following should be considered when erecting fences:
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="follow" pos="VBG" surface="following"/>
+  <token id="3" lemma="should" pos="MD" surface="should"/>
+  <token id="4" lemma="be" pos="VB" surface="be"/>
+  <token id="5" lemma="consider" pos="VBN" surface="considered"/>
+  <token id="6" lemma="when" pos="WRB" surface="when"/>
+  <token id="7" lemma="erect" pos="VBG" surface="erecting"/>
+  <token id="8" lemma="fences:" pos="NNS" surface="fences:"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="5" to="7" type="advcl"/>
+  <dep from="7" to="8" type="dobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Desirable_event">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="State_of_affairs">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Cogitation">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Topic">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_event">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Building">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

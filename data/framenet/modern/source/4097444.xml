@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097444">
+ <sentence>
+  Deputy Foreign Minister Mahmoud Vaezi asserts that Iran opposes nuclear weapons buildup ( 7294 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="deputy" pos="NNP" surface="Deputy"/>
+  <token id="2" lemma="foreign" pos="NNP" surface="Foreign"/>
+  <token id="3" lemma="minister" pos="NNP" surface="Minister"/>
+  <token id="4" lemma="mahmoud" pos="NNP" surface="Mahmoud"/>
+  <token id="5" lemma="vaezi" pos="NNP" surface="Vaezi"/>
+  <token id="6" lemma="assert" pos="VBZ" surface="asserts"/>
+  <token id="7" lemma="that" pos="IN" surface="that"/>
+  <token id="8" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="9" lemma="oppose" pos="VBZ" surface="opposes"/>
+  <token id="10" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="11" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="12" lemma="buildup" pos="NN" surface="buildup"/>
+  <token id="13" lemma="(" pos="-LRB-" surface="("/>
+  <token id="14" lemma="7294" pos="CD" surface="7294"/>
+  <token id="15" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="compound"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="5" to="3" type="compound"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="9" to="7" type="mark"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="6" to="9" type="ccomp"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="9" to="12" type="dobj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="12" to="14" type="npadvmod"/>
+  <dep from="12" to="15" type="punct"/>
+  <dep from="6" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Taking_sides">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Action">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

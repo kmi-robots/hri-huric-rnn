@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101101">
+ <sentence>
+  Vices outlawed or heavily controlled elsewhere were legal here , available any hour of any day ( or night ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="vice" pos="NNS" surface="Vices"/>
+  <token id="2" lemma="outlaw" pos="VBD" surface="outlawed"/>
+  <token id="3" lemma="or" pos="CC" surface="or"/>
+  <token id="4" lemma="heavily" pos="RB" surface="heavily"/>
+  <token id="5" lemma="control" pos="VBN" surface="controlled"/>
+  <token id="6" lemma="elsewhere" pos="RB" surface="elsewhere"/>
+  <token id="7" lemma="be" pos="VBD" surface="were"/>
+  <token id="8" lemma="legal" pos="JJ" surface="legal"/>
+  <token id="9" lemma="here" pos="RB" surface="here"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="available" pos="JJ" surface="available"/>
+  <token id="12" lemma="any" pos="DT" surface="any"/>
+  <token id="13" lemma="hour" pos="NN" surface="hour"/>
+  <token id="14" lemma="of" pos="IN" surface="of"/>
+  <token id="15" lemma="any" pos="DT" surface="any"/>
+  <token id="16" lemma="day" pos="NN" surface="day"/>
+  <token id="17" lemma="(" pos="-LRB-" surface="("/>
+  <token id="18" lemma="or" pos="CC" surface="or"/>
+  <token id="19" lemma="night" pos="NN" surface="night"/>
+  <token id="20" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="2" to="5" type="conj"/>
+  <dep from="5" to="6" type="advmod"/>
+  <dep from="2" to="7" type="conj"/>
+  <dep from="7" to="8" type="acomp"/>
+  <dep from="7" to="9" type="advmod"/>
+  <dep from="7" to="10" type="punct"/>
+  <dep from="7" to="11" type="conj"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="npadvmod"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="16" to="17" type="punct"/>
+  <dep from="16" to="18" type="cc"/>
+  <dep from="16" to="19" type="conj"/>
+  <dep from="7" to="20" type="punct"/>
+  <dep from="2" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Prohibiting_or_licensing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Legality">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Action">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Relative_time">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Relative_time">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Relative_time">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

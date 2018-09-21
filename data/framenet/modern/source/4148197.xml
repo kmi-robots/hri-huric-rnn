@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148197">
+ <sentence>
+  " There 's a constable in possession , " said Baynes .
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="there" pos="EX" surface="There"/>
+  <token id="3" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="constable" pos="NN" surface="constable"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="possession" pos="NN" surface="possession"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma='"' pos="''" surface='"'/>
+  <token id="10" lemma="say" pos="VBD" surface="said"/>
+  <token id="11" lemma="baynes" pos="NNP" surface="Baynes"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="punct"/>
+  <dep from="3" to="2" type="expl"/>
+  <dep from="10" to="3" type="ccomp"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="attr"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="10" to="8" type="punct"/>
+  <dep from="10" to="9" type="punct"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="nsubj"/>
+  <dep from="10" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

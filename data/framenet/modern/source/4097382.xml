@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097382">
+ <sentence>
+  Argentina has blocked the equipment sale because of US pressure but has not formally informed Iran that INVAP will not be permitted to supply the facilities .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="argentina" pos="NNP" surface="Argentina"/>
+  <token id="2" lemma="have" pos="VBZ" surface="has"/>
+  <token id="3" lemma="block" pos="VBN" surface="blocked"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="equipment" pos="NN" surface="equipment"/>
+  <token id="6" lemma="sale" pos="NN" surface="sale"/>
+  <token id="7" lemma="because" pos="IN" surface="because"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="us" pos="NNP" surface="US"/>
+  <token id="10" lemma="pressure" pos="NN" surface="pressure"/>
+  <token id="11" lemma="but" pos="CC" surface="but"/>
+  <token id="12" lemma="have" pos="VBZ" surface="has"/>
+  <token id="13" lemma="not" pos="RB" surface="not"/>
+  <token id="14" lemma="formally" pos="RB" surface="formally"/>
+  <token id="15" lemma="inform" pos="VBN" surface="informed"/>
+  <token id="16" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="17" lemma="that" pos="IN" surface="that"/>
+  <token id="18" lemma="invap" pos="NNP" surface="INVAP"/>
+  <token id="19" lemma="will" pos="MD" surface="will"/>
+  <token id="20" lemma="not" pos="RB" surface="not"/>
+  <token id="21" lemma="be" pos="VB" surface="be"/>
+  <token id="22" lemma="permit" pos="VBN" surface="permitted"/>
+  <token id="23" lemma="to" pos="TO" surface="to"/>
+  <token id="24" lemma="supply" pos="VB" surface="supply"/>
+  <token id="25" lemma="the" pos="DT" surface="the"/>
+  <token id="26" lemma="facility" pos="NNS" surface="facilities"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="prep"/>
+  <dep from="7" to="8" type="pcomp"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="3" to="11" type="cc"/>
+  <dep from="15" to="12" type="aux"/>
+  <dep from="15" to="13" type="neg"/>
+  <dep from="15" to="14" type="advmod"/>
+  <dep from="3" to="15" type="conj"/>
+  <dep from="15" to="16" type="dobj"/>
+  <dep from="22" to="17" type="mark"/>
+  <dep from="22" to="18" type="nsubjpass"/>
+  <dep from="22" to="19" type="aux"/>
+  <dep from="22" to="20" type="neg"/>
+  <dep from="22" to="21" type="auxpass"/>
+  <dep from="15" to="22" type="ccomp"/>
+  <dep from="24" to="23" type="aux"/>
+  <dep from="22" to="24" type="xcomp"/>
+  <dep from="26" to="25" type="det"/>
+  <dep from="24" to="26" type="dobj"/>
+  <dep from="3" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_sell">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Attempt_suasion">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Telling">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Manner">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Addressee">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Deny_or_grant_permission">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Action">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+    <frameElement type="Supplier">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="26"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="26"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

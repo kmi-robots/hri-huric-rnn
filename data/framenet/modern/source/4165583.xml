@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165583">
+ <sentence>
+  Four fire helicopters have been deployed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="four" pos="CD" surface="Four"/>
+  <token id="2" lemma="fire" pos="NN" surface="fire"/>
+  <token id="3" lemma="helicopter" pos="NNS" surface="helicopters"/>
+  <token id="4" lemma="have" pos="VBP" surface="have"/>
+  <token id="5" lemma="be" pos="VBN" surface="been"/>
+  <token id="6" lemma="deploy" pos="VBN" surface="deployed"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nummod"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="6" to="3" type="nsubjpass"/>
+  <dep from="6" to="4" type="aux"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Vehicle">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

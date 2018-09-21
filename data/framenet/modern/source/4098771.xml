@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098771">
+ <sentence>
+  He also sold the XYZ-11 , the key part necessary for the trigger .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="also" pos="RB" surface="also"/>
+  <token id="3" lemma="sell" pos="VBD" surface="sold"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="xyz-11" pos="NNP" surface="XYZ-11"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="key" pos="JJ" surface="key"/>
+  <token id="9" lemma="part" pos="NN" surface="part"/>
+  <token id="10" lemma="necessary" pos="JJ" surface="necessary"/>
+  <token id="11" lemma="for" pos="IN" surface="for"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="trigger" pos="NN" surface="trigger"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="6" to="5" type="punct"/>
+  <dep from="10" to="6" type="punct"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="3" to="10" type="advcl"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_sell">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Seller">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Importance">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Factor">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_whole">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Part_prop">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_necessary">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Dependent">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Required_entity">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

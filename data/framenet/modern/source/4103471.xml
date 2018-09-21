@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103471">
+ <sentence>
+  I wrote a letter to Ayman .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="write" pos="VBD" surface="wrote"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="letter" pos="NN" surface="letter"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="ayman" pos="NNP" surface="Ayman"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="2" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Text_creation">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Author">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Text">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Addressee">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Text">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Text">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Author">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097319">
+ <sentence>
+  Iraq imported calutron magnet cores from Germany .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iraq" pos="NNP" surface="Iraq"/>
+  <token id="2" lemma="import" pos="VBD" surface="imported"/>
+  <token id="3" lemma="calutron" pos="NN" surface="calutron"/>
+  <token id="4" lemma="magnet" pos="NN" surface="magnet"/>
+  <token id="5" lemma="core" pos="NNS" surface="cores"/>
+  <token id="6" lemma="from" pos="IN" surface="from"/>
+  <token id="7" lemma="germany" pos="NNP" surface="Germany"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="5" to="2" type="amod"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="5" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Importing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Importer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Exporting_area">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

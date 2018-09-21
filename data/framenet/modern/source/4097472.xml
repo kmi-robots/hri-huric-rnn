@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097472">
+ <sentence>
+  These reports are termed speculative by a nuclear industry journal ( 7198 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="these" pos="DT" surface="These"/>
+  <token id="2" lemma="report" pos="NNS" surface="reports"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="term" pos="VBN" surface="termed"/>
+  <token id="5" lemma="speculative" pos="JJ" surface="speculative"/>
+  <token id="6" lemma="by" pos="IN" surface="by"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="9" lemma="industry" pos="NN" surface="industry"/>
+  <token id="10" lemma="journal" pos="NN" surface="journal"/>
+  <token id="11" lemma="(" pos="-LRB-" surface="("/>
+  <token id="12" lemma="7198" pos="CD" surface="7198"/>
+  <token id="13" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="oprd"/>
+  <dep from="4" to="6" type="agent"/>
+  <dep from="10" to="7" type="det"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="6" to="10" type="pobj"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="10" to="12" type="appos"/>
+  <dep from="10" to="13" type="punct"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Labeling">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Label">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Text">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Text">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Topic">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

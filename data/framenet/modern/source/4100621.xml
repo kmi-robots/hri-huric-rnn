@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100621">
+ <sentence>
+  Dublin 's food has undergone a metamorphosis .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="dublin" pos="NNP" surface="Dublin"/>
+  <token id="2" lemma="'s" pos="POS" surface="'s"/>
+  <token id="3" lemma="food" pos="NN" surface="food"/>
+  <token id="4" lemma="have" pos="VBZ" surface="has"/>
+  <token id="5" lemma="undergo" pos="VBN" surface="undergone"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="metamorphosis" pos="NN" surface="metamorphosis"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="poss"/>
+  <dep from="1" to="2" type="case"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="5" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Food">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Food">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Undergoing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Undergo_transformation">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

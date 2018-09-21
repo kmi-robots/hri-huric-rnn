@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101158">
+ <sentence>
+  The world 's most expensive resort at $1.6 billion , the Bellagio 's amenities include 5-star dining , Chanel-caliber boutiques , and a world-class collection of artistic masterworks .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="world" pos="NN" surface="world"/>
+  <token id="3" lemma="'s" pos="POS" surface="'s"/>
+  <token id="4" lemma="most" pos="RBS" surface="most"/>
+  <token id="5" lemma="expensive" pos="JJ" surface="expensive"/>
+  <token id="6" lemma="resort" pos="NN" surface="resort"/>
+  <token id="7" lemma="at" pos="IN" surface="at"/>
+  <token id="8" lemma="$1.6" pos="$" surface="$1.6"/>
+  <token id="9" lemma="billion" pos="CD" surface="billion"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="bellagio" pos="NNP" surface="Bellagio"/>
+  <token id="13" lemma="'s" pos="POS" surface="'s"/>
+  <token id="14" lemma="amenity" pos="NNS" surface="amenities"/>
+  <token id="15" lemma="include" pos="VBP" surface="include"/>
+  <token id="16" lemma="5-star" pos="NN" surface="5-star"/>
+  <token id="17" lemma="dining" pos="NN" surface="dining"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="chanel-caliber" pos="NNP" surface="Chanel-caliber"/>
+  <token id="20" lemma="boutique" pos="NNS" surface="boutiques"/>
+  <token id="21" lemma="," pos="," surface=","/>
+  <token id="22" lemma="and" pos="CC" surface="and"/>
+  <token id="23" lemma="a" pos="DT" surface="a"/>
+  <token id="24" lemma="world-class" pos="JJ" surface="world-class"/>
+  <token id="25" lemma="collection" pos="NN" surface="collection"/>
+  <token id="26" lemma="of" pos="IN" surface="of"/>
+  <token id="27" lemma="artistic" pos="JJ" surface="artistic"/>
+  <token id="28" lemma="masterwork" pos="NNS" surface="masterworks"/>
+  <token id="29" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="6" to="2" type="poss"/>
+  <dep from="2" to="3" type="case"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="15" to="6" type="advcl"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="15" to="10" type="punct"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="14" to="12" type="poss"/>
+  <dep from="12" to="13" type="case"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="0" to="15" type="root"/>
+  <dep from="17" to="16" type="nummod"/>
+  <dep from="15" to="17" type="dobj"/>
+  <dep from="17" to="18" type="punct"/>
+  <dep from="20" to="19" type="nsubj"/>
+  <dep from="17" to="20" type="conj"/>
+  <dep from="20" to="21" type="punct"/>
+  <dep from="20" to="22" type="cc"/>
+  <dep from="25" to="23" type="det"/>
+  <dep from="25" to="24" type="amod"/>
+  <dep from="20" to="25" type="conj"/>
+  <dep from="25" to="26" type="prep"/>
+  <dep from="28" to="27" type="amod"/>
+  <dep from="26" to="28" type="pobj"/>
+  <dep from="15" to="29" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Expensiveness">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Rate">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Multiplier">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Inclusion">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Total">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+    </frameElement>
+    <frameElement type="Aggregate">
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Aggregate_property">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Fields">
+    <lexicalUnit>
+     <token id="27"/>
+    </lexicalUnit>
+    <frameElement type="Salient_entity">
+     <token id="28"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

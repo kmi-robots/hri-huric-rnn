@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101823">
+ <sentence>
+  Hamas cares about the person on the street and it does deliver .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="hamas" pos="NNP" surface="Hamas"/>
+  <token id="2" lemma="care" pos="VBZ" surface="cares"/>
+  <token id="3" lemma="about" pos="IN" surface="about"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="person" pos="NN" surface="person"/>
+  <token id="6" lemma="on" pos="IN" surface="on"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="street" pos="NN" surface="street"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="11" lemma="do" pos="VBZ" surface="does"/>
+  <token id="12" lemma="deliver" pos="VB" surface="deliver"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="2" to="9" type="cc"/>
+  <dep from="12" to="10" type="nsubj"/>
+  <dep from="12" to="11" type="aux"/>
+  <dep from="2" to="12" type="conj"/>
+  <dep from="12" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Roadway">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

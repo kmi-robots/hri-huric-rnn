@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098725">
+ <sentence>
+  He was planning to meet Bob who was waiting for him there .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="plan" pos="VBG" surface="planning"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="meet" pos="VB" surface="meet"/>
+  <token id="6" lemma="bob" pos="NNP" surface="Bob"/>
+  <token id="7" lemma="who" pos="WP" surface="who"/>
+  <token id="8" lemma="be" pos="VBD" surface="was"/>
+  <token id="9" lemma="wait" pos="VBG" surface="waiting"/>
+  <token id="10" lemma="for" pos="IN" surface="for"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="12" lemma="there" pos="RB" surface="there"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="xcomp"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="9" to="7" type="nsubj"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="6" to="9" type="relcl"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="9" to="12" type="advmod"/>
+  <dep from="3" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Waiting">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Protagonist">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Salient_entity">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Purpose">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

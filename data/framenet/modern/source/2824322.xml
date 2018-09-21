@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824322">
+ <sentence>
+  In this sense , a teacher can be compared to one 's family doctor .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="this" pos="DT" surface="this"/>
+  <token id="3" lemma="sense" pos="NN" surface="sense"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="teacher" pos="NN" surface="teacher"/>
+  <token id="7" lemma="can" pos="MD" surface="can"/>
+  <token id="8" lemma="be" pos="VB" surface="be"/>
+  <token id="9" lemma="compare" pos="VBN" surface="compared"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="one" pos="CD" surface="one"/>
+  <token id="12" lemma="'s" pos="POS" surface="'s"/>
+  <token id="13" lemma="family" pos="NN" surface="family"/>
+  <token id="14" lemma="doctor" pos="NN" surface="doctor"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="9" to="4" type="punct"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="9" to="6" type="nsubjpass"/>
+  <dep from="9" to="7" type="aux"/>
+  <dep from="9" to="8" type="auxpass"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="14" to="11" type="poss"/>
+  <dep from="11" to="12" type="case"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="10" to="14" type="pobj"/>
+  <dep from="9" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Education_teaching">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Teacher">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Evaluative_comparison">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Profiled_item">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Standard_item">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Attribute">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Medical_professionals">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Professional">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Linguistic_meaning">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Meaning">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Kinship">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Relatives">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Possibility">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Possible_event">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Possible_event">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Circumstances">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

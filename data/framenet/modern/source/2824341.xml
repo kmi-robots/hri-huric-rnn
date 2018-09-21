@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824341">
+ <sentence>
+  Whether desirable or not , this is a child-care program , not an educational program .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="whether" pos="IN" surface="Whether"/>
+  <token id="2" lemma="desirable" pos="JJ" surface="desirable"/>
+  <token id="3" lemma="or" pos="CC" surface="or"/>
+  <token id="4" lemma="not" pos="RB" surface="not"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="this" pos="DT" surface="this"/>
+  <token id="7" lemma="be" pos="VBZ" surface="is"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="child-care" pos="JJ" surface="child-care"/>
+  <token id="10" lemma="program" pos="NN" surface="program"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="not" pos="RB" surface="not"/>
+  <token id="13" lemma="an" pos="DT" surface="an"/>
+  <token id="14" lemma="educational" pos="JJ" surface="educational"/>
+  <token id="15" lemma="program" pos="NN" surface="program"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="mark"/>
+  <dep from="7" to="2" type="advcl"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="7" to="5" type="punct"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="7" to="10" type="attr"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="10" to="12" type="neg"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="10" to="15" type="appos"/>
+  <dep from="7" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Desirability">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Field">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

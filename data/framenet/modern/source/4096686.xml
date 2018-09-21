@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096686">
+ <sentence>
+  The TNRC operates , among other things , a 5 MW research reactor .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="tnrc" pos="NNP" surface="TNRC"/>
+  <token id="3" lemma="operate" pos="VBZ" surface="operates"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="among" pos="IN" surface="among"/>
+  <token id="6" lemma="other" pos="JJ" surface="other"/>
+  <token id="7" lemma="thing" pos="NNS" surface="things"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="5" pos="CD" surface="5"/>
+  <token id="11" lemma="mw" pos="NNP" surface="MW"/>
+  <token id="12" lemma="research" pos="NN" surface="research"/>
+  <token id="13" lemma="reactor" pos="NN" surface="reactor"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="3" to="5" type="prep"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="3" to="8" type="punct"/>
+  <dep from="13" to="9" type="det"/>
+  <dep from="13" to="10" type="nummod"/>
+  <dep from="13" to="11" type="compound"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="3" to="13" type="dobj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Class">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Operating_a_system">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Operator">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="System">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

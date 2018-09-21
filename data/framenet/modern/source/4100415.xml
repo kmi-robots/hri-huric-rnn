@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100415">
+ <sentence>
+  In 1922 the League of Nations granted the British a mandate to administer Palestine .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="1922" pos="CD" surface="1922"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="league" pos="NNP" surface="League"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="nations" pos="NNPS" surface="Nations"/>
+  <token id="7" lemma="grant" pos="VBD" surface="granted"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="british" pos="NNP" surface="British"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="mandate" pos="NN" surface="mandate"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="administer" pos="VB" surface="administer"/>
+  <token id="14" lemma="palestine" pos="NNP" surface="Palestine"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="7" to="4" type="nsubj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="dative"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="7" to="11" type="dobj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="11" to="13" type="acl"/>
+  <dep from="13" to="14" type="dobj"/>
+  <dep from="7" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Deny_or_grant_permission">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Action">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Authority">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824511">
+ <sentence>
+  9:31 a.m. GR8FLRED : It 's amazing how one second can so completely change your life .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="9:31" pos="CD" surface="9:31"/>
+  <token id="2" lemma="a.m." pos="NN" surface="a.m."/>
+  <token id="3" lemma="gr8flred" pos="NNP" surface="GR8FLRED"/>
+  <token id="4" lemma=":" pos=":" surface=":"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="It"/>
+  <token id="6" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="7" lemma="amazing" pos="JJ" surface="amazing"/>
+  <token id="8" lemma="how" pos="WRB" surface="how"/>
+  <token id="9" lemma="one" pos="CD" surface="one"/>
+  <token id="10" lemma="second" pos="NN" surface="second"/>
+  <token id="11" lemma="can" pos="MD" surface="can"/>
+  <token id="12" lemma="so" pos="RB" surface="so"/>
+  <token id="13" lemma="completely" pos="RB" surface="completely"/>
+  <token id="14" lemma="change" pos="VB" surface="change"/>
+  <token id="15" lemma="-PRON-" pos="PRP$" surface="your"/>
+  <token id="16" lemma="life" pos="NN" surface="life"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="acomp"/>
+  <dep from="14" to="8" type="advmod"/>
+  <dep from="10" to="9" type="nummod"/>
+  <dep from="14" to="10" type="nsubj"/>
+  <dep from="14" to="11" type="aux"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="14" to="13" type="advmod"/>
+  <dep from="6" to="14" type="ccomp"/>
+  <dep from="16" to="15" type="poss"/>
+  <dep from="14" to="16" type="dobj"/>
+  <dep from="6" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Stimulus_focus">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Stimulus">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_change">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Possibility">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Explanation">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Possible_event">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

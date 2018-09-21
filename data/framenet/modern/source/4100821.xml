@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100821">
+ <sentence>
+  China has signed a bilateral agreement with Japan to destroy CW that Japan abandoned in Chinese territory during World War II .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="china" pos="NNP" surface="China"/>
+  <token id="2" lemma="have" pos="VBZ" surface="has"/>
+  <token id="3" lemma="sign" pos="VBN" surface="signed"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="bilateral" pos="JJ" surface="bilateral"/>
+  <token id="6" lemma="agreement" pos="NN" surface="agreement"/>
+  <token id="7" lemma="with" pos="IN" surface="with"/>
+  <token id="8" lemma="japan" pos="NNP" surface="Japan"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="destroy" pos="VB" surface="destroy"/>
+  <token id="11" lemma="cw" pos="NNP" surface="CW"/>
+  <token id="12" lemma="that" pos="IN" surface="that"/>
+  <token id="13" lemma="japan" pos="NNP" surface="Japan"/>
+  <token id="14" lemma="abandon" pos="VBD" surface="abandoned"/>
+  <token id="15" lemma="in" pos="IN" surface="in"/>
+  <token id="16" lemma="chinese" pos="JJ" surface="Chinese"/>
+  <token id="17" lemma="territory" pos="NN" surface="territory"/>
+  <token id="18" lemma="during" pos="IN" surface="during"/>
+  <token id="19" lemma="world" pos="NNP" surface="World"/>
+  <token id="20" lemma="war" pos="NNP" surface="War"/>
+  <token id="21" lemma="ii" pos="NNP" surface="II"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="6" to="10" type="acl"/>
+  <dep from="10" to="11" type="dobj"/>
+  <dep from="14" to="12" type="dobj"/>
+  <dep from="14" to="13" type="nsubj"/>
+  <dep from="11" to="14" type="relcl"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="14" to="18" type="prep"/>
+  <dep from="21" to="19" type="compound"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="18" to="21" type="pobj"/>
+  <dep from="3" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Sign_agreement">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Signatory">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Agreement">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Documents">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Document">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Specification">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Obligation">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Destroying">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Destroyer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Patient">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Population">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

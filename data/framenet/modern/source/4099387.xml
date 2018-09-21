@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099387">
+ <sentence>
+  Some groups may have a particular fascination with plagues and poisons .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="some" pos="DT" surface="Some"/>
+  <token id="2" lemma="group" pos="NNS" surface="groups"/>
+  <token id="3" lemma="may" pos="MD" surface="may"/>
+  <token id="4" lemma="have" pos="VB" surface="have"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="particular" pos="JJ" surface="particular"/>
+  <token id="7" lemma="fascination" pos="NN" surface="fascination"/>
+  <token id="8" lemma="with" pos="IN" surface="with"/>
+  <token id="9" lemma="plague" pos="NNS" surface="plagues"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="poison" pos="NNS" surface="poisons"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="9" to="11" type="conj"/>
+  <dep from="4" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Idiosyncrasy">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Idiosyncrasy">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Toxic_substance">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Toxic_substance">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Ailment">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

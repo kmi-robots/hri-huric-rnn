@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097323">
+ <sentence>
+  At the same time , Iraqi officials were claiming Pakistan was helping Iran develop atomic weapons .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="at" pos="IN" surface="At"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="same" pos="JJ" surface="same"/>
+  <token id="4" lemma="time" pos="NN" surface="time"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="iraqi" pos="JJ" surface="Iraqi"/>
+  <token id="7" lemma="official" pos="NNS" surface="officials"/>
+  <token id="8" lemma="be" pos="VBD" surface="were"/>
+  <token id="9" lemma="claim" pos="VBG" surface="claiming"/>
+  <token id="10" lemma="pakistan" pos="NNP" surface="Pakistan"/>
+  <token id="11" lemma="be" pos="VBD" surface="was"/>
+  <token id="12" lemma="help" pos="VBG" surface="helping"/>
+  <token id="13" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="14" lemma="develop" pos="VB" surface="develop"/>
+  <token id="15" lemma="atomic" pos="JJ" surface="atomic"/>
+  <token id="16" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="prep"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="1" to="4" type="pobj"/>
+  <dep from="9" to="5" type="punct"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="9" to="7" type="nsubj"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="12" to="10" type="nsubj"/>
+  <dep from="12" to="11" type="aux"/>
+  <dep from="9" to="12" type="ccomp"/>
+  <dep from="14" to="13" type="nsubj"/>
+  <dep from="12" to="14" type="ccomp"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="14" to="16" type="dobj"/>
+  <dep from="9" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Helper">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Benefited_party">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_to_make_progress">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Project">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Identicality">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Current_instance">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

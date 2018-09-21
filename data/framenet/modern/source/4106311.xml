@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106311">
+ <sentence>
+  You can use your Hong Kong dollars here , so there 's no need to change currency .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="You"/>
+  <token id="2" lemma="can" pos="MD" surface="can"/>
+  <token id="3" lemma="use" pos="VB" surface="use"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="your"/>
+  <token id="5" lemma="hong" pos="NNP" surface="Hong"/>
+  <token id="6" lemma="kong" pos="NNP" surface="Kong"/>
+  <token id="7" lemma="dollar" pos="NNS" surface="dollars"/>
+  <token id="8" lemma="here" pos="RB" surface="here"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="so" pos="CC" surface="so"/>
+  <token id="11" lemma="there" pos="EX" surface="there"/>
+  <token id="12" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="13" lemma="no" pos="DT" surface="no"/>
+  <token id="14" lemma="need" pos="NN" surface="need"/>
+  <token id="15" lemma="to" pos="TO" surface="to"/>
+  <token id="16" lemma="change" pos="VB" surface="change"/>
+  <token id="17" lemma="currency" pos="NN" surface="currency"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="7" to="4" type="poss"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="3" to="7" type="dobj"/>
+  <dep from="3" to="8" type="advmod"/>
+  <dep from="3" to="9" type="punct"/>
+  <dep from="12" to="10" type="advmod"/>
+  <dep from="12" to="11" type="expl"/>
+  <dep from="3" to="12" type="conj"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="attr"/>
+  <dep from="16" to="15" type="aux"/>
+  <dep from="14" to="16" type="acl"/>
+  <dep from="16" to="17" type="dobj"/>
+  <dep from="12" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Possibility">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Possible_event">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Possible_event">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Using">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Instrument">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Needing">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Requirement">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Exchange_currency">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Money">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

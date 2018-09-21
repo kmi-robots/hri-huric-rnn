@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096818">
+ <sentence>
+  This program would subsequently lead into the Shehab-2 ( Scud-C/Hwasong-6 ) and Shehab-3 ( Nodong ) programs .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="this" pos="DT" surface="This"/>
+  <token id="2" lemma="program" pos="NN" surface="program"/>
+  <token id="3" lemma="would" pos="MD" surface="would"/>
+  <token id="4" lemma="subsequently" pos="RB" surface="subsequently"/>
+  <token id="5" lemma="lead" pos="VB" surface="lead"/>
+  <token id="6" lemma="into" pos="IN" surface="into"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="shehab-2" pos="NNPS" surface="Shehab-2"/>
+  <token id="9" lemma="(" pos="-LRB-" surface="("/>
+  <token id="10" lemma="scud-c/hwasong-6" pos="NNP" surface="Scud-C/Hwasong-6"/>
+  <token id="11" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="shehab-3" pos="NNP" surface="Shehab-3"/>
+  <token id="14" lemma="(" pos="-LRB-" surface="("/>
+  <token id="15" lemma="nodong" pos="NNP" surface="Nodong"/>
+  <token id="16" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="17" lemma="program" pos="NNS" surface="programs"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="5" to="2" type="nsubj"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="10" to="7" type="det"/>
+  <dep from="10" to="8" type="nmod"/>
+  <dep from="10" to="9" type="punct"/>
+  <dep from="6" to="10" type="pobj"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="10" to="12" type="cc"/>
+  <dep from="17" to="13" type="nmod"/>
+  <dep from="17" to="14" type="punct"/>
+  <dep from="17" to="15" type="nmod"/>
+  <dep from="17" to="16" type="punct"/>
+  <dep from="10" to="17" type="conj"/>
+  <dep from="5" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Salient_entity">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098366">
+ <sentence>
+  The president left after the diplomat arrived .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="president" pos="NN" surface="president"/>
+  <token id="3" lemma="leave" pos="VBD" surface="left"/>
+  <token id="4" lemma="after" pos="IN" surface="after"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="diplomat" pos="NN" surface="diplomat"/>
+  <token id="7" lemma="arrive" pos="VBD" surface="arrived"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="acl"/>
+  <dep from="7" to="4" type="mark"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="3" to="7" type="advcl"/>
+  <dep from="2" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Departing">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Relative_time">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Focal_occasion">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Landmark_occasion">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

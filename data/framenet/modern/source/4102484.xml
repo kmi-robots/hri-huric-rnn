@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102484">
+ <sentence>
+  Paula_Zahn : Works all the time .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="paula_zahn" pos="VB" surface="Paula_Zahn"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="work" pos="VBZ" surface="Works"/>
+  <token id="4" lemma="all" pos="PDT" surface="all"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="time" pos="NN" surface="time"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="predet"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="3" to="6" type="npadvmod"/>
+  <dep from="3" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Usefulness">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

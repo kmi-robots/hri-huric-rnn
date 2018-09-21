@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099031">
+ <sentence>
+  QN : Is Virginia prepared for a small-scale terrorist attack using chemical , biological or nuclear weapons ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="be" pos="VBZ" surface="Is"/>
+  <token id="4" lemma="virginia" pos="NNP" surface="Virginia"/>
+  <token id="5" lemma="prepare" pos="VBN" surface="prepared"/>
+  <token id="6" lemma="for" pos="IN" surface="for"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="small-scale" pos="JJ" surface="small-scale"/>
+  <token id="9" lemma="terrorist" pos="JJ" surface="terrorist"/>
+  <token id="10" lemma="attack" pos="NN" surface="attack"/>
+  <token id="11" lemma="use" pos="VBG" surface="using"/>
+  <token id="12" lemma="chemical" pos="NN" surface="chemical"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="biological" pos="JJ" surface="biological"/>
+  <token id="15" lemma="or" pos="CC" surface="or"/>
+  <token id="16" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="17" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="18" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="nsubj"/>
+  <dep from="3" to="5" type="acomp"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="10" to="7" type="det"/>
+  <dep from="10" to="8" type="amod"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="6" to="10" type="pobj"/>
+  <dep from="10" to="11" type="acl"/>
+  <dep from="17" to="12" type="amod"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="12" to="14" type="conj"/>
+  <dep from="14" to="15" type="cc"/>
+  <dep from="14" to="16" type="conj"/>
+  <dep from="11" to="17" type="dobj"/>
+  <dep from="3" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Assailant">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Using">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Instrument">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

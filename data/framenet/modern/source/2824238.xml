@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824238">
+ <sentence>
+  An entirely new band rings today at Great Torrington , several of whom are members of the congregation .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="an" pos="DT" surface="An"/>
+  <token id="2" lemma="entirely" pos="RB" surface="entirely"/>
+  <token id="3" lemma="new" pos="JJ" surface="new"/>
+  <token id="4" lemma="band" pos="NN" surface="band"/>
+  <token id="5" lemma="ring" pos="VBZ" surface="rings"/>
+  <token id="6" lemma="today" pos="NN" surface="today"/>
+  <token id="7" lemma="at" pos="IN" surface="at"/>
+  <token id="8" lemma="great" pos="NNP" surface="Great"/>
+  <token id="9" lemma="torrington" pos="NNP" surface="Torrington"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="several" pos="JJ" surface="several"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="whom" pos="WP" surface="whom"/>
+  <token id="14" lemma="be" pos="VBP" surface="are"/>
+  <token id="15" lemma="member" pos="NNS" surface="members"/>
+  <token id="16" lemma="of" pos="IN" surface="of"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="congregation" pos="NN" surface="congregation"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="det"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="5" to="3" type="amod"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="npadvmod"/>
+  <dep from="5" to="7" type="prep"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="punct"/>
+  <dep from="14" to="11" type="nsubj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="9" to="14" type="relcl"/>
+  <dep from="14" to="15" type="attr"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="5" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Member">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Group">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Member">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_to_make_noise">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Aggregate_property">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Mass">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Trajector_event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Landmark_period">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

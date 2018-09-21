@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100410">
+ <sentence>
+  At the same time , many Jews sought religious freedom and fulfillment by moving to Palestine ( as the Holy Land was traditionally called ) and especially to Jerusalem .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="at" pos="IN" surface="At"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="same" pos="JJ" surface="same"/>
+  <token id="4" lemma="time" pos="NN" surface="time"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="many" pos="JJ" surface="many"/>
+  <token id="7" lemma="jews" pos="NNPS" surface="Jews"/>
+  <token id="8" lemma="seek" pos="VBD" surface="sought"/>
+  <token id="9" lemma="religious" pos="JJ" surface="religious"/>
+  <token id="10" lemma="freedom" pos="NN" surface="freedom"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="fulfillment" pos="NN" surface="fulfillment"/>
+  <token id="13" lemma="by" pos="IN" surface="by"/>
+  <token id="14" lemma="move" pos="VBG" surface="moving"/>
+  <token id="15" lemma="to" pos="IN" surface="to"/>
+  <token id="16" lemma="palestine" pos="NNP" surface="Palestine"/>
+  <token id="17" lemma="(" pos="-LRB-" surface="("/>
+  <token id="18" lemma="as" pos="IN" surface="as"/>
+  <token id="19" lemma="the" pos="DT" surface="the"/>
+  <token id="20" lemma="holy" pos="NNP" surface="Holy"/>
+  <token id="21" lemma="land" pos="NNP" surface="Land"/>
+  <token id="22" lemma="be" pos="VBD" surface="was"/>
+  <token id="23" lemma="traditionally" pos="RB" surface="traditionally"/>
+  <token id="24" lemma="call" pos="VBN" surface="called"/>
+  <token id="25" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="26" lemma="and" pos="CC" surface="and"/>
+  <token id="27" lemma="especially" pos="RB" surface="especially"/>
+  <token id="28" lemma="to" pos="IN" surface="to"/>
+  <token id="29" lemma="jerusalem" pos="NNP" surface="Jerusalem"/>
+  <token id="30" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="prep"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="1" to="4" type="pobj"/>
+  <dep from="8" to="5" type="punct"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="8" to="11" type="cc"/>
+  <dep from="8" to="12" type="conj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pcomp"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="12" to="17" type="punct"/>
+  <dep from="24" to="18" type="mark"/>
+  <dep from="21" to="19" type="det"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="24" to="21" type="nsubjpass"/>
+  <dep from="24" to="22" type="auxpass"/>
+  <dep from="24" to="23" type="advmod"/>
+  <dep from="12" to="24" type="advcl"/>
+  <dep from="12" to="25" type="punct"/>
+  <dep from="8" to="26" type="cc"/>
+  <dep from="28" to="27" type="advmod"/>
+  <dep from="8" to="28" type="conj"/>
+  <dep from="28" to="29" type="pobj"/>
+  <dep from="8" to="30" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Seeking">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer_agent">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Sought_entity">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+    </frameElement>
+   </frame>
+   <frame name="Referring_by_name">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Name">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Experiencer_focus">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Experiencer">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

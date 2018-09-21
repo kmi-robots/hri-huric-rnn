@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148506">
+ <sentence>
+  Baynes flushed with pleasure .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="bayne" pos="NNS" surface="Baynes"/>
+  <token id="2" lemma="flush" pos="VBD" surface="flushed"/>
+  <token id="3" lemma="with" pos="IN" surface="with"/>
+  <token id="4" lemma="pleasure" pos="NN" surface="pleasure"/>
+  <token id="5" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="2" to="5" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Experiencer_focus">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Experiencer">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

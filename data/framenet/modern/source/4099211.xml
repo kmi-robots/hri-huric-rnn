@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099211">
+ <sentence>
+  QN : Does Libya have other means of delivering chemical weapons besides from fighter aircraft ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="do" pos="VBZ" surface="Does"/>
+  <token id="4" lemma="libya" pos="NNP" surface="Libya"/>
+  <token id="5" lemma="have" pos="VB" surface="have"/>
+  <token id="6" lemma="other" pos="JJ" surface="other"/>
+  <token id="7" lemma="mean" pos="NNS" surface="means"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="deliver" pos="VBG" surface="delivering"/>
+  <token id="10" lemma="chemical" pos="JJ" surface="chemical"/>
+  <token id="11" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="12" lemma="besides" pos="RB" surface="besides"/>
+  <token id="13" lemma="from" pos="IN" surface="from"/>
+  <token id="14" lemma="fighter" pos="NN" surface="fighter"/>
+  <token id="15" lemma="aircraft" pos="NN" surface="aircraft"/>
+  <token id="16" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pcomp"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="9" to="12" type="prep"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="5" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

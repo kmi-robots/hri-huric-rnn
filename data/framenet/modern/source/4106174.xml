@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106174">
+ <sentence>
+  The ornate , picturesque temple dates from the Ming Dynasty ( 1368 - 1644 ) and is the oldest building in Macau .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="ornate" pos="NN" surface="ornate"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="picturesque" pos="NN" surface="picturesque"/>
+  <token id="5" lemma="temple" pos="NN" surface="temple"/>
+  <token id="6" lemma="date" pos="VBZ" surface="dates"/>
+  <token id="7" lemma="from" pos="IN" surface="from"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="ming" pos="NNP" surface="Ming"/>
+  <token id="10" lemma="dynasty" pos="NNP" surface="Dynasty"/>
+  <token id="11" lemma="(" pos="-LRB-" surface="("/>
+  <token id="12" lemma="1368" pos="CD" surface="1368"/>
+  <token id="13" lemma="-" pos="SYM" surface="-"/>
+  <token id="14" lemma="1644" pos="CD" surface="1644"/>
+  <token id="15" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="be" pos="VBZ" surface="is"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="old" pos="JJS" surface="oldest"/>
+  <token id="20" lemma="building" pos="NN" surface="building"/>
+  <token id="21" lemma="in" pos="IN" surface="in"/>
+  <token id="22" lemma="macau" pos="NNP" surface="Macau"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="17" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="2" to="6" type="appos"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="10" to="12" type="npadvmod"/>
+  <dep from="14" to="13" type="punct"/>
+  <dep from="12" to="14" type="prep"/>
+  <dep from="10" to="15" type="punct"/>
+  <dep from="6" to="16" type="cc"/>
+  <dep from="0" to="17" type="root"/>
+  <dep from="20" to="18" type="det"/>
+  <dep from="20" to="19" type="amod"/>
+  <dep from="17" to="20" type="attr"/>
+  <dep from="20" to="21" type="prep"/>
+  <dep from="21" to="22" type="pobj"/>
+  <dep from="17" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Building">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103854">
+ <sentence>
+  In the mountains and hills of the interior , the temperature drops with altitude and with the clouds that wrap around the highest peaks .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="mountain" pos="NNS" surface="mountains"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="hill" pos="NNS" surface="hills"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="interior" pos="NN" surface="interior"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="temperature" pos="NN" surface="temperature"/>
+  <token id="12" lemma="drop" pos="VBZ" surface="drops"/>
+  <token id="13" lemma="with" pos="IN" surface="with"/>
+  <token id="14" lemma="altitude" pos="NN" surface="altitude"/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="with" pos="IN" surface="with"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="cloud" pos="NNS" surface="clouds"/>
+  <token id="19" lemma="that" pos="WDT" surface="that"/>
+  <token id="20" lemma="wrap" pos="VBP" surface="wrap"/>
+  <token id="21" lemma="around" pos="IN" surface="around"/>
+  <token id="22" lemma="the" pos="DT" surface="the"/>
+  <token id="23" lemma="high" pos="JJS" surface="highest"/>
+  <token id="24" lemma="peak" pos="NNS" surface="peaks"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="12" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="3" to="5" type="conj"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="12" to="9" type="punct"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="13" to="15" type="cc"/>
+  <dep from="13" to="16" type="conj"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="20" to="19" type="nsubj"/>
+  <dep from="18" to="20" type="relcl"/>
+  <dep from="20" to="21" type="prep"/>
+  <dep from="24" to="22" type="det"/>
+  <dep from="24" to="23" type="amod"/>
+  <dep from="21" to="24" type="pobj"/>
+  <dep from="12" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Container_possessor">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_inner_outer">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Ambient_temperature">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Correlated_variable">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Dimension">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Object">
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Dimension">
+     <token id="23"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

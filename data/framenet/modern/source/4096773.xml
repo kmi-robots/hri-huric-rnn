@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096773">
+ <sentence>
+  Technology transfer for new Iranian missiles and artillery rockets .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="technology" pos="NN" surface="Technology"/>
+  <token id="2" lemma="transfer" pos="NN" surface="transfer"/>
+  <token id="3" lemma="for" pos="IN" surface="for"/>
+  <token id="4" lemma="new" pos="JJ" surface="new"/>
+  <token id="5" lemma="iranian" pos="JJ" surface="Iranian"/>
+  <token id="6" lemma="missile" pos="NNS" surface="missiles"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="artillery" pos="NN" surface="artillery"/>
+  <token id="9" lemma="rocket" pos="NNS" surface="rockets"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="6" to="4" type="amod"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="pobj"/>
+  <dep from="6" to="7" type="cc"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="conj"/>
+  <dep from="2" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Artifact">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Artifact">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Transfer">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Wielder">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

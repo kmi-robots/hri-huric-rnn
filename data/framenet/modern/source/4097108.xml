@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097108">
+ <sentence>
+  In 1988 , Spain supplied Iran with 200,000 respirators .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="1988" pos="CD" surface="1988"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="spain" pos="NNP" surface="Spain"/>
+  <token id="5" lemma="supply" pos="VBD" surface="supplied"/>
+  <token id="6" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="7" lemma="with" pos="IN" surface="with"/>
+  <token id="8" lemma="200,000" pos="CD" surface="200,000"/>
+  <token id="9" lemma="respirator" pos="NNS" surface="respirators"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="5" to="3" type="punct"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="prep"/>
+  <dep from="9" to="8" type="nummod"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="5" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Supplier">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

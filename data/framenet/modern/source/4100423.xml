@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100423">
+ <sentence>
+  In response , member states of the Arab League sent troops to help the Palestinian Arabs .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="response" pos="NN" surface="response"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="member" pos="NN" surface="member"/>
+  <token id="5" lemma="state" pos="NNS" surface="states"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="arab" pos="NNP" surface="Arab"/>
+  <token id="9" lemma="league" pos="NNP" surface="League"/>
+  <token id="10" lemma="send" pos="VBD" surface="sent"/>
+  <token id="11" lemma="troop" pos="NNS" surface="troops"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="help" pos="VB" surface="help"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="palestinian" pos="JJ" surface="Palestinian"/>
+  <token id="16" lemma="arabs" pos="NNPS" surface="Arabs"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="10" to="3" type="punct"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="10" to="5" type="nsubj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="pobj"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="dobj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="10" to="13" type="advcl"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="13" to="16" type="dobj"/>
+  <dep from="10" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Response">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Response">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Container_possessor">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Organization">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Organization">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Sending">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Sender">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Helper">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Benefited_party">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

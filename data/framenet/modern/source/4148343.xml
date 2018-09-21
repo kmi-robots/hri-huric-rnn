@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148343">
+ <sentence>
+  That 's what I am doing . "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="that" pos="DT" surface="That"/>
+  <token id="2" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="3" lemma="what" pos="WP" surface="what"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="5" lemma="be" pos="VBP" surface="am"/>
+  <token id="6" lemma="do" pos="VBG" surface="doing"/>
+  <token id="7" lemma="." pos="." surface="."/>
+  <token id="8" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="6" to="3" type="dobj"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="2" to="6" type="ccomp"/>
+  <dep from="2" to="7" type="punct"/>
+  <dep from="2" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Act">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

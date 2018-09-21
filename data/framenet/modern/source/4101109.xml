@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101109">
+ <sentence>
+  The El Rancho Vegas ( 1941 ) was the first , followed by the Last Frontier ( 1943 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="el" pos="NNP" surface="El"/>
+  <token id="3" lemma="rancho" pos="NNP" surface="Rancho"/>
+  <token id="4" lemma="vegas" pos="NNP" surface="Vegas"/>
+  <token id="5" lemma="(" pos="-LRB-" surface="("/>
+  <token id="6" lemma="1941" pos="CD" surface="1941"/>
+  <token id="7" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="8" lemma="be" pos="VBD" surface="was"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="first" pos="JJ" surface="first"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="follow" pos="VBN" surface="followed"/>
+  <token id="13" lemma="by" pos="IN" surface="by"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="last" pos="JJ" surface="Last"/>
+  <token id="16" lemma="frontier" pos="NNP" surface="Frontier"/>
+  <token id="17" lemma="(" pos="-LRB-" surface="("/>
+  <token id="18" lemma="1943" pos="CD" surface="1943"/>
+  <token id="19" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="det"/>
+  <dep from="4" to="2" type="compound"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="8" to="4" type="nsubj"/>
+  <dep from="4" to="5" type="punct"/>
+  <dep from="4" to="6" type="appos"/>
+  <dep from="4" to="7" type="punct"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="attr"/>
+  <dep from="8" to="11" type="punct"/>
+  <dep from="8" to="12" type="advcl"/>
+  <dep from="12" to="13" type="agent"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="13" to="16" type="pobj"/>
+  <dep from="16" to="17" type="punct"/>
+  <dep from="16" to="18" type="appos"/>
+  <dep from="16" to="19" type="punct"/>
+  <dep from="8" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Ordinal_numbers">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Relative_time">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_occasion">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Focal_occasion">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Ordinal_numbers">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

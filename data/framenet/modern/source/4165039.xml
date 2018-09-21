@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165039">
+ <sentence>
+  The Western Distributor motorway was closed to traffic , and Sydney Harbour Bridge partly closed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="western" pos="JJ" surface="Western"/>
+  <token id="3" lemma="distributor" pos="NNP" surface="Distributor"/>
+  <token id="4" lemma="motorway" pos="NN" surface="motorway"/>
+  <token id="5" lemma="be" pos="VBD" surface="was"/>
+  <token id="6" lemma="close" pos="VBN" surface="closed"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="traffic" pos="NN" surface="traffic"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="sydney" pos="NNP" surface="Sydney"/>
+  <token id="12" lemma="harbour" pos="NNP" surface="Harbour"/>
+  <token id="13" lemma="bridge" pos="NNP" surface="Bridge"/>
+  <token id="14" lemma="partly" pos="RB" surface="partly"/>
+  <token id="15" lemma="close" pos="VBD" surface="closed"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="acomp"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="5" to="9" type="punct"/>
+  <dep from="5" to="10" type="cc"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="15" to="13" type="nsubj"/>
+  <dep from="15" to="14" type="advmod"/>
+  <dep from="5" to="15" type="conj"/>
+  <dep from="15" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Name">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Roadway">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Openness">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Useful_location">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Openness">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Useful_location">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Roadway">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Container_possessor">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

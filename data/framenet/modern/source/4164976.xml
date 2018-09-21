@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4164976">
+ <sentence>
+  Forest fires continue to rage in Spain
+ </sentence>
+ <tokens>
+  <token id="1" lemma="forest" pos="NN" surface="Forest"/>
+  <token id="2" lemma="fire" pos="NNS" surface="fires"/>
+  <token id="3" lemma="continue" pos="VBP" surface="continue"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="rage" pos="VB" surface="rage"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="spain" pos="NNP" surface="Spain"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="xcomp"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Fire_burning">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Fuel">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Fire">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Fire_burning">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Fire">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Process_continue">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

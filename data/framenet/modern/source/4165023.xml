@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165023">
+ <sentence>
+  Santa Ana winds with gusts up to 70 mph exacerbated the Montecito fire , which destroyed over 100 buildings and damaged many others , including Westmont College .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="santa" pos="NNP" surface="Santa"/>
+  <token id="2" lemma="ana" pos="NNP" surface="Ana"/>
+  <token id="3" lemma="wind" pos="VBZ" surface="winds"/>
+  <token id="4" lemma="with" pos="IN" surface="with"/>
+  <token id="5" lemma="gust" pos="NNS" surface="gusts"/>
+  <token id="6" lemma="up" pos="IN" surface="up"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="70" pos="CD" surface="70"/>
+  <token id="9" lemma="mph" pos="NN" surface="mph"/>
+  <token id="10" lemma="exacerbate" pos="VBD" surface="exacerbated"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="montecito" pos="NNP" surface="Montecito"/>
+  <token id="13" lemma="fire" pos="NN" surface="fire"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="which" pos="WDT" surface="which"/>
+  <token id="16" lemma="destroy" pos="VBD" surface="destroyed"/>
+  <token id="17" lemma="over" pos="IN" surface="over"/>
+  <token id="18" lemma="100" pos="CD" surface="100"/>
+  <token id="19" lemma="building" pos="NNS" surface="buildings"/>
+  <token id="20" lemma="and" pos="CC" surface="and"/>
+  <token id="21" lemma="damage" pos="VBD" surface="damaged"/>
+  <token id="22" lemma="many" pos="JJ" surface="many"/>
+  <token id="23" lemma="other" pos="NNS" surface="others"/>
+  <token id="24" lemma="," pos="," surface=","/>
+  <token id="25" lemma="include" pos="VBG" surface="including"/>
+  <token id="26" lemma="westmont" pos="NNP" surface="Westmont"/>
+  <token id="27" lemma="college" pos="NNP" surface="College"/>
+  <token id="28" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="10" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="8" to="6" type="quantmod"/>
+  <dep from="8" to="7" type="quantmod"/>
+  <dep from="9" to="8" type="nummod"/>
+  <dep from="3" to="9" type="conj"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="10" to="13" type="dobj"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="16" to="15" type="nsubj"/>
+  <dep from="13" to="16" type="relcl"/>
+  <dep from="18" to="17" type="quantmod"/>
+  <dep from="19" to="18" type="nummod"/>
+  <dep from="16" to="19" type="dobj"/>
+  <dep from="16" to="20" type="cc"/>
+  <dep from="16" to="21" type="conj"/>
+  <dep from="23" to="22" type="amod"/>
+  <dep from="21" to="23" type="dobj"/>
+  <dep from="23" to="24" type="punct"/>
+  <dep from="23" to="25" type="prep"/>
+  <dep from="27" to="26" type="compound"/>
+  <dep from="25" to="27" type="pobj"/>
+  <dep from="10" to="28" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Fire_burning">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Name">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Fire">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Destroying">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Destroyer">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Destroyer">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Patient">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Damaging">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Patient">
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+   </frame>
+   <frame name="Inclusion">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Total">
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Reference_quantity">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Denoted_quantity">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

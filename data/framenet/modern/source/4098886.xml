@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098886">
+ <sentence>
+  Early in the 1990s , Chinese officials made land available for a new hospital , and money for construction and operating costs .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="early" pos="RB" surface="Early"/>
+  <token id="2" lemma="in" pos="IN" surface="in"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="1990" pos="NNS" surface="1990s"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="chinese" pos="JJ" surface="Chinese"/>
+  <token id="7" lemma="official" pos="NNS" surface="officials"/>
+  <token id="8" lemma="make" pos="VBD" surface="made"/>
+  <token id="9" lemma="land" pos="NN" surface="land"/>
+  <token id="10" lemma="available" pos="JJ" surface="available"/>
+  <token id="11" lemma="for" pos="IN" surface="for"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="new" pos="JJ" surface="new"/>
+  <token id="14" lemma="hospital" pos="NN" surface="hospital"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="money" pos="NN" surface="money"/>
+  <token id="18" lemma="for" pos="IN" surface="for"/>
+  <token id="19" lemma="construction" pos="NN" surface="construction"/>
+  <token id="20" lemma="and" pos="CC" surface="and"/>
+  <token id="21" lemma="operating" pos="NN" surface="operating"/>
+  <token id="22" lemma="cost" pos="NNS" surface="costs"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="advmod"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="8" to="5" type="punct"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="8" to="10" type="ccomp"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="8" to="15" type="punct"/>
+  <dep from="8" to="16" type="cc"/>
+  <dep from="8" to="17" type="conj"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="18" to="19" type="pobj"/>
+  <dep from="19" to="20" type="cc"/>
+  <dep from="22" to="21" type="compound"/>
+  <dep from="19" to="22" type="conj"/>
+  <dep from="8" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Governed">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Building">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Operating_a_system">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Expensiveness">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Familiarity">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Actor">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Affected">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

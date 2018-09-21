@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098728">
+ <sentence>
+  John spent December 10 in Paris and took a plane to Baghdad the next morning .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="john" pos="NNP" surface="John"/>
+  <token id="2" lemma="spend" pos="VBD" surface="spent"/>
+  <token id="3" lemma="december" pos="NNP" surface="December"/>
+  <token id="4" lemma="10" pos="CD" surface="10"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="paris" pos="NNP" surface="Paris"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="take" pos="VBD" surface="took"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="plane" pos="NN" surface="plane"/>
+  <token id="11" lemma="to" pos="IN" surface="to"/>
+  <token id="12" lemma="baghdad" pos="NNP" surface="Baghdad"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="next" pos="JJ" surface="next"/>
+  <token id="15" lemma="morning" pos="NN" surface="morning"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="npadvmod"/>
+  <dep from="3" to="4" type="nummod"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="2" to="7" type="cc"/>
+  <dep from="2" to="8" type="conj"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="8" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="8" to="15" type="npadvmod"/>
+  <dep from="2" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Ride_vehicle">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Vehicle">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

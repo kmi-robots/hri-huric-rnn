@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099739">
+ <sentence>
+  Ground to be Broken at Biodefense Center
+ </sentence>
+ <tokens>
+  <token id="1" lemma="ground" pos="NN" surface="Ground"/>
+  <token id="2" lemma="to" pos="TO" surface="to"/>
+  <token id="3" lemma="be" pos="VB" surface="be"/>
+  <token id="4" lemma="break" pos="VBN" surface="Broken"/>
+  <token id="5" lemma="at" pos="IN" surface="at"/>
+  <token id="6" lemma="biodefense" pos="NNP" surface="Biodefense"/>
+  <token id="7" lemma="center" pos="NNP" surface="Center"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="5" to="7" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cause_to_fragment">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Whole_patient">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

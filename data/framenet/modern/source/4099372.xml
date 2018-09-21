@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099372">
+ <sentence>
+  Biological warfare ( BW ) agents are microorganisms such as viruses and bacteria that infect humans , livestock , or crops and cause an incapacitating or fatal disease .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="biological" pos="JJ" surface="Biological"/>
+  <token id="2" lemma="warfare" pos="NN" surface="warfare"/>
+  <token id="3" lemma="(" pos="-LRB-" surface="("/>
+  <token id="4" lemma="bw" pos="NNP" surface="BW"/>
+  <token id="5" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="6" lemma="agent" pos="NNS" surface="agents"/>
+  <token id="7" lemma="be" pos="VBP" surface="are"/>
+  <token id="8" lemma="microorganism" pos="NNS" surface="microorganisms"/>
+  <token id="9" lemma="such" pos="JJ" surface="such"/>
+  <token id="10" lemma="as" pos="IN" surface="as"/>
+  <token id="11" lemma="virus" pos="NNS" surface="viruses"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="bacteria" pos="NNS" surface="bacteria"/>
+  <token id="14" lemma="that" pos="WDT" surface="that"/>
+  <token id="15" lemma="infect" pos="VBP" surface="infect"/>
+  <token id="16" lemma="human" pos="NNS" surface="humans"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="livestock" pos="NN" surface="livestock"/>
+  <token id="19" lemma="," pos="," surface=","/>
+  <token id="20" lemma="or" pos="CC" surface="or"/>
+  <token id="21" lemma="crop" pos="NNS" surface="crops"/>
+  <token id="22" lemma="and" pos="CC" surface="and"/>
+  <token id="23" lemma="cause" pos="VB" surface="cause"/>
+  <token id="24" lemma="an" pos="DT" surface="an"/>
+  <token id="25" lemma="incapacitating" pos="JJ" surface="incapacitating"/>
+  <token id="26" lemma="or" pos="CC" surface="or"/>
+  <token id="27" lemma="fatal" pos="JJ" surface="fatal"/>
+  <token id="28" lemma="disease" pos="NN" surface="disease"/>
+  <token id="29" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="6" to="2" type="nmod"/>
+  <dep from="6" to="3" type="punct"/>
+  <dep from="6" to="4" type="nmod"/>
+  <dep from="6" to="5" type="punct"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="attr"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="11" to="13" type="conj"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="11" to="15" type="relcl"/>
+  <dep from="15" to="16" type="dobj"/>
+  <dep from="16" to="17" type="punct"/>
+  <dep from="16" to="18" type="conj"/>
+  <dep from="18" to="19" type="punct"/>
+  <dep from="18" to="20" type="cc"/>
+  <dep from="18" to="21" type="conj"/>
+  <dep from="15" to="22" type="cc"/>
+  <dep from="15" to="23" type="conj"/>
+  <dep from="25" to="24" type="det"/>
+  <dep from="23" to="25" type="dobj"/>
+  <dep from="25" to="26" type="cc"/>
+  <dep from="25" to="27" type="conj"/>
+  <dep from="25" to="28" type="conj"/>
+  <dep from="7" to="29" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Instrument">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Active_substance">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Substance">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+    </frameElement>
+   </frame>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="27"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="28"/>
+    </frameElement>
+   </frame>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="28"/>
+    </lexicalUnit>
+    <frameElement type="Ailment">
+     <token id="28"/>
+    </frameElement>
+    <frameElement type="Symptom">
+     <token id="27"/>
+    </frameElement>
+    <frameElement type="Symptom">
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

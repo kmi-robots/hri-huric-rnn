@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097342">
+ <sentence>
+  Reports of a contract are denied ( 576 ) . , but KWU is said to be negotiating with Argentina and Spain at Iran 's request ( 2219 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="report" pos="NNS" surface="Reports"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="contract" pos="NN" surface="contract"/>
+  <token id="5" lemma="be" pos="VBP" surface="are"/>
+  <token id="6" lemma="deny" pos="VBN" surface="denied"/>
+  <token id="7" lemma="(" pos="-LRB-" surface="("/>
+  <token id="8" lemma="576" pos="CD" surface="576"/>
+  <token id="9" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="10" lemma="." pos="." surface="."/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="but" pos="CC" surface="but"/>
+  <token id="13" lemma="kwu" pos="NNP" surface="KWU"/>
+  <token id="14" lemma="be" pos="VBZ" surface="is"/>
+  <token id="15" lemma="say" pos="VBN" surface="said"/>
+  <token id="16" lemma="to" pos="TO" surface="to"/>
+  <token id="17" lemma="be" pos="VB" surface="be"/>
+  <token id="18" lemma="negotiate" pos="VBG" surface="negotiating"/>
+  <token id="19" lemma="with" pos="IN" surface="with"/>
+  <token id="20" lemma="argentina" pos="NNP" surface="Argentina"/>
+  <token id="21" lemma="and" pos="CC" surface="and"/>
+  <token id="22" lemma="spain" pos="NNP" surface="Spain"/>
+  <token id="23" lemma="at" pos="IN" surface="at"/>
+  <token id="24" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="25" lemma="'s" pos="POS" surface="'s"/>
+  <token id="26" lemma="request" pos="NN" surface="request"/>
+  <token id="27" lemma="(" pos="-LRB-" surface="("/>
+  <token id="28" lemma="2219" pos="CD" surface="2219"/>
+  <token id="29" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="30" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="nsubjpass"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="6" to="8" type="appos"/>
+  <dep from="6" to="9" type="punct"/>
+  <dep from="6" to="10" type="punct"/>
+  <dep from="6" to="11" type="punct"/>
+  <dep from="6" to="12" type="cc"/>
+  <dep from="15" to="13" type="nsubjpass"/>
+  <dep from="15" to="14" type="auxpass"/>
+  <dep from="6" to="15" type="conj"/>
+  <dep from="18" to="16" type="aux"/>
+  <dep from="18" to="17" type="aux"/>
+  <dep from="15" to="18" type="xcomp"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="19" to="20" type="pobj"/>
+  <dep from="20" to="21" type="cc"/>
+  <dep from="20" to="22" type="conj"/>
+  <dep from="18" to="23" type="prep"/>
+  <dep from="26" to="24" type="poss"/>
+  <dep from="24" to="25" type="case"/>
+  <dep from="23" to="26" type="pobj"/>
+  <dep from="26" to="27" type="punct"/>
+  <dep from="26" to="28" type="appos"/>
+  <dep from="26" to="29" type="punct"/>
+  <dep from="15" to="30" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Affirm_or_deny">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Discussion">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Interlocutor_1">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Interlocutor_2">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Request">
+    <lexicalUnit>
+     <token id="26"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

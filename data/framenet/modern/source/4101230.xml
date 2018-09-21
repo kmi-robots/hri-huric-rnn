@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101230">
+ <sentence>
+  Cleopatra was a member of this famous ruling clan .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="cleopatra" pos="NNP" surface="Cleopatra"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="member" pos="NN" surface="member"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="this" pos="DT" surface="this"/>
+  <token id="7" lemma="famous" pos="JJ" surface="famous"/>
+  <token id="8" lemma="ruling" pos="NN" surface="ruling"/>
+  <token id="9" lemma="clan" pos="NN" surface="clan"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="attr"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="9" to="6" type="det"/>
+  <dep from="9" to="7" type="amod"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="5" to="9" type="pobj"/>
+  <dep from="2" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Member">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Group">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Fame">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Kinship">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Relatives">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

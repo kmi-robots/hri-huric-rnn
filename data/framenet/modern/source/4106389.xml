@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106389">
+ <sentence>
+  Goodwill helps people get off of public assistance .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="goodwill" pos="NNP" surface="Goodwill"/>
+  <token id="2" lemma="help" pos="VBZ" surface="helps"/>
+  <token id="3" lemma="people" pos="NNS" surface="people"/>
+  <token id="4" lemma="get" pos="VB" surface="get"/>
+  <token id="5" lemma="off" pos="IN" surface="off"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="public" pos="JJ" surface="public"/>
+  <token id="8" lemma="assistance" pos="NN" surface="assistance"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="2" to="4" type="ccomp"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Helper">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Benefited_party">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Transition_to_state">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Final_situation">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Helper">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

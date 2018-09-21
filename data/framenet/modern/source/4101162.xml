@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101162">
+ <sentence>
+  Recent business projections for Las Vegas predict challenges ; tourism revenues must increase substantially to sustain what is already built , while actual figures show visitation as steady or declining .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="recent" pos="JJ" surface="Recent"/>
+  <token id="2" lemma="business" pos="NN" surface="business"/>
+  <token id="3" lemma="projection" pos="NNS" surface="projections"/>
+  <token id="4" lemma="for" pos="IN" surface="for"/>
+  <token id="5" lemma="las" pos="NNP" surface="Las"/>
+  <token id="6" lemma="vegas" pos="NNP" surface="Vegas"/>
+  <token id="7" lemma="predict" pos="VBP" surface="predict"/>
+  <token id="8" lemma="challenge" pos="NNS" surface="challenges"/>
+  <token id="9" lemma=";" pos=":" surface=";"/>
+  <token id="10" lemma="tourism" pos="NN" surface="tourism"/>
+  <token id="11" lemma="revenue" pos="NNS" surface="revenues"/>
+  <token id="12" lemma="must" pos="MD" surface="must"/>
+  <token id="13" lemma="increase" pos="VB" surface="increase"/>
+  <token id="14" lemma="substantially" pos="RB" surface="substantially"/>
+  <token id="15" lemma="to" pos="TO" surface="to"/>
+  <token id="16" lemma="sustain" pos="VB" surface="sustain"/>
+  <token id="17" lemma="what" pos="WP" surface="what"/>
+  <token id="18" lemma="be" pos="VBZ" surface="is"/>
+  <token id="19" lemma="already" pos="RB" surface="already"/>
+  <token id="20" lemma="build" pos="VBN" surface="built"/>
+  <token id="21" lemma="," pos="," surface=","/>
+  <token id="22" lemma="while" pos="IN" surface="while"/>
+  <token id="23" lemma="actual" pos="JJ" surface="actual"/>
+  <token id="24" lemma="figure" pos="NNS" surface="figures"/>
+  <token id="25" lemma="show" pos="VBP" surface="show"/>
+  <token id="26" lemma="visitation" pos="NN" surface="visitation"/>
+  <token id="27" lemma="as" pos="RB" surface="as"/>
+  <token id="28" lemma="steady" pos="JJ" surface="steady"/>
+  <token id="29" lemma="or" pos="CC" surface="or"/>
+  <token id="30" lemma="decline" pos="VBG" surface="declining"/>
+  <token id="31" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="amod"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="7" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="13" to="7" type="ccomp"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="13" to="9" type="punct"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="13" to="11" type="nsubj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="advmod"/>
+  <dep from="16" to="15" type="aux"/>
+  <dep from="13" to="16" type="advcl"/>
+  <dep from="20" to="17" type="nsubjpass"/>
+  <dep from="20" to="18" type="auxpass"/>
+  <dep from="20" to="19" type="advmod"/>
+  <dep from="16" to="20" type="ccomp"/>
+  <dep from="13" to="21" type="punct"/>
+  <dep from="25" to="22" type="mark"/>
+  <dep from="24" to="23" type="amod"/>
+  <dep from="25" to="24" type="nsubj"/>
+  <dep from="13" to="25" type="advcl"/>
+  <dep from="25" to="26" type="dobj"/>
+  <dep from="28" to="27" type="advmod"/>
+  <dep from="25" to="28" type="advmod"/>
+  <dep from="28" to="29" type="cc"/>
+  <dep from="28" to="30" type="conj"/>
+  <dep from="13" to="31" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Relative_time">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Focal_occasion">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Predicting">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Eventuality">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+    </frameElement>
+   </frame>
+   <frame name="Difficulty">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Earnings_and_losses">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Required_event">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Required_situation">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Required_situation">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Difference">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Building">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Actually_occurring_entity">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Instance">
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Evidence">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Support">
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Proposition">
+     <token id="26"/>
+    </frameElement>
+    <frameElement type="Proposition">
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="30"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Touring">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

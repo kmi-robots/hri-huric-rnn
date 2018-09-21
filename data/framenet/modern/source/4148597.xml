@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148597">
+ <sentence>
+  " A plausible lawyer could make it out as an act of self-defence .
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="a" pos="DT" surface="A"/>
+  <token id="3" lemma="plausible" pos="JJ" surface="plausible"/>
+  <token id="4" lemma="lawyer" pos="NN" surface="lawyer"/>
+  <token id="5" lemma="could" pos="MD" surface="could"/>
+  <token id="6" lemma="make" pos="VB" surface="make"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="8" lemma="out" pos="RP" surface="out"/>
+  <token id="9" lemma="as" pos="IN" surface="as"/>
+  <token id="10" lemma="an" pos="DT" surface="an"/>
+  <token id="11" lemma="act" pos="NN" surface="act"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="self-defence" pos="NN" surface="self-defence"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="punct"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="6" to="8" type="prt"/>
+  <dep from="6" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="6" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Communicate_categorization">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Category">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Act">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Defending">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

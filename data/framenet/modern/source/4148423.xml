@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148423">
+ <sentence>
+  There 's no link between the two save for Henderson 's own servant , who serves the family 's meals .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="3" lemma="no" pos="DT" surface="no"/>
+  <token id="4" lemma="link" pos="NN" surface="link"/>
+  <token id="5" lemma="between" pos="IN" surface="between"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="two" pos="CD" surface="two"/>
+  <token id="8" lemma="save" pos="NN" surface="save"/>
+  <token id="9" lemma="for" pos="IN" surface="for"/>
+  <token id="10" lemma="henderson" pos="NNP" surface="Henderson"/>
+  <token id="11" lemma="'s" pos="POS" surface="'s"/>
+  <token id="12" lemma="own" pos="JJ" surface="own"/>
+  <token id="13" lemma="servant" pos="NN" surface="servant"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="who" pos="WP" surface="who"/>
+  <token id="16" lemma="serve" pos="VBZ" surface="serves"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="family" pos="NN" surface="family"/>
+  <token id="19" lemma="'s" pos="POS" surface="'s"/>
+  <token id="20" lemma="meal" pos="NNS" surface="meals"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="attr"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="nummod"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="13" to="10" type="poss"/>
+  <dep from="10" to="11" type="case"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="9" to="13" type="pobj"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="16" to="15" type="nsubj"/>
+  <dep from="13" to="16" type="relcl"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="20" to="18" type="poss"/>
+  <dep from="18" to="19" type="case"/>
+  <dep from="16" to="20" type="dobj"/>
+  <dep from="2" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Kinship">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Relatives">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Social_connection">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Connection">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

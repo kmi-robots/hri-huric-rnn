@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098835">
+ <sentence>
+  QN : Has creatine been proven to be dangerous ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="have" pos="VBZ" surface="Has"/>
+  <token id="4" lemma="creatine" pos="NN" surface="creatine"/>
+  <token id="5" lemma="be" pos="VBN" surface="been"/>
+  <token id="6" lemma="prove" pos="VBN" surface="proven"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="be" pos="VB" surface="be"/>
+  <token id="9" lemma="dangerous" pos="JJ" surface="dangerous"/>
+  <token id="10" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="6" to="4" type="nsubjpass"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="6" to="8" type="xcomp"/>
+  <dep from="8" to="9" type="acomp"/>
+  <dep from="6" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Reasoning">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Content">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

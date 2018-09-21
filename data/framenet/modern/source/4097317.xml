@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097317">
+ <sentence>
+  The PRC supplied the calutron with a 27 KW reactor for the Isfahan site .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="prc" pos="NNP" surface="PRC"/>
+  <token id="3" lemma="supply" pos="VBD" surface="supplied"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="calutron" pos="NN" surface="calutron"/>
+  <token id="6" lemma="with" pos="IN" surface="with"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="27" pos="CD" surface="27"/>
+  <token id="9" lemma="kw" pos="NNP" surface="KW"/>
+  <token id="10" lemma="reactor" pos="NN" surface="reactor"/>
+  <token id="11" lemma="for" pos="IN" surface="for"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="isfahan" pos="NNP" surface="Isfahan"/>
+  <token id="14" lemma="site" pos="NN" surface="site"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="10" to="7" type="det"/>
+  <dep from="9" to="8" type="nummod"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="6" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="3" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Supplier">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Relative_location">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

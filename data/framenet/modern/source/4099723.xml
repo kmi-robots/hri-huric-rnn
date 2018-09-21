@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099723">
+ <sentence>
+  North Korea and the Chemical Weapons Convention
+ </sentence>
+ <tokens>
+  <token id="1" lemma="north" pos="NNP" surface="North"/>
+  <token id="2" lemma="korea" pos="NNP" surface="Korea"/>
+  <token id="3" lemma="and" pos="CC" surface="and"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="chemical" pos="NNP" surface="Chemical"/>
+  <token id="6" lemma="weapons" pos="NNPS" surface="Weapons"/>
+  <token id="7" lemma="convention" pos="NNP" surface="Convention"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="7" to="4" type="det"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="2" to="7" type="conj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

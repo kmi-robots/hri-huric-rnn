@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096456">
+ <sentence>
+  The al-Fatah missile system has not been completed and remains untested .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="al-fatah" pos="JJ" surface="al-Fatah"/>
+  <token id="3" lemma="missile" pos="NN" surface="missile"/>
+  <token id="4" lemma="system" pos="NN" surface="system"/>
+  <token id="5" lemma="have" pos="VBZ" surface="has"/>
+  <token id="6" lemma="not" pos="RB" surface="not"/>
+  <token id="7" lemma="be" pos="VBN" surface="been"/>
+  <token id="8" lemma="complete" pos="VBN" surface="completed"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="remain" pos="VBZ" surface="remains"/>
+  <token id="11" lemma="untested" pos="JJ" surface="untested"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="det"/>
+  <dep from="4" to="2" type="compound"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="8" to="4" type="nsubjpass"/>
+  <dep from="8" to="5" type="aux"/>
+  <dep from="8" to="6" type="neg"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="10" to="11" type="acomp"/>
+  <dep from="8" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Left_to_do">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Remainder">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Process">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Activity_finish">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

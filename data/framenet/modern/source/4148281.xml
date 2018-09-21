@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148281">
+ <sentence>
+  " Curious , Mr . Baynes , very curious .
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="curious" pos="JJ" surface="Curious"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="mr" pos="NNP" surface="Mr"/>
+  <token id="5" lemma="." pos="." surface="."/>
+  <token id="6" lemma="bayne" pos="NNS" surface="Baynes"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="very" pos="RB" surface="very"/>
+  <token id="9" lemma="curious" pos="JJ" surface="curious"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="punct"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="4" to="5" type="punct"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="6" to="9" type="amod"/>
+  <dep from="6" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Typicality">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Typicality">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

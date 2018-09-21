@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098601">
+ <sentence>
+  A northern Indiana businessman has been kidnapped in Iraq and shown on a video broadcast Wednesday by the Al-Jazeera television station .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="northern" pos="JJ" surface="northern"/>
+  <token id="3" lemma="indiana" pos="NNP" surface="Indiana"/>
+  <token id="4" lemma="businessman" pos="NN" surface="businessman"/>
+  <token id="5" lemma="have" pos="VBZ" surface="has"/>
+  <token id="6" lemma="be" pos="VBN" surface="been"/>
+  <token id="7" lemma="kidnap" pos="VBN" surface="kidnapped"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="iraq" pos="NNP" surface="Iraq"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="show" pos="VBN" surface="shown"/>
+  <token id="12" lemma="on" pos="IN" surface="on"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="video" pos="NN" surface="video"/>
+  <token id="15" lemma="broadcast" pos="NN" surface="broadcast"/>
+  <token id="16" lemma="wednesday" pos="NNP" surface="Wednesday"/>
+  <token id="17" lemma="by" pos="IN" surface="by"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="al-jazeera" pos="NNP" surface="Al-Jazeera"/>
+  <token id="20" lemma="television" pos="NN" surface="television"/>
+  <token id="21" lemma="station" pos="NN" surface="station"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="det"/>
+  <dep from="4" to="2" type="amod"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="7" to="4" type="nsubjpass"/>
+  <dep from="7" to="5" type="aux"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="7" to="10" type="cc"/>
+  <dep from="7" to="11" type="conj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="12" to="15" type="pobj"/>
+  <dep from="15" to="16" type="npadvmod"/>
+  <dep from="11" to="17" type="agent"/>
+  <dep from="21" to="18" type="det"/>
+  <dep from="21" to="19" type="compound"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="17" to="21" type="pobj"/>
+  <dep from="7" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Kidnapping">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

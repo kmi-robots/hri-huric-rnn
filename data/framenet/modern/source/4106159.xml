@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106159">
+ <sentence>
+  Nearby is the Memorial House of Dr . Sun Yat-sen , founder of the Chinese Republic .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="nearby" pos="RB" surface="Nearby"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="memorial" pos="NNP" surface="Memorial"/>
+  <token id="5" lemma="house" pos="NNP" surface="House"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="dr" pos="NNP" surface="Dr"/>
+  <token id="8" lemma="." pos="." surface="."/>
+  <token id="9" lemma="sun" pos="NNP" surface="Sun"/>
+  <token id="10" lemma="yat-sen" pos="NNP" surface="Yat-sen"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="founder" pos="NN" surface="founder"/>
+  <token id="13" lemma="of" pos="IN" surface="of"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="chinese" pos="NNP" surface="Chinese"/>
+  <token id="16" lemma="republic" pos="NNP" surface="Republic"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="advmod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="2" to="5" type="attr"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="2" to="8" type="punct"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="10" to="12" type="appos"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="13" to="16" type="pobj"/>
+  <dep from="10" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

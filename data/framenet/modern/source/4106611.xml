@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106611">
+ <sentence>
+  The Funding sources are shrinking , but the needs grow explosively .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="funding" pos="NNP" surface="Funding"/>
+  <token id="3" lemma="source" pos="NNS" surface="sources"/>
+  <token id="4" lemma="be" pos="VBP" surface="are"/>
+  <token id="5" lemma="shrink" pos="VBG" surface="shrinking"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="but" pos="CC" surface="but"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="need" pos="NNS" surface="needs"/>
+  <token id="10" lemma="grow" pos="VB" surface="grow"/>
+  <token id="11" lemma="explosively" pos="RB" surface="explosively"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="punct"/>
+  <dep from="5" to="7" type="cc"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="5" to="10" type="conj"/>
+  <dep from="10" to="11" type="advmod"/>
+  <dep from="10" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Source_of_getting">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Expansion">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Expansion">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Needing">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

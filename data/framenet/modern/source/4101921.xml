@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101921">
+ <sentence>
+  13 BILL : Oh , right .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="13" pos="CD" surface="13"/>
+  <token id="2" lemma="bill" pos="NN" surface="BILL"/>
+  <token id="3" lemma=":" pos=":" surface=":"/>
+  <token id="4" lemma="oh" pos="UH" surface="Oh"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="right" pos="UH" surface="right"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="6" to="4" type="intj"/>
+  <dep from="6" to="5" type="punct"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Correctness">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

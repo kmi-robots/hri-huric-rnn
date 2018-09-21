@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097687">
+ <sentence>
+  However , critics argue that Pyongyang 's behavior is inconsistent and that this evidence is not credible .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="however" pos="RB" surface="However"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="critic" pos="NNS" surface="critics"/>
+  <token id="4" lemma="argue" pos="VBP" surface="argue"/>
+  <token id="5" lemma="that" pos="IN" surface="that"/>
+  <token id="6" lemma="pyongyang" pos="NNP" surface="Pyongyang"/>
+  <token id="7" lemma="'s" pos="POS" surface="'s"/>
+  <token id="8" lemma="behavior" pos="NN" surface="behavior"/>
+  <token id="9" lemma="be" pos="VBZ" surface="is"/>
+  <token id="10" lemma="inconsistent" pos="JJ" surface="inconsistent"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="that" pos="IN" surface="that"/>
+  <token id="13" lemma="this" pos="DT" surface="this"/>
+  <token id="14" lemma="evidence" pos="NN" surface="evidence"/>
+  <token id="15" lemma="be" pos="VBZ" surface="is"/>
+  <token id="16" lemma="not" pos="RB" surface="not"/>
+  <token id="17" lemma="credible" pos="JJ" surface="credible"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="4" to="2" type="punct"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="9" to="5" type="mark"/>
+  <dep from="8" to="6" type="poss"/>
+  <dep from="6" to="7" type="case"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="4" to="9" type="ccomp"/>
+  <dep from="9" to="10" type="attr"/>
+  <dep from="9" to="11" type="cc"/>
+  <dep from="15" to="12" type="mark"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="9" to="15" type="conj"/>
+  <dep from="15" to="16" type="neg"/>
+  <dep from="15" to="17" type="acomp"/>
+  <dep from="4" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Judgment_communication">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Communicator">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Reasoning">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Arguer">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Evidence">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Support">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Conduct">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

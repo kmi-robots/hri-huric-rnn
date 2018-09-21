@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097339">
+ <sentence>
+  CNEA will provide the 115.8 kg of uranium. ( 2957 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="cnea" pos="NN" surface="CNEA"/>
+  <token id="2" lemma="will" pos="MD" surface="will"/>
+  <token id="3" lemma="provide" pos="VB" surface="provide"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="115.8" pos="CD" surface="115.8"/>
+  <token id="6" lemma="kg" pos="NNS" surface="kg"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="uranium." pos="NN" surface="uranium."/>
+  <token id="9" lemma="(" pos="-LRB-" surface="("/>
+  <token id="10" lemma="2957" pos="CD" surface="2957"/>
+  <token id="11" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="8" to="10" type="npadvmod"/>
+  <dep from="8" to="11" type="punct"/>
+  <dep from="3" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Supplier">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

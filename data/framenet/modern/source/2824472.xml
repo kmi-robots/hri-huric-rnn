@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824472">
+ <sentence>
+  1:20 a.m. DGAULT : Bolinas -- astride the San Andreas Fault .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="1:20" pos="CD" surface="1:20"/>
+  <token id="2" lemma="a.m." pos="RB" surface="a.m."/>
+  <token id="3" lemma="dgault" pos="NNP" surface="DGAULT"/>
+  <token id="4" lemma=":" pos=":" surface=":"/>
+  <token id="5" lemma="bolinas" pos="NNP" surface="Bolinas"/>
+  <token id="6" lemma="--" pos=":" surface="--"/>
+  <token id="7" lemma="astride" pos="IN" surface="astride"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="san" pos="NNP" surface="San"/>
+  <token id="10" lemma="andreas" pos="NNP" surface="Andreas"/>
+  <token id="11" lemma="fault" pos="NNP" surface="Fault"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="punct"/>
+  <dep from="5" to="7" type="prep"/>
+  <dep from="11" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="7" to="11" type="pobj"/>
+  <dep from="5" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

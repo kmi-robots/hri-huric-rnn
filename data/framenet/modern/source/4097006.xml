@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097006">
+ <sentence>
+  However , several Iranian officials has never hidden his abhorrence of CW use in battlefield .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="however" pos="RB" surface="However"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="several" pos="JJ" surface="several"/>
+  <token id="4" lemma="iranian" pos="JJ" surface="Iranian"/>
+  <token id="5" lemma="official" pos="NNS" surface="officials"/>
+  <token id="6" lemma="have" pos="VBZ" surface="has"/>
+  <token id="7" lemma="never" pos="RB" surface="never"/>
+  <token id="8" lemma="hide" pos="VBN" surface="hidden"/>
+  <token id="9" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="10" lemma="abhorrence" pos="NN" surface="abhorrence"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="cw" pos="NNP" surface="CW"/>
+  <token id="13" lemma="use" pos="NN" surface="use"/>
+  <token id="14" lemma="in" pos="IN" surface="in"/>
+  <token id="15" lemma="battlefield" pos="NN" surface="battlefield"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="advmod"/>
+  <dep from="8" to="2" type="punct"/>
+  <dep from="5" to="3" type="amod"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="8" to="5" type="nsubj"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="neg"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="poss"/>
+  <dep from="13" to="10" type="nsubj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="8" to="13" type="ccomp"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="8" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Governed">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Leader">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Experiencer_focus">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Experiencer">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Using">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Instrument">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106300">
+ <sentence>
+  Shenzhen was China 's first Special Economic Zone .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="shenzhen" pos="NNP" surface="Shenzhen"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="china" pos="NNP" surface="China"/>
+  <token id="4" lemma="'s" pos="POS" surface="'s"/>
+  <token id="5" lemma="first" pos="JJ" surface="first"/>
+  <token id="6" lemma="special" pos="NNP" surface="Special"/>
+  <token id="7" lemma="economic" pos="NNP" surface="Economic"/>
+  <token id="8" lemma="zone" pos="NNP" surface="Zone"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="8" to="3" type="poss"/>
+  <dep from="3" to="4" type="case"/>
+  <dep from="8" to="5" type="amod"/>
+  <dep from="8" to="6" type="compound"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="2" to="8" type="attr"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Ordinal_numbers">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

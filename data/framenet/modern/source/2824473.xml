@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824473">
+ <sentence>
+  Did n't feel a thing , but noticed some strange bird behavior .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="do" pos="VBD" surface="Did"/>
+  <token id="2" lemma="n't" pos="RB" surface="n't"/>
+  <token id="3" lemma="feel" pos="VB" surface="feel"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="thing" pos="NN" surface="thing"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="but" pos="CC" surface="but"/>
+  <token id="8" lemma="notice" pos="VBD" surface="noticed"/>
+  <token id="9" lemma="some" pos="DT" surface="some"/>
+  <token id="10" lemma="strange" pos="JJ" surface="strange"/>
+  <token id="11" lemma="bird" pos="NN" surface="bird"/>
+  <token id="12" lemma="behavior" pos="NN" surface="behavior"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="aux"/>
+  <dep from="3" to="2" type="neg"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="punct"/>
+  <dep from="3" to="7" type="cc"/>
+  <dep from="3" to="8" type="conj"/>
+  <dep from="12" to="9" type="det"/>
+  <dep from="12" to="10" type="amod"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="8" to="12" type="dobj"/>
+  <dep from="3" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_experience">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Becoming_aware">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Concessive">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Conceded_state_of_affairs">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Main_assertion">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Denoted_quantity">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Mass">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Conduct">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

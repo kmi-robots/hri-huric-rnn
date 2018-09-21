@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101582">
+ <sentence>
+  And in Nicaragua , promises of press freedom by the Sandinistas `` have not materialized . ''
+ </sentence>
+ <tokens>
+  <token id="1" lemma="and" pos="CC" surface="And"/>
+  <token id="2" lemma="in" pos="IN" surface="in"/>
+  <token id="3" lemma="nicaragua" pos="NNP" surface="Nicaragua"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="promise" pos="NNS" surface="promises"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="press" pos="NN" surface="press"/>
+  <token id="8" lemma="freedom" pos="NN" surface="freedom"/>
+  <token id="9" lemma="by" pos="IN" surface="by"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="sandinistas" pos="NNPS" surface="Sandinistas"/>
+  <token id="12" lemma="``" pos="``" surface="``"/>
+  <token id="13" lemma="have" pos="VBP" surface="have"/>
+  <token id="14" lemma="not" pos="RB" surface="not"/>
+  <token id="15" lemma="materialize" pos="VBN" surface="materialized"/>
+  <token id="16" lemma="." pos="." surface="."/>
+  <token id="17" lemma="''" pos="''" surface="''"/>
+ </tokens>
+ <dependencies>
+  <dep from="15" to="1" type="cc"/>
+  <dep from="15" to="2" type="prep"/>
+  <dep from="2" to="3" type="pobj"/>
+  <dep from="15" to="4" type="punct"/>
+  <dep from="15" to="5" type="nsubj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="5" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="15" to="12" type="punct"/>
+  <dep from="15" to="13" type="aux"/>
+  <dep from="15" to="14" type="neg"/>
+  <dep from="0" to="15" type="root"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="15" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Commitment">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Coming_to_be">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

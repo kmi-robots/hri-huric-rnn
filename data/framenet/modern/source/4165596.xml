@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165596">
+ <sentence>
+  27 deaths have been confirmed in Peloponnese , one of the hardest hit areas .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="27" pos="CD" surface="27"/>
+  <token id="2" lemma="death" pos="NNS" surface="deaths"/>
+  <token id="3" lemma="have" pos="VBP" surface="have"/>
+  <token id="4" lemma="be" pos="VBN" surface="been"/>
+  <token id="5" lemma="confirm" pos="VBN" surface="confirmed"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="peloponnese" pos="NNP" surface="Peloponnese"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="one" pos="CD" surface="one"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="hardest" pos="RBS" surface="hardest"/>
+  <token id="13" lemma="hit" pos="VBN" surface="hit"/>
+  <token id="14" lemma="area" pos="NNS" surface="areas"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="5" to="8" type="punct"/>
+  <dep from="5" to="9" type="npadvmod"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="14" to="11" type="det"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="10" to="14" type="pobj"/>
+  <dep from="5" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Death">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Verification">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Unconfirmed_content">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Eventive_affecting">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

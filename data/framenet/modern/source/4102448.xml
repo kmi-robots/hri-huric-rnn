@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102448">
+ <sentence>
+  Paula_Zahn : And Dr . Gupto now just joins us from the Emory University hospital in Atlanta .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="paula_zahn" pos="VB" surface="Paula_Zahn"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="and" pos="CC" surface="And"/>
+  <token id="4" lemma="dr" pos="NNP" surface="Dr"/>
+  <token id="5" lemma="." pos="." surface="."/>
+  <token id="6" lemma="gupto" pos="NNP" surface="Gupto"/>
+  <token id="7" lemma="now" pos="RB" surface="now"/>
+  <token id="8" lemma="just" pos="RB" surface="just"/>
+  <token id="9" lemma="join" pos="VBZ" surface="joins"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="us"/>
+  <token id="11" lemma="from" pos="IN" surface="from"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="emory" pos="NNP" surface="Emory"/>
+  <token id="14" lemma="university" pos="NNP" surface="University"/>
+  <token id="15" lemma="hospital" pos="NN" surface="hospital"/>
+  <token id="16" lemma="in" pos="IN" surface="in"/>
+  <token id="17" lemma="atlanta" pos="NNP" surface="Atlanta"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="cc"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="punct"/>
+  <dep from="9" to="6" type="nsubj"/>
+  <dep from="9" to="7" type="advmod"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="9" to="11" type="prep"/>
+  <dep from="15" to="12" type="det"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="11" to="15" type="pobj"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="9" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

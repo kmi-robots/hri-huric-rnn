@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103452">
+ <sentence>
+  Sheik Rida , fear God .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="sheik" pos="NNP" surface="Sheik"/>
+  <token id="2" lemma="rida" pos="NNP" surface="Rida"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="fear" pos="VBP" surface="fear"/>
+  <token id="5" lemma="god" pos="NNP" surface="God"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="punct"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="4" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Experiencer_focus">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Content">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099627">
+ <sentence>
+  `` Soldiers have welcomed the newest member of the Stryker family of vehicles .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="``" pos="``" surface="``"/>
+  <token id="2" lemma="soldier" pos="NNS" surface="Soldiers"/>
+  <token id="3" lemma="have" pos="VBP" surface="have"/>
+  <token id="4" lemma="welcome" pos="VBN" surface="welcomed"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="new" pos="JJS" surface="newest"/>
+  <token id="7" lemma="member" pos="NN" surface="member"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="stryker" pos="NNP" surface="Stryker"/>
+  <token id="11" lemma="family" pos="NN" surface="family"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="vehicle" pos="NNS" surface="vehicles"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="punct"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Member">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Group">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Vehicle">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Familiarity">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Kinship">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Alter">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Relatives">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Relatives">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Member_of_military">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

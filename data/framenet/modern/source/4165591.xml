@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165591">
+ <sentence>
+  Local fire departments put the current death toll at at least 37 , nine of which were children .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="local" pos="JJ" surface="Local"/>
+  <token id="2" lemma="fire" pos="NN" surface="fire"/>
+  <token id="3" lemma="department" pos="NNS" surface="departments"/>
+  <token id="4" lemma="put" pos="VBD" surface="put"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="current" pos="JJ" surface="current"/>
+  <token id="7" lemma="death" pos="NN" surface="death"/>
+  <token id="8" lemma="toll" pos="NN" surface="toll"/>
+  <token id="9" lemma="at" pos="IN" surface="at"/>
+  <token id="10" lemma="at" pos="RB" surface="at"/>
+  <token id="11" lemma="least" pos="RBS" surface="least"/>
+  <token id="12" lemma="37" pos="CD" surface="37"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="nine" pos="CD" surface="nine"/>
+  <token id="15" lemma="of" pos="IN" surface="of"/>
+  <token id="16" lemma="which" pos="WDT" surface="which"/>
+  <token id="17" lemma="be" pos="VBD" surface="were"/>
+  <token id="18" lemma="child" pos="NNS" surface="children"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="amod"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="8" to="5" type="det"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="4" to="8" type="dobj"/>
+  <dep from="4" to="9" type="prep"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="12" to="11" type="advmod"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="17" to="14" type="nsubj"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="8" to="17" type="relcl"/>
+  <dep from="17" to="18" type="attr"/>
+  <dep from="4" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Constituent_parts">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Law_enforcement_agency">
+    <lexicalUnit>
+     <token id="2"/>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agency">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Trajector_entity">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Reference_quantity">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Denoted_quantity">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_age">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Estimating">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Question">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Value">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

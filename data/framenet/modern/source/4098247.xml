@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098247">
+ <sentence>
+  QN : Has Libya sponsored acts of terrorism ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="have" pos="VBZ" surface="Has"/>
+  <token id="4" lemma="libya" pos="NNP" surface="Libya"/>
+  <token id="5" lemma="sponsor" pos="VBN" surface="sponsored"/>
+  <token id="6" lemma="act" pos="NNS" surface="acts"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="terrorism" pos="NN" surface="terrorism"/>
+  <token id="9" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="1" to="5" type="acl"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="1" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Act">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

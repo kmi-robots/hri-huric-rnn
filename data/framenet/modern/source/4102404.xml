@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102404">
+ <sentence>
+  Republican leader Bill Frist said the Senate was hijacked .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="republican" pos="JJ" surface="Republican"/>
+  <token id="2" lemma="leader" pos="NN" surface="leader"/>
+  <token id="3" lemma="bill" pos="NNP" surface="Bill"/>
+  <token id="4" lemma="frist" pos="NNP" surface="Frist"/>
+  <token id="5" lemma="say" pos="VBD" surface="said"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="senate" pos="NNP" surface="Senate"/>
+  <token id="8" lemma="be" pos="VBD" surface="was"/>
+  <token id="9" lemma="hijack" pos="VBN" surface="hijacked"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="4" to="2" type="compound"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="9" to="7" type="nsubjpass"/>
+  <dep from="9" to="8" type="auxpass"/>
+  <dep from="5" to="9" type="ccomp"/>
+  <dep from="5" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Governed">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Leader">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Piracy">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

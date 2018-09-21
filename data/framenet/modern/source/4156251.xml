@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4156251">
+ <sentence>
+  At 9:27 , after having been in the air for 45 minutes , United 93 acknowledged a transmission from the Cleveland Center controller .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="at" pos="IN" surface="At"/>
+  <token id="2" lemma="9:27" pos="CD" surface="9:27"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="after" pos="IN" surface="after"/>
+  <token id="5" lemma="have" pos="VBG" surface="having"/>
+  <token id="6" lemma="be" pos="VBN" surface="been"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="air" pos="NN" surface="air"/>
+  <token id="10" lemma="for" pos="IN" surface="for"/>
+  <token id="11" lemma="45" pos="CD" surface="45"/>
+  <token id="12" lemma="minute" pos="NNS" surface="minutes"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="united" pos="NNP" surface="United"/>
+  <token id="15" lemma="93" pos="CD" surface="93"/>
+  <token id="16" lemma="acknowledge" pos="VBD" surface="acknowledged"/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="transmission" pos="NN" surface="transmission"/>
+  <token id="19" lemma="from" pos="IN" surface="from"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="cleveland" pos="NNP" surface="Cleveland"/>
+  <token id="22" lemma="center" pos="NNP" surface="Center"/>
+  <token id="23" lemma="controller" pos="NN" surface="controller"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="16" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="16" to="3" type="punct"/>
+  <dep from="16" to="4" type="prep"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="4" to="6" type="pcomp"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="6" to="10" type="prep"/>
+  <dep from="12" to="11" type="nummod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="16" to="13" type="punct"/>
+  <dep from="16" to="14" type="nsubj"/>
+  <dep from="14" to="15" type="nummod"/>
+  <dep from="0" to="16" type="root"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="dobj"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="23" to="20" type="det"/>
+  <dep from="22" to="21" type="compound"/>
+  <dep from="23" to="22" type="compound"/>
+  <dep from="19" to="23" type="pobj"/>
+  <dep from="16" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Communication_response">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Trigger">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

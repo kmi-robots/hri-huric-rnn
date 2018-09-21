@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099203">
+ <sentence>
+  In January - February 1997 , China supplied Iran with 40,000 barrels of calcium hypochlorite , a chemical-biological-radiological decontamination agent .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="january" pos="NNP" surface="January"/>
+  <token id="3" lemma="-" pos="HYPH" surface="-"/>
+  <token id="4" lemma="february" pos="NNP" surface="February"/>
+  <token id="5" lemma="1997" pos="CD" surface="1997"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="china" pos="NNP" surface="China"/>
+  <token id="8" lemma="supply" pos="VBD" surface="supplied"/>
+  <token id="9" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="10" lemma="with" pos="IN" surface="with"/>
+  <token id="11" lemma="40,000" pos="CD" surface="40,000"/>
+  <token id="12" lemma="barrel" pos="NNS" surface="barrels"/>
+  <token id="13" lemma="of" pos="IN" surface="of"/>
+  <token id="14" lemma="calcium" pos="NN" surface="calcium"/>
+  <token id="15" lemma="hypochlorite" pos="NN" surface="hypochlorite"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="chemical-biological-radiological" pos="JJ" surface="chemical-biological-radiological"/>
+  <token id="19" lemma="decontamination" pos="NN" surface="decontamination"/>
+  <token id="20" lemma="agent" pos="NN" surface="agent"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="4" to="3" type="punct"/>
+  <dep from="2" to="4" type="appos"/>
+  <dep from="4" to="5" type="nummod"/>
+  <dep from="8" to="6" type="punct"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="8" to="10" type="prep"/>
+  <dep from="12" to="11" type="nummod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="12" to="16" type="punct"/>
+  <dep from="20" to="17" type="det"/>
+  <dep from="20" to="18" type="amod"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="12" to="20" type="appos"/>
+  <dep from="8" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Supplier">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_volume">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Count">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Stuff">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Active_substance">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Effect">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Substance">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

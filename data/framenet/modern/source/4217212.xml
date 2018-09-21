@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4217212">
+ <sentence>
+  On Sunday , he visited Mandela and pronounced that his state had deteriorated from stable to critical .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="on" pos="IN" surface="On"/>
+  <token id="2" lemma="sunday" pos="NNP" surface="Sunday"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="5" lemma="visit" pos="VBD" surface="visited"/>
+  <token id="6" lemma="mandela" pos="NNP" surface="Mandela"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="pronounce" pos="VBD" surface="pronounced"/>
+  <token id="9" lemma="that" pos="IN" surface="that"/>
+  <token id="10" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="11" lemma="state" pos="NN" surface="state"/>
+  <token id="12" lemma="have" pos="VBD" surface="had"/>
+  <token id="13" lemma="deteriorate" pos="VBN" surface="deteriorated"/>
+  <token id="14" lemma="from" pos="IN" surface="from"/>
+  <token id="15" lemma="stable" pos="JJ" surface="stable"/>
+  <token id="16" lemma="to" pos="IN" surface="to"/>
+  <token id="17" lemma="critical" pos="JJ" surface="critical"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="5" to="3" type="punct"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="cc"/>
+  <dep from="5" to="8" type="conj"/>
+  <dep from="13" to="9" type="mark"/>
+  <dep from="11" to="10" type="poss"/>
+  <dep from="13" to="11" type="nsubj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="8" to="13" type="ccomp"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="amod"/>
+  <dep from="13" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="5" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Visiting">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="State_of_entity">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="State">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Improvement_or_decline">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Prior_state">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Post_state">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

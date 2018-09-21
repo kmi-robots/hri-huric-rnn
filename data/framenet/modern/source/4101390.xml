@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101390">
+ <sentence>
+  Inauguration of free zone in Dubai for e-commerce
+ </sentence>
+ <tokens>
+  <token id="1" lemma="inauguration" pos="NN" surface="Inauguration"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="free" pos="JJ" surface="free"/>
+  <token id="4" lemma="zone" pos="NN" surface="zone"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="dubai" pos="NNP" surface="Dubai"/>
+  <token id="7" lemma="for" pos="IN" surface="for"/>
+  <token id="8" lemma="e-commerce" pos="NN" surface="e-commerce"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Container_possessor">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

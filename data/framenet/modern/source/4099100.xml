@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099100">
+ <sentence>
+  QN : Can some cellphones be used to take pictures ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="can" pos="MD" surface="Can"/>
+  <token id="4" lemma="some" pos="DT" surface="some"/>
+  <token id="5" lemma="cellphone" pos="NNS" surface="cellphones"/>
+  <token id="6" lemma="be" pos="VB" surface="be"/>
+  <token id="7" lemma="use" pos="VBN" surface="used"/>
+  <token id="8" lemma="to" pos="TO" surface="to"/>
+  <token id="9" lemma="take" pos="VB" surface="take"/>
+  <token id="10" lemma="picture" pos="NNS" surface="pictures"/>
+  <token id="11" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="7" to="3" type="aux"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="7" to="5" type="nsubjpass"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="1" to="7" type="acl"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="7" to="9" type="xcomp"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="1" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Capability">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

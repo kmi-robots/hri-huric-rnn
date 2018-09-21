@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098872">
+ <sentence>
+  QN : Do video games contain advertisements ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="do" pos="VB" surface="Do"/>
+  <token id="4" lemma="video" pos="NN" surface="video"/>
+  <token id="5" lemma="game" pos="NNS" surface="games"/>
+  <token id="6" lemma="contain" pos="VB" surface="contain"/>
+  <token id="7" lemma="advertisement" pos="NNS" surface="advertisements"/>
+  <token id="8" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="1" to="6" type="acl"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="6" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Containing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Container">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Contents">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

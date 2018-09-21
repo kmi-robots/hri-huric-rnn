@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165028">
+ <sentence>
+  Of the three major fires , the Montecito Tea Fire is 95% contained ; the Sayre Fire , 70% ; and the Triangle Complex Fire , 75% .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="of" pos="IN" surface="Of"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="three" pos="CD" surface="three"/>
+  <token id="4" lemma="major" pos="JJ" surface="major"/>
+  <token id="5" lemma="fire" pos="NNS" surface="fires"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="montecito" pos="NNP" surface="Montecito"/>
+  <token id="9" lemma="tea" pos="NNP" surface="Tea"/>
+  <token id="10" lemma="fire" pos="NNP" surface="Fire"/>
+  <token id="11" lemma="be" pos="VBZ" surface="is"/>
+  <token id="12" lemma="95%" pos="CD" surface="95%"/>
+  <token id="13" lemma="contain" pos="VBN" surface="contained"/>
+  <token id="14" lemma=";" pos=":" surface=";"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="sayre" pos="NNP" surface="Sayre"/>
+  <token id="17" lemma="fire" pos="NNP" surface="Fire"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="70%" pos="CD" surface="70%"/>
+  <token id="20" lemma=";" pos=":" surface=";"/>
+  <token id="21" lemma="and" pos="CC" surface="and"/>
+  <token id="22" lemma="the" pos="DT" surface="the"/>
+  <token id="23" lemma="triangle" pos="NNP" surface="Triangle"/>
+  <token id="24" lemma="complex" pos="NNP" surface="Complex"/>
+  <token id="25" lemma="fire" pos="NNP" surface="Fire"/>
+  <token id="26" lemma="," pos="," surface=","/>
+  <token id="27" lemma="75%" pos="CD" surface="75%"/>
+  <token id="28" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="13" to="1" type="prep"/>
+  <dep from="5" to="2" type="det"/>
+  <dep from="5" to="3" type="nummod"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="1" to="5" type="pobj"/>
+  <dep from="13" to="6" type="punct"/>
+  <dep from="10" to="7" type="det"/>
+  <dep from="10" to="8" type="compound"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="13" to="10" type="nsubjpass"/>
+  <dep from="13" to="11" type="auxpass"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="17" to="15" type="det"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="13" to="17" type="appos"/>
+  <dep from="17" to="18" type="punct"/>
+  <dep from="17" to="19" type="amod"/>
+  <dep from="17" to="20" type="punct"/>
+  <dep from="17" to="21" type="cc"/>
+  <dep from="25" to="22" type="det"/>
+  <dep from="25" to="23" type="compound"/>
+  <dep from="25" to="24" type="compound"/>
+  <dep from="17" to="25" type="conj"/>
+  <dep from="25" to="26" type="punct"/>
+  <dep from="25" to="27" type="advmod"/>
+  <dep from="13" to="28" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Fire_burning">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Fire">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Fire_burning">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Fire">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Fire_burning">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Fire">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Fire_burning">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Name">
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

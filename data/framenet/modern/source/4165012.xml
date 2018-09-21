@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165012">
+ <sentence>
+  Los Angeles wildfires are nearly contained
+ </sentence>
+ <tokens>
+  <token id="1" lemma="los" pos="NNP" surface="Los"/>
+  <token id="2" lemma="angeles" pos="NNP" surface="Angeles"/>
+  <token id="3" lemma="wildfire" pos="NNS" surface="wildfires"/>
+  <token id="4" lemma="be" pos="VBP" surface="are"/>
+  <token id="5" lemma="nearly" pos="RB" surface="nearly"/>
+  <token id="6" lemma="contain" pos="VBN" surface="contained"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="6" to="3" type="nsubjpass"/>
+  <dep from="6" to="4" type="auxpass"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="0" to="6" type="root"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Emergency_fire">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Fire">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

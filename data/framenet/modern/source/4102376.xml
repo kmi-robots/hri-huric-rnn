@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102376">
+ <sentence>
+  1- Sheik Hatim Abd al-Razzaq Mu'jil al-Ka'ud , Sheik AlbuNimr tribe .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="1-" pos="LS" surface="1-"/>
+  <token id="2" lemma="sheik" pos="NNP" surface="Sheik"/>
+  <token id="3" lemma="hatim" pos="NNP" surface="Hatim"/>
+  <token id="4" lemma="abd" pos="NNP" surface="Abd"/>
+  <token id="5" lemma="al-razzaq" pos="VB" surface="al-Razzaq"/>
+  <token id="6" lemma="mu'jil" pos="NNP" surface="Mu'jil"/>
+  <token id="7" lemma="al-ka'ud" pos="NNP" surface="al-Ka'ud"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="sheik" pos="NNP" surface="Sheik"/>
+  <token id="10" lemma="albunimr" pos="NNP" surface="AlbuNimr"/>
+  <token id="11" lemma="tribe" pos="NN" surface="tribe"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="meta"/>
+  <dep from="4" to="2" type="compound"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="11" to="9" type="compound"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="7" to="11" type="appos"/>
+  <dep from="5" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

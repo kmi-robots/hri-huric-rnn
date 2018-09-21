@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4107448">
+ <sentence>
+  Canadian international merchandise trade
+ </sentence>
+ <tokens>
+  <token id="1" lemma="canadian" pos="JJ" surface="Canadian"/>
+  <token id="2" lemma="international" pos="JJ" surface="international"/>
+  <token id="3" lemma="merchandise" pos="NN" surface="merchandise"/>
+  <token id="4" lemma="trade" pos="NN" surface="trade"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="amod"/>
+  <dep from="4" to="2" type="amod"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="0" to="4" type="root"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Foreign_or_domestic_country">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Current_country">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Discourse_salient_country">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Exchange">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Themes">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Exchanger_1">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Exchanger_2">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

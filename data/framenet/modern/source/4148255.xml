@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148255">
+ <sentence>
+  A double band of white shells were strung round the centre of it .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="double" pos="JJ" surface="double"/>
+  <token id="3" lemma="band" pos="NN" surface="band"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="white" pos="JJ" surface="white"/>
+  <token id="6" lemma="shell" pos="NNS" surface="shells"/>
+  <token id="7" lemma="be" pos="VBD" surface="were"/>
+  <token id="8" lemma="string" pos="VBN" surface="strung"/>
+  <token id="9" lemma="round" pos="IN" surface="round"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="centre" pos="NN" surface="centre"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="8" to="3" type="nsubjpass"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="8" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Aggregate">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_inner_outer">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Color">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Color">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

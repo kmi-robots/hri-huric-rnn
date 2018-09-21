@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106353">
+ <sentence>
+  I am now ... totally off of welfare .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="be" pos="VBP" surface="am"/>
+  <token id="3" lemma="now" pos="RB" surface="now"/>
+  <token id="4" lemma="..." pos=":" surface="..."/>
+  <token id="5" lemma="totally" pos="RB" surface="totally"/>
+  <token id="6" lemma="off" pos="IN" surface="off"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="welfare" pos="NN" surface="welfare"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="advmod"/>
+  <dep from="2" to="4" type="punct"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="2" to="6" type="prep"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Trajector_event">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

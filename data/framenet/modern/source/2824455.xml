@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824455">
+ <sentence>
+  Many hairline cracks in the concrete slabs afterwards .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="many" pos="JJ" surface="Many"/>
+  <token id="2" lemma="hairline" pos="NN" surface="hairline"/>
+  <token id="3" lemma="crack" pos="NNS" surface="cracks"/>
+  <token id="4" lemma="in" pos="IN" surface="in"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="concrete" pos="JJ" surface="concrete"/>
+  <token id="7" lemma="slab" pos="NNS" surface="slabs"/>
+  <token id="8" lemma="afterwards" pos="RB" surface="afterwards"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="amod"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="pobj"/>
+  <dep from="3" to="8" type="advmod"/>
+  <dep from="3" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Time_vector">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

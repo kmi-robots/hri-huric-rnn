@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4216546">
+ <sentence>
+  The retail areas contain shops from chain stores up to high-end boutiques .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="retail" pos="JJ" surface="retail"/>
+  <token id="3" lemma="area" pos="NNS" surface="areas"/>
+  <token id="4" lemma="contain" pos="VBP" surface="contain"/>
+  <token id="5" lemma="shop" pos="NNS" surface="shops"/>
+  <token id="6" lemma="from" pos="IN" surface="from"/>
+  <token id="7" lemma="chain" pos="NN" surface="chain"/>
+  <token id="8" lemma="store" pos="NNS" surface="stores"/>
+  <token id="9" lemma="up" pos="RP" surface="up"/>
+  <token id="10" lemma="to" pos="TO" surface="to"/>
+  <token id="11" lemma="high-end" pos="VB" surface="high-end"/>
+  <token id="12" lemma="boutique" pos="NNS" surface="boutiques"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="4" to="9" type="prep"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="4" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100387">
+ <sentence>
+  Still reeling from the effects of the Persian devastation , Jerusalem was conquered in 638 by the forces of Islam .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="still" pos="RB" surface="Still"/>
+  <token id="2" lemma="reel" pos="VBG" surface="reeling"/>
+  <token id="3" lemma="from" pos="IN" surface="from"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="effect" pos="NNS" surface="effects"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="persian" pos="JJ" surface="Persian"/>
+  <token id="9" lemma="devastation" pos="NN" surface="devastation"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="jerusalem" pos="NNP" surface="Jerusalem"/>
+  <token id="12" lemma="be" pos="VBD" surface="was"/>
+  <token id="13" lemma="conquer" pos="VBN" surface="conquered"/>
+  <token id="14" lemma="in" pos="IN" surface="in"/>
+  <token id="15" lemma="638" pos="CD" surface="638"/>
+  <token id="16" lemma="by" pos="IN" surface="by"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="force" pos="NNS" surface="forces"/>
+  <token id="19" lemma="of" pos="IN" surface="of"/>
+  <token id="20" lemma="islam" pos="NNP" surface="Islam"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="advmod"/>
+  <dep from="13" to="2" type="advcl"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="6" to="9" type="pobj"/>
+  <dep from="13" to="10" type="punct"/>
+  <dep from="13" to="11" type="nsubjpass"/>
+  <dep from="13" to="12" type="auxpass"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="13" to="16" type="agent"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="19" to="20" type="pobj"/>
+  <dep from="13" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Destroying">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Destroyer">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Military">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Force">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Possessor">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Objective_influence">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Influencing_situation">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Conquering">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Conqueror">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100369">
+ <sentence>
+  Those who did n't escape were executed or sold into slavery .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="those" pos="DT" surface="Those"/>
+  <token id="2" lemma="who" pos="WP" surface="who"/>
+  <token id="3" lemma="do" pos="VBD" surface="did"/>
+  <token id="4" lemma="n't" pos="RB" surface="n't"/>
+  <token id="5" lemma="escape" pos="VB" surface="escape"/>
+  <token id="6" lemma="be" pos="VBD" surface="were"/>
+  <token id="7" lemma="execute" pos="VBN" surface="executed"/>
+  <token id="8" lemma="or" pos="CC" surface="or"/>
+  <token id="9" lemma="sell" pos="VBN" surface="sold"/>
+  <token id="10" lemma="into" pos="IN" surface="into"/>
+  <token id="11" lemma="slavery" pos="NN" surface="slavery"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="nsubjpass"/>
+  <dep from="5" to="2" type="nsubj"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="neg"/>
+  <dep from="1" to="5" type="relcl"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="7" to="9" type="conj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="7" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Escaping">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Escapee">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Escapee">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Execution">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Executed">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Commerce_sell">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Result">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

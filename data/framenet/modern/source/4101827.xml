@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101827">
+ <sentence>
+  A cornerstone of the new peace plan .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="cornerstone" pos="NN" surface="cornerstone"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="new" pos="JJ" surface="new"/>
+  <token id="6" lemma="peace" pos="NN" surface="peace"/>
+  <token id="7" lemma="plan" pos="NN" surface="plan"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="7" to="4" type="det"/>
+  <dep from="7" to="5" type="amod"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="3" to="7" type="pobj"/>
+  <dep from="2" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Project">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

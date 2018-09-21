@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099443">
+ <sentence>
+  In August 2002 , the Cable News Network ( CNN ) broadcast an Al Qa'ida training video showing experiments on dogs with cyanide gas .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="august" pos="NNP" surface="August"/>
+  <token id="3" lemma="2002" pos="CD" surface="2002"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="cable" pos="NNP" surface="Cable"/>
+  <token id="7" lemma="news" pos="NNP" surface="News"/>
+  <token id="8" lemma="network" pos="NNP" surface="Network"/>
+  <token id="9" lemma="(" pos="-LRB-" surface="("/>
+  <token id="10" lemma="cnn" pos="NNP" surface="CNN"/>
+  <token id="11" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="12" lemma="broadcast" pos="VBD" surface="broadcast"/>
+  <token id="13" lemma="an" pos="DT" surface="an"/>
+  <token id="14" lemma="al" pos="NNP" surface="Al"/>
+  <token id="15" lemma="qa'ida" pos="NNP" surface="Qa'ida"/>
+  <token id="16" lemma="training" pos="NN" surface="training"/>
+  <token id="17" lemma="video" pos="NN" surface="video"/>
+  <token id="18" lemma="show" pos="VBG" surface="showing"/>
+  <token id="19" lemma="experiment" pos="NNS" surface="experiments"/>
+  <token id="20" lemma="on" pos="IN" surface="on"/>
+  <token id="21" lemma="dog" pos="NNS" surface="dogs"/>
+  <token id="22" lemma="with" pos="IN" surface="with"/>
+  <token id="23" lemma="cyanide" pos="NN" surface="cyanide"/>
+  <token id="24" lemma="gas" pos="NN" surface="gas"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="12" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="2" to="3" type="nummod"/>
+  <dep from="12" to="4" type="punct"/>
+  <dep from="8" to="5" type="det"/>
+  <dep from="8" to="6" type="compound"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="12" to="8" type="nsubj"/>
+  <dep from="10" to="9" type="punct"/>
+  <dep from="8" to="10" type="appos"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="17" to="13" type="det"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="17" to="15" type="compound"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="12" to="17" type="dobj"/>
+  <dep from="17" to="18" type="acl"/>
+  <dep from="18" to="19" type="dobj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="20" to="21" type="pobj"/>
+  <dep from="21" to="22" type="prep"/>
+  <dep from="24" to="23" type="amod"/>
+  <dep from="22" to="24" type="pobj"/>
+  <dep from="12" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Constituents">
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Substance">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Education_teaching">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Material">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

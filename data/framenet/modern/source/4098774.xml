@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098774">
+ <sentence>
+  John was at the station in Washington D.C at 10:00 AM on March 15, 2005 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="john" pos="NNP" surface="John"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="at" pos="IN" surface="at"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="station" pos="NN" surface="station"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="washington" pos="NNP" surface="Washington"/>
+  <token id="8" lemma="d.c" pos="NNP" surface="D.C"/>
+  <token id="9" lemma="at" pos="IN" surface="at"/>
+  <token id="10" lemma="10:00" pos="CD" surface="10:00"/>
+  <token id="11" lemma="am" pos="NN" surface="AM"/>
+  <token id="12" lemma="on" pos="IN" surface="on"/>
+  <token id="13" lemma="march" pos="NNP" surface="March"/>
+  <token id="14" lemma="15," pos="CD" surface="15,"/>
+  <token id="15" lemma="2005" pos="CD" surface="2005"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="2" to="9" type="prep"/>
+  <dep from="11" to="10" type="nummod"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="2" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="13" to="14" type="nummod"/>
+  <dep from="13" to="15" type="nummod"/>
+  <dep from="2" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

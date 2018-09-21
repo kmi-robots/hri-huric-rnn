@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100828">
+ <sentence>
+  Chinese missile exports have been a problem for more than a decade .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="chinese" pos="JJ" surface="Chinese"/>
+  <token id="2" lemma="missile" pos="NN" surface="missile"/>
+  <token id="3" lemma="export" pos="NNS" surface="exports"/>
+  <token id="4" lemma="have" pos="VBP" surface="have"/>
+  <token id="5" lemma="be" pos="VBN" surface="been"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="problem" pos="NN" surface="problem"/>
+  <token id="8" lemma="for" pos="IN" surface="for"/>
+  <token id="9" lemma="more" pos="JJR" surface="more"/>
+  <token id="10" lemma="than" pos="IN" surface="than"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="decade" pos="NN" surface="decade"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="amod"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="attr"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="11" to="9" type="amod"/>
+  <dep from="11" to="10" type="quantmod"/>
+  <dep from="12" to="11" type="nummod"/>
+  <dep from="8" to="12" type="pobj"/>
+  <dep from="5" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Exporting">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Exporter">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Exporting_area">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Predicament">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Situation">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

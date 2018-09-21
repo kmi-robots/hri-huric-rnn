@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102852">
+ <sentence>
+  2- Kiosks should be placed at key important locations where 24-hour security watch is required .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="2-" pos="LS" surface="2-"/>
+  <token id="2" lemma="kiosks" pos="NNP" surface="Kiosks"/>
+  <token id="3" lemma="should" pos="MD" surface="should"/>
+  <token id="4" lemma="be" pos="VB" surface="be"/>
+  <token id="5" lemma="place" pos="VBN" surface="placed"/>
+  <token id="6" lemma="at" pos="IN" surface="at"/>
+  <token id="7" lemma="key" pos="JJ" surface="key"/>
+  <token id="8" lemma="important" pos="JJ" surface="important"/>
+  <token id="9" lemma="location" pos="NNS" surface="locations"/>
+  <token id="10" lemma="where" pos="WRB" surface="where"/>
+  <token id="11" lemma="24-hour" pos="CD" surface="24-hour"/>
+  <token id="12" lemma="security" pos="NN" surface="security"/>
+  <token id="13" lemma="watch" pos="NN" surface="watch"/>
+  <token id="14" lemma="be" pos="VBZ" surface="is"/>
+  <token id="15" lemma="require" pos="VBN" surface="required"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="meta"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="9" to="7" type="amod"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="6" to="9" type="pobj"/>
+  <dep from="15" to="10" type="advmod"/>
+  <dep from="13" to="11" type="amod"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="15" to="13" type="nsubjpass"/>
+  <dep from="15" to="14" type="auxpass"/>
+  <dep from="9" to="15" type="relcl"/>
+  <dep from="5" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirable_event">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="State_of_affairs">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Importance">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Factor">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Importance">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Factor">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_necessary">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Requirement">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

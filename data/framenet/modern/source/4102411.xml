@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102411">
+ <sentence>
+  speaker20 : President I second the motion .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="speaker20" pos="NN" surface="speaker20"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="president" pos="NNP" surface="President"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="5" lemma="second" pos="VBP" surface="second"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="motion" pos="NN" surface="motion"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="5" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

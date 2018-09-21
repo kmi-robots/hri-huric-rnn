@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106237">
+ <sentence>
+  Guangzhou today is mostly about business and industry , featuring new development , skyscrapers , a whole new business area , and raised expressways .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="guangzhou" pos="NNP" surface="Guangzhou"/>
+  <token id="2" lemma="today" pos="NN" surface="today"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="mostly" pos="RB" surface="mostly"/>
+  <token id="5" lemma="about" pos="IN" surface="about"/>
+  <token id="6" lemma="business" pos="NN" surface="business"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="industry" pos="NN" surface="industry"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="feature" pos="VBG" surface="featuring"/>
+  <token id="11" lemma="new" pos="JJ" surface="new"/>
+  <token id="12" lemma="development" pos="NN" surface="development"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="skyscraper" pos="NNS" surface="skyscrapers"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="a" pos="DT" surface="a"/>
+  <token id="17" lemma="whole" pos="JJ" surface="whole"/>
+  <token id="18" lemma="new" pos="JJ" surface="new"/>
+  <token id="19" lemma="business" pos="NN" surface="business"/>
+  <token id="20" lemma="area" pos="NN" surface="area"/>
+  <token id="21" lemma="," pos="," surface=","/>
+  <token id="22" lemma="and" pos="CC" surface="and"/>
+  <token id="23" lemma="raise" pos="VBN" surface="raised"/>
+  <token id="24" lemma="expressway" pos="NNS" surface="expressways"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="npadvmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="3" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="6" to="7" type="cc"/>
+  <dep from="6" to="8" type="conj"/>
+  <dep from="3" to="9" type="punct"/>
+  <dep from="3" to="10" type="advcl"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="12" to="14" type="conj"/>
+  <dep from="14" to="15" type="punct"/>
+  <dep from="20" to="16" type="det"/>
+  <dep from="20" to="17" type="amod"/>
+  <dep from="20" to="18" type="amod"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="14" to="20" type="conj"/>
+  <dep from="20" to="21" type="punct"/>
+  <dep from="20" to="22" type="cc"/>
+  <dep from="10" to="23" type="conj"/>
+  <dep from="23" to="24" type="dobj"/>
+  <dep from="3" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Fields">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Attribute">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Ranked_expectation">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Inherent_purpose">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Roadway">
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Characteristic">
+     <token id="23"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

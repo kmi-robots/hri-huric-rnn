@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165029">
+ <sentence>
+  Officials have lifted the evacuation order for Chino Hills as well .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="official" pos="NNS" surface="Officials"/>
+  <token id="2" lemma="have" pos="VBP" surface="have"/>
+  <token id="3" lemma="lift" pos="VBN" surface="lifted"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="evacuation" pos="NN" surface="evacuation"/>
+  <token id="6" lemma="order" pos="NN" surface="order"/>
+  <token id="7" lemma="for" pos="IN" surface="for"/>
+  <token id="8" lemma="chino" pos="NNP" surface="Chino"/>
+  <token id="9" lemma="hills" pos="NNP" surface="Hills"/>
+  <token id="10" lemma="as" pos="RB" surface="as"/>
+  <token id="11" lemma="well" pos="RB" surface="well"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="3" to="11" type="advmod"/>
+  <dep from="3" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_to_end">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="State">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Law">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Required">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Law">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

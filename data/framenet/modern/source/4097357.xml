@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097357">
+ <sentence>
+  These items may have nuclear weapons applications ( 6577 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="these" pos="DT" surface="These"/>
+  <token id="2" lemma="item" pos="NNS" surface="items"/>
+  <token id="3" lemma="may" pos="MD" surface="may"/>
+  <token id="4" lemma="have" pos="VB" surface="have"/>
+  <token id="5" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="6" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="7" lemma="application" pos="NNS" surface="applications"/>
+  <token id="8" lemma="(" pos="-LRB-" surface="("/>
+  <token id="9" lemma="6577" pos="CD" surface="6577"/>
+  <token id="10" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="7" to="9" type="appos"/>
+  <dep from="7" to="10" type="punct"/>
+  <dep from="4" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Purpose">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

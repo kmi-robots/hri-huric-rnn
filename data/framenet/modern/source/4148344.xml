@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148344">
+ <sentence>
+  " Oh , very good , " said Holmes .
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="oh" pos="UH" surface="Oh"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="very" pos="RB" surface="very"/>
+  <token id="5" lemma="good" pos="JJ" surface="good"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma='"' pos="''" surface='"'/>
+  <token id="8" lemma="say" pos="VBD" surface="said"/>
+  <token id="9" lemma="holmes" pos="NNP" surface="Holmes"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="punct"/>
+  <dep from="5" to="2" type="intj"/>
+  <dep from="5" to="3" type="punct"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="8" to="5" type="ccomp"/>
+  <dep from="8" to="6" type="punct"/>
+  <dep from="8" to="7" type="punct"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="nsubj"/>
+  <dep from="8" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Desirability">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

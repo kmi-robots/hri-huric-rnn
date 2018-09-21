@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098877">
+ <sentence>
+  Mike Campbell dented his car door in an accident on Friday .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="mike" pos="NNP" surface="Mike"/>
+  <token id="2" lemma="campbell" pos="NNP" surface="Campbell"/>
+  <token id="3" lemma="dent" pos="VBD" surface="dented"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="5" lemma="car" pos="NN" surface="car"/>
+  <token id="6" lemma="door" pos="NN" surface="door"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="an" pos="DT" surface="an"/>
+  <token id="9" lemma="accident" pos="NN" surface="accident"/>
+  <token id="10" lemma="on" pos="IN" surface="on"/>
+  <token id="11" lemma="friday" pos="NNP" surface="Friday"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="poss"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="3" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="3" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Damaging">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Vehicle">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Possessor">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

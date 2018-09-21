@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165594">
+ <sentence>
+  Fire department spokesman Nikos Diamandis said most of the fires were started in entirely different areas , and were started after dark .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="fire" pos="NN" surface="Fire"/>
+  <token id="2" lemma="department" pos="NN" surface="department"/>
+  <token id="3" lemma="spokesman" pos="NN" surface="spokesman"/>
+  <token id="4" lemma="nikos" pos="NNP" surface="Nikos"/>
+  <token id="5" lemma="diamandis" pos="NNP" surface="Diamandis"/>
+  <token id="6" lemma="say" pos="VBD" surface="said"/>
+  <token id="7" lemma="most" pos="JJS" surface="most"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="fire" pos="NNS" surface="fires"/>
+  <token id="11" lemma="be" pos="VBD" surface="were"/>
+  <token id="12" lemma="start" pos="VBN" surface="started"/>
+  <token id="13" lemma="in" pos="IN" surface="in"/>
+  <token id="14" lemma="entirely" pos="RB" surface="entirely"/>
+  <token id="15" lemma="different" pos="JJ" surface="different"/>
+  <token id="16" lemma="area" pos="NNS" surface="areas"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="and" pos="CC" surface="and"/>
+  <token id="19" lemma="be" pos="VBD" surface="were"/>
+  <token id="20" lemma="start" pos="VBN" surface="started"/>
+  <token id="21" lemma="after" pos="IN" surface="after"/>
+  <token id="22" lemma="dark" pos="JJ" surface="dark"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="5" to="3" type="compound"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="12" to="7" type="nsubjpass"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="12" to="11" type="auxpass"/>
+  <dep from="6" to="12" type="ccomp"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="advmod"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="13" to="16" type="pobj"/>
+  <dep from="12" to="17" type="punct"/>
+  <dep from="12" to="18" type="cc"/>
+  <dep from="20" to="19" type="auxpass"/>
+  <dep from="12" to="20" type="conj"/>
+  <dep from="20" to="21" type="prep"/>
+  <dep from="21" to="22" type="pobj"/>
+  <dep from="6" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Law_enforcement_agency">
+    <lexicalUnit>
+     <token id="1"/>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agency">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Representative">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Representative">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Represented">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Partitive">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Group">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Subset">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Fire_burning">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Fire">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Similarity">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Entities">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Time_vector">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_event">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Setting_fire">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Flame">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Setting_fire">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Flame">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

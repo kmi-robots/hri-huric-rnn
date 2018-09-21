@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101098">
+ <sentence>
+  The hordes of people who attended Hoover Dam 's 1935 dedication set the city 's now-formidable public relations machine into action .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="horde" pos="NNS" surface="hordes"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="people" pos="NNS" surface="people"/>
+  <token id="5" lemma="who" pos="WP" surface="who"/>
+  <token id="6" lemma="attend" pos="VBD" surface="attended"/>
+  <token id="7" lemma="hoover" pos="NNP" surface="Hoover"/>
+  <token id="8" lemma="dam" pos="NNP" surface="Dam"/>
+  <token id="9" lemma="'s" pos="POS" surface="'s"/>
+  <token id="10" lemma="1935" pos="CD" surface="1935"/>
+  <token id="11" lemma="dedication" pos="NN" surface="dedication"/>
+  <token id="12" lemma="set" pos="VBD" surface="set"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="city" pos="NN" surface="city"/>
+  <token id="15" lemma="'s" pos="POS" surface="'s"/>
+  <token id="16" lemma="now-formidable" pos="JJ" surface="now-formidable"/>
+  <token id="17" lemma="public" pos="JJ" surface="public"/>
+  <token id="18" lemma="relation" pos="NNS" surface="relations"/>
+  <token id="19" lemma="machine" pos="NN" surface="machine"/>
+  <token id="20" lemma="into" pos="IN" surface="into"/>
+  <token id="21" lemma="action" pos="NN" surface="action"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="12" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="4" to="6" type="relcl"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="11" to="8" type="poss"/>
+  <dep from="8" to="9" type="case"/>
+  <dep from="11" to="10" type="nummod"/>
+  <dep from="6" to="11" type="dobj"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="19" to="14" type="poss"/>
+  <dep from="14" to="15" type="case"/>
+  <dep from="19" to="16" type="amod"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="12" to="19" type="dobj"/>
+  <dep from="12" to="20" type="prep"/>
+  <dep from="20" to="21" type="pobj"/>
+  <dep from="12" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Context_of_acquaintance">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Attending">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Gizmo">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Gizmo">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="User">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Act">
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

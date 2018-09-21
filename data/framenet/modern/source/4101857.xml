@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101857">
+ <sentence>
+  Still , encrypting corporate communications is only a partial remedy .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="still" pos="RB" surface="Still"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="encrypt" pos="VBG" surface="encrypting"/>
+  <token id="4" lemma="corporate" pos="JJ" surface="corporate"/>
+  <token id="5" lemma="communication" pos="NNS" surface="communications"/>
+  <token id="6" lemma="be" pos="VBZ" surface="is"/>
+  <token id="7" lemma="only" pos="RB" surface="only"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="partial" pos="JJ" surface="partial"/>
+  <token id="10" lemma="remedy" pos="NN" surface="remedy"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="advmod"/>
+  <dep from="6" to="2" type="punct"/>
+  <dep from="6" to="3" type="csubj"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="10" to="7" type="advmod"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="6" to="10" type="attr"/>
+  <dep from="6" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Communication">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Communicator">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Cure">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Treatment">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

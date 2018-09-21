@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099865">
+ <sentence>
+  The government has also entered into new cooperation agreements with several countries , most notably Russia .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="government" pos="NN" surface="government"/>
+  <token id="3" lemma="have" pos="VBZ" surface="has"/>
+  <token id="4" lemma="also" pos="RB" surface="also"/>
+  <token id="5" lemma="enter" pos="VBN" surface="entered"/>
+  <token id="6" lemma="into" pos="IN" surface="into"/>
+  <token id="7" lemma="new" pos="JJ" surface="new"/>
+  <token id="8" lemma="cooperation" pos="NN" surface="cooperation"/>
+  <token id="9" lemma="agreement" pos="NNS" surface="agreements"/>
+  <token id="10" lemma="with" pos="IN" surface="with"/>
+  <token id="11" lemma="several" pos="JJ" surface="several"/>
+  <token id="12" lemma="country" pos="NNS" surface="countries"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="most" pos="RBS" surface="most"/>
+  <token id="15" lemma="notably" pos="RB" surface="notably"/>
+  <token id="16" lemma="russia" pos="NNP" surface="Russia"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="5" to="2" type="nsubj"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="9" to="7" type="amod"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="15" to="14" type="advmod"/>
+  <dep from="16" to="15" type="advmod"/>
+  <dep from="12" to="16" type="appos"/>
+  <dep from="5" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Age">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Make_agreement_on_action">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Party_1">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Obligation">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Party_2">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

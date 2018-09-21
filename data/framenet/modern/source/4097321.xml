@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097321">
+ <sentence>
+  Iranian agents are believed to be actively seeking deals to procure critical technologies .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iranian" pos="JJ" surface="Iranian"/>
+  <token id="2" lemma="agent" pos="NNS" surface="agents"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="believe" pos="VBN" surface="believed"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="be" pos="VB" surface="be"/>
+  <token id="7" lemma="actively" pos="RB" surface="actively"/>
+  <token id="8" lemma="seek" pos="VBG" surface="seeking"/>
+  <token id="9" lemma="deal" pos="NNS" surface="deals"/>
+  <token id="10" lemma="to" pos="TO" surface="to"/>
+  <token id="11" lemma="procure" pos="VB" surface="procure"/>
+  <token id="12" lemma="critical" pos="JJ" surface="critical"/>
+  <token id="13" lemma="technology" pos="NNS" surface="technologies"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="8" to="5" type="aux"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="advmod"/>
+  <dep from="4" to="8" type="xcomp"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="9" to="11" type="relcl"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="11" to="13" type="dobj"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Make_agreement_on_action">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Party_1">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Artifact">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Artifact">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Importance">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Factor">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Certainty">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Content">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Seeking_to_achieve">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Manner">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="State_of_affairs">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Getting">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

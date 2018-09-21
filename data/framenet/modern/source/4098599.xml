@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098599">
+ <sentence>
+  QN : Is Iran running a secret weapons program under the cover of plans to build nuclear power plants for electricity ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="be" pos="VBZ" surface="Is"/>
+  <token id="4" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="5" lemma="run" pos="VBG" surface="running"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="secret" pos="JJ" surface="secret"/>
+  <token id="8" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="9" lemma="program" pos="NN" surface="program"/>
+  <token id="10" lemma="under" pos="IN" surface="under"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="cover" pos="NN" surface="cover"/>
+  <token id="13" lemma="of" pos="IN" surface="of"/>
+  <token id="14" lemma="plan" pos="NNS" surface="plans"/>
+  <token id="15" lemma="to" pos="TO" surface="to"/>
+  <token id="16" lemma="build" pos="VB" surface="build"/>
+  <token id="17" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="18" lemma="power" pos="NN" surface="power"/>
+  <token id="19" lemma="plant" pos="NNS" surface="plants"/>
+  <token id="20" lemma="for" pos="IN" surface="for"/>
+  <token id="21" lemma="electricity" pos="NN" surface="electricity"/>
+  <token id="22" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="1" to="5" type="acl"/>
+  <dep from="9" to="6" type="det"/>
+  <dep from="9" to="7" type="amod"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="5" to="9" type="dobj"/>
+  <dep from="5" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="16" to="15" type="aux"/>
+  <dep from="14" to="16" type="acl"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="16" to="19" type="dobj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="20" to="21" type="pobj"/>
+  <dep from="1" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Operating_a_system">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Operator">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="System">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Building">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Electricity">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Source">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Electricity">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Use">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Electricity">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Electricity">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Secrecy_status">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

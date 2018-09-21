@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096644">
+ <sentence>
+  Comparison with the other nuclear axis member North Korea is tempting , but inappropriate .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="comparison" pos="NN" surface="Comparison"/>
+  <token id="2" lemma="with" pos="IN" surface="with"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="other" pos="JJ" surface="other"/>
+  <token id="5" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="6" lemma="axis" pos="NN" surface="axis"/>
+  <token id="7" lemma="member" pos="NN" surface="member"/>
+  <token id="8" lemma="north" pos="NNP" surface="North"/>
+  <token id="9" lemma="korea" pos="NNP" surface="Korea"/>
+  <token id="10" lemma="be" pos="VBZ" surface="is"/>
+  <token id="11" lemma="tempting" pos="JJ" surface="tempting"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="but" pos="CC" surface="but"/>
+  <token id="14" lemma="inappropriate" pos="JJ" surface="inappropriate"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="11" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="7" to="3" type="det"/>
+  <dep from="7" to="4" type="amod"/>
+  <dep from="7" to="5" type="amod"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="2" to="7" type="pobj"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="7" to="9" type="appos"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="punct"/>
+  <dep from="11" to="13" type="cc"/>
+  <dep from="11" to="14" type="conj"/>
+  <dep from="11" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Group">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Member">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Class">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

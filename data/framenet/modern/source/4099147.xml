@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099147">
+ <sentence>
+  The Nut Sampler set includes two 8 ounce boxes of chocolate covered nuts .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="nut" pos="NNP" surface="Nut"/>
+  <token id="3" lemma="sampler" pos="NNP" surface="Sampler"/>
+  <token id="4" lemma="set" pos="NN" surface="set"/>
+  <token id="5" lemma="include" pos="VBZ" surface="includes"/>
+  <token id="6" lemma="two" pos="CD" surface="two"/>
+  <token id="7" lemma="8" pos="CD" surface="8"/>
+  <token id="8" lemma="ounce" pos="NN" surface="ounce"/>
+  <token id="9" lemma="box" pos="NNS" surface="boxes"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="chocolate" pos="NN" surface="chocolate"/>
+  <token id="12" lemma="cover" pos="VBD" surface="covered"/>
+  <token id="13" lemma="nut" pos="NNS" surface="nuts"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="9" to="6" type="nummod"/>
+  <dep from="8" to="7" type="nummod"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="5" to="9" type="dobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="9" to="13" type="appos"/>
+  <dep from="5" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Abounding_with">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

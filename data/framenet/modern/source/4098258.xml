@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098258">
+ <sentence>
+  QN : Is there evidence that Iran has attempted to produce ricin ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="be" pos="VBZ" surface="Is"/>
+  <token id="4" lemma="there" pos="EX" surface="there"/>
+  <token id="5" lemma="evidence" pos="NN" surface="evidence"/>
+  <token id="6" lemma="that" pos="IN" surface="that"/>
+  <token id="7" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="8" lemma="have" pos="VBZ" surface="has"/>
+  <token id="9" lemma="attempt" pos="VBN" surface="attempted"/>
+  <token id="10" lemma="to" pos="TO" surface="to"/>
+  <token id="11" lemma="produce" pos="VB" surface="produce"/>
+  <token id="12" lemma="ricin" pos="NNS" surface="ricin"/>
+  <token id="13" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="expl"/>
+  <dep from="3" to="5" type="attr"/>
+  <dep from="9" to="6" type="mark"/>
+  <dep from="9" to="7" type="nsubj"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="5" to="9" type="acl"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="9" to="11" type="xcomp"/>
+  <dep from="11" to="12" type="dobj"/>
+  <dep from="3" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Evidence">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Support">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Proposition">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Attempt">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Producer">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

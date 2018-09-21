@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097873">
+ <sentence>
+  The liquid - fueled , single - stage Ching Feng has a range of 130 km with a 270 kg payload .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="liquid" pos="NN" surface="liquid"/>
+  <token id="3" lemma="-" pos="HYPH" surface="-"/>
+  <token id="4" lemma="fueled" pos="JJ" surface="fueled"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="single" pos="JJ" surface="single"/>
+  <token id="7" lemma="-" pos="HYPH" surface="-"/>
+  <token id="8" lemma="stage" pos="NN" surface="stage"/>
+  <token id="9" lemma="ching" pos="NNP" surface="Ching"/>
+  <token id="10" lemma="feng" pos="NNP" surface="Feng"/>
+  <token id="11" lemma="have" pos="VBZ" surface="has"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="range" pos="NN" surface="range"/>
+  <token id="14" lemma="of" pos="IN" surface="of"/>
+  <token id="15" lemma="130" pos="CD" surface="130"/>
+  <token id="16" lemma="km" pos="NN" surface="km"/>
+  <token id="17" lemma="with" pos="IN" surface="with"/>
+  <token id="18" lemma="a" pos="DT" surface="a"/>
+  <token id="19" lemma="270" pos="CD" surface="270"/>
+  <token id="20" lemma="kg" pos="NNS" surface="kg"/>
+  <token id="21" lemma="payload" pos="NN" surface="payload"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="det"/>
+  <dep from="4" to="2" type="npadvmod"/>
+  <dep from="4" to="3" type="punct"/>
+  <dep from="10" to="4" type="amod"/>
+  <dep from="10" to="5" type="punct"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="punct"/>
+  <dep from="10" to="8" type="compound"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="dobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="nummod"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="13" to="17" type="prep"/>
+  <dep from="21" to="18" type="det"/>
+  <dep from="20" to="19" type="nummod"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="17" to="21" type="pobj"/>
+  <dep from="11" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Range">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Instrument">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Distance">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

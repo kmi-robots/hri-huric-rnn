@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096563">
+ <sentence>
+  Kazakhstan inherited 104 SS-18 intercontinental ballistic missiles ( ICBMs ) from the Soviet missile complex .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="kazakhstan" pos="NNP" surface="Kazakhstan"/>
+  <token id="2" lemma="inherit" pos="VBD" surface="inherited"/>
+  <token id="3" lemma="104" pos="CD" surface="104"/>
+  <token id="4" lemma="ss-18" pos="NNP" surface="SS-18"/>
+  <token id="5" lemma="intercontinental" pos="JJ" surface="intercontinental"/>
+  <token id="6" lemma="ballistic" pos="JJ" surface="ballistic"/>
+  <token id="7" lemma="missile" pos="NNS" surface="missiles"/>
+  <token id="8" lemma="(" pos="-LRB-" surface="("/>
+  <token id="9" lemma="icbm" pos="NNS" surface="ICBMs"/>
+  <token id="10" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="11" lemma="from" pos="IN" surface="from"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="soviet" pos="JJ" surface="Soviet"/>
+  <token id="14" lemma="missile" pos="NN" surface="missile"/>
+  <token id="15" lemma="complex" pos="NN" surface="complex"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="7" to="3" type="nummod"/>
+  <dep from="7" to="4" type="nmod"/>
+  <dep from="7" to="5" type="amod"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="2" to="7" type="dobj"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="7" to="9" type="appos"/>
+  <dep from="7" to="10" type="punct"/>
+  <dep from="2" to="11" type="prep"/>
+  <dep from="15" to="12" type="det"/>
+  <dep from="15" to="13" type="amod"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="11" to="15" type="pobj"/>
+  <dep from="2" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Range">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Distance">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Instrument">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Container_possessor">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

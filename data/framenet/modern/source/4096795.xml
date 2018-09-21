@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096795">
+ <sentence>
+  By 1 April , the Iranian total had reached 258 ; however , only 61 were Shehab-1s , in comparison to 129 Iraqi al-Husayn missiles .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="by" pos="IN" surface="By"/>
+  <token id="2" lemma="1" pos="CD" surface="1"/>
+  <token id="3" lemma="april" pos="NNP" surface="April"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="iranian" pos="JJ" surface="Iranian"/>
+  <token id="7" lemma="total" pos="NN" surface="total"/>
+  <token id="8" lemma="have" pos="VBD" surface="had"/>
+  <token id="9" lemma="reach" pos="VBN" surface="reached"/>
+  <token id="10" lemma="258" pos="CD" surface="258"/>
+  <token id="11" lemma=";" pos=":" surface=";"/>
+  <token id="12" lemma="however" pos="RB" surface="however"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="only" pos="RB" surface="only"/>
+  <token id="15" lemma="61" pos="CD" surface="61"/>
+  <token id="16" lemma="be" pos="VBD" surface="were"/>
+  <token id="17" lemma="shehab-1s" pos="JJ" surface="Shehab-1s"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="in" pos="IN" surface="in"/>
+  <token id="20" lemma="comparison" pos="NN" surface="comparison"/>
+  <token id="21" lemma="to" pos="IN" surface="to"/>
+  <token id="22" lemma="129" pos="CD" surface="129"/>
+  <token id="23" lemma="iraqi" pos="JJ" surface="Iraqi"/>
+  <token id="24" lemma="al-husayn" pos="NNP" surface="al-Husayn"/>
+  <token id="25" lemma="missile" pos="NNS" surface="missiles"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="prep"/>
+  <dep from="3" to="2" type="nummod"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="9" to="4" type="punct"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="9" to="7" type="nsubj"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="9" to="11" type="punct"/>
+  <dep from="16" to="12" type="advmod"/>
+  <dep from="16" to="13" type="punct"/>
+  <dep from="15" to="14" type="advmod"/>
+  <dep from="16" to="15" type="nsubj"/>
+  <dep from="9" to="16" type="conj"/>
+  <dep from="16" to="17" type="attr"/>
+  <dep from="16" to="18" type="punct"/>
+  <dep from="16" to="19" type="prep"/>
+  <dep from="19" to="20" type="pobj"/>
+  <dep from="20" to="21" type="prep"/>
+  <dep from="25" to="22" type="nummod"/>
+  <dep from="25" to="23" type="amod"/>
+  <dep from="25" to="24" type="compound"/>
+  <dep from="21" to="25" type="pobj"/>
+  <dep from="9" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Amounting_to">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Wielder">
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

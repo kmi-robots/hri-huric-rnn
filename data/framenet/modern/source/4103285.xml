@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103285">
+ <sentence>
+  Seven : Breaking the pledge
+ </sentence>
+ <tokens>
+  <token id="1" lemma="seven" pos="CD" surface="Seven"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="break" pos="VBG" surface="Breaking"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="pledge" pos="NN" surface="pledge"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="1" to="3" type="acl"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Commitment">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148406">
+ <sentence>
+  Henderson has two children - girls of eleven and thirteen .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="henderson" pos="NNP" surface="Henderson"/>
+  <token id="2" lemma="have" pos="VBZ" surface="has"/>
+  <token id="3" lemma="two" pos="CD" surface="two"/>
+  <token id="4" lemma="child" pos="NNS" surface="children"/>
+  <token id="5" lemma="-" pos=":" surface="-"/>
+  <token id="6" lemma="girl" pos="NNS" surface="girls"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="eleven" pos="CD" surface="eleven"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="thirteen" pos="CD" surface="thirteen"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="nummod"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="4" to="5" type="punct"/>
+  <dep from="4" to="6" type="appos"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People_by_age">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Age">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

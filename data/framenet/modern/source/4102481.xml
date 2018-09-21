@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102481">
+ <sentence>
+  Paula_Zahn : Chicken soup .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="paula_zahn" pos="NN" surface="Paula_Zahn"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="chicken" pos="NN" surface="Chicken"/>
+  <token id="4" lemma="soup" pos="NN" surface="soup"/>
+  <token id="5" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Food">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Food">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Food">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Food">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Constituent_parts">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103240">
+ <sentence>
+  1- The salary of a married Mujahed brother is 6500 Pakistani Rupee , and 500 Rupee for every newborn .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="1-" pos="LS" surface="1-"/>
+  <token id="2" lemma="the" pos="DT" surface="The"/>
+  <token id="3" lemma="salary" pos="NN" surface="salary"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="married" pos="JJ" surface="married"/>
+  <token id="7" lemma="mujahed" pos="NNP" surface="Mujahed"/>
+  <token id="8" lemma="brother" pos="NN" surface="brother"/>
+  <token id="9" lemma="be" pos="VBZ" surface="is"/>
+  <token id="10" lemma="6500" pos="CD" surface="6500"/>
+  <token id="11" lemma="pakistani" pos="JJ" surface="Pakistani"/>
+  <token id="12" lemma="rupee" pos="NNP" surface="Rupee"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="500" pos="CD" surface="500"/>
+  <token id="16" lemma="rupee" pos="NNP" surface="Rupee"/>
+  <token id="17" lemma="for" pos="IN" surface="for"/>
+  <token id="18" lemma="every" pos="DT" surface="every"/>
+  <token id="19" lemma="newborn" pos="JJ" surface="newborn"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="meta"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="9" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="8" to="5" type="det"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="4" to="8" type="pobj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="12" to="10" type="nummod"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="9" to="12" type="attr"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="12" to="14" type="cc"/>
+  <dep from="16" to="15" type="nummod"/>
+  <dep from="12" to="16" type="conj"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="9" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Personal_relationship">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Partner_1">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Kinship">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Ego">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Alter">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

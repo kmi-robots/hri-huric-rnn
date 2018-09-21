@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824340">
+ <sentence>
+  What Gov. Clinton is advocating , in effect , is extending the educational system down to the pre-kindergarten years .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="what" pos="WP" surface="What"/>
+  <token id="2" lemma="gov." pos="NNP" surface="Gov."/>
+  <token id="3" lemma="clinton" pos="NNP" surface="Clinton"/>
+  <token id="4" lemma="be" pos="VBZ" surface="is"/>
+  <token id="5" lemma="advocate" pos="VBG" surface="advocating"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="effect" pos="NN" surface="effect"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="be" pos="VBZ" surface="is"/>
+  <token id="11" lemma="extend" pos="VBG" surface="extending"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="educational" pos="JJ" surface="educational"/>
+  <token id="14" lemma="system" pos="NN" surface="system"/>
+  <token id="15" lemma="down" pos="RP" surface="down"/>
+  <token id="16" lemma="to" pos="IN" surface="to"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="pre-kindergarten" pos="JJ" surface="pre-kindergarten"/>
+  <token id="19" lemma="year" pos="NNS" surface="years"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="dobj"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="11" to="5" type="advcl"/>
+  <dep from="11" to="6" type="punct"/>
+  <dep from="11" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="11" to="9" type="punct"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="dobj"/>
+  <dep from="11" to="15" type="prt"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="19" to="17" type="det"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="16" to="19" type="pobj"/>
+  <dep from="11" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="System">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Function">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Complex">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Relative_time">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Attempt_suasion">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

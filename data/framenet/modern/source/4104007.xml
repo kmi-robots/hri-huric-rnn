@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4104007">
+ <sentence>
+  The British population has decreased ; today there are as many American and Australian ex-pats as there are British .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="british" pos="JJ" surface="British"/>
+  <token id="3" lemma="population" pos="NN" surface="population"/>
+  <token id="4" lemma="have" pos="VBZ" surface="has"/>
+  <token id="5" lemma="decrease" pos="VBN" surface="decreased"/>
+  <token id="6" lemma=";" pos=":" surface=";"/>
+  <token id="7" lemma="today" pos="NN" surface="today"/>
+  <token id="8" lemma="there" pos="EX" surface="there"/>
+  <token id="9" lemma="be" pos="VBP" surface="are"/>
+  <token id="10" lemma="as" pos="RB" surface="as"/>
+  <token id="11" lemma="many" pos="JJ" surface="many"/>
+  <token id="12" lemma="american" pos="JJ" surface="American"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="australian" pos="JJ" surface="Australian"/>
+  <token id="15" lemma="ex-pat" pos="NNS" surface="ex-pats"/>
+  <token id="16" lemma="as" pos="IN" surface="as"/>
+  <token id="17" lemma="there" pos="EX" surface="there"/>
+  <token id="18" lemma="be" pos="VBP" surface="are"/>
+  <token id="19" lemma="british" pos="JJ" surface="British"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="9" to="5" type="ccomp"/>
+  <dep from="9" to="6" type="punct"/>
+  <dep from="9" to="7" type="npadvmod"/>
+  <dep from="9" to="8" type="expl"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="15" to="11" type="amod"/>
+  <dep from="15" to="12" type="amod"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="12" to="14" type="conj"/>
+  <dep from="9" to="15" type="attr"/>
+  <dep from="18" to="16" type="mark"/>
+  <dep from="18" to="17" type="expl"/>
+  <dep from="9" to="18" type="advcl"/>
+  <dep from="18" to="19" type="acomp"/>
+  <dep from="9" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Aggregate_property">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Trajector_event">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

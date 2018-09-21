@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101562">
+ <sentence>
+  We do n't know who is winning the drug war in Latin America , but we know who 's losing it -- the press .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="We"/>
+  <token id="2" lemma="do" pos="VBP" surface="do"/>
+  <token id="3" lemma="n't" pos="RB" surface="n't"/>
+  <token id="4" lemma="know" pos="VB" surface="know"/>
+  <token id="5" lemma="who" pos="WP" surface="who"/>
+  <token id="6" lemma="be" pos="VBZ" surface="is"/>
+  <token id="7" lemma="win" pos="VBG" surface="winning"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="drug" pos="NN" surface="drug"/>
+  <token id="10" lemma="war" pos="NN" surface="war"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="latin" pos="NNP" surface="Latin"/>
+  <token id="13" lemma="america" pos="NNP" surface="America"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="but" pos="CC" surface="but"/>
+  <token id="16" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="17" lemma="know" pos="VBP" surface="know"/>
+  <token id="18" lemma="who" pos="WP" surface="who"/>
+  <token id="19" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="20" lemma="lose" pos="VBG" surface="losing"/>
+  <token id="21" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="22" lemma="--" pos=":" surface="--"/>
+  <token id="23" lemma="the" pos="DT" surface="the"/>
+  <token id="24" lemma="press" pos="NN" surface="press"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="neg"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="nsubj"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="4" to="7" type="ccomp"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="dobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="4" to="14" type="punct"/>
+  <dep from="4" to="15" type="cc"/>
+  <dep from="17" to="16" type="nsubj"/>
+  <dep from="4" to="17" type="conj"/>
+  <dep from="20" to="18" type="nsubj"/>
+  <dep from="20" to="19" type="aux"/>
+  <dep from="17" to="20" type="ccomp"/>
+  <dep from="20" to="21" type="dobj"/>
+  <dep from="20" to="22" type="punct"/>
+  <dep from="24" to="23" type="det"/>
+  <dep from="17" to="24" type="dobj"/>
+  <dep from="17" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Awareness">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Issue">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Awareness">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Finish_competition">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Competitor">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Competition">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

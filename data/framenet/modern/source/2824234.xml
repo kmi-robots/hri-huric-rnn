@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824234">
+ <sentence>
+  This does not sit well with some clerics .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="this" pos="DT" surface="This"/>
+  <token id="2" lemma="do" pos="VBZ" surface="does"/>
+  <token id="3" lemma="not" pos="RB" surface="not"/>
+  <token id="4" lemma="sit" pos="VB" surface="sit"/>
+  <token id="5" lemma="well" pos="RB" surface="well"/>
+  <token id="6" lemma="with" pos="IN" surface="with"/>
+  <token id="7" lemma="some" pos="DT" surface="some"/>
+  <token id="8" lemma="cleric" pos="NNS" surface="clerics"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="neg"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="advmod"/>
+  <dep from="4" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="4" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Denoted_quantity">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

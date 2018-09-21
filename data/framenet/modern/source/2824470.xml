@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824470">
+ <sentence>
+  Books and software everywhere .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="book" pos="NNS" surface="Books"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="software" pos="NN" surface="software"/>
+  <token id="4" lemma="everywhere" pos="RB" surface="everywhere"/>
+  <token id="5" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="1" to="4" type="advmod"/>
+  <dep from="1" to="5" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Text">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Text">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

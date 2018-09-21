@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099634">
+ <sentence>
+  India and US to advance cooperation to deal with terrorism
+ </sentence>
+ <tokens>
+  <token id="1" lemma="india" pos="NNP" surface="India"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="us" pos="NNP" surface="US"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="advance" pos="VB" surface="advance"/>
+  <token id="6" lemma="cooperation" pos="NN" surface="cooperation"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="deal" pos="VB" surface="deal"/>
+  <token id="9" lemma="with" pos="IN" surface="with"/>
+  <token id="10" lemma="terrorism" pos="NN" surface="terrorism"/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="5" to="8" type="advcl"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Collaboration">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Undertaking">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Resolve_problem">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Problem">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Terrorism">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Act">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

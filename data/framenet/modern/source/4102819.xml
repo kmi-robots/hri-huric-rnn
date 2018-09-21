@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102819">
+ <sentence>
+  However , they should not be identifiable from the outside part of the fence .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="however" pos="RB" surface="However"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="4" lemma="should" pos="MD" surface="should"/>
+  <token id="5" lemma="not" pos="RB" surface="not"/>
+  <token id="6" lemma="be" pos="VB" surface="be"/>
+  <token id="7" lemma="identifiable" pos="JJ" surface="identifiable"/>
+  <token id="8" lemma="from" pos="IN" surface="from"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="outside" pos="JJ" surface="outside"/>
+  <token id="11" lemma="part" pos="NN" surface="part"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="fence" pos="NN" surface="fence"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="advmod"/>
+  <dep from="6" to="2" type="punct"/>
+  <dep from="6" to="3" type="nsubj"/>
+  <dep from="6" to="4" type="aux"/>
+  <dep from="6" to="5" type="neg"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="acomp"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="6" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Desirable_event">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="State_of_affairs">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_inner_outer">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_whole">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4155740">
+ <sentence>
+  Finally , a passenger reported that an announcement had been made by the `` pilot '' that the plane had been hijacked .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="finally" pos="RB" surface="Finally"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="passenger" pos="NN" surface="passenger"/>
+  <token id="5" lemma="report" pos="VBD" surface="reported"/>
+  <token id="6" lemma="that" pos="IN" surface="that"/>
+  <token id="7" lemma="an" pos="DT" surface="an"/>
+  <token id="8" lemma="announcement" pos="NN" surface="announcement"/>
+  <token id="9" lemma="have" pos="VBD" surface="had"/>
+  <token id="10" lemma="be" pos="VBN" surface="been"/>
+  <token id="11" lemma="make" pos="VBN" surface="made"/>
+  <token id="12" lemma="by" pos="IN" surface="by"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="``" pos="``" surface="``"/>
+  <token id="15" lemma="pilot" pos="NN" surface="pilot"/>
+  <token id="16" lemma="''" pos="''" surface="''"/>
+  <token id="17" lemma="that" pos="IN" surface="that"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="plane" pos="NN" surface="plane"/>
+  <token id="20" lemma="have" pos="VBD" surface="had"/>
+  <token id="21" lemma="be" pos="VBN" surface="been"/>
+  <token id="22" lemma="hijack" pos="VBN" surface="hijacked"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="advmod"/>
+  <dep from="5" to="2" type="punct"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="11" to="6" type="mark"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="11" to="8" type="nsubjpass"/>
+  <dep from="11" to="9" type="aux"/>
+  <dep from="11" to="10" type="auxpass"/>
+  <dep from="5" to="11" type="ccomp"/>
+  <dep from="11" to="12" type="agent"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="punct"/>
+  <dep from="12" to="15" type="pobj"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="22" to="17" type="mark"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="22" to="19" type="nsubjpass"/>
+  <dep from="22" to="20" type="aux"/>
+  <dep from="22" to="21" type="auxpass"/>
+  <dep from="11" to="22" type="acl"/>
+  <dep from="5" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Reporting">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Informer">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Behavior">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

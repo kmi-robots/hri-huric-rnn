@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100339">
+ <sentence>
+  The end of David 's dynasty came in 587 b.c. , when Nebuchadnezzar , King of Babylon , invaded Judah to lay siege to Jerusalem .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="end" pos="NN" surface="end"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="david" pos="NNP" surface="David"/>
+  <token id="5" lemma="'s" pos="POS" surface="'s"/>
+  <token id="6" lemma="dynasty" pos="NN" surface="dynasty"/>
+  <token id="7" lemma="come" pos="VBD" surface="came"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="587" pos="CD" surface="587"/>
+  <token id="10" lemma="b.c." pos="NN" surface="b.c."/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="when" pos="WRB" surface="when"/>
+  <token id="13" lemma="nebuchadnezzar" pos="NNP" surface="Nebuchadnezzar"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="king" pos="NNP" surface="King"/>
+  <token id="16" lemma="of" pos="IN" surface="of"/>
+  <token id="17" lemma="babylon" pos="NNP" surface="Babylon"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="invade" pos="VBD" surface="invaded"/>
+  <token id="20" lemma="judah" pos="NNP" surface="Judah"/>
+  <token id="21" lemma="to" pos="TO" surface="to"/>
+  <token id="22" lemma="lay" pos="VB" surface="lay"/>
+  <token id="23" lemma="siege" pos="NN" surface="siege"/>
+  <token id="24" lemma="to" pos="IN" surface="to"/>
+  <token id="25" lemma="jerusalem" pos="NNP" surface="Jerusalem"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="7" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="6" to="4" type="poss"/>
+  <dep from="4" to="5" type="case"/>
+  <dep from="3" to="6" type="pobj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="nummod"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="19" to="12" type="advmod"/>
+  <dep from="19" to="13" type="nsubj"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="13" to="15" type="appos"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="19" to="18" type="punct"/>
+  <dep from="10" to="19" type="relcl"/>
+  <dep from="19" to="20" type="dobj"/>
+  <dep from="22" to="21" type="aux"/>
+  <dep from="19" to="22" type="xcomp"/>
+  <dep from="22" to="23" type="dobj"/>
+  <dep from="22" to="24" type="prep"/>
+  <dep from="24" to="25" type="pobj"/>
+  <dep from="7" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Process_end">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Process">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Governed">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Leader">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Invading">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Invader">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Land">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

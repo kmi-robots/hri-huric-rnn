@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096482">
+ <sentence>
+  On 10 January 2003 , North Korea declared its withdrawal from the NPT .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="on" pos="IN" surface="On"/>
+  <token id="2" lemma="10" pos="CD" surface="10"/>
+  <token id="3" lemma="january" pos="NNP" surface="January"/>
+  <token id="4" lemma="2003" pos="CD" surface="2003"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="north" pos="NNP" surface="North"/>
+  <token id="7" lemma="korea" pos="NNP" surface="Korea"/>
+  <token id="8" lemma="declare" pos="VBD" surface="declared"/>
+  <token id="9" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="10" lemma="withdrawal" pos="NN" surface="withdrawal"/>
+  <token id="11" lemma="from" pos="IN" surface="from"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="npt" pos="NNP" surface="NPT"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="prep"/>
+  <dep from="3" to="2" type="nummod"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="3" to="4" type="nummod"/>
+  <dep from="8" to="5" type="punct"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="poss"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="8" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Withdraw_from_participation">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Organization">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Participant">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

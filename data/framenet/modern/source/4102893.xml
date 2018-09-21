@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102893">
+ <sentence>
+  Fourth : Defending the Location Plan .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="fourth" pos="RB" surface="Fourth"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="defend" pos="VBG" surface="Defending"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="location" pos="NNP" surface="Location"/>
+  <token id="6" lemma="plan" pos="NNP" surface="Plan"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="1" to="3" type="acl"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="1" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Ordinal_numbers">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Defending">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Name">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Project">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

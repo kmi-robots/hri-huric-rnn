@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096609">
+ <sentence>
+  The late 1980s saw a rise of several new potential exporters of nuclear assistance .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="late" pos="JJ" surface="late"/>
+  <token id="3" lemma="1980" pos="NNS" surface="1980s"/>
+  <token id="4" lemma="see" pos="VBD" surface="saw"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="rise" pos="NN" surface="rise"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="several" pos="JJ" surface="several"/>
+  <token id="9" lemma="new" pos="JJ" surface="new"/>
+  <token id="10" lemma="potential" pos="JJ" surface="potential"/>
+  <token id="11" lemma="exporter" pos="NNS" surface="exporters"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="14" lemma="assistance" pos="NN" surface="assistance"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="11" to="8" type="amod"/>
+  <dep from="11" to="9" type="amod"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="7" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="4" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Exporting">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Exporter">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Domain">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

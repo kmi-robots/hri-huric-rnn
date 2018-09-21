@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099441">
+ <sentence>
+  The network 's mastermind , Osama bin Laden , has stated openly that it is his `` religious duty '' to acquire weapons of mass destruction .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="network" pos="NN" surface="network"/>
+  <token id="3" lemma="'s" pos="POS" surface="'s"/>
+  <token id="4" lemma="mastermind" pos="NN" surface="mastermind"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="osama" pos="NNP" surface="Osama"/>
+  <token id="7" lemma="bin" pos="NNP" surface="bin"/>
+  <token id="8" lemma="laden" pos="NNP" surface="Laden"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="have" pos="VBZ" surface="has"/>
+  <token id="11" lemma="state" pos="VBN" surface="stated"/>
+  <token id="12" lemma="openly" pos="RB" surface="openly"/>
+  <token id="13" lemma="that" pos="IN" surface="that"/>
+  <token id="14" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="15" lemma="be" pos="VBZ" surface="is"/>
+  <token id="16" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="17" lemma="``" pos="``" surface="``"/>
+  <token id="18" lemma="religious" pos="JJ" surface="religious"/>
+  <token id="19" lemma="duty" pos="NN" surface="duty"/>
+  <token id="20" lemma="''" pos="''" surface="''"/>
+  <token id="21" lemma="to" pos="TO" surface="to"/>
+  <token id="22" lemma="acquire" pos="VB" surface="acquire"/>
+  <token id="23" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="24" lemma="of" pos="IN" surface="of"/>
+  <token id="25" lemma="mass" pos="JJ" surface="mass"/>
+  <token id="26" lemma="destruction" pos="NN" surface="destruction"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="poss"/>
+  <dep from="2" to="3" type="case"/>
+  <dep from="11" to="4" type="nsubj"/>
+  <dep from="4" to="5" type="punct"/>
+  <dep from="8" to="6" type="compound"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="4" to="8" type="appos"/>
+  <dep from="4" to="9" type="punct"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="advmod"/>
+  <dep from="15" to="13" type="mark"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="11" to="15" type="ccomp"/>
+  <dep from="19" to="16" type="poss"/>
+  <dep from="19" to="17" type="punct"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="15" to="19" type="attr"/>
+  <dep from="19" to="20" type="punct"/>
+  <dep from="22" to="21" type="aux"/>
+  <dep from="15" to="22" type="xcomp"/>
+  <dep from="22" to="23" type="dobj"/>
+  <dep from="23" to="24" type="prep"/>
+  <dep from="26" to="25" type="amod"/>
+  <dep from="24" to="26" type="pobj"/>
+  <dep from="11" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_obligated">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Responsible_party">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Duty">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Getting">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Network">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Network">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

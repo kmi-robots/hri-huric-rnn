@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099102">
+ <sentence>
+  One in four cellphones sold has a camera in it .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="one" pos="CD" surface="One"/>
+  <token id="2" lemma="in" pos="IN" surface="in"/>
+  <token id="3" lemma="four" pos="CD" surface="four"/>
+  <token id="4" lemma="cellphone" pos="NNS" surface="cellphones"/>
+  <token id="5" lemma="sell" pos="VBN" surface="sold"/>
+  <token id="6" lemma="have" pos="VBZ" surface="has"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="camera" pos="NN" surface="camera"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="nummod"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="4" to="5" type="acl"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="6" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="6" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_sell">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098133">
+ <sentence>
+  Milton Roy disclosed in May that it was approached for a possible acquisition by Thermo Electron .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="milton" pos="NNP" surface="Milton"/>
+  <token id="2" lemma="roy" pos="NNP" surface="Roy"/>
+  <token id="3" lemma="disclose" pos="VBD" surface="disclosed"/>
+  <token id="4" lemma="in" pos="IN" surface="in"/>
+  <token id="5" lemma="may" pos="NNP" surface="May"/>
+  <token id="6" lemma="that" pos="IN" surface="that"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="8" lemma="be" pos="VBD" surface="was"/>
+  <token id="9" lemma="approach" pos="VBN" surface="approached"/>
+  <token id="10" lemma="for" pos="IN" surface="for"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="possible" pos="JJ" surface="possible"/>
+  <token id="13" lemma="acquisition" pos="NN" surface="acquisition"/>
+  <token id="14" lemma="by" pos="IN" surface="by"/>
+  <token id="15" lemma="thermo" pos="NNP" surface="Thermo"/>
+  <token id="16" lemma="electron" pos="NNP" surface="Electron"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="9" to="6" type="mark"/>
+  <dep from="9" to="7" type="nsubjpass"/>
+  <dep from="9" to="8" type="auxpass"/>
+  <dep from="3" to="9" type="ccomp"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="3" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Reveal_secret">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Information">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

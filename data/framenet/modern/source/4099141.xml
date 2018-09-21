@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099141">
+ <sentence>
+  Nanolab says it ca n't stay profitable if the demand for nanotubes decreases .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="nanolab" pos="NNP" surface="Nanolab"/>
+  <token id="2" lemma="say" pos="VBZ" surface="says"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="4" lemma="ca" pos="MD" surface="ca"/>
+  <token id="5" lemma="n't" pos="RB" surface="n't"/>
+  <token id="6" lemma="stay" pos="VB" surface="stay"/>
+  <token id="7" lemma="profitable" pos="JJ" surface="profitable"/>
+  <token id="8" lemma="if" pos="IN" surface="if"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="demand" pos="NN" surface="demand"/>
+  <token id="11" lemma="for" pos="IN" surface="for"/>
+  <token id="12" lemma="nanotube" pos="NNS" surface="nanotubes"/>
+  <token id="13" lemma="decrease" pos="NNS" surface="decreases"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="6" to="3" type="nsubj"/>
+  <dep from="6" to="4" type="aux"/>
+  <dep from="6" to="5" type="neg"/>
+  <dep from="2" to="6" type="ccomp"/>
+  <dep from="6" to="7" type="acomp"/>
+  <dep from="13" to="8" type="mark"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="13" to="10" type="nsubj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="6" to="13" type="advcl"/>
+  <dep from="2" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="State_continue">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="State">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Capability">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Circumstances">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

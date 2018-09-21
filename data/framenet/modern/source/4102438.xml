@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102438">
+ <sentence>
+  The most common and deadly form has already spread in birds from South Asia to Europe .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="most" pos="RBS" surface="most"/>
+  <token id="3" lemma="common" pos="JJ" surface="common"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="deadly" pos="JJ" surface="deadly"/>
+  <token id="6" lemma="form" pos="NN" surface="form"/>
+  <token id="7" lemma="have" pos="VBZ" surface="has"/>
+  <token id="8" lemma="already" pos="RB" surface="already"/>
+  <token id="9" lemma="spread" pos="VBN" surface="spread"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="bird" pos="NNS" surface="birds"/>
+  <token id="12" lemma="from" pos="IN" surface="from"/>
+  <token id="13" lemma="south" pos="NNP" surface="South"/>
+  <token id="14" lemma="asia" pos="NNP" surface="Asia"/>
+  <token id="15" lemma="to" pos="IN" surface="to"/>
+  <token id="16" lemma="europe" pos="NNP" surface="Europe"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="det"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="6" to="3" type="amod"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="3" to="5" type="conj"/>
+  <dep from="9" to="6" type="nsubj"/>
+  <dep from="9" to="7" type="aux"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="12" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="9" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Killer">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Type">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Subtype">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Type_property">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Time_vector">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_orientational">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Whole">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

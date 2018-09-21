@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096462">
+ <sentence>
+  In December 2003 , Libya pledged to eliminate ballistic missiles capable of traveling more than 300 km with payloads of 500 kg .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="december" pos="NNP" surface="December"/>
+  <token id="3" lemma="2003" pos="CD" surface="2003"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="libya" pos="NNP" surface="Libya"/>
+  <token id="6" lemma="pledge" pos="VBD" surface="pledged"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="eliminate" pos="VB" surface="eliminate"/>
+  <token id="9" lemma="ballistic" pos="JJ" surface="ballistic"/>
+  <token id="10" lemma="missile" pos="NNS" surface="missiles"/>
+  <token id="11" lemma="capable" pos="JJ" surface="capable"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="travel" pos="VBG" surface="traveling"/>
+  <token id="14" lemma="more" pos="JJR" surface="more"/>
+  <token id="15" lemma="than" pos="IN" surface="than"/>
+  <token id="16" lemma="300" pos="CD" surface="300"/>
+  <token id="17" lemma="km" pos="NNS" surface="km"/>
+  <token id="18" lemma="with" pos="IN" surface="with"/>
+  <token id="19" lemma="payload" pos="NNS" surface="payloads"/>
+  <token id="20" lemma="of" pos="IN" surface="of"/>
+  <token id="21" lemma="500" pos="CD" surface="500"/>
+  <token id="22" lemma="kg" pos="NNS" surface="kg"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="2" to="3" type="nummod"/>
+  <dep from="6" to="4" type="punct"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="6" to="8" type="xcomp"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="10" to="11" type="amod"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pcomp"/>
+  <dep from="16" to="14" type="amod"/>
+  <dep from="16" to="15" type="quantmod"/>
+  <dep from="17" to="16" type="nummod"/>
+  <dep from="13" to="17" type="dobj"/>
+  <dep from="13" to="18" type="prep"/>
+  <dep from="18" to="19" type="pobj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="22" to="21" type="nummod"/>
+  <dep from="20" to="22" type="pobj"/>
+  <dep from="6" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commitment">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Removing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Capability">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Travel">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Traveler">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Distance">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Baggage">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

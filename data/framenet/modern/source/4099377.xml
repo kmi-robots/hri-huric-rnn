@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099377">
+ <sentence>
+  Why Would Terrorists Want to Employ CBW ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="why" pos="WRB" surface="Why"/>
+  <token id="2" lemma="would" pos="MD" surface="Would"/>
+  <token id="3" lemma="terrorist" pos="NNS" surface="Terrorists"/>
+  <token id="4" lemma="want" pos="VB" surface="Want"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="employ" pos="NNP" surface="Employ"/>
+  <token id="7" lemma="cbw" pos="NNP" surface="CBW"/>
+  <token id="8" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="4" to="6" type="xcomp"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="4" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Desiring">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Explanation">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Experiencer">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Using">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Instrument">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Terrorism">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Terrorist">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106406">
+ <sentence>
+  William A Carter , Chairman Goodwill Industries Foundation
+ </sentence>
+ <tokens>
+  <token id="1" lemma="william" pos="NNP" surface="William"/>
+  <token id="2" lemma="a" pos="DT" surface="A"/>
+  <token id="3" lemma="carter" pos="NNP" surface="Carter"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="chairman" pos="NNP" surface="Chairman"/>
+  <token id="6" lemma="goodwill" pos="NNP" surface="Goodwill"/>
+  <token id="7" lemma="industries" pos="NNP" surface="Industries"/>
+  <token id="8" lemma="foundation" pos="NNP" surface="Foundation"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="compound"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="8" to="5" type="compound"/>
+  <dep from="8" to="6" type="compound"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="3" to="8" type="appos"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Governed">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

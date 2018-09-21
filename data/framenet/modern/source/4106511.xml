@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106511">
+ <sentence>
+  James M. McClelland President
+ </sentence>
+ <tokens>
+  <token id="1" lemma="james" pos="NNP" surface="James"/>
+  <token id="2" lemma="m." pos="NNP" surface="M."/>
+  <token id="3" lemma="mcclelland" pos="NNP" surface="McClelland"/>
+  <token id="4" lemma="president" pos="NNP" surface="President"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="compound"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="0" to="4" type="root"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

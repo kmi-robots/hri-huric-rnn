@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098817">
+ <sentence>
+  QN : Has Lehr had a short pitching career ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="have" pos="VBZ" surface="Has"/>
+  <token id="4" lemma="lehr" pos="NNP" surface="Lehr"/>
+  <token id="5" lemma="have" pos="VBD" surface="had"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="short" pos="JJ" surface="short"/>
+  <token id="8" lemma="pitching" pos="NN" surface="pitching"/>
+  <token id="9" lemma="career" pos="NN" surface="career"/>
+  <token id="10" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="9" to="6" type="det"/>
+  <dep from="9" to="7" type="amod"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="5" to="9" type="dobj"/>
+  <dep from="5" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Duration_description">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Eventuality">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_motion">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

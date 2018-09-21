@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102840">
+ <sentence>
+  Some buses should be exposed and others should be camouflaged .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="some" pos="DT" surface="Some"/>
+  <token id="2" lemma="bus" pos="NNS" surface="buses"/>
+  <token id="3" lemma="should" pos="MD" surface="should"/>
+  <token id="4" lemma="be" pos="VB" surface="be"/>
+  <token id="5" lemma="expose" pos="VBN" surface="exposed"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="other" pos="NNS" surface="others"/>
+  <token id="8" lemma="should" pos="MD" surface="should"/>
+  <token id="9" lemma="be" pos="VB" surface="be"/>
+  <token id="10" lemma="camouflage" pos="VBN" surface="camouflaged"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="10" to="7" type="nsubjpass"/>
+  <dep from="10" to="8" type="aux"/>
+  <dep from="10" to="9" type="auxpass"/>
+  <dep from="5" to="10" type="conj"/>
+  <dep from="10" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Denoted_quantity">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Vehicle">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirable_event">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="State_of_affairs">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Added_set">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirable_event">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="State_of_affairs">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

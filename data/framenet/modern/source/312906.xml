@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="312906">
+ <sentence>
+  Winston made for the stairs .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="winston" pos="NNP" surface="Winston"/>
+  <token id="2" lemma="make" pos="VBD" surface="made"/>
+  <token id="3" lemma="for" pos="IN" surface="for"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="stair" pos="NNS" surface="stairs"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Connecting_architecture">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

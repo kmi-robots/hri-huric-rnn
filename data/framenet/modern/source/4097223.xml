@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097223">
+ <sentence>
+  IRAN : NBC WEAPONS AND MISSILE PROGRAMS
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iran" pos="NNP" surface="IRAN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="nbc" pos="NNP" surface="NBC"/>
+  <token id="4" lemma="weapons" pos="NNPS" surface="WEAPONS"/>
+  <token id="5" lemma="and" pos="CC" surface="AND"/>
+  <token id="6" lemma="missile" pos="NNP" surface="MISSILE"/>
+  <token id="7" lemma="programs" pos="NNP" surface="PROGRAMS"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="4" to="6" type="conj"/>
+  <dep from="4" to="7" type="conj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Salient_entity">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

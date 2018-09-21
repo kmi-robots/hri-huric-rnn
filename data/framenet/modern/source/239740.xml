@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="239740">
+ <sentence>
+  The magistrate set a preliminary hearing for next Tuesday and ordered Pickett held without bond .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="magistrate" pos="NN" surface="magistrate"/>
+  <token id="3" lemma="set" pos="VBD" surface="set"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="preliminary" pos="JJ" surface="preliminary"/>
+  <token id="6" lemma="hearing" pos="NN" surface="hearing"/>
+  <token id="7" lemma="for" pos="IN" surface="for"/>
+  <token id="8" lemma="next" pos="JJ" surface="next"/>
+  <token id="9" lemma="tuesday" pos="NNP" surface="Tuesday"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="order" pos="VBD" surface="ordered"/>
+  <token id="12" lemma="pickett" pos="NNP" surface="Pickett"/>
+  <token id="13" lemma="hold" pos="VBD" surface="held"/>
+  <token id="14" lemma="without" pos="IN" surface="without"/>
+  <token id="15" lemma="bond" pos="NN" surface="bond"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="prep"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="3" to="10" type="cc"/>
+  <dep from="3" to="11" type="conj"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="11" to="13" type="ccomp"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="3" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Relative_time">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Bail_decision">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Accused">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Status">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Judge">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Bail_decision">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Accused">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Preliminaries">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Preparatory_act">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106465">
+ <sentence>
+  Tax dollars that would have been spent on public assistance are saved .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="tax" pos="NN" surface="Tax"/>
+  <token id="2" lemma="dollar" pos="NNS" surface="dollars"/>
+  <token id="3" lemma="that" pos="WDT" surface="that"/>
+  <token id="4" lemma="would" pos="MD" surface="would"/>
+  <token id="5" lemma="have" pos="VB" surface="have"/>
+  <token id="6" lemma="be" pos="VBN" surface="been"/>
+  <token id="7" lemma="spend" pos="VBN" surface="spent"/>
+  <token id="8" lemma="on" pos="IN" surface="on"/>
+  <token id="9" lemma="public" pos="JJ" surface="public"/>
+  <token id="10" lemma="assistance" pos="NN" surface="assistance"/>
+  <token id="11" lemma="be" pos="VBP" surface="are"/>
+  <token id="12" lemma="save" pos="VBN" surface="saved"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="12" to="2" type="nsubjpass"/>
+  <dep from="7" to="3" type="nsubjpass"/>
+  <dep from="7" to="4" type="aux"/>
+  <dep from="7" to="5" type="aux"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="2" to="7" type="relcl"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="12" to="11" type="auxpass"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Benefited_party">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Public_services">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Service_action">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Domain">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

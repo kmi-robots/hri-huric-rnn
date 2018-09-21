@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097000">
+ <sentence>
+  Iran 's entanglement with CW stems from the legacy of the Iran - Iraq War .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="2" lemma="'s" pos="POS" surface="'s"/>
+  <token id="3" lemma="entanglement" pos="NN" surface="entanglement"/>
+  <token id="4" lemma="with" pos="IN" surface="with"/>
+  <token id="5" lemma="cw" pos="NNP" surface="CW"/>
+  <token id="6" lemma="stem" pos="VBZ" surface="stems"/>
+  <token id="7" lemma="from" pos="IN" surface="from"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="legacy" pos="NN" surface="legacy"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="13" lemma="-" pos="HYPH" surface="-"/>
+  <token id="14" lemma="iraq" pos="NNP" surface="Iraq"/>
+  <token id="15" lemma="war" pos="NNP" surface="War"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="poss"/>
+  <dep from="1" to="2" type="case"/>
+  <dep from="6" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="15" to="11" type="det"/>
+  <dep from="14" to="12" type="compound"/>
+  <dep from="14" to="13" type="punct"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="10" to="15" type="pobj"/>
+  <dep from="6" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Participation">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Participant_1">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Sides">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

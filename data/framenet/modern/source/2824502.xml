@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824502">
+ <sentence>
+  7:13 a.m. CALLIOPE : Albany escaped embarrassingly unscathed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="7:13" pos="CD" surface="7:13"/>
+  <token id="2" lemma="a.m." pos="RB" surface="a.m."/>
+  <token id="3" lemma="calliope" pos="NNP" surface="CALLIOPE"/>
+  <token id="4" lemma=":" pos=":" surface=":"/>
+  <token id="5" lemma="albany" pos="NNP" surface="Albany"/>
+  <token id="6" lemma="escape" pos="VBD" surface="escaped"/>
+  <token id="7" lemma="embarrassingly" pos="RB" surface="embarrassingly"/>
+  <token id="8" lemma="unscathed" pos="JJ" surface="unscathed"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="advmod"/>
+  <dep from="6" to="8" type="ccomp"/>
+  <dep from="6" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Avoiding">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

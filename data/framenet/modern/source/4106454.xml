@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106454">
+ <sentence>
+  He has no time to waste .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="have" pos="VBZ" surface="has"/>
+  <token id="3" lemma="no" pos="DT" surface="no"/>
+  <token id="4" lemma="time" pos="NN" surface="time"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="waste" pos="VB" surface="waste"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="4" to="6" type="relcl"/>
+  <dep from="2" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Frugality">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098992">
+ <sentence>
+  QN : Have there been previous negotiations between Israel and the Palestinian authority ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="have" pos="VBP" surface="Have"/>
+  <token id="4" lemma="there" pos="EX" surface="there"/>
+  <token id="5" lemma="be" pos="VBN" surface="been"/>
+  <token id="6" lemma="previous" pos="JJ" surface="previous"/>
+  <token id="7" lemma="negotiation" pos="NNS" surface="negotiations"/>
+  <token id="8" lemma="between" pos="IN" surface="between"/>
+  <token id="9" lemma="israel" pos="NNP" surface="Israel"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="palestinian" pos="JJ" surface="Palestinian"/>
+  <token id="13" lemma="authority" pos="NN" surface="authority"/>
+  <token id="14" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="expl"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="5" to="7" type="attr"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="9" to="13" type="conj"/>
+  <dep from="5" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Relative_time">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Focal_occasion">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Discussion">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Interlocutors">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

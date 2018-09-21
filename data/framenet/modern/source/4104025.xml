@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4104025">
+ <sentence>
+  Hong Kong 's other , less developed islands , Lantau , Lamma , and Cheung Chau , provide getaways .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="hong" pos="NNP" surface="Hong"/>
+  <token id="2" lemma="kong" pos="NNP" surface="Kong"/>
+  <token id="3" lemma="'s" pos="POS" surface="'s"/>
+  <token id="4" lemma="other" pos="JJ" surface="other"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="less" pos="RBR" surface="less"/>
+  <token id="7" lemma="developed" pos="JJ" surface="developed"/>
+  <token id="8" lemma="island" pos="NNS" surface="islands"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="lantau" pos="NNP" surface="Lantau"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="lamma" pos="NNP" surface="Lamma"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="cheung" pos="NNP" surface="Cheung"/>
+  <token id="16" lemma="chau" pos="NNP" surface="Chau"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="provide" pos="VB" surface="provide"/>
+  <token id="19" lemma="getaway" pos="NNS" surface="getaways"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="8" to="2" type="poss"/>
+  <dep from="2" to="3" type="case"/>
+  <dep from="8" to="4" type="amod"/>
+  <dep from="8" to="5" type="punct"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="18" to="8" type="nsubj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="8" to="10" type="appos"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="10" to="12" type="conj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="12" to="14" type="cc"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="12" to="16" type="conj"/>
+  <dep from="18" to="17" type="punct"/>
+  <dep from="0" to="18" type="root"/>
+  <dep from="18" to="19" type="dobj"/>
+  <dep from="18" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Stage_of_progress">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Supplier">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

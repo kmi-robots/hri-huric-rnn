@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106354">
+ <sentence>
+  I really like my job. '' -- Sherry
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="really" pos="RB" surface="really"/>
+  <token id="3" lemma="like" pos="VBP" surface="like"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="5" lemma="job." pos="NN" surface="job."/>
+  <token id="6" lemma="''" pos="''" surface="''"/>
+  <token id="7" lemma="--" pos=":" surface="--"/>
+  <token id="8" lemma="sherry" pos="VB" surface="Sherry"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="poss"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="punct"/>
+  <dep from="3" to="7" type="punct"/>
+  <dep from="0" to="8" type="root"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_employed">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Employee">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Experiencer_focus">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Experiencer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148241">
+ <sentence>
+  , High Holborn , had been left behind .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="," pos="," surface=","/>
+  <token id="2" lemma="high" pos="NNP" surface="High"/>
+  <token id="3" lemma="holborn" pos="NNP" surface="Holborn"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="have" pos="VBD" surface="had"/>
+  <token id="6" lemma="be" pos="VBN" surface="been"/>
+  <token id="7" lemma="leave" pos="VBN" surface="left"/>
+  <token id="8" lemma="behind" pos="RB" surface="behind"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="punct"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="7" to="3" type="nsubjpass"/>
+  <dep from="7" to="4" type="punct"/>
+  <dep from="7" to="5" type="aux"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="advmod"/>
+  <dep from="7" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Abandonment">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

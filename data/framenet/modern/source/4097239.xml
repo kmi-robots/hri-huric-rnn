@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097239">
+ <sentence>
+  Land - , sea , and air - launched anti - ship cruise missiles ; air - launched tactical missiles ; none have NBC warheads .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="land" pos="NN" surface="Land"/>
+  <token id="2" lemma="-" pos="HYPH" surface="-"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="sea" pos="NN" surface="sea"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="air" pos="NN" surface="air"/>
+  <token id="8" lemma="-" pos="HYPH" surface="-"/>
+  <token id="9" lemma="launch" pos="VBN" surface="launched"/>
+  <token id="10" lemma="anti" pos="RB" surface="anti"/>
+  <token id="11" lemma="-" pos="HYPH" surface="-"/>
+  <token id="12" lemma="ship" pos="NN" surface="ship"/>
+  <token id="13" lemma="cruise" pos="NN" surface="cruise"/>
+  <token id="14" lemma="missile" pos="NNS" surface="missiles"/>
+  <token id="15" lemma=";" pos=":" surface=";"/>
+  <token id="16" lemma="air" pos="NN" surface="air"/>
+  <token id="17" lemma="-" pos="HYPH" surface="-"/>
+  <token id="18" lemma="launch" pos="VBN" surface="launched"/>
+  <token id="19" lemma="tactical" pos="JJ" surface="tactical"/>
+  <token id="20" lemma="missile" pos="NNS" surface="missiles"/>
+  <token id="21" lemma=";" pos=":" surface=";"/>
+  <token id="22" lemma="none" pos="NN" surface="none"/>
+  <token id="23" lemma="have" pos="VBP" surface="have"/>
+  <token id="24" lemma="nbc" pos="NNP" surface="NBC"/>
+  <token id="25" lemma="warhead" pos="NNS" surface="warheads"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="12" to="1" type="amod"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="1" to="3" type="punct"/>
+  <dep from="1" to="4" type="conj"/>
+  <dep from="4" to="5" type="punct"/>
+  <dep from="4" to="6" type="cc"/>
+  <dep from="9" to="7" type="npadvmod"/>
+  <dep from="9" to="8" type="punct"/>
+  <dep from="4" to="9" type="conj"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="12" to="11" type="punct"/>
+  <dep from="14" to="12" type="compound"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="23" to="14" type="dep"/>
+  <dep from="23" to="15" type="punct"/>
+  <dep from="18" to="16" type="npadvmod"/>
+  <dep from="18" to="17" type="punct"/>
+  <dep from="20" to="18" type="amod"/>
+  <dep from="20" to="19" type="amod"/>
+  <dep from="23" to="20" type="dep"/>
+  <dep from="23" to="21" type="punct"/>
+  <dep from="23" to="22" type="nsubj"/>
+  <dep from="0" to="23" type="root"/>
+  <dep from="25" to="24" type="compound"/>
+  <dep from="23" to="25" type="ccomp"/>
+  <dep from="23" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Shoot_projectiles">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Area">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Projectile">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Shoot_projectiles">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Area">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Projectile">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

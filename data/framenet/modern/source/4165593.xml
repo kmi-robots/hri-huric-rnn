@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165593">
+ <sentence>
+  Authorities are calling the fires `` criminal acts . ''
+ </sentence>
+ <tokens>
+  <token id="1" lemma="authority" pos="NNS" surface="Authorities"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="call" pos="VBG" surface="calling"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="fire" pos="NNS" surface="fires"/>
+  <token id="6" lemma="``" pos="``" surface="``"/>
+  <token id="7" lemma="criminal" pos="JJ" surface="criminal"/>
+  <token id="8" lemma="act" pos="NNS" surface="acts"/>
+  <token id="9" lemma="." pos="." surface="."/>
+  <token id="10" lemma="''" pos="''" surface="''"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="5" to="6" type="punct"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="appos"/>
+  <dep from="3" to="9" type="punct"/>
+  <dep from="3" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Labeling">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Label">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Fire_burning">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Fire">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Act">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Domain">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Legality">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Action">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

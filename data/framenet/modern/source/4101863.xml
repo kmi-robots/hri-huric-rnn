@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101863">
+ <sentence>
+  Under Mr . Gorbachev , Mr . Goode said , the Soviets are openly stealing Western corporate communications .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="under" pos="IN" surface="Under"/>
+  <token id="2" lemma="mr" pos="NNP" surface="Mr"/>
+  <token id="3" lemma="." pos="." surface="."/>
+  <token id="4" lemma="gorbachev" pos="NNP" surface="Gorbachev"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="mr" pos="NNP" surface="Mr"/>
+  <token id="7" lemma="." pos="." surface="."/>
+  <token id="8" lemma="goode" pos="NNP" surface="Goode"/>
+  <token id="9" lemma="say" pos="VBD" surface="said"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="soviets" pos="NNPS" surface="Soviets"/>
+  <token id="13" lemma="be" pos="VBP" surface="are"/>
+  <token id="14" lemma="openly" pos="RB" surface="openly"/>
+  <token id="15" lemma="steal" pos="VBG" surface="stealing"/>
+  <token id="16" lemma="western" pos="JJ" surface="Western"/>
+  <token id="17" lemma="corporate" pos="JJ" surface="corporate"/>
+  <token id="18" lemma="communication" pos="NNS" surface="communications"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="1" to="3" type="punct"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="punct"/>
+  <dep from="4" to="6" type="npadvmod"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="punct"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="15" to="12" type="nsubj"/>
+  <dep from="15" to="13" type="aux"/>
+  <dep from="15" to="14" type="advmod"/>
+  <dep from="9" to="15" type="ccomp"/>
+  <dep from="18" to="16" type="amod"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="15" to="18" type="dobj"/>
+  <dep from="9" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Theft">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Perpetrator">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Communication">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Topic">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

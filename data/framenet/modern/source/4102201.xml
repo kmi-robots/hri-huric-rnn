@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102201">
+ <sentence>
+  Yeah well the sentences are so unbelievable .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="yeah" pos="UH" surface="Yeah"/>
+  <token id="2" lemma="well" pos="UH" surface="well"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="sentence" pos="NNS" surface="sentences"/>
+  <token id="5" lemma="be" pos="VBP" surface="are"/>
+  <token id="6" lemma="so" pos="RB" surface="so"/>
+  <token id="7" lemma="unbelievable" pos="JJ" surface="unbelievable"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="intj"/>
+  <dep from="5" to="2" type="intj"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="5" to="7" type="acomp"/>
+  <dep from="5" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Sentencing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Sentence">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

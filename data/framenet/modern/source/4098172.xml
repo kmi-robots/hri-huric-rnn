@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098172">
+ <sentence>
+  The Administration is trying to decide whether Saddam Hussein has WMD .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="administration" pos="NNP" surface="Administration"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="try" pos="VBG" surface="trying"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="decide" pos="VB" surface="decide"/>
+  <token id="7" lemma="whether" pos="IN" surface="whether"/>
+  <token id="8" lemma="saddam" pos="NNP" surface="Saddam"/>
+  <token id="9" lemma="hussein" pos="NNP" surface="Hussein"/>
+  <token id="10" lemma="have" pos="VBZ" surface="has"/>
+  <token id="11" lemma="wmd" pos="NNS" surface="WMD"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="4" to="6" type="xcomp"/>
+  <dep from="10" to="7" type="mark"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="6" to="10" type="ccomp"/>
+  <dep from="10" to="11" type="dobj"/>
+  <dep from="4" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attempt">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

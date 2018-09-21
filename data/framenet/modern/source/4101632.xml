@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101632">
+ <sentence>
+  FYI-I will be out of the office all next week .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="fyi-i" pos="NNP" surface="FYI-I"/>
+  <token id="2" lemma="will" pos="MD" surface="will"/>
+  <token id="3" lemma="be" pos="VB" surface="be"/>
+  <token id="4" lemma="out" pos="IN" surface="out"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="office" pos="NN" surface="office"/>
+  <token id="8" lemma="all" pos="DT" surface="all"/>
+  <token id="9" lemma="next" pos="JJ" surface="next"/>
+  <token id="10" lemma="week" pos="NN" surface="week"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="3" to="10" type="npadvmod"/>
+  <dep from="3" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Expected_location_of_person">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Location">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Duration">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Person">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Building_subparts">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Building_part">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Relative_time">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

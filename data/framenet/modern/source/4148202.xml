@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148202">
+ <sentence>
+  " What 's the matter , Walters ? " asked Baynes sharply .
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="what" pos="WP" surface="What"/>
+  <token id="3" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="matter" pos="NN" surface="matter"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="walters" pos="NNP" surface="Walters"/>
+  <token id="8" lemma="?" pos="." surface="?"/>
+  <token id="9" lemma='"' pos="''" surface='"'/>
+  <token id="10" lemma="ask" pos="VBD" surface="asked"/>
+  <token id="11" lemma="baynes" pos="NNPS" surface="Baynes"/>
+  <token id="12" lemma="sharply" pos="RB" surface="sharply"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="punct"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="10" to="3" type="ccomp"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="nsubj"/>
+  <dep from="10" to="6" type="punct"/>
+  <dep from="10" to="7" type="nsubj"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="7" to="9" type="punct"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="dobj"/>
+  <dep from="10" to="12" type="advmod"/>
+  <dep from="10" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Questioning">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

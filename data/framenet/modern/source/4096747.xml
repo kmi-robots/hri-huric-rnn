@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096747">
+ <sentence>
+  Negotiations with both countries are believed to have begun during early 1983 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="negotiation" pos="NNS" surface="Negotiations"/>
+  <token id="2" lemma="with" pos="IN" surface="with"/>
+  <token id="3" lemma="both" pos="DT" surface="both"/>
+  <token id="4" lemma="country" pos="NNS" surface="countries"/>
+  <token id="5" lemma="be" pos="VBP" surface="are"/>
+  <token id="6" lemma="believe" pos="VBN" surface="believed"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="have" pos="VB" surface="have"/>
+  <token id="9" lemma="begin" pos="VBN" surface="begun"/>
+  <token id="10" lemma="during" pos="IN" surface="during"/>
+  <token id="11" lemma="early" pos="JJ" surface="early"/>
+  <token id="12" lemma="1983" pos="CD" surface="1983"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="nsubjpass"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="9" to="7" type="aux"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="6" to="9" type="xcomp"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="6" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Discussion">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Interlocutors">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Awareness">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Content">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Process_start">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

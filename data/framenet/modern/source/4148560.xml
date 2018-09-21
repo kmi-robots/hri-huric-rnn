@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148560">
+ <sentence>
+  I smiled on him , did my duty to his children , and bided my time .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="smile" pos="VBD" surface="smiled"/>
+  <token id="3" lemma="on" pos="IN" surface="on"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="do" pos="VBD" surface="did"/>
+  <token id="7" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="8" lemma="duty" pos="NN" surface="duty"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="11" lemma="child" pos="NNS" surface="children"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="bid" pos="VBD" surface="bided"/>
+  <token id="15" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="16" lemma="time" pos="NN" surface="time"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="2" to="5" type="punct"/>
+  <dep from="2" to="6" type="conj"/>
+  <dep from="8" to="7" type="poss"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="6" to="9" type="prep"/>
+  <dep from="11" to="10" type="poss"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="6" to="12" type="punct"/>
+  <dep from="6" to="13" type="cc"/>
+  <dep from="6" to="14" type="conj"/>
+  <dep from="16" to="15" type="poss"/>
+  <dep from="14" to="16" type="dobj"/>
+  <dep from="2" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Kinship">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Alter">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Ego">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Making_faces">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Intended_perceiver">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Act">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

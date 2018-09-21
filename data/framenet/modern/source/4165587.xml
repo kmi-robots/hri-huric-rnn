@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165587">
+ <sentence>
+  There is some hope that the weekend will bring some rain ; however , this will likely not be enough to stop the fire .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="some" pos="DT" surface="some"/>
+  <token id="4" lemma="hope" pos="NN" surface="hope"/>
+  <token id="5" lemma="that" pos="IN" surface="that"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="weekend" pos="NN" surface="weekend"/>
+  <token id="8" lemma="will" pos="MD" surface="will"/>
+  <token id="9" lemma="bring" pos="VB" surface="bring"/>
+  <token id="10" lemma="some" pos="DT" surface="some"/>
+  <token id="11" lemma="rain" pos="NN" surface="rain"/>
+  <token id="12" lemma=";" pos=":" surface=";"/>
+  <token id="13" lemma="however" pos="RB" surface="however"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="this" pos="DT" surface="this"/>
+  <token id="16" lemma="will" pos="MD" surface="will"/>
+  <token id="17" lemma="likely" pos="RB" surface="likely"/>
+  <token id="18" lemma="not" pos="RB" surface="not"/>
+  <token id="19" lemma="be" pos="VB" surface="be"/>
+  <token id="20" lemma="enough" pos="JJ" surface="enough"/>
+  <token id="21" lemma="to" pos="TO" surface="to"/>
+  <token id="22" lemma="stop" pos="VB" surface="stop"/>
+  <token id="23" lemma="the" pos="DT" surface="the"/>
+  <token id="24" lemma="fire" pos="NN" surface="fire"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="19" to="2" type="ccomp"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="attr"/>
+  <dep from="9" to="5" type="mark"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="9" to="7" type="nsubj"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="4" to="9" type="acl"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="19" to="12" type="punct"/>
+  <dep from="19" to="13" type="advmod"/>
+  <dep from="19" to="14" type="punct"/>
+  <dep from="19" to="15" type="nsubj"/>
+  <dep from="19" to="16" type="aux"/>
+  <dep from="19" to="17" type="advmod"/>
+  <dep from="19" to="18" type="neg"/>
+  <dep from="0" to="19" type="root"/>
+  <dep from="19" to="20" type="acomp"/>
+  <dep from="22" to="21" type="aux"/>
+  <dep from="20" to="22" type="xcomp"/>
+  <dep from="24" to="23" type="det"/>
+  <dep from="22" to="24" type="dobj"/>
+  <dep from="19" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Desiring">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Precipitation">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Precipitation">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Effect">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Sufficiency">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Enabled_situation">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Fire_burning">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Fire">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Preventing_or_letting">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Potential_hindrance">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

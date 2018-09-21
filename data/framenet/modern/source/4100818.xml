@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100818">
+ <sentence>
+  China ratified the Chemical Weapons Convention ( CWC ) in December 1996 , declaring two former chemical weapons ( CW ) production facilities that may have produced mustard gas and Lewisite .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="china" pos="NNP" surface="China"/>
+  <token id="2" lemma="ratify" pos="VBD" surface="ratified"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="chemical" pos="NNP" surface="Chemical"/>
+  <token id="5" lemma="weapons" pos="NNPS" surface="Weapons"/>
+  <token id="6" lemma="convention" pos="NNP" surface="Convention"/>
+  <token id="7" lemma="(" pos="-LRB-" surface="("/>
+  <token id="8" lemma="cwc" pos="NNP" surface="CWC"/>
+  <token id="9" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="december" pos="NNP" surface="December"/>
+  <token id="12" lemma="1996" pos="CD" surface="1996"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="declare" pos="VBG" surface="declaring"/>
+  <token id="15" lemma="two" pos="CD" surface="two"/>
+  <token id="16" lemma="former" pos="JJ" surface="former"/>
+  <token id="17" lemma="chemical" pos="JJ" surface="chemical"/>
+  <token id="18" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="19" lemma="(" pos="-LRB-" surface="("/>
+  <token id="20" lemma="cw" pos="NNP" surface="CW"/>
+  <token id="21" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="22" lemma="production" pos="NN" surface="production"/>
+  <token id="23" lemma="facility" pos="NNS" surface="facilities"/>
+  <token id="24" lemma="that" pos="WDT" surface="that"/>
+  <token id="25" lemma="may" pos="MD" surface="may"/>
+  <token id="26" lemma="have" pos="VB" surface="have"/>
+  <token id="27" lemma="produce" pos="VBN" surface="produced"/>
+  <token id="28" lemma="mustard" pos="NN" surface="mustard"/>
+  <token id="29" lemma="gas" pos="NN" surface="gas"/>
+  <token id="30" lemma="and" pos="CC" surface="and"/>
+  <token id="31" lemma="lewisite" pos="NNP" surface="Lewisite"/>
+  <token id="32" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="6" to="3" type="det"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="2" to="6" type="dobj"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="6" to="8" type="appos"/>
+  <dep from="6" to="9" type="punct"/>
+  <dep from="2" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="11" to="12" type="nummod"/>
+  <dep from="2" to="13" type="punct"/>
+  <dep from="2" to="14" type="advcl"/>
+  <dep from="18" to="15" type="nummod"/>
+  <dep from="18" to="16" type="amod"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="14" to="18" type="dobj"/>
+  <dep from="18" to="19" type="punct"/>
+  <dep from="23" to="20" type="nmod"/>
+  <dep from="20" to="21" type="punct"/>
+  <dep from="23" to="22" type="compound"/>
+  <dep from="18" to="23" type="appos"/>
+  <dep from="27" to="24" type="nsubj"/>
+  <dep from="27" to="25" type="aux"/>
+  <dep from="27" to="26" type="aux"/>
+  <dep from="23" to="27" type="relcl"/>
+  <dep from="29" to="28" type="compound"/>
+  <dep from="27" to="29" type="dobj"/>
+  <dep from="29" to="30" type="cc"/>
+  <dep from="29" to="31" type="conj"/>
+  <dep from="2" to="32" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Ratification">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Ratifier">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Proposal">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Name">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Use">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+     <token id="31"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="27"/>
+    </lexicalUnit>
+    <frameElement type="Factory">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Factory">
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Product">
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+     <token id="31"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="28"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="28"/>
+     <token id="29"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_period">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Time_vector">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Distance">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

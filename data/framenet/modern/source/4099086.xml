@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099086">
+ <sentence>
+  QN : Are 22 million people employed in agriculture ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="be" pos="VBP" surface="Are"/>
+  <token id="4" lemma="22" pos="CD" surface="22"/>
+  <token id="5" lemma="million" pos="CD" surface="million"/>
+  <token id="6" lemma="people" pos="NNS" surface="people"/>
+  <token id="7" lemma="employ" pos="VBN" surface="employed"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="agriculture" pos="NN" surface="agriculture"/>
+  <token id="10" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="3" to="6" type="attr"/>
+  <dep from="6" to="7" type="acl"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="3" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_employed">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Employee">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Field">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

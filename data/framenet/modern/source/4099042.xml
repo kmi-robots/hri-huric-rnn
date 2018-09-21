@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099042">
+ <sentence>
+  Some of the 14 alleged bin Laden associates arrested in Jordan in December have begun talking to investigators .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="some" pos="DT" surface="Some"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="14" pos="CD" surface="14"/>
+  <token id="5" lemma="allege" pos="VBN" surface="alleged"/>
+  <token id="6" lemma="bin" pos="NNP" surface="bin"/>
+  <token id="7" lemma="laden" pos="NNP" surface="Laden"/>
+  <token id="8" lemma="associate" pos="NNS" surface="associates"/>
+  <token id="9" lemma="arrest" pos="VBN" surface="arrested"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="jordan" pos="NNP" surface="Jordan"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="december" pos="NNP" surface="December"/>
+  <token id="14" lemma="have" pos="VBP" surface="have"/>
+  <token id="15" lemma="begin" pos="VBN" surface="begun"/>
+  <token id="16" lemma="talk" pos="VBG" surface="talking"/>
+  <token id="17" lemma="to" pos="IN" surface="to"/>
+  <token id="18" lemma="investigator" pos="NNS" surface="investigators"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="15" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="8" to="3" type="det"/>
+  <dep from="8" to="4" type="nummod"/>
+  <dep from="8" to="5" type="amod"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="2" to="8" type="pobj"/>
+  <dep from="8" to="9" type="acl"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="9" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="0" to="15" type="root"/>
+  <dep from="15" to="16" type="xcomp"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="17" to="18" type="pobj"/>
+  <dep from="15" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Unattributed_information">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Reported_fact">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Partitive">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Subset">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Group">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Arrest">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Suspect">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Offense">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Collaboration">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Partner_1">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Partner_2">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Activity_start">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Chatting">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Interlocutor_2">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Interlocutor_1">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

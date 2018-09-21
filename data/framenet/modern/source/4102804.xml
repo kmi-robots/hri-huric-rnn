@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102804">
+ <sentence>
+  Permanent Protection :
+ </sentence>
+ <tokens>
+  <token id="1" lemma="permanent" pos="JJ" surface="Permanent"/>
+  <token id="2" lemma="protection" pos="NN" surface="Protection"/>
+  <token id="3" lemma=":" pos=":" surface=":"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Protecting">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Protection">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105942">
+ <sentence>
+  The next inlet is Repulse Bay , a roomy , sandy crescent , with green hills .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="next" pos="JJ" surface="next"/>
+  <token id="3" lemma="inlet" pos="NN" surface="inlet"/>
+  <token id="4" lemma="be" pos="VBZ" surface="is"/>
+  <token id="5" lemma="repulse" pos="NNP" surface="Repulse"/>
+  <token id="6" lemma="bay" pos="NNP" surface="Bay"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="roomy" pos="NN" surface="roomy"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="sandy" pos="JJ" surface="sandy"/>
+  <token id="12" lemma="crescent" pos="NN" surface="crescent"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="with" pos="IN" surface="with"/>
+  <token id="15" lemma="green" pos="JJ" surface="green"/>
+  <token id="16" lemma="hill" pos="NNS" surface="hills"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="4" to="6" type="attr"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="6" to="9" type="appos"/>
+  <dep from="9" to="10" type="punct"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="conj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="12" to="14" type="prep"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="4" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Color">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Color">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

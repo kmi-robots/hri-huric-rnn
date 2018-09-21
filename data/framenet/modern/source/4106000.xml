@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106000">
+ <sentence>
+  Place names are often based on the distance to the nearest mile-post , as measured from the tip of the Kowloon peninsula .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="place" pos="NN" surface="Place"/>
+  <token id="2" lemma="name" pos="NNS" surface="names"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="often" pos="RB" surface="often"/>
+  <token id="5" lemma="base" pos="VBN" surface="based"/>
+  <token id="6" lemma="on" pos="IN" surface="on"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="distance" pos="NN" surface="distance"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="near" pos="JJS" surface="nearest"/>
+  <token id="12" lemma="mile-post" pos="NN" surface="mile-post"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="as" pos="IN" surface="as"/>
+  <token id="15" lemma="measure" pos="VBN" surface="measured"/>
+  <token id="16" lemma="from" pos="IN" surface="from"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="tip" pos="NN" surface="tip"/>
+  <token id="19" lemma="of" pos="IN" surface="of"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="kowloon" pos="NNP" surface="Kowloon"/>
+  <token id="22" lemma="peninsula" pos="NN" surface="peninsula"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="auxpass"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="5" to="13" type="punct"/>
+  <dep from="15" to="14" type="mark"/>
+  <dep from="5" to="15" type="advcl"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="22" to="20" type="det"/>
+  <dep from="22" to="21" type="compound"/>
+  <dep from="19" to="22" type="pobj"/>
+  <dep from="5" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_named">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Name">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Frequency">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Range">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Distance">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_linear_extent">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_orientational">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Whole">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Container_possessor">
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="22"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

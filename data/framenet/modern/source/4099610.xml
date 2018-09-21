@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099610">
+ <sentence>
+  `` A deadly - chemical exercise sent nearly 100 national guardsmen and women into action Wednesday morning .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="``" pos="``" surface="``"/>
+  <token id="2" lemma="a" pos="DT" surface="A"/>
+  <token id="3" lemma="deadly" pos="JJ" surface="deadly"/>
+  <token id="4" lemma="-" pos="HYPH" surface="-"/>
+  <token id="5" lemma="chemical" pos="NN" surface="chemical"/>
+  <token id="6" lemma="exercise" pos="NN" surface="exercise"/>
+  <token id="7" lemma="send" pos="VBD" surface="sent"/>
+  <token id="8" lemma="nearly" pos="RB" surface="nearly"/>
+  <token id="9" lemma="100" pos="CD" surface="100"/>
+  <token id="10" lemma="national" pos="JJ" surface="national"/>
+  <token id="11" lemma="guardsman" pos="NNS" surface="guardsmen"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="woman" pos="NNS" surface="women"/>
+  <token id="14" lemma="into" pos="IN" surface="into"/>
+  <token id="15" lemma="action" pos="NN" surface="action"/>
+  <token id="16" lemma="wednesday" pos="NNP" surface="Wednesday"/>
+  <token id="17" lemma="morning" pos="NN" surface="morning"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="punct"/>
+  <dep from="6" to="2" type="det"/>
+  <dep from="5" to="3" type="amod"/>
+  <dep from="5" to="4" type="punct"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="11" to="9" type="nummod"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="7" to="11" type="dobj"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="11" to="13" type="conj"/>
+  <dep from="7" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="7" to="17" type="npadvmod"/>
+  <dep from="7" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Instrument">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Substance">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Practice">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Occasion">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Action">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Whole">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105990">
+ <sentence>
+  The barrel - vaulted chambers were discovered while excavating for a nearby housing project .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="barrel" pos="NN" surface="barrel"/>
+  <token id="3" lemma="-" pos="HYPH" surface="-"/>
+  <token id="4" lemma="vault" pos="VBN" surface="vaulted"/>
+  <token id="5" lemma="chamber" pos="NNS" surface="chambers"/>
+  <token id="6" lemma="be" pos="VBD" surface="were"/>
+  <token id="7" lemma="discover" pos="VBN" surface="discovered"/>
+  <token id="8" lemma="while" pos="IN" surface="while"/>
+  <token id="9" lemma="excavate" pos="VBG" surface="excavating"/>
+  <token id="10" lemma="for" pos="IN" surface="for"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="nearby" pos="JJ" surface="nearby"/>
+  <token id="13" lemma="housing" pos="NN" surface="housing"/>
+  <token id="14" lemma="project" pos="NN" surface="project"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="det"/>
+  <dep from="4" to="2" type="npadvmod"/>
+  <dep from="4" to="3" type="punct"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="7" to="5" type="nsubjpass"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="mark"/>
+  <dep from="7" to="9" type="advcl"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="14" to="11" type="det"/>
+  <dep from="14" to="12" type="amod"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="10" to="14" type="pobj"/>
+  <dep from="7" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Containers">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Container">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Building_subparts">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Building_part">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Becoming_aware">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Project">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Field">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

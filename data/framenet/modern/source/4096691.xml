@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096691">
+ <sentence>
+  The NFPD maintains facilities in Yazd province to explore and exploit uranium deposits .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="nfpd" pos="NNP" surface="NFPD"/>
+  <token id="3" lemma="maintain" pos="VBZ" surface="maintains"/>
+  <token id="4" lemma="facility" pos="NNS" surface="facilities"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="yazd" pos="NNP" surface="Yazd"/>
+  <token id="7" lemma="province" pos="NN" surface="province"/>
+  <token id="8" lemma="to" pos="TO" surface="to"/>
+  <token id="9" lemma="explore" pos="VB" surface="explore"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="exploit" pos="VB" surface="exploit"/>
+  <token id="12" lemma="uranium" pos="NN" surface="uranium"/>
+  <token id="13" lemma="deposit" pos="NNS" surface="deposits"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="3" to="9" type="advcl"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="9" to="11" type="conj"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="11" to="13" type="dobj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Name">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Relative_location">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

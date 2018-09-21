@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4217004">
+ <sentence>
+  Inorganic arsenic is also found in coke oven emissions associated with the smelter industry .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="inorganic" pos="JJ" surface="Inorganic"/>
+  <token id="2" lemma="arsenic" pos="NN" surface="arsenic"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="also" pos="RB" surface="also"/>
+  <token id="5" lemma="find" pos="VBN" surface="found"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="coke" pos="NN" surface="coke"/>
+  <token id="8" lemma="oven" pos="NN" surface="oven"/>
+  <token id="9" lemma="emission" pos="NNS" surface="emissions"/>
+  <token id="10" lemma="associate" pos="VBN" surface="associated"/>
+  <token id="11" lemma="with" pos="IN" surface="with"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="smelter" pos="NN" surface="smelter"/>
+  <token id="14" lemma="industry" pos="NN" surface="industry"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="auxpass"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="npadvmod"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="6" to="9" type="pobj"/>
+  <dep from="9" to="10" type="acl"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="5" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Artifact">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Artifact">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

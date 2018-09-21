@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103998">
+ <sentence>
+  Beijing 's announced policy of maintaining Hong Kong 's prosperity and stability makes sense .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="beijing" pos="NNP" surface="Beijing"/>
+  <token id="2" lemma="'s" pos="POS" surface="'s"/>
+  <token id="3" lemma="announced" pos="JJ" surface="announced"/>
+  <token id="4" lemma="policy" pos="NN" surface="policy"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="maintain" pos="VBG" surface="maintaining"/>
+  <token id="7" lemma="hong" pos="NNP" surface="Hong"/>
+  <token id="8" lemma="kong" pos="NNP" surface="Kong"/>
+  <token id="9" lemma="'s" pos="POS" surface="'s"/>
+  <token id="10" lemma="prosperity" pos="NN" surface="prosperity"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="stability" pos="NN" surface="stability"/>
+  <token id="13" lemma="make" pos="VBZ" surface="makes"/>
+  <token id="14" lemma="sense" pos="NN" surface="sense"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="poss"/>
+  <dep from="1" to="2" type="case"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="13" to="4" type="nsubj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pcomp"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="10" to="8" type="poss"/>
+  <dep from="8" to="9" type="case"/>
+  <dep from="6" to="10" type="dobj"/>
+  <dep from="10" to="11" type="cc"/>
+  <dep from="10" to="12" type="conj"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="dobj"/>
+  <dep from="13" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Law">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Law">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Required">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Creator">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Activity_ongoing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Thriving">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101308">
+ <sentence>
+  Iraq clears visit by Ohio official By Scott Montgomery
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iraq" pos="NNP" surface="Iraq"/>
+  <token id="2" lemma="clear" pos="VBZ" surface="clears"/>
+  <token id="3" lemma="visit" pos="NN" surface="visit"/>
+  <token id="4" lemma="by" pos="IN" surface="by"/>
+  <token id="5" lemma="ohio" pos="NNP" surface="Ohio"/>
+  <token id="6" lemma="official" pos="NN" surface="official"/>
+  <token id="7" lemma="by" pos="IN" surface="By"/>
+  <token id="8" lemma="scott" pos="NNP" surface="Scott"/>
+  <token id="9" lemma="montgomery" pos="NNP" surface="Montgomery"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="3" to="4" type="agent"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="3" to="7" type="prep"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="7" to="9" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Visiting">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Governed">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Deny_or_grant_permission">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Authority">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Action">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Protagonist">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

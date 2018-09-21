@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099712">
+ <sentence>
+  Rhetoric aside , North Korea faces many obstacles in actually employing CW agents , not to mention their manufacture and storage .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="rhetoric" pos="NN" surface="Rhetoric"/>
+  <token id="2" lemma="aside" pos="RB" surface="aside"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="north" pos="NNP" surface="North"/>
+  <token id="5" lemma="korea" pos="NNP" surface="Korea"/>
+  <token id="6" lemma="face" pos="VBZ" surface="faces"/>
+  <token id="7" lemma="many" pos="JJ" surface="many"/>
+  <token id="8" lemma="obstacle" pos="NNS" surface="obstacles"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="actually" pos="RB" surface="actually"/>
+  <token id="11" lemma="employ" pos="VBG" surface="employing"/>
+  <token id="12" lemma="cw" pos="NNP" surface="CW"/>
+  <token id="13" lemma="agent" pos="NNS" surface="agents"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="not" pos="RB" surface="not"/>
+  <token id="16" lemma="to" pos="TO" surface="to"/>
+  <token id="17" lemma="mention" pos="VB" surface="mention"/>
+  <token id="18" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="19" lemma="manufacture" pos="NN" surface="manufacture"/>
+  <token id="20" lemma="and" pos="CC" surface="and"/>
+  <token id="21" lemma="storage" pos="NN" surface="storage"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="advcl"/>
+  <dep from="1" to="2" type="advmod"/>
+  <dep from="6" to="3" type="punct"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="13" to="11" type="amod"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="9" to="13" type="pobj"/>
+  <dep from="6" to="14" type="punct"/>
+  <dep from="17" to="15" type="neg"/>
+  <dep from="17" to="16" type="aux"/>
+  <dep from="6" to="17" type="advcl"/>
+  <dep from="19" to="18" type="poss"/>
+  <dep from="17" to="19" type="dobj"/>
+  <dep from="19" to="20" type="cc"/>
+  <dep from="19" to="21" type="conj"/>
+  <dep from="6" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Using">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Instrument">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Active_substance">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Storing">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

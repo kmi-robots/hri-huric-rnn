@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097227">
+ <sentence>
+  Chemical Employed chemical agents on limited scale during Iran - Iraq war .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="chemical" pos="NNP" surface="Chemical"/>
+  <token id="2" lemma="employed" pos="NNP" surface="Employed"/>
+  <token id="3" lemma="chemical" pos="NN" surface="chemical"/>
+  <token id="4" lemma="agent" pos="NNS" surface="agents"/>
+  <token id="5" lemma="on" pos="IN" surface="on"/>
+  <token id="6" lemma="limited" pos="JJ" surface="limited"/>
+  <token id="7" lemma="scale" pos="NN" surface="scale"/>
+  <token id="8" lemma="during" pos="IN" surface="during"/>
+  <token id="9" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="10" lemma="-" pos="HYPH" surface="-"/>
+  <token id="11" lemma="iraq" pos="NNP" surface="Iraq"/>
+  <token id="12" lemma="war" pos="NN" surface="war"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="4" to="2" type="amod"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="4" to="8" type="prep"/>
+  <dep from="11" to="9" type="compound"/>
+  <dep from="11" to="10" type="punct"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="8" to="12" type="pobj"/>
+  <dep from="4" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Using">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Instrument">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Active_substance">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Substance">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Sides">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4155633">
+ <sentence>
+  That message and all subsequent attempts to contact the flight were not acknowledged .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="that" pos="DT" surface="That"/>
+  <token id="2" lemma="message" pos="NN" surface="message"/>
+  <token id="3" lemma="and" pos="CC" surface="and"/>
+  <token id="4" lemma="all" pos="DT" surface="all"/>
+  <token id="5" lemma="subsequent" pos="JJ" surface="subsequent"/>
+  <token id="6" lemma="attempt" pos="NNS" surface="attempts"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="contact" pos="VB" surface="contact"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="flight" pos="NN" surface="flight"/>
+  <token id="11" lemma="be" pos="VBD" surface="were"/>
+  <token id="12" lemma="not" pos="RB" surface="not"/>
+  <token id="13" lemma="acknowledge" pos="VBN" surface="acknowledged"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="13" to="2" type="nsubjpass"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="2" to="6" type="conj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="6" to="8" type="acl"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="13" to="11" type="auxpass"/>
+  <dep from="13" to="12" type="neg"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Communication_response">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Trigger">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

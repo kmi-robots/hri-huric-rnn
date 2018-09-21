@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097739">
+ <sentence>
+  The crisis was defused in June 1994 when former President Jimmy Carter traveled to Pyongyang to meet with Kim Il Sung .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="crisis" pos="NN" surface="crisis"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="defuse" pos="VBN" surface="defused"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="june" pos="NNP" surface="June"/>
+  <token id="7" lemma="1994" pos="CD" surface="1994"/>
+  <token id="8" lemma="when" pos="WRB" surface="when"/>
+  <token id="9" lemma="former" pos="JJ" surface="former"/>
+  <token id="10" lemma="president" pos="NNP" surface="President"/>
+  <token id="11" lemma="jimmy" pos="NNP" surface="Jimmy"/>
+  <token id="12" lemma="carter" pos="NNP" surface="Carter"/>
+  <token id="13" lemma="travel" pos="VBD" surface="traveled"/>
+  <token id="14" lemma="to" pos="IN" surface="to"/>
+  <token id="15" lemma="pyongyang" pos="NNP" surface="Pyongyang"/>
+  <token id="16" lemma="to" pos="TO" surface="to"/>
+  <token id="17" lemma="meet" pos="VB" surface="meet"/>
+  <token id="18" lemma="with" pos="IN" surface="with"/>
+  <token id="19" lemma="kim" pos="NNP" surface="Kim"/>
+  <token id="20" lemma="il" pos="NNP" surface="Il"/>
+  <token id="21" lemma="sung" pos="NNP" surface="Sung"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="6" to="7" type="nummod"/>
+  <dep from="13" to="8" type="advmod"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="12" to="10" type="compound"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="4" to="13" type="advcl"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="17" to="16" type="aux"/>
+  <dep from="13" to="17" type="advcl"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="21" to="19" type="compound"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="18" to="21" type="pobj"/>
+  <dep from="4" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Travel">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Traveler">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Come_together">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Party_2">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Party_1">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

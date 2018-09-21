@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148610">
+ <sentence>
+  " A chaotic case , my dear Watson , " said Holmes over an evening pipe .
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="a" pos="DT" surface="A"/>
+  <token id="3" lemma="chaotic" pos="JJ" surface="chaotic"/>
+  <token id="4" lemma="case" pos="NN" surface="case"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="7" lemma="dear" pos="JJ" surface="dear"/>
+  <token id="8" lemma="watson" pos="NNP" surface="Watson"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma='"' pos="''" surface='"'/>
+  <token id="11" lemma="say" pos="VBD" surface="said"/>
+  <token id="12" lemma="holmes" pos="NNP" surface="Holmes"/>
+  <token id="13" lemma="over" pos="IN" surface="over"/>
+  <token id="14" lemma="an" pos="DT" surface="an"/>
+  <token id="15" lemma="evening" pos="NN" surface="evening"/>
+  <token id="16" lemma="pipe" pos="NN" surface="pipe"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="11" to="1" type="punct"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="11" to="4" type="nsubj"/>
+  <dep from="4" to="5" type="punct"/>
+  <dep from="8" to="6" type="poss"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="4" to="8" type="appos"/>
+  <dep from="11" to="9" type="punct"/>
+  <dep from="11" to="10" type="punct"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="nsubj"/>
+  <dep from="11" to="13" type="prep"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="13" to="16" type="pobj"/>
+  <dep from="11" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Containing_event">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

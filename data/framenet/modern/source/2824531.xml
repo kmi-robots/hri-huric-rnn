@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824531">
+ <sentence>
+  The insurer has started processing claims from the Northern California earthquake nearly two weeks ago .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="insurer" pos="NN" surface="insurer"/>
+  <token id="3" lemma="have" pos="VBZ" surface="has"/>
+  <token id="4" lemma="start" pos="VBN" surface="started"/>
+  <token id="5" lemma="process" pos="VBG" surface="processing"/>
+  <token id="6" lemma="claim" pos="NNS" surface="claims"/>
+  <token id="7" lemma="from" pos="IN" surface="from"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="northern" pos="NNP" surface="Northern"/>
+  <token id="10" lemma="california" pos="NNP" surface="California"/>
+  <token id="11" lemma="earthquake" pos="NN" surface="earthquake"/>
+  <token id="12" lemma="nearly" pos="RB" surface="nearly"/>
+  <token id="13" lemma="two" pos="CD" surface="two"/>
+  <token id="14" lemma="week" pos="NNS" surface="weeks"/>
+  <token id="15" lemma="ago" pos="RB" surface="ago"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="xcomp"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="11" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="7" to="11" type="pobj"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="14" to="13" type="nummod"/>
+  <dep from="15" to="14" type="npadvmod"/>
+  <dep from="5" to="15" type="advmod"/>
+  <dep from="4" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Activity_start">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Count">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Moving_in_place">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Denoted_quantity">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Reference_quantity">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Time_vector">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Direction">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Distance">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Number">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Precision">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

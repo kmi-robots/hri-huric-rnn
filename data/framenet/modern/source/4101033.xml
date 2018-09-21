@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101033">
+ <sentence>
+  The areas surrounding the springs were desert oases : sprawling collections of grasses , trees , and wildlife .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="area" pos="NNS" surface="areas"/>
+  <token id="3" lemma="surround" pos="VBG" surface="surrounding"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="spring" pos="NNS" surface="springs"/>
+  <token id="6" lemma="be" pos="VBD" surface="were"/>
+  <token id="7" lemma="desert" pos="NN" surface="desert"/>
+  <token id="8" lemma="oasis" pos="NNS" surface="oases"/>
+  <token id="9" lemma=":" pos=":" surface=":"/>
+  <token id="10" lemma="sprawl" pos="VBG" surface="sprawling"/>
+  <token id="11" lemma="collection" pos="NNS" surface="collections"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="grass" pos="NNS" surface="grasses"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="tree" pos="NNS" surface="trees"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="and" pos="CC" surface="and"/>
+  <token id="18" lemma="wildlife" pos="NN" surface="wildlife"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="6" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="acl"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="6" to="8" type="attr"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="6" to="10" type="advcl"/>
+  <dep from="10" to="11" type="dobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="15" to="17" type="cc"/>
+  <dep from="15" to="18" type="conj"/>
+  <dep from="6" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Figures">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Biological_area">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Biological_area">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

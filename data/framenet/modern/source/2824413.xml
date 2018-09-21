@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824413">
+ <sentence>
+  The Democratic House attendance rate has not exceeded the Republican House attendance rate since 1959 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="democratic" pos="JJ" surface="Democratic"/>
+  <token id="3" lemma="house" pos="NNP" surface="House"/>
+  <token id="4" lemma="attendance" pos="NN" surface="attendance"/>
+  <token id="5" lemma="rate" pos="NN" surface="rate"/>
+  <token id="6" lemma="have" pos="VBZ" surface="has"/>
+  <token id="7" lemma="not" pos="RB" surface="not"/>
+  <token id="8" lemma="exceed" pos="VBN" surface="exceeded"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="republican" pos="JJ" surface="Republican"/>
+  <token id="11" lemma="house" pos="NNP" surface="House"/>
+  <token id="12" lemma="attendance" pos="NN" surface="attendance"/>
+  <token id="13" lemma="rate" pos="NN" surface="rate"/>
+  <token id="14" lemma="since" pos="IN" surface="since"/>
+  <token id="15" lemma="1959" pos="CD" surface="1959"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="det"/>
+  <dep from="5" to="2" type="amod"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="8" to="5" type="nsubj"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="neg"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="13" to="9" type="det"/>
+  <dep from="13" to="10" type="amod"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="8" to="13" type="dobj"/>
+  <dep from="8" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="8" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Time_vector">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Landmark_event">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Attending">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Attending">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

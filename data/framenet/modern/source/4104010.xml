@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4104010">
+ <sentence>
+  Whole cities have been created in the New Territories , although the unimaginative architecture of these towns has been criticized .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="whole" pos="JJ" surface="Whole"/>
+  <token id="2" lemma="city" pos="NNS" surface="cities"/>
+  <token id="3" lemma="have" pos="VBP" surface="have"/>
+  <token id="4" lemma="be" pos="VBN" surface="been"/>
+  <token id="5" lemma="create" pos="VBN" surface="created"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="new" pos="NNP" surface="New"/>
+  <token id="9" lemma="territories" pos="NNPS" surface="Territories"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="although" pos="IN" surface="although"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="unimaginative" pos="JJ" surface="unimaginative"/>
+  <token id="14" lemma="architecture" pos="NN" surface="architecture"/>
+  <token id="15" lemma="of" pos="IN" surface="of"/>
+  <token id="16" lemma="these" pos="DT" surface="these"/>
+  <token id="17" lemma="town" pos="NNS" surface="towns"/>
+  <token id="18" lemma="have" pos="VBZ" surface="has"/>
+  <token id="19" lemma="be" pos="VBN" surface="been"/>
+  <token id="20" lemma="criticize" pos="VBN" surface="criticized"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="pobj"/>
+  <dep from="5" to="10" type="punct"/>
+  <dep from="20" to="11" type="mark"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="20" to="14" type="nsubjpass"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="20" to="18" type="aux"/>
+  <dep from="20" to="19" type="auxpass"/>
+  <dep from="5" to="20" type="advcl"/>
+  <dep from="5" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Ranked_expectation">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_create">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Judgment_communication">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

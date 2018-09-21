@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105991">
+ <sentence>
+  New Territories
+ </sentence>
+ <tokens>
+  <token id="1" lemma="new" pos="NNP" surface="New"/>
+  <token id="2" lemma="territories" pos="NNPS" surface="Territories"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="0" to="2" type="root"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Age">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

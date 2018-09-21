@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4216444">
+ <sentence>
+  Warhol 's collections included airplane menus , unpaid invoices , pizza dough , pornographic pulp novels , newspapers , stamps , supermarket flyers , and cookie jars , among other eccentricities .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="warhol" pos="NNP" surface="Warhol"/>
+  <token id="2" lemma="'s" pos="POS" surface="'s"/>
+  <token id="3" lemma="collection" pos="NNS" surface="collections"/>
+  <token id="4" lemma="include" pos="VBD" surface="included"/>
+  <token id="5" lemma="airplane" pos="NN" surface="airplane"/>
+  <token id="6" lemma="menu" pos="NNS" surface="menus"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="unpaid" pos="JJ" surface="unpaid"/>
+  <token id="9" lemma="invoice" pos="NNS" surface="invoices"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="pizza" pos="NN" surface="pizza"/>
+  <token id="12" lemma="dough" pos="NN" surface="dough"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="pornographic" pos="JJ" surface="pornographic"/>
+  <token id="15" lemma="pulp" pos="NN" surface="pulp"/>
+  <token id="16" lemma="novel" pos="NNS" surface="novels"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="newspaper" pos="NNS" surface="newspapers"/>
+  <token id="19" lemma="," pos="," surface=","/>
+  <token id="20" lemma="stamp" pos="NNS" surface="stamps"/>
+  <token id="21" lemma="," pos="," surface=","/>
+  <token id="22" lemma="supermarket" pos="NN" surface="supermarket"/>
+  <token id="23" lemma="flyer" pos="NNS" surface="flyers"/>
+  <token id="24" lemma="," pos="," surface=","/>
+  <token id="25" lemma="and" pos="CC" surface="and"/>
+  <token id="26" lemma="cookie" pos="NN" surface="cookie"/>
+  <token id="27" lemma="jar" pos="NNS" surface="jars"/>
+  <token id="28" lemma="," pos="," surface=","/>
+  <token id="29" lemma="among" pos="IN" surface="among"/>
+  <token id="30" lemma="other" pos="JJ" surface="other"/>
+  <token id="31" lemma="eccentricity" pos="NNS" surface="eccentricities"/>
+  <token id="32" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="poss"/>
+  <dep from="1" to="2" type="case"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="6" to="9" type="conj"/>
+  <dep from="9" to="10" type="punct"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="9" to="12" type="conj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="16" to="14" type="amod"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="12" to="16" type="conj"/>
+  <dep from="16" to="17" type="punct"/>
+  <dep from="16" to="18" type="conj"/>
+  <dep from="18" to="19" type="punct"/>
+  <dep from="18" to="20" type="conj"/>
+  <dep from="20" to="21" type="punct"/>
+  <dep from="23" to="22" type="compound"/>
+  <dep from="20" to="23" type="conj"/>
+  <dep from="23" to="24" type="punct"/>
+  <dep from="23" to="25" type="cc"/>
+  <dep from="27" to="26" type="compound"/>
+  <dep from="23" to="27" type="conj"/>
+  <dep from="6" to="28" type="punct"/>
+  <dep from="6" to="29" type="prep"/>
+  <dep from="31" to="30" type="amod"/>
+  <dep from="29" to="31" type="pobj"/>
+  <dep from="4" to="32" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Billing">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Payment_status">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

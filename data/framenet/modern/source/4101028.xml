@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101028">
+ <sentence>
+  The glaciers feeding the lake melted away and the lake evaporated .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="glacier" pos="NNS" surface="glaciers"/>
+  <token id="3" lemma="feed" pos="VBG" surface="feeding"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="lake" pos="NN" surface="lake"/>
+  <token id="6" lemma="melt" pos="VBD" surface="melted"/>
+  <token id="7" lemma="away" pos="RB" surface="away"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="lake" pos="NN" surface="lake"/>
+  <token id="11" lemma="evaporate" pos="VBD" surface="evaporated"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="6" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="acl"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="advmod"/>
+  <dep from="6" to="8" type="cc"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="6" to="11" type="conj"/>
+  <dep from="11" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_of_phase">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Result">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_of_phase">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

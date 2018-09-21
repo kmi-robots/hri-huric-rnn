@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099613">
+ <sentence>
+  Soldiers wore chemical suits , scanned the area and eventually neutralized the threat. '' ( TheJacksonChannel.com , 20Apr06 , Greg Flynn ) ( Link )
+ </sentence>
+ <tokens>
+  <token id="1" lemma="soldier" pos="NNS" surface="Soldiers"/>
+  <token id="2" lemma="wear" pos="VBD" surface="wore"/>
+  <token id="3" lemma="chemical" pos="JJ" surface="chemical"/>
+  <token id="4" lemma="suit" pos="NNS" surface="suits"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="scan" pos="VBD" surface="scanned"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="area" pos="NN" surface="area"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="eventually" pos="RB" surface="eventually"/>
+  <token id="11" lemma="neutralize" pos="VBD" surface="neutralized"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="threat." pos="NN" surface="threat."/>
+  <token id="14" lemma="''" pos="''" surface="''"/>
+  <token id="15" lemma="(" pos="-LRB-" surface="("/>
+  <token id="16" lemma="thejacksonchannel.com" pos="NNP" surface="TheJacksonChannel.com"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="20apr06" pos="CD" surface="20Apr06"/>
+  <token id="19" lemma="," pos="," surface=","/>
+  <token id="20" lemma="greg" pos="NNP" surface="Greg"/>
+  <token id="21" lemma="flynn" pos="NNP" surface="Flynn"/>
+  <token id="22" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="23" lemma="(" pos="-LRB-" surface="("/>
+  <token id="24" lemma="link" pos="NN" surface="Link"/>
+  <token id="25" lemma=")" pos="-RRB-" surface=")"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="punct"/>
+  <dep from="2" to="6" type="conj"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="6" to="9" type="cc"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="6" to="11" type="conj"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="dobj"/>
+  <dep from="2" to="14" type="punct"/>
+  <dep from="16" to="15" type="punct"/>
+  <dep from="0" to="16" type="root"/>
+  <dep from="16" to="17" type="punct"/>
+  <dep from="16" to="18" type="appos"/>
+  <dep from="16" to="19" type="punct"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="16" to="21" type="npadvmod"/>
+  <dep from="16" to="22" type="punct"/>
+  <dep from="24" to="23" type="punct"/>
+  <dep from="0" to="24" type="root"/>
+  <dep from="24" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Wearing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Wearer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Clothing">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Clothing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Use">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Garment">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Scrutiny">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Time_vector">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Member_of_military">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

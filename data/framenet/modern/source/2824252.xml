@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824252">
+ <sentence>
+  Mr. Baldwin is also attacking the greater problem : lack of ringers .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="mr." pos="NNP" surface="Mr."/>
+  <token id="2" lemma="baldwin" pos="NNP" surface="Baldwin"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="also" pos="RB" surface="also"/>
+  <token id="5" lemma="attack" pos="VBG" surface="attacking"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="great" pos="JJR" surface="greater"/>
+  <token id="8" lemma="problem" pos="NN" surface="problem"/>
+  <token id="9" lemma=":" pos=":" surface=":"/>
+  <token id="10" lemma="lack" pos="NN" surface="lack"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="ringer" pos="NNS" surface="ringers"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="5" to="2" type="nsubj"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="dobj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="8" to="10" type="appos"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="5" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Assailant">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Possession">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Predicament">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Situation">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_to_make_noise">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

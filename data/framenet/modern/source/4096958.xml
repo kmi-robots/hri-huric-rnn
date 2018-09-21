@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096958">
+ <sentence>
+  Furthermore , Iran clearly possesses technology useful for producing biological weapons ( as will be elucidated in the Facilities section of this profile ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="furthermore" pos="RB" surface="Furthermore"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="4" lemma="clearly" pos="RB" surface="clearly"/>
+  <token id="5" lemma="possess" pos="VBZ" surface="possesses"/>
+  <token id="6" lemma="technology" pos="NN" surface="technology"/>
+  <token id="7" lemma="useful" pos="JJ" surface="useful"/>
+  <token id="8" lemma="for" pos="IN" surface="for"/>
+  <token id="9" lemma="produce" pos="VBG" surface="producing"/>
+  <token id="10" lemma="biological" pos="JJ" surface="biological"/>
+  <token id="11" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="12" lemma="(" pos="-LRB-" surface="("/>
+  <token id="13" lemma="as" pos="IN" surface="as"/>
+  <token id="14" lemma="will" pos="MD" surface="will"/>
+  <token id="15" lemma="be" pos="VB" surface="be"/>
+  <token id="16" lemma="elucidate" pos="VBN" surface="elucidated"/>
+  <token id="17" lemma="in" pos="IN" surface="in"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="facilities" pos="NNPS" surface="Facilities"/>
+  <token id="20" lemma="section" pos="NN" surface="section"/>
+  <token id="21" lemma="of" pos="IN" surface="of"/>
+  <token id="22" lemma="this" pos="DT" surface="this"/>
+  <token id="23" lemma="profile" pos="NN" surface="profile"/>
+  <token id="24" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="advmod"/>
+  <dep from="5" to="2" type="punct"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="6" to="7" type="amod"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pcomp"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="5" to="12" type="punct"/>
+  <dep from="16" to="13" type="mark"/>
+  <dep from="16" to="14" type="aux"/>
+  <dep from="16" to="15" type="auxpass"/>
+  <dep from="5" to="16" type="advcl"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="20" to="18" type="det"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="17" to="20" type="pobj"/>
+  <dep from="20" to="21" type="prep"/>
+  <dep from="23" to="22" type="det"/>
+  <dep from="21" to="23" type="pobj"/>
+  <dep from="5" to="24" type="punct"/>
+  <dep from="5" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_whole">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Whole">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Part_prop">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Artifact">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Artifact">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Usefulness">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103477">
+ <sentence>
+  Take back the stuff which Ayman asked you to carry to Saudi Arabia .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="take" pos="VB" surface="Take"/>
+  <token id="2" lemma="back" pos="RP" surface="back"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="stuff" pos="NN" surface="stuff"/>
+  <token id="5" lemma="which" pos="WDT" surface="which"/>
+  <token id="6" lemma="ayman" pos="NNP" surface="Ayman"/>
+  <token id="7" lemma="ask" pos="VBD" surface="asked"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="carry" pos="VB" surface="carry"/>
+  <token id="11" lemma="to" pos="IN" surface="to"/>
+  <token id="12" lemma="saudi" pos="NNP" surface="Saudi"/>
+  <token id="13" lemma="arabia" pos="NNP" surface="Arabia"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prt"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="1" to="4" type="dobj"/>
+  <dep from="10" to="5" type="dobj"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="4" to="7" type="relcl"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="7" to="10" type="xcomp"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="1" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Request">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Addressee">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Goal">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Landmark">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Trajector">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Trajector">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Carry_goods">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Distributor">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098832">
+ <sentence>
+  QN : Will fiscal hawks on Capitol Hill vote against the embassy security measures ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="will" pos="MD" surface="Will"/>
+  <token id="4" lemma="fiscal" pos="JJ" surface="fiscal"/>
+  <token id="5" lemma="hawk" pos="NNS" surface="hawks"/>
+  <token id="6" lemma="on" pos="IN" surface="on"/>
+  <token id="7" lemma="capitol" pos="NNP" surface="Capitol"/>
+  <token id="8" lemma="hill" pos="NNP" surface="Hill"/>
+  <token id="9" lemma="vote" pos="NN" surface="vote"/>
+  <token id="10" lemma="against" pos="IN" surface="against"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="embassy" pos="NN" surface="embassy"/>
+  <token id="13" lemma="security" pos="NN" surface="security"/>
+  <token id="14" lemma="measure" pos="NNS" surface="measures"/>
+  <token id="15" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="nmod"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="1" to="5" type="appos"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="14" to="11" type="det"/>
+  <dep from="14" to="12" type="compound"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="10" to="14" type="pobj"/>
+  <dep from="1" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_at_risk">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Asset">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

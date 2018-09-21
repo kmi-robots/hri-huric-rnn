@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098719">
+ <sentence>
+  QN : Can he just get on a plane and fly to Paris ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="can" pos="MD" surface="Can"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="5" lemma="just" pos="RB" surface="just"/>
+  <token id="6" lemma="get" pos="VB" surface="get"/>
+  <token id="7" lemma="on" pos="IN" surface="on"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="plane" pos="NN" surface="plane"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="fly" pos="VB" surface="fly"/>
+  <token id="12" lemma="to" pos="IN" surface="to"/>
+  <token id="13" lemma="paris" pos="NNP" surface="Paris"/>
+  <token id="14" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="6" to="10" type="cc"/>
+  <dep from="6" to="11" type="conj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="6" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Ride_vehicle">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Board_vehicle">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Traveller">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Vehicle">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

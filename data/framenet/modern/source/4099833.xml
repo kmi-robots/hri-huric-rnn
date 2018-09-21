@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099833">
+ <sentence>
+  However , no nuclear weapons program has ever materialized or been initiated .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="however" pos="RB" surface="However"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="no" pos="DT" surface="no"/>
+  <token id="4" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="5" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="6" lemma="program" pos="NN" surface="program"/>
+  <token id="7" lemma="have" pos="VBZ" surface="has"/>
+  <token id="8" lemma="ever" pos="RB" surface="ever"/>
+  <token id="9" lemma="materialize" pos="VBN" surface="materialized"/>
+  <token id="10" lemma="or" pos="CC" surface="or"/>
+  <token id="11" lemma="be" pos="VBN" surface="been"/>
+  <token id="12" lemma="initiate" pos="VBN" surface="initiated"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="advmod"/>
+  <dep from="9" to="2" type="punct"/>
+  <dep from="6" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="9" to="6" type="nsubj"/>
+  <dep from="9" to="7" type="aux"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="12" to="11" type="auxpass"/>
+  <dep from="9" to="12" type="conj"/>
+  <dep from="9" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Salient_entity">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Project">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Coming_to_be">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Activity_start">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

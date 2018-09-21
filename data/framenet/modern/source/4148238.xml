@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148238">
+ <sentence>
+  The various bedrooms and sitting-rooms had yielded nothing to a careful search .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="various" pos="JJ" surface="various"/>
+  <token id="3" lemma="bedroom" pos="NNS" surface="bedrooms"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="sitting-room" pos="NNS" surface="sitting-rooms"/>
+  <token id="6" lemma="have" pos="VBD" surface="had"/>
+  <token id="7" lemma="yield" pos="VBN" surface="yielded"/>
+  <token id="8" lemma="nothing" pos="NN" surface="nothing"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="careful" pos="JJ" surface="careful"/>
+  <token id="12" lemma="search" pos="NN" surface="search"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="7" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="3" to="5" type="conj"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="7" to="9" type="prep"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="7" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Building_subparts">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Building_part">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Scrutiny">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Building_subparts">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Building_part">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

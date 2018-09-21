@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101180">
+ <sentence>
+  The distinctive , sculpted marble figures of the era are now being reproduced in vast quantities as souvenirs .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="distinctive" pos="JJ" surface="distinctive"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="sculpted" pos="JJ" surface="sculpted"/>
+  <token id="5" lemma="marble" pos="NN" surface="marble"/>
+  <token id="6" lemma="figure" pos="NNS" surface="figures"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="era" pos="NN" surface="era"/>
+  <token id="10" lemma="be" pos="VBP" surface="are"/>
+  <token id="11" lemma="now" pos="RB" surface="now"/>
+  <token id="12" lemma="be" pos="VBG" surface="being"/>
+  <token id="13" lemma="reproduce" pos="VBN" surface="reproduced"/>
+  <token id="14" lemma="in" pos="IN" surface="in"/>
+  <token id="15" lemma="vast" pos="JJ" surface="vast"/>
+  <token id="16" lemma="quantity" pos="NNS" surface="quantities"/>
+  <token id="17" lemma="as" pos="IN" surface="as"/>
+  <token id="18" lemma="souvenir" pos="NNS" surface="souvenirs"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="det"/>
+  <dep from="6" to="2" type="amod"/>
+  <dep from="6" to="3" type="punct"/>
+  <dep from="6" to="4" type="amod"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="13" to="6" type="nsubjpass"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="13" to="10" type="aux"/>
+  <dep from="13" to="11" type="advmod"/>
+  <dep from="13" to="12" type="auxpass"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="13" to="17" type="prep"/>
+  <dep from="17" to="18" type="pobj"/>
+  <dep from="13" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Distinctiveness">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Feature">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Duplication">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Degree">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Characterization">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Original">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Q_prop">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

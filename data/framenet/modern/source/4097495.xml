@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097495">
+ <sentence>
+  Iran has already received nuclear weapons technology from North Korea ( 7096,7401 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="2" lemma="have" pos="VBZ" surface="has"/>
+  <token id="3" lemma="already" pos="RB" surface="already"/>
+  <token id="4" lemma="receive" pos="VBN" surface="received"/>
+  <token id="5" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="6" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="7" lemma="technology" pos="NN" surface="technology"/>
+  <token id="8" lemma="from" pos="IN" surface="from"/>
+  <token id="9" lemma="north" pos="NNP" surface="North"/>
+  <token id="10" lemma="korea" pos="NNP" surface="Korea"/>
+  <token id="11" lemma="(" pos="-LRB-" surface="("/>
+  <token id="12" lemma="7096,7401" pos="CD" surface="7096,7401"/>
+  <token id="13" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="4" to="8" type="prep"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="12" to="10" type="nmod"/>
+  <dep from="12" to="11" type="punct"/>
+  <dep from="8" to="12" type="pobj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Receiving">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Donor">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Artifact">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Artifact">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

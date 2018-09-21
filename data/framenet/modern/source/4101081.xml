@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101081">
+ <sentence>
+  One year after the auction , the population of Las Vegas had ballooned to 1500 residents , a portent of things to come for the next ninety years .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="one" pos="CD" surface="One"/>
+  <token id="2" lemma="year" pos="NN" surface="year"/>
+  <token id="3" lemma="after" pos="IN" surface="after"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="auction" pos="NN" surface="auction"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="population" pos="NN" surface="population"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="las" pos="NNP" surface="Las"/>
+  <token id="11" lemma="vegas" pos="NNP" surface="Vegas"/>
+  <token id="12" lemma="have" pos="VBD" surface="had"/>
+  <token id="13" lemma="balloon" pos="VBN" surface="ballooned"/>
+  <token id="14" lemma="to" pos="IN" surface="to"/>
+  <token id="15" lemma="1500" pos="CD" surface="1500"/>
+  <token id="16" lemma="resident" pos="NNS" surface="residents"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="a" pos="DT" surface="a"/>
+  <token id="19" lemma="portent" pos="NN" surface="portent"/>
+  <token id="20" lemma="of" pos="IN" surface="of"/>
+  <token id="21" lemma="thing" pos="NNS" surface="things"/>
+  <token id="22" lemma="to" pos="TO" surface="to"/>
+  <token id="23" lemma="come" pos="VB" surface="come"/>
+  <token id="24" lemma="for" pos="IN" surface="for"/>
+  <token id="25" lemma="the" pos="DT" surface="the"/>
+  <token id="26" lemma="next" pos="JJ" surface="next"/>
+  <token id="27" lemma="ninety" pos="CD" surface="ninety"/>
+  <token id="28" lemma="year" pos="NNS" surface="years"/>
+  <token id="29" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="3" to="2" type="npadvmod"/>
+  <dep from="13" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="13" to="6" type="punct"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="13" to="8" type="nsubj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="nummod"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="16" to="17" type="punct"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="16" to="19" type="appos"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="20" to="21" type="pobj"/>
+  <dep from="23" to="22" type="aux"/>
+  <dep from="19" to="23" type="relcl"/>
+  <dep from="23" to="24" type="prep"/>
+  <dep from="28" to="25" type="det"/>
+  <dep from="28" to="26" type="amod"/>
+  <dep from="28" to="27" type="nummod"/>
+  <dep from="24" to="28" type="pobj"/>
+  <dep from="13" to="29" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Time_vector">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Distance">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Landmark_event">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Container_possessor">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Final_value">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Residence">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Resident">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Omen">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Future_phenomenon">
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+    </frameElement>
+    <frameElement type="Predictive_phenomenon">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="27"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="27"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="28"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="28"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="28"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="27"/>
+    </frameElement>
+    <frameElement type="Relative_time">
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Count">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

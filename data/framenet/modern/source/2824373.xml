@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824373">
+ <sentence>
+  This is a fact -- though , in view of all the feathers that are ruffled by this fact , it is not surprising that one hears so little about it .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="this" pos="DT" surface="This"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="fact" pos="NN" surface="fact"/>
+  <token id="5" lemma="--" pos=":" surface="--"/>
+  <token id="6" lemma="though" pos="RB" surface="though"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="view" pos="NN" surface="view"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="all" pos="PDT" surface="all"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="feather" pos="NNS" surface="feathers"/>
+  <token id="14" lemma="that" pos="WDT" surface="that"/>
+  <token id="15" lemma="be" pos="VBP" surface="are"/>
+  <token id="16" lemma="ruffle" pos="VBN" surface="ruffled"/>
+  <token id="17" lemma="by" pos="IN" surface="by"/>
+  <token id="18" lemma="this" pos="DT" surface="this"/>
+  <token id="19" lemma="fact" pos="NN" surface="fact"/>
+  <token id="20" lemma="," pos="," surface=","/>
+  <token id="21" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="22" lemma="be" pos="VBZ" surface="is"/>
+  <token id="23" lemma="not" pos="RB" surface="not"/>
+  <token id="24" lemma="surprising" pos="JJ" surface="surprising"/>
+  <token id="25" lemma="that" pos="IN" surface="that"/>
+  <token id="26" lemma="one" pos="PRP" surface="one"/>
+  <token id="27" lemma="hear" pos="VBZ" surface="hears"/>
+  <token id="28" lemma="so" pos="RB" surface="so"/>
+  <token id="29" lemma="little" pos="JJ" surface="little"/>
+  <token id="30" lemma="about" pos="IN" surface="about"/>
+  <token id="31" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="32" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="attr"/>
+  <dep from="2" to="5" type="punct"/>
+  <dep from="22" to="6" type="mark"/>
+  <dep from="22" to="7" type="punct"/>
+  <dep from="22" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="13" to="11" type="predet"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="16" to="14" type="nsubjpass"/>
+  <dep from="16" to="15" type="auxpass"/>
+  <dep from="13" to="16" type="relcl"/>
+  <dep from="16" to="17" type="agent"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="22" to="20" type="punct"/>
+  <dep from="22" to="21" type="nsubj"/>
+  <dep from="2" to="22" type="advcl"/>
+  <dep from="22" to="23" type="neg"/>
+  <dep from="22" to="24" type="acomp"/>
+  <dep from="27" to="25" type="mark"/>
+  <dep from="27" to="26" type="nsubj"/>
+  <dep from="22" to="27" type="ccomp"/>
+  <dep from="29" to="28" type="advmod"/>
+  <dep from="27" to="29" type="dobj"/>
+  <dep from="29" to="30" type="prep"/>
+  <dep from="30" to="31" type="pobj"/>
+  <dep from="2" to="32" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Stimulus_focus">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Stimulus">
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+     <token id="31"/>
+    </frameElement>
+   </frame>
+   <frame name="Topic">
+    <lexicalUnit>
+     <token id="30"/>
+    </lexicalUnit>
+    <frameElement type="Text">
+     <token id="28"/>
+     <token id="29"/>
+    </frameElement>
+    <frameElement type="Topic">
+     <token id="31"/>
+    </frameElement>
+   </frame>
+   <frame name="Hearsay">
+    <lexicalUnit>
+     <token id="27"/>
+    </lexicalUnit>
+    <frameElement type="Hearer">
+     <token id="26"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="28"/>
+     <token id="29"/>
+    </frameElement>
+    <frameElement type="Topic">
+     <token id="30"/>
+     <token id="31"/>
+    </frameElement>
+   </frame>
+   <frame name="Concessive">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Main_assertion">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Conceded_state_of_affairs">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+     <token id="31"/>
+    </frameElement>
+   </frame>
+   <frame name="Emotion_directed">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Stimulus">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Experiencer">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

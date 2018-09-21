@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096759">
+ <sentence>
+  In approximately one month , the missile unit attained initial operational capability .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="approximately" pos="RB" surface="approximately"/>
+  <token id="3" lemma="one" pos="CD" surface="one"/>
+  <token id="4" lemma="month" pos="NN" surface="month"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="missile" pos="NN" surface="missile"/>
+  <token id="8" lemma="unit" pos="NN" surface="unit"/>
+  <token id="9" lemma="attain" pos="VBD" surface="attained"/>
+  <token id="10" lemma="initial" pos="JJ" surface="initial"/>
+  <token id="11" lemma="operational" pos="JJ" surface="operational"/>
+  <token id="12" lemma="capability" pos="NN" surface="capability"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="prep"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="4" to="3" type="nummod"/>
+  <dep from="1" to="4" type="pobj"/>
+  <dep from="9" to="5" type="punct"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="12" to="10" type="amod"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="dobj"/>
+  <dep from="9" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Count">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Capability">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Status">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

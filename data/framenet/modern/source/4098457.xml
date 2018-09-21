@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098457">
+ <sentence>
+  QN : Were centrifuges sold to North Korea ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="be" pos="VBD" surface="Were"/>
+  <token id="4" lemma="centrifuge" pos="NNS" surface="centrifuges"/>
+  <token id="5" lemma="sell" pos="VBN" surface="sold"/>
+  <token id="6" lemma="to" pos="IN" surface="to"/>
+  <token id="7" lemma="north" pos="NNP" surface="North"/>
+  <token id="8" lemma="korea" pos="NNP" surface="Korea"/>
+  <token id="9" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="attr"/>
+  <dep from="4" to="5" type="acl"/>
+  <dep from="5" to="6" type="dative"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="3" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_sell">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Buyer">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

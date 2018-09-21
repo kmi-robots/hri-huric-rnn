@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099764">
+ <sentence>
+  The employees deserve the recognition . ''
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="employee" pos="NNS" surface="employees"/>
+  <token id="3" lemma="deserve" pos="VBP" surface="deserve"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="recognition" pos="NN" surface="recognition"/>
+  <token id="6" lemma="." pos="." surface="."/>
+  <token id="7" lemma="''" pos="''" surface="''"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="punct"/>
+  <dep from="3" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Employing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Employee">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Deserving">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Action">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

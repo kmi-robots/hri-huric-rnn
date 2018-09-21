@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096561">
+ <sentence>
+  However , Kazakhstan produced a nil declaration , leaving out the Pavlodar facility .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="however" pos="RB" surface="However"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="kazakhstan" pos="NNP" surface="Kazakhstan"/>
+  <token id="4" lemma="produce" pos="VBD" surface="produced"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="nil" pos="JJ" surface="nil"/>
+  <token id="7" lemma="declaration" pos="NN" surface="declaration"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="leave" pos="VBG" surface="leaving"/>
+  <token id="10" lemma="out" pos="RP" surface="out"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="pavlodar" pos="NNP" surface="Pavlodar"/>
+  <token id="13" lemma="facility" pos="NN" surface="facility"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="4" to="2" type="punct"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="4" to="8" type="punct"/>
+  <dep from="4" to="9" type="advcl"/>
+  <dep from="9" to="10" type="prt"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="9" to="13" type="dobj"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Container_possessor">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_create">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Creator">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Created_entity">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

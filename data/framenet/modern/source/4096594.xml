@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096594">
+ <sentence>
+  Suspected activities at the TNRC include nuclear weapons design , plutonium extraction and laser - enrichment research .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="suspect" pos="VBN" surface="Suspected"/>
+  <token id="2" lemma="activity" pos="NNS" surface="activities"/>
+  <token id="3" lemma="at" pos="IN" surface="at"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="tnrc" pos="NNS" surface="TNRC"/>
+  <token id="6" lemma="include" pos="VBP" surface="include"/>
+  <token id="7" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="8" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="9" lemma="design" pos="NN" surface="design"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="plutonium" pos="NN" surface="plutonium"/>
+  <token id="12" lemma="extraction" pos="NN" surface="extraction"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="laser" pos="NN" surface="laser"/>
+  <token id="15" lemma="-" pos="HYPH" surface="-"/>
+  <token id="16" lemma="enrichment" pos="NN" surface="enrichment"/>
+  <token id="17" lemma="research" pos="NN" surface="research"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="6" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="dobj"/>
+  <dep from="9" to="10" type="punct"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="9" to="12" type="conj"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="16" to="14" type="compound"/>
+  <dep from="16" to="15" type="punct"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="12" to="17" type="conj"/>
+  <dep from="6" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Awareness">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Content">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Inclusion">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Total">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Processing_materials">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Alterant">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Research">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Topic">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Coming_up_with">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Idea">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100638">
+ <sentence>
+  However , young and old , stranger and Dubliner rub shoulders quite happily .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="however" pos="RB" surface="However"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="young" pos="JJ" surface="young"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="old" pos="JJ" surface="old"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="stranger" pos="NN" surface="stranger"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="dubliner" pos="NNP" surface="Dubliner"/>
+  <token id="10" lemma="rub" pos="NN" surface="rub"/>
+  <token id="11" lemma="shoulder" pos="NNS" surface="shoulders"/>
+  <token id="12" lemma="quite" pos="RB" surface="quite"/>
+  <token id="13" lemma="happily" pos="RB" surface="happily"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="11" to="1" type="advmod"/>
+  <dep from="11" to="2" type="punct"/>
+  <dep from="11" to="3" type="amod"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="3" to="5" type="conj"/>
+  <dep from="3" to="6" type="punct"/>
+  <dep from="6" to="7" type="intj"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="7" to="9" type="conj"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="11" to="13" type="advmod"/>
+  <dep from="11" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Age">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Experiencer_focus">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Experiencer">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_origin">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Indigenous_origin">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Body_parts">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Body_part">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

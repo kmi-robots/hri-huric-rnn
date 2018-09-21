@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4104268">
+ <sentence>
+  The more daring can try out the terrifying roller-coaster rides .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="more" pos="RBR" surface="more"/>
+  <token id="3" lemma="daring" pos="JJ" surface="daring"/>
+  <token id="4" lemma="can" pos="MD" surface="can"/>
+  <token id="5" lemma="try" pos="VB" surface="try"/>
+  <token id="6" lemma="out" pos="RP" surface="out"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="terrifying" pos="JJ" surface="terrifying"/>
+  <token id="9" lemma="roller-coaster" pos="JJ" surface="roller-coaster"/>
+  <token id="10" lemma="ride" pos="NNS" surface="rides"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prt"/>
+  <dep from="10" to="7" type="det"/>
+  <dep from="10" to="8" type="amod"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="5" to="10" type="dobj"/>
+  <dep from="5" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Stimulus_focus">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Stimulus">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

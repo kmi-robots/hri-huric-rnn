@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098965">
+ <sentence>
+  Iran recently bought weapons-grade fissile material .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="2" lemma="recently" pos="RB" surface="recently"/>
+  <token id="3" lemma="buy" pos="VBD" surface="bought"/>
+  <token id="4" lemma="weapons-grade" pos="JJ" surface="weapons-grade"/>
+  <token id="5" lemma="fissile" pos="NN" surface="fissile"/>
+  <token id="6" lemma="material" pos="NN" surface="material"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="amod"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_buy">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Buyer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Ingredients">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Material">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

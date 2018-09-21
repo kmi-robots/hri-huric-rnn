@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097180">
+ <sentence>
+  Iran recently flight - tested the 1,300 km - range Shehab-3 , which is based on the North Korean Nodong .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="2" lemma="recently" pos="RB" surface="recently"/>
+  <token id="3" lemma="flight" pos="NN" surface="flight"/>
+  <token id="4" lemma="-" pos="HYPH" surface="-"/>
+  <token id="5" lemma="test" pos="VBD" surface="tested"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="1,300" pos="CD" surface="1,300"/>
+  <token id="8" lemma="km" pos="NN" surface="km"/>
+  <token id="9" lemma="-" pos="HYPH" surface="-"/>
+  <token id="10" lemma="range" pos="NN" surface="range"/>
+  <token id="11" lemma="shehab-3" pos="NNP" surface="Shehab-3"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="which" pos="WDT" surface="which"/>
+  <token id="14" lemma="be" pos="VBZ" surface="is"/>
+  <token id="15" lemma="base" pos="VBN" surface="based"/>
+  <token id="16" lemma="on" pos="IN" surface="on"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="north" pos="NNP" surface="North"/>
+  <token id="19" lemma="korean" pos="NNP" surface="Korean"/>
+  <token id="20" lemma="nodong" pos="NNP" surface="Nodong"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="nsubj"/>
+  <dep from="5" to="2" type="advmod"/>
+  <dep from="5" to="3" type="npadvmod"/>
+  <dep from="5" to="4" type="punct"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="11" to="6" type="det"/>
+  <dep from="8" to="7" type="nummod"/>
+  <dep from="10" to="8" type="compound"/>
+  <dep from="10" to="9" type="punct"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="5" to="11" type="dobj"/>
+  <dep from="11" to="12" type="punct"/>
+  <dep from="15" to="13" type="nsubjpass"/>
+  <dep from="15" to="14" type="auxpass"/>
+  <dep from="11" to="15" type="relcl"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="20" to="17" type="det"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="16" to="20" type="pobj"/>
+  <dep from="5" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Range">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Distance">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Operational_testing">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Tester">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Product">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

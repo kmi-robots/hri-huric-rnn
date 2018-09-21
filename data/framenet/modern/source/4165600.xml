@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165600">
+ <sentence>
+  Greece 's government yesterday asked its European Union allies for help .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="greece" pos="NNP" surface="Greece"/>
+  <token id="2" lemma="'s" pos="POS" surface="'s"/>
+  <token id="3" lemma="government" pos="NN" surface="government"/>
+  <token id="4" lemma="yesterday" pos="NN" surface="yesterday"/>
+  <token id="5" lemma="ask" pos="VBD" surface="asked"/>
+  <token id="6" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="7" lemma="european" pos="NNP" surface="European"/>
+  <token id="8" lemma="union" pos="NNP" surface="Union"/>
+  <token id="9" lemma="ally" pos="NNS" surface="allies"/>
+  <token id="10" lemma="for" pos="IN" surface="for"/>
+  <token id="11" lemma="help" pos="NN" surface="help"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="poss"/>
+  <dep from="1" to="2" type="case"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="npadvmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="9" to="6" type="poss"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="5" to="9" type="dobj"/>
+  <dep from="5" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="5" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Governed">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Request">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Addressee">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

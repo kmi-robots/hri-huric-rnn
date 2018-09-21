@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100425">
+ <sentence>
+  Jews were evacuated from the Old City 's Jewish Quarter , and thousands of Arab families fled their homes in West Jerusalem .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="jews" pos="NNPS" surface="Jews"/>
+  <token id="2" lemma="be" pos="VBD" surface="were"/>
+  <token id="3" lemma="evacuate" pos="VBN" surface="evacuated"/>
+  <token id="4" lemma="from" pos="IN" surface="from"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="old" pos="NNP" surface="Old"/>
+  <token id="7" lemma="city" pos="NNP" surface="City"/>
+  <token id="8" lemma="'s" pos="POS" surface="'s"/>
+  <token id="9" lemma="jewish" pos="JJ" surface="Jewish"/>
+  <token id="10" lemma="quarter" pos="NNP" surface="Quarter"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="thousand" pos="NNS" surface="thousands"/>
+  <token id="14" lemma="of" pos="IN" surface="of"/>
+  <token id="15" lemma="arab" pos="JJ" surface="Arab"/>
+  <token id="16" lemma="family" pos="NNS" surface="families"/>
+  <token id="17" lemma="flee" pos="VBD" surface="fled"/>
+  <token id="18" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="19" lemma="home" pos="NNS" surface="homes"/>
+  <token id="20" lemma="in" pos="IN" surface="in"/>
+  <token id="21" lemma="west" pos="NNP" surface="West"/>
+  <token id="22" lemma="jerusalem" pos="NNP" surface="Jerusalem"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="10" to="7" type="poss"/>
+  <dep from="7" to="8" type="case"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="4" to="10" type="pobj"/>
+  <dep from="3" to="11" type="punct"/>
+  <dep from="3" to="12" type="cc"/>
+  <dep from="17" to="13" type="nsubj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="3" to="17" type="conj"/>
+  <dep from="19" to="18" type="poss"/>
+  <dep from="17" to="19" type="dobj"/>
+  <dep from="17" to="20" type="prep"/>
+  <dep from="22" to="21" type="compound"/>
+  <dep from="20" to="22" type="pobj"/>
+  <dep from="17" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Removing">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Kinship">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Relatives">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Fleeing">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Self_mover">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_orientational">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Whole">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4164996">
+ <sentence>
+  However , there are currently around 1000 people under mandatory evacuations , and the city has been declared in a state of emergency .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="however" pos="RB" surface="However"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="there" pos="EX" surface="there"/>
+  <token id="4" lemma="be" pos="VBP" surface="are"/>
+  <token id="5" lemma="currently" pos="RB" surface="currently"/>
+  <token id="6" lemma="around" pos="IN" surface="around"/>
+  <token id="7" lemma="1000" pos="CD" surface="1000"/>
+  <token id="8" lemma="people" pos="NNS" surface="people"/>
+  <token id="9" lemma="under" pos="IN" surface="under"/>
+  <token id="10" lemma="mandatory" pos="JJ" surface="mandatory"/>
+  <token id="11" lemma="evacuation" pos="NNS" surface="evacuations"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="city" pos="NN" surface="city"/>
+  <token id="16" lemma="have" pos="VBZ" surface="has"/>
+  <token id="17" lemma="be" pos="VBN" surface="been"/>
+  <token id="18" lemma="declare" pos="VBN" surface="declared"/>
+  <token id="19" lemma="in" pos="IN" surface="in"/>
+  <token id="20" lemma="a" pos="DT" surface="a"/>
+  <token id="21" lemma="state" pos="NN" surface="state"/>
+  <token id="22" lemma="of" pos="IN" surface="of"/>
+  <token id="23" lemma="emergency" pos="NN" surface="emergency"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="4" to="2" type="punct"/>
+  <dep from="4" to="3" type="expl"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="advmod"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="8" to="7" type="nummod"/>
+  <dep from="4" to="8" type="attr"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="4" to="12" type="punct"/>
+  <dep from="4" to="13" type="cc"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="18" to="15" type="nsubjpass"/>
+  <dep from="18" to="16" type="aux"/>
+  <dep from="18" to="17" type="auxpass"/>
+  <dep from="4" to="18" type="conj"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="21" to="20" type="det"/>
+  <dep from="19" to="21" type="pobj"/>
+  <dep from="21" to="22" type="prep"/>
+  <dep from="22" to="23" type="pobj"/>
+  <dep from="18" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Removing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="State_of_entity">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="State">
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Reference_quantity">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Denoted_quantity">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Trajector_event">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="State">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

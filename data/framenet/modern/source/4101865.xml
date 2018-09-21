@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101865">
+ <sentence>
+  Among the responses the Swiss trader got was one from the Soviet national shipping company , which had n't been invited to submit a bid .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="among" pos="IN" surface="Among"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="response" pos="NNS" surface="responses"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="swiss" pos="JJ" surface="Swiss"/>
+  <token id="6" lemma="trader" pos="NN" surface="trader"/>
+  <token id="7" lemma="get" pos="VBD" surface="got"/>
+  <token id="8" lemma="be" pos="VBD" surface="was"/>
+  <token id="9" lemma="one" pos="CD" surface="one"/>
+  <token id="10" lemma="from" pos="IN" surface="from"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="soviet" pos="JJ" surface="Soviet"/>
+  <token id="13" lemma="national" pos="JJ" surface="national"/>
+  <token id="14" lemma="shipping" pos="NN" surface="shipping"/>
+  <token id="15" lemma="company" pos="NN" surface="company"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="which" pos="WDT" surface="which"/>
+  <token id="18" lemma="have" pos="VBD" surface="had"/>
+  <token id="19" lemma="n't" pos="RB" surface="n't"/>
+  <token id="20" lemma="be" pos="VBN" surface="been"/>
+  <token id="21" lemma="invite" pos="VBN" surface="invited"/>
+  <token id="22" lemma="to" pos="TO" surface="to"/>
+  <token id="23" lemma="submit" pos="VB" surface="submit"/>
+  <token id="24" lemma="a" pos="DT" surface="a"/>
+  <token id="25" lemma="bid" pos="NN" surface="bid"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="3" to="7" type="relcl"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="nsubj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="15" to="11" type="det"/>
+  <dep from="15" to="12" type="amod"/>
+  <dep from="15" to="13" type="amod"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="10" to="15" type="pobj"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="21" to="17" type="nsubjpass"/>
+  <dep from="21" to="18" type="aux"/>
+  <dep from="21" to="19" type="neg"/>
+  <dep from="21" to="20" type="auxpass"/>
+  <dep from="15" to="21" type="relcl"/>
+  <dep from="23" to="22" type="aux"/>
+  <dep from="21" to="23" type="xcomp"/>
+  <dep from="25" to="24" type="det"/>
+  <dep from="23" to="25" type="dobj"/>
+  <dep from="8" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Be_subset_of">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Total">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Response">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Responding_entity">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Getting">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Container_possessor">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Constituent_parts">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Service_provider">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Request">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Submitting_documents">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Documents">
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

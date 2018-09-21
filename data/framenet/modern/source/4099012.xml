@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099012">
+ <sentence>
+  Chemical weapon projectiles contain a blasting tube which can be seen in an X-ray .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="chemical" pos="JJ" surface="Chemical"/>
+  <token id="2" lemma="weapon" pos="NN" surface="weapon"/>
+  <token id="3" lemma="projectile" pos="NNS" surface="projectiles"/>
+  <token id="4" lemma="contain" pos="VBP" surface="contain"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="blast" pos="VBG" surface="blasting"/>
+  <token id="7" lemma="tube" pos="NN" surface="tube"/>
+  <token id="8" lemma="which" pos="WDT" surface="which"/>
+  <token id="9" lemma="can" pos="MD" surface="can"/>
+  <token id="10" lemma="be" pos="VB" surface="be"/>
+  <token id="11" lemma="see" pos="VBN" surface="seen"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="an" pos="DT" surface="an"/>
+  <token id="14" lemma="x-ray" pos="NN" surface="X-ray"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="compound"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="11" to="8" type="nsubjpass"/>
+  <dep from="11" to="9" type="aux"/>
+  <dep from="11" to="10" type="auxpass"/>
+  <dep from="7" to="11" type="relcl"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="4" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Containing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Container">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Contents">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Perception_experience">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="State">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

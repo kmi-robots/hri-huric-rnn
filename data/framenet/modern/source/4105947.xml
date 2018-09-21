@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105947">
+ <sentence>
+  The waterfronts at Repulse Bay and Stanley are lined with good cafes and restaurants .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="waterfront" pos="NNS" surface="waterfronts"/>
+  <token id="3" lemma="at" pos="IN" surface="at"/>
+  <token id="4" lemma="repulse" pos="NNP" surface="Repulse"/>
+  <token id="5" lemma="bay" pos="NNP" surface="Bay"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="stanley" pos="NNP" surface="Stanley"/>
+  <token id="8" lemma="be" pos="VBP" surface="are"/>
+  <token id="9" lemma="line" pos="VBN" surface="lined"/>
+  <token id="10" lemma="with" pos="IN" surface="with"/>
+  <token id="11" lemma="good" pos="JJ" surface="good"/>
+  <token id="12" lemma="cafe" pos="NNS" surface="cafes"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="restaurant" pos="NNS" surface="restaurants"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="9" to="2" type="nsubjpass"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="5" to="7" type="conj"/>
+  <dep from="9" to="8" type="auxpass"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="12" to="14" type="conj"/>
+  <dep from="9" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Abounding_with">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Location">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirability">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

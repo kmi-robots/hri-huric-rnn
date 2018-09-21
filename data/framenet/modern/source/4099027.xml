@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099027">
+ <sentence>
+  The military is training for the day a terrorist sets off not just a bomb , but a chemical or biological weapon that would spew out an invisible death .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="military" pos="NN" surface="military"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="train" pos="VBG" surface="training"/>
+  <token id="5" lemma="for" pos="IN" surface="for"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="day" pos="NN" surface="day"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="terrorist" pos="NN" surface="terrorist"/>
+  <token id="10" lemma="set" pos="NNS" surface="sets"/>
+  <token id="11" lemma="off" pos="RP" surface="off"/>
+  <token id="12" lemma="not" pos="RB" surface="not"/>
+  <token id="13" lemma="just" pos="RB" surface="just"/>
+  <token id="14" lemma="a" pos="DT" surface="a"/>
+  <token id="15" lemma="bomb" pos="NN" surface="bomb"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="but" pos="CC" surface="but"/>
+  <token id="18" lemma="a" pos="DT" surface="a"/>
+  <token id="19" lemma="chemical" pos="JJ" surface="chemical"/>
+  <token id="20" lemma="or" pos="CC" surface="or"/>
+  <token id="21" lemma="biological" pos="JJ" surface="biological"/>
+  <token id="22" lemma="weapon" pos="NN" surface="weapon"/>
+  <token id="23" lemma="that" pos="WDT" surface="that"/>
+  <token id="24" lemma="would" pos="MD" surface="would"/>
+  <token id="25" lemma="spew" pos="VB" surface="spew"/>
+  <token id="26" lemma="out" pos="RP" surface="out"/>
+  <token id="27" lemma="an" pos="DT" surface="an"/>
+  <token id="28" lemma="invisible" pos="JJ" surface="invisible"/>
+  <token id="29" lemma="death" pos="NN" surface="death"/>
+  <token id="30" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="4" to="10" type="dobj"/>
+  <dep from="10" to="11" type="prt"/>
+  <dep from="13" to="12" type="neg"/>
+  <dep from="15" to="13" type="advmod"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="10" to="15" type="dobj"/>
+  <dep from="4" to="16" type="punct"/>
+  <dep from="4" to="17" type="cc"/>
+  <dep from="22" to="18" type="det"/>
+  <dep from="22" to="19" type="amod"/>
+  <dep from="19" to="20" type="cc"/>
+  <dep from="19" to="21" type="conj"/>
+  <dep from="4" to="22" type="conj"/>
+  <dep from="25" to="23" type="nsubj"/>
+  <dep from="25" to="24" type="aux"/>
+  <dep from="22" to="25" type="relcl"/>
+  <dep from="25" to="26" type="prt"/>
+  <dep from="29" to="27" type="det"/>
+  <dep from="29" to="28" type="amod"/>
+  <dep from="25" to="29" type="dobj"/>
+  <dep from="22" to="30" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Military">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Force">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Relative_time">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Wielder">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Wielder">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Wielder">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Excreting">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Source">
+     <token id="26"/>
+    </frameElement>
+    <frameElement type="Excreta">
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+    </frameElement>
+    <frameElement type="Excreter">
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Excreter">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Death">
+    <lexicalUnit>
+     <token id="29"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

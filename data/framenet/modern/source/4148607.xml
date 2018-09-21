@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148607">
+ <sentence>
+  The crime was ascribed to Nihilism , and the murderers were never arrested .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="crime" pos="NN" surface="crime"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="ascribe" pos="VBN" surface="ascribed"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="nihilism" pos="NNP" surface="Nihilism"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="murderer" pos="NNS" surface="murderers"/>
+  <token id="11" lemma="be" pos="VBD" surface="were"/>
+  <token id="12" lemma="never" pos="RB" surface="never"/>
+  <token id="13" lemma="arrest" pos="VBN" surface="arrested"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="4" to="7" type="punct"/>
+  <dep from="4" to="8" type="cc"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="13" to="10" type="nsubjpass"/>
+  <dep from="13" to="11" type="auxpass"/>
+  <dep from="13" to="12" type="neg"/>
+  <dep from="4" to="13" type="conj"/>
+  <dep from="13" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Arrest">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Suspect">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Killer">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Committing_crime">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Crime">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

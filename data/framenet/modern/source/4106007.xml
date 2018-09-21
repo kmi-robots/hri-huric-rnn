@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106007">
+ <sentence>
+  This `` Temple of Green Pines `` is a spacious complex containing temples and pavilions , statues , and gardens .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="this" pos="DT" surface="This"/>
+  <token id="2" lemma="``" pos="``" surface="``"/>
+  <token id="3" lemma="temple" pos="NNP" surface="Temple"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="green" pos="NNP" surface="Green"/>
+  <token id="6" lemma="pines" pos="NNPS" surface="Pines"/>
+  <token id="7" lemma="``" pos="``" surface="``"/>
+  <token id="8" lemma="be" pos="VBZ" surface="is"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="spacious" pos="JJ" surface="spacious"/>
+  <token id="11" lemma="complex" pos="JJ" surface="complex"/>
+  <token id="12" lemma="contain" pos="VBG" surface="containing"/>
+  <token id="13" lemma="temple" pos="NNS" surface="temples"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="pavilion" pos="NNS" surface="pavilions"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="statue" pos="NNS" surface="statues"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="and" pos="CC" surface="and"/>
+  <token id="20" lemma="garden" pos="NNS" surface="gardens"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="punct"/>
+  <dep from="8" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="3" to="7" type="punct"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="attr"/>
+  <dep from="11" to="12" type="acl"/>
+  <dep from="12" to="13" type="dobj"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="13" to="16" type="punct"/>
+  <dep from="13" to="17" type="conj"/>
+  <dep from="17" to="18" type="punct"/>
+  <dep from="17" to="19" type="cc"/>
+  <dep from="17" to="20" type="conj"/>
+  <dep from="8" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Color">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Color">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Inclusion">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Total">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Physical_artworks">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Artifact">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

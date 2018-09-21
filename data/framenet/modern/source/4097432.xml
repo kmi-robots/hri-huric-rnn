@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097432">
+ <sentence>
+  Nuclear warheads from Kazakhstan are transferred via Turkmenistan to Iran . ( Timmerman , 52 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="nuclear" pos="JJ" surface="Nuclear"/>
+  <token id="2" lemma="warhead" pos="NNS" surface="warheads"/>
+  <token id="3" lemma="from" pos="IN" surface="from"/>
+  <token id="4" lemma="kazakhstan" pos="NNP" surface="Kazakhstan"/>
+  <token id="5" lemma="be" pos="VBP" surface="are"/>
+  <token id="6" lemma="transfer" pos="VBN" surface="transferred"/>
+  <token id="7" lemma="via" pos="IN" surface="via"/>
+  <token id="8" lemma="turkmenistan" pos="NNP" surface="Turkmenistan"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="11" lemma="." pos="." surface="."/>
+  <token id="12" lemma="(" pos="-LRB-" surface="("/>
+  <token id="13" lemma="timmerman" pos="NNP" surface="Timmerman"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="52" pos="CD" surface="52"/>
+  <token id="16" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="6" to="2" type="nsubjpass"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="6" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="6" to="11" type="punct"/>
+  <dep from="13" to="12" type="punct"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="13" to="15" type="appos"/>
+  <dep from="13" to="16" type="punct"/>
+  <dep from="13" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Transfer">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

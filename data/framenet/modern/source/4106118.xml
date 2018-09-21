@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106118">
+ <sentence>
+  Its spin-off industries , prostitution and pawn shops , also thrive .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP$" surface="Its"/>
+  <token id="2" lemma="spin-off" pos="JJ" surface="spin-off"/>
+  <token id="3" lemma="industry" pos="NNS" surface="industries"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="prostitution" pos="NN" surface="prostitution"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="pawn" pos="NN" surface="pawn"/>
+  <token id="8" lemma="shop" pos="NNS" surface="shops"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="also" pos="RB" surface="also"/>
+  <token id="11" lemma="thrive" pos="VBP" surface="thrive"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="poss"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="11" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="3" to="5" type="conj"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="conj"/>
+  <dep from="3" to="9" type="punct"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Fields">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Thriving">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

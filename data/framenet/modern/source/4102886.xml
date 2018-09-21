@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102886">
+ <sentence>
+  1- Individuals A : Trustworthy - Arabs and foreigners B : Untrustworthy - Arabs and foreigners C : Unknown - Arabs and foreigners D : Reporters and news people
+ </sentence>
+ <tokens>
+  <token id="1" lemma="1-" pos="LS" surface="1-"/>
+  <token id="2" lemma="individual" pos="NNS" surface="Individuals"/>
+  <token id="3" lemma="a" pos="NN" surface="A"/>
+  <token id="4" lemma=":" pos=":" surface=":"/>
+  <token id="5" lemma="trustworthy" pos="NNP" surface="Trustworthy"/>
+  <token id="6" lemma="-" pos="HYPH" surface="-"/>
+  <token id="7" lemma="arabs" pos="NNPS" surface="Arabs"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="foreigner" pos="NNS" surface="foreigners"/>
+  <token id="10" lemma="b" pos="NNP" surface="B"/>
+  <token id="11" lemma=":" pos=":" surface=":"/>
+  <token id="12" lemma="untrustworthy" pos="NNP" surface="Untrustworthy"/>
+  <token id="13" lemma="-" pos="HYPH" surface="-"/>
+  <token id="14" lemma="arabs" pos="NNPS" surface="Arabs"/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="foreigner" pos="NNS" surface="foreigners"/>
+  <token id="17" lemma="c" pos="NNP" surface="C"/>
+  <token id="18" lemma=":" pos=":" surface=":"/>
+  <token id="19" lemma="unknown" pos="JJ" surface="Unknown"/>
+  <token id="20" lemma="-" pos="HYPH" surface="-"/>
+  <token id="21" lemma="arabs" pos="NNPS" surface="Arabs"/>
+  <token id="22" lemma="and" pos="CC" surface="and"/>
+  <token id="23" lemma="foreigner" pos="NNS" surface="foreigners"/>
+  <token id="24" lemma="d" pos="NN" surface="D"/>
+  <token id="25" lemma=":" pos=":" surface=":"/>
+  <token id="26" lemma="reporter" pos="NNS" surface="Reporters"/>
+  <token id="27" lemma="and" pos="CC" surface="and"/>
+  <token id="28" lemma="news" pos="NN" surface="news"/>
+  <token id="29" lemma="people" pos="NNS" surface="people"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="meta"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="7" to="5" type="compound"/>
+  <dep from="7" to="6" type="punct"/>
+  <dep from="3" to="7" type="appos"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="7" to="9" type="conj"/>
+  <dep from="7" to="10" type="appos"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="14" to="12" type="compound"/>
+  <dep from="14" to="13" type="punct"/>
+  <dep from="10" to="14" type="appos"/>
+  <dep from="14" to="15" type="cc"/>
+  <dep from="14" to="16" type="conj"/>
+  <dep from="14" to="17" type="conj"/>
+  <dep from="17" to="18" type="punct"/>
+  <dep from="21" to="19" type="compound"/>
+  <dep from="21" to="20" type="punct"/>
+  <dep from="17" to="21" type="appos"/>
+  <dep from="21" to="22" type="cc"/>
+  <dep from="21" to="23" type="conj"/>
+  <dep from="0" to="24" type="root"/>
+  <dep from="24" to="25" type="punct"/>
+  <dep from="0" to="26" type="root"/>
+  <dep from="26" to="27" type="cc"/>
+  <dep from="29" to="28" type="compound"/>
+  <dep from="26" to="29" type="conj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_origin">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_origin">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_origin">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="29"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="29"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

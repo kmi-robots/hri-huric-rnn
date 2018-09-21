@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100370">
+ <sentence>
+  The Holy City and the Temple were destroyed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="holy" pos="NNP" surface="Holy"/>
+  <token id="3" lemma="city" pos="NNP" surface="City"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="temple" pos="NNP" surface="Temple"/>
+  <token id="7" lemma="be" pos="VBD" surface="were"/>
+  <token id="8" lemma="destroy" pos="VBN" surface="destroyed"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="8" to="3" type="nsubjpass"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="3" to="6" type="conj"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Destroying">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

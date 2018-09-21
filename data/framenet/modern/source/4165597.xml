@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165597">
+ <sentence>
+  Today , however , fires broke out near Athens .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="today" pos="NN" surface="Today"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="however" pos="RB" surface="however"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="fire" pos="NNS" surface="fires"/>
+  <token id="6" lemma="break" pos="VBD" surface="broke"/>
+  <token id="7" lemma="out" pos="RP" surface="out"/>
+  <token id="8" lemma="near" pos="IN" surface="near"/>
+  <token id="9" lemma="athens" pos="NNP" surface="Athens"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="npadvmod"/>
+  <dep from="6" to="2" type="punct"/>
+  <dep from="6" to="3" type="advmod"/>
+  <dep from="6" to="4" type="punct"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prt"/>
+  <dep from="6" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="6" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Fire_burning">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Fire">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Catching_fire">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Fire">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

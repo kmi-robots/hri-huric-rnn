@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099010">
+ <sentence>
+  QN : Does the Defense Department want BioPort Corporation to manufacture anthrax vaccine ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="do" pos="VBZ" surface="Does"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="defense" pos="NNP" surface="Defense"/>
+  <token id="6" lemma="department" pos="NNP" surface="Department"/>
+  <token id="7" lemma="want" pos="VBP" surface="want"/>
+  <token id="8" lemma="bioport" pos="NNP" surface="BioPort"/>
+  <token id="9" lemma="corporation" pos="NNP" surface="Corporation"/>
+  <token id="10" lemma="to" pos="TO" surface="to"/>
+  <token id="11" lemma="manufacture" pos="VB" surface="manufacture"/>
+  <token id="12" lemma="anthrax" pos="NN" surface="anthrax"/>
+  <token id="13" lemma="vaccine" pos="NN" surface="vaccine"/>
+  <token id="14" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="dep"/>
+  <dep from="7" to="2" type="punct"/>
+  <dep from="7" to="3" type="aux"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="11" to="9" type="nsubj"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="7" to="11" type="ccomp"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="11" to="13" type="dobj"/>
+  <dep from="7" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Desiring">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Experiencer">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Producer">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Product">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

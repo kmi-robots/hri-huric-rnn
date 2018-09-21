@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096987">
+ <sentence>
+  Iranian troops suffered tens of thousands of casualties from Iraqi chemical weapons during the 1980 - 88 Iran - Iraq War .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iranian" pos="JJ" surface="Iranian"/>
+  <token id="2" lemma="troop" pos="NNS" surface="troops"/>
+  <token id="3" lemma="suffer" pos="VBD" surface="suffered"/>
+  <token id="4" lemma="ten" pos="NNS" surface="tens"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="thousand" pos="NNS" surface="thousands"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="casualty" pos="NNS" surface="casualties"/>
+  <token id="9" lemma="from" pos="IN" surface="from"/>
+  <token id="10" lemma="iraqi" pos="JJ" surface="Iraqi"/>
+  <token id="11" lemma="chemical" pos="JJ" surface="chemical"/>
+  <token id="12" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="13" lemma="during" pos="IN" surface="during"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="1980" pos="CD" surface="1980"/>
+  <token id="16" lemma="-" pos="SYM" surface="-"/>
+  <token id="17" lemma="88" pos="CD" surface="88"/>
+  <token id="18" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="19" lemma="-" pos="HYPH" surface="-"/>
+  <token id="20" lemma="iraq" pos="NNP" surface="Iraq"/>
+  <token id="21" lemma="war" pos="NNP" surface="War"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="quantmod"/>
+  <dep from="6" to="5" type="quantmod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="amod"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="3" to="13" type="prep"/>
+  <dep from="21" to="14" type="det"/>
+  <dep from="21" to="15" type="nummod"/>
+  <dep from="17" to="16" type="punct"/>
+  <dep from="15" to="17" type="prep"/>
+  <dep from="20" to="18" type="compound"/>
+  <dep from="20" to="19" type="punct"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="13" to="21" type="pobj"/>
+  <dep from="3" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Catastrophe">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Undesirable_event">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Creator">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Sides">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

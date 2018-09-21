@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098151">
+ <sentence>
+  48 Kuwaiti jet fighters managed to escape the Iraqi invasion .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="48" pos="CD" surface="48"/>
+  <token id="2" lemma="kuwaiti" pos="NNP" surface="Kuwaiti"/>
+  <token id="3" lemma="jet" pos="NN" surface="jet"/>
+  <token id="4" lemma="fighter" pos="NNS" surface="fighters"/>
+  <token id="5" lemma="manage" pos="VBD" surface="managed"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="escape" pos="VB" surface="escape"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="iraqi" pos="JJ" surface="Iraqi"/>
+  <token id="10" lemma="invasion" pos="NN" surface="invasion"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nummod"/>
+  <dep from="4" to="2" type="compound"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="5" to="7" type="xcomp"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="7" to="10" type="dobj"/>
+  <dep from="5" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Avoiding">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Undesirable_situation">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Success_or_failure">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

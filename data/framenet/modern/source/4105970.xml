@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105970">
+ <sentence>
+  The fascinating collection of artifacts pertaining showcases 6,000 years of Hong Kong 's history and Chinese culture .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="fascinating" pos="JJ" surface="fascinating"/>
+  <token id="3" lemma="collection" pos="NN" surface="collection"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="artifact" pos="NNS" surface="artifacts"/>
+  <token id="6" lemma="pertain" pos="VBG" surface="pertaining"/>
+  <token id="7" lemma="showcase" pos="NNS" surface="showcases"/>
+  <token id="8" lemma="6,000" pos="CD" surface="6,000"/>
+  <token id="9" lemma="year" pos="NNS" surface="years"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="hong" pos="NNP" surface="Hong"/>
+  <token id="12" lemma="kong" pos="NNP" surface="Kong"/>
+  <token id="13" lemma="'s" pos="POS" surface="'s"/>
+  <token id="14" lemma="history" pos="NN" surface="history"/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="chinese" pos="JJ" surface="Chinese"/>
+  <token id="17" lemma="culture" pos="NN" surface="culture"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="7" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="5" to="6" type="acl"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="nummod"/>
+  <dep from="7" to="9" type="npadvmod"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="14" to="12" type="poss"/>
+  <dep from="12" to="13" type="case"/>
+  <dep from="10" to="14" type="pobj"/>
+  <dep from="14" to="15" type="cc"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="14" to="17" type="conj"/>
+  <dep from="7" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Mental_stimulus_stimulus_focus">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Stimulus">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Artifact">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Artifact">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="History">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Topic">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Count">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

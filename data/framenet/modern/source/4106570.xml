@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106570">
+ <sentence>
+  But Goodwill offers hope even to people with numerous obstacles to overcome , like Jerry .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="but" pos="CC" surface="But"/>
+  <token id="2" lemma="goodwill" pos="NNP" surface="Goodwill"/>
+  <token id="3" lemma="offer" pos="VBZ" surface="offers"/>
+  <token id="4" lemma="hope" pos="NN" surface="hope"/>
+  <token id="5" lemma="even" pos="RB" surface="even"/>
+  <token id="6" lemma="to" pos="IN" surface="to"/>
+  <token id="7" lemma="people" pos="NNS" surface="people"/>
+  <token id="8" lemma="with" pos="IN" surface="with"/>
+  <token id="9" lemma="numerous" pos="JJ" surface="numerous"/>
+  <token id="10" lemma="obstacle" pos="NNS" surface="obstacles"/>
+  <token id="11" lemma="to" pos="TO" surface="to"/>
+  <token id="12" lemma="overcome" pos="VB" surface="overcome"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="like" pos="IN" surface="like"/>
+  <token id="15" lemma="jerry" pos="NNP" surface="Jerry"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="cc"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="12" to="11" type="aux"/>
+  <dep from="3" to="12" type="xcomp"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="12" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="3" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Similarity">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Entity_2">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Entity_1">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

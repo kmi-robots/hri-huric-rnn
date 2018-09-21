@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097324">
+ <sentence>
+  Pakistan denied the claims , and was reported to have rejected an Iranian offer to Pakistani former army chief of staff Mirza Aslam Beg to purchase weapons technology .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="pakistan" pos="NNP" surface="Pakistan"/>
+  <token id="2" lemma="deny" pos="VBD" surface="denied"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="claim" pos="NNS" surface="claims"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="be" pos="VBD" surface="was"/>
+  <token id="8" lemma="report" pos="VBN" surface="reported"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="have" pos="VB" surface="have"/>
+  <token id="11" lemma="reject" pos="VBN" surface="rejected"/>
+  <token id="12" lemma="an" pos="DT" surface="an"/>
+  <token id="13" lemma="iranian" pos="JJ" surface="Iranian"/>
+  <token id="14" lemma="offer" pos="NN" surface="offer"/>
+  <token id="15" lemma="to" pos="IN" surface="to"/>
+  <token id="16" lemma="pakistani" pos="JJ" surface="Pakistani"/>
+  <token id="17" lemma="former" pos="JJ" surface="former"/>
+  <token id="18" lemma="army" pos="NN" surface="army"/>
+  <token id="19" lemma="chief" pos="NN" surface="chief"/>
+  <token id="20" lemma="of" pos="IN" surface="of"/>
+  <token id="21" lemma="staff" pos="NN" surface="staff"/>
+  <token id="22" lemma="mirza" pos="NNP" surface="Mirza"/>
+  <token id="23" lemma="aslam" pos="NNP" surface="Aslam"/>
+  <token id="24" lemma="beg" pos="NNP" surface="Beg"/>
+  <token id="25" lemma="to" pos="TO" surface="to"/>
+  <token id="26" lemma="purchase" pos="VB" surface="purchase"/>
+  <token id="27" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="28" lemma="technology" pos="NN" surface="technology"/>
+  <token id="29" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="punct"/>
+  <dep from="2" to="6" type="cc"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="2" to="8" type="conj"/>
+  <dep from="11" to="9" type="aux"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="8" to="11" type="xcomp"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="dobj"/>
+  <dep from="11" to="15" type="dative"/>
+  <dep from="19" to="16" type="amod"/>
+  <dep from="19" to="17" type="amod"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="15" to="19" type="pobj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="24" to="21" type="compound"/>
+  <dep from="24" to="22" type="compound"/>
+  <dep from="24" to="23" type="compound"/>
+  <dep from="20" to="24" type="pobj"/>
+  <dep from="26" to="25" type="aux"/>
+  <dep from="11" to="26" type="advcl"/>
+  <dep from="28" to="27" type="compound"/>
+  <dep from="26" to="28" type="dobj"/>
+  <dep from="2" to="29" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Affirm_or_deny">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+    </frameElement>
+   </frame>
+   <frame name="Commerce_buy">
+    <lexicalUnit>
+     <token id="26"/>
+    </lexicalUnit>
+    <frameElement type="Buyer">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="27"/>
+     <token id="28"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="27"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="27"/>
+    </frameElement>
+   </frame>
+   <frame name="Artifact">
+    <lexicalUnit>
+     <token id="28"/>
+    </lexicalUnit>
+    <frameElement type="Artifact">
+     <token id="28"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="27"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

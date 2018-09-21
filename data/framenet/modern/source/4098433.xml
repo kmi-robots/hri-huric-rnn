@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098433">
+ <sentence>
+  QN : Did any delegate finish the report on time ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="do" pos="VBD" surface="Did"/>
+  <token id="4" lemma="any" pos="DT" surface="any"/>
+  <token id="5" lemma="delegate" pos="NN" surface="delegate"/>
+  <token id="6" lemma="finish" pos="VB" surface="finish"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="report" pos="NN" surface="report"/>
+  <token id="9" lemma="on" pos="IN" surface="on"/>
+  <token id="10" lemma="time" pos="NN" surface="time"/>
+  <token id="11" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="6" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="6" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Activity_finish">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

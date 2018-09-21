@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099025">
+ <sentence>
+  QN : Who destroyed 5 million pounds of GB nerve agent ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="who" pos="WP" surface="Who"/>
+  <token id="4" lemma="destroy" pos="VBD" surface="destroyed"/>
+  <token id="5" lemma="5" pos="CD" surface="5"/>
+  <token id="6" lemma="million" pos="CD" surface="million"/>
+  <token id="7" lemma="pound" pos="NNS" surface="pounds"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="gb" pos="NNP" surface="GB"/>
+  <token id="10" lemma="nerve" pos="NN" surface="nerve"/>
+  <token id="11" lemma="agent" pos="NN" surface="agent"/>
+  <token id="12" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="7" to="6" type="nummod"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="11" to="9" type="compound"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="4" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Destroying">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Destroyer">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Patient">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_mass">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Stuff">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Active_substance">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

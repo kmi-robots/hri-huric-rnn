@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097623">
+ <sentence>
+  Although technically sub - optimal , even reactor - grade plutonium can be used as fissile material in nuclear weapons .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="although" pos="IN" surface="Although"/>
+  <token id="2" lemma="technically" pos="RB" surface="technically"/>
+  <token id="3" lemma="sub" pos="NN" surface="sub"/>
+  <token id="4" lemma="-" pos="HYPH" surface="-"/>
+  <token id="5" lemma="optimal" pos="JJ" surface="optimal"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="even" pos="RB" surface="even"/>
+  <token id="8" lemma="reactor" pos="NN" surface="reactor"/>
+  <token id="9" lemma="-" pos="HYPH" surface="-"/>
+  <token id="10" lemma="grade" pos="NN" surface="grade"/>
+  <token id="11" lemma="plutonium" pos="NN" surface="plutonium"/>
+  <token id="12" lemma="can" pos="MD" surface="can"/>
+  <token id="13" lemma="be" pos="VB" surface="be"/>
+  <token id="14" lemma="use" pos="VBN" surface="used"/>
+  <token id="15" lemma="as" pos="IN" surface="as"/>
+  <token id="16" lemma="fissile" pos="NN" surface="fissile"/>
+  <token id="17" lemma="material" pos="NN" surface="material"/>
+  <token id="18" lemma="in" pos="IN" surface="in"/>
+  <token id="19" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="20" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="14" to="1" type="mark"/>
+  <dep from="5" to="2" type="advmod"/>
+  <dep from="5" to="3" type="compound"/>
+  <dep from="5" to="4" type="punct"/>
+  <dep from="14" to="5" type="nsubjpass"/>
+  <dep from="14" to="6" type="punct"/>
+  <dep from="11" to="7" type="advmod"/>
+  <dep from="10" to="8" type="compound"/>
+  <dep from="10" to="9" type="punct"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="14" to="11" type="nsubjpass"/>
+  <dep from="14" to="12" type="aux"/>
+  <dep from="14" to="13" type="auxpass"/>
+  <dep from="0" to="14" type="root"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="20" to="19" type="amod"/>
+  <dep from="18" to="20" type="pobj"/>
+  <dep from="14" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Capability">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Using">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Instrument">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Role">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Substance">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

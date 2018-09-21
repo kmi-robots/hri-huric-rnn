@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097225">
+ <sentence>
+  Chinese and Russian supply policies are key to Iran 's success ; Russia has agreed to build power reactor .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="chinese" pos="JJ" surface="Chinese"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="russian" pos="JJ" surface="Russian"/>
+  <token id="4" lemma="supply" pos="NN" surface="supply"/>
+  <token id="5" lemma="policy" pos="NNS" surface="policies"/>
+  <token id="6" lemma="be" pos="VBP" surface="are"/>
+  <token id="7" lemma="key" pos="JJ" surface="key"/>
+  <token id="8" lemma="to" pos="IN" surface="to"/>
+  <token id="9" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="10" lemma="'s" pos="POS" surface="'s"/>
+  <token id="11" lemma="success" pos="NN" surface="success"/>
+  <token id="12" lemma=";" pos=":" surface=";"/>
+  <token id="13" lemma="russia" pos="NNP" surface="Russia"/>
+  <token id="14" lemma="have" pos="VBZ" surface="has"/>
+  <token id="15" lemma="agree" pos="VBN" surface="agreed"/>
+  <token id="16" lemma="to" pos="TO" surface="to"/>
+  <token id="17" lemma="build" pos="VB" surface="build"/>
+  <token id="18" lemma="power" pos="NN" surface="power"/>
+  <token id="19" lemma="reactor" pos="NN" surface="reactor"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="amod"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="15" to="6" type="ccomp"/>
+  <dep from="6" to="7" type="acomp"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="11" to="9" type="poss"/>
+  <dep from="9" to="10" type="case"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="15" to="12" type="punct"/>
+  <dep from="15" to="13" type="nsubj"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="0" to="15" type="root"/>
+  <dep from="17" to="16" type="aux"/>
+  <dep from="15" to="17" type="xcomp"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="17" to="19" type="dobj"/>
+  <dep from="15" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Importance">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Factor">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Undertaking">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Make_agreement_on_action">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Party_1">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Obligation">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Building">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Created_entity">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Use">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

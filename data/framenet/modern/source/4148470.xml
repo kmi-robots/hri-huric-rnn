@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148470">
+ <sentence>
+  I clasped his hand in silence , and the die was cast .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="clasp" pos="VBD" surface="clasped"/>
+  <token id="3" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="4" lemma="hand" pos="NN" surface="hand"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="silence" pos="NN" surface="silence"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="die" pos="NN" surface="die"/>
+  <token id="11" lemma="be" pos="VBD" surface="was"/>
+  <token id="12" lemma="cast" pos="VBN" surface="cast"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="poss"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="2" to="7" type="punct"/>
+  <dep from="2" to="8" type="cc"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="12" to="10" type="nsubjpass"/>
+  <dep from="12" to="11" type="auxpass"/>
+  <dep from="2" to="12" type="conj"/>
+  <dep from="12" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Body_parts">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Possessor">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Body_part">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

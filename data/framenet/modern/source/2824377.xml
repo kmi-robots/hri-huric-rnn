@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824377">
+ <sentence>
+  Now that percentage routinely equals a third and twice has been above 40 % .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="now" pos="RB" surface="Now"/>
+  <token id="2" lemma="that" pos="DT" surface="that"/>
+  <token id="3" lemma="percentage" pos="NN" surface="percentage"/>
+  <token id="4" lemma="routinely" pos="RB" surface="routinely"/>
+  <token id="5" lemma="equal" pos="VBZ" surface="equals"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="third" pos="JJ" surface="third"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="twice" pos="RB" surface="twice"/>
+  <token id="10" lemma="have" pos="VBZ" surface="has"/>
+  <token id="11" lemma="be" pos="VBN" surface="been"/>
+  <token id="12" lemma="above" pos="IN" surface="above"/>
+  <token id="13" lemma="40" pos="CD" surface="40"/>
+  <token id="14" lemma="%" pos="NN" surface="%"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="advmod"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="5" to="8" type="cc"/>
+  <dep from="11" to="9" type="advmod"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="5" to="11" type="conj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="nummod"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="5" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Evaluative_comparison">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Profiled_attribute">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Standard_attribute">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Trajector_event">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Landmark_period">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Event_instance">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Instance">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

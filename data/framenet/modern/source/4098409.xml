@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098409">
+ <sentence>
+  QN : Was the room full of women ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="be" pos="VBD" surface="Was"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="room" pos="NN" surface="room"/>
+  <token id="6" lemma="full" pos="JJ" surface="full"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="woman" pos="NNS" surface="women"/>
+  <token id="9" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="nsubj"/>
+  <dep from="5" to="6" type="amod"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="3" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Abounding_with">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Location">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

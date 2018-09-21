@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098733">
+ <sentence>
+  QN : Was President Bush in Rome on April 8 ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="be" pos="VBD" surface="Was"/>
+  <token id="4" lemma="president" pos="NNP" surface="President"/>
+  <token id="5" lemma="bush" pos="NNP" surface="Bush"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="rome" pos="NNP" surface="Rome"/>
+  <token id="8" lemma="on" pos="IN" surface="on"/>
+  <token id="9" lemma="april" pos="NNP" surface="April"/>
+  <token id="10" lemma="8" pos="CD" surface="8"/>
+  <token id="11" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="3" to="5" type="nsubj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="3" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="9" to="10" type="nummod"/>
+  <dep from="3" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

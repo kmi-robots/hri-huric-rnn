@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165027">
+ <sentence>
+  Officials now report that firefighters are making some progress .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="official" pos="NNS" surface="Officials"/>
+  <token id="2" lemma="now" pos="RB" surface="now"/>
+  <token id="3" lemma="report" pos="VBP" surface="report"/>
+  <token id="4" lemma="that" pos="IN" surface="that"/>
+  <token id="5" lemma="firefighter" pos="NNS" surface="firefighters"/>
+  <token id="6" lemma="be" pos="VBP" surface="are"/>
+  <token id="7" lemma="make" pos="VBG" surface="making"/>
+  <token id="8" lemma="some" pos="DT" surface="some"/>
+  <token id="9" lemma="progress" pos="NN" surface="progress"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="7" to="4" type="mark"/>
+  <dep from="7" to="5" type="nsubj"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="3" to="7" type="ccomp"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="3" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

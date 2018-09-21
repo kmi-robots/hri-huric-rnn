@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148448">
+ <sentence>
+  Miss Burnet has not been seen by any human eye since the night of the murder .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="miss" pos="NNP" surface="Miss"/>
+  <token id="2" lemma="burnet" pos="NNP" surface="Burnet"/>
+  <token id="3" lemma="have" pos="VBZ" surface="has"/>
+  <token id="4" lemma="not" pos="RB" surface="not"/>
+  <token id="5" lemma="be" pos="VBN" surface="been"/>
+  <token id="6" lemma="see" pos="VBN" surface="seen"/>
+  <token id="7" lemma="by" pos="IN" surface="by"/>
+  <token id="8" lemma="any" pos="DT" surface="any"/>
+  <token id="9" lemma="human" pos="JJ" surface="human"/>
+  <token id="10" lemma="eye" pos="NN" surface="eye"/>
+  <token id="11" lemma="since" pos="IN" surface="since"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="night" pos="NN" surface="night"/>
+  <token id="14" lemma="of" pos="IN" surface="of"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="murder" pos="NN" surface="murder"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="6" to="2" type="nsubjpass"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="6" to="4" type="neg"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="agent"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="6" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="6" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Body_parts">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Possessor">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Body_part">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Perception_experience">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Body_part">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Salient_event">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101147">
+ <sentence>
+  He bought several Strip properties -- the Silver Slipper and Castaways among them -- and demolished them to make way for a new kind of resort -- Mirage -- which became an instant success .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="buy" pos="VBD" surface="bought"/>
+  <token id="3" lemma="several" pos="JJ" surface="several"/>
+  <token id="4" lemma="strip" pos="NNP" surface="Strip"/>
+  <token id="5" lemma="property" pos="NNS" surface="properties"/>
+  <token id="6" lemma="--" pos=":" surface="--"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="silver" pos="NNP" surface="Silver"/>
+  <token id="9" lemma="slipper" pos="NNP" surface="Slipper"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="castaways" pos="NNPS" surface="Castaways"/>
+  <token id="12" lemma="among" pos="IN" surface="among"/>
+  <token id="13" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="14" lemma="--" pos=":" surface="--"/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="demolish" pos="VBD" surface="demolished"/>
+  <token id="17" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="18" lemma="to" pos="TO" surface="to"/>
+  <token id="19" lemma="make" pos="VB" surface="make"/>
+  <token id="20" lemma="way" pos="NN" surface="way"/>
+  <token id="21" lemma="for" pos="IN" surface="for"/>
+  <token id="22" lemma="a" pos="DT" surface="a"/>
+  <token id="23" lemma="new" pos="JJ" surface="new"/>
+  <token id="24" lemma="kind" pos="NN" surface="kind"/>
+  <token id="25" lemma="of" pos="IN" surface="of"/>
+  <token id="26" lemma="resort" pos="NN" surface="resort"/>
+  <token id="27" lemma="--" pos=":" surface="--"/>
+  <token id="28" lemma="mirage" pos="NN" surface="Mirage"/>
+  <token id="29" lemma="--" pos=":" surface="--"/>
+  <token id="30" lemma="which" pos="WDT" surface="which"/>
+  <token id="31" lemma="become" pos="VBD" surface="became"/>
+  <token id="32" lemma="an" pos="DT" surface="an"/>
+  <token id="33" lemma="instant" pos="JJ" surface="instant"/>
+  <token id="34" lemma="success" pos="NN" surface="success"/>
+  <token id="35" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="amod"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="5" to="6" type="punct"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="5" to="9" type="appos"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="9" to="11" type="conj"/>
+  <dep from="9" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="5" to="14" type="punct"/>
+  <dep from="2" to="15" type="cc"/>
+  <dep from="2" to="16" type="conj"/>
+  <dep from="16" to="17" type="dobj"/>
+  <dep from="19" to="18" type="aux"/>
+  <dep from="16" to="19" type="xcomp"/>
+  <dep from="19" to="20" type="dobj"/>
+  <dep from="19" to="21" type="prep"/>
+  <dep from="24" to="22" type="det"/>
+  <dep from="24" to="23" type="amod"/>
+  <dep from="21" to="24" type="pobj"/>
+  <dep from="24" to="25" type="prep"/>
+  <dep from="25" to="26" type="pobj"/>
+  <dep from="24" to="27" type="punct"/>
+  <dep from="24" to="28" type="appos"/>
+  <dep from="24" to="29" type="punct"/>
+  <dep from="31" to="30" type="nsubj"/>
+  <dep from="24" to="31" type="relcl"/>
+  <dep from="34" to="32" type="det"/>
+  <dep from="34" to="33" type="amod"/>
+  <dep from="31" to="34" type="attr"/>
+  <dep from="2" to="35" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_buy">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Buyer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Be_subset_of">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Total">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Destroying">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+     <token id="31"/>
+     <token id="32"/>
+     <token id="33"/>
+     <token id="34"/>
+    </frameElement>
+    <frameElement type="Destroyer">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Age">
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Type">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Subtype">
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Category">
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Becoming">
+    <lexicalUnit>
+     <token id="31"/>
+    </lexicalUnit>
+    <frameElement type="Final_category">
+     <token id="32"/>
+     <token id="33"/>
+     <token id="34"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="28"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="30"/>
+    </frameElement>
+   </frame>
+   <frame name="Success_or_failure">
+    <lexicalUnit>
+     <token id="34"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="28"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="30"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_ownership">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Relative_location">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

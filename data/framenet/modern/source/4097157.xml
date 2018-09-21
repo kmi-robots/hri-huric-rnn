@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097157">
+ <sentence>
+  An Iranian initiative to normalize relations was communicated to the United States in May 2003 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="an" pos="DT" surface="An"/>
+  <token id="2" lemma="iranian" pos="JJ" surface="Iranian"/>
+  <token id="3" lemma="initiative" pos="NN" surface="initiative"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="normalize" pos="VB" surface="normalize"/>
+  <token id="6" lemma="relation" pos="NNS" surface="relations"/>
+  <token id="7" lemma="be" pos="VBD" surface="was"/>
+  <token id="8" lemma="communicate" pos="VBN" surface="communicated"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="united" pos="NNP" surface="United"/>
+  <token id="12" lemma="states" pos="NNP" surface="States"/>
+  <token id="13" lemma="in" pos="IN" surface="in"/>
+  <token id="14" lemma="may" pos="NNP" surface="May"/>
+  <token id="15" lemma="2003" pos="CD" surface="2003"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="8" to="3" type="nsubjpass"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="acl"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="8" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="14" to="15" type="nummod"/>
+  <dep from="8" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Relation">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Communication">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Addressee">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

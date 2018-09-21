@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106499">
+ <sentence>
+  Goodwill has devised the programs that turned your investment into results .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="goodwill" pos="NNP" surface="Goodwill"/>
+  <token id="2" lemma="have" pos="VBZ" surface="has"/>
+  <token id="3" lemma="devise" pos="VBN" surface="devised"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="program" pos="NNS" surface="programs"/>
+  <token id="6" lemma="that" pos="WDT" surface="that"/>
+  <token id="7" lemma="turn" pos="VBD" surface="turned"/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="your"/>
+  <token id="9" lemma="investment" pos="NN" surface="investment"/>
+  <token id="10" lemma="into" pos="IN" surface="into"/>
+  <token id="11" lemma="result" pos="NNS" surface="results"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="5" to="7" type="relcl"/>
+  <dep from="9" to="8" type="poss"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="7" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="3" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Coming_up_with">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Idea">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_change">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Initial_category">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Final_category">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

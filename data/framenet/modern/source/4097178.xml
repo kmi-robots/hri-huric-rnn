@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097178">
+ <sentence>
+  It has purchased North Korean Scud-Bs , Scud-Cs , and Nodong ballistic missiles .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="It"/>
+  <token id="2" lemma="have" pos="VBZ" surface="has"/>
+  <token id="3" lemma="purchase" pos="VBN" surface="purchased"/>
+  <token id="4" lemma="north" pos="JJ" surface="North"/>
+  <token id="5" lemma="korean" pos="JJ" surface="Korean"/>
+  <token id="6" lemma="scud-bs" pos="NN" surface="Scud-Bs"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="scud-cs" pos="NNP" surface="Scud-Cs"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="nodong" pos="NNP" surface="Nodong"/>
+  <token id="12" lemma="ballistic" pos="JJ" surface="ballistic"/>
+  <token id="13" lemma="missile" pos="NNS" surface="missiles"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="6" to="8" type="conj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="8" to="10" type="cc"/>
+  <dep from="13" to="11" type="nmod"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="8" to="13" type="conj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_buy">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Buyer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102258">
+ <sentence>
+  Or moving it to Lubbock or somewhere possibly is not the answer .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="or" pos="CC" surface="Or"/>
+  <token id="2" lemma="move" pos="VBG" surface="moving"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="4" lemma="to" pos="IN" surface="to"/>
+  <token id="5" lemma="lubbock" pos="NNP" surface="Lubbock"/>
+  <token id="6" lemma="or" pos="CC" surface="or"/>
+  <token id="7" lemma="somewhere" pos="RB" surface="somewhere"/>
+  <token id="8" lemma="possibly" pos="RB" surface="possibly"/>
+  <token id="9" lemma="be" pos="VBZ" surface="is"/>
+  <token id="10" lemma="not" pos="RB" surface="not"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="answer" pos="NN" surface="answer"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="cc"/>
+  <dep from="9" to="2" type="csubj"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="4" to="6" type="cc"/>
+  <dep from="4" to="7" type="conj"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="neg"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="9" to="12" type="attr"/>
+  <dep from="9" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Goal">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Trajector">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Landmark">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Communication_response">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_motion">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106165">
+ <sentence>
+  Another important ceremony took place in 1999 when Macau became part of China .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="another" pos="DT" surface="Another"/>
+  <token id="2" lemma="important" pos="JJ" surface="important"/>
+  <token id="3" lemma="ceremony" pos="NN" surface="ceremony"/>
+  <token id="4" lemma="take" pos="VBD" surface="took"/>
+  <token id="5" lemma="place" pos="NN" surface="place"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="1999" pos="CD" surface="1999"/>
+  <token id="8" lemma="when" pos="WRB" surface="when"/>
+  <token id="9" lemma="macau" pos="NNP" surface="Macau"/>
+  <token id="10" lemma="become" pos="VBD" surface="became"/>
+  <token id="11" lemma="part" pos="NN" surface="part"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="china" pos="NNP" surface="China"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="4" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="10" to="8" type="advmod"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="4" to="10" type="advcl"/>
+  <dep from="10" to="11" type="attr"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Class">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Importance">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Undertaking">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Becoming">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Final_category">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Group">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

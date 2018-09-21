@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101590">
+ <sentence>
+  This week , the government arrested Jose Abello Silva , said to be the fourth-ranking cartel leader .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="this" pos="DT" surface="This"/>
+  <token id="2" lemma="week" pos="NN" surface="week"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="government" pos="NN" surface="government"/>
+  <token id="6" lemma="arrest" pos="VBD" surface="arrested"/>
+  <token id="7" lemma="jose" pos="NNP" surface="Jose"/>
+  <token id="8" lemma="abello" pos="NNP" surface="Abello"/>
+  <token id="9" lemma="silva" pos="NNP" surface="Silva"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="say" pos="VBD" surface="said"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="be" pos="VB" surface="be"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="fourth-ranking" pos="NN" surface="fourth-ranking"/>
+  <token id="16" lemma="cartel" pos="NN" surface="cartel"/>
+  <token id="17" lemma="leader" pos="NN" surface="leader"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="6" to="2" type="npadvmod"/>
+  <dep from="6" to="3" type="punct"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="9" to="7" type="compound"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="dobj"/>
+  <dep from="6" to="10" type="punct"/>
+  <dep from="6" to="11" type="conj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="11" to="13" type="xcomp"/>
+  <dep from="17" to="14" type="det"/>
+  <dep from="17" to="15" type="amod"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="13" to="17" type="attr"/>
+  <dep from="6" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Relative_time">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Arrest">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Authorities">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Suspect">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Organization">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Organization">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Governed">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Leader">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

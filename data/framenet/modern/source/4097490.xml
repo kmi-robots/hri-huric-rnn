@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097490">
+ <sentence>
+  On 1/29 , the Kazakhstan Ministry of Foreign Affairs denies reports that Kazakhstan planned to sell nuclear ballistic missiles to Iran .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="on" pos="IN" surface="On"/>
+  <token id="2" lemma="1/29" pos="CD" surface="1/29"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="kazakhstan" pos="NNP" surface="Kazakhstan"/>
+  <token id="6" lemma="ministry" pos="NNP" surface="Ministry"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="foreign" pos="NNP" surface="Foreign"/>
+  <token id="9" lemma="affairs" pos="NNPS" surface="Affairs"/>
+  <token id="10" lemma="deny" pos="VBZ" surface="denies"/>
+  <token id="11" lemma="report" pos="NNS" surface="reports"/>
+  <token id="12" lemma="that" pos="IN" surface="that"/>
+  <token id="13" lemma="kazakhstan" pos="NNP" surface="Kazakhstan"/>
+  <token id="14" lemma="plan" pos="VBD" surface="planned"/>
+  <token id="15" lemma="to" pos="TO" surface="to"/>
+  <token id="16" lemma="sell" pos="VB" surface="sell"/>
+  <token id="17" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="18" lemma="ballistic" pos="JJ" surface="ballistic"/>
+  <token id="19" lemma="missile" pos="NNS" surface="missiles"/>
+  <token id="20" lemma="to" pos="IN" surface="to"/>
+  <token id="21" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="10" to="3" type="punct"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="10" to="6" type="nsubj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="dobj"/>
+  <dep from="14" to="12" type="mark"/>
+  <dep from="14" to="13" type="nsubj"/>
+  <dep from="11" to="14" type="acl"/>
+  <dep from="16" to="15" type="aux"/>
+  <dep from="14" to="16" type="xcomp"/>
+  <dep from="19" to="17" type="amod"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="16" to="19" type="dobj"/>
+  <dep from="16" to="20" type="dative"/>
+  <dep from="20" to="21" type="pobj"/>
+  <dep from="10" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Affirm_or_deny">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Commerce_sell">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Seller">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Buyer">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

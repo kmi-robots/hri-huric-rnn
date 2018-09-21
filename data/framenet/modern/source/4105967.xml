@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105967">
+ <sentence>
+  A few blocks up Chatham Road South are two more major museums .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="few" pos="JJ" surface="few"/>
+  <token id="3" lemma="block" pos="NNS" surface="blocks"/>
+  <token id="4" lemma="up" pos="IN" surface="up"/>
+  <token id="5" lemma="chatham" pos="NNP" surface="Chatham"/>
+  <token id="6" lemma="road" pos="NNP" surface="Road"/>
+  <token id="7" lemma="south" pos="NNP" surface="South"/>
+  <token id="8" lemma="be" pos="VBP" surface="are"/>
+  <token id="9" lemma="two" pos="CD" surface="two"/>
+  <token id="10" lemma="more" pos="JJR" surface="more"/>
+  <token id="11" lemma="major" pos="JJ" surface="major"/>
+  <token id="12" lemma="museum" pos="NNS" surface="museums"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="quantmod"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="8" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="prt"/>
+  <dep from="7" to="5" type="compound"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="3" to="7" type="appos"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="12" to="9" type="nummod"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="8" to="12" type="attr"/>
+  <dep from="8" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Class">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Importance">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Factor">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097022">
+ <sentence>
+  China has also been involved in several other sales to Iran , involving CW technology ; as a result , several Chinese companies and individuals have faced American sanctions .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="china" pos="NNP" surface="China"/>
+  <token id="2" lemma="have" pos="VBZ" surface="has"/>
+  <token id="3" lemma="also" pos="RB" surface="also"/>
+  <token id="4" lemma="be" pos="VBN" surface="been"/>
+  <token id="5" lemma="involve" pos="VBN" surface="involved"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="several" pos="JJ" surface="several"/>
+  <token id="8" lemma="other" pos="JJ" surface="other"/>
+  <token id="9" lemma="sale" pos="NNS" surface="sales"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="involve" pos="VBG" surface="involving"/>
+  <token id="14" lemma="cw" pos="NNP" surface="CW"/>
+  <token id="15" lemma="technology" pos="NN" surface="technology"/>
+  <token id="16" lemma=";" pos=":" surface=";"/>
+  <token id="17" lemma="as" pos="IN" surface="as"/>
+  <token id="18" lemma="a" pos="DT" surface="a"/>
+  <token id="19" lemma="result" pos="NN" surface="result"/>
+  <token id="20" lemma="," pos="," surface=","/>
+  <token id="21" lemma="several" pos="JJ" surface="several"/>
+  <token id="22" lemma="chinese" pos="JJ" surface="Chinese"/>
+  <token id="23" lemma="company" pos="NNS" surface="companies"/>
+  <token id="24" lemma="and" pos="CC" surface="and"/>
+  <token id="25" lemma="individual" pos="NNS" surface="individuals"/>
+  <token id="26" lemma="have" pos="VBP" surface="have"/>
+  <token id="27" lemma="face" pos="VBN" surface="faced"/>
+  <token id="28" lemma="american" pos="JJ" surface="American"/>
+  <token id="29" lemma="sanction" pos="NNS" surface="sanctions"/>
+  <token id="30" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="nsubjpass"/>
+  <dep from="5" to="2" type="aux"/>
+  <dep from="5" to="3" type="advmod"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="9" to="7" type="amod"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="6" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="9" to="12" type="punct"/>
+  <dep from="5" to="13" type="advcl"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="13" to="15" type="dobj"/>
+  <dep from="5" to="16" type="punct"/>
+  <dep from="27" to="17" type="prep"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="27" to="20" type="punct"/>
+  <dep from="23" to="21" type="amod"/>
+  <dep from="23" to="22" type="amod"/>
+  <dep from="27" to="23" type="nsubj"/>
+  <dep from="23" to="24" type="cc"/>
+  <dep from="23" to="25" type="conj"/>
+  <dep from="27" to="26" type="aux"/>
+  <dep from="5" to="27" type="conj"/>
+  <dep from="29" to="28" type="amod"/>
+  <dep from="27" to="29" type="dobj"/>
+  <dep from="5" to="30" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Participation">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Participant_1">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Commerce_sell">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Buyer">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Artifact">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Artifact">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Ethnicity">
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Revenge">
+    <lexicalUnit>
+     <token id="29"/>
+    </lexicalUnit>
+    <frameElement type="Avenger">
+     <token id="28"/>
+    </frameElement>
+    <frameElement type="Offender">
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Punishment">
+     <token id="29"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

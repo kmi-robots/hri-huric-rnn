@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096628">
+ <sentence>
+  These two events greatly alarmed the Western intelligence community .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="these" pos="DT" surface="These"/>
+  <token id="2" lemma="two" pos="CD" surface="two"/>
+  <token id="3" lemma="event" pos="NNS" surface="events"/>
+  <token id="4" lemma="greatly" pos="RB" surface="greatly"/>
+  <token id="5" lemma="alarm" pos="VBD" surface="alarmed"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="western" pos="JJ" surface="Western"/>
+  <token id="8" lemma="intelligence" pos="NN" surface="intelligence"/>
+  <token id="9" lemma="community" pos="NN" surface="community"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="nummod"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="9" to="6" type="det"/>
+  <dep from="9" to="7" type="amod"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="5" to="9" type="dobj"/>
+  <dep from="5" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Experiencer_obj">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Stimulus">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Experiencer">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

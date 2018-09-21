@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148254">
+ <sentence>
+  Finally I was left in doubt as to whether it was animal or human .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="finally" pos="RB" surface="Finally"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="leave" pos="VBN" surface="left"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="doubt" pos="NN" surface="doubt"/>
+  <token id="7" lemma="as" pos="IN" surface="as"/>
+  <token id="8" lemma="to" pos="IN" surface="to"/>
+  <token id="9" lemma="whether" pos="IN" surface="whether"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="11" lemma="be" pos="VBD" surface="was"/>
+  <token id="12" lemma="animal" pos="JJ" surface="animal"/>
+  <token id="13" lemma="or" pos="CC" surface="or"/>
+  <token id="14" lemma="human" pos="NN" surface="human"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="11" to="9" type="mark"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="8" to="11" type="pcomp"/>
+  <dep from="11" to="12" type="acomp"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="12" to="14" type="conj"/>
+  <dep from="4" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Certainty">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Affected">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Biological_entity">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Organism">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Animals">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Animal">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

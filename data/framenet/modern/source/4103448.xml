@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103448">
+ <sentence>
+  Al-Maqdasi , a Jordanian militant , is sympathetic to Al-Qaida .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="al-maqdasi" pos="NNP" surface="Al-Maqdasi"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="jordanian" pos="JJ" surface="Jordanian"/>
+  <token id="5" lemma="militant" pos="NN" surface="militant"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="be" pos="VBZ" surface="is"/>
+  <token id="8" lemma="sympathetic" pos="JJ" surface="sympathetic"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="al-qaida" pos="NNP" surface="Al-Qaida"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="intj"/>
+  <dep from="7" to="2" type="punct"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="7" to="5" type="nsubj"/>
+  <dep from="7" to="6" type="punct"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="acomp"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="7" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Emotion_directed">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Empathy_target">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Experiencer">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

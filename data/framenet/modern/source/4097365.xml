@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097365">
+ <sentence>
+  Argentine exports to Iran are called politically dangerous ( 2879 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="argentine" pos="JJ" surface="Argentine"/>
+  <token id="2" lemma="export" pos="NNS" surface="exports"/>
+  <token id="3" lemma="to" pos="IN" surface="to"/>
+  <token id="4" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="5" lemma="be" pos="VBP" surface="are"/>
+  <token id="6" lemma="call" pos="VBN" surface="called"/>
+  <token id="7" lemma="politically" pos="RB" surface="politically"/>
+  <token id="8" lemma="dangerous" pos="JJ" surface="dangerous"/>
+  <token id="9" lemma="(" pos="-LRB-" surface="("/>
+  <token id="10" lemma="2879" pos="CD" surface="2879"/>
+  <token id="11" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="6" to="2" type="nsubjpass"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="advmod"/>
+  <dep from="6" to="8" type="oprd"/>
+  <dep from="10" to="9" type="punct"/>
+  <dep from="8" to="10" type="parataxis"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="6" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Exporting">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Exporter">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Importing_area">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Labeling">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Label">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097253">
+ <sentence>
+  Iran has had a chemical weapons production program since early in the Iran - Iraq war .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="2" lemma="have" pos="VBZ" surface="has"/>
+  <token id="3" lemma="have" pos="VBN" surface="had"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="chemical" pos="JJ" surface="chemical"/>
+  <token id="6" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="7" lemma="production" pos="NN" surface="production"/>
+  <token id="8" lemma="program" pos="NN" surface="program"/>
+  <token id="9" lemma="since" pos="IN" surface="since"/>
+  <token id="10" lemma="early" pos="RB" surface="early"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="14" lemma="-" pos="HYPH" surface="-"/>
+  <token id="15" lemma="iraq" pos="NNP" surface="Iraq"/>
+  <token id="16" lemma="war" pos="NN" surface="war"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="8" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="3" to="8" type="dobj"/>
+  <dep from="3" to="9" type="prep"/>
+  <dep from="9" to="10" type="pcomp"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="16" to="12" type="det"/>
+  <dep from="15" to="13" type="compound"/>
+  <dep from="15" to="14" type="punct"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="11" to="16" type="pobj"/>
+  <dep from="3" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Sides">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

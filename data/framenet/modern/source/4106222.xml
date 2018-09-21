@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106222">
+ <sentence>
+  Farther away is Coloane , connected to Taipa by a causeway and a large land reclamation project .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="farther" pos="RB" surface="Farther"/>
+  <token id="2" lemma="away" pos="RB" surface="away"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="coloane" pos="NNP" surface="Coloane"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="connect" pos="VBN" surface="connected"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="taipa" pos="NNP" surface="Taipa"/>
+  <token id="9" lemma="by" pos="IN" surface="by"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="causeway" pos="NN" surface="causeway"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="large" pos="JJ" surface="large"/>
+  <token id="15" lemma="land" pos="NN" surface="land"/>
+  <token id="16" lemma="reclamation" pos="NN" surface="reclamation"/>
+  <token id="17" lemma="project" pos="NN" surface="project"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="advmod"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="attr"/>
+  <dep from="4" to="5" type="punct"/>
+  <dep from="4" to="6" type="acl"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="6" to="9" type="agent"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="17" to="13" type="det"/>
+  <dep from="17" to="14" type="amod"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="11" to="17" type="conj"/>
+  <dep from="3" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_attached">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Size">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Project">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

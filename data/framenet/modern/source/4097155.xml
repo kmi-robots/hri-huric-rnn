@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097155">
+ <sentence>
+  Reports in the Western media in March 2003 charged that Iran may have taken this step .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="report" pos="NNS" surface="Reports"/>
+  <token id="2" lemma="in" pos="IN" surface="in"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="western" pos="JJ" surface="Western"/>
+  <token id="5" lemma="medium" pos="NNS" surface="media"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="march" pos="NNP" surface="March"/>
+  <token id="8" lemma="2003" pos="CD" surface="2003"/>
+  <token id="9" lemma="charge" pos="VBD" surface="charged"/>
+  <token id="10" lemma="that" pos="IN" surface="that"/>
+  <token id="11" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="12" lemma="may" pos="MD" surface="may"/>
+  <token id="13" lemma="have" pos="VB" surface="have"/>
+  <token id="14" lemma="take" pos="VBN" surface="taken"/>
+  <token id="15" lemma="this" pos="DT" surface="this"/>
+  <token id="16" lemma="step" pos="NN" surface="step"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="pobj"/>
+  <dep from="1" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="7" to="8" type="nummod"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="14" to="10" type="mark"/>
+  <dep from="14" to="11" type="nsubj"/>
+  <dep from="14" to="12" type="aux"/>
+  <dep from="14" to="13" type="aux"/>
+  <dep from="9" to="14" type="ccomp"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="dobj"/>
+  <dep from="9" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Judgment_communication">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Medium">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Evaluee">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Act">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Medium">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

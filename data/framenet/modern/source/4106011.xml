@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106011">
+ <sentence>
+  This is the most easily accessible of the New Territories ' walled villages .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="this" pos="DT" surface="This"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="most" pos="RBS" surface="most"/>
+  <token id="5" lemma="easily" pos="RB" surface="easily"/>
+  <token id="6" lemma="accessible" pos="JJ" surface="accessible"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="new" pos="NNP" surface="New"/>
+  <token id="10" lemma="territories" pos="NNPS" surface="Territories"/>
+  <token id="11" lemma="'" pos="POS" surface="'"/>
+  <token id="12" lemma="walled" pos="JJ" surface="walled"/>
+  <token id="13" lemma="village" pos="NNS" surface="villages"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="6" to="3" type="det"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="2" to="6" type="attr"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="13" to="10" type="poss"/>
+  <dep from="10" to="11" type="case"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="7" to="13" type="pobj"/>
+  <dep from="2" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Having_or_lacking_access">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Useful_location">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Partitive">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Group">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Subset">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Age">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

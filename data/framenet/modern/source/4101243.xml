@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101243">
+ <sentence>
+  Unfortunately , their zeal was not matched by their discrimination .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="unfortunately" pos="RB" surface="Unfortunately"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="4" lemma="zeal" pos="NN" surface="zeal"/>
+  <token id="5" lemma="be" pos="VBD" surface="was"/>
+  <token id="6" lemma="not" pos="RB" surface="not"/>
+  <token id="7" lemma="match" pos="VBN" surface="matched"/>
+  <token id="8" lemma="by" pos="IN" surface="by"/>
+  <token id="9" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="10" lemma="discrimination" pos="NN" surface="discrimination"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="advmod"/>
+  <dep from="7" to="2" type="punct"/>
+  <dep from="4" to="3" type="poss"/>
+  <dep from="7" to="4" type="nsubjpass"/>
+  <dep from="7" to="5" type="auxpass"/>
+  <dep from="7" to="6" type="neg"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="agent"/>
+  <dep from="10" to="9" type="poss"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="7" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Differentiation">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Evaluative_comparison">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Standard_attribute">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Profiled_item">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824530">
+ <sentence>
+  The year - earlier results have been restated to reflect an accounting change .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="year" pos="NN" surface="year"/>
+  <token id="3" lemma="-" pos="HYPH" surface="-"/>
+  <token id="4" lemma="early" pos="JJR" surface="earlier"/>
+  <token id="5" lemma="result" pos="NNS" surface="results"/>
+  <token id="6" lemma="have" pos="VBP" surface="have"/>
+  <token id="7" lemma="be" pos="VBN" surface="been"/>
+  <token id="8" lemma="restate" pos="VBN" surface="restated"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="reflect" pos="VB" surface="reflect"/>
+  <token id="11" lemma="an" pos="DT" surface="an"/>
+  <token id="12" lemma="accounting" pos="NN" surface="accounting"/>
+  <token id="13" lemma="change" pos="NN" surface="change"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="det"/>
+  <dep from="4" to="2" type="npadvmod"/>
+  <dep from="4" to="3" type="punct"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="8" to="5" type="nsubjpass"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="8" to="10" type="xcomp"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="10" to="13" type="dobj"/>
+  <dep from="8" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Relative_time">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Interval">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Undergo_change">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Earnings_and_losses">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

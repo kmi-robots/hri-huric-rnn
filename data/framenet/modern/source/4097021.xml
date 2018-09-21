@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097021">
+ <sentence>
+  China reportedly agreed to sell Iran 500 tons of phosphorus pentasulfide .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="china" pos="NNP" surface="China"/>
+  <token id="2" lemma="reportedly" pos="RB" surface="reportedly"/>
+  <token id="3" lemma="agree" pos="VBD" surface="agreed"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="sell" pos="VB" surface="sell"/>
+  <token id="6" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="7" lemma="500" pos="CD" surface="500"/>
+  <token id="8" lemma="ton" pos="NNS" surface="tons"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="phosphorus" pos="NN" surface="phosphorus"/>
+  <token id="11" lemma="pentasulfide" pos="NN" surface="pentasulfide"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="xcomp"/>
+  <dep from="5" to="6" type="dative"/>
+  <dep from="8" to="7" type="nummod"/>
+  <dep from="5" to="8" type="dobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="3" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Unattributed_information">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Reported_fact">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Reported_fact">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Make_agreement_on_action">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Party_1">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Obligation">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Commerce_sell">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Seller">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Buyer">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_mass">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Count">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Stuff">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

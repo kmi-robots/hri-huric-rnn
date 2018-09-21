@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100403">
+ <sentence>
+  In the early 16th century , the Ottoman Turkish Empire was advancing through the Middle East .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="early" pos="JJ" surface="early"/>
+  <token id="4" lemma="16th" pos="JJ" surface="16th"/>
+  <token id="5" lemma="century" pos="NN" surface="century"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="ottoman" pos="NNP" surface="Ottoman"/>
+  <token id="9" lemma="turkish" pos="NNP" surface="Turkish"/>
+  <token id="10" lemma="empire" pos="NNP" surface="Empire"/>
+  <token id="11" lemma="be" pos="VBD" surface="was"/>
+  <token id="12" lemma="advance" pos="VBG" surface="advancing"/>
+  <token id="13" lemma="through" pos="IN" surface="through"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="middle" pos="NNP" surface="Middle"/>
+  <token id="16" lemma="east" pos="NNP" surface="East"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="12" to="1" type="prep"/>
+  <dep from="5" to="2" type="det"/>
+  <dep from="5" to="3" type="amod"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="1" to="5" type="pobj"/>
+  <dep from="12" to="6" type="punct"/>
+  <dep from="10" to="7" type="det"/>
+  <dep from="10" to="8" type="compound"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="12" to="10" type="nsubj"/>
+  <dep from="12" to="11" type="aux"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="13" to="16" type="pobj"/>
+  <dep from="12" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Temporal_subregion">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Time_period">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Subpart">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

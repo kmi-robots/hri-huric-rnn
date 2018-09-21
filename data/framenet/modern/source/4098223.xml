@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098223">
+ <sentence>
+  QN : What countries have provided Iran with ballistic missiles and missile-related technology ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="what" pos="WDT" surface="What"/>
+  <token id="4" lemma="country" pos="NNS" surface="countries"/>
+  <token id="5" lemma="have" pos="VBP" surface="have"/>
+  <token id="6" lemma="provide" pos="VBN" surface="provided"/>
+  <token id="7" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="8" lemma="with" pos="IN" surface="with"/>
+  <token id="9" lemma="ballistic" pos="JJ" surface="ballistic"/>
+  <token id="10" lemma="missile" pos="NNS" surface="missiles"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="missile-related" pos="JJ" surface="missile-related"/>
+  <token id="13" lemma="technology" pos="NN" surface="technology"/>
+  <token id="14" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="dep"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="6" to="8" type="prep"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="10" to="11" type="cc"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="conj"/>
+  <dep from="6" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Supplier">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Artifact">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Artifact">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

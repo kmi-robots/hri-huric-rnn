@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097488">
+ <sentence>
+  Iran brings a multi - billion dollar lawsuit against the German government for preventing Siemens from completing the two reactors at Bushehr ( 6930 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="2" lemma="bring" pos="VBZ" surface="brings"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="multi" pos="JJ" surface="multi"/>
+  <token id="5" lemma="-" pos="HYPH" surface="-"/>
+  <token id="6" lemma="billion" pos="CD" surface="billion"/>
+  <token id="7" lemma="dollar" pos="NN" surface="dollar"/>
+  <token id="8" lemma="lawsuit" pos="NN" surface="lawsuit"/>
+  <token id="9" lemma="against" pos="IN" surface="against"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="german" pos="JJ" surface="German"/>
+  <token id="12" lemma="government" pos="NN" surface="government"/>
+  <token id="13" lemma="for" pos="IN" surface="for"/>
+  <token id="14" lemma="prevent" pos="VBG" surface="preventing"/>
+  <token id="15" lemma="siemens" pos="NNP" surface="Siemens"/>
+  <token id="16" lemma="from" pos="IN" surface="from"/>
+  <token id="17" lemma="complete" pos="VBG" surface="completing"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="two" pos="CD" surface="two"/>
+  <token id="20" lemma="reactor" pos="NNS" surface="reactors"/>
+  <token id="21" lemma="at" pos="IN" surface="at"/>
+  <token id="22" lemma="bushehr" pos="NNP" surface="Bushehr"/>
+  <token id="23" lemma="(" pos="-LRB-" surface="("/>
+  <token id="24" lemma="6930" pos="CD" surface="6930"/>
+  <token id="25" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="8" to="3" type="det"/>
+  <dep from="6" to="4" type="compound"/>
+  <dep from="6" to="5" type="punct"/>
+  <dep from="8" to="6" type="nummod"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="2" to="8" type="dobj"/>
+  <dep from="2" to="9" type="prep"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="2" to="13" type="prep"/>
+  <dep from="13" to="14" type="pcomp"/>
+  <dep from="14" to="15" type="dobj"/>
+  <dep from="14" to="16" type="prep"/>
+  <dep from="16" to="17" type="pcomp"/>
+  <dep from="20" to="18" type="det"/>
+  <dep from="20" to="19" type="nummod"/>
+  <dep from="17" to="20" type="dobj"/>
+  <dep from="17" to="21" type="prep"/>
+  <dep from="21" to="22" type="pobj"/>
+  <dep from="22" to="23" type="punct"/>
+  <dep from="22" to="24" type="appos"/>
+  <dep from="22" to="25" type="punct"/>
+  <dep from="2" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Preventing_or_letting">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Potential_hindrance">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Activity_finish">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Relative_location">
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Governed">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

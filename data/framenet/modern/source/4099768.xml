@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099768">
+ <sentence>
+  Portable kit developed to screen nerve agent
+ </sentence>
+ <tokens>
+  <token id="1" lemma="portable" pos="JJ" surface="Portable"/>
+  <token id="2" lemma="kit" pos="NN" surface="kit"/>
+  <token id="3" lemma="develop" pos="VBD" surface="developed"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="screen" pos="VB" surface="screen"/>
+  <token id="6" lemma="nerve" pos="NN" surface="nerve"/>
+  <token id="7" lemma="agent" pos="NN" surface="agent"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="xcomp"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="5" to="7" type="dobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cause_to_make_progress">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Project">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Active_substance">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Substance">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

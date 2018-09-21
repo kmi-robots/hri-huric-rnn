@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097563">
+ <sentence>
+  The Washington Post reported that Robert Einhorn told members of Congress that China had cancelled the proposed sale of a uranium conversion facility to Iran .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="washington" pos="NNP" surface="Washington"/>
+  <token id="3" lemma="post" pos="NNP" surface="Post"/>
+  <token id="4" lemma="report" pos="VBD" surface="reported"/>
+  <token id="5" lemma="that" pos="IN" surface="that"/>
+  <token id="6" lemma="robert" pos="NNP" surface="Robert"/>
+  <token id="7" lemma="einhorn" pos="NNP" surface="Einhorn"/>
+  <token id="8" lemma="tell" pos="VBD" surface="told"/>
+  <token id="9" lemma="member" pos="NNS" surface="members"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="congress" pos="NNP" surface="Congress"/>
+  <token id="12" lemma="that" pos="IN" surface="that"/>
+  <token id="13" lemma="china" pos="NNP" surface="China"/>
+  <token id="14" lemma="have" pos="VBD" surface="had"/>
+  <token id="15" lemma="cancel" pos="VBN" surface="cancelled"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="propose" pos="VBN" surface="proposed"/>
+  <token id="18" lemma="sale" pos="NN" surface="sale"/>
+  <token id="19" lemma="of" pos="IN" surface="of"/>
+  <token id="20" lemma="a" pos="DT" surface="a"/>
+  <token id="21" lemma="uranium" pos="NN" surface="uranium"/>
+  <token id="22" lemma="conversion" pos="NN" surface="conversion"/>
+  <token id="23" lemma="facility" pos="NN" surface="facility"/>
+  <token id="24" lemma="to" pos="IN" surface="to"/>
+  <token id="25" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="8" to="5" type="mark"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="4" to="8" type="ccomp"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="15" to="12" type="mark"/>
+  <dep from="15" to="13" type="nsubj"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="8" to="15" type="ccomp"/>
+  <dep from="18" to="16" type="det"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="15" to="18" type="dobj"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="23" to="20" type="det"/>
+  <dep from="22" to="21" type="compound"/>
+  <dep from="23" to="22" type="compound"/>
+  <dep from="19" to="23" type="pobj"/>
+  <dep from="23" to="24" type="prep"/>
+  <dep from="24" to="25" type="pobj"/>
+  <dep from="4" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Telling">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Addressee">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Commerce_sell">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Buyer">
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Group">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Member">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Use">
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_change">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

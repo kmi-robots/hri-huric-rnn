@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101939">
+ <sentence>
+  28 BILL : Thanks a lot , Rich .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="28" pos="CD" surface="28"/>
+  <token id="2" lemma="bill" pos="NN" surface="BILL"/>
+  <token id="3" lemma=":" pos=":" surface=":"/>
+  <token id="4" lemma="thank" pos="NNS" surface="Thanks"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="lot" pos="NN" surface="lot"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="rich" pos="NNP" surface="Rich"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="npadvmod"/>
+  <dep from="4" to="7" type="punct"/>
+  <dep from="4" to="8" type="npadvmod"/>
+  <dep from="4" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Judgment_direct_address">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Degree">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099089">
+ <sentence>
+  QN : Have anthrax vaccinations of U.S. troops occurred previously ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="have" pos="VB" surface="Have"/>
+  <token id="4" lemma="anthrax" pos="NN" surface="anthrax"/>
+  <token id="5" lemma="vaccination" pos="NNS" surface="vaccinations"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="u.s." pos="NNP" surface="U.S."/>
+  <token id="8" lemma="troop" pos="NNS" surface="troops"/>
+  <token id="9" lemma="occur" pos="VBD" surface="occurred"/>
+  <token id="10" lemma="previously" pos="RB" surface="previously"/>
+  <token id="11" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="9" to="3" type="aux"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="9" to="5" type="nsubj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="advmod"/>
+  <dep from="9" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Event">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

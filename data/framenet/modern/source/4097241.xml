@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097241">
+ <sentence>
+  Ground systems ( artillery , rocket launchers ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="ground" pos="NN" surface="Ground"/>
+  <token id="2" lemma="system" pos="NNS" surface="systems"/>
+  <token id="3" lemma="(" pos="-LRB-" surface="("/>
+  <token id="4" lemma="artillery" pos="NN" surface="artillery"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="rocket" pos="NN" surface="rocket"/>
+  <token id="7" lemma="launcher" pos="NNS" surface="launchers"/>
+  <token id="8" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="7" to="4" type="nmod"/>
+  <dep from="4" to="5" type="punct"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="2" to="7" type="appos"/>
+  <dep from="2" to="8" type="punct"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Gizmo">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Use">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

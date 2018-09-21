@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098823">
+ <sentence>
+  QN : Is truth the first casualty in war ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="be" pos="VBZ" surface="Is"/>
+  <token id="4" lemma="truth" pos="NN" surface="truth"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="first" pos="JJ" surface="first"/>
+  <token id="7" lemma="casualty" pos="NN" surface="casualty"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="war" pos="NN" surface="war"/>
+  <token id="10" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="dep"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="4" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Ordinal_numbers">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Basis_of_order">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

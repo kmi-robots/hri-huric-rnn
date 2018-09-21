@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101055">
+ <sentence>
+  Gass took over the abandoned Mormon fort and 640 acres ( 260 hectares ) surrounding it , dubbing it the Las Vegas Ranch .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="gass" pos="NNP" surface="Gass"/>
+  <token id="2" lemma="take" pos="VBD" surface="took"/>
+  <token id="3" lemma="over" pos="RP" surface="over"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="abandon" pos="VBN" surface="abandoned"/>
+  <token id="6" lemma="mormon" pos="NNP" surface="Mormon"/>
+  <token id="7" lemma="fort" pos="NN" surface="fort"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="640" pos="CD" surface="640"/>
+  <token id="10" lemma="acre" pos="NNS" surface="acres"/>
+  <token id="11" lemma="(" pos="-LRB-" surface="("/>
+  <token id="12" lemma="260" pos="CD" surface="260"/>
+  <token id="13" lemma="hectare" pos="NNS" surface="hectares"/>
+  <token id="14" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="15" lemma="surround" pos="VBG" surface="surrounding"/>
+  <token id="16" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="dub" pos="VBG" surface="dubbing"/>
+  <token id="19" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="las" pos="NNP" surface="Las"/>
+  <token id="22" lemma="vegas" pos="NNP" surface="Vegas"/>
+  <token id="23" lemma="ranch" pos="NNP" surface="Ranch"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prt"/>
+  <dep from="7" to="4" type="det"/>
+  <dep from="7" to="5" type="amod"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="2" to="7" type="dobj"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="10" to="9" type="nummod"/>
+  <dep from="7" to="10" type="conj"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="13" to="12" type="nummod"/>
+  <dep from="10" to="13" type="appos"/>
+  <dep from="10" to="14" type="punct"/>
+  <dep from="2" to="15" type="advcl"/>
+  <dep from="15" to="16" type="dobj"/>
+  <dep from="15" to="17" type="punct"/>
+  <dep from="15" to="18" type="conj"/>
+  <dep from="18" to="19" type="dobj"/>
+  <dep from="23" to="20" type="det"/>
+  <dep from="22" to="21" type="compound"/>
+  <dep from="23" to="22" type="compound"/>
+  <dep from="18" to="23" type="oprd"/>
+  <dep from="2" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People_by_religion">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Religion">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Creator">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_area">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_area">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Name_conferral">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Abandonment">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

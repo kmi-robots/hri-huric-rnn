@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098760">
+ <sentence>
+  QN : Does Iran have plans for a nuclear bomb ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="do" pos="VBZ" surface="Does"/>
+  <token id="4" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="5" lemma="have" pos="VB" surface="have"/>
+  <token id="6" lemma="plan" pos="NNS" surface="plans"/>
+  <token id="7" lemma="for" pos="IN" surface="for"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="10" lemma="bomb" pos="NN" surface="bomb"/>
+  <token id="11" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="dep"/>
+  <dep from="5" to="2" type="punct"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="5" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

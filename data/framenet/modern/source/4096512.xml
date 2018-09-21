@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096512">
+ <sentence>
+  North Korea has exported missiles , missile components , and technology to Egypt , Iran , Libya , Pakistan , Syria , and Yemen .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="north" pos="NNP" surface="North"/>
+  <token id="2" lemma="korea" pos="NNP" surface="Korea"/>
+  <token id="3" lemma="have" pos="VBZ" surface="has"/>
+  <token id="4" lemma="export" pos="VBN" surface="exported"/>
+  <token id="5" lemma="missile" pos="NNS" surface="missiles"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="missile" pos="NN" surface="missile"/>
+  <token id="8" lemma="component" pos="NNS" surface="components"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="technology" pos="NN" surface="technology"/>
+  <token id="12" lemma="to" pos="IN" surface="to"/>
+  <token id="13" lemma="egypt" pos="NNP" surface="Egypt"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="libya" pos="NNP" surface="Libya"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="pakistan" pos="NNP" surface="Pakistan"/>
+  <token id="20" lemma="," pos="," surface=","/>
+  <token id="21" lemma="syria" pos="NNP" surface="Syria"/>
+  <token id="22" lemma="," pos="," surface=","/>
+  <token id="23" lemma="and" pos="CC" surface="and"/>
+  <token id="24" lemma="yemen" pos="NNP" surface="Yemen"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="5" to="6" type="punct"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="conj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="8" to="10" type="cc"/>
+  <dep from="8" to="11" type="conj"/>
+  <dep from="4" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="15" to="17" type="conj"/>
+  <dep from="17" to="18" type="punct"/>
+  <dep from="17" to="19" type="conj"/>
+  <dep from="19" to="20" type="punct"/>
+  <dep from="19" to="21" type="conj"/>
+  <dep from="21" to="22" type="punct"/>
+  <dep from="21" to="23" type="cc"/>
+  <dep from="21" to="24" type="conj"/>
+  <dep from="4" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Artifact">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Artifact">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Ingredients">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Material">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Exporting">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Exporter">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Importing_area">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

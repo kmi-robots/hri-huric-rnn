@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4164980">
+ <sentence>
+  Among those being detained is a ninety-four year-old man .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="among" pos="IN" surface="Among"/>
+  <token id="2" lemma="those" pos="DT" surface="those"/>
+  <token id="3" lemma="be" pos="VBG" surface="being"/>
+  <token id="4" lemma="detain" pos="VBN" surface="detained"/>
+  <token id="5" lemma="be" pos="VBZ" surface="is"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="ninety-four" pos="JJ" surface="ninety-four"/>
+  <token id="8" lemma="year-old" pos="JJ" surface="year-old"/>
+  <token id="9" lemma="man" pos="NN" surface="man"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="2" to="4" type="acl"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="9" to="6" type="det"/>
+  <dep from="9" to="7" type="amod"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="5" to="9" type="nsubj"/>
+  <dep from="5" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Be_subset_of">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Total">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Detaining">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Suspect">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Age">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

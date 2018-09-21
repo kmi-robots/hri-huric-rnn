@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101640">
+ <sentence>
+  What do you think the time frame is on this ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="what" pos="WP" surface="What"/>
+  <token id="2" lemma="do" pos="VBP" surface="do"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="4" lemma="think" pos="VB" surface="think"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="time" pos="NN" surface="time"/>
+  <token id="7" lemma="frame" pos="NN" surface="frame"/>
+  <token id="8" lemma="be" pos="VBZ" surface="is"/>
+  <token id="9" lemma="on" pos="IN" surface="on"/>
+  <token id="10" lemma="this" pos="DT" surface="this"/>
+  <token id="11" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="dobj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="4" to="8" type="ccomp"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="4" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Opinion">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Opinion">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

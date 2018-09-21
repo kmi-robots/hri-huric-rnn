@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103615">
+ <sentence>
+  `` Gov . Clinton has no character problem , '' Stephanopoulos declares .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="``" pos="``" surface="``"/>
+  <token id="2" lemma="gov" pos="NNP" surface="Gov"/>
+  <token id="3" lemma="." pos="." surface="."/>
+  <token id="4" lemma="clinton" pos="NNP" surface="Clinton"/>
+  <token id="5" lemma="have" pos="VBZ" surface="has"/>
+  <token id="6" lemma="no" pos="DT" surface="no"/>
+  <token id="7" lemma="character" pos="NN" surface="character"/>
+  <token id="8" lemma="problem" pos="NN" surface="problem"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="''" pos="''" surface="''"/>
+  <token id="11" lemma="stephanopoulos" pos="NNP" surface="Stephanopoulos"/>
+  <token id="12" lemma="declare" pos="VBZ" surface="declares"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="punct"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="12" to="5" type="ccomp"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="dobj"/>
+  <dep from="12" to="9" type="punct"/>
+  <dep from="12" to="10" type="punct"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

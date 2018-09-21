@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148338">
+ <sentence>
+  I don 't want you to commit yourself too far unless you are sure . "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="don" pos="VBP" surface="don"/>
+  <token id="3" lemma="'t" pos="POS" surface="'t"/>
+  <token id="4" lemma="want" pos="VBP" surface="want"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="commit" pos="VB" surface="commit"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="yourself"/>
+  <token id="9" lemma="too" pos="RB" surface="too"/>
+  <token id="10" lemma="far" pos="RB" surface="far"/>
+  <token id="11" lemma="unless" pos="IN" surface="unless"/>
+  <token id="12" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="13" lemma="be" pos="VBP" surface="are"/>
+  <token id="14" lemma="sure" pos="JJ" surface="sure"/>
+  <token id="15" lemma="." pos="." surface="."/>
+  <token id="16" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="case"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="7" to="5" type="nsubj"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="4" to="7" type="ccomp"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="7" to="10" type="advmod"/>
+  <dep from="13" to="11" type="mark"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="7" to="13" type="advcl"/>
+  <dep from="13" to="14" type="acomp"/>
+  <dep from="2" to="15" type="punct"/>
+  <dep from="2" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Desiring">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Experiencer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Focal_participant">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Certainty">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Sufficiency">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Scale">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

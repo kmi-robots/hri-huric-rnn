@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105859">
+ <sentence>
+  If you 're up to a climb , take the Mount Austin road to the Victoria Peak Gardens .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="if" pos="IN" surface="If"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="3" lemma="be" pos="VBP" surface="'re"/>
+  <token id="4" lemma="up" pos="IN" surface="up"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="climb" pos="NN" surface="climb"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="take" pos="VB" surface="take"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="mount" pos="NNP" surface="Mount"/>
+  <token id="12" lemma="austin" pos="NNP" surface="Austin"/>
+  <token id="13" lemma="road" pos="NN" surface="road"/>
+  <token id="14" lemma="to" pos="IN" surface="to"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="victoria" pos="NNP" surface="Victoria"/>
+  <token id="17" lemma="peak" pos="NNP" surface="Peak"/>
+  <token id="18" lemma="gardens" pos="NNPS" surface="Gardens"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="mark"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="9" to="3" type="advcl"/>
+  <dep from="3" to="4" type="advmod"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="9" to="8" type="punct"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="13" to="10" type="det"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="9" to="13" type="dobj"/>
+  <dep from="9" to="14" type="prep"/>
+  <dep from="18" to="15" type="det"/>
+  <dep from="18" to="16" type="compound"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="14" to="18" type="pobj"/>
+  <dep from="9" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Roadway">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Goal">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Landmark">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

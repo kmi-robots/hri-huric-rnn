@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106613">
+ <sentence>
+  Your gift will give children and families hope for improved tomorrows .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP$" surface="Your"/>
+  <token id="2" lemma="gift" pos="NN" surface="gift"/>
+  <token id="3" lemma="will" pos="MD" surface="will"/>
+  <token id="4" lemma="give" pos="VB" surface="give"/>
+  <token id="5" lemma="child" pos="NNS" surface="children"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="family" pos="NNS" surface="families"/>
+  <token id="8" lemma="hope" pos="VBP" surface="hope"/>
+  <token id="9" lemma="for" pos="IN" surface="for"/>
+  <token id="10" lemma="improved" pos="JJ" surface="improved"/>
+  <token id="11" lemma="tomorrow" pos="NNS" surface="tomorrows"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="poss"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dative"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="5" to="7" type="conj"/>
+  <dep from="4" to="8" type="dobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="4" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_age">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_to_make_progress">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Project">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Kinship">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Relatives">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

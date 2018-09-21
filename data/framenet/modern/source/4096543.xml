@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096543">
+ <sentence>
+  Kazakhstan transferred all of these nuclear warheads to Russia by April 1995 and destroyed the nuclear testing infrastructure at Semipalatinsk by July 2000 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="kazakhstan" pos="NNP" surface="Kazakhstan"/>
+  <token id="2" lemma="transfer" pos="VBD" surface="transferred"/>
+  <token id="3" lemma="all" pos="DT" surface="all"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="these" pos="DT" surface="these"/>
+  <token id="6" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="7" lemma="warhead" pos="NNS" surface="warheads"/>
+  <token id="8" lemma="to" pos="IN" surface="to"/>
+  <token id="9" lemma="russia" pos="NNP" surface="Russia"/>
+  <token id="10" lemma="by" pos="IN" surface="by"/>
+  <token id="11" lemma="april" pos="NNP" surface="April"/>
+  <token id="12" lemma="1995" pos="CD" surface="1995"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="destroy" pos="VBD" surface="destroyed"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="17" lemma="testing" pos="NN" surface="testing"/>
+  <token id="18" lemma="infrastructure" pos="NN" surface="infrastructure"/>
+  <token id="19" lemma="at" pos="IN" surface="at"/>
+  <token id="20" lemma="semipalatinsk" pos="NNP" surface="Semipalatinsk"/>
+  <token id="21" lemma="by" pos="IN" surface="by"/>
+  <token id="22" lemma="july" pos="NNP" surface="July"/>
+  <token id="23" lemma="2000" pos="CD" surface="2000"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="pobj"/>
+  <dep from="2" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="2" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="11" to="12" type="nummod"/>
+  <dep from="2" to="13" type="cc"/>
+  <dep from="2" to="14" type="conj"/>
+  <dep from="18" to="15" type="det"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="14" to="18" type="dobj"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="19" to="20" type="pobj"/>
+  <dep from="14" to="21" type="prep"/>
+  <dep from="21" to="22" type="pobj"/>
+  <dep from="22" to="23" type="nummod"/>
+  <dep from="2" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Material">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Destroying">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Destroyer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Patient">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Operational_testing">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Transfer">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Infrastructure">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

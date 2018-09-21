@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106018">
+ <sentence>
+  Another such hall , belonging to the Liu Clan , is Liu Man Shek Tong in the village of Sheung Shui .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="another" pos="DT" surface="Another"/>
+  <token id="2" lemma="such" pos="JJ" surface="such"/>
+  <token id="3" lemma="hall" pos="NN" surface="hall"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="belong" pos="VBG" surface="belonging"/>
+  <token id="6" lemma="to" pos="IN" surface="to"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="liu" pos="NNP" surface="Liu"/>
+  <token id="9" lemma="clan" pos="NNP" surface="Clan"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="be" pos="VBZ" surface="is"/>
+  <token id="12" lemma="liu" pos="NNP" surface="Liu"/>
+  <token id="13" lemma="man" pos="NNP" surface="Man"/>
+  <token id="14" lemma="shek" pos="NNP" surface="Shek"/>
+  <token id="15" lemma="tong" pos="NNP" surface="Tong"/>
+  <token id="16" lemma="in" pos="IN" surface="in"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="village" pos="NN" surface="village"/>
+  <token id="19" lemma="of" pos="IN" surface="of"/>
+  <token id="20" lemma="sheung" pos="NNP" surface="Sheung"/>
+  <token id="21" lemma="shui" pos="NNP" surface="Shui"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="11" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="3" to="5" type="acl"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="pobj"/>
+  <dep from="3" to="10" type="punct"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="15" to="13" type="compound"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="11" to="15" type="attr"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="19" to="21" type="pobj"/>
+  <dep from="11" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Class">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Owner">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Name">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

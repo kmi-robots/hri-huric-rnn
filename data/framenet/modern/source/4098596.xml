@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098596">
+ <sentence>
+  QN : Did Sharon urge the US leader to keep pressing Iran to give up its nuclear program altogether ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="do" pos="VBD" surface="Did"/>
+  <token id="4" lemma="sharon" pos="NNP" surface="Sharon"/>
+  <token id="5" lemma="urge" pos="VB" surface="urge"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="us" pos="NNP" surface="US"/>
+  <token id="8" lemma="leader" pos="NN" surface="leader"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="keep" pos="VB" surface="keep"/>
+  <token id="11" lemma="press" pos="VBG" surface="pressing"/>
+  <token id="12" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="13" lemma="to" pos="TO" surface="to"/>
+  <token id="14" lemma="give" pos="VB" surface="give"/>
+  <token id="15" lemma="up" pos="RP" surface="up"/>
+  <token id="16" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="17" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="18" lemma="program" pos="NN" surface="program"/>
+  <token id="19" lemma="altogether" pos="RB" surface="altogether"/>
+  <token id="20" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="dobj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="5" to="10" type="xcomp"/>
+  <dep from="10" to="11" type="xcomp"/>
+  <dep from="11" to="12" type="dobj"/>
+  <dep from="14" to="13" type="aux"/>
+  <dep from="11" to="14" type="xcomp"/>
+  <dep from="14" to="15" type="prt"/>
+  <dep from="18" to="16" type="poss"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="14" to="18" type="dobj"/>
+  <dep from="14" to="19" type="advmod"/>
+  <dep from="5" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attempt_suasion">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Addressee">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Attempt_suasion">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Addressee">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Salient_entity">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Activity_ongoing">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

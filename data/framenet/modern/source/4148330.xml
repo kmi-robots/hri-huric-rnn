@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148330">
+ <sentence>
+  " Really we must see Baynes at once , " cried Holmes , picking up his hat .
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="really" pos="RB" surface="Really"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="4" lemma="must" pos="MD" surface="must"/>
+  <token id="5" lemma="see" pos="VB" surface="see"/>
+  <token id="6" lemma="baynes" pos="NNPS" surface="Baynes"/>
+  <token id="7" lemma="at" pos="IN" surface="at"/>
+  <token id="8" lemma="once" pos="RB" surface="once"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma='"' pos="''" surface='"'/>
+  <token id="11" lemma="cry" pos="VBD" surface="cried"/>
+  <token id="12" lemma="holmes" pos="NNP" surface="Holmes"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="pick" pos="VBG" surface="picking"/>
+  <token id="15" lemma="up" pos="RP" surface="up"/>
+  <token id="16" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="17" lemma="hat" pos="NN" surface="hat"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="11" to="1" type="punct"/>
+  <dep from="5" to="2" type="advmod"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="11" to="5" type="ccomp"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="prep"/>
+  <dep from="7" to="8" type="pcomp"/>
+  <dep from="11" to="9" type="punct"/>
+  <dep from="11" to="10" type="punct"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="dobj"/>
+  <dep from="11" to="13" type="punct"/>
+  <dep from="11" to="14" type="advcl"/>
+  <dep from="14" to="15" type="prt"/>
+  <dep from="17" to="16" type="poss"/>
+  <dep from="14" to="17" type="dobj"/>
+  <dep from="11" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Communication_noise">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Accoutrements">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Wearer">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

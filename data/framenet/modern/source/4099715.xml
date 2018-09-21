@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099715">
+ <sentence>
+  During the 1990s , the unavailability of precursors required to manufacture some nerve agents may very well have challenged the DPRK logistical supply network .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="during" pos="IN" surface="During"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="1990" pos="NNS" surface="1990s"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="unavailability" pos="NN" surface="unavailability"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="precursor" pos="NNS" surface="precursors"/>
+  <token id="9" lemma="require" pos="VBN" surface="required"/>
+  <token id="10" lemma="to" pos="TO" surface="to"/>
+  <token id="11" lemma="manufacture" pos="VB" surface="manufacture"/>
+  <token id="12" lemma="some" pos="DT" surface="some"/>
+  <token id="13" lemma="nerve" pos="NN" surface="nerve"/>
+  <token id="14" lemma="agent" pos="NNS" surface="agents"/>
+  <token id="15" lemma="may" pos="MD" surface="may"/>
+  <token id="16" lemma="very" pos="RB" surface="very"/>
+  <token id="17" lemma="well" pos="RB" surface="well"/>
+  <token id="18" lemma="have" pos="VB" surface="have"/>
+  <token id="19" lemma="challenge" pos="VBN" surface="challenged"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="dprk" pos="JJ" surface="DPRK"/>
+  <token id="22" lemma="logistical" pos="JJ" surface="logistical"/>
+  <token id="23" lemma="supply" pos="NN" surface="supply"/>
+  <token id="24" lemma="network" pos="NN" surface="network"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="19" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="19" to="4" type="punct"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="19" to="6" type="nsubj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="6" to="9" type="acl"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="9" to="11" type="xcomp"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="19" to="14" type="nsubj"/>
+  <dep from="19" to="15" type="aux"/>
+  <dep from="17" to="16" type="advmod"/>
+  <dep from="19" to="17" type="advmod"/>
+  <dep from="19" to="18" type="aux"/>
+  <dep from="0" to="19" type="root"/>
+  <dep from="24" to="20" type="det"/>
+  <dep from="24" to="21" type="nmod"/>
+  <dep from="23" to="22" type="amod"/>
+  <dep from="24" to="23" type="compound"/>
+  <dep from="19" to="24" type="dobj"/>
+  <dep from="19" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Ingredients">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Material">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_necessary">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Required_entity">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Dependent">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Active_substance">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Substance">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Network">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Network">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

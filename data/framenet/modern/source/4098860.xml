@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098860">
+ <sentence>
+  QN : Does the judge think Daimler fraudlently described the 1998 deal to avoid paying a premium ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="do" pos="VBZ" surface="Does"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="judge" pos="NN" surface="judge"/>
+  <token id="6" lemma="think" pos="VB" surface="think"/>
+  <token id="7" lemma="daimler" pos="NNP" surface="Daimler"/>
+  <token id="8" lemma="fraudlently" pos="RB" surface="fraudlently"/>
+  <token id="9" lemma="describe" pos="VBD" surface="described"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="1998" pos="CD" surface="1998"/>
+  <token id="12" lemma="deal" pos="NN" surface="deal"/>
+  <token id="13" lemma="to" pos="TO" surface="to"/>
+  <token id="14" lemma="avoid" pos="VB" surface="avoid"/>
+  <token id="15" lemma="pay" pos="VBG" surface="paying"/>
+  <token id="16" lemma="a" pos="DT" surface="a"/>
+  <token id="17" lemma="premium" pos="NN" surface="premium"/>
+  <token id="18" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="9" to="7" type="nsubj"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="6" to="9" type="ccomp"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="nummod"/>
+  <dep from="9" to="12" type="dobj"/>
+  <dep from="14" to="13" type="aux"/>
+  <dep from="9" to="14" type="advcl"/>
+  <dep from="14" to="15" type="xcomp"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="dobj"/>
+  <dep from="6" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Opinion">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Opinion">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Communicate_categorization">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Make_agreement_on_action">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Avoiding">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Undesirable_situation">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Commerce_pay">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Money">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Buyer">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

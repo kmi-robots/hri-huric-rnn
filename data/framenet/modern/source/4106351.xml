@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106351">
+ <sentence>
+  I was on welfare and without my diploma .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="on" pos="IN" surface="on"/>
+  <token id="4" lemma="welfare" pos="NN" surface="welfare"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="without" pos="IN" surface="without"/>
+  <token id="7" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="8" lemma="diploma" pos="NN" surface="diploma"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="3" to="5" type="cc"/>
+  <dep from="3" to="6" type="conj"/>
+  <dep from="8" to="7" type="poss"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Documents">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Bearer">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Document">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097436">
+ <sentence>
+  Brazilian Brigadier General Hugo Piva may be working in Iran , and US reports say Iran may receive nuclear weapons technology from Brazil ( PPNN ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="brazilian" pos="NNP" surface="Brazilian"/>
+  <token id="2" lemma="brigadier" pos="NNP" surface="Brigadier"/>
+  <token id="3" lemma="general" pos="NNP" surface="General"/>
+  <token id="4" lemma="hugo" pos="NNP" surface="Hugo"/>
+  <token id="5" lemma="piva" pos="NNP" surface="Piva"/>
+  <token id="6" lemma="may" pos="MD" surface="may"/>
+  <token id="7" lemma="be" pos="VB" surface="be"/>
+  <token id="8" lemma="work" pos="VBG" surface="working"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="us" pos="NNP" surface="US"/>
+  <token id="14" lemma="report" pos="NNS" surface="reports"/>
+  <token id="15" lemma="say" pos="VBP" surface="say"/>
+  <token id="16" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="17" lemma="may" pos="MD" surface="may"/>
+  <token id="18" lemma="receive" pos="VB" surface="receive"/>
+  <token id="19" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="20" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="21" lemma="technology" pos="NN" surface="technology"/>
+  <token id="22" lemma="from" pos="IN" surface="from"/>
+  <token id="23" lemma="brazil" pos="NNP" surface="Brazil"/>
+  <token id="24" lemma="(" pos="-LRB-" surface="("/>
+  <token id="25" lemma="ppnn" pos="NNP" surface="PPNN"/>
+  <token id="26" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="amod"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="5" to="3" type="compound"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="8" to="5" type="nsubj"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="8" to="11" type="punct"/>
+  <dep from="8" to="12" type="cc"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="8" to="15" type="conj"/>
+  <dep from="18" to="16" type="nsubj"/>
+  <dep from="18" to="17" type="aux"/>
+  <dep from="15" to="18" type="ccomp"/>
+  <dep from="20" to="19" type="amod"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="18" to="21" type="dobj"/>
+  <dep from="18" to="22" type="prep"/>
+  <dep from="22" to="23" type="pobj"/>
+  <dep from="23" to="24" type="punct"/>
+  <dep from="23" to="25" type="appos"/>
+  <dep from="23" to="26" type="punct"/>
+  <dep from="15" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_employed">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Employee">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Place_of_employment">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Medium">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Receiving">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Donor">
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Artifact">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Artifact">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

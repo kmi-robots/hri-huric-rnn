@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824448">
+ <sentence>
+  Areas that are made of ` fill ' liquefy .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="area" pos="NNS" surface="Areas"/>
+  <token id="2" lemma="that" pos="WDT" surface="that"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="make" pos="VBN" surface="made"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="`" pos="''" surface="`"/>
+  <token id="7" lemma="fill" pos="NN" surface="fill"/>
+  <token id="8" lemma="'" pos="''" surface="'"/>
+  <token id="9" lemma="liquefy" pos="VB" surface="liquefy"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="1" to="4" type="relcl"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="punct"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_of_phase">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

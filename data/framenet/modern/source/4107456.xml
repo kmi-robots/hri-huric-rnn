@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4107456">
+ <sentence>
+  The trade surplus with the United States edged down about $33 million to $7.6 billion .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="trade" pos="NN" surface="trade"/>
+  <token id="3" lemma="surplus" pos="NN" surface="surplus"/>
+  <token id="4" lemma="with" pos="IN" surface="with"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="united" pos="NNP" surface="United"/>
+  <token id="7" lemma="states" pos="NNP" surface="States"/>
+  <token id="8" lemma="edge" pos="VBD" surface="edged"/>
+  <token id="9" lemma="down" pos="RP" surface="down"/>
+  <token id="10" lemma="about" pos="IN" surface="about"/>
+  <token id="11" lemma="$33" pos="CD" surface="$33"/>
+  <token id="12" lemma="million" pos="CD" surface="million"/>
+  <token id="13" lemma="to" pos="IN" surface="to"/>
+  <token id="14" lemma="$7.6" pos="$" surface="$7.6"/>
+  <token id="15" lemma="billion" pos="CD" surface="billion"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="8" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="4" to="7" type="pobj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prt"/>
+  <dep from="8" to="10" type="prep"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="15" to="12" type="quantmod"/>
+  <dep from="15" to="13" type="quantmod"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="10" to="15" type="pobj"/>
+  <dep from="8" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Difference">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Final_value">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Direction">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Independent_variable">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Multiplier">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Multiplier">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

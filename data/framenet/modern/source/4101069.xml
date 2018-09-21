@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101069">
+ <sentence>
+  Las Vegas would serve as a major stopover for crew rest and train repair .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="las" pos="NNP" surface="Las"/>
+  <token id="2" lemma="vegas" pos="NNP" surface="Vegas"/>
+  <token id="3" lemma="would" pos="MD" surface="would"/>
+  <token id="4" lemma="serve" pos="VB" surface="serve"/>
+  <token id="5" lemma="as" pos="IN" surface="as"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="major" pos="JJ" surface="major"/>
+  <token id="8" lemma="stopover" pos="NN" surface="stopover"/>
+  <token id="9" lemma="for" pos="IN" surface="for"/>
+  <token id="10" lemma="crew" pos="NN" surface="crew"/>
+  <token id="11" lemma="rest" pos="NN" surface="rest"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="train" pos="NN" surface="train"/>
+  <token id="14" lemma="repair" pos="NN" surface="repair"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="11" to="14" type="conj"/>
+  <dep from="4" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Importance">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Factor">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Undertaking">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Vehicle">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Stimulus_focus">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Serving_in_capacity">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Role">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

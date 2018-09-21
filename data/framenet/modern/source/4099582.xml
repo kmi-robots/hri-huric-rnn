@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099582">
+ <sentence>
+  Disaster readiness fund urged [ North Carolina ]
+ </sentence>
+ <tokens>
+  <token id="1" lemma="disaster" pos="NN" surface="Disaster"/>
+  <token id="2" lemma="readiness" pos="NN" surface="readiness"/>
+  <token id="3" lemma="fund" pos="NN" surface="fund"/>
+  <token id="4" lemma="urge" pos="VBD" surface="urged"/>
+  <token id="5" lemma="[" pos="-LRB-" surface="["/>
+  <token id="6" lemma="north" pos="NNP" surface="North"/>
+  <token id="7" lemma="carolina" pos="NNP" surface="Carolina"/>
+  <token id="8" lemma="]" pos="-RRB-" surface="]"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="compound"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="punct"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="4" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Catastrophe">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Undesirable_event">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Request">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

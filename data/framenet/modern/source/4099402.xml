@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099402">
+ <sentence>
+  These groups have an outside constituency that would be alienated by indiscriminate or disproportionate attacks , potentially triggering a political backlash .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="these" pos="DT" surface="These"/>
+  <token id="2" lemma="group" pos="NNS" surface="groups"/>
+  <token id="3" lemma="have" pos="VBP" surface="have"/>
+  <token id="4" lemma="an" pos="DT" surface="an"/>
+  <token id="5" lemma="outside" pos="JJ" surface="outside"/>
+  <token id="6" lemma="constituency" pos="NN" surface="constituency"/>
+  <token id="7" lemma="that" pos="WDT" surface="that"/>
+  <token id="8" lemma="would" pos="MD" surface="would"/>
+  <token id="9" lemma="be" pos="VB" surface="be"/>
+  <token id="10" lemma="alienate" pos="VBN" surface="alienated"/>
+  <token id="11" lemma="by" pos="IN" surface="by"/>
+  <token id="12" lemma="indiscriminate" pos="JJ" surface="indiscriminate"/>
+  <token id="13" lemma="or" pos="CC" surface="or"/>
+  <token id="14" lemma="disproportionate" pos="JJ" surface="disproportionate"/>
+  <token id="15" lemma="attack" pos="NNS" surface="attacks"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="potentially" pos="RB" surface="potentially"/>
+  <token id="18" lemma="trigger" pos="VBG" surface="triggering"/>
+  <token id="19" lemma="a" pos="DT" surface="a"/>
+  <token id="20" lemma="political" pos="JJ" surface="political"/>
+  <token id="21" lemma="backlash" pos="NN" surface="backlash"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="10" to="7" type="nsubjpass"/>
+  <dep from="10" to="8" type="aux"/>
+  <dep from="10" to="9" type="auxpass"/>
+  <dep from="6" to="10" type="relcl"/>
+  <dep from="10" to="11" type="agent"/>
+  <dep from="15" to="12" type="amod"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="12" to="14" type="conj"/>
+  <dep from="11" to="15" type="pobj"/>
+  <dep from="3" to="16" type="punct"/>
+  <dep from="18" to="17" type="advmod"/>
+  <dep from="3" to="18" type="advcl"/>
+  <dep from="21" to="19" type="det"/>
+  <dep from="21" to="20" type="amod"/>
+  <dep from="18" to="21" type="dobj"/>
+  <dep from="3" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Manner">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

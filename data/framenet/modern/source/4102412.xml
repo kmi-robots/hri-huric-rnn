@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102412">
+ <sentence>
+  Ed_Henry :An easy but rare maneuver with extraordinary consequences .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="ed_henry" pos="NNS" surface="Ed_Henry"/>
+  <token id="2" lemma=":an" pos=":" surface=":An"/>
+  <token id="3" lemma="easy" pos="JJ" surface="easy"/>
+  <token id="4" lemma="but" pos="CC" surface="but"/>
+  <token id="5" lemma="rare" pos="JJ" surface="rare"/>
+  <token id="6" lemma="maneuver" pos="NN" surface="maneuver"/>
+  <token id="7" lemma="with" pos="IN" surface="with"/>
+  <token id="8" lemma="extraordinary" pos="JJ" surface="extraordinary"/>
+  <token id="9" lemma="consequence" pos="NNS" surface="consequences"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="6" to="3" type="amod"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="3" to="5" type="conj"/>
+  <dep from="1" to="6" type="appos"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="1" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Difficulty">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

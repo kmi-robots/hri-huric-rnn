@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096496">
+ <sentence>
+  To date , North Korea has likely developed and produced anthrax bacteria , botulinum toxin , and plague bacteria .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="to" pos="IN" surface="To"/>
+  <token id="2" lemma="date" pos="NN" surface="date"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="north" pos="NNP" surface="North"/>
+  <token id="5" lemma="korea" pos="NNP" surface="Korea"/>
+  <token id="6" lemma="have" pos="VBZ" surface="has"/>
+  <token id="7" lemma="likely" pos="RB" surface="likely"/>
+  <token id="8" lemma="develop" pos="VBN" surface="developed"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="produce" pos="VBN" surface="produced"/>
+  <token id="11" lemma="anthrax" pos="NN" surface="anthrax"/>
+  <token id="12" lemma="bacteria" pos="NNS" surface="bacteria"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="botulinum" pos="JJ" surface="botulinum"/>
+  <token id="15" lemma="toxin" pos="NN" surface="toxin"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="and" pos="CC" surface="and"/>
+  <token id="18" lemma="plague" pos="NN" surface="plague"/>
+  <token id="19" lemma="bacteria" pos="NNS" surface="bacteria"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="8" to="3" type="punct"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="8" to="5" type="nsubj"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="advmod"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="12" to="15" type="conj"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="15" to="17" type="cc"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="15" to="19" type="conj"/>
+  <dep from="8" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Producer">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Continued_state_of_affairs">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Reference_occasion">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

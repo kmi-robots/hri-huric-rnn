@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101293">
+ <sentence>
+  The struggle bypassed most of the islands , although there was fierce fighting on Samos .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="struggle" pos="NN" surface="struggle"/>
+  <token id="3" lemma="bypass" pos="VBD" surface="bypassed"/>
+  <token id="4" lemma="most" pos="JJS" surface="most"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="island" pos="NNS" surface="islands"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="although" pos="IN" surface="although"/>
+  <token id="10" lemma="there" pos="EX" surface="there"/>
+  <token id="11" lemma="be" pos="VBD" surface="was"/>
+  <token id="12" lemma="fierce" pos="JJ" surface="fierce"/>
+  <token id="13" lemma="fighting" pos="NN" surface="fighting"/>
+  <token id="14" lemma="on" pos="IN" surface="on"/>
+  <token id="15" lemma="samos" pos="NNP" surface="Samos"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="3" to="8" type="punct"/>
+  <dep from="11" to="9" type="mark"/>
+  <dep from="11" to="10" type="expl"/>
+  <dep from="3" to="11" type="advcl"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="11" to="13" type="attr"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="3" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Spatial_contact">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Concessive">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Conceded_state_of_affairs">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Main_assertion">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

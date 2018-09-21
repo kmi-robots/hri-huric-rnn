@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100427">
+ <sentence>
+  Free access to holy sites for members of all religions was guaranteed by the armistice agreements .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="free" pos="JJ" surface="Free"/>
+  <token id="2" lemma="access" pos="NN" surface="access"/>
+  <token id="3" lemma="to" pos="IN" surface="to"/>
+  <token id="4" lemma="holy" pos="JJ" surface="holy"/>
+  <token id="5" lemma="site" pos="NNS" surface="sites"/>
+  <token id="6" lemma="for" pos="IN" surface="for"/>
+  <token id="7" lemma="member" pos="NNS" surface="members"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="all" pos="DT" surface="all"/>
+  <token id="10" lemma="religion" pos="NNS" surface="religions"/>
+  <token id="11" lemma="be" pos="VBD" surface="was"/>
+  <token id="12" lemma="guarantee" pos="VBN" surface="guaranteed"/>
+  <token id="13" lemma="by" pos="IN" surface="by"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="armistice" pos="NN" surface="armistice"/>
+  <token id="16" lemma="agreement" pos="NNS" surface="agreements"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="12" to="2" type="nsubjpass"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="12" to="11" type="auxpass"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="agent"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="13" to="16" type="pobj"/>
+  <dep from="12" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Expensiveness">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Group">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Member">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Documents">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Document">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101871">
+ <sentence>
+  This is Bill up at Enron .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="this" pos="DT" surface="This"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="bill" pos="NNP" surface="Bill"/>
+  <token id="4" lemma="up" pos="RP" surface="up"/>
+  <token id="5" lemma="at" pos="IN" surface="at"/>
+  <token id="6" lemma="enron" pos="NNP" surface="Enron"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="attr"/>
+  <dep from="3" to="4" type="prt"/>
+  <dep from="3" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="2" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

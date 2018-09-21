@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102387">
+ <sentence>
+  1- There must be time priorities .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="1-" pos="LS" surface="1-"/>
+  <token id="2" lemma="there" pos="EX" surface="There"/>
+  <token id="3" lemma="must" pos="MD" surface="must"/>
+  <token id="4" lemma="be" pos="VB" surface="be"/>
+  <token id="5" lemma="time" pos="NN" surface="time"/>
+  <token id="6" lemma="priority" pos="NNS" surface="priorities"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="meta"/>
+  <dep from="4" to="2" type="expl"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="4" to="6" type="attr"/>
+  <dep from="4" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Required_event">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Required_situation">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Required_situation">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Importance">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Factor">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

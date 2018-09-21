@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102424">
+ <sentence>
+  Harry_Reed : We have lost over two thousand of our best and bravest .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="harry_reed" pos="NN" surface="Harry_Reed"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="We"/>
+  <token id="4" lemma="have" pos="VBP" surface="have"/>
+  <token id="5" lemma="lose" pos="VBN" surface="lost"/>
+  <token id="6" lemma="over" pos="IN" surface="over"/>
+  <token id="7" lemma="two" pos="CD" surface="two"/>
+  <token id="8" lemma="thousand" pos="CD" surface="thousand"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="-PRON-" pos="PRP$" surface="our"/>
+  <token id="11" lemma="good" pos="JJS" surface="best"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="brave" pos="JJS" surface="bravest"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="8" to="6" type="quantmod"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="dobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="poss"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="11" to="13" type="conj"/>
+  <dep from="5" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Earnings_and_losses">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Earner">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Earnings">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Denoted_quantity">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Reference_quantity">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Multiplier">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Precision">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirability">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Precision">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

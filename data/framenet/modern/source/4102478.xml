@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102478">
+ <sentence>
+  And the ninteen hour plane ride .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="and" pos="CC" surface="And"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="ninteen" pos="JJ" surface="ninteen"/>
+  <token id="4" lemma="hour" pos="NN" surface="hour"/>
+  <token id="5" lemma="plane" pos="NN" surface="plane"/>
+  <token id="6" lemma="ride" pos="NN" surface="ride"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="cc"/>
+  <dep from="6" to="2" type="det"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Process">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Vehicle">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Ride_vehicle">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Duration">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

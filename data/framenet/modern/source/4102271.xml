@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102271">
+ <sentence>
+  Oh , that 's good .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="oh" pos="UH" surface="Oh"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="that" pos="DT" surface="that"/>
+  <token id="4" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="5" lemma="good" pos="JJ" surface="good"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="intj"/>
+  <dep from="4" to="2" type="punct"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="acomp"/>
+  <dep from="4" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Desirability">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

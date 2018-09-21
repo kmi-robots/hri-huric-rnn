@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148267">
+ <sentence>
+  " Something has been killed and something has been burned .
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="something" pos="NN" surface="Something"/>
+  <token id="3" lemma="have" pos="VBZ" surface="has"/>
+  <token id="4" lemma="be" pos="VBN" surface="been"/>
+  <token id="5" lemma="kill" pos="VBN" surface="killed"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="something" pos="NN" surface="something"/>
+  <token id="8" lemma="have" pos="VBZ" surface="has"/>
+  <token id="9" lemma="be" pos="VBN" surface="been"/>
+  <token id="10" lemma="burn" pos="VBN" surface="burned"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="punct"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="10" to="7" type="nsubjpass"/>
+  <dep from="10" to="8" type="aux"/>
+  <dep from="10" to="9" type="auxpass"/>
+  <dep from="5" to="10" type="conj"/>
+  <dep from="10" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cause_harm">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

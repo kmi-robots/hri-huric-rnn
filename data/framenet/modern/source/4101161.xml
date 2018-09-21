@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101161">
+ <sentence>
+  Over 20,000 additional hotel rooms have been added in a few short years , including resorts in Summerlin and Lake Las Vegas .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="over" pos="IN" surface="Over"/>
+  <token id="2" lemma="20,000" pos="CD" surface="20,000"/>
+  <token id="3" lemma="additional" pos="JJ" surface="additional"/>
+  <token id="4" lemma="hotel" pos="NN" surface="hotel"/>
+  <token id="5" lemma="room" pos="NNS" surface="rooms"/>
+  <token id="6" lemma="have" pos="VBP" surface="have"/>
+  <token id="7" lemma="be" pos="VBN" surface="been"/>
+  <token id="8" lemma="add" pos="VBN" surface="added"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="few" pos="JJ" surface="few"/>
+  <token id="12" lemma="short" pos="JJ" surface="short"/>
+  <token id="13" lemma="year" pos="NNS" surface="years"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="include" pos="VBG" surface="including"/>
+  <token id="16" lemma="resort" pos="NNS" surface="resorts"/>
+  <token id="17" lemma="in" pos="IN" surface="in"/>
+  <token id="18" lemma="summerlin" pos="NNP" surface="Summerlin"/>
+  <token id="19" lemma="and" pos="CC" surface="and"/>
+  <token id="20" lemma="lake" pos="NNP" surface="Lake"/>
+  <token id="21" lemma="las" pos="NNP" surface="Las"/>
+  <token id="22" lemma="vegas" pos="NNP" surface="Vegas"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="quantmod"/>
+  <dep from="5" to="2" type="nummod"/>
+  <dep from="5" to="3" type="amod"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="8" to="5" type="nsubjpass"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="13" to="10" type="det"/>
+  <dep from="13" to="11" type="amod"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="9" to="13" type="pobj"/>
+  <dep from="8" to="14" type="punct"/>
+  <dep from="8" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="22" to="18" type="nmod"/>
+  <dep from="18" to="19" type="cc"/>
+  <dep from="22" to="20" type="compound"/>
+  <dep from="22" to="21" type="compound"/>
+  <dep from="17" to="22" type="pobj"/>
+  <dep from="8" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Increment">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Class">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Building_subparts">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Building_part">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Count">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Inclusion">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Duration_description">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Period">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

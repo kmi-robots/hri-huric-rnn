@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101384">
+ <sentence>
+  A Second Century Society response card and return envelope are enclosed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="second" pos="NNP" surface="Second"/>
+  <token id="3" lemma="century" pos="NNP" surface="Century"/>
+  <token id="4" lemma="society" pos="NNP" surface="Society"/>
+  <token id="5" lemma="response" pos="NN" surface="response"/>
+  <token id="6" lemma="card" pos="NN" surface="card"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="return" pos="NN" surface="return"/>
+  <token id="9" lemma="envelope" pos="NN" surface="envelope"/>
+  <token id="10" lemma="be" pos="VBP" surface="are"/>
+  <token id="11" lemma="enclose" pos="VBN" surface="enclosed"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="6" to="4" type="compound"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="11" to="6" type="nsubjpass"/>
+  <dep from="6" to="7" type="cc"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="conj"/>
+  <dep from="11" to="10" type="auxpass"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Communication_response">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Containers">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Container">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Ordinal_numbers">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

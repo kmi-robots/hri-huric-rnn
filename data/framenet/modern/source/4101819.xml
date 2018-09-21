@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101819">
+ <sentence>
+  The extremism took the form of suicide bombings and terrorist attacks .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="extremism" pos="NN" surface="extremism"/>
+  <token id="3" lemma="take" pos="VBD" surface="took"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="form" pos="NN" surface="form"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="suicide" pos="NN" surface="suicide"/>
+  <token id="8" lemma="bombing" pos="NNS" surface="bombings"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="terrorist" pos="JJ" surface="terrorist"/>
+  <token id="11" lemma="attack" pos="NNS" surface="attacks"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="conj"/>
+  <dep from="3" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Type">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Category">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Subtype">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Means">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Terrorism">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Terrorist">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Assailant">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

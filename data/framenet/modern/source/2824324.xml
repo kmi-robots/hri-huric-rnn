@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824324">
+ <sentence>
+  If he is competent and conscientious , he serves us well .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="if" pos="IN" surface="If"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="competent" pos="JJ" surface="competent"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="conscientious" pos="JJ" surface="conscientious"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="9" lemma="serve" pos="VBZ" surface="serves"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="us"/>
+  <token id="11" lemma="well" pos="RB" surface="well"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="mark"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="9" to="3" type="advcl"/>
+  <dep from="3" to="4" type="acomp"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="4" to="6" type="conj"/>
+  <dep from="9" to="7" type="punct"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="9" to="11" type="advmod"/>
+  <dep from="9" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Expertise">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Helper">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Benefited_party">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

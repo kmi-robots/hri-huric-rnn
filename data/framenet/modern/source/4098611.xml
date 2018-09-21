@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098611">
+ <sentence>
+  QN : Were the four girls who had been kidnapped by an Iranian man freed by police ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="be" pos="VBD" surface="Were"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="four" pos="CD" surface="four"/>
+  <token id="6" lemma="girl" pos="NNS" surface="girls"/>
+  <token id="7" lemma="who" pos="WP" surface="who"/>
+  <token id="8" lemma="have" pos="VBD" surface="had"/>
+  <token id="9" lemma="be" pos="VBN" surface="been"/>
+  <token id="10" lemma="kidnap" pos="VBN" surface="kidnapped"/>
+  <token id="11" lemma="by" pos="IN" surface="by"/>
+  <token id="12" lemma="an" pos="DT" surface="an"/>
+  <token id="13" lemma="iranian" pos="JJ" surface="Iranian"/>
+  <token id="14" lemma="man" pos="NN" surface="man"/>
+  <token id="15" lemma="free" pos="VBN" surface="freed"/>
+  <token id="16" lemma="by" pos="IN" surface="by"/>
+  <token id="17" lemma="police" pos="NNS" surface="police"/>
+  <token id="18" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="3" to="6" type="attr"/>
+  <dep from="10" to="7" type="nsubjpass"/>
+  <dep from="10" to="8" type="aux"/>
+  <dep from="10" to="9" type="auxpass"/>
+  <dep from="6" to="10" type="relcl"/>
+  <dep from="10" to="11" type="agent"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="14" to="15" type="acl"/>
+  <dep from="15" to="16" type="agent"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="3" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Kidnapping">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Perpetrator">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

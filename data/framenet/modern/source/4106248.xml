@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106248">
+ <sentence>
+  Hong Kong currency is widely accepted in Guangzhou , or you can change your currency into RMB ( yuan ) at any bank or hotel .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="hong" pos="NNP" surface="Hong"/>
+  <token id="2" lemma="kong" pos="NNP" surface="Kong"/>
+  <token id="3" lemma="currency" pos="NN" surface="currency"/>
+  <token id="4" lemma="be" pos="VBZ" surface="is"/>
+  <token id="5" lemma="widely" pos="RB" surface="widely"/>
+  <token id="6" lemma="accept" pos="VBN" surface="accepted"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="guangzhou" pos="NNP" surface="Guangzhou"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="or" pos="CC" surface="or"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="12" lemma="can" pos="MD" surface="can"/>
+  <token id="13" lemma="change" pos="VB" surface="change"/>
+  <token id="14" lemma="-PRON-" pos="PRP$" surface="your"/>
+  <token id="15" lemma="currency" pos="NN" surface="currency"/>
+  <token id="16" lemma="into" pos="IN" surface="into"/>
+  <token id="17" lemma="rmb" pos="NNP" surface="RMB"/>
+  <token id="18" lemma="(" pos="-LRB-" surface="("/>
+  <token id="19" lemma="yuan" pos="NN" surface="yuan"/>
+  <token id="20" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="21" lemma="at" pos="IN" surface="at"/>
+  <token id="22" lemma="any" pos="DT" surface="any"/>
+  <token id="23" lemma="bank" pos="NN" surface="bank"/>
+  <token id="24" lemma="or" pos="CC" surface="or"/>
+  <token id="25" lemma="hotel" pos="NN" surface="hotel"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="6" to="3" type="nsubjpass"/>
+  <dep from="6" to="4" type="auxpass"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="6" to="9" type="punct"/>
+  <dep from="6" to="10" type="cc"/>
+  <dep from="13" to="11" type="nsubj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="6" to="13" type="conj"/>
+  <dep from="15" to="14" type="poss"/>
+  <dep from="13" to="15" type="dobj"/>
+  <dep from="13" to="16" type="prep"/>
+  <dep from="19" to="17" type="nmod"/>
+  <dep from="19" to="18" type="punct"/>
+  <dep from="16" to="19" type="pobj"/>
+  <dep from="13" to="20" type="punct"/>
+  <dep from="13" to="21" type="prep"/>
+  <dep from="23" to="22" type="det"/>
+  <dep from="21" to="23" type="pobj"/>
+  <dep from="23" to="24" type="cc"/>
+  <dep from="23" to="25" type="conj"/>
+  <dep from="13" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Possibility">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Possible_event">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Possible_event">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Exchange_currency">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Money_owner">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Source_currency">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Target_currency">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Receiving">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097210">
+ <sentence>
+  It might not be a bad idea to do that sooner , rather than later .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="It"/>
+  <token id="2" lemma="may" pos="MD" surface="might"/>
+  <token id="3" lemma="not" pos="RB" surface="not"/>
+  <token id="4" lemma="be" pos="VB" surface="be"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="bad" pos="JJ" surface="bad"/>
+  <token id="7" lemma="idea" pos="NN" surface="idea"/>
+  <token id="8" lemma="to" pos="TO" surface="to"/>
+  <token id="9" lemma="do" pos="VB" surface="do"/>
+  <token id="10" lemma="that" pos="DT" surface="that"/>
+  <token id="11" lemma="sooner" pos="RBR" surface="sooner"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="rather" pos="RB" surface="rather"/>
+  <token id="14" lemma="than" pos="IN" surface="than"/>
+  <token id="15" lemma="later" pos="RB" surface="later"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="neg"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="attr"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="7" to="9" type="acl"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="9" to="11" type="advmod"/>
+  <dep from="9" to="12" type="punct"/>
+  <dep from="14" to="13" type="advmod"/>
+  <dep from="9" to="14" type="cc"/>
+  <dep from="14" to="15" type="pcomp"/>
+  <dep from="4" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Act">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirable_event">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Time_vector">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

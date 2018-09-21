@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097349">
+ <sentence>
+  Iraq bombs the Bushehr plant .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iraq" pos="NNP" surface="Iraq"/>
+  <token id="2" lemma="bomb" pos="VBZ" surface="bombs"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="bushehr" pos="NNP" surface="Bushehr"/>
+  <token id="5" lemma="plant" pos="NN" surface="plant"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Relative_location">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

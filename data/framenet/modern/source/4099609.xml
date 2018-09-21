@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099609">
+ <sentence>
+  [ Mississippi ] National Guard Prepares For Hurricane Season [ and Chemical Terrorism ]
+ </sentence>
+ <tokens>
+  <token id="1" lemma="[" pos="-LRB-" surface="["/>
+  <token id="2" lemma="mississippi" pos="NNP" surface="Mississippi"/>
+  <token id="3" lemma="]" pos="-RRB-" surface="]"/>
+  <token id="4" lemma="national" pos="NNP" surface="National"/>
+  <token id="5" lemma="guard" pos="NNP" surface="Guard"/>
+  <token id="6" lemma="prepares" pos="NNPS" surface="Prepares"/>
+  <token id="7" lemma="for" pos="IN" surface="For"/>
+  <token id="8" lemma="hurricane" pos="NNP" surface="Hurricane"/>
+  <token id="9" lemma="season" pos="NNP" surface="Season"/>
+  <token id="10" lemma="[" pos="-LRB-" surface="["/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="chemical" pos="NNP" surface="Chemical"/>
+  <token id="13" lemma="terrorism" pos="NNP" surface="Terrorism"/>
+  <token id="14" lemma="]" pos="-RRB-" surface="]"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="punct"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="6" to="3" type="punct"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="2" to="6" type="appos"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="6" to="10" type="punct"/>
+  <dep from="6" to="11" type="cc"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="6" to="13" type="conj"/>
+  <dep from="6" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Activity_prepare">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Terrorism">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Act">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Instrument">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099373">
+ <sentence>
+  Symptoms of illness do not appear immediately but only after a delay , or `` incubation period , '' that may last for days to weeks .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="symptom" pos="NNS" surface="Symptoms"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="illness" pos="NN" surface="illness"/>
+  <token id="4" lemma="do" pos="VBP" surface="do"/>
+  <token id="5" lemma="not" pos="RB" surface="not"/>
+  <token id="6" lemma="appear" pos="VB" surface="appear"/>
+  <token id="7" lemma="immediately" pos="RB" surface="immediately"/>
+  <token id="8" lemma="but" pos="CC" surface="but"/>
+  <token id="9" lemma="only" pos="RB" surface="only"/>
+  <token id="10" lemma="after" pos="IN" surface="after"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="delay" pos="NN" surface="delay"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="or" pos="CC" surface="or"/>
+  <token id="15" lemma="``" pos="``" surface="``"/>
+  <token id="16" lemma="incubation" pos="NN" surface="incubation"/>
+  <token id="17" lemma="period" pos="NN" surface="period"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="''" pos="''" surface="''"/>
+  <token id="20" lemma="that" pos="WDT" surface="that"/>
+  <token id="21" lemma="may" pos="MD" surface="may"/>
+  <token id="22" lemma="last" pos="VB" surface="last"/>
+  <token id="23" lemma="for" pos="IN" surface="for"/>
+  <token id="24" lemma="day" pos="NNS" surface="days"/>
+  <token id="25" lemma="to" pos="IN" surface="to"/>
+  <token id="26" lemma="week" pos="NNS" surface="weeks"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="2" to="3" type="pobj"/>
+  <dep from="6" to="4" type="aux"/>
+  <dep from="6" to="5" type="neg"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="advmod"/>
+  <dep from="6" to="8" type="cc"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="22" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="12" to="14" type="cc"/>
+  <dep from="17" to="15" type="punct"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="12" to="17" type="conj"/>
+  <dep from="22" to="18" type="punct"/>
+  <dep from="22" to="19" type="punct"/>
+  <dep from="22" to="20" type="nsubj"/>
+  <dep from="22" to="21" type="aux"/>
+  <dep from="6" to="22" type="conj"/>
+  <dep from="22" to="23" type="prep"/>
+  <dep from="23" to="24" type="pobj"/>
+  <dep from="24" to="25" type="prep"/>
+  <dep from="25" to="26" type="pobj"/>
+  <dep from="22" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Ailment">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Coming_to_be">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Relative_time">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_occasion">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+    <frameElement type="Focal_occasion">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="26"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="26"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

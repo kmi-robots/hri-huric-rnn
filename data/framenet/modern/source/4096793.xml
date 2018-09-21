@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096793">
+ <sentence>
+  First , was the experience gained in missile operations during the previous three years , especially by the Missile Unit of the IRGC Air Force .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="first" pos="RB" surface="First"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="experience" pos="NN" surface="experience"/>
+  <token id="6" lemma="gain" pos="VBN" surface="gained"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="missile" pos="NN" surface="missile"/>
+  <token id="9" lemma="operation" pos="NNS" surface="operations"/>
+  <token id="10" lemma="during" pos="IN" surface="during"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="previous" pos="JJ" surface="previous"/>
+  <token id="13" lemma="three" pos="CD" surface="three"/>
+  <token id="14" lemma="year" pos="NNS" surface="years"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="especially" pos="RB" surface="especially"/>
+  <token id="17" lemma="by" pos="IN" surface="by"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="missile" pos="NNP" surface="Missile"/>
+  <token id="20" lemma="unit" pos="NNP" surface="Unit"/>
+  <token id="21" lemma="of" pos="IN" surface="of"/>
+  <token id="22" lemma="the" pos="DT" surface="the"/>
+  <token id="23" lemma="irgc" pos="NNP" surface="IRGC"/>
+  <token id="24" lemma="air" pos="NNP" surface="Air"/>
+  <token id="25" lemma="force" pos="NNP" surface="Force"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="advmod"/>
+  <dep from="3" to="2" type="punct"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="nsubj"/>
+  <dep from="5" to="6" type="acl"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="6" to="10" type="prep"/>
+  <dep from="14" to="11" type="det"/>
+  <dep from="14" to="12" type="amod"/>
+  <dep from="14" to="13" type="nummod"/>
+  <dep from="10" to="14" type="pobj"/>
+  <dep from="6" to="15" type="punct"/>
+  <dep from="17" to="16" type="advmod"/>
+  <dep from="6" to="17" type="agent"/>
+  <dep from="20" to="18" type="det"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="17" to="20" type="pobj"/>
+  <dep from="20" to="21" type="prep"/>
+  <dep from="25" to="22" type="det"/>
+  <dep from="25" to="23" type="compound"/>
+  <dep from="25" to="24" type="compound"/>
+  <dep from="21" to="25" type="pobj"/>
+  <dep from="3" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Expertise">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Skill">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Protagonist">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Relative_time">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Focal_occasion">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Product">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Relative_time">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

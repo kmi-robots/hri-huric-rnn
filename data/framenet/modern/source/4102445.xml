@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102445">
+ <sentence>
+  Paula_Zahn : Where bird flu has in the past two years killed at least sixty-two people .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="paula_zahn" pos="VB" surface="Paula_Zahn"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="where" pos="WRB" surface="Where"/>
+  <token id="4" lemma="bird" pos="NN" surface="bird"/>
+  <token id="5" lemma="flu" pos="NN" surface="flu"/>
+  <token id="6" lemma="have" pos="VBZ" surface="has"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="past" pos="JJ" surface="past"/>
+  <token id="10" lemma="two" pos="CD" surface="two"/>
+  <token id="11" lemma="year" pos="NNS" surface="years"/>
+  <token id="12" lemma="kill" pos="VBN" surface="killed"/>
+  <token id="13" lemma="at" pos="IN" surface="at"/>
+  <token id="14" lemma="least" pos="JJS" surface="least"/>
+  <token id="15" lemma="sixty-two" pos="CD" surface="sixty-two"/>
+  <token id="16" lemma="people" pos="NNS" surface="people"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="6" to="3" type="advmod"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="12" to="6" type="aux"/>
+  <dep from="12" to="7" type="prep"/>
+  <dep from="11" to="8" type="det"/>
+  <dep from="11" to="9" type="amod"/>
+  <dep from="11" to="10" type="nummod"/>
+  <dep from="7" to="11" type="pobj"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="14" to="13" type="advmod"/>
+  <dep from="15" to="14" type="advmod"/>
+  <dep from="16" to="15" type="nummod"/>
+  <dep from="12" to="16" type="dobj"/>
+  <dep from="12" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Ailment">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Relative_time">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Focal_occasion">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Relative_time">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Period_of_iterations">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Denoted_quantity">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

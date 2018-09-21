@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100368">
+ <sentence>
+  At the end , the Roman general Titus laid siege to Jerusalem in a.d. 70 , finally attacking its starved and weakened defenders .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="at" pos="IN" surface="At"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="end" pos="NN" surface="end"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="roman" pos="JJ" surface="Roman"/>
+  <token id="7" lemma="general" pos="JJ" surface="general"/>
+  <token id="8" lemma="titus" pos="NNP" surface="Titus"/>
+  <token id="9" lemma="lay" pos="VBD" surface="laid"/>
+  <token id="10" lemma="siege" pos="NN" surface="siege"/>
+  <token id="11" lemma="to" pos="IN" surface="to"/>
+  <token id="12" lemma="jerusalem" pos="NNP" surface="Jerusalem"/>
+  <token id="13" lemma="in" pos="IN" surface="in"/>
+  <token id="14" lemma="a.d." pos="NN" surface="a.d."/>
+  <token id="15" lemma="70" pos="CD" surface="70"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="finally" pos="RB" surface="finally"/>
+  <token id="18" lemma="attack" pos="VBG" surface="attacking"/>
+  <token id="19" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="20" lemma="starved" pos="JJ" surface="starved"/>
+  <token id="21" lemma="and" pos="CC" surface="and"/>
+  <token id="22" lemma="weaken" pos="VBD" surface="weakened"/>
+  <token id="23" lemma="defender" pos="NNS" surface="defenders"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="9" to="4" type="punct"/>
+  <dep from="8" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="9" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="9" to="13" type="prep"/>
+  <dep from="15" to="14" type="nmod"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="9" to="16" type="punct"/>
+  <dep from="18" to="17" type="advmod"/>
+  <dep from="9" to="18" type="advcl"/>
+  <dep from="23" to="19" type="poss"/>
+  <dep from="23" to="20" type="amod"/>
+  <dep from="20" to="21" type="cc"/>
+  <dep from="20" to="22" type="conj"/>
+  <dep from="18" to="23" type="dobj"/>
+  <dep from="9" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Temporal_subregion">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Subpart">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Assailant">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Event_description">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Defending">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Defender">
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Besieging">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Assailant">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_period">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Event_description">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

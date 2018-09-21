@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097231">
+ <sentence>
+  Biological Possesses expertise and infrastructure to support biological warfare program .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="biological" pos="NNP" surface="Biological"/>
+  <token id="2" lemma="possesses" pos="NNP" surface="Possesses"/>
+  <token id="3" lemma="expertise" pos="NN" surface="expertise"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="infrastructure" pos="NN" surface="infrastructure"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="support" pos="VB" surface="support"/>
+  <token id="8" lemma="biological" pos="JJ" surface="biological"/>
+  <token id="9" lemma="warfare" pos="NN" surface="warfare"/>
+  <token id="10" lemma="program" pos="NN" surface="program"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="3" to="5" type="conj"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="3" to="7" type="relcl"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="dobj"/>
+  <dep from="3" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Possession">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Expertise">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Skill">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Instrument">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Infrastructure">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

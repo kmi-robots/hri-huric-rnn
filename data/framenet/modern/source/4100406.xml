@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100406">
+ <sentence>
+  Fountains , inns , religious schools , and barracks were constructed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="fountain" pos="NNS" surface="Fountains"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="inn" pos="NNS" surface="inns"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="religious" pos="JJ" surface="religious"/>
+  <token id="6" lemma="school" pos="NNS" surface="schools"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="barrack" pos="NNS" surface="barracks"/>
+  <token id="10" lemma="be" pos="VBD" surface="were"/>
+  <token id="11" lemma="construct" pos="VBN" surface="constructed"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="11" to="1" type="nsubjpass"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="1" to="4" type="punct"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="1" to="6" type="conj"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="6" to="8" type="cc"/>
+  <dep from="6" to="9" type="conj"/>
+  <dep from="11" to="10" type="auxpass"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Use">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Building">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

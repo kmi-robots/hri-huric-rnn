@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099742">
+ <sentence>
+  The laboratory 's mission , which will be split between two centers , is to understand current and future biological threats .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="laboratory" pos="NN" surface="laboratory"/>
+  <token id="3" lemma="'s" pos="POS" surface="'s"/>
+  <token id="4" lemma="mission" pos="NN" surface="mission"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="which" pos="WDT" surface="which"/>
+  <token id="7" lemma="will" pos="MD" surface="will"/>
+  <token id="8" lemma="be" pos="VB" surface="be"/>
+  <token id="9" lemma="split" pos="VBN" surface="split"/>
+  <token id="10" lemma="between" pos="IN" surface="between"/>
+  <token id="11" lemma="two" pos="CD" surface="two"/>
+  <token id="12" lemma="center" pos="NNS" surface="centers"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="be" pos="VBZ" surface="is"/>
+  <token id="15" lemma="to" pos="TO" surface="to"/>
+  <token id="16" lemma="understand" pos="VB" surface="understand"/>
+  <token id="17" lemma="current" pos="JJ" surface="current"/>
+  <token id="18" lemma="and" pos="CC" surface="and"/>
+  <token id="19" lemma="future" pos="JJ" surface="future"/>
+  <token id="20" lemma="biological" pos="JJ" surface="biological"/>
+  <token id="21" lemma="threat" pos="NNS" surface="threats"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="poss"/>
+  <dep from="2" to="3" type="case"/>
+  <dep from="14" to="4" type="nsubj"/>
+  <dep from="4" to="5" type="punct"/>
+  <dep from="9" to="6" type="nsubjpass"/>
+  <dep from="9" to="7" type="aux"/>
+  <dep from="9" to="8" type="auxpass"/>
+  <dep from="4" to="9" type="relcl"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="nummod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="4" to="13" type="punct"/>
+  <dep from="0" to="14" type="root"/>
+  <dep from="16" to="15" type="aux"/>
+  <dep from="14" to="16" type="xcomp"/>
+  <dep from="21" to="17" type="amod"/>
+  <dep from="17" to="18" type="cc"/>
+  <dep from="17" to="19" type="conj"/>
+  <dep from="21" to="20" type="amod"/>
+  <dep from="16" to="21" type="dobj"/>
+  <dep from="14" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Grasp">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Trajector_entity">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Trajector_entity">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Risky_situation">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Dangerous_entity">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

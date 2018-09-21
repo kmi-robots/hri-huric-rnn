@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102441">
+ <sentence>
+  Paula_Zahn : Today President Bush unveiled a seven point one billion dollar plan to prepare for a possible flu pandemic .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="paula_zahn" pos="NN" surface="Paula_Zahn"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="today" pos="NN" surface="Today"/>
+  <token id="4" lemma="president" pos="NNP" surface="President"/>
+  <token id="5" lemma="bush" pos="NNP" surface="Bush"/>
+  <token id="6" lemma="unveil" pos="VBD" surface="unveiled"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="seven" pos="CD" surface="seven"/>
+  <token id="9" lemma="point" pos="NN" surface="point"/>
+  <token id="10" lemma="one" pos="CD" surface="one"/>
+  <token id="11" lemma="billion" pos="CD" surface="billion"/>
+  <token id="12" lemma="dollar" pos="NN" surface="dollar"/>
+  <token id="13" lemma="plan" pos="NN" surface="plan"/>
+  <token id="14" lemma="to" pos="TO" surface="to"/>
+  <token id="15" lemma="prepare" pos="VB" surface="prepare"/>
+  <token id="16" lemma="for" pos="IN" surface="for"/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="possible" pos="JJ" surface="possible"/>
+  <token id="19" lemma="flu" pos="NN" surface="flu"/>
+  <token id="20" lemma="pandemic" pos="NN" surface="pandemic"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="6" to="3" type="npadvmod"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="13" to="7" type="det"/>
+  <dep from="9" to="8" type="nummod"/>
+  <dep from="13" to="9" type="compound"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="12" to="11" type="nummod"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="6" to="13" type="dobj"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="13" to="15" type="acl"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="20" to="17" type="det"/>
+  <dep from="20" to="18" type="amod"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="16" to="20" type="pobj"/>
+  <dep from="6" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Multiplier">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Project">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Activity_prepare">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Ailment">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

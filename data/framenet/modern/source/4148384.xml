@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148384">
+ <sentence>
+  I wondered , as I always did , how it had not been obvious to me before .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="wonder" pos="VBD" surface="wondered"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="as" pos="IN" surface="as"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="6" lemma="always" pos="RB" surface="always"/>
+  <token id="7" lemma="do" pos="VBD" surface="did"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="how" pos="WRB" surface="how"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="11" lemma="have" pos="VBD" surface="had"/>
+  <token id="12" lemma="not" pos="RB" surface="not"/>
+  <token id="13" lemma="be" pos="VBN" surface="been"/>
+  <token id="14" lemma="obvious" pos="JJ" surface="obvious"/>
+  <token id="15" lemma="to" pos="IN" surface="to"/>
+  <token id="16" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="17" lemma="before" pos="RB" surface="before"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="7" to="4" type="mark"/>
+  <dep from="7" to="5" type="nsubj"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="2" to="7" type="advcl"/>
+  <dep from="2" to="8" type="punct"/>
+  <dep from="13" to="9" type="advmod"/>
+  <dep from="13" to="10" type="nsubj"/>
+  <dep from="13" to="11" type="aux"/>
+  <dep from="13" to="12" type="neg"/>
+  <dep from="2" to="13" type="ccomp"/>
+  <dep from="13" to="14" type="acomp"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="13" to="17" type="advmod"/>
+  <dep from="2" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Obviousness">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Perceiver">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Cogitation">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Topic">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

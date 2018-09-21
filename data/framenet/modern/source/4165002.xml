@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165002">
+ <sentence>
+  3,600 personnel are involved in containing the wildfire .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="3,600" pos="CD" surface="3,600"/>
+  <token id="2" lemma="personnel" pos="NNS" surface="personnel"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="involve" pos="VBN" surface="involved"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="contain" pos="VBG" surface="containing"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="wildfire" pos="NN" surface="wildfire"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pcomp"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="4" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Employing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Subgroup">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Employee">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Participation">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Participants">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Emergency_fire">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Fire">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

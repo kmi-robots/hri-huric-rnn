@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102809">
+ <sentence>
+  Passageways for cars and pedestrians should be designated 4- Road bumps : Six successive bumps should be constructed at 500 meters from the location .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="passageway" pos="NNS" surface="Passageways"/>
+  <token id="2" lemma="for" pos="IN" surface="for"/>
+  <token id="3" lemma="car" pos="NNS" surface="cars"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="pedestrian" pos="NNS" surface="pedestrians"/>
+  <token id="6" lemma="should" pos="MD" surface="should"/>
+  <token id="7" lemma="be" pos="VB" surface="be"/>
+  <token id="8" lemma="designate" pos="VBN" surface="designated"/>
+  <token id="9" lemma="4-" pos="NNP" surface="4-"/>
+  <token id="10" lemma="road" pos="NNP" surface="Road"/>
+  <token id="11" lemma="bump" pos="NNS" surface="bumps"/>
+  <token id="12" lemma=":" pos=":" surface=":"/>
+  <token id="13" lemma="six" pos="CD" surface="Six"/>
+  <token id="14" lemma="successive" pos="JJ" surface="successive"/>
+  <token id="15" lemma="bump" pos="NNS" surface="bumps"/>
+  <token id="16" lemma="should" pos="MD" surface="should"/>
+  <token id="17" lemma="be" pos="VB" surface="be"/>
+  <token id="18" lemma="construct" pos="VBN" surface="constructed"/>
+  <token id="19" lemma="at" pos="IN" surface="at"/>
+  <token id="20" lemma="500" pos="CD" surface="500"/>
+  <token id="21" lemma="meter" pos="NNS" surface="meters"/>
+  <token id="22" lemma="from" pos="IN" surface="from"/>
+  <token id="23" lemma="the" pos="DT" surface="the"/>
+  <token id="24" lemma="location" pos="NN" surface="location"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="nsubjpass"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="2" to="3" type="pobj"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="3" to="5" type="conj"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="11" to="9" type="compound"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="8" to="11" type="dobj"/>
+  <dep from="11" to="12" type="punct"/>
+  <dep from="15" to="13" type="nummod"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="18" to="15" type="nsubjpass"/>
+  <dep from="18" to="16" type="aux"/>
+  <dep from="18" to="17" type="auxpass"/>
+  <dep from="11" to="18" type="acl"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="21" to="20" type="nummod"/>
+  <dep from="19" to="21" type="pobj"/>
+  <dep from="21" to="22" type="prep"/>
+  <dep from="24" to="23" type="det"/>
+  <dep from="22" to="24" type="pobj"/>
+  <dep from="8" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Vehicle">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirable_event">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="State_of_affairs">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Roadway">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirable_event">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="State_of_affairs">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Building">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_linear_extent">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824469">
+ <sentence>
+  1:11 a.m. RD : Building on the corner severely damaged , so an old lady and her very old mother are in the guest room .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="1:11" pos="CD" surface="1:11"/>
+  <token id="2" lemma="a.m." pos="RB" surface="a.m."/>
+  <token id="3" lemma="rd" pos="NNP" surface="RD"/>
+  <token id="4" lemma=":" pos=":" surface=":"/>
+  <token id="5" lemma="building" pos="NN" surface="Building"/>
+  <token id="6" lemma="on" pos="IN" surface="on"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="corner" pos="NN" surface="corner"/>
+  <token id="9" lemma="severely" pos="RB" surface="severely"/>
+  <token id="10" lemma="damage" pos="VBN" surface="damaged"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="so" pos="CC" surface="so"/>
+  <token id="13" lemma="an" pos="DT" surface="an"/>
+  <token id="14" lemma="old" pos="JJ" surface="old"/>
+  <token id="15" lemma="lady" pos="NN" surface="lady"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="18" lemma="very" pos="RB" surface="very"/>
+  <token id="19" lemma="old" pos="JJ" surface="old"/>
+  <token id="20" lemma="mother" pos="NN" surface="mother"/>
+  <token id="21" lemma="be" pos="VBP" surface="are"/>
+  <token id="22" lemma="in" pos="IN" surface="in"/>
+  <token id="23" lemma="the" pos="DT" surface="the"/>
+  <token id="24" lemma="guest" pos="NN" surface="guest"/>
+  <token id="25" lemma="room" pos="NN" surface="room"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="10" to="5" type="nsubj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="21" to="10" type="ccomp"/>
+  <dep from="21" to="11" type="punct"/>
+  <dep from="21" to="12" type="advmod"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="21" to="15" type="nsubj"/>
+  <dep from="15" to="16" type="cc"/>
+  <dep from="20" to="17" type="poss"/>
+  <dep from="19" to="18" type="advmod"/>
+  <dep from="20" to="19" type="amod"/>
+  <dep from="15" to="20" type="conj"/>
+  <dep from="0" to="21" type="root"/>
+  <dep from="21" to="22" type="prep"/>
+  <dep from="25" to="23" type="det"/>
+  <dep from="25" to="24" type="compound"/>
+  <dep from="22" to="25" type="pobj"/>
+  <dep from="21" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Spatial_contact">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Attribute">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Age">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Kinship">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Ego">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Alter">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Building_subparts">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Building_part">
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Effect">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Degree">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Gradable_attribute">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Damaging">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Degree">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Patient">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

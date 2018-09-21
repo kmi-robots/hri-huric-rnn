@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098207">
+ <sentence>
+  So missile sales still flourish .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="so" pos="RB" surface="So"/>
+  <token id="2" lemma="missile" pos="NN" surface="missile"/>
+  <token id="3" lemma="sale" pos="NNS" surface="sales"/>
+  <token id="4" lemma="still" pos="RB" surface="still"/>
+  <token id="5" lemma="flourish" pos="VBP" surface="flourish"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="advmod"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_sell">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

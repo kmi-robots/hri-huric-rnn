@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106599">
+ <sentence>
+  Then the task was to help children who lost parents in the Civil War .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="then" pos="RB" surface="Then"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="task" pos="NN" surface="task"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="help" pos="VB" surface="help"/>
+  <token id="7" lemma="child" pos="NNS" surface="children"/>
+  <token id="8" lemma="who" pos="WP" surface="who"/>
+  <token id="9" lemma="lose" pos="VBD" surface="lost"/>
+  <token id="10" lemma="parent" pos="NNS" surface="parents"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="civil" pos="NNP" surface="Civil"/>
+  <token id="14" lemma="war" pos="NNP" surface="War"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="4" to="6" type="xcomp"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="7" to="9" type="relcl"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="9" to="11" type="prep"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="4" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_obligated">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Duty">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Benefited_party">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_age">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Kinship">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Ego">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Alter">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Ego">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_period">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

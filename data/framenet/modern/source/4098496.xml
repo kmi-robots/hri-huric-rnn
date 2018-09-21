@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098496">
+ <sentence>
+  QN : Did Kerry know whether Edwards would accept the nomination ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="do" pos="VBD" surface="Did"/>
+  <token id="4" lemma="kerry" pos="NNP" surface="Kerry"/>
+  <token id="5" lemma="know" pos="VB" surface="know"/>
+  <token id="6" lemma="whether" pos="IN" surface="whether"/>
+  <token id="7" lemma="edwards" pos="NNP" surface="Edwards"/>
+  <token id="8" lemma="would" pos="MD" surface="would"/>
+  <token id="9" lemma="accept" pos="VB" surface="accept"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="nomination" pos="NN" surface="nomination"/>
+  <token id="12" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="9" to="6" type="mark"/>
+  <dep from="9" to="7" type="nsubj"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="5" to="9" type="ccomp"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="5" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Awareness">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

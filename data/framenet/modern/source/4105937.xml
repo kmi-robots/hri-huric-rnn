@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105937">
+ <sentence>
+  An enormous roller-coaster rising way above the sea , space wheels , and high-diving shows guarantee a day of excitement .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="an" pos="DT" surface="An"/>
+  <token id="2" lemma="enormous" pos="JJ" surface="enormous"/>
+  <token id="3" lemma="roller-coaster" pos="NN" surface="roller-coaster"/>
+  <token id="4" lemma="rise" pos="VBG" surface="rising"/>
+  <token id="5" lemma="way" pos="NN" surface="way"/>
+  <token id="6" lemma="above" pos="IN" surface="above"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="sea" pos="NN" surface="sea"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="space" pos="NN" surface="space"/>
+  <token id="11" lemma="wheel" pos="NNS" surface="wheels"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="high-diving" pos="NN" surface="high-diving"/>
+  <token id="15" lemma="show" pos="NNS" surface="shows"/>
+  <token id="16" lemma="guarantee" pos="VBP" surface="guarantee"/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="day" pos="NN" surface="day"/>
+  <token id="19" lemma="of" pos="IN" surface="of"/>
+  <token id="20" lemma="excitement" pos="NN" surface="excitement"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="det"/>
+  <dep from="5" to="2" type="amod"/>
+  <dep from="5" to="3" type="amod"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="16" to="5" type="nsubj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="5" to="9" type="punct"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="5" to="11" type="conj"/>
+  <dep from="11" to="12" type="punct"/>
+  <dep from="11" to="13" type="cc"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="11" to="15" type="conj"/>
+  <dep from="0" to="16" type="root"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="dobj"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="19" to="20" type="pobj"/>
+  <dep from="16" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Emotion_directed">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="State">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Path_shape">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Degree">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Road">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Process">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

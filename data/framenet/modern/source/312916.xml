@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="312916">
+ <sentence>
+  Winston turned a switch and the voice sank somewhat , though the words were still distinguishable .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="winston" pos="NNP" surface="Winston"/>
+  <token id="2" lemma="turn" pos="VBD" surface="turned"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="switch" pos="NN" surface="switch"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="voice" pos="NN" surface="voice"/>
+  <token id="8" lemma="sink" pos="VBD" surface="sank"/>
+  <token id="9" lemma="somewhat" pos="RB" surface="somewhat"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="though" pos="IN" surface="though"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="word" pos="NNS" surface="words"/>
+  <token id="14" lemma="be" pos="VBD" surface="were"/>
+  <token id="15" lemma="still" pos="RB" surface="still"/>
+  <token id="16" lemma="distinguishable" pos="JJ" surface="distinguishable"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="cc"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="2" to="8" type="conj"/>
+  <dep from="8" to="9" type="advmod"/>
+  <dep from="8" to="10" type="punct"/>
+  <dep from="14" to="11" type="mark"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="14" to="13" type="nsubj"/>
+  <dep from="8" to="14" type="advcl"/>
+  <dep from="14" to="15" type="advmod"/>
+  <dep from="14" to="16" type="acomp"/>
+  <dep from="8" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cause_to_move_in_place">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Degree">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Continued_state_of_affairs">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="State_of_affairs">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Concessive">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Conceded_state_of_affairs">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Main_assertion">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Differentiation">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Phenomena">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

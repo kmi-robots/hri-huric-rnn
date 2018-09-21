@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103874">
+ <sentence>
+  In recent years the influence of the United States has been much stronger than that of Britain .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="recent" pos="JJ" surface="recent"/>
+  <token id="3" lemma="year" pos="NNS" surface="years"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="influence" pos="NN" surface="influence"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="united" pos="NNP" surface="United"/>
+  <token id="9" lemma="states" pos="NNP" surface="States"/>
+  <token id="10" lemma="have" pos="VBZ" surface="has"/>
+  <token id="11" lemma="be" pos="VBN" surface="been"/>
+  <token id="12" lemma="much" pos="RB" surface="much"/>
+  <token id="13" lemma="strong" pos="JJR" surface="stronger"/>
+  <token id="14" lemma="than" pos="IN" surface="than"/>
+  <token id="15" lemma="that" pos="DT" surface="that"/>
+  <token id="16" lemma="of" pos="IN" surface="of"/>
+  <token id="17" lemma="britain" pos="NNP" surface="Britain"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="11" to="1" type="prep"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="11" to="5" type="nsubj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="pobj"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="11" to="13" type="acomp"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="11" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_period">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Relative_time">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Objective_influence">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Influencing_entity">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Level_of_force_exertion">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Exerter">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

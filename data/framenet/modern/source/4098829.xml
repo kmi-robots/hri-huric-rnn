@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098829">
+ <sentence>
+  QN : Will Japan 's share of global economic output decrease in the next few decades ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="will" pos="MD" surface="Will"/>
+  <token id="4" lemma="japan" pos="NNP" surface="Japan"/>
+  <token id="5" lemma="'s" pos="POS" surface="'s"/>
+  <token id="6" lemma="share" pos="NN" surface="share"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="global" pos="JJ" surface="global"/>
+  <token id="9" lemma="economic" pos="JJ" surface="economic"/>
+  <token id="10" lemma="output" pos="NN" surface="output"/>
+  <token id="11" lemma="decrease" pos="NN" surface="decrease"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="next" pos="JJ" surface="next"/>
+  <token id="15" lemma="few" pos="JJ" surface="few"/>
+  <token id="16" lemma="decade" pos="NNS" surface="decades"/>
+  <token id="17" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="poss"/>
+  <dep from="4" to="5" type="case"/>
+  <dep from="3" to="6" type="nsubj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="11" to="8" type="amod"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="7" to="11" type="pobj"/>
+  <dep from="6" to="12" type="prep"/>
+  <dep from="16" to="13" type="det"/>
+  <dep from="16" to="14" type="amod"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="12" to="16" type="pobj"/>
+  <dep from="3" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Economy">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Economy">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Political_region">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Relative_time">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

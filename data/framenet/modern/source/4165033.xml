@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165033">
+ <sentence>
+  All site workers were evacuated without injury , according to Fire and Rescue NSW Superintendent Ian Krimmer .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="all" pos="DT" surface="All"/>
+  <token id="2" lemma="site" pos="NN" surface="site"/>
+  <token id="3" lemma="worker" pos="NNS" surface="workers"/>
+  <token id="4" lemma="be" pos="VBD" surface="were"/>
+  <token id="5" lemma="evacuate" pos="VBN" surface="evacuated"/>
+  <token id="6" lemma="without" pos="IN" surface="without"/>
+  <token id="7" lemma="injury" pos="NN" surface="injury"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="accord" pos="VBG" surface="according"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="fire" pos="NNP" surface="Fire"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="rescue" pos="NNP" surface="Rescue"/>
+  <token id="14" lemma="nsw" pos="NNP" surface="NSW"/>
+  <token id="15" lemma="superintendent" pos="NNP" surface="Superintendent"/>
+  <token id="16" lemma="ian" pos="NNP" surface="Ian"/>
+  <token id="17" lemma="krimmer" pos="NNP" surface="Krimmer"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="5" to="3" type="nsubjpass"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="5" to="8" type="punct"/>
+  <dep from="5" to="9" type="prep"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="17" to="13" type="compound"/>
+  <dep from="17" to="14" type="compound"/>
+  <dep from="17" to="15" type="compound"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="11" to="17" type="conj"/>
+  <dep from="5" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Employing">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Employee">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Removing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Attributed_information">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Proposition">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Experience_bodily_harm">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Governed">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

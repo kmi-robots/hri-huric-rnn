@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099366">
+ <sentence>
+  The Soviets , of course , described the same groups in exactly opposite terms .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="soviets" pos="NNPS" surface="Soviets"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="course" pos="NN" surface="course"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="describe" pos="VBD" surface="described"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="same" pos="JJ" surface="same"/>
+  <token id="10" lemma="group" pos="NNS" surface="groups"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="exactly" pos="RB" surface="exactly"/>
+  <token id="13" lemma="opposite" pos="JJ" surface="opposite"/>
+  <token id="14" lemma="term" pos="NNS" surface="terms"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="7" to="2" type="nsubj"/>
+  <dep from="7" to="3" type="punct"/>
+  <dep from="7" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="7" to="6" type="punct"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="7" to="10" type="dobj"/>
+  <dep from="7" to="11" type="prep"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="7" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Communicate_categorization">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Category">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Identicality">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Current_instance">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

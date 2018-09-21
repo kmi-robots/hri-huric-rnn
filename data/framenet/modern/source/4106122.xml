@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106122">
+ <sentence>
+  Departures are from the Macau Ferry Terminal , just west of Central in the Shun Tak Centre , 200 Connaught Road , Central , in Hong Kong .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="departure" pos="NNS" surface="Departures"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="from" pos="IN" surface="from"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="macau" pos="NNP" surface="Macau"/>
+  <token id="6" lemma="ferry" pos="NNP" surface="Ferry"/>
+  <token id="7" lemma="terminal" pos="NNP" surface="Terminal"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="just" pos="RB" surface="just"/>
+  <token id="10" lemma="west" pos="RB" surface="west"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="central" pos="NNP" surface="Central"/>
+  <token id="13" lemma="in" pos="IN" surface="in"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="shun" pos="NNP" surface="Shun"/>
+  <token id="16" lemma="tak" pos="NNP" surface="Tak"/>
+  <token id="17" lemma="centre" pos="NNP" surface="Centre"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="200" pos="CD" surface="200"/>
+  <token id="20" lemma="connaught" pos="NNP" surface="Connaught"/>
+  <token id="21" lemma="road" pos="NNP" surface="Road"/>
+  <token id="22" lemma="," pos="," surface=","/>
+  <token id="23" lemma="central" pos="NNP" surface="Central"/>
+  <token id="24" lemma="," pos="," surface=","/>
+  <token id="25" lemma="in" pos="IN" surface="in"/>
+  <token id="26" lemma="hong" pos="NNP" surface="Hong"/>
+  <token id="27" lemma="kong" pos="NNP" surface="Kong"/>
+  <token id="28" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="7" to="4" type="det"/>
+  <dep from="7" to="5" type="compound"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="3" to="7" type="pobj"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="7" to="10" type="appos"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="10" to="13" type="prep"/>
+  <dep from="17" to="14" type="det"/>
+  <dep from="17" to="15" type="compound"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="13" to="17" type="pobj"/>
+  <dep from="7" to="18" type="punct"/>
+  <dep from="21" to="19" type="nummod"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="7" to="21" type="conj"/>
+  <dep from="21" to="22" type="punct"/>
+  <dep from="21" to="23" type="conj"/>
+  <dep from="23" to="24" type="punct"/>
+  <dep from="23" to="25" type="prep"/>
+  <dep from="27" to="26" type="compound"/>
+  <dep from="25" to="27" type="pobj"/>
+  <dep from="2" to="28" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Departing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Source">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Vehicle">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Direction">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Path">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Landmark">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Roadway">
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

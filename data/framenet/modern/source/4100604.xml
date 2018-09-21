@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100604">
+ <sentence>
+  Along the Liffey to the west is Temple Bar , center of nightlife and home to many of Dublin 's cutting-edge artists and artistic endeavors .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="along" pos="IN" surface="Along"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="liffey" pos="NNP" surface="Liffey"/>
+  <token id="4" lemma="to" pos="IN" surface="to"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="west" pos="NN" surface="west"/>
+  <token id="7" lemma="be" pos="VBZ" surface="is"/>
+  <token id="8" lemma="temple" pos="NNP" surface="Temple"/>
+  <token id="9" lemma="bar" pos="NNP" surface="Bar"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="center" pos="NN" surface="center"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="nightlife" pos="NN" surface="nightlife"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="home" pos="NN" surface="home"/>
+  <token id="16" lemma="to" pos="IN" surface="to"/>
+  <token id="17" lemma="many" pos="JJ" surface="many"/>
+  <token id="18" lemma="of" pos="IN" surface="of"/>
+  <token id="19" lemma="dublin" pos="NNP" surface="Dublin"/>
+  <token id="20" lemma="'s" pos="POS" surface="'s"/>
+  <token id="21" lemma="cutting-edge" pos="JJ" surface="cutting-edge"/>
+  <token id="22" lemma="artist" pos="NNS" surface="artists"/>
+  <token id="23" lemma="and" pos="CC" surface="and"/>
+  <token id="24" lemma="artistic" pos="JJ" surface="artistic"/>
+  <token id="25" lemma="endeavor" pos="NNS" surface="endeavors"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="1" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="7" to="9" type="nsubj"/>
+  <dep from="9" to="10" type="punct"/>
+  <dep from="9" to="11" type="appos"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="11" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="22" to="19" type="poss"/>
+  <dep from="19" to="20" type="case"/>
+  <dep from="22" to="21" type="amod"/>
+  <dep from="18" to="22" type="pobj"/>
+  <dep from="22" to="23" type="cc"/>
+  <dep from="25" to="24" type="amod"/>
+  <dep from="22" to="25" type="conj"/>
+  <dep from="7" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Attempt">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Stage_of_progress">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Create_physical_artwork">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Creator">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Fields">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Work">
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

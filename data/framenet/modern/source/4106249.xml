@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106249">
+ <sentence>
+  Note , however , that the exchange does not go the other way ( see page 116 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="note" pos="VB" surface="Note"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="however" pos="RB" surface="however"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="that" pos="IN" surface="that"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="exchange" pos="NN" surface="exchange"/>
+  <token id="8" lemma="do" pos="VBZ" surface="does"/>
+  <token id="9" lemma="not" pos="RB" surface="not"/>
+  <token id="10" lemma="go" pos="VB" surface="go"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="other" pos="JJ" surface="other"/>
+  <token id="13" lemma="way" pos="NN" surface="way"/>
+  <token id="14" lemma="(" pos="-LRB-" surface="("/>
+  <token id="15" lemma="see" pos="VB" surface="see"/>
+  <token id="16" lemma="page" pos="NN" surface="page"/>
+  <token id="17" lemma="116" pos="CD" surface="116"/>
+  <token id="18" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="advcl"/>
+  <dep from="10" to="2" type="punct"/>
+  <dep from="10" to="3" type="advmod"/>
+  <dep from="10" to="4" type="punct"/>
+  <dep from="10" to="5" type="mark"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="10" to="7" type="nsubj"/>
+  <dep from="10" to="8" type="aux"/>
+  <dep from="10" to="9" type="neg"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="npadvmod"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="13" to="15" type="appos"/>
+  <dep from="15" to="16" type="dobj"/>
+  <dep from="16" to="17" type="nummod"/>
+  <dep from="13" to="18" type="punct"/>
+  <dep from="10" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Concessive">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Main_assertion">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Main_assertion">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Compatibility">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Parameter">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Reference_text">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Source_of_information">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Becoming_aware">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

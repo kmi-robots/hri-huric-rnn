@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101893">
+ <sentence>
+  20 BILL : - it 'll actually be tomorrow -
+ </sentence>
+ <tokens>
+  <token id="1" lemma="20" pos="CD" surface="20"/>
+  <token id="2" lemma="bill" pos="NNP" surface="BILL"/>
+  <token id="3" lemma=":" pos=":" surface=":"/>
+  <token id="4" lemma="-" pos=":" surface="-"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="6" lemma="'ll" pos="MD" surface="'ll"/>
+  <token id="7" lemma="actually" pos="RB" surface="actually"/>
+  <token id="8" lemma="be" pos="VB" surface="be"/>
+  <token id="9" lemma="tomorrow" pos="NN" surface="tomorrow"/>
+  <token id="10" lemma="-" pos="HYPH" surface="-"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="8" to="2" type="dep"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="8" to="4" type="punct"/>
+  <dep from="8" to="5" type="nsubj"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="advmod"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="npadvmod"/>
+  <dep from="8" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

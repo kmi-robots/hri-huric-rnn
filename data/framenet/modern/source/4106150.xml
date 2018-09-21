@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106150">
+ <sentence>
+  A recreated street of colonial Macau is lined with traditional Chinese shops .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="recreated" pos="JJ" surface="recreated"/>
+  <token id="3" lemma="street" pos="NN" surface="street"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="colonial" pos="NN" surface="colonial"/>
+  <token id="6" lemma="macau" pos="NNP" surface="Macau"/>
+  <token id="7" lemma="be" pos="VBZ" surface="is"/>
+  <token id="8" lemma="line" pos="VBN" surface="lined"/>
+  <token id="9" lemma="with" pos="IN" surface="with"/>
+  <token id="10" lemma="traditional" pos="JJ" surface="traditional"/>
+  <token id="11" lemma="chinese" pos="JJ" surface="Chinese"/>
+  <token id="12" lemma="shop" pos="NNS" surface="shops"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="8" to="3" type="nsubjpass"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="amod"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="8" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Roadway">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Abounding_with">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Location">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Custom">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Society">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

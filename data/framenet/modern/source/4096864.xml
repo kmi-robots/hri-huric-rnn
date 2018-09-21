@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096864">
+ <sentence>
+  There may also exist a small number of independent Shehab-2 or -3 units of battalion size .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="may" pos="MD" surface="may"/>
+  <token id="3" lemma="also" pos="RB" surface="also"/>
+  <token id="4" lemma="exist" pos="VB" surface="exist"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="small" pos="JJ" surface="small"/>
+  <token id="7" lemma="number" pos="NN" surface="number"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="independent" pos="JJ" surface="independent"/>
+  <token id="10" lemma="shehab-2" pos="NNPS" surface="Shehab-2"/>
+  <token id="11" lemma="or" pos="CC" surface="or"/>
+  <token id="12" lemma="-3" pos="VB" surface="-3"/>
+  <token id="13" lemma="unit" pos="NNS" surface="units"/>
+  <token id="14" lemma="of" pos="IN" surface="of"/>
+  <token id="15" lemma="battalion" pos="NN" surface="battalion"/>
+  <token id="16" lemma="size" pos="NN" surface="size"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="expl"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="13" to="9" type="amod"/>
+  <dep from="13" to="10" type="nmod"/>
+  <dep from="10" to="11" type="cc"/>
+  <dep from="10" to="12" type="conj"/>
+  <dep from="8" to="13" type="pobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="4" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

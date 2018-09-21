@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824517">
+ <sentence>
+  Berkeley very quiet right now .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="berkeley" pos="NNP" surface="Berkeley"/>
+  <token id="2" lemma="very" pos="RB" surface="very"/>
+  <token id="3" lemma="quiet" pos="JJ" surface="quiet"/>
+  <token id="4" lemma="right" pos="RB" surface="right"/>
+  <token id="5" lemma="now" pos="RB" surface="now"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="1" to="3" type="amod"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="1" to="5" type="advmod"/>
+  <dep from="1" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Degree">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Gradable_attribute">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Trajector_event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Landmark_period">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

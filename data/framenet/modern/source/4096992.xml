@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096992">
+ <sentence>
+  Iran is suspected of having developed such a capability with aid from individuals and companies in the West , as well as India and China .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="suspect" pos="VBN" surface="suspected"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="have" pos="VBG" surface="having"/>
+  <token id="6" lemma="develop" pos="VBN" surface="developed"/>
+  <token id="7" lemma="such" pos="PDT" surface="such"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="capability" pos="NN" surface="capability"/>
+  <token id="10" lemma="with" pos="IN" surface="with"/>
+  <token id="11" lemma="aid" pos="NN" surface="aid"/>
+  <token id="12" lemma="from" pos="IN" surface="from"/>
+  <token id="13" lemma="individual" pos="NNS" surface="individuals"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="company" pos="NNS" surface="companies"/>
+  <token id="16" lemma="in" pos="IN" surface="in"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="west" pos="NNP" surface="West"/>
+  <token id="19" lemma="," pos="," surface=","/>
+  <token id="20" lemma="as" pos="RB" surface="as"/>
+  <token id="21" lemma="well" pos="RB" surface="well"/>
+  <token id="22" lemma="as" pos="IN" surface="as"/>
+  <token id="23" lemma="india" pos="NNP" surface="India"/>
+  <token id="24" lemma="and" pos="CC" surface="and"/>
+  <token id="25" lemma="china" pos="NNP" surface="China"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="4" to="6" type="pcomp"/>
+  <dep from="9" to="7" type="predet"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="6" to="9" type="dobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="13" to="16" type="prep"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="13" to="19" type="punct"/>
+  <dep from="22" to="20" type="advmod"/>
+  <dep from="22" to="21" type="advmod"/>
+  <dep from="13" to="22" type="cc"/>
+  <dep from="13" to="23" type="conj"/>
+  <dep from="23" to="24" type="cc"/>
+  <dep from="23" to="25" type="conj"/>
+  <dep from="3" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Suspicion">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Suspect">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Incident">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Capability">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_to_make_progress">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Project">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Helper">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

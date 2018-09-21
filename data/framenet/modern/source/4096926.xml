@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096926">
+ <sentence>
+  IBS has several branches and over 350 members .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="ibs" pos="NNP" surface="IBS"/>
+  <token id="2" lemma="have" pos="VBZ" surface="has"/>
+  <token id="3" lemma="several" pos="JJ" surface="several"/>
+  <token id="4" lemma="branch" pos="NNS" surface="branches"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="over" pos="IN" surface="over"/>
+  <token id="7" lemma="350" pos="CD" surface="350"/>
+  <token id="8" lemma="member" pos="NNS" surface="members"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="2" to="6" type="prep"/>
+  <dep from="8" to="7" type="nummod"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Member">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Group">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

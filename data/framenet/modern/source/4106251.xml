@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106251">
+ <sentence>
+  English is spoken in hotels and tourist destinations .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="english" pos="NNP" surface="English"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="speak" pos="VBN" surface="spoken"/>
+  <token id="4" lemma="in" pos="IN" surface="in"/>
+  <token id="5" lemma="hotel" pos="NNS" surface="hotels"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="tourist" pos="NN" surface="tourist"/>
+  <token id="8" lemma="destination" pos="NNS" surface="destinations"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="conj"/>
+  <dep from="3" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Touring">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Attraction">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Tourist">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097056">
+ <sentence>
+  Chinese companies have been key suppliers for Iran 's chemical weapons program .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="chinese" pos="JJ" surface="Chinese"/>
+  <token id="2" lemma="company" pos="NNS" surface="companies"/>
+  <token id="3" lemma="have" pos="VBP" surface="have"/>
+  <token id="4" lemma="be" pos="VBN" surface="been"/>
+  <token id="5" lemma="key" pos="JJ" surface="key"/>
+  <token id="6" lemma="supplier" pos="NNS" surface="suppliers"/>
+  <token id="7" lemma="for" pos="IN" surface="for"/>
+  <token id="8" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="9" lemma="'s" pos="POS" surface="'s"/>
+  <token id="10" lemma="chemical" pos="JJ" surface="chemical"/>
+  <token id="11" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="12" lemma="program" pos="NN" surface="program"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="4" to="6" type="attr"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="12" to="8" type="poss"/>
+  <dep from="8" to="9" type="case"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="7" to="12" type="pobj"/>
+  <dep from="4" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Importance">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Factor">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Supplier">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Imposed_purpose">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Salient_entity">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

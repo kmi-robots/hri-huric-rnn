@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105934">
+ <sentence>
+  It is divided into three areas : a highland , a lowland , and the Middle Kingdom .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="It"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="divide" pos="VBN" surface="divided"/>
+  <token id="4" lemma="into" pos="IN" surface="into"/>
+  <token id="5" lemma="three" pos="CD" surface="three"/>
+  <token id="6" lemma="area" pos="NNS" surface="areas"/>
+  <token id="7" lemma=":" pos=":" surface=":"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="highland" pos="NN" surface="highland"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="lowland" pos="NN" surface="lowland"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="middle" pos="NNP" surface="Middle"/>
+  <token id="17" lemma="kingdom" pos="NNP" surface="Kingdom"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="6" to="9" type="appos"/>
+  <dep from="9" to="10" type="punct"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="9" to="12" type="conj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="12" to="14" type="cc"/>
+  <dep from="17" to="15" type="det"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="12" to="17" type="conj"/>
+  <dep from="3" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Separating">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Whole">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Parts">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

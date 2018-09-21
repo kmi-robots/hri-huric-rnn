@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101154">
+ <sentence>
+  The latest approach is perhaps the best of the post-mob era : the comprehensive resort .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="late" pos="JJS" surface="latest"/>
+  <token id="3" lemma="approach" pos="NN" surface="approach"/>
+  <token id="4" lemma="be" pos="VBZ" surface="is"/>
+  <token id="5" lemma="perhaps" pos="RB" surface="perhaps"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="good" pos="JJS" surface="best"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="post-mob" pos="JJ" surface="post-mob"/>
+  <token id="11" lemma="era" pos="NN" surface="era"/>
+  <token id="12" lemma=":" pos=":" surface=":"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="comprehensive" pos="JJ" surface="comprehensive"/>
+  <token id="15" lemma="resort" pos="NN" surface="resort"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="advmod"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="4" to="7" type="attr"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="7" to="12" type="punct"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="7" to="15" type="appos"/>
+  <dep from="4" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Relative_time">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Focal_participant">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Means">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Means">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Usefulness">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Salient_event">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

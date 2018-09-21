@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824427">
+ <sentence>
+  About two-thirds of the Well 's 3,000 subscribers live in the Bay Area .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="about" pos="IN" surface="About"/>
+  <token id="2" lemma="two-third" pos="NNS" surface="two-thirds"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="well" pos="NNP" surface="Well"/>
+  <token id="6" lemma="'s" pos="POS" surface="'s"/>
+  <token id="7" lemma="3,000" pos="CD" surface="3,000"/>
+  <token id="8" lemma="subscriber" pos="NNS" surface="subscribers"/>
+  <token id="9" lemma="live" pos="VBP" surface="live"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="bay" pos="NNP" surface="Bay"/>
+  <token id="13" lemma="area" pos="NNP" surface="Area"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="advmod"/>
+  <dep from="9" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="8" to="5" type="poss"/>
+  <dep from="5" to="6" type="case"/>
+  <dep from="8" to="7" type="nummod"/>
+  <dep from="3" to="8" type="pobj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="9" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Partitive">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Group">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Subset">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Residence">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Resident">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Denoted_quantity">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Reference_quantity">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148523">
+ <sentence>
+  The dictator , his two children , his secretary , and his wealth had all escaped them .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="dictator" pos="NN" surface="dictator"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="5" lemma="two" pos="CD" surface="two"/>
+  <token id="6" lemma="child" pos="NNS" surface="children"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="9" lemma="secretary" pos="NN" surface="secretary"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="13" lemma="wealth" pos="NN" surface="wealth"/>
+  <token id="14" lemma="have" pos="VBD" surface="had"/>
+  <token id="15" lemma="all" pos="DT" surface="all"/>
+  <token id="16" lemma="escape" pos="VBN" surface="escaped"/>
+  <token id="17" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="16" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="6" to="4" type="poss"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="2" to="6" type="appos"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="9" to="8" type="poss"/>
+  <dep from="6" to="9" type="conj"/>
+  <dep from="9" to="10" type="punct"/>
+  <dep from="9" to="11" type="cc"/>
+  <dep from="13" to="12" type="poss"/>
+  <dep from="9" to="13" type="conj"/>
+  <dep from="16" to="14" type="aux"/>
+  <dep from="16" to="15" type="advmod"/>
+  <dep from="0" to="16" type="root"/>
+  <dep from="16" to="17" type="dobj"/>
+  <dep from="16" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Kinship">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Alter">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Ego">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Avoiding">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Undesirable_situation">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

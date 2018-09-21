@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101032">
+ <sentence>
+  These springs fed a network of streams draining through the Las Vegas Wash to the Colorado River .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="these" pos="DT" surface="These"/>
+  <token id="2" lemma="spring" pos="NNS" surface="springs"/>
+  <token id="3" lemma="feed" pos="VBD" surface="fed"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="network" pos="NN" surface="network"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="stream" pos="NNS" surface="streams"/>
+  <token id="8" lemma="drain" pos="VBG" surface="draining"/>
+  <token id="9" lemma="through" pos="IN" surface="through"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="las" pos="NNP" surface="Las"/>
+  <token id="12" lemma="vegas" pos="NNP" surface="Vegas"/>
+  <token id="13" lemma="wash" pos="NNP" surface="Wash"/>
+  <token id="14" lemma="to" pos="IN" surface="to"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="colorado" pos="NNP" surface="Colorado"/>
+  <token id="17" lemma="river" pos="NNP" surface="River"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="7" to="8" type="acl"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="13" to="10" type="det"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="9" to="13" type="pobj"/>
+  <dep from="8" to="14" type="prep"/>
+  <dep from="17" to="15" type="det"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="14" to="17" type="pobj"/>
+  <dep from="3" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Network">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Connections">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Network">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

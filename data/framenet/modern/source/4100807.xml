@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100807">
+ <sentence>
+  China is estimated to have about 400 strategic and tactical nuclear weapons , and stocks of fissile material sufficient to produce a much larger arsenal .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="china" pos="NNP" surface="China"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="estimate" pos="VBN" surface="estimated"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="have" pos="VB" surface="have"/>
+  <token id="6" lemma="about" pos="RB" surface="about"/>
+  <token id="7" lemma="400" pos="CD" surface="400"/>
+  <token id="8" lemma="strategic" pos="JJ" surface="strategic"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="tactical" pos="JJ" surface="tactical"/>
+  <token id="11" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="12" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="stock" pos="NNS" surface="stocks"/>
+  <token id="16" lemma="of" pos="IN" surface="of"/>
+  <token id="17" lemma="fissile" pos="JJ" surface="fissile"/>
+  <token id="18" lemma="material" pos="NN" surface="material"/>
+  <token id="19" lemma="sufficient" pos="JJ" surface="sufficient"/>
+  <token id="20" lemma="to" pos="TO" surface="to"/>
+  <token id="21" lemma="produce" pos="VB" surface="produce"/>
+  <token id="22" lemma="a" pos="DT" surface="a"/>
+  <token id="23" lemma="much" pos="RB" surface="much"/>
+  <token id="24" lemma="large" pos="JJR" surface="larger"/>
+  <token id="25" lemma="arsenal" pos="NN" surface="arsenal"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="xcomp"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="12" to="7" type="nummod"/>
+  <dep from="12" to="8" type="amod"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="5" to="12" type="dobj"/>
+  <dep from="3" to="13" type="punct"/>
+  <dep from="3" to="14" type="cc"/>
+  <dep from="19" to="15" type="nsubj"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="3" to="19" type="conj"/>
+  <dep from="21" to="20" type="aux"/>
+  <dep from="19" to="21" type="xcomp"/>
+  <dep from="25" to="22" type="det"/>
+  <dep from="24" to="23" type="advmod"/>
+  <dep from="25" to="24" type="amod"/>
+  <dep from="21" to="25" type="dobj"/>
+  <dep from="19" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Estimating">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Estimation">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Estimation">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Store">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Resource">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Possessor">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Ingredients">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Use">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Material">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Sufficiency">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Enabled_situation">
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Size">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Denoted_quantity">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Reference_quantity">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Nuclear_process">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Element">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

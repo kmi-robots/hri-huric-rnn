@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165004">
+ <sentence>
+  Changing weather conditions also helped firefighting efforts , as temperature in the area fell to 90 degrees Fahrenheit , down from over a hundred degrees on Monday .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="change" pos="VBG" surface="Changing"/>
+  <token id="2" lemma="weather" pos="NN" surface="weather"/>
+  <token id="3" lemma="condition" pos="NNS" surface="conditions"/>
+  <token id="4" lemma="also" pos="RB" surface="also"/>
+  <token id="5" lemma="help" pos="VBD" surface="helped"/>
+  <token id="6" lemma="firefighting" pos="JJ" surface="firefighting"/>
+  <token id="7" lemma="effort" pos="NNS" surface="efforts"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="as" pos="IN" surface="as"/>
+  <token id="10" lemma="temperature" pos="NN" surface="temperature"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="area" pos="NN" surface="area"/>
+  <token id="14" lemma="fall" pos="VBD" surface="fell"/>
+  <token id="15" lemma="to" pos="IN" surface="to"/>
+  <token id="16" lemma="90" pos="CD" surface="90"/>
+  <token id="17" lemma="degree" pos="NNS" surface="degrees"/>
+  <token id="18" lemma="fahrenheit" pos="NNP" surface="Fahrenheit"/>
+  <token id="19" lemma="," pos="," surface=","/>
+  <token id="20" lemma="down" pos="RB" surface="down"/>
+  <token id="21" lemma="from" pos="IN" surface="from"/>
+  <token id="22" lemma="over" pos="IN" surface="over"/>
+  <token id="23" lemma="a" pos="DT" surface="a"/>
+  <token id="24" lemma="hundred" pos="CD" surface="hundred"/>
+  <token id="25" lemma="degree" pos="NNS" surface="degrees"/>
+  <token id="26" lemma="on" pos="IN" surface="on"/>
+  <token id="27" lemma="monday" pos="NNP" surface="Monday"/>
+  <token id="28" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="amod"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="xcomp"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="5" to="8" type="punct"/>
+  <dep from="14" to="9" type="mark"/>
+  <dep from="14" to="10" type="nsubj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="5" to="14" type="advcl"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="17" to="16" type="nummod"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="17" to="18" type="appos"/>
+  <dep from="17" to="19" type="punct"/>
+  <dep from="14" to="20" type="advmod"/>
+  <dep from="20" to="21" type="prep"/>
+  <dep from="24" to="22" type="quantmod"/>
+  <dep from="24" to="23" type="quantmod"/>
+  <dep from="25" to="24" type="nummod"/>
+  <dep from="21" to="25" type="pobj"/>
+  <dep from="21" to="26" type="prep"/>
+  <dep from="26" to="27" type="pobj"/>
+  <dep from="5" to="28" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Helper">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Focal_entity">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Explanation">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+   </frame>
+   <frame name="Ambient_temperature">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Attribute">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Final_value">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Initial_value">
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+   </frame>
+   <frame name="Weather">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Firefighting">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="26"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_period">
+     <token id="27"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Reference_quantity">
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Denoted_quantity">
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Initial_value">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Initial_correlate">
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+    <frameElement type="Final_value">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097500">
+ <sentence>
+  One report claims Iran has hired over fifty former Soviet nuclear scientists .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="one" pos="CD" surface="One"/>
+  <token id="2" lemma="report" pos="NN" surface="report"/>
+  <token id="3" lemma="claim" pos="VBZ" surface="claims"/>
+  <token id="4" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="5" lemma="have" pos="VBZ" surface="has"/>
+  <token id="6" lemma="hire" pos="VBN" surface="hired"/>
+  <token id="7" lemma="over" pos="IN" surface="over"/>
+  <token id="8" lemma="fifty" pos="CD" surface="fifty"/>
+  <token id="9" lemma="former" pos="JJ" surface="former"/>
+  <token id="10" lemma="soviet" pos="JJ" surface="Soviet"/>
+  <token id="11" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="12" lemma="scientist" pos="NNS" surface="scientists"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="3" to="6" type="ccomp"/>
+  <dep from="8" to="7" type="quantmod"/>
+  <dep from="12" to="8" type="nummod"/>
+  <dep from="12" to="9" type="amod"/>
+  <dep from="12" to="10" type="amod"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="6" to="12" type="dobj"/>
+  <dep from="3" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Medium">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Hiring">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Employer">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Employee">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Employer">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Text">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Text">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100384">
+ <sentence>
+  Throughout Jerusalem , other spots important to Jesus 's life were commemorated with religious structures .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="throughout" pos="IN" surface="Throughout"/>
+  <token id="2" lemma="jerusalem" pos="NNP" surface="Jerusalem"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="other" pos="JJ" surface="other"/>
+  <token id="5" lemma="spot" pos="NNS" surface="spots"/>
+  <token id="6" lemma="important" pos="JJ" surface="important"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="jesus" pos="NNP" surface="Jesus"/>
+  <token id="9" lemma="'s" pos="POS" surface="'s"/>
+  <token id="10" lemma="life" pos="NN" surface="life"/>
+  <token id="11" lemma="be" pos="VBD" surface="were"/>
+  <token id="12" lemma="commemorate" pos="VBN" surface="commemorated"/>
+  <token id="13" lemma="with" pos="IN" surface="with"/>
+  <token id="14" lemma="religious" pos="JJ" surface="religious"/>
+  <token id="15" lemma="structure" pos="NNS" surface="structures"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="12" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="12" to="3" type="punct"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="12" to="5" type="nsubjpass"/>
+  <dep from="5" to="6" type="amod"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="10" to="8" type="poss"/>
+  <dep from="8" to="9" type="case"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="12" to="11" type="auxpass"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="12" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Class">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Importance">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Undertaking">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Function">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

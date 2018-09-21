@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102482">
+ <sentence>
+  Dr _Gupto : That 's right .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="dr" pos="UH" surface="Dr"/>
+  <token id="2" lemma="_gupto" pos="VB" surface="_Gupto"/>
+  <token id="3" lemma=":" pos=":" surface=":"/>
+  <token id="4" lemma="that" pos="DT" surface="That"/>
+  <token id="5" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="6" lemma="right" pos="JJ" surface="right"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="nummod"/>
+  <dep from="5" to="3" type="punct"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="acomp"/>
+  <dep from="5" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Correctness">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Information">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

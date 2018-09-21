@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098244">
+ <sentence>
+  QN : Is there evidence that Russia 's chemical weapons programs have polluted Russia 's environment ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="be" pos="VBZ" surface="Is"/>
+  <token id="4" lemma="there" pos="EX" surface="there"/>
+  <token id="5" lemma="evidence" pos="NN" surface="evidence"/>
+  <token id="6" lemma="that" pos="IN" surface="that"/>
+  <token id="7" lemma="russia" pos="NNP" surface="Russia"/>
+  <token id="8" lemma="'s" pos="POS" surface="'s"/>
+  <token id="9" lemma="chemical" pos="JJ" surface="chemical"/>
+  <token id="10" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="11" lemma="program" pos="NNS" surface="programs"/>
+  <token id="12" lemma="have" pos="VBP" surface="have"/>
+  <token id="13" lemma="pollute" pos="VBN" surface="polluted"/>
+  <token id="14" lemma="russia" pos="NNP" surface="Russia"/>
+  <token id="15" lemma="'s" pos="POS" surface="'s"/>
+  <token id="16" lemma="environment" pos="NN" surface="environment"/>
+  <token id="17" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="expl"/>
+  <dep from="3" to="5" type="attr"/>
+  <dep from="13" to="6" type="mark"/>
+  <dep from="11" to="7" type="poss"/>
+  <dep from="7" to="8" type="case"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="13" to="11" type="nsubj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="5" to="13" type="acl"/>
+  <dep from="16" to="14" type="poss"/>
+  <dep from="14" to="15" type="case"/>
+  <dep from="13" to="16" type="dobj"/>
+  <dep from="3" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Evidence">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Support">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Proposition">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Salient_entity">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099640">
+ <sentence>
+  New evidence that Canadian trash is a security threat
+ </sentence>
+ <tokens>
+  <token id="1" lemma="new" pos="JJ" surface="New"/>
+  <token id="2" lemma="evidence" pos="NN" surface="evidence"/>
+  <token id="3" lemma="that" pos="IN" surface="that"/>
+  <token id="4" lemma="canadian" pos="JJ" surface="Canadian"/>
+  <token id="5" lemma="trash" pos="NN" surface="trash"/>
+  <token id="6" lemma="be" pos="VBZ" surface="is"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="security" pos="NN" surface="security"/>
+  <token id="9" lemma="threat" pos="NN" surface="threat"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="6" to="3" type="mark"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="2" to="6" type="acl"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="attr"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Evidence">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Depictive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Proposition">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Familiarity">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Risky_situation">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Dangerous_entity">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Asset">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

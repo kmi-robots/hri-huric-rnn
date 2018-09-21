@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103898">
+ <sentence>
+  All-inclusive packages and large resort hotels offer restaurants , sporting activities , entertainment , wide - screen sports channels in the bars , shopping , and a guaranteed suntan .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="all-inclusive" pos="JJ" surface="All-inclusive"/>
+  <token id="2" lemma="package" pos="NNS" surface="packages"/>
+  <token id="3" lemma="and" pos="CC" surface="and"/>
+  <token id="4" lemma="large" pos="JJ" surface="large"/>
+  <token id="5" lemma="resort" pos="NN" surface="resort"/>
+  <token id="6" lemma="hotel" pos="NNS" surface="hotels"/>
+  <token id="7" lemma="offer" pos="VBP" surface="offer"/>
+  <token id="8" lemma="restaurant" pos="NNS" surface="restaurants"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="sporting" pos="NN" surface="sporting"/>
+  <token id="11" lemma="activity" pos="NNS" surface="activities"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="entertainment" pos="NN" surface="entertainment"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="wide" pos="JJ" surface="wide"/>
+  <token id="16" lemma="-" pos="HYPH" surface="-"/>
+  <token id="17" lemma="screen" pos="NN" surface="screen"/>
+  <token id="18" lemma="sport" pos="NNS" surface="sports"/>
+  <token id="19" lemma="channel" pos="NNS" surface="channels"/>
+  <token id="20" lemma="in" pos="IN" surface="in"/>
+  <token id="21" lemma="the" pos="DT" surface="the"/>
+  <token id="22" lemma="bar" pos="NNS" surface="bars"/>
+  <token id="23" lemma="," pos="," surface=","/>
+  <token id="24" lemma="shopping" pos="NN" surface="shopping"/>
+  <token id="25" lemma="," pos="," surface=","/>
+  <token id="26" lemma="and" pos="CC" surface="and"/>
+  <token id="27" lemma="a" pos="DT" surface="a"/>
+  <token id="28" lemma="guarantee" pos="VBN" surface="guaranteed"/>
+  <token id="29" lemma="suntan" pos="JJ" surface="suntan"/>
+  <token id="30" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="7" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="6" to="4" type="amod"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="2" to="6" type="conj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="8" to="11" type="conj"/>
+  <dep from="11" to="12" type="punct"/>
+  <dep from="11" to="13" type="conj"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="17" to="15" type="amod"/>
+  <dep from="17" to="16" type="punct"/>
+  <dep from="19" to="17" type="compound"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="13" to="19" type="conj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="22" to="21" type="det"/>
+  <dep from="20" to="22" type="pobj"/>
+  <dep from="22" to="23" type="punct"/>
+  <dep from="22" to="24" type="conj"/>
+  <dep from="24" to="25" type="punct"/>
+  <dep from="24" to="26" type="cc"/>
+  <dep from="29" to="27" type="det"/>
+  <dep from="29" to="28" type="amod"/>
+  <dep from="24" to="29" type="conj"/>
+  <dep from="7" to="30" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Aggregate_property">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Act">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Domain">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Shopping">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="28"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="29"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

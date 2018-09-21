@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106384">
+ <sentence>
+  What kind of work does Goodwill do ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="what" pos="WDT" surface="What"/>
+  <token id="2" lemma="kind" pos="NN" surface="kind"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="work" pos="NN" surface="work"/>
+  <token id="5" lemma="do" pos="VBZ" surface="does"/>
+  <token id="6" lemma="goodwill" pos="NNP" surface="Goodwill"/>
+  <token id="7" lemma="do" pos="VB" surface="do"/>
+  <token id="8" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="7" to="2" type="dobj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="7" to="5" type="aux"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Type">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Category">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Subtype">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Work">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Act">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

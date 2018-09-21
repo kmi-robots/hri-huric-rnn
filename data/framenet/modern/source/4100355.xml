@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100355">
+ <sentence>
+  The courtyard around the Temple was expanded to accommodate hundreds of thousands of pilgrims , and the Temple Mount was shored up by retaining walls made with great stone blocks .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="courtyard" pos="NN" surface="courtyard"/>
+  <token id="3" lemma="around" pos="IN" surface="around"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="temple" pos="NNP" surface="Temple"/>
+  <token id="6" lemma="be" pos="VBD" surface="was"/>
+  <token id="7" lemma="expand" pos="VBN" surface="expanded"/>
+  <token id="8" lemma="to" pos="TO" surface="to"/>
+  <token id="9" lemma="accommodate" pos="VB" surface="accommodate"/>
+  <token id="10" lemma="hundred" pos="NNS" surface="hundreds"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="thousand" pos="NNS" surface="thousands"/>
+  <token id="13" lemma="of" pos="IN" surface="of"/>
+  <token id="14" lemma="pilgrim" pos="NNS" surface="pilgrims"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="temple" pos="NNP" surface="Temple"/>
+  <token id="19" lemma="mount" pos="NNP" surface="Mount"/>
+  <token id="20" lemma="be" pos="VBD" surface="was"/>
+  <token id="21" lemma="shore" pos="VBN" surface="shored"/>
+  <token id="22" lemma="up" pos="RP" surface="up"/>
+  <token id="23" lemma="by" pos="IN" surface="by"/>
+  <token id="24" lemma="retain" pos="VBG" surface="retaining"/>
+  <token id="25" lemma="wall" pos="NNS" surface="walls"/>
+  <token id="26" lemma="make" pos="VBN" surface="made"/>
+  <token id="27" lemma="with" pos="IN" surface="with"/>
+  <token id="28" lemma="great" pos="JJ" surface="great"/>
+  <token id="29" lemma="stone" pos="NN" surface="stone"/>
+  <token id="30" lemma="block" pos="NNS" surface="blocks"/>
+  <token id="31" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="7" to="2" type="nsubjpass"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="7" to="9" type="advcl"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="7" to="15" type="punct"/>
+  <dep from="7" to="16" type="cc"/>
+  <dep from="19" to="17" type="det"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="21" to="19" type="nsubjpass"/>
+  <dep from="21" to="20" type="auxpass"/>
+  <dep from="7" to="21" type="conj"/>
+  <dep from="21" to="22" type="prt"/>
+  <dep from="21" to="23" type="prep"/>
+  <dep from="23" to="24" type="pcomp"/>
+  <dep from="24" to="25" type="dobj"/>
+  <dep from="25" to="26" type="acl"/>
+  <dep from="26" to="27" type="prep"/>
+  <dep from="30" to="28" type="amod"/>
+  <dep from="30" to="29" type="compound"/>
+  <dep from="27" to="30" type="pobj"/>
+  <dep from="21" to="31" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_expansion">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Architectural_part">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Building">
+    <lexicalUnit>
+     <token id="26"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Components">
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

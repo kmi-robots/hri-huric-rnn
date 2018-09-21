@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165052">
+ <sentence>
+  The fire started in the basement and spread to a small portion of the first floor .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="fire" pos="NN" surface="fire"/>
+  <token id="3" lemma="start" pos="VBD" surface="started"/>
+  <token id="4" lemma="in" pos="IN" surface="in"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="basement" pos="NN" surface="basement"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="spread" pos="VBD" surface="spread"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="small" pos="JJ" surface="small"/>
+  <token id="12" lemma="portion" pos="NN" surface="portion"/>
+  <token id="13" lemma="of" pos="IN" surface="of"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="first" pos="JJ" surface="first"/>
+  <token id="16" lemma="floor" pos="NN" surface="floor"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="3" to="7" type="cc"/>
+  <dep from="3" to="8" type="conj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="13" to="16" type="pobj"/>
+  <dep from="3" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Fire_burning">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Fire">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Catching_fire">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Fire">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Building_subparts">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Building_part">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Expansion">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Size">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_whole">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Part_prop">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Ordinal_numbers">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Building_subparts">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Building_part">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

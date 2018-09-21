@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106137">
+ <sentence>
+  The central square of the historic city center is Largo do Senado .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="central" pos="JJ" surface="central"/>
+  <token id="3" lemma="square" pos="NN" surface="square"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="historic" pos="JJ" surface="historic"/>
+  <token id="7" lemma="city" pos="NN" surface="city"/>
+  <token id="8" lemma="center" pos="NN" surface="center"/>
+  <token id="9" lemma="be" pos="VBZ" surface="is"/>
+  <token id="10" lemma="largo" pos="NNP" surface="Largo"/>
+  <token id="11" lemma="do" pos="VBP" surface="do"/>
+  <token id="12" lemma="senado" pos="NNP" surface="Senado"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="9" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="8" to="5" type="det"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="4" to="8" type="pobj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="12" to="10" type="nmod"/>
+  <dep from="12" to="11" type="nmod"/>
+  <dep from="9" to="12" type="attr"/>
+  <dep from="9" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Part_inner_outer">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Relative_location">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Historic_event">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_inner_outer">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Whole">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

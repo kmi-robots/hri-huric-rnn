@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097838">
+ <sentence>
+  Lt . Khaled Islambouli was the leader of the group of soldiers who assassinated Egyptian President Anwar Sadat in Cairo in 1981 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="lt" pos="NNP" surface="Lt"/>
+  <token id="2" lemma="." pos="." surface="."/>
+  <token id="3" lemma="khaled" pos="NNP" surface="Khaled"/>
+  <token id="4" lemma="islambouli" pos="NNP" surface="Islambouli"/>
+  <token id="5" lemma="be" pos="VBD" surface="was"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="leader" pos="NN" surface="leader"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="group" pos="NN" surface="group"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="soldier" pos="NNS" surface="soldiers"/>
+  <token id="13" lemma="who" pos="WP" surface="who"/>
+  <token id="14" lemma="assassinate" pos="VBD" surface="assassinated"/>
+  <token id="15" lemma="egyptian" pos="JJ" surface="Egyptian"/>
+  <token id="16" lemma="president" pos="NNP" surface="President"/>
+  <token id="17" lemma="anwar" pos="NNP" surface="Anwar"/>
+  <token id="18" lemma="sadat" pos="NNP" surface="Sadat"/>
+  <token id="19" lemma="in" pos="IN" surface="in"/>
+  <token id="20" lemma="cairo" pos="NNP" surface="Cairo"/>
+  <token id="21" lemma="in" pos="IN" surface="in"/>
+  <token id="22" lemma="1981" pos="CD" surface="1981"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="attr"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="14" to="13" type="nsubj"/>
+  <dep from="12" to="14" type="relcl"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="18" to="16" type="compound"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="14" to="18" type="dobj"/>
+  <dep from="14" to="19" type="prep"/>
+  <dep from="19" to="20" type="pobj"/>
+  <dep from="14" to="21" type="prep"/>
+  <dep from="21" to="22" type="pobj"/>
+  <dep from="5" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Killer">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Killer">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824310">
+ <sentence>
+  The reasons are complex , but one simple reason ought not to be underestimated .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="reason" pos="NNS" surface="reasons"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="complex" pos="JJ" surface="complex"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="but" pos="CC" surface="but"/>
+  <token id="7" lemma="one" pos="CD" surface="one"/>
+  <token id="8" lemma="simple" pos="JJ" surface="simple"/>
+  <token id="9" lemma="reason" pos="NN" surface="reason"/>
+  <token id="10" lemma="ought" pos="MD" surface="ought"/>
+  <token id="11" lemma="not" pos="RB" surface="not"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="be" pos="VB" surface="be"/>
+  <token id="14" lemma="underestimate" pos="VBN" surface="underestimated"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="acomp"/>
+  <dep from="3" to="5" type="punct"/>
+  <dep from="3" to="6" type="cc"/>
+  <dep from="9" to="7" type="nummod"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="3" to="10" type="conj"/>
+  <dep from="14" to="11" type="neg"/>
+  <dep from="14" to="12" type="aux"/>
+  <dep from="14" to="13" type="auxpass"/>
+  <dep from="10" to="14" type="xcomp"/>
+  <dep from="10" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Reason">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Reason">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Required_event">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Required_situation">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Required_situation">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Concessive">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Main_assertion">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Conceded_state_of_affairs">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

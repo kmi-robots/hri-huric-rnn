@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101371">
+ <sentence>
+  Rep . Tony Hall , D- Ohio , urges the United Nations to allow a freer flow of food and medicine into Iraq .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="rep" pos="NNP" surface="Rep"/>
+  <token id="2" lemma="." pos="." surface="."/>
+  <token id="3" lemma="tony" pos="NNP" surface="Tony"/>
+  <token id="4" lemma="hall" pos="NNP" surface="Hall"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="d-" pos="NNP" surface="D-"/>
+  <token id="7" lemma="ohio" pos="NNP" surface="Ohio"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="urge" pos="VBZ" surface="urges"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="united" pos="NNP" surface="United"/>
+  <token id="12" lemma="nations" pos="NNP" surface="Nations"/>
+  <token id="13" lemma="to" pos="TO" surface="to"/>
+  <token id="14" lemma="allow" pos="VB" surface="allow"/>
+  <token id="15" lemma="a" pos="DT" surface="a"/>
+  <token id="16" lemma="free" pos="JJR" surface="freer"/>
+  <token id="17" lemma="flow" pos="NN" surface="flow"/>
+  <token id="18" lemma="of" pos="IN" surface="of"/>
+  <token id="19" lemma="food" pos="NN" surface="food"/>
+  <token id="20" lemma="and" pos="CC" surface="and"/>
+  <token id="21" lemma="medicine" pos="NN" surface="medicine"/>
+  <token id="22" lemma="into" pos="IN" surface="into"/>
+  <token id="23" lemma="iraq" pos="NNP" surface="Iraq"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="9" to="4" type="nsubj"/>
+  <dep from="4" to="5" type="punct"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="4" to="7" type="appos"/>
+  <dep from="4" to="8" type="punct"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="9" to="12" type="dobj"/>
+  <dep from="14" to="13" type="aux"/>
+  <dep from="9" to="14" type="xcomp"/>
+  <dep from="17" to="15" type="det"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="14" to="17" type="dobj"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="18" to="19" type="pobj"/>
+  <dep from="19" to="20" type="cc"/>
+  <dep from="19" to="21" type="conj"/>
+  <dep from="17" to="22" type="prep"/>
+  <dep from="22" to="23" type="pobj"/>
+  <dep from="9" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attempt_suasion">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Addressee">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Food">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Food">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Goal">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Landmark">
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Trajector">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Preventing_or_letting">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

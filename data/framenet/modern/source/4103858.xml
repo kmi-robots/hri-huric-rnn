@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103858">
+ <sentence>
+  Today Jamaican population is a mixture of African and English , with Spanish , Indian , and a smattering of Portuguese Jews , Germans , Welsh , and Scots .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="today" pos="NN" surface="Today"/>
+  <token id="2" lemma="jamaican" pos="JJ" surface="Jamaican"/>
+  <token id="3" lemma="population" pos="NN" surface="population"/>
+  <token id="4" lemma="be" pos="VBZ" surface="is"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="mixture" pos="NN" surface="mixture"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="african" pos="JJ" surface="African"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="english" pos="NNP" surface="English"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="with" pos="IN" surface="with"/>
+  <token id="13" lemma="spanish" pos="JJ" surface="Spanish"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="indian" pos="NNP" surface="Indian"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="and" pos="CC" surface="and"/>
+  <token id="18" lemma="a" pos="DT" surface="a"/>
+  <token id="19" lemma="smattering" pos="NN" surface="smattering"/>
+  <token id="20" lemma="of" pos="IN" surface="of"/>
+  <token id="21" lemma="portuguese" pos="JJ" surface="Portuguese"/>
+  <token id="22" lemma="jews" pos="NNPS" surface="Jews"/>
+  <token id="23" lemma="," pos="," surface=","/>
+  <token id="24" lemma="germans" pos="NNPS" surface="Germans"/>
+  <token id="25" lemma="," pos="," surface=","/>
+  <token id="26" lemma="welsh" pos="NNP" surface="Welsh"/>
+  <token id="27" lemma="," pos="," surface=","/>
+  <token id="28" lemma="and" pos="CC" surface="and"/>
+  <token id="29" lemma="scot" pos="NNS" surface="Scots"/>
+  <token id="30" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="npadvmod"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="attr"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="6" to="11" type="punct"/>
+  <dep from="6" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="15" to="17" type="cc"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="15" to="19" type="conj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="22" to="21" type="amod"/>
+  <dep from="20" to="22" type="pobj"/>
+  <dep from="22" to="23" type="punct"/>
+  <dep from="22" to="24" type="conj"/>
+  <dep from="24" to="25" type="punct"/>
+  <dep from="24" to="26" type="conj"/>
+  <dep from="26" to="27" type="punct"/>
+  <dep from="26" to="28" type="cc"/>
+  <dep from="26" to="29" type="conj"/>
+  <dep from="4" to="30" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Trajector_event">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_religion">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_origin">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Aggregate">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

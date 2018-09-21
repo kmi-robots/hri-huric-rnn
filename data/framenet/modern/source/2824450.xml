@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824450">
+ <sentence>
+  The house just settled right down into the ground .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="house" pos="NN" surface="house"/>
+  <token id="3" lemma="just" pos="RB" surface="just"/>
+  <token id="4" lemma="settle" pos="VBD" surface="settled"/>
+  <token id="5" lemma="right" pos="RB" surface="right"/>
+  <token id="6" lemma="down" pos="RB" surface="down"/>
+  <token id="7" lemma="into" pos="IN" surface="into"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="ground" pos="NN" surface="ground"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="4" to="6" type="advmod"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="4" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

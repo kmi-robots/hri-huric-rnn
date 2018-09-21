@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101343">
+ <sentence>
+  The Iraqi government blames the embargo for the malnutrition , infant mortality and other hardships .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="iraqi" pos="JJ" surface="Iraqi"/>
+  <token id="3" lemma="government" pos="NN" surface="government"/>
+  <token id="4" lemma="blame" pos="VBZ" surface="blames"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="embargo" pos="NN" surface="embargo"/>
+  <token id="7" lemma="for" pos="IN" surface="for"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="malnutrition" pos="NN" surface="malnutrition"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="infant" pos="JJ" surface="infant"/>
+  <token id="12" lemma="mortality" pos="NN" surface="mortality"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="other" pos="JJ" surface="other"/>
+  <token id="15" lemma="hardship" pos="NNS" surface="hardships"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="4" to="10" type="punct"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="4" to="12" type="conj"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="12" to="15" type="conj"/>
+  <dep from="4" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Judgment">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Evaluee">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Reason">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Governed">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Leader">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Ailment">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_age">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Class">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

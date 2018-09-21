@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105907">
+ <sentence>
+  Silent for a time , the tradition has been revived and is a tourist attraction .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="silent" pos="JJ" surface="Silent"/>
+  <token id="2" lemma="for" pos="IN" surface="for"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="time" pos="NN" surface="time"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="tradition" pos="NN" surface="tradition"/>
+  <token id="8" lemma="have" pos="VBZ" surface="has"/>
+  <token id="9" lemma="be" pos="VBN" surface="been"/>
+  <token id="10" lemma="revive" pos="VBN" surface="revived"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="be" pos="VBZ" surface="is"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="tourist" pos="NN" surface="tourist"/>
+  <token id="15" lemma="attraction" pos="NN" surface="attraction"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="advcl"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="10" to="5" type="punct"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="10" to="7" type="nsubjpass"/>
+  <dep from="10" to="8" type="aux"/>
+  <dep from="10" to="9" type="auxpass"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="cc"/>
+  <dep from="10" to="12" type="conj"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="12" to="15" type="attr"/>
+  <dep from="10" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Custom">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Cause_to_resume">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Process">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

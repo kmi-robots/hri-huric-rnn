@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102435">
+ <sentence>
+  A debate that 's likely to rage on for many many months to come .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="debate" pos="NN" surface="debate"/>
+  <token id="3" lemma="that" pos="WDT" surface="that"/>
+  <token id="4" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="5" lemma="likely" pos="JJ" surface="likely"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="rage" pos="VB" surface="rage"/>
+  <token id="8" lemma="on" pos="RP" surface="on"/>
+  <token id="9" lemma="for" pos="IN" surface="for"/>
+  <token id="10" lemma="many" pos="JJ" surface="many"/>
+  <token id="11" lemma="many" pos="JJ" surface="many"/>
+  <token id="12" lemma="month" pos="NNS" surface="months"/>
+  <token id="13" lemma="to" pos="TO" surface="to"/>
+  <token id="14" lemma="come" pos="VB" surface="come"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="2" to="4" type="relcl"/>
+  <dep from="4" to="5" type="acomp"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="5" to="7" type="xcomp"/>
+  <dep from="7" to="8" type="prt"/>
+  <dep from="7" to="9" type="prep"/>
+  <dep from="12" to="10" type="amod"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="14" to="13" type="aux"/>
+  <dep from="12" to="14" type="relcl"/>
+  <dep from="2" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Discussion">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

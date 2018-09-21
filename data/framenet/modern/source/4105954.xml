@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105954">
+ <sentence>
+  The waterfront here offers unparalled views of the harbor and Hong Kong Island .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="waterfront" pos="NN" surface="waterfront"/>
+  <token id="3" lemma="here" pos="RB" surface="here"/>
+  <token id="4" lemma="offer" pos="VBZ" surface="offers"/>
+  <token id="5" lemma="unparalled" pos="JJ" surface="unparalled"/>
+  <token id="6" lemma="view" pos="NNS" surface="views"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="harbor" pos="NN" surface="harbor"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="hong" pos="NNP" surface="Hong"/>
+  <token id="12" lemma="kong" pos="NNP" surface="Kong"/>
+  <token id="13" lemma="island" pos="NNP" surface="Island"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="9" to="13" type="conj"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Offering">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Offerer">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

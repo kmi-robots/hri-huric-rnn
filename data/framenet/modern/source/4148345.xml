@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148345">
+ <sentence>
+  " Don 't blame me . "
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="don" pos="NNP" surface="Don"/>
+  <token id="3" lemma="'t" pos="POS" surface="'t"/>
+  <token id="4" lemma="blame" pos="VB" surface="blame"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="6" lemma="." pos="." surface="."/>
+  <token id="7" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="punct"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="case"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="4" to="6" type="punct"/>
+  <dep from="4" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Judgment">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

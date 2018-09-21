@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097232">
+ <sentence>
+  May have small quantities of agent available ; seeking larger capability .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="may" pos="MD" surface="May"/>
+  <token id="2" lemma="have" pos="VB" surface="have"/>
+  <token id="3" lemma="small" pos="JJ" surface="small"/>
+  <token id="4" lemma="quantity" pos="NNS" surface="quantities"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="agent" pos="NN" surface="agent"/>
+  <token id="7" lemma="available" pos="JJ" surface="available"/>
+  <token id="8" lemma=";" pos=":" surface=";"/>
+  <token id="9" lemma="seek" pos="VBG" surface="seeking"/>
+  <token id="10" lemma="large" pos="JJR" surface="larger"/>
+  <token id="11" lemma="capability" pos="NN" surface="capability"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="aux"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="4" to="7" type="amod"/>
+  <dep from="2" to="8" type="punct"/>
+  <dep from="2" to="9" type="advcl"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="2" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Possession">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Q_prop">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Mass">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Active_substance">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Capability">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Degree">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Seeking_to_achieve">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

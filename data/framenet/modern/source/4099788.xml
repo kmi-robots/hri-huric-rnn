@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099788">
+ <sentence>
+  Putin submits nuclear terrorism convention for ratification
+ </sentence>
+ <tokens>
+  <token id="1" lemma="putin" pos="NNP" surface="Putin"/>
+  <token id="2" lemma="submit" pos="VBZ" surface="submits"/>
+  <token id="3" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="4" lemma="terrorism" pos="NN" surface="terrorism"/>
+  <token id="5" lemma="convention" pos="NN" surface="convention"/>
+  <token id="6" lemma="for" pos="IN" surface="for"/>
+  <token id="7" lemma="ratification" pos="NN" surface="ratification"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Submitting_documents">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Submittor">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Documents">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Imposed_purpose">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Terrorism">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Act">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Instrument">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Ratification">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Be_in_agreement_on_action">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Topic">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Obligation">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

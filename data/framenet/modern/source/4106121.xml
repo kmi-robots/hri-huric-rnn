@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106121">
+ <sentence>
+  The 40 - mile trip takes about an hour .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="40" pos="CD" surface="40"/>
+  <token id="3" lemma="-" pos="HYPH" surface="-"/>
+  <token id="4" lemma="mile" pos="NN" surface="mile"/>
+  <token id="5" lemma="trip" pos="NN" surface="trip"/>
+  <token id="6" lemma="take" pos="VBZ" surface="takes"/>
+  <token id="7" lemma="about" pos="RP" surface="about"/>
+  <token id="8" lemma="an" pos="DT" surface="an"/>
+  <token id="9" lemma="hour" pos="NN" surface="hour"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="det"/>
+  <dep from="4" to="2" type="nummod"/>
+  <dep from="4" to="3" type="punct"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="9" to="7" type="advmod"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="6" to="9" type="dobj"/>
+  <dep from="6" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_linear_extent">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Travel">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Distance">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Taking_time">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Time_length">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Denoted_quantity">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Process">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

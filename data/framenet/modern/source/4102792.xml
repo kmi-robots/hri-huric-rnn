@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102792">
+ <sentence>
+  Spying : Confronting infiltration operations carried out by spying agents or moles .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="spy" pos="VBG" surface="Spying"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="confront" pos="VBG" surface="Confronting"/>
+  <token id="4" lemma="infiltration" pos="NN" surface="infiltration"/>
+  <token id="5" lemma="operation" pos="NNS" surface="operations"/>
+  <token id="6" lemma="carry" pos="VBN" surface="carried"/>
+  <token id="7" lemma="out" pos="RP" surface="out"/>
+  <token id="8" lemma="by" pos="IN" surface="by"/>
+  <token id="9" lemma="spy" pos="VBG" surface="spying"/>
+  <token id="10" lemma="agent" pos="NNS" surface="agents"/>
+  <token id="11" lemma="or" pos="CC" surface="or"/>
+  <token id="12" lemma="mole" pos="NNS" surface="moles"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="1" to="3" type="acl"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="5" to="6" type="acl"/>
+  <dep from="6" to="7" type="prt"/>
+  <dep from="6" to="8" type="agent"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="10" to="11" type="cc"/>
+  <dep from="10" to="12" type="conj"/>
+  <dep from="1" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Issue">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Service_provider">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Act">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

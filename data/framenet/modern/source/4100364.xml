@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100364">
+ <sentence>
+  Jesus was put on trial quickly and condemned to crucifixion , a Roman form of execution for political and religious dissidents as well as for common criminals .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="jesus" pos="NNP" surface="Jesus"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="put" pos="VBN" surface="put"/>
+  <token id="4" lemma="on" pos="IN" surface="on"/>
+  <token id="5" lemma="trial" pos="NN" surface="trial"/>
+  <token id="6" lemma="quickly" pos="RB" surface="quickly"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="condemn" pos="VBD" surface="condemned"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="crucifixion" pos="NN" surface="crucifixion"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="roman" pos="JJ" surface="Roman"/>
+  <token id="14" lemma="form" pos="NN" surface="form"/>
+  <token id="15" lemma="of" pos="IN" surface="of"/>
+  <token id="16" lemma="execution" pos="NN" surface="execution"/>
+  <token id="17" lemma="for" pos="IN" surface="for"/>
+  <token id="18" lemma="political" pos="JJ" surface="political"/>
+  <token id="19" lemma="and" pos="CC" surface="and"/>
+  <token id="20" lemma="religious" pos="JJ" surface="religious"/>
+  <token id="21" lemma="dissident" pos="NNS" surface="dissidents"/>
+  <token id="22" lemma="as" pos="RB" surface="as"/>
+  <token id="23" lemma="well" pos="RB" surface="well"/>
+  <token id="24" lemma="as" pos="IN" surface="as"/>
+  <token id="25" lemma="for" pos="IN" surface="for"/>
+  <token id="26" lemma="common" pos="JJ" surface="common"/>
+  <token id="27" lemma="criminal" pos="NNS" surface="criminals"/>
+  <token id="28" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="3" to="6" type="advmod"/>
+  <dep from="3" to="7" type="cc"/>
+  <dep from="3" to="8" type="conj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="10" to="14" type="appos"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="21" to="18" type="amod"/>
+  <dep from="18" to="19" type="cc"/>
+  <dep from="18" to="20" type="conj"/>
+  <dep from="17" to="21" type="pobj"/>
+  <dep from="24" to="22" type="advmod"/>
+  <dep from="24" to="23" type="advmod"/>
+  <dep from="9" to="24" type="cc"/>
+  <dep from="9" to="25" type="conj"/>
+  <dep from="27" to="26" type="amod"/>
+  <dep from="25" to="27" type="pobj"/>
+  <dep from="3" to="28" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Trial">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Defendant">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Type">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Category">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Type_property">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Subtype">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Execution">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Executed">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+   </frame>
+   <frame name="Sentencing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Convict">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Sentence">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

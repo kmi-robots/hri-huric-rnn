@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101128">
+ <sentence>
+  New Legitimacy
+ </sentence>
+ <tokens>
+  <token id="1" lemma="new" pos="NNP" surface="New"/>
+  <token id="2" lemma="legitimacy" pos="NNP" surface="Legitimacy"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="0" to="2" type="root"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Age">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165560">
+ <sentence>
+  Greece wildfires force thousands to evacuate
+ </sentence>
+ <tokens>
+  <token id="1" lemma="greece" pos="NNP" surface="Greece"/>
+  <token id="2" lemma="wildfir" pos="VBZ" surface="wildfires"/>
+  <token id="3" lemma="force" pos="VBP" surface="force"/>
+  <token id="4" lemma="thousand" pos="NNS" surface="thousands"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="evacuate" pos="VB" surface="evacuate"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="2" to="6" type="advcl"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Emergency_fire">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Fire">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Affected">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Escaping">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Escapee">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

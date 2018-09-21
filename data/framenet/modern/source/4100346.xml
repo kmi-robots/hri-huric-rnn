@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100346">
+ <sentence>
+  The Macabbees cleansed the Temple of Hellenistic idols and the blood of pagan sacrifices ; the eight - day celebration of Hanukkah ( Feast of Dedication ) commemorates their victory .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="macabbees" pos="NNPS" surface="Macabbees"/>
+  <token id="3" lemma="cleanse" pos="VBD" surface="cleansed"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="temple" pos="NNP" surface="Temple"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="hellenistic" pos="JJ" surface="Hellenistic"/>
+  <token id="8" lemma="idol" pos="NNS" surface="idols"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="blood" pos="NN" surface="blood"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="pagan" pos="JJ" surface="pagan"/>
+  <token id="14" lemma="sacrifice" pos="NNS" surface="sacrifices"/>
+  <token id="15" lemma=";" pos=":" surface=";"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="eight" pos="CD" surface="eight"/>
+  <token id="18" lemma="-" pos="HYPH" surface="-"/>
+  <token id="19" lemma="day" pos="NN" surface="day"/>
+  <token id="20" lemma="celebration" pos="NN" surface="celebration"/>
+  <token id="21" lemma="of" pos="IN" surface="of"/>
+  <token id="22" lemma="hanukkah" pos="NNP" surface="Hanukkah"/>
+  <token id="23" lemma="(" pos="-LRB-" surface="("/>
+  <token id="24" lemma="feast" pos="NNP" surface="Feast"/>
+  <token id="25" lemma="of" pos="IN" surface="of"/>
+  <token id="26" lemma="dedication" pos="NNP" surface="Dedication"/>
+  <token id="27" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="28" lemma="commemorate" pos="VBZ" surface="commemorates"/>
+  <token id="29" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="30" lemma="victory" pos="NN" surface="victory"/>
+  <token id="31" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="28" to="3" type="ccomp"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="5" to="9" type="cc"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="5" to="11" type="conj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="28" to="15" type="punct"/>
+  <dep from="20" to="16" type="det"/>
+  <dep from="19" to="17" type="nummod"/>
+  <dep from="19" to="18" type="punct"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="28" to="20" type="nsubj"/>
+  <dep from="20" to="21" type="prep"/>
+  <dep from="21" to="22" type="pobj"/>
+  <dep from="22" to="23" type="punct"/>
+  <dep from="22" to="24" type="appos"/>
+  <dep from="24" to="25" type="prep"/>
+  <dep from="25" to="26" type="pobj"/>
+  <dep from="22" to="27" type="punct"/>
+  <dep from="0" to="28" type="root"/>
+  <dep from="30" to="29" type="poss"/>
+  <dep from="28" to="30" type="dobj"/>
+  <dep from="28" to="31" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Rite">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Finish_competition">
+    <lexicalUnit>
+     <token id="30"/>
+    </lexicalUnit>
+    <frameElement type="Competitor">
+     <token id="29"/>
+    </frameElement>
+   </frame>
+   <frame name="Emptying">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Process">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

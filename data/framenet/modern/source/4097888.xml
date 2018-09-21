@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097888">
+ <sentence>
+  In 1973 , then Prime Minister Johannes Vorster approved a program to develop a limited nuclear deterrent capability .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="1973" pos="CD" surface="1973"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="then" pos="RB" surface="then"/>
+  <token id="5" lemma="prime" pos="NNP" surface="Prime"/>
+  <token id="6" lemma="minister" pos="NNP" surface="Minister"/>
+  <token id="7" lemma="johannes" pos="NNP" surface="Johannes"/>
+  <token id="8" lemma="vorster" pos="NNP" surface="Vorster"/>
+  <token id="9" lemma="approve" pos="VBD" surface="approved"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="program" pos="NN" surface="program"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="develop" pos="VB" surface="develop"/>
+  <token id="14" lemma="a" pos="DT" surface="a"/>
+  <token id="15" lemma="limited" pos="JJ" surface="limited"/>
+  <token id="16" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="17" lemma="deterrent" pos="NN" surface="deterrent"/>
+  <token id="18" lemma="capability" pos="NN" surface="capability"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="9" to="3" type="punct"/>
+  <dep from="9" to="4" type="advmod"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="8" to="6" type="compound"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="11" to="13" type="acl"/>
+  <dep from="18" to="14" type="det"/>
+  <dep from="18" to="15" type="amod"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="13" to="18" type="dobj"/>
+  <dep from="9" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Deny_or_grant_permission">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Authority">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Action">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Project">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_to_make_progress">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Project">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Capability">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Degree">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148280">
+ <sentence>
+  " And the white cock ? "
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="and" pos="CC" surface="And"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="white" pos="JJ" surface="white"/>
+  <token id="5" lemma="cock" pos="NN" surface="cock"/>
+  <token id="6" lemma="?" pos="." surface="?"/>
+  <token id="7" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="punct"/>
+  <dep from="5" to="2" type="cc"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="punct"/>
+  <dep from="5" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Color">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Color">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

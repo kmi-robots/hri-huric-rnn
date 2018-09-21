@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106026">
+ <sentence>
+  The railway line then curves gracefully around Tolo Harbor , an idyllic body of water well-protected from the open sea .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="railway" pos="NN" surface="railway"/>
+  <token id="3" lemma="line" pos="NN" surface="line"/>
+  <token id="4" lemma="then" pos="RB" surface="then"/>
+  <token id="5" lemma="curve" pos="VBZ" surface="curves"/>
+  <token id="6" lemma="gracefully" pos="RB" surface="gracefully"/>
+  <token id="7" lemma="around" pos="IN" surface="around"/>
+  <token id="8" lemma="tolo" pos="NNP" surface="Tolo"/>
+  <token id="9" lemma="harbor" pos="NNP" surface="Harbor"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="an" pos="DT" surface="an"/>
+  <token id="12" lemma="idyllic" pos="JJ" surface="idyllic"/>
+  <token id="13" lemma="body" pos="NN" surface="body"/>
+  <token id="14" lemma="of" pos="IN" surface="of"/>
+  <token id="15" lemma="water" pos="NN" surface="water"/>
+  <token id="16" lemma="well-protect" pos="VBN" surface="well-protected"/>
+  <token id="17" lemma="from" pos="IN" surface="from"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="open" pos="JJ" surface="open"/>
+  <token id="20" lemma="sea" pos="NN" surface="sea"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="5" to="7" type="prep"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="punct"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="9" to="13" type="appos"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="13" to="16" type="acl"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="20" to="18" type="det"/>
+  <dep from="20" to="19" type="amod"/>
+  <dep from="17" to="20" type="pobj"/>
+  <dep from="5" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Roadway">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Roadway">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirability">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

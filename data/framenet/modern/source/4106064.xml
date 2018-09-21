@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106064">
+ <sentence>
+  The hillsides that surround the monastery are the site of Hong Kong 's only tea plantation .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="hillside" pos="NNS" surface="hillsides"/>
+  <token id="3" lemma="that" pos="WDT" surface="that"/>
+  <token id="4" lemma="surround" pos="VBP" surface="surround"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="monastery" pos="NN" surface="monastery"/>
+  <token id="7" lemma="be" pos="VBP" surface="are"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="site" pos="NN" surface="site"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="hong" pos="NNP" surface="Hong"/>
+  <token id="12" lemma="kong" pos="NNP" surface="Kong"/>
+  <token id="13" lemma="'s" pos="POS" surface="'s"/>
+  <token id="14" lemma="only" pos="JJ" surface="only"/>
+  <token id="15" lemma="tea" pos="NN" surface="tea"/>
+  <token id="16" lemma="plantation" pos="NN" surface="plantation"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="7" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="2" to="4" type="relcl"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="attr"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="16" to="12" type="poss"/>
+  <dep from="12" to="13" type="case"/>
+  <dep from="16" to="14" type="amod"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="10" to="16" type="pobj"/>
+  <dep from="7" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Constituent_parts">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Sole_instance">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Food">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Food">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

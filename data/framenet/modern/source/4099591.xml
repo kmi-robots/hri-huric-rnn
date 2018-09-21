@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099591">
+ <sentence>
+  Mock drill readies Dublin [ Georgia ] district for terrorist threat
+ </sentence>
+ <tokens>
+  <token id="1" lemma="mock" pos="JJ" surface="Mock"/>
+  <token id="2" lemma="drill" pos="NN" surface="drill"/>
+  <token id="3" lemma="ready" pos="VBZ" surface="readies"/>
+  <token id="4" lemma="dublin" pos="NNP" surface="Dublin"/>
+  <token id="5" lemma="[" pos="-LRB-" surface="["/>
+  <token id="6" lemma="georgia" pos="NNP" surface="Georgia"/>
+  <token id="7" lemma="]" pos="-RRB-" surface="]"/>
+  <token id="8" lemma="district" pos="NN" surface="district"/>
+  <token id="9" lemma="for" pos="IN" surface="for"/>
+  <token id="10" lemma="terrorist" pos="JJ" surface="terrorist"/>
+  <token id="11" lemma="threat" pos="NN" surface="threat"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="8" to="3" type="nmod"/>
+  <dep from="8" to="4" type="nmod"/>
+  <dep from="8" to="5" type="punct"/>
+  <dep from="8" to="6" type="nmod"/>
+  <dep from="8" to="7" type="punct"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="9" to="11" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Terrorism">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Terrorist">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Practice">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Occasion">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Risky_situation">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Situation">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

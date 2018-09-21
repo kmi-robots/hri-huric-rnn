@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098495">
+ <sentence>
+  Kerry knew that Edwards would accept the nomination .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="kerry" pos="NNP" surface="Kerry"/>
+  <token id="2" lemma="know" pos="VBD" surface="knew"/>
+  <token id="3" lemma="that" pos="IN" surface="that"/>
+  <token id="4" lemma="edwards" pos="NNP" surface="Edwards"/>
+  <token id="5" lemma="would" pos="MD" surface="would"/>
+  <token id="6" lemma="accept" pos="VB" surface="accept"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="nomination" pos="NN" surface="nomination"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="6" to="3" type="mark"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="2" to="6" type="ccomp"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Awareness">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Content">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4104220">
+ <sentence>
+  In subtropical Hong Kong you can swim from April to early November .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="subtropical" pos="JJ" surface="subtropical"/>
+  <token id="3" lemma="hong" pos="NNP" surface="Hong"/>
+  <token id="4" lemma="kong" pos="NNP" surface="Kong"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="6" lemma="can" pos="MD" surface="can"/>
+  <token id="7" lemma="swim" pos="VB" surface="swim"/>
+  <token id="8" lemma="from" pos="IN" surface="from"/>
+  <token id="9" lemma="april" pos="NNP" surface="April"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="early" pos="JJ" surface="early"/>
+  <token id="12" lemma="november" pos="NNP" surface="November"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="prep"/>
+  <dep from="4" to="2" type="amod"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="1" to="4" type="pobj"/>
+  <dep from="7" to="5" type="nsubj"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="7" to="10" type="prep"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="7" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Self_motion">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Self_mover">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

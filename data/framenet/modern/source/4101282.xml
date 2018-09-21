@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101282">
+ <sentence>
+  Greece moved in to administer the land , but a new influence upset any grand dreams of making this region a part of greater Greece .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="greece" pos="NNP" surface="Greece"/>
+  <token id="2" lemma="move" pos="VBD" surface="moved"/>
+  <token id="3" lemma="in" pos="RB" surface="in"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="administer" pos="VB" surface="administer"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="land" pos="NN" surface="land"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="but" pos="CC" surface="but"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="new" pos="JJ" surface="new"/>
+  <token id="12" lemma="influence" pos="NN" surface="influence"/>
+  <token id="13" lemma="upset" pos="VBD" surface="upset"/>
+  <token id="14" lemma="any" pos="DT" surface="any"/>
+  <token id="15" lemma="grand" pos="JJ" surface="grand"/>
+  <token id="16" lemma="dream" pos="NNS" surface="dreams"/>
+  <token id="17" lemma="of" pos="IN" surface="of"/>
+  <token id="18" lemma="make" pos="VBG" surface="making"/>
+  <token id="19" lemma="this" pos="DT" surface="this"/>
+  <token id="20" lemma="region" pos="NN" surface="region"/>
+  <token id="21" lemma="a" pos="DT" surface="a"/>
+  <token id="22" lemma="part" pos="NN" surface="part"/>
+  <token id="23" lemma="of" pos="IN" surface="of"/>
+  <token id="24" lemma="great" pos="JJR" surface="greater"/>
+  <token id="25" lemma="greece" pos="NNP" surface="Greece"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prt"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="2" to="5" type="xcomp"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="2" to="8" type="punct"/>
+  <dep from="2" to="9" type="cc"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="2" to="13" type="conj"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="13" to="16" type="dobj"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="17" to="18" type="pcomp"/>
+  <dep from="20" to="19" type="det"/>
+  <dep from="22" to="20" type="nsubj"/>
+  <dep from="22" to="21" type="det"/>
+  <dep from="18" to="22" type="ccomp"/>
+  <dep from="22" to="23" type="prep"/>
+  <dep from="25" to="24" type="amod"/>
+  <dep from="23" to="25" type="pobj"/>
+  <dep from="13" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Objective_influence">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Dimension">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Object">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Dimension">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_whole">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Whole">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Age">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_change">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Final_category">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Governed">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Leader">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Preventing_or_letting">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Potential_hindrance">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4164994">
+ <sentence>
+  For a short time , at least 100 hikers were trapped in the mountains and a boy scout camp was also threatened by the blaze .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="for" pos="IN" surface="For"/>
+  <token id="2" lemma="a" pos="DT" surface="a"/>
+  <token id="3" lemma="short" pos="JJ" surface="short"/>
+  <token id="4" lemma="time" pos="NN" surface="time"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="at" pos="IN" surface="at"/>
+  <token id="7" lemma="least" pos="RBS" surface="least"/>
+  <token id="8" lemma="100" pos="CD" surface="100"/>
+  <token id="9" lemma="hiker" pos="NNS" surface="hikers"/>
+  <token id="10" lemma="be" pos="VBD" surface="were"/>
+  <token id="11" lemma="trap" pos="VBN" surface="trapped"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="mountain" pos="NNS" surface="mountains"/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="a" pos="DT" surface="a"/>
+  <token id="17" lemma="boy" pos="NN" surface="boy"/>
+  <token id="18" lemma="scout" pos="NN" surface="scout"/>
+  <token id="19" lemma="camp" pos="NN" surface="camp"/>
+  <token id="20" lemma="be" pos="VBD" surface="was"/>
+  <token id="21" lemma="also" pos="RB" surface="also"/>
+  <token id="22" lemma="threaten" pos="VBN" surface="threatened"/>
+  <token id="23" lemma="by" pos="IN" surface="by"/>
+  <token id="24" lemma="the" pos="DT" surface="the"/>
+  <token id="25" lemma="blaze" pos="NN" surface="blaze"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="11" to="1" type="prep"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="1" to="4" type="pobj"/>
+  <dep from="11" to="5" type="punct"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="8" to="7" type="advmod"/>
+  <dep from="9" to="8" type="nummod"/>
+  <dep from="11" to="9" type="nsubjpass"/>
+  <dep from="11" to="10" type="auxpass"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="11" to="15" type="cc"/>
+  <dep from="19" to="16" type="det"/>
+  <dep from="19" to="17" type="compound"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="22" to="19" type="nsubjpass"/>
+  <dep from="22" to="20" type="auxpass"/>
+  <dep from="22" to="21" type="advmod"/>
+  <dep from="11" to="22" type="conj"/>
+  <dep from="22" to="23" type="agent"/>
+  <dep from="25" to="24" type="det"/>
+  <dep from="23" to="25" type="pobj"/>
+  <dep from="22" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Self_motion">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Self_mover">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Residence">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Resident">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Fire_burning">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Fire">
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_at_risk">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Dangerous_entity">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Asset">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Duration">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Reference_quantity">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Denoted_quantity">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Duration_relation">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Duration">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Eventuality">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

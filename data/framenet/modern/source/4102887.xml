@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102887">
+ <sentence>
+  2- Belongings A : Cars B : Personal effects C : Electronic equipment .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="2-" pos="LS" surface="2-"/>
+  <token id="2" lemma="belonging" pos="NNS" surface="Belongings"/>
+  <token id="3" lemma="a" pos="NN" surface="A"/>
+  <token id="4" lemma=":" pos=":" surface=":"/>
+  <token id="5" lemma="car" pos="NNS" surface="Cars"/>
+  <token id="6" lemma="b" pos="NN" surface="B"/>
+  <token id="7" lemma=":" pos=":" surface=":"/>
+  <token id="8" lemma="personal" pos="JJ" surface="Personal"/>
+  <token id="9" lemma="effect" pos="NNS" surface="effects"/>
+  <token id="10" lemma="c" pos="NNP" surface="C"/>
+  <token id="11" lemma=":" pos=":" surface=":"/>
+  <token id="12" lemma="electronic" pos="JJ" surface="Electronic"/>
+  <token id="13" lemma="equipment" pos="NN" surface="equipment"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="meta"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="10" to="6" type="dep"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="appos"/>
+  <dep from="10" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Possession">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Vehicle">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Depictive">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

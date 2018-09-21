@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4107213">
+ <sentence>
+  Stapleton was talking with animation , but the baronet looked pale and distrait .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="stapleton" pos="NNP" surface="Stapleton"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="talk" pos="VBG" surface="talking"/>
+  <token id="4" lemma="with" pos="IN" surface="with"/>
+  <token id="5" lemma="animation" pos="NN" surface="animation"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="but" pos="CC" surface="but"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="baronet" pos="NN" surface="baronet"/>
+  <token id="10" lemma="look" pos="VBD" surface="looked"/>
+  <token id="11" lemma="pale" pos="JJ" surface="pale"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="distrait" pos="JJ" surface="distrait"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="3" to="6" type="punct"/>
+  <dep from="3" to="7" type="cc"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="3" to="10" type="conj"/>
+  <dep from="10" to="11" type="acomp"/>
+  <dep from="10" to="12" type="cc"/>
+  <dep from="10" to="13" type="conj"/>
+  <dep from="10" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Chatting">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Interlocutor_1">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Give_impression">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Characterization">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

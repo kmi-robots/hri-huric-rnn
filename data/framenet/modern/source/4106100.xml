@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106100">
+ <sentence>
+  Finally , in 1557 , they were all consolidated in Macau .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="finally" pos="RB" surface="Finally"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="in" pos="IN" surface="in"/>
+  <token id="4" lemma="1557" pos="CD" surface="1557"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="7" lemma="be" pos="VBD" surface="were"/>
+  <token id="8" lemma="all" pos="DT" surface="all"/>
+  <token id="9" lemma="consolidate" pos="VBN" surface="consolidated"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="macau" pos="NNP" surface="Macau"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="7" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="7" to="5" type="punct"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="2" to="7" type="intj"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="7" to="9" type="acomp"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="7" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Time_vector">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Landmark_event">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_to_amalgamate">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Parts">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_period">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

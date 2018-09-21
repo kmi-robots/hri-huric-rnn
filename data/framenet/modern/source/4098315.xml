@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098315">
+ <sentence>
+  QN : Has Libya admitted having stockpiles of biological weapons ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="have" pos="VBZ" surface="Has"/>
+  <token id="4" lemma="libya" pos="NNP" surface="Libya"/>
+  <token id="5" lemma="admit" pos="VBD" surface="admitted"/>
+  <token id="6" lemma="have" pos="VBG" surface="having"/>
+  <token id="7" lemma="stockpile" pos="NNS" surface="stockpiles"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="biological" pos="JJ" surface="biological"/>
+  <token id="10" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="11" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="1" to="5" type="acl"/>
+  <dep from="5" to="6" type="xcomp"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="1" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Reveal_secret">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Information">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Possession">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Owner">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Store">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Resource">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Supply">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Possessor">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

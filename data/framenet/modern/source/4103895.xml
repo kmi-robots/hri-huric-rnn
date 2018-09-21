@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103895">
+ <sentence>
+  To have to wait a while for something is not the worst problem in the world .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="to" pos="TO" surface="To"/>
+  <token id="2" lemma="have" pos="VB" surface="have"/>
+  <token id="3" lemma="to" pos="TO" surface="to"/>
+  <token id="4" lemma="wait" pos="VB" surface="wait"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="while" pos="NN" surface="while"/>
+  <token id="7" lemma="for" pos="IN" surface="for"/>
+  <token id="8" lemma="something" pos="NN" surface="something"/>
+  <token id="9" lemma="be" pos="VBZ" surface="is"/>
+  <token id="10" lemma="not" pos="RB" surface="not"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="bad" pos="JJS" surface="worst"/>
+  <token id="13" lemma="problem" pos="NN" surface="problem"/>
+  <token id="14" lemma="in" pos="IN" surface="in"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="world" pos="NN" surface="world"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="aux"/>
+  <dep from="9" to="2" type="csubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="2" to="4" type="xcomp"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="npadvmod"/>
+  <dep from="9" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="neg"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="9" to="13" type="attr"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="9" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Required_event">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Required_situation">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Waiting">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Duration">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Expected_event">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Process">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirability">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Predicament">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Situation">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

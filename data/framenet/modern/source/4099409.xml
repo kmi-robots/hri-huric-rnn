@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099409">
+ <sentence>
+  By 1995 , however , 26 out of 56 known , active international terrorist groups could be classified as religious in character and / or motivation .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="by" pos="IN" surface="By"/>
+  <token id="2" lemma="1995" pos="CD" surface="1995"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="however" pos="RB" surface="however"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="26" pos="CD" surface="26"/>
+  <token id="7" lemma="out" pos="IN" surface="out"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="56" pos="CD" surface="56"/>
+  <token id="10" lemma="know" pos="VBN" surface="known"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="active" pos="JJ" surface="active"/>
+  <token id="13" lemma="international" pos="JJ" surface="international"/>
+  <token id="14" lemma="terrorist" pos="JJ" surface="terrorist"/>
+  <token id="15" lemma="group" pos="NNS" surface="groups"/>
+  <token id="16" lemma="could" pos="MD" surface="could"/>
+  <token id="17" lemma="be" pos="VB" surface="be"/>
+  <token id="18" lemma="classify" pos="VBN" surface="classified"/>
+  <token id="19" lemma="as" pos="IN" surface="as"/>
+  <token id="20" lemma="religious" pos="JJ" surface="religious"/>
+  <token id="21" lemma="in" pos="IN" surface="in"/>
+  <token id="22" lemma="character" pos="NN" surface="character"/>
+  <token id="23" lemma="and" pos="CC" surface="and"/>
+  <token id="24" lemma="/" pos="SYM" surface="/"/>
+  <token id="25" lemma="or" pos="CC" surface="or"/>
+  <token id="26" lemma="motivation" pos="NN" surface="motivation"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="6" to="3" type="punct"/>
+  <dep from="6" to="4" type="advmod"/>
+  <dep from="6" to="5" type="punct"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="18" to="7" type="prep"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="15" to="9" type="nummod"/>
+  <dep from="15" to="10" type="amod"/>
+  <dep from="15" to="11" type="punct"/>
+  <dep from="15" to="12" type="amod"/>
+  <dep from="15" to="13" type="amod"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="8" to="15" type="pobj"/>
+  <dep from="18" to="16" type="aux"/>
+  <dep from="18" to="17" type="auxpass"/>
+  <dep from="6" to="18" type="ccomp"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="19" to="20" type="amod"/>
+  <dep from="18" to="21" type="prep"/>
+  <dep from="21" to="22" type="pobj"/>
+  <dep from="22" to="23" type="cc"/>
+  <dep from="22" to="24" type="punct"/>
+  <dep from="22" to="25" type="cc"/>
+  <dep from="22" to="26" type="conj"/>
+  <dep from="6" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_active">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Categorization">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Category">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Terrorism">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Terrorist">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Reason">
+    <lexicalUnit>
+     <token id="26"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="26"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

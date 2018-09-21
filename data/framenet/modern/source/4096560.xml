@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096560">
+ <sentence>
+  Kazakhstan joined the CWC in March 2000 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="kazakhstan" pos="NNP" surface="Kazakhstan"/>
+  <token id="2" lemma="join" pos="VBD" surface="joined"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="cwc" pos="NNP" surface="CWC"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="march" pos="NNP" surface="March"/>
+  <token id="7" lemma="2000" pos="CD" surface="2000"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="6" to="7" type="nummod"/>
+  <dep from="2" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Becoming_a_member">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="New_member">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Group">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

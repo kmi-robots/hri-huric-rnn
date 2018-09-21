@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103220">
+ <sentence>
+  AL QAEDA 's sphere of activity : International and transitional according to AL QAEDA 's policy .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="al" pos="NNP" surface="AL"/>
+  <token id="2" lemma="qaeda" pos="NNP" surface="QAEDA"/>
+  <token id="3" lemma="'s" pos="POS" surface="'s"/>
+  <token id="4" lemma="sphere" pos="NN" surface="sphere"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="activity" pos="NN" surface="activity"/>
+  <token id="7" lemma=":" pos=":" surface=":"/>
+  <token id="8" lemma="international" pos="JJ" surface="International"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="transitional" pos="JJ" surface="transitional"/>
+  <token id="11" lemma="according" pos="NN" surface="according"/>
+  <token id="12" lemma="to" pos="IN" surface="to"/>
+  <token id="13" lemma="al" pos="NNP" surface="AL"/>
+  <token id="14" lemma="qaeda" pos="NNP" surface="QAEDA"/>
+  <token id="15" lemma="'s" pos="POS" surface="'s"/>
+  <token id="16" lemma="policy" pos="NN" surface="policy"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="4" to="2" type="poss"/>
+  <dep from="2" to="3" type="case"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="4" to="7" type="punct"/>
+  <dep from="4" to="8" type="appos"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="8" to="11" type="prep"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="16" to="14" type="poss"/>
+  <dep from="14" to="15" type="case"/>
+  <dep from="12" to="16" type="pobj"/>
+  <dep from="4" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Attributed_information">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Text">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Proposition">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Law">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Creator">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Law">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

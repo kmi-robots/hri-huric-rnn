@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097310">
+ <sentence>
+  Last year , Iran began requesting supplies of enriched uranium from France and Eurodif .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="last" pos="JJ" surface="Last"/>
+  <token id="2" lemma="year" pos="NN" surface="year"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="5" lemma="begin" pos="VBD" surface="began"/>
+  <token id="6" lemma="request" pos="VBG" surface="requesting"/>
+  <token id="7" lemma="supply" pos="NNS" surface="supplies"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="enriched" pos="JJ" surface="enriched"/>
+  <token id="10" lemma="uranium" pos="NN" surface="uranium"/>
+  <token id="11" lemma="from" pos="IN" surface="from"/>
+  <token id="12" lemma="france" pos="NNP" surface="France"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="eurodif" pos="NNP" surface="Eurodif"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="5" to="2" type="npadvmod"/>
+  <dep from="5" to="3" type="punct"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="xcomp"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="7" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="12" to="14" type="conj"/>
+  <dep from="5" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Activity_start">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Request">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Medium">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Addressee">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Degree_of_processing">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Material">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

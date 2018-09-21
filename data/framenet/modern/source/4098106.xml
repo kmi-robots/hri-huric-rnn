@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098106">
+ <sentence>
+  Three patients declined further surgery .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="three" pos="CD" surface="Three"/>
+  <token id="2" lemma="patient" pos="NNS" surface="patients"/>
+  <token id="3" lemma="decline" pos="VBD" surface="declined"/>
+  <token id="4" lemma="further" pos="JJ" surface="further"/>
+  <token id="5" lemma="surgery" pos="NN" surface="surgery"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="3" to="5" type="npadvmod"/>
+  <dep from="3" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Agree_or_refuse_to_act">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Proposed_action">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

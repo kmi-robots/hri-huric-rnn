@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824516">
+ <sentence>
+  Nausea seems a commonplace symptom .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="nausea" pos="NN" surface="Nausea"/>
+  <token id="2" lemma="seem" pos="VBZ" surface="seems"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="commonplace" pos="JJ" surface="commonplace"/>
+  <token id="5" lemma="symptom" pos="NN" surface="symptom"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="oprd"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Biological_urge">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Give_impression">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Inference">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Sign">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Indicator">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Typicality">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097110">
+ <sentence>
+  In 1985 , Syria reportedly agreed to supply Iran with chemical weapons , but apparently later backed away from the offer .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="1985" pos="CD" surface="1985"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="syria" pos="NNP" surface="Syria"/>
+  <token id="5" lemma="reportedly" pos="RB" surface="reportedly"/>
+  <token id="6" lemma="agree" pos="VBD" surface="agreed"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="supply" pos="VB" surface="supply"/>
+  <token id="9" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="10" lemma="with" pos="IN" surface="with"/>
+  <token id="11" lemma="chemical" pos="JJ" surface="chemical"/>
+  <token id="12" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="but" pos="CC" surface="but"/>
+  <token id="15" lemma="apparently" pos="RB" surface="apparently"/>
+  <token id="16" lemma="later" pos="RB" surface="later"/>
+  <token id="17" lemma="back" pos="VBD" surface="backed"/>
+  <token id="18" lemma="away" pos="RB" surface="away"/>
+  <token id="19" lemma="from" pos="IN" surface="from"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="offer" pos="NN" surface="offer"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="6" to="3" type="punct"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="6" to="8" type="xcomp"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="8" to="10" type="prep"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="6" to="13" type="punct"/>
+  <dep from="6" to="14" type="cc"/>
+  <dep from="17" to="15" type="advmod"/>
+  <dep from="17" to="16" type="advmod"/>
+  <dep from="6" to="17" type="conj"/>
+  <dep from="17" to="18" type="advmod"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="21" to="20" type="det"/>
+  <dep from="19" to="21" type="pobj"/>
+  <dep from="6" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Unattributed_information">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Reported_fact">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Make_agreement_on_action">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Party_1">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Obligation">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Supplier">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

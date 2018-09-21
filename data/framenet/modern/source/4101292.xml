@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101292">
+ <sentence>
+  But the country was politically fragmented , with arguments between monarchists and republicans , right and left , and tension escalated into civil war .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="but" pos="CC" surface="But"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="country" pos="NN" surface="country"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="politically" pos="RB" surface="politically"/>
+  <token id="6" lemma="fragment" pos="VBN" surface="fragmented"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="with" pos="IN" surface="with"/>
+  <token id="9" lemma="argument" pos="NNS" surface="arguments"/>
+  <token id="10" lemma="between" pos="IN" surface="between"/>
+  <token id="11" lemma="monarchist" pos="NNS" surface="monarchists"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="republican" pos="NNS" surface="republicans"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="right" pos="UH" surface="right"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="leave" pos="VBD" surface="left"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="and" pos="CC" surface="and"/>
+  <token id="20" lemma="tension" pos="NN" surface="tension"/>
+  <token id="21" lemma="escalate" pos="VBN" surface="escalated"/>
+  <token id="22" lemma="into" pos="IN" surface="into"/>
+  <token id="23" lemma="civil" pos="JJ" surface="civil"/>
+  <token id="24" lemma="war" pos="NN" surface="war"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="cc"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="4" to="6" type="acomp"/>
+  <dep from="4" to="7" type="punct"/>
+  <dep from="4" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="11" to="13" type="conj"/>
+  <dep from="4" to="14" type="punct"/>
+  <dep from="4" to="15" type="advmod"/>
+  <dep from="15" to="16" type="cc"/>
+  <dep from="15" to="17" type="conj"/>
+  <dep from="4" to="18" type="punct"/>
+  <dep from="4" to="19" type="cc"/>
+  <dep from="21" to="20" type="nsubj"/>
+  <dep from="4" to="21" type="conj"/>
+  <dep from="21" to="22" type="prep"/>
+  <dep from="24" to="23" type="amod"/>
+  <dep from="22" to="24" type="pobj"/>
+  <dep from="21" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Quarreling">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Arguers">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Amount_of_discussion">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Sides">
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_to_fragment">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Manner">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Whole_patient">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

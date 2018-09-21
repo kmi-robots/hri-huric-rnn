@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099069">
+ <sentence>
+  The Chemlab , for instance , is about the size of a Palm Pilot and will be able to detect a range of biological agents .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="chemlab" pos="NNP" surface="Chemlab"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="for" pos="IN" surface="for"/>
+  <token id="5" lemma="instance" pos="NN" surface="instance"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="be" pos="VBZ" surface="is"/>
+  <token id="8" lemma="about" pos="IN" surface="about"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="size" pos="NN" surface="size"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="palm" pos="NNP" surface="Palm"/>
+  <token id="14" lemma="pilot" pos="NNP" surface="Pilot"/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="will" pos="MD" surface="will"/>
+  <token id="17" lemma="be" pos="VB" surface="be"/>
+  <token id="18" lemma="able" pos="JJ" surface="able"/>
+  <token id="19" lemma="to" pos="TO" surface="to"/>
+  <token id="20" lemma="detect" pos="VB" surface="detect"/>
+  <token id="21" lemma="a" pos="DT" surface="a"/>
+  <token id="22" lemma="range" pos="NN" surface="range"/>
+  <token id="23" lemma="of" pos="IN" surface="of"/>
+  <token id="24" lemma="biological" pos="JJ" surface="biological"/>
+  <token id="25" lemma="agent" pos="NNS" surface="agents"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="7" to="2" type="nsubj"/>
+  <dep from="7" to="3" type="punct"/>
+  <dep from="7" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="7" to="6" type="punct"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="7" to="15" type="cc"/>
+  <dep from="17" to="16" type="aux"/>
+  <dep from="7" to="17" type="conj"/>
+  <dep from="17" to="18" type="acomp"/>
+  <dep from="20" to="19" type="aux"/>
+  <dep from="18" to="20" type="xcomp"/>
+  <dep from="22" to="21" type="det"/>
+  <dep from="20" to="22" type="dobj"/>
+  <dep from="22" to="23" type="prep"/>
+  <dep from="25" to="24" type="amod"/>
+  <dep from="23" to="25" type="pobj"/>
+  <dep from="7" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Capability">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Active_substance">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Substance">
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Becoming_aware">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

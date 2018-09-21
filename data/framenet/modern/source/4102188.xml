@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102188">
+ <sentence>
+  Hangings on weekends .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="hanging" pos="NNS" surface="Hangings"/>
+  <token id="2" lemma="on" pos="IN" surface="on"/>
+  <token id="3" lemma="weekend" pos="NNS" surface="weekends"/>
+  <token id="4" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="2" to="3" type="pobj"/>
+  <dep from="1" to="4" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824512">
+ <sentence>
+  9:38 a.m. FIG : I guess we 're all living very tentatively here , waiting for the expected but dreaded aftershock .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="9:38" pos="CD" surface="9:38"/>
+  <token id="2" lemma="a.m." pos="RB" surface="a.m."/>
+  <token id="3" lemma="fig" pos="NNP" surface="FIG"/>
+  <token id="4" lemma=":" pos=":" surface=":"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="6" lemma="guess" pos="VBP" surface="guess"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="8" lemma="be" pos="VBP" surface="'re"/>
+  <token id="9" lemma="all" pos="DT" surface="all"/>
+  <token id="10" lemma="live" pos="VBG" surface="living"/>
+  <token id="11" lemma="very" pos="RB" surface="very"/>
+  <token id="12" lemma="tentatively" pos="RB" surface="tentatively"/>
+  <token id="13" lemma="here" pos="RB" surface="here"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="wait" pos="VBG" surface="waiting"/>
+  <token id="16" lemma="for" pos="IN" surface="for"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="expect" pos="VBN" surface="expected"/>
+  <token id="19" lemma="but" pos="CC" surface="but"/>
+  <token id="20" lemma="dread" pos="VBN" surface="dreaded"/>
+  <token id="21" lemma="aftershock" pos="NN" surface="aftershock"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="10" to="7" type="nsubj"/>
+  <dep from="10" to="8" type="aux"/>
+  <dep from="10" to="9" type="dep"/>
+  <dep from="6" to="10" type="ccomp"/>
+  <dep from="12" to="11" type="advmod"/>
+  <dep from="10" to="12" type="advmod"/>
+  <dep from="10" to="13" type="advmod"/>
+  <dep from="10" to="14" type="punct"/>
+  <dep from="10" to="15" type="advcl"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="21" to="17" type="det"/>
+  <dep from="21" to="18" type="amod"/>
+  <dep from="18" to="19" type="cc"/>
+  <dep from="18" to="20" type="conj"/>
+  <dep from="16" to="21" type="pobj"/>
+  <dep from="6" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Coming_to_believe">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Residence">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Resident">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Expectation">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Waiting">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Salient_entity">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Degree">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Gradable_attribute">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

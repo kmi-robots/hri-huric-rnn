@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100412">
+ <sentence>
+  Chaim Weizmann ( 1874 - 1952 ) , a scientist born in Russia but later a British subject , did much to put Herzl 's hopes into practice .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="chaim" pos="NNP" surface="Chaim"/>
+  <token id="2" lemma="weizmann" pos="NNP" surface="Weizmann"/>
+  <token id="3" lemma="(" pos="-LRB-" surface="("/>
+  <token id="4" lemma="1874" pos="CD" surface="1874"/>
+  <token id="5" lemma="-" pos="SYM" surface="-"/>
+  <token id="6" lemma="1952" pos="CD" surface="1952"/>
+  <token id="7" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="scientist" pos="NN" surface="scientist"/>
+  <token id="11" lemma="bear" pos="VBN" surface="born"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="russia" pos="NNP" surface="Russia"/>
+  <token id="14" lemma="but" pos="CC" surface="but"/>
+  <token id="15" lemma="later" pos="RB" surface="later"/>
+  <token id="16" lemma="a" pos="DT" surface="a"/>
+  <token id="17" lemma="british" pos="JJ" surface="British"/>
+  <token id="18" lemma="subject" pos="NN" surface="subject"/>
+  <token id="19" lemma="," pos="," surface=","/>
+  <token id="20" lemma="do" pos="VBD" surface="did"/>
+  <token id="21" lemma="much" pos="RB" surface="much"/>
+  <token id="22" lemma="to" pos="TO" surface="to"/>
+  <token id="23" lemma="put" pos="VB" surface="put"/>
+  <token id="24" lemma="herzl" pos="NNP" surface="Herzl"/>
+  <token id="25" lemma="'s" pos="POS" surface="'s"/>
+  <token id="26" lemma="hope" pos="NNS" surface="hopes"/>
+  <token id="27" lemma="into" pos="IN" surface="into"/>
+  <token id="28" lemma="practice" pos="NN" surface="practice"/>
+  <token id="29" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="20" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="npadvmod"/>
+  <dep from="6" to="5" type="punct"/>
+  <dep from="4" to="6" type="prep"/>
+  <dep from="2" to="7" type="punct"/>
+  <dep from="2" to="8" type="punct"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="2" to="10" type="appos"/>
+  <dep from="10" to="11" type="acl"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="10" to="14" type="cc"/>
+  <dep from="18" to="15" type="advmod"/>
+  <dep from="18" to="16" type="det"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="10" to="18" type="conj"/>
+  <dep from="2" to="19" type="punct"/>
+  <dep from="0" to="20" type="root"/>
+  <dep from="20" to="21" type="dobj"/>
+  <dep from="23" to="22" type="aux"/>
+  <dep from="20" to="23" type="advcl"/>
+  <dep from="26" to="24" type="poss"/>
+  <dep from="24" to="25" type="case"/>
+  <dep from="23" to="26" type="dobj"/>
+  <dep from="23" to="27" type="prep"/>
+  <dep from="27" to="28" type="pobj"/>
+  <dep from="20" to="29" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_born">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Child">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Time_vector">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Desiring">
+    <lexicalUnit>
+     <token id="26"/>
+    </lexicalUnit>
+    <frameElement type="Experiencer">
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

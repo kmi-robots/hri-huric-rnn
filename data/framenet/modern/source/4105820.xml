@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105820">
+ <sentence>
+  Nearby is Central Market , the wholesale food market of Hong Kong , and the Hang Seng building ( private offices ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="nearby" pos="RB" surface="Nearby"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="central" pos="NNP" surface="Central"/>
+  <token id="4" lemma="market" pos="NNP" surface="Market"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="wholesale" pos="JJ" surface="wholesale"/>
+  <token id="8" lemma="food" pos="NN" surface="food"/>
+  <token id="9" lemma="market" pos="NN" surface="market"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="hong" pos="NNP" surface="Hong"/>
+  <token id="12" lemma="kong" pos="NNP" surface="Kong"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="hang" pos="NNP" surface="Hang"/>
+  <token id="17" lemma="seng" pos="NNP" surface="Seng"/>
+  <token id="18" lemma="building" pos="NN" surface="building"/>
+  <token id="19" lemma="(" pos="-LRB-" surface="("/>
+  <token id="20" lemma="private" pos="JJ" surface="private"/>
+  <token id="21" lemma="office" pos="NNS" surface="offices"/>
+  <token id="22" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="advmod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="2" to="4" type="attr"/>
+  <dep from="4" to="5" type="punct"/>
+  <dep from="9" to="6" type="det"/>
+  <dep from="9" to="7" type="amod"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="4" to="9" type="appos"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="2" to="13" type="punct"/>
+  <dep from="2" to="14" type="cc"/>
+  <dep from="18" to="15" type="det"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="2" to="18" type="conj"/>
+  <dep from="18" to="19" type="punct"/>
+  <dep from="21" to="20" type="amod"/>
+  <dep from="18" to="21" type="appos"/>
+  <dep from="18" to="22" type="punct"/>
+  <dep from="2" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Food">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Food">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Building_subparts">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Building_part">
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

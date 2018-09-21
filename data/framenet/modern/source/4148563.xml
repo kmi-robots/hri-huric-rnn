@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148563">
+ <sentence>
+  " But here also the ministers of justice were waiting .
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="but" pos="CC" surface="But"/>
+  <token id="3" lemma="here" pos="RB" surface="here"/>
+  <token id="4" lemma="also" pos="RB" surface="also"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="minister" pos="NNS" surface="ministers"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="justice" pos="NN" surface="justice"/>
+  <token id="9" lemma="be" pos="VBD" surface="were"/>
+  <token id="10" lemma="wait" pos="VBG" surface="waiting"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="punct"/>
+  <dep from="10" to="2" type="cc"/>
+  <dep from="10" to="3" type="advmod"/>
+  <dep from="10" to="4" type="advmod"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="10" to="6" type="nsubj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Waiting">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

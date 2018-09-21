@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101085">
+ <sentence>
+  Growth continued for ten years , and by 1915 the town had telephones , round-the-clock electricity , and a growing population -- many of whom worked in the railroad repair shop .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="growth" pos="NN" surface="Growth"/>
+  <token id="2" lemma="continue" pos="VBD" surface="continued"/>
+  <token id="3" lemma="for" pos="IN" surface="for"/>
+  <token id="4" lemma="ten" pos="CD" surface="ten"/>
+  <token id="5" lemma="year" pos="NNS" surface="years"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="by" pos="IN" surface="by"/>
+  <token id="9" lemma="1915" pos="CD" surface="1915"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="town" pos="NN" surface="town"/>
+  <token id="12" lemma="have" pos="VBD" surface="had"/>
+  <token id="13" lemma="telephone" pos="NNS" surface="telephones"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="round-the-clock" pos="VB" surface="round-the-clock"/>
+  <token id="16" lemma="electricity" pos="NN" surface="electricity"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="and" pos="CC" surface="and"/>
+  <token id="19" lemma="a" pos="DT" surface="a"/>
+  <token id="20" lemma="grow" pos="VBG" surface="growing"/>
+  <token id="21" lemma="population" pos="NN" surface="population"/>
+  <token id="22" lemma="--" pos=":" surface="--"/>
+  <token id="23" lemma="many" pos="JJ" surface="many"/>
+  <token id="24" lemma="of" pos="IN" surface="of"/>
+  <token id="25" lemma="whom" pos="WP" surface="whom"/>
+  <token id="26" lemma="work" pos="VBD" surface="worked"/>
+  <token id="27" lemma="in" pos="IN" surface="in"/>
+  <token id="28" lemma="the" pos="DT" surface="the"/>
+  <token id="29" lemma="railroad" pos="NN" surface="railroad"/>
+  <token id="30" lemma="repair" pos="NN" surface="repair"/>
+  <token id="31" lemma="shop" pos="NN" surface="shop"/>
+  <token id="32" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="nummod"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="2" to="6" type="punct"/>
+  <dep from="2" to="7" type="cc"/>
+  <dep from="12" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="2" to="12" type="conj"/>
+  <dep from="12" to="13" type="dobj"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="13" to="16" type="conj"/>
+  <dep from="16" to="17" type="punct"/>
+  <dep from="16" to="18" type="cc"/>
+  <dep from="21" to="19" type="det"/>
+  <dep from="21" to="20" type="amod"/>
+  <dep from="16" to="21" type="conj"/>
+  <dep from="21" to="22" type="punct"/>
+  <dep from="26" to="23" type="nsubj"/>
+  <dep from="23" to="24" type="prep"/>
+  <dep from="24" to="25" type="pobj"/>
+  <dep from="21" to="26" type="relcl"/>
+  <dep from="26" to="27" type="prep"/>
+  <dep from="31" to="28" type="det"/>
+  <dep from="31" to="29" type="compound"/>
+  <dep from="31" to="30" type="compound"/>
+  <dep from="27" to="31" type="pobj"/>
+  <dep from="12" to="32" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cause_change_of_position_on_a_scale">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Process_continue">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Duration">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Electricity">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Electricity">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Aggregate_property">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_employed">
+    <lexicalUnit>
+     <token id="26"/>
+    </lexicalUnit>
+    <frameElement type="Employee">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Place_of_employment">
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+     <token id="31"/>
+    </frameElement>
+   </frame>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="29"/>
+    </lexicalUnit>
+    <frameElement type="Roadway">
+     <token id="29"/>
+    </frameElement>
+   </frame>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="31"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="31"/>
+    </frameElement>
+    <frameElement type="Service_provider">
+     <token id="30"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

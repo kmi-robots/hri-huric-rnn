@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098581">
+ <sentence>
+  It attacks the gastrointestinal tract and kills rapidly .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="It"/>
+  <token id="2" lemma="attack" pos="VBZ" surface="attacks"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="gastrointestinal" pos="JJ" surface="gastrointestinal"/>
+  <token id="5" lemma="tract" pos="NN" surface="tract"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="kill" pos="VBZ" surface="kills"/>
+  <token id="8" lemma="rapidly" pos="RB" surface="rapidly"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="2" to="6" type="cc"/>
+  <dep from="2" to="7" type="conj"/>
+  <dep from="7" to="8" type="advmod"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

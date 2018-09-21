@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105992">
+ <sentence>
+  Hong Kong 's New Territories begin at Boundary Street .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="hong" pos="NNP" surface="Hong"/>
+  <token id="2" lemma="kong" pos="NNP" surface="Kong"/>
+  <token id="3" lemma="'s" pos="POS" surface="'s"/>
+  <token id="4" lemma="new" pos="NNP" surface="New"/>
+  <token id="5" lemma="territories" pos="NNPS" surface="Territories"/>
+  <token id="6" lemma="begin" pos="VBP" surface="begin"/>
+  <token id="7" lemma="at" pos="IN" surface="at"/>
+  <token id="8" lemma="boundary" pos="NNP" surface="Boundary"/>
+  <token id="9" lemma="street" pos="NNP" surface="Street"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="5" to="2" type="poss"/>
+  <dep from="2" to="3" type="case"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="6" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Age">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Roadway">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100357">
+ <sentence>
+  A massive fortress was built overlooking the Temple Mount , which Herod named `` Antonia '' in honor of his Roman friend and benefactor , Mark Antony .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="massive" pos="JJ" surface="massive"/>
+  <token id="3" lemma="fortress" pos="NN" surface="fortress"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="build" pos="VBN" surface="built"/>
+  <token id="6" lemma="overlook" pos="VBG" surface="overlooking"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="temple" pos="NNP" surface="Temple"/>
+  <token id="9" lemma="mount" pos="NNP" surface="Mount"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="which" pos="WDT" surface="which"/>
+  <token id="12" lemma="herod" pos="NNP" surface="Herod"/>
+  <token id="13" lemma="name" pos="VBD" surface="named"/>
+  <token id="14" lemma="``" pos="``" surface="``"/>
+  <token id="15" lemma="antonia" pos="NNP" surface="Antonia"/>
+  <token id="16" lemma="''" pos="''" surface="''"/>
+  <token id="17" lemma="in" pos="IN" surface="in"/>
+  <token id="18" lemma="honor" pos="NN" surface="honor"/>
+  <token id="19" lemma="of" pos="IN" surface="of"/>
+  <token id="20" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="21" lemma="roman" pos="JJ" surface="Roman"/>
+  <token id="22" lemma="friend" pos="NN" surface="friend"/>
+  <token id="23" lemma="and" pos="CC" surface="and"/>
+  <token id="24" lemma="benefactor" pos="NN" surface="benefactor"/>
+  <token id="25" lemma="," pos="," surface=","/>
+  <token id="26" lemma="mark" pos="NNP" surface="Mark"/>
+  <token id="27" lemma="antony" pos="NNP" surface="Antony"/>
+  <token id="28" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="5" to="3" type="nsubjpass"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="advcl"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="dobj"/>
+  <dep from="9" to="10" type="punct"/>
+  <dep from="13" to="11" type="dobj"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="9" to="13" type="relcl"/>
+  <dep from="15" to="14" type="punct"/>
+  <dep from="13" to="15" type="oprd"/>
+  <dep from="13" to="16" type="punct"/>
+  <dep from="13" to="17" type="prep"/>
+  <dep from="17" to="18" type="pobj"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="22" to="20" type="poss"/>
+  <dep from="22" to="21" type="amod"/>
+  <dep from="19" to="22" type="pobj"/>
+  <dep from="22" to="23" type="cc"/>
+  <dep from="22" to="24" type="conj"/>
+  <dep from="22" to="25" type="punct"/>
+  <dep from="27" to="26" type="compound"/>
+  <dep from="22" to="27" type="appos"/>
+  <dep from="5" to="28" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Building">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Name_conferral">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Personal_relationship">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Partner_2">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Partner_1">
+     <token id="22"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

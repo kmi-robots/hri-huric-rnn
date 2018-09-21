@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106466">
+ <sentence>
+  You and I know that solutions to difficult problems do n't just happen .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="You"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="4" lemma="know" pos="VBP" surface="know"/>
+  <token id="5" lemma="that" pos="IN" surface="that"/>
+  <token id="6" lemma="solution" pos="NNS" surface="solutions"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="difficult" pos="JJ" surface="difficult"/>
+  <token id="9" lemma="problem" pos="NNS" surface="problems"/>
+  <token id="10" lemma="do" pos="VBP" surface="do"/>
+  <token id="11" lemma="n't" pos="RB" surface="n't"/>
+  <token id="12" lemma="just" pos="RB" surface="just"/>
+  <token id="13" lemma="happen" pos="VB" surface="happen"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="13" to="5" type="mark"/>
+  <dep from="13" to="6" type="nsubj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="13" to="10" type="aux"/>
+  <dep from="13" to="11" type="neg"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="4" to="13" type="ccomp"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Awareness">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Difficulty">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Predicament">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Situation">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Coincidence">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

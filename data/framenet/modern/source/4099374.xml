@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099374">
+ <sentence>
+  Toxins -- nonliving poisons produced by living plants , insects , and animals -- are in a gray area between CW and BW agents .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="toxin" pos="NNS" surface="Toxins"/>
+  <token id="2" lemma="--" pos=":" surface="--"/>
+  <token id="3" lemma="nonliv" pos="VBG" surface="nonliving"/>
+  <token id="4" lemma="poison" pos="NNS" surface="poisons"/>
+  <token id="5" lemma="produce" pos="VBN" surface="produced"/>
+  <token id="6" lemma="by" pos="IN" surface="by"/>
+  <token id="7" lemma="live" pos="VBG" surface="living"/>
+  <token id="8" lemma="plant" pos="NNS" surface="plants"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="insect" pos="NNS" surface="insects"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="animal" pos="NNS" surface="animals"/>
+  <token id="14" lemma="--" pos=":" surface="--"/>
+  <token id="15" lemma="be" pos="VBP" surface="are"/>
+  <token id="16" lemma="in" pos="IN" surface="in"/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="gray" pos="JJ" surface="gray"/>
+  <token id="19" lemma="area" pos="NN" surface="area"/>
+  <token id="20" lemma="between" pos="IN" surface="between"/>
+  <token id="21" lemma="cw" pos="NNP" surface="CW"/>
+  <token id="22" lemma="and" pos="CC" surface="and"/>
+  <token id="23" lemma="bw" pos="NNP" surface="BW"/>
+  <token id="24" lemma="agent" pos="NNS" surface="agents"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="15" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="1" to="4" type="appos"/>
+  <dep from="4" to="5" type="acl"/>
+  <dep from="5" to="6" type="agent"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="10" to="12" type="cc"/>
+  <dep from="10" to="13" type="conj"/>
+  <dep from="1" to="14" type="punct"/>
+  <dep from="0" to="15" type="root"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="19" to="17" type="det"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="16" to="19" type="pobj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="20" to="21" type="pobj"/>
+  <dep from="21" to="22" type="cc"/>
+  <dep from="24" to="23" type="compound"/>
+  <dep from="21" to="24" type="conj"/>
+  <dep from="15" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Toxic_substance">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Toxic_substance">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Toxic_substance">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Toxic_substance">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Creating">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Dead_or_alive">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Active_substance">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

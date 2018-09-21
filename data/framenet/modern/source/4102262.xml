@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102262">
+ <sentence>
+  Well , this has been an interesting conversation .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="well" pos="UH" surface="Well"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="this" pos="DT" surface="this"/>
+  <token id="4" lemma="have" pos="VBZ" surface="has"/>
+  <token id="5" lemma="be" pos="VBN" surface="been"/>
+  <token id="6" lemma="an" pos="DT" surface="an"/>
+  <token id="7" lemma="interesting" pos="JJ" surface="interesting"/>
+  <token id="8" lemma="conversation" pos="NN" surface="conversation"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="intj"/>
+  <dep from="5" to="2" type="punct"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="attr"/>
+  <dep from="5" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Mental_stimulus_stimulus_focus">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Stimulus">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Chatting">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

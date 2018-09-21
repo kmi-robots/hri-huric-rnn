@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097327">
+ <sentence>
+  Iran may be seeking enriched uranium from Tajikistan .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="2" lemma="may" pos="MD" surface="may"/>
+  <token id="3" lemma="be" pos="VB" surface="be"/>
+  <token id="4" lemma="seek" pos="VBG" surface="seeking"/>
+  <token id="5" lemma="enrich" pos="VBN" surface="enriched"/>
+  <token id="6" lemma="uranium" pos="NN" surface="uranium"/>
+  <token id="7" lemma="from" pos="IN" surface="from"/>
+  <token id="8" lemma="tajikistan" pos="NNP" surface="Tajikistan"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="4" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Degree_of_processing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Material">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Seeking_to_achieve">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Sought_entity">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

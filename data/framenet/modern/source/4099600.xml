@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099600">
+ <sentence>
+  Having worked as a nurse , she decided to throw the personnel a few curves .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="have" pos="VBG" surface="Having"/>
+  <token id="2" lemma="work" pos="VBN" surface="worked"/>
+  <token id="3" lemma="as" pos="IN" surface="as"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="nurse" pos="NN" surface="nurse"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="8" lemma="decide" pos="VBD" surface="decided"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="throw" pos="VB" surface="throw"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="personnel" pos="NNS" surface="personnel"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="few" pos="JJ" surface="few"/>
+  <token id="15" lemma="curve" pos="NNS" surface="curves"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="aux"/>
+  <dep from="8" to="2" type="advcl"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="8" to="6" type="punct"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="8" to="10" type="xcomp"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="14" to="13" type="quantmod"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="10" to="15" type="dobj"/>
+  <dep from="8" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_employed">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Employee">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Position">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Deciding">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Decision">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Cognizer">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Employing">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Employee">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Medical_professionals">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Professional">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

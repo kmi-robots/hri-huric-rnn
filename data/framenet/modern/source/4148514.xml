@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148514">
+ <sentence>
+  " Henderson , " the inspector answered , " is Don Murillo , once call the Tiger of San Pedro . "
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="henderson" pos="NNP" surface="Henderson"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma='"' pos="''" surface='"'/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="inspector" pos="NN" surface="inspector"/>
+  <token id="7" lemma="answer" pos="VBD" surface="answered"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma='"' pos="''" surface='"'/>
+  <token id="10" lemma="be" pos="VBZ" surface="is"/>
+  <token id="11" lemma="don" pos="NNP" surface="Don"/>
+  <token id="12" lemma="murillo" pos="NNP" surface="Murillo"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="once" pos="RB" surface="once"/>
+  <token id="15" lemma="call" pos="VB" surface="call"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="tiger" pos="NNP" surface="Tiger"/>
+  <token id="18" lemma="of" pos="IN" surface="of"/>
+  <token id="19" lemma="san" pos="NNP" surface="San"/>
+  <token id="20" lemma="pedro" pos="NNP" surface="Pedro"/>
+  <token id="21" lemma="." pos="." surface="."/>
+  <token id="22" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="punct"/>
+  <dep from="10" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="punct"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="2" to="7" type="parataxis"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="7" to="9" type="punct"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="10" to="12" type="attr"/>
+  <dep from="10" to="13" type="punct"/>
+  <dep from="15" to="14" type="advmod"/>
+  <dep from="10" to="15" type="advcl"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="dobj"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="18" to="20" type="pobj"/>
+  <dep from="10" to="21" type="punct"/>
+  <dep from="10" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Communication_response">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Referring_by_name">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

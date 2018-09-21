@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097127">
+ <sentence>
+  Based on such information , some idea of Iran 's CW status can be ascertained .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="base" pos="VBN" surface="Based"/>
+  <token id="2" lemma="on" pos="IN" surface="on"/>
+  <token id="3" lemma="such" pos="JJ" surface="such"/>
+  <token id="4" lemma="information" pos="NN" surface="information"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="some" pos="DT" surface="some"/>
+  <token id="7" lemma="idea" pos="NN" surface="idea"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="10" lemma="'s" pos="POS" surface="'s"/>
+  <token id="11" lemma="cw" pos="NNP" surface="CW"/>
+  <token id="12" lemma="status" pos="NN" surface="status"/>
+  <token id="13" lemma="can" pos="MD" surface="can"/>
+  <token id="14" lemma="be" pos="VB" surface="be"/>
+  <token id="15" lemma="ascertain" pos="VBN" surface="ascertained"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="15" to="1" type="prep"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="15" to="5" type="punct"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="15" to="7" type="nsubjpass"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="12" to="9" type="poss"/>
+  <dep from="9" to="10" type="case"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="8" to="12" type="pobj"/>
+  <dep from="15" to="13" type="aux"/>
+  <dep from="15" to="14" type="auxpass"/>
+  <dep from="0" to="15" type="root"/>
+  <dep from="15" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Coming_to_believe">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Content">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Evidence">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Information">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Information">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

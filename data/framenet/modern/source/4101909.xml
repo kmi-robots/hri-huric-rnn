@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101909">
+ <sentence>
+  3 RICH : OK , so we 're just comin ' down for some maintenance , like a forced outage type thing ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="3" pos="CD" surface="3"/>
+  <token id="2" lemma="rich" pos="NN" surface="RICH"/>
+  <token id="3" lemma=":" pos=":" surface=":"/>
+  <token id="4" lemma="ok" pos="UH" surface="OK"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="so" pos="RB" surface="so"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="8" lemma="be" pos="VBP" surface="'re"/>
+  <token id="9" lemma="just" pos="RB" surface="just"/>
+  <token id="10" lemma="comin" pos="JJ" surface="comin"/>
+  <token id="11" lemma="'" pos="''" surface="'"/>
+  <token id="12" lemma="down" pos="RB" surface="down"/>
+  <token id="13" lemma="for" pos="IN" surface="for"/>
+  <token id="14" lemma="some" pos="DT" surface="some"/>
+  <token id="15" lemma="maintenance" pos="NN" surface="maintenance"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="like" pos="IN" surface="like"/>
+  <token id="18" lemma="a" pos="DT" surface="a"/>
+  <token id="19" lemma="force" pos="VBN" surface="forced"/>
+  <token id="20" lemma="outage" pos="NN" surface="outage"/>
+  <token id="21" lemma="type" pos="NN" surface="type"/>
+  <token id="22" lemma="thing" pos="NN" surface="thing"/>
+  <token id="23" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="8" to="4" type="intj"/>
+  <dep from="8" to="5" type="punct"/>
+  <dep from="8" to="6" type="advmod"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="8" to="10" type="attr"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="8" to="12" type="advmod"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="8" to="16" type="punct"/>
+  <dep from="8" to="17" type="prep"/>
+  <dep from="22" to="18" type="det"/>
+  <dep from="22" to="19" type="amod"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="22" to="21" type="compound"/>
+  <dep from="17" to="22" type="pobj"/>
+  <dep from="8" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Activity_ongoing">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Type">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Subtype">
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Category">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Item_property">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

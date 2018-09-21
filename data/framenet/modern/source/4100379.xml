@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100379">
+ <sentence>
+  For the next two centuries Aelia Capitolina enjoyed an innocuous history .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="for" pos="IN" surface="For"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="next" pos="JJ" surface="next"/>
+  <token id="4" lemma="two" pos="CD" surface="two"/>
+  <token id="5" lemma="century" pos="NNS" surface="centuries"/>
+  <token id="6" lemma="aelia" pos="NNP" surface="Aelia"/>
+  <token id="7" lemma="capitolina" pos="NNP" surface="Capitolina"/>
+  <token id="8" lemma="enjoy" pos="VBD" surface="enjoyed"/>
+  <token id="9" lemma="an" pos="DT" surface="an"/>
+  <token id="10" lemma="innocuous" pos="JJ" surface="innocuous"/>
+  <token id="11" lemma="history" pos="NN" surface="history"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="prep"/>
+  <dep from="5" to="2" type="det"/>
+  <dep from="5" to="3" type="amod"/>
+  <dep from="5" to="4" type="nummod"/>
+  <dep from="1" to="5" type="pobj"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="dobj"/>
+  <dep from="8" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

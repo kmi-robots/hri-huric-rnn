@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106204">
+ <sentence>
+  Food and Drink
+ </sentence>
+ <tokens>
+  <token id="1" lemma="food" pos="NN" surface="Food"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="drink" pos="NNP" surface="Drink"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Food">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Food">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

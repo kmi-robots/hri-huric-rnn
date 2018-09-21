@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100401">
+ <sentence>
+  The city struggled to rebuild from Crusader wars and invasions .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="city" pos="NN" surface="city"/>
+  <token id="3" lemma="struggle" pos="VBD" surface="struggled"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="rebuild" pos="VB" surface="rebuild"/>
+  <token id="6" lemma="from" pos="IN" surface="from"/>
+  <token id="7" lemma="crusader" pos="NNP" surface="Crusader"/>
+  <token id="8" lemma="war" pos="NNS" surface="wars"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="invasion" pos="NNS" surface="invasions"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="xcomp"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="3" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Side_1">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098073">
+ <sentence>
+  Thirty-two of the 159 U.N. members were honoring the sanctions against Iraq .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="thirty-two" pos="NN" surface="Thirty-two"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="159" pos="CD" surface="159"/>
+  <token id="5" lemma="u.n." pos="NNP" surface="U.N."/>
+  <token id="6" lemma="member" pos="NNS" surface="members"/>
+  <token id="7" lemma="be" pos="VBD" surface="were"/>
+  <token id="8" lemma="honor" pos="VBG" surface="honoring"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="sanction" pos="NNS" surface="sanctions"/>
+  <token id="11" lemma="against" pos="IN" surface="against"/>
+  <token id="12" lemma="iraq" pos="NNP" surface="Iraq"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="6" to="3" type="det"/>
+  <dep from="6" to="4" type="nummod"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="2" to="6" type="pobj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="8" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Group">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Member">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Compliance">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Norm">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Revenge">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Offender">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Punishment">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

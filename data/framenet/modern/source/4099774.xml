@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099774">
+ <sentence>
+  Cyanide Gas Device `` Probably Did n't Work ''
+ </sentence>
+ <tokens>
+  <token id="1" lemma="cyanide" pos="NNP" surface="Cyanide"/>
+  <token id="2" lemma="gas" pos="NN" surface="Gas"/>
+  <token id="3" lemma="device" pos="NN" surface="Device"/>
+  <token id="4" lemma="``" pos="``" surface="``"/>
+  <token id="5" lemma="probably" pos="RB" surface="Probably"/>
+  <token id="6" lemma="do" pos="VBD" surface="Did"/>
+  <token id="7" lemma="n't" pos="RB" surface="n't"/>
+  <token id="8" lemma="work" pos="VB" surface="Work"/>
+  <token id="9" lemma="''" pos="''" surface="''"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="compound"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="8" to="3" type="dep"/>
+  <dep from="8" to="4" type="punct"/>
+  <dep from="8" to="5" type="advmod"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="neg"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Constituents">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Gizmo">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Use">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Gizmo">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_operational">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Object">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

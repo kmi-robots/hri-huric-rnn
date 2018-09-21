@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148572">
+ <sentence>
+  He and his master dragged me to my room and held judgment upon me as a convicted traitress .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="4" lemma="master" pos="NN" surface="master"/>
+  <token id="5" lemma="drag" pos="VBD" surface="dragged"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="9" lemma="room" pos="NN" surface="room"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="hold" pos="VBD" surface="held"/>
+  <token id="12" lemma="judgment" pos="NN" surface="judgment"/>
+  <token id="13" lemma="upon" pos="IN" surface="upon"/>
+  <token id="14" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="15" lemma="as" pos="IN" surface="as"/>
+  <token id="16" lemma="a" pos="DT" surface="a"/>
+  <token id="17" lemma="convict" pos="VBN" surface="convicted"/>
+  <token id="18" lemma="traitress" pos="NN" surface="traitress"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="4" to="3" type="poss"/>
+  <dep from="1" to="4" type="conj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="prep"/>
+  <dep from="9" to="8" type="poss"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="5" to="10" type="cc"/>
+  <dep from="5" to="11" type="conj"/>
+  <dep from="11" to="12" type="dobj"/>
+  <dep from="11" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="11" to="15" type="prep"/>
+  <dep from="18" to="16" type="det"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="15" to="18" type="pobj"/>
+  <dep from="5" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Verdict">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Defendant">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_motion">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Building_subparts">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Building_part">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Legal_rulings">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Authority">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Case">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Defendant">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Subordinates_and_superiors">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Subordinate">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

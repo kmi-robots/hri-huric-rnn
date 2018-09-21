@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101848">
+ <sentence>
+  The conference was jointly sponsored by the New York Institute of Technology School of Management and the Armed Forces Communications and Electronics Association , a joint industry-government trade group .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="conference" pos="NN" surface="conference"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="jointly" pos="RB" surface="jointly"/>
+  <token id="5" lemma="sponsor" pos="VBN" surface="sponsored"/>
+  <token id="6" lemma="by" pos="IN" surface="by"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="new" pos="NNP" surface="New"/>
+  <token id="9" lemma="york" pos="NNP" surface="York"/>
+  <token id="10" lemma="institute" pos="NNP" surface="Institute"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="technology" pos="NNP" surface="Technology"/>
+  <token id="13" lemma="school" pos="NNP" surface="School"/>
+  <token id="14" lemma="of" pos="IN" surface="of"/>
+  <token id="15" lemma="management" pos="NNP" surface="Management"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="armed" pos="NNP" surface="Armed"/>
+  <token id="19" lemma="forces" pos="NNPS" surface="Forces"/>
+  <token id="20" lemma="communications" pos="NNP" surface="Communications"/>
+  <token id="21" lemma="and" pos="CC" surface="and"/>
+  <token id="22" lemma="electronics" pos="NNP" surface="Electronics"/>
+  <token id="23" lemma="association" pos="NNP" surface="Association"/>
+  <token id="24" lemma="," pos="," surface=","/>
+  <token id="25" lemma="a" pos="DT" surface="a"/>
+  <token id="26" lemma="joint" pos="JJ" surface="joint"/>
+  <token id="27" lemma="industry-government" pos="JJ" surface="industry-government"/>
+  <token id="28" lemma="trade" pos="NN" surface="trade"/>
+  <token id="29" lemma="group" pos="NN" surface="group"/>
+  <token id="30" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="auxpass"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="agent"/>
+  <dep from="13" to="7" type="det"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="10" to="9" type="nmod"/>
+  <dep from="13" to="10" type="nmod"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="6" to="13" type="pobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="13" to="16" type="cc"/>
+  <dep from="23" to="17" type="det"/>
+  <dep from="19" to="18" type="nmod"/>
+  <dep from="23" to="19" type="nmod"/>
+  <dep from="23" to="20" type="nmod"/>
+  <dep from="20" to="21" type="cc"/>
+  <dep from="20" to="22" type="conj"/>
+  <dep from="13" to="23" type="conj"/>
+  <dep from="23" to="24" type="punct"/>
+  <dep from="29" to="25" type="det"/>
+  <dep from="29" to="26" type="amod"/>
+  <dep from="29" to="27" type="amod"/>
+  <dep from="29" to="28" type="compound"/>
+  <dep from="23" to="29" type="appos"/>
+  <dep from="5" to="30" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Discussion">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Container_possessor">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Constituent_parts">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Container_possessor">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Military">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Force">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Exchange">
+    <lexicalUnit>
+     <token id="28"/>
+    </lexicalUnit>
+    <frameElement type="Exchangers">
+     <token id="27"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="29"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="29"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="29"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="27"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

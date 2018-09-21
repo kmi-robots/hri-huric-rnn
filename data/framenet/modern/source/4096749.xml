@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096749">
+ <sentence>
+  The details of the early Iranian ballistic missile and rocket programs , as well as their immediate objectives , are presently unknown .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="detail" pos="NNS" surface="details"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="early" pos="JJ" surface="early"/>
+  <token id="6" lemma="iranian" pos="JJ" surface="Iranian"/>
+  <token id="7" lemma="ballistic" pos="JJ" surface="ballistic"/>
+  <token id="8" lemma="missile" pos="NN" surface="missile"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="rocket" pos="NN" surface="rocket"/>
+  <token id="11" lemma="program" pos="NNS" surface="programs"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="as" pos="RB" surface="as"/>
+  <token id="14" lemma="well" pos="RB" surface="well"/>
+  <token id="15" lemma="as" pos="IN" surface="as"/>
+  <token id="16" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="17" lemma="immediate" pos="JJ" surface="immediate"/>
+  <token id="18" lemma="objective" pos="NNS" surface="objectives"/>
+  <token id="19" lemma="," pos="," surface=","/>
+  <token id="20" lemma="be" pos="VBP" surface="are"/>
+  <token id="21" lemma="presently" pos="RB" surface="presently"/>
+  <token id="22" lemma="unknown" pos="JJ" surface="unknown"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="20" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="11" to="4" type="det"/>
+  <dep from="11" to="5" type="amod"/>
+  <dep from="11" to="6" type="amod"/>
+  <dep from="11" to="7" type="amod"/>
+  <dep from="11" to="8" type="nmod"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="3" to="11" type="pobj"/>
+  <dep from="2" to="12" type="punct"/>
+  <dep from="15" to="13" type="advmod"/>
+  <dep from="15" to="14" type="advmod"/>
+  <dep from="2" to="15" type="cc"/>
+  <dep from="18" to="16" type="poss"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="2" to="18" type="conj"/>
+  <dep from="20" to="19" type="punct"/>
+  <dep from="0" to="20" type="root"/>
+  <dep from="20" to="21" type="advmod"/>
+  <dep from="20" to="22" type="acomp"/>
+  <dep from="20" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Salient_entity">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Purpose">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

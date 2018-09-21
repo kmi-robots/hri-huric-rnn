@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096877">
+ <sentence>
+  Primary Function : Production and testing of ballistic missiles ; rocket research , development and production .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="primary" pos="NNP" surface="Primary"/>
+  <token id="2" lemma="function" pos="NNP" surface="Function"/>
+  <token id="3" lemma=":" pos=":" surface=":"/>
+  <token id="4" lemma="production" pos="NN" surface="Production"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="testing" pos="NN" surface="testing"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="ballistic" pos="JJ" surface="ballistic"/>
+  <token id="9" lemma="missile" pos="NNS" surface="missiles"/>
+  <token id="10" lemma=";" pos=":" surface=";"/>
+  <token id="11" lemma="rocket" pos="NN" surface="rocket"/>
+  <token id="12" lemma="research" pos="NN" surface="research"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="development" pos="NN" surface="development"/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="production" pos="NN" surface="production"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="4" to="6" type="conj"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="4" to="10" type="punct"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="4" to="12" type="conj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="12" to="14" type="conj"/>
+  <dep from="14" to="15" type="cc"/>
+  <dep from="14" to="16" type="conj"/>
+  <dep from="2" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Operational_testing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Research">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Topic">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

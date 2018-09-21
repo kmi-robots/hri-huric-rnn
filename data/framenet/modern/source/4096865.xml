@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096865">
+ <sentence>
+  There are also an unknown number of long - range artillery rocket units , some perhaps of brigade size .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="also" pos="RB" surface="also"/>
+  <token id="4" lemma="an" pos="DT" surface="an"/>
+  <token id="5" lemma="unknown" pos="JJ" surface="unknown"/>
+  <token id="6" lemma="number" pos="NN" surface="number"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="long" pos="JJ" surface="long"/>
+  <token id="9" lemma="-" pos="HYPH" surface="-"/>
+  <token id="10" lemma="range" pos="NN" surface="range"/>
+  <token id="11" lemma="artillery" pos="NN" surface="artillery"/>
+  <token id="12" lemma="rocket" pos="NN" surface="rocket"/>
+  <token id="13" lemma="unit" pos="NNS" surface="units"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="some" pos="DT" surface="some"/>
+  <token id="16" lemma="perhaps" pos="RB" surface="perhaps"/>
+  <token id="17" lemma="of" pos="IN" surface="of"/>
+  <token id="18" lemma="brigade" pos="NN" surface="brigade"/>
+  <token id="19" lemma="size" pos="NN" surface="size"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="advmod"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="2" to="6" type="attr"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="10" to="8" type="amod"/>
+  <dep from="10" to="9" type="punct"/>
+  <dep from="13" to="10" type="compound"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="7" to="13" type="pobj"/>
+  <dep from="6" to="14" type="punct"/>
+  <dep from="6" to="15" type="appos"/>
+  <dep from="17" to="16" type="advmod"/>
+  <dep from="15" to="17" type="prep"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="2" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Q_prop">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

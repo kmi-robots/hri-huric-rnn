@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102213">
+ <sentence>
+  We could spend that money , you know , for starving children that are starving or twelve million other things would be more useful than that .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="We"/>
+  <token id="2" lemma="could" pos="MD" surface="could"/>
+  <token id="3" lemma="spend" pos="VB" surface="spend"/>
+  <token id="4" lemma="that" pos="DT" surface="that"/>
+  <token id="5" lemma="money" pos="NN" surface="money"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="8" lemma="know" pos="VBP" surface="know"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="for" pos="IN" surface="for"/>
+  <token id="11" lemma="starve" pos="VBG" surface="starving"/>
+  <token id="12" lemma="child" pos="NNS" surface="children"/>
+  <token id="13" lemma="that" pos="WDT" surface="that"/>
+  <token id="14" lemma="be" pos="VBP" surface="are"/>
+  <token id="15" lemma="starve" pos="VBG" surface="starving"/>
+  <token id="16" lemma="or" pos="CC" surface="or"/>
+  <token id="17" lemma="twelve" pos="CD" surface="twelve"/>
+  <token id="18" lemma="million" pos="CD" surface="million"/>
+  <token id="19" lemma="other" pos="JJ" surface="other"/>
+  <token id="20" lemma="thing" pos="NNS" surface="things"/>
+  <token id="21" lemma="would" pos="MD" surface="would"/>
+  <token id="22" lemma="be" pos="VB" surface="be"/>
+  <token id="23" lemma="more" pos="RBR" surface="more"/>
+  <token id="24" lemma="useful" pos="JJ" surface="useful"/>
+  <token id="25" lemma="than" pos="IN" surface="than"/>
+  <token id="26" lemma="that" pos="DT" surface="that"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="punct"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="3" to="8" type="parataxis"/>
+  <dep from="3" to="9" type="punct"/>
+  <dep from="3" to="10" type="prep"/>
+  <dep from="10" to="11" type="pcomp"/>
+  <dep from="11" to="12" type="dobj"/>
+  <dep from="15" to="13" type="nsubj"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="12" to="15" type="relcl"/>
+  <dep from="12" to="16" type="cc"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="20" to="18" type="nummod"/>
+  <dep from="20" to="19" type="amod"/>
+  <dep from="12" to="20" type="conj"/>
+  <dep from="22" to="21" type="aux"/>
+  <dep from="3" to="22" type="conj"/>
+  <dep from="24" to="23" type="advmod"/>
+  <dep from="22" to="24" type="acomp"/>
+  <dep from="24" to="25" type="prep"/>
+  <dep from="25" to="26" type="pobj"/>
+  <dep from="3" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Capability">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Money">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Money">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Awareness">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_age">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Age">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Person">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Death">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Protagonist">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Multiplier">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Class">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Usefulness">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103235">
+ <sentence>
+  2- A bachelor can have a vacation by rotation for five days every month .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="2-" pos="LS" surface="2-"/>
+  <token id="2" lemma="a" pos="DT" surface="A"/>
+  <token id="3" lemma="bachelor" pos="NN" surface="bachelor"/>
+  <token id="4" lemma="can" pos="MD" surface="can"/>
+  <token id="5" lemma="have" pos="VB" surface="have"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="vacation" pos="NN" surface="vacation"/>
+  <token id="8" lemma="by" pos="IN" surface="by"/>
+  <token id="9" lemma="rotation" pos="NN" surface="rotation"/>
+  <token id="10" lemma="for" pos="IN" surface="for"/>
+  <token id="11" lemma="five" pos="CD" surface="five"/>
+  <token id="12" lemma="day" pos="NNS" surface="days"/>
+  <token id="13" lemma="every" pos="DT" surface="every"/>
+  <token id="14" lemma="month" pos="NN" surface="month"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="meta"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="7" to="10" type="prep"/>
+  <dep from="12" to="11" type="nummod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="npadvmod"/>
+  <dep from="5" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Personal_relationship">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Partner_1">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Duration">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Frequency">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Interval">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Rate">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Relative_time">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Capability">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

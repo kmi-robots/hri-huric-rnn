@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101885">
+ <sentence>
+  14 BILL : Good .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="14" pos="CD" surface="14"/>
+  <token id="2" lemma="bill" pos="NNP" surface="BILL"/>
+  <token id="3" lemma=":" pos=":" surface=":"/>
+  <token id="4" lemma="good" pos="JJ" surface="Good"/>
+  <token id="5" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="appos"/>
+  <dep from="4" to="5" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Desirability">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

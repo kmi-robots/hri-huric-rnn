@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098887">
+ <sentence>
+  QN : Did officials from China make land available for a new hospital ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="do" pos="VBD" surface="Did"/>
+  <token id="4" lemma="official" pos="NNS" surface="officials"/>
+  <token id="5" lemma="from" pos="IN" surface="from"/>
+  <token id="6" lemma="china" pos="NNP" surface="China"/>
+  <token id="7" lemma="make" pos="VBP" surface="make"/>
+  <token id="8" lemma="land" pos="NN" surface="land"/>
+  <token id="9" lemma="available" pos="JJ" surface="available"/>
+  <token id="10" lemma="for" pos="IN" surface="for"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="new" pos="JJ" surface="new"/>
+  <token id="13" lemma="hospital" pos="NN" surface="hospital"/>
+  <token id="14" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="7" to="3" type="aux"/>
+  <dep from="7" to="4" type="nsubj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="7" to="9" type="ccomp"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="7" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Governed">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Familiarity">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097328">
+ <sentence>
+  Tajikistan can manufacture uranium oxide but can not enrich it to levels needed for reactors or weapons .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="tajikistan" pos="NNP" surface="Tajikistan"/>
+  <token id="2" lemma="can" pos="MD" surface="can"/>
+  <token id="3" lemma="manufacture" pos="VB" surface="manufacture"/>
+  <token id="4" lemma="uranium" pos="NN" surface="uranium"/>
+  <token id="5" lemma="oxide" pos="NN" surface="oxide"/>
+  <token id="6" lemma="but" pos="CC" surface="but"/>
+  <token id="7" lemma="can" pos="MD" surface="can"/>
+  <token id="8" lemma="not" pos="RB" surface="not"/>
+  <token id="9" lemma="enrich" pos="VB" surface="enrich"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="11" lemma="to" pos="IN" surface="to"/>
+  <token id="12" lemma="level" pos="NNS" surface="levels"/>
+  <token id="13" lemma="need" pos="VBN" surface="needed"/>
+  <token id="14" lemma="for" pos="IN" surface="for"/>
+  <token id="15" lemma="reactor" pos="NNS" surface="reactors"/>
+  <token id="16" lemma="or" pos="CC" surface="or"/>
+  <token id="17" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="cc"/>
+  <dep from="9" to="7" type="aux"/>
+  <dep from="9" to="8" type="neg"/>
+  <dep from="3" to="9" type="conj"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="9" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="12" to="13" type="acl"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="15" to="16" type="cc"/>
+  <dep from="15" to="17" type="conj"/>
+  <dep from="3" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Producer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Product">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Processing_materials">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Material">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Result">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_necessary">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Requirement">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Dependent">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

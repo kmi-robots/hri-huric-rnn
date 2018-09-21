@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097506">
+ <sentence>
+  Consequently , differences have arisen between China and the US over Chinese nuclear exports and assistance to Iran .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="consequently" pos="RB" surface="Consequently"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="difference" pos="NNS" surface="differences"/>
+  <token id="4" lemma="have" pos="VBP" surface="have"/>
+  <token id="5" lemma="arise" pos="VBN" surface="arisen"/>
+  <token id="6" lemma="between" pos="IN" surface="between"/>
+  <token id="7" lemma="china" pos="NNP" surface="China"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="us" pos="NNP" surface="US"/>
+  <token id="11" lemma="over" pos="IN" surface="over"/>
+  <token id="12" lemma="chinese" pos="JJ" surface="Chinese"/>
+  <token id="13" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="14" lemma="export" pos="NNS" surface="exports"/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="assistance" pos="NN" surface="assistance"/>
+  <token id="17" lemma="to" pos="IN" surface="to"/>
+  <token id="18" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="advmod"/>
+  <dep from="5" to="2" type="punct"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="7" to="10" type="conj"/>
+  <dep from="5" to="11" type="prep"/>
+  <dep from="14" to="12" type="amod"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="14" to="15" type="cc"/>
+  <dep from="14" to="16" type="conj"/>
+  <dep from="14" to="17" type="prep"/>
+  <dep from="17" to="18" type="pobj"/>
+  <dep from="5" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Coming_to_be">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Exporting">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Exporter">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Importing_area">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Benefited_party">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Helper">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Domain">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

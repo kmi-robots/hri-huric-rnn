@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101212">
+ <sentence>
+  Paros and Andros contributed to the Persian armory , while others supported Athens .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="paros" pos="NNP" surface="Paros"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="andros" pos="NNP" surface="Andros"/>
+  <token id="4" lemma="contribute" pos="VBD" surface="contributed"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="persian" pos="JJ" surface="Persian"/>
+  <token id="8" lemma="armory" pos="NN" surface="armory"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="while" pos="IN" surface="while"/>
+  <token id="11" lemma="other" pos="NNS" surface="others"/>
+  <token id="12" lemma="support" pos="VBD" surface="supported"/>
+  <token id="13" lemma="athens" pos="NNP" surface="Athens"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="4" to="9" type="punct"/>
+  <dep from="12" to="10" type="mark"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="4" to="12" type="advcl"/>
+  <dep from="12" to="13" type="dobj"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Class">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Taking_sides">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Side">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

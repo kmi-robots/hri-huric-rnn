@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101828">
+ <sentence>
+  He 's trying to get Hamas to co- exist with Israel .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="3" lemma="try" pos="VBG" surface="trying"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="get" pos="VB" surface="get"/>
+  <token id="6" lemma="hamas" pos="NNP" surface="Hamas"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="co-" pos="XX" surface="co-"/>
+  <token id="9" lemma="exist" pos="VB" surface="exist"/>
+  <token id="10" lemma="with" pos="IN" surface="with"/>
+  <token id="11" lemma="israel" pos="NNP" surface="Israel"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="xcomp"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="ccomp"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="5" to="9" type="ccomp"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="3" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attempt">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

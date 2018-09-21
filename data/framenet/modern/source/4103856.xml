@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103856">
+ <sentence>
+  Four hundred years ago these crops brought British colonists to rule the land and African slaves to work it .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="four" pos="CD" surface="Four"/>
+  <token id="2" lemma="hundred" pos="CD" surface="hundred"/>
+  <token id="3" lemma="year" pos="NNS" surface="years"/>
+  <token id="4" lemma="ago" pos="RB" surface="ago"/>
+  <token id="5" lemma="these" pos="DT" surface="these"/>
+  <token id="6" lemma="crop" pos="NNS" surface="crops"/>
+  <token id="7" lemma="bring" pos="VBD" surface="brought"/>
+  <token id="8" lemma="british" pos="JJ" surface="British"/>
+  <token id="9" lemma="colonist" pos="NNS" surface="colonists"/>
+  <token id="10" lemma="to" pos="TO" surface="to"/>
+  <token id="11" lemma="rule" pos="VB" surface="rule"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="land" pos="NN" surface="land"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="african" pos="JJ" surface="African"/>
+  <token id="16" lemma="slave" pos="NNS" surface="slaves"/>
+  <token id="17" lemma="to" pos="IN" surface="to"/>
+  <token id="18" lemma="work" pos="NN" surface="work"/>
+  <token id="19" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nummod"/>
+  <dep from="4" to="3" type="npadvmod"/>
+  <dep from="7" to="4" type="advmod"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="7" to="11" type="advcl"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="dobj"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="13" to="16" type="conj"/>
+  <dep from="18" to="17" type="aux"/>
+  <dep from="11" to="18" type="advcl"/>
+  <dep from="18" to="19" type="dobj"/>
+  <dep from="7" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Multiplier">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Count">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Time_vector">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Direction">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Distance">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Colonization">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Colonists">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Homeland">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Governed">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Leader">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Work">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Salient_entity">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

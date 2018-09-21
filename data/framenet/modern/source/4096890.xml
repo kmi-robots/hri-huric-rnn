@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096890">
+ <sentence>
+  Iran has shown an interest in acquiring BW agents from foreign sources .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="2" lemma="have" pos="VBZ" surface="has"/>
+  <token id="3" lemma="show" pos="VBN" surface="shown"/>
+  <token id="4" lemma="an" pos="DT" surface="an"/>
+  <token id="5" lemma="interest" pos="NN" surface="interest"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="acquire" pos="VBG" surface="acquiring"/>
+  <token id="8" lemma="bw" pos="NNP" surface="BW"/>
+  <token id="9" lemma="agent" pos="NNS" surface="agents"/>
+  <token id="10" lemma="from" pos="IN" surface="from"/>
+  <token id="11" lemma="foreign" pos="JJ" surface="foreign"/>
+  <token id="12" lemma="source" pos="NNS" surface="sources"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pcomp"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="7" to="10" type="prep"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="3" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Emotion_directed">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Experiencer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Getting">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Active_substance">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Source_of_getting">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Source">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Foreign_or_domestic_country">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Current_country">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

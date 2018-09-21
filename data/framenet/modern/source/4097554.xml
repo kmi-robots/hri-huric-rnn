@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097554">
+ <sentence>
+  China cites dispute with Iran in bid for U.S. nuclear exports , Washington Times , 22 October 1997 , p. 12 . ]
+ </sentence>
+ <tokens>
+  <token id="1" lemma="china" pos="NNP" surface="China"/>
+  <token id="2" lemma="cite" pos="VBZ" surface="cites"/>
+  <token id="3" lemma="dispute" pos="NN" surface="dispute"/>
+  <token id="4" lemma="with" pos="IN" surface="with"/>
+  <token id="5" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="bid" pos="NN" surface="bid"/>
+  <token id="8" lemma="for" pos="IN" surface="for"/>
+  <token id="9" lemma="u.s." pos="NNP" surface="U.S."/>
+  <token id="10" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="11" lemma="export" pos="NNS" surface="exports"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="washington" pos="NNP" surface="Washington"/>
+  <token id="14" lemma="times" pos="NNP" surface="Times"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="22" pos="CD" surface="22"/>
+  <token id="17" lemma="october" pos="NNP" surface="October"/>
+  <token id="18" lemma="1997" pos="CD" surface="1997"/>
+  <token id="19" lemma="," pos="," surface=","/>
+  <token id="20" lemma="p." pos="NN" surface="p."/>
+  <token id="21" lemma="12" pos="CD" surface="12"/>
+  <token id="22" lemma="." pos="." surface="."/>
+  <token id="23" lemma="]" pos="-RRB-" surface="]"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="11" to="9" type="nmod"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="3" to="12" type="punct"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="2" to="14" type="npadvmod"/>
+  <dep from="14" to="15" type="punct"/>
+  <dep from="17" to="16" type="nummod"/>
+  <dep from="14" to="17" type="appos"/>
+  <dep from="17" to="18" type="nummod"/>
+  <dep from="14" to="19" type="punct"/>
+  <dep from="2" to="20" type="npadvmod"/>
+  <dep from="20" to="21" type="nummod"/>
+  <dep from="2" to="22" type="punct"/>
+  <dep from="2" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Quarreling">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Arguer2">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Exporting">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Exporter">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Adducing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Specified_entity">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097634">
+ <sentence>
+  The Hiroshima bomb , for example , employed about 50kg of 80% enriched uranium .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="hiroshima" pos="NNP" surface="Hiroshima"/>
+  <token id="3" lemma="bomb" pos="NN" surface="bomb"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="for" pos="IN" surface="for"/>
+  <token id="6" lemma="example" pos="NN" surface="example"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="employ" pos="VBN" surface="employed"/>
+  <token id="9" lemma="about" pos="IN" surface="about"/>
+  <token id="10" lemma="50kg" pos="NN" surface="50kg"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="80%" pos="CD" surface="80%"/>
+  <token id="13" lemma="enriched" pos="JJ" surface="enriched"/>
+  <token id="14" lemma="uranium" pos="NN" surface="uranium"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="8" to="3" type="nsubj"/>
+  <dep from="8" to="4" type="punct"/>
+  <dep from="8" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="8" to="7" type="punct"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="14" to="12" type="amod"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="8" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Name">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Substance">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Degree_of_processing">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Degree">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Material">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Using">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Instrument">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

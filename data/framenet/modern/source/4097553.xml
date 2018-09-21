@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097553">
+ <sentence>
+  Says Nuclear Projects With Iran on Hold , Inside China Today , 22 October 1997 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="say" pos="VBZ" surface="Says"/>
+  <token id="2" lemma="nuclear" pos="NNP" surface="Nuclear"/>
+  <token id="3" lemma="projects" pos="NNP" surface="Projects"/>
+  <token id="4" lemma="with" pos="IN" surface="With"/>
+  <token id="5" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="6" lemma="on" pos="IN" surface="on"/>
+  <token id="7" lemma="hold" pos="NNP" surface="Hold"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="inside" pos="IN" surface="Inside"/>
+  <token id="10" lemma="china" pos="NNP" surface="China"/>
+  <token id="11" lemma="today" pos="NNP" surface="Today"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="22" pos="CD" surface="22"/>
+  <token id="14" lemma="october" pos="NNP" surface="October"/>
+  <token id="15" lemma="1997" pos="CD" surface="1997"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="1" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="3" to="8" type="punct"/>
+  <dep from="3" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="punct"/>
+  <dep from="14" to="13" type="nummod"/>
+  <dep from="11" to="14" type="appos"/>
+  <dep from="14" to="15" type="nummod"/>
+  <dep from="11" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Salient_entity">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

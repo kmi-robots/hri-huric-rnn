@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099421">
+ <sentence>
+  Right Wing Terrorism
+ </sentence>
+ <tokens>
+  <token id="1" lemma="right" pos="UH" surface="Right"/>
+  <token id="2" lemma="wing" pos="NN" surface="Wing"/>
+  <token id="3" lemma="terrorism" pos="NN" surface="Terrorism"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="compound"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="0" to="3" type="root"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Terrorism">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Act">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

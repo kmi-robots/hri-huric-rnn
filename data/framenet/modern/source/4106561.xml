@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106561">
+ <sentence>
+  But Jerry 's troubles did n't end there .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="but" pos="CC" surface="But"/>
+  <token id="2" lemma="jerry" pos="NNP" surface="Jerry"/>
+  <token id="3" lemma="'s" pos="POS" surface="'s"/>
+  <token id="4" lemma="trouble" pos="NNS" surface="troubles"/>
+  <token id="5" lemma="do" pos="VBD" surface="did"/>
+  <token id="6" lemma="n't" pos="RB" surface="n't"/>
+  <token id="7" lemma="end" pos="VB" surface="end"/>
+  <token id="8" lemma="there" pos="RB" surface="there"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="cc"/>
+  <dep from="4" to="2" type="poss"/>
+  <dep from="2" to="3" type="case"/>
+  <dep from="7" to="4" type="nsubj"/>
+  <dep from="7" to="5" type="aux"/>
+  <dep from="7" to="6" type="neg"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="advmod"/>
+  <dep from="7" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Predicament">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Experiencer">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Situation">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Process_end">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Process">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

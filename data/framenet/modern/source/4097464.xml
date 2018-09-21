@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097464">
+ <sentence>
+  The PRC withdraws its offer to sell Iran a nuclear reactor ( 6899 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="prc" pos="NNP" surface="PRC"/>
+  <token id="3" lemma="withdraw" pos="VBZ" surface="withdraws"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="5" lemma="offer" pos="NN" surface="offer"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="sell" pos="VB" surface="sell"/>
+  <token id="8" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="11" lemma="reactor" pos="NN" surface="reactor"/>
+  <token id="12" lemma="(" pos="-LRB-" surface="("/>
+  <token id="13" lemma="6899" pos="CD" surface="6899"/>
+  <token id="14" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="poss"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="5" to="7" type="acl"/>
+  <dep from="7" to="8" type="dative"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="7" to="11" type="dobj"/>
+  <dep from="11" to="12" type="punct"/>
+  <dep from="11" to="13" type="appos"/>
+  <dep from="11" to="14" type="punct"/>
+  <dep from="3" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Removing">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Commerce_sell">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Seller">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Buyer">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

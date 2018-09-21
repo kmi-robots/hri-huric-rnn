@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105939">
+ <sentence>
+  There are also demonstrations of traditional Chinese crafts , including silk - weaving , pottery , and papermaking .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="also" pos="RB" surface="also"/>
+  <token id="4" lemma="demonstration" pos="NNS" surface="demonstrations"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="traditional" pos="JJ" surface="traditional"/>
+  <token id="7" lemma="chinese" pos="JJ" surface="Chinese"/>
+  <token id="8" lemma="craft" pos="NNS" surface="crafts"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="include" pos="VBG" surface="including"/>
+  <token id="11" lemma="silk" pos="NN" surface="silk"/>
+  <token id="12" lemma="-" pos="HYPH" surface="-"/>
+  <token id="13" lemma="weaving" pos="NN" surface="weaving"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="pottery" pos="NN" surface="pottery"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="and" pos="CC" surface="and"/>
+  <token id="18" lemma="papermaking" pos="NN" surface="papermaking"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="advmod"/>
+  <dep from="2" to="4" type="attr"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="8" to="10" type="prep"/>
+  <dep from="13" to="11" type="compound"/>
+  <dep from="13" to="12" type="punct"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="15" to="17" type="cc"/>
+  <dep from="15" to="18" type="conj"/>
+  <dep from="2" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Craft">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Culture">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Inclusion">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Total">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

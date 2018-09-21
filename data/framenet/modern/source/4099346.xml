@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099346">
+ <sentence>
+  Introduction to BW Terrorism
+ </sentence>
+ <tokens>
+  <token id="1" lemma="introduction" pos="NN" surface="Introduction"/>
+  <token id="2" lemma="to" pos="TO" surface="to"/>
+  <token id="3" lemma="bw" pos="VB" surface="BW"/>
+  <token id="4" lemma="terrorism" pos="NN" surface="Terrorism"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="2" to="4" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Terrorism">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Act">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

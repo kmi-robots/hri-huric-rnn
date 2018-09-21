@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099019">
+ <sentence>
+  QN : Who chose the Dugway Proving Ground as a site to test vaccines ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="who" pos="WP" surface="Who"/>
+  <token id="4" lemma="choose" pos="VBD" surface="chose"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="dugway" pos="NNP" surface="Dugway"/>
+  <token id="7" lemma="proving" pos="NNP" surface="Proving"/>
+  <token id="8" lemma="ground" pos="NNP" surface="Ground"/>
+  <token id="9" lemma="as" pos="IN" surface="as"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="site" pos="NN" surface="site"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="test" pos="VB" surface="test"/>
+  <token id="14" lemma="vaccine" pos="NNS" surface="vaccines"/>
+  <token id="15" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="8" to="5" type="det"/>
+  <dep from="8" to="6" type="compound"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="4" to="8" type="dobj"/>
+  <dep from="4" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="11" to="13" type="relcl"/>
+  <dep from="13" to="14" type="dobj"/>
+  <dep from="4" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Choosing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Chosen">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Inherent_purpose">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Use">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Operational_testing">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

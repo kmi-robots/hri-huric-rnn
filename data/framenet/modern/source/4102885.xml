@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102885">
+ <sentence>
+  Second : Regulations for Visitors and their Belongings
+ </sentence>
+ <tokens>
+  <token id="1" lemma="second" pos="RB" surface="Second"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="regulation" pos="NNS" surface="Regulations"/>
+  <token id="4" lemma="for" pos="IN" surface="for"/>
+  <token id="5" lemma="visitors" pos="NNPS" surface="Visitors"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="8" lemma="belonging" pos="NNS" surface="Belongings"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="1" to="3" type="appos"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="8" to="7" type="poss"/>
+  <dep from="5" to="8" type="conj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Law">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Law">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Visiting">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Possession">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Owner">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

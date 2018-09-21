@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097325">
+ <sentence>
+  Some factions within the Pakistani government supported helping Iran .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="some" pos="DT" surface="Some"/>
+  <token id="2" lemma="faction" pos="NNS" surface="factions"/>
+  <token id="3" lemma="within" pos="IN" surface="within"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="pakistani" pos="JJ" surface="Pakistani"/>
+  <token id="6" lemma="government" pos="NN" surface="government"/>
+  <token id="7" lemma="support" pos="VBD" surface="supported"/>
+  <token id="8" lemma="help" pos="VBG" surface="helping"/>
+  <token id="9" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="7" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="pobj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="xcomp"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="7" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Taking_sides">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Action">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Benefited_party">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Governed">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

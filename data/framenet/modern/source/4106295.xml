@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106295">
+ <sentence>
+  The Foshan Art Porcelain Factory has traditional designs , but also some attractive modern pieces .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="foshan" pos="NNP" surface="Foshan"/>
+  <token id="3" lemma="art" pos="NNP" surface="Art"/>
+  <token id="4" lemma="porcelain" pos="NNP" surface="Porcelain"/>
+  <token id="5" lemma="factory" pos="NNP" surface="Factory"/>
+  <token id="6" lemma="have" pos="VBZ" surface="has"/>
+  <token id="7" lemma="traditional" pos="JJ" surface="traditional"/>
+  <token id="8" lemma="design" pos="NNS" surface="designs"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="but" pos="CC" surface="but"/>
+  <token id="11" lemma="also" pos="RB" surface="also"/>
+  <token id="12" lemma="some" pos="DT" surface="some"/>
+  <token id="13" lemma="attractive" pos="JJ" surface="attractive"/>
+  <token id="14" lemma="modern" pos="JJ" surface="modern"/>
+  <token id="15" lemma="piece" pos="NNS" surface="pieces"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="det"/>
+  <dep from="5" to="2" type="compound"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="6" to="9" type="punct"/>
+  <dep from="6" to="10" type="cc"/>
+  <dep from="10" to="11" type="advmod"/>
+  <dep from="15" to="12" type="det"/>
+  <dep from="15" to="13" type="amod"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="6" to="15" type="conj"/>
+  <dep from="6" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Use">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Custom">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Society">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Behavior">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

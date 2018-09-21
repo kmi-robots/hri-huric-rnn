@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148355">
+ <sentence>
+  " I didn 't say so , Mr . Holmes ; I didn 't say so .
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="3" lemma="didn" pos="VBP" surface="didn"/>
+  <token id="4" lemma="'t" pos="NNS" surface="'t"/>
+  <token id="5" lemma="say" pos="VBP" surface="say"/>
+  <token id="6" lemma="so" pos="RB" surface="so"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="mr" pos="NNP" surface="Mr"/>
+  <token id="9" lemma="." pos="." surface="."/>
+  <token id="10" lemma="holme" pos="NNS" surface="Holmes"/>
+  <token id="11" lemma=";" pos=":" surface=";"/>
+  <token id="12" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="13" lemma="didn" pos="VBP" surface="didn"/>
+  <token id="14" lemma="'t" pos="NNS" surface="'t"/>
+  <token id="15" lemma="say" pos="VBP" surface="say"/>
+  <token id="16" lemma="so" pos="RB" surface="so"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="1" to="3" type="intj"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="3" to="5" type="ccomp"/>
+  <dep from="5" to="6" type="advmod"/>
+  <dep from="5" to="7" type="punct"/>
+  <dep from="3" to="8" type="oprd"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="15" to="10" type="dep"/>
+  <dep from="15" to="11" type="punct"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="15" to="13" type="ccomp"/>
+  <dep from="15" to="14" type="auxpass"/>
+  <dep from="0" to="15" type="root"/>
+  <dep from="15" to="16" type="advmod"/>
+  <dep from="15" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

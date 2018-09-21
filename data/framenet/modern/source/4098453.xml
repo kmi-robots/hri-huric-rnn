@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098453">
+ <sentence>
+  Bush said that it was Khan who sold centrifuges to North Korea .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="bush" pos="NNP" surface="Bush"/>
+  <token id="2" lemma="say" pos="VBD" surface="said"/>
+  <token id="3" lemma="that" pos="IN" surface="that"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="5" lemma="be" pos="VBD" surface="was"/>
+  <token id="6" lemma="khan" pos="NNP" surface="Khan"/>
+  <token id="7" lemma="who" pos="WP" surface="who"/>
+  <token id="8" lemma="sell" pos="VBD" surface="sold"/>
+  <token id="9" lemma="centrifuge" pos="NNS" surface="centrifuges"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="north" pos="NNP" surface="North"/>
+  <token id="12" lemma="korea" pos="NNP" surface="Korea"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="mark"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="2" to="5" type="ccomp"/>
+  <dep from="5" to="6" type="attr"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="6" to="8" type="relcl"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="8" to="10" type="dative"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="2" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Commerce_sell">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Seller">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Seller">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Buyer">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098758">
+ <sentence>
+  A.Q. Khan of Pakistan sold plans for a nuclear bomb to Iran .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a.q." pos="NNP" surface="A.Q."/>
+  <token id="2" lemma="khan" pos="NNP" surface="Khan"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="pakistan" pos="NNP" surface="Pakistan"/>
+  <token id="5" lemma="sell" pos="VBD" surface="sold"/>
+  <token id="6" lemma="plan" pos="NNS" surface="plans"/>
+  <token id="7" lemma="for" pos="IN" surface="for"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="10" lemma="bomb" pos="NN" surface="bomb"/>
+  <token id="11" lemma="to" pos="IN" surface="to"/>
+  <token id="12" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="5" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="5" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_sell">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Seller">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Buyer">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105850">
+ <sentence>
+  Before the tram was built , sedan chairs and rickshaws were the only way to get here .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="before" pos="IN" surface="Before"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="tram" pos="NN" surface="tram"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="build" pos="VBN" surface="built"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="sedan" pos="NN" surface="sedan"/>
+  <token id="8" lemma="chair" pos="NNS" surface="chairs"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="rickshaw" pos="NNS" surface="rickshaws"/>
+  <token id="11" lemma="be" pos="VBD" surface="were"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="only" pos="JJ" surface="only"/>
+  <token id="14" lemma="way" pos="NN" surface="way"/>
+  <token id="15" lemma="to" pos="TO" surface="to"/>
+  <token id="16" lemma="get" pos="VB" surface="get"/>
+  <token id="17" lemma="here" pos="RB" surface="here"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="mark"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="5" to="3" type="nsubjpass"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="11" to="5" type="advcl"/>
+  <dep from="11" to="6" type="punct"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="11" to="8" type="nsubj"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="attr"/>
+  <dep from="16" to="15" type="aux"/>
+  <dep from="14" to="16" type="relcl"/>
+  <dep from="16" to="17" type="advmod"/>
+  <dep from="11" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Time_vector">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_event">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Vehicle">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Building">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Vehicle">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Vehicle">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Sole_instance">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Means">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Means">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Arriving">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

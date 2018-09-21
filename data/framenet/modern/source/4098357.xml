@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098357">
+ <sentence>
+  Jones arrived in Paris in September last year .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="jones" pos="NNP" surface="Jones"/>
+  <token id="2" lemma="arrive" pos="VBD" surface="arrived"/>
+  <token id="3" lemma="in" pos="IN" surface="in"/>
+  <token id="4" lemma="paris" pos="NNP" surface="Paris"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="september" pos="NNP" surface="September"/>
+  <token id="7" lemma="last" pos="JJ" surface="last"/>
+  <token id="8" lemma="year" pos="NN" surface="year"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="2" to="8" type="npadvmod"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Arriving">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Relative_time">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

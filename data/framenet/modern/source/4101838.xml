@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101838">
+ <sentence>
+  Translator : Hamas will not drop our weapons , even if all leaders are assassinated .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="translator" pos="NN" surface="Translator"/>
+  <token id="2" lemma=":" pos="." surface=":"/>
+  <token id="3" lemma="hamas" pos="NNP" surface="Hamas"/>
+  <token id="4" lemma="will" pos="MD" surface="will"/>
+  <token id="5" lemma="not" pos="RB" surface="not"/>
+  <token id="6" lemma="drop" pos="VB" surface="drop"/>
+  <token id="7" lemma="-PRON-" pos="PRP$" surface="our"/>
+  <token id="8" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="even" pos="RB" surface="even"/>
+  <token id="11" lemma="if" pos="IN" surface="if"/>
+  <token id="12" lemma="all" pos="DT" surface="all"/>
+  <token id="13" lemma="leader" pos="NNS" surface="leaders"/>
+  <token id="14" lemma="be" pos="VBP" surface="are"/>
+  <token id="15" lemma="assassinate" pos="VBN" surface="assassinated"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="6" to="3" type="nsubj"/>
+  <dep from="6" to="4" type="aux"/>
+  <dep from="6" to="5" type="neg"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="poss"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="6" to="9" type="punct"/>
+  <dep from="15" to="10" type="advmod"/>
+  <dep from="15" to="11" type="mark"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="15" to="13" type="nsubjpass"/>
+  <dep from="15" to="14" type="auxpass"/>
+  <dep from="6" to="15" type="advcl"/>
+  <dep from="6" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Wielder">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

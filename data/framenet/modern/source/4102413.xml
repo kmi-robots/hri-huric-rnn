@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102413">
+ <sentence>
+  The Senate chamber was locked down , television cameras shut off , so law makers could go into secret session to debate .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="senate" pos="NNP" surface="Senate"/>
+  <token id="3" lemma="chamber" pos="NN" surface="chamber"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="lock" pos="VBN" surface="locked"/>
+  <token id="6" lemma="down" pos="RP" surface="down"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="television" pos="NN" surface="television"/>
+  <token id="9" lemma="camera" pos="NNS" surface="cameras"/>
+  <token id="10" lemma="shut" pos="VBD" surface="shut"/>
+  <token id="11" lemma="off" pos="RP" surface="off"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="so" pos="IN" surface="so"/>
+  <token id="14" lemma="law" pos="NN" surface="law"/>
+  <token id="15" lemma="maker" pos="NNS" surface="makers"/>
+  <token id="16" lemma="could" pos="MD" surface="could"/>
+  <token id="17" lemma="go" pos="VB" surface="go"/>
+  <token id="18" lemma="into" pos="IN" surface="into"/>
+  <token id="19" lemma="secret" pos="JJ" surface="secret"/>
+  <token id="20" lemma="session" pos="NN" surface="session"/>
+  <token id="21" lemma="to" pos="TO" surface="to"/>
+  <token id="22" lemma="debate" pos="VB" surface="debate"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="5" to="3" type="nsubjpass"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prt"/>
+  <dep from="5" to="7" type="punct"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="5" to="10" type="conj"/>
+  <dep from="10" to="11" type="prt"/>
+  <dep from="10" to="12" type="punct"/>
+  <dep from="17" to="13" type="mark"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="17" to="15" type="nsubj"/>
+  <dep from="17" to="16" type="aux"/>
+  <dep from="10" to="17" type="conj"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="20" to="19" type="amod"/>
+  <dep from="18" to="20" type="pobj"/>
+  <dep from="22" to="21" type="aux"/>
+  <dep from="17" to="22" type="advcl"/>
+  <dep from="5" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Building_subparts">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Building_part">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Law">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Law">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Secrecy_status">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Discussion">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Interlocutors">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

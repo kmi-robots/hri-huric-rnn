@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096678">
+ <sentence>
+  It is unclear how many people presently work at AEOI .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="It"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="unclear" pos="JJ" surface="unclear"/>
+  <token id="4" lemma="how" pos="WRB" surface="how"/>
+  <token id="5" lemma="many" pos="JJ" surface="many"/>
+  <token id="6" lemma="people" pos="NNS" surface="people"/>
+  <token id="7" lemma="presently" pos="RB" surface="presently"/>
+  <token id="8" lemma="work" pos="VBP" surface="work"/>
+  <token id="9" lemma="at" pos="IN" surface="at"/>
+  <token id="10" lemma="aeoi" pos="NNS" surface="AEOI"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="acomp"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="8" to="6" type="nsubj"/>
+  <dep from="8" to="7" type="advmod"/>
+  <dep from="2" to="8" type="ccomp"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_employed">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Employee">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Place_of_employment">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Obviousness">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101295">
+ <sentence>
+  At the same time , the massive growth in air and road transport saw shipping decline in importance .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="at" pos="IN" surface="At"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="same" pos="JJ" surface="same"/>
+  <token id="4" lemma="time" pos="NN" surface="time"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="massive" pos="JJ" surface="massive"/>
+  <token id="8" lemma="growth" pos="NN" surface="growth"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="air" pos="NN" surface="air"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="road" pos="NN" surface="road"/>
+  <token id="13" lemma="transport" pos="NN" surface="transport"/>
+  <token id="14" lemma="see" pos="VBD" surface="saw"/>
+  <token id="15" lemma="shipping" pos="NN" surface="shipping"/>
+  <token id="16" lemma="decline" pos="NN" surface="decline"/>
+  <token id="17" lemma="in" pos="IN" surface="in"/>
+  <token id="18" lemma="importance" pos="NN" surface="importance"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="14" to="1" type="prep"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="1" to="4" type="pobj"/>
+  <dep from="14" to="5" type="punct"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="14" to="8" type="nsubj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="13" to="10" type="nmod"/>
+  <dep from="10" to="11" type="cc"/>
+  <dep from="10" to="12" type="conj"/>
+  <dep from="9" to="13" type="pobj"/>
+  <dep from="0" to="14" type="root"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="14" to="16" type="dobj"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="17" to="18" type="pobj"/>
+  <dep from="14" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Roadway">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Attribute">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Importance">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Effect">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

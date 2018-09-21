@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101199">
+ <sentence>
+  Athens became the most powerful , heralding the start of the classical Greek period .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="athens" pos="NNP" surface="Athens"/>
+  <token id="2" lemma="become" pos="VBD" surface="became"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="most" pos="RBS" surface="most"/>
+  <token id="5" lemma="powerful" pos="JJ" surface="powerful"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="herald" pos="VBG" surface="heralding"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="start" pos="NN" surface="start"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="classical" pos="JJ" surface="classical"/>
+  <token id="13" lemma="greek" pos="JJ" surface="Greek"/>
+  <token id="14" lemma="period" pos="NN" surface="period"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="2" to="5" type="acomp"/>
+  <dep from="2" to="6" type="punct"/>
+  <dep from="2" to="7" type="advcl"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="14" to="11" type="det"/>
+  <dep from="14" to="12" type="amod"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="10" to="14" type="pobj"/>
+  <dep from="2" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Becoming">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Final_category">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Omen">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Future_phenomenon">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Predictive_phenomenon">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_subregion">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Subpart">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Time_period">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Frequency">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Interval">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

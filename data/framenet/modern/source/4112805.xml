@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4112805">
+ <sentence>
+  Moreover , when taking into account the amount of research money available to researchers , Latin America actually out-published the United States and Canada by the year 2000 ( Figure 2 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="moreover" pos="RB" surface="Moreover"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="when" pos="WRB" surface="when"/>
+  <token id="4" lemma="take" pos="VBG" surface="taking"/>
+  <token id="5" lemma="into" pos="IN" surface="into"/>
+  <token id="6" lemma="account" pos="NN" surface="account"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="amount" pos="NN" surface="amount"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="research" pos="NN" surface="research"/>
+  <token id="11" lemma="money" pos="NN" surface="money"/>
+  <token id="12" lemma="available" pos="JJ" surface="available"/>
+  <token id="13" lemma="to" pos="IN" surface="to"/>
+  <token id="14" lemma="researcher" pos="NNS" surface="researchers"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="latin" pos="NNP" surface="Latin"/>
+  <token id="17" lemma="america" pos="NNP" surface="America"/>
+  <token id="18" lemma="actually" pos="RB" surface="actually"/>
+  <token id="19" lemma="out-publish" pos="VBD" surface="out-published"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="united" pos="NNP" surface="United"/>
+  <token id="22" lemma="states" pos="NNP" surface="States"/>
+  <token id="23" lemma="and" pos="CC" surface="and"/>
+  <token id="24" lemma="canada" pos="NNP" surface="Canada"/>
+  <token id="25" lemma="by" pos="IN" surface="by"/>
+  <token id="26" lemma="the" pos="DT" surface="the"/>
+  <token id="27" lemma="year" pos="NN" surface="year"/>
+  <token id="28" lemma="2000" pos="CD" surface="2000"/>
+  <token id="29" lemma="(" pos="-LRB-" surface="("/>
+  <token id="30" lemma="figure" pos="NNP" surface="Figure"/>
+  <token id="31" lemma="2" pos="CD" surface="2"/>
+  <token id="32" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="33" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="19" to="1" type="advmod"/>
+  <dep from="19" to="2" type="punct"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="19" to="4" type="advcl"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="4" to="8" type="dobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="amod"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="19" to="15" type="punct"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="19" to="17" type="nsubj"/>
+  <dep from="19" to="18" type="advmod"/>
+  <dep from="0" to="19" type="root"/>
+  <dep from="22" to="20" type="det"/>
+  <dep from="22" to="21" type="compound"/>
+  <dep from="19" to="22" type="dobj"/>
+  <dep from="22" to="23" type="cc"/>
+  <dep from="22" to="24" type="conj"/>
+  <dep from="19" to="25" type="prep"/>
+  <dep from="27" to="26" type="det"/>
+  <dep from="25" to="27" type="pobj"/>
+  <dep from="27" to="28" type="nummod"/>
+  <dep from="30" to="29" type="punct"/>
+  <dep from="27" to="30" type="appos"/>
+  <dep from="30" to="31" type="nummod"/>
+  <dep from="30" to="32" type="punct"/>
+  <dep from="19" to="33" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Mass">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Money">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Money">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Inherent_purpose">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="27"/>
+    </lexicalUnit>
+    <frameElement type="Name">
+     <token id="28"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="27"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105903">
+ <sentence>
+  A prosperous tourist district , it is full of shopping centers and department stores , along with a number of good restaurants .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="prosperous" pos="JJ" surface="prosperous"/>
+  <token id="3" lemma="tourist" pos="NN" surface="tourist"/>
+  <token id="4" lemma="district" pos="NN" surface="district"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="7" lemma="be" pos="VBZ" surface="is"/>
+  <token id="8" lemma="full" pos="JJ" surface="full"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="shopping" pos="NN" surface="shopping"/>
+  <token id="11" lemma="center" pos="NNS" surface="centers"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="department" pos="NN" surface="department"/>
+  <token id="14" lemma="store" pos="NNS" surface="stores"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="along" pos="IN" surface="along"/>
+  <token id="17" lemma="with" pos="IN" surface="with"/>
+  <token id="18" lemma="a" pos="DT" surface="a"/>
+  <token id="19" lemma="number" pos="NN" surface="number"/>
+  <token id="20" lemma="of" pos="IN" surface="of"/>
+  <token id="21" lemma="good" pos="JJ" surface="good"/>
+  <token id="22" lemma="restaurant" pos="NNS" surface="restaurants"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="det"/>
+  <dep from="4" to="2" type="amod"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="7" to="4" type="dep"/>
+  <dep from="7" to="5" type="punct"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="acomp"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="11" to="14" type="conj"/>
+  <dep from="7" to="15" type="punct"/>
+  <dep from="7" to="16" type="prep"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="22" to="21" type="amod"/>
+  <dep from="20" to="22" type="pobj"/>
+  <dep from="7" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Wealthiness">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Institution">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Touring">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Tourist">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Attraction">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Constituent_parts">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Abounding_with">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Shopping">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Accompaniment">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Coparticipant">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Participant">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirability">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="22"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

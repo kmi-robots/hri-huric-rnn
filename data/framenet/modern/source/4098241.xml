@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098241">
+ <sentence>
+  QN : Does Russia possess the infrastructure necessary to destroy chemical weapons ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="do" pos="VBZ" surface="Does"/>
+  <token id="4" lemma="russia" pos="NNP" surface="Russia"/>
+  <token id="5" lemma="possess" pos="VB" surface="possess"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="infrastructure" pos="NN" surface="infrastructure"/>
+  <token id="8" lemma="necessary" pos="JJ" surface="necessary"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="destroy" pos="VB" surface="destroy"/>
+  <token id="11" lemma="chemical" pos="JJ" surface="chemical"/>
+  <token id="12" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="13" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="7" to="8" type="amod"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="5" to="10" type="advcl"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="5" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Infrastructure">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Being_necessary">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Required_entity">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Dependent">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Destroying">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

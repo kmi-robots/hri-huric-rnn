@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101913">
+ <sentence>
+  7 [ they laugh ]
+ </sentence>
+ <tokens>
+  <token id="1" lemma="7" pos="LS" surface="7"/>
+  <token id="2" lemma="[" pos="-LRB-" surface="["/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="4" lemma="laugh" pos="VBP" surface="laugh"/>
+  <token id="5" lemma="]" pos="-RRB-" surface="]"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="dep"/>
+  <dep from="4" to="2" type="punct"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Make_noise">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Sound_source">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100616">
+ <sentence>
+  Traditional Irish music is also alive and well , especially in the pubs , and there has been a revival of storytelling , poetry reading , and traditional dancing .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="traditional" pos="JJ" surface="Traditional"/>
+  <token id="2" lemma="irish" pos="JJ" surface="Irish"/>
+  <token id="3" lemma="music" pos="NN" surface="music"/>
+  <token id="4" lemma="be" pos="VBZ" surface="is"/>
+  <token id="5" lemma="also" pos="RB" surface="also"/>
+  <token id="6" lemma="alive" pos="JJ" surface="alive"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="well" pos="RB" surface="well"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="especially" pos="RB" surface="especially"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="pub" pos="NNS" surface="pubs"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="there" pos="EX" surface="there"/>
+  <token id="17" lemma="have" pos="VBZ" surface="has"/>
+  <token id="18" lemma="be" pos="VBN" surface="been"/>
+  <token id="19" lemma="a" pos="DT" surface="a"/>
+  <token id="20" lemma="revival" pos="NN" surface="revival"/>
+  <token id="21" lemma="of" pos="IN" surface="of"/>
+  <token id="22" lemma="storytelling" pos="NN" surface="storytelling"/>
+  <token id="23" lemma="," pos="," surface=","/>
+  <token id="24" lemma="poetry" pos="NN" surface="poetry"/>
+  <token id="25" lemma="reading" pos="NN" surface="reading"/>
+  <token id="26" lemma="," pos="," surface=","/>
+  <token id="27" lemma="and" pos="CC" surface="and"/>
+  <token id="28" lemma="traditional" pos="JJ" surface="traditional"/>
+  <token id="29" lemma="dancing" pos="NN" surface="dancing"/>
+  <token id="30" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="amod"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="advmod"/>
+  <dep from="4" to="6" type="acomp"/>
+  <dep from="6" to="7" type="cc"/>
+  <dep from="6" to="8" type="conj"/>
+  <dep from="4" to="9" type="punct"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="4" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="4" to="14" type="punct"/>
+  <dep from="4" to="15" type="cc"/>
+  <dep from="18" to="16" type="expl"/>
+  <dep from="18" to="17" type="aux"/>
+  <dep from="4" to="18" type="conj"/>
+  <dep from="20" to="19" type="det"/>
+  <dep from="18" to="20" type="attr"/>
+  <dep from="20" to="21" type="prep"/>
+  <dep from="21" to="22" type="pobj"/>
+  <dep from="22" to="23" type="punct"/>
+  <dep from="25" to="24" type="compound"/>
+  <dep from="22" to="25" type="conj"/>
+  <dep from="25" to="26" type="punct"/>
+  <dep from="25" to="27" type="cc"/>
+  <dep from="29" to="28" type="amod"/>
+  <dep from="25" to="29" type="conj"/>
+  <dep from="18" to="30" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Custom">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Behavior">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Dead_or_alive">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+    </frameElement>
+   </frame>
+   <frame name="Text">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Text">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Reading_activity">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Text">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Custom">
+    <lexicalUnit>
+     <token id="28"/>
+    </lexicalUnit>
+    <frameElement type="Behavior">
+     <token id="29"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Performing_arts">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Performance">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Rejuvenation">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

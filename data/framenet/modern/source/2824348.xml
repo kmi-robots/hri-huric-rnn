@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824348">
+ <sentence>
+  -- `` Community involvement '' is an even worse idea .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="--" pos=":" surface="--"/>
+  <token id="2" lemma="``" pos="``" surface="``"/>
+  <token id="3" lemma="community" pos="NN" surface="Community"/>
+  <token id="4" lemma="involvement" pos="NN" surface="involvement"/>
+  <token id="5" lemma="''" pos="''" surface="''"/>
+  <token id="6" lemma="be" pos="VBZ" surface="is"/>
+  <token id="7" lemma="an" pos="DT" surface="an"/>
+  <token id="8" lemma="even" pos="RB" surface="even"/>
+  <token id="9" lemma="bad" pos="JJR" surface="worse"/>
+  <token id="10" lemma="idea" pos="NN" surface="idea"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="punct"/>
+  <dep from="6" to="2" type="punct"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="punct"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="10" to="7" type="det"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="6" to="10" type="attr"/>
+  <dep from="6" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Participation">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Participants">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirability">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirable_event">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

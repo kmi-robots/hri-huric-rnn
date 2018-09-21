@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824218">
+ <sentence>
+  Each variation , or change , can occur only once , the rules state .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="each" pos="DT" surface="Each"/>
+  <token id="2" lemma="variation" pos="NN" surface="variation"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="or" pos="CC" surface="or"/>
+  <token id="5" lemma="change" pos="NN" surface="change"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="can" pos="MD" surface="can"/>
+  <token id="8" lemma="occur" pos="VB" surface="occur"/>
+  <token id="9" lemma="only" pos="RB" surface="only"/>
+  <token id="10" lemma="once" pos="RB" surface="once"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="rule" pos="NNS" surface="rules"/>
+  <token id="14" lemma="state" pos="NN" surface="state"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="8" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="cc"/>
+  <dep from="2" to="5" type="conj"/>
+  <dep from="5" to="6" type="punct"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="8" to="10" type="advmod"/>
+  <dep from="8" to="11" type="punct"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="14" to="13" type="nsubj"/>
+  <dep from="8" to="14" type="npadvmod"/>
+  <dep from="8" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Medium">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Event">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Frequency">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

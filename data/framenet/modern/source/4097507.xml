@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097507">
+ <sentence>
+  There are a number of political , commercial , and bilateral relational issues involved .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="number" pos="NN" surface="number"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="political" pos="JJ" surface="political"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="commercial" pos="JJ" surface="commercial"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="bilateral" pos="JJ" surface="bilateral"/>
+  <token id="12" lemma="relational" pos="JJ" surface="relational"/>
+  <token id="13" lemma="issue" pos="NNS" surface="issues"/>
+  <token id="14" lemma="involve" pos="VBN" surface="involved"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="attr"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="13" to="6" type="amod"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="6" to="8" type="conj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="8" to="10" type="cc"/>
+  <dep from="8" to="11" type="conj"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="5" to="13" type="pobj"/>
+  <dep from="13" to="14" type="acl"/>
+  <dep from="2" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

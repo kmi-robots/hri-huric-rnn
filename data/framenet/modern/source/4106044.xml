@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106044">
+ <sentence>
+  Closer to town is Lion Rock , shaped like a lion lying in wait .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="closer" pos="RBR" surface="Closer"/>
+  <token id="2" lemma="to" pos="IN" surface="to"/>
+  <token id="3" lemma="town" pos="NN" surface="town"/>
+  <token id="4" lemma="be" pos="VBZ" surface="is"/>
+  <token id="5" lemma="lion" pos="NNP" surface="Lion"/>
+  <token id="6" lemma="rock" pos="NNP" surface="Rock"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="shape" pos="VBD" surface="shaped"/>
+  <token id="9" lemma="like" pos="IN" surface="like"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="lion" pos="NN" surface="lion"/>
+  <token id="12" lemma="lie" pos="VBG" surface="lying"/>
+  <token id="13" lemma="in" pos="IN" surface="in"/>
+  <token id="14" lemma="wait" pos="NN" surface="wait"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="acomp"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="2" to="3" type="pobj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="4" to="6" type="attr"/>
+  <dep from="4" to="7" type="punct"/>
+  <dep from="4" to="8" type="advcl"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="acl"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="4" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Posture">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Similarity">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Entity_1">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Entity_2">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

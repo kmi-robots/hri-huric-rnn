@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102818">
+ <sentence>
+  3- Secret gates should be built 50 meters apart to be used for emergency only .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="3-" pos="LS" surface="3-"/>
+  <token id="2" lemma="secret" pos="JJ" surface="Secret"/>
+  <token id="3" lemma="gate" pos="NNS" surface="gates"/>
+  <token id="4" lemma="should" pos="MD" surface="should"/>
+  <token id="5" lemma="be" pos="VB" surface="be"/>
+  <token id="6" lemma="build" pos="VBN" surface="built"/>
+  <token id="7" lemma="50" pos="CD" surface="50"/>
+  <token id="8" lemma="meter" pos="NNS" surface="meters"/>
+  <token id="9" lemma="apart" pos="RB" surface="apart"/>
+  <token id="10" lemma="to" pos="TO" surface="to"/>
+  <token id="11" lemma="be" pos="VB" surface="be"/>
+  <token id="12" lemma="use" pos="VBN" surface="used"/>
+  <token id="13" lemma="for" pos="IN" surface="for"/>
+  <token id="14" lemma="emergency" pos="NN" surface="emergency"/>
+  <token id="15" lemma="only" pos="RB" surface="only"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nummod"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="6" to="3" type="nsubjpass"/>
+  <dep from="6" to="4" type="aux"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="nummod"/>
+  <dep from="9" to="8" type="npadvmod"/>
+  <dep from="6" to="9" type="advmod"/>
+  <dep from="12" to="10" type="aux"/>
+  <dep from="12" to="11" type="auxpass"/>
+  <dep from="6" to="12" type="advcl"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="12" to="15" type="advmod"/>
+  <dep from="6" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Secrecy_status">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirable_event">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="State_of_affairs">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Building">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Result">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Using">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Instrument">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_linear_extent">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Count">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

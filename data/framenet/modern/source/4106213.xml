@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106213">
+ <sentence>
+  After dinner , a glass of Madeira or port is recommended to round off the meal .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="after" pos="IN" surface="After"/>
+  <token id="2" lemma="dinner" pos="NN" surface="dinner"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="glass" pos="NN" surface="glass"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="madeira" pos="NNP" surface="Madeira"/>
+  <token id="8" lemma="or" pos="CC" surface="or"/>
+  <token id="9" lemma="port" pos="NN" surface="port"/>
+  <token id="10" lemma="be" pos="VBZ" surface="is"/>
+  <token id="11" lemma="recommend" pos="VBN" surface="recommended"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="round" pos="VB" surface="round"/>
+  <token id="14" lemma="off" pos="RP" surface="off"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="meal" pos="NN" surface="meal"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="11" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="11" to="3" type="punct"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="11" to="5" type="nsubjpass"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="7" to="9" type="conj"/>
+  <dep from="11" to="10" type="auxpass"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="11" to="13" type="xcomp"/>
+  <dep from="13" to="14" type="prt"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="13" to="16" type="dobj"/>
+  <dep from="11" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Social_event">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Social_event">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Relative_time">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_occasion">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Containers">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Container">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Contents">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

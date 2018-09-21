@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100398">
+ <sentence>
+  During the Sixth Crusade ( 1228 - 1229 ) , the Holy Roman Emperor Frederick II managed to secure Jerusalem for the Christians by negotiation .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="during" pos="IN" surface="During"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="sixth" pos="NNP" surface="Sixth"/>
+  <token id="4" lemma="crusade" pos="NNP" surface="Crusade"/>
+  <token id="5" lemma="(" pos="-LRB-" surface="("/>
+  <token id="6" lemma="1228" pos="CD" surface="1228"/>
+  <token id="7" lemma="-" pos="SYM" surface="-"/>
+  <token id="8" lemma="1229" pos="CD" surface="1229"/>
+  <token id="9" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="holy" pos="NNP" surface="Holy"/>
+  <token id="13" lemma="roman" pos="NNP" surface="Roman"/>
+  <token id="14" lemma="emperor" pos="NNP" surface="Emperor"/>
+  <token id="15" lemma="frederick" pos="NNP" surface="Frederick"/>
+  <token id="16" lemma="ii" pos="NNP" surface="II"/>
+  <token id="17" lemma="manage" pos="VBD" surface="managed"/>
+  <token id="18" lemma="to" pos="TO" surface="to"/>
+  <token id="19" lemma="secure" pos="VB" surface="secure"/>
+  <token id="20" lemma="jerusalem" pos="NNP" surface="Jerusalem"/>
+  <token id="21" lemma="for" pos="IN" surface="for"/>
+  <token id="22" lemma="the" pos="DT" surface="the"/>
+  <token id="23" lemma="christians" pos="NNPS" surface="Christians"/>
+  <token id="24" lemma="by" pos="IN" surface="by"/>
+  <token id="25" lemma="negotiation" pos="NN" surface="negotiation"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="17" to="1" type="prep"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="1" to="4" type="pobj"/>
+  <dep from="6" to="5" type="punct"/>
+  <dep from="4" to="6" type="appos"/>
+  <dep from="8" to="7" type="punct"/>
+  <dep from="6" to="8" type="prep"/>
+  <dep from="6" to="9" type="punct"/>
+  <dep from="17" to="10" type="punct"/>
+  <dep from="16" to="11" type="det"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="16" to="13" type="compound"/>
+  <dep from="16" to="14" type="compound"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="17" to="16" type="nsubj"/>
+  <dep from="0" to="17" type="root"/>
+  <dep from="19" to="18" type="aux"/>
+  <dep from="17" to="19" type="xcomp"/>
+  <dep from="19" to="20" type="dobj"/>
+  <dep from="19" to="21" type="prep"/>
+  <dep from="23" to="22" type="det"/>
+  <dep from="21" to="23" type="pobj"/>
+  <dep from="19" to="24" type="prep"/>
+  <dep from="24" to="25" type="pobj"/>
+  <dep from="17" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Leader">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Governed">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Success_or_failure">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Getting">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_religion">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Means">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Means">
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105966">
+ <sentence>
+  The museum mounts special exhibitions and has an excellent gift shop .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="museum" pos="NN" surface="museum"/>
+  <token id="3" lemma="mount" pos="VBZ" surface="mounts"/>
+  <token id="4" lemma="special" pos="JJ" surface="special"/>
+  <token id="5" lemma="exhibition" pos="NNS" surface="exhibitions"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="have" pos="VBZ" surface="has"/>
+  <token id="8" lemma="an" pos="DT" surface="an"/>
+  <token id="9" lemma="excellent" pos="JJ" surface="excellent"/>
+  <token id="10" lemma="gift" pos="NN" surface="gift"/>
+  <token id="11" lemma="shop" pos="NN" surface="shop"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="cc"/>
+  <dep from="3" to="7" type="conj"/>
+  <dep from="11" to="8" type="det"/>
+  <dep from="11" to="9" type="amod"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="7" to="11" type="dobj"/>
+  <dep from="3" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirability">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Constituent_parts">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

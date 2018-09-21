@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099364">
+ <sentence>
+  During the Cold War , for example , the United States and the Soviet Union each supported sub - national groups engaged in proxy wars .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="during" pos="IN" surface="During"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="cold" pos="NNP" surface="Cold"/>
+  <token id="4" lemma="war" pos="NNP" surface="War"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="for" pos="IN" surface="for"/>
+  <token id="7" lemma="example" pos="NN" surface="example"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="united" pos="NNP" surface="United"/>
+  <token id="11" lemma="states" pos="NNP" surface="States"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="soviet" pos="NNP" surface="Soviet"/>
+  <token id="15" lemma="union" pos="NNP" surface="Union"/>
+  <token id="16" lemma="each" pos="DT" surface="each"/>
+  <token id="17" lemma="support" pos="VBD" surface="supported"/>
+  <token id="18" lemma="sub" pos="NN" surface="sub"/>
+  <token id="19" lemma="-" pos="HYPH" surface="-"/>
+  <token id="20" lemma="national" pos="JJ" surface="national"/>
+  <token id="21" lemma="group" pos="NNS" surface="groups"/>
+  <token id="22" lemma="engage" pos="VBD" surface="engaged"/>
+  <token id="23" lemma="in" pos="IN" surface="in"/>
+  <token id="24" lemma="proxy" pos="NN" surface="proxy"/>
+  <token id="25" lemma="war" pos="NNS" surface="wars"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="22" to="1" type="prep"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="1" to="4" type="pobj"/>
+  <dep from="22" to="5" type="punct"/>
+  <dep from="22" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="22" to="8" type="punct"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="22" to="11" type="nsubj"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="11" to="15" type="conj"/>
+  <dep from="21" to="16" type="det"/>
+  <dep from="21" to="17" type="amod"/>
+  <dep from="20" to="18" type="npadvmod"/>
+  <dep from="20" to="19" type="punct"/>
+  <dep from="21" to="20" type="amod"/>
+  <dep from="22" to="21" type="nsubj"/>
+  <dep from="0" to="22" type="root"/>
+  <dep from="22" to="23" type="prep"/>
+  <dep from="25" to="24" type="compound"/>
+  <dep from="23" to="25" type="pobj"/>
+  <dep from="22" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Taking_sides">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Side">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate_property">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Aggregate">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Act">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Depictive">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

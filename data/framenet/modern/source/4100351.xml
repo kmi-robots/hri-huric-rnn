@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100351">
+ <sentence>
+  After the initial years of Roman administration and political infighting , Rome installed Herod ( scion of a family from Idumea , a Jewish kingdom in the desert ) as King of Judea .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="after" pos="IN" surface="After"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="initial" pos="JJ" surface="initial"/>
+  <token id="4" lemma="year" pos="NNS" surface="years"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="roman" pos="JJ" surface="Roman"/>
+  <token id="7" lemma="administration" pos="NN" surface="administration"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="political" pos="JJ" surface="political"/>
+  <token id="10" lemma="infighting" pos="NN" surface="infighting"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="rome" pos="NNP" surface="Rome"/>
+  <token id="13" lemma="instal" pos="VBD" surface="installed"/>
+  <token id="14" lemma="herod" pos="NNP" surface="Herod"/>
+  <token id="15" lemma="(" pos="-LRB-" surface="("/>
+  <token id="16" lemma="scion" pos="NN" surface="scion"/>
+  <token id="17" lemma="of" pos="IN" surface="of"/>
+  <token id="18" lemma="a" pos="DT" surface="a"/>
+  <token id="19" lemma="family" pos="NN" surface="family"/>
+  <token id="20" lemma="from" pos="IN" surface="from"/>
+  <token id="21" lemma="idumea" pos="NNP" surface="Idumea"/>
+  <token id="22" lemma="," pos="," surface=","/>
+  <token id="23" lemma="a" pos="DT" surface="a"/>
+  <token id="24" lemma="jewish" pos="JJ" surface="Jewish"/>
+  <token id="25" lemma="kingdom" pos="NN" surface="kingdom"/>
+  <token id="26" lemma="in" pos="IN" surface="in"/>
+  <token id="27" lemma="the" pos="DT" surface="the"/>
+  <token id="28" lemma="desert" pos="NN" surface="desert"/>
+  <token id="29" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="30" lemma="as" pos="IN" surface="as"/>
+  <token id="31" lemma="king" pos="NNP" surface="King"/>
+  <token id="32" lemma="of" pos="IN" surface="of"/>
+  <token id="33" lemma="judea" pos="NNP" surface="Judea"/>
+  <token id="34" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="13" to="1" type="prep"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="1" to="4" type="pobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="7" to="10" type="conj"/>
+  <dep from="13" to="11" type="punct"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="16" to="14" type="nmod"/>
+  <dep from="16" to="15" type="punct"/>
+  <dep from="13" to="16" type="dobj"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="20" to="21" type="pobj"/>
+  <dep from="21" to="22" type="punct"/>
+  <dep from="25" to="23" type="det"/>
+  <dep from="25" to="24" type="amod"/>
+  <dep from="21" to="25" type="appos"/>
+  <dep from="25" to="26" type="prep"/>
+  <dep from="28" to="27" type="det"/>
+  <dep from="26" to="28" type="pobj"/>
+  <dep from="16" to="29" type="punct"/>
+  <dep from="13" to="30" type="prep"/>
+  <dep from="30" to="31" type="pobj"/>
+  <dep from="31" to="32" type="prep"/>
+  <dep from="32" to="33" type="pobj"/>
+  <dep from="13" to="34" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Relative_time">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Kinship">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Alter">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Ego">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Kinship">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Relatives">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Population">
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Relative_location">
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+    </frameElement>
+   </frame>
+   <frame name="Biological_area">
+    <lexicalUnit>
+     <token id="28"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="28"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="31"/>
+    </lexicalUnit>
+    <frameElement type="Governed">
+     <token id="32"/>
+     <token id="33"/>
+    </frameElement>
+    <frameElement type="Leader">
+     <token id="31"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_of_leadership">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Selector">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="New_leader">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+    </frameElement>
+    <frameElement type="Role">
+     <token id="30"/>
+     <token id="31"/>
+     <token id="32"/>
+     <token id="33"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

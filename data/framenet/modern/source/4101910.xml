@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101910">
+ <sentence>
+  4 BILL : Right .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="4" pos="CD" surface="4"/>
+  <token id="2" lemma="bill" pos="NN" surface="BILL"/>
+  <token id="3" lemma=":" pos=":" surface=":"/>
+  <token id="4" lemma="right" pos="UH" surface="Right"/>
+  <token id="5" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Correctness">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

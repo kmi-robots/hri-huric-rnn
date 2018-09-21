@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098252">
+ <sentence>
+  QN : Is Russia producing chemical weapons that can be concealed easily ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="be" pos="VBZ" surface="Is"/>
+  <token id="4" lemma="russia" pos="NNP" surface="Russia"/>
+  <token id="5" lemma="produce" pos="VBG" surface="producing"/>
+  <token id="6" lemma="chemical" pos="JJ" surface="chemical"/>
+  <token id="7" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="8" lemma="that" pos="WDT" surface="that"/>
+  <token id="9" lemma="can" pos="MD" surface="can"/>
+  <token id="10" lemma="be" pos="VB" surface="be"/>
+  <token id="11" lemma="conceal" pos="VBN" surface="concealed"/>
+  <token id="12" lemma="easily" pos="RB" surface="easily"/>
+  <token id="13" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="1" to="5" type="acl"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="11" to="8" type="nsubjpass"/>
+  <dep from="11" to="9" type="aux"/>
+  <dep from="11" to="10" type="auxpass"/>
+  <dep from="7" to="11" type="relcl"/>
+  <dep from="11" to="12" type="advmod"/>
+  <dep from="5" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Producer">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Product">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Capability">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

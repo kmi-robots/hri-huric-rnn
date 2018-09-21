@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106210">
+ <sentence>
+  Imported dried cod ( bacalhao ) is the Portuguese national dish ; several varieties are available , usually baked .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="import" pos="VBN" surface="Imported"/>
+  <token id="2" lemma="dry" pos="VBN" surface="dried"/>
+  <token id="3" lemma="cod" pos="NN" surface="cod"/>
+  <token id="4" lemma="(" pos="-LRB-" surface="("/>
+  <token id="5" lemma="bacalhao" pos="NN" surface="bacalhao"/>
+  <token id="6" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="7" lemma="be" pos="VBZ" surface="is"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="portuguese" pos="JJ" surface="Portuguese"/>
+  <token id="10" lemma="national" pos="JJ" surface="national"/>
+  <token id="11" lemma="dish" pos="NN" surface="dish"/>
+  <token id="12" lemma=";" pos="," surface=";"/>
+  <token id="13" lemma="several" pos="JJ" surface="several"/>
+  <token id="14" lemma="variety" pos="NNS" surface="varieties"/>
+  <token id="15" lemma="be" pos="VBP" surface="are"/>
+  <token id="16" lemma="available" pos="JJ" surface="available"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="usually" pos="RB" surface="usually"/>
+  <token id="19" lemma="bake" pos="VBN" surface="baked"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="amod"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="7" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="3" to="5" type="appos"/>
+  <dep from="3" to="6" type="punct"/>
+  <dep from="15" to="7" type="ccomp"/>
+  <dep from="11" to="8" type="det"/>
+  <dep from="11" to="9" type="amod"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="7" to="11" type="attr"/>
+  <dep from="15" to="12" type="punct"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="0" to="15" type="root"/>
+  <dep from="15" to="16" type="acomp"/>
+  <dep from="15" to="17" type="punct"/>
+  <dep from="19" to="18" type="advmod"/>
+  <dep from="15" to="19" type="acomp"/>
+  <dep from="15" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Importing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Preserving">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Type">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Category">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Subtype">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Item_property">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Cooking_creation">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

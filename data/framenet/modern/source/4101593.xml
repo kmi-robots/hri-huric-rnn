@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101593">
+ <sentence>
+  Mr . Barco has refused U.S. troops or advisers but has accepted U.S. military aid .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="mr" pos="NNP" surface="Mr"/>
+  <token id="2" lemma="." pos="." surface="."/>
+  <token id="3" lemma="barco" pos="NNP" surface="Barco"/>
+  <token id="4" lemma="have" pos="VBZ" surface="has"/>
+  <token id="5" lemma="refuse" pos="VBN" surface="refused"/>
+  <token id="6" lemma="u.s." pos="NNP" surface="U.S."/>
+  <token id="7" lemma="troop" pos="NNS" surface="troops"/>
+  <token id="8" lemma="or" pos="CC" surface="or"/>
+  <token id="9" lemma="adviser" pos="NNS" surface="advisers"/>
+  <token id="10" lemma="but" pos="CC" surface="but"/>
+  <token id="11" lemma="have" pos="VBZ" surface="has"/>
+  <token id="12" lemma="accept" pos="VBN" surface="accepted"/>
+  <token id="13" lemma="u.s." pos="NNP" surface="U.S."/>
+  <token id="14" lemma="military" pos="JJ" surface="military"/>
+  <token id="15" lemma="aid" pos="NN" surface="aid"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="7" to="9" type="conj"/>
+  <dep from="5" to="10" type="cc"/>
+  <dep from="12" to="11" type="aux"/>
+  <dep from="5" to="12" type="conj"/>
+  <dep from="15" to="13" type="nmod"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="12" to="15" type="dobj"/>
+  <dep from="5" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Military">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Force">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Domain">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Helper">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Benefited_party">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Respond_to_proposal">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Proposal">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Interlocutor">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

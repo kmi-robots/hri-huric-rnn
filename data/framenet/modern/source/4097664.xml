@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097664">
+ <sentence>
+  In January 2004 , a delegation of American private citizens confirmed that the cannisters in the temporary storage pond were empty .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="january" pos="NNP" surface="January"/>
+  <token id="3" lemma="2004" pos="CD" surface="2004"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="delegation" pos="NN" surface="delegation"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="american" pos="JJ" surface="American"/>
+  <token id="9" lemma="private" pos="JJ" surface="private"/>
+  <token id="10" lemma="citizen" pos="NNS" surface="citizens"/>
+  <token id="11" lemma="confirm" pos="VBD" surface="confirmed"/>
+  <token id="12" lemma="that" pos="IN" surface="that"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="cannister" pos="NNS" surface="cannisters"/>
+  <token id="15" lemma="in" pos="IN" surface="in"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="temporary" pos="JJ" surface="temporary"/>
+  <token id="18" lemma="storage" pos="NN" surface="storage"/>
+  <token id="19" lemma="pond" pos="NN" surface="pond"/>
+  <token id="20" lemma="be" pos="VBD" surface="were"/>
+  <token id="21" lemma="empty" pos="JJ" surface="empty"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="11" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="2" to="3" type="nummod"/>
+  <dep from="11" to="4" type="punct"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="11" to="6" type="nsubj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="10" to="8" type="amod"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="20" to="12" type="mark"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="20" to="14" type="nsubj"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="19" to="16" type="det"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="15" to="19" type="pobj"/>
+  <dep from="11" to="20" type="ccomp"/>
+  <dep from="20" to="21" type="acomp"/>
+  <dep from="11" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People_by_jurisdiction">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Verification">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Unconfirmed_content">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Inspector">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Fullness">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Container">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

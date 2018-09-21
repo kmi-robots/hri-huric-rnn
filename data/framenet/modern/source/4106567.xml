@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106567">
+ <sentence>
+  Some , like Jerry , are ex - offenders .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="some" pos="DT" surface="Some"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="like" pos="IN" surface="like"/>
+  <token id="4" lemma="jerry" pos="NNP" surface="Jerry"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="be" pos="VBP" surface="are"/>
+  <token id="7" lemma="ex" pos="CD" surface="ex"/>
+  <token id="8" lemma="-" pos="," surface="-"/>
+  <token id="9" lemma="offender" pos="NNS" surface="offenders"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="nsubj"/>
+  <dep from="6" to="2" type="punct"/>
+  <dep from="6" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="6" to="5" type="punct"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="nmod"/>
+  <dep from="9" to="8" type="punct"/>
+  <dep from="10" to="9" type="punct"/>
+  <dep from="6" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Denoted_quantity">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

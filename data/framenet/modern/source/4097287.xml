@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097287">
+ <sentence>
+  Is there evidence that Iran is stockpiling enriched uranium ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="be" pos="VBZ" surface="Is"/>
+  <token id="2" lemma="there" pos="EX" surface="there"/>
+  <token id="3" lemma="evidence" pos="NN" surface="evidence"/>
+  <token id="4" lemma="that" pos="IN" surface="that"/>
+  <token id="5" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="6" lemma="be" pos="VBZ" surface="is"/>
+  <token id="7" lemma="stockpile" pos="VBG" surface="stockpiling"/>
+  <token id="8" lemma="enrich" pos="VBN" surface="enriched"/>
+  <token id="9" lemma="uranium" pos="NN" surface="uranium"/>
+  <token id="10" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="expl"/>
+  <dep from="1" to="3" type="attr"/>
+  <dep from="7" to="4" type="mark"/>
+  <dep from="7" to="5" type="nsubj"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="3" to="7" type="acl"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="1" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Evidence">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Proposition">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Support">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Degree_of_processing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Material">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Amassing">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Mass_theme">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

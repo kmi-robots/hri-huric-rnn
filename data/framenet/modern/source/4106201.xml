@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106201">
+ <sentence>
+  Knowledgeable visitors look for antiques - either Chinese heirlooms or leftovers from the gracious Portuguese colonial days .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="knowledgeable" pos="JJ" surface="Knowledgeable"/>
+  <token id="2" lemma="visitor" pos="NNS" surface="visitors"/>
+  <token id="3" lemma="look" pos="VBP" surface="look"/>
+  <token id="4" lemma="for" pos="IN" surface="for"/>
+  <token id="5" lemma="antique" pos="NNS" surface="antiques"/>
+  <token id="6" lemma="-" pos=":" surface="-"/>
+  <token id="7" lemma="either" pos="CC" surface="either"/>
+  <token id="8" lemma="chinese" pos="JJ" surface="Chinese"/>
+  <token id="9" lemma="heirloom" pos="NNS" surface="heirlooms"/>
+  <token id="10" lemma="or" pos="CC" surface="or"/>
+  <token id="11" lemma="leftover" pos="NNS" surface="leftovers"/>
+  <token id="12" lemma="from" pos="IN" surface="from"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="gracious" pos="JJ" surface="gracious"/>
+  <token id="15" lemma="portuguese" pos="JJ" surface="Portuguese"/>
+  <token id="16" lemma="colonial" pos="JJ" surface="colonial"/>
+  <token id="17" lemma="day" pos="NNS" surface="days"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="5" to="6" type="punct"/>
+  <dep from="9" to="7" type="preconj"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="5" to="9" type="appos"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="9" to="11" type="conj"/>
+  <dep from="5" to="12" type="prep"/>
+  <dep from="17" to="13" type="det"/>
+  <dep from="17" to="14" type="amod"/>
+  <dep from="17" to="15" type="amod"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="12" to="17" type="pobj"/>
+  <dep from="3" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Expertise">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Visiting">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Seeking">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer_agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Sought_entity">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Social_interaction_evaluation">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

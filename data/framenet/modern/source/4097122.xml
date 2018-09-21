@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097122">
+ <sentence>
+  Most of these claims can not be verified in open sources .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="most" pos="JJS" surface="Most"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="these" pos="DT" surface="these"/>
+  <token id="4" lemma="claim" pos="NNS" surface="claims"/>
+  <token id="5" lemma="can" pos="MD" surface="can"/>
+  <token id="6" lemma="not" pos="RB" surface="not"/>
+  <token id="7" lemma="be" pos="VB" surface="be"/>
+  <token id="8" lemma="verify" pos="VBN" surface="verified"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="open" pos="JJ" surface="open"/>
+  <token id="11" lemma="source" pos="NNS" surface="sources"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="nsubjpass"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="8" to="5" type="aux"/>
+  <dep from="8" to="6" type="neg"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="8" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Verification">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Unconfirmed_content">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Source_of_getting">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Secrecy_status">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

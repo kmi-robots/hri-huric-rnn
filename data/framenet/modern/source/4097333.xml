@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097333">
+ <sentence>
+  A Belgian newspaper claims that Belgium has provided nuclear - related training to Iranians. ( 2455 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="belgian" pos="JJ" surface="Belgian"/>
+  <token id="3" lemma="newspaper" pos="NN" surface="newspaper"/>
+  <token id="4" lemma="claim" pos="VBZ" surface="claims"/>
+  <token id="5" lemma="that" pos="IN" surface="that"/>
+  <token id="6" lemma="belgium" pos="NNP" surface="Belgium"/>
+  <token id="7" lemma="have" pos="VBZ" surface="has"/>
+  <token id="8" lemma="provide" pos="VBN" surface="provided"/>
+  <token id="9" lemma="nuclear" pos="RB" surface="nuclear"/>
+  <token id="10" lemma="-" pos="HYPH" surface="-"/>
+  <token id="11" lemma="relate" pos="VBN" surface="related"/>
+  <token id="12" lemma="training" pos="NN" surface="training"/>
+  <token id="13" lemma="to" pos="IN" surface="to"/>
+  <token id="14" lemma="iranians." pos="NNP" surface="Iranians."/>
+  <token id="15" lemma="(" pos="-LRB-" surface="("/>
+  <token id="16" lemma="2455" pos="CD" surface="2455"/>
+  <token id="17" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="8" to="5" type="mark"/>
+  <dep from="8" to="6" type="nsubj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="4" to="8" type="ccomp"/>
+  <dep from="11" to="9" type="npadvmod"/>
+  <dep from="11" to="10" type="punct"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="8" to="12" type="dobj"/>
+  <dep from="8" to="13" type="dative"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="14" to="15" type="punct"/>
+  <dep from="14" to="16" type="appos"/>
+  <dep from="14" to="17" type="punct"/>
+  <dep from="4" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Supplier">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Cognitive_connection">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Concept_2">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Concept_1">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Education_teaching">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Skill">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Teacher">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Student">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

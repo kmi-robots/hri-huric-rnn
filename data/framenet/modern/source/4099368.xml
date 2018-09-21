@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099368">
+ <sentence>
+  Differences between Chemical and Biological Weapons
+ </sentence>
+ <tokens>
+  <token id="1" lemma="difference" pos="NNS" surface="Differences"/>
+  <token id="2" lemma="between" pos="IN" surface="between"/>
+  <token id="3" lemma="chemical" pos="NNP" surface="Chemical"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="biological" pos="NNP" surface="Biological"/>
+  <token id="6" lemma="weapons" pos="NNPS" surface="Weapons"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="2" to="3" type="pobj"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="3" to="6" type="conj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Similarity">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Entities">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

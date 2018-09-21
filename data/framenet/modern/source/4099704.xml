@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099704">
+ <sentence>
+  Testing of agents is also reportedly performed at these two locations , possibly in very large underground facilities .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="testing" pos="NN" surface="Testing"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="agent" pos="NNS" surface="agents"/>
+  <token id="4" lemma="be" pos="VBZ" surface="is"/>
+  <token id="5" lemma="also" pos="RB" surface="also"/>
+  <token id="6" lemma="reportedly" pos="RB" surface="reportedly"/>
+  <token id="7" lemma="perform" pos="VBN" surface="performed"/>
+  <token id="8" lemma="at" pos="IN" surface="at"/>
+  <token id="9" lemma="these" pos="DT" surface="these"/>
+  <token id="10" lemma="two" pos="CD" surface="two"/>
+  <token id="11" lemma="location" pos="NNS" surface="locations"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="possibly" pos="RB" surface="possibly"/>
+  <token id="14" lemma="in" pos="IN" surface="in"/>
+  <token id="15" lemma="very" pos="RB" surface="very"/>
+  <token id="16" lemma="large" pos="JJ" surface="large"/>
+  <token id="17" lemma="underground" pos="JJ" surface="underground"/>
+  <token id="18" lemma="facility" pos="NNS" surface="facilities"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="nsubjpass"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="2" to="3" type="pobj"/>
+  <dep from="7" to="4" type="auxpass"/>
+  <dep from="7" to="5" type="advmod"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="nummod"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="7" to="12" type="punct"/>
+  <dep from="14" to="13" type="advmod"/>
+  <dep from="7" to="14" type="prep"/>
+  <dep from="16" to="15" type="advmod"/>
+  <dep from="18" to="16" type="amod"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="14" to="18" type="pobj"/>
+  <dep from="7" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Operational_testing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Active_substance">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Unattributed_information">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Reported_fact">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Reported_fact">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Act">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Size">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Relative_location">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

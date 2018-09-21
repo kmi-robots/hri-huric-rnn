@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165042">
+ <sentence>
+  Firefighters rescue nearly a dozen animals in Buffalo , New York house fire
+ </sentence>
+ <tokens>
+  <token id="1" lemma="firefighter" pos="NNS" surface="Firefighters"/>
+  <token id="2" lemma="rescue" pos="VBP" surface="rescue"/>
+  <token id="3" lemma="nearly" pos="RB" surface="nearly"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="dozen" pos="NN" surface="dozen"/>
+  <token id="6" lemma="animal" pos="NNS" surface="animals"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="buffalo" pos="NNP" surface="Buffalo"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="new" pos="NNP" surface="New"/>
+  <token id="11" lemma="york" pos="NNP" surface="York"/>
+  <token id="12" lemma="house" pos="NN" surface="house"/>
+  <token id="13" lemma="fire" pos="NN" surface="fire"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="advmod"/>
+  <dep from="5" to="4" type="quantmod"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="2" to="6" type="dobj"/>
+  <dep from="2" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="13" to="11" type="compound"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="2" to="13" type="npadvmod"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Reference_quantity">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Denoted_quantity">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Fire_burning">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Fire">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Fuel">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Animals">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Animal">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Rescuing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Patient">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Harmful_situation">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

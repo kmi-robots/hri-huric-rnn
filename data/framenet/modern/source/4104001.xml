@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4104001">
+ <sentence>
+  But in fact , once news of the handover vanished from the front pages , the people of Hong Kong returned to their usual topics of conversation : the economy and the price of housing .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="but" pos="CC" surface="But"/>
+  <token id="2" lemma="in" pos="IN" surface="in"/>
+  <token id="3" lemma="fact" pos="NN" surface="fact"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="once" pos="RB" surface="once"/>
+  <token id="6" lemma="news" pos="NN" surface="news"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="handover" pos="NN" surface="handover"/>
+  <token id="10" lemma="vanish" pos="VBN" surface="vanished"/>
+  <token id="11" lemma="from" pos="IN" surface="from"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="front" pos="JJ" surface="front"/>
+  <token id="14" lemma="page" pos="NNS" surface="pages"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="people" pos="NNS" surface="people"/>
+  <token id="18" lemma="of" pos="IN" surface="of"/>
+  <token id="19" lemma="hong" pos="NNP" surface="Hong"/>
+  <token id="20" lemma="kong" pos="NNP" surface="Kong"/>
+  <token id="21" lemma="return" pos="VBD" surface="returned"/>
+  <token id="22" lemma="to" pos="IN" surface="to"/>
+  <token id="23" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="24" lemma="usual" pos="JJ" surface="usual"/>
+  <token id="25" lemma="topic" pos="NNS" surface="topics"/>
+  <token id="26" lemma="of" pos="IN" surface="of"/>
+  <token id="27" lemma="conversation" pos="NN" surface="conversation"/>
+  <token id="28" lemma=":" pos=":" surface=":"/>
+  <token id="29" lemma="the" pos="DT" surface="the"/>
+  <token id="30" lemma="economy" pos="NN" surface="economy"/>
+  <token id="31" lemma="and" pos="CC" surface="and"/>
+  <token id="32" lemma="the" pos="DT" surface="the"/>
+  <token id="33" lemma="price" pos="NN" surface="price"/>
+  <token id="34" lemma="of" pos="IN" surface="of"/>
+  <token id="35" lemma="housing" pos="NN" surface="housing"/>
+  <token id="36" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="21" to="1" type="cc"/>
+  <dep from="21" to="2" type="prep"/>
+  <dep from="2" to="3" type="pobj"/>
+  <dep from="21" to="4" type="punct"/>
+  <dep from="10" to="5" type="mark"/>
+  <dep from="10" to="6" type="nsubj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="21" to="10" type="advcl"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="21" to="15" type="punct"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="21" to="17" type="nsubj"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="18" to="20" type="pobj"/>
+  <dep from="0" to="21" type="root"/>
+  <dep from="21" to="22" type="prep"/>
+  <dep from="25" to="23" type="poss"/>
+  <dep from="25" to="24" type="amod"/>
+  <dep from="22" to="25" type="pobj"/>
+  <dep from="25" to="26" type="prep"/>
+  <dep from="26" to="27" type="pobj"/>
+  <dep from="21" to="28" type="punct"/>
+  <dep from="30" to="29" type="det"/>
+  <dep from="17" to="30" type="appos"/>
+  <dep from="30" to="31" type="cc"/>
+  <dep from="33" to="32" type="det"/>
+  <dep from="30" to="33" type="conj"/>
+  <dep from="33" to="34" type="prep"/>
+  <dep from="34" to="35" type="pobj"/>
+  <dep from="21" to="36" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Departing">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Topic">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Topic">
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+    <frameElement type="Communicator">
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Chatting">
+    <lexicalUnit>
+     <token id="27"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Economy">
+    <lexicalUnit>
+     <token id="30"/>
+    </lexicalUnit>
+    <frameElement type="Economy">
+     <token id="30"/>
+    </frameElement>
+   </frame>
+   <frame name="Commerce_scenario">
+    <lexicalUnit>
+     <token id="33"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="34"/>
+     <token id="35"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="35"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="35"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

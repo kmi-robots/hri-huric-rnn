@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097257">
+ <sentence>
+  Nevertheless , it continues to upgrade and expand its chemical warfare production infrastructure and munitions arsenal .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="nevertheless" pos="RB" surface="Nevertheless"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="4" lemma="continue" pos="VBZ" surface="continues"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="upgrade" pos="VB" surface="upgrade"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="expand" pos="VB" surface="expand"/>
+  <token id="9" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="10" lemma="chemical" pos="NN" surface="chemical"/>
+  <token id="11" lemma="warfare" pos="NN" surface="warfare"/>
+  <token id="12" lemma="production" pos="NN" surface="production"/>
+  <token id="13" lemma="infrastructure" pos="NN" surface="infrastructure"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="munition" pos="NNS" surface="munitions"/>
+  <token id="16" lemma="arsenal" pos="JJ" surface="arsenal"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="4" to="2" type="punct"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="4" to="6" type="xcomp"/>
+  <dep from="6" to="7" type="cc"/>
+  <dep from="6" to="8" type="conj"/>
+  <dep from="16" to="9" type="poss"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="13" to="11" type="nmod"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="16" to="13" type="nmod"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="8" to="16" type="dobj"/>
+  <dep from="4" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Activity_ongoing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Instrument">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Infrastructure">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Possessor">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100605">
+ <sentence>
+  Up the hill from Temple Bar are Dublin Castle and Christ Church Cathedral .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="up" pos="IN" surface="Up"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="hill" pos="NN" surface="hill"/>
+  <token id="4" lemma="from" pos="IN" surface="from"/>
+  <token id="5" lemma="temple" pos="NNP" surface="Temple"/>
+  <token id="6" lemma="bar" pos="NNP" surface="Bar"/>
+  <token id="7" lemma="be" pos="VBP" surface="are"/>
+  <token id="8" lemma="dublin" pos="NNP" surface="Dublin"/>
+  <token id="9" lemma="castle" pos="NNP" surface="Castle"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="christ" pos="NNP" surface="Christ"/>
+  <token id="12" lemma="church" pos="NNP" surface="Church"/>
+  <token id="13" lemma="cathedral" pos="NNP" surface="Cathedral"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="7" to="9" type="attr"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="9" to="13" type="conj"/>
+  <dep from="7" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

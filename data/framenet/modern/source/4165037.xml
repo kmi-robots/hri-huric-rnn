@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165037">
+ <sentence>
+  There were fears that the crane could buckle due to the heat and collapse .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBD" surface="were"/>
+  <token id="3" lemma="fear" pos="NNS" surface="fears"/>
+  <token id="4" lemma="that" pos="IN" surface="that"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="crane" pos="NN" surface="crane"/>
+  <token id="7" lemma="could" pos="MD" surface="could"/>
+  <token id="8" lemma="buckle" pos="VB" surface="buckle"/>
+  <token id="9" lemma="due" pos="IN" surface="due"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="heat" pos="NN" surface="heat"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="collapse" pos="VB" surface="collapse"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="attr"/>
+  <dep from="8" to="4" type="mark"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="8" to="6" type="nsubj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="3" to="8" type="acl"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pcomp"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="12" to="14" type="conj"/>
+  <dep from="2" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Fear">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Stimulus">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Possibility">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Possible_event">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Possible_event">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

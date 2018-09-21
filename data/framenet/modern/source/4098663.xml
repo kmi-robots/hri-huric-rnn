@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098663">
+ <sentence>
+  Steve , who was sitting next to John , got down in Rome .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="steve" pos="NNP" surface="Steve"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="who" pos="WP" surface="who"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="sit" pos="VBG" surface="sitting"/>
+  <token id="6" lemma="next" pos="JJ" surface="next"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="john" pos="NNP" surface="John"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="get" pos="VBD" surface="got"/>
+  <token id="11" lemma="down" pos="RP" surface="down"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="rome" pos="NNP" surface="Rome"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="1" to="5" type="relcl"/>
+  <dep from="5" to="6" type="advmod"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="10" to="9" type="punct"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="prt"/>
+  <dep from="10" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="10" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Posture">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Disembarking">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Traveller">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Vehicle">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

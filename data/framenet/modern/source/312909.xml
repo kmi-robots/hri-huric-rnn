@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="312909">
+ <sentence>
+  It was part of the economy drive in preparation for Hate Week .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="It"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="part" pos="NN" surface="part"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="economy" pos="NN" surface="economy"/>
+  <token id="7" lemma="drive" pos="NN" surface="drive"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="preparation" pos="NN" surface="preparation"/>
+  <token id="10" lemma="for" pos="IN" surface="for"/>
+  <token id="11" lemma="hate" pos="NNP" surface="Hate"/>
+  <token id="12" lemma="week" pos="NNP" surface="Week"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="attr"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="4" to="7" type="pobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="7" to="10" type="prep"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="2" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Salient_event">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Activity_prepare">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_whole">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Whole">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Frugality">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Experiencer_focus">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

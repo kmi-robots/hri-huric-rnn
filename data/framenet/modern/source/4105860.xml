@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105860">
+ <sentence>
+  These gardens used to belong to the governor 's mountain lodge , but the building was demolished by the Japanese during the occupation of Hong Kong .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="these" pos="DT" surface="These"/>
+  <token id="2" lemma="garden" pos="NNS" surface="gardens"/>
+  <token id="3" lemma="use" pos="VBD" surface="used"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="belong" pos="VB" surface="belong"/>
+  <token id="6" lemma="to" pos="IN" surface="to"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="governor" pos="NN" surface="governor"/>
+  <token id="9" lemma="'s" pos="POS" surface="'s"/>
+  <token id="10" lemma="mountain" pos="NN" surface="mountain"/>
+  <token id="11" lemma="lodge" pos="NN" surface="lodge"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="but" pos="CC" surface="but"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="building" pos="NN" surface="building"/>
+  <token id="16" lemma="be" pos="VBD" surface="was"/>
+  <token id="17" lemma="demolish" pos="VBN" surface="demolished"/>
+  <token id="18" lemma="by" pos="IN" surface="by"/>
+  <token id="19" lemma="the" pos="DT" surface="the"/>
+  <token id="20" lemma="japanese" pos="NNPS" surface="Japanese"/>
+  <token id="21" lemma="during" pos="IN" surface="during"/>
+  <token id="22" lemma="the" pos="DT" surface="the"/>
+  <token id="23" lemma="occupation" pos="NN" surface="occupation"/>
+  <token id="24" lemma="of" pos="IN" surface="of"/>
+  <token id="25" lemma="hong" pos="NNP" surface="Hong"/>
+  <token id="26" lemma="kong" pos="NNP" surface="Kong"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="xcomp"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="11" to="8" type="poss"/>
+  <dep from="8" to="9" type="case"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="6" to="11" type="pobj"/>
+  <dep from="3" to="12" type="punct"/>
+  <dep from="3" to="13" type="cc"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="17" to="15" type="nsubjpass"/>
+  <dep from="17" to="16" type="auxpass"/>
+  <dep from="3" to="17" type="conj"/>
+  <dep from="17" to="18" type="agent"/>
+  <dep from="20" to="19" type="det"/>
+  <dep from="18" to="20" type="pobj"/>
+  <dep from="17" to="21" type="prep"/>
+  <dep from="23" to="22" type="det"/>
+  <dep from="21" to="23" type="pobj"/>
+  <dep from="23" to="24" type="prep"/>
+  <dep from="26" to="25" type="compound"/>
+  <dep from="24" to="26" type="pobj"/>
+  <dep from="17" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Possession">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Owner">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Destroying">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Destroyer">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Containing_event">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_period">
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

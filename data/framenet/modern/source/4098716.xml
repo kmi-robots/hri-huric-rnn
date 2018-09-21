@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098716">
+ <sentence>
+  QN : In which city is John 's laptop on the evening of Dec 11th ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="in" pos="IN" surface="In"/>
+  <token id="4" lemma="which" pos="WDT" surface="which"/>
+  <token id="5" lemma="city" pos="NN" surface="city"/>
+  <token id="6" lemma="be" pos="VBZ" surface="is"/>
+  <token id="7" lemma="john" pos="NNP" surface="John"/>
+  <token id="8" lemma="'s" pos="POS" surface="'s"/>
+  <token id="9" lemma="laptop" pos="NN" surface="laptop"/>
+  <token id="10" lemma="on" pos="IN" surface="on"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="evening" pos="NN" surface="evening"/>
+  <token id="13" lemma="of" pos="IN" surface="of"/>
+  <token id="14" lemma="dec" pos="NNP" surface="Dec"/>
+  <token id="15" lemma="11th" pos="NN" surface="11th"/>
+  <token id="16" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="6" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="1" to="6" type="ccomp"/>
+  <dep from="9" to="7" type="poss"/>
+  <dep from="7" to="8" type="case"/>
+  <dep from="6" to="9" type="attr"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="1" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

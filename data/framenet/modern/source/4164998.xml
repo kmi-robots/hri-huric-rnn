@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4164998">
+ <sentence>
+  California wildfires continue to spread
+ </sentence>
+ <tokens>
+  <token id="1" lemma="california" pos="NNP" surface="California"/>
+  <token id="2" lemma="wildfire" pos="NNS" surface="wildfires"/>
+  <token id="3" lemma="continue" pos="VBP" surface="continue"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="spread" pos="VB" surface="spread"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="xcomp"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Emergency_fire">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Fire">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Process_continue">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Expansion">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

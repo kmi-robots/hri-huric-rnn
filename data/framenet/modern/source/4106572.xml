@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106572">
+ <sentence>
+  For as long as he needs it , Goodwill will continue to help .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="for" pos="IN" surface="For"/>
+  <token id="2" lemma="as" pos="RB" surface="as"/>
+  <token id="3" lemma="long" pos="RB" surface="long"/>
+  <token id="4" lemma="as" pos="IN" surface="as"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="6" lemma="need" pos="VBZ" surface="needs"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="goodwill" pos="NNP" surface="Goodwill"/>
+  <token id="10" lemma="will" pos="MD" surface="will"/>
+  <token id="11" lemma="continue" pos="VB" surface="continue"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="help" pos="VB" surface="help"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="11" to="1" type="prep"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="1" to="3" type="pcomp"/>
+  <dep from="6" to="4" type="mark"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="3" to="6" type="advcl"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="11" to="8" type="punct"/>
+  <dep from="11" to="9" type="nsubj"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="11" to="13" type="xcomp"/>
+  <dep from="11" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Activity_ongoing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Helper">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Needing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Requirement">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

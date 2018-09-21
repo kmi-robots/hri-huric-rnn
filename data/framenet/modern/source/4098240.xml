@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098240">
+ <sentence>
+  Russia currently lacks the necessary capacity to dispose of its chemical munitions .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="russia" pos="NNP" surface="Russia"/>
+  <token id="2" lemma="currently" pos="RB" surface="currently"/>
+  <token id="3" lemma="lack" pos="VBZ" surface="lacks"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="necessary" pos="JJ" surface="necessary"/>
+  <token id="6" lemma="capacity" pos="NN" surface="capacity"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="dispose" pos="VB" surface="dispose"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="11" lemma="chemical" pos="JJ" surface="chemical"/>
+  <token id="12" lemma="munition" pos="NNS" surface="munitions"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="6" to="8" type="relcl"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="poss"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="3" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_necessary">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Required_entity">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Dependent">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Ammunition">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Ammunition">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

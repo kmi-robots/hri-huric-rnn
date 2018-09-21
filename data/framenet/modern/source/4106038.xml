@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106038">
+ <sentence>
+  The museum has an art collection , and displays of toys and other artifacts .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="museum" pos="NN" surface="museum"/>
+  <token id="3" lemma="have" pos="VBZ" surface="has"/>
+  <token id="4" lemma="an" pos="DT" surface="an"/>
+  <token id="5" lemma="art" pos="NN" surface="art"/>
+  <token id="6" lemma="collection" pos="NN" surface="collection"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="display" pos="NNS" surface="displays"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="toy" pos="NNS" surface="toys"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="other" pos="JJ" surface="other"/>
+  <token id="14" lemma="artifact" pos="NNS" surface="artifacts"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="punct"/>
+  <dep from="3" to="8" type="cc"/>
+  <dep from="3" to="9" type="conj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="conj"/>
+  <dep from="3" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Aggregate">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Class">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Artifact">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Artifact">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Inclusion">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Total">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

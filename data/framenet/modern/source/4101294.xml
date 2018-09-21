@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101294">
+ <sentence>
+  Even after the fighting stopped more than a decade later , the country was not stable .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="even" pos="RB" surface="Even"/>
+  <token id="2" lemma="after" pos="IN" surface="after"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="fighting" pos="NN" surface="fighting"/>
+  <token id="5" lemma="stop" pos="VBD" surface="stopped"/>
+  <token id="6" lemma="more" pos="JJR" surface="more"/>
+  <token id="7" lemma="than" pos="IN" surface="than"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="decade" pos="NN" surface="decade"/>
+  <token id="10" lemma="later" pos="RB" surface="later"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="country" pos="NN" surface="country"/>
+  <token id="14" lemma="be" pos="VBD" surface="was"/>
+  <token id="15" lemma="not" pos="RB" surface="not"/>
+  <token id="16" lemma="stable" pos="JJ" surface="stable"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="advmod"/>
+  <dep from="5" to="2" type="mark"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="14" to="5" type="advcl"/>
+  <dep from="5" to="6" type="advmod"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="10" to="9" type="npadvmod"/>
+  <dep from="7" to="10" type="pcomp"/>
+  <dep from="14" to="11" type="punct"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="14" to="13" type="nsubj"/>
+  <dep from="0" to="14" type="root"/>
+  <dep from="14" to="15" type="neg"/>
+  <dep from="14" to="16" type="acomp"/>
+  <dep from="14" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Process_stop">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Process">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Class">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Time_vector">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Direction">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Landmark_event">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Time_vector">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Distance">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

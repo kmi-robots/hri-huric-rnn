@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096935">
+ <sentence>
+  However , the available information does not disprove allegations made by a variety of sources .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="however" pos="RB" surface="However"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="available" pos="JJ" surface="available"/>
+  <token id="5" lemma="information" pos="NN" surface="information"/>
+  <token id="6" lemma="do" pos="VBZ" surface="does"/>
+  <token id="7" lemma="not" pos="RB" surface="not"/>
+  <token id="8" lemma="disprove" pos="VB" surface="disprove"/>
+  <token id="9" lemma="allegation" pos="NNS" surface="allegations"/>
+  <token id="10" lemma="make" pos="VBN" surface="made"/>
+  <token id="11" lemma="by" pos="IN" surface="by"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="variety" pos="NN" surface="variety"/>
+  <token id="14" lemma="of" pos="IN" surface="of"/>
+  <token id="15" lemma="source" pos="NNS" surface="sources"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="advmod"/>
+  <dep from="8" to="2" type="punct"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="8" to="5" type="nsubj"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="neg"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="9" to="10" type="acl"/>
+  <dep from="10" to="11" type="agent"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="8" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Evidence">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Support">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Proposition">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Source_of_getting">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Source">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Information">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Information">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

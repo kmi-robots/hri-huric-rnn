@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824538">
+ <sentence>
+  In the nine months , net rose 4.3 % to $ 525.8 million or $ 4.67 a share , from $ 504.2 million , or $ 4.41 a share , last year .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="nine" pos="CD" surface="nine"/>
+  <token id="4" lemma="month" pos="NNS" surface="months"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="net" pos="NN" surface="net"/>
+  <token id="7" lemma="rise" pos="VBD" surface="rose"/>
+  <token id="8" lemma="4.3" pos="CD" surface="4.3"/>
+  <token id="9" lemma="%" pos="NN" surface="%"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="$" pos="$" surface="$"/>
+  <token id="12" lemma="525.8" pos="CD" surface="525.8"/>
+  <token id="13" lemma="million" pos="CD" surface="million"/>
+  <token id="14" lemma="or" pos="CC" surface="or"/>
+  <token id="15" lemma="$" pos="$" surface="$"/>
+  <token id="16" lemma="4.67" pos="CD" surface="4.67"/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="share" pos="NN" surface="share"/>
+  <token id="19" lemma="," pos="," surface=","/>
+  <token id="20" lemma="from" pos="IN" surface="from"/>
+  <token id="21" lemma="$" pos="$" surface="$"/>
+  <token id="22" lemma="504.2" pos="CD" surface="504.2"/>
+  <token id="23" lemma="million" pos="CD" surface="million"/>
+  <token id="24" lemma="," pos="," surface=","/>
+  <token id="25" lemma="or" pos="CC" surface="or"/>
+  <token id="26" lemma="$" pos="$" surface="$"/>
+  <token id="27" lemma="4.41" pos="CD" surface="4.41"/>
+  <token id="28" lemma="a" pos="DT" surface="a"/>
+  <token id="29" lemma="share" pos="NN" surface="share"/>
+  <token id="30" lemma="," pos="," surface=","/>
+  <token id="31" lemma="last" pos="JJ" surface="last"/>
+  <token id="32" lemma="year" pos="NN" surface="year"/>
+  <token id="33" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="prep"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="nummod"/>
+  <dep from="1" to="4" type="pobj"/>
+  <dep from="7" to="5" type="punct"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="nummod"/>
+  <dep from="7" to="9" type="npadvmod"/>
+  <dep from="7" to="10" type="prep"/>
+  <dep from="13" to="11" type="quantmod"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="16" to="15" type="nmod"/>
+  <dep from="13" to="16" type="conj"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="13" to="18" type="npadvmod"/>
+  <dep from="7" to="19" type="punct"/>
+  <dep from="7" to="20" type="prep"/>
+  <dep from="23" to="21" type="quantmod"/>
+  <dep from="23" to="22" type="compound"/>
+  <dep from="20" to="23" type="pobj"/>
+  <dep from="23" to="24" type="punct"/>
+  <dep from="23" to="25" type="cc"/>
+  <dep from="27" to="26" type="nmod"/>
+  <dep from="23" to="27" type="conj"/>
+  <dep from="29" to="28" type="det"/>
+  <dep from="27" to="29" type="npadvmod"/>
+  <dep from="27" to="30" type="punct"/>
+  <dep from="32" to="31" type="amod"/>
+  <dep from="27" to="32" type="npadvmod"/>
+  <dep from="7" to="33" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Duration">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Attribute">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Difference">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Final_value">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Initial_value">
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="31"/>
+     <token id="32"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="32"/>
+    </lexicalUnit>
+    <frameElement type="Relative_time">
+     <token id="31"/>
+    </frameElement>
+   </frame>
+   <frame name="Earnings_and_losses">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Earnings">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Relative_time">
+    <lexicalUnit>
+     <token id="31"/>
+    </lexicalUnit>
+    <frameElement type="Focal_occasion">
+     <token id="32"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

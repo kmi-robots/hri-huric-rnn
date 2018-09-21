@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106560">
+ <sentence>
+  Jerry 's Goodwill caseworker found him a job immediately .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="jerry" pos="NNP" surface="Jerry"/>
+  <token id="2" lemma="'s" pos="POS" surface="'s"/>
+  <token id="3" lemma="goodwill" pos="NNP" surface="Goodwill"/>
+  <token id="4" lemma="caseworker" pos="NN" surface="caseworker"/>
+  <token id="5" lemma="find" pos="VBD" surface="found"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="job" pos="NN" surface="job"/>
+  <token id="9" lemma="immediately" pos="RB" surface="immediately"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="poss"/>
+  <dep from="1" to="2" type="case"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="8" to="6" type="nsubj"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="5" to="8" type="ccomp"/>
+  <dep from="5" to="9" type="advmod"/>
+  <dep from="5" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_employed">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148327">
+ <sentence>
+  Inspector Baynes , considering that such a visit must have some purpose in view and was likely , therefore , to be repeated , abandoned the house but left an ambuscade in the shrubbery .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="inspector" pos="NNP" surface="Inspector"/>
+  <token id="2" lemma="baynes" pos="NNP" surface="Baynes"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="consider" pos="VBG" surface="considering"/>
+  <token id="5" lemma="that" pos="IN" surface="that"/>
+  <token id="6" lemma="such" pos="PDT" surface="such"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="visit" pos="NN" surface="visit"/>
+  <token id="9" lemma="must" pos="MD" surface="must"/>
+  <token id="10" lemma="have" pos="VB" surface="have"/>
+  <token id="11" lemma="some" pos="DT" surface="some"/>
+  <token id="12" lemma="purpose" pos="NN" surface="purpose"/>
+  <token id="13" lemma="in" pos="IN" surface="in"/>
+  <token id="14" lemma="view" pos="NN" surface="view"/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="be" pos="VBD" surface="was"/>
+  <token id="17" lemma="likely" pos="JJ" surface="likely"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="therefore" pos="RB" surface="therefore"/>
+  <token id="20" lemma="," pos="," surface=","/>
+  <token id="21" lemma="to" pos="TO" surface="to"/>
+  <token id="22" lemma="be" pos="VB" surface="be"/>
+  <token id="23" lemma="repeat" pos="VBN" surface="repeated"/>
+  <token id="24" lemma="," pos="," surface=","/>
+  <token id="25" lemma="abandon" pos="VBD" surface="abandoned"/>
+  <token id="26" lemma="the" pos="DT" surface="the"/>
+  <token id="27" lemma="house" pos="NN" surface="house"/>
+  <token id="28" lemma="but" pos="CC" surface="but"/>
+  <token id="29" lemma="leave" pos="VBD" surface="left"/>
+  <token id="30" lemma="an" pos="DT" surface="an"/>
+  <token id="31" lemma="ambuscade" pos="NN" surface="ambuscade"/>
+  <token id="32" lemma="in" pos="IN" surface="in"/>
+  <token id="33" lemma="the" pos="DT" surface="the"/>
+  <token id="34" lemma="shrubbery" pos="NN" surface="shrubbery"/>
+  <token id="35" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="acl"/>
+  <dep from="10" to="5" type="mark"/>
+  <dep from="8" to="6" type="predet"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="10" to="8" type="nsubj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="4" to="10" type="ccomp"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="10" to="15" type="cc"/>
+  <dep from="10" to="16" type="conj"/>
+  <dep from="16" to="17" type="acomp"/>
+  <dep from="16" to="18" type="punct"/>
+  <dep from="16" to="19" type="advmod"/>
+  <dep from="16" to="20" type="punct"/>
+  <dep from="23" to="21" type="aux"/>
+  <dep from="23" to="22" type="auxpass"/>
+  <dep from="16" to="23" type="xcomp"/>
+  <dep from="23" to="24" type="punct"/>
+  <dep from="23" to="25" type="conj"/>
+  <dep from="27" to="26" type="det"/>
+  <dep from="25" to="27" type="dobj"/>
+  <dep from="25" to="28" type="cc"/>
+  <dep from="25" to="29" type="conj"/>
+  <dep from="31" to="30" type="det"/>
+  <dep from="29" to="31" type="dobj"/>
+  <dep from="29" to="32" type="prep"/>
+  <dep from="34" to="33" type="det"/>
+  <dep from="32" to="34" type="pobj"/>
+  <dep from="2" to="35" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Quitting_a_place">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Self_mover">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="27"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="27"/>
+    </frameElement>
+   </frame>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Purpose">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Visiting">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096819">
+ <sentence>
+  These programs rely heavily upon DPRK and Russian technology and assistance .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="these" pos="DT" surface="These"/>
+  <token id="2" lemma="program" pos="NNS" surface="programs"/>
+  <token id="3" lemma="rely" pos="VBP" surface="rely"/>
+  <token id="4" lemma="heavily" pos="RB" surface="heavily"/>
+  <token id="5" lemma="upon" pos="IN" surface="upon"/>
+  <token id="6" lemma="dprk" pos="NNP" surface="DPRK"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="russian" pos="JJ" surface="Russian"/>
+  <token id="9" lemma="technology" pos="NN" surface="technology"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="assistance" pos="NN" surface="assistance"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="advmod"/>
+  <dep from="3" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="6" to="7" type="cc"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="6" to="9" type="conj"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="9" to="11" type="conj"/>
+  <dep from="3" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Reliance">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Instrument">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Artifact">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Artifact">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Creator">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Helper">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

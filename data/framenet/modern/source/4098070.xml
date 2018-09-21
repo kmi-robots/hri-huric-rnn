@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098070">
+ <sentence>
+  Program trading is hurting the market 's efforts to bring back small investors .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="program" pos="NN" surface="Program"/>
+  <token id="2" lemma="trading" pos="NN" surface="trading"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="hurt" pos="VBG" surface="hurting"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="market" pos="NN" surface="market"/>
+  <token id="7" lemma="'s" pos="POS" surface="'s"/>
+  <token id="8" lemma="effort" pos="NNS" surface="efforts"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="bring" pos="VB" surface="bring"/>
+  <token id="11" lemma="back" pos="RB" surface="back"/>
+  <token id="12" lemma="small" pos="JJ" surface="small"/>
+  <token id="13" lemma="investor" pos="NNS" surface="investors"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="8" to="6" type="poss"/>
+  <dep from="6" to="7" type="case"/>
+  <dep from="4" to="8" type="dobj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="8" to="10" type="acl"/>
+  <dep from="10" to="11" type="advmod"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="dobj"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attempt">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

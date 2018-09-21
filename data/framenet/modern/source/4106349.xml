@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106349">
+ <sentence>
+  Because turning welfare recipients into tax payers just makes sense .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="because" pos="IN" surface="Because"/>
+  <token id="2" lemma="turn" pos="VBG" surface="turning"/>
+  <token id="3" lemma="welfare" pos="NN" surface="welfare"/>
+  <token id="4" lemma="recipient" pos="NNS" surface="recipients"/>
+  <token id="5" lemma="into" pos="IN" surface="into"/>
+  <token id="6" lemma="tax" pos="NN" surface="tax"/>
+  <token id="7" lemma="payer" pos="NNS" surface="payers"/>
+  <token id="8" lemma="just" pos="RB" surface="just"/>
+  <token id="9" lemma="make" pos="VBZ" surface="makes"/>
+  <token id="10" lemma="sense" pos="NN" surface="sense"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="mark"/>
+  <dep from="9" to="2" type="csubj"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="9" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_change">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Initial_category">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Final_category">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103246">
+ <sentence>
+  Tickets can not be reimbursed if unused .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="ticket" pos="NNS" surface="Tickets"/>
+  <token id="2" lemma="can" pos="MD" surface="can"/>
+  <token id="3" lemma="not" pos="RB" surface="not"/>
+  <token id="4" lemma="be" pos="VB" surface="be"/>
+  <token id="5" lemma="reimburse" pos="VBN" surface="reimbursed"/>
+  <token id="6" lemma="if" pos="IN" surface="if"/>
+  <token id="7" lemma="unused" pos="JJ" surface="unused"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="nsubjpass"/>
+  <dep from="5" to="2" type="aux"/>
+  <dep from="5" to="3" type="neg"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="mark"/>
+  <dep from="5" to="7" type="oprd"/>
+  <dep from="5" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Capability">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Circumstances">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

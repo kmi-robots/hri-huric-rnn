@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824275">
+ <sentence>
+  Large pockets of poverty still exist .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="large" pos="JJ" surface="Large"/>
+  <token id="2" lemma="pocket" pos="NNS" surface="pockets"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="poverty" pos="NN" surface="poverty"/>
+  <token id="5" lemma="still" pos="RB" surface="still"/>
+  <token id="6" lemma="exist" pos="VBP" surface="exist"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="6" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Existence">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Wealthiness">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Size">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Continued_state_of_affairs">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="State_of_affairs">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Reference_occasion">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

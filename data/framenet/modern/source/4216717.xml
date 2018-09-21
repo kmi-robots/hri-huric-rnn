@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4216717">
+ <sentence>
+  Half of the annual global tropical timber acquisition comes from Borneo .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="half" pos="NN" surface="Half"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="annual" pos="JJ" surface="annual"/>
+  <token id="5" lemma="global" pos="JJ" surface="global"/>
+  <token id="6" lemma="tropical" pos="JJ" surface="tropical"/>
+  <token id="7" lemma="timber" pos="NN" surface="timber"/>
+  <token id="8" lemma="acquisition" pos="NN" surface="acquisition"/>
+  <token id="9" lemma="come" pos="VBZ" surface="comes"/>
+  <token id="10" lemma="from" pos="IN" surface="from"/>
+  <token id="11" lemma="borneo" pos="NNP" surface="Borneo"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="8" to="3" type="det"/>
+  <dep from="8" to="4" type="amod"/>
+  <dep from="8" to="5" type="amod"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="2" to="8" type="pobj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="9" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Getting">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

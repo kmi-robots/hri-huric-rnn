@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102894">
+ <sentence>
+  Fifth : Securing supply of food and water .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="fifth" pos="JJ" surface="Fifth"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="secure" pos="VBG" surface="Securing"/>
+  <token id="4" lemma="supply" pos="NN" surface="supply"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="food" pos="NN" surface="food"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="water" pos="NN" surface="water"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="1" to="3" type="acl"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="6" to="7" type="cc"/>
+  <dep from="6" to="8" type="conj"/>
+  <dep from="1" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Ordinal_numbers">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Getting">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Store">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Resource">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Supply">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Food">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Food">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

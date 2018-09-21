@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106190">
+ <sentence>
+  Keno is a variation of bingo in which the player chooses numbers to bet on before the draw is made .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="keno" pos="NNP" surface="Keno"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="variation" pos="NN" surface="variation"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="bingo" pos="NN" surface="bingo"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="which" pos="WDT" surface="which"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="player" pos="NN" surface="player"/>
+  <token id="11" lemma="choose" pos="VBZ" surface="chooses"/>
+  <token id="12" lemma="number" pos="NNS" surface="numbers"/>
+  <token id="13" lemma="to" pos="TO" surface="to"/>
+  <token id="14" lemma="bet" pos="VB" surface="bet"/>
+  <token id="15" lemma="on" pos="RP" surface="on"/>
+  <token id="16" lemma="before" pos="IN" surface="before"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="draw" pos="NN" surface="draw"/>
+  <token id="19" lemma="be" pos="VBZ" surface="is"/>
+  <token id="20" lemma="make" pos="VBN" surface="made"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="attr"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="11" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="4" to="11" type="relcl"/>
+  <dep from="11" to="12" type="dobj"/>
+  <dep from="14" to="13" type="aux"/>
+  <dep from="11" to="14" type="xcomp"/>
+  <dep from="14" to="15" type="prt"/>
+  <dep from="20" to="16" type="mark"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="20" to="18" type="nsubjpass"/>
+  <dep from="20" to="19" type="auxpass"/>
+  <dep from="14" to="20" type="advcl"/>
+  <dep from="2" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cause_change">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Final_category">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Participation">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Participant_1">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Choosing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Chosen">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Larger_purpose">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Finish_competition">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Affected">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102220">
+ <sentence>
+  Just should n't be allowed to to even even live uh about the issue about sentencing by the judge .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="just" pos="RB" surface="Just"/>
+  <token id="2" lemma="should" pos="MD" surface="should"/>
+  <token id="3" lemma="n't" pos="RB" surface="n't"/>
+  <token id="4" lemma="be" pos="VB" surface="be"/>
+  <token id="5" lemma="allow" pos="VBN" surface="allowed"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="even" pos="RB" surface="even"/>
+  <token id="9" lemma="even" pos="RB" surface="even"/>
+  <token id="10" lemma="live" pos="VB" surface="live"/>
+  <token id="11" lemma="uh" pos="UH" surface="uh"/>
+  <token id="12" lemma="about" pos="IN" surface="about"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="issue" pos="NN" surface="issue"/>
+  <token id="15" lemma="about" pos="IN" surface="about"/>
+  <token id="16" lemma="sentencing" pos="NN" surface="sentencing"/>
+  <token id="17" lemma="by" pos="IN" surface="by"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="judge" pos="NN" surface="judge"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="advmod"/>
+  <dep from="5" to="2" type="aux"/>
+  <dep from="5" to="3" type="neg"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="10" to="6" type="aux"/>
+  <dep from="10" to="7" type="aux"/>
+  <dep from="10" to="8" type="advmod"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="5" to="10" type="xcomp"/>
+  <dep from="10" to="11" type="intj"/>
+  <dep from="10" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="5" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Prohibiting_or_licensing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Principle">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Point_of_dispute">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Question">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Sentencing">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Court">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

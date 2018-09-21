@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098291">
+ <sentence>
+  QN : Has Libya developed its own domestic missile program ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="have" pos="VBZ" surface="Has"/>
+  <token id="4" lemma="libya" pos="NNP" surface="Libya"/>
+  <token id="5" lemma="develop" pos="VBD" surface="developed"/>
+  <token id="6" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="7" lemma="own" pos="JJ" surface="own"/>
+  <token id="8" lemma="domestic" pos="JJ" surface="domestic"/>
+  <token id="9" lemma="missile" pos="NN" surface="missile"/>
+  <token id="10" lemma="program" pos="NN" surface="program"/>
+  <token id="11" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="10" to="6" type="poss"/>
+  <dep from="10" to="7" type="amod"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="5" to="10" type="dobj"/>
+  <dep from="5" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cause_to_make_progress">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Project">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Salient_entity">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

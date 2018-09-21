@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096526">
+ <sentence>
+  No conclusions yet , U.S. officials say , but a working theory , plastic explosive .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="no" pos="DT" surface="No"/>
+  <token id="2" lemma="conclusion" pos="NNS" surface="conclusions"/>
+  <token id="3" lemma="yet" pos="RB" surface="yet"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="u.s." pos="NNP" surface="U.S."/>
+  <token id="6" lemma="official" pos="NNS" surface="officials"/>
+  <token id="7" lemma="say" pos="VBP" surface="say"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="but" pos="CC" surface="but"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="working" pos="NN" surface="working"/>
+  <token id="12" lemma="theory" pos="NN" surface="theory"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="plastic" pos="NN" surface="plastic"/>
+  <token id="15" lemma="explosive" pos="NN" surface="explosive"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="7" to="2" type="dep"/>
+  <dep from="2" to="3" type="advmod"/>
+  <dep from="7" to="4" type="punct"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="7" to="9" type="cc"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="7" to="12" type="conj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="12" to="15" type="appos"/>
+  <dep from="7" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Governed">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

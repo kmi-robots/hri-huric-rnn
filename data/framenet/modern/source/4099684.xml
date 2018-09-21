@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099684">
+ <sentence>
+  An unknown portion of CW agents are stored in bulk , but a significant portion is reported to be filled into artillery shells and rocket warheads .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="an" pos="DT" surface="An"/>
+  <token id="2" lemma="unknown" pos="JJ" surface="unknown"/>
+  <token id="3" lemma="portion" pos="NN" surface="portion"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="cw" pos="NNP" surface="CW"/>
+  <token id="6" lemma="agent" pos="NNS" surface="agents"/>
+  <token id="7" lemma="be" pos="VBP" surface="are"/>
+  <token id="8" lemma="store" pos="VBN" surface="stored"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="bulk" pos="NN" surface="bulk"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="but" pos="CC" surface="but"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="significant" pos="JJ" surface="significant"/>
+  <token id="15" lemma="portion" pos="NN" surface="portion"/>
+  <token id="16" lemma="be" pos="VBZ" surface="is"/>
+  <token id="17" lemma="report" pos="VBN" surface="reported"/>
+  <token id="18" lemma="to" pos="TO" surface="to"/>
+  <token id="19" lemma="be" pos="VB" surface="be"/>
+  <token id="20" lemma="fill" pos="VBN" surface="filled"/>
+  <token id="21" lemma="into" pos="IN" surface="into"/>
+  <token id="22" lemma="artillery" pos="NN" surface="artillery"/>
+  <token id="23" lemma="shell" pos="NNS" surface="shells"/>
+  <token id="24" lemma="and" pos="CC" surface="and"/>
+  <token id="25" lemma="rocket" pos="NN" surface="rocket"/>
+  <token id="26" lemma="warhead" pos="NNS" surface="warheads"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="8" to="3" type="nsubjpass"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="8" to="11" type="punct"/>
+  <dep from="8" to="12" type="cc"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="17" to="15" type="nsubjpass"/>
+  <dep from="17" to="16" type="auxpass"/>
+  <dep from="8" to="17" type="conj"/>
+  <dep from="20" to="18" type="aux"/>
+  <dep from="20" to="19" type="auxpass"/>
+  <dep from="17" to="20" type="xcomp"/>
+  <dep from="20" to="21" type="prep"/>
+  <dep from="23" to="22" type="compound"/>
+  <dep from="21" to="23" type="pobj"/>
+  <dep from="23" to="24" type="cc"/>
+  <dep from="26" to="25" type="compound"/>
+  <dep from="23" to="26" type="conj"/>
+  <dep from="17" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Part_whole">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Part_prop">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Storing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_whole">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Part_prop">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Use">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="26"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="26"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

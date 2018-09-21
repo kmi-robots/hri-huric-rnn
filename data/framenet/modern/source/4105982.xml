@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105982">
+ <sentence>
+  The market runs all the way up to Tin Hau Temple , where you will find fortune tellers ' tables ( some speak English ) and possibly street performers singing Chinese opera or pop songs .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="market" pos="NN" surface="market"/>
+  <token id="3" lemma="run" pos="VBZ" surface="runs"/>
+  <token id="4" lemma="all" pos="PDT" surface="all"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="way" pos="NN" surface="way"/>
+  <token id="7" lemma="up" pos="IN" surface="up"/>
+  <token id="8" lemma="to" pos="IN" surface="to"/>
+  <token id="9" lemma="tin" pos="NNP" surface="Tin"/>
+  <token id="10" lemma="hau" pos="NNP" surface="Hau"/>
+  <token id="11" lemma="temple" pos="NNP" surface="Temple"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="where" pos="WRB" surface="where"/>
+  <token id="14" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="15" lemma="will" pos="MD" surface="will"/>
+  <token id="16" lemma="find" pos="VB" surface="find"/>
+  <token id="17" lemma="fortune" pos="NN" surface="fortune"/>
+  <token id="18" lemma="teller" pos="NNS" surface="tellers"/>
+  <token id="19" lemma="'" pos="POS" surface="'"/>
+  <token id="20" lemma="table" pos="NNS" surface="tables"/>
+  <token id="21" lemma="(" pos="-LRB-" surface="("/>
+  <token id="22" lemma="some" pos="DT" surface="some"/>
+  <token id="23" lemma="speak" pos="VBP" surface="speak"/>
+  <token id="24" lemma="english" pos="NNP" surface="English"/>
+  <token id="25" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="26" lemma="and" pos="CC" surface="and"/>
+  <token id="27" lemma="possibly" pos="RB" surface="possibly"/>
+  <token id="28" lemma="street" pos="VB" surface="street"/>
+  <token id="29" lemma="performer" pos="NNS" surface="performers"/>
+  <token id="30" lemma="sing" pos="VBG" surface="singing"/>
+  <token id="31" lemma="chinese" pos="JJ" surface="Chinese"/>
+  <token id="32" lemma="opera" pos="NN" surface="opera"/>
+  <token id="33" lemma="or" pos="CC" surface="or"/>
+  <token id="34" lemma="pop" pos="NN" surface="pop"/>
+  <token id="35" lemma="song" pos="NNS" surface="songs"/>
+  <token id="36" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="predet"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="7" to="6" type="npadvmod"/>
+  <dep from="3" to="7" type="prt"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="11" to="9" type="compound"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="11" to="12" type="punct"/>
+  <dep from="16" to="13" type="advmod"/>
+  <dep from="16" to="14" type="nsubj"/>
+  <dep from="16" to="15" type="aux"/>
+  <dep from="11" to="16" type="relcl"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="20" to="18" type="poss"/>
+  <dep from="18" to="19" type="case"/>
+  <dep from="16" to="20" type="dobj"/>
+  <dep from="23" to="21" type="punct"/>
+  <dep from="23" to="22" type="nsubj"/>
+  <dep from="3" to="23" type="parataxis"/>
+  <dep from="23" to="24" type="dobj"/>
+  <dep from="23" to="25" type="punct"/>
+  <dep from="23" to="26" type="cc"/>
+  <dep from="30" to="27" type="advmod"/>
+  <dep from="29" to="28" type="compound"/>
+  <dep from="30" to="29" type="nsubj"/>
+  <dep from="23" to="30" type="conj"/>
+  <dep from="32" to="31" type="amod"/>
+  <dep from="30" to="32" type="dobj"/>
+  <dep from="32" to="33" type="cc"/>
+  <dep from="35" to="34" type="compound"/>
+  <dep from="32" to="35" type="conj"/>
+  <dep from="3" to="36" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Self_motion">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Self_mover">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Distance">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Locating">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Sought_entity">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+     <token id="31"/>
+     <token id="32"/>
+     <token id="33"/>
+     <token id="34"/>
+     <token id="35"/>
+    </frameElement>
+   </frame>
+   <frame name="Destiny">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="27"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+     <token id="31"/>
+     <token id="32"/>
+     <token id="33"/>
+     <token id="34"/>
+     <token id="35"/>
+    </frameElement>
+   </frame>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="28"/>
+    </lexicalUnit>
+    <frameElement type="Roadway">
+     <token id="28"/>
+    </frameElement>
+   </frame>
+   <frame name="Communication_manner">
+    <lexicalUnit>
+     <token id="30"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="28"/>
+     <token id="29"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="31"/>
+     <token id="32"/>
+     <token id="33"/>
+     <token id="34"/>
+     <token id="35"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="31"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="32"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="31"/>
+    </frameElement>
+   </frame>
+   <frame name="Text">
+    <lexicalUnit>
+     <token id="35"/>
+    </lexicalUnit>
+    <frameElement type="Text">
+     <token id="35"/>
+    </frameElement>
+    <frameElement type="Genre">
+     <token id="34"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

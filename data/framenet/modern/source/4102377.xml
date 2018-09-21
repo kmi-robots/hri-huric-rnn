@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102377">
+ <sentence>
+  2- Sheik Anwar Abd al-Razzaq al-Kharbit , AlbuKhalifah .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="2-" pos="LS" surface="2-"/>
+  <token id="2" lemma="sheik" pos="NNP" surface="Sheik"/>
+  <token id="3" lemma="anwar" pos="NNP" surface="Anwar"/>
+  <token id="4" lemma="abd" pos="NNP" surface="Abd"/>
+  <token id="5" lemma="al-razzaq" pos="VB" surface="al-Razzaq"/>
+  <token id="6" lemma="al-kharbit" pos="NNP" surface="al-Kharbit"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="albukhalifah" pos="NNP" surface="AlbuKhalifah"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="meta"/>
+  <dep from="4" to="2" type="compound"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="punct"/>
+  <dep from="5" to="8" type="npadvmod"/>
+  <dep from="5" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

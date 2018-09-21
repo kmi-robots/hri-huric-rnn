@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099004">
+ <sentence>
+  Many roadblocks remain and progress is likely to be painful and slow .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="many" pos="JJ" surface="Many"/>
+  <token id="2" lemma="roadblock" pos="NNS" surface="roadblocks"/>
+  <token id="3" lemma="remain" pos="VBP" surface="remain"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="progress" pos="NN" surface="progress"/>
+  <token id="6" lemma="be" pos="VBZ" surface="is"/>
+  <token id="7" lemma="likely" pos="JJ" surface="likely"/>
+  <token id="8" lemma="to" pos="TO" surface="to"/>
+  <token id="9" lemma="be" pos="VB" surface="be"/>
+  <token id="10" lemma="painful" pos="JJ" surface="painful"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="slow" pos="JJ" surface="slow"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="3" to="6" type="conj"/>
+  <dep from="6" to="7" type="acomp"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="7" to="9" type="xcomp"/>
+  <dep from="9" to="10" type="acomp"/>
+  <dep from="10" to="11" type="cc"/>
+  <dep from="10" to="12" type="conj"/>
+  <dep from="6" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Remainder">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Remainder">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Progression">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

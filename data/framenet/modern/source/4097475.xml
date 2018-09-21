@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097475">
+ <sentence>
+  However , the US expresses concerns that Iran may purchase stockpiled plutonium from North Korea ( 6840 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="however" pos="RB" surface="However"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="us" pos="NNP" surface="US"/>
+  <token id="5" lemma="express" pos="VBZ" surface="expresses"/>
+  <token id="6" lemma="concern" pos="NNS" surface="concerns"/>
+  <token id="7" lemma="that" pos="IN" surface="that"/>
+  <token id="8" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="9" lemma="may" pos="MD" surface="may"/>
+  <token id="10" lemma="purchase" pos="VB" surface="purchase"/>
+  <token id="11" lemma="stockpile" pos="VBN" surface="stockpiled"/>
+  <token id="12" lemma="plutonium" pos="NN" surface="plutonium"/>
+  <token id="13" lemma="from" pos="IN" surface="from"/>
+  <token id="14" lemma="north" pos="NNP" surface="North"/>
+  <token id="15" lemma="korea" pos="NNP" surface="Korea"/>
+  <token id="16" lemma="(" pos="-LRB-" surface="("/>
+  <token id="17" lemma="6840" pos="CD" surface="6840"/>
+  <token id="18" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="advmod"/>
+  <dep from="5" to="2" type="punct"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="10" to="7" type="mark"/>
+  <dep from="10" to="8" type="nsubj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="6" to="10" type="acl"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="10" to="13" type="prep"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="15" to="17" type="appos"/>
+  <dep from="15" to="18" type="punct"/>
+  <dep from="5" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_buy">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Buyer">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Seller">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Emotion_directed">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Stimulus">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Amassing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Mass_theme">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Expressing_publicly">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Communicator">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

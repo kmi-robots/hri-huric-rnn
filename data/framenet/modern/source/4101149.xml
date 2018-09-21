@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101149">
+ <sentence>
+  This trend has led to many more demolitions , including the Dunes ( replaced by Bellagio ) , Aladdin ( the new Aladdin ) and Sands ( Venetian ) hotels .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="this" pos="DT" surface="This"/>
+  <token id="2" lemma="trend" pos="NN" surface="trend"/>
+  <token id="3" lemma="have" pos="VBZ" surface="has"/>
+  <token id="4" lemma="lead" pos="VBN" surface="led"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="many" pos="JJ" surface="many"/>
+  <token id="7" lemma="more" pos="JJR" surface="more"/>
+  <token id="8" lemma="demolition" pos="NNS" surface="demolitions"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="include" pos="VBG" surface="including"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="dunes" pos="NNPS" surface="Dunes"/>
+  <token id="13" lemma="(" pos="-LRB-" surface="("/>
+  <token id="14" lemma="replace" pos="VBN" surface="replaced"/>
+  <token id="15" lemma="by" pos="IN" surface="by"/>
+  <token id="16" lemma="bellagio" pos="NNP" surface="Bellagio"/>
+  <token id="17" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="aladdin" pos="NNP" surface="Aladdin"/>
+  <token id="20" lemma="(" pos="-LRB-" surface="("/>
+  <token id="21" lemma="the" pos="DT" surface="the"/>
+  <token id="22" lemma="new" pos="JJ" surface="new"/>
+  <token id="23" lemma="aladdin" pos="NNP" surface="Aladdin"/>
+  <token id="24" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="25" lemma="and" pos="CC" surface="and"/>
+  <token id="26" lemma="sands" pos="NNPS" surface="Sands"/>
+  <token id="27" lemma="(" pos="-LRB-" surface="("/>
+  <token id="28" lemma="venetian" pos="NNP" surface="Venetian"/>
+  <token id="29" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="30" lemma="hotel" pos="NNS" surface="hotels"/>
+  <token id="31" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="8" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="12" to="14" type="acl"/>
+  <dep from="14" to="15" type="agent"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="12" to="17" type="punct"/>
+  <dep from="12" to="18" type="punct"/>
+  <dep from="12" to="19" type="conj"/>
+  <dep from="19" to="20" type="punct"/>
+  <dep from="23" to="21" type="det"/>
+  <dep from="23" to="22" type="amod"/>
+  <dep from="19" to="23" type="conj"/>
+  <dep from="19" to="24" type="punct"/>
+  <dep from="19" to="25" type="cc"/>
+  <dep from="30" to="26" type="nmod"/>
+  <dep from="30" to="27" type="punct"/>
+  <dep from="30" to="28" type="nmod"/>
+  <dep from="30" to="29" type="punct"/>
+  <dep from="19" to="30" type="conj"/>
+  <dep from="4" to="31" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Individuals">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Increment">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Increment">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Class">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Added_set">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Destroying">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Inclusion">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+    </frameElement>
+   </frame>
+   <frame name="Take_place_of">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="New">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Old">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Age">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="30"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="30"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

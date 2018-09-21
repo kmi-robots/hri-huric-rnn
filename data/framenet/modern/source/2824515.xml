@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2824515">
+ <sentence>
+  9:53 a.m. PANDA : Flesh goes to total alert for flight or fight .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="9:53" pos="CD" surface="9:53"/>
+  <token id="2" lemma="a.m." pos="RB" surface="a.m."/>
+  <token id="3" lemma="panda" pos="NNP" surface="PANDA"/>
+  <token id="4" lemma=":" pos=":" surface=":"/>
+  <token id="5" lemma="flesh" pos="NN" surface="Flesh"/>
+  <token id="6" lemma="go" pos="VBZ" surface="goes"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="total" pos="NN" surface="total"/>
+  <token id="9" lemma="alert" pos="NN" surface="alert"/>
+  <token id="10" lemma="for" pos="IN" surface="for"/>
+  <token id="11" lemma="flight" pos="NN" surface="flight"/>
+  <token id="12" lemma="or" pos="CC" surface="or"/>
+  <token id="13" lemma="fight" pos="NN" surface="fight"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="11" to="13" type="conj"/>
+  <dep from="6" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Body_parts">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Body_part">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Transition_to_a_quality">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Final_quality">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Attention">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Side_1">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

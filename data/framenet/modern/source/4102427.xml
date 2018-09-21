@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102427">
+ <sentence>
+  And this Republican led Senate intelligence committee refuses to even ask the hard questions about the misinformation -
+ </sentence>
+ <tokens>
+  <token id="1" lemma="and" pos="CC" surface="And"/>
+  <token id="2" lemma="this" pos="DT" surface="this"/>
+  <token id="3" lemma="republican" pos="NNP" surface="Republican"/>
+  <token id="4" lemma="lead" pos="VBD" surface="led"/>
+  <token id="5" lemma="senate" pos="NNP" surface="Senate"/>
+  <token id="6" lemma="intelligence" pos="NN" surface="intelligence"/>
+  <token id="7" lemma="committee" pos="NN" surface="committee"/>
+  <token id="8" lemma="refuse" pos="VBZ" surface="refuses"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="even" pos="RB" surface="even"/>
+  <token id="11" lemma="ask" pos="VB" surface="ask"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="hard" pos="JJ" surface="hard"/>
+  <token id="14" lemma="question" pos="NNS" surface="questions"/>
+  <token id="15" lemma="about" pos="IN" surface="about"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="misinformation" pos="NN" surface="misinformation"/>
+  <token id="18" lemma="-" pos="HYPH" surface="-"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="cc"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="compound"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="4" to="8" type="ccomp"/>
+  <dep from="11" to="9" type="aux"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="8" to="11" type="xcomp"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="dobj"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="4" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Governed">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Information">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Information">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Agree_or_refuse_to_act">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Proposed_action">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Questioning">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Difficulty">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Questioning">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Topic">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

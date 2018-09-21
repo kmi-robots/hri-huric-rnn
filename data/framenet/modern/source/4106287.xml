@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106287">
+ <sentence>
+  Not to be missed is a visit to Guangzhou 's famous open-air market , Qing Ping .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="not" pos="RB" surface="Not"/>
+  <token id="2" lemma="to" pos="TO" surface="to"/>
+  <token id="3" lemma="be" pos="VB" surface="be"/>
+  <token id="4" lemma="miss" pos="VBN" surface="missed"/>
+  <token id="5" lemma="be" pos="VBZ" surface="is"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="visit" pos="NN" surface="visit"/>
+  <token id="8" lemma="to" pos="IN" surface="to"/>
+  <token id="9" lemma="guangzhou" pos="NNP" surface="Guangzhou"/>
+  <token id="10" lemma="'s" pos="POS" surface="'s"/>
+  <token id="11" lemma="famous" pos="JJ" surface="famous"/>
+  <token id="12" lemma="open-air" pos="NN" surface="open-air"/>
+  <token id="13" lemma="market" pos="NN" surface="market"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="qing" pos="NNP" surface="Qing"/>
+  <token id="16" lemma="ping" pos="NN" surface="Ping"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="neg"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="5" to="4" type="csubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="attr"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="13" to="9" type="poss"/>
+  <dep from="9" to="10" type="case"/>
+  <dep from="13" to="11" type="amod"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="8" to="13" type="pobj"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="13" to="16" type="appos"/>
+  <dep from="5" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Success_or_failure">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Visiting">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Fame">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

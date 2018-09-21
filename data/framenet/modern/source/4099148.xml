@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099148">
+ <sentence>
+  QN : Does this set contain milk chocolate covered nuts ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="do" pos="VBZ" surface="Does"/>
+  <token id="4" lemma="this" pos="DT" surface="this"/>
+  <token id="5" lemma="set" pos="VBN" surface="set"/>
+  <token id="6" lemma="contain" pos="NN" surface="contain"/>
+  <token id="7" lemma="milk" pos="NN" surface="milk"/>
+  <token id="8" lemma="chocolate" pos="NN" surface="chocolate"/>
+  <token id="9" lemma="cover" pos="VBN" surface="covered"/>
+  <token id="10" lemma="nut" pos="NNS" surface="nuts"/>
+  <token id="11" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="ccomp"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="6" to="9" type="ccomp"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="5" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Abounding_with">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

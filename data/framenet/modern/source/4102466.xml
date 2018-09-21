@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102466">
+ <sentence>
+  A lot of people focusing a lot of energy on ( ( Tamaflu ) ) and ( ( Rolenza ) ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="lot" pos="NN" surface="lot"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="people" pos="NNS" surface="people"/>
+  <token id="5" lemma="focus" pos="VBG" surface="focusing"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="lot" pos="NN" surface="lot"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="energy" pos="NN" surface="energy"/>
+  <token id="10" lemma="on" pos="IN" surface="on"/>
+  <token id="11" lemma="(" pos="-LRB-" surface="("/>
+  <token id="12" lemma="(" pos="-LRB-" surface="("/>
+  <token id="13" lemma="tamaflu" pos="NN" surface="Tamaflu"/>
+  <token id="14" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="15" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="(" pos="-LRB-" surface="("/>
+  <token id="18" lemma="(" pos="-LRB-" surface="("/>
+  <token id="19" lemma="rolenza" pos="NNP" surface="Rolenza"/>
+  <token id="20" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="21" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="5" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="5" to="10" type="prep"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="13" to="12" type="punct"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="13" to="15" type="punct"/>
+  <dep from="10" to="16" type="cc"/>
+  <dep from="19" to="17" type="punct"/>
+  <dep from="19" to="18" type="punct"/>
+  <dep from="10" to="19" type="conj"/>
+  <dep from="19" to="20" type="punct"/>
+  <dep from="19" to="21" type="punct"/>
+  <dep from="5" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Quantity">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Quantity">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Mass">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

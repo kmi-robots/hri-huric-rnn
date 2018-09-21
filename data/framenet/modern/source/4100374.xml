@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100374">
+ <sentence>
+  For 60 years Jerusalem lay in ruins , until the Roman Emperor Hadrian ordered the city rebuilt as a Roman town dedicated to Jupiter .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="for" pos="IN" surface="For"/>
+  <token id="2" lemma="60" pos="CD" surface="60"/>
+  <token id="3" lemma="year" pos="NNS" surface="years"/>
+  <token id="4" lemma="jerusalem" pos="NNP" surface="Jerusalem"/>
+  <token id="5" lemma="lie" pos="VBD" surface="lay"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="ruin" pos="NNS" surface="ruins"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="until" pos="IN" surface="until"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="roman" pos="JJ" surface="Roman"/>
+  <token id="12" lemma="emperor" pos="NNP" surface="Emperor"/>
+  <token id="13" lemma="hadrian" pos="NNP" surface="Hadrian"/>
+  <token id="14" lemma="order" pos="VBD" surface="ordered"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="city" pos="NN" surface="city"/>
+  <token id="17" lemma="rebuild" pos="VBN" surface="rebuilt"/>
+  <token id="18" lemma="as" pos="IN" surface="as"/>
+  <token id="19" lemma="a" pos="DT" surface="a"/>
+  <token id="20" lemma="roman" pos="JJ" surface="Roman"/>
+  <token id="21" lemma="town" pos="NN" surface="town"/>
+  <token id="22" lemma="dedicate" pos="VBN" surface="dedicated"/>
+  <token id="23" lemma="to" pos="IN" surface="to"/>
+  <token id="24" lemma="jupiter" pos="NNP" surface="Jupiter"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="prep"/>
+  <dep from="3" to="2" type="nummod"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="5" to="8" type="punct"/>
+  <dep from="14" to="9" type="mark"/>
+  <dep from="13" to="10" type="det"/>
+  <dep from="13" to="11" type="compound"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="14" to="13" type="nsubj"/>
+  <dep from="5" to="14" type="advcl"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="17" to="16" type="nsubj"/>
+  <dep from="14" to="17" type="ccomp"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="21" to="19" type="det"/>
+  <dep from="21" to="20" type="amod"/>
+  <dep from="18" to="21" type="pobj"/>
+  <dep from="21" to="22" type="acl"/>
+  <dep from="22" to="23" type="prep"/>
+  <dep from="23" to="24" type="pobj"/>
+  <dep from="5" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Governed">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Leader">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Request">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Container_possessor">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_duration">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

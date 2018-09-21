@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096876">
+ <sentence>
+  Location : Latitude 35ï¿½ 42 ' North ; longitude 51ï¿½ 24 ' East ; province of Tehran
+ </sentence>
+ <tokens>
+  <token id="1" lemma="location" pos="NN" surface="Location"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="latitude" pos="NNP" surface="Latitude"/>
+  <token id="4" lemma="35ï¿½" pos="RB" surface="35ï¿½"/>
+  <token id="5" lemma="42" pos="CD" surface="42"/>
+  <token id="6" lemma="'" pos="``" surface="'"/>
+  <token id="7" lemma="north" pos="NN" surface="North"/>
+  <token id="8" lemma=";" pos=":" surface=";"/>
+  <token id="9" lemma="longitude" pos="VB" surface="longitude"/>
+  <token id="10" lemma="51ï¿½" pos="CD" surface="51ï¿½"/>
+  <token id="11" lemma="24" pos="CD" surface="24"/>
+  <token id="12" lemma="'" pos="''" surface="'"/>
+  <token id="13" lemma="east" pos="NNP" surface="East"/>
+  <token id="14" lemma=";" pos=":" surface=";"/>
+  <token id="15" lemma="province" pos="NN" surface="province"/>
+  <token id="16" lemma="of" pos="IN" surface="of"/>
+  <token id="17" lemma="tehran" pos="NNP" surface="Tehran"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="1" to="3" type="appos"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="3" to="5" type="appos"/>
+  <dep from="3" to="6" type="punct"/>
+  <dep from="3" to="7" type="appos"/>
+  <dep from="3" to="8" type="punct"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="13" to="11" type="nummod"/>
+  <dep from="13" to="12" type="punct"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="13" to="15" type="appos"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097233">
+ <sentence>
+  Ratified the Biological and Toxin Weapons Convention .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="ratify" pos="VBD" surface="Ratified"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="biological" pos="NNP" surface="Biological"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="toxin" pos="NNP" surface="Toxin"/>
+  <token id="6" lemma="weapons" pos="NNPS" surface="Weapons"/>
+  <token id="7" lemma="convention" pos="NNP" surface="Convention"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="7" to="2" type="det"/>
+  <dep from="7" to="3" type="nmod"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="3" to="6" type="conj"/>
+  <dep from="1" to="7" type="dobj"/>
+  <dep from="1" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Ratification">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Proposal">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

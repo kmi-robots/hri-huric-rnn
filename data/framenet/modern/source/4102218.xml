@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102218">
+ <sentence>
+  The old Charles Manson case , i mean , the guy is really -
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="old" pos="JJ" surface="old"/>
+  <token id="3" lemma="charles" pos="NNP" surface="Charles"/>
+  <token id="4" lemma="manson" pos="NNP" surface="Manson"/>
+  <token id="5" lemma="case" pos="NN" surface="case"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="i" pos="PRP" surface="i"/>
+  <token id="8" lemma="mean" pos="VBP" surface="mean"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="guy" pos="NN" surface="guy"/>
+  <token id="12" lemma="be" pos="VBZ" surface="is"/>
+  <token id="13" lemma="really" pos="RB" surface="really"/>
+  <token id="14" lemma="-" pos="." surface="-"/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="det"/>
+  <dep from="5" to="2" type="amod"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="12" to="5" type="dep"/>
+  <dep from="12" to="6" type="punct"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="12" to="8" type="parataxis"/>
+  <dep from="12" to="9" type="punct"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="advmod"/>
+  <dep from="12" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Age">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Trial">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Case">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Defendant">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

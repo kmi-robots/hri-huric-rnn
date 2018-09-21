@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101146">
+ <sentence>
+  In the mid-1980s , Wynn began plans to reinvigorate Las Vegas with a new resort .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="mid-1980" pos="NNS" surface="mid-1980s"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="wynn" pos="NNP" surface="Wynn"/>
+  <token id="6" lemma="begin" pos="VBD" surface="began"/>
+  <token id="7" lemma="plan" pos="NNS" surface="plans"/>
+  <token id="8" lemma="to" pos="TO" surface="to"/>
+  <token id="9" lemma="reinvigorate" pos="VB" surface="reinvigorate"/>
+  <token id="10" lemma="las" pos="NNP" surface="Las"/>
+  <token id="11" lemma="vegas" pos="NNP" surface="Vegas"/>
+  <token id="12" lemma="with" pos="IN" surface="with"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="new" pos="JJ" surface="new"/>
+  <token id="15" lemma="resort" pos="NN" surface="resort"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="6" to="4" type="punct"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="7" to="9" type="acl"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="9" to="12" type="prep"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="12" to="15" type="pobj"/>
+  <dep from="6" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Purpose">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Rejuvenation">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Age">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Age">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_collocation">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_period">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Trajector_event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Activity_start">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

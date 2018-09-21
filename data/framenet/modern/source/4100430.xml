@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100430">
+ <sentence>
+  Political and religious boundaries were aggravated by occasional incidents of terrorism or sniping until the Six Day War in June 1967 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="political" pos="JJ" surface="Political"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="religious" pos="JJ" surface="religious"/>
+  <token id="4" lemma="boundary" pos="NNS" surface="boundaries"/>
+  <token id="5" lemma="be" pos="VBD" surface="were"/>
+  <token id="6" lemma="aggravate" pos="VBN" surface="aggravated"/>
+  <token id="7" lemma="by" pos="IN" surface="by"/>
+  <token id="8" lemma="occasional" pos="JJ" surface="occasional"/>
+  <token id="9" lemma="incident" pos="NNS" surface="incidents"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="terrorism" pos="NN" surface="terrorism"/>
+  <token id="12" lemma="or" pos="CC" surface="or"/>
+  <token id="13" lemma="snip" pos="VBG" surface="sniping"/>
+  <token id="14" lemma="until" pos="IN" surface="until"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="six" pos="CD" surface="Six"/>
+  <token id="17" lemma="day" pos="NNP" surface="Day"/>
+  <token id="18" lemma="war" pos="NNP" surface="War"/>
+  <token id="19" lemma="in" pos="IN" surface="in"/>
+  <token id="20" lemma="june" pos="NNP" surface="June"/>
+  <token id="21" lemma="1967" pos="CD" surface="1967"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="amod"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="6" to="4" type="nsubjpass"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="agent"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="11" to="13" type="conj"/>
+  <dep from="6" to="14" type="prep"/>
+  <dep from="18" to="15" type="det"/>
+  <dep from="17" to="16" type="nummod"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="14" to="18" type="pobj"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="19" to="20" type="pobj"/>
+  <dep from="20" to="21" type="nummod"/>
+  <dep from="6" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Boundary">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Boundary">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Frequency">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Catastrophe">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Undesirable_event">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Terrorism">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Act">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Name">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

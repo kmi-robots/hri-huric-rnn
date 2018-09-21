@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148570">
+ <sentence>
+  In some way I had excited the suspicion of Lopez , the secretary .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="some" pos="DT" surface="some"/>
+  <token id="3" lemma="way" pos="NN" surface="way"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="5" lemma="have" pos="VBD" surface="had"/>
+  <token id="6" lemma="excite" pos="VBN" surface="excited"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="suspicion" pos="NN" surface="suspicion"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="lopez" pos="NNP" surface="Lopez"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="secretary" pos="NN" surface="secretary"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="10" to="13" type="appos"/>
+  <dep from="6" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Awareness">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Expressor">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Cognizer">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_to_start">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

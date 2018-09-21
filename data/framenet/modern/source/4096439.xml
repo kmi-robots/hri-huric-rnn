@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096439">
+ <sentence>
+  Besides previously secret nuclear sites disclosed in late 2003 , Libya possesses a Soviet-supplied 10 MW research reactor in Tajura .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="besides" pos="IN" surface="Besides"/>
+  <token id="2" lemma="previously" pos="RB" surface="previously"/>
+  <token id="3" lemma="secret" pos="JJ" surface="secret"/>
+  <token id="4" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="5" lemma="site" pos="NNS" surface="sites"/>
+  <token id="6" lemma="disclose" pos="VBN" surface="disclosed"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="late" pos="JJ" surface="late"/>
+  <token id="9" lemma="2003" pos="CD" surface="2003"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="libya" pos="NNP" surface="Libya"/>
+  <token id="12" lemma="possess" pos="VBZ" surface="possesses"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="soviet-supplied" pos="JJ" surface="Soviet-supplied"/>
+  <token id="15" lemma="10" pos="CD" surface="10"/>
+  <token id="16" lemma="mw" pos="NN" surface="MW"/>
+  <token id="17" lemma="research" pos="NN" surface="research"/>
+  <token id="18" lemma="reactor" pos="NN" surface="reactor"/>
+  <token id="19" lemma="in" pos="IN" surface="in"/>
+  <token id="20" lemma="tajura" pos="NNP" surface="Tajura"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="advmod"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="5" to="3" type="amod"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="12" to="6" type="advcl"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="12" to="10" type="punct"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="18" to="13" type="det"/>
+  <dep from="18" to="14" type="amod"/>
+  <dep from="16" to="15" type="nummod"/>
+  <dep from="18" to="16" type="compound"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="12" to="18" type="dobj"/>
+  <dep from="12" to="19" type="prep"/>
+  <dep from="19" to="20" type="pobj"/>
+  <dep from="12" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Secrecy_status">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Reveal_secret">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Information">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+   <frame name="Research">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Topic">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Use">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Container_possessor">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103867">
+ <sentence>
+  The thirteen regional parishes and numerous towns were originally named after British settlements .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="thirteen" pos="CD" surface="thirteen"/>
+  <token id="3" lemma="regional" pos="JJ" surface="regional"/>
+  <token id="4" lemma="parish" pos="NNS" surface="parishes"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="numerous" pos="JJ" surface="numerous"/>
+  <token id="7" lemma="town" pos="NNS" surface="towns"/>
+  <token id="8" lemma="be" pos="VBD" surface="were"/>
+  <token id="9" lemma="originally" pos="RB" surface="originally"/>
+  <token id="10" lemma="name" pos="VBN" surface="named"/>
+  <token id="11" lemma="after" pos="IN" surface="after"/>
+  <token id="12" lemma="british" pos="JJ" surface="British"/>
+  <token id="13" lemma="settlement" pos="NNS" surface="settlements"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="det"/>
+  <dep from="4" to="2" type="nummod"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="10" to="4" type="nsubjpass"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="conj"/>
+  <dep from="10" to="8" type="auxpass"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="10" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Container_possessor">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Quantified_mass">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Mass">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Colonization">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Homeland">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

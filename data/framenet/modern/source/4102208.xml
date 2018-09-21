@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102208">
+ <sentence>
+  - life in prison then he 's available for parole .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-" pos=":" surface="-"/>
+  <token id="2" lemma="life" pos="NN" surface="life"/>
+  <token id="3" lemma="in" pos="IN" surface="in"/>
+  <token id="4" lemma="prison" pos="NN" surface="prison"/>
+  <token id="5" lemma="then" pos="RB" surface="then"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="7" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="8" lemma="available" pos="JJ" surface="available"/>
+  <token id="9" lemma="for" pos="IN" surface="for"/>
+  <token id="10" lemma="parole" pos="NN" surface="parole"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="punct"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="7" to="5" type="advmod"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="acomp"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="7" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Prison">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Penal_institution">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Figure">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

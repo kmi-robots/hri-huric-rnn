@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148397">
+ <sentence>
+  But Mr . Henderson , of High Gable , was by all accounts a curious man to whom curious adventures might befall .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="but" pos="CC" surface="But"/>
+  <token id="2" lemma="mr" pos="NNP" surface="Mr"/>
+  <token id="3" lemma="." pos="." surface="."/>
+  <token id="4" lemma="henderson" pos="NNP" surface="Henderson"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="high" pos="NNP" surface="High"/>
+  <token id="8" lemma="gable" pos="NNP" surface="Gable"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="be" pos="VBD" surface="was"/>
+  <token id="11" lemma="by" pos="IN" surface="by"/>
+  <token id="12" lemma="all" pos="DT" surface="all"/>
+  <token id="13" lemma="account" pos="NNS" surface="accounts"/>
+  <token id="14" lemma="a" pos="DT" surface="a"/>
+  <token id="15" lemma="curious" pos="JJ" surface="curious"/>
+  <token id="16" lemma="man" pos="NN" surface="man"/>
+  <token id="17" lemma="to" pos="IN" surface="to"/>
+  <token id="18" lemma="whom" pos="WP" surface="whom"/>
+  <token id="19" lemma="curious" pos="JJ" surface="curious"/>
+  <token id="20" lemma="adventure" pos="NNS" surface="adventures"/>
+  <token id="21" lemma="may" pos="MD" surface="might"/>
+  <token id="22" lemma="befall" pos="VB" surface="befall"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="cc"/>
+  <dep from="4" to="2" type="nmod"/>
+  <dep from="4" to="3" type="punct"/>
+  <dep from="10" to="4" type="nsubj"/>
+  <dep from="4" to="5" type="punct"/>
+  <dep from="4" to="6" type="prep"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="4" to="9" type="punct"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="10" to="16" type="attr"/>
+  <dep from="22" to="17" type="prep"/>
+  <dep from="17" to="18" type="pobj"/>
+  <dep from="20" to="19" type="amod"/>
+  <dep from="22" to="20" type="nsubj"/>
+  <dep from="22" to="21" type="aux"/>
+  <dep from="16" to="22" type="relcl"/>
+  <dep from="10" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Catastrophe">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Undesirable_event">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Patient">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Patient">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Hypothetical_event">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

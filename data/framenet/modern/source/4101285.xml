@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101285">
+ <sentence>
+  Many had to leave their birthplaces , fleeing to Lesvos , Chios , and Samos , the Greek-ruled islands just offshore .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="many" pos="JJ" surface="Many"/>
+  <token id="2" lemma="have" pos="VBD" surface="had"/>
+  <token id="3" lemma="to" pos="TO" surface="to"/>
+  <token id="4" lemma="leave" pos="VB" surface="leave"/>
+  <token id="5" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="6" lemma="birthplace" pos="NNS" surface="birthplaces"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="flee" pos="VBG" surface="fleeing"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="lesvos" pos="NNP" surface="Lesvos"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="chios" pos="NNP" surface="Chios"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="samos" pos="NNP" surface="Samos"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="greek-rul" pos="VBN" surface="Greek-ruled"/>
+  <token id="19" lemma="island" pos="NNS" surface="islands"/>
+  <token id="20" lemma="just" pos="RB" surface="just"/>
+  <token id="21" lemma="offshore" pos="RB" surface="offshore"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="2" to="4" type="xcomp"/>
+  <dep from="6" to="5" type="poss"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="4" to="7" type="punct"/>
+  <dep from="4" to="8" type="advcl"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="10" to="12" type="conj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="12" to="14" type="cc"/>
+  <dep from="12" to="15" type="conj"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="19" to="17" type="det"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="8" to="19" type="dobj"/>
+  <dep from="21" to="20" type="advmod"/>
+  <dep from="4" to="21" type="advmod"/>
+  <dep from="2" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Departing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Event_description">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Fleeing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Self_mover">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Natural_features">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Relative_location">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Required_event">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Required_situation">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Required_situation">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Figures">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Goal">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Landmark">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Trajector">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

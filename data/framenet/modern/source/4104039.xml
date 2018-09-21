@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4104039">
+ <sentence>
+  Most shops are open seven days a week .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="most" pos="JJS" surface="Most"/>
+  <token id="2" lemma="shop" pos="NNS" surface="shops"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="open" pos="JJ" surface="open"/>
+  <token id="5" lemma="seven" pos="CD" surface="seven"/>
+  <token id="6" lemma="day" pos="NNS" surface="days"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="week" pos="NN" surface="week"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="acomp"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="4" to="6" type="npadvmod"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="npadvmod"/>
+  <dep from="3" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

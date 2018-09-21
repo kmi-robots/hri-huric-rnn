@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096693">
+ <sentence>
+  The Benefication and Hydrometallurgical Research Center ( BHRC ) operates facilities involved in the production of yellowcake .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="benefication" pos="NNP" surface="Benefication"/>
+  <token id="3" lemma="and" pos="CC" surface="and"/>
+  <token id="4" lemma="hydrometallurgical" pos="NNP" surface="Hydrometallurgical"/>
+  <token id="5" lemma="research" pos="NNP" surface="Research"/>
+  <token id="6" lemma="center" pos="NNP" surface="Center"/>
+  <token id="7" lemma="(" pos="-LRB-" surface="("/>
+  <token id="8" lemma="bhrc" pos="NNP" surface="BHRC"/>
+  <token id="9" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="10" lemma="operate" pos="VBZ" surface="operates"/>
+  <token id="11" lemma="facility" pos="NNS" surface="facilities"/>
+  <token id="12" lemma="involve" pos="VBN" surface="involved"/>
+  <token id="13" lemma="in" pos="IN" surface="in"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="production" pos="NN" surface="production"/>
+  <token id="16" lemma="of" pos="IN" surface="of"/>
+  <token id="17" lemma="yellowcake" pos="NN" surface="yellowcake"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="det"/>
+  <dep from="6" to="2" type="nmod"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="10" to="6" type="nsubj"/>
+  <dep from="8" to="7" type="punct"/>
+  <dep from="6" to="8" type="appos"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="dobj"/>
+  <dep from="11" to="12" type="acl"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="10" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Participation">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Participant_1">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Operating_a_system">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="System">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Operator">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

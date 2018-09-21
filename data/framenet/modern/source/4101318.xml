@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101318">
+ <sentence>
+  Flights are not permitted into Iraq .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="flight" pos="NNS" surface="Flights"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="not" pos="RB" surface="not"/>
+  <token id="4" lemma="permit" pos="VBN" surface="permitted"/>
+  <token id="5" lemma="into" pos="IN" surface="into"/>
+  <token id="6" lemma="iraq" pos="NNP" surface="Iraq"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubjpass"/>
+  <dep from="4" to="2" type="auxpass"/>
+  <dep from="4" to="3" type="neg"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="4" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Deny_or_grant_permission">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Action">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Goal">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Landmark">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Trajector">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

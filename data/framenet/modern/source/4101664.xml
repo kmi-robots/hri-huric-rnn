@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101664">
+ <sentence>
+  I hope Patti can help you soon .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="hope" pos="VBP" surface="hope"/>
+  <token id="3" lemma="patti" pos="NNP" surface="Patti"/>
+  <token id="4" lemma="can" pos="MD" surface="can"/>
+  <token id="5" lemma="help" pos="VB" surface="help"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="7" lemma="soon" pos="RB" surface="soon"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="2" to="5" type="ccomp"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="advmod"/>
+  <dep from="2" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Desiring">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Experiencer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Helper">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Benefited_party">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

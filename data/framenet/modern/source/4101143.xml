@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101143">
+ <sentence>
+  What was once a sure thing became much more competitive .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="what" pos="WP" surface="What"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="once" pos="RB" surface="once"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="sure" pos="JJ" surface="sure"/>
+  <token id="6" lemma="thing" pos="NN" surface="thing"/>
+  <token id="7" lemma="become" pos="VBD" surface="became"/>
+  <token id="8" lemma="much" pos="RB" surface="much"/>
+  <token id="9" lemma="more" pos="RBR" surface="more"/>
+  <token id="10" lemma="competitive" pos="JJ" surface="competitive"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="7" to="2" type="csubj"/>
+  <dep from="2" to="3" type="advmod"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="7" to="10" type="acomp"/>
+  <dep from="7" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Certainty">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Content">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Becoming">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Final_quality">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Proportional_quantity">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Mass">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Denoted_quantity">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Competition">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Participant_1">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

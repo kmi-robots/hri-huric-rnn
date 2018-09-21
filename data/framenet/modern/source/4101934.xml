@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101934">
+ <sentence>
+  25 RICH : No problem .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="25" pos="CD" surface="25"/>
+  <token id="2" lemma="rich" pos="NN" surface="RICH"/>
+  <token id="3" lemma=":" pos=":" surface=":"/>
+  <token id="4" lemma="no" pos="DT" surface="No"/>
+  <token id="5" lemma="problem" pos="NN" surface="problem"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Predicament">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Situation">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

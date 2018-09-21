@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102812">
+ <sentence>
+  Fences are the best form of permanent protection .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="fence" pos="NNS" surface="Fences"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="good" pos="JJS" surface="best"/>
+  <token id="5" lemma="form" pos="NN" surface="form"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="permanent" pos="JJ" surface="permanent"/>
+  <token id="8" lemma="protection" pos="NN" surface="protection"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="attr"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Usefulness">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Type">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Subtype">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Category">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Type_property">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Protecting">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Protection">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

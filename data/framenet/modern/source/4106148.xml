@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106148">
+ <sentence>
+  ( Entrance is by escalator , near St. Paul 's ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="(" pos="-LRB-" surface="("/>
+  <token id="2" lemma="entrance" pos="NN" surface="Entrance"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="by" pos="IN" surface="by"/>
+  <token id="5" lemma="escalator" pos="NN" surface="escalator"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="near" pos="IN" surface="near"/>
+  <token id="8" lemma="st." pos="NNP" surface="St."/>
+  <token id="9" lemma="paul" pos="NNP" surface="Paul"/>
+  <token id="10" lemma="'s" pos="POS" surface="'s"/>
+  <token id="11" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="punct"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="3" to="6" type="punct"/>
+  <dep from="3" to="7" type="prep"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="case"/>
+  <dep from="3" to="11" type="punct"/>
+  <dep from="3" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Connecting_architecture">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

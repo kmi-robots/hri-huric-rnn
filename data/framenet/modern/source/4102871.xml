@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102871">
+ <sentence>
+  These patrols tour the area during specific times such as , dinner , dawn, dusk , and midnight
+ </sentence>
+ <tokens>
+  <token id="1" lemma="these" pos="DT" surface="These"/>
+  <token id="2" lemma="patrol" pos="NNS" surface="patrols"/>
+  <token id="3" lemma="tour" pos="VBP" surface="tour"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="area" pos="NN" surface="area"/>
+  <token id="6" lemma="during" pos="IN" surface="during"/>
+  <token id="7" lemma="specific" pos="JJ" surface="specific"/>
+  <token id="8" lemma="time" pos="NNS" surface="times"/>
+  <token id="9" lemma="such" pos="JJ" surface="such"/>
+  <token id="10" lemma="as" pos="IN" surface="as"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="dinner" pos="NN" surface="dinner"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="dawn," pos="VB" surface="dawn,"/>
+  <token id="15" lemma="dusk" pos="NN" surface="dusk"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="and" pos="CC" surface="and"/>
+  <token id="18" lemma="midnight" pos="NN" surface="midnight"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="prep"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="12" to="15" type="conj"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="15" to="17" type="cc"/>
+  <dep from="15" to="18" type="conj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Travel">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Traveler">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Area">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Social_event">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Social_event">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

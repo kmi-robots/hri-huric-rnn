@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100411">
+ <sentence>
+  In the 1890s , Theodor Herzl ( 1860 - 1904 ) worked to organize a movement , Zionism , to create a Jewish state .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="1890s" pos="CD" surface="1890s"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="theodor" pos="NNP" surface="Theodor"/>
+  <token id="6" lemma="herzl" pos="NNP" surface="Herzl"/>
+  <token id="7" lemma="(" pos="-LRB-" surface="("/>
+  <token id="8" lemma="1860" pos="CD" surface="1860"/>
+  <token id="9" lemma="-" pos="SYM" surface="-"/>
+  <token id="10" lemma="1904" pos="CD" surface="1904"/>
+  <token id="11" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="12" lemma="work" pos="VBD" surface="worked"/>
+  <token id="13" lemma="to" pos="TO" surface="to"/>
+  <token id="14" lemma="organize" pos="VB" surface="organize"/>
+  <token id="15" lemma="a" pos="DT" surface="a"/>
+  <token id="16" lemma="movement" pos="NN" surface="movement"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="zionism" pos="NNP" surface="Zionism"/>
+  <token id="19" lemma="," pos="," surface=","/>
+  <token id="20" lemma="to" pos="TO" surface="to"/>
+  <token id="21" lemma="create" pos="VB" surface="create"/>
+  <token id="22" lemma="a" pos="DT" surface="a"/>
+  <token id="23" lemma="jewish" pos="JJ" surface="Jewish"/>
+  <token id="24" lemma="state" pos="NN" surface="state"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="12" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="12" to="4" type="punct"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="12" to="6" type="nsubj"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="6" to="8" type="appos"/>
+  <dep from="10" to="9" type="punct"/>
+  <dep from="8" to="10" type="prep"/>
+  <dep from="6" to="11" type="punct"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="14" to="13" type="aux"/>
+  <dep from="12" to="14" type="advcl"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="dobj"/>
+  <dep from="16" to="17" type="punct"/>
+  <dep from="16" to="18" type="appos"/>
+  <dep from="16" to="19" type="punct"/>
+  <dep from="21" to="20" type="aux"/>
+  <dep from="14" to="21" type="advcl"/>
+  <dep from="24" to="22" type="det"/>
+  <dep from="24" to="23" type="amod"/>
+  <dep from="21" to="24" type="dobj"/>
+  <dep from="12" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cause_to_start">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

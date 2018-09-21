@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097451">
+ <sentence>
+  Syria and Iran sign a nuclear pact , under which Iran agrees to provide Syria with a nuclear umbrella in the case of an Israeli attack ( Timmerman , 53 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="syria" pos="NNP" surface="Syria"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="4" lemma="sign" pos="VB" surface="sign"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="7" lemma="pact" pos="NN" surface="pact"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="under" pos="IN" surface="under"/>
+  <token id="10" lemma="which" pos="WDT" surface="which"/>
+  <token id="11" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="12" lemma="agree" pos="VBZ" surface="agrees"/>
+  <token id="13" lemma="to" pos="TO" surface="to"/>
+  <token id="14" lemma="provide" pos="VB" surface="provide"/>
+  <token id="15" lemma="syria" pos="NNP" surface="Syria"/>
+  <token id="16" lemma="with" pos="IN" surface="with"/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="19" lemma="umbrella" pos="NN" surface="umbrella"/>
+  <token id="20" lemma="in" pos="IN" surface="in"/>
+  <token id="21" lemma="the" pos="DT" surface="the"/>
+  <token id="22" lemma="case" pos="NN" surface="case"/>
+  <token id="23" lemma="of" pos="IN" surface="of"/>
+  <token id="24" lemma="an" pos="DT" surface="an"/>
+  <token id="25" lemma="israeli" pos="JJ" surface="Israeli"/>
+  <token id="26" lemma="attack" pos="NN" surface="attack"/>
+  <token id="27" lemma="(" pos="-LRB-" surface="("/>
+  <token id="28" lemma="timmerman" pos="NNP" surface="Timmerman"/>
+  <token id="29" lemma="," pos="," surface=","/>
+  <token id="30" lemma="53" pos="CD" surface="53"/>
+  <token id="31" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="32" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="12" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="7" to="12" type="relcl"/>
+  <dep from="14" to="13" type="aux"/>
+  <dep from="12" to="14" type="xcomp"/>
+  <dep from="14" to="15" type="dobj"/>
+  <dep from="14" to="16" type="prep"/>
+  <dep from="19" to="17" type="det"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="16" to="19" type="pobj"/>
+  <dep from="14" to="20" type="prep"/>
+  <dep from="22" to="21" type="det"/>
+  <dep from="20" to="22" type="pobj"/>
+  <dep from="22" to="23" type="prep"/>
+  <dep from="26" to="24" type="det"/>
+  <dep from="26" to="25" type="amod"/>
+  <dep from="23" to="26" type="pobj"/>
+  <dep from="26" to="27" type="punct"/>
+  <dep from="26" to="28" type="appos"/>
+  <dep from="28" to="29" type="punct"/>
+  <dep from="28" to="30" type="nummod"/>
+  <dep from="28" to="31" type="punct"/>
+  <dep from="4" to="32" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Sign_agreement">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Signatory">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Agreement">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="26"/>
+    </lexicalUnit>
+    <frameElement type="Assailant">
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

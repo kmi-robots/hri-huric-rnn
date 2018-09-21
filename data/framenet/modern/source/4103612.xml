@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103612">
+ <sentence>
+  ( Do n't say Stephanopoulos did n't know .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="(" pos="-LRB-" surface="("/>
+  <token id="2" lemma="do" pos="VB" surface="Do"/>
+  <token id="3" lemma="n't" pos="RB" surface="n't"/>
+  <token id="4" lemma="say" pos="VB" surface="say"/>
+  <token id="5" lemma="stephanopoulos" pos="NNP" surface="Stephanopoulos"/>
+  <token id="6" lemma="do" pos="VBD" surface="did"/>
+  <token id="7" lemma="n't" pos="RB" surface="n't"/>
+  <token id="8" lemma="know" pos="VB" surface="know"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="punct"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="neg"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="8" to="5" type="nsubj"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="neg"/>
+  <dep from="4" to="8" type="ccomp"/>
+  <dep from="4" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Awareness">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

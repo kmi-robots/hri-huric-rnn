@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4105904">
+ <sentence>
+  The busy night - and - day crowds make this area vibrant and lively .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="busy" pos="JJ" surface="busy"/>
+  <token id="3" lemma="night" pos="NN" surface="night"/>
+  <token id="4" lemma="-" pos="HYPH" surface="-"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="-" pos="HYPH" surface="-"/>
+  <token id="7" lemma="day" pos="NN" surface="day"/>
+  <token id="8" lemma="crowd" pos="NNS" surface="crowds"/>
+  <token id="9" lemma="make" pos="VBP" surface="make"/>
+  <token id="10" lemma="this" pos="DT" surface="this"/>
+  <token id="11" lemma="area" pos="NN" surface="area"/>
+  <token id="12" lemma="vibrant" pos="JJ" surface="vibrant"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="lively" pos="JJ" surface="lively"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="det"/>
+  <dep from="8" to="2" type="amod"/>
+  <dep from="8" to="3" type="nmod"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="3" to="5" type="cc"/>
+  <dep from="7" to="6" type="punct"/>
+  <dep from="3" to="7" type="conj"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="9" to="12" type="ccomp"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="12" to="14" type="conj"/>
+  <dep from="9" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Lively_place">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Calendric_unit">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Aggregate_property">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Lively_place">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Location">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

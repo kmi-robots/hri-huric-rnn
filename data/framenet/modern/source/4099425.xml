@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099425">
+ <sentence>
+  These confrontations are not purely in the realm of fantasy , however .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="these" pos="DT" surface="These"/>
+  <token id="2" lemma="confrontation" pos="NNS" surface="confrontations"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="not" pos="RB" surface="not"/>
+  <token id="5" lemma="purely" pos="RB" surface="purely"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="realm" pos="NN" surface="realm"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="fantasy" pos="NN" surface="fantasy"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="however" pos="RB" surface="however"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="neg"/>
+  <dep from="3" to="5" type="advmod"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="3" to="11" type="punct"/>
+  <dep from="3" to="12" type="advmod"/>
+  <dep from="3" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101824">
+ <sentence>
+  Unfortunately , those same charitable organizations , those same charity committees that funnel the funds to needier Palestinians , also serve to support terrorist attacks .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="unfortunately" pos="RB" surface="Unfortunately"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="those" pos="DT" surface="those"/>
+  <token id="4" lemma="same" pos="JJ" surface="same"/>
+  <token id="5" lemma="charitable" pos="JJ" surface="charitable"/>
+  <token id="6" lemma="organization" pos="NNS" surface="organizations"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="those" pos="DT" surface="those"/>
+  <token id="9" lemma="same" pos="JJ" surface="same"/>
+  <token id="10" lemma="charity" pos="NN" surface="charity"/>
+  <token id="11" lemma="committee" pos="NNS" surface="committees"/>
+  <token id="12" lemma="that" pos="WDT" surface="that"/>
+  <token id="13" lemma="funnel" pos="VBP" surface="funnel"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="fund" pos="NNS" surface="funds"/>
+  <token id="16" lemma="to" pos="IN" surface="to"/>
+  <token id="17" lemma="needy" pos="JJR" surface="needier"/>
+  <token id="18" lemma="palestinians" pos="NNPS" surface="Palestinians"/>
+  <token id="19" lemma="," pos="," surface=","/>
+  <token id="20" lemma="also" pos="RB" surface="also"/>
+  <token id="21" lemma="serve" pos="VBP" surface="serve"/>
+  <token id="22" lemma="to" pos="TO" surface="to"/>
+  <token id="23" lemma="support" pos="VB" surface="support"/>
+  <token id="24" lemma="terrorist" pos="JJ" surface="terrorist"/>
+  <token id="25" lemma="attack" pos="NNS" surface="attacks"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="21" to="1" type="advmod"/>
+  <dep from="21" to="2" type="punct"/>
+  <dep from="6" to="3" type="det"/>
+  <dep from="6" to="4" type="amod"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="21" to="6" type="nsubj"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="11" to="8" type="det"/>
+  <dep from="11" to="9" type="amod"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="6" to="11" type="appos"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="11" to="13" type="relcl"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="dobj"/>
+  <dep from="13" to="16" type="prep"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="21" to="19" type="punct"/>
+  <dep from="21" to="20" type="advmod"/>
+  <dep from="0" to="21" type="root"/>
+  <dep from="23" to="22" type="aux"/>
+  <dep from="21" to="23" type="xcomp"/>
+  <dep from="25" to="24" type="amod"/>
+  <dep from="23" to="25" type="dobj"/>
+  <dep from="21" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Organization">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Organization">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Money">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Money">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Wealthiness">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Terrorism">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Terrorist">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="25"/>
+    </lexicalUnit>
+    <frameElement type="Assailant">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

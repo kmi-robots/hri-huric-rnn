@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4164985">
+ <sentence>
+  Alfredo Canal , a Galician rural agency chief , told
+ </sentence>
+ <tokens>
+  <token id="1" lemma="alfredo" pos="NNP" surface="Alfredo"/>
+  <token id="2" lemma="canal" pos="NNP" surface="Canal"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="galician" pos="JJ" surface="Galician"/>
+  <token id="6" lemma="rural" pos="JJ" surface="rural"/>
+  <token id="7" lemma="agency" pos="NN" surface="agency"/>
+  <token id="8" lemma="chief" pos="NN" surface="chief"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="tell" pos="VBD" surface="told"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="10" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="8" to="4" type="det"/>
+  <dep from="8" to="5" type="amod"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="2" to="8" type="appos"/>
+  <dep from="2" to="9" type="punct"/>
+  <dep from="0" to="10" type="root"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Leader">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

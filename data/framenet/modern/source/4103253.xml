@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4103253">
+ <sentence>
+  Corrupted courts should not judge the matter .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="corrupt" pos="VBN" surface="Corrupted"/>
+  <token id="2" lemma="court" pos="NNS" surface="courts"/>
+  <token id="3" lemma="should" pos="MD" surface="should"/>
+  <token id="4" lemma="not" pos="RB" surface="not"/>
+  <token id="5" lemma="judge" pos="VB" surface="judge"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="matter" pos="NN" surface="matter"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="5" to="2" type="nsubj"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="neg"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="5" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Judicial_body">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Judicial_body">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirable_event">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="State_of_affairs">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Assessing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Assessor">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

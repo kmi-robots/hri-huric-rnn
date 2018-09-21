@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101589">
+ <sentence>
+  The struggle against the drug lords in Colombia will be a near thing .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="struggle" pos="NN" surface="struggle"/>
+  <token id="3" lemma="against" pos="IN" surface="against"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="drug" pos="NN" surface="drug"/>
+  <token id="6" lemma="lord" pos="NNS" surface="lords"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="colombia" pos="NNP" surface="Colombia"/>
+  <token id="9" lemma="will" pos="MD" surface="will"/>
+  <token id="10" lemma="be" pos="VB" surface="be"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="near" pos="JJ" surface="near"/>
+  <token id="13" lemma="thing" pos="NN" surface="thing"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="10" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="3" to="6" type="pobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="attr"/>
+  <dep from="10" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Side_2">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Difficulty">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

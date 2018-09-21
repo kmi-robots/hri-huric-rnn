@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100338">
+ <sentence>
+  Thanks to King Hezekiah 's hidden water tunnel , the city narrowly escaped destruction .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="thank" pos="NNS" surface="Thanks"/>
+  <token id="2" lemma="to" pos="IN" surface="to"/>
+  <token id="3" lemma="king" pos="NNP" surface="King"/>
+  <token id="4" lemma="hezekiah" pos="NNP" surface="Hezekiah"/>
+  <token id="5" lemma="'s" pos="POS" surface="'s"/>
+  <token id="6" lemma="hidden" pos="JJ" surface="hidden"/>
+  <token id="7" lemma="water" pos="NN" surface="water"/>
+  <token id="8" lemma="tunnel" pos="NN" surface="tunnel"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="city" pos="NN" surface="city"/>
+  <token id="12" lemma="narrowly" pos="RB" surface="narrowly"/>
+  <token id="13" lemma="escape" pos="VBD" surface="escaped"/>
+  <token id="14" lemma="destruction" pos="NN" surface="destruction"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="13" to="1" type="advcl"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="8" to="4" type="poss"/>
+  <dep from="4" to="5" type="case"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="2" to="8" type="pobj"/>
+  <dep from="13" to="9" type="punct"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="13" to="11" type="nsubj"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="dobj"/>
+  <dep from="13" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Eclipse">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Eclipsed">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Roadways">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Roadway">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Abundant_entities">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Political_locales">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Avoiding">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Undesirable_situation">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Destroying">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096565">
+ <sentence>
+  Gidromash , an Almaty -based Soviet-era producer of submarine-launched missiles , was converted to a civilian commercial enterprise under CTR 's Industrial Partnerships Program .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="gidromash" pos="NNP" surface="Gidromash"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="an" pos="DT" surface="an"/>
+  <token id="4" lemma="almaty" pos="NNP" surface="Almaty"/>
+  <token id="5" lemma="-based" pos=":" surface="-based"/>
+  <token id="6" lemma="soviet-era" pos="NN" surface="Soviet-era"/>
+  <token id="7" lemma="producer" pos="NN" surface="producer"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="submarine-launched" pos="JJ" surface="submarine-launched"/>
+  <token id="10" lemma="missile" pos="NNS" surface="missiles"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="be" pos="VBD" surface="was"/>
+  <token id="13" lemma="convert" pos="VBN" surface="converted"/>
+  <token id="14" lemma="to" pos="IN" surface="to"/>
+  <token id="15" lemma="a" pos="DT" surface="a"/>
+  <token id="16" lemma="civilian" pos="JJ" surface="civilian"/>
+  <token id="17" lemma="commercial" pos="JJ" surface="commercial"/>
+  <token id="18" lemma="enterprise" pos="NN" surface="enterprise"/>
+  <token id="19" lemma="under" pos="IN" surface="under"/>
+  <token id="20" lemma="ctr" pos="NNP" surface="CTR"/>
+  <token id="21" lemma="'s" pos="POS" surface="'s"/>
+  <token id="22" lemma="industrial" pos="NNP" surface="Industrial"/>
+  <token id="23" lemma="partnerships" pos="NNP" surface="Partnerships"/>
+  <token id="24" lemma="program" pos="NNP" surface="Program"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="13" to="1" type="nsubjpass"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="7" to="3" type="det"/>
+  <dep from="6" to="4" type="nmod"/>
+  <dep from="6" to="5" type="punct"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="1" to="7" type="appos"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="1" to="11" type="punct"/>
+  <dep from="13" to="12" type="auxpass"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="18" to="15" type="det"/>
+  <dep from="18" to="16" type="amod"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="14" to="18" type="pobj"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="24" to="20" type="poss"/>
+  <dep from="20" to="21" type="case"/>
+  <dep from="23" to="22" type="compound"/>
+  <dep from="24" to="23" type="compound"/>
+  <dep from="19" to="24" type="pobj"/>
+  <dep from="13" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_change">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Final_category">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Initial_category">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Depictive">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Product">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Name">
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Project">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

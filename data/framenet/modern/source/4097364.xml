@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097364">
+ <sentence>
+  Argentina helps service an Iranian nuclear power plant ( 7148 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="argentina" pos="NNP" surface="Argentina"/>
+  <token id="2" lemma="help" pos="VBZ" surface="helps"/>
+  <token id="3" lemma="service" pos="VB" surface="service"/>
+  <token id="4" lemma="an" pos="DT" surface="an"/>
+  <token id="5" lemma="iranian" pos="JJ" surface="Iranian"/>
+  <token id="6" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="7" lemma="power" pos="NN" surface="power"/>
+  <token id="8" lemma="plant" pos="NN" surface="plant"/>
+  <token id="9" lemma="(" pos="-LRB-" surface="("/>
+  <token id="10" lemma="7148" pos="CD" surface="7148"/>
+  <token id="11" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="xcomp"/>
+  <dep from="8" to="4" type="det"/>
+  <dep from="8" to="5" type="amod"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="3" to="8" type="dobj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="8" to="10" type="appos"/>
+  <dep from="8" to="11" type="punct"/>
+  <dep from="2" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Helper">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Use">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Locale">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

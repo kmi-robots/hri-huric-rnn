@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097552">
+ <sentence>
+  Germany has paid 300 million DM for parts not delivered , but Iran may seek 5 billion DM ( 6573 , 6576 , 6581 , 6930 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="germany" pos="NNP" surface="Germany"/>
+  <token id="2" lemma="have" pos="VBZ" surface="has"/>
+  <token id="3" lemma="pay" pos="VBN" surface="paid"/>
+  <token id="4" lemma="300" pos="CD" surface="300"/>
+  <token id="5" lemma="million" pos="CD" surface="million"/>
+  <token id="6" lemma="dm" pos="NN" surface="DM"/>
+  <token id="7" lemma="for" pos="IN" surface="for"/>
+  <token id="8" lemma="part" pos="NNS" surface="parts"/>
+  <token id="9" lemma="not" pos="RB" surface="not"/>
+  <token id="10" lemma="deliver" pos="VBN" surface="delivered"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="but" pos="CC" surface="but"/>
+  <token id="13" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="14" lemma="may" pos="MD" surface="may"/>
+  <token id="15" lemma="seek" pos="VB" surface="seek"/>
+  <token id="16" lemma="5" pos="CD" surface="5"/>
+  <token id="17" lemma="billion" pos="CD" surface="billion"/>
+  <token id="18" lemma="dm" pos="NN" surface="DM"/>
+  <token id="19" lemma="(" pos="-LRB-" surface="("/>
+  <token id="20" lemma="6573" pos="CD" surface="6573"/>
+  <token id="21" lemma="," pos="," surface=","/>
+  <token id="22" lemma="6576" pos="CD" surface="6576"/>
+  <token id="23" lemma="," pos="," surface=","/>
+  <token id="24" lemma="6581" pos="CD" surface="6581"/>
+  <token id="25" lemma="," pos="," surface=","/>
+  <token id="26" lemma="6930" pos="CD" surface="6930"/>
+  <token id="27" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="28" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="10" to="7" type="mark"/>
+  <dep from="10" to="8" type="nsubj"/>
+  <dep from="10" to="9" type="neg"/>
+  <dep from="6" to="10" type="advcl"/>
+  <dep from="3" to="11" type="punct"/>
+  <dep from="3" to="12" type="cc"/>
+  <dep from="15" to="13" type="nsubj"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="3" to="15" type="conj"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="18" to="17" type="nummod"/>
+  <dep from="15" to="18" type="dobj"/>
+  <dep from="18" to="19" type="punct"/>
+  <dep from="18" to="20" type="appos"/>
+  <dep from="20" to="21" type="punct"/>
+  <dep from="18" to="22" type="npadvmod"/>
+  <dep from="22" to="23" type="punct"/>
+  <dep from="18" to="24" type="appos"/>
+  <dep from="24" to="25" type="punct"/>
+  <dep from="18" to="26" type="appos"/>
+  <dep from="18" to="27" type="punct"/>
+  <dep from="15" to="28" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_pay">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Buyer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Money">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Delivery">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

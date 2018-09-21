@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148272">
+ <sentence>
+  " I must congratulate you , Inspector , on handling so distinctive and instructive a case .
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="3" lemma="must" pos="MD" surface="must"/>
+  <token id="4" lemma="congratulate" pos="VB" surface="congratulate"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="inspector" pos="NNP" surface="Inspector"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="on" pos="IN" surface="on"/>
+  <token id="10" lemma="handle" pos="VBG" surface="handling"/>
+  <token id="11" lemma="so" pos="RB" surface="so"/>
+  <token id="12" lemma="distinctive" pos="JJ" surface="distinctive"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="instructive" pos="JJ" surface="instructive"/>
+  <token id="15" lemma="a" pos="DT" surface="a"/>
+  <token id="16" lemma="case" pos="NN" surface="case"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="punct"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="5" to="6" type="punct"/>
+  <dep from="5" to="7" type="appos"/>
+  <dep from="4" to="8" type="punct"/>
+  <dep from="4" to="9" type="prep"/>
+  <dep from="9" to="10" type="pcomp"/>
+  <dep from="12" to="11" type="advmod"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="12" to="14" type="conj"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="10" to="16" type="dobj"/>
+  <dep from="4" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Distinctiveness">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Degree">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Judgment_direct_address">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Communicator">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Addressee">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Reason">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Resolve_problem">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Problem">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

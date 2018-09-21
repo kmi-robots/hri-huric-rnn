@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098432">
+ <sentence>
+  No delegates finished the report .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="no" pos="DT" surface="No"/>
+  <token id="2" lemma="delegate" pos="NNS" surface="delegates"/>
+  <token id="3" lemma="finish" pos="VBD" surface="finished"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="report" pos="NN" surface="report"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Activity_finish">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

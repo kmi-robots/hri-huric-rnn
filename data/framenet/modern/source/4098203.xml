@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098203">
+ <sentence>
+  QN : Does North Korean still export missiles ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="do" pos="VBZ" surface="Does"/>
+  <token id="4" lemma="north" pos="JJ" surface="North"/>
+  <token id="5" lemma="korean" pos="NNP" surface="Korean"/>
+  <token id="6" lemma="still" pos="RB" surface="still"/>
+  <token id="7" lemma="export" pos="VBP" surface="export"/>
+  <token id="8" lemma="missile" pos="NNS" surface="missiles"/>
+  <token id="9" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="7" to="3" type="aux"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="7" to="5" type="nsubj"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="1" to="7" type="acl"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="7" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Exporting">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Exporter">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

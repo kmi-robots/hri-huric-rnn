@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099816">
+ <sentence>
+  Islamists will set off dirty bomb , spy bosses believe
+ </sentence>
+ <tokens>
+  <token id="1" lemma="islamist" pos="NNS" surface="Islamists"/>
+  <token id="2" lemma="will" pos="MD" surface="will"/>
+  <token id="3" lemma="set" pos="VB" surface="set"/>
+  <token id="4" lemma="off" pos="RP" surface="off"/>
+  <token id="5" lemma="dirty" pos="JJ" surface="dirty"/>
+  <token id="6" lemma="bomb" pos="NN" surface="bomb"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="spy" pos="NN" surface="spy"/>
+  <token id="9" lemma="boss" pos="NNS" surface="bosses"/>
+  <token id="10" lemma="believe" pos="VBP" surface="believe"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prt"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="punct"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="3" to="10" type="conj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cause_to_start">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Governed">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Certainty">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Content">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

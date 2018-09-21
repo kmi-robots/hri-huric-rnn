@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097498">
+ <sentence>
+  Scientists are reported to be in Iran as of 2/92 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="scientist" pos="NNS" surface="Scientists"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="report" pos="VBN" surface="reported"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="be" pos="VB" surface="be"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="8" lemma="as" pos="IN" surface="as"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="2/92" pos="CD" surface="2/92"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="xcomp"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="5" to="8" type="prep"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="3" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Interior_profile_relation">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

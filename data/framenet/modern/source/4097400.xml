@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097400">
+ <sentence>
+  Germany is approving about 80 percent of applications for licenses to export dual - use technology to Iran .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="germany" pos="NNP" surface="Germany"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="approve" pos="VBG" surface="approving"/>
+  <token id="4" lemma="about" pos="RB" surface="about"/>
+  <token id="5" lemma="80" pos="CD" surface="80"/>
+  <token id="6" lemma="percent" pos="NN" surface="percent"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="application" pos="NNS" surface="applications"/>
+  <token id="9" lemma="for" pos="IN" surface="for"/>
+  <token id="10" lemma="license" pos="NNS" surface="licenses"/>
+  <token id="11" lemma="to" pos="TO" surface="to"/>
+  <token id="12" lemma="export" pos="VB" surface="export"/>
+  <token id="13" lemma="dual" pos="JJ" surface="dual"/>
+  <token id="14" lemma="-" pos="HYPH" surface="-"/>
+  <token id="15" lemma="use" pos="NN" surface="use"/>
+  <token id="16" lemma="technology" pos="NN" surface="technology"/>
+  <token id="17" lemma="to" pos="IN" surface="to"/>
+  <token id="18" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="quantmod"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="12" to="11" type="aux"/>
+  <dep from="10" to="12" type="acl"/>
+  <dep from="15" to="13" type="amod"/>
+  <dep from="15" to="14" type="punct"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="12" to="16" type="dobj"/>
+  <dep from="12" to="17" type="prep"/>
+  <dep from="17" to="18" type="pobj"/>
+  <dep from="3" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Exporting">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Importing_area">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+   <frame name="Purpose">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Artifact">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Artifact">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

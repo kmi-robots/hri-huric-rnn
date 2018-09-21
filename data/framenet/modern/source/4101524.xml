@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101524">
+ <sentence>
+  WHO 'S GETTING MARRIED ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="who" pos="WP" surface="WHO"/>
+  <token id="2" lemma="be" pos="VBZ" surface="'S"/>
+  <token id="3" lemma="get" pos="VBG" surface="GETTING"/>
+  <token id="4" lemma="married" pos="NNP" surface="MARRIED"/>
+  <token id="5" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="acomp"/>
+  <dep from="3" to="5" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Transition_to_state">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Final_situation">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Forming_relationships">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Partners">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

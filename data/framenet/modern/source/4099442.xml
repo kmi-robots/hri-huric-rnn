@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099442">
+ <sentence>
+  In March 2002 , U.S. troops in Afghanistan found an abandoned laboratory under construction near Kandahar where Al Qa'ida members apparently planned to develop biological agents .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="march" pos="NNP" surface="March"/>
+  <token id="3" lemma="2002" pos="CD" surface="2002"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="u.s." pos="NNP" surface="U.S."/>
+  <token id="6" lemma="troop" pos="NNS" surface="troops"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="afghanistan" pos="NNP" surface="Afghanistan"/>
+  <token id="9" lemma="find" pos="VBD" surface="found"/>
+  <token id="10" lemma="an" pos="DT" surface="an"/>
+  <token id="11" lemma="abandon" pos="VBN" surface="abandoned"/>
+  <token id="12" lemma="laboratory" pos="NN" surface="laboratory"/>
+  <token id="13" lemma="under" pos="IN" surface="under"/>
+  <token id="14" lemma="construction" pos="NN" surface="construction"/>
+  <token id="15" lemma="near" pos="IN" surface="near"/>
+  <token id="16" lemma="kandahar" pos="NNP" surface="Kandahar"/>
+  <token id="17" lemma="where" pos="WRB" surface="where"/>
+  <token id="18" lemma="al" pos="NNP" surface="Al"/>
+  <token id="19" lemma="qa'ida" pos="NNP" surface="Qa'ida"/>
+  <token id="20" lemma="member" pos="NNS" surface="members"/>
+  <token id="21" lemma="apparently" pos="RB" surface="apparently"/>
+  <token id="22" lemma="plan" pos="VBD" surface="planned"/>
+  <token id="23" lemma="to" pos="TO" surface="to"/>
+  <token id="24" lemma="develop" pos="VB" surface="develop"/>
+  <token id="25" lemma="biological" pos="JJ" surface="biological"/>
+  <token id="26" lemma="agent" pos="NNS" surface="agents"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="2" to="3" type="nummod"/>
+  <dep from="9" to="4" type="punct"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="9" to="6" type="nsubj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="dobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="24" to="17" type="advmod"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="22" to="20" type="nsubj"/>
+  <dep from="22" to="21" type="advmod"/>
+  <dep from="16" to="22" type="relcl"/>
+  <dep from="24" to="23" type="aux"/>
+  <dep from="22" to="24" type="xcomp"/>
+  <dep from="26" to="25" type="amod"/>
+  <dep from="24" to="26" type="dobj"/>
+  <dep from="9" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locating">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Sought_entity">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Sought_entity">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_to_make_progress">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Project">
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Building">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Active_substance">
+    <lexicalUnit>
+     <token id="26"/>
+    </lexicalUnit>
+    <frameElement type="Type">
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Substance">
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Group">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Member">
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

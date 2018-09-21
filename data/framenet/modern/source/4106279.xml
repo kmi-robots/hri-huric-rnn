@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106279">
+ <sentence>
+  Zhou Enlai also taught here .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="zhou" pos="NNP" surface="Zhou"/>
+  <token id="2" lemma="enlai" pos="NNP" surface="Enlai"/>
+  <token id="3" lemma="also" pos="RB" surface="also"/>
+  <token id="4" lemma="teach" pos="VBD" surface="taught"/>
+  <token id="5" lemma="here" pos="RB" surface="here"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="advmod"/>
+  <dep from="4" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Education_teaching">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Teacher">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Institution">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

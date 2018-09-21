@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097497">
+ <sentence>
+  Soviet scientists are offered up to $20,000 per month to work on Iran 's nuclear program ( 7325 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="soviet" pos="JJ" surface="Soviet"/>
+  <token id="2" lemma="scientist" pos="NNS" surface="scientists"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="offer" pos="VBN" surface="offered"/>
+  <token id="5" lemma="up" pos="RP" surface="up"/>
+  <token id="6" lemma="to" pos="IN" surface="to"/>
+  <token id="7" lemma="$20,000" pos="CD" surface="$20,000"/>
+  <token id="8" lemma="per" pos="IN" surface="per"/>
+  <token id="9" lemma="month" pos="NN" surface="month"/>
+  <token id="10" lemma="to" pos="TO" surface="to"/>
+  <token id="11" lemma="work" pos="VB" surface="work"/>
+  <token id="12" lemma="on" pos="IN" surface="on"/>
+  <token id="13" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="14" lemma="'s" pos="POS" surface="'s"/>
+  <token id="15" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="16" lemma="program" pos="NN" surface="program"/>
+  <token id="17" lemma="(" pos="-LRB-" surface="("/>
+  <token id="18" lemma="7325" pos="CD" surface="7325"/>
+  <token id="19" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prt"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="4" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="4" to="11" type="advcl"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="16" to="13" type="poss"/>
+  <dep from="13" to="14" type="case"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="12" to="16" type="pobj"/>
+  <dep from="16" to="17" type="punct"/>
+  <dep from="16" to="18" type="appos"/>
+  <dep from="16" to="19" type="punct"/>
+  <dep from="4" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_employed">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Employee">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Task">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Person">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Salient_entity">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

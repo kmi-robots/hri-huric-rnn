@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097064">
+ <sentence>
+  The Chinese firm was Nanjing Chemical and Industrial Group .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="chinese" pos="JJ" surface="Chinese"/>
+  <token id="3" lemma="firm" pos="NN" surface="firm"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="nanjing" pos="NNP" surface="Nanjing"/>
+  <token id="6" lemma="chemical" pos="NNP" surface="Chemical"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="industrial" pos="NNP" surface="Industrial"/>
+  <token id="9" lemma="group" pos="NNP" surface="Group"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="4" to="6" type="attr"/>
+  <dep from="6" to="7" type="cc"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="conj"/>
+  <dep from="4" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Business">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Business_name">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Origin">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

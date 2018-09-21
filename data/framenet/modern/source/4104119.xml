@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4104119">
+ <sentence>
+  Some people say you can test the authenticity by touch?—?real jade feels smooth and cool .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="some" pos="DT" surface="Some"/>
+  <token id="2" lemma="people" pos="NNS" surface="people"/>
+  <token id="3" lemma="say" pos="VBP" surface="say"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="5" lemma="can" pos="MD" surface="can"/>
+  <token id="6" lemma="test" pos="VB" surface="test"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="authenticity" pos="NN" surface="authenticity"/>
+  <token id="9" lemma="by" pos="IN" surface="by"/>
+  <token id="10" lemma="touch?—?real" pos="NNP" surface="touch?—?real"/>
+  <token id="11" lemma="jade" pos="NN" surface="jade"/>
+  <token id="12" lemma="feel" pos="VBZ" surface="feels"/>
+  <token id="13" lemma="smooth" pos="JJ" surface="smooth"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="cool" pos="JJ" surface="cool"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="3" to="6" type="ccomp"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="12" to="8" type="nsubj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="6" to="12" type="ccomp"/>
+  <dep from="12" to="13" type="acomp"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="3" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Operational_testing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Tester">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Tested_property">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

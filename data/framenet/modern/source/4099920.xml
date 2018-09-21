@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099920">
+ <sentence>
+  Stephanopoulos Analyzes His Own Crime
+ </sentence>
+ <tokens>
+  <token id="1" lemma="stephanopoulos" pos="NNP" surface="Stephanopoulos"/>
+  <token id="2" lemma="analyze" pos="VBZ" surface="Analyzes"/>
+  <token id="3" lemma="-PRON-" pos="PRP$" surface="His"/>
+  <token id="4" lemma="own" pos="JJ" surface="Own"/>
+  <token id="5" lemma="crime" pos="NN" surface="Crime"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="poss"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="dobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Committing_crime">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Crime">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Perpetrator">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

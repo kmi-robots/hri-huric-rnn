@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099927">
+ <sentence>
+  Political figures turn on each other from time to time , for good and bad reasons ; we 're used to it .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="political" pos="JJ" surface="Political"/>
+  <token id="2" lemma="figure" pos="NNS" surface="figures"/>
+  <token id="3" lemma="turn" pos="VBP" surface="turn"/>
+  <token id="4" lemma="on" pos="IN" surface="on"/>
+  <token id="5" lemma="each" pos="DT" surface="each"/>
+  <token id="6" lemma="other" pos="JJ" surface="other"/>
+  <token id="7" lemma="from" pos="IN" surface="from"/>
+  <token id="8" lemma="time" pos="NN" surface="time"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="time" pos="NN" surface="time"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="for" pos="IN" surface="for"/>
+  <token id="13" lemma="good" pos="JJ" surface="good"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="bad" pos="JJ" surface="bad"/>
+  <token id="16" lemma="reason" pos="NNS" surface="reasons"/>
+  <token id="17" lemma=";" pos=":" surface=";"/>
+  <token id="18" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="19" lemma="be" pos="VBP" surface="'re"/>
+  <token id="20" lemma="use" pos="VBN" surface="used"/>
+  <token id="21" lemma="to" pos="IN" surface="to"/>
+  <token id="22" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="20" to="3" type="ccomp"/>
+  <dep from="3" to="4" type="prt"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="3" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="7" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="3" to="11" type="punct"/>
+  <dep from="3" to="12" type="prep"/>
+  <dep from="16" to="13" type="amod"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="12" to="16" type="pobj"/>
+  <dep from="20" to="17" type="punct"/>
+  <dep from="20" to="18" type="nsubjpass"/>
+  <dep from="20" to="19" type="auxpass"/>
+  <dep from="0" to="20" type="root"/>
+  <dep from="20" to="21" type="prep"/>
+  <dep from="21" to="22" type="pobj"/>
+  <dep from="20" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Desirability">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirability">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Reason">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

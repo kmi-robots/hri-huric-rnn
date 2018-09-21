@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100366">
+ <sentence>
+  After Jesus 's crucifixion , harsh Roman rule continued until a.d. 66 , when the Jews rebelled .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="after" pos="IN" surface="After"/>
+  <token id="2" lemma="jesus" pos="NNP" surface="Jesus"/>
+  <token id="3" lemma="'s" pos="POS" surface="'s"/>
+  <token id="4" lemma="crucifixion" pos="NN" surface="crucifixion"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="harsh" pos="JJ" surface="harsh"/>
+  <token id="7" lemma="roman" pos="JJ" surface="Roman"/>
+  <token id="8" lemma="rule" pos="NN" surface="rule"/>
+  <token id="9" lemma="continue" pos="VBD" surface="continued"/>
+  <token id="10" lemma="until" pos="IN" surface="until"/>
+  <token id="11" lemma="a.d." pos="NN" surface="a.d."/>
+  <token id="12" lemma="66" pos="CD" surface="66"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="when" pos="WRB" surface="when"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="jews" pos="NNPS" surface="Jews"/>
+  <token id="17" lemma="rebel" pos="VBD" surface="rebelled"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="prep"/>
+  <dep from="4" to="2" type="poss"/>
+  <dep from="2" to="3" type="case"/>
+  <dep from="1" to="4" type="pobj"/>
+  <dep from="9" to="5" type="punct"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="11" to="12" type="nummod"/>
+  <dep from="11" to="13" type="punct"/>
+  <dep from="17" to="14" type="advmod"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="17" to="16" type="nsubj"/>
+  <dep from="11" to="17" type="relcl"/>
+  <dep from="9" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Process_continue">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Relative_time">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Landmark_occasion">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Focal_occasion">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

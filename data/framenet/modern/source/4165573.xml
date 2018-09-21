@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4165573">
+ <sentence>
+  No casualties have yet been reported , and no official property damage tally has yet been made , although Greek media have estimated tens of homes to have been damaged .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="no" pos="DT" surface="No"/>
+  <token id="2" lemma="casualty" pos="NNS" surface="casualties"/>
+  <token id="3" lemma="have" pos="VBP" surface="have"/>
+  <token id="4" lemma="yet" pos="RB" surface="yet"/>
+  <token id="5" lemma="be" pos="VBN" surface="been"/>
+  <token id="6" lemma="report" pos="VBN" surface="reported"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="no" pos="DT" surface="no"/>
+  <token id="10" lemma="official" pos="JJ" surface="official"/>
+  <token id="11" lemma="property" pos="NN" surface="property"/>
+  <token id="12" lemma="damage" pos="NN" surface="damage"/>
+  <token id="13" lemma="tally" pos="NN" surface="tally"/>
+  <token id="14" lemma="have" pos="VBZ" surface="has"/>
+  <token id="15" lemma="yet" pos="RB" surface="yet"/>
+  <token id="16" lemma="be" pos="VBN" surface="been"/>
+  <token id="17" lemma="make" pos="VBN" surface="made"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="although" pos="IN" surface="although"/>
+  <token id="20" lemma="greek" pos="JJ" surface="Greek"/>
+  <token id="21" lemma="medium" pos="NNS" surface="media"/>
+  <token id="22" lemma="have" pos="VBP" surface="have"/>
+  <token id="23" lemma="estimate" pos="VBN" surface="estimated"/>
+  <token id="24" lemma="ten" pos="NNS" surface="tens"/>
+  <token id="25" lemma="of" pos="IN" surface="of"/>
+  <token id="26" lemma="home" pos="NNS" surface="homes"/>
+  <token id="27" lemma="to" pos="TO" surface="to"/>
+  <token id="28" lemma="have" pos="VB" surface="have"/>
+  <token id="29" lemma="be" pos="VBN" surface="been"/>
+  <token id="30" lemma="damage" pos="VBN" surface="damaged"/>
+  <token id="31" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="6" to="2" type="nsubjpass"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="6" to="4" type="advmod"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="6" to="8" type="cc"/>
+  <dep from="12" to="9" type="det"/>
+  <dep from="12" to="10" type="amod"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="17" to="12" type="nsubjpass"/>
+  <dep from="17" to="13" type="nsubjpass"/>
+  <dep from="17" to="14" type="aux"/>
+  <dep from="17" to="15" type="advmod"/>
+  <dep from="17" to="16" type="auxpass"/>
+  <dep from="6" to="17" type="conj"/>
+  <dep from="17" to="18" type="punct"/>
+  <dep from="23" to="19" type="mark"/>
+  <dep from="21" to="20" type="amod"/>
+  <dep from="23" to="21" type="nsubj"/>
+  <dep from="23" to="22" type="aux"/>
+  <dep from="30" to="23" type="advcl"/>
+  <dep from="30" to="24" type="nsubjpass"/>
+  <dep from="24" to="25" type="prep"/>
+  <dep from="25" to="26" type="pobj"/>
+  <dep from="30" to="27" type="aux"/>
+  <dep from="30" to="28" type="aux"/>
+  <dep from="30" to="29" type="auxpass"/>
+  <dep from="17" to="30" type="conj"/>
+  <dep from="17" to="31" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Message">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Amounting_to">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Estimating">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Estimation">
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+    <frameElement type="Feature">
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+    </frameElement>
+   </frame>
+   <frame name="Damaging">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Damaging">
+    <lexicalUnit>
+     <token id="30"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148604">
+ <sentence>
+  Wily and bold , he and his companion threw their pursuer off their track by entering a lodging-house in Edmonton Street and leaving by the back-gate into Curzon Square .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="wily" pos="JJ" surface="Wily"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="bold" pos="JJ" surface="bold"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="8" lemma="companion" pos="NN" surface="companion"/>
+  <token id="9" lemma="throw" pos="VBD" surface="threw"/>
+  <token id="10" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="11" lemma="pursuer" pos="NN" surface="pursuer"/>
+  <token id="12" lemma="off" pos="IN" surface="off"/>
+  <token id="13" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="14" lemma="track" pos="NN" surface="track"/>
+  <token id="15" lemma="by" pos="IN" surface="by"/>
+  <token id="16" lemma="enter" pos="VBG" surface="entering"/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="lodging-house" pos="NN" surface="lodging-house"/>
+  <token id="19" lemma="in" pos="IN" surface="in"/>
+  <token id="20" lemma="edmonton" pos="NNP" surface="Edmonton"/>
+  <token id="21" lemma="street" pos="NNP" surface="Street"/>
+  <token id="22" lemma="and" pos="CC" surface="and"/>
+  <token id="23" lemma="leave" pos="VBG" surface="leaving"/>
+  <token id="24" lemma="by" pos="IN" surface="by"/>
+  <token id="25" lemma="the" pos="DT" surface="the"/>
+  <token id="26" lemma="back-gate" pos="NN" surface="back-gate"/>
+  <token id="27" lemma="into" pos="IN" surface="into"/>
+  <token id="28" lemma="curzon" pos="NNP" surface="Curzon"/>
+  <token id="29" lemma="square" pos="NNP" surface="Square"/>
+  <token id="30" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="advcl"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="9" to="4" type="punct"/>
+  <dep from="9" to="5" type="nsubj"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="8" to="7" type="poss"/>
+  <dep from="5" to="8" type="conj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="11" to="10" type="poss"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="9" to="12" type="prep"/>
+  <dep from="14" to="13" type="poss"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="9" to="15" type="prep"/>
+  <dep from="15" to="16" type="pcomp"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="dobj"/>
+  <dep from="16" to="19" type="prep"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="19" to="21" type="pobj"/>
+  <dep from="16" to="22" type="cc"/>
+  <dep from="16" to="23" type="conj"/>
+  <dep from="23" to="24" type="prep"/>
+  <dep from="26" to="25" type="det"/>
+  <dep from="24" to="26" type="pobj"/>
+  <dep from="26" to="27" type="prep"/>
+  <dep from="29" to="28" type="compound"/>
+  <dep from="27" to="29" type="pobj"/>
+  <dep from="9" to="30" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Personal_relationship">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Partner_1">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Partner_2">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Arriving">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Departing">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+   <frame name="Cotheme">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148203">
+ <sentence>
+  The man mopped his forehead with his handkerchief and agave a long sigh of relief .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="man" pos="NN" surface="man"/>
+  <token id="3" lemma="mop" pos="VBD" surface="mopped"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="5" lemma="forehead" pos="NN" surface="forehead"/>
+  <token id="6" lemma="with" pos="IN" surface="with"/>
+  <token id="7" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="8" lemma="handkerchief" pos="NN" surface="handkerchief"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="agave" pos="VB" surface="agave"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="long" pos="JJ" surface="long"/>
+  <token id="13" lemma="sigh" pos="NN" surface="sigh"/>
+  <token id="14" lemma="of" pos="IN" surface="of"/>
+  <token id="15" lemma="relief" pos="NN" surface="relief"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="poss"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="8" to="7" type="poss"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="3" to="9" type="cc"/>
+  <dep from="3" to="10" type="conj"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="dobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="3" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Body_parts">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Possessor">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Body_part">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="People">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Breathing">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Duration">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Internal_cause">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Duration_description">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Eventuality">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

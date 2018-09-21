@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102890">
+ <sentence>
+  Administration Staff Responsibilities : 1- Buy equipment and machinery soonest 2- Install the yanks and the faucets
+ </sentence>
+ <tokens>
+  <token id="1" lemma="administration" pos="NNP" surface="Administration"/>
+  <token id="2" lemma="staff" pos="NNP" surface="Staff"/>
+  <token id="3" lemma="responsibilities" pos="NNPS" surface="Responsibilities"/>
+  <token id="4" lemma=":" pos=":" surface=":"/>
+  <token id="5" lemma="1-" pos="LS" surface="1-"/>
+  <token id="6" lemma="buy" pos="NNP" surface="Buy"/>
+  <token id="7" lemma="equipment" pos="NN" surface="equipment"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="machinery" pos="NN" surface="machinery"/>
+  <token id="10" lemma="soon" pos="JJS" surface="soonest"/>
+  <token id="11" lemma="2-" pos="LS" surface="2-"/>
+  <token id="12" lemma="install" pos="VB" surface="Install"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="yanks" pos="NNPS" surface="yanks"/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="faucet" pos="NNS" surface="faucets"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="6" to="5" type="meta"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="7" to="9" type="conj"/>
+  <dep from="6" to="10" type="advmod"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="dobj"/>
+  <dep from="14" to="15" type="cc"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="14" to="17" type="conj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Employing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Employee">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Field">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_obligated">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Duty">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Responsible_party">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Commerce_buy">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Installing">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Component">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

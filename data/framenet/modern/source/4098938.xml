@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098938">
+ <sentence>
+  QN : Are inflation levels rising ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="be" pos="VBP" surface="Are"/>
+  <token id="4" lemma="inflation" pos="NN" surface="inflation"/>
+  <token id="5" lemma="level" pos="NNS" surface="levels"/>
+  <token id="6" lemma="rise" pos="VBG" surface="rising"/>
+  <token id="7" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="dep"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

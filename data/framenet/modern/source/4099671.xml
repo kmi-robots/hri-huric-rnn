@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099671">
+ <sentence>
+  As early as 1947 , the KPA manual addressed at least the theory of CW operational doctrine .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="as" pos="RB" surface="As"/>
+  <token id="2" lemma="early" pos="RB" surface="early"/>
+  <token id="3" lemma="as" pos="IN" surface="as"/>
+  <token id="4" lemma="1947" pos="CD" surface="1947"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="kpa" pos="NNP" surface="KPA"/>
+  <token id="8" lemma="manual" pos="NN" surface="manual"/>
+  <token id="9" lemma="address" pos="VBD" surface="addressed"/>
+  <token id="10" lemma="at" pos="IN" surface="at"/>
+  <token id="11" lemma="least" pos="JJS" surface="least"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="theory" pos="NN" surface="theory"/>
+  <token id="14" lemma="of" pos="IN" surface="of"/>
+  <token id="15" lemma="cw" pos="NNP" surface="CW"/>
+  <token id="16" lemma="operational" pos="JJ" surface="operational"/>
+  <token id="17" lemma="doctrine" pos="NN" surface="doctrine"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="advmod"/>
+  <dep from="9" to="2" type="advmod"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="9" to="5" type="punct"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="13" to="11" type="advmod"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="9" to="13" type="dobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="17" to="15" type="nmod"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="14" to="17" type="pobj"/>
+  <dep from="9" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Text">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Topic">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Text">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Topic">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Text">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Topic">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

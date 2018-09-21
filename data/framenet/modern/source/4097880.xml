@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097880">
+ <sentence>
+  Pretoria developed nuclear weapons and ballistic missiles but relinquished these armaments in the early 1990s .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="pretoria" pos="NN" surface="Pretoria"/>
+  <token id="2" lemma="develop" pos="VBD" surface="developed"/>
+  <token id="3" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="4" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="ballistic" pos="JJ" surface="ballistic"/>
+  <token id="7" lemma="missile" pos="NNS" surface="missiles"/>
+  <token id="8" lemma="but" pos="CC" surface="but"/>
+  <token id="9" lemma="relinquish" pos="VBD" surface="relinquished"/>
+  <token id="10" lemma="these" pos="DT" surface="these"/>
+  <token id="11" lemma="armament" pos="NNS" surface="armaments"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="early" pos="JJ" surface="early"/>
+  <token id="15" lemma="1990" pos="NNS" surface="1990s"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="conj"/>
+  <dep from="2" to="8" type="cc"/>
+  <dep from="2" to="9" type="conj"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="9" to="12" type="prep"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="12" to="15" type="pobj"/>
+  <dep from="2" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cause_to_make_progress">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Project">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Temporal_subregion">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Time_period">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Subpart">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Surrendering_possession">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Surrenderer">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

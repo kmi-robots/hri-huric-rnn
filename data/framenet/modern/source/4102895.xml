@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102895">
+ <sentence>
+  Sixth : Supply mechanical and electronic equipment .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="sixth" pos="JJ" surface="Sixth"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="supply" pos="NN" surface="Supply"/>
+  <token id="4" lemma="mechanical" pos="JJ" surface="mechanical"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="electronic" pos="JJ" surface="electronic"/>
+  <token id="7" lemma="equipment" pos="NN" surface="equipment"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="7" to="3" type="nmod"/>
+  <dep from="7" to="4" type="amod"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="4" to="6" type="conj"/>
+  <dep from="1" to="7" type="appos"/>
+  <dep from="1" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Gizmo">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Gizmo">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Gizmo">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Gizmo">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

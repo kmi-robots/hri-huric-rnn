@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097447">
+ <sentence>
+  Joint uranium production and enrichment efforts between Tajikistan and Iran are being considered ( 7198 , 7466 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="joint" pos="JJ" surface="Joint"/>
+  <token id="2" lemma="uranium" pos="NN" surface="uranium"/>
+  <token id="3" lemma="production" pos="NN" surface="production"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="enrichment" pos="NN" surface="enrichment"/>
+  <token id="6" lemma="effort" pos="NNS" surface="efforts"/>
+  <token id="7" lemma="between" pos="IN" surface="between"/>
+  <token id="8" lemma="tajikistan" pos="NNP" surface="Tajikistan"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="11" lemma="be" pos="VBP" surface="are"/>
+  <token id="12" lemma="be" pos="VBG" surface="being"/>
+  <token id="13" lemma="consider" pos="VBN" surface="considered"/>
+  <token id="14" lemma="(" pos="-LRB-" surface="("/>
+  <token id="15" lemma="7198" pos="CD" surface="7198"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="7466" pos="CD" surface="7466"/>
+  <token id="18" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="amod"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="13" to="3" type="nsubjpass"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="3" to="6" type="conj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="13" to="11" type="aux"/>
+  <dep from="13" to="12" type="auxpass"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="13" to="15" type="oprd"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="15" to="17" type="npadvmod"/>
+  <dep from="13" to="18" type="punct"/>
+  <dep from="13" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cogitation">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Topic">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Attempt">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Processing_materials">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Substance">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Substance">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Product">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

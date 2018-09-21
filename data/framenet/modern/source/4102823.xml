@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102823">
+ <sentence>
+  6- If the location is in a highly dangerous zone , then two parallel fences should be built to be 3 meters apart .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="6-" pos="LS" surface="6-"/>
+  <token id="2" lemma="if" pos="IN" surface="If"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="location" pos="NN" surface="location"/>
+  <token id="5" lemma="be" pos="VBZ" surface="is"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="highly" pos="RB" surface="highly"/>
+  <token id="9" lemma="dangerous" pos="JJ" surface="dangerous"/>
+  <token id="10" lemma="zone" pos="NN" surface="zone"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="then" pos="RB" surface="then"/>
+  <token id="13" lemma="two" pos="CD" surface="two"/>
+  <token id="14" lemma="parallel" pos="JJ" surface="parallel"/>
+  <token id="15" lemma="fence" pos="NNS" surface="fences"/>
+  <token id="16" lemma="should" pos="MD" surface="should"/>
+  <token id="17" lemma="be" pos="VB" surface="be"/>
+  <token id="18" lemma="build" pos="VBN" surface="built"/>
+  <token id="19" lemma="to" pos="TO" surface="to"/>
+  <token id="20" lemma="be" pos="VB" surface="be"/>
+  <token id="21" lemma="3" pos="CD" surface="3"/>
+  <token id="22" lemma="meter" pos="NNS" surface="meters"/>
+  <token id="23" lemma="apart" pos="RB" surface="apart"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="18" to="1" type="meta"/>
+  <dep from="5" to="2" type="mark"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="18" to="5" type="advcl"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="10" to="7" type="det"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="6" to="10" type="pobj"/>
+  <dep from="18" to="11" type="punct"/>
+  <dep from="18" to="12" type="advmod"/>
+  <dep from="15" to="13" type="nummod"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="18" to="15" type="nsubjpass"/>
+  <dep from="18" to="16" type="aux"/>
+  <dep from="18" to="17" type="auxpass"/>
+  <dep from="0" to="18" type="root"/>
+  <dep from="20" to="19" type="aux"/>
+  <dep from="18" to="20" type="xcomp"/>
+  <dep from="22" to="21" type="nummod"/>
+  <dep from="23" to="22" type="npadvmod"/>
+  <dep from="20" to="23" type="advmod"/>
+  <dep from="18" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Risky_situation">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Situation">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Desirable_event">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="State_of_affairs">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Building">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Created_entity">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Result">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Number">
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Unit">
+     <token id="22"/>
+    </frameElement>
+   </frame>
+   <frame name="Measure_linear_extent">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Unit">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Count">
+     <token id="21"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

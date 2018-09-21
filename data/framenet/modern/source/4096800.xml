@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096800">
+ <sentence>
+  Iran launched approximately 339 ( 80 Shehab-1s , 253 Oghabs , and 6 Shahin-IIs ) and Iraq launched about 193 ( 189 al-Husayns and 4 Scud-Bs ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="2" lemma="launch" pos="VBD" surface="launched"/>
+  <token id="3" lemma="approximately" pos="RB" surface="approximately"/>
+  <token id="4" lemma="339" pos="CD" surface="339"/>
+  <token id="5" lemma="(" pos="-LRB-" surface="("/>
+  <token id="6" lemma="80" pos="CD" surface="80"/>
+  <token id="7" lemma="shehab-1" pos="NNS" surface="Shehab-1s"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="253" pos="CD" surface="253"/>
+  <token id="10" lemma="oghab" pos="NNS" surface="Oghabs"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="6" pos="CD" surface="6"/>
+  <token id="14" lemma="shahin-iis" pos="NN" surface="Shahin-IIs"/>
+  <token id="15" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="iraq" pos="NNP" surface="Iraq"/>
+  <token id="18" lemma="launch" pos="VBD" surface="launched"/>
+  <token id="19" lemma="about" pos="IN" surface="about"/>
+  <token id="20" lemma="193" pos="CD" surface="193"/>
+  <token id="21" lemma="(" pos="-LRB-" surface="("/>
+  <token id="22" lemma="189" pos="CD" surface="189"/>
+  <token id="23" lemma="al-husayns" pos="NN" surface="al-Husayns"/>
+  <token id="24" lemma="and" pos="CC" surface="and"/>
+  <token id="25" lemma="4" pos="CD" surface="4"/>
+  <token id="26" lemma="scud-b" pos="NNS" surface="Scud-Bs"/>
+  <token id="27" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="28" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="7" to="5" type="punct"/>
+  <dep from="7" to="6" type="nummod"/>
+  <dep from="4" to="7" type="appos"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="10" to="9" type="nummod"/>
+  <dep from="4" to="10" type="conj"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="10" to="12" type="cc"/>
+  <dep from="14" to="13" type="nummod"/>
+  <dep from="10" to="14" type="conj"/>
+  <dep from="2" to="15" type="punct"/>
+  <dep from="2" to="16" type="cc"/>
+  <dep from="18" to="17" type="nsubj"/>
+  <dep from="2" to="18" type="conj"/>
+  <dep from="20" to="19" type="advmod"/>
+  <dep from="23" to="20" type="nummod"/>
+  <dep from="22" to="21" type="punct"/>
+  <dep from="20" to="22" type="appos"/>
+  <dep from="18" to="23" type="dobj"/>
+  <dep from="23" to="24" type="cc"/>
+  <dep from="26" to="25" type="nummod"/>
+  <dep from="23" to="26" type="conj"/>
+  <dep from="26" to="27" type="punct"/>
+  <dep from="18" to="28" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Shoot_projectiles">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Projectile">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Shoot_projectiles">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Projectile">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

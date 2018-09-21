@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4096792">
+ <sentence>
+  Iran 's ability to conduct these attacks was primarily the result of two factors .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iran" pos="NNP" surface="Iran"/>
+  <token id="2" lemma="'s" pos="POS" surface="'s"/>
+  <token id="3" lemma="ability" pos="NN" surface="ability"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="conduct" pos="VB" surface="conduct"/>
+  <token id="6" lemma="these" pos="DT" surface="these"/>
+  <token id="7" lemma="attack" pos="NNS" surface="attacks"/>
+  <token id="8" lemma="be" pos="VBD" surface="was"/>
+  <token id="9" lemma="primarily" pos="RB" surface="primarily"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="result" pos="NN" surface="result"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="two" pos="CD" surface="two"/>
+  <token id="14" lemma="factor" pos="NNS" surface="factors"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="poss"/>
+  <dep from="1" to="2" type="case"/>
+  <dep from="8" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="acl"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="advmod"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="8" to="11" type="attr"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="nummod"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="8" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Capability">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Act">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Cardinal_numbers">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Number">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>
