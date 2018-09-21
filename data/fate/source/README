@@ -1,0 +1,90 @@
+#####################
+# FATE Release 0.9  #
+#####################
+
+Thanks for your interest in the first FATE corpus release of the
+Saarbruecken SALSA project.More information on SALSA can be found 
+on the website:
+
+http://www.coli.uni-saarland.de/projects/salsa/
+ 
+
+Contents of this File
+=====================
+
+(A) Introduction
+(B) Corpus format
+(C) Useful Software
+(D) Acknowledgements
+
+
+(A) Introduction
+=================
+
+The data provided by this FATE corpus release add a layer of role-semantic
+information to the test dataset of the Second Recognizing Textual Entailment
+(RTE) Challenge, consisting of 800 Text-Hypothesis entailment pairs.
+More information about the original corpus and about the Challenge can be 
+found here:
+
+http://www.pascal-network.org/Challenges/RTE2
+
+The role-semantic annotation follows the Berkeley FrameNet paradigm:
+
+http://framenet.icsi.berkeley.edu
+
+using the frames of FrameNet release 1.3. 
+The corpus is pre-processed using the Collins parser.
+
+The annotation scheme and process are fully described in:
+
+Aljoscha Burchardt, Marco Pennacchiotti
+FATE: a FrameNet-Annotated corpus for Textual Entailment
+Proceedings of LREC 2008, Marrakech, Marocco
+
+(http://www.coli.uni-saarland.de/~pennacchiotti/publications/LREC_2008_2.pdf)
+
+
+(B) Corpus Format
+===================
+
+The format of the corpus is in SALSA/TIGER XML, documented in:
+
+K. Erk and S. Padó
+A powerful and versatile XML Format for representing role-semantic annotation
+Proceedings of LREC-2004, Lisbon.
+(http://www.coli.uni-saarland.de/%7Epado/pub/papers/lrec04_erk.pdf)
+
+Please refer ot Section.3 of the above paper for a complete analysis of the
+tag-set in use in FATE. 
+Text-Hypothesis pairs are ordered by Id, starting from Id=1 and ending with 
+id=800. Each sentence, of either the Text or the Hypothesis is identified by 
+the tag <s>. For example, the pair with id=24 has a Text composed by two sentences,
+and a Hypothesis composed by one sentence. The order and the ids of the sentences
+is then the following: 
+<s id="24_t_0">
+<s id="24_t_1">
+<s id="24_h_0">
+
+
+(C) Useful Software
+===================
+
+SALSA also provides a graphical user interface, SALTO, for viewing and
+modifying semantic role annotation, available from:
+
+www.coli.uni-saarland.de/projects/salsa/page.php?id=software.
+
+This page also lists other related software.
+
+
+(D) Acknowledgements
+====================
+
+Thanks to Konstantina Garoufi for providing the span annotation
+and to Alexander Fleisch for leading the annotation
+work.
+We are grateful to the German Science Foundation for funding part of
+the annotation project through the Leibniz program (grant Pi 154/8-1). 
+
+
