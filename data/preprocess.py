@@ -1014,6 +1014,7 @@ def main():
     elif which == 'fate_subset':
         fate_preprocess('fate/source', 'fate/modern/source')
         create_subset_with_frames_mapped('fate/modern/source', 'fate/subset/source', frame_names_mappings)
+        huric_preprocess('fate/subset')
 
     else:
         raise ValueError(which)
