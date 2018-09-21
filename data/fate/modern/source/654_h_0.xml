@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="654_h_0">
+ <sentence>
+  Owen was bought by Liverpool .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Owen" pos="NNP" surface="Owen"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="buy" pos="VBN" surface="bought"/>
+  <token id="4" lemma="by" pos="IN" surface="by"/>
+  <token id="5" lemma="Liverpool" pos="NNP" surface="Liverpool"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_buy">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Buyer">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

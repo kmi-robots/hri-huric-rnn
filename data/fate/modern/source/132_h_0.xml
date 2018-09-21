@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="132_h_0">
+ <sentence>
+  Humans died in an avalanche .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="human" pos="NNS" surface="Humans"/>
+  <token id="2" lemma="die" pos="VBD" surface="died"/>
+  <token id="3" lemma="in" pos="IN" surface="in"/>
+  <token id="4" lemma="an" pos="DT" surface="an"/>
+  <token id="5" lemma="avalanche" pos="NN" surface="avalanche"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Death">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

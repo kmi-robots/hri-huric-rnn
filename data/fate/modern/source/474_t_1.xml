@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="474_t_1">
+ <sentence>
+  In 1994 he was elected governor of Texas , and he was reelected in 1998 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="@card@" pos="CD" surface="1994"/>
+  <token id="3" lemma="he" pos="PRP" surface="he"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="elect" pos="VBN" surface="elected"/>
+  <token id="6" lemma="governor" pos="NN" surface="governor"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="Texas" pos="NNP" surface="Texas"/>
+  <token id="9" lemma="," pos="PUNC," surface=","/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="he" pos="PRP" surface="he"/>
+  <token id="12" lemma="be" pos="VBD" surface="was"/>
+  <token id="13" lemma="reelect" pos="VBN" surface="reelected"/>
+  <token id="14" lemma="in" pos="IN" surface="in"/>
+  <token id="15" lemma="@card@" pos="CD" surface="1998"/>
+  <token id="16" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="12" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="12" to="10" type="unknown"/>
+  <dep from="12" to="11" type="unknown"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+  <dep from="14" to="15" type="unknown"/>
+  <dep from="15" to="16" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_of_leadership">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="New_leader">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Function">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_of_leadership">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Old_leader">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="New_leader">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

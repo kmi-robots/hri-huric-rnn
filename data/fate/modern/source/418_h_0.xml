@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="418_h_0">
+ <sentence>
+  Gilda Flores has been kidnapped in Mexico city .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Gilda" pos="NNP" surface="Gilda"/>
+  <token id="2" lemma="Flores" pos="NNP" surface="Flores"/>
+  <token id="3" lemma="have" pos="VBZ" surface="has"/>
+  <token id="4" lemma="be" pos="VBN" surface="been"/>
+  <token id="5" lemma="kidnap" pos="VBN" surface="kidnapped"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="Mexico" pos="NNP" surface="Mexico"/>
+  <token id="8" lemma="city" pos="NN" surface="city"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="6" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Kidnapping">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="379_t_0">
+ <sentence>
+  David McCool took the money and decided to start Muzzy Lane in 2002 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="David" pos="NNP" surface="David"/>
+  <token id="2" lemma="McCool" pos="NNP" surface="McCool"/>
+  <token id="3" lemma="take" pos="VBD" surface="took"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="money" pos="NN" surface="money"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="decide" pos="VBD" surface="decided"/>
+  <token id="8" lemma="to" pos="TO" surface="to"/>
+  <token id="9" lemma="start" pos="VB" surface="start"/>
+  <token id="10" lemma="Muzzy" pos="NNP" surface="Muzzy"/>
+  <token id="11" lemma="Lane" pos="NNP" surface="Lane"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="@card@" pos="CD" surface="2002"/>
+  <token id="14" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="3" to="6" type="unknown"/>
+  <dep from="3" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="11" to="10" type="unknown"/>
+  <dep from="9" to="11" type="unknown"/>
+  <dep from="9" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Taking">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Deciding">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Decision">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_create">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Creator">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Created_entity">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

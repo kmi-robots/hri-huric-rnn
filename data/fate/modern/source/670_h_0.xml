@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="670_h_0">
+ <sentence>
+  Shipwreck salvaging was attempted .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="shipwreck" pos="NNP" surface="Shipwreck"/>
+  <token id="2" lemma="salvage" pos="NN" surface="salvaging"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="attempt" pos="VBN" surface="attempted"/>
+  <token id="5" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Unknown">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Fe1">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Attempt">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

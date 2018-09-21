@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="125_h_0">
+ <sentence>
+  New England simply doesn't lose .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="New" pos="NNP" surface="New"/>
+  <token id="2" lemma="England" pos="NNP" surface="England"/>
+  <token id="3" lemma="simply" pos="RB" surface="simply"/>
+  <token id="4" lemma="&amp;#60;unknown&amp;#62;" pos="RB" surface="doesn't"/>
+  <token id="5" lemma="lose" pos="VBP" surface="lose"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="5" to="2" type="unknown"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Finish_competition">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Competitor">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

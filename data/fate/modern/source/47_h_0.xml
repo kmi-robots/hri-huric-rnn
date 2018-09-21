@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="47_h_0">
+ <sentence>
+  Romano Prodi is the leader of the opposition to Berlusconi .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Romano" pos="NNP" surface="Romano"/>
+  <token id="2" lemma="Prodi" pos="NNP" surface="Prodi"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="leader" pos="NN" surface="leader"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="opposition" pos="NN" surface="opposition"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="Berlusconi" pos="NNP" surface="Berlusconi"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="6" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Role">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Taking_sides">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Side">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

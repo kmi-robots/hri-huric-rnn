@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="466_h_0">
+ <sentence>
+  Mugabe canceled his visit to China .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Mugabe" pos="NNP" surface="Mugabe"/>
+  <token id="2" lemma="cancel" pos="VBD" surface="canceled"/>
+  <token id="3" lemma="his" pos="PRP$" surface="his"/>
+  <token id="4" lemma="visit" pos="NN" surface="visit"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="China" pos="NNP" surface="China"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Visiting">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Anaphora">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Antecedent">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Unknown">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Fe1">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Fe2">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

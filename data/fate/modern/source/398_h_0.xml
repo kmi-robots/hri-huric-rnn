@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="398_h_0">
+ <sentence>
+  Thomas plays for French champions .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Thomas" pos="NNP" surface="Thomas"/>
+  <token id="2" lemma="play" pos="VBZ" surface="plays"/>
+  <token id="3" lemma="for" pos="IN" surface="for"/>
+  <token id="4" lemma="French" pos="JJ" surface="French"/>
+  <token id="5" lemma="champion" pos="NNS" surface="champions"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="2"/>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Member">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Group">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

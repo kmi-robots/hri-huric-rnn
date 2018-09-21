@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="231_h_0">
+ <sentence>
+  New voters are younger .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="new" pos="NNP" surface="New"/>
+  <token id="2" lemma="voter" pos="NNS" surface="voters"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="young" pos="JJR" surface="younger"/>
+  <token id="5" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Surpassing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Profiled_item">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Attribute">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_of_leadership">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Selector">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Depictive">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

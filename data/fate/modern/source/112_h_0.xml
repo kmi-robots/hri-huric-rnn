@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="112_h_0">
+ <sentence>
+  The fourth quarter's performance was weaker than the growth rate economists were predicting .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="fourth" pos="JJ" surface="fourth"/>
+  <token id="3" lemma="&amp;#60;unknown&amp;#62;" pos="NNS" surface="quarter's"/>
+  <token id="4" lemma="performance" pos="NN" surface="performance"/>
+  <token id="5" lemma="be" pos="VBD" surface="was"/>
+  <token id="6" lemma="weak" pos="JJR" surface="weaker"/>
+  <token id="7" lemma="than" pos="IN" surface="than"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="growth" pos="NN" surface="growth"/>
+  <token id="10" lemma="rate" pos="NN" surface="rate"/>
+  <token id="11" lemma="economist" pos="NNS" surface="economists"/>
+  <token id="12" lemma="be" pos="VBD" surface="were"/>
+  <token id="13" lemma="predict" pos="VBG" surface="predicting"/>
+  <token id="14" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="11" to="8" type="unknown"/>
+  <dep from="11" to="9" type="unknown"/>
+  <dep from="11" to="10" type="unknown"/>
+  <dep from="12" to="11" type="unknown"/>
+  <dep from="7" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Surpassing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Standard_attribute">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Profiled_attribute">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Speed">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Predicting">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Eventuality">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

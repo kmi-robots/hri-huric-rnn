@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="537_h_0">
+ <sentence>
+  Business spending on equipment and software grew by 13.4 percent .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="business" pos="NNP" surface="Business"/>
+  <token id="2" lemma="spending" pos="NN" surface="spending"/>
+  <token id="3" lemma="on" pos="IN" surface="on"/>
+  <token id="4" lemma="equipment" pos="NN" surface="equipment"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="software" pos="NN" surface="software"/>
+  <token id="7" lemma="grow" pos="VBD" surface="grew"/>
+  <token id="8" lemma="by" pos="IN" surface="by"/>
+  <token id="9" lemma="@card@" pos="CD" surface="13.4"/>
+  <token id="10" lemma="percent" pos="NN" surface="percent"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="7" to="2" type="unknown"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="3" to="6" type="unknown"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="8" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Difference">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Commerce_buy">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Buyer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

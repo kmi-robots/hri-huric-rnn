@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="170_h_0">
+ <sentence>
+  Two persons perpetrated dynamite attacks in a Northwestern Colombian city .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Two" pos="CD" surface="Two"/>
+  <token id="2" lemma="person" pos="NNS" surface="persons"/>
+  <token id="3" lemma="perpetrate" pos="VBN" surface="perpetrated"/>
+  <token id="4" lemma="dynamite" pos="NN" surface="dynamite"/>
+  <token id="5" lemma="attack" pos="NNS" surface="attacks"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="Northwestern" pos="NNP" surface="Northwestern"/>
+  <token id="9" lemma="Colombian" pos="JJ" surface="Colombian"/>
+  <token id="10" lemma="city" pos="NN" surface="city"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="10" to="7" type="unknown"/>
+  <dep from="10" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="6" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Committing_crime">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Perpetrator">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Crime">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

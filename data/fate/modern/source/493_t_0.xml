@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="493_t_0">
+ <sentence>
+  At least 50 animals died in a late December avalanche .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="at" pos="IN" surface="At"/>
+  <token id="2" lemma="least" pos="JJS" surface="least"/>
+  <token id="3" lemma="@card@" pos="CD" surface="50"/>
+  <token id="4" lemma="animal" pos="NNS" surface="animals"/>
+  <token id="5" lemma="die" pos="VBD" surface="died"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="late" pos="JJ" surface="late"/>
+  <token id="9" lemma="December" pos="NNP" surface="December"/>
+  <token id="10" lemma="avalanche" pos="NN" surface="avalanche"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="1" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="10" to="7" type="unknown"/>
+  <dep from="10" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="6" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Death">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

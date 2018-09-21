@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="733_h_0">
+ <sentence>
+  Emergency managers began asking residents along the Manatee River to evacuate .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="emergency" pos="NN" surface="Emergency"/>
+  <token id="2" lemma="manager" pos="NNS" surface="managers"/>
+  <token id="3" lemma="begin" pos="VBD" surface="began"/>
+  <token id="4" lemma="ask" pos="VBG" surface="asking"/>
+  <token id="5" lemma="resident" pos="NNS" surface="residents"/>
+  <token id="6" lemma="along" pos="IN" surface="along"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="Manatee" pos="NNP" surface="Manatee"/>
+  <token id="9" lemma="River" pos="NNP" surface="River"/>
+  <token id="10" lemma="to" pos="TO" surface="to"/>
+  <token id="11" lemma="evacuate" pos="VB" surface="evacuate"/>
+  <token id="12" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="9" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="6" to="9" type="unknown"/>
+  <dep from="4" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Activity_start">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Request">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Addressee">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Escaping">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Escapee">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Undesirable_location">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

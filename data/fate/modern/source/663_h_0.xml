@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="663_h_0">
+ <sentence>
+  The European Monetary Union began in 1999 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="European" pos="NNP" surface="European"/>
+  <token id="3" lemma="Monetary" pos="NNP" surface="Monetary"/>
+  <token id="4" lemma="Union" pos="NNP" surface="Union"/>
+  <token id="5" lemma="begin" pos="VBD" surface="began"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="@card@" pos="CD" surface="1999"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Process_start">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

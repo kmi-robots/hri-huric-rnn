@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="222_h_0">
+ <sentence>
+  Robin Warren was awarded a Nobel Prize .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Robin" pos="NNP" surface="Robin"/>
+  <token id="2" lemma="Warren" pos="NNP" surface="Warren"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="award" pos="VBN" surface="awarded"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="Nobel" pos="NNP" surface="Nobel"/>
+  <token id="7" lemma="Prize" pos="NNP" surface="Prize"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="7" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="4" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

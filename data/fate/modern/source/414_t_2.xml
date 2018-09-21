@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="414_t_2">
+ <sentence>
+  But in the past ten years , El Nino has become more frequent , occurring every 3-5 years .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="but" pos="CC" surface="But"/>
+  <token id="2" lemma="in" pos="IN" surface="in"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="past" pos="JJ" surface="past"/>
+  <token id="5" lemma="ten" pos="CD" surface="ten"/>
+  <token id="6" lemma="year" pos="NNS" surface="years"/>
+  <token id="7" lemma="," pos="PUNC," surface=","/>
+  <token id="8" lemma="El" pos="NNP" surface="El"/>
+  <token id="9" lemma="Nino" pos="NNP" surface="Nino"/>
+  <token id="10" lemma="have" pos="VBZ" surface="has"/>
+  <token id="11" lemma="become" pos="VBN" surface="become"/>
+  <token id="12" lemma="more" pos="RBR" surface="more"/>
+  <token id="13" lemma="frequent" pos="JJ" surface="frequent"/>
+  <token id="14" lemma="," pos="PUNC," surface=","/>
+  <token id="15" lemma="occur" pos="VBG" surface="occurring"/>
+  <token id="16" lemma="every" pos="DT" surface="every"/>
+  <token id="17" lemma="@card@" pos="CD" surface="3-5"/>
+  <token id="18" lemma="year" pos="NNS" surface="years"/>
+  <token id="19" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="unknown"/>
+  <dep from="10" to="2" type="unknown"/>
+  <dep from="6" to="3" type="unknown"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="2" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="13" to="12" type="unknown"/>
+  <dep from="11" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+  <dep from="11" to="15" type="unknown"/>
+  <dep from="18" to="16" type="unknown"/>
+  <dep from="18" to="17" type="unknown"/>
+  <dep from="15" to="18" type="unknown"/>
+  <dep from="18" to="19" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Becoming">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Final_state">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Event">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Frequency">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Frequency">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Rate">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

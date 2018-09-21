@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="202_h_0">
+ <sentence>
+  The mayor announced he would allow gay nuptials .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="mayor" pos="NN" surface="mayor"/>
+  <token id="3" lemma="announce" pos="VBD" surface="announced"/>
+  <token id="4" lemma="he" pos="PRP" surface="he"/>
+  <token id="5" lemma="would" pos="MD" surface="would"/>
+  <token id="6" lemma="allow" pos="VB" surface="allow"/>
+  <token id="7" lemma="gay" pos="JJ" surface="gay"/>
+  <token id="8" lemma="nuptials" pos="NNS" surface="nuptials"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="6" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Grant_permission">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Grantor">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Grantee">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Action">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Anaphora">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Antecedent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

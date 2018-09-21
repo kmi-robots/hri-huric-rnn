@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="519_h_0">
+ <sentence>
+  The E Z L N is a security force .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="E" pos="NNP" surface="E"/>
+  <token id="3" lemma="Z" pos="NNP" surface="Z"/>
+  <token id="4" lemma="L" pos="NNP" surface="L"/>
+  <token id="5" lemma="N" pos="NNP" surface="N"/>
+  <token id="6" lemma="be" pos="VBZ" surface="is"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="security" pos="NN" surface="security"/>
+  <token id="9" lemma="force" pos="NN" surface="force"/>
+  <token id="10" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="unknown"/>
+  <dep from="5" to="2" type="unknown"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="9" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="6" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Military">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Force">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

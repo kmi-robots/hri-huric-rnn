@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="560_t_0">
+ <sentence>
+  Kotler , 37 , is familiar with the problem .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Kotler" pos="NNP" surface="Kotler"/>
+  <token id="2" lemma="," pos="PUNC," surface=","/>
+  <token id="3" lemma="@card@" pos="CD" surface="37"/>
+  <token id="4" lemma="," pos="PUNC," surface=","/>
+  <token id="5" lemma="be" pos="VBZ" surface="is"/>
+  <token id="6" lemma="familiar" pos="JJ" surface="familiar"/>
+  <token id="7" lemma="with" pos="IN" surface="with"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="problem" pos="NN" surface="problem"/>
+  <token id="10" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="1" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Familiarity">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

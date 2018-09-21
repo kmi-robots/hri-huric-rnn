@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="5_t_0">
+ <sentence>
+  Scientists have discovered that drinking tea protects against heart disease by improving the function of the artery walls .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="scientist" pos="NNS" surface="Scientists"/>
+  <token id="2" lemma="have" pos="VBP" surface="have"/>
+  <token id="3" lemma="discover" pos="VBN" surface="discovered"/>
+  <token id="4" lemma="that" pos="IN" surface="that"/>
+  <token id="5" lemma="drinking" pos="NN" surface="drinking"/>
+  <token id="6" lemma="tea" pos="NN" surface="tea"/>
+  <token id="7" lemma="protect" pos="VBZ" surface="protects"/>
+  <token id="8" lemma="against" pos="IN" surface="against"/>
+  <token id="9" lemma="heart" pos="NN" surface="heart"/>
+  <token id="10" lemma="disease" pos="NN" surface="disease"/>
+  <token id="11" lemma="by" pos="IN" surface="by"/>
+  <token id="12" lemma="improve" pos="VBG" surface="improving"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="function" pos="NN" surface="function"/>
+  <token id="15" lemma="of" pos="IN" surface="of"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="artery" pos="NN" surface="artery"/>
+  <token id="18" lemma="wall" pos="NNS" surface="walls"/>
+  <token id="19" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="4" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="8" to="10" type="unknown"/>
+  <dep from="7" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+  <dep from="14" to="13" type="unknown"/>
+  <dep from="12" to="14" type="unknown"/>
+  <dep from="14" to="15" type="unknown"/>
+  <dep from="18" to="16" type="unknown"/>
+  <dep from="18" to="17" type="unknown"/>
+  <dep from="15" to="18" type="unknown"/>
+  <dep from="18" to="19" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Ingestion">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Ingestibles">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Protecting">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Protection">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Danger">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Ailment">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Body_Part">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

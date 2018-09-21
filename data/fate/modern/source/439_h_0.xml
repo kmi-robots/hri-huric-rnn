@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="439_h_0">
+ <sentence>
+  Ernst &amp; Young feeds U N peacekeepers .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Ernst" pos="NNP" surface="Ernst"/>
+  <token id="2" lemma="&amp;#38;" pos="CC" surface="&amp;"/>
+  <token id="3" lemma="Young" pos="NNP" surface="Young"/>
+  <token id="4" lemma="feed" pos="VBZ" surface="feeds"/>
+  <token id="5" lemma="U" pos="NNP" surface="U"/>
+  <token id="6" lemma="N" pos="NNP" surface="N"/>
+  <token id="7" lemma="peacekeeper" pos="NNS" surface="peacekeepers"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="4" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Supplier">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

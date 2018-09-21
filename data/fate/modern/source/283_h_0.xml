@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="283_h_0">
+ <sentence>
+  The Dragons have terminated Thompson's contract .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="dragon" pos="NNPS" surface="Dragons"/>
+  <token id="3" lemma="have" pos="VBP" surface="have"/>
+  <token id="4" lemma="terminate" pos="VBN" surface="terminated"/>
+  <token id="5" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Thompson's"/>
+  <token id="6" lemma="contract" pos="NN" surface="contract"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Activity_stop">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_employed">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Employee">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Employer">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

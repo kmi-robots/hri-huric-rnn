@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="152_h_0">
+ <sentence>
+  El Nino usually starts in December .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="El" pos="NNP" surface="El"/>
+  <token id="2" lemma="Nino" pos="NNP" surface="Nino"/>
+  <token id="3" lemma="usually" pos="RB" surface="usually"/>
+  <token id="4" lemma="start" pos="VBZ" surface="starts"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="December" pos="NNP" surface="December"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Process_start">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

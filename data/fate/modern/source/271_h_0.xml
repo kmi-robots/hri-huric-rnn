@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="271_h_0">
+ <sentence>
+  Madhu Mani is married to Amar Mani Tripathi .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Madhu" pos="NNP" surface="Madhu"/>
+  <token id="2" lemma="Mani" pos="NNP" surface="Mani"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="marry" pos="JJ" surface="married"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="Amar" pos="NNP" surface="Amar"/>
+  <token id="7" lemma="Mani" pos="NNP" surface="Mani"/>
+  <token id="8" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Tripathi"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="5" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Personal_relationship">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Partner_1">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Partner_2">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

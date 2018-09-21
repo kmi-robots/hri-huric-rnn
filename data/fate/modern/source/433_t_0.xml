@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="433_t_0">
+ <sentence>
+  With agoraphobia there is widespread avoidance and restriction of activities and places .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="with" pos="IN" surface="With"/>
+  <token id="2" lemma="agoraphobia" pos="NN" surface="agoraphobia"/>
+  <token id="3" lemma="there" pos="EX" surface="there"/>
+  <token id="4" lemma="be" pos="VBZ" surface="is"/>
+  <token id="5" lemma="widespread" pos="JJ" surface="widespread"/>
+  <token id="6" lemma="avoidance" pos="NN" surface="avoidance"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="restriction" pos="NN" surface="restriction"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="activity" pos="NNS" surface="activities"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="place" pos="NNS" surface="places"/>
+  <token id="13" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="8" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="4" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="12" to="10" type="unknown"/>
+  <dep from="12" to="11" type="unknown"/>
+  <dep from="9" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Ailment">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Symptom">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Avoiding">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Undesirable_situation">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Avoiding">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Undesirable_situation">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

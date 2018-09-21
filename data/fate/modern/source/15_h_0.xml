@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="15_h_0">
+ <sentence>
+  An interior ministry worker was killed by a mercenary group .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="an" pos="DT" surface="An"/>
+  <token id="2" lemma="interior" pos="JJ" surface="interior"/>
+  <token id="3" lemma="ministry" pos="NN" surface="ministry"/>
+  <token id="4" lemma="worker" pos="NN" surface="worker"/>
+  <token id="5" lemma="be" pos="VBD" surface="was"/>
+  <token id="6" lemma="kill" pos="VBN" surface="killed"/>
+  <token id="7" lemma="by" pos="IN" surface="by"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="mercenary" pos="JJ" surface="mercenary"/>
+  <token id="10" lemma="group" pos="NN" surface="group"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="10" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="7" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Killer">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Employing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Employer">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Aggregate">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

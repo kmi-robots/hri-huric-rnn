@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="339_h_0">
+ <sentence>
+  An earthquake occurred on the coast of Hokkaido , Japan .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="an" pos="DT" surface="An"/>
+  <token id="2" lemma="earthquake" pos="NN" surface="earthquake"/>
+  <token id="3" lemma="occur" pos="VBD" surface="occurred"/>
+  <token id="4" lemma="on" pos="IN" surface="on"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="coast" pos="NN" surface="coast"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="Hokkaido" pos="NNP" surface="Hokkaido"/>
+  <token id="9" lemma="," pos="PUNC," surface=","/>
+  <token id="10" lemma="Japan" pos="NNP" surface="Japan"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="8" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Event">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Relational_natural_features">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Focal_feature">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Landmark_feature">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

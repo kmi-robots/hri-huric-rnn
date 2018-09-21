@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="484_h_0">
+ <sentence>
+  Kristina Miller is an American citizen .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Kristina" pos="NNP" surface="Kristina"/>
+  <token id="2" lemma="Miller" pos="NNP" surface="Miller"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="an" pos="DT" surface="an"/>
+  <token id="5" lemma="American" pos="JJ" surface="American"/>
+  <token id="6" lemma="citizen" pos="NN" surface="citizen"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="3" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People_by_jurisdiction">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

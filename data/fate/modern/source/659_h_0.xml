@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="659_h_0">
+ <sentence>
+  Barcelona and Albertville hosted the 1992 Olympic Games .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Barcelona" pos="NNP" surface="Barcelona"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="Albertville" pos="NNP" surface="Albertville"/>
+  <token id="4" lemma="host" pos="VBD" surface="hosted"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="@card@" pos="CD" surface="1992"/>
+  <token id="7" lemma="Olympic" pos="NNP" surface="Olympic"/>
+  <token id="8" lemma="Games" pos="NNPS" surface="Games"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="1" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="8" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="4" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Social_event">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Social_event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Host">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Competition">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Competition">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

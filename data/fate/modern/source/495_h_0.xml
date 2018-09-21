@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="495_h_0">
+ <sentence>
+  Clark Kent works for the Daily Planet newspaper .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Clark" pos="NNP" surface="Clark"/>
+  <token id="2" lemma="Kent" pos="NNP" surface="Kent"/>
+  <token id="3" lemma="work" pos="VBZ" surface="works"/>
+  <token id="4" lemma="for" pos="IN" surface="for"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="Daily" pos="NNP" surface="Daily"/>
+  <token id="7" lemma="planet" pos="NNP" surface="Planet"/>
+  <token id="8" lemma="newspaper" pos="NN" surface="newspaper"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="8" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="4" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_employed">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Employee">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Employer">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="302_h_0">
+ <sentence>
+  Same-sex marriages have been performed in San Francisco .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Same-sex"/>
+  <token id="2" lemma="marriage" pos="NNS" surface="marriages"/>
+  <token id="3" lemma="have" pos="VBP" surface="have"/>
+  <token id="4" lemma="be" pos="VBN" surface="been"/>
+  <token id="5" lemma="perform" pos="VBN" surface="performed"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="San" pos="NNP" surface="San"/>
+  <token id="8" lemma="Francisco" pos="NNP" surface="Francisco"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="6" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Personal_relationship">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Depictive">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_act">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Act">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

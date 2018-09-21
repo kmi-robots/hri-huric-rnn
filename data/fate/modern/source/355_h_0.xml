@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="355_h_0">
+ <sentence>
+  The Prophet Muhammed died in Karbala .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="Prophet" pos="NNP" surface="Prophet"/>
+  <token id="3" lemma="Muhammed" pos="NNP" surface="Muhammed"/>
+  <token id="4" lemma="die" pos="VBD" surface="died"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="Karbala" pos="NNP" surface="Karbala"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Death">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780_h_0">
+ <sentence>
+  Five Iraqi policemen have attacked a checkpoint .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Five" pos="CD" surface="Five"/>
+  <token id="2" lemma="Iraqi" pos="JJ" surface="Iraqi"/>
+  <token id="3" lemma="policeman" pos="NNS" surface="policemen"/>
+  <token id="4" lemma="have" pos="VBP" surface="have"/>
+  <token id="5" lemma="attack" pos="VBN" surface="attacked"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="checkpoint" pos="NN" surface="checkpoint"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="5" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Assailant">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

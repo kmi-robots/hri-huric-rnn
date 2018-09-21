@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="434_h_0">
+ <sentence>
+  English ministers are united on the smoking ban .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="English" pos="JJ" surface="English"/>
+  <token id="2" lemma="minister" pos="NNS" surface="ministers"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="unite" pos="VBN" surface="united"/>
+  <token id="5" lemma="on" pos="IN" surface="on"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="smoking" pos="NN" surface="smoking"/>
+  <token id="8" lemma="ban" pos="NN" surface="ban"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="5" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Taking_sides">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Issue">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

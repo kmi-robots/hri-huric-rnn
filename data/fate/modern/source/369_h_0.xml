@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="369_h_0">
+ <sentence>
+  Sgt . Carlos Lazo worked for Iraq .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Sgt" pos="NNP" surface="Sgt"/>
+  <token id="2" lemma="." pos="PUNC." surface="."/>
+  <token id="3" lemma="Carlos" pos="NNP" surface="Carlos"/>
+  <token id="4" lemma="Lazo" pos="NNP" surface="Lazo"/>
+  <token id="5" lemma="work" pos="VBD" surface="worked"/>
+  <token id="6" lemma="for" pos="IN" surface="for"/>
+  <token id="7" lemma="Iraq" pos="NNP" surface="Iraq"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_employed">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Employee">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Employer">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

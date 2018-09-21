@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1_h_0">
+ <sentence>
+  Those who recovered from Sars might have permanent lung damage .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="those" pos="DT" surface="Those"/>
+  <token id="2" lemma="who" pos="WP" surface="who"/>
+  <token id="3" lemma="recover" pos="VBD" surface="recovered"/>
+  <token id="4" lemma="from" pos="IN" surface="from"/>
+  <token id="5" lemma="&amp;#60;unknown&amp;#62;" pos="NNS" surface="Sars"/>
+  <token id="6" lemma="might" pos="MD" surface="might"/>
+  <token id="7" lemma="have" pos="VB" surface="have"/>
+  <token id="8" lemma="permanent" pos="JJ" surface="permanent"/>
+  <token id="9" lemma="lung" pos="NN" surface="lung"/>
+  <token id="10" lemma="damage" pos="NN" surface="damage"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="10" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="7" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Ailment">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Body_Part">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Recovery">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Affliction">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Anaphora">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Antecedent">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

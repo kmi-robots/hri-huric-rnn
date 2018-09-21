@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="438_h_0">
+ <sentence>
+  A woman mayor is an alleged member of Maoist Shining Path .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="woman" pos="NN" surface="woman"/>
+  <token id="3" lemma="mayor" pos="NN" surface="mayor"/>
+  <token id="4" lemma="be" pos="VBZ" surface="is"/>
+  <token id="5" lemma="an" pos="DT" surface="an"/>
+  <token id="6" lemma="alleged" pos="JJ" surface="alleged"/>
+  <token id="7" lemma="member" pos="NN" surface="member"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="Maoist" pos="NNP" surface="Maoist"/>
+  <token id="10" lemma="Shining" pos="NNP" surface="Shining"/>
+  <token id="11" lemma="Path" pos="NNP" surface="Path"/>
+  <token id="12" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="4" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="11" to="9" type="unknown"/>
+  <dep from="11" to="10" type="unknown"/>
+  <dep from="8" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Depictive">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Member">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Group">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Unattributed_information">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Reported_fact">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

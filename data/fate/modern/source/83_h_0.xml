@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="83_h_0">
+ <sentence>
+  State and federal agencies took part in a chemical attack .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="state" pos="NNP" surface="State"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="federal" pos="JJ" surface="federal"/>
+  <token id="4" lemma="agency" pos="NNS" surface="agencies"/>
+  <token id="5" lemma="take" pos="VBD" surface="took"/>
+  <token id="6" lemma="part" pos="NN" surface="part"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="chemical" pos="NN" surface="chemical"/>
+  <token id="10" lemma="attack" pos="NN" surface="attack"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="5" to="7" type="unknown"/>
+  <dep from="10" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="7" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Participation">
+    <lexicalUnit>
+     <token id="5"/>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Participants">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Assailant">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Weapon">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="341_t_0">
+ <sentence>
+  Antiemetic drugs are drugs used to combat nausea and vomiting .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Antiemetic"/>
+  <token id="2" lemma="drug" pos="NNS" surface="drugs"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="drug" pos="NNS" surface="drugs"/>
+  <token id="5" lemma="use" pos="VBN" surface="used"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="combat" pos="VB" surface="combat"/>
+  <token id="8" lemma="nausea" pos="NN" surface="nausea"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="vomiting" pos="NN" surface="vomiting"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="10" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="7" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cure">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Affliction">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Treatment">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Using">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Purpose">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Instrument">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Unknown">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Fe1">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

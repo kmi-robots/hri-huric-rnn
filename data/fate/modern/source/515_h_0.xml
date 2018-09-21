@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="515_h_0">
+ <sentence>
+  Zapata was a rebel leader .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Zapata" pos="NNP" surface="Zapata"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="rebel" pos="JJ" surface="rebel"/>
+  <token id="5" lemma="leader" pos="NN" surface="leader"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="2" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Governed">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

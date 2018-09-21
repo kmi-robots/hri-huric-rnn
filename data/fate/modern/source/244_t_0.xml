@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="244_t_0">
+ <sentence>
+  An 11-year-old Sanford boy was bitten on the foot by a shark .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="an" pos="DT" surface="An"/>
+  <token id="2" lemma="&amp;#60;unknown&amp;#62;" pos="JJ" surface="11-year-old"/>
+  <token id="3" lemma="Sanford" pos="NNP" surface="Sanford"/>
+  <token id="4" lemma="boy" pos="NN" surface="boy"/>
+  <token id="5" lemma="be" pos="VBD" surface="was"/>
+  <token id="6" lemma="bite" pos="VBN" surface="bitten"/>
+  <token id="7" lemma="on" pos="IN" surface="on"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="foot" pos="NN" surface="foot"/>
+  <token id="10" lemma="by" pos="IN" surface="by"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="shark" pos="NN" surface="shark"/>
+  <token id="13" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="6" to="10" type="unknown"/>
+  <dep from="12" to="11" type="unknown"/>
+  <dep from="10" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cause_harm">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Body_part">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

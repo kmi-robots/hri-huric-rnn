@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="214_t_1">
+ <sentence>
+  One part of this culture is the indigenous folk art and traditional handicrafts .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="One" pos="CD" surface="One"/>
+  <token id="2" lemma="part" pos="NN" surface="part"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="this" pos="DT" surface="this"/>
+  <token id="5" lemma="culture" pos="NN" surface="culture"/>
+  <token id="6" lemma="be" pos="VBZ" surface="is"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="indigenous" pos="JJ" surface="indigenous"/>
+  <token id="9" lemma="folk" pos="NN" surface="folk"/>
+  <token id="10" lemma="art" pos="NN" surface="art"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="traditional" pos="JJ" surface="traditional"/>
+  <token id="13" lemma="handicraft" pos="NNS" surface="handicrafts"/>
+  <token id="14" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="6" to="2" type="unknown"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="10" to="7" type="unknown"/>
+  <dep from="10" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="6" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="13" to="12" type="unknown"/>
+  <dep from="10" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Part_whole">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Craft">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Practitioner">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Culture">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Craft">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Descriptor">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

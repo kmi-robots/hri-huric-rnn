@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="393_h_0">
+ <sentence>
+  Civilians were injured in a terrorist attack .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="civilian" pos="NNS" surface="Civilians"/>
+  <token id="2" lemma="be" pos="VBD" surface="were"/>
+  <token id="3" lemma="injure" pos="VBN" surface="injured"/>
+  <token id="4" lemma="in" pos="IN" surface="in"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="terrorist" pos="JJ" surface="terrorist"/>
+  <token id="7" lemma="attack" pos="NN" surface="attack"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="7" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="4" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Assailant">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_harm">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

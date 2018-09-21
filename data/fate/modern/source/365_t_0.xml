@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="365_t_0">
+ <sentence>
+  Nixon was impeached and became the first president ever to resign on August 9th 1974 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Nixon" pos="NNP" surface="Nixon"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="impeach" pos="VBN" surface="impeached"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="become" pos="VBD" surface="became"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="first" pos="JJ" surface="first"/>
+  <token id="8" lemma="president" pos="NN" surface="president"/>
+  <token id="9" lemma="ever" pos="RB" surface="ever"/>
+  <token id="10" lemma="to" pos="TO" surface="to"/>
+  <token id="11" lemma="resign" pos="VB" surface="resign"/>
+  <token id="12" lemma="on" pos="IN" surface="on"/>
+  <token id="13" lemma="August" pos="NNP" surface="August"/>
+  <token id="14" lemma="9th" pos="CD" surface="9th"/>
+  <token id="15" lemma="@card@" pos="CD" surface="1974"/>
+  <token id="16" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="5" to="8" type="unknown"/>
+  <dep from="5" to="9" type="unknown"/>
+  <dep from="5" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+  <dep from="13" to="15" type="unknown"/>
+  <dep from="13" to="16" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_of_leadership">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Old_leader">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Becoming">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Final_category">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Quitting">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Employee">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="482_h_0">
+ <sentence>
+  Apple Computer developed the Macintosh computer .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Apple" pos="NNP" surface="Apple"/>
+  <token id="2" lemma="Computer" pos="NNP" surface="Computer"/>
+  <token id="3" lemma="develop" pos="VBD" surface="developed"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="Macintosh" pos="NNP" surface="Macintosh"/>
+  <token id="6" lemma="computer" pos="NN" surface="computer"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="3" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Invention">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Invention">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

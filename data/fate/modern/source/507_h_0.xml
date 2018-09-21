@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="507_h_0">
+ <sentence>
+  A group claimed to have kidnapped 15 members of the Iraqi National Guard .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="group" pos="NN" surface="group"/>
+  <token id="3" lemma="claim" pos="VBD" surface="claimed"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="have" pos="VB" surface="have"/>
+  <token id="6" lemma="kidnap" pos="VBN" surface="kidnapped"/>
+  <token id="7" lemma="@card@" pos="CD" surface="15"/>
+  <token id="8" lemma="member" pos="NNS" surface="members"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="Iraqi" pos="JJ" surface="Iraqi"/>
+  <token id="12" lemma="National" pos="NNP" surface="National"/>
+  <token id="13" lemma="Guard" pos="NNP" surface="Guard"/>
+  <token id="14" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="6" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="13" to="10" type="unknown"/>
+  <dep from="13" to="11" type="unknown"/>
+  <dep from="13" to="12" type="unknown"/>
+  <dep from="9" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Kidnapping">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Perpetrator">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Member">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Group">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Military">
+    <lexicalUnit>
+     <token id="12"/>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Force">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Possessor">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

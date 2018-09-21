@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="649_h_0">
+ <sentence>
+  Akihito and Michiko are the Czech President and First Lady .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Akihito" pos="NNP" surface="Akihito"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="Michiko" pos="NNP" surface="Michiko"/>
+  <token id="4" lemma="be" pos="VBP" surface="are"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="Czech" pos="JJ" surface="Czech"/>
+  <token id="7" lemma="President" pos="NNP" surface="President"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="First" pos="NNP" surface="First"/>
+  <token id="10" lemma="Lady" pos="NNP" surface="Lady"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="1" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="4" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="7" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="9"/>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

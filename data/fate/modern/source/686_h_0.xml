@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="686_h_0">
+ <sentence>
+  A massive car bomb killed the former Prime Minister Hariri .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="massive" pos="JJ" surface="massive"/>
+  <token id="3" lemma="car" pos="NN" surface="car"/>
+  <token id="4" lemma="bomb" pos="NN" surface="bomb"/>
+  <token id="5" lemma="kill" pos="VBD" surface="killed"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="former" pos="JJ" surface="former"/>
+  <token id="8" lemma="Prime" pos="NNP" surface="Prime"/>
+  <token id="9" lemma="Minister" pos="NNP" surface="Minister"/>
+  <token id="10" lemma="Hariri" pos="NNP" surface="Hariri"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="10" to="6" type="unknown"/>
+  <dep from="10" to="7" type="unknown"/>
+  <dep from="10" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="5" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="8"/>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Depictive">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

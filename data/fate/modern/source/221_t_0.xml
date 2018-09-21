@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="221_t_0">
+ <sentence>
+  Liquid methane rain pelts Saturn's largest moon , Titan , and feeds rivers , lakes and seas that carve the surface like water does on Earth , images from a space probe show .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="liquid" pos="NNP" surface="Liquid"/>
+  <token id="2" lemma="methane" pos="NN" surface="methane"/>
+  <token id="3" lemma="rain" pos="NN" surface="rain"/>
+  <token id="4" lemma="pelt" pos="NNS" surface="pelts"/>
+  <token id="5" lemma="&amp;#60;unknown&amp;#62;" pos="NNS" surface="Saturn's"/>
+  <token id="6" lemma="large" pos="JJS" surface="largest"/>
+  <token id="7" lemma="moon" pos="NN" surface="moon"/>
+  <token id="8" lemma="," pos="PUNC," surface=","/>
+  <token id="9" lemma="titan" pos="NNP" surface="Titan"/>
+  <token id="10" lemma="," pos="PUNC," surface=","/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="feed" pos="VBZ" surface="feeds"/>
+  <token id="13" lemma="river" pos="NNS" surface="rivers"/>
+  <token id="14" lemma="," pos="PUNC," surface=","/>
+  <token id="15" lemma="lake" pos="NNS" surface="lakes"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="sea" pos="NNS" surface="seas"/>
+  <token id="18" lemma="that" pos="WDT" surface="that"/>
+  <token id="19" lemma="carve" pos="VB" surface="carve"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="surface" pos="NN" surface="surface"/>
+  <token id="22" lemma="like" pos="IN" surface="like"/>
+  <token id="23" lemma="water" pos="NN" surface="water"/>
+  <token id="24" lemma="do" pos="VBZ" surface="does"/>
+  <token id="25" lemma="on" pos="IN" surface="on"/>
+  <token id="26" lemma="Earth" pos="NNP" surface="Earth"/>
+  <token id="27" lemma="," pos="PUNC," surface=","/>
+  <token id="28" lemma="image" pos="NNS" surface="images"/>
+  <token id="29" lemma="from" pos="IN" surface="from"/>
+  <token id="30" lemma="a" pos="DT" surface="a"/>
+  <token id="31" lemma="space" pos="NN" surface="space"/>
+  <token id="32" lemma="probe" pos="NN" surface="probe"/>
+  <token id="33" lemma="show" pos="VBP" surface="show"/>
+  <token id="34" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="33" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="5" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="5" to="11" type="unknown"/>
+  <dep from="5" to="12" type="unknown"/>
+  <dep from="17" to="13" type="unknown"/>
+  <dep from="17" to="14" type="unknown"/>
+  <dep from="17" to="15" type="unknown"/>
+  <dep from="17" to="16" type="unknown"/>
+  <dep from="12" to="17" type="unknown"/>
+  <dep from="17" to="18" type="unknown"/>
+  <dep from="18" to="19" type="unknown"/>
+  <dep from="21" to="20" type="unknown"/>
+  <dep from="19" to="21" type="unknown"/>
+  <dep from="19" to="22" type="unknown"/>
+  <dep from="24" to="23" type="unknown"/>
+  <dep from="22" to="24" type="unknown"/>
+  <dep from="24" to="25" type="unknown"/>
+  <dep from="25" to="26" type="unknown"/>
+  <dep from="26" to="27" type="unknown"/>
+  <dep from="33" to="28" type="unknown"/>
+  <dep from="28" to="29" type="unknown"/>
+  <dep from="32" to="30" type="unknown"/>
+  <dep from="32" to="31" type="unknown"/>
+  <dep from="29" to="32" type="unknown"/>
+  <dep from="0" to="33" type="root"/>
+  <dep from="33" to="34" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Mass_motion">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Mass_theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Area">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Fluidic_motion">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Fluid">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Anaphora">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Antecedent">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Reshaping">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Deformer">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Undergoer">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+   <frame name="Anaphora">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Antecedent">
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Reshaping">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Deformer">
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+   </frame>
+   <frame name="Evidence">
+    <lexicalUnit>
+     <token id="33"/>
+    </lexicalUnit>
+    <frameElement type="Support">
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+     <token id="31"/>
+     <token id="32"/>
+    </frameElement>
+    <frameElement type="Proposition">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

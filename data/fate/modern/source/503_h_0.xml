@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="503_h_0">
+ <sentence>
+  Drnovek became Prime Minister of Slovenia in 1992 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Drnovek"/>
+  <token id="2" lemma="become" pos="VBD" surface="became"/>
+  <token id="3" lemma="Prime" pos="NNP" surface="Prime"/>
+  <token id="4" lemma="Minister" pos="NNP" surface="Minister"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="Slovenia" pos="NNP" surface="Slovenia"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="@card@" pos="CD" surface="1992"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="2" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Becoming">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Final_state">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

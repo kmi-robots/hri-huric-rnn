@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="136_h_0">
+ <sentence>
+  A police commando patrol was the owner of a car bomb .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="police" pos="NN" surface="police"/>
+  <token id="3" lemma="commando" pos="NN" surface="commando"/>
+  <token id="4" lemma="patrol" pos="NN" surface="patrol"/>
+  <token id="5" lemma="be" pos="VBD" surface="was"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="owner" pos="NN" surface="owner"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="car" pos="NN" surface="car"/>
+  <token id="11" lemma="bomb" pos="NN" surface="bomb"/>
+  <token id="12" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="5" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="11" to="9" type="unknown"/>
+  <dep from="11" to="10" type="unknown"/>
+  <dep from="8" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="524_h_0">
+ <sentence>
+  The season has been cancelled after players and owners failed to agree on a deal .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="season" pos="NN" surface="season"/>
+  <token id="3" lemma="have" pos="VBZ" surface="has"/>
+  <token id="4" lemma="be" pos="VBN" surface="been"/>
+  <token id="5" lemma="cancel" pos="VBN" surface="cancelled"/>
+  <token id="6" lemma="after" pos="IN" surface="after"/>
+  <token id="7" lemma="player" pos="NNS" surface="players"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="owner" pos="NNS" surface="owners"/>
+  <token id="10" lemma="fail" pos="VBD" surface="failed"/>
+  <token id="11" lemma="to" pos="TO" surface="to"/>
+  <token id="12" lemma="agree" pos="VB" surface="agree"/>
+  <token id="13" lemma="on" pos="IN" surface="on"/>
+  <token id="14" lemma="a" pos="DT" surface="a"/>
+  <token id="15" lemma="deal" pos="NN" surface="deal"/>
+  <token id="16" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="10" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="6" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+  <dep from="15" to="14" type="unknown"/>
+  <dep from="13" to="15" type="unknown"/>
+  <dep from="15" to="16" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cause_to_end">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Process">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Success_or_failure">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Make_agreement_on_action">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Obligation">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Parties">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

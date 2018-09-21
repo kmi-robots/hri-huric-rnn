@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="612_h_0">
+ <sentence>
+  Genetic technology provides a solution to hunger .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="genetic" pos="JJ" surface="Genetic"/>
+  <token id="2" lemma="technology" pos="NN" surface="technology"/>
+  <token id="3" lemma="provide" pos="VBZ" surface="provides"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="solution" pos="NN" surface="solution"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="hunger" pos="NN" surface="hunger"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Supplier">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Resolve_problem">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Problem">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

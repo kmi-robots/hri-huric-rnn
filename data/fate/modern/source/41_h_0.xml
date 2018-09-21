@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="41_h_0">
+ <sentence>
+  ' Hamlet ' was directed by Kenneth Branagh .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#39;" pos="PUNC&amp;#39;&amp;#39;" surface="'"/>
+  <token id="2" lemma="Hamlet" pos="NNP" surface="Hamlet"/>
+  <token id="3" lemma="&amp;#39;" pos="POS" surface="'"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="direct" pos="VBN" surface="directed"/>
+  <token id="6" lemma="by" pos="IN" surface="by"/>
+  <token id="7" lemma="Kenneth" pos="NNP" surface="Kenneth"/>
+  <token id="8" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Branagh"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="6" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Behind_the_scenes">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Artist">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Production">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

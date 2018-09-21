@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="506_h_0">
+ <sentence>
+  Kerry says Bush lied about Yucca Mt .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Kerry" pos="NNP" surface="Kerry"/>
+  <token id="2" lemma="say" pos="VBZ" surface="says"/>
+  <token id="3" lemma="Bush" pos="NNP" surface="Bush"/>
+  <token id="4" lemma="lie" pos="VBD" surface="lied"/>
+  <token id="5" lemma="about" pos="IN" surface="about"/>
+  <token id="6" lemma="yucca" pos="NNP" surface="Yucca"/>
+  <token id="7" lemma="Mt" pos="NNP" surface="Mt"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="5" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Prevarication">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Topic">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

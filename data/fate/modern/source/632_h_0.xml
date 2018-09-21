@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="632_h_0">
+ <sentence>
+  Mahmoud Ahmadi-Nejad attends a conference in Moscow .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Mahmoud" pos="NNP" surface="Mahmoud"/>
+  <token id="2" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Ahmadi-Nejad"/>
+  <token id="3" lemma="attend" pos="VBZ" surface="attends"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="conference" pos="NN" surface="conference"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="Moscow" pos="NNP" surface="Moscow"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Social_event">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Social_event">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Attendee">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

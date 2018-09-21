@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="619_h_0">
+ <sentence>
+  An oil pipeline in Siberia was ruptured .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="an" pos="DT" surface="An"/>
+  <token id="2" lemma="oil" pos="NN" surface="oil"/>
+  <token id="3" lemma="pipeline" pos="NN" surface="pipeline"/>
+  <token id="4" lemma="in" pos="IN" surface="in"/>
+  <token id="5" lemma="Siberia" pos="NNP" surface="Siberia"/>
+  <token id="6" lemma="be" pos="VBD" surface="was"/>
+  <token id="7" lemma="rupture" pos="VBN" surface="ruptured"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="6" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Damaging">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Containers">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Container">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Contents">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Relative_location">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

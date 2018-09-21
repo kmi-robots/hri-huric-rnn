@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="580_h_0">
+ <sentence>
+  Barrow Hanley is a competitor of Pacific .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Barrow" pos="NNP" surface="Barrow"/>
+  <token id="2" lemma="Hanley" pos="NNP" surface="Hanley"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="competitor" pos="NN" surface="competitor"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="Pacific" pos="NNP" surface="Pacific"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Competition">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Participant_1">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Participant_2">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

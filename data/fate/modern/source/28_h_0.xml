@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="28_h_0">
+ <sentence>
+  Russian parliament closes NGOs .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Russian" pos="JJ" surface="Russian"/>
+  <token id="2" lemma="parliament" pos="NN" surface="parliament"/>
+  <token id="3" lemma="close" pos="VBZ" surface="closes"/>
+  <token id="4" lemma="Ngo" pos="NNS" surface="NGOs"/>
+  <token id="5" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Thwarting">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Preventing_cause">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Protagonist">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

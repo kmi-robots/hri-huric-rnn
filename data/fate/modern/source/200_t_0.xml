@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="200_t_0">
+ <sentence>
+  Microsoft maintains their very successful operating system monopoly through the use of proprietary specifications as well as aggressive marketing .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Microsoft" pos="NNP" surface="Microsoft"/>
+  <token id="2" lemma="maintain" pos="VBZ" surface="maintains"/>
+  <token id="3" lemma="their" pos="PRP$" surface="their"/>
+  <token id="4" lemma="very" pos="RB" surface="very"/>
+  <token id="5" lemma="successful" pos="JJ" surface="successful"/>
+  <token id="6" lemma="operate" pos="NN" surface="operating"/>
+  <token id="7" lemma="system" pos="NN" surface="system"/>
+  <token id="8" lemma="monopoly" pos="NN" surface="monopoly"/>
+  <token id="9" lemma="through" pos="IN" surface="through"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="use" pos="NN" surface="use"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="proprietary" pos="JJ" surface="proprietary"/>
+  <token id="14" lemma="specification" pos="NNS" surface="specifications"/>
+  <token id="15" lemma="as" pos="RB" surface="as"/>
+  <token id="16" lemma="well" pos="RB" surface="well"/>
+  <token id="17" lemma="as" pos="IN" surface="as"/>
+  <token id="18" lemma="aggressive" pos="JJ" surface="aggressive"/>
+  <token id="19" lemma="marketing" pos="NN" surface="marketing"/>
+  <token id="20" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="8" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="8" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="2" to="8" type="unknown"/>
+  <dep from="2" to="9" type="unknown"/>
+  <dep from="11" to="10" type="unknown"/>
+  <dep from="9" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+  <dep from="14" to="13" type="unknown"/>
+  <dep from="12" to="14" type="unknown"/>
+  <dep from="16" to="15" type="unknown"/>
+  <dep from="11" to="16" type="unknown"/>
+  <dep from="16" to="17" type="unknown"/>
+  <dep from="19" to="18" type="unknown"/>
+  <dep from="11" to="19" type="unknown"/>
+  <dep from="19" to="20" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Activity_ongoing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Domination">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Situation">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Anaphora">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Antecedent">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

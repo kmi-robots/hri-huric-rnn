@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="267_h_0">
+ <sentence>
+  Tremors lasted 90 minutes Sunday night .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="tremor" pos="NNS" surface="Tremors"/>
+  <token id="2" lemma="last" pos="VBD" surface="lasted"/>
+  <token id="3" lemma="@card@" pos="CD" surface="90"/>
+  <token id="4" lemma="minute" pos="NNS" surface="minutes"/>
+  <token id="5" lemma="Sunday" pos="NNP" surface="Sunday"/>
+  <token id="6" lemma="night" pos="NN" surface="night"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="2" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Taking_time">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Time_length">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

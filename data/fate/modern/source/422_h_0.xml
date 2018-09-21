@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="422_h_0">
+ <sentence>
+  Cars exported by Japan decreased .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="car" pos="NNS" surface="Cars"/>
+  <token id="2" lemma="export" pos="VBN" surface="exported"/>
+  <token id="3" lemma="by" pos="IN" surface="by"/>
+  <token id="4" lemma="Japan" pos="NNP" surface="Japan"/>
+  <token id="5" lemma="decrease" pos="VBD" surface="decreased"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Exporting">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Exporter">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

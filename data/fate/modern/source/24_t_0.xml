@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="24_t_0">
+ <sentence>
+  Restricted items are those items that are not acceptable for purchase using government appropriated funds .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="restricted" pos="JJ" surface="Restricted"/>
+  <token id="2" lemma="item" pos="NNS" surface="items"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="those" pos="DT" surface="those"/>
+  <token id="5" lemma="item" pos="NNS" surface="items"/>
+  <token id="6" lemma="that" pos="WDT" surface="that"/>
+  <token id="7" lemma="be" pos="VBP" surface="are"/>
+  <token id="8" lemma="not" pos="RB" surface="not"/>
+  <token id="9" lemma="acceptable" pos="JJ" surface="acceptable"/>
+  <token id="10" lemma="for" pos="IN" surface="for"/>
+  <token id="11" lemma="purchase" pos="NN" surface="purchase"/>
+  <token id="12" lemma="use" pos="VBG" surface="using"/>
+  <token id="13" lemma="government" pos="NN" surface="government"/>
+  <token id="14" lemma="appropriate" pos="VBN" surface="appropriated"/>
+  <token id="15" lemma="fund" pos="NNS" surface="funds"/>
+  <token id="16" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="7" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="7" to="12" type="unknown"/>
+  <dep from="15" to="13" type="unknown"/>
+  <dep from="15" to="14" type="unknown"/>
+  <dep from="12" to="15" type="unknown"/>
+  <dep from="15" to="16" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entity">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Anaphora">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Antecedent">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Permitting">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="State_of_affairs">
+     <token id="6"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Commerce_buy">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Money">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Using">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Purpose">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Instrument">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="51_h_0">
+ <sentence>
+  The pope named Bishop Richard Lennon to fill in for Law .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="pope" pos="NN" surface="pope"/>
+  <token id="3" lemma="name" pos="VBD" surface="named"/>
+  <token id="4" lemma="Bishop" pos="NNP" surface="Bishop"/>
+  <token id="5" lemma="Richard" pos="NNP" surface="Richard"/>
+  <token id="6" lemma="Lennon" pos="NNP" surface="Lennon"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="fill" pos="VB" surface="fill"/>
+  <token id="9" lemma="in" pos="RP" surface="in"/>
+  <token id="10" lemma="for" pos="IN" surface="for"/>
+  <token id="11" lemma="Law" pos="NNP" surface="Law"/>
+  <token id="12" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="3" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="8" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Appointing">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Function">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Official">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Selector">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Take_place_of">
+    <lexicalUnit>
+     <token id="8"/>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="New">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Old">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

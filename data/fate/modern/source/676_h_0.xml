@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="676_h_0">
+ <sentence>
+  Arafat is ailing in a French hospital .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Arafat" pos="NNP" surface="Arafat"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="ail" pos="VBG" surface="ailing"/>
+  <token id="4" lemma="in" pos="IN" surface="in"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="French" pos="JJ" surface="French"/>
+  <token id="7" lemma="hospital" pos="NN" surface="hospital"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="7" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="4" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_body">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Experiencer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

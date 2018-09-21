@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="334_h_0">
+ <sentence>
+  U N peacekeeping forces withdrew from Bosnia .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="U" pos="NNP" surface="U"/>
+  <token id="2" lemma="N" pos="NNP" surface="N"/>
+  <token id="3" lemma="peacekeep" pos="NN" surface="peacekeeping"/>
+  <token id="4" lemma="force" pos="NNS" surface="forces"/>
+  <token id="5" lemma="withdraw" pos="VBD" surface="withdrew"/>
+  <token id="6" lemma="from" pos="IN" surface="from"/>
+  <token id="7" lemma="Bosnia" pos="NNP" surface="Bosnia"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Departing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

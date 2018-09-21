@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="149_h_0">
+ <sentence>
+  The falling oil prices had a positive impact on stocks .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="fall" pos="VBG" surface="falling"/>
+  <token id="3" lemma="oil" pos="NN" surface="oil"/>
+  <token id="4" lemma="price" pos="NNS" surface="prices"/>
+  <token id="5" lemma="have" pos="VBD" surface="had"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="positive" pos="JJ" surface="positive"/>
+  <token id="8" lemma="impact" pos="NN" surface="impact"/>
+  <token id="9" lemma="on" pos="IN" surface="on"/>
+  <token id="10" lemma="stock" pos="NNS" surface="stocks"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="5" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Objective_influence">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Influencing_entity">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Dependent_entity">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="258_h_0">
+ <sentence>
+  Many parts of tsunami-battered Aceh province were not safe for the military .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Many" pos="JJ" surface="Many"/>
+  <token id="2" lemma="part" pos="NNS" surface="parts"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="&amp;#60;unknown&amp;#62;" pos="JJ" surface="tsunami-battered"/>
+  <token id="5" lemma="Aceh" pos="NNP" surface="Aceh"/>
+  <token id="6" lemma="province" pos="NN" surface="province"/>
+  <token id="7" lemma="be" pos="VBD" surface="were"/>
+  <token id="8" lemma="not" pos="RB" surface="not"/>
+  <token id="9" lemma="safe" pos="JJ" surface="safe"/>
+  <token id="10" lemma="for" pos="IN" surface="for"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="military" pos="NN" surface="military"/>
+  <token id="13" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="7" to="2" type="unknown"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="3" to="6" type="unknown"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="12" to="11" type="unknown"/>
+  <dep from="10" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Damaging">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Part_whole">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Part">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Whole">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Being_at_risk">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Asset">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Situation">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

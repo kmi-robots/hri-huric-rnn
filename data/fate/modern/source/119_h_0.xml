@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="119_h_0">
+ <sentence>
+  The Concorde's first crash was in 2000 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Concorde's"/>
+  <token id="3" lemma="first" pos="JJ" surface="first"/>
+  <token id="4" lemma="crash" pos="NN" surface="crash"/>
+  <token id="5" lemma="be" pos="VBD" surface="was"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="@card@" pos="CD" surface="2000"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Impact">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Impactor">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

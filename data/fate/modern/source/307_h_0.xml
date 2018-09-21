@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="307_h_0">
+ <sentence>
+  Intel Corp . is a user of Blu-ray format .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Intel" pos="NNP" surface="Intel"/>
+  <token id="2" lemma="Corp" pos="NNP" surface="Corp"/>
+  <token id="3" lemma="." pos="PUNC." surface="."/>
+  <token id="4" lemma="be" pos="VBZ" surface="is"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="user" pos="NN" surface="user"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Blu-ray"/>
+  <token id="9" lemma="format" pos="NN" surface="format"/>
+  <token id="10" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Using">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Instrument">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

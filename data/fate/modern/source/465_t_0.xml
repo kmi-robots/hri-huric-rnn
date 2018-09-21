@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="465_t_0">
+ <sentence>
+  The collision had taken place in a spot on Andrea Doria that had much passenger accommodation .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="collision" pos="NN" surface="collision"/>
+  <token id="3" lemma="have" pos="VBD" surface="had"/>
+  <token id="4" lemma="take" pos="VBN" surface="taken"/>
+  <token id="5" lemma="place" pos="NN" surface="place"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="spot" pos="NN" surface="spot"/>
+  <token id="9" lemma="on" pos="IN" surface="on"/>
+  <token id="10" lemma="Andrea" pos="NNP" surface="Andrea"/>
+  <token id="11" lemma="Doria" pos="NNP" surface="Doria"/>
+  <token id="12" lemma="that" pos="WDT" surface="that"/>
+  <token id="13" lemma="have" pos="VBD" surface="had"/>
+  <token id="14" lemma="much" pos="JJ" surface="much"/>
+  <token id="15" lemma="passenger" pos="NN" surface="passenger"/>
+  <token id="16" lemma="accommodation" pos="NN" surface="accommodation"/>
+  <token id="17" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="6" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="11" to="10" type="unknown"/>
+  <dep from="9" to="11" type="unknown"/>
+  <dep from="8" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+  <dep from="16" to="14" type="unknown"/>
+  <dep from="16" to="15" type="unknown"/>
+  <dep from="13" to="16" type="unknown"/>
+  <dep from="16" to="17" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Event">
+    <lexicalUnit>
+     <token id="4"/>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Anaphora">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Antecedent">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Unknown">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Fe1">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Fe2">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Fe3">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Fe4">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Relative_location">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

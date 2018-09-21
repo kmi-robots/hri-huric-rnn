@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="459_h_0">
+ <sentence>
+  Telnet created the internet browser Mosaic .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Telnet"/>
+  <token id="2" lemma="create" pos="VBD" surface="created"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="Internet" pos="JJ" surface="internet"/>
+  <token id="5" lemma="browser" pos="NN" surface="browser"/>
+  <token id="6" lemma="Mosaic" pos="NNP" surface="Mosaic"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="6" to="3" type="unknown"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="2" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Intentionally_create">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Creator">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Created_entity">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

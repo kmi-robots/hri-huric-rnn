@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="463_t_0">
+ <sentence>
+  Temporary help firms added 32,000 and education and health care services gained 13,000 jobs last month .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="temporary" pos="NNP" surface="Temporary"/>
+  <token id="2" lemma="help" pos="NN" surface="help"/>
+  <token id="3" lemma="firm" pos="NNS" surface="firms"/>
+  <token id="4" lemma="add" pos="VBD" surface="added"/>
+  <token id="5" lemma="@card@" pos="CD" surface="32,000"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="education" pos="NN" surface="education"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="health" pos="NN" surface="health"/>
+  <token id="10" lemma="care" pos="NN" surface="care"/>
+  <token id="11" lemma="service" pos="NNS" surface="services"/>
+  <token id="12" lemma="gain" pos="VBN" surface="gained"/>
+  <token id="13" lemma="@card@" pos="CD" surface="13,000"/>
+  <token id="14" lemma="job" pos="NNS" surface="jobs"/>
+  <token id="15" lemma="last" pos="JJ" surface="last"/>
+  <token id="16" lemma="month" pos="NN" surface="month"/>
+  <token id="17" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="11" to="5" type="unknown"/>
+  <dep from="11" to="6" type="unknown"/>
+  <dep from="11" to="7" type="unknown"/>
+  <dep from="11" to="8" type="unknown"/>
+  <dep from="11" to="9" type="unknown"/>
+  <dep from="11" to="10" type="unknown"/>
+  <dep from="12" to="11" type="unknown"/>
+  <dep from="4" to="12" type="unknown"/>
+  <dep from="14" to="13" type="unknown"/>
+  <dep from="12" to="14" type="unknown"/>
+  <dep from="16" to="15" type="unknown"/>
+  <dep from="12" to="16" type="unknown"/>
+  <dep from="16" to="17" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Product">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Unknown">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Fe1">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Fe2">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Fe3">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Product">
+     <token id="7"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Getting">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

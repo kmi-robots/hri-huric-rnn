@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="655_t_2">
+ <sentence>
+  Until 1995 , a player also had to be of European nationality to be eligible .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="until" pos="IN" surface="Until"/>
+  <token id="2" lemma="@card@" pos="CD" surface="1995"/>
+  <token id="3" lemma="," pos="PUNC," surface=","/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="player" pos="NN" surface="player"/>
+  <token id="6" lemma="also" pos="RB" surface="also"/>
+  <token id="7" lemma="have" pos="VBD" surface="had"/>
+  <token id="8" lemma="to" pos="TO" surface="to"/>
+  <token id="9" lemma="be" pos="VB" surface="be"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="European" pos="JJ" surface="European"/>
+  <token id="12" lemma="nationality" pos="NN" surface="nationality"/>
+  <token id="13" lemma="to" pos="TO" surface="to"/>
+  <token id="14" lemma="be" pos="VB" surface="be"/>
+  <token id="15" lemma="eligible" pos="JJ" surface="eligible"/>
+  <token id="16" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="7" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="12" to="11" type="unknown"/>
+  <dep from="10" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+  <dep from="14" to="15" type="unknown"/>
+  <dep from="15" to="16" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Have_as_requirement">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Dependent">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Requirement">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_jurisdiction">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

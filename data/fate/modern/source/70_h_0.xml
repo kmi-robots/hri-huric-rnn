@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="70_h_0">
+ <sentence>
+  India's Meteorological Department operates from Indonesia .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="India's"/>
+  <token id="2" lemma="meteorological" pos="NNP" surface="Meteorological"/>
+  <token id="3" lemma="Department" pos="NNP" surface="Department"/>
+  <token id="4" lemma="operate" pos="VBZ" surface="operates"/>
+  <token id="5" lemma="from" pos="IN" surface="from"/>
+  <token id="6" lemma="Indonesia" pos="NNP" surface="Indonesia"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_located">
+    <lexicalUnit>
+     <token id="4"/>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

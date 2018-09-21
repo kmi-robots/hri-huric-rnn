@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="61_t_0">
+ <sentence>
+  Tea also contains anti-oxidants that help to reduce the chances of heart disease and cancer .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Tea" pos="NNP" surface="Tea"/>
+  <token id="2" lemma="also" pos="RB" surface="also"/>
+  <token id="3" lemma="contain" pos="VBZ" surface="contains"/>
+  <token id="4" lemma="anti-oxidant" pos="NNS" surface="anti-oxidants"/>
+  <token id="5" lemma="that" pos="WDT" surface="that"/>
+  <token id="6" lemma="help" pos="VBP" surface="help"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="reduce" pos="VB" surface="reduce"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="chance" pos="NNS" surface="chances"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="heart" pos="NN" surface="heart"/>
+  <token id="13" lemma="disease" pos="NN" surface="disease"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="cancer" pos="NN" surface="cancer"/>
+  <token id="16" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="8" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="13" to="12" type="unknown"/>
+  <dep from="11" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+  <dep from="13" to="15" type="unknown"/>
+  <dep from="15" to="16" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Helper">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Anaphora">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Antecedent">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_change_of_position_on_a_scale">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Ailment">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Body_Part">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

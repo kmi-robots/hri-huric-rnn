@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="338_h_0">
+ <sentence>
+  Hamas militants fired rockets at Jewish settlements in Gaza .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Hamas"/>
+  <token id="2" lemma="militant" pos="NNS" surface="militants"/>
+  <token id="3" lemma="fire" pos="VBD" surface="fired"/>
+  <token id="4" lemma="rocket" pos="NNS" surface="rockets"/>
+  <token id="5" lemma="at" pos="IN" surface="at"/>
+  <token id="6" lemma="Jewish" pos="JJ" surface="Jewish"/>
+  <token id="7" lemma="settlement" pos="NNS" surface="settlements"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="Gaza" pos="NNP" surface="Gaza"/>
+  <token id="10" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="5" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Military">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Force">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Possessor">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Shoot_projectiles">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Projectile">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Container_possessor">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Relative_location">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

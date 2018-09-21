@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="650_h_0">
+ <sentence>
+  Genetic Modification technology provides a solution to world hunger .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="genetic" pos="NNP" surface="Genetic"/>
+  <token id="2" lemma="modification" pos="NNP" surface="Modification"/>
+  <token id="3" lemma="technology" pos="NN" surface="technology"/>
+  <token id="4" lemma="provide" pos="VBZ" surface="provides"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="solution" pos="NN" surface="solution"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="world" pos="NN" surface="world"/>
+  <token id="9" lemma="hunger" pos="NN" surface="hunger"/>
+  <token id="10" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Gizmo">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Gizmo">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Supplier">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Unknown">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Fe1">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Fe2">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Biological_urge">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Experiencer">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

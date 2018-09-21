@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="452_h_0">
+ <sentence>
+  Rafael Benitez resigns as Liverpool boss .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Rafael" pos="NNP" surface="Rafael"/>
+  <token id="2" lemma="Benitez" pos="NNP" surface="Benitez"/>
+  <token id="3" lemma="resign" pos="VBZ" surface="resigns"/>
+  <token id="4" lemma="as" pos="IN" surface="as"/>
+  <token id="5" lemma="Liverpool" pos="NNP" surface="Liverpool"/>
+  <token id="6" lemma="boss" pos="NN" surface="boss"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Quitting">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Employee">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Position">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

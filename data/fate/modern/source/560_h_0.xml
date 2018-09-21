@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="560_h_0">
+ <sentence>
+  Kotler is a member of the Reform Movement .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Kotler" pos="NNP" surface="Kotler"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="member" pos="NN" surface="member"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="Reform" pos="NNP" surface="Reform"/>
+  <token id="8" lemma="movement" pos="NNP" surface="Movement"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="5" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Member">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Group">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

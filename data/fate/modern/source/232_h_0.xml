@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="232_h_0">
+ <sentence>
+  Hector Oqueli was found dead .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Hector" pos="NNP" surface="Hector"/>
+  <token id="2" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Oqueli"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="find" pos="VBN" surface="found"/>
+  <token id="5" lemma="dead" pos="JJ" surface="dead"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Becoming_aware">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Dead_or_alive">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

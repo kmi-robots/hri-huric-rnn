@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="463_h_0">
+ <sentence>
+  Service industries such as education and health care added 46,000 jobs .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="service" pos="NNP" surface="Service"/>
+  <token id="2" lemma="industry" pos="NNS" surface="industries"/>
+  <token id="3" lemma="such" pos="JJ" surface="such"/>
+  <token id="4" lemma="as" pos="IN" surface="as"/>
+  <token id="5" lemma="education" pos="NN" surface="education"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="health" pos="NN" surface="health"/>
+  <token id="8" lemma="care" pos="NN" surface="care"/>
+  <token id="9" lemma="add" pos="VBD" surface="added"/>
+  <token id="10" lemma="@card@" pos="CD" surface="46,000"/>
+  <token id="11" lemma="job" pos="NNS" surface="jobs"/>
+  <token id="12" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="9" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="8" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="4" to="8" type="unknown"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="11" to="10" type="unknown"/>
+  <dep from="9" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Product">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Unknown">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Fe1">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Fe2">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

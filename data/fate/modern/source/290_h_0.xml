@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="290_h_0">
+ <sentence>
+  Wyniemko was proven guilty by D N A testing .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Wyniemko"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="prove" pos="VBN" surface="proven"/>
+  <token id="4" lemma="guilty" pos="JJ" surface="guilty"/>
+  <token id="5" lemma="by" pos="IN" surface="by"/>
+  <token id="6" lemma="D" pos="NNP" surface="D"/>
+  <token id="7" lemma="N" pos="NNP" surface="N"/>
+  <token id="8" lemma="a" pos="DT" surface="A"/>
+  <token id="9" lemma="testing" pos="NN" surface="testing"/>
+  <token id="10" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="5" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="3" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Verdict">
+    <lexicalUnit>
+     <token id="3"/>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Defendant">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Reason">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

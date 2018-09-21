@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="579_h_0">
+ <sentence>
+  Saddam Hussein ended his nuclear programme in 1991 , after the Gulf War .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Saddam" pos="NNP" surface="Saddam"/>
+  <token id="2" lemma="Hussein" pos="NNP" surface="Hussein"/>
+  <token id="3" lemma="end" pos="VBD" surface="ended"/>
+  <token id="4" lemma="his" pos="PRP$" surface="his"/>
+  <token id="5" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="6" lemma="programme" pos="NN" surface="programme"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="@card@" pos="CD" surface="1991"/>
+  <token id="9" lemma="," pos="PUNC," surface=","/>
+  <token id="10" lemma="after" pos="IN" surface="after"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="Gulf" pos="NNP" surface="Gulf"/>
+  <token id="13" lemma="War" pos="NNP" surface="War"/>
+  <token id="14" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="3" to="6" type="unknown"/>
+  <dep from="3" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="3" to="10" type="unknown"/>
+  <dep from="13" to="11" type="unknown"/>
+  <dep from="13" to="12" type="unknown"/>
+  <dep from="10" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Activity_stop">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Field">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Activity">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

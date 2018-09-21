@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="151_h_0">
+ <sentence>
+  The government took measures to protect the environment .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="government" pos="NN" surface="government"/>
+  <token id="3" lemma="take" pos="VBD" surface="took"/>
+  <token id="4" lemma="measure" pos="NNS" surface="measures"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="protect" pos="VB" surface="protect"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="environment" pos="NN" surface="environment"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="6" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Means">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Protecting">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Protection">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Asset">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="426_h_0">
+ <sentence>
+  Lake Tahoe is the deepest lake in the world .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Lake" pos="NNP" surface="Lake"/>
+  <token id="2" lemma="Tahoe" pos="NNP" surface="Tahoe"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="deep" pos="JJS" surface="deepest"/>
+  <token id="6" lemma="lake" pos="NN" surface="lake"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="world" pos="NN" surface="world"/>
+  <token id="10" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="3" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Surpassing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Profiled_item">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Attribute">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Comparison_set">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

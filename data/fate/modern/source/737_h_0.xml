@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="737_h_0">
+ <sentence>
+  Nelson Mandela was the Deputy President of South Africa .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Nelson" pos="NNP" surface="Nelson"/>
+  <token id="2" lemma="Mandela" pos="NNP" surface="Mandela"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="Deputy" pos="NNP" surface="Deputy"/>
+  <token id="6" lemma="President" pos="NNP" surface="President"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="South" pos="NNP" surface="South"/>
+  <token id="9" lemma="Africa" pos="NNP" surface="Africa"/>
+  <token id="10" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="3" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Descriptor">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

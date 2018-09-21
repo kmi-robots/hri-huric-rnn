@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="765_t_0">
+ <sentence>
+  Rainforests have a direct impact on their local weather conditions .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="rainforest" pos="NNS" surface="Rainforests"/>
+  <token id="2" lemma="have" pos="VBP" surface="have"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="direct" pos="JJ" surface="direct"/>
+  <token id="5" lemma="impact" pos="NN" surface="impact"/>
+  <token id="6" lemma="on" pos="IN" surface="on"/>
+  <token id="7" lemma="their" pos="PRP$" surface="their"/>
+  <token id="8" lemma="local" pos="JJ" surface="local"/>
+  <token id="9" lemma="weather" pos="NN" surface="weather"/>
+  <token id="10" lemma="condition" pos="NNS" surface="conditions"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="2" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="10" to="7" type="unknown"/>
+  <dep from="10" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="6" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Objective_influence">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Influencing_entity">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Dependent_entity">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Weather">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Specification">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

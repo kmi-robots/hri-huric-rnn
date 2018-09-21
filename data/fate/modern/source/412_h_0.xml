@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="412_h_0">
+ <sentence>
+  Slovenia has 15 inhabitants .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Slovenia" pos="NNP" surface="Slovenia"/>
+  <token id="2" lemma="have" pos="VBZ" surface="has"/>
+  <token id="3" lemma="@card@" pos="CD" surface="15"/>
+  <token id="4" lemma="inhabitant" pos="NNS" surface="inhabitants"/>
+  <token id="5" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Residence">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Resident">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

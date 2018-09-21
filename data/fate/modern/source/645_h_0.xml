@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="645_h_0">
+ <sentence>
+  Members of Iraq's Governing Council refused to sign an interim constitution .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="member" pos="NNS" surface="Members"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Iraq's"/>
+  <token id="4" lemma="govern" pos="NNP" surface="Governing"/>
+  <token id="5" lemma="Council" pos="NNP" surface="Council"/>
+  <token id="6" lemma="refuse" pos="VBD" surface="refused"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="sign" pos="VB" surface="sign"/>
+  <token id="9" lemma="an" pos="DT" surface="an"/>
+  <token id="10" lemma="interim" pos="JJ" surface="interim"/>
+  <token id="11" lemma="constitution" pos="NN" surface="constitution"/>
+  <token id="12" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="2" to="5" type="unknown"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="11" to="9" type="unknown"/>
+  <dep from="11" to="10" type="unknown"/>
+  <dep from="8" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Member">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Group">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Agree_or_refuse_to_act">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Proposed_action">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Sign_agreement">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Signatory">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Agreement">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

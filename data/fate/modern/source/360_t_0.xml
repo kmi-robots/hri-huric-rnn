@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="360_t_0">
+ <sentence>
+  The government thereby perpetuates our continued dependence on fuels that are environmentally and economically unsustainable .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="government" pos="NN" surface="government"/>
+  <token id="3" lemma="thereby" pos="RB" surface="thereby"/>
+  <token id="4" lemma="perpetuate" pos="VBZ" surface="perpetuates"/>
+  <token id="5" lemma="our" pos="PRP$" surface="our"/>
+  <token id="6" lemma="continued" pos="JJ" surface="continued"/>
+  <token id="7" lemma="dependence" pos="NN" surface="dependence"/>
+  <token id="8" lemma="on" pos="IN" surface="on"/>
+  <token id="9" lemma="fuel" pos="NNS" surface="fuels"/>
+  <token id="10" lemma="that" pos="WDT" surface="that"/>
+  <token id="11" lemma="be" pos="VBP" surface="are"/>
+  <token id="12" lemma="environmentally" pos="RB" surface="environmentally"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="economically" pos="RB" surface="economically"/>
+  <token id="15" lemma="unsustainable" pos="JJ" surface="unsustainable"/>
+  <token id="16" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="4" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+  <dep from="15" to="14" type="unknown"/>
+  <dep from="12" to="15" type="unknown"/>
+  <dep from="15" to="16" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_event_duration">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Reliance">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Unknown">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Fe1">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Fe2">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Anaphora">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Antecedent">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

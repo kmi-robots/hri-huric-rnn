@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="648_h_0">
+ <sentence>
+  Karl Rove works as chief strategist for Mr . Bush .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Karl" pos="NNP" surface="Karl"/>
+  <token id="2" lemma="reeve" pos="NNP" surface="Rove"/>
+  <token id="3" lemma="work" pos="VBZ" surface="works"/>
+  <token id="4" lemma="as" pos="IN" surface="as"/>
+  <token id="5" lemma="chief" pos="JJ" surface="chief"/>
+  <token id="6" lemma="strategist" pos="NN" surface="strategist"/>
+  <token id="7" lemma="for" pos="IN" surface="for"/>
+  <token id="8" lemma="Mr" pos="NNP" surface="Mr"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+  <token id="10" lemma="Bush" pos="NNP" surface="Bush"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="10" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="7" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_employed">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Employee">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Employer">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Position">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

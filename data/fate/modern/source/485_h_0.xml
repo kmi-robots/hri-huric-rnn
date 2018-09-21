@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="485_h_0">
+ <sentence>
+  Insurgents have launched attacks on Iraq's oil industry .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="insurgent" pos="NNS" surface="Insurgents"/>
+  <token id="2" lemma="have" pos="VBP" surface="have"/>
+  <token id="3" lemma="launch" pos="VBN" surface="launched"/>
+  <token id="4" lemma="attack" pos="NNS" surface="attacks"/>
+  <token id="5" lemma="on" pos="IN" surface="on"/>
+  <token id="6" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Iraq's"/>
+  <token id="7" lemma="oil" pos="NN" surface="oil"/>
+  <token id="8" lemma="industry" pos="NN" surface="industry"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="5" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Activity_start">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Assailant">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Product">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

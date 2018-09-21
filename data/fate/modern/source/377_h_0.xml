@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="377_h_0">
+ <sentence>
+  Coughlin is the fastest swimmer in the world .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Coughlin" pos="NNP" surface="Coughlin"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="fast" pos="JJS" surface="fastest"/>
+  <token id="5" lemma="swimmer" pos="NN" surface="swimmer"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="world" pos="NN" surface="world"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="2" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="6" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Surpassing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Profiled_item">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Attribute">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Comparison_set">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

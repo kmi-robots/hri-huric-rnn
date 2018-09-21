@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="43_h_0">
+ <sentence>
+  Chemical plants and oil refineries are located in New Jersey .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Chemical" pos="NN" surface="Chemical"/>
+  <token id="2" lemma="plant" pos="NNS" surface="plants"/>
+  <token id="3" lemma="and" pos="CC" surface="and"/>
+  <token id="4" lemma="oil" pos="NN" surface="oil"/>
+  <token id="5" lemma="refinery" pos="NNS" surface="refineries"/>
+  <token id="6" lemma="be" pos="VBP" surface="are"/>
+  <token id="7" lemma="locate" pos="VBN" surface="located"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="New" pos="NNP" surface="New"/>
+  <token id="10" lemma="Jersey" pos="NNP" surface="Jersey"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="unknown"/>
+  <dep from="5" to="2" type="unknown"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="8" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_located">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

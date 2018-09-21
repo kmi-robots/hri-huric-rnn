@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="468_h_0">
+ <sentence>
+  At least 174 had been killed and more than 410 people injured .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="at" pos="IN" surface="At"/>
+  <token id="2" lemma="least" pos="JJS" surface="least"/>
+  <token id="3" lemma="@card@" pos="CD" surface="174"/>
+  <token id="4" lemma="have" pos="VBD" surface="had"/>
+  <token id="5" lemma="be" pos="VBN" surface="been"/>
+  <token id="6" lemma="kill" pos="VBN" surface="killed"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="more" pos="JJR" surface="more"/>
+  <token id="9" lemma="than" pos="IN" surface="than"/>
+  <token id="10" lemma="@card@" pos="CD" surface="410"/>
+  <token id="11" lemma="people" pos="NNS" surface="people"/>
+  <token id="12" lemma="injure" pos="VBN" surface="injured"/>
+  <token id="13" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="1" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="4" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="11" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="12" to="11" type="unknown"/>
+  <dep from="4" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_harm">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

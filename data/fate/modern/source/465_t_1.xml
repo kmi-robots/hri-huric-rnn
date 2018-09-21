@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="465_t_1">
+ <sentence>
+  About fifty people were killed in the collision .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="about" pos="IN" surface="About"/>
+  <token id="2" lemma="fifty" pos="JJ" surface="fifty"/>
+  <token id="3" lemma="people" pos="NNS" surface="people"/>
+  <token id="4" lemma="be" pos="VBD" surface="were"/>
+  <token id="5" lemma="kill" pos="VBN" surface="killed"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="collision" pos="NN" surface="collision"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="6" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="18_h_0">
+ <sentence>
+  Israelis will demonstrate and a counter-demonstration of 25 Palestinians will be permitted as well .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Israelis" pos="NNPS" surface="Israelis"/>
+  <token id="2" lemma="will" pos="MD" surface="will"/>
+  <token id="3" lemma="demonstrate" pos="VB" surface="demonstrate"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="&amp;#60;unknown&amp;#62;" pos="NN" surface="counter-demonstration"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="@card@" pos="CD" surface="25"/>
+  <token id="9" lemma="Palestinians" pos="NNPS" surface="Palestinians"/>
+  <token id="10" lemma="will" pos="MD" surface="will"/>
+  <token id="11" lemma="be" pos="VB" surface="be"/>
+  <token id="12" lemma="permit" pos="VBN" surface="permitted"/>
+  <token id="13" lemma="as" pos="RB" surface="as"/>
+  <token id="14" lemma="well" pos="RB" surface="well"/>
+  <token id="15" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="10" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="2" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+  <dep from="14" to="13" type="unknown"/>
+  <dep from="12" to="14" type="unknown"/>
+  <dep from="14" to="15" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Social_event">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Attendee">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Social_event">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Attendee">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Grant_permission">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Action">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

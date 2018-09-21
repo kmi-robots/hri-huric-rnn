@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="628_h_0">
+ <sentence>
+  Anaphylactic shock is caused by adrenaline .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Anaphylactic"/>
+  <token id="2" lemma="shock" pos="NN" surface="shock"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="cause" pos="VBN" surface="caused"/>
+  <token id="5" lemma="by" pos="IN" surface="by"/>
+  <token id="6" lemma="adrenaline" pos="NN" surface="adrenaline"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Ailment">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Name">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

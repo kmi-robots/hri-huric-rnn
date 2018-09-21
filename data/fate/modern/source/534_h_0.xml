@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="534_h_0">
+ <sentence>
+  Trent Barrett replaces Steve Price .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Trent" pos="NNP" surface="Trent"/>
+  <token id="2" lemma="Barrett" pos="NNP" surface="Barrett"/>
+  <token id="3" lemma="replace" pos="VBZ" surface="replaces"/>
+  <token id="4" lemma="Steve" pos="NNP" surface="Steve"/>
+  <token id="5" lemma="Price" pos="NNP" surface="Price"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Replacing">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="New">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Old">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

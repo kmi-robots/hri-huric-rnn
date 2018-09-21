@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="287_h_0">
+ <sentence>
+  After hitting the Florida coast the storm lost some of its power .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="after" pos="IN" surface="After"/>
+  <token id="2" lemma="hit" pos="VBG" surface="hitting"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="Florida" pos="NNP" surface="Florida"/>
+  <token id="5" lemma="coast" pos="NN" surface="coast"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="storm" pos="NN" surface="storm"/>
+  <token id="8" lemma="lose" pos="VBD" surface="lost"/>
+  <token id="9" lemma="some" pos="DT" surface="some"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="its" pos="PRP$" surface="its"/>
+  <token id="12" lemma="power" pos="NN" surface="power"/>
+  <token id="13" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="2" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="12" to="11" type="unknown"/>
+  <dep from="10" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

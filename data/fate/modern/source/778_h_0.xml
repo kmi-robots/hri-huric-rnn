@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="778_h_0">
+ <sentence>
+  The Lorenzo brothers are founders of Murder Inc .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="Lorenzo" pos="NNP" surface="Lorenzo"/>
+  <token id="3" lemma="brother" pos="NNS" surface="brothers"/>
+  <token id="4" lemma="be" pos="VBP" surface="are"/>
+  <token id="5" lemma="founder" pos="NNS" surface="founders"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="murder" pos="NN" surface="Murder"/>
+  <token id="8" lemma="Inc" pos="NNP" surface="Inc"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="6" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Intentionally_create">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Creator">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Created_entity">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

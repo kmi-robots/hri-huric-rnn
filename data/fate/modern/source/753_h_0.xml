@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="753_h_0">
+ <sentence>
+  Iraqi forces captured an al-Zarqawi aide the government said .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Iraqi" pos="JJ" surface="Iraqi"/>
+  <token id="2" lemma="force" pos="NNS" surface="forces"/>
+  <token id="3" lemma="capture" pos="VBN" surface="captured"/>
+  <token id="4" lemma="an" pos="DT" surface="an"/>
+  <token id="5" lemma="&amp;#60;unknown&amp;#62;" pos="NN" surface="al-Zarqawi"/>
+  <token id="6" lemma="aide" pos="NN" surface="aide"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="government" pos="NN" surface="government"/>
+  <token id="9" lemma="say" pos="VBD" surface="said"/>
+  <token id="10" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="9" to="2" type="unknown"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="3" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="3" to="8" type="unknown"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Military">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+   </frame>
+   <frame name="Assistance">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Benefitted_party">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Helper">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Imprisonment">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Prisoner">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Authorities">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="389_h_0">
+ <sentence>
+  There were 800,000 victims of the massacres in Rwanda .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="There" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBD" surface="were"/>
+  <token id="3" lemma="@card@" pos="CD" surface="800,000"/>
+  <token id="4" lemma="victim" pos="NNS" surface="victims"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="massacre" pos="NNS" surface="massacres"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="Rwanda" pos="NNP" surface="Rwanda"/>
+  <token id="10" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="5" to="7" type="unknown"/>
+  <dep from="2" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Killer">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="760_h_0">
+ <sentence>
+  Luis Carlos Galan was murdered in Bogota .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Luis" pos="NNP" surface="Luis"/>
+  <token id="2" lemma="Carlos" pos="NNP" surface="Carlos"/>
+  <token id="3" lemma="Galan" pos="NNP" surface="Galan"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="murder" pos="VBN" surface="murdered"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="Bogota" pos="NNP" surface="Bogota"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

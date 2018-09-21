@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="520_h_0">
+ <sentence>
+  Nelson Mandela is a Nobel Peace Prize winner .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Nelson" pos="NNP" surface="Nelson"/>
+  <token id="2" lemma="Mandela" pos="NNP" surface="Mandela"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="Nobel" pos="NNP" surface="Nobel"/>
+  <token id="6" lemma="Peace" pos="NNP" surface="Peace"/>
+  <token id="7" lemma="Prize" pos="NNP" surface="Prize"/>
+  <token id="8" lemma="winner" pos="NN" surface="winner"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="8" to="4" type="unknown"/>
+  <dep from="8" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="3" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Finish_competition">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Competitor">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Prize">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

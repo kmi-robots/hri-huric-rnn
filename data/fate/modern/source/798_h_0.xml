@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="798_h_0">
+ <sentence>
+  Arensberg lectures at the University of Bordeaux in France .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Arensberg"/>
+  <token id="2" lemma="lecture" pos="VBZ" surface="lectures"/>
+  <token id="3" lemma="at" pos="IN" surface="at"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="University" pos="NNP" surface="University"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="Bordeaux" pos="NNP" surface="Bordeaux"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="France" pos="NNP" surface="France"/>
+  <token id="10" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="2" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Education_teaching">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Teacher">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Institution">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="21_h_0">
+ <sentence>
+  Spain and Korea started ambassadorial relations this year .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Spain" pos="NNP" surface="Spain"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="Korea" pos="NNP" surface="Korea"/>
+  <token id="4" lemma="start" pos="VBD" surface="started"/>
+  <token id="5" lemma="ambassadorial" pos="JJ" surface="ambassadorial"/>
+  <token id="6" lemma="relation" pos="NNS" surface="relations"/>
+  <token id="7" lemma="this" pos="DT" surface="this"/>
+  <token id="8" lemma="year" pos="NN" surface="year"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="1" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="4" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Activity_start">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Contacting">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Intermediary">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

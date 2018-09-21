@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="400_t_0">
+ <sentence>
+  Leo Fender invented the first electric guitar and the electric bass guitar .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Leo" pos="NNP" surface="Leo"/>
+  <token id="2" lemma="Fender" pos="NNP" surface="Fender"/>
+  <token id="3" lemma="invent" pos="VBD" surface="invented"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="first" pos="JJ" surface="first"/>
+  <token id="6" lemma="electric" pos="JJ" surface="electric"/>
+  <token id="7" lemma="guitar" pos="NN" surface="guitar"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="electric" pos="JJ" surface="electric"/>
+  <token id="11" lemma="bass" pos="NN" surface="bass"/>
+  <token id="12" lemma="guitar" pos="NN" surface="guitar"/>
+  <token id="13" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="7" to="4" type="unknown"/>
+  <dep from="7" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="12" to="7" type="unknown"/>
+  <dep from="12" to="8" type="unknown"/>
+  <dep from="12" to="9" type="unknown"/>
+  <dep from="12" to="10" type="unknown"/>
+  <dep from="12" to="11" type="unknown"/>
+  <dep from="3" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Invention">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Invention">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

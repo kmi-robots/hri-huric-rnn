@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="157_h_0">
+ <sentence>
+  The Jackson trial promises to be like no other .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="Jackson" pos="NNP" surface="Jackson"/>
+  <token id="3" lemma="trial" pos="NN" surface="trial"/>
+  <token id="4" lemma="promise" pos="VBZ" surface="promises"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="be" pos="VB" surface="be"/>
+  <token id="7" lemma="like" pos="IN" surface="like"/>
+  <token id="8" lemma="no" pos="DT" surface="no"/>
+  <token id="9" lemma="other" pos="JJ" surface="other"/>
+  <token id="10" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Omen">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon_1">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Phenomenon_2">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Trial">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Defendant">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Case">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Similarity">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Entity_1">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Entity_2">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="399_h_0">
+ <sentence>
+  David Davis becomes prime minister .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="David" pos="NNP" surface="David"/>
+  <token id="2" lemma="Davis" pos="NNP" surface="Davis"/>
+  <token id="3" lemma="become" pos="VBZ" surface="becomes"/>
+  <token id="4" lemma="prime" pos="JJ" surface="prime"/>
+  <token id="5" lemma="minister" pos="NN" surface="minister"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Becoming">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Final_state">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="4"/>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

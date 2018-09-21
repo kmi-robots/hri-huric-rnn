@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="462_h_0">
+ <sentence>
+  Kerry said 5 million people had lost their health care .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Kerry" pos="NNP" surface="Kerry"/>
+  <token id="2" lemma="say" pos="VBD" surface="said"/>
+  <token id="3" lemma="5" pos="CD" surface="5"/>
+  <token id="4" lemma="million" pos="CD" surface="million"/>
+  <token id="5" lemma="people" pos="NNS" surface="people"/>
+  <token id="6" lemma="have" pos="VBD" surface="had"/>
+  <token id="7" lemma="lose" pos="VBN" surface="lost"/>
+  <token id="8" lemma="their" pos="PRP$" surface="their"/>
+  <token id="9" lemma="health" pos="NN" surface="health"/>
+  <token id="10" lemma="care" pos="NN" surface="care"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="2" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="10" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="7" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Unknown">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Fe1">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Fe2">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Unknown">
+    <lexicalUnit>
+     <token id="9"/>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Fe2">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="571_h_0">
+ <sentence>
+  S B C reported earnings of 38 cents per share in the latest quarter .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="S" pos="NNP" surface="S"/>
+  <token id="2" lemma="B" pos="NNP" surface="B"/>
+  <token id="3" lemma="C" pos="NNP" surface="C"/>
+  <token id="4" lemma="report" pos="VBD" surface="reported"/>
+  <token id="5" lemma="earnings" pos="NNS" surface="earnings"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="@card@" pos="CD" surface="38"/>
+  <token id="8" lemma="cent" pos="NNS" surface="cents"/>
+  <token id="9" lemma="per" pos="IN" surface="per"/>
+  <token id="10" lemma="share" pos="NN" surface="share"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="late" pos="JJS" surface="latest"/>
+  <token id="14" lemma="quarter" pos="NN" surface="quarter"/>
+  <token id="15" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="6" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="4" to="11" type="unknown"/>
+  <dep from="14" to="12" type="unknown"/>
+  <dep from="14" to="13" type="unknown"/>
+  <dep from="11" to="14" type="unknown"/>
+  <dep from="14" to="15" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+   <frame name="Earnings_and_losses">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Earner">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Earnings">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Rate">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

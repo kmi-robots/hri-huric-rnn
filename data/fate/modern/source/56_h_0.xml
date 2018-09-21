@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="56_h_0">
+ <sentence>
+  Women escaping the building were seen fainting and were carried away on stretchers .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="woman" pos="NNS" surface="Women"/>
+  <token id="2" lemma="escape" pos="VBG" surface="escaping"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="building" pos="NN" surface="building"/>
+  <token id="5" lemma="be" pos="VBD" surface="were"/>
+  <token id="6" lemma="see" pos="VBN" surface="seen"/>
+  <token id="7" lemma="fainting" pos="NN" surface="fainting"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="be" pos="VBD" surface="were"/>
+  <token id="10" lemma="carry" pos="VBN" surface="carried"/>
+  <token id="11" lemma="away" pos="RB" surface="away"/>
+  <token id="12" lemma="on" pos="IN" surface="on"/>
+  <token id="13" lemma="stretcher" pos="NNS" surface="stretchers"/>
+  <token id="14" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="9" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="10" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Escaping">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Escapee">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Undesirable_location">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Fall_asleep">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Sleeper">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Perception_experience">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Carrier">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

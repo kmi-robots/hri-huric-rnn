@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="708_h_0">
+ <sentence>
+  ITunes is a product by Apple .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="ITunes"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="product" pos="NN" surface="product"/>
+  <token id="5" lemma="by" pos="IN" surface="by"/>
+  <token id="6" lemma="Apple" pos="NNP" surface="Apple"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Manufacturing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Manufacturer">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Product">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

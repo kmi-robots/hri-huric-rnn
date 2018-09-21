@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="525_h_0">
+ <sentence>
+  The first Barbie cost 3 dollars .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="first" pos="JJ" surface="first"/>
+  <token id="3" lemma="Barbie" pos="NNP" surface="Barbie"/>
+  <token id="4" lemma="cost" pos="VBD" surface="cost"/>
+  <token id="5" lemma="3" pos="CD" surface="3"/>
+  <token id="6" lemma="dollar" pos="NNS" surface="dollars"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Expensiveness">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Asset">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

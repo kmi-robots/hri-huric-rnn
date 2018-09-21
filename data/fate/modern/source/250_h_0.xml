@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="250_h_0">
+ <sentence>
+  Walter R . Mears writes for The Associated Press .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Walter" pos="NNP" surface="Walter"/>
+  <token id="2" lemma="R" pos="NNP" surface="R"/>
+  <token id="3" lemma="." pos="PUNC." surface="."/>
+  <token id="4" lemma="Mears" pos="NNPS" surface="Mears"/>
+  <token id="5" lemma="write" pos="VBZ" surface="writes"/>
+  <token id="6" lemma="for" pos="IN" surface="for"/>
+  <token id="7" lemma="the" pos="DT" surface="The"/>
+  <token id="8" lemma="Associated" pos="NNP" surface="Associated"/>
+  <token id="9" lemma="Press" pos="NNP" surface="Press"/>
+  <token id="10" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="9" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="6" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Text_creation">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Author">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Honoree">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

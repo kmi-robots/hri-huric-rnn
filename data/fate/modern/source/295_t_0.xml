@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="295_t_0">
+ <sentence>
+  If destruction of the rainforest continues , global warming will continue to take place .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="if" pos="IN" surface="If"/>
+  <token id="2" lemma="destruction" pos="NN" surface="destruction"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="rainforest" pos="JJS" surface="rainforest"/>
+  <token id="6" lemma="continue" pos="VBZ" surface="continues"/>
+  <token id="7" lemma="," pos="PUNC," surface=","/>
+  <token id="8" lemma="global" pos="JJ" surface="global"/>
+  <token id="9" lemma="warming" pos="NN" surface="warming"/>
+  <token id="10" lemma="will" pos="MD" surface="will"/>
+  <token id="11" lemma="continue" pos="VB" surface="continue"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="take" pos="VB" surface="take"/>
+  <token id="14" lemma="place" pos="NN" surface="place"/>
+  <token id="15" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="unknown"/>
+  <dep from="6" to="2" type="unknown"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="1" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+  <dep from="14" to="15" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Activity_ongoing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Destroying">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Undergoer">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Event">
+    <lexicalUnit>
+     <token id="13"/>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Process_continue">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

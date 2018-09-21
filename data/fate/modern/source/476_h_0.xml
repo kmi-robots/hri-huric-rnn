@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="476_h_0">
+ <sentence>
+  Drug companies create a vaccine for H I V .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="drug" pos="NN" surface="Drug"/>
+  <token id="2" lemma="company" pos="NNS" surface="companies"/>
+  <token id="3" lemma="create" pos="VBP" surface="create"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="vaccine" pos="NN" surface="vaccine"/>
+  <token id="6" lemma="for" pos="IN" surface="for"/>
+  <token id="7" lemma="H" pos="NNP" surface="H"/>
+  <token id="8" lemma="I" pos="NNP" surface="I"/>
+  <token id="9" lemma="V" pos="NNP" surface="V"/>
+  <token id="10" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="9" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="6" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Intentionally_create">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Creator">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Created_entity">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Product">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Cure">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Affliction">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

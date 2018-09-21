@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="469_h_0">
+ <sentence>
+  Luis Carlos Calan murdered Jubiz Hazvumb .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Luis" pos="NNP" surface="Luis"/>
+  <token id="2" lemma="Carlos" pos="NNP" surface="Carlos"/>
+  <token id="3" lemma="Calan" pos="NNP" surface="Calan"/>
+  <token id="4" lemma="murder" pos="VBN" surface="murdered"/>
+  <token id="5" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Jubiz"/>
+  <token id="6" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Hazvumb"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Killer">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

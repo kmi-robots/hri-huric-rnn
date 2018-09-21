@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="394_h_0">
+ <sentence>
+  Russian troops withdrew from Latvia .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Russian" pos="JJ" surface="Russian"/>
+  <token id="2" lemma="troop" pos="NNS" surface="troops"/>
+  <token id="3" lemma="withdraw" pos="VBD" surface="withdrew"/>
+  <token id="4" lemma="from" pos="IN" surface="from"/>
+  <token id="5" lemma="Latvia" pos="NNP" surface="Latvia"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Departing">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Military">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Force">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Possessor">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

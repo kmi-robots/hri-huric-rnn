@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="322_h_0">
+ <sentence>
+  A shark attacked a human being .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="shark" pos="NN" surface="shark"/>
+  <token id="3" lemma="attack" pos="VBD" surface="attacked"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="human" pos="JJ" surface="human"/>
+  <token id="6" lemma="being" pos="NN" surface="being"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="3" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Assailant">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

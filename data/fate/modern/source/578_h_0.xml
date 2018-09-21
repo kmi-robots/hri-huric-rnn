@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="578_h_0">
+ <sentence>
+  Mathew Staver is a supporter of Miers .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Mathew" pos="NNP" surface="Mathew"/>
+  <token id="2" lemma="Staver" pos="NNP" surface="Staver"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="supporter" pos="NN" surface="supporter"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="Miers" pos="NNP" surface="Miers"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Taking_sides">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Side">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

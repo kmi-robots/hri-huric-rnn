@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="647_h_0">
+ <sentence>
+  Helicobacter pylori causes ulcers .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Helicobacter"/>
+  <token id="2" lemma="pylorus" pos="FW" surface="pylori"/>
+  <token id="3" lemma="cause" pos="VBZ" surface="causes"/>
+  <token id="4" lemma="ulcer" pos="NNS" surface="ulcers"/>
+  <token id="5" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Ailment">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

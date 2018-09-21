@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="352_h_0">
+ <sentence>
+  Andy Roddick had lost a four-setter .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Andy" pos="NNP" surface="Andy"/>
+  <token id="2" lemma="Roddick" pos="NNP" surface="Roddick"/>
+  <token id="3" lemma="have" pos="VBD" surface="had"/>
+  <token id="4" lemma="lose" pos="VBN" surface="lost"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="&amp;#60;unknown&amp;#62;" pos="NN" surface="four-setter"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Finish_competition">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Competitor">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Competition">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

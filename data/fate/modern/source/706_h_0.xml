@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="706_h_0">
+ <sentence>
+  Tea protects from some diseases .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="tea" pos="NNP" surface="Tea"/>
+  <token id="2" lemma="protect" pos="VBZ" surface="protects"/>
+  <token id="3" lemma="from" pos="IN" surface="from"/>
+  <token id="4" lemma="some" pos="DT" surface="some"/>
+  <token id="5" lemma="disease" pos="NNS" surface="diseases"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Protecting">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Protection">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Danger">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

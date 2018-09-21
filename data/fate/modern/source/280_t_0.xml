@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="280_t_0">
+ <sentence>
+  Five U . S . soldiers were killed in the capital and insurgents blasted polling stations across the country .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Five" pos="CD" surface="Five"/>
+  <token id="2" lemma="U" pos="NNP" surface="U"/>
+  <token id="3" lemma="." pos="PUNC." surface="."/>
+  <token id="4" lemma="S" pos="NNP" surface="S"/>
+  <token id="5" lemma="." pos="PUNC." surface="."/>
+  <token id="6" lemma="soldier" pos="NNS" surface="soldiers"/>
+  <token id="7" lemma="be" pos="VBD" surface="were"/>
+  <token id="8" lemma="kill" pos="VBN" surface="killed"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="capital" pos="NN" surface="capital"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="insurgent" pos="NNS" surface="insurgents"/>
+  <token id="14" lemma="blast" pos="VBD" surface="blasted"/>
+  <token id="15" lemma="polling" pos="NN" surface="polling"/>
+  <token id="16" lemma="station" pos="NNS" surface="stations"/>
+  <token id="17" lemma="across" pos="IN" surface="across"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="country" pos="NN" surface="country"/>
+  <token id="20" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="unknown"/>
+  <dep from="6" to="2" type="unknown"/>
+  <dep from="6" to="3" type="unknown"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="11" to="10" type="unknown"/>
+  <dep from="9" to="11" type="unknown"/>
+  <dep from="7" to="12" type="unknown"/>
+  <dep from="14" to="13" type="unknown"/>
+  <dep from="7" to="14" type="unknown"/>
+  <dep from="16" to="15" type="unknown"/>
+  <dep from="14" to="16" type="unknown"/>
+  <dep from="14" to="17" type="unknown"/>
+  <dep from="19" to="18" type="unknown"/>
+  <dep from="17" to="19" type="unknown"/>
+  <dep from="19" to="20" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Employer">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

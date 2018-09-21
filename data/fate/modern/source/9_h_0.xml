@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="9_h_0">
+ <sentence>
+  Authorities in Brazil hold 200 people as hostage .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="authority" pos="NNS" surface="Authorities"/>
+  <token id="2" lemma="in" pos="IN" surface="in"/>
+  <token id="3" lemma="Brazil" pos="NNP" surface="Brazil"/>
+  <token id="4" lemma="hold" pos="VBP" surface="hold"/>
+  <token id="5" lemma="@card@" pos="CD" surface="200"/>
+  <token id="6" lemma="people" pos="NNS" surface="people"/>
+  <token id="7" lemma="as" pos="IN" surface="as"/>
+  <token id="8" lemma="hostage" pos="NN" surface="hostage"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="4" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Jurisdiction">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Kidnapping">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Perpetrator">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

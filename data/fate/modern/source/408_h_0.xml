@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="408_h_0">
+ <sentence>
+  A pair of car bombs explode near government offices in Baghdad .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="pair" pos="NN" surface="pair"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="car" pos="NN" surface="car"/>
+  <token id="5" lemma="bomb" pos="NNS" surface="bombs"/>
+  <token id="6" lemma="explode" pos="VB" surface="explode"/>
+  <token id="7" lemma="near" pos="IN" surface="near"/>
+  <token id="8" lemma="government" pos="NN" surface="government"/>
+  <token id="9" lemma="office" pos="NNS" surface="offices"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="Baghdad" pos="NNP" surface="Baghdad"/>
+  <token id="12" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="6" to="2" type="unknown"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Unknown">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Fe1">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Fe2">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Buildings">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Building">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Function">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

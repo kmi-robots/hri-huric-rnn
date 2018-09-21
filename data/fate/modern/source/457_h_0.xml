@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="457_h_0">
+ <sentence>
+  Agoraphobia is a widespread disorder .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="agoraphobia" pos="NNP" surface="Agoraphobia"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="widespread" pos="JJ" surface="widespread"/>
+  <token id="5" lemma="disorder" pos="NN" surface="disorder"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="2" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Ailment">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

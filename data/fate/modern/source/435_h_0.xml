@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="435_h_0">
+ <sentence>
+  Fungi cause cancers .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="fungus" pos="NNS" surface="Fungi"/>
+  <token id="2" lemma="cause" pos="VBP" surface="cause"/>
+  <token id="3" lemma="cancer" pos="NNS" surface="cancers"/>
+  <token id="4" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

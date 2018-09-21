@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="320_h_0">
+ <sentence>
+  The M I T is a bookstore .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="M" pos="NNP" surface="M"/>
+  <token id="3" lemma="I" pos="CD" surface="I"/>
+  <token id="4" lemma="T" pos="NN" surface="T"/>
+  <token id="5" lemma="be" pos="VBZ" surface="is"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="bookstore" pos="NN" surface="bookstore"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="5" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Business_Name">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

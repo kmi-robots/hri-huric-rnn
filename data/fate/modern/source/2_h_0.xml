@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="2_h_0">
+ <sentence>
+  E Z L N is a political group .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="E" pos="NNP" surface="E"/>
+  <token id="2" lemma="Z" pos="NNP" surface="Z"/>
+  <token id="3" lemma="L" pos="NNP" surface="L"/>
+  <token id="4" lemma="N" pos="NNP" surface="N"/>
+  <token id="5" lemma="be" pos="VBZ" surface="is"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="political" pos="JJ" surface="political"/>
+  <token id="8" lemma="group" pos="NN" surface="group"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="5" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="AggregateProperty">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

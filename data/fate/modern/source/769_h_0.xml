@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="769_h_0">
+ <sentence>
+  Diego Armando Maradona is the Juniors football team .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Diego" pos="NNP" surface="Diego"/>
+  <token id="2" lemma="Armando" pos="NNP" surface="Armando"/>
+  <token id="3" lemma="Maradona" pos="NNP" surface="Maradona"/>
+  <token id="4" lemma="be" pos="VBZ" surface="is"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="junior" pos="NNP" surface="Juniors"/>
+  <token id="7" lemma="football" pos="NN" surface="football"/>
+  <token id="8" lemma="team" pos="NN" surface="team"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="8" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="4" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Aggregate">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Missing_fe">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

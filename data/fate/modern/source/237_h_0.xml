@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="237_h_0">
+ <sentence>
+  The teenage bomber behind a blast was one of the seven people who died .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="teenage" pos="JJ" surface="teenage"/>
+  <token id="3" lemma="bomber" pos="NN" surface="bomber"/>
+  <token id="4" lemma="behind" pos="IN" surface="behind"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="blast" pos="NN" surface="blast"/>
+  <token id="7" lemma="be" pos="VBD" surface="was"/>
+  <token id="8" lemma="one" pos="CD" surface="one"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="seven" pos="CD" surface="seven"/>
+  <token id="12" lemma="people" pos="NNS" surface="people"/>
+  <token id="13" lemma="who" pos="WP" surface="who"/>
+  <token id="14" lemma="die" pos="VBD" surface="died"/>
+  <token id="15" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="7" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="12" to="10" type="unknown"/>
+  <dep from="12" to="11" type="unknown"/>
+  <dep from="9" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+  <dep from="14" to="15" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Assailant">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Death">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Protagonist">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Anaphora">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Antecedent">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

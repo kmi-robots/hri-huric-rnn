@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="612_t_0">
+ <sentence>
+  Genetic Engineering will end world hunger .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Genetic" pos="NNP" surface="Genetic"/>
+  <token id="2" lemma="Engineering" pos="NNP" surface="Engineering"/>
+  <token id="3" lemma="will" pos="MD" surface="will"/>
+  <token id="4" lemma="end" pos="VB" surface="end"/>
+  <token id="5" lemma="world" pos="NN" surface="world"/>
+  <token id="6" lemma="hunger" pos="NN" surface="hunger"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cause_to_end">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="State">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Biological_urge">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

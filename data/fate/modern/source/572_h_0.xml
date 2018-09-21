@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="572_h_0">
+ <sentence>
+  Chris Corrigan has broken the law .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Chris" pos="NNP" surface="Chris"/>
+  <token id="2" lemma="Corrigan" pos="NNP" surface="Corrigan"/>
+  <token id="3" lemma="have" pos="VBZ" surface="has"/>
+  <token id="4" lemma="break" pos="VBN" surface="broken"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="law" pos="NN" surface="law"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Compliance">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Norm">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

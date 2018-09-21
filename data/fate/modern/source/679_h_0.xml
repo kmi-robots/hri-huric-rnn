@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="679_h_0">
+ <sentence>
+  Mason leads A R E N A assassins .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Mason" pos="NNP" surface="Mason"/>
+  <token id="2" lemma="lead" pos="VBZ" surface="leads"/>
+  <token id="3" lemma="a" pos="DT" surface="A"/>
+  <token id="4" lemma="R" pos="NNP" surface="R"/>
+  <token id="5" lemma="E" pos="NNP" surface="E"/>
+  <token id="6" lemma="N" pos="NNP" surface="N"/>
+  <token id="7" lemma="A" pos="DT" surface="A"/>
+  <token id="8" lemma="assassin" pos="NNS" surface="assassins"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="8" to="3" type="unknown"/>
+  <dep from="8" to="4" type="unknown"/>
+  <dep from="8" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="2" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Governed">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Employer">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

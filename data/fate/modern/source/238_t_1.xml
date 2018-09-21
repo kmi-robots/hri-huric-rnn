@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="238_t_1">
+ <sentence>
+  Milan Kucan was re-elected President in 1992 and 1997 and Drnovek as Prime Minister again in 1997 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Milan" pos="NNP" surface="Milan"/>
+  <token id="2" lemma="Kucan" pos="NNP" surface="Kucan"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="re-elect" pos="VBN" surface="re-elected"/>
+  <token id="5" lemma="President" pos="NNP" surface="President"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="@card@" pos="CD" surface="1992"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="@card@" pos="CD" surface="1997"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Drnovek"/>
+  <token id="12" lemma="as" pos="IN" surface="as"/>
+  <token id="13" lemma="Prime" pos="NNP" surface="Prime"/>
+  <token id="14" lemma="Minister" pos="NNP" surface="Minister"/>
+  <token id="15" lemma="again" pos="RB" surface="again"/>
+  <token id="16" lemma="in" pos="IN" surface="in"/>
+  <token id="17" lemma="@card@" pos="CD" surface="1997"/>
+  <token id="18" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="5" to="10" type="unknown"/>
+  <dep from="5" to="11" type="unknown"/>
+  <dep from="4" to="12" type="unknown"/>
+  <dep from="14" to="13" type="unknown"/>
+  <dep from="12" to="14" type="unknown"/>
+  <dep from="4" to="15" type="unknown"/>
+  <dep from="4" to="16" type="unknown"/>
+  <dep from="16" to="17" type="unknown"/>
+  <dep from="17" to="18" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_of_leadership">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Old_leader">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="New_leader">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Role">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_of_leadership">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Old_leader">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="New_leader">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Role">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

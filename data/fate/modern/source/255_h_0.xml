@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="255_h_0">
+ <sentence>
+  Linnaeus was a professor in Uppsala .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Linnaeus"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="professor" pos="NN" surface="professor"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="Uppsala" pos="NNP" surface="Uppsala"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Place_of_employment">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

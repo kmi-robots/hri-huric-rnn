@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="725_t_0">
+ <sentence>
+  Firearms that are classified as either restricted or non-restricted may be exported to the U S .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="firearm" pos="NNPS" surface="Firearms"/>
+  <token id="2" lemma="that" pos="WDT" surface="that"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="classify" pos="VBN" surface="classified"/>
+  <token id="5" lemma="as" pos="IN" surface="as"/>
+  <token id="6" lemma="either" pos="RB" surface="either"/>
+  <token id="7" lemma="restricted" pos="JJ" surface="restricted"/>
+  <token id="8" lemma="or" pos="CC" surface="or"/>
+  <token id="9" lemma="&amp;#60;unknown&amp;#62;" pos="JJ" surface="non-restricted"/>
+  <token id="10" lemma="may" pos="MD" surface="may"/>
+  <token id="11" lemma="be" pos="VB" surface="be"/>
+  <token id="12" lemma="export" pos="VBN" surface="exported"/>
+  <token id="13" lemma="to" pos="TO" surface="to"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="U" pos="NNP" surface="U"/>
+  <token id="16" lemma="S" pos="NNP" surface="S"/>
+  <token id="17" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="5" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+  <dep from="16" to="14" type="unknown"/>
+  <dep from="16" to="15" type="unknown"/>
+  <dep from="13" to="16" type="unknown"/>
+  <dep from="16" to="17" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Anaphora">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Antecedent">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Exporting">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Importing_area">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+   <frame name="Categorization">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Category">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="74_h_0">
+ <sentence>
+  Andrei Kozyrev was the Soviet foreign minister .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Andrei" pos="NNP" surface="Andrei"/>
+  <token id="2" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Kozyrev"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="Soviet" pos="JJ" surface="Soviet"/>
+  <token id="6" lemma="foreign" pos="JJ" surface="foreign"/>
+  <token id="7" lemma="minister" pos="NN" surface="minister"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="7" to="4" type="unknown"/>
+  <dep from="7" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="3" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Depictive">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

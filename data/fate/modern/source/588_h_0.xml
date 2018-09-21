@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="588_h_0">
+ <sentence>
+  Jurgen E . Schrempp created Mitsubishi Motor Corporation .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Jurgen" pos="NNP" surface="Jurgen"/>
+  <token id="2" lemma="E" pos="NNP" surface="E"/>
+  <token id="3" lemma="." pos="PUNC." surface="."/>
+  <token id="4" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Schrempp"/>
+  <token id="5" lemma="create" pos="VBD" surface="created"/>
+  <token id="6" lemma="Mitsubishi" pos="NNP" surface="Mitsubishi"/>
+  <token id="7" lemma="Motor" pos="NNP" surface="Motor"/>
+  <token id="8" lemma="Corporation" pos="NNP" surface="Corporation"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="5" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Intentionally_create">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Creator">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Created_entity">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Business_Name">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

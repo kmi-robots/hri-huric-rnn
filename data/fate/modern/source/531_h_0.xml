@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="531_h_0">
+ <sentence>
+  A European synagogue was the target of an act of terrorism or vandalism .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="European" pos="JJ" surface="European"/>
+  <token id="3" lemma="synagogue" pos="NN" surface="synagogue"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="target" pos="NN" surface="target"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="an" pos="DT" surface="an"/>
+  <token id="9" lemma="act" pos="NN" surface="act"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="terrorism" pos="NN" surface="terrorism"/>
+  <token id="12" lemma="or" pos="CC" surface="or"/>
+  <token id="13" lemma="vandalism" pos="NN" surface="vandalism"/>
+  <token id="14" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="13" to="11" type="unknown"/>
+  <dep from="13" to="12" type="unknown"/>
+  <dep from="10" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Terrorism">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Act">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Damaging">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

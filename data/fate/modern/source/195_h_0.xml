@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="195_h_0">
+ <sentence>
+  Robert Tuttle has been criticised by Washington .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Robert" pos="NNP" surface="Robert"/>
+  <token id="2" lemma="Tuttle" pos="NNP" surface="Tuttle"/>
+  <token id="3" lemma="have" pos="VBZ" surface="has"/>
+  <token id="4" lemma="be" pos="VBN" surface="been"/>
+  <token id="5" lemma="criticize" pos="VBN" surface="criticised"/>
+  <token id="6" lemma="by" pos="IN" surface="by"/>
+  <token id="7" lemma="Washington" pos="NNP" surface="Washington"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Judgment_communication">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Communicator">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Evaluee">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

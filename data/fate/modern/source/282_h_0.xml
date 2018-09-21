@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="282_h_0">
+ <sentence>
+  Alexander Downer will host a conference .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Alexander" pos="NNP" surface="Alexander"/>
+  <token id="2" lemma="Downer" pos="NNP" surface="Downer"/>
+  <token id="3" lemma="will" pos="NN" surface="will"/>
+  <token id="4" lemma="host" pos="NN" surface="host"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="conference" pos="NN" surface="conference"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Social_event">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Social_event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Host">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="568_h_0">
+ <sentence>
+  Industri Kapital acquired Wehkamp .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Industri" pos="NNP" surface="Industri"/>
+  <token id="2" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Kapital"/>
+  <token id="3" lemma="acquire" pos="VBD" surface="acquired"/>
+  <token id="4" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Wehkamp"/>
+  <token id="5" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_buy">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Buyer">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

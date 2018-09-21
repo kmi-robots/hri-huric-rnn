@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="428_h_0">
+ <sentence>
+  Arnold Schwarzenegger faces the death penalty .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Arnold" pos="NNP" surface="Arnold"/>
+  <token id="2" lemma="Schwarzenegger" pos="NNP" surface="Schwarzenegger"/>
+  <token id="3" lemma="face" pos="VBZ" surface="faces"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="death" pos="NN" surface="death"/>
+  <token id="6" lemma="penalty" pos="NN" surface="penalty"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="3" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Unknown">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Fe1">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Fe2">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Rewards_and_punishments">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Evaluee">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Response_action">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

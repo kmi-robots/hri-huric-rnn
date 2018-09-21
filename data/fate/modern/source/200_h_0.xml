@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="200_h_0">
+ <sentence>
+  Microsoft holds a monopoly power .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Microsoft" pos="NNP" surface="Microsoft"/>
+  <token id="2" lemma="hold" pos="VBZ" surface="holds"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="monopoly" pos="NN" surface="monopoly"/>
+  <token id="5" lemma="power" pos="NN" surface="power"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="2" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Domination">
+    <lexicalUnit>
+     <token id="4"/>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

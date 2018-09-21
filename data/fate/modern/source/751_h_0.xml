@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="751_h_0">
+ <sentence>
+  Shell profits drop due to the recent rise in oil prices .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Shell" pos="NNP" surface="Shell"/>
+  <token id="2" lemma="profit" pos="NNS" surface="profits"/>
+  <token id="3" lemma="drop" pos="VBP" surface="drop"/>
+  <token id="4" lemma="due" pos="JJ" surface="due"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="recent" pos="JJ" surface="recent"/>
+  <token id="8" lemma="rise" pos="NN" surface="rise"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="oil" pos="NN" surface="oil"/>
+  <token id="11" lemma="price" pos="NNS" surface="prices"/>
+  <token id="12" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="5" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="11" to="10" type="unknown"/>
+  <dep from="9" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Causation">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Effect">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

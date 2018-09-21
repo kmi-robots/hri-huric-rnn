@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="104_h_0">
+ <sentence>
+  Backman filed for bankruptcy .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Backman" pos="NNP" surface="Backman"/>
+  <token id="2" lemma="file" pos="VBD" surface="filed"/>
+  <token id="3" lemma="for" pos="IN" surface="for"/>
+  <token id="4" lemma="bankruptcy" pos="NN" surface="bankruptcy"/>
+  <token id="5" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Submitting_documents">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Submittor">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

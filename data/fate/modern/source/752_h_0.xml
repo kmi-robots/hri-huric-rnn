@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="752_h_0">
+ <sentence>
+  Eurocare is a programme of roadside assistance service .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Eurocare"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="programme" pos="NN" surface="programme"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="roadside" pos="NN" surface="roadside"/>
+  <token id="7" lemma="assistance" pos="NN" surface="assistance"/>
+  <token id="8" lemma="service" pos="NN" surface="service"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="5" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Project">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Project">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Public_services">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Institution">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Service_action">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

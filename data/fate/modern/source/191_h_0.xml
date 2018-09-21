@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="191_h_0">
+ <sentence>
+  Dave McCool sold Aptis Communications .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Dave" pos="NNP" surface="Dave"/>
+  <token id="2" lemma="McCool" pos="NNP" surface="McCool"/>
+  <token id="3" lemma="sell" pos="VBD" surface="sold"/>
+  <token id="4" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Aptis"/>
+  <token id="5" lemma="Communications" pos="NNPS" surface="Communications"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_sell">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Seller">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

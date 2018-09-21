@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="172_t_1">
+ <sentence>
+  She is aiming at improving over the 16th place in Atlanta .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="she" pos="PRP" surface="She"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="aim" pos="VBG" surface="aiming"/>
+  <token id="4" lemma="at" pos="IN" surface="at"/>
+  <token id="5" lemma="improve" pos="VBG" surface="improving"/>
+  <token id="6" lemma="over" pos="IN" surface="over"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="16th" pos="JJ" surface="16th"/>
+  <token id="9" lemma="place" pos="NN" surface="place"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="Atlanta" pos="NNP" surface="Atlanta"/>
+  <token id="12" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="9" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="6" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Purpose">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_to_make_progress">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Project">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

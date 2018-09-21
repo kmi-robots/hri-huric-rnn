@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="708_t_0">
+ <sentence>
+  Apple , the Apple logo , Mac , Mac O S , Macintosh , Power Mac , iTunes and iPod are trademarks of Apple .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Apple" pos="NNP" surface="Apple"/>
+  <token id="2" lemma="," pos="PUNC," surface=","/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="Apple" pos="NNP" surface="Apple"/>
+  <token id="5" lemma="logo" pos="NN" surface="logo"/>
+  <token id="6" lemma="," pos="PUNC," surface=","/>
+  <token id="7" lemma="Mac" pos="NNP" surface="Mac"/>
+  <token id="8" lemma="," pos="PUNC," surface=","/>
+  <token id="9" lemma="Mac" pos="NNP" surface="Mac"/>
+  <token id="10" lemma="O" pos="NNP" surface="O"/>
+  <token id="11" lemma="S" pos="NNP" surface="S"/>
+  <token id="12" lemma="," pos="PUNC," surface=","/>
+  <token id="13" lemma="Macintosh" pos="NNP" surface="Macintosh"/>
+  <token id="14" lemma="," pos="PUNC," surface=","/>
+  <token id="15" lemma="Power" pos="NNP" surface="Power"/>
+  <token id="16" lemma="Mac" pos="NNP" surface="Mac"/>
+  <token id="17" lemma="," pos="PUNC," surface=","/>
+  <token id="18" lemma="&amp;#60;unknown&amp;#62;" pos="NNS" surface="iTunes"/>
+  <token id="19" lemma="and" pos="CC" surface="and"/>
+  <token id="20" lemma="&amp;#60;unknown&amp;#62;" pos="JJ" surface="iPod"/>
+  <token id="21" lemma="be" pos="VBP" surface="are"/>
+  <token id="22" lemma="trademark" pos="NNS" surface="trademarks"/>
+  <token id="23" lemma="of" pos="IN" surface="of"/>
+  <token id="24" lemma="Apple" pos="NNP" surface="Apple"/>
+  <token id="25" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="21" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="1" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="1" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="11" to="9" type="unknown"/>
+  <dep from="11" to="10" type="unknown"/>
+  <dep from="1" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+  <dep from="1" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+  <dep from="16" to="15" type="unknown"/>
+  <dep from="1" to="16" type="unknown"/>
+  <dep from="16" to="17" type="unknown"/>
+  <dep from="20" to="18" type="unknown"/>
+  <dep from="20" to="19" type="unknown"/>
+  <dep from="21" to="20" type="unknown"/>
+  <dep from="0" to="21" type="root"/>
+  <dep from="21" to="22" type="unknown"/>
+  <dep from="22" to="23" type="unknown"/>
+  <dep from="23" to="24" type="unknown"/>
+  <dep from="24" to="25" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Possession">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Owner">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Possession">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="173_h_0">
+ <sentence>
+  Best was accused of drunken driving .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="good" pos="JJS" surface="Best"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="accuse" pos="VBN" surface="accused"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="drunken" pos="JJ" surface="drunken"/>
+  <token id="6" lemma="driving" pos="NN" surface="driving"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Notification_of_charges">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Accused">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Charges">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Operate_vehicle">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Driver">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Depictive">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

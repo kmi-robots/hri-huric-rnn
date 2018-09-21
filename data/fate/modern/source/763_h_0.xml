@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="763_h_0">
+ <sentence>
+  Both owners and players admit there is unlikely to be much negotiating .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="both" pos="DT" surface="Both"/>
+  <token id="2" lemma="owner" pos="NNS" surface="owners"/>
+  <token id="3" lemma="and" pos="CC" surface="and"/>
+  <token id="4" lemma="player" pos="NNS" surface="players"/>
+  <token id="5" lemma="admit" pos="VBP" surface="admit"/>
+  <token id="6" lemma="there" pos="EX" surface="there"/>
+  <token id="7" lemma="be" pos="VBZ" surface="is"/>
+  <token id="8" lemma="unlikely" pos="JJ" surface="unlikely"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="be" pos="VB" surface="be"/>
+  <token id="11" lemma="much" pos="RB" surface="much"/>
+  <token id="12" lemma="negotiate" pos="VBG" surface="negotiating"/>
+  <token id="13" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="5" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="12" to="11" type="unknown"/>
+  <dep from="10" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Discussion">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Interlocutors">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

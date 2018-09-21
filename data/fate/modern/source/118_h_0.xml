@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="118_h_0">
+ <sentence>
+  The Labor Department reported that the average hourly wage rose .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="Labor" pos="NNP" surface="Labor"/>
+  <token id="3" lemma="Department" pos="NNP" surface="Department"/>
+  <token id="4" lemma="report" pos="VBD" surface="reported"/>
+  <token id="5" lemma="that" pos="DT" surface="that"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="average" pos="JJ" surface="average"/>
+  <token id="8" lemma="hourly" pos="JJ" surface="hourly"/>
+  <token id="9" lemma="wage" pos="NN" surface="wage"/>
+  <token id="10" lemma="rise" pos="VBD" surface="rose"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="9" to="6" type="unknown"/>
+  <dep from="9" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="5" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Earnings_and_losses">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Earnings">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Rate">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

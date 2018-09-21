@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="585_h_0">
+ <sentence>
+  The pontiff was struck by a relapse of the flu .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="pontiff" pos="NN" surface="pontiff"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="strike" pos="VBN" surface="struck"/>
+  <token id="5" lemma="by" pos="IN" surface="by"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="relapse" pos="NN" surface="relapse"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="flu" pos="NN" surface="flu"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="5" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="8" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Coming_to_be">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Ailment">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

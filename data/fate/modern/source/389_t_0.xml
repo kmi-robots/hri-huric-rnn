@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="389_t_0">
+ <sentence>
+  In Rwanda there were on average 8,000 victims per day for about 100 days .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="Rwanda" pos="NNP" surface="Rwanda"/>
+  <token id="3" lemma="there" pos="EX" surface="there"/>
+  <token id="4" lemma="be" pos="VBD" surface="were"/>
+  <token id="5" lemma="on" pos="IN" surface="on"/>
+  <token id="6" lemma="average" pos="JJ" surface="average"/>
+  <token id="7" lemma="@card@" pos="CD" surface="8,000"/>
+  <token id="8" lemma="victim" pos="NNS" surface="victims"/>
+  <token id="9" lemma="per" pos="IN" surface="per"/>
+  <token id="10" lemma="day" pos="NN" surface="day"/>
+  <token id="11" lemma="for" pos="IN" surface="for"/>
+  <token id="12" lemma="about" pos="IN" surface="about"/>
+  <token id="13" lemma="@card@" pos="CD" surface="100"/>
+  <token id="14" lemma="day" pos="NNS" surface="days"/>
+  <token id="15" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="5" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="4" to="11" type="unknown"/>
+  <dep from="14" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+  <dep from="11" to="14" type="unknown"/>
+  <dep from="14" to="15" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Frequency">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Interval">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Time_span">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Missing_fe">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

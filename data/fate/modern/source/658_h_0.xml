@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="658_h_0">
+ <sentence>
+  16 astronauts have been on the moon .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="@card@" pos="CD" surface="16"/>
+  <token id="2" lemma="astronaut" pos="NNS" surface="astronauts"/>
+  <token id="3" lemma="have" pos="VBP" surface="have"/>
+  <token id="4" lemma="be" pos="VBN" surface="been"/>
+  <token id="5" lemma="on" pos="IN" surface="on"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="moon" pos="NN" surface="moon"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="5" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locative_relation">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Figure">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

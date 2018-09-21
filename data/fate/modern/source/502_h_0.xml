@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="502_h_0">
+ <sentence>
+  Luis Morales was kidnapped by five unidentified individuals .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Luis" pos="NNP" surface="Luis"/>
+  <token id="2" lemma="Morales" pos="NNP" surface="Morales"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="kidnap" pos="VBN" surface="kidnapped"/>
+  <token id="5" lemma="by" pos="IN" surface="by"/>
+  <token id="6" lemma="five" pos="CD" surface="five"/>
+  <token id="7" lemma="unidentified" pos="JJ" surface="unidentified"/>
+  <token id="8" lemma="individual" pos="NNS" surface="individuals"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="5" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Kidnapping">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Perpetrator">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

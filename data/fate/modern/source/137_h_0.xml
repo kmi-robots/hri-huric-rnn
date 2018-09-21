@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="137_h_0">
+ <sentence>
+  Malcolm Brabant was mistreated by Greek agents .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Malcolm" pos="NNP" surface="Malcolm"/>
+  <token id="2" lemma="Brabant" pos="NNP" surface="Brabant"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="mistreat" pos="VBN" surface="mistreated"/>
+  <token id="5" lemma="by" pos="IN" surface="by"/>
+  <token id="6" lemma="Greek" pos="JJ" surface="Greek"/>
+  <token id="7" lemma="agent" pos="NNS" surface="agents"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="5" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Abusing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Abuser">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

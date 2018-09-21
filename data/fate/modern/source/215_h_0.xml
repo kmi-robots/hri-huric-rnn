@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="215_h_0">
+ <sentence>
+  A R E N A assassins attacked Mason .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="R" pos="NNP" surface="R"/>
+  <token id="3" lemma="E" pos="NNP" surface="E"/>
+  <token id="4" lemma="N" pos="NNP" surface="N"/>
+  <token id="5" lemma="A" pos="NNP" surface="A"/>
+  <token id="6" lemma="assassin" pos="VBZ" surface="assassins"/>
+  <token id="7" lemma="attack" pos="VBN" surface="attacked"/>
+  <token id="8" lemma="Mason" pos="NNP" surface="Mason"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="unknown"/>
+  <dep from="5" to="2" type="unknown"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Assailant">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

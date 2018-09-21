@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="55_t_0">
+ <sentence>
+  Canadian Nation Defense has been using virtual reality to train pilots and ground soldiers .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Canadian" pos="NNP" surface="Canadian"/>
+  <token id="2" lemma="Nation" pos="NNP" surface="Nation"/>
+  <token id="3" lemma="Defense" pos="NNP" surface="Defense"/>
+  <token id="4" lemma="have" pos="VBZ" surface="has"/>
+  <token id="5" lemma="be" pos="VBN" surface="been"/>
+  <token id="6" lemma="use" pos="VBG" surface="using"/>
+  <token id="7" lemma="virtual" pos="JJ" surface="virtual"/>
+  <token id="8" lemma="reality" pos="NN" surface="reality"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="train" pos="VB" surface="train"/>
+  <token id="11" lemma="pilot" pos="NNS" surface="pilots"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="ground" pos="NN" surface="ground"/>
+  <token id="14" lemma="soldier" pos="NNS" surface="soldiers"/>
+  <token id="15" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="6" to="8" type="unknown"/>
+  <dep from="6" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+  <dep from="14" to="13" type="unknown"/>
+  <dep from="11" to="14" type="unknown"/>
+  <dep from="14" to="15" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Using">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Instrument">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Education_teaching">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Student">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Material">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

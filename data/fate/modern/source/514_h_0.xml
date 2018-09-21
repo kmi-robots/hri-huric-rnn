@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="514_h_0">
+ <sentence>
+  Shiites and Kurds made what they said was a final offer .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Shiites" pos="NNPS" surface="Shiites"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="Kurd" pos="NNPS" surface="Kurds"/>
+  <token id="4" lemma="make" pos="VBD" surface="made"/>
+  <token id="5" lemma="what" pos="WP" surface="what"/>
+  <token id="6" lemma="they" pos="PRP" surface="they"/>
+  <token id="7" lemma="say" pos="VBD" surface="said"/>
+  <token id="8" lemma="be" pos="VBD" surface="was"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="final" pos="JJ" surface="final"/>
+  <token id="11" lemma="offer" pos="NN" surface="offer"/>
+  <token id="12" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="5" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="11" to="9" type="unknown"/>
+  <dep from="11" to="10" type="unknown"/>
+  <dep from="8" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Anaphora">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Antecedent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Unknown">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Fe1">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Fe2">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Fe3">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="537_t_0">
+ <sentence>
+  For all last year , business spending on equipment and software grew 13.4% , the largest increase since 1997 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="for" pos="IN" surface="For"/>
+  <token id="2" lemma="all" pos="DT" surface="all"/>
+  <token id="3" lemma="last" pos="JJ" surface="last"/>
+  <token id="4" lemma="year" pos="NN" surface="year"/>
+  <token id="5" lemma="," pos="PUNC," surface=","/>
+  <token id="6" lemma="business" pos="NN" surface="business"/>
+  <token id="7" lemma="spending" pos="NN" surface="spending"/>
+  <token id="8" lemma="on" pos="IN" surface="on"/>
+  <token id="9" lemma="equipment" pos="NN" surface="equipment"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="software" pos="NN" surface="software"/>
+  <token id="12" lemma="grow" pos="VBD" surface="grew"/>
+  <token id="13" lemma="@card@" pos="CD" surface="13.4%"/>
+  <token id="14" lemma="," pos="PUNC," surface=","/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="large" pos="JJS" surface="largest"/>
+  <token id="17" lemma="increase" pos="NN" surface="increase"/>
+  <token id="18" lemma="since" pos="IN" surface="since"/>
+  <token id="19" lemma="@card@" pos="CD" surface="1997"/>
+  <token id="20" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="12" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="1" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="12" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="11" to="9" type="unknown"/>
+  <dep from="11" to="10" type="unknown"/>
+  <dep from="8" to="11" type="unknown"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+  <dep from="17" to="15" type="unknown"/>
+  <dep from="17" to="16" type="unknown"/>
+  <dep from="13" to="17" type="unknown"/>
+  <dep from="17" to="18" type="unknown"/>
+  <dep from="18" to="19" type="unknown"/>
+  <dep from="19" to="20" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_pay">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Buyer">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Difference">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Duration">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

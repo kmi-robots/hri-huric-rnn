@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="494_h_0">
+ <sentence>
+  60 people are killed when a car bomb explodes near a police station in Baghdad .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="@card@" pos="CD" surface="60"/>
+  <token id="2" lemma="people" pos="NNS" surface="people"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="kill" pos="VBN" surface="killed"/>
+  <token id="5" lemma="when" pos="WRB" surface="when"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="car" pos="NN" surface="car"/>
+  <token id="8" lemma="bomb" pos="NN" surface="bomb"/>
+  <token id="9" lemma="explode" pos="VBZ" surface="explodes"/>
+  <token id="10" lemma="near" pos="IN" surface="near"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="police" pos="NN" surface="police"/>
+  <token id="13" lemma="station" pos="NN" surface="station"/>
+  <token id="14" lemma="in" pos="IN" surface="in"/>
+  <token id="15" lemma="Baghdad" pos="NNP" surface="Baghdad"/>
+  <token id="16" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="5" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="13" to="11" type="unknown"/>
+  <dep from="13" to="12" type="unknown"/>
+  <dep from="10" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+  <dep from="14" to="15" type="unknown"/>
+  <dep from="15" to="16" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Unknown">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Fe1">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Fe2">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Weapon">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Weapon">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Type">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Relative_location">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Container_possessor">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="350_h_0">
+ <sentence>
+  An earthquake occurred in Hokkaido .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="an" pos="DT" surface="An"/>
+  <token id="2" lemma="earthquake" pos="NN" surface="earthquake"/>
+  <token id="3" lemma="occur" pos="VBD" surface="occurred"/>
+  <token id="4" lemma="in" pos="IN" surface="in"/>
+  <token id="5" lemma="Hokkaido" pos="NNP" surface="Hokkaido"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Event">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

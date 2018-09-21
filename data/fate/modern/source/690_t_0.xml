@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="690_t_0">
+ <sentence>
+  Ninety eight people were wounded , two of them seriously .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Ninety" pos="CD" surface="Ninety"/>
+  <token id="2" lemma="eight" pos="CD" surface="eight"/>
+  <token id="3" lemma="people" pos="NNS" surface="people"/>
+  <token id="4" lemma="be" pos="VBD" surface="were"/>
+  <token id="5" lemma="wounded" pos="VBN" surface="wounded"/>
+  <token id="6" lemma="," pos="PUNC," surface=","/>
+  <token id="7" lemma="two" pos="CD" surface="two"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="them" pos="PRP" surface="them"/>
+  <token id="10" lemma="seriously" pos="RB" surface="seriously"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="1" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="1" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="7" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cause_harm">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Cause_harm">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Partitive">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Subset">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Group">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

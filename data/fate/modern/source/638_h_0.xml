@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="638_h_0">
+ <sentence>
+  Two young U . S . Citizens were murdered in Bolivia .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Two" pos="CD" surface="Two"/>
+  <token id="2" lemma="young" pos="JJ" surface="young"/>
+  <token id="3" lemma="U" pos="NNP" surface="U"/>
+  <token id="4" lemma="." pos="PUNC." surface="."/>
+  <token id="5" lemma="S" pos="NNP" surface="S"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+  <token id="7" lemma="citizen" pos="NNPS" surface="Citizens"/>
+  <token id="8" lemma="be" pos="VBD" surface="were"/>
+  <token id="9" lemma="murder" pos="VBN" surface="murdered"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="Bolivia" pos="NNP" surface="Bolivia"/>
+  <token id="12" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="unknown"/>
+  <dep from="7" to="2" type="unknown"/>
+  <dep from="7" to="3" type="unknown"/>
+  <dep from="7" to="4" type="unknown"/>
+  <dep from="7" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="People_by_jurisdiction">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Age">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

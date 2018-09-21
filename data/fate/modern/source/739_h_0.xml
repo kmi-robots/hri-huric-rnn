@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="739_h_0">
+ <sentence>
+  U . S . forces launched an offensive against Fallujah .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="U" pos="NNP" surface="U"/>
+  <token id="2" lemma="." pos="PUNC." surface="."/>
+  <token id="3" lemma="S" pos="NNP" surface="S"/>
+  <token id="4" lemma="." pos="PUNC." surface="."/>
+  <token id="5" lemma="force" pos="NNS" surface="forces"/>
+  <token id="6" lemma="launch" pos="VBD" surface="launched"/>
+  <token id="7" lemma="an" pos="DT" surface="an"/>
+  <token id="8" lemma="offensive" pos="NN" surface="offensive"/>
+  <token id="9" lemma="against" pos="IN" surface="against"/>
+  <token id="10" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Fallujah"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="unknown"/>
+  <dep from="5" to="2" type="unknown"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="6" to="8" type="unknown"/>
+  <dep from="6" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Activity_start">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Activity">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Military">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Force">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Possessor">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Assailant">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="481_t_0">
+ <sentence>
+  In 1831 , Ibrahim Pasha of Egypt took over Hebron until 1840 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="@card@" pos="CD" surface="1831"/>
+  <token id="3" lemma="," pos="PUNC," surface=","/>
+  <token id="4" lemma="Ibrahim" pos="NNP" surface="Ibrahim"/>
+  <token id="5" lemma="Pasha" pos="NNP" surface="Pasha"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="Egypt" pos="NNP" surface="Egypt"/>
+  <token id="8" lemma="take" pos="VBD" surface="took"/>
+  <token id="9" lemma="over" pos="RP" surface="over"/>
+  <token id="10" lemma="Hebron" pos="NNP" surface="Hebron"/>
+  <token id="11" lemma="until" pos="IN" surface="until"/>
+  <token id="12" lemma="@card@" pos="CD" surface="1840"/>
+  <token id="13" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="8" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="8" to="10" type="unknown"/>
+  <dep from="8" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Origin">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Origin">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="8"/>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Duration">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

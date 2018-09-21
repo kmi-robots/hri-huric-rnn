@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="235_h_0">
+ <sentence>
+  John Wayne airport is in El Toro .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="John" pos="NNP" surface="John"/>
+  <token id="2" lemma="Wayne" pos="NNP" surface="Wayne"/>
+  <token id="3" lemma="airport" pos="NN" surface="airport"/>
+  <token id="4" lemma="be" pos="VBZ" surface="is"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="El" pos="NNP" surface="El"/>
+  <token id="7" lemma="Toro" pos="NNP" surface="Toro"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="5" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_located">
+    <lexicalUnit>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

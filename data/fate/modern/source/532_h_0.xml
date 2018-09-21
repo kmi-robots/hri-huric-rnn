@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="532_h_0">
+ <sentence>
+  Sundance Institute took over the former Utah/United States Film Festival .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Sundance" pos="NNP" surface="Sundance"/>
+  <token id="2" lemma="Institute" pos="NNP" surface="Institute"/>
+  <token id="3" lemma="take" pos="VBD" surface="took"/>
+  <token id="4" lemma="over" pos="RP" surface="over"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="former" pos="JJ" surface="former"/>
+  <token id="7" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Utah/United"/>
+  <token id="8" lemma="States" pos="NNP" surface="States"/>
+  <token id="9" lemma="Film" pos="NNP" surface="Film"/>
+  <token id="10" lemma="Festival" pos="NNP" surface="Festival"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="10" to="5" type="unknown"/>
+  <dep from="10" to="6" type="unknown"/>
+  <dep from="10" to="7" type="unknown"/>
+  <dep from="10" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="3" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_of_leadership">
+    <lexicalUnit>
+     <token id="3"/>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="New_leader">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Body">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Competition">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Competition">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

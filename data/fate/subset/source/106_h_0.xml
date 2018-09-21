@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="106_h_0">
+ <sentence>
+  Indonesian helicopters brought much-needed supplies .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Indonesian" pos="JJ" surface="Indonesian"/>
+  <token id="2" lemma="helicopter" pos="NNS" surface="helicopters"/>
+  <token id="3" lemma="bring" pos="VBD" surface="brought"/>
+  <token id="4" lemma="much-need" pos="JJ" surface="much-needed"/>
+  <token id="5" lemma="supply" pos="NNS" surface="supplies"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Carrier">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

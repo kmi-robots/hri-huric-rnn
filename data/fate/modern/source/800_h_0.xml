@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="800_h_0">
+ <sentence>
+  Socrates developed the Macintosh computer .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Socrates" pos="NNP" surface="Socrates"/>
+  <token id="2" lemma="develop" pos="VBD" surface="developed"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="Macintosh" pos="NNP" surface="Macintosh"/>
+  <token id="5" lemma="computer" pos="NN" surface="computer"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="2" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cause_to_make_progress">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Project">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="581_h_0">
+ <sentence>
+  Steve Price injured the Kangaroos captain .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Steve" pos="NNP" surface="Steve"/>
+  <token id="2" lemma="Price" pos="NNP" surface="Price"/>
+  <token id="3" lemma="injure" pos="VBD" surface="injured"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="kangaroo" pos="NNP" surface="Kangaroos"/>
+  <token id="6" lemma="captain" pos="NN" surface="captain"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="3" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Cause_harm">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

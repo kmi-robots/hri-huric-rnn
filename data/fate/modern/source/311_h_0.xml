@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="311_h_0">
+ <sentence>
+  Jacques Delors was President of the European Commission from 1985 to 1995 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Jacques" pos="NNP" surface="Jacques"/>
+  <token id="2" lemma="Delors" pos="NNP" surface="Delors"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="president" pos="NNP" surface="President"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="European" pos="NNP" surface="European"/>
+  <token id="8" lemma="Commission" pos="NNP" surface="Commission"/>
+  <token id="9" lemma="from" pos="IN" surface="from"/>
+  <token id="10" lemma="@card@" pos="CD" surface="1985"/>
+  <token id="11" lemma="to" pos="TO" surface="to"/>
+  <token id="12" lemma="@card@" pos="CD" surface="1995"/>
+  <token id="13" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="5" to="8" type="unknown"/>
+  <dep from="11" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="3" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Duration">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="406_h_0">
+ <sentence>
+  Mugabe is visiting Beijing .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Mugabe" pos="NNP" surface="Mugabe"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="visit" pos="VBG" surface="visiting"/>
+  <token id="4" lemma="Beijing" pos="NNP" surface="Beijing"/>
+  <token id="5" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Visiting">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Entity">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

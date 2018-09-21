@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="691_h_0">
+ <sentence>
+  A U . S . soldier was killed in a sniper attack in northern Baghdad .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="U" pos="NNP" surface="U"/>
+  <token id="3" lemma="." pos="PUNC." surface="."/>
+  <token id="4" lemma="S" pos="NNP" surface="S"/>
+  <token id="5" lemma="." pos="PUNC." surface="."/>
+  <token id="6" lemma="soldier" pos="NN" surface="soldier"/>
+  <token id="7" lemma="be" pos="VBD" surface="was"/>
+  <token id="8" lemma="kill" pos="VBN" surface="killed"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="sniper" pos="NN" surface="sniper"/>
+  <token id="12" lemma="attack" pos="NN" surface="attack"/>
+  <token id="13" lemma="in" pos="IN" surface="in"/>
+  <token id="14" lemma="northern" pos="JJ" surface="northern"/>
+  <token id="15" lemma="Baghdad" pos="NNP" surface="Baghdad"/>
+  <token id="16" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="unknown"/>
+  <dep from="6" to="2" type="unknown"/>
+  <dep from="6" to="3" type="unknown"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="12" to="10" type="unknown"/>
+  <dep from="12" to="11" type="unknown"/>
+  <dep from="9" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+  <dep from="15" to="14" type="unknown"/>
+  <dep from="13" to="15" type="unknown"/>
+  <dep from="15" to="16" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Employer">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Assailant">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

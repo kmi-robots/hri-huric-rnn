@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="259_h_0">
+ <sentence>
+  The military has warned aid workers that some regions are not safe .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="military" pos="NN" surface="military"/>
+  <token id="3" lemma="have" pos="VBZ" surface="has"/>
+  <token id="4" lemma="warn" pos="VBN" surface="warned"/>
+  <token id="5" lemma="aid" pos="NN" surface="aid"/>
+  <token id="6" lemma="worker" pos="NNS" surface="workers"/>
+  <token id="7" lemma="that" pos="IN" surface="that"/>
+  <token id="8" lemma="some" pos="DT" surface="some"/>
+  <token id="9" lemma="region" pos="NNS" surface="regions"/>
+  <token id="10" lemma="be" pos="VBP" surface="are"/>
+  <token id="11" lemma="not" pos="RB" surface="not"/>
+  <token id="12" lemma="safe" pos="JJ" surface="safe"/>
+  <token id="13" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="4" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="7" to="10" type="unknown"/>
+  <dep from="12" to="11" type="unknown"/>
+  <dep from="10" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attempt_suasion">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Content">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Addressee">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Risky_situation">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Situation">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

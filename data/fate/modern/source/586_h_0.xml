@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="586_h_0">
+ <sentence>
+  India and Pakistan have fought two of their three wars over Kashmir .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="India" pos="NNP" surface="India"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="Pakistan" pos="NNP" surface="Pakistan"/>
+  <token id="4" lemma="have" pos="VBP" surface="have"/>
+  <token id="5" lemma="fight" pos="VBN" surface="fought"/>
+  <token id="6" lemma="two" pos="CD" surface="two"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="their" pos="PRP$" surface="their"/>
+  <token id="9" lemma="three" pos="CD" surface="three"/>
+  <token id="10" lemma="war" pos="NNS" surface="wars"/>
+  <token id="11" lemma="over" pos="IN" surface="over"/>
+  <token id="12" lemma="Kashmir" pos="NNP" surface="Kashmir"/>
+  <token id="13" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="1" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="10" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="7" to="10" type="unknown"/>
+  <dep from="5" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Sides">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Issue">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Missing_fe">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

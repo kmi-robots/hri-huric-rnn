@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="687_h_0">
+ <sentence>
+  Mickelson won by five shots last week , the largest margin of his career .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Mickelson" pos="NNP" surface="Mickelson"/>
+  <token id="2" lemma="win" pos="VBD" surface="won"/>
+  <token id="3" lemma="by" pos="IN" surface="by"/>
+  <token id="4" lemma="five" pos="CD" surface="five"/>
+  <token id="5" lemma="shot" pos="NNS" surface="shots"/>
+  <token id="6" lemma="last" pos="JJ" surface="last"/>
+  <token id="7" lemma="week" pos="NN" surface="week"/>
+  <token id="8" lemma="," pos="PUNC," surface=","/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="large" pos="JJS" surface="largest"/>
+  <token id="11" lemma="margin" pos="NN" surface="margin"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="his" pos="PRP$" surface="his"/>
+  <token id="14" lemma="career" pos="NN" surface="career"/>
+  <token id="15" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="2" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="11" to="9" type="unknown"/>
+  <dep from="11" to="10" type="unknown"/>
+  <dep from="2" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+  <dep from="14" to="13" type="unknown"/>
+  <dep from="12" to="14" type="unknown"/>
+  <dep from="14" to="15" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Finish_competition">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Competitor">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Margin">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Surpassing">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Profiled_attribute">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Comparison_set">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

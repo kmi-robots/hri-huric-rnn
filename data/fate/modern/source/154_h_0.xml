@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="154_h_0">
+ <sentence>
+  The passengers that cross the Eurotunnel each year are just 49 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="passenger" pos="NNS" surface="passengers"/>
+  <token id="3" lemma="that" pos="WDT" surface="that"/>
+  <token id="4" lemma="cross" pos="VBP" surface="cross"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="Eurotunnel" pos="NNP" surface="Eurotunnel"/>
+  <token id="7" lemma="each" pos="DT" surface="each"/>
+  <token id="8" lemma="year" pos="NN" surface="year"/>
+  <token id="9" lemma="be" pos="VBP" surface="are"/>
+  <token id="10" lemma="just" pos="RB" surface="just"/>
+  <token id="11" lemma="@card@" pos="CD" surface="49"/>
+  <token id="12" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="9" to="2" type="unknown"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="4" to="8" type="unknown"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="10" to="12" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Traversing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Frequency">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Ride_vehicle">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

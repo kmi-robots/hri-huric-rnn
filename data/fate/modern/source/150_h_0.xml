@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="150_h_0">
+ <sentence>
+  Among likely voters in this survey , 36 percent are Democrats .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="amongst" pos="IN" surface="Among"/>
+  <token id="2" lemma="likely" pos="JJ" surface="likely"/>
+  <token id="3" lemma="voter" pos="NNS" surface="voters"/>
+  <token id="4" lemma="in" pos="IN" surface="in"/>
+  <token id="5" lemma="this" pos="DT" surface="this"/>
+  <token id="6" lemma="survey" pos="NN" surface="survey"/>
+  <token id="7" lemma="," pos="PUNC," surface=","/>
+  <token id="8" lemma="@card@" pos="CD" surface="36"/>
+  <token id="9" lemma="percent" pos="NN" surface="percent"/>
+  <token id="10" lemma="be" pos="VBP" surface="are"/>
+  <token id="11" lemma="democrat" pos="NNPS" surface="Democrats"/>
+  <token id="12" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="1" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Inclusion">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Total">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Part">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

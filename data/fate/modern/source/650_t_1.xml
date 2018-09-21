@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="650_t_1">
+ <sentence>
+  To feed the world takes political and financial will - it's not about production and distribution .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="To" pos="TO" surface="To"/>
+  <token id="2" lemma="feed" pos="VB" surface="feed"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="world" pos="NN" surface="world"/>
+  <token id="5" lemma="take" pos="VBZ" surface="takes"/>
+  <token id="6" lemma="political" pos="JJ" surface="political"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="financial" pos="JJ" surface="financial"/>
+  <token id="9" lemma="will" pos="NN" surface="will"/>
+  <token id="10" lemma="-" pos="PUNC:" surface="-"/>
+  <token id="11" lemma="&amp;#60;unknown&amp;#62;" pos="VBZ" surface="it's"/>
+  <token id="12" lemma="not" pos="RB" surface="not"/>
+  <token id="13" lemma="about" pos="IN" surface="about"/>
+  <token id="14" lemma="production" pos="NN" surface="production"/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="distribution" pos="NN" surface="distribution"/>
+  <token id="17" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="9" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="6" to="8" type="unknown"/>
+  <dep from="5" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="5" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+  <dep from="11" to="13" type="unknown"/>
+  <dep from="16" to="14" type="unknown"/>
+  <dep from="16" to="15" type="unknown"/>
+  <dep from="13" to="16" type="unknown"/>
+  <dep from="16" to="17" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+   <frame name="Have_as_requirement">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Dependent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Required_entity">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Desiring">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Focal_participant">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+   <frame name="Anaphora">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Antecedent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="474_h_0">
+ <sentence>
+  Bush was elected governor of Texas in 1989 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Bush" pos="NNP" surface="Bush"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="elect" pos="VBN" surface="elected"/>
+  <token id="4" lemma="governor" pos="NN" surface="governor"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="Texas" pos="NNP" surface="Texas"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="@card@" pos="CD" surface="1989"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="3" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_of_leadership">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="New_leader">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Function">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Leadership">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Leader">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

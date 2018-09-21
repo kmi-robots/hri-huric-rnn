@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="80_h_0">
+ <sentence>
+  Al-Sadr's Mehdi Army militia and U . S . forces have been fighting .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Al-Sadr's"/>
+  <token id="2" lemma="Mehdi" pos="NNP" surface="Mehdi"/>
+  <token id="3" lemma="Army" pos="NNP" surface="Army"/>
+  <token id="4" lemma="militia" pos="NN" surface="militia"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="U" pos="NNP" surface="U"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+  <token id="8" lemma="S" pos="NNP" surface="S"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+  <token id="10" lemma="force" pos="NNS" surface="forces"/>
+  <token id="11" lemma="have" pos="VBP" surface="have"/>
+  <token id="12" lemma="be" pos="VBN" surface="been"/>
+  <token id="13" lemma="fight" pos="VBG" surface="fighting"/>
+  <token id="14" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="unknown"/>
+  <dep from="10" to="2" type="unknown"/>
+  <dep from="10" to="3" type="unknown"/>
+  <dep from="10" to="4" type="unknown"/>
+  <dep from="10" to="5" type="unknown"/>
+  <dep from="10" to="6" type="unknown"/>
+  <dep from="10" to="7" type="unknown"/>
+  <dep from="10" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="11" to="10" type="unknown"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Sides">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+   <frame name="Military">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Force">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Possessor">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Military">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Force">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Possessor">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

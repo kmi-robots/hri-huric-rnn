@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="81_t_0">
+ <sentence>
+  There are approximately 3.7 million European Citizens with intellectual disability .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="There" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="approximately" pos="RB" surface="approximately"/>
+  <token id="4" lemma="@card@" pos="CD" surface="3.7"/>
+  <token id="5" lemma="million" pos="CD" surface="million"/>
+  <token id="6" lemma="European" pos="NNP" surface="European"/>
+  <token id="7" lemma="citizen" pos="NNPS" surface="Citizens"/>
+  <token id="8" lemma="with" pos="IN" surface="with"/>
+  <token id="9" lemma="intellectual" pos="JJ" surface="intellectual"/>
+  <token id="10" lemma="disability" pos="NN" surface="disability"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="7" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="2" to="7" type="unknown"/>
+  <dep from="2" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="8" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People_by_jurisdiction">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Persistent_characteristic">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Jurisdiction">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Ailment">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Relational_quantity">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Individuals">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Reference_quantity ">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

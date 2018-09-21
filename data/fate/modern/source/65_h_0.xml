@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="65_h_0">
+ <sentence>
+  Nguyen is a lawyer .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Nguyen" pos="NNP" surface="Nguyen"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="lawyer" pos="NN" surface="lawyer"/>
+  <token id="5" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="People_by_vocation">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Person">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

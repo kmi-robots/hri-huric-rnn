@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="758_h_0">
+ <sentence>
+  Assassins murdered Maria Elena Diaz .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="assassin" pos="NNP" surface="Assassins"/>
+  <token id="2" lemma="murder" pos="VBN" surface="murdered"/>
+  <token id="3" lemma="Maria" pos="NNP" surface="Maria"/>
+  <token id="4" lemma="Elena" pos="NNP" surface="Elena"/>
+  <token id="5" lemma="Diaz" pos="NNP" surface="Diaz"/>
+  <token id="6" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="2" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Killer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Victim">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

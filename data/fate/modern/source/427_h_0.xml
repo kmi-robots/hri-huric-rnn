@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="427_h_0">
+ <sentence>
+  A French political party was illegally financed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="French" pos="JJ" surface="French"/>
+  <token id="3" lemma="political" pos="JJ" surface="political"/>
+  <token id="4" lemma="party" pos="NN" surface="party"/>
+  <token id="5" lemma="be" pos="VBD" surface="was"/>
+  <token id="6" lemma="illegally" pos="RB" surface="illegally"/>
+  <token id="7" lemma="finance" pos="VBN" surface="financed"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="5" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Unknown">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Fe1">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Fe2">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+   <frame name="Aggregate">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Aggregate">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="AggregateProperty">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="102_h_0">
+ <sentence>
+  ' The Simpsons ' first appeared on television in 1989 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#39;" pos="PUNC&amp;#39;&amp;#39;" surface="'"/>
+  <token id="2" lemma="the" pos="DT" surface="The"/>
+  <token id="3" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Simpsons"/>
+  <token id="4" lemma="&amp;#39;" pos="POS" surface="'"/>
+  <token id="5" lemma="first" pos="RB" surface="first"/>
+  <token id="6" lemma="appear" pos="VBD" surface="appeared"/>
+  <token id="7" lemma="on" pos="IN" surface="on"/>
+  <token id="8" lemma="television" pos="NN" surface="television"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="@card@" pos="CD" surface="1989"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="6" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Coming_to_be">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Entity">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Period_of_Iterations">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

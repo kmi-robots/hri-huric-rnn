@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="248_h_0">
+ <sentence>
+  The snow storm on Highway 18 caused vehicles to slide on the roadway .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="snow" pos="NN" surface="snow"/>
+  <token id="3" lemma="storm" pos="NN" surface="storm"/>
+  <token id="4" lemma="on" pos="IN" surface="on"/>
+  <token id="5" lemma="Highway" pos="NNP" surface="Highway"/>
+  <token id="6" lemma="@card@" pos="CD" surface="18"/>
+  <token id="7" lemma="cause" pos="VBD" surface="caused"/>
+  <token id="8" lemma="vehicle" pos="NNS" surface="vehicles"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="slide" pos="VB" surface="slide"/>
+  <token id="11" lemma="on" pos="IN" surface="on"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="roadway" pos="NN" surface="roadway"/>
+  <token id="14" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="7" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="13" to="12" type="unknown"/>
+  <dep from="11" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Area">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

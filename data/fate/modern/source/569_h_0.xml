@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="569_h_0">
+ <sentence>
+  Roger Federer battled past Andre Agassi in five sets .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Roger" pos="NNP" surface="Roger"/>
+  <token id="2" lemma="Federer" pos="NNP" surface="Federer"/>
+  <token id="3" lemma="battle" pos="VBD" surface="battled"/>
+  <token id="4" lemma="past" pos="IN" surface="past"/>
+  <token id="5" lemma="Andre" pos="NNP" surface="Andre"/>
+  <token id="6" lemma="Agassi" pos="NNP" surface="Agassi"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="five" pos="CD" surface="five"/>
+  <token id="9" lemma="set" pos="NNS" surface="sets"/>
+  <token id="10" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="3" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Finish_competition">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Competitor">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Opponent">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Margin">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

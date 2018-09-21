@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="314_h_0">
+ <sentence>
+  Doug Arthur is a potential buyer of Knight Ridder .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Doug" pos="NNP" surface="Doug"/>
+  <token id="2" lemma="Arthur" pos="NNP" surface="Arthur"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="potential" pos="JJ" surface="potential"/>
+  <token id="6" lemma="buyer" pos="NN" surface="buyer"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="Knight" pos="NNP" surface="Knight"/>
+  <token id="9" lemma="Ridder" pos="NNP" surface="Ridder"/>
+  <token id="10" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="3" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="7" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Commerce_buy">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Buyer">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goods">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

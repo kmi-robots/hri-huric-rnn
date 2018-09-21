@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="545_h_0">
+ <sentence>
+  Paul Villard discovered x-rays .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Paul" pos="NNP" surface="Paul"/>
+  <token id="2" lemma="Villard" pos="NNP" surface="Villard"/>
+  <token id="3" lemma="discover" pos="VBD" surface="discovered"/>
+  <token id="4" lemma="x-ray" pos="NNS" surface="x-rays"/>
+  <token id="5" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Becoming_aware">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

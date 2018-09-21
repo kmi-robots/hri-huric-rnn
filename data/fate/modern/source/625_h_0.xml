@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="625_h_0">
+ <sentence>
+  Insurgents in Iraq attacked polling centers ahead of Sunday's elections .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="insurgent" pos="NNS" surface="Insurgents"/>
+  <token id="2" lemma="in" pos="IN" surface="in"/>
+  <token id="3" lemma="Iraq" pos="NNP" surface="Iraq"/>
+  <token id="4" lemma="attack" pos="VBD" surface="attacked"/>
+  <token id="5" lemma="polling" pos="NN" surface="polling"/>
+  <token id="6" lemma="center" pos="VBZ" surface="centers"/>
+  <token id="7" lemma="ahead" pos="RB" surface="ahead"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Sunday's"/>
+  <token id="10" lemma="election" pos="NNS" surface="elections"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="8" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attack">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Assailant">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

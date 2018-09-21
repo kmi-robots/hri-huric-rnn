@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="298_h_0">
+ <sentence>
+  Unplanned pregnancies rise by 70,000 each year .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="unplanned" pos="JJ" surface="Unplanned"/>
+  <token id="2" lemma="pregnancy" pos="NNS" surface="pregnancies"/>
+  <token id="3" lemma="rise" pos="VB" surface="rise"/>
+  <token id="4" lemma="by" pos="IN" surface="by"/>
+  <token id="5" lemma="@card@" pos="CD" surface="70,000"/>
+  <token id="6" lemma="each" pos="DT" surface="each"/>
+  <token id="7" lemma="year" pos="NN" surface="year"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="3" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Difference">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1_t_0">
+ <sentence>
+  The news comes as doctors in Hong Kong warned that people who survive Sars may suffer permanent lung damage and may suffer a relapse .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="news" pos="NN" surface="news"/>
+  <token id="3" lemma="come" pos="VBZ" surface="comes"/>
+  <token id="4" lemma="as" pos="IN" surface="as"/>
+  <token id="5" lemma="doctor" pos="NNS" surface="doctors"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="Hong" pos="NNP" surface="Hong"/>
+  <token id="8" lemma="Kong" pos="NNP" surface="Kong"/>
+  <token id="9" lemma="warn" pos="VBD" surface="warned"/>
+  <token id="10" lemma="that" pos="IN" surface="that"/>
+  <token id="11" lemma="people" pos="NNS" surface="people"/>
+  <token id="12" lemma="who" pos="WP" surface="who"/>
+  <token id="13" lemma="survive" pos="VBP" surface="survive"/>
+  <token id="14" lemma="&amp;#60;unknown&amp;#62;" pos="NNS" surface="Sars"/>
+  <token id="15" lemma="may" pos="MD" surface="may"/>
+  <token id="16" lemma="suffer" pos="VB" surface="suffer"/>
+  <token id="17" lemma="permanent" pos="JJ" surface="permanent"/>
+  <token id="18" lemma="lung" pos="NN" surface="lung"/>
+  <token id="19" lemma="damage" pos="NN" surface="damage"/>
+  <token id="20" lemma="and" pos="CC" surface="and"/>
+  <token id="21" lemma="may" pos="MD" surface="may"/>
+  <token id="22" lemma="suffer" pos="VB" surface="suffer"/>
+  <token id="23" lemma="a" pos="DT" surface="a"/>
+  <token id="24" lemma="relapse" pos="NN" surface="relapse"/>
+  <token id="25" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="9" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="6" to="8" type="unknown"/>
+  <dep from="4" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="21" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+  <dep from="21" to="15" type="unknown"/>
+  <dep from="15" to="16" type="unknown"/>
+  <dep from="19" to="17" type="unknown"/>
+  <dep from="19" to="18" type="unknown"/>
+  <dep from="16" to="19" type="unknown"/>
+  <dep from="21" to="20" type="unknown"/>
+  <dep from="10" to="21" type="unknown"/>
+  <dep from="21" to="22" type="unknown"/>
+  <dep from="24" to="23" type="unknown"/>
+  <dep from="22" to="24" type="unknown"/>
+  <dep from="24" to="25" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Surviving">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Dangerous_situation">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Survivor">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Anaphora">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Antecedent">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Medical_conditions">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Patient">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Ailment">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Body_Part">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="280_h_0">
+ <sentence>
+  Five U S soldiers were killed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Five" pos="CD" surface="Five"/>
+  <token id="2" lemma="U" pos="NNP" surface="U"/>
+  <token id="3" lemma="S" pos="NNP" surface="S"/>
+  <token id="4" lemma="soldier" pos="NNS" surface="soldiers"/>
+  <token id="5" lemma="be" pos="VBD" surface="were"/>
+  <token id="6" lemma="kill" pos="VBN" surface="killed"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Military">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Possessor">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

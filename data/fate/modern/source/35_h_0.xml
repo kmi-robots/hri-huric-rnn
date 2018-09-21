@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="35_h_0">
+ <sentence>
+  Five U S soldiers were killed , and at least 10 Iraqis died in Baghdad .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Five" pos="CD" surface="Five"/>
+  <token id="2" lemma="U" pos="NNP" surface="U"/>
+  <token id="3" lemma="S" pos="NNP" surface="S"/>
+  <token id="4" lemma="soldier" pos="NNS" surface="soldiers"/>
+  <token id="5" lemma="be" pos="VBD" surface="were"/>
+  <token id="6" lemma="kill" pos="VBN" surface="killed"/>
+  <token id="7" lemma="," pos="PUNC," surface=","/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="at" pos="IN" surface="at"/>
+  <token id="10" lemma="least" pos="JJS" surface="least"/>
+  <token id="11" lemma="@card@" pos="CD" surface="10"/>
+  <token id="12" lemma="Iraqi" pos="NNS" surface="Iraqis"/>
+  <token id="13" lemma="die" pos="VBD" surface="died"/>
+  <token id="14" lemma="in" pos="IN" surface="in"/>
+  <token id="15" lemma="Baghdad" pos="NNP" surface="Baghdad"/>
+  <token id="16" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="5" to="8" type="unknown"/>
+  <dep from="12" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="9" to="11" type="unknown"/>
+  <dep from="13" to="12" type="unknown"/>
+  <dep from="5" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+  <dep from="14" to="15" type="unknown"/>
+  <dep from="15" to="16" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Killing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Victim">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+   <frame name="Military">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Possessor">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+   <frame name="Death">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

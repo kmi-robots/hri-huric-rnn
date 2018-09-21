@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="630_h_0">
+ <sentence>
+  Four U S cable companies formed a joint venture with Sprint Nextel .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Four" pos="CD" surface="Four"/>
+  <token id="2" lemma="U" pos="NNP" surface="U"/>
+  <token id="3" lemma="S" pos="NNP" surface="S"/>
+  <token id="4" lemma="cable" pos="NN" surface="cable"/>
+  <token id="5" lemma="company" pos="NNS" surface="companies"/>
+  <token id="6" lemma="form" pos="VBN" surface="formed"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="joint" pos="JJ" surface="joint"/>
+  <token id="9" lemma="venture" pos="NN" surface="venture"/>
+  <token id="10" lemma="with" pos="IN" surface="with"/>
+  <token id="11" lemma="Sprint" pos="NNP" surface="Sprint"/>
+  <token id="12" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Nextel"/>
+  <token id="13" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="unknown"/>
+  <dep from="5" to="2" type="unknown"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="9" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="6" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="12" to="11" type="unknown"/>
+  <dep from="10" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Alliance">
+    <lexicalUnit>
+     <token id="8"/>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Member_1">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Member_2">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Intentionally_create">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Creator">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Created_entity">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Product">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

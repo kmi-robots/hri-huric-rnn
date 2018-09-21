@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="448_h_0">
+ <sentence>
+  Al-Qaida has its headquarters in Iraq .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Al-Qaida"/>
+  <token id="2" lemma="have" pos="VBZ" surface="has"/>
+  <token id="3" lemma="its" pos="PRP$" surface="its"/>
+  <token id="4" lemma="headquarters" pos="NN" surface="headquarters"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="Iraq" pos="NNP" surface="Iraq"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Locale_by_use">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Locale">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Use">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Container_possessor">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Relative_location">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="41_t_0">
+ <sentence>
+  Kenneth Branagh talks about his epic , uncut version of ' Hamlet ' .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Kenneth" pos="NNP" surface="Kenneth"/>
+  <token id="2" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Branagh"/>
+  <token id="3" lemma="talk" pos="VBZ" surface="talks"/>
+  <token id="4" lemma="about" pos="IN" surface="about"/>
+  <token id="5" lemma="his" pos="PRP$" surface="his"/>
+  <token id="6" lemma="epic" pos="NN" surface="epic"/>
+  <token id="7" lemma="," pos="PUNC," surface=","/>
+  <token id="8" lemma="uncut" pos="JJ" surface="uncut"/>
+  <token id="9" lemma="version" pos="NN" surface="version"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="&amp;#39;" pos="POS" surface="'"/>
+  <token id="12" lemma="Hamlet" pos="NNP" surface="Hamlet"/>
+  <token id="13" lemma="&amp;#39;" pos="POS" surface="'"/>
+  <token id="14" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="4" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="9" to="8" type="unknown"/>
+  <dep from="13" to="9" type="unknown"/>
+  <dep from="13" to="10" type="unknown"/>
+  <dep from="12" to="11" type="unknown"/>
+  <dep from="10" to="12" type="unknown"/>
+  <dep from="6" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Topic">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+   <frame name="Unknown">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Fe1">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Fe2">
+     <token id="6"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Fe3">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Anaphora">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Antecedent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

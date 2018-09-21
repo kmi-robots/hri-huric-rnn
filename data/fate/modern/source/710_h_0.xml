@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="710_h_0">
+ <sentence>
+  There are 15 Member States in the Council of Europe .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="There" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="@card@" pos="CD" surface="15"/>
+  <token id="4" lemma="Member" pos="NNP" surface="Member"/>
+  <token id="5" lemma="States" pos="NNPS" surface="States"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="Council" pos="NNP" surface="Council"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="Europe" pos="NNP" surface="Europe"/>
+  <token id="11" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="2" to="5" type="unknown"/>
+  <dep from="2" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="6" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="9" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Membership">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Member">
+     <token id="3"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Group">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

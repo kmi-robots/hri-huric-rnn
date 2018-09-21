@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="287_t_0">
+ <sentence>
+  Once a Category 4 hurricane with winds of 145 mph , Frances slowed and weakened to a Category 2 storm as it neared Florida .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="once" pos="IN" surface="Once"/>
+  <token id="2" lemma="a" pos="DT" surface="a"/>
+  <token id="3" lemma="category" pos="NNP" surface="Category"/>
+  <token id="4" lemma="4" pos="CD" surface="4"/>
+  <token id="5" lemma="hurricane" pos="NN" surface="hurricane"/>
+  <token id="6" lemma="with" pos="IN" surface="with"/>
+  <token id="7" lemma="wind" pos="NNS" surface="winds"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="@card@" pos="CD" surface="145"/>
+  <token id="10" lemma="mph" pos="NN" surface="mph"/>
+  <token id="11" lemma="," pos="PUNC," surface=","/>
+  <token id="12" lemma="Frances" pos="NNP" surface="Frances"/>
+  <token id="13" lemma="slow" pos="VBD" surface="slowed"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="weaken" pos="VBD" surface="weakened"/>
+  <token id="16" lemma="to" pos="TO" surface="to"/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="category" pos="NNP" surface="Category"/>
+  <token id="19" lemma="2" pos="CD" surface="2"/>
+  <token id="20" lemma="storm" pos="NN" surface="storm"/>
+  <token id="21" lemma="as" pos="IN" surface="as"/>
+  <token id="22" lemma="it" pos="PRP" surface="it"/>
+  <token id="23" lemma="near" pos="VBD" surface="neared"/>
+  <token id="24" lemma="Florida" pos="NNP" surface="Florida"/>
+  <token id="25" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="13" to="1" type="unknown"/>
+  <dep from="5" to="2" type="unknown"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="1" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="8" to="10" type="unknown"/>
+  <dep from="10" to="11" type="unknown"/>
+  <dep from="13" to="12" type="unknown"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="unknown"/>
+  <dep from="13" to="15" type="unknown"/>
+  <dep from="15" to="16" type="unknown"/>
+  <dep from="20" to="17" type="unknown"/>
+  <dep from="20" to="18" type="unknown"/>
+  <dep from="20" to="19" type="unknown"/>
+  <dep from="16" to="20" type="unknown"/>
+  <dep from="15" to="21" type="unknown"/>
+  <dep from="23" to="22" type="unknown"/>
+  <dep from="21" to="23" type="unknown"/>
+  <dep from="23" to="24" type="unknown"/>
+  <dep from="24" to="25" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Weather">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Specification">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+   <frame name="Weather">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Specification">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+   <frame name="Unknown">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Fe1">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Unknown">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Fe1">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Fe2">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Fe3">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+   <frame name="Weather">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Specification">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+   <frame name="Anaphora">
+    <lexicalUnit>
+     <token id="22"/>
+    </lexicalUnit>
+    <frameElement type="Antecedent">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+   <frame name="Arriving">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="24"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

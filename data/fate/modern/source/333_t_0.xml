@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="333_t_0">
+ <sentence>
+  Since December 10th , six people have lost their lives in avalanches .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="since" pos="IN" surface="Since"/>
+  <token id="2" lemma="December" pos="NNP" surface="December"/>
+  <token id="3" lemma="10th" pos="JJ" surface="10th"/>
+  <token id="4" lemma="," pos="PUNC," surface=","/>
+  <token id="5" lemma="six" pos="CD" surface="six"/>
+  <token id="6" lemma="people" pos="NNS" surface="people"/>
+  <token id="7" lemma="have" pos="VBP" surface="have"/>
+  <token id="8" lemma="lose" pos="VBN" surface="lost"/>
+  <token id="9" lemma="their" pos="PRP$" surface="their"/>
+  <token id="10" lemma="life" pos="NNS" surface="lives"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="avalanche" pos="NNS" surface="avalanches"/>
+  <token id="13" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="8" to="10" type="unknown"/>
+  <dep from="8" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+  <dep from="12" to="13" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Death">
+    <lexicalUnit>
+     <token id="8"/>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Protagonist">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+   <frame name="Anaphora">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Antecedent">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

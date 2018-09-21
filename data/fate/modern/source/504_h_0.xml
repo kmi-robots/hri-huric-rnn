@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="504_h_0">
+ <sentence>
+  Alberto Tomba won a ski race .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Alberto" pos="NNP" surface="Alberto"/>
+  <token id="2" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Tomba"/>
+  <token id="3" lemma="win" pos="VBD" surface="won"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="ski" pos="NN" surface="ski"/>
+  <token id="6" lemma="race" pos="NN" surface="race"/>
+  <token id="7" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="3" to="6" type="unknown"/>
+  <dep from="6" to="7" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Finish_competition">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Competitor">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Competition">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

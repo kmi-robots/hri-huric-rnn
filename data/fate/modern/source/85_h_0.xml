@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="85_h_0">
+ <sentence>
+  Kaspersky Labs ' anti-virus software could compromise security .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Kaspersky"/>
+  <token id="2" lemma="Labs" pos="NNPS" surface="Labs"/>
+  <token id="3" lemma="&amp;#39;" pos="POS" surface="'"/>
+  <token id="4" lemma="anti-virus" pos="JJ" surface="anti-virus"/>
+  <token id="5" lemma="software" pos="NN" surface="software"/>
+  <token id="6" lemma="could" pos="MD" surface="could"/>
+  <token id="7" lemma="compromise" pos="VB" surface="compromise"/>
+  <token id="8" lemma="security" pos="NN" surface="security"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="5" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="6" to="5" type="unknown"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Endangering">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Valued_entity">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

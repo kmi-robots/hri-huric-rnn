@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="627_h_0">
+ <sentence>
+  Bush said that victory may not be possible .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Bush" pos="NNP" surface="Bush"/>
+  <token id="2" lemma="say" pos="VBD" surface="said"/>
+  <token id="3" lemma="that" pos="IN" surface="that"/>
+  <token id="4" lemma="victory" pos="NN" surface="victory"/>
+  <token id="5" lemma="may" pos="MD" surface="may"/>
+  <token id="6" lemma="not" pos="RB" surface="not"/>
+  <token id="7" lemma="be" pos="VB" surface="be"/>
+  <token id="8" lemma="possible" pos="JJ" surface="possible"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="5" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Statement">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Speaker">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Message">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Likelihood">
+    <lexicalUnit>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Hypothetical_event">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

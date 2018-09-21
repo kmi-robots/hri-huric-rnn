@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="169_h_0">
+ <sentence>
+  Eurostat provides the E U wth statistics .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Eurostat" pos="NNP" surface="Eurostat"/>
+  <token id="2" lemma="provide" pos="VBZ" surface="provides"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="E" pos="NNP" surface="E"/>
+  <token id="5" lemma="U" pos="NNP" surface="U"/>
+  <token id="6" lemma="&amp;#60;unknown&amp;#62;" pos="JJ" surface="wth"/>
+  <token id="7" lemma="statistic" pos="NNS" surface="statistics"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="7" to="3" type="unknown"/>
+  <dep from="7" to="4" type="unknown"/>
+  <dep from="7" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="2" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Supply">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Supplier">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

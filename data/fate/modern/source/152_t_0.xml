@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="152_t_0">
+ <sentence>
+  El Nino usually begins in December and lasts a few months .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="El" pos="NNP" surface="El"/>
+  <token id="2" lemma="Nino" pos="NNP" surface="Nino"/>
+  <token id="3" lemma="usually" pos="RB" surface="usually"/>
+  <token id="4" lemma="begin" pos="VBZ" surface="begins"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="December" pos="NNP" surface="December"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="last" pos="VBZ" surface="lasts"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="few" pos="JJ" surface="few"/>
+  <token id="11" lemma="month" pos="NNS" surface="months"/>
+  <token id="12" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="4" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="4" to="7" type="unknown"/>
+  <dep from="4" to="8" type="unknown"/>
+  <dep from="11" to="9" type="unknown"/>
+  <dep from="11" to="10" type="unknown"/>
+  <dep from="8" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Process_start">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Event">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Depictive">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

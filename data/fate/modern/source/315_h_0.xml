@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="315_h_0">
+ <sentence>
+  President Bush plans a confrontation with global terrorism .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="President" pos="NNP" surface="President"/>
+  <token id="2" lemma="Bush" pos="NNP" surface="Bush"/>
+  <token id="3" lemma="plan" pos="VBZ" surface="plans"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="confrontation" pos="NN" surface="confrontation"/>
+  <token id="6" lemma="with" pos="IN" surface="with"/>
+  <token id="7" lemma="global" pos="JJ" surface="global"/>
+  <token id="8" lemma="terrorism" pos="NN" surface="terrorism"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="5" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="6" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Purpose">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+   <frame name="Hostile_encounter">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Side_1">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Side_2">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

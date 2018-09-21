@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="634_h_0">
+ <sentence>
+  Lukoil and Zarubezhneft are Russian oil companies .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Lukoil"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="&amp;#60;unknown&amp;#62;" pos="NNP" surface="Zarubezhneft"/>
+  <token id="4" lemma="be" pos="VBP" surface="are"/>
+  <token id="5" lemma="Russian" pos="JJ" surface="Russian"/>
+  <token id="6" lemma="oil" pos="NN" surface="oil"/>
+  <token id="7" lemma="company" pos="NNS" surface="companies"/>
+  <token id="8" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="1" to="3" type="unknown"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="unknown"/>
+  <dep from="7" to="6" type="unknown"/>
+  <dep from="4" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Businesses">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Business">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Product">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

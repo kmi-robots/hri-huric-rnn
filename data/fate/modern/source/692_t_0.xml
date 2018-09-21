@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="692_t_0">
+ <sentence>
+  Drugs used to treat schizophrenia are called neuroleptics .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="drug" pos="NNS" surface="Drugs"/>
+  <token id="2" lemma="use" pos="VBN" surface="used"/>
+  <token id="3" lemma="to" pos="TO" surface="to"/>
+  <token id="4" lemma="treat" pos="VB" surface="treat"/>
+  <token id="5" lemma="schizophrenia" pos="NN" surface="schizophrenia"/>
+  <token id="6" lemma="be" pos="VBP" surface="are"/>
+  <token id="7" lemma="call" pos="VBN" surface="called"/>
+  <token id="8" lemma="&amp;#60;unknown&amp;#62;" pos="NNS" surface="neuroleptics"/>
+  <token id="9" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="2" to="3" type="unknown"/>
+  <dep from="3" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="unknown"/>
+  <dep from="7" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Using">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Purpose">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Instrument">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+   <frame name="Cure">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Affliction">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Medication">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

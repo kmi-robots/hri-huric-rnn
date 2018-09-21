@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="64_h_0">
+ <sentence>
+  Apricots contain vitamin C .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="apricot" pos="NNS" surface="Apricots"/>
+  <token id="2" lemma="contain" pos="VBP" surface="contain"/>
+  <token id="3" lemma="vitamin" pos="JJ" surface="vitamin"/>
+  <token id="4" lemma="C" pos="NNP" surface="C"/>
+  <token id="5" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="2" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Containing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Container">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Contents">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

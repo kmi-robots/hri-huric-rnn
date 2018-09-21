@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="68_t_1">
+ <sentence>
+  However , the decrease of motor vehicle export to North America shows caution .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="however" pos="RB" surface="However"/>
+  <token id="2" lemma="," pos="PUNC," surface=","/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="decrease" pos="NN" surface="decrease"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="motor" pos="NN" surface="motor"/>
+  <token id="7" lemma="vehicle" pos="NN" surface="vehicle"/>
+  <token id="8" lemma="export" pos="NN" surface="export"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="North" pos="NNP" surface="North"/>
+  <token id="11" lemma="America" pos="NNP" surface="America"/>
+  <token id="12" lemma="show" pos="VBZ" surface="shows"/>
+  <token id="13" lemma="caution" pos="NN" surface="caution"/>
+  <token id="14" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="12" to="1" type="unknown"/>
+  <dep from="1" to="2" type="unknown"/>
+  <dep from="4" to="3" type="unknown"/>
+  <dep from="12" to="4" type="unknown"/>
+  <dep from="4" to="5" type="unknown"/>
+  <dep from="8" to="6" type="unknown"/>
+  <dep from="8" to="7" type="unknown"/>
+  <dep from="5" to="8" type="unknown"/>
+  <dep from="8" to="9" type="unknown"/>
+  <dep from="11" to="10" type="unknown"/>
+  <dep from="9" to="11" type="unknown"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="unknown"/>
+  <dep from="13" to="14" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_position_on_a_scale">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Attribute">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+   <frame name="Exporting">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Goods">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Exporting_area">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

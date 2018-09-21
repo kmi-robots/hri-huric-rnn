@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="788_h_0">
+ <sentence>
+  Mahmoud Abbas won the vote in the Palestinian presidential election Sunday .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="Mahmoud" pos="NNP" surface="Mahmoud"/>
+  <token id="2" lemma="Abbas" pos="NNP" surface="Abbas"/>
+  <token id="3" lemma="win" pos="VBD" surface="won"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="vote" pos="NN" surface="vote"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="Palestinian" pos="JJ" surface="Palestinian"/>
+  <token id="9" lemma="presidential" pos="JJ" surface="presidential"/>
+  <token id="10" lemma="election" pos="NN" surface="election"/>
+  <token id="11" lemma="Sunday" pos="NNP" surface="Sunday"/>
+  <token id="12" lemma="." pos="PUNC." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="unknown"/>
+  <dep from="3" to="2" type="unknown"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="unknown"/>
+  <dep from="3" to="5" type="unknown"/>
+  <dep from="3" to="6" type="unknown"/>
+  <dep from="10" to="7" type="unknown"/>
+  <dep from="10" to="8" type="unknown"/>
+  <dep from="10" to="9" type="unknown"/>
+  <dep from="6" to="10" type="unknown"/>
+  <dep from="3" to="11" type="unknown"/>
+  <dep from="11" to="12" type="unknown"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Finish_competition">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Competitor">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Competition">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Prize">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>
