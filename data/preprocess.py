@@ -998,6 +998,8 @@ def main():
 
     elif which == 'framenet':
         framenet_preprocess('framenet', 'framenet/modern/source')
+        huric_preprocess('framenet/modern')
+        huric_preprocess('framenet/modern', trim='both')
     elif which == 'framenet_subset':
         framenet_preprocess('framenet', 'framenet/modern/source')
         create_subset_with_frames_mapped('framenet/modern/source', 'framenet/subset/source', frame_names_mappings)
@@ -1012,6 +1014,7 @@ def main():
     elif which == 'fate':
         fate_preprocess('fate/source', 'fate/modern/source')
         huric_preprocess('fate/modern')
+        huric_preprocess('fate/modern', trim='both')
 
     elif which == 'fate_subset':
         fate_preprocess('fate/source', 'fate/modern/source')

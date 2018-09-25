@@ -9,8 +9,8 @@ preprocess_all:
 preprocess:
 	pushd data && python preprocess.py && popd
 
-preprocess_huric_with_framenet:
-	pushd data && DATASET=huric_with_framenet python preprocess.py && popd
+preprocess_combinations:
+	pushd data && DATASET=combinations python preprocess.py && popd
 
 train_joint:
 	python -m nlunetwork.main

@@ -30,9 +30,13 @@ MODE=train_all DATASET=framenet/subset_both make train_joint
 # train all FA_subset
 MODE=train_all DATASET=fate/subset_both make train_joint
 
+# experiment also with full FrameNet and full FATE
+DATASET=framenet/modern_both make train_joint
+DATASET=fate/modern_both make train_joint
+
 # some experiments with a fully FN trained model
 export FN_MODEL=nlunetwork/results/dataset_combination/train_all_loss_both_slottype_full_we_large_recurrent_cell_lstm_attention_both_three_stages_true_highway___hyper:LABEL_EMB_SIZE=64,LSTM_SIZE=128,BATCH_SIZE=2,MAX_EPOCHS=100/framenet/subset_both/
-export OUTPUT_FOLDER=dataset_combination/fn_model
+export OUTPUT_FOLDER=dataset_combination/fn_model/
 # 100%FN_subset --> 100%H
 MODE=test_all DATASET=huric_eb/modern_right MODEL_PATH=${FN_MODEL} make train_joint
 # 100%FN_subset --> 20%H
@@ -40,7 +44,7 @@ MODE=test DATASET=huric_eb/modern_right MODEL_PATH=${FN_MODEL} make train_joint
 
 # some experiments with FATE
 export FATE_MODEL=nlunetwork/results/dataset_combination/train_all_loss_both_slottype_full_we_large_recurrent_cell_lstm_attention_both_three_stages_true_highway___hyper:LABEL_EMB_SIZE=64,LSTM_SIZE=128,BATCH_SIZE=2,MAX_EPOCHS=100/fate/subset_both/
-export OUTPUT_FOLDER=dataset_combination/fate_model
+export OUTPUT_FOLDER=dataset_combination/fate_model/
 # 100%FA_subset --> 100%H
 MODE=test_all DATASET=huric_eb/modern_right MODEL_PATH=${FATE_MODEL} make train_joint
 # 100%FA_subset --> 20%H
@@ -55,3 +59,7 @@ mv nlunetwork/results/dataset_combination/eval${COMMON_FOLDER_NAME}/aggregated.j
 
 python nlunetwork/results_aggregator.py nlunetwork/results/dataset_combination/eval${COMMON_FOLDER_NAME} with_framenet
 mv nlunetwork/results/dataset_combination/eval${COMMON_FOLDER_NAME}/aggregated.json nlunetwork/results/dataset_combination/eval${COMMON_FOLDER_NAME}/huric_eb/with_framenet/
+
+# this one will capture fate and framenet
+python nlunetwork/results_aggregator.py nlunetwork/results/dataset_combination/eval${COMMON_FOLDER_NAME} modern_both
+mv nlunetwork/results/dataset_combination/eval${COMMON_FOLDER_NAME}/aggregated_modern_both.json
