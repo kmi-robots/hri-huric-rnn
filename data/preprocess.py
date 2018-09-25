@@ -1004,8 +1004,10 @@ def main():
         huric_preprocess('framenet/subset')
         huric_preprocess('framenet/subset', trim='both')
 
-    elif which == 'huric_with_framenet':
+    elif which == 'combinations':
         enrich_huric_train_with_framenet('huric_eb/modern_right/preprocessed', 'framenet/subset_both/preprocessed', 'huric_eb/with_framenet/preprocessed')
+        enrich_huric_train_with_framenet('huric_eb/modern_right/preprocessed', 'fate/subset_both/preprocessed', 'huric_eb/with_fate/preprocessed')
+        enrich_huric_train_with_framenet('huric_eb/with_framenet/preprocessed', 'fate/subset_both/preprocessed', 'huric_eb/with_framenet_and_fate/preprocessed')
 
     elif which == 'fate':
         fate_preprocess('fate/source', 'fate/modern/source')
