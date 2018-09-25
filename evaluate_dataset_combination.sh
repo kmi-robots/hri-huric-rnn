@@ -20,20 +20,31 @@ export LSTM_SIZE=128
 
 # 80%H --> 20%H
 DATASET=huric_eb/modern_right make train_joint
-# 80%H + 100%FN --> 20%H
+# 80%H + 100%FN_subset --> 20%H
 DATASET=huric_eb/with_framenet make train_joint
+# 80%FN_subset --> 20%FN_subset
+DATASET=framenet/subset_both make train_joint
+# 80%FA_subset --> 20%FA_subset
+# train all FN_subset
+MODE=train_all DATASET=framenet/subset_both make train_joint
+# train all FA_subset
+MODE=train_all DATASET=fate/subset_both make train_joint
 
 # some experiments with a fully FN trained model
-DATASET=framenet/subset_both make train_joint
 export FN_MODEL=nlunetwork/results/dataset_combination/train_all_loss_both_slottype_full_we_large_recurrent_cell_lstm_attention_both_three_stages_true_highway___hyper:LABEL_EMB_SIZE=64,LSTM_SIZE=128,BATCH_SIZE=2,MAX_EPOCHS=100/framenet/subset_both/
 export OUTPUT_FOLDER=dataset_combination/fn_model
-# 100%FN --> 100%H
+# 100%FN_subset --> 100%H
 MODE=test_all DATASET=huric_eb/modern_right MODEL_PATH=${FN_MODEL} make train_joint
-# 100%FN --> 20%H
+# 100%FN_subset --> 20%H
 MODE=test DATASET=huric_eb/modern_right MODEL_PATH=${FN_MODEL} make train_joint
 
 # some experiments with FATE
-# TODO
+export FATE_MODEL=nlunetwork/results/dataset_combination/train_all_loss_both_slottype_full_we_large_recurrent_cell_lstm_attention_both_three_stages_true_highway___hyper:LABEL_EMB_SIZE=64,LSTM_SIZE=128,BATCH_SIZE=2,MAX_EPOCHS=100/fate/subset_both/
+export OUTPUT_FOLDER=dataset_combination/fate_model
+# 100%FA_subset --> 100%H
+MODE=test_all DATASET=huric_eb/modern_right MODEL_PATH=${FATE_MODEL} make train_joint
+# 100%FA_subset --> 20%H
+MODE=test DATASET=huric_eb/modern_right MODEL_PATH=${FATE_MODEL} make train_joint
 
 
 
