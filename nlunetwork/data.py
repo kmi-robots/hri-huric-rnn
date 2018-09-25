@@ -60,7 +60,7 @@ def load_data(dataset_name, slots_type='full'):
     """Loads the dataset and returns it."""
     path = 'data/' + dataset_name + '/preprocessed'
 
-    if 'huric_eb' in dataset_name or 'framenet' in dataset_name:
+    if 'huric_eb' in dataset_name or 'framenet' in dataset_name or 'fate' in dataset_name:
         fold_files = os.listdir(path)
         fold_files = sorted([f for f in fold_files if f.startswith('fold_')])
     else:
