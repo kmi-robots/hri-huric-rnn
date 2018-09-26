@@ -22,6 +22,9 @@ export LSTM_SIZE=128
 DATASET=huric_eb/modern_right make train_joint
 # 80%H + 100%FN_subset --> 20%H
 DATASET=huric_eb/with_framenet make train_joint
+DATASET=huric_eb/with_fate make train_joint
+DATASET=huric_eb/with_framenet_and_fate make train_joint
+DATASET=fate/with_framenet make train_joint
 # 80%FN_subset --> 20%FN_subset
 DATASET=framenet/subset_both make train_joint
 # 80%FA_subset --> 20%FA_subset
@@ -63,3 +66,5 @@ mv nlunetwork/results/dataset_combination/eval${COMMON_FOLDER_NAME}/aggregated.j
 # this one will capture fate and framenet
 python nlunetwork/results_aggregator.py nlunetwork/results/dataset_combination/eval${COMMON_FOLDER_NAME} modern_both
 mv nlunetwork/results/dataset_combination/eval${COMMON_FOLDER_NAME}/aggregated_modern_both.json
+
+# TODO with_fate and with_fate_and_framenet
