@@ -253,7 +253,12 @@ def get_corpus_complexity_statistics(dataset_location):
     smog_all = defaultdict(lambda: 0)
     automated_all = defaultdict(lambda: 0)
 
+    frame_stats = defaultdict(lambda: 0)
+
     for doc in xml_docs:
+        frame_names = get_frame_names(doc)
+        for fn in frame_names:
+            frame_stats[fn] += 1
         lu_pos = get_lu_pos(doc)
         for p in lu_pos:
             lu_pos_all[p] += 1
@@ -295,7 +300,11 @@ def get_corpus_complexity_statistics(dataset_location):
         'automated_readability_index_grade': automated_all
     }
 
-    return result
+    return result, frame_stats
+
+def get_frame_names(doc):
+    frames = doc.findall('semantics/frameSemantics/frame')
+    return [f.attrib['name'] for f in frames]
 
 def flesch_to_school_level(p):
     if p <= 30:
@@ -441,6 +450,24 @@ def get_samples_pos_and_deps(gold_location):
             'deps': [d for d in doc.findall('dependencies/dep')]
         }
     for doc in docs}
+
+    return result
+
+def get_lemma_invoker(xmls):
+    """Returns a {lemma: [{frameName: count}]}"""
+
+    result = defaultdict(lambda: defaultdict(lambda: []))
+
+    for x in xmls:
+        tokens = {t.attrib['id']: t.attrib for t in x.findall('tokens/token')}
+        for sf in x.findall('semantics/frameSemantics/frame'):
+            f_name = sf.attrib['name']
+            lus = [t.attrib['id'] for t in sf.findall('lexicalUnit/token')]
+            lus_tokens = [tokens[l] for l in lus]
+            lus_lemmas = [l['lemma'] for l in lus_tokens]
+
+            lus_lemma_stringified = ' '.join(lus_lemmas)
+            result[lus_lemma_stringified][f_name].append(x.find('sentence').text.strip())
 
     return result
 
