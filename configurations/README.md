@@ -8,11 +8,12 @@
 - `OUTPUT_FOLDER`: the results will go in `nlunetwork/results/OUTPUT_FOLDER/` + a folder name for the configuration. Type: `string`
 - `DATASET`: use one of the folder names in [the data directory](/data). It must contain a `preprocessed` subfolder with inside the preprocessed fold files with our representation. Type: `string`
 - `MODE`: switches the behaviour of test/train/.... Possible values:
-  - 'dev_cross' that excludes the last fold and performs (k-1)-fold, last fold untouched
-  - 'cross' that performs k-fold
-  - 'eval' that does the train on k-1 and test on last (untouched fold)
-  - 'train_all' trains the network on all the folds
-  - 'test' takes a pretrained model (path default or `MODEL_PATH`) and runs it on the specified samples (default or `TEST_PATH`)
+  - `dev_cross` that excludes the last fold and performs (k-1)-fold, last fold untouched
+  - `cross` that performs k-fold
+  - `cross_nested`
+  - `eval` that does the train on k-1 and test on last (untouched fold)
+  - `train_all` trains the network on all the folds
+  - `test` takes a pretrained model (path default or `MODEL_PATH`) and runs it on the specified samples (default or `TEST_PATH`)
   - 'test_all' takes a pretrained model (path default or `MODEL_PATH`) and runs it on the specified samples (default or `TEST_PATH`)
 - `MODEL_PATH`: when using `MODE=test` or `MODE=test_all`, the MODEL_PATH is the path to the saved model to be used for inference
 - `RECURRENT_MULTITURN` the type of multiturn modeling. It will be used only if in the dataset is marked as multiturn in its metadata. Possible values:

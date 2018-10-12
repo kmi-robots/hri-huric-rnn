@@ -5,6 +5,7 @@ import json
 import time
 import spacy
 import dotenv
+import itertools
 import tensorflow as tf
 import numpy as np
 from sklearn.metrics import accuracy_score
@@ -129,6 +130,10 @@ def train(mode, config):
     if not os.path.exists(real_folder):
         os.makedirs(real_folder)
 
+    with open('{}/config.env'.format(real_folder), 'w') as f:
+        string = '\n'.join(['{}={}'.format(k,v) for k,v in config.items()])
+        f.write(string)
+
     create_empty_array = lambda: np.zeros((config['MAX_EPOCHS'], ))
 
     train_folds = []
@@ -142,6 +147,19 @@ def train(mode, config):
             test = folds[fold_number]['data']
             train_folds.append(train)
             test_folds.append(test)
+    elif mode == 'cross_nested':
+        # look at TODO documentation for this mess
+        fold_indexes = list(range(0, len(folds)))
+        #for i in fold_indexes:
+        #    not_i = list(fold_indexes).remove(i)
+        #    for j in not_i:
+        #        not_i_and_j = list(not_i).remove(j)
+        for comb in itertools.combinations(fold_indexes, len(fold_indexes) - 2):
+            not_i_and_j = list(comb)
+            i_and_j = [el for el in fold_indexes if el not in not_i_and_j]
+            #print(not_i_and_j, i_and_j)
+            train_folds.append([s for idx, fold in enumerate(folds) if idx in not_i_and_j for s in fold['data']])
+            test_folds.append([s for idx, fold in enumerate(folds) if idx in i_and_j for s in fold['data']])
     elif mode == 'eval':
         # train on 1...k-1, test on k
         train_folds.append([s for (count,fold) in enumerate(folds[:-1]) for s in fold['data']])
