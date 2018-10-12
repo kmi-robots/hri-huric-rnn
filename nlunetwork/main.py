@@ -4,6 +4,7 @@ import os
 import json
 import time
 import spacy
+import dotenv
 import tensorflow as tf
 import numpy as np
 from sklearn.metrics import accuracy_score
@@ -15,91 +16,96 @@ from nlunetwork.model import Model
 from nlunetwork import metrics
 from nlunetwork import runtime_model
 
-# embedding size for labels
-embedding_size = int(os.environ.get('LABEL_EMB_SIZE', 64))
-# size of LSTM cells
-hidden_size = int(os.environ.get('LSTM_SIZE', 100))
-# size of batch
-batch_size = int(os.environ.get('BATCH_SIZE', 16))
-# number of training epochs
-epoch_num = int(os.environ.get('MAX_EPOCHS', 100))
-
 MY_PATH = os.path.dirname(os.path.abspath(__file__))
 
-OUTPUT_FOLDER = os.environ.get('OUTPUT_FOLDER', '')
-DATASET = os.environ.get('DATASET', 'huric_eb/modern_right')
-# possible MODE:
-# - 'dev_cross' that excludes the last fold and performs (k-1)-fold, last fold untouched
-# - 'cross' that performs k-fold
-# - 'eval' that does the train on k-1 and test on last (untouched fold)
-# - 'train_all' trains the network on all the folds
-# - 'test' takes a pretrained model (path default or `MODEL_PATH`) and runs it on the specified samples (default or `TEST_PATH`)
-# - 'test_all' takes a pretrained model (path default or `MODEL_PATH`) and runs it on the specified samples (default or `TEST_PATH`)
-MODE = os.environ.get('MODE', 'dev_cross')
-OUTPUT_FOLDER += MODE
+def load_config(config_override_file_name=None):
+    config_folder = '{}/../configurations/'.format(MY_PATH)
+    dotenv.load_dotenv(dotenv_path=config_folder + 'default.env')
+    if config_override_file_name:
+        config_override_file_path = config_folder + config_override_file_name
+        if not os.path.isfile(config_override_file_path):
+            raise ValueError('config file not found: ' + config_override_file_path)
+        dotenv.load_dotenv(dotenv_path=config_override_file_path, verbose=True)
 
-# specific to test mode
-MODEL_PATH = os.environ.get('MODEL_PATH', 'nlunetwork/results/framenet/results/train_all_loss_both_slottype_full_we_large_recurrent_cell_lstm_attention_both_three_stages_true_highway___hyper:LABEL_EMB_SIZE=64,LSTM_SIZE=128,BATCH_SIZE=2,MAX_EPOCHS=100/framenet/subset_both/')
+    config = {}
+    # embedding size for labels
+    config['LABEL_EMB_SIZE'] = int(os.environ.get('LABEL_EMB_SIZE'))
+    # size of LSTM cells
+    config['LSTM_SIZE'] = int(os.environ.get('LSTM_SIZE'))
+    # size of batch
+    config['BATCH_SIZE'] = int(os.environ.get('BATCH_SIZE'))
+    # number of training epochs
+    config['MAX_EPOCHS'] = int(os.environ.get('MAX_EPOCHS'))
+    # the output folder
+    config['OUTPUT_FOLDER'] = os.environ.get('OUTPUT_FOLDER')
+    # the dataset used
+    config['DATASET'] = os.environ.get('DATASET', 'huric_eb/modern_right')
+    # switches the behaviour between several train/test scenarios
+    config['MODE'] = os.environ.get('MODE', 'dev_cross')
+    config['OUTPUT_FOLDER'] += config['MODE']
+    # specific to test mode
+    config['MODEL_PATH'] = os.environ.get('MODEL_PATH')
+    # the type of recurrent unit on the multi-turn: rnn or CRF
+    config['RECURRENT_MULTITURN']=os.environ.get('RECURRENT_MULTITURN','gru')
+    # partial single-turned net on multi-turn datasets
+    config['FORCE_SINGLE_TURN'] = os.environ.get('FORCE_SINGLE_TURN', False)
+    if config['FORCE_SINGLE_TURN']:
+        config['OUTPUT_FOLDER'] += '_single_' + config['FORCE_SINGLE_TURN']
+    if config['RECURRENT_MULTITURN'] != 'gru':
+        config['OUTPUT_FOLDER'] += '_' + config['RECURRENT_MULTITURN']
+    # which loss to reduce
+    config['FORCE_SINGLE_TURN'] = os.environ.get('LOSS_SUM', 'both')
+    config['OUTPUT_FOLDER'] += '_loss_' + config['FORCE_SINGLE_TURN']
+    # what part of the slots to consider
+    config['SLOTS_TYPE'] = os.environ.get('SLOTS_TYPE', 'full')
+    config['OUTPUT_FOLDER'] += '_slottype_' + config['SLOTS_TYPE']
+    # the size of the word embeddings
+    config['WORD_EMBEDDINGS'] = os.environ.get('WORD_EMBEDDINGS', 'large')
+    config['OUTPUT_FOLDER'] += '_we_' + config['WORD_EMBEDDINGS']
+    # the recurrent cell
+    config['RECURRENT_CELL'] = os.environ.get('RECURRENT_CELL', 'lstm')
+    config['OUTPUT_FOLDER'] += '_recurrent_cell_' + config['RECURRENT_CELL']
+    config['ATTENTION'] = os.environ.get('ATTENTION', 'both') # intents, slots, both, none
+    config['OUTPUT_FOLDER'] += '_attention_' + config['ATTENTION']
+    # if and how to perform three stages
+    config['THREE_STAGES'] = os.environ.get('THREE_STAGES', 'true_highway').lower()
+    if config['THREE_STAGES'] in ('false', 'no', '0'):
+        config['THREE_STAGES'] = False
+    config['OUTPUT_FOLDER'] += '_three_stages_{}'.format(config['THREE_STAGES'])
+    config['INTENT_EXTRACTION_MODE'] = os.environ.get('INTENT_EXTRACTION_MODE', 'bi-rnn') # intent comes out of bi-rnn or only a weighted mean (attention intent must be turned on)
+    if config['INTENT_EXTRACTION_MODE'] != 'bi-rnn':
+        config['OUTPUT_FOLDER'] += '_intentextraction_' + config['INTENT_EXTRACTION_MODE']
 
+    # recap and final setting of the output folder
+    config['OUTPUT_FOLDER'] += '___hyper:LABEL_EMB_SIZE={},LSTM_SIZE={},BATCH_SIZE={},MAX_EPOCHS={}'.format(config['LABEL_EMB_SIZE'], config['LSTM_SIZE'], config['BATCH_SIZE'], config['MAX_EPOCHS'])
 
-# the type of recurrent unit on the multi-turn: rnn or CRF
-RECURRENT_MULTITURN=os.environ.get('RECURRENT_MULTITURN','gru')
+    print('configuration:', config)
 
-# set this to 'no_all', 'no_bot_turn', 'no_previous_intent' for a partial single-turned net on multi-turn datasets
-FORCE_SINGLE_TURN = os.environ.get('FORCE_SINGLE_TURN', False)
-if FORCE_SINGLE_TURN:
-    OUTPUT_FOLDER += '_single_' + FORCE_SINGLE_TURN
-if RECURRENT_MULTITURN != 'gru':
-    OUTPUT_FOLDER += '_' + RECURRENT_MULTITURN
-
-LOSS_SUM = os.environ.get('LOSS_SUM', 'both') # 'both' if want to reduce loss of both intents and slots, otherwise 'intent' or 'slots'
-OUTPUT_FOLDER += '_loss_' + LOSS_SUM
-SLOTS_TYPE = os.environ.get('SLOTS_TYPE', 'full') # what part of the slots to consider: 'full': B-Location, 'iob_only': B (corresponds to only boundary detection), 'slot_only': Location
-OUTPUT_FOLDER += '_slottype_' + SLOTS_TYPE
-WORD_EMBEDDINGS = os.environ.get('WORD_EMBEDDINGS', 'large')
-OUTPUT_FOLDER += '_we_' + WORD_EMBEDDINGS
-RECURRENT_CELL = os.environ.get('RECURRENT_CELL', 'lstm')
-OUTPUT_FOLDER += '_recurrent_cell_' + RECURRENT_CELL
-ATTENTION = os.environ.get('ATTENTION', 'both') # intents, slots, both, none
-OUTPUT_FOLDER += '_attention_' + ATTENTION
-THREE_STAGES = os.environ.get('THREE_STAGES', 'true_highway') # add Boundary Detection intermediate level. Can be False, True or truish with 'highway' inside
-if THREE_STAGES.lower() in ('false', 'no', '0'):
-    THREE_STAGES = False
-OUTPUT_FOLDER += '_three_stages_{}'.format(THREE_STAGES)
-INTENT_EXTRACTION_MODE = os.environ.get('INTENT_EXTRACTION_MODE', 'bi-rnn') # intent comes out of bi-rnn or only a weighted mean (attention intent must be turned on)
-if INTENT_EXTRACTION_MODE != 'bi-rnn':
-    OUTPUT_FOLDER += '_intentextraction_' + INTENT_EXTRACTION_MODE
-
-
-# hyperparams
-OUTPUT_FOLDER += '___hyper:LABEL_EMB_SIZE={},LSTM_SIZE={},BATCH_SIZE={},MAX_EPOCHS={}'.format(embedding_size, hidden_size, batch_size, epoch_num)
-
-print('environment variables:')
-print('DATASET:', DATASET, '\nOUTPUT_FOLDER:', OUTPUT_FOLDER, '\nMODE:', MODE, '\nRECURRENT_MULTITURN:', RECURRENT_MULTITURN, '\nFORCE_SINGLE_TURN:', FORCE_SINGLE_TURN, '\nWORD_EMBEDDINGS:', WORD_EMBEDDINGS, '\nRECURRENT_CELL:', RECURRENT_CELL, '\nATTENTION:', ATTENTION)
+    return config
 
 def get_model(vocabs, tokenizer, language, multi_turn, input_steps, nlp):
-    model = Model(input_steps, embedding_size, hidden_size, vocabs, WORD_EMBEDDINGS, RECURRENT_CELL, ATTENTION, LOSS_SUM, multi_turn, None, RECURRENT_MULTITURN, THREE_STAGES, INTENT_EXTRACTION_MODE)
+    model = Model(input_steps, config['LABEL_EMB_SIZE'], config['LSTM_SIZE'], vocabs, config['WORD_EMBEDDINGS'], config['RECURRENT_CELL'], config['ATTENTION'], config['FORCE_SINGLE_TURN'], multi_turn, None, config['RECURRENT_MULTITURN'], config['THREE_STAGES'], config['INTENT_EXTRACTION_MODE'])
     model.build(nlp, tokenizer, language)
     return model
 
 
-def train(mode):
-    global epoch_num
+def train(mode, config):
     # maximum length of sentences
     input_steps = 100
     # load the train and dev datasets
-    folds = data.load_data(DATASET, SLOTS_TYPE)
+    folds = data.load_data(config['DATASET'], config['SLOTS_TYPE'])
     # preprocess them to list of training/test samples
     # a sample is made up of a tuple that contains
     # - an input sentence (list of words --> strings, padded)
     # - the real length of the sentence (int) to be able to recognize padding
     # - an output sequence (list of IOB annotations --> strings, padded)
     # - an output intent (string)
+    batch_size = config['BATCH_SIZE']
     multi_turn = folds[0]['meta'].get('multi_turn', False)
     print('multi_turn:', multi_turn)
     if multi_turn:
         input_steps *=2
-        folds = [data.collapse_multi_turn_sessions(fold, FORCE_SINGLE_TURN) for fold in folds]
+        folds = [data.collapse_multi_turn_sessions(fold, config['FORCE_SINGLE_TURN']) for fold in folds]
     folds = [data.adjust_sequences(fold, input_steps) for fold in folds]
 
     all_samples = [s for fold in folds for s in fold['data']]
@@ -107,23 +113,23 @@ def train(mode):
 
 
     # turn off multi_turn for the required additional feeds and previous intent RNN
-    if multi_turn and FORCE_SINGLE_TURN == 'no_all' or FORCE_SINGLE_TURN == 'no_previous_intent':
+    if multi_turn and config['FORCE_SINGLE_TURN'] == 'no_all' or config['FORCE_SINGLE_TURN'] == 'no_previous_intent':
         multi_turn = False
     # get the vocabularies for input, slot and intent
     vocabs = data.get_vocabularies(all_samples, meta_data)
     # and get the model
-    if FORCE_SINGLE_TURN == 'no_previous_intent':
+    if config['FORCE_SINGLE_TURN'] == 'no_previous_intent':
         # changing this now, implies that the model doesn't have previous intent
         multi_turn = False
 
-    language_model_name = data.get_language_model_name(meta_data['language'], WORD_EMBEDDINGS)
+    language_model_name = data.get_language_model_name(meta_data['language'], config['WORD_EMBEDDINGS'])
     nlp = spacy.load(language_model_name)
 
-    real_folder = MY_PATH + '/results/' + OUTPUT_FOLDER + '/' + DATASET
+    real_folder = MY_PATH + '/results/' + config['OUTPUT_FOLDER'] + '/' + config['DATASET']
     if not os.path.exists(real_folder):
         os.makedirs(real_folder)
 
-    create_empty_array = lambda: np.zeros((epoch_num, ))
+    create_empty_array = lambda: np.zeros((config['MAX_EPOCHS'], ))
 
     train_folds = []
     test_folds = []
@@ -164,13 +170,13 @@ def train(mode):
 
         if mode.startswith('test'):
             # restore a model
-            model, sess = restore_graph(MODEL_PATH, nlp)
-            epoch_num = 1
+            model, sess = restore_graph(config['MODEL_PATH'], nlp)
+            config['MAX_EPOCHS'] = 1
         else:
             model, sess = build_graph(nlp, vocabs, meta_data, multi_turn, input_steps)
 
-        for epoch in range(epoch_num):
-            print('epoch {}/{}'.format(epoch + 1, epoch_num))
+        for epoch in range(config['MAX_EPOCHS']):
+            print('epoch {}/{}'.format(epoch + 1, config['MAX_EPOCHS']))
             #mean_loss = 0.0
             #train_loss = 0.0
             if not mode.startswith('test'):
@@ -194,7 +200,7 @@ def train(mode):
 
         # initialize the history that will collect some measures
         history = defaultdict(lambda:  defaultdict(create_empty_array))
-        for epoch in range(epoch_num):
+        for epoch in range(config['MAX_EPOCHS']):
             json_fold_location = '{}/json/epoch_{}'.format(real_folder, epoch)
             merged_predicitons = data.merge_prediction_folds(json_fold_location)
             data.save_predictions('{}/json/epoch_{}'.format(real_folder, epoch), 'full', merged_predicitons)
@@ -239,6 +245,7 @@ def train_epoch(model, data):
 
 def test_epoch(model, sess, test_samples, fold_number, real_folder, epoch, input_steps):
     """Perform an epoch of testing"""
+    batch_size = config['BATCH_SIZE']
     if fold_number == 0:
         # copy just on the first fold, avoid overwriting
         data.copy_huric_xml_to('{}/xml/epoch_{}'.format(real_folder, epoch))
@@ -248,7 +255,7 @@ def test_epoch(model, sess, test_samples, fold_number, real_folder, epoch, input
         results = model.step(sess, 'test', batch)
         intent = results['intent']
         intent_attentions = results['intent_attentions']
-        if THREE_STAGES:
+        if config['THREE_STAGES']:
             bd_prediction = results['bd']
             bd_prediction = np.transpose(bd_prediction, [1, 0])
             ac_prediction = results['ac']
@@ -272,14 +279,14 @@ def test_epoch(model, sess, test_samples, fold_number, real_folder, epoch, input
 
         #print(results)
         predicted_batch = metrics.clean_predictions(decoder_prediction, intent, batch, intent_attentions, bd_attentions, ac_attentions, slots_attentions)
-        if DATASET == 'huric':
+        if config['DATASET'] == 'huric':
             data.huric_add_json('{}/xml/epoch_{}'.format(real_folder, epoch), predicted_batch)
         predicted.extend(predicted_batch)
         if j == 0:
             index = random.choice(range(len(batch)))
             # index = 0
             print('Input Sentence        :', batch[index]['words'][:batch[index]['length']])
-            if THREE_STAGES:
+            if config['THREE_STAGES']:
                 print('BD Truth              :', batch[index]['boundaries'][:batch[index]['length']])
                 print('BD Prediction         :', bd_prediction[index][:batch[index]['length']].tolist())
                 print('AC Truth              :', batch[index]['types'][:batch[index]['length']])
@@ -295,7 +302,7 @@ def test_epoch(model, sess, test_samples, fold_number, real_folder, epoch, input
 
     data.save_predictions('{}/json/epoch_{}'.format(real_folder, epoch), fold_number + 1, predicted)
     # epoch resume
-    print('epoch {}/{} on fold {}'.format(epoch + 1, epoch_num, fold_number + 1))
+    print('epoch {}/{} on fold {}'.format(epoch + 1, config['MAX_EPOCHS'], fold_number + 1))
     performance = metrics.evaluate_epoch(predicted)
     for metric_name, value in performance.items():
         print('%20s' % metric_name, value)
@@ -313,4 +320,5 @@ def save_file(file_content, file_path, file_name):
 
 
 if __name__ == '__main__':
-    train(MODE)
+    config = load_config(os.environ.get('CONFIG_FILE', None))
+    train(config['MODE'], config)

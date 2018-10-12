@@ -91,7 +91,7 @@ def reduce_slots(file_content, slots_type):
         file_content['meta']['slot_types'] = sorted(set(slots_to_iob_only(file_content['meta']['slot_types'])))
         for sample in file_content['data']:
             sample['slots'] = slots_to_iob_only(sample['slots'])
-    elif slots_type == 'slot_only':
+    elif slots_type == 'type_only':
         file_content['meta']['slot_types'] = sorted(set(slots_to_types_only(file_content['meta']['slot_types'])))
         for sample in file_content['data']:
             sample['slots'] = slots_to_types_only(sample['slots'])
@@ -295,6 +295,8 @@ def get_language_model_name(language, word_embeddings):
             return 'en_core_web_sm'
         elif word_embeddings == 'medium':
             return 'en_core_web_md'
+        elif word_embeddings == 'random':
+            return 'en_core_web_sm' # they will be not used
         else:
             raise ValueError('wrong value for word embeddings' + word_embeddings)
     if language == 'it':
@@ -302,6 +304,8 @@ def get_language_model_name(language, word_embeddings):
             return 'it_vectors_wiki_lg'
         elif word_embeddings == 'small':
             return 'it_core_news_sm'
+        elif word_embeddings == 'random':
+            return 'it_core_news_sm' # they will be not used
         else:
             raise ValueError('wrong value for word embeddings' + word_embeddings)
 
