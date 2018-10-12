@@ -771,8 +771,9 @@ def fate_preprocess(folder, dest_path, subset=False):
         })
 
     # second part: to HuRIC xml
-    if not os.path.exists(dest_path):
-        os.makedirs(dest_path)
+    dest_path_all = dest_path + '/source'
+    dest_path_h = dest_path + '_h/source'
+    dest_path_t = dest_path + '_t/source'
     for s in samples:
         new_command = ET.Element('command', {'id': s['id']})
         ET.SubElement(new_command, 'sentence').text = s['sentence']
@@ -795,7 +796,9 @@ def fate_preprocess(folder, dest_path, subset=False):
                     for t_id in fe['fe_ids']:
                         ET.SubElement(new_frame_element, 'token', {'id': str(t_id)})
 
-        write_pretty_xml(new_command, dest_path, s['id'] + '.xml')
+        write_pretty_xml(new_command, dest_path_all, s['id'] + '.xml')
+        dest_path_sub = dest_path_h if '_h_' in s['id'] else dest_path_t
+        write_pretty_xml(new_command, dest_path_sub, s['id'] + '.xml')
 
 def write_pretty_xml(root_element, dst_path, file_name):
     if not os.path.exists(dst_path):
@@ -1015,9 +1018,11 @@ def main():
 
 
     elif which == 'fate':
-        fate_preprocess('fate/source', 'fate/modern/source')
+        fate_preprocess('fate/source', 'fate/modern')
         huric_preprocess('fate/modern')
         huric_preprocess('fate/modern', trim='both')
+        #huric_preprocess('fate/modern_h', trim='both')
+        #huric_preprocess('fate/modern_t', trim='both')
 
     elif which == 'fate_subset':
         fate_preprocess('fate/source', 'fate/modern/source')
