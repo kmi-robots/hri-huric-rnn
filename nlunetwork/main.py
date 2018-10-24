@@ -49,14 +49,14 @@ def load_config(config_override_file_name=None):
     # the type of recurrent unit on the multi-turn: rnn or CRF
     config['RECURRENT_MULTITURN']=os.environ.get('RECURRENT_MULTITURN','gru')
     # partial single-turned net on multi-turn datasets
-    config['FORCE_SINGLE_TURN'] = os.environ.get('FORCE_SINGLE_TURN', False)
-    if config['FORCE_SINGLE_TURN']:
-        config['OUTPUT_FOLDER'] += '_single_' + config['FORCE_SINGLE_TURN']
-    if config['RECURRENT_MULTITURN'] != 'gru':
-        config['OUTPUT_FOLDER'] += '_' + config['RECURRENT_MULTITURN']
+    config['FORCE_SINGLE_TURN'] = os.environ.get('FORCE_SINGLE_TURN', 'no')
+    if config['FORCE_SINGLE_TURN'] in ('false', 'no', '0'):
+        config['FORCE_SINGLE_TURN'] = False
+    config['OUTPUT_FOLDER'] += '_single_' + config['FORCE_SINGLE_TURN']
+    config['OUTPUT_FOLDER'] += '_' + config['RECURRENT_MULTITURN']
     # which loss to reduce
-    config['FORCE_SINGLE_TURN'] = os.environ.get('LOSS_SUM', 'both')
-    config['OUTPUT_FOLDER'] += '_loss_' + config['FORCE_SINGLE_TURN']
+    config['LOSS_SUM'] = os.environ.get('LOSS_SUM', 'both')
+    config['OUTPUT_FOLDER'] += '_loss_' + config['LOSS_SUM']
     # what part of the slots to consider
     config['SLOTS_TYPE'] = os.environ.get('SLOTS_TYPE', 'full')
     config['OUTPUT_FOLDER'] += '_slottype_' + config['SLOTS_TYPE']
@@ -177,6 +177,13 @@ def train(mode, config):
             test_folds.append([s for (count,fold) in enumerate(folds) for s in fold['data']])
     else:
         raise ValueError('invalid mode')
+
+    # filter what is tested, for the dataset combination
+    for f in test_folds:
+        print(len(f))
+        f[:] = [s for s in f if not ('origin' in s)]
+        print(len(f))
+        exit(1)
 
     for fold_number, (training_samples, test_samples) in enumerate(zip(train_folds, test_folds)):
         # reset the graph for next iteration

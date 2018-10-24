@@ -900,12 +900,13 @@ def load_folds(location):
     return results
 
 
-def enrich_huric_train_with_framenet(huric_source_location, framenet_location, huric_dest_location):
+def enrich_huric_with_framenet(huric_source_location, framenet_location, huric_dest_location):
     """This function retrieves additional training data from the preprocessed framenet dataset and enriches the huric dataset by adding more training data into the first 4 folds"""
     # load the huric_source dataset
     huric_folds = load_folds(huric_source_location)
     # load the framenet dataset
     framenet_subset = load_json('{}/all_samples.json'.format(framenet_location))
+    framenet_folds = load_folds(framenet_location)
     # cleanup the framenet to have a proper subset of frame elements
     # first of all by substituting from the mappings (for now only Desired_state_of_affairs --> Desired_state so simpler to work with strings)
     framenet_subset = json.loads(re.sub('Desired_state_of_affairs', 'Desired_state', json.dumps(framenet_subset)))
@@ -920,7 +921,7 @@ def enrich_huric_train_with_framenet(huric_source_location, framenet_location, h
     # go back to structured data
     framenet_data = json.loads(framenet_stringified)['data']
     # split the samples in only 4 folds, to enrich the 4 training folds of HuRIC
-    skf = StratifiedKFold(n_splits=len(huric_folds) - 1, shuffle=True,
+    skf = StratifiedKFold(n_splits=len(huric_folds), shuffle=True,
                           random_state=len(framenet_data))
     framenet_new_folds = []
     intent_values = [s['intent'] for s in framenet_data]
@@ -933,8 +934,10 @@ def enrich_huric_train_with_framenet(huric_source_location, framenet_location, h
     # add the selected commands to the folds 1...k-1 for training only
     for fold_number in range(len(huric_folds)):
         fold = huric_folds[fold_number]
-        if fold_number != 4:
+        if True:
             additional = framenet_new_folds[fold_number]
+            for a in additional:
+                a['origin'] = 'FrameNet'
             fold['data'] += additional
         write_json(huric_dest_location, 'fold_{}.json'.format(fold_number + 1), fold)
 
@@ -1010,11 +1013,11 @@ def main():
         huric_preprocess('framenet/subset', trim='both')
 
     elif which == 'combinations':
-        enrich_huric_train_with_framenet('huric_eb/modern_right/preprocessed', 'framenet/subset_both/preprocessed', 'huric_eb/with_framenet/preprocessed')
-        enrich_huric_train_with_framenet('huric_eb/modern_right/preprocessed', 'fate/subset_both/preprocessed', 'huric_eb/with_fate/preprocessed')
-        enrich_huric_train_with_framenet('huric_eb/with_framenet/preprocessed', 'fate/subset_both/preprocessed', 'huric_eb/with_framenet_and_fate/preprocessed')
+        enrich_huric_with_framenet('huric_eb/modern_right/preprocessed', 'framenet/subset_both/preprocessed', 'huric_eb/with_framenet/preprocessed')
+        #enrich_huric_with_framenet('huric_eb/modern_right/preprocessed', 'fate/subset_both/preprocessed', 'huric_eb/with_fate/preprocessed')
+        #enrich_huric_with_framenet('huric_eb/with_framenet/preprocessed', 'fate/subset_both/preprocessed', 'huric_eb/with_framenet_and_fate/preprocessed')
         # also enrich FATE with FrameNet
-        enrich_huric_train_with_framenet('fate/modern_both/preprocessed', 'framenet/modern_both/preprocessed', 'fate/with_framenet/preprocessed')
+        #enrich_huric_with_framenet('fate/modern_both/preprocessed', 'framenet/modern_both/preprocessed', 'fate/with_framenet/preprocessed')
 
 
     elif which == 'fate':
