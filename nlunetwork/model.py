@@ -40,6 +40,9 @@ class Model:
         # choose between RNN or CRF for the intent combination
         self.intent_combination = (intent_combination or 'gru') if multi_turn else None
 
+        # dropout default disabled
+        self.dropout_keep_probability = tf.placeholder_with_default(1.0, shape=())
+
         self.three_stages = three_stages
         if self.three_stages:
             # enable or not the highway between layer 1 and 3
@@ -71,7 +74,7 @@ class Model:
             self.bot_turn_actual_length = tf.placeholder(tf.int32, [batch_size], name='bot_turn_actual_length')
             # this instead is the previous intent
             self.previous_intent = tf.placeholder(tf.string, [batch_size], name='previous_intent')
-        
+
 
     def build(self, nlp, tokenizer='space', language='en'):
         # get the tensor for batch size
@@ -104,6 +107,8 @@ class Model:
         # the embedded inputs
         self.encoder_inputs_embedded = self.wordsEmbedder.get_word_embeddings(self.words_inputs)
 
+        # dropout on the inputs
+        self.encoder_inputs_embedded = tf.nn.dropout(self.encoder_inputs_embedded, self.dropout_keep_probability)
 
         # The intent gold values
         intent_ids_targets = self.intentEmbedder.get_indexes_from_words_tensor(self.intent_targets)
@@ -147,6 +152,10 @@ class Model:
             encoder_final_state_h = tf.concat((encoder_fw_final_state, encoder_bw_final_state), 1)
             self.encoder_final_state = encoder_final_state_h
 
+        # apply dropout on the encoder outputs
+        encoder_outputs = tf.nn.dropout(encoder_outputs, self.dropout_keep_probability)
+        encoder_final_state_h = tf.nn.dropout(encoder_final_state_h, self.dropout_keep_probability)
+
 
         # the size of final *W+b
         intent_input_size = self.hidden_size * 2
@@ -163,6 +172,10 @@ class Model:
                 raise ValueError(self.intent_extraction_mode)
             # TODO attention_size=50 is a hyperparam
             attention_out, alphas = attention(attention_input, 50, return_alphas=True, time_major=True)
+
+            # dropout on the attention output
+            attention_out = tf.nn.dropout(attention_out, self.dropout_keep_probability)
+
             # overwrite: no more final decoder stage but weighted on attention scores
             self.encoder_final_state = encoder_final_state_h = attention_out
             # make this tensor retrievable by name
@@ -171,7 +184,7 @@ class Model:
             alphas = tf.fill((batch_size_tensor,self.input_steps), 0.0)
         self.attention_scores_intent = tf.identity(alphas, name="attention_alpha_intent")
         # Intent output
-        
+
         # Define the weights and biases to perform the output projection on the intent output
         intent_W = tf.get_variable('intent_W', initializer=tf.random_uniform([intent_input_size, self.intentEmbedder.vocab_size], -0.1, 0.1),
                                dtype=tf.float32)
@@ -313,6 +326,8 @@ class Model:
                 cell = BasicLSTMCell(num_units=self.hidden_state_size)
             elif self.recurrent_cell == 'gru':
                 cell = GRUCell(num_units=self.hidden_state_size)
+            # dropout on the cell output
+            cell = tf.contrib.rnn.DropoutWrapper(cell, output_keep_prob=self.dropout_keep_probability)
             if self.slots_attention:
                 # Get the memory representation (for the attention) by making the
                 # encoder outputs dimensions from (time, batch, hidden_size) to (batch, time, hidden_size)
@@ -329,6 +344,9 @@ class Model:
                     cell, attention_mechanism, attention_layer_size=self.hidden_size, alignment_history=True)
                 # and gets wrapped inside a output projection wrapper (weights+biases),
                 # to have an output with logits on the slot labels dimension
+
+                # dropout on the attention too
+                attn_cell = tf.contrib.rnn.DropoutWrapper(attn_cell, output_keep_prob=self.dropout_keep_probability)
             else:
                 # no attention
                 attn_cell = cell
@@ -387,7 +405,7 @@ class Model:
                 # initial_input = tf.concat((sos_step_embedded, bd_outputs.rnn_output[0], encoder_outputs[0]), 1)
                 initial_input = tf.concat((sos_step_embedded, self.hidden_between_decoders[0]), 1)
                 return initial_elements_finished, initial_input
-            
+
             def next_inputs_fn_ac(time, outputs, state, sample_ids):
                 # From the last output, represented by sample_ids, get its embedded value
                 pred_embedding = self.typesEmbedder.get_word_embeddings_from_ids(sample_ids)
@@ -398,7 +416,7 @@ class Model:
                 # don't modify the state
                 next_state = state
                 return elements_finished, next_inputs, next_state
-            
+
             my_helper_ac = tf.contrib.seq2seq.CustomHelper(initial_fn_ac, sample_fn, next_inputs_fn_ac)
             ac_outputs, ac_states = decode(my_helper_ac, 3)
             if self.slots_attention:
@@ -413,7 +431,7 @@ class Model:
             self.attention_bd_scores = tf.identity(attention_bd_scores, name="attention_alpha_bd")
             self.attention_ac_scores = tf.identity(attention_ac_scores, name="attention_alpha_ac")
 
-        if not self.three_stages: 
+        if not self.three_stages:
             # Now from the slot decoder outputs, get the corresponding output word (slot label, from ids to words)
             self.decoder_prediction = self.slotEmbedder.get_words_from_indexes(tf.to_int64(outputs.sample_id))
             # make this tensor retrievable by name at test time
@@ -459,7 +477,7 @@ class Model:
             self.ac_mask = tf.to_float(tf.not_equal(self.ac_targets_true_length, self.typesEmbedder.get_indexes_from_words_list(['<PAD>'])[0]))
             ac_loss = tf.contrib.seq2seq.sequence_loss(
                 ac_outputs.rnn_output, self.ac_targets_true_length, weights=self.ac_mask)
-            
+
 
         # For the intent, using cross entropy
         cross_entropy = tf.nn.softmax_cross_entropy_with_logits(
@@ -488,7 +506,7 @@ class Model:
         self.train_op = optimizer.apply_gradients(zip(self.gradients, self.vars))
 
 
-    def step(self, sess, mode, train_batch):
+    def step(self, sess, mode, train_batch, dropout_keep_p=1):
         """do a step on the current batch"""
         if mode not in ['train', 'test']:
             print('mode is not supported', file=sys.stderr)
@@ -507,7 +525,8 @@ class Model:
             feed_dict = {
                 self.words_inputs: np.transpose(seq_in, [1, 0]),
                 self.encoder_inputs_actual_length: length,
-                self.intent_targets: intent
+                self.intent_targets: intent,
+                self.dropout_keep_probability: dropout_keep_p
             }
             if self.three_stages:
                 feed_dict.update({
@@ -527,7 +546,7 @@ class Model:
                 output_feeds += [self.decoder_prediction, self.attention_decoder_scores]
             feed_dict = {self.words_inputs: np.transpose(seq_in, [1, 0]),
                         self.encoder_inputs_actual_length: length}
-        
+
         if self.multi_turn:
             feed_dict.update({
                 self.previous_intent: previous_intent,

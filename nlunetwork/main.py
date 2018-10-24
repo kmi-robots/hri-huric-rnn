@@ -77,8 +77,10 @@ def load_config(config_override_file_name=None):
     if config['INTENT_EXTRACTION_MODE'] != 'bi-rnn':
         config['OUTPUT_FOLDER'] += '_intentextraction_' + config['INTENT_EXTRACTION_MODE']
 
+    config['DROPOUT_KEEP_PROB'] = float(os.environ.get('DROPOUT_KEEP_PROB', 1))
+
     # recap and final setting of the output folder
-    config['OUTPUT_FOLDER'] += '___hyper:LABEL_EMB_SIZE={},LSTM_SIZE={},BATCH_SIZE={},MAX_EPOCHS={}'.format(config['LABEL_EMB_SIZE'], config['LSTM_SIZE'], config['BATCH_SIZE'], config['MAX_EPOCHS'])
+    config['OUTPUT_FOLDER'] += '___hyper:LABEL_EMB_SIZE={},LSTM_SIZE={},BATCH_SIZE={},MAX_EPOCHS={},DROPOUT_KEEP_PROB={}'.format(config['LABEL_EMB_SIZE'], config['LSTM_SIZE'], config['BATCH_SIZE'], config['MAX_EPOCHS'], config['DROPOUT_KEEP_PROB'])
 
     print('configuration:', config)
 
@@ -202,7 +204,7 @@ def train(mode, config):
                     # perform a batch of training
                     #print(batch)
                     #_, loss, bd_prediction, decoder_prediction, intent, mask = model.step(sess, 'train', batch)
-                    model.step(sess, 'train', batch)
+                    model.step(sess, 'train', batch, config['DROPOUT_KEEP_PROB'])
 
             if test_samples:
                 test_epoch(model, sess, test_samples, fold_number, real_folder, epoch, input_steps)
