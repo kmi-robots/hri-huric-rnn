@@ -180,10 +180,12 @@ def train(mode, config):
 
     # filter what is tested, for the dataset combination
     for f in test_folds:
-        print(len(f))
+        old_len = len(f)
         f[:] = [s for s in f if not ('origin' in s)]
-        print(len(f))
-        exit(1)
+        new_len = len(f)
+        if old_len != new_len:
+            print('the test is being filtered on the samples without attribute \'origin\'', old_len, new_len)
+
 
     for fold_number, (training_samples, test_samples) in enumerate(zip(train_folds, test_folds)):
         # reset the graph for next iteration
