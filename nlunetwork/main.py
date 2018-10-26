@@ -73,7 +73,7 @@ def load_config(config_override_file_name=None):
     config['OUTPUT_FOLDER'] += '/'
     if config_override_file_name:
         # removing the extension .env
-        config['OUTPUT_FOLDER'] += '.'.join(config_override_file_name.split('.')[:-1])
+        config['OUTPUT_FOLDER'] += '.'.join(config_override_file_name.split('.')[:-1]).split('/')[-1]
 
     print('configuration:', config)
 
