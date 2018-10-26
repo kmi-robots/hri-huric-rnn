@@ -7,7 +7,7 @@ app = Flask(__name__)
 default_model_path = 'nlunetwork/results/train_all/conf_4/huric_eb/with_framenet/'
 model_path = os.environ.get('MODEL_PATH', default_model_path)
 
-if not os.path.isfile(model_path + 'model_fold_0.ckpt.meta') or not os.path.isfile(model_path + 'model_fold_0.index'):
+if not os.path.isfile(model_path + 'model_fold_0.ckpt.meta'):
     raise FileNotFoundError('Check that model files exist in the folder ' + model_path)
 
 nlu = runtime.NLUWrapper(model_path)
