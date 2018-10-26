@@ -181,6 +181,38 @@ def load_xmls(folder):
         file_contents.append(root)
     return file_contents
 
+def get_additional_discriminators_idxs(samples, gold_missing):
+    """Return a map that says for each sample what are the words non-LU that can help as discriminators for Frame Classification"""
+    additional_per_lemma = {
+        # those values have been identified by looking at the results of the function get_lemma_invoker and cleaning them up
+        'be': {'Being_in_category': [], 'Being_located': ['on','in']},
+        'move': {'Motion': ['near', 'to', 'towards', 'along', 'away', 'from'], 'Bringing': ['from']},
+        'put': {'Placing': ['in', 'on', 'under', 'into', 'down'], 'Closure': ['all', 'the', 'way', 'down'], 'Change_operational_state': ['on']},
+        'get': {'Taking': ['from', 'to', 'in'], 'Bringing': ['me']},
+        'take': {'Bringing': ['to', 'into', 'out', 'me'], 'Taking': ['in', 'near', 'on', 'from']},
+        'come': {'Following': ['with'], 'Motion': ['to']},
+        'open': {'Change_operational_state': [], 'Closure': []},
+        'look': {'Perception_active': ['at'], 'Searching': ['for']}
+    }
+
+    results = {}
+
+    for s in samples:
+        xml_file_name = s['file']
+        # ambiguous LU are made of only one word
+        lu_idx = s['lexical_unit_ids'][0] - 1
+        lu_lemma = gold_missing[s['file']]['lemmas'][lu_idx]
+        additional = additional_per_lemma.get(lu_lemma, None)
+        interesting = []
+        if additional:
+            #this is an ambiguous LU lemma
+            interesting = [idx + s['start_token_id'] for idx, w in enumerate(s['words']) if w in additional[s['intent_true']]]
+
+        results[s['id']] = interesting
+
+    return results
+
+
 def get_lu_pos(root, verbose=False):
     """Returns the POS for all the LU in the current document"""
     w_id_to_pos = {t.attrib['id']: t.attrib['pos'] for t in root.findall('tokens/token')}
@@ -440,13 +472,14 @@ def get_attention_score_on_task(samples, gold_missing, task):
 
     return result
 
-def get_samples_pos_and_deps(gold_location):
+def get_samples_pos_and_lemmas_and_deps(gold_location):
     """Returns a map {file_name: {'pos': [POS_LIST], 'deps': [{'from':FROM, 'to':TO, 'type':TYPE}]}}
     all these informations are missing in the json files"""
     docs = load_xmls(gold_location)
     result = {
         doc.attrib['id'] + '.xml': {
             'pos': [map_tag('en-ptb', 'universal', t.attrib['pos']) for t in doc.findall('tokens/token')],
+            'lemmas': [t.attrib['lemma'] for t in doc.findall('tokens/token')],
             'deps': [d for d in doc.findall('dependencies/dep')]
         }
     for doc in docs}
