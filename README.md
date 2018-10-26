@@ -59,10 +59,11 @@ And look at the results in `lex/results`.
 
 ## Run local server
 
-1. Build the model: `./build_full_model.sh`
-2. Run the server `FLASK_APP=server.py flask run`
+1. Build the models: `./build_full_model.sh`
+2. Run the server `FLASK_APP=server.py flask run` (optionally add `--port PORT_NUMBER` to use another port)
+3. go to [localhost:5000/nlu?text=sentence](http://localhost:5000/nlu?text=sentence)
 
-(To test the three models use the env variable `MODEL_PATH` like `MODEL_PATH=nlunetwork/results/train_all/conf_4/huric_eb/modern_right/ FLASK_APP=server.py flask run`)
+(To test different models use the env variable `MODEL_PATH` like `MODEL_PATH=nlunetwork/results/train_all/conf_4/huric_eb/modern_right/ FLASK_APP=server.py flask run`)
 
 ## Notebooks
 
