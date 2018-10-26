@@ -20,16 +20,18 @@ from nlunetwork import runtime_model
 MY_PATH = os.path.dirname(os.path.abspath(__file__))
 
 def load_config(config_override_file_name=None):
-    config_folder = '{}/../configurations/'.format(MY_PATH)
+    config_file_default = 'configurations/default.env'
     if config_override_file_name:
         config_override_file_path = config_override_file_name
         if not os.path.isfile(config_override_file_path):
             raise ValueError('config file not found: ' + config_override_file_path)
         dotenv.load_dotenv(dotenv_path=config_override_file_path, verbose=True)
 
-    dotenv.load_dotenv(dotenv_path='configurations/default.env')
+    dotenv.load_dotenv(dotenv_path=config_file_default)
 
     config = {}
+    # remember which config file was the origin
+    config['CONFIG_FILE'] = os.environ.get('CONFIG_FILE', config_file_default)
     # embedding size for labels
     config['LABEL_EMB_SIZE'] = int(os.environ.get('LABEL_EMB_SIZE'))
     # size of LSTM cells
