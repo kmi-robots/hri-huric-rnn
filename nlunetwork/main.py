@@ -21,12 +21,13 @@ MY_PATH = os.path.dirname(os.path.abspath(__file__))
 
 def load_config(config_override_file_name=None):
     config_folder = '{}/../configurations/'.format(MY_PATH)
-    dotenv.load_dotenv(dotenv_path=config_folder + 'default.env')
     if config_override_file_name:
-        config_override_file_path = config_folder + config_override_file_name
+        config_override_file_path = config_override_file_name
         if not os.path.isfile(config_override_file_path):
             raise ValueError('config file not found: ' + config_override_file_path)
         dotenv.load_dotenv(dotenv_path=config_override_file_path, verbose=True)
+
+    dotenv.load_dotenv(dotenv_path='configurations/default.env')
 
     config = {}
     # embedding size for labels
@@ -43,7 +44,6 @@ def load_config(config_override_file_name=None):
     config['DATASET'] = os.environ.get('DATASET', 'huric_eb/modern_right')
     # switches the behaviour between several train/test scenarios
     config['MODE'] = os.environ.get('MODE', 'dev_cross')
-    config['OUTPUT_FOLDER'] += config['MODE']
     # specific to test mode
     config['MODEL_PATH'] = os.environ.get('MODEL_PATH')
     # the type of recurrent unit on the multi-turn: rnn or CRF
@@ -52,35 +52,28 @@ def load_config(config_override_file_name=None):
     config['FORCE_SINGLE_TURN'] = os.environ.get('FORCE_SINGLE_TURN', 'no')
     if config['FORCE_SINGLE_TURN'] in ('false', 'no', '0'):
         config['FORCE_SINGLE_TURN'] = False
-    config['OUTPUT_FOLDER'] += '_single_' + config['FORCE_SINGLE_TURN']
-    config['OUTPUT_FOLDER'] += '_' + config['RECURRENT_MULTITURN']
     # which loss to reduce
     config['LOSS_SUM'] = os.environ.get('LOSS_SUM', 'both')
-    config['OUTPUT_FOLDER'] += '_loss_' + config['LOSS_SUM']
     # what part of the slots to consider
     config['SLOTS_TYPE'] = os.environ.get('SLOTS_TYPE', 'full')
-    config['OUTPUT_FOLDER'] += '_slottype_' + config['SLOTS_TYPE']
     # the size of the word embeddings
     config['WORD_EMBEDDINGS'] = os.environ.get('WORD_EMBEDDINGS', 'large')
-    config['OUTPUT_FOLDER'] += '_we_' + config['WORD_EMBEDDINGS']
     # the recurrent cell
     config['RECURRENT_CELL'] = os.environ.get('RECURRENT_CELL', 'lstm')
-    config['OUTPUT_FOLDER'] += '_recurrent_cell_' + config['RECURRENT_CELL']
     config['ATTENTION'] = os.environ.get('ATTENTION', 'both') # intents, slots, both, none
-    config['OUTPUT_FOLDER'] += '_attention_' + config['ATTENTION']
     # if and how to perform three stages
     config['THREE_STAGES'] = os.environ.get('THREE_STAGES', 'true_highway').lower()
     if config['THREE_STAGES'] in ('false', 'no', '0'):
         config['THREE_STAGES'] = False
-    config['OUTPUT_FOLDER'] += '_three_stages_{}'.format(config['THREE_STAGES'])
     config['INTENT_EXTRACTION_MODE'] = os.environ.get('INTENT_EXTRACTION_MODE', 'bi-rnn') # intent comes out of bi-rnn or only a weighted mean (attention intent must be turned on)
-    if config['INTENT_EXTRACTION_MODE'] != 'bi-rnn':
-        config['OUTPUT_FOLDER'] += '_intentextraction_' + config['INTENT_EXTRACTION_MODE']
 
     config['DROPOUT_KEEP_PROB'] = float(os.environ.get('DROPOUT_KEEP_PROB', 1))
 
     # recap and final setting of the output folder
-    config['OUTPUT_FOLDER'] += '___hyper:LABEL_EMB_SIZE={},LSTM_SIZE={},BATCH_SIZE={},MAX_EPOCHS={},DROPOUT_KEEP_PROB={}'.format(config['LABEL_EMB_SIZE'], config['LSTM_SIZE'], config['BATCH_SIZE'], config['MAX_EPOCHS'], config['DROPOUT_KEEP_PROB'])
+    config['OUTPUT_FOLDER'] += '/'
+    if config_override_file_name:
+        # removing the extension .env
+        config['OUTPUT_FOLDER'] += '.'.join(config_override_file_name.split('.')[:-1])
 
     print('configuration:', config)
 

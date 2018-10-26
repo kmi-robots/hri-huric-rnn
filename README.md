@@ -62,6 +62,8 @@ And look at the results in `lex/results`.
 1. Build the model: `./build_full_model.sh`
 2. Run the server `FLASK_APP=server.py flask run`
 
+(To test the three models use the env variable `MODEL_PATH` like `MODEL_PATH=nlunetwork/results/train_all/conf_4/huric_eb/modern_right/ FLASK_APP=server.py flask run`)
+
 ## Notebooks
 
 In the folder [notebooks](notebooks) there are jupyter notebooks for the analysis of results.

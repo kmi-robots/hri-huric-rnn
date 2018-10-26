@@ -1,8 +1,16 @@
+import os
 from flask import Flask, request, jsonify
 from nlunetwork import runtime
 
 app = Flask(__name__)
-nlu = runtime.NLUWrapper()
+
+default_model_path = 'nlunetwork/results/train_all/conf_4/huric_eb/with_framenet/'
+model_path = os.environ.get('MODEL_PATH', default_model_path)
+
+if not os.path.isfile(model_path + 'model_fold_0.ckpt.meta') or not os.path.isfile(model_path + 'model_fold_0.ckpt'):
+    raise FileNotFoundError('Check that model files exist in the folder' + model_path)
+
+nlu = runtime.NLUWrapper(model_path)
 
 @app.route('/')
 def hello():
