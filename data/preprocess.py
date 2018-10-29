@@ -1108,6 +1108,7 @@ def main():
 
     elif which == 'combinations':
         enrich_huric_with_framenet('huric_eb/modern_right/preprocessed', 'framenet/subset_both/preprocessed', 'huric_eb/with_framenet/preprocessed')
+        enrich_huric_with_framenet('huric_eb/modern_right/preprocessed', 'framenet/modern_lu_subset_right/preprocessed', 'huric_eb/with_framenet_lu/preprocessed')
         #enrich_huric_with_framenet('huric_eb/modern_right/preprocessed', 'fate/subset_both/preprocessed', 'huric_eb/with_fate/preprocessed')
         #enrich_huric_with_framenet('huric_eb/with_framenet/preprocessed', 'fate/subset_both/preprocessed', 'huric_eb/with_framenet_and_fate/preprocessed')
         # also enrich FATE with FrameNet
