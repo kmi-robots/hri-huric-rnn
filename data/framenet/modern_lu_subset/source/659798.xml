@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="659798">
+ <sentence>
+  They did not see anything being stowed on the wagon for Ramsey .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="They"/>
+  <token id="2" lemma="do" pos="VBD" surface="did"/>
+  <token id="3" lemma="not" pos="RB" surface="not"/>
+  <token id="4" lemma="see" pos="VB" surface="see"/>
+  <token id="5" lemma="anything" pos="NN" surface="anything"/>
+  <token id="6" lemma="be" pos="VBG" surface="being"/>
+  <token id="7" lemma="stow" pos="VBN" surface="stowed"/>
+  <token id="8" lemma="on" pos="IN" surface="on"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="wagon" pos="NN" surface="wagon"/>
+  <token id="11" lemma="for" pos="IN" surface="for"/>
+  <token id="12" lemma="ramsey" pos="NNP" surface="Ramsey"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="neg"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="nsubjpass"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="4" to="7" type="ccomp"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="4" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

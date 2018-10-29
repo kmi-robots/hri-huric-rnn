@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="400881">
+ <sentence>
+  Looking around I could see the duty Officer approaching from the direction of the farm .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="look" pos="VBG" surface="Looking"/>
+  <token id="2" lemma="around" pos="IN" surface="around"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="4" lemma="could" pos="MD" surface="could"/>
+  <token id="5" lemma="see" pos="VB" surface="see"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="duty" pos="NN" surface="duty"/>
+  <token id="8" lemma="officer" pos="NNP" surface="Officer"/>
+  <token id="9" lemma="approach" pos="VBG" surface="approaching"/>
+  <token id="10" lemma="from" pos="IN" surface="from"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="direction" pos="NN" surface="direction"/>
+  <token id="13" lemma="of" pos="IN" surface="of"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="farm" pos="NN" surface="farm"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="advcl"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="5" to="9" type="ccomp"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="5" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Direction">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Perceiver_agentive">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

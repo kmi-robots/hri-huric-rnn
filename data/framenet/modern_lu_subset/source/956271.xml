@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="956271">
+ <sentence>
+  When we raised our heads above the desk there were clouds of smoke blowing across the chemistry laboratory .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="when" pos="WRB" surface="When"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="3" lemma="raise" pos="VBD" surface="raised"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="our"/>
+  <token id="5" lemma="head" pos="NNS" surface="heads"/>
+  <token id="6" lemma="above" pos="IN" surface="above"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="desk" pos="NN" surface="desk"/>
+  <token id="9" lemma="there" pos="EX" surface="there"/>
+  <token id="10" lemma="be" pos="VBD" surface="were"/>
+  <token id="11" lemma="cloud" pos="NNS" surface="clouds"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="smoke" pos="NN" surface="smoke"/>
+  <token id="14" lemma="blow" pos="VBG" surface="blowing"/>
+  <token id="15" lemma="across" pos="IN" surface="across"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="chemistry" pos="NN" surface="chemistry"/>
+  <token id="18" lemma="laboratory" pos="NN" surface="laboratory"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="advmod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="10" to="3" type="advcl"/>
+  <dep from="5" to="4" type="poss"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="10" to="9" type="expl"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="attr"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="13" to="14" type="acl"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="18" to="16" type="det"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="15" to="18" type="pobj"/>
+  <dep from="10" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

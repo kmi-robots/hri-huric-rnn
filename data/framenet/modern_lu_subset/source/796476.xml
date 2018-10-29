@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="796476">
+ <sentence>
+  The upper atrium will be reached by stairs , escalators or a glass lift .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="upper" pos="JJ" surface="upper"/>
+  <token id="3" lemma="atrium" pos="NN" surface="atrium"/>
+  <token id="4" lemma="will" pos="MD" surface="will"/>
+  <token id="5" lemma="be" pos="VB" surface="be"/>
+  <token id="6" lemma="reach" pos="VBN" surface="reached"/>
+  <token id="7" lemma="by" pos="IN" surface="by"/>
+  <token id="8" lemma="stair" pos="NNS" surface="stairs"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="escalator" pos="NNS" surface="escalators"/>
+  <token id="11" lemma="or" pos="CC" surface="or"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="glass" pos="NN" surface="glass"/>
+  <token id="14" lemma="lift" pos="NN" surface="lift"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="6" to="3" type="nsubjpass"/>
+  <dep from="6" to="4" type="aux"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="agent"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="10" to="11" type="cc"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="10" to="14" type="conj"/>
+  <dep from="6" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

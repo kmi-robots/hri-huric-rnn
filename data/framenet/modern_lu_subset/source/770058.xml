@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770058">
+ <sentence>
+  Over 140 countries worldwide operate an internal express service. * And your SWIFTAIR letter or package will go straight into this express stream once it arrives at its country of destination .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="over" pos="IN" surface="Over"/>
+  <token id="2" lemma="140" pos="CD" surface="140"/>
+  <token id="3" lemma="country" pos="NNS" surface="countries"/>
+  <token id="4" lemma="worldwide" pos="RB" surface="worldwide"/>
+  <token id="5" lemma="operate" pos="VBP" surface="operate"/>
+  <token id="6" lemma="an" pos="DT" surface="an"/>
+  <token id="7" lemma="internal" pos="JJ" surface="internal"/>
+  <token id="8" lemma="express" pos="JJ" surface="express"/>
+  <token id="9" lemma="service." pos="NN" surface="service."/>
+  <token id="10" lemma="*" pos="NFP" surface="*"/>
+  <token id="11" lemma="and" pos="CC" surface="And"/>
+  <token id="12" lemma="-PRON-" pos="PRP$" surface="your"/>
+  <token id="13" lemma="swiftair" pos="NNP" surface="SWIFTAIR"/>
+  <token id="14" lemma="letter" pos="NN" surface="letter"/>
+  <token id="15" lemma="or" pos="CC" surface="or"/>
+  <token id="16" lemma="package" pos="NN" surface="package"/>
+  <token id="17" lemma="will" pos="MD" surface="will"/>
+  <token id="18" lemma="go" pos="VB" surface="go"/>
+  <token id="19" lemma="straight" pos="RB" surface="straight"/>
+  <token id="20" lemma="into" pos="IN" surface="into"/>
+  <token id="21" lemma="this" pos="DT" surface="this"/>
+  <token id="22" lemma="express" pos="JJ" surface="express"/>
+  <token id="23" lemma="stream" pos="NN" surface="stream"/>
+  <token id="24" lemma="once" pos="IN" surface="once"/>
+  <token id="25" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="26" lemma="arrive" pos="VBZ" surface="arrives"/>
+  <token id="27" lemma="at" pos="IN" surface="at"/>
+  <token id="28" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="29" lemma="country" pos="NN" surface="country"/>
+  <token id="30" lemma="of" pos="IN" surface="of"/>
+  <token id="31" lemma="destination" pos="NN" surface="destination"/>
+  <token id="32" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="quantmod"/>
+  <dep from="3" to="2" type="nummod"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="9" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="5" to="9" type="dobj"/>
+  <dep from="18" to="10" type="punct"/>
+  <dep from="18" to="11" type="cc"/>
+  <dep from="14" to="12" type="poss"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="18" to="14" type="nsubj"/>
+  <dep from="14" to="15" type="cc"/>
+  <dep from="14" to="16" type="conj"/>
+  <dep from="18" to="17" type="aux"/>
+  <dep from="0" to="18" type="root"/>
+  <dep from="18" to="19" type="advmod"/>
+  <dep from="18" to="20" type="prep"/>
+  <dep from="23" to="21" type="det"/>
+  <dep from="23" to="22" type="amod"/>
+  <dep from="20" to="23" type="pobj"/>
+  <dep from="26" to="24" type="mark"/>
+  <dep from="26" to="25" type="nsubj"/>
+  <dep from="18" to="26" type="advcl"/>
+  <dep from="26" to="27" type="prep"/>
+  <dep from="29" to="28" type="poss"/>
+  <dep from="27" to="29" type="pobj"/>
+  <dep from="29" to="30" type="prep"/>
+  <dep from="30" to="31" type="pobj"/>
+  <dep from="18" to="32" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="26"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+     <token id="30"/>
+     <token id="31"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

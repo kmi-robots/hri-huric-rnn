@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="769960">
+ <sentence>
+  Felicity was expected to arrive around five o'clock , having driven from Herefordshire .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="felicity" pos="NNP" surface="Felicity"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="expect" pos="VBN" surface="expected"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="arrive" pos="VB" surface="arrive"/>
+  <token id="6" lemma="around" pos="IN" surface="around"/>
+  <token id="7" lemma="five" pos="CD" surface="five"/>
+  <token id="8" lemma="o'clock" pos="NN" surface="o'clock"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="have" pos="VBG" surface="having"/>
+  <token id="11" lemma="drive" pos="VBN" surface="driven"/>
+  <token id="12" lemma="from" pos="IN" surface="from"/>
+  <token id="13" lemma="herefordshire" pos="NNP" surface="Herefordshire"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="xcomp"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="8" to="7" type="nummod"/>
+  <dep from="5" to="8" type="dobj"/>
+  <dep from="5" to="9" type="punct"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="5" to="11" type="advcl"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

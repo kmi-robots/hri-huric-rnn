@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="772083">
+ <sentence>
+  Her husband was away visiting his ailing mother , and the rest of the family was out .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP$" surface="Her"/>
+  <token id="2" lemma="husband" pos="NN" surface="husband"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="away" pos="RB" surface="away"/>
+  <token id="5" lemma="visit" pos="VBG" surface="visiting"/>
+  <token id="6" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="7" lemma="ailing" pos="JJ" surface="ailing"/>
+  <token id="8" lemma="mother" pos="NN" surface="mother"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="rest" pos="NN" surface="rest"/>
+  <token id="13" lemma="of" pos="IN" surface="of"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="family" pos="NN" surface="family"/>
+  <token id="16" lemma="be" pos="VBD" surface="was"/>
+  <token id="17" lemma="out" pos="RB" surface="out"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="poss"/>
+  <dep from="5" to="2" type="nsubj"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="8" to="6" type="poss"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="dobj"/>
+  <dep from="5" to="9" type="punct"/>
+  <dep from="5" to="10" type="cc"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="16" to="12" type="nsubj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="5" to="16" type="conj"/>
+  <dep from="16" to="17" type="advmod"/>
+  <dep from="16" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

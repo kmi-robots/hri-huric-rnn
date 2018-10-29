@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1243087">
+ <sentence>
+  On Aug. 19 French military transport planes began flying planeloads of food aid from Djibouti to Baidoa , where they handed the food to ICRC representatives .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="on" pos="IN" surface="On"/>
+  <token id="2" lemma="aug." pos="NNP" surface="Aug."/>
+  <token id="3" lemma="19" pos="CD" surface="19"/>
+  <token id="4" lemma="french" pos="JJ" surface="French"/>
+  <token id="5" lemma="military" pos="NN" surface="military"/>
+  <token id="6" lemma="transport" pos="NN" surface="transport"/>
+  <token id="7" lemma="plane" pos="NNS" surface="planes"/>
+  <token id="8" lemma="begin" pos="VBD" surface="began"/>
+  <token id="9" lemma="fly" pos="VBG" surface="flying"/>
+  <token id="10" lemma="planeload" pos="NNS" surface="planeloads"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="food" pos="NN" surface="food"/>
+  <token id="13" lemma="aid" pos="NN" surface="aid"/>
+  <token id="14" lemma="from" pos="IN" surface="from"/>
+  <token id="15" lemma="djibouti" pos="NNP" surface="Djibouti"/>
+  <token id="16" lemma="to" pos="IN" surface="to"/>
+  <token id="17" lemma="baidoa" pos="NNP" surface="Baidoa"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="where" pos="WRB" surface="where"/>
+  <token id="20" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="21" lemma="hand" pos="VBD" surface="handed"/>
+  <token id="22" lemma="the" pos="DT" surface="the"/>
+  <token id="23" lemma="food" pos="NN" surface="food"/>
+  <token id="24" lemma="to" pos="IN" surface="to"/>
+  <token id="25" lemma="icrc" pos="NNP" surface="ICRC"/>
+  <token id="26" lemma="representative" pos="NNS" surface="representatives"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="prep"/>
+  <dep from="7" to="2" type="nmod"/>
+  <dep from="2" to="3" type="nummod"/>
+  <dep from="7" to="4" type="amod"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="xcomp"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="9" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="17" to="18" type="punct"/>
+  <dep from="21" to="19" type="advmod"/>
+  <dep from="21" to="20" type="nsubj"/>
+  <dep from="17" to="21" type="relcl"/>
+  <dep from="23" to="22" type="det"/>
+  <dep from="21" to="23" type="dobj"/>
+  <dep from="21" to="24" type="prep"/>
+  <dep from="26" to="25" type="amod"/>
+  <dep from="24" to="26" type="pobj"/>
+  <dep from="8" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

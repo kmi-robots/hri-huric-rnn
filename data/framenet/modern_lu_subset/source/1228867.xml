@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1228867">
+ <sentence>
+  ` The body rolled down the slope into the water .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="``" surface="`"/>
+  <token id="2" lemma="the" pos="DT" surface="The"/>
+  <token id="3" lemma="body" pos="NN" surface="body"/>
+  <token id="4" lemma="roll" pos="VBD" surface="rolled"/>
+  <token id="5" lemma="down" pos="RP" surface="down"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="slope" pos="NN" surface="slope"/>
+  <token id="8" lemma="into" pos="IN" surface="into"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="water" pos="NN" surface="water"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="punct"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prt"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="4" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

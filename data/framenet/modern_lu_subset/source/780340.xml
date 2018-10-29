@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780340">
+ <sentence>
+  Herrick 's eyes searched the room , then looked back at Chen .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="herrick" pos="NNP" surface="Herrick"/>
+  <token id="2" lemma="'s" pos="POS" surface="'s"/>
+  <token id="3" lemma="eye" pos="NNS" surface="eyes"/>
+  <token id="4" lemma="search" pos="VBD" surface="searched"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="room" pos="NN" surface="room"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="then" pos="RB" surface="then"/>
+  <token id="9" lemma="look" pos="VBD" surface="looked"/>
+  <token id="10" lemma="back" pos="RB" surface="back"/>
+  <token id="11" lemma="at" pos="IN" surface="at"/>
+  <token id="12" lemma="chen" pos="NNP" surface="Chen"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="poss"/>
+  <dep from="1" to="2" type="case"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="4" to="7" type="punct"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="4" to="9" type="dep"/>
+  <dep from="9" to="10" type="advmod"/>
+  <dep from="9" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="4" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

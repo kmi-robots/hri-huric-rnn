@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="878169">
+ <sentence>
+  As he crested it he flinched .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="as" pos="IN" surface="As"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="3" lemma="crest" pos="VBD" surface="crested"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="6" lemma="flinch" pos="VBD" surface="flinched"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="mark"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="6" to="3" type="advcl"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

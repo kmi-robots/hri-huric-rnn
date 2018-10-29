@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="826804">
+ <sentence>
+  She read and read and read while her aunt mended the socks of her husband and brothers or sewed innumerable buttons on their shirts .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="She"/>
+  <token id="2" lemma="read" pos="VBD" surface="read"/>
+  <token id="3" lemma="and" pos="CC" surface="and"/>
+  <token id="4" lemma="read" pos="VBD" surface="read"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="read" pos="VBD" surface="read"/>
+  <token id="7" lemma="while" pos="IN" surface="while"/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="9" lemma="aunt" pos="NN" surface="aunt"/>
+  <token id="10" lemma="mend" pos="VBD" surface="mended"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="sock" pos="NNS" surface="socks"/>
+  <token id="13" lemma="of" pos="IN" surface="of"/>
+  <token id="14" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="15" lemma="husband" pos="NN" surface="husband"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="brother" pos="NNS" surface="brothers"/>
+  <token id="18" lemma="or" pos="CC" surface="or"/>
+  <token id="19" lemma="sew" pos="VBN" surface="sewed"/>
+  <token id="20" lemma="innumerable" pos="JJ" surface="innumerable"/>
+  <token id="21" lemma="button" pos="NNS" surface="buttons"/>
+  <token id="22" lemma="on" pos="IN" surface="on"/>
+  <token id="23" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="24" lemma="shirt" pos="NNS" surface="shirts"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="4" to="6" type="conj"/>
+  <dep from="10" to="7" type="mark"/>
+  <dep from="9" to="8" type="poss"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="6" to="10" type="advcl"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="poss"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="15" to="16" type="cc"/>
+  <dep from="15" to="17" type="conj"/>
+  <dep from="10" to="18" type="cc"/>
+  <dep from="10" to="19" type="conj"/>
+  <dep from="21" to="20" type="amod"/>
+  <dep from="19" to="21" type="dobj"/>
+  <dep from="21" to="22" type="prep"/>
+  <dep from="24" to="23" type="poss"/>
+  <dep from="22" to="24" type="pobj"/>
+  <dep from="2" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

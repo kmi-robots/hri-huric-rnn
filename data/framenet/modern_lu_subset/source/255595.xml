@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="255595">
+ <sentence>
+  Willie stared in amazement at the fields , his thin woollen socks heaped around his ankles .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="willie" pos="NNP" surface="Willie"/>
+  <token id="2" lemma="star" pos="VBD" surface="stared"/>
+  <token id="3" lemma="in" pos="IN" surface="in"/>
+  <token id="4" lemma="amazement" pos="NN" surface="amazement"/>
+  <token id="5" lemma="at" pos="IN" surface="at"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="field" pos="NNS" surface="fields"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="10" lemma="thin" pos="JJ" surface="thin"/>
+  <token id="11" lemma="woollen" pos="JJ" surface="woollen"/>
+  <token id="12" lemma="sock" pos="NNS" surface="socks"/>
+  <token id="13" lemma="heap" pos="VBN" surface="heaped"/>
+  <token id="14" lemma="around" pos="IN" surface="around"/>
+  <token id="15" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="16" lemma="ankle" pos="NNS" surface="ankles"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="13" to="2" type="ccomp"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="13" to="8" type="punct"/>
+  <dep from="12" to="9" type="poss"/>
+  <dep from="12" to="10" type="amod"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="poss"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="13" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

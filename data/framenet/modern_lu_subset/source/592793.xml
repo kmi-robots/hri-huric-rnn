@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="592793">
+ <sentence>
+  Then she followed the old woman up the stairs .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="then" pos="RB" surface="Then"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="3" lemma="follow" pos="VBD" surface="followed"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="old" pos="JJ" surface="old"/>
+  <token id="6" lemma="woman" pos="NN" surface="woman"/>
+  <token id="7" lemma="up" pos="IN" surface="up"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="stair" pos="NNS" surface="stairs"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="advmod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="3" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

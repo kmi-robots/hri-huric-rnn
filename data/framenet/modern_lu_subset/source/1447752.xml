@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1447752">
+ <sentence>
+  Water pressure deactivates the autofocusing mechanism , and a close-up mode will give sharp results from a subject only two feet away .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="water" pos="NN" surface="Water"/>
+  <token id="2" lemma="pressure" pos="NN" surface="pressure"/>
+  <token id="3" lemma="deactivate" pos="VBZ" surface="deactivates"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="autofocusing" pos="NN" surface="autofocusing"/>
+  <token id="6" lemma="mechanism" pos="NN" surface="mechanism"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="close-up" pos="NN" surface="close-up"/>
+  <token id="11" lemma="mode" pos="NN" surface="mode"/>
+  <token id="12" lemma="will" pos="MD" surface="will"/>
+  <token id="13" lemma="give" pos="VB" surface="give"/>
+  <token id="14" lemma="sharp" pos="JJ" surface="sharp"/>
+  <token id="15" lemma="result" pos="NNS" surface="results"/>
+  <token id="16" lemma="from" pos="IN" surface="from"/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="subject" pos="NN" surface="subject"/>
+  <token id="19" lemma="only" pos="RB" surface="only"/>
+  <token id="20" lemma="two" pos="CD" surface="two"/>
+  <token id="21" lemma="foot" pos="NNS" surface="feet"/>
+  <token id="22" lemma="away" pos="RB" surface="away"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="punct"/>
+  <dep from="3" to="8" type="cc"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="13" to="11" type="nsubj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="3" to="13" type="conj"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="13" to="15" type="dobj"/>
+  <dep from="13" to="16" type="prep"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="20" to="19" type="advmod"/>
+  <dep from="21" to="20" type="nummod"/>
+  <dep from="22" to="21" type="npadvmod"/>
+  <dep from="13" to="22" type="advmod"/>
+  <dep from="13" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_operational_state">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Device">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

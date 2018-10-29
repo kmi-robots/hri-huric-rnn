@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780313">
+ <sentence>
+  They had orders to search every village in the area , but they did n't take anything .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="They"/>
+  <token id="2" lemma="have" pos="VBD" surface="had"/>
+  <token id="3" lemma="order" pos="NNS" surface="orders"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="search" pos="VB" surface="search"/>
+  <token id="6" lemma="every" pos="DT" surface="every"/>
+  <token id="7" lemma="village" pos="NN" surface="village"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="area" pos="NN" surface="area"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="but" pos="CC" surface="but"/>
+  <token id="13" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="14" lemma="do" pos="VBD" surface="did"/>
+  <token id="15" lemma="n't" pos="RB" surface="n't"/>
+  <token id="16" lemma="take" pos="VB" surface="take"/>
+  <token id="17" lemma="anything" pos="NN" surface="anything"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="acl"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="2" to="11" type="punct"/>
+  <dep from="2" to="12" type="cc"/>
+  <dep from="16" to="13" type="nsubj"/>
+  <dep from="16" to="14" type="aux"/>
+  <dep from="16" to="15" type="neg"/>
+  <dep from="2" to="16" type="conj"/>
+  <dep from="16" to="17" type="dobj"/>
+  <dep from="16" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

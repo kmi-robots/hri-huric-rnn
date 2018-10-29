@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="400676">
+ <sentence>
+  Ballater explained Marshall 's background while Rose listened silently .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="ballater" pos="NNP" surface="Ballater"/>
+  <token id="2" lemma="explain" pos="VBD" surface="explained"/>
+  <token id="3" lemma="marshall" pos="NNP" surface="Marshall"/>
+  <token id="4" lemma="'s" pos="POS" surface="'s"/>
+  <token id="5" lemma="background" pos="NN" surface="background"/>
+  <token id="6" lemma="while" pos="IN" surface="while"/>
+  <token id="7" lemma="rose" pos="NNP" surface="Rose"/>
+  <token id="8" lemma="listen" pos="VBD" surface="listened"/>
+  <token id="9" lemma="silently" pos="RB" surface="silently"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="poss"/>
+  <dep from="3" to="4" type="case"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="8" to="6" type="mark"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="2" to="8" type="advcl"/>
+  <dep from="8" to="9" type="advmod"/>
+  <dep from="2" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

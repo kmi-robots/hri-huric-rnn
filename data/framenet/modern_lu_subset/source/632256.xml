@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="632256">
+ <sentence>
+  Unfortunately she had been placed next to Dorothy , Fred 's daughter , in one routine .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="unfortunately" pos="RB" surface="Unfortunately"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="3" lemma="have" pos="VBD" surface="had"/>
+  <token id="4" lemma="be" pos="VBN" surface="been"/>
+  <token id="5" lemma="place" pos="VBN" surface="placed"/>
+  <token id="6" lemma="next" pos="RB" surface="next"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="dorothy" pos="NNP" surface="Dorothy"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="fred" pos="NNP" surface="Fred"/>
+  <token id="11" lemma="'s" pos="POS" surface="'s"/>
+  <token id="12" lemma="daughter" pos="NN" surface="daughter"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="in" pos="IN" surface="in"/>
+  <token id="15" lemma="one" pos="CD" surface="one"/>
+  <token id="16" lemma="routine" pos="NN" surface="routine"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="advmod"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="advmod"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="12" to="10" type="poss"/>
+  <dep from="10" to="11" type="case"/>
+  <dep from="8" to="12" type="appos"/>
+  <dep from="8" to="13" type="punct"/>
+  <dep from="5" to="14" type="prep"/>
+  <dep from="16" to="15" type="nummod"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="5" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

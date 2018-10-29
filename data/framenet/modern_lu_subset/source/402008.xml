@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="402008">
+ <sentence>
+  Why should observations through a telescope be preferred to naked-eye observations ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="why" pos="WRB" surface="Why"/>
+  <token id="2" lemma="should" pos="MD" surface="should"/>
+  <token id="3" lemma="observation" pos="NNS" surface="observations"/>
+  <token id="4" lemma="through" pos="IN" surface="through"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="telescope" pos="NN" surface="telescope"/>
+  <token id="7" lemma="be" pos="VB" surface="be"/>
+  <token id="8" lemma="prefer" pos="VBN" surface="preferred"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="naked-eye" pos="NN" surface="naked-eye"/>
+  <token id="11" lemma="observation" pos="NNS" surface="observations"/>
+  <token id="12" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="advmod"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="8" to="3" type="csubjpass"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="8" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Direction">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

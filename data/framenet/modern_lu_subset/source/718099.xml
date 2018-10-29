@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="718099">
+ <sentence>
+  He uncorked the bottle and carefully poured the brandy .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="uncork" pos="VBD" surface="uncorked"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="bottle" pos="NN" surface="bottle"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="carefully" pos="RB" surface="carefully"/>
+  <token id="7" lemma="pour" pos="VBD" surface="poured"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="brandy" pos="NN" surface="brandy"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="cc"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="2" to="7" type="conj"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="2" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Closure">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Containing_object">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Fastener">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

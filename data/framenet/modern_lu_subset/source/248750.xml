@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="248750">
+ <sentence>
+  Passion fruit : eat pulp straight from the fruit or drizzle over ice-cream or sorbets .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="passion" pos="NN" surface="Passion"/>
+  <token id="2" lemma="fruit" pos="NN" surface="fruit"/>
+  <token id="3" lemma=":" pos=":" surface=":"/>
+  <token id="4" lemma="eat" pos="VB" surface="eat"/>
+  <token id="5" lemma="pulp" pos="NN" surface="pulp"/>
+  <token id="6" lemma="straight" pos="RB" surface="straight"/>
+  <token id="7" lemma="from" pos="IN" surface="from"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="fruit" pos="NN" surface="fruit"/>
+  <token id="10" lemma="or" pos="CC" surface="or"/>
+  <token id="11" lemma="drizzle" pos="NN" surface="drizzle"/>
+  <token id="12" lemma="over" pos="IN" surface="over"/>
+  <token id="13" lemma="ice-cream" pos="NN" surface="ice-cream"/>
+  <token id="14" lemma="or" pos="CC" surface="or"/>
+  <token id="15" lemma="sorbet" pos="NNS" surface="sorbets"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="4" to="10" type="cc"/>
+  <dep from="4" to="11" type="conj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="4" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

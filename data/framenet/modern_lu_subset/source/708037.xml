@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="708037">
+ <sentence>
+  The very sick had been wheeled into spaces vacated by simple fracture and tonsillectomies .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="very" pos="RB" surface="very"/>
+  <token id="3" lemma="sick" pos="JJ" surface="sick"/>
+  <token id="4" lemma="have" pos="VBD" surface="had"/>
+  <token id="5" lemma="be" pos="VBN" surface="been"/>
+  <token id="6" lemma="wheel" pos="VBN" surface="wheeled"/>
+  <token id="7" lemma="into" pos="IN" surface="into"/>
+  <token id="8" lemma="space" pos="NNS" surface="spaces"/>
+  <token id="9" lemma="vacate" pos="VBN" surface="vacated"/>
+  <token id="10" lemma="by" pos="IN" surface="by"/>
+  <token id="11" lemma="simple" pos="JJ" surface="simple"/>
+  <token id="12" lemma="fracture" pos="NN" surface="fracture"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="tonsillectomy" pos="NNS" surface="tonsillectomies"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="6" to="3" type="nsubjpass"/>
+  <dep from="6" to="4" type="aux"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="8" to="9" type="acl"/>
+  <dep from="9" to="10" type="agent"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="12" to="14" type="conj"/>
+  <dep from="6" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

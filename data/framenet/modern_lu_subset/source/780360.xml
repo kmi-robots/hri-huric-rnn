@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780360">
+ <sentence>
+  He would be searched at Checkpoint Charlie .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="would" pos="MD" surface="would"/>
+  <token id="3" lemma="be" pos="VB" surface="be"/>
+  <token id="4" lemma="search" pos="VBN" surface="searched"/>
+  <token id="5" lemma="at" pos="IN" surface="at"/>
+  <token id="6" lemma="checkpoint" pos="NNP" surface="Checkpoint"/>
+  <token id="7" lemma="charlie" pos="NNP" surface="Charlie"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubjpass"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="4" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="779703">
+ <sentence>
+  Tony finished his evening meal and scanned through the television programmes in the local newspaper .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="tony" pos="NNP" surface="Tony"/>
+  <token id="2" lemma="finish" pos="VBD" surface="finished"/>
+  <token id="3" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="4" lemma="evening" pos="NN" surface="evening"/>
+  <token id="5" lemma="meal" pos="NN" surface="meal"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="scan" pos="VBD" surface="scanned"/>
+  <token id="8" lemma="through" pos="IN" surface="through"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="television" pos="NN" surface="television"/>
+  <token id="11" lemma="programme" pos="NNS" surface="programmes"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="local" pos="JJ" surface="local"/>
+  <token id="15" lemma="newspaper" pos="NN" surface="newspaper"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="poss"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="2" to="6" type="cc"/>
+  <dep from="2" to="7" type="conj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="12" to="15" type="pobj"/>
+  <dep from="2" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

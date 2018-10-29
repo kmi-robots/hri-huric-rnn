@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="405955">
+ <sentence>
+  Fairley was considered to have been converted into a sex monster by viewing pornographic films .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="fairley" pos="NNP" surface="Fairley"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="consider" pos="VBN" surface="considered"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="have" pos="VB" surface="have"/>
+  <token id="6" lemma="be" pos="VBN" surface="been"/>
+  <token id="7" lemma="convert" pos="VBN" surface="converted"/>
+  <token id="8" lemma="into" pos="IN" surface="into"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="sex" pos="NN" surface="sex"/>
+  <token id="11" lemma="monster" pos="NN" surface="monster"/>
+  <token id="12" lemma="by" pos="IN" surface="by"/>
+  <token id="13" lemma="view" pos="VBG" surface="viewing"/>
+  <token id="14" lemma="pornographic" pos="JJ" surface="pornographic"/>
+  <token id="15" lemma="film" pos="NNS" surface="films"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="7" to="4" type="aux"/>
+  <dep from="7" to="5" type="aux"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="3" to="7" type="xcomp"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="7" to="12" type="prep"/>
+  <dep from="12" to="13" type="pcomp"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="13" to="15" type="dobj"/>
+  <dep from="3" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="781289">
+ <sentence>
+  He surveyed them with loathing .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="survey" pos="VBD" surface="surveyed"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="4" lemma="with" pos="IN" surface="with"/>
+  <token id="5" lemma="loathing" pos="NN" surface="loathing"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

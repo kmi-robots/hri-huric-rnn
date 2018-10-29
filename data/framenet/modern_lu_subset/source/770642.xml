@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770642">
+ <sentence>
+  I graduated from Salford in June 1987 and came straight out here to teach in a privately-owned Academy .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="graduate" pos="VBD" surface="graduated"/>
+  <token id="3" lemma="from" pos="IN" surface="from"/>
+  <token id="4" lemma="salford" pos="NNP" surface="Salford"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="june" pos="NNP" surface="June"/>
+  <token id="7" lemma="1987" pos="CD" surface="1987"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="come" pos="VBD" surface="came"/>
+  <token id="10" lemma="straight" pos="RB" surface="straight"/>
+  <token id="11" lemma="out" pos="RB" surface="out"/>
+  <token id="12" lemma="here" pos="RB" surface="here"/>
+  <token id="13" lemma="to" pos="TO" surface="to"/>
+  <token id="14" lemma="teach" pos="VB" surface="teach"/>
+  <token id="15" lemma="in" pos="IN" surface="in"/>
+  <token id="16" lemma="a" pos="DT" surface="a"/>
+  <token id="17" lemma="privately-owned" pos="JJ" surface="privately-owned"/>
+  <token id="18" lemma="academy" pos="NNP" surface="Academy"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="6" to="7" type="nummod"/>
+  <dep from="2" to="8" type="cc"/>
+  <dep from="2" to="9" type="conj"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="12" to="11" type="advmod"/>
+  <dep from="9" to="12" type="advmod"/>
+  <dep from="14" to="13" type="aux"/>
+  <dep from="9" to="14" type="advcl"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="18" to="16" type="det"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="15" to="18" type="pobj"/>
+  <dep from="2" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

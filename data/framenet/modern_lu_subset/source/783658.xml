@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="783658">
+ <sentence>
+  Bosley and Hughes knelt on him and manacled his hands behind his back .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="bosley" pos="NNP" surface="Bosley"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="hughes" pos="NNP" surface="Hughes"/>
+  <token id="4" lemma="knelt" pos="VBP" surface="knelt"/>
+  <token id="5" lemma="on" pos="IN" surface="on"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="manacle" pos="VBD" surface="manacled"/>
+  <token id="9" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="10" lemma="hand" pos="NNS" surface="hands"/>
+  <token id="11" lemma="behind" pos="IN" surface="behind"/>
+  <token id="12" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="13" lemma="back" pos="NN" surface="back"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="4" to="7" type="cc"/>
+  <dep from="4" to="8" type="conj"/>
+  <dep from="10" to="9" type="poss"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="8" to="11" type="prep"/>
+  <dep from="13" to="12" type="poss"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Items">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="711561">
+ <sentence>
+  A cheer went up as Joe was lifted on a stretcher and carried from the van into the house .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="cheer" pos="NN" surface="cheer"/>
+  <token id="3" lemma="go" pos="VBD" surface="went"/>
+  <token id="4" lemma="up" pos="RP" surface="up"/>
+  <token id="5" lemma="as" pos="IN" surface="as"/>
+  <token id="6" lemma="joe" pos="NNP" surface="Joe"/>
+  <token id="7" lemma="be" pos="VBD" surface="was"/>
+  <token id="8" lemma="lift" pos="VBN" surface="lifted"/>
+  <token id="9" lemma="on" pos="IN" surface="on"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="stretcher" pos="NN" surface="stretcher"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="carry" pos="VBD" surface="carried"/>
+  <token id="14" lemma="from" pos="IN" surface="from"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="van" pos="NN" surface="van"/>
+  <token id="17" lemma="into" pos="IN" surface="into"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="house" pos="NN" surface="house"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prt"/>
+  <dep from="8" to="5" type="mark"/>
+  <dep from="8" to="6" type="nsubjpass"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="3" to="8" type="advcl"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="8" to="12" type="cc"/>
+  <dep from="8" to="13" type="conj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="13" to="17" type="prep"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="3" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

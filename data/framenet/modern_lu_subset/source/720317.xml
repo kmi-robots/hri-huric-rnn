@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="720317">
+ <sentence>
+  Horse brasses had been tacked along the length of the oaken lintel and gleamed in the firelight .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="horse" pos="NN" surface="Horse"/>
+  <token id="2" lemma="brass" pos="NNS" surface="brasses"/>
+  <token id="3" lemma="have" pos="VBD" surface="had"/>
+  <token id="4" lemma="be" pos="VBN" surface="been"/>
+  <token id="5" lemma="tack" pos="VBN" surface="tacked"/>
+  <token id="6" lemma="along" pos="IN" surface="along"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="length" pos="NN" surface="length"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="oaken" pos="JJ" surface="oaken"/>
+  <token id="12" lemma="lintel" pos="NN" surface="lintel"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="gleam" pos="VBD" surface="gleamed"/>
+  <token id="15" lemma="in" pos="IN" surface="in"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="firelight" pos="NN" surface="firelight"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="5" to="13" type="cc"/>
+  <dep from="5" to="14" type="conj"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="5" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

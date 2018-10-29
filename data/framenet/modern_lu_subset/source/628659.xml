@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="628659">
+ <sentence>
+  The staff room should have a locker and/or a place to hang clothes , and nearby there may be staff toilets .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="staff" pos="NN" surface="staff"/>
+  <token id="3" lemma="room" pos="NN" surface="room"/>
+  <token id="4" lemma="should" pos="MD" surface="should"/>
+  <token id="5" lemma="have" pos="VB" surface="have"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="locker" pos="NN" surface="locker"/>
+  <token id="8" lemma="and/or" pos="CC" surface="and/or"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="place" pos="NN" surface="place"/>
+  <token id="11" lemma="to" pos="TO" surface="to"/>
+  <token id="12" lemma="hang" pos="VB" surface="hang"/>
+  <token id="13" lemma="clothe" pos="NNS" surface="clothes"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="nearby" pos="RB" surface="nearby"/>
+  <token id="17" lemma="there" pos="EX" surface="there"/>
+  <token id="18" lemma="may" pos="MD" surface="may"/>
+  <token id="19" lemma="be" pos="VB" surface="be"/>
+  <token id="20" lemma="staff" pos="NN" surface="staff"/>
+  <token id="21" lemma="toilet" pos="NNS" surface="toilets"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="7" to="8" type="acl"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="7" to="10" type="conj"/>
+  <dep from="12" to="11" type="aux"/>
+  <dep from="10" to="12" type="relcl"/>
+  <dep from="12" to="13" type="dobj"/>
+  <dep from="5" to="14" type="punct"/>
+  <dep from="5" to="15" type="cc"/>
+  <dep from="19" to="16" type="advmod"/>
+  <dep from="19" to="17" type="expl"/>
+  <dep from="19" to="18" type="aux"/>
+  <dep from="5" to="19" type="conj"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="19" to="21" type="attr"/>
+  <dep from="19" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

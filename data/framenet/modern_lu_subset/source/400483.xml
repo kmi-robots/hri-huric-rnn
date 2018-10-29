@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="400483">
+ <sentence>
+  Fiona glanced off to one side a couple of times .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="fiona" pos="NNP" surface="Fiona"/>
+  <token id="2" lemma="glance" pos="VBD" surface="glanced"/>
+  <token id="3" lemma="off" pos="RP" surface="off"/>
+  <token id="4" lemma="to" pos="IN" surface="to"/>
+  <token id="5" lemma="one" pos="CD" surface="one"/>
+  <token id="6" lemma="side" pos="NN" surface="side"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="couple" pos="NN" surface="couple"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="time" pos="NNS" surface="times"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prt"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="2" to="8" type="dobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

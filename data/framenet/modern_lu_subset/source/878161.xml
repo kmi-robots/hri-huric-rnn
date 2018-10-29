@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="878161">
+ <sentence>
+  Jack finally crested the hill and stood in the shadow of the Monument .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="jack" pos="NNP" surface="Jack"/>
+  <token id="2" lemma="finally" pos="RB" surface="finally"/>
+  <token id="3" lemma="crest" pos="VBD" surface="crested"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="hill" pos="NN" surface="hill"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="stand" pos="VBD" surface="stood"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="shadow" pos="NN" surface="shadow"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="monument" pos="NNP" surface="Monument"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="cc"/>
+  <dep from="3" to="7" type="conj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

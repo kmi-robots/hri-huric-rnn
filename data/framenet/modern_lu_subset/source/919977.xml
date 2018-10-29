@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="919977">
+ <sentence>
+  ` One or two of these mushrooms are deliquescing already , " Rodney picked out a couple and put them in a plastic bag .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="''" surface="`"/>
+  <token id="2" lemma="one" pos="CD" surface="One"/>
+  <token id="3" lemma="or" pos="CC" surface="or"/>
+  <token id="4" lemma="two" pos="CD" surface="two"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="these" pos="DT" surface="these"/>
+  <token id="7" lemma="mushroom" pos="NNS" surface="mushrooms"/>
+  <token id="8" lemma="be" pos="VBP" surface="are"/>
+  <token id="9" lemma="deliquesce" pos="VBG" surface="deliquescing"/>
+  <token id="10" lemma="already" pos="RB" surface="already"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma='"' pos="''" surface='"'/>
+  <token id="13" lemma="rodney" pos="NNP" surface="Rodney"/>
+  <token id="14" lemma="pick" pos="VBD" surface="picked"/>
+  <token id="15" lemma="out" pos="RP" surface="out"/>
+  <token id="16" lemma="a" pos="DT" surface="a"/>
+  <token id="17" lemma="couple" pos="NN" surface="couple"/>
+  <token id="18" lemma="and" pos="CC" surface="and"/>
+  <token id="19" lemma="put" pos="VB" surface="put"/>
+  <token id="20" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="21" lemma="in" pos="IN" surface="in"/>
+  <token id="22" lemma="a" pos="DT" surface="a"/>
+  <token id="23" lemma="plastic" pos="JJ" surface="plastic"/>
+  <token id="24" lemma="bag" pos="NN" surface="bag"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="punct"/>
+  <dep from="9" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="14" to="9" type="ccomp"/>
+  <dep from="9" to="10" type="advmod"/>
+  <dep from="14" to="11" type="punct"/>
+  <dep from="14" to="12" type="punct"/>
+  <dep from="14" to="13" type="nsubj"/>
+  <dep from="0" to="14" type="root"/>
+  <dep from="14" to="15" type="prt"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="14" to="17" type="dobj"/>
+  <dep from="14" to="18" type="cc"/>
+  <dep from="14" to="19" type="conj"/>
+  <dep from="19" to="20" type="dobj"/>
+  <dep from="19" to="21" type="prep"/>
+  <dep from="24" to="22" type="det"/>
+  <dep from="24" to="23" type="amod"/>
+  <dep from="21" to="24" type="pobj"/>
+  <dep from="14" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

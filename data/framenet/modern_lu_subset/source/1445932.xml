@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1445932">
+ <sentence>
+  The traditional unit is a box that sits between the mains and the AC-in socket on your computer .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="traditional" pos="JJ" surface="traditional"/>
+  <token id="3" lemma="unit" pos="NN" surface="unit"/>
+  <token id="4" lemma="be" pos="VBZ" surface="is"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="box" pos="NN" surface="box"/>
+  <token id="7" lemma="that" pos="WDT" surface="that"/>
+  <token id="8" lemma="sit" pos="VBZ" surface="sits"/>
+  <token id="9" lemma="between" pos="IN" surface="between"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="main" pos="NNS" surface="mains"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="ac-in" pos="JJ" surface="AC-in"/>
+  <token id="15" lemma="socket" pos="NN" surface="socket"/>
+  <token id="16" lemma="on" pos="IN" surface="on"/>
+  <token id="17" lemma="-PRON-" pos="PRP$" surface="your"/>
+  <token id="18" lemma="computer" pos="NN" surface="computer"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="attr"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="6" to="8" type="relcl"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="11" to="15" type="conj"/>
+  <dep from="11" to="16" type="prep"/>
+  <dep from="18" to="17" type="poss"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="4" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_located">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

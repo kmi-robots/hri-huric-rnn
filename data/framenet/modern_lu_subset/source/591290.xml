@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="591290">
+ <sentence>
+  Hunter escorted the strapped Jones up to the royal box … and HRH Prince Philip asked Hunter …
+ </sentence>
+ <tokens>
+  <token id="1" lemma="hunter" pos="NNP" surface="Hunter"/>
+  <token id="2" lemma="escort" pos="VBD" surface="escorted"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="strapped" pos="JJ" surface="strapped"/>
+  <token id="5" lemma="jones" pos="NNP" surface="Jones"/>
+  <token id="6" lemma="up" pos="IN" surface="up"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="royal" pos="JJ" surface="royal"/>
+  <token id="10" lemma="box" pos="NN" surface="box"/>
+  <token id="11" lemma="…" pos="NFP" surface="…"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="hrh" pos="NNP" surface="HRH"/>
+  <token id="14" lemma="prince" pos="NNP" surface="Prince"/>
+  <token id="15" lemma="philip" pos="NNP" surface="Philip"/>
+  <token id="16" lemma="ask" pos="VBD" surface="asked"/>
+  <token id="17" lemma="hunter" pos="NNP" surface="Hunter"/>
+  <token id="18" lemma="…" pos="." surface="…"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="2" to="6" type="prt"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="2" to="11" type="dobj"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="15" to="13" type="compound"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="11" to="15" type="conj"/>
+  <dep from="2" to="16" type="conj"/>
+  <dep from="16" to="17" type="dobj"/>
+  <dep from="16" to="18" type="dobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

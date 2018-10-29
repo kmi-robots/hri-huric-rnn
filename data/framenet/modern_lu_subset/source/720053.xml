@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="720053">
+ <sentence>
+  Inflammatory proclamations had already been pasted on the cathedral in Riga .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="inflammatory" pos="JJ" surface="Inflammatory"/>
+  <token id="2" lemma="proclamation" pos="NNS" surface="proclamations"/>
+  <token id="3" lemma="have" pos="VBD" surface="had"/>
+  <token id="4" lemma="already" pos="RB" surface="already"/>
+  <token id="5" lemma="be" pos="VBN" surface="been"/>
+  <token id="6" lemma="paste" pos="VBN" surface="pasted"/>
+  <token id="7" lemma="on" pos="IN" surface="on"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="cathedral" pos="NN" surface="cathedral"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="riga" pos="NNP" surface="Riga"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="6" to="2" type="nsubjpass"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="6" to="4" type="advmod"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="6" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

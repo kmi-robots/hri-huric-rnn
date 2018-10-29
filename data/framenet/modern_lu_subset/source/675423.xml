@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="675423">
+ <sentence>
+  The place was surround by troops as the journalists were ushered in .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="place" pos="NN" surface="place"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="surround" pos="VBN" surface="surround"/>
+  <token id="5" lemma="by" pos="IN" surface="by"/>
+  <token id="6" lemma="troop" pos="NNS" surface="troops"/>
+  <token id="7" lemma="as" pos="IN" surface="as"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="journalist" pos="NNS" surface="journalists"/>
+  <token id="10" lemma="be" pos="VBD" surface="were"/>
+  <token id="11" lemma="usher" pos="VBN" surface="ushered"/>
+  <token id="12" lemma="in" pos="RB" surface="in"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="agent"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="11" to="7" type="mark"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="11" to="9" type="nsubjpass"/>
+  <dep from="11" to="10" type="auxpass"/>
+  <dep from="4" to="11" type="advcl"/>
+  <dep from="11" to="12" type="prt"/>
+  <dep from="4" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Cotheme">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

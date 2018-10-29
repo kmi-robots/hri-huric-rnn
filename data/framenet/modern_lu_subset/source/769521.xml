@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="769521">
+ <sentence>
+  Where the mains leads are soldered to the output socket SK1 the solder joints and tags should be covered with plastic sleeving .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="where" pos="WRB" surface="Where"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="main" pos="NNS" surface="mains"/>
+  <token id="4" lemma="lead" pos="NNS" surface="leads"/>
+  <token id="5" lemma="be" pos="VBP" surface="are"/>
+  <token id="6" lemma="solder" pos="VBN" surface="soldered"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="output" pos="NN" surface="output"/>
+  <token id="10" lemma="socket" pos="NN" surface="socket"/>
+  <token id="11" lemma="sk1" pos="NNP" surface="SK1"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="solder" pos="NN" surface="solder"/>
+  <token id="14" lemma="joint" pos="NNS" surface="joints"/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="tag" pos="NNS" surface="tags"/>
+  <token id="17" lemma="should" pos="MD" surface="should"/>
+  <token id="18" lemma="be" pos="VB" surface="be"/>
+  <token id="19" lemma="cover" pos="VBN" surface="covered"/>
+  <token id="20" lemma="with" pos="IN" surface="with"/>
+  <token id="21" lemma="plastic" pos="NN" surface="plastic"/>
+  <token id="22" lemma="sleeving" pos="NN" surface="sleeving"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="6" to="4" type="csubjpass"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="10" to="11" type="appos"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="19" to="14" type="nsubjpass"/>
+  <dep from="14" to="15" type="cc"/>
+  <dep from="14" to="16" type="conj"/>
+  <dep from="19" to="17" type="aux"/>
+  <dep from="19" to="18" type="auxpass"/>
+  <dep from="6" to="19" type="conj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="22" to="21" type="compound"/>
+  <dep from="20" to="22" type="pobj"/>
+  <dep from="6" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

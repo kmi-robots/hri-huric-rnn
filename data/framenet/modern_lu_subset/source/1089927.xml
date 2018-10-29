@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1089927">
+ <sentence>
+  To mark the opening , Seve played a hole with selected partners , many of whom had donated sums of money to charity for the privilege .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="to" pos="TO" surface="To"/>
+  <token id="2" lemma="mark" pos="VB" surface="mark"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="opening" pos="NN" surface="opening"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="seve" pos="NNP" surface="Seve"/>
+  <token id="7" lemma="play" pos="VBD" surface="played"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="hole" pos="NN" surface="hole"/>
+  <token id="10" lemma="with" pos="IN" surface="with"/>
+  <token id="11" lemma="select" pos="VBN" surface="selected"/>
+  <token id="12" lemma="partner" pos="NNS" surface="partners"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="many" pos="DT" surface="many"/>
+  <token id="15" lemma="of" pos="IN" surface="of"/>
+  <token id="16" lemma="whom" pos="WP" surface="whom"/>
+  <token id="17" lemma="have" pos="VBD" surface="had"/>
+  <token id="18" lemma="donate" pos="VBN" surface="donated"/>
+  <token id="19" lemma="sum" pos="NNS" surface="sums"/>
+  <token id="20" lemma="of" pos="IN" surface="of"/>
+  <token id="21" lemma="money" pos="NN" surface="money"/>
+  <token id="22" lemma="to" pos="IN" surface="to"/>
+  <token id="23" lemma="charity" pos="NN" surface="charity"/>
+  <token id="24" lemma="for" pos="IN" surface="for"/>
+  <token id="25" lemma="the" pos="DT" surface="the"/>
+  <token id="26" lemma="privilege" pos="NN" surface="privilege"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="aux"/>
+  <dep from="7" to="2" type="advcl"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="7" to="5" type="punct"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="18" to="14" type="nsubj"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="18" to="17" type="aux"/>
+  <dep from="12" to="18" type="relcl"/>
+  <dep from="18" to="19" type="dobj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="20" to="21" type="pobj"/>
+  <dep from="18" to="22" type="prep"/>
+  <dep from="22" to="23" type="pobj"/>
+  <dep from="23" to="24" type="prep"/>
+  <dep from="26" to="25" type="det"/>
+  <dep from="24" to="26" type="pobj"/>
+  <dep from="7" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Explanation">
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+    <frameElement type="Donor">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

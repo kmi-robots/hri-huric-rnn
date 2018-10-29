@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="851962">
+ <sentence>
+  Our trusty electric breaker was called for , and ear defenders were handed out -- they were absolutely vital !
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP$" surface="Our"/>
+  <token id="2" lemma="trusty" pos="NN" surface="trusty"/>
+  <token id="3" lemma="electric" pos="JJ" surface="electric"/>
+  <token id="4" lemma="breaker" pos="NN" surface="breaker"/>
+  <token id="5" lemma="be" pos="VBD" surface="was"/>
+  <token id="6" lemma="call" pos="VBN" surface="called"/>
+  <token id="7" lemma="for" pos="IN" surface="for"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="ear" pos="NN" surface="ear"/>
+  <token id="11" lemma="defender" pos="NNS" surface="defenders"/>
+  <token id="12" lemma="be" pos="VBD" surface="were"/>
+  <token id="13" lemma="hand" pos="VBN" surface="handed"/>
+  <token id="14" lemma="out" pos="RP" surface="out"/>
+  <token id="15" lemma="--" pos=":" surface="--"/>
+  <token id="16" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="17" lemma="be" pos="VBD" surface="were"/>
+  <token id="18" lemma="absolutely" pos="RB" surface="absolutely"/>
+  <token id="19" lemma="vital" pos="JJ" surface="vital"/>
+  <token id="20" lemma="!" pos="." surface="!"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="poss"/>
+  <dep from="4" to="2" type="compound"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="6" to="4" type="nsubjpass"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="oprd"/>
+  <dep from="6" to="8" type="punct"/>
+  <dep from="6" to="9" type="cc"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="13" to="11" type="nsubjpass"/>
+  <dep from="13" to="12" type="auxpass"/>
+  <dep from="17" to="13" type="ccomp"/>
+  <dep from="13" to="14" type="prt"/>
+  <dep from="17" to="15" type="punct"/>
+  <dep from="17" to="16" type="nsubj"/>
+  <dep from="6" to="17" type="conj"/>
+  <dep from="19" to="18" type="advmod"/>
+  <dep from="17" to="19" type="acomp"/>
+  <dep from="17" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

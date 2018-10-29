@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="626894">
+ <sentence>
+  In some places the topsoil had been eroded and we had to zigzag up on loose scree .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="some" pos="DT" surface="some"/>
+  <token id="3" lemma="place" pos="NNS" surface="places"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="topsoil" pos="NN" surface="topsoil"/>
+  <token id="6" lemma="have" pos="VBD" surface="had"/>
+  <token id="7" lemma="be" pos="VBN" surface="been"/>
+  <token id="8" lemma="erode" pos="VBN" surface="eroded"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="11" lemma="have" pos="VBD" surface="had"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="zigzag" pos="VB" surface="zigzag"/>
+  <token id="14" lemma="up" pos="RP" surface="up"/>
+  <token id="15" lemma="on" pos="IN" surface="on"/>
+  <token id="16" lemma="loose" pos="JJ" surface="loose"/>
+  <token id="17" lemma="scree" pos="NN" surface="scree"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="8" to="5" type="nsubjpass"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="8" to="11" type="conj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="11" to="13" type="xcomp"/>
+  <dep from="13" to="14" type="prt"/>
+  <dep from="13" to="15" type="prep"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="11" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

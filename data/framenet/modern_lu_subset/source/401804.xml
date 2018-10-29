@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="401804">
+ <sentence>
+  The first known observations of Venus through a telescope were made by Galileo in 1610 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="first" pos="JJ" surface="first"/>
+  <token id="3" lemma="know" pos="VBN" surface="known"/>
+  <token id="4" lemma="observation" pos="NNS" surface="observations"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="venus" pos="NNP" surface="Venus"/>
+  <token id="7" lemma="through" pos="IN" surface="through"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="telescope" pos="NN" surface="telescope"/>
+  <token id="10" lemma="be" pos="VBD" surface="were"/>
+  <token id="11" lemma="make" pos="VBN" surface="made"/>
+  <token id="12" lemma="by" pos="IN" surface="by"/>
+  <token id="13" lemma="galileo" pos="NNP" surface="Galileo"/>
+  <token id="14" lemma="in" pos="IN" surface="in"/>
+  <token id="15" lemma="1610" pos="CD" surface="1610"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="det"/>
+  <dep from="4" to="2" type="amod"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="11" to="4" type="nsubjpass"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="11" to="10" type="auxpass"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="agent"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="11" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="11" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

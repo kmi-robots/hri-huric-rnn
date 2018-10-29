@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="920711">
+ <sentence>
+  Damp rising through solid floors can usually be cured by brushing on a double coat of liquid bitumen-based damp-proofing compound .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="damp" pos="VB" surface="Damp"/>
+  <token id="2" lemma="rise" pos="VBG" surface="rising"/>
+  <token id="3" lemma="through" pos="IN" surface="through"/>
+  <token id="4" lemma="solid" pos="JJ" surface="solid"/>
+  <token id="5" lemma="floor" pos="NNS" surface="floors"/>
+  <token id="6" lemma="can" pos="MD" surface="can"/>
+  <token id="7" lemma="usually" pos="RB" surface="usually"/>
+  <token id="8" lemma="be" pos="VB" surface="be"/>
+  <token id="9" lemma="cure" pos="VBN" surface="cured"/>
+  <token id="10" lemma="by" pos="IN" surface="by"/>
+  <token id="11" lemma="brush" pos="VBG" surface="brushing"/>
+  <token id="12" lemma="on" pos="IN" surface="on"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="double" pos="JJ" surface="double"/>
+  <token id="15" lemma="coat" pos="NN" surface="coat"/>
+  <token id="16" lemma="of" pos="IN" surface="of"/>
+  <token id="17" lemma="liquid" pos="JJ" surface="liquid"/>
+  <token id="18" lemma="bitumen-bas" pos="VBN" surface="bitumen-based"/>
+  <token id="19" lemma="damp-proofing" pos="JJ" surface="damp-proofing"/>
+  <token id="20" lemma="compound" pos="NN" surface="compound"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="9" to="2" type="csubjpass"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="9" to="6" type="aux"/>
+  <dep from="9" to="7" type="advmod"/>
+  <dep from="9" to="8" type="auxpass"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pcomp"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="12" to="15" type="pobj"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="20" to="17" type="amod"/>
+  <dep from="20" to="18" type="amod"/>
+  <dep from="20" to="19" type="amod"/>
+  <dep from="16" to="20" type="pobj"/>
+  <dep from="9" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

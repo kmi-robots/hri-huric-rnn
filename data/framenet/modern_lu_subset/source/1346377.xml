@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1346377">
+ <sentence>
+  Katherine meandered through smoky rooms .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="katherine" pos="NNP" surface="Katherine"/>
+  <token id="2" lemma="meander" pos="VBD" surface="meandered"/>
+  <token id="3" lemma="through" pos="IN" surface="through"/>
+  <token id="4" lemma="smoky" pos="JJ" surface="smoky"/>
+  <token id="5" lemma="room" pos="NNS" surface="rooms"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

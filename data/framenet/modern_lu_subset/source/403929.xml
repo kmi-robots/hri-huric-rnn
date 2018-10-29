@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403929">
+ <sentence>
+  You smelt a sharp excitement on the air ,
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="You"/>
+  <token id="2" lemma="smelt" pos="VBP" surface="smelt"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="sharp" pos="JJ" surface="sharp"/>
+  <token id="5" lemma="excitement" pos="NN" surface="excitement"/>
+  <token id="6" lemma="on" pos="IN" surface="on"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="air" pos="NN" surface="air"/>
+  <token id="9" lemma="," pos="," surface=","/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

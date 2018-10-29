@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="400277">
+ <sentence>
+  ` You say you 're my best friend but you do n't even listen when I speak to you .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="``" surface="`"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="You"/>
+  <token id="3" lemma="say" pos="VBP" surface="say"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="5" lemma="be" pos="VBP" surface="'re"/>
+  <token id="6" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="7" lemma="good" pos="JJS" surface="best"/>
+  <token id="8" lemma="friend" pos="NN" surface="friend"/>
+  <token id="9" lemma="but" pos="CC" surface="but"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="11" lemma="do" pos="VBP" surface="do"/>
+  <token id="12" lemma="n't" pos="RB" surface="n't"/>
+  <token id="13" lemma="even" pos="RB" surface="even"/>
+  <token id="14" lemma="listen" pos="VB" surface="listen"/>
+  <token id="15" lemma="when" pos="WRB" surface="when"/>
+  <token id="16" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="17" lemma="speak" pos="VBP" surface="speak"/>
+  <token id="18" lemma="to" pos="IN" surface="to"/>
+  <token id="19" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="punct"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="3" to="5" type="ccomp"/>
+  <dep from="8" to="6" type="poss"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="attr"/>
+  <dep from="14" to="9" type="cc"/>
+  <dep from="14" to="10" type="nsubj"/>
+  <dep from="14" to="11" type="aux"/>
+  <dep from="14" to="12" type="neg"/>
+  <dep from="14" to="13" type="advmod"/>
+  <dep from="0" to="14" type="root"/>
+  <dep from="17" to="15" type="advmod"/>
+  <dep from="17" to="16" type="nsubj"/>
+  <dep from="14" to="17" type="advcl"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="18" to="19" type="pobj"/>
+  <dep from="14" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="582345">
+ <sentence>
+  The elephants were formerly used to haul trunks from the logging operations .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="elephant" pos="NNS" surface="elephants"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="formerly" pos="RB" surface="formerly"/>
+  <token id="5" lemma="use" pos="VBN" surface="used"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="haul" pos="VB" surface="haul"/>
+  <token id="8" lemma="trunk" pos="NNS" surface="trunks"/>
+  <token id="9" lemma="from" pos="IN" surface="from"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="log" pos="VBG" surface="logging"/>
+  <token id="12" lemma="operation" pos="NNS" surface="operations"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="auxpass"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="5" to="7" type="xcomp"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="7" to="9" type="prep"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="5" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

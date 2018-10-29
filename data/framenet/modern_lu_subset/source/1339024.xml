@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1339024">
+ <sentence>
+  Then , if there 's time , I 'll do a general inspection . "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="then" pos="RB" surface="Then"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="if" pos="IN" surface="if"/>
+  <token id="4" lemma="there" pos="EX" surface="there"/>
+  <token id="5" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="6" lemma="time" pos="NN" surface="time"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="9" lemma="'ll" pos="MD" surface="'ll"/>
+  <token id="10" lemma="do" pos="VB" surface="do"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="general" pos="JJ" surface="general"/>
+  <token id="13" lemma="inspection" pos="NN" surface="inspection"/>
+  <token id="14" lemma="." pos="." surface="."/>
+  <token id="15" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="advmod"/>
+  <dep from="10" to="2" type="punct"/>
+  <dep from="5" to="3" type="mark"/>
+  <dep from="5" to="4" type="expl"/>
+  <dep from="10" to="5" type="advcl"/>
+  <dep from="5" to="6" type="attr"/>
+  <dep from="10" to="7" type="punct"/>
+  <dep from="10" to="8" type="nsubj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="dobj"/>
+  <dep from="10" to="14" type="punct"/>
+  <dep from="10" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Inspecting">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Inspector">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

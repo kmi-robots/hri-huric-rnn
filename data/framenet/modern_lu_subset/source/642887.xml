@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="642887">
+ <sentence>
+  There are free buses to ferry you from hotel to cable-car stations and the town has a warm , friendly atmosphere .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="free" pos="JJ" surface="free"/>
+  <token id="4" lemma="bus" pos="NNS" surface="buses"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="ferry" pos="VB" surface="ferry"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="8" lemma="from" pos="IN" surface="from"/>
+  <token id="9" lemma="hotel" pos="NN" surface="hotel"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="cable-car" pos="NN" surface="cable-car"/>
+  <token id="12" lemma="station" pos="NNS" surface="stations"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="town" pos="NN" surface="town"/>
+  <token id="16" lemma="have" pos="VBZ" surface="has"/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="warm" pos="JJ" surface="warm"/>
+  <token id="19" lemma="," pos="," surface=","/>
+  <token id="20" lemma="friendly" pos="JJ" surface="friendly"/>
+  <token id="21" lemma="atmosphere" pos="NN" surface="atmosphere"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="2" to="4" type="attr"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="4" to="6" type="relcl"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="6" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="6" to="10" type="prep"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="2" to="13" type="cc"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="16" to="15" type="nsubj"/>
+  <dep from="2" to="16" type="conj"/>
+  <dep from="21" to="17" type="det"/>
+  <dep from="21" to="18" type="amod"/>
+  <dep from="21" to="19" type="punct"/>
+  <dep from="21" to="20" type="amod"/>
+  <dep from="16" to="21" type="dobj"/>
+  <dep from="16" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Carrier">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

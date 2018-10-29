@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="404996">
+ <sentence>
+  The white woman stared into her wine-glass as her friend started speaking .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="white" pos="JJ" surface="white"/>
+  <token id="3" lemma="woman" pos="NN" surface="woman"/>
+  <token id="4" lemma="star" pos="VBD" surface="stared"/>
+  <token id="5" lemma="into" pos="IN" surface="into"/>
+  <token id="6" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="7" lemma="wine-glass" pos="NN" surface="wine-glass"/>
+  <token id="8" lemma="as" pos="IN" surface="as"/>
+  <token id="9" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="10" lemma="friend" pos="NN" surface="friend"/>
+  <token id="11" lemma="start" pos="VBD" surface="started"/>
+  <token id="12" lemma="speak" pos="VBG" surface="speaking"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="poss"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="11" to="8" type="mark"/>
+  <dep from="10" to="9" type="poss"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="4" to="11" type="advcl"/>
+  <dep from="11" to="12" type="xcomp"/>
+  <dep from="4" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

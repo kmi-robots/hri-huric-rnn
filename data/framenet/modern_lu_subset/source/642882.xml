@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="642882">
+ <sentence>
+  Since the tragedy , the Swindon Bus Company has been ferrying the children across town .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="since" pos="IN" surface="Since"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="tragedy" pos="NN" surface="tragedy"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="swindon" pos="NNP" surface="Swindon"/>
+  <token id="7" lemma="bus" pos="NNP" surface="Bus"/>
+  <token id="8" lemma="company" pos="NNP" surface="Company"/>
+  <token id="9" lemma="have" pos="VBZ" surface="has"/>
+  <token id="10" lemma="be" pos="VBN" surface="been"/>
+  <token id="11" lemma="ferry" pos="VBG" surface="ferrying"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="child" pos="NNS" surface="children"/>
+  <token id="14" lemma="across" pos="IN" surface="across"/>
+  <token id="15" lemma="town" pos="NN" surface="town"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="11" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="11" to="4" type="punct"/>
+  <dep from="8" to="5" type="det"/>
+  <dep from="8" to="6" type="compound"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="11" to="8" type="nsubj"/>
+  <dep from="11" to="9" type="aux"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="dobj"/>
+  <dep from="11" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="11" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

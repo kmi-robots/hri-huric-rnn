@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="632166">
+ <sentence>
+  Place your hands above your knees so you can feel and see the muscle contractions .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="place" pos="VB" surface="Place"/>
+  <token id="2" lemma="-PRON-" pos="PRP$" surface="your"/>
+  <token id="3" lemma="hand" pos="NNS" surface="hands"/>
+  <token id="4" lemma="above" pos="IN" surface="above"/>
+  <token id="5" lemma="-PRON-" pos="PRP$" surface="your"/>
+  <token id="6" lemma="knee" pos="NNS" surface="knees"/>
+  <token id="7" lemma="so" pos="IN" surface="so"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="9" lemma="can" pos="MD" surface="can"/>
+  <token id="10" lemma="feel" pos="VB" surface="feel"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="see" pos="VB" surface="see"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="muscle" pos="NN" surface="muscle"/>
+  <token id="15" lemma="contraction" pos="NNS" surface="contractions"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="poss"/>
+  <dep from="1" to="3" type="dobj"/>
+  <dep from="1" to="4" type="prep"/>
+  <dep from="6" to="5" type="poss"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="10" to="7" type="mark"/>
+  <dep from="10" to="8" type="nsubj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="1" to="10" type="advcl"/>
+  <dep from="10" to="11" type="cc"/>
+  <dep from="10" to="12" type="conj"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="12" to="15" type="dobj"/>
+  <dep from="1" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

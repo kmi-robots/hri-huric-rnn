@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="720304">
+ <sentence>
+  A pin-up was tacked to the wall with drawing pins , whereas a reproduction print was carefully framed and positioned .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="pin-up" pos="NN" surface="pin-up"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="tack" pos="VBN" surface="tacked"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="wall" pos="NN" surface="wall"/>
+  <token id="8" lemma="with" pos="IN" surface="with"/>
+  <token id="9" lemma="draw" pos="VBG" surface="drawing"/>
+  <token id="10" lemma="pin" pos="NNS" surface="pins"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="whereas" pos="IN" surface="whereas"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="reproduction" pos="NN" surface="reproduction"/>
+  <token id="15" lemma="print" pos="NN" surface="print"/>
+  <token id="16" lemma="be" pos="VBD" surface="was"/>
+  <token id="17" lemma="carefully" pos="RB" surface="carefully"/>
+  <token id="18" lemma="frame" pos="VBN" surface="framed"/>
+  <token id="19" lemma="and" pos="CC" surface="and"/>
+  <token id="20" lemma="position" pos="VBN" surface="positioned"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="4" to="8" type="prep"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="4" to="11" type="punct"/>
+  <dep from="18" to="12" type="mark"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="18" to="15" type="nsubjpass"/>
+  <dep from="18" to="16" type="auxpass"/>
+  <dep from="18" to="17" type="advmod"/>
+  <dep from="4" to="18" type="advcl"/>
+  <dep from="18" to="19" type="cc"/>
+  <dep from="18" to="20" type="conj"/>
+  <dep from="4" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

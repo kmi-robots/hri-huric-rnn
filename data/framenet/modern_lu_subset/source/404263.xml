@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="404263">
+ <sentence>
+  A sniff of tea , a whiff of biscuits , and there would soon be a crowd .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="sniff" pos="NN" surface="sniff"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="tea" pos="NN" surface="tea"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="whiff" pos="NN" surface="whiff"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="biscuit" pos="NNS" surface="biscuits"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="there" pos="EX" surface="there"/>
+  <token id="13" lemma="would" pos="MD" surface="would"/>
+  <token id="14" lemma="soon" pos="RB" surface="soon"/>
+  <token id="15" lemma="be" pos="VB" surface="be"/>
+  <token id="16" lemma="a" pos="DT" surface="a"/>
+  <token id="17" lemma="crowd" pos="NN" surface="crowd"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="2" to="5" type="punct"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="2" to="7" type="appos"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="2" to="10" type="punct"/>
+  <dep from="2" to="11" type="cc"/>
+  <dep from="15" to="12" type="expl"/>
+  <dep from="15" to="13" type="aux"/>
+  <dep from="15" to="14" type="advmod"/>
+  <dep from="2" to="15" type="conj"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="attr"/>
+  <dep from="15" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

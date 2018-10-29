@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="779498">
+ <sentence>
+  Manville perused the cryptic message with satisfaction .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="manville" pos="NNP" surface="Manville"/>
+  <token id="2" lemma="peruse" pos="VBD" surface="perused"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="cryptic" pos="JJ" surface="cryptic"/>
+  <token id="5" lemma="message" pos="NN" surface="message"/>
+  <token id="6" lemma="with" pos="IN" surface="with"/>
+  <token id="7" lemma="satisfaction" pos="NN" surface="satisfaction"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="2" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="2" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="399425">
+ <sentence>
+  Now he did glance behind , to see the car following steadily .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="now" pos="RB" surface="Now"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="3" lemma="do" pos="VBD" surface="did"/>
+  <token id="4" lemma="glance" pos="NN" surface="glance"/>
+  <token id="5" lemma="behind" pos="RB" surface="behind"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="see" pos="VB" surface="see"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="car" pos="NN" surface="car"/>
+  <token id="11" lemma="follow" pos="VBG" surface="following"/>
+  <token id="12" lemma="steadily" pos="RB" surface="steadily"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="advmod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="3" to="5" type="advmod"/>
+  <dep from="3" to="6" type="punct"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="3" to="8" type="advcl"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="8" to="11" type="ccomp"/>
+  <dep from="11" to="12" type="advmod"/>
+  <dep from="3" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403255">
+ <sentence>
+  The woman peered where she pointed , out into the night .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="woman" pos="NN" surface="woman"/>
+  <token id="3" lemma="peer" pos="VBD" surface="peered"/>
+  <token id="4" lemma="where" pos="WRB" surface="where"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="6" lemma="point" pos="VBD" surface="pointed"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="out" pos="IN" surface="out"/>
+  <token id="9" lemma="into" pos="IN" surface="into"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="night" pos="NN" surface="night"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="advmod"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="3" to="6" type="advcl"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="6" to="8" type="prt"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="3" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

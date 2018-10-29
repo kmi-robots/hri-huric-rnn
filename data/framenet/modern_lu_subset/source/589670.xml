@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="589670">
+ <sentence>
+  Police cars chased two men after a raid at a chemist shop in Tarporley on Saturday .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="police" pos="NNS" surface="Police"/>
+  <token id="2" lemma="car" pos="NNS" surface="cars"/>
+  <token id="3" lemma="chase" pos="VBD" surface="chased"/>
+  <token id="4" lemma="two" pos="CD" surface="two"/>
+  <token id="5" lemma="man" pos="NNS" surface="men"/>
+  <token id="6" lemma="after" pos="IN" surface="after"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="raid" pos="NN" surface="raid"/>
+  <token id="9" lemma="at" pos="IN" surface="at"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="chemist" pos="NN" surface="chemist"/>
+  <token id="12" lemma="shop" pos="NN" surface="shop"/>
+  <token id="13" lemma="in" pos="IN" surface="in"/>
+  <token id="14" lemma="tarporley" pos="NNP" surface="Tarporley"/>
+  <token id="15" lemma="on" pos="IN" surface="on"/>
+  <token id="16" lemma="saturday" pos="NNP" surface="Saturday"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="nummod"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="8" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="3" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

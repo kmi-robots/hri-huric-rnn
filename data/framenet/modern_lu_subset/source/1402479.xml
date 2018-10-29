@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1402479">
+ <sentence>
+  Babies are sometimes refused entry to Holloway because there is no room or they will be too old before their mother leaves .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="baby" pos="NNS" surface="Babies"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="sometimes" pos="RB" surface="sometimes"/>
+  <token id="4" lemma="refuse" pos="VBN" surface="refused"/>
+  <token id="5" lemma="entry" pos="NN" surface="entry"/>
+  <token id="6" lemma="to" pos="IN" surface="to"/>
+  <token id="7" lemma="holloway" pos="NNP" surface="Holloway"/>
+  <token id="8" lemma="because" pos="IN" surface="because"/>
+  <token id="9" lemma="there" pos="EX" surface="there"/>
+  <token id="10" lemma="be" pos="VBZ" surface="is"/>
+  <token id="11" lemma="no" pos="DT" surface="no"/>
+  <token id="12" lemma="room" pos="NN" surface="room"/>
+  <token id="13" lemma="or" pos="CC" surface="or"/>
+  <token id="14" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="15" lemma="will" pos="MD" surface="will"/>
+  <token id="16" lemma="be" pos="VB" surface="be"/>
+  <token id="17" lemma="too" pos="RB" surface="too"/>
+  <token id="18" lemma="old" pos="JJ" surface="old"/>
+  <token id="19" lemma="before" pos="IN" surface="before"/>
+  <token id="20" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="21" lemma="mother" pos="NN" surface="mother"/>
+  <token id="22" lemma="leave" pos="VBZ" surface="leaves"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubjpass"/>
+  <dep from="4" to="2" type="auxpass"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="10" to="8" type="mark"/>
+  <dep from="10" to="9" type="expl"/>
+  <dep from="4" to="10" type="advcl"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="attr"/>
+  <dep from="16" to="13" type="cc"/>
+  <dep from="16" to="14" type="nsubj"/>
+  <dep from="16" to="15" type="aux"/>
+  <dep from="0" to="16" type="root"/>
+  <dep from="18" to="17" type="advmod"/>
+  <dep from="16" to="18" type="acomp"/>
+  <dep from="22" to="19" type="mark"/>
+  <dep from="21" to="20" type="poss"/>
+  <dep from="22" to="21" type="nsubj"/>
+  <dep from="16" to="22" type="advcl"/>
+  <dep from="16" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

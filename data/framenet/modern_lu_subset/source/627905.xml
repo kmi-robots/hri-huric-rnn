@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="627905">
+ <sentence>
+  The second stage brought in much more fundamental and hard-to-reverse changes .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="second" pos="JJ" surface="second"/>
+  <token id="3" lemma="stage" pos="NN" surface="stage"/>
+  <token id="4" lemma="bring" pos="VBN" surface="brought"/>
+  <token id="5" lemma="in" pos="RP" surface="in"/>
+  <token id="6" lemma="much" pos="RB" surface="much"/>
+  <token id="7" lemma="more" pos="RBR" surface="more"/>
+  <token id="8" lemma="fundamental" pos="JJ" surface="fundamental"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="hard-to-reverse" pos="NN" surface="hard-to-reverse"/>
+  <token id="11" lemma="change" pos="NNS" surface="changes"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prt"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="8" to="7" type="advmod"/>
+  <dep from="4" to="8" type="dobj"/>
+  <dep from="4" to="9" type="cc"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="4" to="11" type="conj"/>
+  <dep from="11" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

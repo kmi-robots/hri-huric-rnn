@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770638">
+ <sentence>
+  Now the rain stopped and the sun came out .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="now" pos="RB" surface="Now"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="rain" pos="NN" surface="rain"/>
+  <token id="4" lemma="stop" pos="VBD" surface="stopped"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="sun" pos="NN" surface="sun"/>
+  <token id="8" lemma="come" pos="VBD" surface="came"/>
+  <token id="9" lemma="out" pos="RP" surface="out"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="4" to="8" type="conj"/>
+  <dep from="8" to="9" type="prt"/>
+  <dep from="8" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

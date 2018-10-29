@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="256814">
+ <sentence>
+  The animals ' food often contains toxic test substances or they may be forced to swallow huge capsules or have toxic creams rubbed into their raw skin .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="animal" pos="NNS" surface="animals"/>
+  <token id="3" lemma="'" pos="POS" surface="'"/>
+  <token id="4" lemma="food" pos="NN" surface="food"/>
+  <token id="5" lemma="often" pos="RB" surface="often"/>
+  <token id="6" lemma="contain" pos="VBZ" surface="contains"/>
+  <token id="7" lemma="toxic" pos="JJ" surface="toxic"/>
+  <token id="8" lemma="test" pos="NN" surface="test"/>
+  <token id="9" lemma="substance" pos="NNS" surface="substances"/>
+  <token id="10" lemma="or" pos="CC" surface="or"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="12" lemma="may" pos="MD" surface="may"/>
+  <token id="13" lemma="be" pos="VB" surface="be"/>
+  <token id="14" lemma="force" pos="VBN" surface="forced"/>
+  <token id="15" lemma="to" pos="TO" surface="to"/>
+  <token id="16" lemma="swallow" pos="VB" surface="swallow"/>
+  <token id="17" lemma="huge" pos="JJ" surface="huge"/>
+  <token id="18" lemma="capsule" pos="NNS" surface="capsules"/>
+  <token id="19" lemma="or" pos="CC" surface="or"/>
+  <token id="20" lemma="have" pos="VBP" surface="have"/>
+  <token id="21" lemma="toxic" pos="JJ" surface="toxic"/>
+  <token id="22" lemma="cream" pos="NNS" surface="creams"/>
+  <token id="23" lemma="rub" pos="VBD" surface="rubbed"/>
+  <token id="24" lemma="into" pos="IN" surface="into"/>
+  <token id="25" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="26" lemma="raw" pos="JJ" surface="raw"/>
+  <token id="27" lemma="skin" pos="NN" surface="skin"/>
+  <token id="28" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="poss"/>
+  <dep from="2" to="3" type="case"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="9" to="7" type="amod"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="dobj"/>
+  <dep from="6" to="10" type="cc"/>
+  <dep from="14" to="11" type="nsubjpass"/>
+  <dep from="14" to="12" type="aux"/>
+  <dep from="14" to="13" type="auxpass"/>
+  <dep from="6" to="14" type="conj"/>
+  <dep from="16" to="15" type="aux"/>
+  <dep from="14" to="16" type="xcomp"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="16" to="18" type="dobj"/>
+  <dep from="14" to="19" type="cc"/>
+  <dep from="14" to="20" type="conj"/>
+  <dep from="22" to="21" type="amod"/>
+  <dep from="23" to="22" type="nsubj"/>
+  <dep from="20" to="23" type="ccomp"/>
+  <dep from="23" to="24" type="prep"/>
+  <dep from="27" to="25" type="poss"/>
+  <dep from="27" to="26" type="amod"/>
+  <dep from="24" to="27" type="pobj"/>
+  <dep from="14" to="28" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="24"/>
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

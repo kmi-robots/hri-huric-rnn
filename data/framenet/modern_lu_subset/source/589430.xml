@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="589430">
+ <sentence>
+  The hound , which was shining with phosphorus , chased Sir Charles down the Yew Alley .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="hound" pos="NN" surface="hound"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="which" pos="WDT" surface="which"/>
+  <token id="5" lemma="be" pos="VBD" surface="was"/>
+  <token id="6" lemma="shin" pos="VBG" surface="shining"/>
+  <token id="7" lemma="with" pos="IN" surface="with"/>
+  <token id="8" lemma="phosphoru" pos="NNS" surface="phosphorus"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="chase" pos="VBD" surface="chased"/>
+  <token id="11" lemma="sir" pos="NNP" surface="Sir"/>
+  <token id="12" lemma="charles" pos="NNP" surface="Charles"/>
+  <token id="13" lemma="down" pos="IN" surface="down"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="yew" pos="NNP" surface="Yew"/>
+  <token id="16" lemma="alley" pos="NNP" surface="Alley"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="10" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="2" to="6" type="relcl"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="2" to="9" type="punct"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="10" to="13" type="prep"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="13" to="16" type="pobj"/>
+  <dep from="10" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

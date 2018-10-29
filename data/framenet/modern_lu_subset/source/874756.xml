@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="874756">
+ <sentence>
+  We do not expect that he perused every word of the book .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="We"/>
+  <token id="2" lemma="do" pos="VBP" surface="do"/>
+  <token id="3" lemma="not" pos="RB" surface="not"/>
+  <token id="4" lemma="expect" pos="VB" surface="expect"/>
+  <token id="5" lemma="that" pos="IN" surface="that"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="7" lemma="peruse" pos="VBD" surface="perused"/>
+  <token id="8" lemma="every" pos="DT" surface="every"/>
+  <token id="9" lemma="word" pos="NN" surface="word"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="book" pos="NN" surface="book"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="neg"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="mark"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="4" to="7" type="ccomp"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="4" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

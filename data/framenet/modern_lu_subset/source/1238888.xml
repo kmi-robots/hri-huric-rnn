@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1238888">
+ <sentence>
+  In many respects the war in Bosnia is the antithesis of Iraq 's seizure of Kuwait .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="many" pos="JJ" surface="many"/>
+  <token id="3" lemma="respect" pos="NNS" surface="respects"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="war" pos="NN" surface="war"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="bosnia" pos="NNP" surface="Bosnia"/>
+  <token id="8" lemma="be" pos="VBZ" surface="is"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="antithesis" pos="NN" surface="antithesis"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="iraq" pos="NNP" surface="Iraq"/>
+  <token id="13" lemma="'s" pos="POS" surface="'s"/>
+  <token id="14" lemma="seizure" pos="NN" surface="seizure"/>
+  <token id="15" lemma="of" pos="IN" surface="of"/>
+  <token id="16" lemma="kuwait" pos="NNP" surface="Kuwait"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="prep"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="attr"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="14" to="12" type="poss"/>
+  <dep from="12" to="13" type="case"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="8" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Taking">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

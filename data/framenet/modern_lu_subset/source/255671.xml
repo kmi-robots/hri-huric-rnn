@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="255671">
+ <sentence>
+  Another orange powder was dusted over the upper part of the body .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="another" pos="DT" surface="Another"/>
+  <token id="2" lemma="orange" pos="JJ" surface="orange"/>
+  <token id="3" lemma="powder" pos="NN" surface="powder"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="dust" pos="VBN" surface="dusted"/>
+  <token id="6" lemma="over" pos="IN" surface="over"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="upper" pos="JJ" surface="upper"/>
+  <token id="9" lemma="part" pos="NN" surface="part"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="body" pos="NN" surface="body"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="5" to="3" type="nsubjpass"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="6" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="5" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

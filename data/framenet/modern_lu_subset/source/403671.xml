@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403671">
+ <sentence>
+  Yanto crouched down and peered under the wagon .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="yanto" pos="NNP" surface="Yanto"/>
+  <token id="2" lemma="crouch" pos="VBD" surface="crouched"/>
+  <token id="3" lemma="down" pos="RB" surface="down"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="peer" pos="VBN" surface="peered"/>
+  <token id="6" lemma="under" pos="IN" surface="under"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="wagon" pos="NN" surface="wagon"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prt"/>
+  <dep from="2" to="4" type="cc"/>
+  <dep from="2" to="5" type="conj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

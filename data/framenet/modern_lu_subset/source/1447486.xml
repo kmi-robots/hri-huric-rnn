@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1447486">
+ <sentence>
+  Furthermore , numbers of peripheral activated B cells may vary among individuals .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="furthermore" pos="RB" surface="Furthermore"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="number" pos="NNS" surface="numbers"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="peripheral" pos="JJ" surface="peripheral"/>
+  <token id="6" lemma="activate" pos="VBN" surface="activated"/>
+  <token id="7" lemma="b" pos="NN" surface="B"/>
+  <token id="8" lemma="cell" pos="NNS" surface="cells"/>
+  <token id="9" lemma="may" pos="MD" surface="may"/>
+  <token id="10" lemma="vary" pos="VB" surface="vary"/>
+  <token id="11" lemma="among" pos="IN" surface="among"/>
+  <token id="12" lemma="individual" pos="NNS" surface="individuals"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="advmod"/>
+  <dep from="10" to="2" type="punct"/>
+  <dep from="10" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="8" to="5" type="amod"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="4" to="8" type="pobj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="10" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_operational_state">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Device">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

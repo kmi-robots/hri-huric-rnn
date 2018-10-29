@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1090651">
+ <sentence>
+  They wrapped it up and gave it to her , and it did have a head like a baby .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="They"/>
+  <token id="2" lemma="wrap" pos="VBD" surface="wrapped"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="4" lemma="up" pos="RP" surface="up"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="give" pos="VBD" surface="gave"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="8" lemma="to" pos="IN" surface="to"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="13" lemma="do" pos="VBD" surface="did"/>
+  <token id="14" lemma="have" pos="VB" surface="have"/>
+  <token id="15" lemma="a" pos="DT" surface="a"/>
+  <token id="16" lemma="head" pos="NN" surface="head"/>
+  <token id="17" lemma="like" pos="IN" surface="like"/>
+  <token id="18" lemma="a" pos="DT" surface="a"/>
+  <token id="19" lemma="baby" pos="NN" surface="baby"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="prt"/>
+  <dep from="2" to="5" type="cc"/>
+  <dep from="2" to="6" type="conj"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="6" to="8" type="dative"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="2" to="10" type="punct"/>
+  <dep from="2" to="11" type="cc"/>
+  <dep from="14" to="12" type="nsubj"/>
+  <dep from="14" to="13" type="aux"/>
+  <dep from="2" to="14" type="conj"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="dobj"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="14" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

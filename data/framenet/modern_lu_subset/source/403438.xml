@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403438">
+ <sentence>
+  It was very easy to imagine eyes peering from the gloom , or strange beings creeping along the path behind them .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="It"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="very" pos="RB" surface="very"/>
+  <token id="4" lemma="easy" pos="JJ" surface="easy"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="imagine" pos="VB" surface="imagine"/>
+  <token id="7" lemma="eye" pos="NNS" surface="eyes"/>
+  <token id="8" lemma="peer" pos="VBG" surface="peering"/>
+  <token id="9" lemma="from" pos="IN" surface="from"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="gloom" pos="NN" surface="gloom"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="or" pos="CC" surface="or"/>
+  <token id="14" lemma="strange" pos="JJ" surface="strange"/>
+  <token id="15" lemma="being" pos="NNS" surface="beings"/>
+  <token id="16" lemma="creep" pos="VBG" surface="creeping"/>
+  <token id="17" lemma="along" pos="IN" surface="along"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="path" pos="NN" surface="path"/>
+  <token id="20" lemma="behind" pos="IN" surface="behind"/>
+  <token id="21" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="2" to="4" type="acomp"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="2" to="6" type="xcomp"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="6" to="8" type="ccomp"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="2" to="12" type="punct"/>
+  <dep from="2" to="13" type="cc"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="2" to="15" type="conj"/>
+  <dep from="15" to="16" type="acl"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="20" to="21" type="pobj"/>
+  <dep from="2" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Location_of_protagonist">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

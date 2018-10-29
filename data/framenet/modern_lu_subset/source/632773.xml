@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="632773">
+ <sentence>
+  An offending tree may have been planted many years ago by a previous owner .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="an" pos="DT" surface="An"/>
+  <token id="2" lemma="offending" pos="NN" surface="offending"/>
+  <token id="3" lemma="tree" pos="NN" surface="tree"/>
+  <token id="4" lemma="may" pos="MD" surface="may"/>
+  <token id="5" lemma="have" pos="VB" surface="have"/>
+  <token id="6" lemma="be" pos="VBN" surface="been"/>
+  <token id="7" lemma="plant" pos="VBN" surface="planted"/>
+  <token id="8" lemma="many" pos="JJ" surface="many"/>
+  <token id="9" lemma="year" pos="NNS" surface="years"/>
+  <token id="10" lemma="ago" pos="RB" surface="ago"/>
+  <token id="11" lemma="by" pos="IN" surface="by"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="previous" pos="JJ" surface="previous"/>
+  <token id="14" lemma="owner" pos="NN" surface="owner"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="7" to="3" type="nsubjpass"/>
+  <dep from="7" to="4" type="aux"/>
+  <dep from="7" to="5" type="aux"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="10" to="9" type="npadvmod"/>
+  <dep from="7" to="10" type="advmod"/>
+  <dep from="7" to="11" type="agent"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="7" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

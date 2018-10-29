@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="626902">
+ <sentence>
+  All marched , or rather advanced in small steps , zigzagging as if intoxicated …
+ </sentence>
+ <tokens>
+  <token id="1" lemma="all" pos="DT" surface="All"/>
+  <token id="2" lemma="march" pos="VBD" surface="marched"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="or" pos="CC" surface="or"/>
+  <token id="5" lemma="rather" pos="RB" surface="rather"/>
+  <token id="6" lemma="advanced" pos="JJ" surface="advanced"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="small" pos="JJ" surface="small"/>
+  <token id="9" lemma="step" pos="NNS" surface="steps"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="zigzag" pos="VBG" surface="zigzagging"/>
+  <token id="12" lemma="as" pos="IN" surface="as"/>
+  <token id="13" lemma="if" pos="IN" surface="if"/>
+  <token id="14" lemma="intoxicate" pos="VBN" surface="intoxicated"/>
+  <token id="15" lemma="…" pos="." surface="…"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="cc"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="2" to="6" type="conj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="6" to="10" type="punct"/>
+  <dep from="6" to="11" type="conj"/>
+  <dep from="14" to="12" type="mark"/>
+  <dep from="14" to="13" type="mark"/>
+  <dep from="11" to="14" type="advcl"/>
+  <dep from="2" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

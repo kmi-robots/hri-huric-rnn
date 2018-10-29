@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="675558">
+ <sentence>
+  Long before Davidson was ushered out , he was perceived to have failed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="long" pos="RB" surface="Long"/>
+  <token id="2" lemma="before" pos="IN" surface="before"/>
+  <token id="3" lemma="davidson" pos="NNP" surface="Davidson"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="usher" pos="VBN" surface="ushered"/>
+  <token id="6" lemma="out" pos="RP" surface="out"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="9" lemma="be" pos="VBD" surface="was"/>
+  <token id="10" lemma="perceive" pos="VBN" surface="perceived"/>
+  <token id="11" lemma="to" pos="TO" surface="to"/>
+  <token id="12" lemma="have" pos="VB" surface="have"/>
+  <token id="13" lemma="fail" pos="VBN" surface="failed"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="advmod"/>
+  <dep from="5" to="2" type="mark"/>
+  <dep from="5" to="3" type="nsubjpass"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="10" to="5" type="advcl"/>
+  <dep from="5" to="6" type="prt"/>
+  <dep from="10" to="7" type="punct"/>
+  <dep from="10" to="8" type="nsubjpass"/>
+  <dep from="10" to="9" type="auxpass"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="13" to="11" type="aux"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="10" to="13" type="xcomp"/>
+  <dep from="10" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Cotheme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

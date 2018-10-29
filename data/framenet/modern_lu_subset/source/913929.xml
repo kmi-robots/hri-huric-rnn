@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="913929">
+ <sentence>
+  There is no room for a chair , so I crouch between the willows and hook a plummet onto the size 18 hook .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="no" pos="DT" surface="no"/>
+  <token id="4" lemma="room" pos="NN" surface="room"/>
+  <token id="5" lemma="for" pos="IN" surface="for"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="chair" pos="NN" surface="chair"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="so" pos="CC" surface="so"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="11" lemma="crouch" pos="JJ" surface="crouch"/>
+  <token id="12" lemma="between" pos="IN" surface="between"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="willow" pos="NNS" surface="willows"/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="hook" pos="VB" surface="hook"/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="plummet" pos="NN" surface="plummet"/>
+  <token id="19" lemma="onto" pos="IN" surface="onto"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="size" pos="NN" surface="size"/>
+  <token id="22" lemma="18" pos="CD" surface="18"/>
+  <token id="23" lemma="hook" pos="NN" surface="hook"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="11" to="2" type="ccomp"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="attr"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="11" to="8" type="punct"/>
+  <dep from="11" to="9" type="advmod"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="11" to="15" type="cc"/>
+  <dep from="11" to="16" type="conj"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="dobj"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="21" to="20" type="det"/>
+  <dep from="19" to="21" type="pobj"/>
+  <dep from="23" to="22" type="nummod"/>
+  <dep from="21" to="23" type="appos"/>
+  <dep from="11" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

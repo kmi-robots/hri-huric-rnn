@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="690047">
+ <sentence>
+  No one was injured but factory inspectors say there could easily have been casualities .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="no" pos="DT" surface="No"/>
+  <token id="2" lemma="one" pos="NN" surface="one"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="injure" pos="VBN" surface="injured"/>
+  <token id="5" lemma="but" pos="CC" surface="but"/>
+  <token id="6" lemma="factory" pos="NN" surface="factory"/>
+  <token id="7" lemma="inspector" pos="NNS" surface="inspectors"/>
+  <token id="8" lemma="say" pos="VBP" surface="say"/>
+  <token id="9" lemma="there" pos="EX" surface="there"/>
+  <token id="10" lemma="could" pos="MD" surface="could"/>
+  <token id="11" lemma="easily" pos="RB" surface="easily"/>
+  <token id="12" lemma="have" pos="VB" surface="have"/>
+  <token id="13" lemma="be" pos="VBN" surface="been"/>
+  <token id="14" lemma="casualitie" pos="NNS" surface="casualities"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="4" to="8" type="conj"/>
+  <dep from="13" to="9" type="expl"/>
+  <dep from="13" to="10" type="aux"/>
+  <dep from="13" to="11" type="advmod"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="8" to="13" type="ccomp"/>
+  <dep from="13" to="14" type="attr"/>
+  <dep from="8" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Cognizer">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

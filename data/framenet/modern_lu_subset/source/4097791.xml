@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4097791">
+ <sentence>
+  Russia inherited most of the Soviet missile complex , although significant portions are located in Ukraine .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="russia" pos="NNP" surface="Russia"/>
+  <token id="2" lemma="inherit" pos="VBD" surface="inherited"/>
+  <token id="3" lemma="most" pos="JJS" surface="most"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="soviet" pos="JJ" surface="Soviet"/>
+  <token id="7" lemma="missile" pos="NN" surface="missile"/>
+  <token id="8" lemma="complex" pos="NN" surface="complex"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="although" pos="IN" surface="although"/>
+  <token id="11" lemma="significant" pos="JJ" surface="significant"/>
+  <token id="12" lemma="portion" pos="NNS" surface="portions"/>
+  <token id="13" lemma="be" pos="VBP" surface="are"/>
+  <token id="14" lemma="locate" pos="VBN" surface="located"/>
+  <token id="15" lemma="in" pos="IN" surface="in"/>
+  <token id="16" lemma="ukraine" pos="NNP" surface="Ukraine"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="8" to="5" type="det"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="4" to="8" type="pobj"/>
+  <dep from="2" to="9" type="punct"/>
+  <dep from="14" to="10" type="mark"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="14" to="12" type="nsubjpass"/>
+  <dep from="14" to="13" type="auxpass"/>
+  <dep from="2" to="14" type="advcl"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="2" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_located">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Location">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

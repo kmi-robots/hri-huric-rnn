@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="675387">
+ <sentence>
+  Alan ushered them down towards the table .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="alan" pos="NNP" surface="Alan"/>
+  <token id="2" lemma="usher" pos="VBD" surface="ushered"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="4" lemma="down" pos="RP" surface="down"/>
+  <token id="5" lemma="towards" pos="IN" surface="towards"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="table" pos="NN" surface="table"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="prt"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="2" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

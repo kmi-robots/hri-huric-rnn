@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="398886">
+ <sentence>
+  Paul Binyon followed Culley 's gaze round the bleak room .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="paul" pos="NNP" surface="Paul"/>
+  <token id="2" lemma="binyon" pos="NNP" surface="Binyon"/>
+  <token id="3" lemma="follow" pos="VBD" surface="followed"/>
+  <token id="4" lemma="culley" pos="NNP" surface="Culley"/>
+  <token id="5" lemma="'s" pos="POS" surface="'s"/>
+  <token id="6" lemma="gaze" pos="NN" surface="gaze"/>
+  <token id="7" lemma="round" pos="IN" surface="round"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="bleak" pos="JJ" surface="bleak"/>
+  <token id="10" lemma="room" pos="NN" surface="room"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="poss"/>
+  <dep from="4" to="5" type="case"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="3" to="7" type="ccomp"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="7" to="10" type="dobj"/>
+  <dep from="3" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

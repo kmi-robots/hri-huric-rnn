@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="631204">
+ <sentence>
+  Between 80 and 100 serial sections ( 3 µm thick ) were cut on a rotary microtome and mounted on glass slides .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="between" pos="IN" surface="Between"/>
+  <token id="2" lemma="80" pos="CD" surface="80"/>
+  <token id="3" lemma="and" pos="CC" surface="and"/>
+  <token id="4" lemma="100" pos="CD" surface="100"/>
+  <token id="5" lemma="serial" pos="JJ" surface="serial"/>
+  <token id="6" lemma="section" pos="NNS" surface="sections"/>
+  <token id="7" lemma="(" pos="-LRB-" surface="("/>
+  <token id="8" lemma="3" pos="CD" surface="3"/>
+  <token id="9" lemma="µm" pos="NN" surface="µm"/>
+  <token id="10" lemma="thick" pos="NN" surface="thick"/>
+  <token id="11" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="12" lemma="be" pos="VBD" surface="were"/>
+  <token id="13" lemma="cut" pos="VBN" surface="cut"/>
+  <token id="14" lemma="on" pos="IN" surface="on"/>
+  <token id="15" lemma="a" pos="DT" surface="a"/>
+  <token id="16" lemma="rotary" pos="JJ" surface="rotary"/>
+  <token id="17" lemma="microtome" pos="NN" surface="microtome"/>
+  <token id="18" lemma="and" pos="CC" surface="and"/>
+  <token id="19" lemma="mount" pos="VBD" surface="mounted"/>
+  <token id="20" lemma="on" pos="IN" surface="on"/>
+  <token id="21" lemma="glass" pos="NN" surface="glass"/>
+  <token id="22" lemma="slide" pos="NNS" surface="slides"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="13" to="1" type="prep"/>
+  <dep from="6" to="2" type="nummod"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="1" to="6" type="pobj"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="9" to="8" type="nummod"/>
+  <dep from="6" to="9" type="prep"/>
+  <dep from="9" to="10" type="amod"/>
+  <dep from="6" to="11" type="punct"/>
+  <dep from="13" to="12" type="auxpass"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="17" to="15" type="det"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="14" to="17" type="pobj"/>
+  <dep from="13" to="18" type="cc"/>
+  <dep from="13" to="19" type="conj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="22" to="21" type="compound"/>
+  <dep from="20" to="22" type="pobj"/>
+  <dep from="13" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

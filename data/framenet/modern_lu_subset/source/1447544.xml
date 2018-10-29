@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1447544">
+ <sentence>
+  The computer itself could only be activated by an access code known solely to Bailey .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="computer" pos="NN" surface="computer"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="itself"/>
+  <token id="4" lemma="could" pos="MD" surface="could"/>
+  <token id="5" lemma="only" pos="RB" surface="only"/>
+  <token id="6" lemma="be" pos="VB" surface="be"/>
+  <token id="7" lemma="activate" pos="VBN" surface="activated"/>
+  <token id="8" lemma="by" pos="IN" surface="by"/>
+  <token id="9" lemma="an" pos="DT" surface="an"/>
+  <token id="10" lemma="access" pos="NN" surface="access"/>
+  <token id="11" lemma="code" pos="NN" surface="code"/>
+  <token id="12" lemma="know" pos="VBN" surface="known"/>
+  <token id="13" lemma="solely" pos="RB" surface="solely"/>
+  <token id="14" lemma="to" pos="IN" surface="to"/>
+  <token id="15" lemma="bailey" pos="NNP" surface="Bailey"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="7" to="2" type="nsubjpass"/>
+  <dep from="2" to="3" type="appos"/>
+  <dep from="7" to="4" type="aux"/>
+  <dep from="7" to="5" type="advmod"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="agent"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="11" to="12" type="acl"/>
+  <dep from="12" to="13" type="advmod"/>
+  <dep from="12" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="7" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_operational_state">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Device">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

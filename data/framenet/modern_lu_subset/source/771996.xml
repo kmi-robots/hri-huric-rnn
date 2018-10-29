@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="771996">
+ <sentence>
+  Weeks later , her boyfriend visited her from Germany .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="week" pos="NNS" surface="Weeks"/>
+  <token id="2" lemma="later" pos="RB" surface="later"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="5" lemma="boyfriend" pos="NN" surface="boyfriend"/>
+  <token id="6" lemma="visit" pos="VBD" surface="visited"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="8" lemma="from" pos="IN" surface="from"/>
+  <token id="9" lemma="germany" pos="NNP" surface="Germany"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="npadvmod"/>
+  <dep from="6" to="2" type="advmod"/>
+  <dep from="6" to="3" type="punct"/>
+  <dep from="5" to="4" type="poss"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="6" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="6" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

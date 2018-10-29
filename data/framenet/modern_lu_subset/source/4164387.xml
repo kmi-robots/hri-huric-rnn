@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4164387">
+ <sentence>
+  John patted at the bulging plumber 's bag he had commandeered during the afternoon from a dozing council worker .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="john" pos="NNP" surface="John"/>
+  <token id="2" lemma="pat" pos="VBD" surface="patted"/>
+  <token id="3" lemma="at" pos="IN" surface="at"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="bulge" pos="VBG" surface="bulging"/>
+  <token id="6" lemma="plumber" pos="NN" surface="plumber"/>
+  <token id="7" lemma="'s" pos="POS" surface="'s"/>
+  <token id="8" lemma="bag" pos="NN" surface="bag"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="10" lemma="have" pos="VBD" surface="had"/>
+  <token id="11" lemma="commandeer" pos="VBN" surface="commandeered"/>
+  <token id="12" lemma="during" pos="IN" surface="during"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="afternoon" pos="NN" surface="afternoon"/>
+  <token id="15" lemma="from" pos="IN" surface="from"/>
+  <token id="16" lemma="a" pos="DT" surface="a"/>
+  <token id="17" lemma="dozing" pos="NN" surface="dozing"/>
+  <token id="18" lemma="council" pos="NN" surface="council"/>
+  <token id="19" lemma="worker" pos="NN" surface="worker"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="8" to="6" type="poss"/>
+  <dep from="6" to="7" type="case"/>
+  <dep from="3" to="8" type="pobj"/>
+  <dep from="11" to="9" type="nsubj"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="8" to="11" type="relcl"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="11" to="15" type="prep"/>
+  <dep from="19" to="16" type="det"/>
+  <dep from="19" to="17" type="amod"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="15" to="19" type="pobj"/>
+  <dep from="2" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Taking">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

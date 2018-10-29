@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403256">
+ <sentence>
+  The collar of a checked shirt peeped from the neck of a thick blue sweater .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="collar" pos="NN" surface="collar"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="check" pos="VBN" surface="checked"/>
+  <token id="6" lemma="shirt" pos="NN" surface="shirt"/>
+  <token id="7" lemma="peep" pos="VBN" surface="peeped"/>
+  <token id="8" lemma="from" pos="IN" surface="from"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="neck" pos="NN" surface="neck"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="thick" pos="JJ" surface="thick"/>
+  <token id="14" lemma="blue" pos="JJ" surface="blue"/>
+  <token id="15" lemma="sweater" pos="NN" surface="sweater"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="7" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="pobj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="15" to="12" type="det"/>
+  <dep from="15" to="13" type="amod"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="11" to="15" type="pobj"/>
+  <dep from="7" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Location_of_protagonist">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

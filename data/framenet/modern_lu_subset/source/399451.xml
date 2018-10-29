@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="399451">
+ <sentence>
+  She glanced over one shoulder .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="She"/>
+  <token id="2" lemma="glance" pos="VBD" surface="glanced"/>
+  <token id="3" lemma="over" pos="IN" surface="over"/>
+  <token id="4" lemma="one" pos="CD" surface="one"/>
+  <token id="5" lemma="shoulder" pos="NN" surface="shoulder"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="nummod"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

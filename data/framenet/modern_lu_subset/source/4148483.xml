@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4148483">
+ <sentence>
+  " When the carriage came out I followed it to the station .
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="when" pos="WRB" surface="When"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="carriage" pos="NN" surface="carriage"/>
+  <token id="5" lemma="come" pos="VBD" surface="came"/>
+  <token id="6" lemma="out" pos="RP" surface="out"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="8" lemma="follow" pos="VBD" surface="followed"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="station" pos="NN" surface="station"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="punct"/>
+  <dep from="5" to="2" type="advmod"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="8" to="5" type="advcl"/>
+  <dep from="5" to="6" type="prt"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="8" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="8" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

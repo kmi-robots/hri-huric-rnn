@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1339001">
+ <sentence>
+  Plumpton yesterday passed a 10am inspection , and prospects of racing tomorrow are looking good .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="plumpton" pos="NNP" surface="Plumpton"/>
+  <token id="2" lemma="yesterday" pos="NN" surface="yesterday"/>
+  <token id="3" lemma="pass" pos="VBD" surface="passed"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="10am" pos="JJ" surface="10am"/>
+  <token id="6" lemma="inspection" pos="NN" surface="inspection"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="prospect" pos="NNS" surface="prospects"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="racing" pos="NN" surface="racing"/>
+  <token id="12" lemma="tomorrow" pos="NN" surface="tomorrow"/>
+  <token id="13" lemma="be" pos="VBP" surface="are"/>
+  <token id="14" lemma="look" pos="VBG" surface="looking"/>
+  <token id="15" lemma="good" pos="JJ" surface="good"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="npadvmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="punct"/>
+  <dep from="3" to="8" type="cc"/>
+  <dep from="14" to="9" type="nsubj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pcomp"/>
+  <dep from="11" to="12" type="npadvmod"/>
+  <dep from="14" to="13" type="aux"/>
+  <dep from="3" to="14" type="conj"/>
+  <dep from="14" to="15" type="acomp"/>
+  <dep from="14" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Inspecting">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

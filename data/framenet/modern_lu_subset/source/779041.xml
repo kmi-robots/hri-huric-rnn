@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="779041">
+ <sentence>
+  Today police began an independent investigation into these allegations .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="today" pos="NN" surface="Today"/>
+  <token id="2" lemma="police" pos="NNS" surface="police"/>
+  <token id="3" lemma="begin" pos="VBD" surface="began"/>
+  <token id="4" lemma="an" pos="DT" surface="an"/>
+  <token id="5" lemma="independent" pos="JJ" surface="independent"/>
+  <token id="6" lemma="investigation" pos="NN" surface="investigation"/>
+  <token id="7" lemma="into" pos="IN" surface="into"/>
+  <token id="8" lemma="these" pos="DT" surface="these"/>
+  <token id="9" lemma="allegation" pos="NNS" surface="allegations"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="npadvmod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="3" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

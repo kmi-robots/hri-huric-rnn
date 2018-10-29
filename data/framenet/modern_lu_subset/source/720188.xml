@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="720188">
+ <sentence>
+  Their badges were pinned to their uniforms with safety pins .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP$" surface="Their"/>
+  <token id="2" lemma="badge" pos="NNS" surface="badges"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="pin" pos="VBN" surface="pinned"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="7" lemma="uniform" pos="NNS" surface="uniforms"/>
+  <token id="8" lemma="with" pos="IN" surface="with"/>
+  <token id="9" lemma="safety" pos="NN" surface="safety"/>
+  <token id="10" lemma="pin" pos="NNS" surface="pins"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="poss"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="poss"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="4" to="8" type="prep"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="4" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

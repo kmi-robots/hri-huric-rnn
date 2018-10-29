@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="779624">
+ <sentence>
+  Each morning we scanned the sky , hoping to spy the vultures gathering above us .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="each" pos="DT" surface="Each"/>
+  <token id="2" lemma="morning" pos="NN" surface="morning"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="4" lemma="scan" pos="VBD" surface="scanned"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="sky" pos="NN" surface="sky"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="hop" pos="VBG" surface="hoping"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="spy" pos="VB" surface="spy"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="vulture" pos="NNS" surface="vultures"/>
+  <token id="13" lemma="gather" pos="VBG" surface="gathering"/>
+  <token id="14" lemma="above" pos="IN" surface="above"/>
+  <token id="15" lemma="-PRON-" pos="PRP" surface="us"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="npadvmod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="4" to="7" type="punct"/>
+  <dep from="4" to="8" type="advcl"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="8" to="10" type="xcomp"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="12" to="13" type="acl"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="4" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

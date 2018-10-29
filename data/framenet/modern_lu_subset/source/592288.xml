@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="592288">
+ <sentence>
+  ` Right , this way , Jimmy , " said Mr Gibbs , and Jimmy went down the steps and followed him across the clearing .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="''" surface="`"/>
+  <token id="2" lemma="right" pos="UH" surface="Right"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="this" pos="DT" surface="this"/>
+  <token id="5" lemma="way" pos="NN" surface="way"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="jimmy" pos="NNP" surface="Jimmy"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma='"' pos="''" surface='"'/>
+  <token id="10" lemma="say" pos="VBD" surface="said"/>
+  <token id="11" lemma="mr" pos="NNP" surface="Mr"/>
+  <token id="12" lemma="gibbs" pos="NNP" surface="Gibbs"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="jimmy" pos="NNP" surface="Jimmy"/>
+  <token id="16" lemma="go" pos="VBD" surface="went"/>
+  <token id="17" lemma="down" pos="RP" surface="down"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="step" pos="NNS" surface="steps"/>
+  <token id="20" lemma="and" pos="CC" surface="and"/>
+  <token id="21" lemma="follow" pos="VBD" surface="followed"/>
+  <token id="22" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="23" lemma="across" pos="IN" surface="across"/>
+  <token id="24" lemma="the" pos="DT" surface="the"/>
+  <token id="25" lemma="clearing" pos="NN" surface="clearing"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="punct"/>
+  <dep from="10" to="2" type="intj"/>
+  <dep from="10" to="3" type="punct"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="10" to="5" type="npadvmod"/>
+  <dep from="10" to="6" type="punct"/>
+  <dep from="10" to="7" type="dep"/>
+  <dep from="10" to="8" type="punct"/>
+  <dep from="10" to="9" type="punct"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="10" to="12" type="nsubj"/>
+  <dep from="10" to="13" type="punct"/>
+  <dep from="10" to="14" type="cc"/>
+  <dep from="16" to="15" type="nsubj"/>
+  <dep from="10" to="16" type="conj"/>
+  <dep from="16" to="17" type="prt"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="16" to="19" type="dobj"/>
+  <dep from="16" to="20" type="cc"/>
+  <dep from="16" to="21" type="conj"/>
+  <dep from="21" to="22" type="dobj"/>
+  <dep from="21" to="23" type="prep"/>
+  <dep from="25" to="24" type="det"/>
+  <dep from="23" to="25" type="pobj"/>
+  <dep from="16" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

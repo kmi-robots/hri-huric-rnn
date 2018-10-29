@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="772036">
+ <sentence>
+  Western delegations had visited the Soviet Union during September to research the economic situation .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="western" pos="JJ" surface="Western"/>
+  <token id="2" lemma="delegation" pos="NNS" surface="delegations"/>
+  <token id="3" lemma="have" pos="VBD" surface="had"/>
+  <token id="4" lemma="visit" pos="VBN" surface="visited"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="soviet" pos="NNP" surface="Soviet"/>
+  <token id="7" lemma="union" pos="NNP" surface="Union"/>
+  <token id="8" lemma="during" pos="IN" surface="during"/>
+  <token id="9" lemma="september" pos="NNP" surface="September"/>
+  <token id="10" lemma="to" pos="TO" surface="to"/>
+  <token id="11" lemma="research" pos="VB" surface="research"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="economic" pos="JJ" surface="economic"/>
+  <token id="14" lemma="situation" pos="NN" surface="situation"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="4" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="4" to="11" type="advcl"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="dobj"/>
+  <dep from="4" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

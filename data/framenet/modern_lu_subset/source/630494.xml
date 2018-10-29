@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="630494">
+ <sentence>
+  ` Were there any problems loading the cargo on to the train ? "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="''" surface="`"/>
+  <token id="2" lemma="be" pos="VBD" surface="Were"/>
+  <token id="3" lemma="there" pos="EX" surface="there"/>
+  <token id="4" lemma="any" pos="DT" surface="any"/>
+  <token id="5" lemma="problem" pos="NNS" surface="problems"/>
+  <token id="6" lemma="load" pos="VBG" surface="loading"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="cargo" pos="NN" surface="cargo"/>
+  <token id="9" lemma="on" pos="IN" surface="on"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="train" pos="NN" surface="train"/>
+  <token id="13" lemma="?" pos="." surface="?"/>
+  <token id="14" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="punct"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="expl"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="2" to="5" type="attr"/>
+  <dep from="5" to="6" type="acl"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="6" to="9" type="prt"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="2" to="13" type="punct"/>
+  <dep from="2" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

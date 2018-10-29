@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="240332">
+ <sentence>
+  The tape should also be marked with ` 1 of x " , where x represents the final number of tapes used to archive the table .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="tape" pos="NN" surface="tape"/>
+  <token id="3" lemma="should" pos="MD" surface="should"/>
+  <token id="4" lemma="also" pos="RB" surface="also"/>
+  <token id="5" lemma="be" pos="VB" surface="be"/>
+  <token id="6" lemma="mark" pos="VBN" surface="marked"/>
+  <token id="7" lemma="with" pos="IN" surface="with"/>
+  <token id="8" lemma="`" pos="''" surface="`"/>
+  <token id="9" lemma="1" pos="CD" surface="1"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="x" pos="NN" surface="x"/>
+  <token id="12" lemma='"' pos="''" surface='"'/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="where" pos="WRB" surface="where"/>
+  <token id="15" lemma="x" pos="LS" surface="x"/>
+  <token id="16" lemma="represent" pos="VBZ" surface="represents"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="final" pos="JJ" surface="final"/>
+  <token id="19" lemma="number" pos="NN" surface="number"/>
+  <token id="20" lemma="of" pos="IN" surface="of"/>
+  <token id="21" lemma="tape" pos="NNS" surface="tapes"/>
+  <token id="22" lemma="use" pos="VBN" surface="used"/>
+  <token id="23" lemma="to" pos="TO" surface="to"/>
+  <token id="24" lemma="archive" pos="VB" surface="archive"/>
+  <token id="25" lemma="the" pos="DT" surface="the"/>
+  <token id="26" lemma="table" pos="NN" surface="table"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="6" to="2" type="nsubjpass"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="6" to="4" type="advmod"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="punct"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="9" to="11" type="punct"/>
+  <dep from="9" to="12" type="punct"/>
+  <dep from="9" to="13" type="punct"/>
+  <dep from="16" to="14" type="advmod"/>
+  <dep from="16" to="15" type="punct"/>
+  <dep from="9" to="16" type="relcl"/>
+  <dep from="19" to="17" type="det"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="16" to="19" type="dobj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="20" to="21" type="pobj"/>
+  <dep from="21" to="22" type="acl"/>
+  <dep from="24" to="23" type="aux"/>
+  <dep from="22" to="24" type="xcomp"/>
+  <dep from="26" to="25" type="det"/>
+  <dep from="24" to="26" type="dobj"/>
+  <dep from="6" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1404382">
+ <sentence>
+  The displays show how Northamptonshire Ironstone was quarried , and transported to the blastfurnaces to be made into iron .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="display" pos="NNS" surface="displays"/>
+  <token id="3" lemma="show" pos="VBP" surface="show"/>
+  <token id="4" lemma="how" pos="WRB" surface="how"/>
+  <token id="5" lemma="northamptonshire" pos="NNP" surface="Northamptonshire"/>
+  <token id="6" lemma="ironstone" pos="NNP" surface="Ironstone"/>
+  <token id="7" lemma="be" pos="VBD" surface="was"/>
+  <token id="8" lemma="quarry" pos="VBN" surface="quarried"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="transport" pos="VBN" surface="transported"/>
+  <token id="12" lemma="to" pos="IN" surface="to"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="blastfurnace" pos="NNS" surface="blastfurnaces"/>
+  <token id="15" lemma="to" pos="TO" surface="to"/>
+  <token id="16" lemma="be" pos="VB" surface="be"/>
+  <token id="17" lemma="make" pos="VBN" surface="made"/>
+  <token id="18" lemma="into" pos="IN" surface="into"/>
+  <token id="19" lemma="iron" pos="NN" surface="iron"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="8" to="4" type="advmod"/>
+  <dep from="8" to="5" type="nsubjpass"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="3" to="8" type="ccomp"/>
+  <dep from="3" to="9" type="punct"/>
+  <dep from="3" to="10" type="cc"/>
+  <dep from="3" to="11" type="conj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="17" to="15" type="aux"/>
+  <dep from="17" to="16" type="auxpass"/>
+  <dep from="11" to="17" type="advcl"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="18" to="19" type="pobj"/>
+  <dep from="3" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

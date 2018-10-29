@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="720063">
+ <sentence>
+  Experience shows that two ceiling tiles pinned or glued together are effective , stuck to all but the viewing glass of the aquarium .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="experience" pos="NN" surface="Experience"/>
+  <token id="2" lemma="show" pos="VBZ" surface="shows"/>
+  <token id="3" lemma="that" pos="IN" surface="that"/>
+  <token id="4" lemma="two" pos="CD" surface="two"/>
+  <token id="5" lemma="ceiling" pos="NN" surface="ceiling"/>
+  <token id="6" lemma="tile" pos="NNS" surface="tiles"/>
+  <token id="7" lemma="pin" pos="VBN" surface="pinned"/>
+  <token id="8" lemma="or" pos="CC" surface="or"/>
+  <token id="9" lemma="glue" pos="VBN" surface="glued"/>
+  <token id="10" lemma="together" pos="RB" surface="together"/>
+  <token id="11" lemma="be" pos="VBP" surface="are"/>
+  <token id="12" lemma="effective" pos="JJ" surface="effective"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="stuck" pos="JJ" surface="stuck"/>
+  <token id="15" lemma="to" pos="IN" surface="to"/>
+  <token id="16" lemma="all" pos="DT" surface="all"/>
+  <token id="17" lemma="but" pos="IN" surface="but"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="view" pos="VBG" surface="viewing"/>
+  <token id="20" lemma="glass" pos="NN" surface="glass"/>
+  <token id="21" lemma="of" pos="IN" surface="of"/>
+  <token id="22" lemma="the" pos="DT" surface="the"/>
+  <token id="23" lemma="aquarium" pos="NN" surface="aquarium"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="7" to="3" type="mark"/>
+  <dep from="6" to="4" type="nummod"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="2" to="7" type="ccomp"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="7" to="9" type="conj"/>
+  <dep from="9" to="10" type="advmod"/>
+  <dep from="2" to="11" type="ccomp"/>
+  <dep from="11" to="12" type="acomp"/>
+  <dep from="11" to="13" type="punct"/>
+  <dep from="11" to="14" type="acomp"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="14" to="17" type="cc"/>
+  <dep from="20" to="18" type="det"/>
+  <dep from="20" to="19" type="amod"/>
+  <dep from="17" to="20" type="pobj"/>
+  <dep from="20" to="21" type="prep"/>
+  <dep from="23" to="22" type="det"/>
+  <dep from="21" to="23" type="pobj"/>
+  <dep from="2" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Items">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Result">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

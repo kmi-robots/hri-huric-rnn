@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="404953">
+ <sentence>
+  Ruth stared in disbelief .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="ruth" pos="NNP" surface="Ruth"/>
+  <token id="2" lemma="star" pos="VBD" surface="stared"/>
+  <token id="3" lemma="in" pos="IN" surface="in"/>
+  <token id="4" lemma="disbelief" pos="NN" surface="disbelief"/>
+  <token id="5" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="2" to="5" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

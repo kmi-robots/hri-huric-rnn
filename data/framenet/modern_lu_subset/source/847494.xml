@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="847494">
+ <sentence>
+  Fox flicked a glance at it .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="fox" pos="NNP" surface="Fox"/>
+  <token id="2" lemma="flick" pos="VBD" surface="flicked"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="glance" pos="NN" surface="glance"/>
+  <token id="5" lemma="at" pos="IN" surface="at"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="2" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

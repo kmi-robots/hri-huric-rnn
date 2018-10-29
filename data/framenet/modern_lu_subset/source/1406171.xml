@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1406171">
+ <sentence>
+  By June 23rd he had found some , and took off to fly the bag to Balsley in his hospital .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="by" pos="IN" surface="By"/>
+  <token id="2" lemma="june" pos="NNP" surface="June"/>
+  <token id="3" lemma="23rd" pos="NN" surface="23rd"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="5" lemma="have" pos="VBD" surface="had"/>
+  <token id="6" lemma="find" pos="VBN" surface="found"/>
+  <token id="7" lemma="some" pos="DT" surface="some"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="take" pos="VBD" surface="took"/>
+  <token id="11" lemma="off" pos="RP" surface="off"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="fly" pos="VB" surface="fly"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="bag" pos="NN" surface="bag"/>
+  <token id="16" lemma="to" pos="IN" surface="to"/>
+  <token id="17" lemma="balsley" pos="NNP" surface="Balsley"/>
+  <token id="18" lemma="in" pos="IN" surface="in"/>
+  <token id="19" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="20" lemma="hospital" pos="NN" surface="hospital"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="6" to="8" type="punct"/>
+  <dep from="6" to="9" type="cc"/>
+  <dep from="6" to="10" type="conj"/>
+  <dep from="10" to="11" type="prt"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="10" to="13" type="advcl"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="dobj"/>
+  <dep from="13" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="13" to="18" type="prep"/>
+  <dep from="20" to="19" type="poss"/>
+  <dep from="18" to="20" type="pobj"/>
+  <dep from="6" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="582644">
+ <sentence>
+  The Doctor 's trousers must not be hauled down .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="doctor" pos="NNP" surface="Doctor"/>
+  <token id="3" lemma="'s" pos="POS" surface="'s"/>
+  <token id="4" lemma="trouser" pos="NNS" surface="trousers"/>
+  <token id="5" lemma="must" pos="MD" surface="must"/>
+  <token id="6" lemma="not" pos="RB" surface="not"/>
+  <token id="7" lemma="be" pos="VB" surface="be"/>
+  <token id="8" lemma="haul" pos="VBN" surface="hauled"/>
+  <token id="9" lemma="down" pos="RP" surface="down"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="poss"/>
+  <dep from="2" to="3" type="case"/>
+  <dep from="8" to="4" type="nsubjpass"/>
+  <dep from="8" to="5" type="aux"/>
+  <dep from="8" to="6" type="neg"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prt"/>
+  <dep from="8" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

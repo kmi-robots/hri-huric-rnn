@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="778221">
+ <sentence>
+  One of the best plants to examine for galls is an oak tree .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="one" pos="CD" surface="One"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="good" pos="JJS" surface="best"/>
+  <token id="5" lemma="plant" pos="NNS" surface="plants"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="examine" pos="VB" surface="examine"/>
+  <token id="8" lemma="for" pos="IN" surface="for"/>
+  <token id="9" lemma="gall" pos="NNS" surface="galls"/>
+  <token id="10" lemma="be" pos="VBZ" surface="is"/>
+  <token id="11" lemma="an" pos="DT" surface="an"/>
+  <token id="12" lemma="oak" pos="NN" surface="oak"/>
+  <token id="13" lemma="tree" pos="NN" surface="tree"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="pobj"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="1" to="7" type="relcl"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="10" to="13" type="attr"/>
+  <dep from="10" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Inspecting">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Unwanted_entity">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

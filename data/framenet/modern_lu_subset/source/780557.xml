@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780557">
+ <sentence>
+  Problems would be carefully defined , and the solution dispassionately searched for and no doubt soon found .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="problem" pos="NNS" surface="Problems"/>
+  <token id="2" lemma="would" pos="MD" surface="would"/>
+  <token id="3" lemma="be" pos="VB" surface="be"/>
+  <token id="4" lemma="carefully" pos="RB" surface="carefully"/>
+  <token id="5" lemma="define" pos="VBN" surface="defined"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="solution" pos="NN" surface="solution"/>
+  <token id="10" lemma="dispassionately" pos="RB" surface="dispassionately"/>
+  <token id="11" lemma="search" pos="VBD" surface="searched"/>
+  <token id="12" lemma="for" pos="IN" surface="for"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="no" pos="DT" surface="no"/>
+  <token id="15" lemma="doubt" pos="RB" surface="doubt"/>
+  <token id="16" lemma="soon" pos="RB" surface="soon"/>
+  <token id="17" lemma="find" pos="VBD" surface="found"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="nsubjpass"/>
+  <dep from="5" to="2" type="aux"/>
+  <dep from="5" to="3" type="auxpass"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="punct"/>
+  <dep from="5" to="7" type="cc"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="11" to="9" type="nsubj"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="5" to="11" type="conj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="11" to="13" type="cc"/>
+  <dep from="15" to="14" type="neg"/>
+  <dep from="17" to="15" type="nsubj"/>
+  <dep from="17" to="16" type="advmod"/>
+  <dep from="11" to="17" type="conj"/>
+  <dep from="17" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

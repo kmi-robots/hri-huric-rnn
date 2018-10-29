@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="796402">
+ <sentence>
+  There was ample material on which the justices could reach the conclusion they did .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="ample" pos="JJ" surface="ample"/>
+  <token id="4" lemma="material" pos="NN" surface="material"/>
+  <token id="5" lemma="on" pos="IN" surface="on"/>
+  <token id="6" lemma="which" pos="WDT" surface="which"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="justice" pos="NNS" surface="justices"/>
+  <token id="9" lemma="could" pos="MD" surface="could"/>
+  <token id="10" lemma="reach" pos="VB" surface="reach"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="conclusion" pos="NN" surface="conclusion"/>
+  <token id="13" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="14" lemma="do" pos="VBD" surface="did"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="2" to="4" type="attr"/>
+  <dep from="10" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="10" to="8" type="nsubj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="4" to="10" type="relcl"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="14" to="13" type="nsubj"/>
+  <dep from="12" to="14" type="relcl"/>
+  <dep from="2" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

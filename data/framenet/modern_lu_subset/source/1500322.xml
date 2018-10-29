@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1500322">
+ <sentence>
+  ` Fast moving " glaciers slid forwards in the valleys at 50 m or so per year .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="``" surface="`"/>
+  <token id="2" lemma="fast" pos="RB" surface="Fast"/>
+  <token id="3" lemma="move" pos="VBG" surface="moving"/>
+  <token id="4" lemma='"' pos="''" surface='"'/>
+  <token id="5" lemma="glacier" pos="NNS" surface="glaciers"/>
+  <token id="6" lemma="slide" pos="VBD" surface="slid"/>
+  <token id="7" lemma="forwards" pos="RB" surface="forwards"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="valley" pos="NNS" surface="valleys"/>
+  <token id="11" lemma="at" pos="IN" surface="at"/>
+  <token id="12" lemma="50" pos="CD" surface="50"/>
+  <token id="13" lemma="m" pos="NN" surface="m"/>
+  <token id="14" lemma="or" pos="CC" surface="or"/>
+  <token id="15" lemma="so" pos="RB" surface="so"/>
+  <token id="16" lemma="per" pos="IN" surface="per"/>
+  <token id="17" lemma="year" pos="NN" surface="year"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="punct"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="5" to="3" type="amod"/>
+  <dep from="5" to="4" type="punct"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="6" to="11" type="prep"/>
+  <dep from="13" to="12" type="nummod"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="15" to="14" type="cc"/>
+  <dep from="13" to="15" type="nummod"/>
+  <dep from="13" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="6" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Area">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Speed">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

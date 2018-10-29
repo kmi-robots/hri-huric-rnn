@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1362464">
+ <sentence>
+  The explosion detached the separate wings as if they had been plucked feathers .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="explosion" pos="NN" surface="explosion"/>
+  <token id="3" lemma="detach" pos="VBD" surface="detached"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="separate" pos="JJ" surface="separate"/>
+  <token id="6" lemma="wing" pos="NNS" surface="wings"/>
+  <token id="7" lemma="as" pos="IN" surface="as"/>
+  <token id="8" lemma="if" pos="IN" surface="if"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="10" lemma="have" pos="VBD" surface="had"/>
+  <token id="11" lemma="be" pos="VBN" surface="been"/>
+  <token id="12" lemma="pluck" pos="VBN" surface="plucked"/>
+  <token id="13" lemma="feather" pos="NNS" surface="feathers"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="12" to="7" type="mark"/>
+  <dep from="12" to="8" type="mark"/>
+  <dep from="12" to="9" type="nsubjpass"/>
+  <dep from="12" to="10" type="aux"/>
+  <dep from="12" to="11" type="auxpass"/>
+  <dep from="3" to="12" type="advcl"/>
+  <dep from="12" to="13" type="dobj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Items">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

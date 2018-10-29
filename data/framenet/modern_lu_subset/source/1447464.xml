@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1447464">
+ <sentence>
+  The InsP 3 released into the cytoplasm mobilizes calcium from internal stores , whereas DAG activates protein kinase C ( ref. 8 ) .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="insp" pos="NN" surface="InsP"/>
+  <token id="3" lemma="3" pos="CD" surface="3"/>
+  <token id="4" lemma="release" pos="VBN" surface="released"/>
+  <token id="5" lemma="into" pos="IN" surface="into"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="cytoplasm" pos="NN" surface="cytoplasm"/>
+  <token id="8" lemma="mobilize" pos="VBZ" surface="mobilizes"/>
+  <token id="9" lemma="calcium" pos="NN" surface="calcium"/>
+  <token id="10" lemma="from" pos="IN" surface="from"/>
+  <token id="11" lemma="internal" pos="JJ" surface="internal"/>
+  <token id="12" lemma="store" pos="NNS" surface="stores"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="whereas" pos="IN" surface="whereas"/>
+  <token id="15" lemma="dag" pos="NN" surface="DAG"/>
+  <token id="16" lemma="activate" pos="VBZ" surface="activates"/>
+  <token id="17" lemma="protein" pos="NN" surface="protein"/>
+  <token id="18" lemma="kinase" pos="NN" surface="kinase"/>
+  <token id="19" lemma="c" pos="NNP" surface="C"/>
+  <token id="20" lemma="(" pos="-LRB-" surface="("/>
+  <token id="21" lemma="ref." pos="NNP" surface="ref."/>
+  <token id="22" lemma="8" pos="CD" surface="8"/>
+  <token id="23" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="8" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="nummod"/>
+  <dep from="2" to="4" type="acl"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="8" to="10" type="prep"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="8" to="13" type="punct"/>
+  <dep from="8" to="14" type="prep"/>
+  <dep from="17" to="15" type="compound"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="18" to="17" type="nsubj"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="14" to="19" type="pobj"/>
+  <dep from="21" to="20" type="punct"/>
+  <dep from="19" to="21" type="appos"/>
+  <dep from="21" to="22" type="nummod"/>
+  <dep from="21" to="23" type="punct"/>
+  <dep from="8" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_operational_state">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Device">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

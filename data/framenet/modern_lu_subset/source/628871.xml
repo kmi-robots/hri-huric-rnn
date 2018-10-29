@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="628871">
+ <sentence>
+  The student should be ` completely immersed " in the language from day one .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="student" pos="NN" surface="student"/>
+  <token id="3" lemma="should" pos="MD" surface="should"/>
+  <token id="4" lemma="be" pos="VB" surface="be"/>
+  <token id="5" lemma="`" pos="``" surface="`"/>
+  <token id="6" lemma="completely" pos="RB" surface="completely"/>
+  <token id="7" lemma="immerse" pos="VBN" surface="immersed"/>
+  <token id="8" lemma='"' pos="''" surface='"'/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="language" pos="NN" surface="language"/>
+  <token id="12" lemma="from" pos="IN" surface="from"/>
+  <token id="13" lemma="day" pos="NN" surface="day"/>
+  <token id="14" lemma="one" pos="CD" surface="one"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="7" to="2" type="nsubj"/>
+  <dep from="7" to="3" type="aux"/>
+  <dep from="7" to="4" type="auxpass"/>
+  <dep from="7" to="5" type="punct"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="7" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="7" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="13" to="14" type="nummod"/>
+  <dep from="7" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="241204">
+ <sentence>
+  ` As naughty as most five-year-olds I guess , " he replied , pocketing the wallet .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="''" surface="`"/>
+  <token id="2" lemma="as" pos="RB" surface="As"/>
+  <token id="3" lemma="naughty" pos="JJ" surface="naughty"/>
+  <token id="4" lemma="as" pos="IN" surface="as"/>
+  <token id="5" lemma="most" pos="JJS" surface="most"/>
+  <token id="6" lemma="five-year-old" pos="NNS" surface="five-year-olds"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="8" lemma="guess" pos="VBP" surface="guess"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma='"' pos="''" surface='"'/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="12" lemma="reply" pos="VBD" surface="replied"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="pocket" pos="VBG" surface="pocketing"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="wallet" pos="NN" surface="wallet"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="12" to="1" type="punct"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="6" to="3" type="advmod"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="1" to="6" type="intj"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="6" to="8" type="parataxis"/>
+  <dep from="12" to="9" type="punct"/>
+  <dep from="12" to="10" type="punct"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="12" to="14" type="advcl"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="dobj"/>
+  <dep from="12" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4137307">
+ <sentence>
+  Nahr-e-Saraj lies just to the south of Sangin .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="nahr-e-saraj" pos="JJ" surface="Nahr-e-Saraj"/>
+  <token id="2" lemma="lie" pos="NNS" surface="lies"/>
+  <token id="3" lemma="just" pos="RB" surface="just"/>
+  <token id="4" lemma="to" pos="IN" surface="to"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="south" pos="NN" surface="south"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="sangin" pos="NNP" surface="Sangin"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_located">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

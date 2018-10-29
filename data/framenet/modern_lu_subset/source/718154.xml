@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="718154">
+ <sentence>
+  An answering knock came from inside , and taking the screw from her pocket she unscrewed the crate expertly .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="an" pos="DT" surface="An"/>
+  <token id="2" lemma="answering" pos="NN" surface="answering"/>
+  <token id="3" lemma="knock" pos="NN" surface="knock"/>
+  <token id="4" lemma="come" pos="VBD" surface="came"/>
+  <token id="5" lemma="from" pos="IN" surface="from"/>
+  <token id="6" lemma="inside" pos="RB" surface="inside"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="take" pos="VBG" surface="taking"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="screw" pos="NN" surface="screw"/>
+  <token id="12" lemma="from" pos="IN" surface="from"/>
+  <token id="13" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="14" lemma="pocket" pos="NN" surface="pocket"/>
+  <token id="15" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="16" lemma="unscrew" pos="VBD" surface="unscrewed"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="crate" pos="NN" surface="crate"/>
+  <token id="19" lemma="expertly" pos="RB" surface="expertly"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pcomp"/>
+  <dep from="4" to="7" type="punct"/>
+  <dep from="4" to="8" type="cc"/>
+  <dep from="4" to="9" type="conj"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="9" to="12" type="prep"/>
+  <dep from="14" to="13" type="poss"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="16" to="15" type="nsubj"/>
+  <dep from="4" to="16" type="conj"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="dobj"/>
+  <dep from="16" to="19" type="advmod"/>
+  <dep from="4" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Closure">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Containing_object">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Fastener">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="826897">
+ <sentence>
+  Surgeons at Odstock Hospital , Wilts , sewed the thumb on .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="surgeon" pos="NNS" surface="Surgeons"/>
+  <token id="2" lemma="at" pos="IN" surface="at"/>
+  <token id="3" lemma="odstock" pos="NNP" surface="Odstock"/>
+  <token id="4" lemma="hospital" pos="NNP" surface="Hospital"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="wilts" pos="NNP" surface="Wilts"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="sew" pos="VBD" surface="sewed"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="thumb" pos="NN" surface="thumb"/>
+  <token id="11" lemma="on" pos="IN" surface="on"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="4" to="5" type="punct"/>
+  <dep from="4" to="6" type="appos"/>
+  <dep from="4" to="7" type="punct"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="8" to="11" type="prt"/>
+  <dep from="8" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

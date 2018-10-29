@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="913464">
+ <sentence>
+  Do not attempt to fix tiles to cold surfaces like unheated bathrooms .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="do" pos="VB" surface="Do"/>
+  <token id="2" lemma="not" pos="RB" surface="not"/>
+  <token id="3" lemma="attempt" pos="VB" surface="attempt"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="fix" pos="VB" surface="fix"/>
+  <token id="6" lemma="tile" pos="NNS" surface="tiles"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="cold" pos="JJ" surface="cold"/>
+  <token id="9" lemma="surface" pos="NNS" surface="surfaces"/>
+  <token id="10" lemma="like" pos="IN" surface="like"/>
+  <token id="11" lemma="unheated" pos="JJ" surface="unheated"/>
+  <token id="12" lemma="bathroom" pos="NNS" surface="bathrooms"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="aux"/>
+  <dep from="3" to="2" type="neg"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="xcomp"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="dative"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="3" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

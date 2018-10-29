@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="593311">
+ <sentence>
+  He opened a door into a corridor and I followed him down it .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="open" pos="VBD" surface="opened"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="door" pos="NN" surface="door"/>
+  <token id="5" lemma="into" pos="IN" surface="into"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="corridor" pos="NN" surface="corridor"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="10" lemma="follow" pos="VBD" surface="followed"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="12" lemma="down" pos="IN" surface="down"/>
+  <token id="13" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="2" to="8" type="cc"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="2" to="10" type="conj"/>
+  <dep from="10" to="11" type="dobj"/>
+  <dep from="10" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="10" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

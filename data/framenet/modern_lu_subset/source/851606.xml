@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="851606">
+ <sentence>
+  A group of eight County Durham war veterans may be the last recipients of medals given out by the former Soviet Union .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="group" pos="NN" surface="group"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="eight" pos="CD" surface="eight"/>
+  <token id="5" lemma="county" pos="NNP" surface="County"/>
+  <token id="6" lemma="durham" pos="NNP" surface="Durham"/>
+  <token id="7" lemma="war" pos="NN" surface="war"/>
+  <token id="8" lemma="veteran" pos="NNS" surface="veterans"/>
+  <token id="9" lemma="may" pos="MD" surface="may"/>
+  <token id="10" lemma="be" pos="VB" surface="be"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="last" pos="JJ" surface="last"/>
+  <token id="13" lemma="recipient" pos="NNS" surface="recipients"/>
+  <token id="14" lemma="of" pos="IN" surface="of"/>
+  <token id="15" lemma="medal" pos="NNS" surface="medals"/>
+  <token id="16" lemma="give" pos="VBN" surface="given"/>
+  <token id="17" lemma="out" pos="RP" surface="out"/>
+  <token id="18" lemma="by" pos="IN" surface="by"/>
+  <token id="19" lemma="the" pos="DT" surface="the"/>
+  <token id="20" lemma="former" pos="JJ" surface="former"/>
+  <token id="21" lemma="soviet" pos="NNP" surface="Soviet"/>
+  <token id="22" lemma="union" pos="NNP" surface="Union"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="10" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="nummod"/>
+  <dep from="8" to="5" type="compound"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="3" to="8" type="pobj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="attr"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="15" to="16" type="acl"/>
+  <dep from="16" to="17" type="prt"/>
+  <dep from="16" to="18" type="agent"/>
+  <dep from="22" to="19" type="det"/>
+  <dep from="22" to="20" type="amod"/>
+  <dep from="22" to="21" type="compound"/>
+  <dep from="18" to="22" type="pobj"/>
+  <dep from="10" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Donor">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

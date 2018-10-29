@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="256110">
+ <sentence>
+  And have a tiny back yard because otherwise they could n't cram so many boxes onto the site .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="and" pos="CC" surface="And"/>
+  <token id="2" lemma="have" pos="VB" surface="have"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="tiny" pos="JJ" surface="tiny"/>
+  <token id="5" lemma="back" pos="NN" surface="back"/>
+  <token id="6" lemma="yard" pos="NN" surface="yard"/>
+  <token id="7" lemma="because" pos="IN" surface="because"/>
+  <token id="8" lemma="otherwise" pos="RB" surface="otherwise"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="10" lemma="could" pos="MD" surface="could"/>
+  <token id="11" lemma="n't" pos="RB" surface="n't"/>
+  <token id="12" lemma="cram" pos="VB" surface="cram"/>
+  <token id="13" lemma="so" pos="RB" surface="so"/>
+  <token id="14" lemma="many" pos="JJ" surface="many"/>
+  <token id="15" lemma="box" pos="NNS" surface="boxes"/>
+  <token id="16" lemma="onto" pos="IN" surface="onto"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="site" pos="NN" surface="site"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="cc"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="6" to="3" type="det"/>
+  <dep from="6" to="4" type="amod"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="2" to="6" type="dobj"/>
+  <dep from="12" to="7" type="mark"/>
+  <dep from="12" to="8" type="advmod"/>
+  <dep from="12" to="9" type="nsubj"/>
+  <dep from="12" to="10" type="aux"/>
+  <dep from="12" to="11" type="neg"/>
+  <dep from="2" to="12" type="advcl"/>
+  <dep from="14" to="13" type="advmod"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="12" to="15" type="dobj"/>
+  <dep from="12" to="16" type="prep"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="2" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

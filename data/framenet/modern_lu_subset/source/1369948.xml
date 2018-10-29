@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1369948">
+ <sentence>
+  I 've seen a guy toting an AK-47 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="'ve" pos="VBP" surface="'ve"/>
+  <token id="3" lemma="see" pos="VBN" surface="seen"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="guy" pos="NN" surface="guy"/>
+  <token id="6" lemma="tot" pos="VBG" surface="toting"/>
+  <token id="7" lemma="an" pos="DT" surface="an"/>
+  <token id="8" lemma="ak-47" pos="NNP" surface="AK-47"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="5" to="6" type="acl"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="9" to="8" type="punct"/>
+  <dep from="3" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

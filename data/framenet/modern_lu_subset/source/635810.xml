@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="635810">
+ <sentence>
+  He always used to tuck it underneath the water butt .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="always" pos="RB" surface="always"/>
+  <token id="3" lemma="use" pos="VBD" surface="used"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="tuck" pos="VB" surface="tuck"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="7" lemma="underneath" pos="IN" surface="underneath"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="water" pos="NN" surface="water"/>
+  <token id="10" lemma="butt" pos="NN" surface="butt"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="xcomp"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="prep"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="3" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403055">
+ <sentence>
+  All doctors should be advised to systematically palpate the costal margin firmly in all patients complaining of pain in the lower chest or upper abdomen .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="all" pos="DT" surface="All"/>
+  <token id="2" lemma="doctor" pos="NNS" surface="doctors"/>
+  <token id="3" lemma="should" pos="MD" surface="should"/>
+  <token id="4" lemma="be" pos="VB" surface="be"/>
+  <token id="5" lemma="advise" pos="VBN" surface="advised"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="systematically" pos="RB" surface="systematically"/>
+  <token id="8" lemma="palpate" pos="VB" surface="palpate"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="costal" pos="JJ" surface="costal"/>
+  <token id="11" lemma="margin" pos="NN" surface="margin"/>
+  <token id="12" lemma="firmly" pos="RB" surface="firmly"/>
+  <token id="13" lemma="in" pos="IN" surface="in"/>
+  <token id="14" lemma="all" pos="DT" surface="all"/>
+  <token id="15" lemma="patient" pos="NNS" surface="patients"/>
+  <token id="16" lemma="complain" pos="VBG" surface="complaining"/>
+  <token id="17" lemma="of" pos="IN" surface="of"/>
+  <token id="18" lemma="pain" pos="NN" surface="pain"/>
+  <token id="19" lemma="in" pos="IN" surface="in"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="low" pos="JJR" surface="lower"/>
+  <token id="22" lemma="chest" pos="NN" surface="chest"/>
+  <token id="23" lemma="or" pos="CC" surface="or"/>
+  <token id="24" lemma="upper" pos="JJ" surface="upper"/>
+  <token id="25" lemma="abdomen" pos="NN" surface="abdomen"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="advmod"/>
+  <dep from="5" to="8" type="xcomp"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="dobj"/>
+  <dep from="8" to="12" type="advmod"/>
+  <dep from="8" to="13" type="prep"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="15" to="16" type="acl"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="17" to="18" type="pobj"/>
+  <dep from="16" to="19" type="prep"/>
+  <dep from="22" to="20" type="det"/>
+  <dep from="22" to="21" type="amod"/>
+  <dep from="19" to="22" type="pobj"/>
+  <dep from="22" to="23" type="cc"/>
+  <dep from="25" to="24" type="amod"/>
+  <dep from="22" to="25" type="conj"/>
+  <dep from="5" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

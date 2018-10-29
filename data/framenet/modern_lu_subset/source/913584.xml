@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="913584">
+ <sentence>
+  They can be fixed directly to masonry .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="They"/>
+  <token id="2" lemma="can" pos="MD" surface="can"/>
+  <token id="3" lemma="be" pos="VB" surface="be"/>
+  <token id="4" lemma="fix" pos="VBN" surface="fixed"/>
+  <token id="5" lemma="directly" pos="RB" surface="directly"/>
+  <token id="6" lemma="to" pos="IN" surface="to"/>
+  <token id="7" lemma="masonry" pos="NN" surface="masonry"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubjpass"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="advmod"/>
+  <dep from="4" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="4" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

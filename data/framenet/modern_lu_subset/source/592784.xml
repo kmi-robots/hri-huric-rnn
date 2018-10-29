@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="592784">
+ <sentence>
+  Follow the ditch towards the wall which is crossed by a stile and then bear diagonally left up the field .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="follow" pos="VB" surface="Follow"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="ditch" pos="NN" surface="ditch"/>
+  <token id="4" lemma="towards" pos="IN" surface="towards"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="wall" pos="NN" surface="wall"/>
+  <token id="7" lemma="which" pos="WDT" surface="which"/>
+  <token id="8" lemma="be" pos="VBZ" surface="is"/>
+  <token id="9" lemma="cross" pos="VBN" surface="crossed"/>
+  <token id="10" lemma="by" pos="IN" surface="by"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="stile" pos="NN" surface="stile"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="then" pos="RB" surface="then"/>
+  <token id="15" lemma="bear" pos="VB" surface="bear"/>
+  <token id="16" lemma="diagonally" pos="RB" surface="diagonally"/>
+  <token id="17" lemma="leave" pos="VBD" surface="left"/>
+  <token id="18" lemma="up" pos="RP" surface="up"/>
+  <token id="19" lemma="the" pos="DT" surface="the"/>
+  <token id="20" lemma="field" pos="NN" surface="field"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="dobj"/>
+  <dep from="1" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="9" to="7" type="nsubjpass"/>
+  <dep from="9" to="8" type="auxpass"/>
+  <dep from="6" to="9" type="relcl"/>
+  <dep from="9" to="10" type="agent"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="9" to="13" type="cc"/>
+  <dep from="15" to="14" type="advmod"/>
+  <dep from="17" to="15" type="aux"/>
+  <dep from="17" to="16" type="advmod"/>
+  <dep from="9" to="17" type="conj"/>
+  <dep from="17" to="18" type="prt"/>
+  <dep from="20" to="19" type="det"/>
+  <dep from="17" to="20" type="dobj"/>
+  <dep from="1" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Road">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

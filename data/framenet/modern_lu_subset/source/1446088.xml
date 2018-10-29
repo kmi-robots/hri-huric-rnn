@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1446088">
+ <sentence>
+  Even if introns from different species are located at identical sites within genes , there may or may not be an intronic ORF present .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="even" pos="RB" surface="Even"/>
+  <token id="2" lemma="if" pos="IN" surface="if"/>
+  <token id="3" lemma="intron" pos="NNS" surface="introns"/>
+  <token id="4" lemma="from" pos="IN" surface="from"/>
+  <token id="5" lemma="different" pos="JJ" surface="different"/>
+  <token id="6" lemma="specie" pos="NNS" surface="species"/>
+  <token id="7" lemma="be" pos="VBP" surface="are"/>
+  <token id="8" lemma="locate" pos="VBN" surface="located"/>
+  <token id="9" lemma="at" pos="IN" surface="at"/>
+  <token id="10" lemma="identical" pos="JJ" surface="identical"/>
+  <token id="11" lemma="site" pos="NNS" surface="sites"/>
+  <token id="12" lemma="within" pos="IN" surface="within"/>
+  <token id="13" lemma="gene" pos="NNS" surface="genes"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="there" pos="EX" surface="there"/>
+  <token id="16" lemma="may" pos="MD" surface="may"/>
+  <token id="17" lemma="or" pos="CC" surface="or"/>
+  <token id="18" lemma="may" pos="MD" surface="may"/>
+  <token id="19" lemma="not" pos="RB" surface="not"/>
+  <token id="20" lemma="be" pos="VB" surface="be"/>
+  <token id="21" lemma="an" pos="DT" surface="an"/>
+  <token id="22" lemma="intronic" pos="JJ" surface="intronic"/>
+  <token id="23" lemma="orf" pos="NNP" surface="ORF"/>
+  <token id="24" lemma="present" pos="NN" surface="present"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="advmod"/>
+  <dep from="8" to="2" type="mark"/>
+  <dep from="8" to="3" type="nsubjpass"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="16" to="8" type="advcl"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="16" to="14" type="punct"/>
+  <dep from="16" to="15" type="expl"/>
+  <dep from="0" to="16" type="root"/>
+  <dep from="16" to="17" type="cc"/>
+  <dep from="20" to="18" type="aux"/>
+  <dep from="20" to="19" type="neg"/>
+  <dep from="16" to="20" type="conj"/>
+  <dep from="24" to="21" type="det"/>
+  <dep from="24" to="22" type="amod"/>
+  <dep from="24" to="23" type="compound"/>
+  <dep from="20" to="24" type="attr"/>
+  <dep from="16" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_located">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

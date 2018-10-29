@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="636271">
+ <sentence>
+  Wrap insulating tape round the transmitter , covering the entire device to prevent water penetration .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="wrap" pos="NN" surface="Wrap"/>
+  <token id="2" lemma="insulate" pos="VBG" surface="insulating"/>
+  <token id="3" lemma="tape" pos="NN" surface="tape"/>
+  <token id="4" lemma="round" pos="IN" surface="round"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="transmitter" pos="NN" surface="transmitter"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="cover" pos="VBG" surface="covering"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="entire" pos="JJ" surface="entire"/>
+  <token id="11" lemma="device" pos="NN" surface="device"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="prevent" pos="VB" surface="prevent"/>
+  <token id="14" lemma="water" pos="NN" surface="water"/>
+  <token id="15" lemma="penetration" pos="NN" surface="penetration"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="2" to="7" type="punct"/>
+  <dep from="2" to="8" type="advcl"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="dobj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="8" to="13" type="advcl"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="13" to="15" type="dobj"/>
+  <dep from="2" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

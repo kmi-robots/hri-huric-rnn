@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1090031">
+ <sentence>
+  This was donated by Mr Minton Goode , grandfather of today 's chairman .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="this" pos="DT" surface="This"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="donate" pos="VBN" surface="donated"/>
+  <token id="4" lemma="by" pos="IN" surface="by"/>
+  <token id="5" lemma="mr" pos="NNP" surface="Mr"/>
+  <token id="6" lemma="minton" pos="NNP" surface="Minton"/>
+  <token id="7" lemma="goode" pos="NNP" surface="Goode"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="grandfather" pos="NN" surface="grandfather"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="today" pos="NN" surface="today"/>
+  <token id="12" lemma="'s" pos="POS" surface="'s"/>
+  <token id="13" lemma="chairman" pos="NN" surface="chairman"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="agent"/>
+  <dep from="7" to="5" type="compound"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="4" to="7" type="pobj"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="7" to="9" type="appos"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="13" to="11" type="poss"/>
+  <dep from="11" to="12" type="case"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Donor">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

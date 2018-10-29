@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="404482">
+ <sentence>
+  A pallid sun appeared like a nosy neighbour spying from behind lace curtains .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="pallid" pos="JJ" surface="pallid"/>
+  <token id="3" lemma="sun" pos="NN" surface="sun"/>
+  <token id="4" lemma="appear" pos="VBD" surface="appeared"/>
+  <token id="5" lemma="like" pos="IN" surface="like"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="nosy" pos="JJ" surface="nosy"/>
+  <token id="8" lemma="neighbour" pos="NN" surface="neighbour"/>
+  <token id="9" lemma="spy" pos="VBG" surface="spying"/>
+  <token id="10" lemma="from" pos="IN" surface="from"/>
+  <token id="11" lemma="behind" pos="IN" surface="behind"/>
+  <token id="12" lemma="lace" pos="NN" surface="lace"/>
+  <token id="13" lemma="curtain" pos="NNS" surface="curtains"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="8" to="9" type="acl"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Location_of_protagonist">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

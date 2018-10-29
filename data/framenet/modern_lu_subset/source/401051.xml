@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="401051">
+ <sentence>
+  Last on the right was a bathroom and a quick look inside the door revealed nothing new .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="last" pos="JJ" surface="Last"/>
+  <token id="2" lemma="on" pos="IN" surface="on"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="right" pos="NN" surface="right"/>
+  <token id="5" lemma="be" pos="VBD" surface="was"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="bathroom" pos="NN" surface="bathroom"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="quick" pos="JJ" surface="quick"/>
+  <token id="11" lemma="look" pos="NN" surface="look"/>
+  <token id="12" lemma="inside" pos="IN" surface="inside"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="door" pos="NN" surface="door"/>
+  <token id="15" lemma="reveal" pos="VBD" surface="revealed"/>
+  <token id="16" lemma="nothing" pos="NN" surface="nothing"/>
+  <token id="17" lemma="new" pos="JJ" surface="new"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="acomp"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="attr"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="7" to="11" type="conj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="5" to="15" type="conj"/>
+  <dep from="15" to="16" type="dobj"/>
+  <dep from="16" to="17" type="amod"/>
+  <dep from="15" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Manner">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

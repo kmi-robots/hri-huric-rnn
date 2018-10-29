@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1404398">
+ <sentence>
+  Certain cargoes were transported in compartment boats .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="certain" pos="JJ" surface="Certain"/>
+  <token id="2" lemma="cargo" pos="NNS" surface="cargoes"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="transport" pos="VBN" surface="transported"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="compartment" pos="NN" surface="compartment"/>
+  <token id="7" lemma="boat" pos="NNS" surface="boats"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="4" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Constant_location">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

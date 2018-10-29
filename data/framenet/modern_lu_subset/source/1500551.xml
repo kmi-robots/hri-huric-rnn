@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1500551">
+ <sentence>
+  In 1433 indirect taxes contributed about £27,000 per annum to a net revenue of £36,000 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="1433" pos="CD" surface="1433"/>
+  <token id="3" lemma="indirect" pos="JJ" surface="indirect"/>
+  <token id="4" lemma="tax" pos="NNS" surface="taxes"/>
+  <token id="5" lemma="contribute" pos="VBD" surface="contributed"/>
+  <token id="6" lemma="about" pos="IN" surface="about"/>
+  <token id="7" lemma="£27,000" pos="CD" surface="£27,000"/>
+  <token id="8" lemma="per" pos="IN" surface="per"/>
+  <token id="9" lemma="annum" pos="NN" surface="annum"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="net" pos="JJ" surface="net"/>
+  <token id="13" lemma="revenue" pos="NN" surface="revenue"/>
+  <token id="14" lemma="of" pos="IN" surface="of"/>
+  <token id="15" lemma="£36,000" pos="NNP" surface="£36,000"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="prep"/>
+  <dep from="4" to="2" type="nummod"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="5" to="9" type="dobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="5" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Donor">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

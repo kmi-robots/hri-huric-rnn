@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780265">
+ <sentence>
+  Forensic experts searched the council-run home to help detectives in the manhunt and extra officers have been drafted in .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="forensic" pos="JJ" surface="Forensic"/>
+  <token id="2" lemma="expert" pos="NNS" surface="experts"/>
+  <token id="3" lemma="search" pos="VBD" surface="searched"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="council-run" pos="NN" surface="council-run"/>
+  <token id="6" lemma="home" pos="NN" surface="home"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="help" pos="VB" surface="help"/>
+  <token id="9" lemma="detective" pos="NNS" surface="detectives"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="manhunt" pos="NN" surface="manhunt"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="extra" pos="JJ" surface="extra"/>
+  <token id="15" lemma="officer" pos="NNS" surface="officers"/>
+  <token id="16" lemma="have" pos="VBP" surface="have"/>
+  <token id="17" lemma="be" pos="VBN" surface="been"/>
+  <token id="18" lemma="draft" pos="VBN" surface="drafted"/>
+  <token id="19" lemma="in" pos="IN" surface="in"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="3" to="8" type="advcl"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="3" to="13" type="cc"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="18" to="15" type="nsubjpass"/>
+  <dep from="18" to="16" type="aux"/>
+  <dep from="18" to="17" type="auxpass"/>
+  <dep from="3" to="18" type="conj"/>
+  <dep from="18" to="19" type="prt"/>
+  <dep from="18" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

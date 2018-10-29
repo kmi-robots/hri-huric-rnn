@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="777914">
+ <sentence>
+  The proficiency examination will test accuracy , neatness , intelligent display and reasonable output .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="proficiency" pos="NN" surface="proficiency"/>
+  <token id="3" lemma="examination" pos="NN" surface="examination"/>
+  <token id="4" lemma="will" pos="MD" surface="will"/>
+  <token id="5" lemma="test" pos="VB" surface="test"/>
+  <token id="6" lemma="accuracy" pos="NN" surface="accuracy"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="neatness" pos="JJ" surface="neatness"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="intelligent" pos="JJ" surface="intelligent"/>
+  <token id="11" lemma="display" pos="NN" surface="display"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="reasonable" pos="JJ" surface="reasonable"/>
+  <token id="14" lemma="output" pos="NN" surface="output"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="6" to="8" type="conj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="conj"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="conj"/>
+  <dep from="5" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Inspecting">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Unwanted_entity">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

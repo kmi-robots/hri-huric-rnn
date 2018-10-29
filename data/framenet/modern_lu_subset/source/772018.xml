@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="772018">
+ <sentence>
+  If visiting someone with hearing loss write first giving date , time and reason for visit , arrive punctually .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="if" pos="IN" surface="If"/>
+  <token id="2" lemma="visit" pos="VBG" surface="visiting"/>
+  <token id="3" lemma="someone" pos="NN" surface="someone"/>
+  <token id="4" lemma="with" pos="IN" surface="with"/>
+  <token id="5" lemma="hear" pos="VBG" surface="hearing"/>
+  <token id="6" lemma="loss" pos="NN" surface="loss"/>
+  <token id="7" lemma="write" pos="VBP" surface="write"/>
+  <token id="8" lemma="first" pos="JJ" surface="first"/>
+  <token id="9" lemma="give" pos="VBG" surface="giving"/>
+  <token id="10" lemma="date" pos="NN" surface="date"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="time" pos="NN" surface="time"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="reason" pos="NN" surface="reason"/>
+  <token id="15" lemma="for" pos="IN" surface="for"/>
+  <token id="16" lemma="visit" pos="NN" surface="visit"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="arrive" pos="VB" surface="arrive"/>
+  <token id="19" lemma="punctually" pos="RB" surface="punctually"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="mark"/>
+  <dep from="7" to="2" type="advcl"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="4" to="5" type="pcomp"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="7" to="9" type="advcl"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="10" to="12" type="conj"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="12" to="14" type="conj"/>
+  <dep from="9" to="15" type="dative"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="7" to="17" type="punct"/>
+  <dep from="7" to="18" type="conj"/>
+  <dep from="18" to="19" type="advmod"/>
+  <dep from="7" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

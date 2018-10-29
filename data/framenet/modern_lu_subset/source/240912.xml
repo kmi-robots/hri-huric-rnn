@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="240912">
+ <sentence>
+  Burton filed it away .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="burton" pos="NNP" surface="Burton"/>
+  <token id="2" lemma="file" pos="VBD" surface="filed"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="4" lemma="away" pos="RB" surface="away"/>
+  <token id="5" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="advmod"/>
+  <dep from="2" to="5" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

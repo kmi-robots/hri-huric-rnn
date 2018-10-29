@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="935746">
+ <sentence>
+  The vapour , rising over the North Sea , drifted slowly eastwards to heap white and grey thunderheads above the coast .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="vapour" pos="NN" surface="vapour"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="rise" pos="VBG" surface="rising"/>
+  <token id="5" lemma="over" pos="IN" surface="over"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="north" pos="NNP" surface="North"/>
+  <token id="8" lemma="sea" pos="NNP" surface="Sea"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="drift" pos="VBD" surface="drifted"/>
+  <token id="11" lemma="slowly" pos="RB" surface="slowly"/>
+  <token id="12" lemma="eastward" pos="NNS" surface="eastwards"/>
+  <token id="13" lemma="to" pos="TO" surface="to"/>
+  <token id="14" lemma="heap" pos="VB" surface="heap"/>
+  <token id="15" lemma="white" pos="JJ" surface="white"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="grey" pos="JJ" surface="grey"/>
+  <token id="18" lemma="thunderhead" pos="NNS" surface="thunderheads"/>
+  <token id="19" lemma="above" pos="IN" surface="above"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="coast" pos="NN" surface="coast"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="10" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="acl"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="2" to="9" type="punct"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="14" to="13" type="aux"/>
+  <dep from="10" to="14" type="advcl"/>
+  <dep from="18" to="15" type="amod"/>
+  <dep from="15" to="16" type="cc"/>
+  <dep from="15" to="17" type="conj"/>
+  <dep from="14" to="18" type="dobj"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="21" to="20" type="det"/>
+  <dep from="19" to="21" type="pobj"/>
+  <dep from="10" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Speed">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

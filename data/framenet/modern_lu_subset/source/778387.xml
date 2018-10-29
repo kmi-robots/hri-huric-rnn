@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="778387">
+ <sentence>
+  Self-selection enables the customer to inspect goods without pressure , and this often results in an impulse purchase .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="self-selection" pos="NN" surface="Self-selection"/>
+  <token id="2" lemma="enable" pos="VBZ" surface="enables"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="customer" pos="NN" surface="customer"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="inspect" pos="VB" surface="inspect"/>
+  <token id="7" lemma="good" pos="NNS" surface="goods"/>
+  <token id="8" lemma="without" pos="IN" surface="without"/>
+  <token id="9" lemma="pressure" pos="NN" surface="pressure"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="this" pos="DT" surface="this"/>
+  <token id="13" lemma="often" pos="RB" surface="often"/>
+  <token id="14" lemma="result" pos="VBZ" surface="results"/>
+  <token id="15" lemma="in" pos="IN" surface="in"/>
+  <token id="16" lemma="an" pos="DT" surface="an"/>
+  <token id="17" lemma="impulse" pos="NN" surface="impulse"/>
+  <token id="18" lemma="purchase" pos="NN" surface="purchase"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="2" to="6" type="xcomp"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="6" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="2" to="10" type="punct"/>
+  <dep from="2" to="11" type="cc"/>
+  <dep from="14" to="12" type="nsubj"/>
+  <dep from="14" to="13" type="advmod"/>
+  <dep from="2" to="14" type="conj"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="18" to="16" type="det"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="15" to="18" type="pobj"/>
+  <dep from="14" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Inspecting">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Inspector">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

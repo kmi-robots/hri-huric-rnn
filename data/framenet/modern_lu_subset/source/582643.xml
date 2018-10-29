@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="582643">
+ <sentence>
+  George got no further , being hauled down by guards and fellow-prisoners .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="george" pos="NNP" surface="George"/>
+  <token id="2" lemma="get" pos="VBD" surface="got"/>
+  <token id="3" lemma="no" pos="RB" surface="no"/>
+  <token id="4" lemma="further" pos="RB" surface="further"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="be" pos="VBG" surface="being"/>
+  <token id="7" lemma="haul" pos="VBN" surface="hauled"/>
+  <token id="8" lemma="down" pos="RP" surface="down"/>
+  <token id="9" lemma="by" pos="IN" surface="by"/>
+  <token id="10" lemma="guard" pos="NNS" surface="guards"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="fellow-prisoner" pos="NNS" surface="fellow-prisoners"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="neg"/>
+  <dep from="2" to="4" type="advmod"/>
+  <dep from="2" to="5" type="punct"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="2" to="7" type="advcl"/>
+  <dep from="7" to="8" type="prt"/>
+  <dep from="7" to="9" type="agent"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="10" to="11" type="cc"/>
+  <dep from="10" to="12" type="conj"/>
+  <dep from="2" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

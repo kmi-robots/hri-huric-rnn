@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1238865">
+ <sentence>
+  Seizure of UN troops by Khmers Rouges
+ </sentence>
+ <tokens>
+  <token id="1" lemma="seizure" pos="NN" surface="Seizure"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="un" pos="NNP" surface="UN"/>
+  <token id="4" lemma="troop" pos="NNS" surface="troops"/>
+  <token id="5" lemma="by" pos="IN" surface="by"/>
+  <token id="6" lemma="khmers" pos="NNP" surface="Khmers"/>
+  <token id="7" lemma="rouges" pos="NNPS" surface="Rouges"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="1" to="5" type="prep"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="5" to="7" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Taking">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

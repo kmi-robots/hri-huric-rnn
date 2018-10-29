@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4110653">
+ <sentence>
+  For once the NFL schedule-makers appeared..
+ </sentence>
+ <tokens>
+  <token id="1" lemma="for" pos="IN" surface="For"/>
+  <token id="2" lemma="once" pos="RB" surface="once"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="nfl" pos="NNP" surface="NFL"/>
+  <token id="5" lemma="schedule-maker" pos="NNS" surface="schedule-makers"/>
+  <token id="6" lemma="appeared.." pos="NN" surface="appeared.."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="pcomp"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="1" to="5" type="pobj"/>
+  <dep from="1" to="6" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

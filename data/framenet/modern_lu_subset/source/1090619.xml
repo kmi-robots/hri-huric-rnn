@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1090619">
+ <sentence>
+  The first prize was an Atlantic blue Rover 820 Fastback , most generously given by Sir Philip and Lady Harris .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="first" pos="JJ" surface="first"/>
+  <token id="3" lemma="prize" pos="NN" surface="prize"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="an" pos="DT" surface="an"/>
+  <token id="6" lemma="atlantic" pos="JJ" surface="Atlantic"/>
+  <token id="7" lemma="blue" pos="JJ" surface="blue"/>
+  <token id="8" lemma="rover" pos="NNP" surface="Rover"/>
+  <token id="9" lemma="820" pos="CD" surface="820"/>
+  <token id="10" lemma="fastback" pos="NNP" surface="Fastback"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="most" pos="RBS" surface="most"/>
+  <token id="13" lemma="generously" pos="RB" surface="generously"/>
+  <token id="14" lemma="give" pos="VBN" surface="given"/>
+  <token id="15" lemma="by" pos="IN" surface="by"/>
+  <token id="16" lemma="sir" pos="NNP" surface="Sir"/>
+  <token id="17" lemma="philip" pos="NNP" surface="Philip"/>
+  <token id="18" lemma="and" pos="CC" surface="and"/>
+  <token id="19" lemma="lady" pos="NNP" surface="Lady"/>
+  <token id="20" lemma="harris" pos="NNP" surface="Harris"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="8" to="5" type="det"/>
+  <dep from="8" to="6" type="nmod"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="4" to="8" type="attr"/>
+  <dep from="10" to="9" type="nummod"/>
+  <dep from="8" to="10" type="appos"/>
+  <dep from="4" to="11" type="punct"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="14" to="13" type="advmod"/>
+  <dep from="4" to="14" type="advcl"/>
+  <dep from="14" to="15" type="agent"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="17" to="18" type="cc"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="17" to="20" type="conj"/>
+  <dep from="4" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

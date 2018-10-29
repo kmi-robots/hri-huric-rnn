@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="400919">
+ <sentence>
+  Tensely , the airmen looked below and saw the crowded train reach the North Queensferry side in safety .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="tensely" pos="RB" surface="Tensely"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="airman" pos="NNS" surface="airmen"/>
+  <token id="5" lemma="look" pos="VBD" surface="looked"/>
+  <token id="6" lemma="below" pos="RB" surface="below"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="see" pos="VBD" surface="saw"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="crowded" pos="JJ" surface="crowded"/>
+  <token id="11" lemma="train" pos="NN" surface="train"/>
+  <token id="12" lemma="reach" pos="VB" surface="reach"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="north" pos="NNP" surface="North"/>
+  <token id="15" lemma="queensferry" pos="NNP" surface="Queensferry"/>
+  <token id="16" lemma="side" pos="NN" surface="side"/>
+  <token id="17" lemma="in" pos="IN" surface="in"/>
+  <token id="18" lemma="safety" pos="NN" surface="safety"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="advmod"/>
+  <dep from="5" to="2" type="punct"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="advmod"/>
+  <dep from="5" to="7" type="cc"/>
+  <dep from="5" to="8" type="conj"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="8" to="12" type="ccomp"/>
+  <dep from="16" to="13" type="det"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="12" to="16" type="dobj"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="17" to="18" type="pobj"/>
+  <dep from="5" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

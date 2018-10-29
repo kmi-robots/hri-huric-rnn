@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="628435">
+ <sentence>
+  Formalin-fixed tissues were embedded in paraffin .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="formalin-fixed" pos="JJ" surface="Formalin-fixed"/>
+  <token id="2" lemma="tissue" pos="NNS" surface="tissues"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="embed" pos="VBN" surface="embedded"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="paraffin" pos="NN" surface="paraffin"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="4" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

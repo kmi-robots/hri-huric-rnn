@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="630110">
+ <sentence>
+  The only exception was the C.O. He leaned his backside against a table , arms folded .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="only" pos="JJ" surface="only"/>
+  <token id="3" lemma="exception" pos="NN" surface="exception"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="c.o." pos="NNP" surface="C.O."/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="8" lemma="lean" pos="VBD" surface="leaned"/>
+  <token id="9" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="10" lemma="backside" pos="NN" surface="backside"/>
+  <token id="11" lemma="against" pos="IN" surface="against"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="table" pos="NN" surface="table"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="arm" pos="NNS" surface="arms"/>
+  <token id="16" lemma="fold" pos="VBN" surface="folded"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="attr"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="poss"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="8" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="8" to="14" type="punct"/>
+  <dep from="16" to="15" type="nsubj"/>
+  <dep from="8" to="16" type="conj"/>
+  <dep from="8" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="852237">
+ <sentence>
+  They hand out business cards .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="They"/>
+  <token id="2" lemma="hand" pos="VBP" surface="hand"/>
+  <token id="3" lemma="out" pos="RP" surface="out"/>
+  <token id="4" lemma="business" pos="NN" surface="business"/>
+  <token id="5" lemma="card" pos="NNS" surface="cards"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prt"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

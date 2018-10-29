@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780055">
+ <sentence>
+  A gravel pit search by divers was put off yesterday as experts continued checking the area .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="gravel" pos="NN" surface="gravel"/>
+  <token id="3" lemma="pit" pos="NN" surface="pit"/>
+  <token id="4" lemma="search" pos="NN" surface="search"/>
+  <token id="5" lemma="by" pos="IN" surface="by"/>
+  <token id="6" lemma="diver" pos="NNS" surface="divers"/>
+  <token id="7" lemma="be" pos="VBD" surface="was"/>
+  <token id="8" lemma="put" pos="VBN" surface="put"/>
+  <token id="9" lemma="off" pos="RP" surface="off"/>
+  <token id="10" lemma="yesterday" pos="NN" surface="yesterday"/>
+  <token id="11" lemma="as" pos="IN" surface="as"/>
+  <token id="12" lemma="expert" pos="NNS" surface="experts"/>
+  <token id="13" lemma="continue" pos="VBD" surface="continued"/>
+  <token id="14" lemma="check" pos="VBG" surface="checking"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="area" pos="NN" surface="area"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="det"/>
+  <dep from="4" to="2" type="amod"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="8" to="4" type="nsubjpass"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prt"/>
+  <dep from="8" to="10" type="npadvmod"/>
+  <dep from="13" to="11" type="mark"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="8" to="13" type="advcl"/>
+  <dep from="13" to="14" type="xcomp"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="dobj"/>
+  <dep from="8" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Cognizer">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

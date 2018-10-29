@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="829783">
+ <sentence>
+  She eats a pistachio nut , and fastens her locket .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="She"/>
+  <token id="2" lemma="eat" pos="VBZ" surface="eats"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="pistachio" pos="NN" surface="pistachio"/>
+  <token id="5" lemma="nut" pos="NN" surface="nut"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="fasten" pos="VBZ" surface="fastens"/>
+  <token id="9" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="10" lemma="locket" pos="NN" surface="locket"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="2" to="6" type="punct"/>
+  <dep from="2" to="7" type="cc"/>
+  <dep from="2" to="8" type="conj"/>
+  <dep from="10" to="9" type="poss"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Closure">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Containing_object">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

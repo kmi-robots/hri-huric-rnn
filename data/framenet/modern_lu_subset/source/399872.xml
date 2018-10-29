@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="399872">
+ <sentence>
+  I gazed out wildly over the crowds .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="gaze" pos="VBD" surface="gazed"/>
+  <token id="3" lemma="out" pos="RP" surface="out"/>
+  <token id="4" lemma="wildly" pos="RB" surface="wildly"/>
+  <token id="5" lemma="over" pos="IN" surface="over"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="crowd" pos="NNS" surface="crowds"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prt"/>
+  <dep from="2" to="4" type="advmod"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="2" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="State">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

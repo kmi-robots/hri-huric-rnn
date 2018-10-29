@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="769602">
+ <sentence>
+  Traffic approaching the county through Derby should also follow the above signs .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="traffic" pos="NN" surface="Traffic"/>
+  <token id="2" lemma="approach" pos="VBG" surface="approaching"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="county" pos="NN" surface="county"/>
+  <token id="5" lemma="through" pos="IN" surface="through"/>
+  <token id="6" lemma="derby" pos="NNP" surface="Derby"/>
+  <token id="7" lemma="should" pos="MD" surface="should"/>
+  <token id="8" lemma="also" pos="RB" surface="also"/>
+  <token id="9" lemma="follow" pos="VB" surface="follow"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="above" pos="JJ" surface="above"/>
+  <token id="12" lemma="sign" pos="NNS" surface="signs"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="acl"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="9" to="7" type="aux"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="dobj"/>
+  <dep from="9" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

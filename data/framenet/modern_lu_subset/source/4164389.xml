@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4164389">
+ <sentence>
+  The rebels also captured the Boulogne tank factory on the outskirts of the city , killing three civilians when a tank they had commandeered collided with a bus .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="rebel" pos="NNS" surface="rebels"/>
+  <token id="3" lemma="also" pos="RB" surface="also"/>
+  <token id="4" lemma="capture" pos="VBD" surface="captured"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="boulogne" pos="NNP" surface="Boulogne"/>
+  <token id="7" lemma="tank" pos="NN" surface="tank"/>
+  <token id="8" lemma="factory" pos="NN" surface="factory"/>
+  <token id="9" lemma="on" pos="IN" surface="on"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="outskirt" pos="NNS" surface="outskirts"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="city" pos="NN" surface="city"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="kill" pos="VBG" surface="killing"/>
+  <token id="17" lemma="three" pos="CD" surface="three"/>
+  <token id="18" lemma="civilian" pos="NNS" surface="civilians"/>
+  <token id="19" lemma="when" pos="WRB" surface="when"/>
+  <token id="20" lemma="a" pos="DT" surface="a"/>
+  <token id="21" lemma="tank" pos="NN" surface="tank"/>
+  <token id="22" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="23" lemma="have" pos="VBD" surface="had"/>
+  <token id="24" lemma="commandeer" pos="VBN" surface="commandeered"/>
+  <token id="25" lemma="collided" pos="JJ" surface="collided"/>
+  <token id="26" lemma="with" pos="IN" surface="with"/>
+  <token id="27" lemma="a" pos="DT" surface="a"/>
+  <token id="28" lemma="bus" pos="NN" surface="bus"/>
+  <token id="29" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="8" to="5" type="det"/>
+  <dep from="8" to="6" type="compound"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="4" to="8" type="dobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="4" to="15" type="punct"/>
+  <dep from="4" to="16" type="advcl"/>
+  <dep from="18" to="17" type="nummod"/>
+  <dep from="16" to="18" type="dobj"/>
+  <dep from="25" to="19" type="advmod"/>
+  <dep from="21" to="20" type="det"/>
+  <dep from="25" to="21" type="nsubj"/>
+  <dep from="24" to="22" type="nsubj"/>
+  <dep from="24" to="23" type="aux"/>
+  <dep from="21" to="24" type="relcl"/>
+  <dep from="16" to="25" type="advcl"/>
+  <dep from="25" to="26" type="prep"/>
+  <dep from="28" to="27" type="det"/>
+  <dep from="26" to="28" type="pobj"/>
+  <dep from="4" to="29" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Taking">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="22"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

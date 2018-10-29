@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1369851">
+ <sentence>
+  Chola fetched him some tobacco and a parcel of turmeric .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="chola" pos="NNP" surface="Chola"/>
+  <token id="2" lemma="fetch" pos="VBD" surface="fetched"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="4" lemma="some" pos="DT" surface="some"/>
+  <token id="5" lemma="tobacco" pos="NN" surface="tobacco"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="parcel" pos="NN" surface="parcel"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="turmeric" pos="NN" surface="turmeric"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dative"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="5" to="8" type="conj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Beneficiary">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

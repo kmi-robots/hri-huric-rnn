@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="781329">
+ <sentence>
+  The location is thoroughly surveyed by Marketing and Engineering staff .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="location" pos="NN" surface="location"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="thoroughly" pos="RB" surface="thoroughly"/>
+  <token id="5" lemma="survey" pos="VBN" surface="surveyed"/>
+  <token id="6" lemma="by" pos="IN" surface="by"/>
+  <token id="7" lemma="marketing" pos="NNP" surface="Marketing"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="engineering" pos="NNP" surface="Engineering"/>
+  <token id="10" lemma="staff" pos="NN" surface="staff"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="auxpass"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="agent"/>
+  <dep from="10" to="7" type="nmod"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="7" to="9" type="conj"/>
+  <dep from="6" to="10" type="pobj"/>
+  <dep from="5" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Cognizer">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

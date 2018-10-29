@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="961110">
+ <sentence>
+  It soared into the air .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="It"/>
+  <token id="2" lemma="soar" pos="VBD" surface="soared"/>
+  <token id="3" lemma="into" pos="IN" surface="into"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="air" pos="NN" surface="air"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

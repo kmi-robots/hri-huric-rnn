@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1235169">
+ <sentence>
+  He 'd have admired it --
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="'d" pos="MD" surface="'d"/>
+  <token id="3" lemma="have" pos="VB" surface="have"/>
+  <token id="4" lemma="admire" pos="VBN" surface="admired"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="6" lemma="--" pos="." surface="--"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="4" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

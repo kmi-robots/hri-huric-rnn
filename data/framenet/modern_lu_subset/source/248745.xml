@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="248745">
+ <sentence>
+  Drizzle a little vinaigrette dressing over the salad .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="drizzle" pos="VB" surface="Drizzle"/>
+  <token id="2" lemma="a" pos="DT" surface="a"/>
+  <token id="3" lemma="little" pos="JJ" surface="little"/>
+  <token id="4" lemma="vinaigrette" pos="NN" surface="vinaigrette"/>
+  <token id="5" lemma="dress" pos="VBG" surface="dressing"/>
+  <token id="6" lemma="over" pos="IN" surface="over"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="salad" pos="NN" surface="salad"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="1" to="5" type="advcl"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="1" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

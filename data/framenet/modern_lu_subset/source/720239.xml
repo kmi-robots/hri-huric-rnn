@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="720239">
+ <sentence>
+  The mutton was abandoned on the table while the duke 's staff gathered about a map pinned to the dining room wall .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="mutton" pos="NN" surface="mutton"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="abandon" pos="VBN" surface="abandoned"/>
+  <token id="5" lemma="on" pos="IN" surface="on"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="table" pos="NN" surface="table"/>
+  <token id="8" lemma="while" pos="IN" surface="while"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="duke" pos="NN" surface="duke"/>
+  <token id="11" lemma="'s" pos="POS" surface="'s"/>
+  <token id="12" lemma="staff" pos="NN" surface="staff"/>
+  <token id="13" lemma="gather" pos="VBD" surface="gathered"/>
+  <token id="14" lemma="about" pos="IN" surface="about"/>
+  <token id="15" lemma="a" pos="DT" surface="a"/>
+  <token id="16" lemma="map" pos="NN" surface="map"/>
+  <token id="17" lemma="pin" pos="VBN" surface="pinned"/>
+  <token id="18" lemma="to" pos="IN" surface="to"/>
+  <token id="19" lemma="the" pos="DT" surface="the"/>
+  <token id="20" lemma="dining" pos="NN" surface="dining"/>
+  <token id="21" lemma="room" pos="NN" surface="room"/>
+  <token id="22" lemma="wall" pos="NN" surface="wall"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="13" to="8" type="mark"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="12" to="10" type="poss"/>
+  <dep from="10" to="11" type="case"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="4" to="13" type="advcl"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="16" to="17" type="acl"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="22" to="19" type="det"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="22" to="21" type="compound"/>
+  <dep from="18" to="22" type="pobj"/>
+  <dep from="4" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="632798">
+ <sentence>
+  She planted a boisterous kiss on Alex 's cheek .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="She"/>
+  <token id="2" lemma="plant" pos="VBD" surface="planted"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="boisterous" pos="JJ" surface="boisterous"/>
+  <token id="5" lemma="kiss" pos="NN" surface="kiss"/>
+  <token id="6" lemma="on" pos="IN" surface="on"/>
+  <token id="7" lemma="alex" pos="NNP" surface="Alex"/>
+  <token id="8" lemma="'s" pos="POS" surface="'s"/>
+  <token id="9" lemma="cheek" pos="NN" surface="cheek"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="9" to="7" type="poss"/>
+  <dep from="7" to="8" type="case"/>
+  <dep from="6" to="9" type="pobj"/>
+  <dep from="2" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

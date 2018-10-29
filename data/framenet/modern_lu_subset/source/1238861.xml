@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1238861">
+ <sentence>
+  Israeli land seizure also politicized the rural population .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="israeli" pos="JJ" surface="Israeli"/>
+  <token id="2" lemma="land" pos="NN" surface="land"/>
+  <token id="3" lemma="seizure" pos="NN" surface="seizure"/>
+  <token id="4" lemma="also" pos="RB" surface="also"/>
+  <token id="5" lemma="politicize" pos="VBD" surface="politicized"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="rural" pos="JJ" surface="rural"/>
+  <token id="8" lemma="population" pos="NN" surface="population"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="amod"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="dobj"/>
+  <dep from="5" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Taking">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

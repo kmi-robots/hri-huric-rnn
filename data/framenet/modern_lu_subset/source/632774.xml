@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="632774">
+ <sentence>
+  Or had someone planted the idea in Alexander 's mind ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="or" pos="CC" surface="Or"/>
+  <token id="2" lemma="have" pos="VBD" surface="had"/>
+  <token id="3" lemma="someone" pos="NN" surface="someone"/>
+  <token id="4" lemma="plant" pos="VBD" surface="planted"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="idea" pos="NN" surface="idea"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="alexander" pos="NNP" surface="Alexander"/>
+  <token id="9" lemma="'s" pos="POS" surface="'s"/>
+  <token id="10" lemma="mind" pos="NN" surface="mind"/>
+  <token id="11" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="cc"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="10" to="8" type="poss"/>
+  <dep from="8" to="9" type="case"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="4" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="248771">
+ <sentence>
+  Drizzle over the petits fours from a fork or a small piping bag .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="drizzle" pos="NN" surface="Drizzle"/>
+  <token id="2" lemma="over" pos="IN" surface="over"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="petit" pos="NNS" surface="petits"/>
+  <token id="5" lemma="four" pos="NNS" surface="fours"/>
+  <token id="6" lemma="from" pos="IN" surface="from"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="fork" pos="NN" surface="fork"/>
+  <token id="9" lemma="or" pos="CC" surface="or"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="small" pos="JJ" surface="small"/>
+  <token id="12" lemma="pip" pos="VBG" surface="piping"/>
+  <token id="13" lemma="bag" pos="NN" surface="bag"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="13" to="10" type="det"/>
+  <dep from="13" to="11" type="amod"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="8" to="13" type="conj"/>
+  <dep from="5" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

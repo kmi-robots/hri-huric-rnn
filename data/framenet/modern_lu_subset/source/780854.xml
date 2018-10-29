@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780854">
+ <sentence>
+  Manville studied the material again for several minutes , saying nothing .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="manville" pos="NNP" surface="Manville"/>
+  <token id="2" lemma="study" pos="VBD" surface="studied"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="material" pos="NN" surface="material"/>
+  <token id="5" lemma="again" pos="RB" surface="again"/>
+  <token id="6" lemma="for" pos="IN" surface="for"/>
+  <token id="7" lemma="several" pos="JJ" surface="several"/>
+  <token id="8" lemma="minute" pos="NNS" surface="minutes"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="say" pos="VBG" surface="saying"/>
+  <token id="11" lemma="nothing" pos="NN" surface="nothing"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="advmod"/>
+  <dep from="2" to="6" type="prep"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="2" to="9" type="punct"/>
+  <dep from="2" to="10" type="advcl"/>
+  <dep from="10" to="11" type="dobj"/>
+  <dep from="2" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

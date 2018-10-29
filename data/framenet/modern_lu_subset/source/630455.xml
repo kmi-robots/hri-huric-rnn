@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="630455">
+ <sentence>
+  The occupants jumped out and began to load packages into a waiting truck .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="occupant" pos="NNS" surface="occupants"/>
+  <token id="3" lemma="jump" pos="VBD" surface="jumped"/>
+  <token id="4" lemma="out" pos="RP" surface="out"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="begin" pos="VBD" surface="began"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="load" pos="VB" surface="load"/>
+  <token id="9" lemma="package" pos="NNS" surface="packages"/>
+  <token id="10" lemma="into" pos="IN" surface="into"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="wait" pos="VBG" surface="waiting"/>
+  <token id="13" lemma="truck" pos="NN" surface="truck"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prt"/>
+  <dep from="3" to="5" type="cc"/>
+  <dep from="3" to="6" type="conj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="6" to="8" type="xcomp"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="8" to="10" type="prep"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

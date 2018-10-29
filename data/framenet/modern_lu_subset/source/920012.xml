@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="920012">
+ <sentence>
+  Grass , which is sown with clover , provides rich pasture for cattle in summer and the clover is another plant which puts nitrogen into the soil .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="grass" pos="NNP" surface="Grass"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="which" pos="WDT" surface="which"/>
+  <token id="4" lemma="be" pos="VBZ" surface="is"/>
+  <token id="5" lemma="sow" pos="VBN" surface="sown"/>
+  <token id="6" lemma="with" pos="IN" surface="with"/>
+  <token id="7" lemma="clover" pos="NN" surface="clover"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="provide" pos="VBZ" surface="provides"/>
+  <token id="10" lemma="rich" pos="JJ" surface="rich"/>
+  <token id="11" lemma="pasture" pos="NN" surface="pasture"/>
+  <token id="12" lemma="for" pos="IN" surface="for"/>
+  <token id="13" lemma="cattle" pos="NNS" surface="cattle"/>
+  <token id="14" lemma="in" pos="IN" surface="in"/>
+  <token id="15" lemma="summer" pos="NN" surface="summer"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="clover" pos="NN" surface="clover"/>
+  <token id="19" lemma="be" pos="VBZ" surface="is"/>
+  <token id="20" lemma="another" pos="DT" surface="another"/>
+  <token id="21" lemma="plant" pos="NN" surface="plant"/>
+  <token id="22" lemma="which" pos="WDT" surface="which"/>
+  <token id="23" lemma="put" pos="VBZ" surface="puts"/>
+  <token id="24" lemma="nitrogen" pos="NN" surface="nitrogen"/>
+  <token id="25" lemma="into" pos="IN" surface="into"/>
+  <token id="26" lemma="the" pos="DT" surface="the"/>
+  <token id="27" lemma="soil" pos="NN" surface="soil"/>
+  <token id="28" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="5" to="3" type="nsubjpass"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="1" to="5" type="relcl"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="1" to="8" type="punct"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="9" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="9" to="16" type="cc"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="19" to="18" type="nsubj"/>
+  <dep from="9" to="19" type="conj"/>
+  <dep from="21" to="20" type="det"/>
+  <dep from="19" to="21" type="attr"/>
+  <dep from="23" to="22" type="nsubj"/>
+  <dep from="21" to="23" type="relcl"/>
+  <dep from="23" to="24" type="dobj"/>
+  <dep from="23" to="25" type="prep"/>
+  <dep from="27" to="26" type="det"/>
+  <dep from="25" to="27" type="pobj"/>
+  <dep from="19" to="28" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="22"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

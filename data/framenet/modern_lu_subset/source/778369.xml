@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="778369">
+ <sentence>
+  Females inspect several nests before allowing courtship with a chosen male to proceed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="female" pos="NNS" surface="Females"/>
+  <token id="2" lemma="inspect" pos="VBP" surface="inspect"/>
+  <token id="3" lemma="several" pos="JJ" surface="several"/>
+  <token id="4" lemma="nest" pos="NNS" surface="nests"/>
+  <token id="5" lemma="before" pos="IN" surface="before"/>
+  <token id="6" lemma="allow" pos="VBG" surface="allowing"/>
+  <token id="7" lemma="courtship" pos="NN" surface="courtship"/>
+  <token id="8" lemma="with" pos="IN" surface="with"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="choose" pos="VBN" surface="chosen"/>
+  <token id="11" lemma="male" pos="NN" surface="male"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="proceed" pos="VB" surface="proceed"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="5" to="6" type="pcomp"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="6" to="8" type="prep"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="6" to="13" type="advcl"/>
+  <dep from="2" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Inspecting">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Inspector">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

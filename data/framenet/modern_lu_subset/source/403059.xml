@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403059">
+ <sentence>
+  Temperature normal , lungs clear , only rumenal atony and extreme tenderness as I palpated the abdomen .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="temperature" pos="NN" surface="Temperature"/>
+  <token id="2" lemma="normal" pos="JJ" surface="normal"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="lung" pos="NNS" surface="lungs"/>
+  <token id="5" lemma="clear" pos="JJ" surface="clear"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="only" pos="RB" surface="only"/>
+  <token id="8" lemma="rumenal" pos="JJ" surface="rumenal"/>
+  <token id="9" lemma="atony" pos="NN" surface="atony"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="extreme" pos="JJ" surface="extreme"/>
+  <token id="12" lemma="tenderness" pos="NN" surface="tenderness"/>
+  <token id="13" lemma="as" pos="IN" surface="as"/>
+  <token id="14" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="15" lemma="palpate" pos="VBD" surface="palpated"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="abdomen" pos="NN" surface="abdomen"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nmod"/>
+  <dep from="1" to="2" type="amod"/>
+  <dep from="1" to="3" type="punct"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="amod"/>
+  <dep from="4" to="6" type="punct"/>
+  <dep from="9" to="7" type="advmod"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="4" to="9" type="appos"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="conj"/>
+  <dep from="15" to="13" type="mark"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="9" to="15" type="advcl"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="dobj"/>
+  <dep from="4" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="240990">
+ <sentence>
+  FILE UNDER ` CASE SOLVED "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="file" pos="NNP" surface="FILE"/>
+  <token id="2" lemma="under" pos="IN" surface="UNDER"/>
+  <token id="3" lemma="`" pos="''" surface="`"/>
+  <token id="4" lemma="case" pos="NN" surface="CASE"/>
+  <token id="5" lemma="solved" pos="NNS" surface="SOLVED"/>
+  <token id="6" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="5" to="3" type="punct"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="2" to="5" type="pobj"/>
+  <dep from="5" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

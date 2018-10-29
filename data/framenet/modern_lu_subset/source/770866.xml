@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770866">
+ <sentence>
+  Burglars often enter a house through a window .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="burglar" pos="NNS" surface="Burglars"/>
+  <token id="2" lemma="often" pos="RB" surface="often"/>
+  <token id="3" lemma="enter" pos="VBP" surface="enter"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="house" pos="NN" surface="house"/>
+  <token id="6" lemma="through" pos="IN" surface="through"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="window" pos="NN" surface="window"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="3" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780358">
+ <sentence>
+  He arrives to find it being searched by the Czechoslovakian police .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="arrive" pos="VBZ" surface="arrives"/>
+  <token id="3" lemma="to" pos="TO" surface="to"/>
+  <token id="4" lemma="find" pos="VB" surface="find"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="6" lemma="be" pos="VBG" surface="being"/>
+  <token id="7" lemma="search" pos="VBN" surface="searched"/>
+  <token id="8" lemma="by" pos="IN" surface="by"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="czechoslovakian" pos="JJ" surface="Czechoslovakian"/>
+  <token id="11" lemma="police" pos="NNS" surface="police"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="2" to="4" type="advcl"/>
+  <dep from="7" to="5" type="nsubjpass"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="4" to="7" type="ccomp"/>
+  <dep from="7" to="8" type="agent"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="2" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Cognizer">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

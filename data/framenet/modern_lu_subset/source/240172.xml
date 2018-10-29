@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="240172">
+ <sentence>
+  Do n't let the water run out -- we 'll bottle it . "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="do" pos="VB" surface="Do"/>
+  <token id="2" lemma="n't" pos="RB" surface="n't"/>
+  <token id="3" lemma="let" pos="VB" surface="let"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="water" pos="NN" surface="water"/>
+  <token id="6" lemma="run" pos="VB" surface="run"/>
+  <token id="7" lemma="out" pos="RP" surface="out"/>
+  <token id="8" lemma="--" pos=":" surface="--"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="10" lemma="'ll" pos="MD" surface="'ll"/>
+  <token id="11" lemma="bottle" pos="VB" surface="bottle"/>
+  <token id="12" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="13" lemma="." pos="." surface="."/>
+  <token id="14" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="aux"/>
+  <dep from="3" to="2" type="neg"/>
+  <dep from="11" to="3" type="ccomp"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="3" to="6" type="ccomp"/>
+  <dep from="6" to="7" type="prt"/>
+  <dep from="11" to="8" type="punct"/>
+  <dep from="11" to="9" type="nsubj"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="dobj"/>
+  <dep from="11" to="13" type="punct"/>
+  <dep from="11" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

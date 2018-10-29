@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="627993">
+ <sentence>
+  " On the north-east corner he asked for a castellated bell tower in which to house the bell he had brought back from Lille .
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="on" pos="IN" surface="On"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="north-east" pos="JJ" surface="north-east"/>
+  <token id="5" lemma="corner" pos="NN" surface="corner"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="7" lemma="ask" pos="VBD" surface="asked"/>
+  <token id="8" lemma="for" pos="IN" surface="for"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="castellated" pos="JJ" surface="castellated"/>
+  <token id="11" lemma="bell" pos="NN" surface="bell"/>
+  <token id="12" lemma="tower" pos="NN" surface="tower"/>
+  <token id="13" lemma="in" pos="IN" surface="in"/>
+  <token id="14" lemma="which" pos="WDT" surface="which"/>
+  <token id="15" lemma="to" pos="TO" surface="to"/>
+  <token id="16" lemma="house" pos="VB" surface="house"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="bell" pos="NN" surface="bell"/>
+  <token id="19" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="20" lemma="have" pos="VBD" surface="had"/>
+  <token id="21" lemma="bring" pos="VBN" surface="brought"/>
+  <token id="22" lemma="back" pos="RB" surface="back"/>
+  <token id="23" lemma="from" pos="IN" surface="from"/>
+  <token id="24" lemma="lille" pos="NNP" surface="Lille"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="punct"/>
+  <dep from="7" to="2" type="prep"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="pobj"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="12" to="9" type="det"/>
+  <dep from="12" to="10" type="amod"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="8" to="12" type="pobj"/>
+  <dep from="16" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="16" to="15" type="aux"/>
+  <dep from="12" to="16" type="relcl"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="dobj"/>
+  <dep from="21" to="19" type="nsubj"/>
+  <dep from="21" to="20" type="aux"/>
+  <dep from="18" to="21" type="relcl"/>
+  <dep from="21" to="22" type="advmod"/>
+  <dep from="22" to="23" type="prep"/>
+  <dep from="23" to="24" type="pobj"/>
+  <dep from="7" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

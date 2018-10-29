@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="798163">
+ <sentence>
+  The prowl-car boys handed me downstairs and gave me the hands-flat-against-the-roof-of-the-car routine while they frisked me .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="prowl-car" pos="JJ" surface="prowl-car"/>
+  <token id="3" lemma="boy" pos="NNS" surface="boys"/>
+  <token id="4" lemma="hand" pos="VBD" surface="handed"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="6" lemma="downstairs" pos="RB" surface="downstairs"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="give" pos="VBD" surface="gave"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="hands-flat-against-the-roof-of-the-car" pos="NN" surface="hands-flat-against-the-roof-of-the-car"/>
+  <token id="12" lemma="routine" pos="NN" surface="routine"/>
+  <token id="13" lemma="while" pos="IN" surface="while"/>
+  <token id="14" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="15" lemma="frisk" pos="VBD" surface="frisked"/>
+  <token id="16" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="4" to="6" type="advmod"/>
+  <dep from="4" to="7" type="cc"/>
+  <dep from="4" to="8" type="conj"/>
+  <dep from="8" to="9" type="dative"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="8" to="12" type="dobj"/>
+  <dep from="15" to="13" type="mark"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="8" to="15" type="advcl"/>
+  <dep from="15" to="16" type="dobj"/>
+  <dep from="4" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Inspecting">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Inspector">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

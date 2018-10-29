@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="399775">
+ <sentence>
+  Large , solemn grey eyes gazed back , shadowed with tension .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="large" pos="JJ" surface="Large"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="solemn" pos="JJ" surface="solemn"/>
+  <token id="4" lemma="grey" pos="JJ" surface="grey"/>
+  <token id="5" lemma="eye" pos="NNS" surface="eyes"/>
+  <token id="6" lemma="gaze" pos="VBN" surface="gazed"/>
+  <token id="7" lemma="back" pos="RP" surface="back"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="shadow" pos="VBN" surface="shadowed"/>
+  <token id="10" lemma="with" pos="IN" surface="with"/>
+  <token id="11" lemma="tension" pos="NN" surface="tension"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="amod"/>
+  <dep from="6" to="2" type="punct"/>
+  <dep from="5" to="3" type="amod"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="advmod"/>
+  <dep from="6" to="8" type="punct"/>
+  <dep from="6" to="9" type="conj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="6" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="404289">
+ <sentence>
+  The reasons young people sniff glue vary with each individual .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="reason" pos="NNS" surface="reasons"/>
+  <token id="3" lemma="young" pos="JJ" surface="young"/>
+  <token id="4" lemma="people" pos="NNS" surface="people"/>
+  <token id="5" lemma="sniff" pos="VBP" surface="sniff"/>
+  <token id="6" lemma="glue" pos="NN" surface="glue"/>
+  <token id="7" lemma="vary" pos="VBP" surface="vary"/>
+  <token id="8" lemma="with" pos="IN" surface="with"/>
+  <token id="9" lemma="each" pos="DT" surface="each"/>
+  <token id="10" lemma="individual" pos="NN" surface="individual"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="7" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="2" to="5" type="relcl"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="7" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

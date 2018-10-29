@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="595546">
+ <sentence>
+  This Pharaoh Hound was originally bred to pursue game , such as rabbits .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="this" pos="DT" surface="This"/>
+  <token id="2" lemma="pharaoh" pos="NNP" surface="Pharaoh"/>
+  <token id="3" lemma="hound" pos="NNP" surface="Hound"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="originally" pos="RB" surface="originally"/>
+  <token id="6" lemma="breed" pos="VBN" surface="bred"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="pursue" pos="VB" surface="pursue"/>
+  <token id="9" lemma="game" pos="NN" surface="game"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="such" pos="JJ" surface="such"/>
+  <token id="12" lemma="as" pos="IN" surface="as"/>
+  <token id="13" lemma="rabbit" pos="NNS" surface="rabbits"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="6" to="3" type="nsubjpass"/>
+  <dep from="6" to="4" type="auxpass"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="6" to="8" type="advcl"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="9" to="10" type="punct"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="6" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

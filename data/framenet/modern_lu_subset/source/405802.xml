@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="405802">
+ <sentence>
+  People can also view the garden by appointment .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="people" pos="NNS" surface="People"/>
+  <token id="2" lemma="can" pos="MD" surface="can"/>
+  <token id="3" lemma="also" pos="RB" surface="also"/>
+  <token id="4" lemma="view" pos="VB" surface="view"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="garden" pos="NN" surface="garden"/>
+  <token id="7" lemma="by" pos="IN" surface="by"/>
+  <token id="8" lemma="appointment" pos="NN" surface="appointment"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="4" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="631955">
+ <sentence>
+  Whisk the egg whites to stiff snowy peaks , gradually beating in 4 oz sugar , then pile the meringue mixture over the pudding .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="whisk" pos="VB" surface="Whisk"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="egg" pos="NN" surface="egg"/>
+  <token id="4" lemma="white" pos="NNS" surface="whites"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="stiff" pos="VB" surface="stiff"/>
+  <token id="7" lemma="snowy" pos="JJ" surface="snowy"/>
+  <token id="8" lemma="peak" pos="NNS" surface="peaks"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="gradually" pos="RB" surface="gradually"/>
+  <token id="11" lemma="beat" pos="VBG" surface="beating"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="4" pos="CD" surface="4"/>
+  <token id="14" lemma="oz" pos="NN" surface="oz"/>
+  <token id="15" lemma="sugar" pos="NN" surface="sugar"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="then" pos="RB" surface="then"/>
+  <token id="18" lemma="pile" pos="VB" surface="pile"/>
+  <token id="19" lemma="the" pos="DT" surface="the"/>
+  <token id="20" lemma="meringue" pos="NN" surface="meringue"/>
+  <token id="21" lemma="mixture" pos="NN" surface="mixture"/>
+  <token id="22" lemma="over" pos="IN" surface="over"/>
+  <token id="23" lemma="the" pos="DT" surface="the"/>
+  <token id="24" lemma="pudding" pos="NN" surface="pudding"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="1" to="4" type="dobj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="1" to="8" type="dobj"/>
+  <dep from="1" to="9" type="punct"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="1" to="11" type="advcl"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="11" to="16" type="punct"/>
+  <dep from="18" to="17" type="advmod"/>
+  <dep from="11" to="18" type="dep"/>
+  <dep from="21" to="19" type="det"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="18" to="21" type="dobj"/>
+  <dep from="21" to="22" type="prep"/>
+  <dep from="24" to="23" type="det"/>
+  <dep from="22" to="24" type="pobj"/>
+  <dep from="1" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

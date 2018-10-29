@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="718323">
+ <sentence>
+  Seal the jar when the fruit is cold .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="seal" pos="VB" surface="Seal"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="jar" pos="NN" surface="jar"/>
+  <token id="4" lemma="when" pos="WRB" surface="when"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="fruit" pos="NN" surface="fruit"/>
+  <token id="7" lemma="be" pos="VBZ" surface="is"/>
+  <token id="8" lemma="cold" pos="JJ" surface="cold"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="dobj"/>
+  <dep from="7" to="4" type="advmod"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="1" to="7" type="advcl"/>
+  <dep from="7" to="8" type="acomp"/>
+  <dep from="1" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Closure">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Containing_object">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

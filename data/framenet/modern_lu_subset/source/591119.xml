@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="591119">
+ <sentence>
+  He escorted her across the courtyard , through the wrought-iron gate , and along the vaulted passage .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="escort" pos="VBD" surface="escorted"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="4" lemma="across" pos="IN" surface="across"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="courtyard" pos="NN" surface="courtyard"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="through" pos="IN" surface="through"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="wrought-iron" pos="NN" surface="wrought-iron"/>
+  <token id="11" lemma="gate" pos="NN" surface="gate"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="along" pos="IN" surface="along"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="vault" pos="VBN" surface="vaulted"/>
+  <token id="17" lemma="passage" pos="NN" surface="passage"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="2" to="7" type="punct"/>
+  <dep from="2" to="8" type="prep"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="2" to="12" type="punct"/>
+  <dep from="2" to="13" type="cc"/>
+  <dep from="2" to="14" type="conj"/>
+  <dep from="17" to="15" type="det"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="14" to="17" type="pobj"/>
+  <dep from="2" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

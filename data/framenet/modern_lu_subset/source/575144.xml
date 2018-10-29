@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="575144">
+ <sentence>
+  Individual plants can eventually be potted singly in small pots .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="individual" pos="JJ" surface="Individual"/>
+  <token id="2" lemma="plant" pos="NNS" surface="plants"/>
+  <token id="3" lemma="can" pos="MD" surface="can"/>
+  <token id="4" lemma="eventually" pos="RB" surface="eventually"/>
+  <token id="5" lemma="be" pos="VB" surface="be"/>
+  <token id="6" lemma="pot" pos="VBN" surface="potted"/>
+  <token id="7" lemma="singly" pos="RB" surface="singly"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="small" pos="JJ" surface="small"/>
+  <token id="10" lemma="pot" pos="NNS" surface="pots"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="6" to="2" type="nsubjpass"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="6" to="4" type="advmod"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="advmod"/>
+  <dep from="6" to="8" type="prep"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="6" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

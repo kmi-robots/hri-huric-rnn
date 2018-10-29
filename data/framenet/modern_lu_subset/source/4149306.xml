@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4149306">
+ <sentence>
+  Two more Islanders arrived shortly afterwards , and all the Channel Islands were linked .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="two" pos="CD" surface="Two"/>
+  <token id="2" lemma="more" pos="JJR" surface="more"/>
+  <token id="3" lemma="islander" pos="NNS" surface="Islanders"/>
+  <token id="4" lemma="arrive" pos="VBD" surface="arrived"/>
+  <token id="5" lemma="shortly" pos="RB" surface="shortly"/>
+  <token id="6" lemma="afterwards" pos="RB" surface="afterwards"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="all" pos="PDT" surface="all"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="channel" pos="NNP" surface="Channel"/>
+  <token id="12" lemma="islands" pos="NNPS" surface="Islands"/>
+  <token id="13" lemma="be" pos="VBD" surface="were"/>
+  <token id="14" lemma="link" pos="VBN" surface="linked"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nummod"/>
+  <dep from="1" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="4" to="6" type="advmod"/>
+  <dep from="4" to="7" type="punct"/>
+  <dep from="4" to="8" type="cc"/>
+  <dep from="12" to="9" type="predet"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="14" to="12" type="nsubjpass"/>
+  <dep from="14" to="13" type="auxpass"/>
+  <dep from="4" to="14" type="conj"/>
+  <dep from="14" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

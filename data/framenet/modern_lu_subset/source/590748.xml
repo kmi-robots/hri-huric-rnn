@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="590748">
+ <sentence>
+  Another item assured us that ` Mr Cook was personally conducting one of his Highland Tours " .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="another" pos="DT" surface="Another"/>
+  <token id="2" lemma="item" pos="NN" surface="item"/>
+  <token id="3" lemma="assure" pos="VBD" surface="assured"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="us"/>
+  <token id="5" lemma="that" pos="IN" surface="that"/>
+  <token id="6" lemma="`" pos="''" surface="`"/>
+  <token id="7" lemma="mr" pos="NNP" surface="Mr"/>
+  <token id="8" lemma="cook" pos="NNP" surface="Cook"/>
+  <token id="9" lemma="be" pos="VBD" surface="was"/>
+  <token id="10" lemma="personally" pos="RB" surface="personally"/>
+  <token id="11" lemma="conduct" pos="VBG" surface="conducting"/>
+  <token id="12" lemma="one" pos="CD" surface="one"/>
+  <token id="13" lemma="of" pos="IN" surface="of"/>
+  <token id="14" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="15" lemma="highland" pos="NNP" surface="Highland"/>
+  <token id="16" lemma="tours" pos="NNPS" surface="Tours"/>
+  <token id="17" lemma='"' pos="''" surface='"'/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="11" to="5" type="mark"/>
+  <dep from="11" to="6" type="punct"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="11" to="8" type="nsubj"/>
+  <dep from="11" to="9" type="aux"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="3" to="11" type="ccomp"/>
+  <dep from="11" to="12" type="dobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="16" to="14" type="poss"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="13" to="16" type="pobj"/>
+  <dep from="11" to="17" type="punct"/>
+  <dep from="3" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

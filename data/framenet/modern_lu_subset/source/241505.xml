@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="241505">
+ <sentence>
+  He said nothing , perched his executive case on a working surface , opened it , searched it swiftly .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="say" pos="VBD" surface="said"/>
+  <token id="3" lemma="nothing" pos="NN" surface="nothing"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="perch" pos="VBD" surface="perched"/>
+  <token id="6" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="7" lemma="executive" pos="JJ" surface="executive"/>
+  <token id="8" lemma="case" pos="NN" surface="case"/>
+  <token id="9" lemma="on" pos="IN" surface="on"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="work" pos="VBG" surface="working"/>
+  <token id="12" lemma="surface" pos="NN" surface="surface"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="open" pos="VBD" surface="opened"/>
+  <token id="15" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="search" pos="VBD" surface="searched"/>
+  <token id="18" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="19" lemma="swiftly" pos="RB" surface="swiftly"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="punct"/>
+  <dep from="2" to="5" type="conj"/>
+  <dep from="8" to="6" type="poss"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="dobj"/>
+  <dep from="5" to="9" type="prep"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="5" to="13" type="punct"/>
+  <dep from="5" to="14" type="conj"/>
+  <dep from="14" to="15" type="dobj"/>
+  <dep from="14" to="16" type="punct"/>
+  <dep from="14" to="17" type="conj"/>
+  <dep from="17" to="18" type="dobj"/>
+  <dep from="17" to="19" type="advmod"/>
+  <dep from="2" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

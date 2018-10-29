@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="719744">
+ <sentence>
+  The slogan was spelled out in three-foot-high polystyrene lettering and glued onto a soft canvas backdrop .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="slogan" pos="NN" surface="slogan"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="spell" pos="VBN" surface="spelled"/>
+  <token id="5" lemma="out" pos="RP" surface="out"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="three-foot-high" pos="JJ" surface="three-foot-high"/>
+  <token id="8" lemma="polystyrene" pos="NN" surface="polystyrene"/>
+  <token id="9" lemma="lettering" pos="NN" surface="lettering"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="glue" pos="VBD" surface="glued"/>
+  <token id="12" lemma="onto" pos="IN" surface="onto"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="soft" pos="JJ" surface="soft"/>
+  <token id="15" lemma="canvas" pos="NN" surface="canvas"/>
+  <token id="16" lemma="backdrop" pos="NN" surface="backdrop"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prt"/>
+  <dep from="4" to="6" type="prep"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="acl"/>
+  <dep from="4" to="10" type="cc"/>
+  <dep from="4" to="11" type="conj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="16" to="13" type="det"/>
+  <dep from="16" to="14" type="amod"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="12" to="16" type="pobj"/>
+  <dep from="4" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

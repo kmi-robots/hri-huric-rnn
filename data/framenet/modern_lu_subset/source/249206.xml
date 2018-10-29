@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="249206">
+ <sentence>
+  When I showed her she lent me a silk shawl to drape round my shoulders and over my breasts .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="when" pos="WRB" surface="When"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="3" lemma="show" pos="VBD" surface="showed"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="6" lemma="lend" pos="VBD" surface="lent"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="silk" pos="NN" surface="silk"/>
+  <token id="10" lemma="shawl" pos="NN" surface="shawl"/>
+  <token id="11" lemma="to" pos="TO" surface="to"/>
+  <token id="12" lemma="drape" pos="VB" surface="drape"/>
+  <token id="13" lemma="round" pos="IN" surface="round"/>
+  <token id="14" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="15" lemma="shoulder" pos="NNS" surface="shoulders"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="over" pos="IN" surface="over"/>
+  <token id="18" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="19" lemma="breast" pos="NNS" surface="breasts"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="advmod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="6" to="3" type="advcl"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="dative"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="6" to="10" type="dobj"/>
+  <dep from="12" to="11" type="aux"/>
+  <dep from="10" to="12" type="relcl"/>
+  <dep from="15" to="13" type="amod"/>
+  <dep from="15" to="14" type="poss"/>
+  <dep from="12" to="15" type="dobj"/>
+  <dep from="12" to="16" type="cc"/>
+  <dep from="12" to="17" type="conj"/>
+  <dep from="19" to="18" type="poss"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="6" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

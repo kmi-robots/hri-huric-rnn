@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="781187">
+ <sentence>
+  We published the results of our survey in spring 1989 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="We"/>
+  <token id="2" lemma="publish" pos="VBD" surface="published"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="result" pos="NNS" surface="results"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="-PRON-" pos="PRP$" surface="our"/>
+  <token id="7" lemma="survey" pos="NN" surface="survey"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="spring" pos="NN" surface="spring"/>
+  <token id="10" lemma="1989" pos="CD" surface="1989"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="poss"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="2" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="9" to="10" type="nummod"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

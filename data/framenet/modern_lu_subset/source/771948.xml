@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="771948">
+ <sentence>
+  Clearly , some clients will need community nurse visits at home .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="clearly" pos="RB" surface="Clearly"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="some" pos="DT" surface="some"/>
+  <token id="4" lemma="client" pos="NNS" surface="clients"/>
+  <token id="5" lemma="will" pos="MD" surface="will"/>
+  <token id="6" lemma="need" pos="VB" surface="need"/>
+  <token id="7" lemma="community" pos="NN" surface="community"/>
+  <token id="8" lemma="nurse" pos="NN" surface="nurse"/>
+  <token id="9" lemma="visit" pos="NNS" surface="visits"/>
+  <token id="10" lemma="at" pos="IN" surface="at"/>
+  <token id="11" lemma="home" pos="NN" surface="home"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="advmod"/>
+  <dep from="6" to="2" type="punct"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="dobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="6" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="720618">
+ <sentence>
+  Now we fasten pinecones to the dahlia sticks and shake them out every few days .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="now" pos="RB" surface="Now"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="3" lemma="fasten" pos="JJ" surface="fasten"/>
+  <token id="4" lemma="pinecone" pos="NNS" surface="pinecones"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="dahlia" pos="NNS" surface="dahlia"/>
+  <token id="8" lemma="stick" pos="NNS" surface="sticks"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="shake" pos="VB" surface="shake"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="12" lemma="out" pos="RP" surface="out"/>
+  <token id="13" lemma="every" pos="DT" surface="every"/>
+  <token id="14" lemma="few" pos="JJ" surface="few"/>
+  <token id="15" lemma="day" pos="NNS" surface="days"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="advmod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="3" to="9" type="cc"/>
+  <dep from="3" to="10" type="conj"/>
+  <dep from="10" to="11" type="dobj"/>
+  <dep from="10" to="12" type="prt"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="10" to="15" type="npadvmod"/>
+  <dep from="3" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

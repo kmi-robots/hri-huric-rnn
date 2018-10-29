@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="825149">
+ <sentence>
+  Dieter guided her to an empty chair ; she was trembling violently and he called for brandy .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="dieter" pos="NN" surface="Dieter"/>
+  <token id="2" lemma="guide" pos="VBD" surface="guided"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="4" lemma="to" pos="IN" surface="to"/>
+  <token id="5" lemma="an" pos="DT" surface="an"/>
+  <token id="6" lemma="empty" pos="JJ" surface="empty"/>
+  <token id="7" lemma="chair" pos="NN" surface="chair"/>
+  <token id="8" lemma=";" pos=":" surface=";"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="10" lemma="be" pos="VBD" surface="was"/>
+  <token id="11" lemma="tremble" pos="VBG" surface="trembling"/>
+  <token id="12" lemma="violently" pos="RB" surface="violently"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="15" lemma="call" pos="VBD" surface="called"/>
+  <token id="16" lemma="for" pos="IN" surface="for"/>
+  <token id="17" lemma="brandy" pos="NN" surface="brandy"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="11" to="2" type="ccomp"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="pobj"/>
+  <dep from="11" to="8" type="punct"/>
+  <dep from="11" to="9" type="nsubj"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="advmod"/>
+  <dep from="11" to="13" type="cc"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="11" to="15" type="conj"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="15" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

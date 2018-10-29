@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1283675">
+ <sentence>
+  Pupils who are potentially good spellers do n't need teaching ; just keep an eye on them , and teach them to proof-read their writing .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="pupil" pos="NNS" surface="Pupils"/>
+  <token id="2" lemma="who" pos="WP" surface="who"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="potentially" pos="RB" surface="potentially"/>
+  <token id="5" lemma="good" pos="JJ" surface="good"/>
+  <token id="6" lemma="speller" pos="NNS" surface="spellers"/>
+  <token id="7" lemma="do" pos="VBP" surface="do"/>
+  <token id="8" lemma="n't" pos="RB" surface="n't"/>
+  <token id="9" lemma="need" pos="VB" surface="need"/>
+  <token id="10" lemma="teaching" pos="NN" surface="teaching"/>
+  <token id="11" lemma=";" pos=":" surface=";"/>
+  <token id="12" lemma="just" pos="RB" surface="just"/>
+  <token id="13" lemma="keep" pos="VB" surface="keep"/>
+  <token id="14" lemma="an" pos="DT" surface="an"/>
+  <token id="15" lemma="eye" pos="NN" surface="eye"/>
+  <token id="16" lemma="on" pos="IN" surface="on"/>
+  <token id="17" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="and" pos="CC" surface="and"/>
+  <token id="20" lemma="teach" pos="VB" surface="teach"/>
+  <token id="21" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="22" lemma="to" pos="TO" surface="to"/>
+  <token id="23" lemma="proof-read" pos="VB" surface="proof-read"/>
+  <token id="24" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="25" lemma="writing" pos="NN" surface="writing"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="1" to="3" type="relcl"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="attr"/>
+  <dep from="9" to="7" type="aux"/>
+  <dep from="9" to="8" type="neg"/>
+  <dep from="13" to="9" type="ccomp"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="13" to="11" type="punct"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="dobj"/>
+  <dep from="13" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="13" to="18" type="punct"/>
+  <dep from="13" to="19" type="cc"/>
+  <dep from="13" to="20" type="conj"/>
+  <dep from="20" to="21" type="dobj"/>
+  <dep from="23" to="22" type="aux"/>
+  <dep from="20" to="23" type="xcomp"/>
+  <dep from="25" to="24" type="poss"/>
+  <dep from="23" to="25" type="dobj"/>
+  <dep from="13" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Inspecting">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Inspector">
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+    <frameElement type="Unwanted_entity">
+     <token id="23"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

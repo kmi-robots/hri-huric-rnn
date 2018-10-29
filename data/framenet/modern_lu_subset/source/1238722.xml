@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1238722">
+ <sentence>
+  Three more drawings were then seized at an art dealer 's in Lyon in December 1989 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="three" pos="CD" surface="Three"/>
+  <token id="2" lemma="more" pos="JJR" surface="more"/>
+  <token id="3" lemma="drawing" pos="NNS" surface="drawings"/>
+  <token id="4" lemma="be" pos="VBD" surface="were"/>
+  <token id="5" lemma="then" pos="RB" surface="then"/>
+  <token id="6" lemma="seize" pos="VBN" surface="seized"/>
+  <token id="7" lemma="at" pos="IN" surface="at"/>
+  <token id="8" lemma="an" pos="DT" surface="an"/>
+  <token id="9" lemma="art" pos="NN" surface="art"/>
+  <token id="10" lemma="dealer" pos="NN" surface="dealer"/>
+  <token id="11" lemma="'s" pos="POS" surface="'s"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="lyon" pos="NNP" surface="Lyon"/>
+  <token id="14" lemma="in" pos="IN" surface="in"/>
+  <token id="15" lemma="december" pos="NNP" surface="December"/>
+  <token id="16" lemma="1989" pos="CD" surface="1989"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nummod"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="6" to="3" type="nsubjpass"/>
+  <dep from="6" to="4" type="auxpass"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="10" to="11" type="case"/>
+  <dep from="10" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="6" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="15" to="16" type="nummod"/>
+  <dep from="6" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Taking">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

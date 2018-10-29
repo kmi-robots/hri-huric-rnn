@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1283805">
+ <sentence>
+  Donations of cake/s for the tea should be made to Jean Parmiter .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="donation" pos="NNS" surface="Donations"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="cake/s" pos="NN" surface="cake/s"/>
+  <token id="4" lemma="for" pos="IN" surface="for"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="tea" pos="NN" surface="tea"/>
+  <token id="7" lemma="should" pos="MD" surface="should"/>
+  <token id="8" lemma="be" pos="VB" surface="be"/>
+  <token id="9" lemma="make" pos="VBN" surface="made"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="jean" pos="NNP" surface="Jean"/>
+  <token id="12" lemma="parmiter" pos="NNP" surface="Parmiter"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="nsubjpass"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="2" to="3" type="pobj"/>
+  <dep from="1" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="9" to="7" type="aux"/>
+  <dep from="9" to="8" type="auxpass"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="9" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Imposed_purpose">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

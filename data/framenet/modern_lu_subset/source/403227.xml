@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403227">
+ <sentence>
+  She opened them again to peep briefly at the signature .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="She"/>
+  <token id="2" lemma="open" pos="VBD" surface="opened"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="4" lemma="again" pos="RB" surface="again"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="peep" pos="VB" surface="peep"/>
+  <token id="7" lemma="briefly" pos="NN" surface="briefly"/>
+  <token id="8" lemma="at" pos="IN" surface="at"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="signature" pos="NN" surface="signature"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="advmod"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="2" to="6" type="advcl"/>
+  <dep from="6" to="7" type="advmod"/>
+  <dep from="6" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

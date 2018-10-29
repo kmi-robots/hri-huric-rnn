@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="401907">
+ <sentence>
+  Charlie asked as he looked up the stairs .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="charlie" pos="NNP" surface="Charlie"/>
+  <token id="2" lemma="ask" pos="VBD" surface="asked"/>
+  <token id="3" lemma="as" pos="IN" surface="as"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="5" lemma="look" pos="VBD" surface="looked"/>
+  <token id="6" lemma="up" pos="RP" surface="up"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="stair" pos="NNS" surface="stairs"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="mark"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="2" to="5" type="advcl"/>
+  <dep from="5" to="6" type="prt"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="5" to="8" type="dobj"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

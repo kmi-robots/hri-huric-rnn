@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="591336">
+ <sentence>
+  Rose burst into tears and was escorted indoors by Dieter .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="rose" pos="NNS" surface="Rose"/>
+  <token id="2" lemma="burst" pos="VBP" surface="burst"/>
+  <token id="3" lemma="into" pos="IN" surface="into"/>
+  <token id="4" lemma="tear" pos="NNS" surface="tears"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="be" pos="VBD" surface="was"/>
+  <token id="7" lemma="escort" pos="VBN" surface="escorted"/>
+  <token id="8" lemma="indoor" pos="NNS" surface="indoors"/>
+  <token id="9" lemma="by" pos="IN" surface="by"/>
+  <token id="10" lemma="dieter" pos="NNP" surface="Dieter"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="2" to="5" type="cc"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="2" to="7" type="conj"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="7" to="9" type="agent"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Cotheme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

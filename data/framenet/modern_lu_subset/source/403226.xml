@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403226">
+ <sentence>
+  Birds can experience quiet sleep when they are peeking as well as when their eyes are closed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="bird" pos="NNS" surface="Birds"/>
+  <token id="2" lemma="can" pos="MD" surface="can"/>
+  <token id="3" lemma="experience" pos="VB" surface="experience"/>
+  <token id="4" lemma="quiet" pos="JJ" surface="quiet"/>
+  <token id="5" lemma="sleep" pos="NN" surface="sleep"/>
+  <token id="6" lemma="when" pos="WRB" surface="when"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="8" lemma="be" pos="VBP" surface="are"/>
+  <token id="9" lemma="peek" pos="VBG" surface="peeking"/>
+  <token id="10" lemma="as" pos="RB" surface="as"/>
+  <token id="11" lemma="well" pos="RB" surface="well"/>
+  <token id="12" lemma="as" pos="IN" surface="as"/>
+  <token id="13" lemma="when" pos="WRB" surface="when"/>
+  <token id="14" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="15" lemma="eye" pos="NNS" surface="eyes"/>
+  <token id="16" lemma="be" pos="VBP" surface="are"/>
+  <token id="17" lemma="closed" pos="JJ" surface="closed"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="9" to="6" type="advmod"/>
+  <dep from="9" to="7" type="nsubj"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="3" to="9" type="advcl"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="12" to="11" type="advmod"/>
+  <dep from="9" to="12" type="cc"/>
+  <dep from="17" to="13" type="advmod"/>
+  <dep from="15" to="14" type="poss"/>
+  <dep from="17" to="15" type="nsubjpass"/>
+  <dep from="17" to="16" type="auxpass"/>
+  <dep from="9" to="17" type="advcl"/>
+  <dep from="3" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

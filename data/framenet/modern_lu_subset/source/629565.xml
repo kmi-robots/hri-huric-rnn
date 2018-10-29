@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="629565">
+ <sentence>
+  Examples are hip joint replacement , cataract extraction , prostate resection , and cardiac pacemaker insertion .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="example" pos="NNS" surface="Examples"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="hip" pos="NN" surface="hip"/>
+  <token id="4" lemma="joint" pos="JJ" surface="joint"/>
+  <token id="5" lemma="replacement" pos="NN" surface="replacement"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="cataract" pos="NN" surface="cataract"/>
+  <token id="8" lemma="extraction" pos="NN" surface="extraction"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="prostate" pos="NN" surface="prostate"/>
+  <token id="11" lemma="resection" pos="NN" surface="resection"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="cardiac" pos="JJ" surface="cardiac"/>
+  <token id="15" lemma="pacemaker" pos="NN" surface="pacemaker"/>
+  <token id="16" lemma="insertion" pos="NN" surface="insertion"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="punct"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="3" to="8" type="appos"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="8" to="11" type="conj"/>
+  <dep from="11" to="12" type="punct"/>
+  <dep from="11" to="13" type="cc"/>
+  <dep from="16" to="14" type="amod"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="11" to="16" type="conj"/>
+  <dep from="3" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

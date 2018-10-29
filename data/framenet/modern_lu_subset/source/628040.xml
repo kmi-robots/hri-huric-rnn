@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="628040">
+ <sentence>
+  ` And I 've brought up some bread and jam , in case anybody 's hungry . "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="``" surface="`"/>
+  <token id="2" lemma="and" pos="CC" surface="And"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="4" lemma="'ve" pos="VBP" surface="'ve"/>
+  <token id="5" lemma="bring" pos="VBN" surface="brought"/>
+  <token id="6" lemma="up" pos="RP" surface="up"/>
+  <token id="7" lemma="some" pos="DT" surface="some"/>
+  <token id="8" lemma="bread" pos="NN" surface="bread"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="jam" pos="NN" surface="jam"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="case" pos="NN" surface="case"/>
+  <token id="14" lemma="anybody" pos="NN" surface="anybody"/>
+  <token id="15" lemma="'s" pos="POS" surface="'s"/>
+  <token id="16" lemma="hungry" pos="JJ" surface="hungry"/>
+  <token id="17" lemma="." pos="." surface="."/>
+  <token id="18" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="punct"/>
+  <dep from="5" to="2" type="cc"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prt"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="5" to="8" type="dobj"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="5" to="11" type="punct"/>
+  <dep from="15" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="5" to="15" type="advcl"/>
+  <dep from="15" to="16" type="acomp"/>
+  <dep from="5" to="17" type="punct"/>
+  <dep from="5" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

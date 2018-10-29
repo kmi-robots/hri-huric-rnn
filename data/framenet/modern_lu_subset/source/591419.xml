@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="591419">
+ <sentence>
+  A helicopter gunship escorted 10 lorryloads of food to nearby villages .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="helicopter" pos="NN" surface="helicopter"/>
+  <token id="3" lemma="gunship" pos="NN" surface="gunship"/>
+  <token id="4" lemma="escort" pos="VBD" surface="escorted"/>
+  <token id="5" lemma="10" pos="CD" surface="10"/>
+  <token id="6" lemma="lorryload" pos="NNS" surface="lorryloads"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="food" pos="NN" surface="food"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="nearby" pos="JJ" surface="nearby"/>
+  <token id="11" lemma="village" pos="NNS" surface="villages"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="4" to="9" type="prep"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="4" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

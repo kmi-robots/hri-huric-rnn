@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="404399">
+ <sentence>
+  Bernadette 's fifteen year old son Patrick died a year and half ago after sniffing lighter fuel .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="bernadette" pos="NNP" surface="Bernadette"/>
+  <token id="2" lemma="'s" pos="POS" surface="'s"/>
+  <token id="3" lemma="fifteen" pos="CD" surface="fifteen"/>
+  <token id="4" lemma="year" pos="NN" surface="year"/>
+  <token id="5" lemma="old" pos="JJ" surface="old"/>
+  <token id="6" lemma="son" pos="NN" surface="son"/>
+  <token id="7" lemma="patrick" pos="NNP" surface="Patrick"/>
+  <token id="8" lemma="die" pos="VBD" surface="died"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="year" pos="NN" surface="year"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="half" pos="NN" surface="half"/>
+  <token id="13" lemma="ago" pos="RB" surface="ago"/>
+  <token id="14" lemma="after" pos="IN" surface="after"/>
+  <token id="15" lemma="sniff" pos="VBG" surface="sniffing"/>
+  <token id="16" lemma="light" pos="JJR" surface="lighter"/>
+  <token id="17" lemma="fuel" pos="NN" surface="fuel"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="poss"/>
+  <dep from="1" to="2" type="case"/>
+  <dep from="4" to="3" type="nummod"/>
+  <dep from="5" to="4" type="npadvmod"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="8" to="6" type="nsubj"/>
+  <dep from="6" to="7" type="appos"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="npadvmod"/>
+  <dep from="10" to="11" type="cc"/>
+  <dep from="10" to="12" type="nummod"/>
+  <dep from="8" to="13" type="advmod"/>
+  <dep from="8" to="14" type="prep"/>
+  <dep from="14" to="15" type="pcomp"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="15" to="17" type="dobj"/>
+  <dep from="8" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

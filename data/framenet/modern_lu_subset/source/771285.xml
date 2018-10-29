@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="771285">
+ <sentence>
+  Entrance from the car park at the rear of the library .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="entrance" pos="NN" surface="Entrance"/>
+  <token id="2" lemma="from" pos="IN" surface="from"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="car" pos="NN" surface="car"/>
+  <token id="5" lemma="park" pos="NN" surface="park"/>
+  <token id="6" lemma="at" pos="IN" surface="at"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="rear" pos="NN" surface="rear"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="library" pos="NN" surface="library"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="2" to="5" type="pobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="1" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Source">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

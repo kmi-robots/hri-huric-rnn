@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="648000">
+ <sentence>
+  A 10.30 am take-off was followed by an uneventful flight and arrival from a northerly direction at Newbury race-course at around 11.15 am .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="10.30" pos="CD" surface="10.30"/>
+  <token id="3" lemma="am" pos="NN" surface="am"/>
+  <token id="4" lemma="take-off" pos="NN" surface="take-off"/>
+  <token id="5" lemma="be" pos="VBD" surface="was"/>
+  <token id="6" lemma="follow" pos="VBN" surface="followed"/>
+  <token id="7" lemma="by" pos="IN" surface="by"/>
+  <token id="8" lemma="an" pos="DT" surface="an"/>
+  <token id="9" lemma="uneventful" pos="JJ" surface="uneventful"/>
+  <token id="10" lemma="flight" pos="NN" surface="flight"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="arrival" pos="NN" surface="arrival"/>
+  <token id="13" lemma="from" pos="IN" surface="from"/>
+  <token id="14" lemma="a" pos="DT" surface="a"/>
+  <token id="15" lemma="northerly" pos="JJ" surface="northerly"/>
+  <token id="16" lemma="direction" pos="NN" surface="direction"/>
+  <token id="17" lemma="at" pos="IN" surface="at"/>
+  <token id="18" lemma="newbury" pos="NNP" surface="Newbury"/>
+  <token id="19" lemma="race-course" pos="NN" surface="race-course"/>
+  <token id="20" lemma="at" pos="IN" surface="at"/>
+  <token id="21" lemma="around" pos="IN" surface="around"/>
+  <token id="22" lemma="11.15" pos="CD" surface="11.15"/>
+  <token id="23" lemma="am" pos="NN" surface="am"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="6" to="2" type="nsubjpass"/>
+  <dep from="6" to="3" type="auxpass"/>
+  <dep from="3" to="4" type="acomp"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="agent"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="10" to="11" type="cc"/>
+  <dep from="10" to="12" type="conj"/>
+  <dep from="10" to="13" type="prep"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="13" to="16" type="pobj"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="16" to="20" type="prep"/>
+  <dep from="22" to="21" type="quantmod"/>
+  <dep from="23" to="22" type="nummod"/>
+  <dep from="20" to="23" type="pobj"/>
+  <dep from="6" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Source">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

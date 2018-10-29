@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="851668">
+ <sentence>
+  Both systems operators and database producers give out newsletters in which changes and ` new " techniques are introduced .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="both" pos="DT" surface="Both"/>
+  <token id="2" lemma="system" pos="NNS" surface="systems"/>
+  <token id="3" lemma="operator" pos="NNS" surface="operators"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="database" pos="NN" surface="database"/>
+  <token id="6" lemma="producer" pos="NNS" surface="producers"/>
+  <token id="7" lemma="give" pos="VBP" surface="give"/>
+  <token id="8" lemma="out" pos="RP" surface="out"/>
+  <token id="9" lemma="newsletter" pos="NNS" surface="newsletters"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="which" pos="WDT" surface="which"/>
+  <token id="12" lemma="change" pos="VBZ" surface="changes"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="`" pos="``" surface="`"/>
+  <token id="15" lemma="new" pos="JJ" surface="new"/>
+  <token id="16" lemma='"' pos="''" surface='"'/>
+  <token id="17" lemma="technique" pos="NNS" surface="techniques"/>
+  <token id="18" lemma="be" pos="VBP" surface="are"/>
+  <token id="19" lemma="introduce" pos="VBN" surface="introduced"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="7" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="3" to="6" type="conj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prt"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="19" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="19" to="12" type="nsubjpass"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="17" to="14" type="punct"/>
+  <dep from="17" to="15" type="amod"/>
+  <dep from="17" to="16" type="punct"/>
+  <dep from="12" to="17" type="conj"/>
+  <dep from="19" to="18" type="auxpass"/>
+  <dep from="9" to="19" type="relcl"/>
+  <dep from="7" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

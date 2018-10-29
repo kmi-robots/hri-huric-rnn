@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="771528">
+ <sentence>
+  David Platt 's return from world cup stage to Wembley stage is likely to be spoilt by a knee injury .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="david" pos="NNP" surface="David"/>
+  <token id="2" lemma="platt" pos="NNP" surface="Platt"/>
+  <token id="3" lemma="'s" pos="POS" surface="'s"/>
+  <token id="4" lemma="return" pos="NN" surface="return"/>
+  <token id="5" lemma="from" pos="IN" surface="from"/>
+  <token id="6" lemma="world" pos="NN" surface="world"/>
+  <token id="7" lemma="cup" pos="NN" surface="cup"/>
+  <token id="8" lemma="stage" pos="NN" surface="stage"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="wembley" pos="NNP" surface="Wembley"/>
+  <token id="11" lemma="stage" pos="NN" surface="stage"/>
+  <token id="12" lemma="be" pos="VBZ" surface="is"/>
+  <token id="13" lemma="likely" pos="JJ" surface="likely"/>
+  <token id="14" lemma="to" pos="TO" surface="to"/>
+  <token id="15" lemma="be" pos="VB" surface="be"/>
+  <token id="16" lemma="spoil" pos="VBN" surface="spoilt"/>
+  <token id="17" lemma="by" pos="IN" surface="by"/>
+  <token id="18" lemma="a" pos="DT" surface="a"/>
+  <token id="19" lemma="knee" pos="NN" surface="knee"/>
+  <token id="20" lemma="injury" pos="NN" surface="injury"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="4" to="2" type="poss"/>
+  <dep from="2" to="3" type="case"/>
+  <dep from="12" to="4" type="nsubj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="4" to="9" type="prep"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="acomp"/>
+  <dep from="16" to="14" type="aux"/>
+  <dep from="16" to="15" type="auxpass"/>
+  <dep from="13" to="16" type="xcomp"/>
+  <dep from="16" to="17" type="agent"/>
+  <dep from="20" to="18" type="det"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="17" to="20" type="pobj"/>
+  <dep from="12" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

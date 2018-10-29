@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="629638">
+ <sentence>
+  He laid a wreath at the tomb of the Ayatollah Khomeini .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="lay" pos="VBD" surface="laid"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="wreath" pos="NN" surface="wreath"/>
+  <token id="5" lemma="at" pos="IN" surface="at"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="tomb" pos="NN" surface="tomb"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="ayatollah" pos="NNP" surface="Ayatollah"/>
+  <token id="11" lemma="khomeini" pos="NNP" surface="Khomeini"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="2" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

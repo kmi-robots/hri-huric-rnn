@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="240431">
+ <sentence>
+  Items like tea bags and cigarettes are boxed , then wrapped in cellophane .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="item" pos="NNS" surface="Items"/>
+  <token id="2" lemma="like" pos="IN" surface="like"/>
+  <token id="3" lemma="tea" pos="NN" surface="tea"/>
+  <token id="4" lemma="bag" pos="NNS" surface="bags"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="cigarette" pos="NNS" surface="cigarettes"/>
+  <token id="7" lemma="be" pos="VBP" surface="are"/>
+  <token id="8" lemma="box" pos="VBN" surface="boxed"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="then" pos="RB" surface="then"/>
+  <token id="11" lemma="wrap" pos="VBN" surface="wrapped"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="cellophane" pos="NN" surface="cellophane"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="nsubjpass"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="4" to="6" type="conj"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="8" to="11" type="dep"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="8" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

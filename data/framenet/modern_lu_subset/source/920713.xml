@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="920713">
+ <sentence>
+  Before you replace it , clean the two pipe ends thoroughly with wire wool , then brush on flux .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="before" pos="IN" surface="Before"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="3" lemma="replace" pos="VBP" surface="replace"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="clean" pos="VB" surface="clean"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="two" pos="CD" surface="two"/>
+  <token id="9" lemma="pipe" pos="NN" surface="pipe"/>
+  <token id="10" lemma="end" pos="VBZ" surface="ends"/>
+  <token id="11" lemma="thoroughly" pos="RB" surface="thoroughly"/>
+  <token id="12" lemma="with" pos="IN" surface="with"/>
+  <token id="13" lemma="wire" pos="NN" surface="wire"/>
+  <token id="14" lemma="wool" pos="NN" surface="wool"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="then" pos="RB" surface="then"/>
+  <token id="17" lemma="brush" pos="NN" surface="brush"/>
+  <token id="18" lemma="on" pos="IN" surface="on"/>
+  <token id="19" lemma="flux" pos="NN" surface="flux"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="mark"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="6" to="3" type="advcl"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="6" to="5" type="punct"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="nummod"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="6" to="10" type="ccomp"/>
+  <dep from="10" to="11" type="advmod"/>
+  <dep from="10" to="12" type="prep"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="6" to="15" type="punct"/>
+  <dep from="6" to="16" type="advmod"/>
+  <dep from="6" to="17" type="dep"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="18" to="19" type="pobj"/>
+  <dep from="6" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

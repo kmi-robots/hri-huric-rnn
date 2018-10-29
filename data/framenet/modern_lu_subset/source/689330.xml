@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="689330">
+ <sentence>
+  But what right had he to probe into her personal life ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="but" pos="CC" surface="But"/>
+  <token id="2" lemma="what" pos="WP" surface="what"/>
+  <token id="3" lemma="right" pos="NN" surface="right"/>
+  <token id="4" lemma="have" pos="VBD" surface="had"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="probe" pos="VB" surface="probe"/>
+  <token id="8" lemma="into" pos="IN" surface="into"/>
+  <token id="9" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="10" lemma="personal" pos="JJ" surface="personal"/>
+  <token id="11" lemma="life" pos="NN" surface="life"/>
+  <token id="12" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="cc"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="nsubj"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="4" to="7" type="ccomp"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="11" to="9" type="poss"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="4" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

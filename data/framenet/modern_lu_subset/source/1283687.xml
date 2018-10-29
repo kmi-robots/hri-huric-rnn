@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1283687">
+ <sentence>
+  Cash donations are also needed to keep the group operating .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="cash" pos="NN" surface="Cash"/>
+  <token id="2" lemma="donation" pos="NNS" surface="donations"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="also" pos="RB" surface="also"/>
+  <token id="5" lemma="need" pos="VBN" surface="needed"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="keep" pos="VB" surface="keep"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="group" pos="NN" surface="group"/>
+  <token id="10" lemma="operate" pos="VBG" surface="operating"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="auxpass"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="5" to="7" type="xcomp"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="7" to="10" type="ccomp"/>
+  <dep from="5" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

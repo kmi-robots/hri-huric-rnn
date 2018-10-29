@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="632050">
+ <sentence>
+  Place each new roll at the end of the spiral until you have made a long , coiled snake shape .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="place" pos="VB" surface="Place"/>
+  <token id="2" lemma="each" pos="DT" surface="each"/>
+  <token id="3" lemma="new" pos="JJ" surface="new"/>
+  <token id="4" lemma="roll" pos="NN" surface="roll"/>
+  <token id="5" lemma="at" pos="IN" surface="at"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="end" pos="NN" surface="end"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="spiral" pos="NN" surface="spiral"/>
+  <token id="11" lemma="until" pos="IN" surface="until"/>
+  <token id="12" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="13" lemma="have" pos="VBP" surface="have"/>
+  <token id="14" lemma="make" pos="VBN" surface="made"/>
+  <token id="15" lemma="a" pos="DT" surface="a"/>
+  <token id="16" lemma="long" pos="JJ" surface="long"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="coil" pos="VBN" surface="coiled"/>
+  <token id="19" lemma="snake" pos="NN" surface="snake"/>
+  <token id="20" lemma="shape" pos="NN" surface="shape"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="1" to="4" type="dobj"/>
+  <dep from="1" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="14" to="11" type="mark"/>
+  <dep from="14" to="12" type="nsubj"/>
+  <dep from="14" to="13" type="aux"/>
+  <dep from="1" to="14" type="advcl"/>
+  <dep from="20" to="15" type="det"/>
+  <dep from="20" to="16" type="amod"/>
+  <dep from="20" to="17" type="punct"/>
+  <dep from="20" to="18" type="amod"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="14" to="20" type="dobj"/>
+  <dep from="1" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

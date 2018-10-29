@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="920078">
+ <sentence>
+  At this point an Englishman , Henry Bradbury ( 1831-60 ) put a cat among the pigeons .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="at" pos="IN" surface="At"/>
+  <token id="2" lemma="this" pos="DT" surface="this"/>
+  <token id="3" lemma="point" pos="NN" surface="point"/>
+  <token id="4" lemma="an" pos="DT" surface="an"/>
+  <token id="5" lemma="englishman" pos="NNP" surface="Englishman"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="henry" pos="NNP" surface="Henry"/>
+  <token id="8" lemma="bradbury" pos="NNP" surface="Bradbury"/>
+  <token id="9" lemma="(" pos="-LRB-" surface="("/>
+  <token id="10" lemma="1831-60" pos="CD" surface="1831-60"/>
+  <token id="11" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="12" lemma="put" pos="VBD" surface="put"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="cat" pos="NN" surface="cat"/>
+  <token id="15" lemma="among" pos="IN" surface="among"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="pigeon" pos="NNS" surface="pigeons"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="12" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="12" to="5" type="nsubj"/>
+  <dep from="5" to="6" type="punct"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="appos"/>
+  <dep from="10" to="9" type="punct"/>
+  <dep from="8" to="10" type="appos"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="dobj"/>
+  <dep from="12" to="15" type="prep"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="12" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1423808">
+ <sentence>
+  East Germany 's entry to the Common Market looks a little less certain .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="east" pos="NNP" surface="East"/>
+  <token id="2" lemma="germany" pos="NNP" surface="Germany"/>
+  <token id="3" lemma="'s" pos="POS" surface="'s"/>
+  <token id="4" lemma="entry" pos="NN" surface="entry"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="common" pos="NNP" surface="Common"/>
+  <token id="8" lemma="market" pos="NNP" surface="Market"/>
+  <token id="9" lemma="look" pos="VBZ" surface="looks"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="little" pos="JJ" surface="little"/>
+  <token id="12" lemma="less" pos="RBR" surface="less"/>
+  <token id="13" lemma="certain" pos="JJ" surface="certain"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="4" to="2" type="poss"/>
+  <dep from="2" to="3" type="case"/>
+  <dep from="9" to="4" type="nsubj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="12" to="11" type="npadvmod"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="9" to="13" type="acomp"/>
+  <dep from="9" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

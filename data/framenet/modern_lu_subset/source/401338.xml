@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="401338">
+ <sentence>
+  She looked beyond him into the darkness afraid that at any moment Craig would return .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="She"/>
+  <token id="2" lemma="look" pos="VBD" surface="looked"/>
+  <token id="3" lemma="beyond" pos="IN" surface="beyond"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="5" lemma="into" pos="IN" surface="into"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="darkness" pos="NN" surface="darkness"/>
+  <token id="8" lemma="afraid" pos="JJ" surface="afraid"/>
+  <token id="9" lemma="that" pos="IN" surface="that"/>
+  <token id="10" lemma="at" pos="IN" surface="at"/>
+  <token id="11" lemma="any" pos="DT" surface="any"/>
+  <token id="12" lemma="moment" pos="NN" surface="moment"/>
+  <token id="13" lemma="craig" pos="NNP" surface="Craig"/>
+  <token id="14" lemma="would" pos="MD" surface="would"/>
+  <token id="15" lemma="return" pos="VB" surface="return"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="2" to="8" type="advcl"/>
+  <dep from="15" to="9" type="mark"/>
+  <dep from="15" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="15" to="13" type="nsubj"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="8" to="15" type="ccomp"/>
+  <dep from="2" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

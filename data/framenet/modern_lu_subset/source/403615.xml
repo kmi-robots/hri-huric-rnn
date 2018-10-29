@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403615">
+ <sentence>
+  Climb the hill and enter the echoing fifteenth-century Gothic church to peer through glass panels at the medieval foundations .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="climb" pos="NNP" surface="Climb"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="hill" pos="NN" surface="hill"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="enter" pos="VB" surface="enter"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="echo" pos="VBG" surface="echoing"/>
+  <token id="8" lemma="fifteenth-century" pos="NN" surface="fifteenth-century"/>
+  <token id="9" lemma="gothic" pos="NNP" surface="Gothic"/>
+  <token id="10" lemma="church" pos="NN" surface="church"/>
+  <token id="11" lemma="to" pos="TO" surface="to"/>
+  <token id="12" lemma="peer" pos="VB" surface="peer"/>
+  <token id="13" lemma="through" pos="IN" surface="through"/>
+  <token id="14" lemma="glass" pos="NN" surface="glass"/>
+  <token id="15" lemma="panel" pos="NNS" surface="panels"/>
+  <token id="16" lemma="at" pos="IN" surface="at"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="medieval" pos="JJ" surface="medieval"/>
+  <token id="19" lemma="foundation" pos="NNS" surface="foundations"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="dobj"/>
+  <dep from="1" to="4" type="cc"/>
+  <dep from="1" to="5" type="conj"/>
+  <dep from="10" to="6" type="det"/>
+  <dep from="10" to="7" type="amod"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="5" to="10" type="dobj"/>
+  <dep from="12" to="11" type="aux"/>
+  <dep from="5" to="12" type="advcl"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="12" to="16" type="prep"/>
+  <dep from="19" to="17" type="det"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="16" to="19" type="pobj"/>
+  <dep from="1" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Direction">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

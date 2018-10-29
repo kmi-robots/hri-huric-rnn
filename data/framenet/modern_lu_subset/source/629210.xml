@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="629210">
+ <sentence>
+  Insert needle from right to left under both loops of stitch below and draw the thread through .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="insert" pos="NNP" surface="Insert"/>
+  <token id="2" lemma="needle" pos="NN" surface="needle"/>
+  <token id="3" lemma="from" pos="IN" surface="from"/>
+  <token id="4" lemma="right" pos="NN" surface="right"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="leave" pos="VBN" surface="left"/>
+  <token id="7" lemma="under" pos="IN" surface="under"/>
+  <token id="8" lemma="both" pos="DT" surface="both"/>
+  <token id="9" lemma="loop" pos="NNS" surface="loops"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="stitch" pos="NN" surface="stitch"/>
+  <token id="12" lemma="below" pos="RB" surface="below"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="draw" pos="VB" surface="draw"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="thread" pos="NN" surface="thread"/>
+  <token id="17" lemma="through" pos="RB" surface="through"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="dobj"/>
+  <dep from="1" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="1" to="6" type="advcl"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="6" to="12" type="advmod"/>
+  <dep from="6" to="13" type="cc"/>
+  <dep from="6" to="14" type="conj"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="dobj"/>
+  <dep from="14" to="17" type="prt"/>
+  <dep from="1" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770606">
+ <sentence>
+  Shirley comes in with coffee and a large photograph album .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="shirley" pos="NN" surface="Shirley"/>
+  <token id="2" lemma="come" pos="VBZ" surface="comes"/>
+  <token id="3" lemma="in" pos="RP" surface="in"/>
+  <token id="4" lemma="with" pos="IN" surface="with"/>
+  <token id="5" lemma="coffee" pos="NN" surface="coffee"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="large" pos="JJ" surface="large"/>
+  <token id="9" lemma="photograph" pos="NN" surface="photograph"/>
+  <token id="10" lemma="album" pos="NN" surface="album"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prt"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="10" to="7" type="det"/>
+  <dep from="10" to="8" type="amod"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="5" to="10" type="conj"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

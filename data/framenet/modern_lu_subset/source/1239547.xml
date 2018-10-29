@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1239547">
+ <sentence>
+  Giacomo Pagano , 58 , was handed over to Italian police on Saturday .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="giacomo" pos="NNP" surface="Giacomo"/>
+  <token id="2" lemma="pagano" pos="NNP" surface="Pagano"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="58" pos="CD" surface="58"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="be" pos="VBD" surface="was"/>
+  <token id="7" lemma="hand" pos="VBN" surface="handed"/>
+  <token id="8" lemma="over" pos="RP" surface="over"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="italian" pos="JJ" surface="Italian"/>
+  <token id="11" lemma="police" pos="NNS" surface="police"/>
+  <token id="12" lemma="on" pos="IN" surface="on"/>
+  <token id="13" lemma="saturday" pos="NNP" surface="Saturday"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="7" to="2" type="nsubjpass"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="appos"/>
+  <dep from="2" to="5" type="punct"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prt"/>
+  <dep from="7" to="9" type="prep"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="7" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="7" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="590345">
+ <sentence>
+  ` All the other boys are the ` hounds " and they have to chase after him . "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="``" surface="`"/>
+  <token id="2" lemma="all" pos="PDT" surface="All"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="other" pos="JJ" surface="other"/>
+  <token id="5" lemma="boy" pos="NNS" surface="boys"/>
+  <token id="6" lemma="be" pos="VBP" surface="are"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="`" pos="''" surface="`"/>
+  <token id="9" lemma="hound" pos="NNS" surface="hounds"/>
+  <token id="10" lemma='"' pos="''" surface='"'/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="13" lemma="have" pos="VBP" surface="have"/>
+  <token id="14" lemma="to" pos="TO" surface="to"/>
+  <token id="15" lemma="chase" pos="VB" surface="chase"/>
+  <token id="16" lemma="after" pos="IN" surface="after"/>
+  <token id="17" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="18" lemma="." pos="." surface="."/>
+  <token id="19" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="punct"/>
+  <dep from="5" to="2" type="predet"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="punct"/>
+  <dep from="6" to="9" type="attr"/>
+  <dep from="9" to="10" type="punct"/>
+  <dep from="6" to="11" type="cc"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="6" to="13" type="conj"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="13" to="15" type="xcomp"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="13" to="18" type="punct"/>
+  <dep from="13" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

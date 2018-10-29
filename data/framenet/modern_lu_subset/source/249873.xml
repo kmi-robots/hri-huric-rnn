@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="249873">
+ <sentence>
+  Never spray or dab on perfume before going in sunlight .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="never" pos="RB" surface="Never"/>
+  <token id="2" lemma="spray" pos="VB" surface="spray"/>
+  <token id="3" lemma="or" pos="CC" surface="or"/>
+  <token id="4" lemma="dab" pos="VB" surface="dab"/>
+  <token id="5" lemma="on" pos="IN" surface="on"/>
+  <token id="6" lemma="perfume" pos="NN" surface="perfume"/>
+  <token id="7" lemma="before" pos="IN" surface="before"/>
+  <token id="8" lemma="go" pos="VBG" surface="going"/>
+  <token id="9" lemma="in" pos="RP" surface="in"/>
+  <token id="10" lemma="sunlight" pos="NN" surface="sunlight"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="neg"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="7" to="8" type="pcomp"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

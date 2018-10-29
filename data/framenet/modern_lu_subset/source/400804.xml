@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="400804">
+ <sentence>
+  I 'd seen Bunny arrive , take one look around the pub and decide against it .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="'d" pos="MD" surface="'d"/>
+  <token id="3" lemma="see" pos="VBN" surface="seen"/>
+  <token id="4" lemma="bunny" pos="NNP" surface="Bunny"/>
+  <token id="5" lemma="arrive" pos="VB" surface="arrive"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="take" pos="VB" surface="take"/>
+  <token id="8" lemma="one" pos="CD" surface="one"/>
+  <token id="9" lemma="look" pos="NN" surface="look"/>
+  <token id="10" lemma="around" pos="IN" surface="around"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="pub" pos="NN" surface="pub"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="decide" pos="VB" surface="decide"/>
+  <token id="15" lemma="against" pos="IN" surface="against"/>
+  <token id="16" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="3" to="5" type="ccomp"/>
+  <dep from="3" to="6" type="punct"/>
+  <dep from="3" to="7" type="conj"/>
+  <dep from="9" to="8" type="nummod"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="7" to="13" type="cc"/>
+  <dep from="7" to="14" type="conj"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="3" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

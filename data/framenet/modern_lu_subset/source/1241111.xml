@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1241111">
+ <sentence>
+  The British officer got there first , but knew there was a secret agreement for the French to control Lebanon .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="british" pos="JJ" surface="British"/>
+  <token id="3" lemma="officer" pos="NN" surface="officer"/>
+  <token id="4" lemma="get" pos="VBD" surface="got"/>
+  <token id="5" lemma="there" pos="RB" surface="there"/>
+  <token id="6" lemma="first" pos="RB" surface="first"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="but" pos="CC" surface="but"/>
+  <token id="9" lemma="know" pos="VBD" surface="knew"/>
+  <token id="10" lemma="there" pos="EX" surface="there"/>
+  <token id="11" lemma="be" pos="VBD" surface="was"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="secret" pos="JJ" surface="secret"/>
+  <token id="14" lemma="agreement" pos="NN" surface="agreement"/>
+  <token id="15" lemma="for" pos="IN" surface="for"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="french" pos="NNP" surface="French"/>
+  <token id="18" lemma="to" pos="TO" surface="to"/>
+  <token id="19" lemma="control" pos="VB" surface="control"/>
+  <token id="20" lemma="lebanon" pos="NNP" surface="Lebanon"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="advmod"/>
+  <dep from="4" to="6" type="advmod"/>
+  <dep from="4" to="7" type="punct"/>
+  <dep from="4" to="8" type="cc"/>
+  <dep from="4" to="9" type="conj"/>
+  <dep from="11" to="10" type="expl"/>
+  <dep from="9" to="11" type="ccomp"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="attr"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="19" to="18" type="aux"/>
+  <dep from="14" to="19" type="acl"/>
+  <dep from="19" to="20" type="dobj"/>
+  <dep from="4" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

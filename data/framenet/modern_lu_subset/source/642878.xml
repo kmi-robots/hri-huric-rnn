@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="642878">
+ <sentence>
+  A local man offers to ferry me across the fjord and I am soon on the way to Holt .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="local" pos="JJ" surface="local"/>
+  <token id="3" lemma="man" pos="NN" surface="man"/>
+  <token id="4" lemma="offer" pos="VBZ" surface="offers"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="ferry" pos="VB" surface="ferry"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="8" lemma="across" pos="IN" surface="across"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="fjord" pos="NN" surface="fjord"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="13" lemma="be" pos="VBP" surface="am"/>
+  <token id="14" lemma="soon" pos="RB" surface="soon"/>
+  <token id="15" lemma="on" pos="IN" surface="on"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="way" pos="NN" surface="way"/>
+  <token id="18" lemma="to" pos="IN" surface="to"/>
+  <token id="19" lemma="holt" pos="NNP" surface="Holt"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="4" to="6" type="xcomp"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="6" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="4" to="11" type="cc"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="4" to="13" type="conj"/>
+  <dep from="13" to="14" type="advmod"/>
+  <dep from="13" to="15" type="prep"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="18" to="19" type="pobj"/>
+  <dep from="13" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

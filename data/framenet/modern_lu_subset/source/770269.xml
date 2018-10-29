@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770269">
+ <sentence>
+  ` Ziggie , Ziggie , " called Peach , ` here kitten , come here to me ! "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="''" surface="`"/>
+  <token id="2" lemma="ziggie" pos="NNP" surface="Ziggie"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="ziggie" pos="NNP" surface="Ziggie"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma='"' pos="''" surface='"'/>
+  <token id="7" lemma="call" pos="VBN" surface="called"/>
+  <token id="8" lemma="peach" pos="NNP" surface="Peach"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="`" pos="''" surface="`"/>
+  <token id="11" lemma="here" pos="RB" surface="here"/>
+  <token id="12" lemma="kitten" pos="VBN" surface="kitten"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="come" pos="VB" surface="come"/>
+  <token id="15" lemma="here" pos="RB" surface="here"/>
+  <token id="16" lemma="to" pos="IN" surface="to"/>
+  <token id="17" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="18" lemma="!" pos="." surface="!"/>
+  <token id="19" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="punct"/>
+  <dep from="12" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="appos"/>
+  <dep from="2" to="5" type="punct"/>
+  <dep from="2" to="6" type="punct"/>
+  <dep from="2" to="7" type="acl"/>
+  <dep from="7" to="8" type="oprd"/>
+  <dep from="2" to="9" type="punct"/>
+  <dep from="2" to="10" type="punct"/>
+  <dep from="12" to="11" type="advmod"/>
+  <dep from="14" to="12" type="parataxis"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="0" to="14" type="root"/>
+  <dep from="14" to="15" type="advmod"/>
+  <dep from="14" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="14" to="18" type="punct"/>
+  <dep from="14" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

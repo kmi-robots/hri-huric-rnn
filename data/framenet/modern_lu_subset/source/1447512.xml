@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1447512">
+ <sentence>
+  In contrast , when the target is a word , both letter and word detectors will be activated .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="contrast" pos="NN" surface="contrast"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="when" pos="WRB" surface="when"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="target" pos="NN" surface="target"/>
+  <token id="7" lemma="be" pos="VBZ" surface="is"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="word" pos="NN" surface="word"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="both" pos="CC" surface="both"/>
+  <token id="12" lemma="letter" pos="NN" surface="letter"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="word" pos="NN" surface="word"/>
+  <token id="15" lemma="detector" pos="NNS" surface="detectors"/>
+  <token id="16" lemma="will" pos="MD" surface="will"/>
+  <token id="17" lemma="be" pos="VB" surface="be"/>
+  <token id="18" lemma="activate" pos="VBN" surface="activated"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="18" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="18" to="3" type="punct"/>
+  <dep from="7" to="4" type="advmod"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="18" to="7" type="advcl"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="attr"/>
+  <dep from="18" to="10" type="punct"/>
+  <dep from="12" to="11" type="preconj"/>
+  <dep from="18" to="12" type="nsubjpass"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="12" to="15" type="conj"/>
+  <dep from="18" to="16" type="aux"/>
+  <dep from="18" to="17" type="auxpass"/>
+  <dep from="0" to="18" type="root"/>
+  <dep from="18" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_operational_state">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Device">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

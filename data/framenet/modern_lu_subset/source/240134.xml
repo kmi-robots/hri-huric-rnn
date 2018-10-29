@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="240134">
+ <sentence>
+  The German occupying force on Møn had consisted of a single unit , billeted at Gullshaven .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="german" pos="JJ" surface="German"/>
+  <token id="3" lemma="occupy" pos="VBG" surface="occupying"/>
+  <token id="4" lemma="force" pos="NN" surface="force"/>
+  <token id="5" lemma="on" pos="IN" surface="on"/>
+  <token id="6" lemma="møn" pos="NNP" surface="Møn"/>
+  <token id="7" lemma="have" pos="VBD" surface="had"/>
+  <token id="8" lemma="consist" pos="VBN" surface="consisted"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="single" pos="JJ" surface="single"/>
+  <token id="12" lemma="unit" pos="NN" surface="unit"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="billet" pos="VBN" surface="billeted"/>
+  <token id="15" lemma="at" pos="IN" surface="at"/>
+  <token id="16" lemma="gullshaven" pos="NNP" surface="Gullshaven"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="det"/>
+  <dep from="4" to="2" type="amod"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="8" to="4" type="nsubj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="12" to="14" type="acl"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="8" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

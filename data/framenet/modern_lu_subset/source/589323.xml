@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="589323">
+ <sentence>
+  For some time three of the barefoot children accompanied me along the seldom-used path .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="for" pos="IN" surface="For"/>
+  <token id="2" lemma="some" pos="DT" surface="some"/>
+  <token id="3" lemma="time" pos="NN" surface="time"/>
+  <token id="4" lemma="three" pos="CD" surface="three"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="barefoot" pos="NN" surface="barefoot"/>
+  <token id="8" lemma="child" pos="NNS" surface="children"/>
+  <token id="9" lemma="accompany" pos="VBD" surface="accompanied"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="11" lemma="along" pos="IN" surface="along"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="seldom-used" pos="JJ" surface="seldom-used"/>
+  <token id="14" lemma="path" pos="NN" surface="path"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="9" to="4" type="nsubj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="9" to="11" type="prep"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="9" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

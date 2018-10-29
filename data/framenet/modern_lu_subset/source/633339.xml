@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="633339">
+ <sentence>
+  Brassard rested his elbows on the table and leant forward .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="brassard" pos="NNP" surface="Brassard"/>
+  <token id="2" lemma="rest" pos="VBD" surface="rested"/>
+  <token id="3" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="4" lemma="elbow" pos="NNS" surface="elbows"/>
+  <token id="5" lemma="on" pos="IN" surface="on"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="table" pos="NN" surface="table"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="leant" pos="NN" surface="leant"/>
+  <token id="10" lemma="forward" pos="RB" surface="forward"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="poss"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="2" to="8" type="cc"/>
+  <dep from="2" to="9" type="conj"/>
+  <dep from="9" to="10" type="advmod"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

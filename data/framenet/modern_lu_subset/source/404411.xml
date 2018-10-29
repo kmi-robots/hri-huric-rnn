@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="404411">
+ <sentence>
+  Apparently Ziegfeld spied on rehearsals by watching through a peephole in the wall .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="apparently" pos="RB" surface="Apparently"/>
+  <token id="2" lemma="ziegfeld" pos="NNP" surface="Ziegfeld"/>
+  <token id="3" lemma="spy" pos="VBD" surface="spied"/>
+  <token id="4" lemma="on" pos="IN" surface="on"/>
+  <token id="5" lemma="rehearsal" pos="NNS" surface="rehearsals"/>
+  <token id="6" lemma="by" pos="IN" surface="by"/>
+  <token id="7" lemma="watch" pos="VBG" surface="watching"/>
+  <token id="8" lemma="through" pos="IN" surface="through"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="peephole" pos="NN" surface="peephole"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="wall" pos="NN" surface="wall"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="advmod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="6" to="7" type="pcomp"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="627857">
+ <sentence>
+  Edward , brooding , remembered a summer long ago when Helen had brought back a schoolfriend and he had felt pushed aside , abandoned .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="edward" pos="NNP" surface="Edward"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="brooding" pos="NN" surface="brooding"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="remember" pos="VBD" surface="remembered"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="summer" pos="NN" surface="summer"/>
+  <token id="8" lemma="long" pos="RB" surface="long"/>
+  <token id="9" lemma="ago" pos="RB" surface="ago"/>
+  <token id="10" lemma="when" pos="WRB" surface="when"/>
+  <token id="11" lemma="helen" pos="NNP" surface="Helen"/>
+  <token id="12" lemma="have" pos="VBD" surface="had"/>
+  <token id="13" lemma="bring" pos="VBN" surface="brought"/>
+  <token id="14" lemma="back" pos="RP" surface="back"/>
+  <token id="15" lemma="a" pos="DT" surface="a"/>
+  <token id="16" lemma="schoolfriend" pos="NN" surface="schoolfriend"/>
+  <token id="17" lemma="and" pos="CC" surface="and"/>
+  <token id="18" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="19" lemma="have" pos="VBD" surface="had"/>
+  <token id="20" lemma="feel" pos="VBN" surface="felt"/>
+  <token id="21" lemma="push" pos="VBN" surface="pushed"/>
+  <token id="22" lemma="aside" pos="RB" surface="aside"/>
+  <token id="23" lemma="," pos="," surface=","/>
+  <token id="24" lemma="abandon" pos="VBN" surface="abandoned"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="1" to="3" type="appos"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="3" to="5" type="dep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="9" to="7" type="npadvmod"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="5" to="9" type="advmod"/>
+  <dep from="13" to="10" type="advmod"/>
+  <dep from="13" to="11" type="nsubj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="5" to="13" type="advcl"/>
+  <dep from="13" to="14" type="advmod"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="13" to="16" type="dobj"/>
+  <dep from="21" to="17" type="cc"/>
+  <dep from="21" to="18" type="nsubj"/>
+  <dep from="21" to="19" type="aux"/>
+  <dep from="21" to="20" type="auxpass"/>
+  <dep from="0" to="21" type="root"/>
+  <dep from="21" to="22" type="advmod"/>
+  <dep from="21" to="23" type="punct"/>
+  <dep from="21" to="24" type="advcl"/>
+  <dep from="21" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1090047">
+ <sentence>
+  In 1970 , however , a new cup was donated .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="1970" pos="CD" surface="1970"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="however" pos="RB" surface="however"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="new" pos="JJ" surface="new"/>
+  <token id="8" lemma="cup" pos="NN" surface="cup"/>
+  <token id="9" lemma="be" pos="VBD" surface="was"/>
+  <token id="10" lemma="donate" pos="VBN" surface="donated"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="10" to="3" type="punct"/>
+  <dep from="10" to="4" type="advmod"/>
+  <dep from="10" to="5" type="punct"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="10" to="8" type="nsubjpass"/>
+  <dep from="10" to="9" type="auxpass"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

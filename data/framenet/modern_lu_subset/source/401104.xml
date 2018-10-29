@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="401104">
+ <sentence>
+  Halfway up the street she paused to look above the church to the hill beyond .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="halfway" pos="RB" surface="Halfway"/>
+  <token id="2" lemma="up" pos="IN" surface="up"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="street" pos="NN" surface="street"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="6" lemma="pause" pos="VBD" surface="paused"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="look" pos="VB" surface="look"/>
+  <token id="9" lemma="above" pos="IN" surface="above"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="church" pos="NN" surface="church"/>
+  <token id="12" lemma="to" pos="IN" surface="to"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="hill" pos="NN" surface="hill"/>
+  <token id="15" lemma="beyond" pos="IN" surface="beyond"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="advmod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="4" to="6" type="relcl"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="6" to="8" type="advcl"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="8" to="15" type="prep"/>
+  <dep from="2" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

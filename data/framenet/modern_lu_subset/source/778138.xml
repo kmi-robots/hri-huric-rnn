@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="778138">
+ <sentence>
+  Benjamin examined the yellowing teeth .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="benjamin" pos="NNP" surface="Benjamin"/>
+  <token id="2" lemma="examine" pos="VBD" surface="examined"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="yellow" pos="VBG" surface="yellowing"/>
+  <token id="5" lemma="tooth" pos="NNS" surface="teeth"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Inspecting">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Inspector">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

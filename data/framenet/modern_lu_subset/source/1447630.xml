@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1447630">
+ <sentence>
+  In reality the mind must activate many schemata at once , each interacting with the other .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="reality" pos="NN" surface="reality"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="mind" pos="NN" surface="mind"/>
+  <token id="5" lemma="must" pos="MD" surface="must"/>
+  <token id="6" lemma="activate" pos="VB" surface="activate"/>
+  <token id="7" lemma="many" pos="JJ" surface="many"/>
+  <token id="8" lemma="schema" pos="NNS" surface="schemata"/>
+  <token id="9" lemma="at" pos="IN" surface="at"/>
+  <token id="10" lemma="once" pos="RB" surface="once"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="each" pos="DT" surface="each"/>
+  <token id="13" lemma="interact" pos="VBG" surface="interacting"/>
+  <token id="14" lemma="with" pos="IN" surface="with"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="other" pos="JJ" surface="other"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="6" to="9" type="prep"/>
+  <dep from="9" to="10" type="pcomp"/>
+  <dep from="6" to="11" type="punct"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="6" to="13" type="advcl"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="6" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_operational_state">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Place">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Device">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

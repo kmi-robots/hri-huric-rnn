@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="399703">
+ <sentence>
+  The animals gazed around cautiously .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="animal" pos="NNS" surface="animals"/>
+  <token id="3" lemma="gaze" pos="VBN" surface="gazed"/>
+  <token id="4" lemma="around" pos="RP" surface="around"/>
+  <token id="5" lemma="cautiously" pos="RB" surface="cautiously"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="3" to="5" type="advmod"/>
+  <dep from="3" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="401885">
+ <sentence>
+  We shall look under every stone in our search for the culprit .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="We"/>
+  <token id="2" lemma="shall" pos="MD" surface="shall"/>
+  <token id="3" lemma="look" pos="VB" surface="look"/>
+  <token id="4" lemma="under" pos="IN" surface="under"/>
+  <token id="5" lemma="every" pos="DT" surface="every"/>
+  <token id="6" lemma="stone" pos="NN" surface="stone"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="our"/>
+  <token id="9" lemma="search" pos="NN" surface="search"/>
+  <token id="10" lemma="for" pos="IN" surface="for"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="culprit" pos="NN" surface="culprit"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="poss"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="3" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

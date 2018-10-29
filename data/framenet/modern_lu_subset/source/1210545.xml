@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1210545">
+ <sentence>
+  Because a wet ball will fly farther , use less club then normal on approach shots .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="because" pos="IN" surface="Because"/>
+  <token id="2" lemma="a" pos="DT" surface="a"/>
+  <token id="3" lemma="wet" pos="JJ" surface="wet"/>
+  <token id="4" lemma="ball" pos="NN" surface="ball"/>
+  <token id="5" lemma="will" pos="MD" surface="will"/>
+  <token id="6" lemma="fly" pos="VB" surface="fly"/>
+  <token id="7" lemma="farther" pos="RB" surface="farther"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="use" pos="VB" surface="use"/>
+  <token id="10" lemma="less" pos="JJR" surface="less"/>
+  <token id="11" lemma="club" pos="NN" surface="club"/>
+  <token id="12" lemma="then" pos="RB" surface="then"/>
+  <token id="13" lemma="normal" pos="JJ" surface="normal"/>
+  <token id="14" lemma="on" pos="IN" surface="on"/>
+  <token id="15" lemma="approach" pos="NN" surface="approach"/>
+  <token id="16" lemma="shot" pos="NNS" surface="shots"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="mark"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="advmod"/>
+  <dep from="6" to="8" type="punct"/>
+  <dep from="6" to="9" type="conj"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="9" to="13" type="oprd"/>
+  <dep from="9" to="14" type="prep"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="6" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Distance">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

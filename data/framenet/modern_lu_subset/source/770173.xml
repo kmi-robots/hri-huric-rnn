@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770173">
+ <sentence>
+  All went well until the dreadful day when Killigrew was away and a letter arrived for Mistress A. Killigrew .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="all" pos="DT" surface="All"/>
+  <token id="2" lemma="go" pos="VBD" surface="went"/>
+  <token id="3" lemma="well" pos="RB" surface="well"/>
+  <token id="4" lemma="until" pos="IN" surface="until"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="dreadful" pos="JJ" surface="dreadful"/>
+  <token id="7" lemma="day" pos="NN" surface="day"/>
+  <token id="8" lemma="when" pos="WRB" surface="when"/>
+  <token id="9" lemma="killigrew" pos="NNP" surface="Killigrew"/>
+  <token id="10" lemma="be" pos="VBD" surface="was"/>
+  <token id="11" lemma="away" pos="RB" surface="away"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="letter" pos="NN" surface="letter"/>
+  <token id="15" lemma="arrive" pos="VBD" surface="arrived"/>
+  <token id="16" lemma="for" pos="IN" surface="for"/>
+  <token id="17" lemma="mistress" pos="NNP" surface="Mistress"/>
+  <token id="18" lemma="a." pos="NNP" surface="A."/>
+  <token id="19" lemma="killigrew" pos="NNP" surface="Killigrew"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="advmod"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="pobj"/>
+  <dep from="10" to="8" type="advmod"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="7" to="10" type="relcl"/>
+  <dep from="10" to="11" type="advmod"/>
+  <dep from="10" to="12" type="cc"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="10" to="15" type="conj"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="19" to="17" type="compound"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="16" to="19" type="pobj"/>
+  <dep from="2" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="240748">
+ <sentence>
+  Problematic employees are given letters of counselling which are filed in an unfavourable information folder .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="problematic" pos="JJ" surface="Problematic"/>
+  <token id="2" lemma="employee" pos="NNS" surface="employees"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="give" pos="VBN" surface="given"/>
+  <token id="5" lemma="letter" pos="NNS" surface="letters"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="counselling" pos="NN" surface="counselling"/>
+  <token id="8" lemma="which" pos="WDT" surface="which"/>
+  <token id="9" lemma="be" pos="VBP" surface="are"/>
+  <token id="10" lemma="file" pos="VBN" surface="filed"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="an" pos="DT" surface="an"/>
+  <token id="13" lemma="unfavourable" pos="JJ" surface="unfavourable"/>
+  <token id="14" lemma="information" pos="NN" surface="information"/>
+  <token id="15" lemma="folder" pos="NN" surface="folder"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="10" to="8" type="nsubjpass"/>
+  <dep from="10" to="9" type="auxpass"/>
+  <dep from="5" to="10" type="relcl"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="15" to="12" type="det"/>
+  <dep from="15" to="13" type="amod"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="11" to="15" type="pobj"/>
+  <dep from="4" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

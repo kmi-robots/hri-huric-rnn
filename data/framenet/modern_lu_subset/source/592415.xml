@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="592415">
+ <sentence>
+  Silver and I followed a long way behind the rest , and I had to help him .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="silver" pos="NN" surface="Silver"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="4" lemma="follow" pos="VBD" surface="followed"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="long" pos="JJ" surface="long"/>
+  <token id="7" lemma="way" pos="NN" surface="way"/>
+  <token id="8" lemma="behind" pos="IN" surface="behind"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="rest" pos="NN" surface="rest"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="14" lemma="have" pos="VBD" surface="had"/>
+  <token id="15" lemma="to" pos="TO" surface="to"/>
+  <token id="16" lemma="help" pos="VB" surface="help"/>
+  <token id="17" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="4" to="11" type="punct"/>
+  <dep from="4" to="12" type="cc"/>
+  <dep from="14" to="13" type="nsubj"/>
+  <dep from="4" to="14" type="conj"/>
+  <dep from="16" to="15" type="aux"/>
+  <dep from="14" to="16" type="xcomp"/>
+  <dep from="16" to="17" type="dobj"/>
+  <dep from="14" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

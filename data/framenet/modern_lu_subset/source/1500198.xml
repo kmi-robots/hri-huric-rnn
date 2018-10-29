@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1500198">
+ <sentence>
+  During each summer 's rainy season , the lake 's waters would spill over its southern rim and slide down towards Florida Bay .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="during" pos="IN" surface="During"/>
+  <token id="2" lemma="each" pos="DT" surface="each"/>
+  <token id="3" lemma="summer" pos="NN" surface="summer"/>
+  <token id="4" lemma="'s" pos="POS" surface="'s"/>
+  <token id="5" lemma="rainy" pos="JJ" surface="rainy"/>
+  <token id="6" lemma="season" pos="NN" surface="season"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="lake" pos="NN" surface="lake"/>
+  <token id="10" lemma="'s" pos="POS" surface="'s"/>
+  <token id="11" lemma="water" pos="NNS" surface="waters"/>
+  <token id="12" lemma="would" pos="MD" surface="would"/>
+  <token id="13" lemma="spill" pos="VB" surface="spill"/>
+  <token id="14" lemma="over" pos="IN" surface="over"/>
+  <token id="15" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="16" lemma="southern" pos="JJ" surface="southern"/>
+  <token id="17" lemma="rim" pos="NN" surface="rim"/>
+  <token id="18" lemma="and" pos="CC" surface="and"/>
+  <token id="19" lemma="slide" pos="VBP" surface="slide"/>
+  <token id="20" lemma="down" pos="RP" surface="down"/>
+  <token id="21" lemma="towards" pos="IN" surface="towards"/>
+  <token id="22" lemma="florida" pos="NNP" surface="Florida"/>
+  <token id="23" lemma="bay" pos="NNP" surface="Bay"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="13" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="6" to="3" type="poss"/>
+  <dep from="3" to="4" type="case"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="1" to="6" type="pobj"/>
+  <dep from="13" to="7" type="punct"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="11" to="9" type="poss"/>
+  <dep from="9" to="10" type="case"/>
+  <dep from="13" to="11" type="nsubj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="17" to="15" type="poss"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="14" to="17" type="pobj"/>
+  <dep from="13" to="18" type="cc"/>
+  <dep from="13" to="19" type="conj"/>
+  <dep from="19" to="20" type="prt"/>
+  <dep from="19" to="21" type="prep"/>
+  <dep from="23" to="22" type="compound"/>
+  <dep from="21" to="23" type="pobj"/>
+  <dep from="13" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

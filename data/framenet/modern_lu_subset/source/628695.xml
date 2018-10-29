@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="628695">
+ <sentence>
+  There were statues in niches set in the walls , and here and there faded but interesting tapestries had been hung .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBD" surface="were"/>
+  <token id="3" lemma="statue" pos="NNS" surface="statues"/>
+  <token id="4" lemma="in" pos="IN" surface="in"/>
+  <token id="5" lemma="niche" pos="NNS" surface="niches"/>
+  <token id="6" lemma="set" pos="VBN" surface="set"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="wall" pos="NNS" surface="walls"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="here" pos="RB" surface="here"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="there" pos="EX" surface="there"/>
+  <token id="15" lemma="fade" pos="VBD" surface="faded"/>
+  <token id="16" lemma="but" pos="CC" surface="but"/>
+  <token id="17" lemma="interesting" pos="JJ" surface="interesting"/>
+  <token id="18" lemma="tapestry" pos="NNS" surface="tapestries"/>
+  <token id="19" lemma="have" pos="VBD" surface="had"/>
+  <token id="20" lemma="be" pos="VBN" surface="been"/>
+  <token id="21" lemma="hang" pos="VBN" surface="hung"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="attr"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="5" to="6" type="acl"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="2" to="10" type="punct"/>
+  <dep from="2" to="11" type="cc"/>
+  <dep from="15" to="12" type="advmod"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="12" to="14" type="conj"/>
+  <dep from="2" to="15" type="conj"/>
+  <dep from="15" to="16" type="cc"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="21" to="18" type="nsubjpass"/>
+  <dep from="21" to="19" type="aux"/>
+  <dep from="21" to="20" type="auxpass"/>
+  <dep from="15" to="21" type="conj"/>
+  <dep from="21" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

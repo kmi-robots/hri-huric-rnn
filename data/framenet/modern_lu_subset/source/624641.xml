@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="624641">
+ <sentence>
+  Residents yesterday spoke of their fear as the car crashed through two fences and swerved over a lawn , smashing its indicator light .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="resident" pos="NNS" surface="Residents"/>
+  <token id="2" lemma="yesterday" pos="NN" surface="yesterday"/>
+  <token id="3" lemma="speak" pos="VBD" surface="spoke"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="6" lemma="fear" pos="NN" surface="fear"/>
+  <token id="7" lemma="as" pos="IN" surface="as"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="car" pos="NN" surface="car"/>
+  <token id="10" lemma="crash" pos="VBD" surface="crashed"/>
+  <token id="11" lemma="through" pos="IN" surface="through"/>
+  <token id="12" lemma="two" pos="CD" surface="two"/>
+  <token id="13" lemma="fence" pos="NNS" surface="fences"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="swerve" pos="VBN" surface="swerved"/>
+  <token id="16" lemma="over" pos="IN" surface="over"/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="lawn" pos="NN" surface="lawn"/>
+  <token id="19" lemma="," pos="," surface=","/>
+  <token id="20" lemma="smash" pos="VBG" surface="smashing"/>
+  <token id="21" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="22" lemma="indicator" pos="NN" surface="indicator"/>
+  <token id="23" lemma="light" pos="NN" surface="light"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="npadvmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="poss"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="10" to="7" type="mark"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="3" to="10" type="advcl"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="nummod"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="10" to="14" type="cc"/>
+  <dep from="10" to="15" type="conj"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="15" to="19" type="punct"/>
+  <dep from="15" to="20" type="conj"/>
+  <dep from="22" to="21" type="poss"/>
+  <dep from="23" to="22" type="compound"/>
+  <dep from="20" to="23" type="dobj"/>
+  <dep from="3" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

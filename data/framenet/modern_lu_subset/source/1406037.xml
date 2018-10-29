@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1406037">
+ <sentence>
+  The Chairman gave orders for the military helicopter to fly the scientist back to Baghdad .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="chairman" pos="NNP" surface="Chairman"/>
+  <token id="3" lemma="give" pos="VBD" surface="gave"/>
+  <token id="4" lemma="order" pos="NNS" surface="orders"/>
+  <token id="5" lemma="for" pos="IN" surface="for"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="military" pos="JJ" surface="military"/>
+  <token id="8" lemma="helicopter" pos="NN" surface="helicopter"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="fly" pos="VB" surface="fly"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="scientist" pos="NN" surface="scientist"/>
+  <token id="13" lemma="back" pos="RB" surface="back"/>
+  <token id="14" lemma="to" pos="IN" surface="to"/>
+  <token id="15" lemma="baghdad" pos="NNP" surface="Baghdad"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="3" to="5" type="dative"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="4" to="10" type="acl"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="10" to="13" type="advmod"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="3" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Carrier">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

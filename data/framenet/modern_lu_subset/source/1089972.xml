@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1089972">
+ <sentence>
+  Apple wanted to donate a computer to every school in the country -- more than 100 000 machines .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="apple" pos="NNP" surface="Apple"/>
+  <token id="2" lemma="want" pos="VBD" surface="wanted"/>
+  <token id="3" lemma="to" pos="TO" surface="to"/>
+  <token id="4" lemma="donate" pos="VB" surface="donate"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="computer" pos="NN" surface="computer"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="every" pos="DT" surface="every"/>
+  <token id="9" lemma="school" pos="NN" surface="school"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="country" pos="NN" surface="country"/>
+  <token id="13" lemma="--" pos=":" surface="--"/>
+  <token id="14" lemma="more" pos="JJR" surface="more"/>
+  <token id="15" lemma="than" pos="IN" surface="than"/>
+  <token id="16" lemma="100" pos="CD" surface="100"/>
+  <token id="17" lemma="000" pos="CD" surface="000"/>
+  <token id="18" lemma="machine" pos="NNS" surface="machines"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="18" to="2" type="ccomp"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="2" to="4" type="xcomp"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="18" to="13" type="punct"/>
+  <dep from="17" to="14" type="amod"/>
+  <dep from="17" to="15" type="quantmod"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="18" to="17" type="nummod"/>
+  <dep from="0" to="18" type="root"/>
+  <dep from="18" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

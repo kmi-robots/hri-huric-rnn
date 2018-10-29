@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="625002">
+ <sentence>
+  Not really , is it ? " he asked apprehensively as the moon appeared to swing from the side window to the rear .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="not" pos="RB" surface="Not"/>
+  <token id="2" lemma="really" pos="RB" surface="really"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="be" pos="VBZ" surface="is"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="6" lemma="?" pos="." surface="?"/>
+  <token id="7" lemma='"' pos="''" surface='"'/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="9" lemma="ask" pos="VBD" surface="asked"/>
+  <token id="10" lemma="apprehensively" pos="RB" surface="apprehensively"/>
+  <token id="11" lemma="as" pos="IN" surface="as"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="moon" pos="NN" surface="moon"/>
+  <token id="14" lemma="appear" pos="VBD" surface="appeared"/>
+  <token id="15" lemma="to" pos="TO" surface="to"/>
+  <token id="16" lemma="swing" pos="VB" surface="swing"/>
+  <token id="17" lemma="from" pos="IN" surface="from"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="side" pos="NN" surface="side"/>
+  <token id="20" lemma="window" pos="NN" surface="window"/>
+  <token id="21" lemma="to" pos="IN" surface="to"/>
+  <token id="22" lemma="the" pos="DT" surface="the"/>
+  <token id="23" lemma="rear" pos="NN" surface="rear"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="neg"/>
+  <dep from="4" to="2" type="advmod"/>
+  <dep from="4" to="3" type="punct"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="nsubj"/>
+  <dep from="4" to="6" type="punct"/>
+  <dep from="4" to="7" type="punct"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="advmod"/>
+  <dep from="14" to="11" type="mark"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="14" to="13" type="nsubj"/>
+  <dep from="9" to="14" type="advcl"/>
+  <dep from="16" to="15" type="aux"/>
+  <dep from="14" to="16" type="xcomp"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="20" to="18" type="det"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="17" to="20" type="pobj"/>
+  <dep from="16" to="21" type="prep"/>
+  <dep from="23" to="22" type="det"/>
+  <dep from="21" to="23" type="pobj"/>
+  <dep from="9" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

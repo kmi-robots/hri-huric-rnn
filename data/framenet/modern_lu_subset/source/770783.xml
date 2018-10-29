@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770783">
+ <sentence>
+  With luck , an ` easeful death " will intervene before that day comes .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="with" pos="IN" surface="With"/>
+  <token id="2" lemma="luck" pos="NN" surface="luck"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="an" pos="DT" surface="an"/>
+  <token id="5" lemma="`" pos="``" surface="`"/>
+  <token id="6" lemma="easeful" pos="JJ" surface="easeful"/>
+  <token id="7" lemma="death" pos="NN" surface="death"/>
+  <token id="8" lemma='"' pos="''" surface='"'/>
+  <token id="9" lemma="will" pos="MD" surface="will"/>
+  <token id="10" lemma="intervene" pos="VB" surface="intervene"/>
+  <token id="11" lemma="before" pos="IN" surface="before"/>
+  <token id="12" lemma="that" pos="DT" surface="that"/>
+  <token id="13" lemma="day" pos="NN" surface="day"/>
+  <token id="14" lemma="come" pos="VBZ" surface="comes"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="10" to="3" type="punct"/>
+  <dep from="7" to="4" type="det"/>
+  <dep from="7" to="5" type="punct"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="10" to="7" type="nsubj"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="14" to="11" type="mark"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="14" to="13" type="nsubj"/>
+  <dep from="10" to="14" type="advcl"/>
+  <dep from="10" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

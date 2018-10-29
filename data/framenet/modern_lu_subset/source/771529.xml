@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="771529">
+ <sentence>
+  Through therapy , teaching and psychological help , some patients are eventually rehabilitated for their return into society .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="through" pos="IN" surface="Through"/>
+  <token id="2" lemma="therapy" pos="NN" surface="therapy"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="teaching" pos="NN" surface="teaching"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="psychological" pos="JJ" surface="psychological"/>
+  <token id="7" lemma="help" pos="NN" surface="help"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="some" pos="DT" surface="some"/>
+  <token id="10" lemma="patient" pos="NNS" surface="patients"/>
+  <token id="11" lemma="be" pos="VBP" surface="are"/>
+  <token id="12" lemma="eventually" pos="RB" surface="eventually"/>
+  <token id="13" lemma="rehabilitate" pos="VBN" surface="rehabilitated"/>
+  <token id="14" lemma="for" pos="IN" surface="for"/>
+  <token id="15" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="16" lemma="return" pos="NN" surface="return"/>
+  <token id="17" lemma="into" pos="IN" surface="into"/>
+  <token id="18" lemma="society" pos="NN" surface="society"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="13" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="conj"/>
+  <dep from="13" to="8" type="punct"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="13" to="10" type="nsubjpass"/>
+  <dep from="13" to="11" type="auxpass"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="poss"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="17" to="18" type="pobj"/>
+  <dep from="13" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

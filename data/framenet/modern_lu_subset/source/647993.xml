@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="647993">
+ <sentence>
+  He was greeted by President Ben Ali and the Tunisian Cabinet on his arrival from Libya , where his plane crashed on Tuesday .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="greet" pos="VBN" surface="greeted"/>
+  <token id="4" lemma="by" pos="IN" surface="by"/>
+  <token id="5" lemma="president" pos="NNP" surface="President"/>
+  <token id="6" lemma="ben" pos="NNP" surface="Ben"/>
+  <token id="7" lemma="ali" pos="NNP" surface="Ali"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="tunisian" pos="JJ" surface="Tunisian"/>
+  <token id="11" lemma="cabinet" pos="NNP" surface="Cabinet"/>
+  <token id="12" lemma="on" pos="IN" surface="on"/>
+  <token id="13" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="14" lemma="arrival" pos="NN" surface="arrival"/>
+  <token id="15" lemma="from" pos="IN" surface="from"/>
+  <token id="16" lemma="libya" pos="NNP" surface="Libya"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="where" pos="WRB" surface="where"/>
+  <token id="19" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="20" lemma="plane" pos="NN" surface="plane"/>
+  <token id="21" lemma="crash" pos="VBD" surface="crashed"/>
+  <token id="22" lemma="on" pos="IN" surface="on"/>
+  <token id="23" lemma="tuesday" pos="NNP" surface="Tuesday"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="agent"/>
+  <dep from="7" to="5" type="compound"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="4" to="7" type="pobj"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="7" to="11" type="conj"/>
+  <dep from="3" to="12" type="prep"/>
+  <dep from="14" to="13" type="poss"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="16" to="17" type="punct"/>
+  <dep from="21" to="18" type="advmod"/>
+  <dep from="20" to="19" type="poss"/>
+  <dep from="21" to="20" type="nsubj"/>
+  <dep from="16" to="21" type="relcl"/>
+  <dep from="21" to="22" type="prep"/>
+  <dep from="22" to="23" type="pobj"/>
+  <dep from="3" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

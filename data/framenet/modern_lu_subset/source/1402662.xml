@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1402662">
+ <sentence>
+  The news removed all doubts about American entry into the war .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="news" pos="NN" surface="news"/>
+  <token id="3" lemma="remove" pos="VBD" surface="removed"/>
+  <token id="4" lemma="all" pos="DT" surface="all"/>
+  <token id="5" lemma="doubt" pos="NNS" surface="doubts"/>
+  <token id="6" lemma="about" pos="IN" surface="about"/>
+  <token id="7" lemma="american" pos="JJ" surface="American"/>
+  <token id="8" lemma="entry" pos="NN" surface="entry"/>
+  <token id="9" lemma="into" pos="IN" surface="into"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="war" pos="NN" surface="war"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="3" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

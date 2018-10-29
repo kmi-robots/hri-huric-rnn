@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="633089">
+ <sentence>
+  He positioned the arbalest , leaned over the wall and released the catch .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="position" pos="VBD" surface="positioned"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="arbalest" pos="NN" surface="arbalest"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="lean" pos="VBN" surface="leaned"/>
+  <token id="7" lemma="over" pos="IN" surface="over"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="wall" pos="NN" surface="wall"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="release" pos="VBD" surface="released"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="catch" pos="NN" surface="catch"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="punct"/>
+  <dep from="2" to="6" type="conj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="6" to="10" type="cc"/>
+  <dep from="6" to="11" type="conj"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="dobj"/>
+  <dep from="2" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

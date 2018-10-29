@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1447461">
+ <sentence>
+  As the wave reaches the cell periphery , enough calcium may diffuse across to activate the neighbouring cell .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="as" pos="IN" surface="As"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="wave" pos="NN" surface="wave"/>
+  <token id="4" lemma="reach" pos="VBZ" surface="reaches"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="cell" pos="NN" surface="cell"/>
+  <token id="7" lemma="periphery" pos="NN" surface="periphery"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="enough" pos="JJ" surface="enough"/>
+  <token id="10" lemma="calcium" pos="NN" surface="calcium"/>
+  <token id="11" lemma="may" pos="MD" surface="may"/>
+  <token id="12" lemma="diffuse" pos="VB" surface="diffuse"/>
+  <token id="13" lemma="across" pos="RP" surface="across"/>
+  <token id="14" lemma="to" pos="TO" surface="to"/>
+  <token id="15" lemma="activate" pos="VB" surface="activate"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="neighbour" pos="VBG" surface="neighbouring"/>
+  <token id="18" lemma="cell" pos="NN" surface="cell"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="mark"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="12" to="4" type="advcl"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="12" to="8" type="punct"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="12" to="10" type="nsubj"/>
+  <dep from="12" to="11" type="aux"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="prt"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="12" to="15" type="xcomp"/>
+  <dep from="18" to="16" type="det"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="15" to="18" type="dobj"/>
+  <dep from="12" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_operational_state">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Device">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="626033">
+ <sentence>
+  Lady Street was busy : there were even a few visitors about , weaving between the parked vans and lorries .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="lady" pos="NNP" surface="Lady"/>
+  <token id="2" lemma="street" pos="NNP" surface="Street"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="busy" pos="JJ" surface="busy"/>
+  <token id="5" lemma=":" pos=":" surface=":"/>
+  <token id="6" lemma="there" pos="EX" surface="there"/>
+  <token id="7" lemma="be" pos="VBD" surface="were"/>
+  <token id="8" lemma="even" pos="RB" surface="even"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="few" pos="JJ" surface="few"/>
+  <token id="11" lemma="visitor" pos="NNS" surface="visitors"/>
+  <token id="12" lemma="about" pos="IN" surface="about"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="weave" pos="VBG" surface="weaving"/>
+  <token id="15" lemma="between" pos="IN" surface="between"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="park" pos="VBN" surface="parked"/>
+  <token id="18" lemma="van" pos="NNS" surface="vans"/>
+  <token id="19" lemma="and" pos="CC" surface="and"/>
+  <token id="20" lemma="lorry" pos="NNS" surface="lorries"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="7" to="3" type="ccomp"/>
+  <dep from="3" to="4" type="acomp"/>
+  <dep from="7" to="5" type="punct"/>
+  <dep from="7" to="6" type="expl"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="10" to="8" type="advmod"/>
+  <dep from="10" to="9" type="quantmod"/>
+  <dep from="11" to="10" type="nummod"/>
+  <dep from="7" to="11" type="attr"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="7" to="13" type="punct"/>
+  <dep from="7" to="14" type="advcl"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="18" to="16" type="det"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="15" to="18" type="pobj"/>
+  <dep from="18" to="19" type="cc"/>
+  <dep from="18" to="20" type="conj"/>
+  <dep from="7" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

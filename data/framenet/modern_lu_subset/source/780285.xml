@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780285">
+ <sentence>
+  Paula searched his eyes for an answer .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="paula" pos="NNP" surface="Paula"/>
+  <token id="2" lemma="search" pos="VBD" surface="searched"/>
+  <token id="3" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="4" lemma="eye" pos="NNS" surface="eyes"/>
+  <token id="5" lemma="for" pos="IN" surface="for"/>
+  <token id="6" lemma="an" pos="DT" surface="an"/>
+  <token id="7" lemma="answer" pos="NN" surface="answer"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="poss"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="2" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

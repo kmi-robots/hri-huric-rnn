@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="405248">
+ <sentence>
+  I , I had a little taste .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="4" lemma="have" pos="VBD" surface="had"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="little" pos="JJ" surface="little"/>
+  <token id="7" lemma="taste" pos="NN" surface="taste"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="intj"/>
+  <dep from="4" to="2" type="punct"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="4" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

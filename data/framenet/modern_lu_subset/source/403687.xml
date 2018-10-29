@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403687">
+ <sentence>
+  ` The pain will be exquisite , Doctor , and I shall savour every nuance of your screams .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="''" surface="`"/>
+  <token id="2" lemma="the" pos="DT" surface="The"/>
+  <token id="3" lemma="pain" pos="NN" surface="pain"/>
+  <token id="4" lemma="will" pos="MD" surface="will"/>
+  <token id="5" lemma="be" pos="VB" surface="be"/>
+  <token id="6" lemma="exquisite" pos="JJ" surface="exquisite"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="doctor" pos="NN" surface="Doctor"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="12" lemma="shall" pos="MD" surface="shall"/>
+  <token id="13" lemma="savour" pos="VB" surface="savour"/>
+  <token id="14" lemma="every" pos="DT" surface="every"/>
+  <token id="15" lemma="nuance" pos="NN" surface="nuance"/>
+  <token id="16" lemma="of" pos="IN" surface="of"/>
+  <token id="17" lemma="-PRON-" pos="PRP$" surface="your"/>
+  <token id="18" lemma="scream" pos="NNS" surface="screams"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="punct"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="6" to="3" type="nsubjpass"/>
+  <dep from="6" to="4" type="aux"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="6" to="8" type="npadvmod"/>
+  <dep from="6" to="9" type="punct"/>
+  <dep from="6" to="10" type="cc"/>
+  <dep from="13" to="11" type="nsubj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="6" to="13" type="conj"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="dobj"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="18" to="17" type="poss"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="13" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

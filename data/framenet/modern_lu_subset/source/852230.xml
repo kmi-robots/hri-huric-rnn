@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="852230">
+ <sentence>
+  The car was parked in front of an advertising hoarding , obscuring the health warning , while young women were handing out free Camel cigarettes .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="car" pos="NN" surface="car"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="park" pos="VBN" surface="parked"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="front" pos="NN" surface="front"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="an" pos="DT" surface="an"/>
+  <token id="9" lemma="advertising" pos="NN" surface="advertising"/>
+  <token id="10" lemma="hoarding" pos="NN" surface="hoarding"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="obscure" pos="VBG" surface="obscuring"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="health" pos="NN" surface="health"/>
+  <token id="15" lemma="warning" pos="NN" surface="warning"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="while" pos="IN" surface="while"/>
+  <token id="18" lemma="young" pos="JJ" surface="young"/>
+  <token id="19" lemma="woman" pos="NNS" surface="women"/>
+  <token id="20" lemma="be" pos="VBD" surface="were"/>
+  <token id="21" lemma="hand" pos="VBG" surface="handing"/>
+  <token id="22" lemma="out" pos="RP" surface="out"/>
+  <token id="23" lemma="free" pos="JJ" surface="free"/>
+  <token id="24" lemma="camel" pos="NNP" surface="Camel"/>
+  <token id="25" lemma="cigarette" pos="NNS" surface="cigarettes"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="4" to="12" type="prep"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="12" to="15" type="pobj"/>
+  <dep from="4" to="16" type="punct"/>
+  <dep from="21" to="17" type="mark"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="21" to="19" type="nsubj"/>
+  <dep from="21" to="20" type="aux"/>
+  <dep from="4" to="21" type="advcl"/>
+  <dep from="21" to="22" type="prt"/>
+  <dep from="25" to="23" type="amod"/>
+  <dep from="25" to="24" type="compound"/>
+  <dep from="21" to="25" type="dobj"/>
+  <dep from="4" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

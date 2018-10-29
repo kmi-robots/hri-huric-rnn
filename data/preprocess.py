@@ -978,6 +978,95 @@ def create_subset_with_frames_mapped(src_path, dst_path, frame_mappings):
 
     print('migrated', migrated, 'discarded', discarded)
 
+def framenet_lu_preprocess(folder, dest_path, frame_names_mappings):
+    ns = {'ns': '{http://framenet.icsi.berkeley.edu}'}
+
+    xml_path = Path(folder) / 'source'
+    lu_index = xml_path / 'luIndex.xml'
+    with open(lu_index) as file_in:
+        xmlstring = file_in.read()
+    # remove namespace that makes ET usage cumbersome
+    xmlstring = re.sub(r'\sxmlns="[^"]+"', '', xmlstring, count=1)
+    root = ET.fromstring(xmlstring)
+    lus_by_frame_name = defaultdict(lambda: [])
+    for lu in root.findall('lu'):
+        lus_by_frame_name[lu.attrib['frameName']].append({'name': lu.attrib['name'], 'id': lu.attrib['ID']})
+    filtered_lus_by_frame_name = {frame_names_mappings[k]:v for k,v in lus_by_frame_name.items() if k in frame_names_mappings}
+    #print(filtered_lus_by_frame_name)
+    auto_app_cnt = 0
+    auto_edited_cnt = 0
+    for frame_name, lus in filtered_lus_by_frame_name.items():
+        sentences_for_frame = []
+        for lu in lus:
+            lu_file_path = xml_path / 'lu' / 'lu{}.xml'.format(lu['id'])
+            with open(lu_file_path) as file_in:
+                xmlstring = file_in.read()
+            # remove namespace that makes ET usage cumbersome
+            xmlstring = re.sub(r'\sxmlns="[^"]+"', '', xmlstring, count=1)
+            root = ET.fromstring(xmlstring)
+            sents_for_lu = root.findall('subCorpus/sentence')
+            sentences_for_frame.extend(sents_for_lu)
+        print(frame_name, len(sentences_for_frame))
+        for s in sentences_for_frame:
+            command_id = s.attrib['ID']
+            text = s.find('text').text
+            words = text.split()
+            doc = nlp(text)
+            tokens = [{
+                'id': t.i + 1,
+                'start': t.idx,
+                'end': t.idx + len(t.text),
+                'lemma': t.lemma_,
+                'pos': t.tag_, # or l.attrib['name']
+                'surface': t.text
+            } for t in doc]
+            # look at the dependencies
+            dependencies = [{
+                'from': str(t.head.i + 1) if t.dep_.lower() != 'root' else str(0),
+                'to': str(t.i + 1),
+                'type': t.dep_.lower()
+            } for t in doc]
+
+            new_command = ET.Element('command', {'id': command_id})
+            ET.SubElement(new_command, 'sentence').text = text
+            new_tokens = ET.SubElement(new_command, 'tokens')
+            for t in tokens:
+                ET.SubElement(new_tokens, 'token', {'id': str(t['id']), 'lemma': t['lemma'], 'pos': t['pos'], 'surface': t['surface']})
+            new_dependencies = ET.SubElement(new_command, 'dependencies')
+            for d in dependencies:
+                ET.SubElement(new_dependencies, 'dep', d)
+            new_semantic_frames = ET.SubElement(ET.SubElement(new_command, 'semantics'), 'frameSemantics')
+
+            sem_info = s.find("annotationSet[@status='MANUAL']")
+            if not sem_info:
+                sem_info = s.find("annotationSet[@status='AUTO_EDITED']")
+                auto_edited_cnt += 1
+            if not sem_info:
+                sem_info = s.find("annotationSet[@status='AUTO_APP']")
+                auto_app_cnt += 1
+            if not sem_info:
+                print(command_id)
+            lexical_unit = sem_info.find("layer[@name='Target']/label")
+            start, end = int(lexical_unit.attrib['start']), int(lexical_unit.attrib['end'])
+            lexical_unit_ids = [t['id'] for t in tokens if (t['end']>=start and t['start']<=end)]
+            fes = sem_info.findall("layer[@name='FE']/label")
+            #print(command_id, fes)
+            frame_elements = [{'type': f.attrib['name'].replace('-', ''), 'ids': [t['id'] for t in tokens if (f.attrib.get('start', None) != None and t['end']>=int(f.attrib['start']) and t['start']<=int(f.attrib['end'])+1)]} for f in fes]
+
+            new_frame = ET.SubElement(new_semantic_frames, 'frame', {'name': frame_name})
+            new_lexical_unit = ET.SubElement(new_frame, 'lexicalUnit')
+            for l in lexical_unit_ids:
+                ET.SubElement(new_lexical_unit, 'token', {'id': str(l)})
+            for fe in frame_elements:
+                if len(fe['ids']):
+                    new_frame_element = ET.SubElement(new_frame, 'frameElement', {'type': fe['type']})
+                    for t_id in fe['ids']:
+                        ET.SubElement(new_frame_element, 'token', {'id': str(t_id)})
+
+            write_pretty_xml(new_command, dest_path, command_id + '.xml')
+
+    print('#AUTO_EDITED', auto_edited_cnt, '#AUTO_APP', auto_app_cnt)
+
 
 def main():
     #nlp_en = load_nlp()
@@ -1003,6 +1092,7 @@ def main():
             huric_preprocess('huric_eb/speakers_split/{}'.format(subfolder))
 
     elif which == 'framenet':
+        # TODO rename framenet_preprocess with 'fulltext'
         framenet_preprocess('framenet', 'framenet/modern/source')
         huric_preprocess('framenet/modern')
         huric_preprocess('framenet/modern', trim='both')
@@ -1011,6 +1101,10 @@ def main():
         create_subset_with_frames_mapped('framenet/modern/source', 'framenet/subset/source', frame_names_mappings)
         huric_preprocess('framenet/subset')
         huric_preprocess('framenet/subset', trim='both')
+
+    elif which == 'framenet_subset_lu':
+        framenet_lu_preprocess('framenet', 'framenet/modern_lu_subset/source', frame_names_mappings)
+        huric_preprocess('framenet/modern_lu_subset')
 
     elif which == 'combinations':
         enrich_huric_with_framenet('huric_eb/modern_right/preprocessed', 'framenet/subset_both/preprocessed', 'huric_eb/with_framenet/preprocessed')

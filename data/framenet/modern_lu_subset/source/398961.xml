@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="398961">
+ <sentence>
+  Detective-Constable Barnes turned his benevolent gaze upon her with pleasure .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="detective-constable" pos="JJ" surface="Detective-Constable"/>
+  <token id="2" lemma="barne" pos="NNS" surface="Barnes"/>
+  <token id="3" lemma="turn" pos="VBD" surface="turned"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="5" lemma="benevolent" pos="JJ" surface="benevolent"/>
+  <token id="6" lemma="gaze" pos="NN" surface="gaze"/>
+  <token id="7" lemma="upon" pos="IN" surface="upon"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="9" lemma="with" pos="IN" surface="with"/>
+  <token id="10" lemma="pleasure" pos="NN" surface="pleasure"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="poss"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="3" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="3" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

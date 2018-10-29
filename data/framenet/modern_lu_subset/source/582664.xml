@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="582664">
+ <sentence>
+  Prime-time television could then be showing high politicians being hauled off in handcuffs .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="prime-time" pos="NN" surface="Prime-time"/>
+  <token id="2" lemma="television" pos="NN" surface="television"/>
+  <token id="3" lemma="could" pos="MD" surface="could"/>
+  <token id="4" lemma="then" pos="RB" surface="then"/>
+  <token id="5" lemma="be" pos="VB" surface="be"/>
+  <token id="6" lemma="show" pos="VBG" surface="showing"/>
+  <token id="7" lemma="high" pos="JJ" surface="high"/>
+  <token id="8" lemma="politician" pos="NNS" surface="politicians"/>
+  <token id="9" lemma="be" pos="VBG" surface="being"/>
+  <token id="10" lemma="haul" pos="VBN" surface="hauled"/>
+  <token id="11" lemma="off" pos="RP" surface="off"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="handcuff" pos="NNS" surface="handcuffs"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="6" to="2" type="nsubj"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="6" to="4" type="advmod"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="10" to="8" type="nsubjpass"/>
+  <dep from="10" to="9" type="auxpass"/>
+  <dep from="6" to="10" type="ccomp"/>
+  <dep from="10" to="11" type="prt"/>
+  <dep from="10" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="6" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Depictive">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

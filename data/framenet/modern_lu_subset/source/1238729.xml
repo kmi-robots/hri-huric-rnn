@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1238729">
+ <sentence>
+  Police in South Korea arrested 44 students and seized petrol bombs in pre-dawn raids .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="police" pos="NNS" surface="Police"/>
+  <token id="2" lemma="in" pos="IN" surface="in"/>
+  <token id="3" lemma="south" pos="NNP" surface="South"/>
+  <token id="4" lemma="korea" pos="NNP" surface="Korea"/>
+  <token id="5" lemma="arrest" pos="VBD" surface="arrested"/>
+  <token id="6" lemma="44" pos="CD" surface="44"/>
+  <token id="7" lemma="student" pos="NNS" surface="students"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="seize" pos="VBN" surface="seized"/>
+  <token id="10" lemma="petrol" pos="NN" surface="petrol"/>
+  <token id="11" lemma="bomb" pos="NNS" surface="bombs"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="pre-dawn" pos="JJ" surface="pre-dawn"/>
+  <token id="14" lemma="raid" pos="NNS" surface="raids"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="nummod"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="5" to="8" type="cc"/>
+  <dep from="5" to="9" type="conj"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="9" to="12" type="prep"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="5" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Taking">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Containing_event">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

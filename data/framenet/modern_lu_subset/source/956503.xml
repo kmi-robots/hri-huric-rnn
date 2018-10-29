@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="956503">
+ <sentence>
+  The thin trees were blowing wildly , and untidy grey clouds were sailing past a pale , sickly moon .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="thin" pos="JJ" surface="thin"/>
+  <token id="3" lemma="tree" pos="NNS" surface="trees"/>
+  <token id="4" lemma="be" pos="VBD" surface="were"/>
+  <token id="5" lemma="blow" pos="VBG" surface="blowing"/>
+  <token id="6" lemma="wildly" pos="RB" surface="wildly"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="untidy" pos="JJ" surface="untidy"/>
+  <token id="10" lemma="grey" pos="JJ" surface="grey"/>
+  <token id="11" lemma="cloud" pos="NNS" surface="clouds"/>
+  <token id="12" lemma="be" pos="VBD" surface="were"/>
+  <token id="13" lemma="sail" pos="VBG" surface="sailing"/>
+  <token id="14" lemma="past" pos="IN" surface="past"/>
+  <token id="15" lemma="a" pos="DT" surface="a"/>
+  <token id="16" lemma="pale" pos="JJ" surface="pale"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="sickly" pos="JJ" surface="sickly"/>
+  <token id="19" lemma="moon" pos="NN" surface="moon"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="advmod"/>
+  <dep from="5" to="7" type="punct"/>
+  <dep from="5" to="8" type="cc"/>
+  <dep from="11" to="9" type="amod"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="13" to="11" type="nsubj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="5" to="13" type="conj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="19" to="16" type="amod"/>
+  <dep from="16" to="17" type="punct"/>
+  <dep from="19" to="18" type="advmod"/>
+  <dep from="14" to="19" type="pobj"/>
+  <dep from="13" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770380">
+ <sentence>
+  And a man from the Co-op in Croft would cycle over each week to take orders , the goods coming later by van .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="and" pos="CC" surface="And"/>
+  <token id="2" lemma="a" pos="DT" surface="a"/>
+  <token id="3" lemma="man" pos="NN" surface="man"/>
+  <token id="4" lemma="from" pos="IN" surface="from"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="co-op" pos="NN" surface="Co-op"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="croft" pos="NNP" surface="Croft"/>
+  <token id="9" lemma="would" pos="MD" surface="would"/>
+  <token id="10" lemma="cycle" pos="VB" surface="cycle"/>
+  <token id="11" lemma="over" pos="IN" surface="over"/>
+  <token id="12" lemma="each" pos="DT" surface="each"/>
+  <token id="13" lemma="week" pos="NN" surface="week"/>
+  <token id="14" lemma="to" pos="TO" surface="to"/>
+  <token id="15" lemma="take" pos="VB" surface="take"/>
+  <token id="16" lemma="order" pos="NNS" surface="orders"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="good" pos="NNS" surface="goods"/>
+  <token id="20" lemma="come" pos="VBG" surface="coming"/>
+  <token id="21" lemma="later" pos="RB" surface="later"/>
+  <token id="22" lemma="by" pos="IN" surface="by"/>
+  <token id="23" lemma="van" pos="NN" surface="van"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="cc"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="10" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="10" to="15" type="advcl"/>
+  <dep from="15" to="16" type="dobj"/>
+  <dep from="10" to="17" type="punct"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="10" to="19" type="npadvmod"/>
+  <dep from="19" to="20" type="acl"/>
+  <dep from="20" to="21" type="advmod"/>
+  <dep from="20" to="22" type="prep"/>
+  <dep from="22" to="23" type="pobj"/>
+  <dep from="10" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Mode_of_transportation">
+     <token id="22"/>
+     <token id="23"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="404447">
+ <sentence>
+  Glue is generally sniffed from bags , often freezer or crisp bags .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="glue" pos="NNP" surface="Glue"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="generally" pos="RB" surface="generally"/>
+  <token id="4" lemma="sniff" pos="VBN" surface="sniffed"/>
+  <token id="5" lemma="from" pos="IN" surface="from"/>
+  <token id="6" lemma="bag" pos="NNS" surface="bags"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="often" pos="RB" surface="often"/>
+  <token id="9" lemma="freezer" pos="VBP" surface="freezer"/>
+  <token id="10" lemma="or" pos="CC" surface="or"/>
+  <token id="11" lemma="crisp" pos="JJ" surface="crisp"/>
+  <token id="12" lemma="bag" pos="NNS" surface="bags"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubjpass"/>
+  <dep from="4" to="2" type="auxpass"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="6" to="9" type="conj"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="conj"/>
+  <dep from="4" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="State">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

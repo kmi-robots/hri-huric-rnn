@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="249073">
+ <sentence>
+  He draped the towel around his shoulders and shook his head .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="drape" pos="VBD" surface="draped"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="towel" pos="NN" surface="towel"/>
+  <token id="5" lemma="around" pos="IN" surface="around"/>
+  <token id="6" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="7" lemma="shoulder" pos="NNS" surface="shoulders"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="shake" pos="VBD" surface="shook"/>
+  <token id="10" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="11" lemma="head" pos="NN" surface="head"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="7" to="6" type="poss"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="2" to="8" type="cc"/>
+  <dep from="2" to="9" type="conj"/>
+  <dep from="11" to="10" type="poss"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="2" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

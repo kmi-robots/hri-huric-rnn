@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="975487">
+ <sentence>
+  Let us assume that a cat stalks a duck until it gets within striking distance .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="let" pos="VB" surface="Let"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="us"/>
+  <token id="3" lemma="assume" pos="VB" surface="assume"/>
+  <token id="4" lemma="that" pos="IN" surface="that"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="cat" pos="NN" surface="cat"/>
+  <token id="7" lemma="stalk" pos="VBZ" surface="stalks"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="duck" pos="NN" surface="duck"/>
+  <token id="10" lemma="until" pos="IN" surface="until"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="12" lemma="get" pos="VBZ" surface="gets"/>
+  <token id="13" lemma="within" pos="IN" surface="within"/>
+  <token id="14" lemma="striking" pos="JJ" surface="striking"/>
+  <token id="15" lemma="distance" pos="NN" surface="distance"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="1" to="3" type="ccomp"/>
+  <dep from="7" to="4" type="mark"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="3" to="7" type="ccomp"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="12" to="10" type="mark"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="7" to="12" type="advcl"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="1" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Duration">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

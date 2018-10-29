@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1090024">
+ <sentence>
+  This month 's prize has been donated by Beaver , one of Britain 's foremost manufacturers of suits .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="this" pos="DT" surface="This"/>
+  <token id="2" lemma="month" pos="NN" surface="month"/>
+  <token id="3" lemma="'s" pos="POS" surface="'s"/>
+  <token id="4" lemma="prize" pos="NN" surface="prize"/>
+  <token id="5" lemma="have" pos="VBZ" surface="has"/>
+  <token id="6" lemma="be" pos="VBN" surface="been"/>
+  <token id="7" lemma="donate" pos="VBN" surface="donated"/>
+  <token id="8" lemma="by" pos="IN" surface="by"/>
+  <token id="9" lemma="beaver" pos="NNP" surface="Beaver"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="one" pos="CD" surface="one"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="britain" pos="NNP" surface="Britain"/>
+  <token id="14" lemma="'s" pos="POS" surface="'s"/>
+  <token id="15" lemma="foremost" pos="JJ" surface="foremost"/>
+  <token id="16" lemma="manufacturer" pos="NNS" surface="manufacturers"/>
+  <token id="17" lemma="of" pos="IN" surface="of"/>
+  <token id="18" lemma="suit" pos="NNS" surface="suits"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="poss"/>
+  <dep from="2" to="3" type="case"/>
+  <dep from="7" to="4" type="nsubjpass"/>
+  <dep from="7" to="5" type="aux"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="agent"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="9" to="10" type="punct"/>
+  <dep from="9" to="11" type="appos"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="16" to="13" type="poss"/>
+  <dep from="13" to="14" type="case"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="12" to="16" type="pobj"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="17" to="18" type="pobj"/>
+  <dep from="7" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Donor">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

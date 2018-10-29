@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1090511">
+ <sentence>
+  He bequeathed his linguistic books and papers to the British Museum , but the bequest was turned down .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="bequeath" pos="VBD" surface="bequeathed"/>
+  <token id="3" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="4" lemma="linguistic" pos="JJ" surface="linguistic"/>
+  <token id="5" lemma="book" pos="NNS" surface="books"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="paper" pos="NNS" surface="papers"/>
+  <token id="8" lemma="to" pos="IN" surface="to"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="british" pos="NNP" surface="British"/>
+  <token id="11" lemma="museum" pos="NNP" surface="Museum"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="but" pos="CC" surface="but"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="bequest" pos="NN" surface="bequest"/>
+  <token id="16" lemma="be" pos="VBD" surface="was"/>
+  <token id="17" lemma="turn" pos="VBN" surface="turned"/>
+  <token id="18" lemma="down" pos="RP" surface="down"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="poss"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="5" to="7" type="conj"/>
+  <dep from="2" to="8" type="prep"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="2" to="12" type="punct"/>
+  <dep from="2" to="13" type="cc"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="17" to="15" type="nsubjpass"/>
+  <dep from="17" to="16" type="auxpass"/>
+  <dep from="2" to="17" type="conj"/>
+  <dep from="17" to="18" type="prt"/>
+  <dep from="17" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

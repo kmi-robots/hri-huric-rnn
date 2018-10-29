@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="404833">
+ <sentence>
+  Their eyes met in a long , arching stare .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP$" surface="Their"/>
+  <token id="2" lemma="eye" pos="NNS" surface="eyes"/>
+  <token id="3" lemma="meet" pos="VBD" surface="met"/>
+  <token id="4" lemma="in" pos="IN" surface="in"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="long" pos="JJ" surface="long"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="arch" pos="VBG" surface="arching"/>
+  <token id="9" lemma="stare" pos="NN" surface="stare"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="poss"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="3" to="7" type="punct"/>
+  <dep from="3" to="8" type="advcl"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="3" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

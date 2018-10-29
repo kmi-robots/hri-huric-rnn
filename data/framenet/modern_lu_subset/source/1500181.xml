@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1500181">
+ <sentence>
+  Though he moved silently , the slivers of ice sliding down her spine told her he was close behind .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="though" pos="IN" surface="Though"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="3" lemma="move" pos="VBD" surface="moved"/>
+  <token id="4" lemma="silently" pos="RB" surface="silently"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="sliver" pos="NNS" surface="slivers"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="ice" pos="NN" surface="ice"/>
+  <token id="10" lemma="slide" pos="VBG" surface="sliding"/>
+  <token id="11" lemma="down" pos="IN" surface="down"/>
+  <token id="12" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="13" lemma="spine" pos="NN" surface="spine"/>
+  <token id="14" lemma="tell" pos="VBD" surface="told"/>
+  <token id="15" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="16" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="17" lemma="be" pos="VBD" surface="was"/>
+  <token id="18" lemma="close" pos="JJ" surface="close"/>
+  <token id="19" lemma="behind" pos="RB" surface="behind"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="mark"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="14" to="3" type="advcl"/>
+  <dep from="3" to="4" type="advmod"/>
+  <dep from="14" to="5" type="punct"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="14" to="7" type="nsubj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="7" to="10" type="acl"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="poss"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="0" to="14" type="root"/>
+  <dep from="14" to="15" type="dobj"/>
+  <dep from="17" to="16" type="nsubj"/>
+  <dep from="14" to="17" type="ccomp"/>
+  <dep from="17" to="18" type="acomp"/>
+  <dep from="18" to="19" type="advmod"/>
+  <dep from="14" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

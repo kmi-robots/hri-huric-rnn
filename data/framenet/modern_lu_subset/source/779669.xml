@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="779669">
+ <sentence>
+  Leonora scanned the turbulent stretch of sea anxiously .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="leonora" pos="NNP" surface="Leonora"/>
+  <token id="2" lemma="scan" pos="VBD" surface="scanned"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="turbulent" pos="JJ" surface="turbulent"/>
+  <token id="5" lemma="stretch" pos="NN" surface="stretch"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="sea" pos="NN" surface="sea"/>
+  <token id="8" lemma="anxiously" pos="RB" surface="anxiously"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="2" to="8" type="advmod"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

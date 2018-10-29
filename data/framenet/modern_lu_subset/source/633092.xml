@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="633092">
+ <sentence>
+  The lines are positioned by referring to the CE or balance point of the rig .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="line" pos="NNS" surface="lines"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="position" pos="VBN" surface="positioned"/>
+  <token id="5" lemma="by" pos="IN" surface="by"/>
+  <token id="6" lemma="refer" pos="VBG" surface="referring"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="ce" pos="NN" surface="CE"/>
+  <token id="10" lemma="or" pos="CC" surface="or"/>
+  <token id="11" lemma="balance" pos="NN" surface="balance"/>
+  <token id="12" lemma="point" pos="NN" surface="point"/>
+  <token id="13" lemma="of" pos="IN" surface="of"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="rig" pos="NN" surface="rig"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pcomp"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="12" to="8" type="det"/>
+  <dep from="12" to="9" type="nmod"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="9" to="11" type="conj"/>
+  <dep from="7" to="12" type="pobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="4" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

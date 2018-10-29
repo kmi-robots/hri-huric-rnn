@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1500504">
+ <sentence>
+  When asking people to contribute money or time the question ` what 's in it for them ? " always needs to be raised .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="when" pos="WRB" surface="When"/>
+  <token id="2" lemma="ask" pos="VBG" surface="asking"/>
+  <token id="3" lemma="people" pos="NNS" surface="people"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="contribute" pos="VB" surface="contribute"/>
+  <token id="6" lemma="money" pos="NN" surface="money"/>
+  <token id="7" lemma="or" pos="CC" surface="or"/>
+  <token id="8" lemma="time" pos="NN" surface="time"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="question" pos="NN" surface="question"/>
+  <token id="11" lemma="`" pos="''" surface="`"/>
+  <token id="12" lemma="what" pos="WP" surface="what"/>
+  <token id="13" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="14" lemma="in" pos="IN" surface="in"/>
+  <token id="15" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="16" lemma="for" pos="IN" surface="for"/>
+  <token id="17" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="18" lemma="?" pos="." surface="?"/>
+  <token id="19" lemma='"' pos="''" surface='"'/>
+  <token id="20" lemma="always" pos="RB" surface="always"/>
+  <token id="21" lemma="need" pos="VBZ" surface="needs"/>
+  <token id="22" lemma="to" pos="TO" surface="to"/>
+  <token id="23" lemma="be" pos="VB" surface="be"/>
+  <token id="24" lemma="raise" pos="VBN" surface="raised"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="advmod"/>
+  <dep from="21" to="2" type="advcl"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="2" to="5" type="xcomp"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="cc"/>
+  <dep from="5" to="8" type="conj"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="13" to="11" type="punct"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="10" to="13" type="acl"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="13" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="2" to="18" type="punct"/>
+  <dep from="2" to="19" type="punct"/>
+  <dep from="21" to="20" type="advmod"/>
+  <dep from="0" to="21" type="root"/>
+  <dep from="24" to="22" type="aux"/>
+  <dep from="24" to="23" type="auxpass"/>
+  <dep from="21" to="24" type="xcomp"/>
+  <dep from="21" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

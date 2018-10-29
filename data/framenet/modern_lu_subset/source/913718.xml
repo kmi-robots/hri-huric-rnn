@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="913718">
+ <sentence>
+  For safety , make sure any pictures you fix above your bed are secure .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="for" pos="IN" surface="For"/>
+  <token id="2" lemma="safety" pos="NN" surface="safety"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="make" pos="VB" surface="make"/>
+  <token id="5" lemma="sure" pos="JJ" surface="sure"/>
+  <token id="6" lemma="any" pos="DT" surface="any"/>
+  <token id="7" lemma="picture" pos="NNS" surface="pictures"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="9" lemma="fix" pos="VBP" surface="fix"/>
+  <token id="10" lemma="above" pos="IN" surface="above"/>
+  <token id="11" lemma="-PRON-" pos="PRP$" surface="your"/>
+  <token id="12" lemma="bed" pos="NN" surface="bed"/>
+  <token id="13" lemma="be" pos="VBP" surface="are"/>
+  <token id="14" lemma="secure" pos="JJ" surface="secure"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="4" to="3" type="punct"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="acomp"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="13" to="7" type="nsubj"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="7" to="9" type="relcl"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="poss"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="4" to="13" type="ccomp"/>
+  <dep from="13" to="14" type="acomp"/>
+  <dep from="4" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

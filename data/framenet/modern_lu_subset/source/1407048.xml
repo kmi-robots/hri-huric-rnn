@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1407048">
+ <sentence>
+  AEI wanted a product which functionally met its needs , and was available and portable throughout the world .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="aei" pos="NNP" surface="AEI"/>
+  <token id="2" lemma="want" pos="VBD" surface="wanted"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="product" pos="NN" surface="product"/>
+  <token id="5" lemma="which" pos="WDT" surface="which"/>
+  <token id="6" lemma="functionally" pos="RB" surface="functionally"/>
+  <token id="7" lemma="meet" pos="VBD" surface="met"/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="9" lemma="need" pos="NNS" surface="needs"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="be" pos="VBD" surface="was"/>
+  <token id="13" lemma="available" pos="JJ" surface="available"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="portable" pos="JJ" surface="portable"/>
+  <token id="16" lemma="throughout" pos="IN" surface="throughout"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="world" pos="NN" surface="world"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="7" to="5" type="nsubj"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="4" to="7" type="relcl"/>
+  <dep from="9" to="8" type="poss"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="2" to="10" type="punct"/>
+  <dep from="2" to="11" type="cc"/>
+  <dep from="2" to="12" type="conj"/>
+  <dep from="12" to="13" type="acomp"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="2" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

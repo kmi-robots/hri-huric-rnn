@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="595378">
+ <sentence>
+  Trail of destruction … police pursue teenage joyrider across three counties .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="trail" pos="NN" surface="Trail"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="destruction" pos="NN" surface="destruction"/>
+  <token id="4" lemma="…" pos="NFP" surface="…"/>
+  <token id="5" lemma="police" pos="NN" surface="police"/>
+  <token id="6" lemma="pursue" pos="VBP" surface="pursue"/>
+  <token id="7" lemma="teenage" pos="JJ" surface="teenage"/>
+  <token id="8" lemma="joyrider" pos="NN" surface="joyrider"/>
+  <token id="9" lemma="across" pos="IN" surface="across"/>
+  <token id="10" lemma="three" pos="CD" surface="three"/>
+  <token id="11" lemma="county" pos="NNS" surface="counties"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="2" to="3" type="pobj"/>
+  <dep from="1" to="4" type="conj"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="6" to="9" type="prep"/>
+  <dep from="11" to="10" type="nummod"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="6" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

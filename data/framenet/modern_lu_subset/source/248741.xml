@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="248741">
+ <sentence>
+  Top each pizza with grated Parmesan and drizzle 2 x 15ml/tbsp olive oil over each one before baking .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="top" pos="JJ" surface="Top"/>
+  <token id="2" lemma="each" pos="DT" surface="each"/>
+  <token id="3" lemma="pizza" pos="NN" surface="pizza"/>
+  <token id="4" lemma="with" pos="IN" surface="with"/>
+  <token id="5" lemma="grated" pos="JJ" surface="grated"/>
+  <token id="6" lemma="parmesan" pos="NNP" surface="Parmesan"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="drizzle" pos="NN" surface="drizzle"/>
+  <token id="9" lemma="2" pos="CD" surface="2"/>
+  <token id="10" lemma="x" pos="SYM" surface="x"/>
+  <token id="11" lemma="15ml/tbsp" pos="CD" surface="15ml/tbsp"/>
+  <token id="12" lemma="olive" pos="NN" surface="olive"/>
+  <token id="13" lemma="oil" pos="NN" surface="oil"/>
+  <token id="14" lemma="over" pos="IN" surface="over"/>
+  <token id="15" lemma="each" pos="DT" surface="each"/>
+  <token id="16" lemma="one" pos="NN" surface="one"/>
+  <token id="17" lemma="before" pos="IN" surface="before"/>
+  <token id="18" lemma="bake" pos="VBG" surface="baking"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="dobj"/>
+  <dep from="1" to="4" type="prep"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="1" to="7" type="cc"/>
+  <dep from="1" to="8" type="conj"/>
+  <dep from="13" to="9" type="nummod"/>
+  <dep from="13" to="10" type="punct"/>
+  <dep from="13" to="11" type="compound"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="8" to="13" type="dobj"/>
+  <dep from="8" to="14" type="prep"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="8" to="17" type="prep"/>
+  <dep from="17" to="18" type="pcomp"/>
+  <dep from="1" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

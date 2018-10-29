@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="959649">
+ <sentence>
+  David Kent 's good-natured face floated into her mind .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="david" pos="NNP" surface="David"/>
+  <token id="2" lemma="kent" pos="NNP" surface="Kent"/>
+  <token id="3" lemma="'s" pos="POS" surface="'s"/>
+  <token id="4" lemma="good-natured" pos="JJ" surface="good-natured"/>
+  <token id="5" lemma="face" pos="NN" surface="face"/>
+  <token id="6" lemma="float" pos="VBD" surface="floated"/>
+  <token id="7" lemma="into" pos="IN" surface="into"/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="9" lemma="mind" pos="NN" surface="mind"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="5" to="2" type="poss"/>
+  <dep from="2" to="3" type="case"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="poss"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="6" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

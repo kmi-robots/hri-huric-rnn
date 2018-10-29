@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="404335">
+ <sentence>
+  ` I sniffed solvents to blot out my problems .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="''" surface="`"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="3" lemma="sniff" pos="VBD" surface="sniffed"/>
+  <token id="4" lemma="solvent" pos="NNS" surface="solvents"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="blot" pos="VB" surface="blot"/>
+  <token id="7" lemma="out" pos="RP" surface="out"/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="9" lemma="problem" pos="NNS" surface="problems"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="punct"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="3" to="6" type="advcl"/>
+  <dep from="6" to="7" type="prt"/>
+  <dep from="9" to="8" type="poss"/>
+  <dep from="6" to="9" type="dobj"/>
+  <dep from="3" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

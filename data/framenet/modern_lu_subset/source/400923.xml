@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="400923">
+ <sentence>
+  I trudge off the platform on to the exit gantry and look below .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="trudge" pos="VBP" surface="trudge"/>
+  <token id="3" lemma="off" pos="RP" surface="off"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="platform" pos="NN" surface="platform"/>
+  <token id="6" lemma="on" pos="IN" surface="on"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="exit" pos="NN" surface="exit"/>
+  <token id="10" lemma="gantry" pos="NN" surface="gantry"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="look" pos="VB" surface="look"/>
+  <token id="13" lemma="below" pos="RB" surface="below"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prt"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="2" to="7" type="prep"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="2" to="11" type="cc"/>
+  <dep from="2" to="12" type="conj"/>
+  <dep from="12" to="13" type="advmod"/>
+  <dep from="2" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

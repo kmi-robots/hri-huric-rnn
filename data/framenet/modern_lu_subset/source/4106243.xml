@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106243">
+ <sentence>
+  However , it 's also easy to get to Guangzhou by train or ferry .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="however" pos="RB" surface="However"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="4" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="5" lemma="also" pos="RB" surface="also"/>
+  <token id="6" lemma="easy" pos="JJ" surface="easy"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="get" pos="VB" surface="get"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="guangzhou" pos="NNP" surface="Guangzhou"/>
+  <token id="11" lemma="by" pos="IN" surface="by"/>
+  <token id="12" lemma="train" pos="NN" surface="train"/>
+  <token id="13" lemma="or" pos="CC" surface="or"/>
+  <token id="14" lemma="ferry" pos="NN" surface="ferry"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="4" to="2" type="punct"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="advmod"/>
+  <dep from="4" to="6" type="acomp"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="4" to="8" type="xcomp"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="8" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="12" to="14" type="conj"/>
+  <dep from="4" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1447490">
+ <sentence>
+  In some cells , there are suggestions that these inositol phosphates may directly activate specific channels in the plasma membrane .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="some" pos="DT" surface="some"/>
+  <token id="3" lemma="cell" pos="NNS" surface="cells"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="there" pos="EX" surface="there"/>
+  <token id="6" lemma="be" pos="VBP" surface="are"/>
+  <token id="7" lemma="suggestion" pos="NNS" surface="suggestions"/>
+  <token id="8" lemma="that" pos="IN" surface="that"/>
+  <token id="9" lemma="these" pos="DT" surface="these"/>
+  <token id="10" lemma="inositol" pos="JJ" surface="inositol"/>
+  <token id="11" lemma="phosphate" pos="NNS" surface="phosphates"/>
+  <token id="12" lemma="may" pos="MD" surface="may"/>
+  <token id="13" lemma="directly" pos="RB" surface="directly"/>
+  <token id="14" lemma="activate" pos="VB" surface="activate"/>
+  <token id="15" lemma="specific" pos="JJ" surface="specific"/>
+  <token id="16" lemma="channel" pos="NNS" surface="channels"/>
+  <token id="17" lemma="in" pos="IN" surface="in"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="plasma" pos="NN" surface="plasma"/>
+  <token id="20" lemma="membrane" pos="NN" surface="membrane"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="6" to="4" type="punct"/>
+  <dep from="6" to="5" type="expl"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="attr"/>
+  <dep from="14" to="8" type="mark"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="14" to="11" type="nsubj"/>
+  <dep from="14" to="12" type="aux"/>
+  <dep from="14" to="13" type="advmod"/>
+  <dep from="7" to="14" type="acl"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="14" to="16" type="dobj"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="20" to="18" type="det"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="17" to="20" type="pobj"/>
+  <dep from="6" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_operational_state">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Cause">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Device">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

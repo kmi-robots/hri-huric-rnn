@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="398989">
+ <sentence>
+  His gaze was very steady , totally concentrated .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP$" surface="His"/>
+  <token id="2" lemma="gaze" pos="NN" surface="gaze"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="very" pos="RB" surface="very"/>
+  <token id="5" lemma="steady" pos="JJ" surface="steady"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="totally" pos="RB" surface="totally"/>
+  <token id="8" lemma="concentrated" pos="JJ" surface="concentrated"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="poss"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="3" to="5" type="acomp"/>
+  <dep from="8" to="6" type="punct"/>
+  <dep from="8" to="7" type="advmod"/>
+  <dep from="3" to="8" type="acomp"/>
+  <dep from="3" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

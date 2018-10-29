@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1289627">
+ <sentence>
+  If he had run away he would have taken Murgatroyd -- he would n't have gone anywhere without Murgatroyd .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="if" pos="IN" surface="If"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="3" lemma="have" pos="VBD" surface="had"/>
+  <token id="4" lemma="run" pos="VBN" surface="run"/>
+  <token id="5" lemma="away" pos="RB" surface="away"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="7" lemma="would" pos="MD" surface="would"/>
+  <token id="8" lemma="have" pos="VB" surface="have"/>
+  <token id="9" lemma="take" pos="VBN" surface="taken"/>
+  <token id="10" lemma="murgatroyd" pos="NNP" surface="Murgatroyd"/>
+  <token id="11" lemma="--" pos=":" surface="--"/>
+  <token id="12" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="13" lemma="would" pos="MD" surface="would"/>
+  <token id="14" lemma="n't" pos="RB" surface="n't"/>
+  <token id="15" lemma="have" pos="VB" surface="have"/>
+  <token id="16" lemma="go" pos="VBN" surface="gone"/>
+  <token id="17" lemma="anywhere" pos="RB" surface="anywhere"/>
+  <token id="18" lemma="without" pos="IN" surface="without"/>
+  <token id="19" lemma="murgatroyd" pos="NNP" surface="Murgatroyd"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="mark"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="9" to="4" type="advcl"/>
+  <dep from="4" to="5" type="advmod"/>
+  <dep from="9" to="6" type="nsubj"/>
+  <dep from="9" to="7" type="aux"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="16" to="9" type="ccomp"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="16" to="11" type="punct"/>
+  <dep from="16" to="12" type="nsubj"/>
+  <dep from="16" to="13" type="aux"/>
+  <dep from="16" to="14" type="neg"/>
+  <dep from="16" to="15" type="aux"/>
+  <dep from="0" to="16" type="root"/>
+  <dep from="16" to="17" type="advmod"/>
+  <dep from="16" to="18" type="prep"/>
+  <dep from="18" to="19" type="pobj"/>
+  <dep from="16" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Depictive">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

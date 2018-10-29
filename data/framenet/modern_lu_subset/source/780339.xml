@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780339">
+ <sentence>
+  Burun ran up the stairs and started to search the rooms .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="burun" pos="NNP" surface="Burun"/>
+  <token id="2" lemma="run" pos="VBD" surface="ran"/>
+  <token id="3" lemma="up" pos="RP" surface="up"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="stair" pos="NNS" surface="stairs"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="start" pos="VBD" surface="started"/>
+  <token id="8" lemma="to" pos="TO" surface="to"/>
+  <token id="9" lemma="search" pos="VB" surface="search"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="room" pos="NNS" surface="rooms"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prt"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="2" to="6" type="cc"/>
+  <dep from="2" to="7" type="conj"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="7" to="9" type="xcomp"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="2" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

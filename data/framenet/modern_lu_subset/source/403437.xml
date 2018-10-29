@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403437">
+ <sentence>
+  Peeping over a garden wall , we saw a robin ` watching worms the gardener 's spade unbears " .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="peep" pos="VBG" surface="Peeping"/>
+  <token id="2" lemma="over" pos="IN" surface="over"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="garden" pos="NN" surface="garden"/>
+  <token id="5" lemma="wall" pos="NN" surface="wall"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="8" lemma="see" pos="VBD" surface="saw"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="robin" pos="NN" surface="robin"/>
+  <token id="11" lemma="`" pos="''" surface="`"/>
+  <token id="12" lemma="watch" pos="VBG" surface="watching"/>
+  <token id="13" lemma="worm" pos="NNS" surface="worms"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="gardener" pos="NN" surface="gardener"/>
+  <token id="16" lemma="'s" pos="POS" surface="'s"/>
+  <token id="17" lemma="spade" pos="NN" surface="spade"/>
+  <token id="18" lemma="unbear" pos="NNS" surface="unbears"/>
+  <token id="19" lemma='"' pos="''" surface='"'/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="advcl"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="2" to="5" type="pobj"/>
+  <dep from="8" to="6" type="punct"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="12" to="11" type="punct"/>
+  <dep from="10" to="12" type="acl"/>
+  <dep from="12" to="13" type="dobj"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="18" to="15" type="poss"/>
+  <dep from="15" to="16" type="case"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="12" to="18" type="dobj"/>
+  <dep from="12" to="19" type="punct"/>
+  <dep from="8" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Direction">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Perceiver_agentive">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

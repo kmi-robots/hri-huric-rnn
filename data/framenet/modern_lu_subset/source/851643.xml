@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="851643">
+ <sentence>
+  The no-singing rule on schoolbuses was abandoned ; sweets were given out ; a pirate boarded ship .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="no-sing" pos="VBG" surface="no-singing"/>
+  <token id="3" lemma="rule" pos="NN" surface="rule"/>
+  <token id="4" lemma="on" pos="IN" surface="on"/>
+  <token id="5" lemma="schoolbus" pos="NNS" surface="schoolbuses"/>
+  <token id="6" lemma="be" pos="VBD" surface="was"/>
+  <token id="7" lemma="abandon" pos="VBN" surface="abandoned"/>
+  <token id="8" lemma=";" pos=":" surface=";"/>
+  <token id="9" lemma="sweet" pos="NNS" surface="sweets"/>
+  <token id="10" lemma="be" pos="VBD" surface="were"/>
+  <token id="11" lemma="give" pos="VBN" surface="given"/>
+  <token id="12" lemma="out" pos="RP" surface="out"/>
+  <token id="13" lemma=";" pos=":" surface=";"/>
+  <token id="14" lemma="a" pos="DT" surface="a"/>
+  <token id="15" lemma="pirate" pos="NN" surface="pirate"/>
+  <token id="16" lemma="board" pos="VBN" surface="boarded"/>
+  <token id="17" lemma="ship" pos="NN" surface="ship"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="7" to="3" type="nsubjpass"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="11" to="7" type="ccomp"/>
+  <dep from="11" to="8" type="punct"/>
+  <dep from="11" to="9" type="nsubjpass"/>
+  <dep from="11" to="10" type="auxpass"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="prt"/>
+  <dep from="11" to="13" type="punct"/>
+  <dep from="17" to="14" type="det"/>
+  <dep from="17" to="15" type="amod"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="11" to="17" type="appos"/>
+  <dep from="11" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

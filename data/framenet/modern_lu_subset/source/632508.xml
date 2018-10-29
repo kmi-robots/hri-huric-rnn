@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="632508">
+ <sentence>
+  Prayers were said and the noose placed around the neck of the victim who was then blindfolded .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="prayer" pos="NNS" surface="Prayers"/>
+  <token id="2" lemma="be" pos="VBD" surface="were"/>
+  <token id="3" lemma="say" pos="VBN" surface="said"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="noose" pos="NN" surface="noose"/>
+  <token id="7" lemma="place" pos="VBN" surface="placed"/>
+  <token id="8" lemma="around" pos="IN" surface="around"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="neck" pos="NN" surface="neck"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="victim" pos="NN" surface="victim"/>
+  <token id="14" lemma="who" pos="WP" surface="who"/>
+  <token id="15" lemma="be" pos="VBD" surface="was"/>
+  <token id="16" lemma="then" pos="RB" surface="then"/>
+  <token id="17" lemma="blindfold" pos="VBN" surface="blindfolded"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="3" to="7" type="conj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="17" to="14" type="nsubjpass"/>
+  <dep from="17" to="15" type="auxpass"/>
+  <dep from="17" to="16" type="advmod"/>
+  <dep from="13" to="17" type="relcl"/>
+  <dep from="7" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

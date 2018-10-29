@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="690056">
+ <sentence>
+  Health inspectors were also concerned about the constant risk of epidemic diseases resulting from poor sanitation .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="health" pos="NN" surface="Health"/>
+  <token id="2" lemma="inspector" pos="NNS" surface="inspectors"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="also" pos="RB" surface="also"/>
+  <token id="5" lemma="concerned" pos="JJ" surface="concerned"/>
+  <token id="6" lemma="about" pos="IN" surface="about"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="constant" pos="JJ" surface="constant"/>
+  <token id="9" lemma="risk" pos="NN" surface="risk"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="epidemic" pos="JJ" surface="epidemic"/>
+  <token id="12" lemma="disease" pos="NNS" surface="diseases"/>
+  <token id="13" lemma="result" pos="VBG" surface="resulting"/>
+  <token id="14" lemma="from" pos="IN" surface="from"/>
+  <token id="15" lemma="poor" pos="JJ" surface="poor"/>
+  <token id="16" lemma="sanitation" pos="NN" surface="sanitation"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="advmod"/>
+  <dep from="3" to="5" type="acomp"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="6" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="12" to="13" type="acl"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="3" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Cognizer">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

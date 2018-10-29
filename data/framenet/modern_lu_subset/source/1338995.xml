@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1338995">
+ <sentence>
+  If appropriate , equipment should be moved or dismantled to conduct a full inspection .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="if" pos="IN" surface="If"/>
+  <token id="2" lemma="appropriate" pos="JJ" surface="appropriate"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="equipment" pos="NN" surface="equipment"/>
+  <token id="5" lemma="should" pos="MD" surface="should"/>
+  <token id="6" lemma="be" pos="VB" surface="be"/>
+  <token id="7" lemma="move" pos="VBN" surface="moved"/>
+  <token id="8" lemma="or" pos="CC" surface="or"/>
+  <token id="9" lemma="dismantle" pos="VBN" surface="dismantled"/>
+  <token id="10" lemma="to" pos="TO" surface="to"/>
+  <token id="11" lemma="conduct" pos="VB" surface="conduct"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="full" pos="JJ" surface="full"/>
+  <token id="14" lemma="inspection" pos="NN" surface="inspection"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="mark"/>
+  <dep from="7" to="2" type="advcl"/>
+  <dep from="7" to="3" type="punct"/>
+  <dep from="7" to="4" type="nsubjpass"/>
+  <dep from="7" to="5" type="aux"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="7" to="9" type="conj"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="9" to="11" type="xcomp"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="dobj"/>
+  <dep from="7" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Inspecting">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Degree">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

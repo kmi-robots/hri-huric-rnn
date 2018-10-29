@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="771868">
+ <sentence>
+  Robert Hanson , who has recently returned from working in Hong Kong , to join his father 's firm .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="robert" pos="NNP" surface="Robert"/>
+  <token id="2" lemma="hanson" pos="NNP" surface="Hanson"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="who" pos="WP" surface="who"/>
+  <token id="5" lemma="have" pos="VBZ" surface="has"/>
+  <token id="6" lemma="recently" pos="RB" surface="recently"/>
+  <token id="7" lemma="return" pos="VBN" surface="returned"/>
+  <token id="8" lemma="from" pos="IN" surface="from"/>
+  <token id="9" lemma="work" pos="VBG" surface="working"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="hong" pos="NNP" surface="Hong"/>
+  <token id="12" lemma="kong" pos="NNP" surface="Kong"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="to" pos="TO" surface="to"/>
+  <token id="15" lemma="join" pos="VB" surface="join"/>
+  <token id="16" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="17" lemma="father" pos="NN" surface="father"/>
+  <token id="18" lemma="'s" pos="POS" surface="'s"/>
+  <token id="19" lemma="firm" pos="NN" surface="firm"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="7" to="4" type="nsubj"/>
+  <dep from="7" to="5" type="aux"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="2" to="7" type="relcl"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pcomp"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="2" to="13" type="punct"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="2" to="15" type="relcl"/>
+  <dep from="17" to="16" type="poss"/>
+  <dep from="19" to="17" type="poss"/>
+  <dep from="17" to="18" type="case"/>
+  <dep from="15" to="19" type="dobj"/>
+  <dep from="2" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

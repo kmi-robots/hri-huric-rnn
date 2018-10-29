@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="628830">
+ <sentence>
+  But actor Simon Dormandy has been banned form immersing his head following a delicate eye operation .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="but" pos="CC" surface="But"/>
+  <token id="2" lemma="actor" pos="NN" surface="actor"/>
+  <token id="3" lemma="simon" pos="NNP" surface="Simon"/>
+  <token id="4" lemma="dormandy" pos="NNP" surface="Dormandy"/>
+  <token id="5" lemma="have" pos="VBZ" surface="has"/>
+  <token id="6" lemma="be" pos="VBN" surface="been"/>
+  <token id="7" lemma="ban" pos="VBN" surface="banned"/>
+  <token id="8" lemma="form" pos="NN" surface="form"/>
+  <token id="9" lemma="immerse" pos="VBG" surface="immersing"/>
+  <token id="10" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="11" lemma="head" pos="NN" surface="head"/>
+  <token id="12" lemma="follow" pos="VBG" surface="following"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="delicate" pos="JJ" surface="delicate"/>
+  <token id="15" lemma="eye" pos="NN" surface="eye"/>
+  <token id="16" lemma="operation" pos="NN" surface="operation"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="cc"/>
+  <dep from="4" to="2" type="compound"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="7" to="4" type="nsubjpass"/>
+  <dep from="7" to="5" type="aux"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="acl"/>
+  <dep from="11" to="10" type="poss"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="9" to="12" type="prep"/>
+  <dep from="16" to="13" type="det"/>
+  <dep from="16" to="14" type="amod"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="12" to="16" type="pobj"/>
+  <dep from="8" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

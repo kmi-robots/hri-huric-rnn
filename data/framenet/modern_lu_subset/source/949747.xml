@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="949747">
+ <sentence>
+  On this harness the karabiner attachment on the crutch strap is dangerously low and should never be used alone .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="on" pos="IN" surface="On"/>
+  <token id="2" lemma="this" pos="DT" surface="this"/>
+  <token id="3" lemma="harness" pos="NN" surface="harness"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="karabiner" pos="NN" surface="karabiner"/>
+  <token id="6" lemma="attachment" pos="NN" surface="attachment"/>
+  <token id="7" lemma="on" pos="IN" surface="on"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="crutch" pos="NN" surface="crutch"/>
+  <token id="10" lemma="strap" pos="NN" surface="strap"/>
+  <token id="11" lemma="be" pos="VBZ" surface="is"/>
+  <token id="12" lemma="dangerously" pos="RB" surface="dangerously"/>
+  <token id="13" lemma="low" pos="JJ" surface="low"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="should" pos="MD" surface="should"/>
+  <token id="16" lemma="never" pos="RB" surface="never"/>
+  <token id="17" lemma="be" pos="VB" surface="be"/>
+  <token id="18" lemma="use" pos="VBN" surface="used"/>
+  <token id="19" lemma="alone" pos="RB" surface="alone"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="11" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="11" to="6" type="nsubj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="11" to="13" type="acomp"/>
+  <dep from="11" to="14" type="cc"/>
+  <dep from="18" to="15" type="aux"/>
+  <dep from="18" to="16" type="neg"/>
+  <dep from="18" to="17" type="auxpass"/>
+  <dep from="11" to="18" type="conj"/>
+  <dep from="18" to="19" type="advmod"/>
+  <dep from="11" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

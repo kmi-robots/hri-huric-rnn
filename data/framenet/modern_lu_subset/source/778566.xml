@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="778566">
+ <sentence>
+  The first rails were rolled on 20 June , the first car ran on test on 8 August , followed by the Board of Trade Inspection on 10 August .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="first" pos="JJ" surface="first"/>
+  <token id="3" lemma="rail" pos="NNS" surface="rails"/>
+  <token id="4" lemma="be" pos="VBD" surface="were"/>
+  <token id="5" lemma="roll" pos="VBN" surface="rolled"/>
+  <token id="6" lemma="on" pos="IN" surface="on"/>
+  <token id="7" lemma="20" pos="CD" surface="20"/>
+  <token id="8" lemma="june" pos="NNP" surface="June"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="first" pos="JJ" surface="first"/>
+  <token id="12" lemma="car" pos="NN" surface="car"/>
+  <token id="13" lemma="run" pos="VBD" surface="ran"/>
+  <token id="14" lemma="on" pos="IN" surface="on"/>
+  <token id="15" lemma="test" pos="NN" surface="test"/>
+  <token id="16" lemma="on" pos="IN" surface="on"/>
+  <token id="17" lemma="8" pos="CD" surface="8"/>
+  <token id="18" lemma="august" pos="NNP" surface="August"/>
+  <token id="19" lemma="," pos="," surface=","/>
+  <token id="20" lemma="follow" pos="VBN" surface="followed"/>
+  <token id="21" lemma="by" pos="IN" surface="by"/>
+  <token id="22" lemma="the" pos="DT" surface="the"/>
+  <token id="23" lemma="board" pos="NNP" surface="Board"/>
+  <token id="24" lemma="of" pos="IN" surface="of"/>
+  <token id="25" lemma="trade" pos="NNP" surface="Trade"/>
+  <token id="26" lemma="inspection" pos="NNP" surface="Inspection"/>
+  <token id="27" lemma="on" pos="IN" surface="on"/>
+  <token id="28" lemma="10" pos="CD" surface="10"/>
+  <token id="29" lemma="august" pos="NNP" surface="August"/>
+  <token id="30" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="5" to="3" type="nsubjpass"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="nummod"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="13" to="9" type="punct"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="5" to="13" type="conj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="13" to="16" type="prep"/>
+  <dep from="18" to="17" type="nummod"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="13" to="19" type="punct"/>
+  <dep from="13" to="20" type="advcl"/>
+  <dep from="20" to="21" type="agent"/>
+  <dep from="26" to="22" type="det"/>
+  <dep from="26" to="23" type="nmod"/>
+  <dep from="23" to="24" type="prep"/>
+  <dep from="24" to="25" type="pobj"/>
+  <dep from="21" to="26" type="pobj"/>
+  <dep from="20" to="27" type="prep"/>
+  <dep from="29" to="28" type="nummod"/>
+  <dep from="27" to="29" type="pobj"/>
+  <dep from="5" to="30" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Inspecting">
+    <lexicalUnit>
+     <token id="26"/>
+    </lexicalUnit>
+    <frameElement type="Inspector">
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

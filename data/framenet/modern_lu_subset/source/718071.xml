@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="718071">
+ <sentence>
+  Charles unbuckled his ski straps and stuck skis and sticks in the snow beside Peregrine 's .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="charles" pos="NNP" surface="Charles"/>
+  <token id="2" lemma="unbuckle" pos="VBD" surface="unbuckled"/>
+  <token id="3" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="4" lemma="ski" pos="NN" surface="ski"/>
+  <token id="5" lemma="strap" pos="NNS" surface="straps"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="stuck" pos="JJ" surface="stuck"/>
+  <token id="8" lemma="ski" pos="NNS" surface="skis"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="stick" pos="NNS" surface="sticks"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="snow" pos="NN" surface="snow"/>
+  <token id="14" lemma="beside" pos="IN" surface="beside"/>
+  <token id="15" lemma="peregrine" pos="NNP" surface="Peregrine"/>
+  <token id="16" lemma="'s" pos="POS" surface="'s"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="poss"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="2" to="6" type="cc"/>
+  <dep from="2" to="7" type="conj"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="7" to="9" type="cc"/>
+  <dep from="7" to="10" type="conj"/>
+  <dep from="7" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="15" to="16" type="case"/>
+  <dep from="2" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Closure">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Containing_object">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Fastener">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

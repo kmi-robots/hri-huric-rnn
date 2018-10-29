@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="778023">
+ <sentence>
+  In other words , you dial it up , examine an index for the information it has to offer and then access what you want .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="other" pos="JJ" surface="other"/>
+  <token id="3" lemma="word" pos="NNS" surface="words"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="6" lemma="dial" pos="VBP" surface="dial"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="8" lemma="up" pos="RP" surface="up"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="examine" pos="VB" surface="examine"/>
+  <token id="11" lemma="an" pos="DT" surface="an"/>
+  <token id="12" lemma="index" pos="NN" surface="index"/>
+  <token id="13" lemma="for" pos="IN" surface="for"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="information" pos="NN" surface="information"/>
+  <token id="16" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="17" lemma="have" pos="VBZ" surface="has"/>
+  <token id="18" lemma="to" pos="TO" surface="to"/>
+  <token id="19" lemma="offer" pos="VB" surface="offer"/>
+  <token id="20" lemma="and" pos="CC" surface="and"/>
+  <token id="21" lemma="then" pos="RB" surface="then"/>
+  <token id="22" lemma="access" pos="VB" surface="access"/>
+  <token id="23" lemma="what" pos="WP" surface="what"/>
+  <token id="24" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="25" lemma="want" pos="VBP" surface="want"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="6" to="4" type="punct"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="6" to="8" type="prt"/>
+  <dep from="6" to="9" type="punct"/>
+  <dep from="6" to="10" type="conj"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="17" to="16" type="nsubj"/>
+  <dep from="15" to="17" type="relcl"/>
+  <dep from="19" to="18" type="aux"/>
+  <dep from="17" to="19" type="xcomp"/>
+  <dep from="10" to="20" type="cc"/>
+  <dep from="22" to="21" type="advmod"/>
+  <dep from="10" to="22" type="conj"/>
+  <dep from="25" to="23" type="dobj"/>
+  <dep from="25" to="24" type="nsubj"/>
+  <dep from="22" to="25" type="ccomp"/>
+  <dep from="6" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Inspecting">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Inspector">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Unwanted_entity">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403900">
+ <sentence>
+  Andrew added : ` She smelled smoke through the letterbox and naturally panicked and started banging on the door and shouting .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="andrew" pos="NNP" surface="Andrew"/>
+  <token id="2" lemma="add" pos="VBD" surface="added"/>
+  <token id="3" lemma=":" pos=":" surface=":"/>
+  <token id="4" lemma="`" pos="''" surface="`"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="She"/>
+  <token id="6" lemma="smell" pos="VBD" surface="smelled"/>
+  <token id="7" lemma="smoke" pos="NN" surface="smoke"/>
+  <token id="8" lemma="through" pos="IN" surface="through"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="letterbox" pos="NN" surface="letterbox"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="naturally" pos="RB" surface="naturally"/>
+  <token id="13" lemma="panic" pos="VBN" surface="panicked"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="start" pos="VBD" surface="started"/>
+  <token id="16" lemma="bang" pos="VBG" surface="banging"/>
+  <token id="17" lemma="on" pos="IN" surface="on"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="door" pos="NN" surface="door"/>
+  <token id="20" lemma="and" pos="CC" surface="and"/>
+  <token id="21" lemma="shouting" pos="NN" surface="shouting"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="punct"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="2" to="6" type="ccomp"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="6" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="6" to="11" type="cc"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="6" to="13" type="conj"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="15" to="16" type="xcomp"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="16" to="20" type="cc"/>
+  <dep from="16" to="21" type="conj"/>
+  <dep from="2" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

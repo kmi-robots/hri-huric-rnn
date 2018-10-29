@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="622323">
+ <sentence>
+  Cambridge and Norwich can be reached within an hour 's drive .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="cambridge" pos="NNP" surface="Cambridge"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="norwich" pos="NNP" surface="Norwich"/>
+  <token id="4" lemma="can" pos="MD" surface="can"/>
+  <token id="5" lemma="be" pos="VB" surface="be"/>
+  <token id="6" lemma="reach" pos="VBN" surface="reached"/>
+  <token id="7" lemma="within" pos="IN" surface="within"/>
+  <token id="8" lemma="an" pos="DT" surface="an"/>
+  <token id="9" lemma="hour" pos="NN" surface="hour"/>
+  <token id="10" lemma="'s" pos="POS" surface="'s"/>
+  <token id="11" lemma="drive" pos="NN" surface="drive"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="nsubjpass"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="6" to="4" type="aux"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="11" to="9" type="poss"/>
+  <dep from="9" to="10" type="case"/>
+  <dep from="7" to="11" type="pobj"/>
+  <dep from="6" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="771159">
+ <sentence>
+  The thieves entered by smashing the lock on the door ; the museum , like so many in Greece , was unguarded at night .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="thief" pos="NNS" surface="thieves"/>
+  <token id="3" lemma="enter" pos="VBN" surface="entered"/>
+  <token id="4" lemma="by" pos="IN" surface="by"/>
+  <token id="5" lemma="smash" pos="VBG" surface="smashing"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="lock" pos="NN" surface="lock"/>
+  <token id="8" lemma="on" pos="IN" surface="on"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="door" pos="NN" surface="door"/>
+  <token id="11" lemma=";" pos=":" surface=";"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="museum" pos="NN" surface="museum"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="like" pos="IN" surface="like"/>
+  <token id="16" lemma="so" pos="RB" surface="so"/>
+  <token id="17" lemma="many" pos="JJ" surface="many"/>
+  <token id="18" lemma="in" pos="IN" surface="in"/>
+  <token id="19" lemma="greece" pos="NNP" surface="Greece"/>
+  <token id="20" lemma="," pos="," surface=","/>
+  <token id="21" lemma="be" pos="VBD" surface="was"/>
+  <token id="22" lemma="unguard" pos="VBN" surface="unguarded"/>
+  <token id="23" lemma="at" pos="IN" surface="at"/>
+  <token id="24" lemma="night" pos="NN" surface="night"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="22" to="3" type="ccomp"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pcomp"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="5" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="22" to="11" type="punct"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="22" to="13" type="nsubjpass"/>
+  <dep from="22" to="14" type="punct"/>
+  <dep from="22" to="15" type="prep"/>
+  <dep from="17" to="16" type="advmod"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="18" to="19" type="pobj"/>
+  <dep from="22" to="20" type="punct"/>
+  <dep from="22" to="21" type="auxpass"/>
+  <dep from="0" to="22" type="root"/>
+  <dep from="22" to="23" type="prep"/>
+  <dep from="23" to="24" type="pobj"/>
+  <dep from="22" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

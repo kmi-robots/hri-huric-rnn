@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="790236">
+ <sentence>
+  You need two pieces of string and you tie a balloon loosely onto each with a loop .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="You"/>
+  <token id="2" lemma="need" pos="VBP" surface="need"/>
+  <token id="3" lemma="two" pos="CD" surface="two"/>
+  <token id="4" lemma="piece" pos="NNS" surface="pieces"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="string" pos="NN" surface="string"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="9" lemma="tie" pos="VBP" surface="tie"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="balloon" pos="NN" surface="balloon"/>
+  <token id="12" lemma="loosely" pos="RB" surface="loosely"/>
+  <token id="13" lemma="onto" pos="IN" surface="onto"/>
+  <token id="14" lemma="each" pos="DT" surface="each"/>
+  <token id="15" lemma="with" pos="IN" surface="with"/>
+  <token id="16" lemma="a" pos="DT" surface="a"/>
+  <token id="17" lemma="loop" pos="NN" surface="loop"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="nummod"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="2" to="7" type="cc"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="2" to="9" type="conj"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="9" to="12" type="advmod"/>
+  <dep from="9" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="9" to="15" type="prep"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="9" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Result">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Result">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

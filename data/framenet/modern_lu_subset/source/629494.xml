@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="629494">
+ <sentence>
+  Acupuncture : involving the insertion of specially-made needles into specific points of the body .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="acupuncture" pos="VB" surface="Acupuncture"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="involve" pos="VBG" surface="involving"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="insertion" pos="NN" surface="insertion"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="specially-made" pos="JJ" surface="specially-made"/>
+  <token id="8" lemma="needle" pos="NNS" surface="needles"/>
+  <token id="9" lemma="into" pos="IN" surface="into"/>
+  <token id="10" lemma="specific" pos="JJ" surface="specific"/>
+  <token id="11" lemma="point" pos="NNS" surface="points"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="body" pos="NN" surface="body"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="1" to="3" type="acl"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="5" to="9" type="prep"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="1" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

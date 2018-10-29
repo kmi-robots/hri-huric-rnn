@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="591241">
+ <sentence>
+  Anyway , he was to escort us to my sister 's lodgings … ’
+ </sentence>
+ <tokens>
+  <token id="1" lemma="anyway" pos="UH" surface="Anyway"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="escort" pos="VB" surface="escort"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="us"/>
+  <token id="8" lemma="to" pos="IN" surface="to"/>
+  <token id="9" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="10" lemma="sister" pos="NN" surface="sister"/>
+  <token id="11" lemma="'s" pos="POS" surface="'s"/>
+  <token id="12" lemma="lodging" pos="NNS" surface="lodgings"/>
+  <token id="13" lemma="…" pos="NFP" surface="…"/>
+  <token id="14" lemma="'" pos="''" surface="’"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="intj"/>
+  <dep from="4" to="2" type="punct"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="4" to="6" type="xcomp"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="6" to="8" type="prep"/>
+  <dep from="10" to="9" type="poss"/>
+  <dep from="12" to="10" type="poss"/>
+  <dep from="10" to="11" type="case"/>
+  <dep from="8" to="12" type="pobj"/>
+  <dep from="4" to="13" type="punct"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

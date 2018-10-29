@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="400429">
+ <sentence>
+  I listened carefully to what he said , and I have some answers .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="listen" pos="VBD" surface="listened"/>
+  <token id="3" lemma="carefully" pos="RB" surface="carefully"/>
+  <token id="4" lemma="to" pos="IN" surface="to"/>
+  <token id="5" lemma="what" pos="WP" surface="what"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="7" lemma="say" pos="VBD" surface="said"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="11" lemma="have" pos="VBP" surface="have"/>
+  <token id="12" lemma="some" pos="DT" surface="some"/>
+  <token id="13" lemma="answer" pos="NNS" surface="answers"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="advmod"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="7" to="5" type="dobj"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="4" to="7" type="pcomp"/>
+  <dep from="2" to="8" type="punct"/>
+  <dep from="2" to="9" type="cc"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="2" to="11" type="conj"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="dobj"/>
+  <dep from="11" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

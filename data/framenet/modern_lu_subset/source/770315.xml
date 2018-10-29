@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770315">
+ <sentence>
+  I found out how they came there soon enough .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="find" pos="VBD" surface="found"/>
+  <token id="3" lemma="out" pos="RP" surface="out"/>
+  <token id="4" lemma="how" pos="WRB" surface="how"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="6" lemma="come" pos="VBD" surface="came"/>
+  <token id="7" lemma="there" pos="RB" surface="there"/>
+  <token id="8" lemma="soon" pos="RB" surface="soon"/>
+  <token id="9" lemma="enough" pos="RB" surface="enough"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prt"/>
+  <dep from="6" to="4" type="advmod"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="2" to="6" type="ccomp"/>
+  <dep from="6" to="7" type="advmod"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="6" to="9" type="advmod"/>
+  <dep from="2" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

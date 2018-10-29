@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="632588">
+ <sentence>
+  Care proceedings were started in the juvenile court and placement at a Dr. Barnardo 's establishment was started .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="care" pos="NN" surface="Care"/>
+  <token id="2" lemma="proceeding" pos="NNS" surface="proceedings"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="start" pos="VBN" surface="started"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="juvenile" pos="JJ" surface="juvenile"/>
+  <token id="8" lemma="court" pos="NN" surface="court"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="placement" pos="NN" surface="placement"/>
+  <token id="11" lemma="at" pos="IN" surface="at"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="dr." pos="NNP" surface="Dr."/>
+  <token id="14" lemma="barnardo" pos="NNP" surface="Barnardo"/>
+  <token id="15" lemma="'s" pos="POS" surface="'s"/>
+  <token id="16" lemma="establishment" pos="NN" surface="establishment"/>
+  <token id="17" lemma="be" pos="VBD" surface="was"/>
+  <token id="18" lemma="start" pos="VBN" surface="started"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="8" to="11" type="prep"/>
+  <dep from="16" to="12" type="det"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="16" to="14" type="poss"/>
+  <dep from="14" to="15" type="case"/>
+  <dep from="11" to="16" type="pobj"/>
+  <dep from="18" to="17" type="auxpass"/>
+  <dep from="4" to="18" type="conj"/>
+  <dep from="4" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

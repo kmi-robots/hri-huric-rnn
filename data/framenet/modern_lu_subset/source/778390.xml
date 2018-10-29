@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="778390">
+ <sentence>
+  On completion , Sarna UK Technicians will inspect the final installation before issuing a 10-year guarantee .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="on" pos="IN" surface="On"/>
+  <token id="2" lemma="completion" pos="NN" surface="completion"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="sarna" pos="NNP" surface="Sarna"/>
+  <token id="5" lemma="uk" pos="NNP" surface="UK"/>
+  <token id="6" lemma="technicians" pos="NNPS" surface="Technicians"/>
+  <token id="7" lemma="will" pos="MD" surface="will"/>
+  <token id="8" lemma="inspect" pos="VB" surface="inspect"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="final" pos="JJ" surface="final"/>
+  <token id="11" lemma="installation" pos="NN" surface="installation"/>
+  <token id="12" lemma="before" pos="IN" surface="before"/>
+  <token id="13" lemma="issue" pos="VBG" surface="issuing"/>
+  <token id="14" lemma="a" pos="DT" surface="a"/>
+  <token id="15" lemma="10-year" pos="CD" surface="10-year"/>
+  <token id="16" lemma="guarantee" pos="NN" surface="guarantee"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="8" to="3" type="punct"/>
+  <dep from="6" to="4" type="compound"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="8" to="6" type="nsubj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="dobj"/>
+  <dep from="8" to="12" type="prep"/>
+  <dep from="12" to="13" type="pcomp"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="13" to="16" type="dobj"/>
+  <dep from="8" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Inspecting">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Inspector">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

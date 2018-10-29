@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="399268">
+ <sentence>
+  All trainees gazed admiringly at the man who was paid to teach them .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="all" pos="DT" surface="All"/>
+  <token id="2" lemma="trainee" pos="NNS" surface="trainees"/>
+  <token id="3" lemma="gaze" pos="VBD" surface="gazed"/>
+  <token id="4" lemma="admiringly" pos="RB" surface="admiringly"/>
+  <token id="5" lemma="at" pos="IN" surface="at"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="man" pos="NN" surface="man"/>
+  <token id="8" lemma="who" pos="WP" surface="who"/>
+  <token id="9" lemma="be" pos="VBD" surface="was"/>
+  <token id="10" lemma="pay" pos="VBN" surface="paid"/>
+  <token id="11" lemma="to" pos="TO" surface="to"/>
+  <token id="12" lemma="teach" pos="VB" surface="teach"/>
+  <token id="13" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="advmod"/>
+  <dep from="3" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="10" to="8" type="nsubjpass"/>
+  <dep from="10" to="9" type="auxpass"/>
+  <dep from="7" to="10" type="relcl"/>
+  <dep from="12" to="11" type="aux"/>
+  <dep from="10" to="12" type="advcl"/>
+  <dep from="12" to="13" type="dobj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403697">
+ <sentence>
+  Diana peers out of a plane window
+ </sentence>
+ <tokens>
+  <token id="1" lemma="diana" pos="NNP" surface="Diana"/>
+  <token id="2" lemma="peer" pos="VBZ" surface="peers"/>
+  <token id="3" lemma="out" pos="IN" surface="out"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="plane" pos="NN" surface="plane"/>
+  <token id="7" lemma="window" pos="NN" surface="window"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="4" to="7" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

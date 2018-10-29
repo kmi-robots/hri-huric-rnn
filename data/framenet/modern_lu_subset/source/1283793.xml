@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1283793">
+ <sentence>
+  As the recession cuts into company budgets , from expense accounts and salaries to training and research and development , donations to good causes are also being reappraised .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="as" pos="IN" surface="As"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="recession" pos="NN" surface="recession"/>
+  <token id="4" lemma="cut" pos="VBZ" surface="cuts"/>
+  <token id="5" lemma="into" pos="IN" surface="into"/>
+  <token id="6" lemma="company" pos="NN" surface="company"/>
+  <token id="7" lemma="budget" pos="NNS" surface="budgets"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="from" pos="IN" surface="from"/>
+  <token id="10" lemma="expense" pos="NN" surface="expense"/>
+  <token id="11" lemma="account" pos="NNS" surface="accounts"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="salary" pos="NNS" surface="salaries"/>
+  <token id="14" lemma="to" pos="IN" surface="to"/>
+  <token id="15" lemma="training" pos="NN" surface="training"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="research" pos="NN" surface="research"/>
+  <token id="18" lemma="and" pos="CC" surface="and"/>
+  <token id="19" lemma="development" pos="NN" surface="development"/>
+  <token id="20" lemma="," pos="," surface=","/>
+  <token id="21" lemma="donation" pos="NNS" surface="donations"/>
+  <token id="22" lemma="to" pos="IN" surface="to"/>
+  <token id="23" lemma="good" pos="JJ" surface="good"/>
+  <token id="24" lemma="cause" pos="NNS" surface="causes"/>
+  <token id="25" lemma="be" pos="VBP" surface="are"/>
+  <token id="26" lemma="also" pos="RB" surface="also"/>
+  <token id="27" lemma="be" pos="VBG" surface="being"/>
+  <token id="28" lemma="reappraise" pos="VBN" surface="reappraised"/>
+  <token id="29" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="mark"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="28" to="4" type="advcl"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="4" to="8" type="punct"/>
+  <dep from="4" to="9" type="prep"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="11" to="13" type="conj"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="4" to="15" type="advcl"/>
+  <dep from="15" to="16" type="cc"/>
+  <dep from="15" to="17" type="conj"/>
+  <dep from="17" to="18" type="cc"/>
+  <dep from="17" to="19" type="conj"/>
+  <dep from="28" to="20" type="punct"/>
+  <dep from="28" to="21" type="nsubjpass"/>
+  <dep from="21" to="22" type="prep"/>
+  <dep from="24" to="23" type="amod"/>
+  <dep from="22" to="24" type="pobj"/>
+  <dep from="28" to="25" type="aux"/>
+  <dep from="28" to="26" type="advmod"/>
+  <dep from="28" to="27" type="auxpass"/>
+  <dep from="0" to="28" type="root"/>
+  <dep from="28" to="29" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

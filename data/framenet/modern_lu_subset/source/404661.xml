@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="404661">
+ <sentence>
+  The person sitting on the low wall did not move , even when Pol cast a meaningful stare in its direction .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="person" pos="NN" surface="person"/>
+  <token id="3" lemma="sit" pos="VBG" surface="sitting"/>
+  <token id="4" lemma="on" pos="IN" surface="on"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="low" pos="JJ" surface="low"/>
+  <token id="7" lemma="wall" pos="NN" surface="wall"/>
+  <token id="8" lemma="do" pos="VBD" surface="did"/>
+  <token id="9" lemma="not" pos="RB" surface="not"/>
+  <token id="10" lemma="move" pos="VB" surface="move"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="even" pos="RB" surface="even"/>
+  <token id="13" lemma="when" pos="WRB" surface="when"/>
+  <token id="14" lemma="pol" pos="NNP" surface="Pol"/>
+  <token id="15" lemma="cast" pos="VBD" surface="cast"/>
+  <token id="16" lemma="a" pos="DT" surface="a"/>
+  <token id="17" lemma="meaningful" pos="JJ" surface="meaningful"/>
+  <token id="18" lemma="stare" pos="NN" surface="stare"/>
+  <token id="19" lemma="in" pos="IN" surface="in"/>
+  <token id="20" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="21" lemma="direction" pos="NN" surface="direction"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="10" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="acl"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="pobj"/>
+  <dep from="10" to="8" type="aux"/>
+  <dep from="10" to="9" type="neg"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="15" to="12" type="advmod"/>
+  <dep from="15" to="13" type="advmod"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="10" to="15" type="advcl"/>
+  <dep from="18" to="16" type="det"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="15" to="18" type="dobj"/>
+  <dep from="15" to="19" type="prep"/>
+  <dep from="21" to="20" type="poss"/>
+  <dep from="19" to="21" type="pobj"/>
+  <dep from="10" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

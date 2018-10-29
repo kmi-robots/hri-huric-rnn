@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770081">
+ <sentence>
+  A brown paper parcel arrived by special delivery .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="brown" pos="JJ" surface="brown"/>
+  <token id="3" lemma="paper" pos="NN" surface="paper"/>
+  <token id="4" lemma="parcel" pos="NN" surface="parcel"/>
+  <token id="5" lemma="arrive" pos="VBN" surface="arrived"/>
+  <token id="6" lemma="by" pos="IN" surface="by"/>
+  <token id="7" lemma="special" pos="JJ" surface="special"/>
+  <token id="8" lemma="delivery" pos="NN" surface="delivery"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="det"/>
+  <dep from="4" to="2" type="amod"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="5" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Mode_of_transportation">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="707898">
+ <sentence>
+  I haul her off the bed and half carry , half drag her into the bathroom .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="haul" pos="VBP" surface="haul"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="4" lemma="off" pos="IN" surface="off"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="bed" pos="NN" surface="bed"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="half" pos="NN" surface="half"/>
+  <token id="9" lemma="carry" pos="VB" surface="carry"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="half" pos="RB" surface="half"/>
+  <token id="12" lemma="drag" pos="VB" surface="drag"/>
+  <token id="13" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="14" lemma="into" pos="IN" surface="into"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="bathroom" pos="NN" surface="bathroom"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="2" to="7" type="cc"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="2" to="9" type="conj"/>
+  <dep from="12" to="10" type="punct"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="2" to="12" type="conj"/>
+  <dep from="12" to="13" type="dobj"/>
+  <dep from="12" to="14" type="prep"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="12" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

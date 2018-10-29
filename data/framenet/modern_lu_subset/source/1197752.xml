@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1197752">
+ <sentence>
+  Again the craft coasted along and she became weightless once more .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="again" pos="RB" surface="Again"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="craft" pos="NN" surface="craft"/>
+  <token id="4" lemma="coast" pos="VBD" surface="coasted"/>
+  <token id="5" lemma="along" pos="IN" surface="along"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="8" lemma="become" pos="VBD" surface="became"/>
+  <token id="9" lemma="weightless" pos="JJ" surface="weightless"/>
+  <token id="10" lemma="once" pos="RB" surface="once"/>
+  <token id="11" lemma="more" pos="RBR" surface="more"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="advmod"/>
+  <dep from="4" to="6" type="cc"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="4" to="8" type="conj"/>
+  <dep from="8" to="9" type="acomp"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="8" to="11" type="advmod"/>
+  <dep from="8" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

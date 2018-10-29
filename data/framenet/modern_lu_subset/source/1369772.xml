@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1369772">
+ <sentence>
+  Fetch some universal brake-fluid
+ </sentence>
+ <tokens>
+  <token id="1" lemma="fetch" pos="VB" surface="Fetch"/>
+  <token id="2" lemma="some" pos="DT" surface="some"/>
+  <token id="3" lemma="universal" pos="JJ" surface="universal"/>
+  <token id="4" lemma="brake-fluid" pos="NN" surface="brake-fluid"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="1" to="4" type="dobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

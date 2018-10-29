@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="779654">
+ <sentence>
+  Its pages were scanned with eagle eyes .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP$" surface="Its"/>
+  <token id="2" lemma="page" pos="NNS" surface="pages"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="scan" pos="VBN" surface="scanned"/>
+  <token id="5" lemma="with" pos="IN" surface="with"/>
+  <token id="6" lemma="eagle" pos="JJ" surface="eagle"/>
+  <token id="7" lemma="eye" pos="NNS" surface="eyes"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="poss"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="4" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

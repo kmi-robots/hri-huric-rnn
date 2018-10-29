@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1500005">
+ <sentence>
+  They were shown into cubicles with inadequate curtains , where they were told to strip completely and put on the clean towelling gowns in there .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="They"/>
+  <token id="2" lemma="be" pos="VBD" surface="were"/>
+  <token id="3" lemma="show" pos="VBN" surface="shown"/>
+  <token id="4" lemma="into" pos="IN" surface="into"/>
+  <token id="5" lemma="cubicle" pos="NNS" surface="cubicles"/>
+  <token id="6" lemma="with" pos="IN" surface="with"/>
+  <token id="7" lemma="inadequate" pos="JJ" surface="inadequate"/>
+  <token id="8" lemma="curtain" pos="NNS" surface="curtains"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="where" pos="WRB" surface="where"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="12" lemma="be" pos="VBD" surface="were"/>
+  <token id="13" lemma="tell" pos="VBN" surface="told"/>
+  <token id="14" lemma="to" pos="TO" surface="to"/>
+  <token id="15" lemma="strip" pos="VB" surface="strip"/>
+  <token id="16" lemma="completely" pos="RB" surface="completely"/>
+  <token id="17" lemma="and" pos="CC" surface="and"/>
+  <token id="18" lemma="put" pos="VBD" surface="put"/>
+  <token id="19" lemma="on" pos="IN" surface="on"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="clean" pos="JJ" surface="clean"/>
+  <token id="22" lemma="towel" pos="VBG" surface="towelling"/>
+  <token id="23" lemma="gown" pos="NNS" surface="gowns"/>
+  <token id="24" lemma="in" pos="IN" surface="in"/>
+  <token id="25" lemma="there" pos="RB" surface="there"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="13" to="10" type="advmod"/>
+  <dep from="13" to="11" type="nsubjpass"/>
+  <dep from="13" to="12" type="auxpass"/>
+  <dep from="8" to="13" type="relcl"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="13" to="15" type="xcomp"/>
+  <dep from="15" to="16" type="advmod"/>
+  <dep from="15" to="17" type="cc"/>
+  <dep from="15" to="18" type="conj"/>
+  <dep from="18" to="19" type="prt"/>
+  <dep from="22" to="20" type="det"/>
+  <dep from="22" to="21" type="amod"/>
+  <dep from="19" to="22" type="pobj"/>
+  <dep from="18" to="23" type="dobj"/>
+  <dep from="18" to="24" type="prep"/>
+  <dep from="24" to="25" type="pcomp"/>
+  <dep from="3" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Cotheme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

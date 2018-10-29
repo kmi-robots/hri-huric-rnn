@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1407036">
+ <sentence>
+  Gloria had brought a portable spirit-lamp with her .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="gloria" pos="NNP" surface="Gloria"/>
+  <token id="2" lemma="have" pos="VBD" surface="had"/>
+  <token id="3" lemma="bring" pos="VBN" surface="brought"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="portable" pos="JJ" surface="portable"/>
+  <token id="6" lemma="spirit-lamp" pos="NN" surface="spirit-lamp"/>
+  <token id="7" lemma="with" pos="IN" surface="with"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="3" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="590500">
+ <sentence>
+  At the churchyard stile the priest would meet him in ` reverential pomp " and conduct him into the Church to attend divine service .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="at" pos="IN" surface="At"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="churchyard" pos="NN" surface="churchyard"/>
+  <token id="4" lemma="stile" pos="NN" surface="stile"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="priest" pos="NN" surface="priest"/>
+  <token id="7" lemma="would" pos="MD" surface="would"/>
+  <token id="8" lemma="meet" pos="VB" surface="meet"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="`" pos="''" surface="`"/>
+  <token id="12" lemma="reverential" pos="JJ" surface="reverential"/>
+  <token id="13" lemma="pomp" pos="NN" surface="pomp"/>
+  <token id="14" lemma='"' pos="''" surface='"'/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="conduct" pos="VB" surface="conduct"/>
+  <token id="17" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="18" lemma="into" pos="IN" surface="into"/>
+  <token id="19" lemma="the" pos="DT" surface="the"/>
+  <token id="20" lemma="church" pos="NNP" surface="Church"/>
+  <token id="21" lemma="to" pos="TO" surface="to"/>
+  <token id="22" lemma="attend" pos="VB" surface="attend"/>
+  <token id="23" lemma="divine" pos="JJ" surface="divine"/>
+  <token id="24" lemma="service" pos="NN" surface="service"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="1" to="4" type="pobj"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="8" to="6" type="nsubj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="8" to="10" type="prep"/>
+  <dep from="13" to="11" type="punct"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="8" to="15" type="cc"/>
+  <dep from="8" to="16" type="conj"/>
+  <dep from="16" to="17" type="dobj"/>
+  <dep from="16" to="18" type="prep"/>
+  <dep from="20" to="19" type="det"/>
+  <dep from="18" to="20" type="pobj"/>
+  <dep from="22" to="21" type="aux"/>
+  <dep from="16" to="22" type="advcl"/>
+  <dep from="24" to="23" type="amod"/>
+  <dep from="22" to="24" type="dobj"/>
+  <dep from="8" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

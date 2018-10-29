@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="592809">
+ <sentence>
+  The woman solved it for me by stopping and following Marcus out of the room .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="woman" pos="NN" surface="woman"/>
+  <token id="3" lemma="solve" pos="VBD" surface="solved"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="5" lemma="for" pos="IN" surface="for"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="7" lemma="by" pos="IN" surface="by"/>
+  <token id="8" lemma="stop" pos="VBG" surface="stopping"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="follow" pos="VBG" surface="following"/>
+  <token id="11" lemma="marcus" pos="NNP" surface="Marcus"/>
+  <token id="12" lemma="out" pos="IN" surface="out"/>
+  <token id="13" lemma="of" pos="IN" surface="of"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="room" pos="NN" surface="room"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="3" to="5" type="dative"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="3" to="7" type="prep"/>
+  <dep from="7" to="8" type="pcomp"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="10" to="11" type="dobj"/>
+  <dep from="8" to="12" type="prep"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="3" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

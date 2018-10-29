@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="704374">
+ <sentence>
+  An early government land surveyor mis-spelled Mosgiel with a single ` s " and so it has remained .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="an" pos="DT" surface="An"/>
+  <token id="2" lemma="early" pos="JJ" surface="early"/>
+  <token id="3" lemma="government" pos="NN" surface="government"/>
+  <token id="4" lemma="land" pos="NN" surface="land"/>
+  <token id="5" lemma="surveyor" pos="NN" surface="surveyor"/>
+  <token id="6" lemma="mis-spell" pos="VBD" surface="mis-spelled"/>
+  <token id="7" lemma="mosgiel" pos="NNP" surface="Mosgiel"/>
+  <token id="8" lemma="with" pos="IN" surface="with"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="single" pos="JJ" surface="single"/>
+  <token id="11" lemma="`" pos="''" surface="`"/>
+  <token id="12" lemma="s" pos="NNS" surface="s"/>
+  <token id="13" lemma='"' pos="''" surface='"'/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="so" pos="RB" surface="so"/>
+  <token id="16" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="17" lemma="have" pos="VBZ" surface="has"/>
+  <token id="18" lemma="remain" pos="VBN" surface="remained"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="det"/>
+  <dep from="5" to="2" type="amod"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="6" to="8" type="prep"/>
+  <dep from="12" to="9" type="det"/>
+  <dep from="12" to="10" type="amod"/>
+  <dep from="12" to="11" type="punct"/>
+  <dep from="8" to="12" type="pobj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="6" to="14" type="cc"/>
+  <dep from="18" to="15" type="advmod"/>
+  <dep from="18" to="16" type="nsubj"/>
+  <dep from="18" to="17" type="aux"/>
+  <dep from="6" to="18" type="conj"/>
+  <dep from="18" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Cognizer">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

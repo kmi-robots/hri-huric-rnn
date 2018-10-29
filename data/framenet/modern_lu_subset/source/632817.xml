@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="632817">
+ <sentence>
+  As he was doing that , he saw the paragraph about himself in The Stage and planted his shoe over it .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="as" pos="IN" surface="As"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="do" pos="VBG" surface="doing"/>
+  <token id="5" lemma="that" pos="DT" surface="that"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="8" lemma="see" pos="VBD" surface="saw"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="paragraph" pos="NN" surface="paragraph"/>
+  <token id="11" lemma="about" pos="IN" surface="about"/>
+  <token id="12" lemma="-PRON-" pos="PRP" surface="himself"/>
+  <token id="13" lemma="in" pos="IN" surface="in"/>
+  <token id="14" lemma="the" pos="DT" surface="The"/>
+  <token id="15" lemma="stage" pos="NNP" surface="Stage"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="plant" pos="VBD" surface="planted"/>
+  <token id="18" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="19" lemma="shoe" pos="NN" surface="shoe"/>
+  <token id="20" lemma="over" pos="IN" surface="over"/>
+  <token id="21" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="mark"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="8" to="4" type="advcl"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="8" to="6" type="punct"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="8" to="13" type="prep"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="8" to="16" type="cc"/>
+  <dep from="8" to="17" type="conj"/>
+  <dep from="19" to="18" type="poss"/>
+  <dep from="17" to="19" type="dobj"/>
+  <dep from="17" to="20" type="prep"/>
+  <dep from="20" to="21" type="pobj"/>
+  <dep from="8" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

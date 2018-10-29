@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1243429">
+ <sentence>
+  Does she procrastinate , lose things or fail to hand work in to her teacher ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="do" pos="VBZ" surface="Does"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="3" lemma="procrastinate" pos="VB" surface="procrastinate"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="lose" pos="VB" surface="lose"/>
+  <token id="6" lemma="thing" pos="NNS" surface="things"/>
+  <token id="7" lemma="or" pos="CC" surface="or"/>
+  <token id="8" lemma="fail" pos="VBP" surface="fail"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="hand" pos="VB" surface="hand"/>
+  <token id="11" lemma="work" pos="NN" surface="work"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="to" pos="IN" surface="to"/>
+  <token id="14" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="15" lemma="teacher" pos="NN" surface="teacher"/>
+  <token id="16" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="aux"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="3" to="5" type="conj"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="cc"/>
+  <dep from="5" to="8" type="conj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="8" to="10" type="xcomp"/>
+  <dep from="10" to="11" type="dobj"/>
+  <dep from="10" to="12" type="prt"/>
+  <dep from="10" to="13" type="prep"/>
+  <dep from="15" to="14" type="poss"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="3" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770674">
+ <sentence>
+  ` Is he coming round ? "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="``" surface="`"/>
+  <token id="2" lemma="be" pos="VBZ" surface="Is"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="4" lemma="come" pos="VBG" surface="coming"/>
+  <token id="5" lemma="round" pos="RB" surface="round"/>
+  <token id="6" lemma="?" pos="." surface="?"/>
+  <token id="7" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="punct"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="advmod"/>
+  <dep from="4" to="6" type="punct"/>
+  <dep from="4" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

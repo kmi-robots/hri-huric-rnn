@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1090050">
+ <sentence>
+  Since the group was formed £17,000 has been donated to the Third World causes mainly through Cafod .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="since" pos="IN" surface="Since"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="group" pos="NN" surface="group"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="form" pos="VBN" surface="formed"/>
+  <token id="6" lemma="£17,000" pos="NNP" surface="£17,000"/>
+  <token id="7" lemma="have" pos="VBZ" surface="has"/>
+  <token id="8" lemma="be" pos="VBN" surface="been"/>
+  <token id="9" lemma="donate" pos="VBN" surface="donated"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="third" pos="NNP" surface="Third"/>
+  <token id="13" lemma="world" pos="NNP" surface="World"/>
+  <token id="14" lemma="cause" pos="VBZ" surface="causes"/>
+  <token id="15" lemma="mainly" pos="RB" surface="mainly"/>
+  <token id="16" lemma="through" pos="IN" surface="through"/>
+  <token id="17" lemma="cafod" pos="NNP" surface="Cafod"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="mark"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="5" to="3" type="nsubjpass"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="9" to="5" type="advcl"/>
+  <dep from="9" to="6" type="nsubjpass"/>
+  <dep from="9" to="7" type="aux"/>
+  <dep from="9" to="8" type="auxpass"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="9" to="14" type="advcl"/>
+  <dep from="16" to="15" type="advmod"/>
+  <dep from="14" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="9" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

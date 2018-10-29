@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="406000">
+ <sentence>
+  Mares and foals can be seen until the end of July ; the stallions are viewed and the routine of the Stud is fully explained .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="mare" pos="NNS" surface="Mares"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="foal" pos="NNS" surface="foals"/>
+  <token id="4" lemma="can" pos="MD" surface="can"/>
+  <token id="5" lemma="be" pos="VB" surface="be"/>
+  <token id="6" lemma="see" pos="VBN" surface="seen"/>
+  <token id="7" lemma="until" pos="IN" surface="until"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="end" pos="NN" surface="end"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="july" pos="NNP" surface="July"/>
+  <token id="12" lemma=";" pos=":" surface=";"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="stallion" pos="NNS" surface="stallions"/>
+  <token id="15" lemma="be" pos="VBP" surface="are"/>
+  <token id="16" lemma="view" pos="VBN" surface="viewed"/>
+  <token id="17" lemma="and" pos="CC" surface="and"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="routine" pos="NN" surface="routine"/>
+  <token id="20" lemma="of" pos="IN" surface="of"/>
+  <token id="21" lemma="the" pos="DT" surface="the"/>
+  <token id="22" lemma="stud" pos="NNP" surface="Stud"/>
+  <token id="23" lemma="be" pos="VBZ" surface="is"/>
+  <token id="24" lemma="fully" pos="RB" surface="fully"/>
+  <token id="25" lemma="explain" pos="VBN" surface="explained"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="nsubjpass"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="6" to="4" type="aux"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="16" to="6" type="ccomp"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="16" to="12" type="punct"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="16" to="14" type="nsubjpass"/>
+  <dep from="16" to="15" type="auxpass"/>
+  <dep from="0" to="16" type="root"/>
+  <dep from="16" to="17" type="cc"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="25" to="19" type="nsubjpass"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="22" to="21" type="det"/>
+  <dep from="20" to="22" type="pobj"/>
+  <dep from="25" to="23" type="auxpass"/>
+  <dep from="25" to="24" type="advmod"/>
+  <dep from="16" to="25" type="conj"/>
+  <dep from="25" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403272">
+ <sentence>
+  The plot failed when one soldier peeped inside the box of Quality Street chocolates two days later and discovered 2lbs of semtex explosive .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="plot" pos="NN" surface="plot"/>
+  <token id="3" lemma="fail" pos="VBD" surface="failed"/>
+  <token id="4" lemma="when" pos="WRB" surface="when"/>
+  <token id="5" lemma="one" pos="CD" surface="one"/>
+  <token id="6" lemma="soldier" pos="NN" surface="soldier"/>
+  <token id="7" lemma="peep" pos="VBD" surface="peeped"/>
+  <token id="8" lemma="inside" pos="IN" surface="inside"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="box" pos="NN" surface="box"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="quality" pos="NNP" surface="Quality"/>
+  <token id="13" lemma="street" pos="NNP" surface="Street"/>
+  <token id="14" lemma="chocolat" pos="VBZ" surface="chocolates"/>
+  <token id="15" lemma="two" pos="CD" surface="two"/>
+  <token id="16" lemma="day" pos="NNS" surface="days"/>
+  <token id="17" lemma="later" pos="RB" surface="later"/>
+  <token id="18" lemma="and" pos="CC" surface="and"/>
+  <token id="19" lemma="discover" pos="VBD" surface="discovered"/>
+  <token id="20" lemma="2lb" pos="NNS" surface="2lbs"/>
+  <token id="21" lemma="of" pos="IN" surface="of"/>
+  <token id="22" lemma="semtex" pos="NN" surface="semtex"/>
+  <token id="23" lemma="explosive" pos="NN" surface="explosive"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="7" to="4" type="advmod"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="3" to="7" type="advcl"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="3" to="14" type="conj"/>
+  <dep from="16" to="15" type="nummod"/>
+  <dep from="17" to="16" type="npadvmod"/>
+  <dep from="14" to="17" type="advmod"/>
+  <dep from="14" to="18" type="cc"/>
+  <dep from="14" to="19" type="conj"/>
+  <dep from="19" to="20" type="dobj"/>
+  <dep from="20" to="21" type="prep"/>
+  <dep from="23" to="22" type="amod"/>
+  <dep from="21" to="23" type="pobj"/>
+  <dep from="3" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

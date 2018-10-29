@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1090057">
+ <sentence>
+  Some of the money came from sales while other cash was donated to the society .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="some" pos="DT" surface="Some"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="money" pos="NN" surface="money"/>
+  <token id="5" lemma="come" pos="VBD" surface="came"/>
+  <token id="6" lemma="from" pos="IN" surface="from"/>
+  <token id="7" lemma="sale" pos="NNS" surface="sales"/>
+  <token id="8" lemma="while" pos="IN" surface="while"/>
+  <token id="9" lemma="other" pos="JJ" surface="other"/>
+  <token id="10" lemma="cash" pos="NN" surface="cash"/>
+  <token id="11" lemma="be" pos="VBD" surface="was"/>
+  <token id="12" lemma="donate" pos="VBN" surface="donated"/>
+  <token id="13" lemma="to" pos="IN" surface="to"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="society" pos="NN" surface="society"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="12" to="8" type="mark"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="12" to="10" type="nsubjpass"/>
+  <dep from="12" to="11" type="auxpass"/>
+  <dep from="5" to="12" type="advcl"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="5" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

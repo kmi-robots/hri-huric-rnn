@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1049207">
+ <sentence>
+  In one of my first jobs I plastered on the make-up and wore very executive-type suits .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="one" pos="CD" surface="one"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="5" lemma="first" pos="JJ" surface="first"/>
+  <token id="6" lemma="job" pos="NNS" surface="jobs"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="8" lemma="plaster" pos="VBD" surface="plastered"/>
+  <token id="9" lemma="on" pos="IN" surface="on"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="make-up" pos="NN" surface="make-up"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="wear" pos="VBD" surface="wore"/>
+  <token id="14" lemma="very" pos="RB" surface="very"/>
+  <token id="15" lemma="executive-type" pos="JJ" surface="executive-type"/>
+  <token id="16" lemma="suit" pos="NNS" surface="suits"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="6" to="4" type="poss"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="pobj"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="6" to="8" type="relcl"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="8" to="12" type="cc"/>
+  <dep from="8" to="13" type="conj"/>
+  <dep from="15" to="14" type="advmod"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="13" to="16" type="dobj"/>
+  <dep from="1" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

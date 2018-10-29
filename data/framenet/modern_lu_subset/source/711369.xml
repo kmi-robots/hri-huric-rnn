@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="711369">
+ <sentence>
+  Use a bobblehat for the head-dress and carry a candle in a holder .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="use" pos="VB" surface="Use"/>
+  <token id="2" lemma="a" pos="DT" surface="a"/>
+  <token id="3" lemma="bobblehat" pos="NN" surface="bobblehat"/>
+  <token id="4" lemma="for" pos="IN" surface="for"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="head-dress" pos="NN" surface="head-dress"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="carry" pos="VB" surface="carry"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="candle" pos="NN" surface="candle"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="holder" pos="NN" surface="holder"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="dobj"/>
+  <dep from="1" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="1" to="7" type="cc"/>
+  <dep from="1" to="8" type="conj"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="8" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="1" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Constant_location">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

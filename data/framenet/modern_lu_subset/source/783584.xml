@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="783584">
+ <sentence>
+  However , he again refused to wear his uniform and was forcibly dressed and handcuffed to the cell bars .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="however" pos="RB" surface="However"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="4" lemma="again" pos="RB" surface="again"/>
+  <token id="5" lemma="refuse" pos="VBD" surface="refused"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="wear" pos="VB" surface="wear"/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="9" lemma="uniform" pos="NN" surface="uniform"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="be" pos="VBD" surface="was"/>
+  <token id="12" lemma="forcibly" pos="RB" surface="forcibly"/>
+  <token id="13" lemma="dress" pos="VBN" surface="dressed"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="handcuff" pos="VBN" surface="handcuffed"/>
+  <token id="16" lemma="to" pos="IN" surface="to"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="cell" pos="NN" surface="cell"/>
+  <token id="19" lemma="bar" pos="NNS" surface="bars"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="advmod"/>
+  <dep from="5" to="2" type="punct"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="5" to="7" type="xcomp"/>
+  <dep from="9" to="8" type="poss"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="5" to="10" type="cc"/>
+  <dep from="5" to="11" type="conj"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="11" to="13" type="acomp"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="19" to="17" type="det"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="16" to="19" type="pobj"/>
+  <dep from="5" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

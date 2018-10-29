@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780394">
+ <sentence>
+  Calmer now , Kirov searched the tables again .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="calmer" pos="NNP" surface="Calmer"/>
+  <token id="2" lemma="now" pos="RB" surface="now"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="kirov" pos="NNP" surface="Kirov"/>
+  <token id="5" lemma="search" pos="VBD" surface="searched"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="table" pos="NNS" surface="tables"/>
+  <token id="8" lemma="again" pos="RB" surface="again"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="advmod"/>
+  <dep from="5" to="2" type="advmod"/>
+  <dep from="5" to="3" type="punct"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="5" to="8" type="advmod"/>
+  <dep from="5" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

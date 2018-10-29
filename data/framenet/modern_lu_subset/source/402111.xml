@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="402111">
+ <sentence>
+  He nodded , and Yuan looked away .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="nod" pos="VBD" surface="nodded"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="yuan" pos="NNP" surface="Yuan"/>
+  <token id="6" lemma="look" pos="VBD" surface="looked"/>
+  <token id="7" lemma="away" pos="RB" surface="away"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="cc"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="2" to="6" type="conj"/>
+  <dep from="6" to="7" type="advmod"/>
+  <dep from="6" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

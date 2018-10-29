@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="667853">
+ <sentence>
+  You ca n't give pursuit under those conditions .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="You"/>
+  <token id="2" lemma="ca" pos="MD" surface="ca"/>
+  <token id="3" lemma="n't" pos="RB" surface="n't"/>
+  <token id="4" lemma="give" pos="VB" surface="give"/>
+  <token id="5" lemma="pursuit" pos="NN" surface="pursuit"/>
+  <token id="6" lemma="under" pos="IN" surface="under"/>
+  <token id="7" lemma="those" pos="DT" surface="those"/>
+  <token id="8" lemma="condition" pos="NNS" surface="conditions"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="neg"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="4" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="4" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="629248">
+ <sentence>
+  Burney inserted the probe into the wound and poked about .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="burney" pos="NNP" surface="Burney"/>
+  <token id="2" lemma="insert" pos="VBD" surface="inserted"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="probe" pos="NN" surface="probe"/>
+  <token id="5" lemma="into" pos="IN" surface="into"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="wound" pos="NN" surface="wound"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="poke" pos="VBD" surface="poked"/>
+  <token id="10" lemma="about" pos="IN" surface="about"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="2" to="8" type="cc"/>
+  <dep from="2" to="9" type="conj"/>
+  <dep from="9" to="10" type="prt"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

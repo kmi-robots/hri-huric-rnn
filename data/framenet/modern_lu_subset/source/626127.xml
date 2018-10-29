@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="626127">
+ <sentence>
+  The car wove through the traffic on Hyde Park Corner and purred up Park Lane , the grime-grey hotels flashing by on the right .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="car" pos="NN" surface="car"/>
+  <token id="3" lemma="wove" pos="VBP" surface="wove"/>
+  <token id="4" lemma="through" pos="IN" surface="through"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="traffic" pos="NN" surface="traffic"/>
+  <token id="7" lemma="on" pos="IN" surface="on"/>
+  <token id="8" lemma="hyde" pos="NNP" surface="Hyde"/>
+  <token id="9" lemma="park" pos="NNP" surface="Park"/>
+  <token id="10" lemma="corner" pos="NNP" surface="Corner"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="purr" pos="VBD" surface="purred"/>
+  <token id="13" lemma="up" pos="RP" surface="up"/>
+  <token id="14" lemma="park" pos="NNP" surface="Park"/>
+  <token id="15" lemma="lane" pos="NNP" surface="Lane"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="grime-grey" pos="JJ" surface="grime-grey"/>
+  <token id="19" lemma="hotel" pos="NNS" surface="hotels"/>
+  <token id="20" lemma="flash" pos="VBG" surface="flashing"/>
+  <token id="21" lemma="by" pos="IN" surface="by"/>
+  <token id="22" lemma="on" pos="IN" surface="on"/>
+  <token id="23" lemma="the" pos="DT" surface="the"/>
+  <token id="24" lemma="right" pos="NN" surface="right"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="10" to="8" type="compound"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="3" to="11" type="cc"/>
+  <dep from="3" to="12" type="conj"/>
+  <dep from="12" to="13" type="prt"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="12" to="15" type="dobj"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="19" to="17" type="det"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="15" to="19" type="appos"/>
+  <dep from="19" to="20" type="acl"/>
+  <dep from="20" to="21" type="prep"/>
+  <dep from="20" to="22" type="prep"/>
+  <dep from="24" to="23" type="det"/>
+  <dep from="22" to="24" type="pobj"/>
+  <dep from="3" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4100633">
+ <sentence>
+  There are many guided bus tours to sights outside the city , and some are accessible by city bus .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="many" pos="JJ" surface="many"/>
+  <token id="4" lemma="guide" pos="VBN" surface="guided"/>
+  <token id="5" lemma="bus" pos="NN" surface="bus"/>
+  <token id="6" lemma="tour" pos="NNS" surface="tours"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="sight" pos="NNS" surface="sights"/>
+  <token id="9" lemma="outside" pos="IN" surface="outside"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="city" pos="NN" surface="city"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="some" pos="DT" surface="some"/>
+  <token id="15" lemma="be" pos="VBP" surface="are"/>
+  <token id="16" lemma="accessible" pos="JJ" surface="accessible"/>
+  <token id="17" lemma="by" pos="IN" surface="by"/>
+  <token id="18" lemma="city" pos="NN" surface="city"/>
+  <token id="19" lemma="bus" pos="NN" surface="bus"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="6" to="3" type="amod"/>
+  <dep from="6" to="4" type="amod"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="2" to="6" type="attr"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="2" to="12" type="punct"/>
+  <dep from="2" to="13" type="cc"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="2" to="15" type="conj"/>
+  <dep from="15" to="16" type="acomp"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="15" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Path">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

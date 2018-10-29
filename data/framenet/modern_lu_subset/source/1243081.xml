@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1243081">
+ <sentence>
+  As I handed my music to the organist , I shook so badly he bought me a brandy and made me drink it .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="as" pos="IN" surface="As"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="3" lemma="hand" pos="VBD" surface="handed"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="5" lemma="music" pos="NN" surface="music"/>
+  <token id="6" lemma="to" pos="IN" surface="to"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="organist" pos="NN" surface="organist"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="11" lemma="shake" pos="VBD" surface="shook"/>
+  <token id="12" lemma="so" pos="RB" surface="so"/>
+  <token id="13" lemma="badly" pos="RB" surface="badly"/>
+  <token id="14" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="15" lemma="buy" pos="VBD" surface="bought"/>
+  <token id="16" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="brandy" pos="NN" surface="brandy"/>
+  <token id="19" lemma="and" pos="CC" surface="and"/>
+  <token id="20" lemma="make" pos="VBD" surface="made"/>
+  <token id="21" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="22" lemma="drink" pos="VB" surface="drink"/>
+  <token id="23" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="mark"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="11" to="3" type="advcl"/>
+  <dep from="5" to="4" type="poss"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="11" to="9" type="punct"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="11" to="13" type="advmod"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="13" to="15" type="ccomp"/>
+  <dep from="15" to="16" type="dative"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="15" to="18" type="dobj"/>
+  <dep from="15" to="19" type="cc"/>
+  <dep from="15" to="20" type="conj"/>
+  <dep from="22" to="21" type="nsubj"/>
+  <dep from="20" to="22" type="ccomp"/>
+  <dep from="22" to="23" type="dobj"/>
+  <dep from="11" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

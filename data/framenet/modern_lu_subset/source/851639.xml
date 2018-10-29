@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="851639">
+ <sentence>
+  Please ensure that the SCIAF leaflet is also given out .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="please" pos="UH" surface="Please"/>
+  <token id="2" lemma="ensure" pos="VB" surface="ensure"/>
+  <token id="3" lemma="that" pos="IN" surface="that"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="sciaf" pos="NN" surface="SCIAF"/>
+  <token id="6" lemma="leaflet" pos="NN" surface="leaflet"/>
+  <token id="7" lemma="be" pos="VBZ" surface="is"/>
+  <token id="8" lemma="also" pos="RB" surface="also"/>
+  <token id="9" lemma="give" pos="VBN" surface="given"/>
+  <token id="10" lemma="out" pos="RP" surface="out"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="intj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="9" to="3" type="mark"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="9" to="6" type="nsubjpass"/>
+  <dep from="9" to="7" type="auxpass"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="2" to="9" type="ccomp"/>
+  <dep from="9" to="10" type="prt"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

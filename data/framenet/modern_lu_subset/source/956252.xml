@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="956252">
+ <sentence>
+  We huddled in its dark ruinous rooms sipping bitter tea while gusts of sand blew in at the doorways .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="We"/>
+  <token id="2" lemma="huddle" pos="VBD" surface="huddled"/>
+  <token id="3" lemma="in" pos="IN" surface="in"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="5" lemma="dark" pos="JJ" surface="dark"/>
+  <token id="6" lemma="ruinous" pos="JJ" surface="ruinous"/>
+  <token id="7" lemma="room" pos="NNS" surface="rooms"/>
+  <token id="8" lemma="sip" pos="VBG" surface="sipping"/>
+  <token id="9" lemma="bitter" pos="JJ" surface="bitter"/>
+  <token id="10" lemma="tea" pos="NN" surface="tea"/>
+  <token id="11" lemma="while" pos="IN" surface="while"/>
+  <token id="12" lemma="gust" pos="NNS" surface="gusts"/>
+  <token id="13" lemma="of" pos="IN" surface="of"/>
+  <token id="14" lemma="sand" pos="NN" surface="sand"/>
+  <token id="15" lemma="blow" pos="VBD" surface="blew"/>
+  <token id="16" lemma="in" pos="RP" surface="in"/>
+  <token id="17" lemma="at" pos="IN" surface="at"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="doorway" pos="NNS" surface="doorways"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="7" to="4" type="poss"/>
+  <dep from="7" to="5" type="amod"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="3" to="7" type="pobj"/>
+  <dep from="7" to="8" type="acl"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="15" to="11" type="mark"/>
+  <dep from="15" to="12" type="nsubj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="8" to="15" type="advcl"/>
+  <dep from="15" to="16" type="prt"/>
+  <dep from="15" to="17" type="prep"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="2" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

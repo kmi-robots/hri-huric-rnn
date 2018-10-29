@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1089035">
+ <sentence>
+  ` Now the nephew always watches the Regal Arms very specially close .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="''" surface="`"/>
+  <token id="2" lemma="now" pos="RB" surface="Now"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="nephew" pos="NN" surface="nephew"/>
+  <token id="5" lemma="always" pos="RB" surface="always"/>
+  <token id="6" lemma="watch" pos="VBZ" surface="watches"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="regal" pos="NNP" surface="Regal"/>
+  <token id="9" lemma="arms" pos="NNPS" surface="Arms"/>
+  <token id="10" lemma="very" pos="RB" surface="very"/>
+  <token id="11" lemma="specially" pos="RB" surface="specially"/>
+  <token id="12" lemma="close" pos="JJ" surface="close"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="punct"/>
+  <dep from="6" to="2" type="advmod"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="dobj"/>
+  <dep from="12" to="10" type="advmod"/>
+  <dep from="12" to="11" type="advmod"/>
+  <dep from="6" to="12" type="advmod"/>
+  <dep from="6" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

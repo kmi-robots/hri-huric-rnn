@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="778472">
+ <sentence>
+  He walked across and inspected the work thoroughly .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="walk" pos="VBD" surface="walked"/>
+  <token id="3" lemma="across" pos="RB" surface="across"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="inspect" pos="VBD" surface="inspected"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="work" pos="NN" surface="work"/>
+  <token id="8" lemma="thoroughly" pos="RB" surface="thoroughly"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="advmod"/>
+  <dep from="2" to="4" type="cc"/>
+  <dep from="2" to="5" type="conj"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="5" to="8" type="advmod"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Inspecting">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Inspector">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Degree">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

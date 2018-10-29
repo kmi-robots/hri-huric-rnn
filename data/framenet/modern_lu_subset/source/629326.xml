@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="629326">
+ <sentence>
+  After laparotomy cannulae were inserted proximally by duodenotomy and distally by terminal ileotomy as described previously .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="after" pos="IN" surface="After"/>
+  <token id="2" lemma="laparotomy" pos="NN" surface="laparotomy"/>
+  <token id="3" lemma="cannulae" pos="NN" surface="cannulae"/>
+  <token id="4" lemma="be" pos="VBD" surface="were"/>
+  <token id="5" lemma="insert" pos="VBN" surface="inserted"/>
+  <token id="6" lemma="proximally" pos="RB" surface="proximally"/>
+  <token id="7" lemma="by" pos="IN" surface="by"/>
+  <token id="8" lemma="duodenotomy" pos="NN" surface="duodenotomy"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="distally" pos="RB" surface="distally"/>
+  <token id="11" lemma="by" pos="IN" surface="by"/>
+  <token id="12" lemma="terminal" pos="JJ" surface="terminal"/>
+  <token id="13" lemma="ileotomy" pos="NN" surface="ileotomy"/>
+  <token id="14" lemma="as" pos="IN" surface="as"/>
+  <token id="15" lemma="describe" pos="VBD" surface="described"/>
+  <token id="16" lemma="previously" pos="RB" surface="previously"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="mark"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="5" to="3" type="nsubjpass"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="advmod"/>
+  <dep from="5" to="7" type="agent"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="7" to="9" type="cc"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="7" to="11" type="conj"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="15" to="14" type="mark"/>
+  <dep from="5" to="15" type="advcl"/>
+  <dep from="15" to="16" type="advmod"/>
+  <dep from="5" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="783181">
+ <sentence>
+  Gretchen was up a ladder now , sticking Bethlehem stars over the bulletholes on the ceiling .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="gretchen" pos="NNP" surface="Gretchen"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="up" pos="RB" surface="up"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="ladder" pos="NN" surface="ladder"/>
+  <token id="6" lemma="now" pos="RB" surface="now"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="stick" pos="VBG" surface="sticking"/>
+  <token id="9" lemma="bethlehem" pos="NNP" surface="Bethlehem"/>
+  <token id="10" lemma="star" pos="VBZ" surface="stars"/>
+  <token id="11" lemma="over" pos="IN" surface="over"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="bullethole" pos="NNS" surface="bulletholes"/>
+  <token id="14" lemma="on" pos="IN" surface="on"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="ceiling" pos="NN" surface="ceiling"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="advmod"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="2" to="5" type="attr"/>
+  <dep from="2" to="6" type="advmod"/>
+  <dep from="2" to="7" type="punct"/>
+  <dep from="2" to="8" type="advcl"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="8" to="10" type="ccomp"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="2" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

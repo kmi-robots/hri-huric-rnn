@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1235126">
+ <sentence>
+  They stood admiring each other .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="They"/>
+  <token id="2" lemma="stand" pos="VBD" surface="stood"/>
+  <token id="3" lemma="admire" pos="VBG" surface="admiring"/>
+  <token id="4" lemma="each" pos="DT" surface="each"/>
+  <token id="5" lemma="other" pos="JJ" surface="other"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="advcl"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1088052">
+ <sentence>
+  Both wheels move easily , their large diameter giving plenty of turning moment .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="both" pos="DT" surface="Both"/>
+  <token id="2" lemma="wheel" pos="NNS" surface="wheels"/>
+  <token id="3" lemma="move" pos="VBP" surface="move"/>
+  <token id="4" lemma="easily" pos="RB" surface="easily"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="7" lemma="large" pos="JJ" surface="large"/>
+  <token id="8" lemma="diameter" pos="NN" surface="diameter"/>
+  <token id="9" lemma="give" pos="VBG" surface="giving"/>
+  <token id="10" lemma="plenty" pos="NN" surface="plenty"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="turn" pos="VBG" surface="turning"/>
+  <token id="13" lemma="moment" pos="NN" surface="moment"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="advmod"/>
+  <dep from="3" to="5" type="punct"/>
+  <dep from="8" to="6" type="poss"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="3" to="9" type="advcl"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pcomp"/>
+  <dep from="12" to="13" type="dobj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

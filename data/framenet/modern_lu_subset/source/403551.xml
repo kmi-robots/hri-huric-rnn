@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403551">
+ <sentence>
+  ` Do n't peep or the Bogey Man will get you ! "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="``" surface="`"/>
+  <token id="2" lemma="do" pos="VB" surface="Do"/>
+  <token id="3" lemma="n't" pos="RB" surface="n't"/>
+  <token id="4" lemma="peep" pos="VB" surface="peep"/>
+  <token id="5" lemma="or" pos="CC" surface="or"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="bogey" pos="NNP" surface="Bogey"/>
+  <token id="8" lemma="man" pos="NNP" surface="Man"/>
+  <token id="9" lemma="will" pos="MD" surface="will"/>
+  <token id="10" lemma="get" pos="VB" surface="get"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="12" lemma="!" pos="." surface="!"/>
+  <token id="13" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="punct"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="neg"/>
+  <dep from="10" to="4" type="csubj"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="4" to="8" type="conj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="dobj"/>
+  <dep from="10" to="12" type="punct"/>
+  <dep from="10" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

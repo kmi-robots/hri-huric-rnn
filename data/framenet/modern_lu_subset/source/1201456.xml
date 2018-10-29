@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1201456">
+ <sentence>
+  Any suspicious images can then be double-checked by a radiologist before any decision is taken to treat the patient .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="any" pos="DT" surface="Any"/>
+  <token id="2" lemma="suspicious" pos="JJ" surface="suspicious"/>
+  <token id="3" lemma="image" pos="NNS" surface="images"/>
+  <token id="4" lemma="can" pos="MD" surface="can"/>
+  <token id="5" lemma="then" pos="RB" surface="then"/>
+  <token id="6" lemma="be" pos="VB" surface="be"/>
+  <token id="7" lemma="double-check" pos="VBN" surface="double-checked"/>
+  <token id="8" lemma="by" pos="IN" surface="by"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="radiologist" pos="NN" surface="radiologist"/>
+  <token id="11" lemma="before" pos="IN" surface="before"/>
+  <token id="12" lemma="any" pos="DT" surface="any"/>
+  <token id="13" lemma="decision" pos="NN" surface="decision"/>
+  <token id="14" lemma="be" pos="VBZ" surface="is"/>
+  <token id="15" lemma="take" pos="VBN" surface="taken"/>
+  <token id="16" lemma="to" pos="TO" surface="to"/>
+  <token id="17" lemma="treat" pos="VB" surface="treat"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="patient" pos="NN" surface="patient"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="7" to="3" type="nsubjpass"/>
+  <dep from="7" to="4" type="aux"/>
+  <dep from="7" to="5" type="advmod"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="agent"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="15" to="11" type="mark"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="15" to="13" type="nsubjpass"/>
+  <dep from="15" to="14" type="auxpass"/>
+  <dep from="7" to="15" type="advcl"/>
+  <dep from="17" to="16" type="aux"/>
+  <dep from="15" to="17" type="advcl"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="17" to="19" type="dobj"/>
+  <dep from="7" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Inspecting">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Inspector">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

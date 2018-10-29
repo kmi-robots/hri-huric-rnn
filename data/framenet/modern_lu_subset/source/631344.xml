@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="631344">
+ <sentence>
+  At most colleges GCSE candidates pack two subjects into a week ; A level students take one at a time .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="at" pos="IN" surface="At"/>
+  <token id="2" lemma="most" pos="JJS" surface="most"/>
+  <token id="3" lemma="college" pos="NNS" surface="colleges"/>
+  <token id="4" lemma="gcse" pos="VBD" surface="GCSE"/>
+  <token id="5" lemma="candidate" pos="NNS" surface="candidates"/>
+  <token id="6" lemma="pack" pos="VBP" surface="pack"/>
+  <token id="7" lemma="two" pos="CD" surface="two"/>
+  <token id="8" lemma="subject" pos="NNS" surface="subjects"/>
+  <token id="9" lemma="into" pos="IN" surface="into"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="week" pos="NN" surface="week"/>
+  <token id="12" lemma=";" pos=":" surface=";"/>
+  <token id="13" lemma="a" pos="DT" surface="A"/>
+  <token id="14" lemma="level" pos="NN" surface="level"/>
+  <token id="15" lemma="student" pos="NNS" surface="students"/>
+  <token id="16" lemma="take" pos="VBP" surface="take"/>
+  <token id="17" lemma="one" pos="CD" surface="one"/>
+  <token id="18" lemma="at" pos="IN" surface="at"/>
+  <token id="19" lemma="a" pos="DT" surface="a"/>
+  <token id="20" lemma="time" pos="NN" surface="time"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="16" to="6" type="ccomp"/>
+  <dep from="8" to="7" type="nummod"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="6" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="16" to="12" type="punct"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="16" to="15" type="nsubj"/>
+  <dep from="0" to="16" type="root"/>
+  <dep from="16" to="17" type="dobj"/>
+  <dep from="16" to="18" type="prep"/>
+  <dep from="20" to="19" type="det"/>
+  <dep from="18" to="20" type="pobj"/>
+  <dep from="16" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

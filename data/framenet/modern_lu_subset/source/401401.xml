@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="401401">
+ <sentence>
+  He returned her look and asked , ` Does he know ? "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="return" pos="VBD" surface="returned"/>
+  <token id="3" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="4" lemma="look" pos="NN" surface="look"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="ask" pos="VBD" surface="asked"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="`" pos="''" surface="`"/>
+  <token id="9" lemma="do" pos="VBZ" surface="Does"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="11" lemma="know" pos="VB" surface="know"/>
+  <token id="12" lemma="?" pos="." surface="?"/>
+  <token id="13" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="poss"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="cc"/>
+  <dep from="2" to="6" type="conj"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="6" to="8" type="punct"/>
+  <dep from="11" to="9" type="aux"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="6" to="11" type="ccomp"/>
+  <dep from="2" to="12" type="punct"/>
+  <dep from="2" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

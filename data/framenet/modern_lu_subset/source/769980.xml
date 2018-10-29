@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="769980">
+ <sentence>
+  THE Princess of Wales arrived smiling and laughing at a Christmas concert last night .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="THE"/>
+  <token id="2" lemma="princess" pos="NNP" surface="Princess"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="wales" pos="NNP" surface="Wales"/>
+  <token id="5" lemma="arrive" pos="VBD" surface="arrived"/>
+  <token id="6" lemma="smile" pos="VBG" surface="smiling"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="laugh" pos="VBG" surface="laughing"/>
+  <token id="9" lemma="at" pos="IN" surface="at"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="christmas" pos="NNP" surface="Christmas"/>
+  <token id="12" lemma="concert" pos="NN" surface="concert"/>
+  <token id="13" lemma="last" pos="JJ" surface="last"/>
+  <token id="14" lemma="night" pos="NN" surface="night"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="5" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="advcl"/>
+  <dep from="6" to="7" type="cc"/>
+  <dep from="6" to="8" type="conj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="8" to="14" type="npadvmod"/>
+  <dep from="5" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Depictive">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

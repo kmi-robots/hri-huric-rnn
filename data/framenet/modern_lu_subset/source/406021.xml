@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="406021">
+ <sentence>
+  A Dr R. Knox writes that the two men were allowed to view the Leonardo collection for medical studies .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="dr" pos="NNP" surface="Dr"/>
+  <token id="3" lemma="r." pos="NNP" surface="R."/>
+  <token id="4" lemma="knox" pos="NNP" surface="Knox"/>
+  <token id="5" lemma="write" pos="VBZ" surface="writes"/>
+  <token id="6" lemma="that" pos="IN" surface="that"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="two" pos="CD" surface="two"/>
+  <token id="9" lemma="man" pos="NNS" surface="men"/>
+  <token id="10" lemma="be" pos="VBD" surface="were"/>
+  <token id="11" lemma="allow" pos="VBN" surface="allowed"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="view" pos="VB" surface="view"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="leonardo" pos="NNP" surface="Leonardo"/>
+  <token id="16" lemma="collection" pos="NN" surface="collection"/>
+  <token id="17" lemma="for" pos="IN" surface="for"/>
+  <token id="18" lemma="medical" pos="JJ" surface="medical"/>
+  <token id="19" lemma="study" pos="NNS" surface="studies"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="det"/>
+  <dep from="4" to="2" type="compound"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="11" to="6" type="mark"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="nummod"/>
+  <dep from="11" to="9" type="nsubjpass"/>
+  <dep from="11" to="10" type="auxpass"/>
+  <dep from="5" to="11" type="ccomp"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="11" to="13" type="xcomp"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="13" to="16" type="dobj"/>
+  <dep from="13" to="17" type="prep"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="5" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

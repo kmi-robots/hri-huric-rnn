@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1243026">
+ <sentence>
+  Tom handed the reins to Carrie and leaped from the light cart , heading for a nearby cottage .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="tom" pos="NNP" surface="Tom"/>
+  <token id="2" lemma="hand" pos="VBD" surface="handed"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="rein" pos="NNS" surface="reins"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="carrie" pos="NNP" surface="Carrie"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="leap" pos="VBD" surface="leaped"/>
+  <token id="9" lemma="from" pos="IN" surface="from"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="light" pos="JJ" surface="light"/>
+  <token id="12" lemma="cart" pos="NN" surface="cart"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="head" pos="VBG" surface="heading"/>
+  <token id="15" lemma="for" pos="IN" surface="for"/>
+  <token id="16" lemma="a" pos="DT" surface="a"/>
+  <token id="17" lemma="nearby" pos="JJ" surface="nearby"/>
+  <token id="18" lemma="cottage" pos="NN" surface="cottage"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="2" to="7" type="cc"/>
+  <dep from="2" to="8" type="conj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="8" to="13" type="punct"/>
+  <dep from="8" to="14" type="advcl"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="18" to="16" type="det"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="15" to="18" type="pobj"/>
+  <dep from="2" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

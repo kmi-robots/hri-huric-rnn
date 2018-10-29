@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="628907">
+ <sentence>
+  The electrodes that had been implanted in its brain had been removed ; the scars from the surgery had healed and grown over with fur .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="electrode" pos="NNS" surface="electrodes"/>
+  <token id="3" lemma="that" pos="WDT" surface="that"/>
+  <token id="4" lemma="have" pos="VBD" surface="had"/>
+  <token id="5" lemma="be" pos="VBN" surface="been"/>
+  <token id="6" lemma="implant" pos="VBN" surface="implanted"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="9" lemma="brain" pos="NN" surface="brain"/>
+  <token id="10" lemma="have" pos="VBD" surface="had"/>
+  <token id="11" lemma="be" pos="VBN" surface="been"/>
+  <token id="12" lemma="remove" pos="VBN" surface="removed"/>
+  <token id="13" lemma=";" pos=":" surface=";"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="scar" pos="NNS" surface="scars"/>
+  <token id="16" lemma="from" pos="IN" surface="from"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="surgery" pos="NN" surface="surgery"/>
+  <token id="19" lemma="have" pos="VBD" surface="had"/>
+  <token id="20" lemma="heal" pos="VBN" surface="healed"/>
+  <token id="21" lemma="and" pos="CC" surface="and"/>
+  <token id="22" lemma="grow" pos="VBN" surface="grown"/>
+  <token id="23" lemma="over" pos="RP" surface="over"/>
+  <token id="24" lemma="with" pos="IN" surface="with"/>
+  <token id="25" lemma="fur" pos="NN" surface="fur"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="12" to="2" type="nsubjpass"/>
+  <dep from="6" to="3" type="nsubjpass"/>
+  <dep from="6" to="4" type="aux"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="2" to="6" type="relcl"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="poss"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="12" to="10" type="aux"/>
+  <dep from="12" to="11" type="auxpass"/>
+  <dep from="20" to="12" type="ccomp"/>
+  <dep from="20" to="13" type="punct"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="20" to="15" type="nsubj"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="20" to="19" type="aux"/>
+  <dep from="0" to="20" type="root"/>
+  <dep from="20" to="21" type="cc"/>
+  <dep from="20" to="22" type="conj"/>
+  <dep from="22" to="23" type="prt"/>
+  <dep from="22" to="24" type="prep"/>
+  <dep from="24" to="25" type="pobj"/>
+  <dep from="20" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="667687">
+ <sentence>
+  Throughout 1935 Vivien continued her lonely pursuit of her husband .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="throughout" pos="IN" surface="Throughout"/>
+  <token id="2" lemma="1935" pos="CD" surface="1935"/>
+  <token id="3" lemma="vivien" pos="NNP" surface="Vivien"/>
+  <token id="4" lemma="continue" pos="VBD" surface="continued"/>
+  <token id="5" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="6" lemma="lonely" pos="JJ" surface="lonely"/>
+  <token id="7" lemma="pursuit" pos="NN" surface="pursuit"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="10" lemma="husband" pos="NN" surface="husband"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="prep"/>
+  <dep from="3" to="2" type="nummod"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="poss"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="poss"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="4" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

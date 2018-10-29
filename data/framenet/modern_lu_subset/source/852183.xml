@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="852183">
+ <sentence>
+  Once there I handed out the packs and sat waiting for approval .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="once" pos="RB" surface="Once"/>
+  <token id="2" lemma="there" pos="RB" surface="there"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="4" lemma="hand" pos="VBD" surface="handed"/>
+  <token id="5" lemma="out" pos="RP" surface="out"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="pack" pos="NNS" surface="packs"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="sit" pos="VBD" surface="sat"/>
+  <token id="10" lemma="wait" pos="VBG" surface="waiting"/>
+  <token id="11" lemma="for" pos="IN" surface="for"/>
+  <token id="12" lemma="approval" pos="NN" surface="approval"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="4" to="2" type="advmod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prt"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="4" to="8" type="cc"/>
+  <dep from="4" to="9" type="conj"/>
+  <dep from="9" to="10" type="xcomp"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="4" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

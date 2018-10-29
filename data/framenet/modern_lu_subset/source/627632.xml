@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="627632">
+ <sentence>
+  Personal stereos , electronic games , etc . should not be brought to school .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="personal" pos="JJ" surface="Personal"/>
+  <token id="2" lemma="stereo" pos="NNS" surface="stereos"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="electronic" pos="JJ" surface="electronic"/>
+  <token id="5" lemma="game" pos="NNS" surface="games"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="etc" pos="FW" surface="etc"/>
+  <token id="8" lemma="." pos="." surface="."/>
+  <token id="9" lemma="should" pos="MD" surface="should"/>
+  <token id="10" lemma="not" pos="RB" surface="not"/>
+  <token id="11" lemma="be" pos="VB" surface="be"/>
+  <token id="12" lemma="bring" pos="VBN" surface="brought"/>
+  <token id="13" lemma="to" pos="IN" surface="to"/>
+  <token id="14" lemma="school" pos="NN" surface="school"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="12" to="2" type="nsubjpass"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="conj"/>
+  <dep from="5" to="6" type="punct"/>
+  <dep from="5" to="7" type="conj"/>
+  <dep from="12" to="8" type="punct"/>
+  <dep from="12" to="9" type="aux"/>
+  <dep from="12" to="10" type="neg"/>
+  <dep from="12" to="11" type="auxpass"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="12" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

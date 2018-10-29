@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="240892">
+ <sentence>
+  Documents or files are given numbers and are filed in number order .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="document" pos="NNS" surface="Documents"/>
+  <token id="2" lemma="or" pos="CC" surface="or"/>
+  <token id="3" lemma="file" pos="NNS" surface="files"/>
+  <token id="4" lemma="be" pos="VBP" surface="are"/>
+  <token id="5" lemma="give" pos="VBN" surface="given"/>
+  <token id="6" lemma="number" pos="NNS" surface="numbers"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="be" pos="VBP" surface="are"/>
+  <token id="9" lemma="file" pos="VBN" surface="filed"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="number" pos="NN" surface="number"/>
+  <token id="12" lemma="order" pos="NN" surface="order"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="nsubjpass"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="cc"/>
+  <dep from="9" to="8" type="auxpass"/>
+  <dep from="5" to="9" type="conj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="5" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

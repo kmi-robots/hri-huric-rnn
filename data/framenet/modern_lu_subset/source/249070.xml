@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="249070">
+ <sentence>
+  She gestured Melanie over to her and draped the material around her shoulders .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="She"/>
+  <token id="2" lemma="gesture" pos="VBD" surface="gestured"/>
+  <token id="3" lemma="melanie" pos="NNP" surface="Melanie"/>
+  <token id="4" lemma="over" pos="RB" surface="over"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="drape" pos="VBD" surface="draped"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="material" pos="NN" surface="material"/>
+  <token id="11" lemma="around" pos="IN" surface="around"/>
+  <token id="12" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="13" lemma="shoulder" pos="NNS" surface="shoulders"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="prt"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="2" to="7" type="cc"/>
+  <dep from="2" to="8" type="conj"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="poss"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="2" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

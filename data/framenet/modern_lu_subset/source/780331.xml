@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780331">
+ <sentence>
+  After a while the Feldgendarmen left without searching the surrounding countryside .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="after" pos="IN" surface="After"/>
+  <token id="2" lemma="a" pos="DT" surface="a"/>
+  <token id="3" lemma="while" pos="NN" surface="while"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="feldgendarmen" pos="NNP" surface="Feldgendarmen"/>
+  <token id="6" lemma="leave" pos="VBD" surface="left"/>
+  <token id="7" lemma="without" pos="IN" surface="without"/>
+  <token id="8" lemma="search" pos="VBG" surface="searching"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="surround" pos="VBG" surface="surrounding"/>
+  <token id="11" lemma="countryside" pos="NN" surface="countryside"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pcomp"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="dobj"/>
+  <dep from="6" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

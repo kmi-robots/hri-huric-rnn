@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="688983">
+ <sentence>
+  Most stockbroking analysts believe it inevitable that the troubled electronics group will be taken over .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="most" pos="RBS" surface="Most"/>
+  <token id="2" lemma="stockbrok" pos="VBG" surface="stockbroking"/>
+  <token id="3" lemma="analyst" pos="NNS" surface="analysts"/>
+  <token id="4" lemma="believe" pos="VBP" surface="believe"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="6" lemma="inevitable" pos="JJ" surface="inevitable"/>
+  <token id="7" lemma="that" pos="IN" surface="that"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="troubled" pos="JJ" surface="troubled"/>
+  <token id="10" lemma="electronics" pos="NN" surface="electronics"/>
+  <token id="11" lemma="group" pos="NN" surface="group"/>
+  <token id="12" lemma="will" pos="MD" surface="will"/>
+  <token id="13" lemma="be" pos="VB" surface="be"/>
+  <token id="14" lemma="take" pos="VBN" surface="taken"/>
+  <token id="15" lemma="over" pos="RP" surface="over"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="acl"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="4" to="6" type="ccomp"/>
+  <dep from="14" to="7" type="mark"/>
+  <dep from="11" to="8" type="det"/>
+  <dep from="11" to="9" type="amod"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="14" to="11" type="nsubjpass"/>
+  <dep from="14" to="12" type="aux"/>
+  <dep from="14" to="13" type="auxpass"/>
+  <dep from="6" to="14" type="ccomp"/>
+  <dep from="14" to="15" type="prt"/>
+  <dep from="4" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Cognizer">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

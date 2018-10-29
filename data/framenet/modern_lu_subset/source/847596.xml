@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="847596">
+ <sentence>
+  She quailed under his searing glance over her body .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="She"/>
+  <token id="2" lemma="quail" pos="VBD" surface="quailed"/>
+  <token id="3" lemma="under" pos="IN" surface="under"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="5" lemma="searing" pos="JJ" surface="searing"/>
+  <token id="6" lemma="glance" pos="NN" surface="glance"/>
+  <token id="7" lemma="over" pos="IN" surface="over"/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="9" lemma="body" pos="NN" surface="body"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="6" to="4" type="poss"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="3" to="6" type="pobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="poss"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="2" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

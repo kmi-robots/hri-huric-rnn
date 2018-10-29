@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="779536">
+ <sentence>
+  Dowd perused his newly polished shoes .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="dowd" pos="NNP" surface="Dowd"/>
+  <token id="2" lemma="peruse" pos="VBD" surface="perused"/>
+  <token id="3" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="4" lemma="newly" pos="RB" surface="newly"/>
+  <token id="5" lemma="polished" pos="JJ" surface="polished"/>
+  <token id="6" lemma="shoe" pos="NNS" surface="shoes"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="6" to="3" type="poss"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="2" to="6" type="dobj"/>
+  <dep from="2" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="719342">
+ <sentence>
+  Attach the unit to the wall if required .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="attach" pos="VB" surface="Attach"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="unit" pos="NN" surface="unit"/>
+  <token id="4" lemma="to" pos="IN" surface="to"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="wall" pos="NN" surface="wall"/>
+  <token id="7" lemma="if" pos="IN" surface="if"/>
+  <token id="8" lemma="require" pos="VBN" surface="required"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="dobj"/>
+  <dep from="1" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="8" to="7" type="mark"/>
+  <dep from="1" to="8" type="advcl"/>
+  <dep from="1" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

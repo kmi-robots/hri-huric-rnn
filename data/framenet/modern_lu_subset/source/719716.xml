@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="719716">
+ <sentence>
+  Glue a Christmassy shape or picture to the front of the hat .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="glue" pos="NNP" surface="Glue"/>
+  <token id="2" lemma="a" pos="DT" surface="a"/>
+  <token id="3" lemma="christmassy" pos="NNP" surface="Christmassy"/>
+  <token id="4" lemma="shape" pos="NN" surface="shape"/>
+  <token id="5" lemma="or" pos="CC" surface="or"/>
+  <token id="6" lemma="picture" pos="NN" surface="picture"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="front" pos="NN" surface="front"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="hat" pos="NN" surface="hat"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="1" to="4" type="dobj"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="4" to="6" type="conj"/>
+  <dep from="1" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="1" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

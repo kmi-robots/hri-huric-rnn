@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1070942">
+ <sentence>
+  Tommy was carried out of the ring as Charlie was having his gloves laced up .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="tommy" pos="NNP" surface="Tommy"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="carry" pos="VBN" surface="carried"/>
+  <token id="4" lemma="out" pos="IN" surface="out"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="ring" pos="NN" surface="ring"/>
+  <token id="8" lemma="as" pos="IN" surface="as"/>
+  <token id="9" lemma="charlie" pos="NNP" surface="Charlie"/>
+  <token id="10" lemma="be" pos="VBD" surface="was"/>
+  <token id="11" lemma="have" pos="VBG" surface="having"/>
+  <token id="12" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="13" lemma="glove" pos="NNS" surface="gloves"/>
+  <token id="14" lemma="lace" pos="VBN" surface="laced"/>
+  <token id="15" lemma="up" pos="RP" surface="up"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="11" to="8" type="mark"/>
+  <dep from="11" to="9" type="nsubj"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="3" to="11" type="advcl"/>
+  <dep from="13" to="12" type="poss"/>
+  <dep from="14" to="13" type="nsubj"/>
+  <dep from="11" to="14" type="ccomp"/>
+  <dep from="14" to="15" type="prt"/>
+  <dep from="3" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Closure">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Containing_object">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

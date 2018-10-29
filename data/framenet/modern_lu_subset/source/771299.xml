@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="771299">
+ <sentence>
+  One night there was a very late entrance into the box involving doors and noise and much hissing .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="one" pos="CD" surface="One"/>
+  <token id="2" lemma="night" pos="NN" surface="night"/>
+  <token id="3" lemma="there" pos="EX" surface="there"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="very" pos="RB" surface="very"/>
+  <token id="7" lemma="late" pos="JJ" surface="late"/>
+  <token id="8" lemma="entrance" pos="NN" surface="entrance"/>
+  <token id="9" lemma="into" pos="IN" surface="into"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="box" pos="NN" surface="box"/>
+  <token id="12" lemma="involve" pos="VBG" surface="involving"/>
+  <token id="13" lemma="door" pos="NNS" surface="doors"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="noise" pos="NN" surface="noise"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="much" pos="JJ" surface="much"/>
+  <token id="18" lemma="hissing" pos="NN" surface="hissing"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="4" to="2" type="npadvmod"/>
+  <dep from="4" to="3" type="expl"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="8" to="5" type="det"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="4" to="8" type="attr"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="acl"/>
+  <dep from="12" to="13" type="dobj"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="13" to="16" type="cc"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="13" to="18" type="conj"/>
+  <dep from="4" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770575">
+ <sentence>
+  He said to me " You come along , Harry . "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="say" pos="VBD" surface="said"/>
+  <token id="3" lemma="to" pos="IN" surface="to"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="5" lemma='"' pos="``" surface='"'/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="You"/>
+  <token id="7" lemma="come" pos="VBP" surface="come"/>
+  <token id="8" lemma="along" pos="RP" surface="along"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="harry" pos="NNP" surface="Harry"/>
+  <token id="11" lemma="." pos="." surface="."/>
+  <token id="12" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="2" to="5" type="punct"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="2" to="7" type="ccomp"/>
+  <dep from="7" to="8" type="advmod"/>
+  <dep from="7" to="9" type="punct"/>
+  <dep from="7" to="10" type="npadvmod"/>
+  <dep from="2" to="11" type="punct"/>
+  <dep from="2" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

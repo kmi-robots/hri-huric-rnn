@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="717901">
+ <sentence>
+  It is dark outside and I button my jacket .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="It"/>
+  <token id="2" lemma="be" pos="VBZ" surface="is"/>
+  <token id="3" lemma="dark" pos="JJ" surface="dark"/>
+  <token id="4" lemma="outside" pos="RB" surface="outside"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="7" lemma="button" pos="VBP" surface="button"/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="9" lemma="jacket" pos="NN" surface="jacket"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="acomp"/>
+  <dep from="2" to="4" type="advmod"/>
+  <dep from="2" to="5" type="cc"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="2" to="7" type="conj"/>
+  <dep from="9" to="8" type="poss"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="7" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Closure">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Containing_object">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Fastener">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

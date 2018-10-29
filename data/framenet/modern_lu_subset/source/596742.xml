@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="596742">
+ <sentence>
+  I 've had someone trailing you since that meeting at the meat warehouse .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="'ve" pos="VBP" surface="'ve"/>
+  <token id="3" lemma="have" pos="VBD" surface="had"/>
+  <token id="4" lemma="someone" pos="NN" surface="someone"/>
+  <token id="5" lemma="trail" pos="VBG" surface="trailing"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="7" lemma="since" pos="IN" surface="since"/>
+  <token id="8" lemma="that" pos="DT" surface="that"/>
+  <token id="9" lemma="meeting" pos="NN" surface="meeting"/>
+  <token id="10" lemma="at" pos="IN" surface="at"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="meat" pos="NN" surface="meat"/>
+  <token id="13" lemma="warehouse" pos="NN" surface="warehouse"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="3" to="5" type="ccomp"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

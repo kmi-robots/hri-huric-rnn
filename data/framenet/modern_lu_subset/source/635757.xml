@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="635757">
+ <sentence>
+  Gloria tucked the blanket around Dot and kissed the tip of her nose .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="gloria" pos="NNP" surface="Gloria"/>
+  <token id="2" lemma="tuck" pos="VBD" surface="tucked"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="blanket" pos="NN" surface="blanket"/>
+  <token id="5" lemma="around" pos="IN" surface="around"/>
+  <token id="6" lemma="dot" pos="NNP" surface="Dot"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="kiss" pos="VBD" surface="kissed"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="tip" pos="NN" surface="tip"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="13" lemma="nose" pos="NN" surface="nose"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="2" to="7" type="cc"/>
+  <dep from="2" to="8" type="conj"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="poss"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="2" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

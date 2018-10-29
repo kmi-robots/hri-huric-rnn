@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="628287">
+ <sentence>
+  The iodine-131 deposited on the ground would decay in a few weeks .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="iodine-131" pos="NN" surface="iodine-131"/>
+  <token id="3" lemma="deposit" pos="VBD" surface="deposited"/>
+  <token id="4" lemma="on" pos="IN" surface="on"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="ground" pos="NN" surface="ground"/>
+  <token id="7" lemma="would" pos="MD" surface="would"/>
+  <token id="8" lemma="decay" pos="VB" surface="decay"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="few" pos="JJ" surface="few"/>
+  <token id="12" lemma="week" pos="NNS" surface="weeks"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="8" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="acl"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="8" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

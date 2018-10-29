@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="628431">
+ <sentence>
+  Science can be embedded in many other activities .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="science" pos="NN" surface="Science"/>
+  <token id="2" lemma="can" pos="MD" surface="can"/>
+  <token id="3" lemma="be" pos="VB" surface="be"/>
+  <token id="4" lemma="embed" pos="VBN" surface="embedded"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="many" pos="JJ" surface="many"/>
+  <token id="7" lemma="other" pos="JJ" surface="other"/>
+  <token id="8" lemma="activity" pos="NNS" surface="activities"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubjpass"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="4" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

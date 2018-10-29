@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4102403">
+ <sentence>
+  Democrats forced the Senate into a rare closed door session .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="democrats" pos="NNPS" surface="Democrats"/>
+  <token id="2" lemma="force" pos="VBD" surface="forced"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="senate" pos="NNP" surface="Senate"/>
+  <token id="5" lemma="into" pos="IN" surface="into"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="rare" pos="JJ" surface="rare"/>
+  <token id="8" lemma="close" pos="VBN" surface="closed"/>
+  <token id="9" lemma="door" pos="NN" surface="door"/>
+  <token id="10" lemma="session" pos="NN" surface="session"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="10" to="6" type="det"/>
+  <dep from="10" to="7" type="amod"/>
+  <dep from="10" to="8" type="amod"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="5" to="10" type="pobj"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Closure">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Container_portal">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

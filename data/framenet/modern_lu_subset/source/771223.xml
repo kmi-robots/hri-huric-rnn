@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="771223">
+ <sentence>
+  Paul noted little of the play , being only concerned with the entrances of Dinah .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="paul" pos="NNP" surface="Paul"/>
+  <token id="2" lemma="note" pos="VBD" surface="noted"/>
+  <token id="3" lemma="little" pos="JJ" surface="little"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="play" pos="NN" surface="play"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="be" pos="VBG" surface="being"/>
+  <token id="9" lemma="only" pos="RB" surface="only"/>
+  <token id="10" lemma="concerned" pos="JJ" surface="concerned"/>
+  <token id="11" lemma="with" pos="IN" surface="with"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="entrance" pos="NNS" surface="entrances"/>
+  <token id="14" lemma="of" pos="IN" surface="of"/>
+  <token id="15" lemma="dinah" pos="NNP" surface="Dinah"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="2" to="7" type="punct"/>
+  <dep from="2" to="8" type="advcl"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="8" to="10" type="acomp"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="2" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="631811">
+ <sentence>
+  Olive parked badly and swore .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="olive" pos="NNP" surface="Olive"/>
+  <token id="2" lemma="park" pos="VBD" surface="parked"/>
+  <token id="3" lemma="badly" pos="RB" surface="badly"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="swear" pos="VBD" surface="swore"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="advmod"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="3" to="5" type="conj"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

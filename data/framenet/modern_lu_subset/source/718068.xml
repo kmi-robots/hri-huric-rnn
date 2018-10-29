@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="718068">
+ <sentence>
+  ` He 's going to her place , " said Lee , unbuckling his belt .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="``" surface="`"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="3" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="4" lemma="go" pos="VBG" surface="going"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="7" lemma="place" pos="NN" surface="place"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma='"' pos="''" surface='"'/>
+  <token id="10" lemma="say" pos="VBD" surface="said"/>
+  <token id="11" lemma="lee" pos="NNP" surface="Lee"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="unbuckle" pos="VBG" surface="unbuckling"/>
+  <token id="14" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="15" lemma="belt" pos="NN" surface="belt"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="punct"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="10" to="4" type="ccomp"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="poss"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="10" to="8" type="punct"/>
+  <dep from="10" to="9" type="punct"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="nsubj"/>
+  <dep from="10" to="12" type="punct"/>
+  <dep from="10" to="13" type="advcl"/>
+  <dep from="15" to="14" type="poss"/>
+  <dep from="13" to="15" type="dobj"/>
+  <dep from="10" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Closure">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Containing_object">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Fastener">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

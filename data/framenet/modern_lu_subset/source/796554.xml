@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="796554">
+ <sentence>
+  Plastic bags are just reaching China and are still too precious to be readily disposable .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="plastic" pos="JJ" surface="Plastic"/>
+  <token id="2" lemma="bag" pos="NNS" surface="bags"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="just" pos="RB" surface="just"/>
+  <token id="5" lemma="reach" pos="VBG" surface="reaching"/>
+  <token id="6" lemma="china" pos="NNP" surface="China"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="be" pos="VBP" surface="are"/>
+  <token id="9" lemma="still" pos="RB" surface="still"/>
+  <token id="10" lemma="too" pos="RB" surface="too"/>
+  <token id="11" lemma="precious" pos="JJ" surface="precious"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="be" pos="VB" surface="be"/>
+  <token id="14" lemma="readily" pos="RB" surface="readily"/>
+  <token id="15" lemma="disposable" pos="JJ" surface="disposable"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="5" to="2" type="nsubj"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="cc"/>
+  <dep from="5" to="8" type="conj"/>
+  <dep from="8" to="9" type="advmod"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="8" to="11" type="acomp"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="11" to="13" type="xcomp"/>
+  <dep from="15" to="14" type="advmod"/>
+  <dep from="13" to="15" type="acomp"/>
+  <dep from="5" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

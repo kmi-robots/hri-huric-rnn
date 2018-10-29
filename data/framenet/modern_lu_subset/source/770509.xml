@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770509">
+ <sentence>
+  “ If you will come with me , gentlemen .
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface="“"/>
+  <token id="2" lemma="if" pos="IN" surface="If"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="4" lemma="will" pos="MD" surface="will"/>
+  <token id="5" lemma="come" pos="VB" surface="come"/>
+  <token id="6" lemma="with" pos="IN" surface="with"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="gentleman" pos="NNS" surface="gentlemen"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="5" to="2" type="mark"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="1" to="5" type="advcl"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="5" to="8" type="punct"/>
+  <dep from="5" to="9" type="npadvmod"/>
+  <dep from="1" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

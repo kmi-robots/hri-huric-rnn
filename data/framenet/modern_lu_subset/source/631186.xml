@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="631186">
+ <sentence>
+  The slides were then air dried and mounted in glycerine jelly .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="slide" pos="NNS" surface="slides"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="then" pos="RB" surface="then"/>
+  <token id="5" lemma="air" pos="NN" surface="air"/>
+  <token id="6" lemma="dry" pos="VBN" surface="dried"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="mount" pos="VBN" surface="mounted"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="glycerine" pos="NN" surface="glycerine"/>
+  <token id="11" lemma="jelly" pos="RB" surface="jelly"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="advmod"/>
+  <dep from="6" to="5" type="npadvmod"/>
+  <dep from="3" to="6" type="acomp"/>
+  <dep from="6" to="7" type="cc"/>
+  <dep from="6" to="8" type="conj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="8" to="11" type="advmod"/>
+  <dep from="3" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

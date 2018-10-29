@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="632987">
+ <sentence>
+  During a horse show he positioned himself at the edge of the arena .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="during" pos="IN" surface="During"/>
+  <token id="2" lemma="a" pos="DT" surface="a"/>
+  <token id="3" lemma="horse" pos="NN" surface="horse"/>
+  <token id="4" lemma="show" pos="NN" surface="show"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="6" lemma="position" pos="VBD" surface="positioned"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="himself"/>
+  <token id="8" lemma="at" pos="IN" surface="at"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="edge" pos="NN" surface="edge"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="arena" pos="NN" surface="arena"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="1" to="4" type="pobj"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="6" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="6" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

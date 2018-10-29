@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1406860">
+ <sentence>
+  The bacon was stored under the station arches on arrival at Paddington but the meat was conveyed to Smithfield .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="bacon" pos="NN" surface="bacon"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="store" pos="VBN" surface="stored"/>
+  <token id="5" lemma="under" pos="IN" surface="under"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="station" pos="NN" surface="station"/>
+  <token id="8" lemma="arch" pos="VBZ" surface="arches"/>
+  <token id="9" lemma="on" pos="IN" surface="on"/>
+  <token id="10" lemma="arrival" pos="NN" surface="arrival"/>
+  <token id="11" lemma="at" pos="IN" surface="at"/>
+  <token id="12" lemma="paddington" pos="NNP" surface="Paddington"/>
+  <token id="13" lemma="but" pos="CC" surface="but"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="meat" pos="NN" surface="meat"/>
+  <token id="16" lemma="be" pos="VBD" surface="was"/>
+  <token id="17" lemma="convey" pos="VBN" surface="conveyed"/>
+  <token id="18" lemma="to" pos="IN" surface="to"/>
+  <token id="19" lemma="smithfield" pos="NNP" surface="Smithfield"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="8" to="13" type="cc"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="17" to="15" type="nsubjpass"/>
+  <dep from="17" to="16" type="auxpass"/>
+  <dep from="4" to="17" type="conj"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="18" to="19" type="pobj"/>
+  <dep from="4" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

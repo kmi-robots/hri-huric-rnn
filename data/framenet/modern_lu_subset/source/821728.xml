@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="821728">
+ <sentence>
+  As shelves are added , use the holes in each bracket to anchor shelf to brackets .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="as" pos="IN" surface="As"/>
+  <token id="2" lemma="shelf" pos="NNS" surface="shelves"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="add" pos="VBN" surface="added"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="use" pos="VB" surface="use"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="hole" pos="NNS" surface="holes"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="each" pos="DT" surface="each"/>
+  <token id="11" lemma="bracket" pos="NN" surface="bracket"/>
+  <token id="12" lemma="to" pos="IN" surface="to"/>
+  <token id="13" lemma="anchor" pos="NN" surface="anchor"/>
+  <token id="14" lemma="shelf" pos="NN" surface="shelf"/>
+  <token id="15" lemma="to" pos="IN" surface="to"/>
+  <token id="16" lemma="bracket" pos="NNS" surface="brackets"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="mark"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="6" to="4" type="advcl"/>
+  <dep from="6" to="5" type="punct"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="6" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="6" to="13" type="xcomp"/>
+  <dep from="13" to="14" type="dobj"/>
+  <dep from="13" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="6" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

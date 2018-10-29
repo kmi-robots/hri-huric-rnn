@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="711355">
+ <sentence>
+  Doreen went on , ` Is there a porter or a steward to carry my bag from the car ? "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="doreen" pos="NNP" surface="Doreen"/>
+  <token id="2" lemma="go" pos="VBD" surface="went"/>
+  <token id="3" lemma="on" pos="RP" surface="on"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="`" pos="''" surface="`"/>
+  <token id="6" lemma="be" pos="VBZ" surface="Is"/>
+  <token id="7" lemma="there" pos="EX" surface="there"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="porter" pos="NN" surface="porter"/>
+  <token id="10" lemma="or" pos="CC" surface="or"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="steward" pos="NN" surface="steward"/>
+  <token id="13" lemma="to" pos="TO" surface="to"/>
+  <token id="14" lemma="carry" pos="VB" surface="carry"/>
+  <token id="15" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="16" lemma="bag" pos="NN" surface="bag"/>
+  <token id="17" lemma="from" pos="IN" surface="from"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="car" pos="NN" surface="car"/>
+  <token id="20" lemma="?" pos="." surface="?"/>
+  <token id="21" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prt"/>
+  <dep from="2" to="4" type="punct"/>
+  <dep from="2" to="5" type="punct"/>
+  <dep from="2" to="6" type="ccomp"/>
+  <dep from="6" to="7" type="expl"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="6" to="9" type="attr"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="9" to="12" type="conj"/>
+  <dep from="14" to="13" type="aux"/>
+  <dep from="6" to="14" type="advcl"/>
+  <dep from="16" to="15" type="poss"/>
+  <dep from="14" to="16" type="dobj"/>
+  <dep from="14" to="17" type="prep"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="2" to="20" type="punct"/>
+  <dep from="2" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

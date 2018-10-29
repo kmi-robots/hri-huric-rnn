@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1238756">
+ <sentence>
+  The tapes were seized in raids on two sites in Gloucestershire .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="tape" pos="NNS" surface="tapes"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="seize" pos="VBN" surface="seized"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="raid" pos="NNS" surface="raids"/>
+  <token id="7" lemma="on" pos="IN" surface="on"/>
+  <token id="8" lemma="two" pos="CD" surface="two"/>
+  <token id="9" lemma="site" pos="NNS" surface="sites"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="gloucestershire" pos="NNP" surface="Gloucestershire"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="nummod"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="4" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Taking">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Containing_event">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

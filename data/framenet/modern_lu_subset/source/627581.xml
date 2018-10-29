@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="627581">
+ <sentence>
+  When Otto and Jean-Claude joined me on the terrace an hour or so later , they brought iced drinks .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="when" pos="WRB" surface="When"/>
+  <token id="2" lemma="otto" pos="NNP" surface="Otto"/>
+  <token id="3" lemma="and" pos="CC" surface="and"/>
+  <token id="4" lemma="jean-claude" pos="NNP" surface="Jean-Claude"/>
+  <token id="5" lemma="join" pos="VBD" surface="joined"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="7" lemma="on" pos="IN" surface="on"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="terrace" pos="NN" surface="terrace"/>
+  <token id="10" lemma="an" pos="DT" surface="an"/>
+  <token id="11" lemma="hour" pos="NN" surface="hour"/>
+  <token id="12" lemma="or" pos="CC" surface="or"/>
+  <token id="13" lemma="so" pos="RB" surface="so"/>
+  <token id="14" lemma="later" pos="RB" surface="later"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="17" lemma="bring" pos="VBD" surface="brought"/>
+  <token id="18" lemma="iced" pos="JJ" surface="iced"/>
+  <token id="19" lemma="drink" pos="NNS" surface="drinks"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="advmod"/>
+  <dep from="5" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="17" to="5" type="advcl"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="14" to="11" type="npadvmod"/>
+  <dep from="13" to="12" type="cc"/>
+  <dep from="11" to="13" type="nummod"/>
+  <dep from="5" to="14" type="advmod"/>
+  <dep from="17" to="15" type="punct"/>
+  <dep from="17" to="16" type="nsubj"/>
+  <dep from="0" to="17" type="root"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="17" to="19" type="dobj"/>
+  <dep from="17" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="632067">
+ <sentence>
+  1 Place the lamb in a dish and sprinkle over half of the rosemary and thyme and one tablespoon of the oil .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="1" pos="LS" surface="1"/>
+  <token id="2" lemma="place" pos="VB" surface="Place"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="lamb" pos="NN" surface="lamb"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="dish" pos="NN" surface="dish"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="sprinkle" pos="VB" surface="sprinkle"/>
+  <token id="10" lemma="over" pos="IN" surface="over"/>
+  <token id="11" lemma="half" pos="NN" surface="half"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="rosemary" pos="JJ" surface="rosemary"/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="thyme" pos="NN" surface="thyme"/>
+  <token id="17" lemma="and" pos="CC" surface="and"/>
+  <token id="18" lemma="one" pos="CD" surface="one"/>
+  <token id="19" lemma="tablespoon" pos="NN" surface="tablespoon"/>
+  <token id="20" lemma="of" pos="IN" surface="of"/>
+  <token id="21" lemma="the" pos="DT" surface="the"/>
+  <token id="22" lemma="oil" pos="NN" surface="oil"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="2" to="8" type="cc"/>
+  <dep from="2" to="9" type="conj"/>
+  <dep from="9" to="10" type="prt"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="14" to="15" type="cc"/>
+  <dep from="14" to="16" type="conj"/>
+  <dep from="2" to="17" type="cc"/>
+  <dep from="19" to="18" type="nummod"/>
+  <dep from="2" to="19" type="conj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="22" to="21" type="det"/>
+  <dep from="20" to="22" type="pobj"/>
+  <dep from="2" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

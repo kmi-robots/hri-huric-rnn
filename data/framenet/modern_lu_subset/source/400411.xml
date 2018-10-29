@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="400411">
+ <sentence>
+  He listened carefully while she recalled the arrival of Adam Carver and her conversation with him .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="listen" pos="VBD" surface="listened"/>
+  <token id="3" lemma="carefully" pos="RB" surface="carefully"/>
+  <token id="4" lemma="while" pos="IN" surface="while"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="6" lemma="recall" pos="VBD" surface="recalled"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="arrival" pos="NN" surface="arrival"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="adam" pos="NNP" surface="Adam"/>
+  <token id="11" lemma="carver" pos="NNP" surface="Carver"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="14" lemma="conversation" pos="NN" surface="conversation"/>
+  <token id="15" lemma="with" pos="IN" surface="with"/>
+  <token id="16" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="advmod"/>
+  <dep from="6" to="4" type="mark"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="2" to="6" type="advcl"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="8" to="12" type="cc"/>
+  <dep from="14" to="13" type="poss"/>
+  <dep from="8" to="14" type="conj"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="2" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

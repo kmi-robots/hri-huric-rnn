@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1282461">
+ <sentence>
+  Serum samples were obtained from healthy blood donors , patients with metastatic colorectal carcinoma without evidence of infection , and from patients with inflammatory bowel disease .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="serum" pos="NNP" surface="Serum"/>
+  <token id="2" lemma="sample" pos="NNS" surface="samples"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="obtain" pos="VBN" surface="obtained"/>
+  <token id="5" lemma="from" pos="IN" surface="from"/>
+  <token id="6" lemma="healthy" pos="JJ" surface="healthy"/>
+  <token id="7" lemma="blood" pos="NN" surface="blood"/>
+  <token id="8" lemma="donor" pos="NNS" surface="donors"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="patient" pos="NNS" surface="patients"/>
+  <token id="11" lemma="with" pos="IN" surface="with"/>
+  <token id="12" lemma="metastatic" pos="JJ" surface="metastatic"/>
+  <token id="13" lemma="colorectal" pos="NN" surface="colorectal"/>
+  <token id="14" lemma="carcinoma" pos="NN" surface="carcinoma"/>
+  <token id="15" lemma="without" pos="IN" surface="without"/>
+  <token id="16" lemma="evidence" pos="NN" surface="evidence"/>
+  <token id="17" lemma="of" pos="IN" surface="of"/>
+  <token id="18" lemma="infection" pos="NN" surface="infection"/>
+  <token id="19" lemma="," pos="," surface=","/>
+  <token id="20" lemma="and" pos="CC" surface="and"/>
+  <token id="21" lemma="from" pos="IN" surface="from"/>
+  <token id="22" lemma="patient" pos="NNS" surface="patients"/>
+  <token id="23" lemma="with" pos="IN" surface="with"/>
+  <token id="24" lemma="inflammatory" pos="JJ" surface="inflammatory"/>
+  <token id="25" lemma="bowel" pos="NN" surface="bowel"/>
+  <token id="26" lemma="disease" pos="NN" surface="disease"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="14" to="12" type="amod"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="4" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="17" to="18" type="pobj"/>
+  <dep from="4" to="19" type="punct"/>
+  <dep from="4" to="20" type="cc"/>
+  <dep from="4" to="21" type="conj"/>
+  <dep from="21" to="22" type="pobj"/>
+  <dep from="22" to="23" type="prep"/>
+  <dep from="26" to="24" type="amod"/>
+  <dep from="26" to="25" type="compound"/>
+  <dep from="23" to="26" type="pobj"/>
+  <dep from="4" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Donor">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

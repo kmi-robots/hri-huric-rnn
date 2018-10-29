@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1363265">
+ <sentence>
+  Shrub roses were trussed to let people pass ; signs erected to divert visitors from the non-scenic compost heap .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="shrub" pos="NNP" surface="Shrub"/>
+  <token id="2" lemma="rose" pos="NNS" surface="roses"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="truss" pos="VBN" surface="trussed"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="let" pos="VB" surface="let"/>
+  <token id="7" lemma="people" pos="NNS" surface="people"/>
+  <token id="8" lemma="pass" pos="VB" surface="pass"/>
+  <token id="9" lemma=";" pos=":" surface=";"/>
+  <token id="10" lemma="sign" pos="NNS" surface="signs"/>
+  <token id="11" lemma="erect" pos="VBN" surface="erected"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="divert" pos="VB" surface="divert"/>
+  <token id="14" lemma="visitor" pos="NNS" surface="visitors"/>
+  <token id="15" lemma="from" pos="IN" surface="from"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="non-scenic" pos="JJ" surface="non-scenic"/>
+  <token id="18" lemma="compost" pos="NN" surface="compost"/>
+  <token id="19" lemma="heap" pos="NN" surface="heap"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="11" to="4" type="ccomp"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="4" to="6" type="xcomp"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="6" to="8" type="ccomp"/>
+  <dep from="11" to="9" type="punct"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="11" to="13" type="xcomp"/>
+  <dep from="13" to="14" type="dobj"/>
+  <dep from="13" to="15" type="prep"/>
+  <dep from="19" to="16" type="det"/>
+  <dep from="19" to="17" type="amod"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="15" to="19" type="pobj"/>
+  <dep from="11" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Items">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Purpose">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

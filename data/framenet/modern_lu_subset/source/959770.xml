@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="959770">
+ <sentence>
+  My feet leave the ground , and I start to float upwards .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP$" surface="My"/>
+  <token id="2" lemma="foot" pos="NNS" surface="feet"/>
+  <token id="3" lemma="leave" pos="VBP" surface="leave"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="ground" pos="NN" surface="ground"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="9" lemma="start" pos="VBP" surface="start"/>
+  <token id="10" lemma="to" pos="TO" surface="to"/>
+  <token id="11" lemma="float" pos="VB" surface="float"/>
+  <token id="12" lemma="upwards" pos="RB" surface="upwards"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="poss"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="punct"/>
+  <dep from="3" to="7" type="cc"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="3" to="9" type="conj"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="9" to="11" type="xcomp"/>
+  <dep from="11" to="12" type="advmod"/>
+  <dep from="9" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

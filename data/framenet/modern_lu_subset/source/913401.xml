@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="913401">
+ <sentence>
+  " I can fix a trellis to that garage wall , and we can have climbing plants all over it .
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="3" lemma="can" pos="MD" surface="can"/>
+  <token id="4" lemma="fix" pos="VB" surface="fix"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="trellis" pos="NN" surface="trellis"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="that" pos="DT" surface="that"/>
+  <token id="9" lemma="garage" pos="NN" surface="garage"/>
+  <token id="10" lemma="wall" pos="NN" surface="wall"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="14" lemma="can" pos="MD" surface="can"/>
+  <token id="15" lemma="have" pos="VB" surface="have"/>
+  <token id="16" lemma="climb" pos="VBG" surface="climbing"/>
+  <token id="17" lemma="plant" pos="NNS" surface="plants"/>
+  <token id="18" lemma="all" pos="RB" surface="all"/>
+  <token id="19" lemma="over" pos="IN" surface="over"/>
+  <token id="20" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="punct"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="4" to="11" type="punct"/>
+  <dep from="4" to="12" type="cc"/>
+  <dep from="15" to="13" type="nsubj"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="4" to="15" type="conj"/>
+  <dep from="15" to="16" type="xcomp"/>
+  <dep from="16" to="17" type="dobj"/>
+  <dep from="19" to="18" type="advmod"/>
+  <dep from="16" to="19" type="prep"/>
+  <dep from="19" to="20" type="pobj"/>
+  <dep from="15" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

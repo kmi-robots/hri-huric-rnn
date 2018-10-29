@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4116578">
+ <sentence>
+  This means that the Directory must be able to handle national characters not found in the US-ASCII repetoire .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="this" pos="DT" surface="This"/>
+  <token id="2" lemma="mean" pos="VBZ" surface="means"/>
+  <token id="3" lemma="that" pos="IN" surface="that"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="directory" pos="NNP" surface="Directory"/>
+  <token id="6" lemma="must" pos="MD" surface="must"/>
+  <token id="7" lemma="be" pos="VB" surface="be"/>
+  <token id="8" lemma="able" pos="JJ" surface="able"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="handle" pos="VB" surface="handle"/>
+  <token id="11" lemma="national" pos="JJ" surface="national"/>
+  <token id="12" lemma="character" pos="NNS" surface="characters"/>
+  <token id="13" lemma="not" pos="RB" surface="not"/>
+  <token id="14" lemma="find" pos="VBN" surface="found"/>
+  <token id="15" lemma="in" pos="IN" surface="in"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="us-ascii" pos="NNP" surface="US-ASCII"/>
+  <token id="18" lemma="repetoire" pos="NN" surface="repetoire"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="7" to="3" type="mark"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="7" to="5" type="nsubj"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="2" to="7" type="ccomp"/>
+  <dep from="7" to="8" type="acomp"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="8" to="10" type="xcomp"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="14" to="13" type="neg"/>
+  <dep from="12" to="14" type="acl"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="18" to="16" type="det"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="15" to="18" type="pobj"/>
+  <dep from="2" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_located">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

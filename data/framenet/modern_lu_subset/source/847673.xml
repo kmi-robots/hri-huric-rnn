@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="847673">
+ <sentence>
+  After a while he gave her a sidelong glance under his enviable black lashes .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="after" pos="IN" surface="After"/>
+  <token id="2" lemma="a" pos="DT" surface="a"/>
+  <token id="3" lemma="while" pos="NN" surface="while"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="5" lemma="give" pos="VBD" surface="gave"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="sidelong" pos="JJ" surface="sidelong"/>
+  <token id="9" lemma="glance" pos="NN" surface="glance"/>
+  <token id="10" lemma="under" pos="IN" surface="under"/>
+  <token id="11" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="12" lemma="enviable" pos="JJ" surface="enviable"/>
+  <token id="13" lemma="black" pos="JJ" surface="black"/>
+  <token id="14" lemma="lash" pos="NNS" surface="lashes"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="dative"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="5" to="9" type="dobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="14" to="11" type="poss"/>
+  <dep from="14" to="12" type="amod"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="10" to="14" type="pobj"/>
+  <dep from="5" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Body_part">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

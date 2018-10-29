@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1404486">
+ <sentence>
+  He also needed ships to patrol the Channel and to transport his armies to France .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="also" pos="RB" surface="also"/>
+  <token id="3" lemma="need" pos="VBD" surface="needed"/>
+  <token id="4" lemma="ship" pos="NNS" surface="ships"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="patrol" pos="VB" surface="patrol"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="channel" pos="NNP" surface="Channel"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="to" pos="TO" surface="to"/>
+  <token id="11" lemma="transport" pos="VB" surface="transport"/>
+  <token id="12" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="13" lemma="army" pos="NNS" surface="armies"/>
+  <token id="14" lemma="to" pos="IN" surface="to"/>
+  <token id="15" lemma="france" pos="NNP" surface="France"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="4" to="6" type="relcl"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="6" to="9" type="cc"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="6" to="11" type="conj"/>
+  <dep from="13" to="12" type="poss"/>
+  <dep from="11" to="13" type="dobj"/>
+  <dep from="11" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="3" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Carrier">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="719883">
+ <sentence>
+  At the Raja 's insistence Tara was chained up to a 500 year old tree .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="at" pos="IN" surface="At"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="raja" pos="NNP" surface="Raja"/>
+  <token id="4" lemma="'s" pos="POS" surface="'s"/>
+  <token id="5" lemma="insistence" pos="NN" surface="insistence"/>
+  <token id="6" lemma="tara" pos="NNP" surface="Tara"/>
+  <token id="7" lemma="be" pos="VBD" surface="was"/>
+  <token id="8" lemma="chain" pos="VBN" surface="chained"/>
+  <token id="9" lemma="up" pos="RP" surface="up"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="500" pos="CD" surface="500"/>
+  <token id="13" lemma="year" pos="NN" surface="year"/>
+  <token id="14" lemma="old" pos="JJ" surface="old"/>
+  <token id="15" lemma="tree" pos="NN" surface="tree"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="5" to="3" type="poss"/>
+  <dep from="3" to="4" type="case"/>
+  <dep from="1" to="5" type="pobj"/>
+  <dep from="8" to="6" type="nsubjpass"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prt"/>
+  <dep from="8" to="10" type="prep"/>
+  <dep from="15" to="11" type="det"/>
+  <dep from="13" to="12" type="nummod"/>
+  <dep from="14" to="13" type="npadvmod"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="10" to="15" type="pobj"/>
+  <dep from="8" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Result">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="631405">
+ <sentence>
+  Go and pack a few things , enough for a couple of days .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="go" pos="VB" surface="Go"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="pack" pos="VB" surface="pack"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="few" pos="JJ" surface="few"/>
+  <token id="6" lemma="thing" pos="NNS" surface="things"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="enough" pos="RB" surface="enough"/>
+  <token id="9" lemma="for" pos="IN" surface="for"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="couple" pos="NN" surface="couple"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="day" pos="NNS" surface="days"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="punct"/>
+  <dep from="3" to="8" type="advmod"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="1" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="828736">
+ <sentence>
+  The hip and femur bones were fused together and no movement was possible at that joint .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="hip" pos="NN" surface="hip"/>
+  <token id="3" lemma="and" pos="CC" surface="and"/>
+  <token id="4" lemma="femur" pos="NN" surface="femur"/>
+  <token id="5" lemma="bone" pos="NNS" surface="bones"/>
+  <token id="6" lemma="be" pos="VBD" surface="were"/>
+  <token id="7" lemma="fuse" pos="VBN" surface="fused"/>
+  <token id="8" lemma="together" pos="RB" surface="together"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="no" pos="DT" surface="no"/>
+  <token id="11" lemma="movement" pos="NN" surface="movement"/>
+  <token id="12" lemma="be" pos="VBD" surface="was"/>
+  <token id="13" lemma="possible" pos="JJ" surface="possible"/>
+  <token id="14" lemma="at" pos="IN" surface="at"/>
+  <token id="15" lemma="that" pos="DT" surface="that"/>
+  <token id="16" lemma="joint" pos="NN" surface="joint"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="7" to="2" type="nsubjpass"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="conj"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="advmod"/>
+  <dep from="7" to="9" type="cc"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="7" to="12" type="conj"/>
+  <dep from="12" to="13" type="acomp"/>
+  <dep from="12" to="14" type="prep"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="12" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Items">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Result">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

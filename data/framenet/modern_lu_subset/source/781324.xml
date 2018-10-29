@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="781324">
+ <sentence>
+  Berwickshire was surveyed by John Blackadder and Ainslie only engraved it in 1797 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="berwickshire" pos="NN" surface="Berwickshire"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="survey" pos="VBN" surface="surveyed"/>
+  <token id="4" lemma="by" pos="IN" surface="by"/>
+  <token id="5" lemma="john" pos="NNP" surface="John"/>
+  <token id="6" lemma="blackadder" pos="NNP" surface="Blackadder"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="ainslie" pos="NNP" surface="Ainslie"/>
+  <token id="9" lemma="only" pos="RB" surface="only"/>
+  <token id="10" lemma="engrave" pos="VBD" surface="engraved"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="1797" pos="CD" surface="1797"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="agent"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="6" to="7" type="cc"/>
+  <dep from="6" to="8" type="conj"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="3" to="10" type="conj"/>
+  <dep from="10" to="11" type="dobj"/>
+  <dep from="10" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Cognizer">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

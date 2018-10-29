@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="771760">
+ <sentence>
+  He returned there in 1945 after serving with the Royal Artillery throughout the war .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="return" pos="VBD" surface="returned"/>
+  <token id="3" lemma="there" pos="RB" surface="there"/>
+  <token id="4" lemma="in" pos="IN" surface="in"/>
+  <token id="5" lemma="1945" pos="CD" surface="1945"/>
+  <token id="6" lemma="after" pos="IN" surface="after"/>
+  <token id="7" lemma="serve" pos="VBG" surface="serving"/>
+  <token id="8" lemma="with" pos="IN" surface="with"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="royal" pos="NNP" surface="Royal"/>
+  <token id="11" lemma="artillery" pos="NNP" surface="Artillery"/>
+  <token id="12" lemma="throughout" pos="IN" surface="throughout"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="war" pos="NN" surface="war"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="advmod"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="2" to="6" type="prep"/>
+  <dep from="6" to="7" type="pcomp"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="7" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="2" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

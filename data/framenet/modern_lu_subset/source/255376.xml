@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="255376">
+ <sentence>
+  The table was strewn with books and papers and candle-ends jammed into empty bottles , and the floor was similarly littered , but with boots and boxes .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="table" pos="NN" surface="table"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="strew" pos="VBN" surface="strewn"/>
+  <token id="5" lemma="with" pos="IN" surface="with"/>
+  <token id="6" lemma="book" pos="NNS" surface="books"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="paper" pos="NNS" surface="papers"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="candle-end" pos="NNS" surface="candle-ends"/>
+  <token id="11" lemma="jam" pos="VBN" surface="jammed"/>
+  <token id="12" lemma="into" pos="IN" surface="into"/>
+  <token id="13" lemma="empty" pos="JJ" surface="empty"/>
+  <token id="14" lemma="bottle" pos="NNS" surface="bottles"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="floor" pos="NN" surface="floor"/>
+  <token id="19" lemma="be" pos="VBD" surface="was"/>
+  <token id="20" lemma="similarly" pos="RB" surface="similarly"/>
+  <token id="21" lemma="litter" pos="VBN" surface="littered"/>
+  <token id="22" lemma="," pos="," surface=","/>
+  <token id="23" lemma="but" pos="CC" surface="but"/>
+  <token id="24" lemma="with" pos="IN" surface="with"/>
+  <token id="25" lemma="boot" pos="NNS" surface="boots"/>
+  <token id="26" lemma="and" pos="CC" surface="and"/>
+  <token id="27" lemma="box" pos="NNS" surface="boxes"/>
+  <token id="28" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="6" to="7" type="cc"/>
+  <dep from="6" to="8" type="conj"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="6" to="11" type="acl"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="4" to="15" type="punct"/>
+  <dep from="4" to="16" type="cc"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="21" to="18" type="nsubjpass"/>
+  <dep from="21" to="19" type="auxpass"/>
+  <dep from="21" to="20" type="advmod"/>
+  <dep from="4" to="21" type="conj"/>
+  <dep from="21" to="22" type="punct"/>
+  <dep from="21" to="23" type="cc"/>
+  <dep from="21" to="24" type="conj"/>
+  <dep from="24" to="25" type="pobj"/>
+  <dep from="25" to="26" type="cc"/>
+  <dep from="25" to="27" type="conj"/>
+  <dep from="21" to="28" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

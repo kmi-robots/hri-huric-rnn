@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="703751">
+ <sentence>
+  Whole chapters can be SKIMMED in minutes rather than hours .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="whole" pos="JJ" surface="Whole"/>
+  <token id="2" lemma="chapter" pos="NNS" surface="chapters"/>
+  <token id="3" lemma="can" pos="MD" surface="can"/>
+  <token id="4" lemma="be" pos="VB" surface="be"/>
+  <token id="5" lemma="skim" pos="VBN" surface="SKIMMED"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="minute" pos="NNS" surface="minutes"/>
+  <token id="8" lemma="rather" pos="RB" surface="rather"/>
+  <token id="9" lemma="than" pos="IN" surface="than"/>
+  <token id="10" lemma="hour" pos="NNS" surface="hours"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="attr"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="7" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="4" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

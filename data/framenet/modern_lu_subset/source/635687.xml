@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="635687">
+ <sentence>
+  Both boys began stuffing the empty cases down their shirts .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="both" pos="DT" surface="Both"/>
+  <token id="2" lemma="boy" pos="NNS" surface="boys"/>
+  <token id="3" lemma="begin" pos="VBD" surface="began"/>
+  <token id="4" lemma="stuff" pos="VBG" surface="stuffing"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="empty" pos="JJ" surface="empty"/>
+  <token id="7" lemma="case" pos="NNS" surface="cases"/>
+  <token id="8" lemma="down" pos="IN" surface="down"/>
+  <token id="9" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="10" lemma="shirt" pos="NNS" surface="shirts"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="xcomp"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="4" to="8" type="prep"/>
+  <dep from="10" to="9" type="poss"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="3" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="636273">
+ <sentence>
+  They wrapped old sacks round themselves to keep out the cold .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="They"/>
+  <token id="2" lemma="wrap" pos="VBD" surface="wrapped"/>
+  <token id="3" lemma="old" pos="JJ" surface="old"/>
+  <token id="4" lemma="sack" pos="NNS" surface="sacks"/>
+  <token id="5" lemma="round" pos="VBP" surface="round"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="themselves"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="keep" pos="VB" surface="keep"/>
+  <token id="9" lemma="out" pos="RP" surface="out"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="cold" pos="NN" surface="cold"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="advcl"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="2" to="8" type="advcl"/>
+  <dep from="8" to="9" type="prt"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="8" to="11" type="dobj"/>
+  <dep from="2" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

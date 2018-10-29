@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1346363">
+ <sentence>
+  The Lions believe they were robbed by first and last-minute decisions from Australian referee Brian Kinsey which gifted New Zealand eight points in a cliffhanging match .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="lion" pos="NNS" surface="Lions"/>
+  <token id="3" lemma="believe" pos="VBP" surface="believe"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="5" lemma="be" pos="VBD" surface="were"/>
+  <token id="6" lemma="rob" pos="VBN" surface="robbed"/>
+  <token id="7" lemma="by" pos="IN" surface="by"/>
+  <token id="8" lemma="first" pos="JJ" surface="first"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="last-minute" pos="JJ" surface="last-minute"/>
+  <token id="11" lemma="decision" pos="NNS" surface="decisions"/>
+  <token id="12" lemma="from" pos="IN" surface="from"/>
+  <token id="13" lemma="australian" pos="JJ" surface="Australian"/>
+  <token id="14" lemma="referee" pos="NN" surface="referee"/>
+  <token id="15" lemma="brian" pos="NNP" surface="Brian"/>
+  <token id="16" lemma="kinsey" pos="NNP" surface="Kinsey"/>
+  <token id="17" lemma="which" pos="WDT" surface="which"/>
+  <token id="18" lemma="gift" pos="VBD" surface="gifted"/>
+  <token id="19" lemma="new" pos="NNP" surface="New"/>
+  <token id="20" lemma="zealand" pos="NNP" surface="Zealand"/>
+  <token id="21" lemma="eight" pos="CD" surface="eight"/>
+  <token id="22" lemma="point" pos="NNS" surface="points"/>
+  <token id="23" lemma="in" pos="IN" surface="in"/>
+  <token id="24" lemma="a" pos="DT" surface="a"/>
+  <token id="25" lemma="cliffhang" pos="VBG" surface="cliffhanging"/>
+  <token id="26" lemma="match" pos="NN" surface="match"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="nsubjpass"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="3" to="6" type="ccomp"/>
+  <dep from="6" to="7" type="agent"/>
+  <dep from="11" to="8" type="amod"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="7" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="16" to="14" type="compound"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="12" to="16" type="pobj"/>
+  <dep from="18" to="17" type="nsubj"/>
+  <dep from="16" to="18" type="relcl"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="18" to="20" type="dobj"/>
+  <dep from="22" to="21" type="nummod"/>
+  <dep from="18" to="22" type="npadvmod"/>
+  <dep from="18" to="23" type="prep"/>
+  <dep from="26" to="24" type="det"/>
+  <dep from="26" to="25" type="amod"/>
+  <dep from="23" to="26" type="pobj"/>
+  <dep from="3" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Donor">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

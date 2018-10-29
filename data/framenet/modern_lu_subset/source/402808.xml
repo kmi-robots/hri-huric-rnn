@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="402808">
+ <sentence>
+  From here guests can look out over Lake Como .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="from" pos="IN" surface="From"/>
+  <token id="2" lemma="here" pos="RB" surface="here"/>
+  <token id="3" lemma="guest" pos="NNS" surface="guests"/>
+  <token id="4" lemma="can" pos="MD" surface="can"/>
+  <token id="5" lemma="look" pos="VB" surface="look"/>
+  <token id="6" lemma="out" pos="RP" surface="out"/>
+  <token id="7" lemma="over" pos="IN" surface="over"/>
+  <token id="8" lemma="lake" pos="NNP" surface="Lake"/>
+  <token id="9" lemma="como" pos="NNP" surface="Como"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="prep"/>
+  <dep from="1" to="2" type="pcomp"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prt"/>
+  <dep from="5" to="7" type="prep"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="5" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Location_of_protagonist">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Perceiver_agentive">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

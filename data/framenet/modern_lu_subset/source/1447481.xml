@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1447481">
+ <sentence>
+  All this evidence suggests that the InsP 3 /calcium signalling pathway is activated by mitogenic stimuli and may contribute to the changes culminating in DNA synthesis .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="all" pos="PDT" surface="All"/>
+  <token id="2" lemma="this" pos="DT" surface="this"/>
+  <token id="3" lemma="evidence" pos="NN" surface="evidence"/>
+  <token id="4" lemma="suggest" pos="VBZ" surface="suggests"/>
+  <token id="5" lemma="that" pos="IN" surface="that"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="insp" pos="NN" surface="InsP"/>
+  <token id="8" lemma="3" pos="CD" surface="3"/>
+  <token id="9" lemma="/calcium" pos="SYM" surface="/calcium"/>
+  <token id="10" lemma="signalling" pos="NN" surface="signalling"/>
+  <token id="11" lemma="pathway" pos="NN" surface="pathway"/>
+  <token id="12" lemma="be" pos="VBZ" surface="is"/>
+  <token id="13" lemma="activate" pos="VBN" surface="activated"/>
+  <token id="14" lemma="by" pos="IN" surface="by"/>
+  <token id="15" lemma="mitogenic" pos="JJ" surface="mitogenic"/>
+  <token id="16" lemma="stimulus" pos="NNS" surface="stimuli"/>
+  <token id="17" lemma="and" pos="CC" surface="and"/>
+  <token id="18" lemma="may" pos="MD" surface="may"/>
+  <token id="19" lemma="contribute" pos="VB" surface="contribute"/>
+  <token id="20" lemma="to" pos="IN" surface="to"/>
+  <token id="21" lemma="the" pos="DT" surface="the"/>
+  <token id="22" lemma="change" pos="NNS" surface="changes"/>
+  <token id="23" lemma="culminate" pos="VBG" surface="culminating"/>
+  <token id="24" lemma="in" pos="IN" surface="in"/>
+  <token id="25" lemma="dna" pos="NN" surface="DNA"/>
+  <token id="26" lemma="synthesis" pos="NN" surface="synthesis"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="predet"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="13" to="5" type="mark"/>
+  <dep from="11" to="6" type="det"/>
+  <dep from="11" to="7" type="nmod"/>
+  <dep from="7" to="8" type="nummod"/>
+  <dep from="7" to="9" type="punct"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="13" to="11" type="nsubjpass"/>
+  <dep from="13" to="12" type="auxpass"/>
+  <dep from="4" to="13" type="ccomp"/>
+  <dep from="13" to="14" type="agent"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="13" to="17" type="cc"/>
+  <dep from="19" to="18" type="aux"/>
+  <dep from="13" to="19" type="conj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="22" to="21" type="det"/>
+  <dep from="20" to="22" type="pobj"/>
+  <dep from="22" to="23" type="acl"/>
+  <dep from="23" to="24" type="prep"/>
+  <dep from="26" to="25" type="compound"/>
+  <dep from="24" to="26" type="pobj"/>
+  <dep from="4" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_operational_state">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Device">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

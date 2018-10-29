@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4137262">
+ <sentence>
+  A blown-off turret lay 100 meters from its charred brown tank , flung like a discus .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="blown-off" pos="NN" surface="blown-off"/>
+  <token id="3" lemma="turret" pos="NN" surface="turret"/>
+  <token id="4" lemma="lie" pos="VBD" surface="lay"/>
+  <token id="5" lemma="100" pos="CD" surface="100"/>
+  <token id="6" lemma="meter" pos="NNS" surface="meters"/>
+  <token id="7" lemma="from" pos="IN" surface="from"/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="9" lemma="char" pos="VBN" surface="charred"/>
+  <token id="10" lemma="brown" pos="JJ" surface="brown"/>
+  <token id="11" lemma="tank" pos="NN" surface="tank"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="fling" pos="VBD" surface="flung"/>
+  <token id="14" lemma="like" pos="IN" surface="like"/>
+  <token id="15" lemma="a" pos="DT" surface="a"/>
+  <token id="16" lemma="discus" pos="NN" surface="discus"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="4" to="6" type="npadvmod"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="11" to="8" type="poss"/>
+  <dep from="11" to="9" type="amod"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="7" to="11" type="pobj"/>
+  <dep from="4" to="12" type="punct"/>
+  <dep from="4" to="13" type="advcl"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="4" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_located">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

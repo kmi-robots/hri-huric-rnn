@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="860810">
+ <sentence>
+  Cover with a piece of pleated greaseproof paper and foil , and secure with string .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="cover" pos="VB" surface="Cover"/>
+  <token id="2" lemma="with" pos="IN" surface="with"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="piece" pos="NN" surface="piece"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="pleated" pos="JJ" surface="pleated"/>
+  <token id="7" lemma="greaseproof" pos="JJ" surface="greaseproof"/>
+  <token id="8" lemma="paper" pos="NN" surface="paper"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="foil" pos="NN" surface="foil"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="secure" pos="JJ" surface="secure"/>
+  <token id="14" lemma="with" pos="IN" surface="with"/>
+  <token id="15" lemma="string" pos="NN" surface="string"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="1" to="11" type="punct"/>
+  <dep from="1" to="12" type="cc"/>
+  <dep from="1" to="13" type="conj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="1" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Connector">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="241010">
+ <sentence>
+  The easiest way to rectify this is to carefully file away any excess metal until a closer fit is achieved .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="easy" pos="JJS" surface="easiest"/>
+  <token id="3" lemma="way" pos="NN" surface="way"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="rectify" pos="VB" surface="rectify"/>
+  <token id="6" lemma="this" pos="DT" surface="this"/>
+  <token id="7" lemma="be" pos="VBZ" surface="is"/>
+  <token id="8" lemma="to" pos="TO" surface="to"/>
+  <token id="9" lemma="carefully" pos="RB" surface="carefully"/>
+  <token id="10" lemma="file" pos="VB" surface="file"/>
+  <token id="11" lemma="away" pos="RB" surface="away"/>
+  <token id="12" lemma="any" pos="DT" surface="any"/>
+  <token id="13" lemma="excess" pos="JJ" surface="excess"/>
+  <token id="14" lemma="metal" pos="NN" surface="metal"/>
+  <token id="15" lemma="until" pos="IN" surface="until"/>
+  <token id="16" lemma="a" pos="DT" surface="a"/>
+  <token id="17" lemma="close" pos="JJR" surface="closer"/>
+  <token id="18" lemma="fit" pos="NN" surface="fit"/>
+  <token id="19" lemma="be" pos="VBZ" surface="is"/>
+  <token id="20" lemma="achieve" pos="VBN" surface="achieved"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="7" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="relcl"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="10" to="8" type="aux"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="7" to="10" type="xcomp"/>
+  <dep from="10" to="11" type="prt"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="10" to="14" type="dobj"/>
+  <dep from="20" to="15" type="mark"/>
+  <dep from="18" to="16" type="det"/>
+  <dep from="18" to="17" type="amod"/>
+  <dep from="20" to="18" type="nsubjpass"/>
+  <dep from="20" to="19" type="auxpass"/>
+  <dep from="10" to="20" type="advcl"/>
+  <dep from="7" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Manner">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Duration">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

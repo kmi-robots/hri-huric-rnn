@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1235147">
+ <sentence>
+  Lewis was shown a version in 1932 and admired it enormously .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="lewis" pos="NNP" surface="Lewis"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="show" pos="VBN" surface="shown"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="version" pos="NN" surface="version"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="1932" pos="CD" surface="1932"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="admire" pos="VBD" surface="admired"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="11" lemma="enormously" pos="RB" surface="enormously"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="3" to="8" type="cc"/>
+  <dep from="3" to="9" type="conj"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="9" to="11" type="advmod"/>
+  <dep from="3" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Perceiver_agentive">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1210494">
+ <sentence>
+  Horses careered into the fence and sent gorse flying in all directions .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="horse" pos="NNS" surface="Horses"/>
+  <token id="2" lemma="career" pos="VBD" surface="careered"/>
+  <token id="3" lemma="into" pos="IN" surface="into"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="fence" pos="NN" surface="fence"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="send" pos="VBD" surface="sent"/>
+  <token id="8" lemma="gorse" pos="VBP" surface="gorse"/>
+  <token id="9" lemma="fly" pos="VBG" surface="flying"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="all" pos="DT" surface="all"/>
+  <token id="12" lemma="direction" pos="NNS" surface="directions"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="2" to="6" type="cc"/>
+  <dep from="2" to="7" type="conj"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="7" to="9" type="advcl"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="2" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

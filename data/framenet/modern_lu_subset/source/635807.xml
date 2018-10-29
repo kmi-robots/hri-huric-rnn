@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="635807">
+ <sentence>
+  Thread the folded end through the hold and tuck the two ends through the loop .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="thread" pos="NNP" surface="Thread"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="fold" pos="VBN" surface="folded"/>
+  <token id="4" lemma="end" pos="NN" surface="end"/>
+  <token id="5" lemma="through" pos="IN" surface="through"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="hold" pos="NN" surface="hold"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="tuck" pos="VBD" surface="tuck"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="two" pos="CD" surface="two"/>
+  <token id="12" lemma="end" pos="NNS" surface="ends"/>
+  <token id="13" lemma="through" pos="IN" surface="through"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="loop" pos="NN" surface="loop"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="12" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="1" to="4" type="dobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="1" to="8" type="cc"/>
+  <dep from="1" to="9" type="conj"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="12" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

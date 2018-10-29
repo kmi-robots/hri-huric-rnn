@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="592264">
+ <sentence>
+  He follows me about all day . "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="follow" pos="VBZ" surface="follows"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="4" lemma="about" pos="IN" surface="about"/>
+  <token id="5" lemma="all" pos="DT" surface="all"/>
+  <token id="6" lemma="day" pos="NN" surface="day"/>
+  <token id="7" lemma="." pos="." surface="."/>
+  <token id="8" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="2" to="6" type="npadvmod"/>
+  <dep from="2" to="7" type="punct"/>
+  <dep from="2" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Area">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

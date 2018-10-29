@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106169">
+ <sentence>
+  Exhibits cover fishing , seaborne trade , sea transport , and there is an aquarium .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="exhibit" pos="NNS" surface="Exhibits"/>
+  <token id="2" lemma="cover" pos="VBP" surface="cover"/>
+  <token id="3" lemma="fishing" pos="NN" surface="fishing"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="seaborne" pos="JJ" surface="seaborne"/>
+  <token id="6" lemma="trade" pos="NN" surface="trade"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="sea" pos="NN" surface="sea"/>
+  <token id="9" lemma="transport" pos="NN" surface="transport"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="there" pos="EX" surface="there"/>
+  <token id="13" lemma="be" pos="VBZ" surface="is"/>
+  <token id="14" lemma="an" pos="DT" surface="an"/>
+  <token id="15" lemma="aquarium" pos="NN" surface="aquarium"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="conj"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="conj"/>
+  <dep from="9" to="10" type="punct"/>
+  <dep from="9" to="11" type="cc"/>
+  <dep from="13" to="12" type="expl"/>
+  <dep from="2" to="13" type="conj"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="attr"/>
+  <dep from="2" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Area">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

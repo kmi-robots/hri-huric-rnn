@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="629805">
+ <sentence>
+  Ceramic floor tiles are generally laid in special adhesive rather than in a mortar screed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="ceramic" pos="JJ" surface="Ceramic"/>
+  <token id="2" lemma="floor" pos="NN" surface="floor"/>
+  <token id="3" lemma="tile" pos="NNS" surface="tiles"/>
+  <token id="4" lemma="be" pos="VBP" surface="are"/>
+  <token id="5" lemma="generally" pos="RB" surface="generally"/>
+  <token id="6" lemma="lay" pos="VBN" surface="laid"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="special" pos="JJ" surface="special"/>
+  <token id="9" lemma="adhesive" pos="NN" surface="adhesive"/>
+  <token id="10" lemma="rather" pos="RB" surface="rather"/>
+  <token id="11" lemma="than" pos="IN" surface="than"/>
+  <token id="12" lemma="in" pos="IN" surface="in"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="mortar" pos="NN" surface="mortar"/>
+  <token id="15" lemma="screed" pos="NN" surface="screed"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="amod"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="6" to="3" type="nsubjpass"/>
+  <dep from="6" to="4" type="auxpass"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="7" to="11" type="cc"/>
+  <dep from="7" to="12" type="conj"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="12" to="15" type="pobj"/>
+  <dep from="6" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

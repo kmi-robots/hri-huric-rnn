@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="959697">
+ <sentence>
+  Noisy voices floated through their windows .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="noisy" pos="NNP" surface="Noisy"/>
+  <token id="2" lemma="voice" pos="NNS" surface="voices"/>
+  <token id="3" lemma="float" pos="VBD" surface="floated"/>
+  <token id="4" lemma="through" pos="IN" surface="through"/>
+  <token id="5" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="6" lemma="window" pos="NNS" surface="windows"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="poss"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="3" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

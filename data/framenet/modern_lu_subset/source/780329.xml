@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780329">
+ <sentence>
+  He seems to search their bodies .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="seem" pos="VBZ" surface="seems"/>
+  <token id="3" lemma="to" pos="TO" surface="to"/>
+  <token id="4" lemma="search" pos="VB" surface="search"/>
+  <token id="5" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="6" lemma="body" pos="NNS" surface="bodies"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="2" to="4" type="xcomp"/>
+  <dep from="6" to="5" type="poss"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="2" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="718132">
+ <sentence>
+  As I unscrewed the burner , there was a rapid escape of gas .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="as" pos="IN" surface="As"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="3" lemma="unscrew" pos="VBD" surface="unscrewed"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="burner" pos="NN" surface="burner"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="there" pos="EX" surface="there"/>
+  <token id="8" lemma="be" pos="VBD" surface="was"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="rapid" pos="JJ" surface="rapid"/>
+  <token id="11" lemma="escape" pos="NN" surface="escape"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="gas" pos="NN" surface="gas"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="mark"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="8" to="3" type="advcl"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="8" to="6" type="punct"/>
+  <dep from="8" to="7" type="expl"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="attr"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="8" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Closure">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Containing_object">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Fastener">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

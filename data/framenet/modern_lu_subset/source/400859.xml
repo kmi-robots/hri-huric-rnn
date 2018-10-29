@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="400859">
+ <sentence>
+  Chen turned and looked across .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="chen" pos="NNP" surface="Chen"/>
+  <token id="2" lemma="turn" pos="VBD" surface="turned"/>
+  <token id="3" lemma="and" pos="CC" surface="and"/>
+  <token id="4" lemma="look" pos="VBD" surface="looked"/>
+  <token id="5" lemma="across" pos="IN" surface="across"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="4" to="5" type="advmod"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="956228">
+ <sentence>
+  On 15 April 1984 the black dust began blowing off the tailings lake .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="on" pos="IN" surface="On"/>
+  <token id="2" lemma="15" pos="CD" surface="15"/>
+  <token id="3" lemma="april" pos="NNP" surface="April"/>
+  <token id="4" lemma="1984" pos="CD" surface="1984"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="black" pos="JJ" surface="black"/>
+  <token id="7" lemma="dust" pos="NN" surface="dust"/>
+  <token id="8" lemma="begin" pos="VBD" surface="began"/>
+  <token id="9" lemma="blow" pos="VBG" surface="blowing"/>
+  <token id="10" lemma="off" pos="RP" surface="off"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="tailing" pos="NNS" surface="tailings"/>
+  <token id="13" lemma="lake" pos="VBP" surface="lake"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="prep"/>
+  <dep from="3" to="2" type="nummod"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="3" to="4" type="nummod"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="xcomp"/>
+  <dep from="9" to="10" type="prt"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="9" to="13" type="dobj"/>
+  <dep from="8" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

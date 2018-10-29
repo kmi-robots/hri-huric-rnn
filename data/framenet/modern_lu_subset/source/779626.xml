@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="779626">
+ <sentence>
+  Occasionally Tallis , masked in the Silvering , scanned the waters , but she saw no fish .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="occasionally" pos="RB" surface="Occasionally"/>
+  <token id="2" lemma="tallis" pos="NNP" surface="Tallis"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="mask" pos="VBN" surface="masked"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="silvering" pos="NNP" surface="Silvering"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="scan" pos="VBD" surface="scanned"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="water" pos="NNS" surface="waters"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="but" pos="CC" surface="but"/>
+  <token id="14" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="15" lemma="see" pos="VBD" surface="saw"/>
+  <token id="16" lemma="no" pos="DT" surface="no"/>
+  <token id="17" lemma="fish" pos="NN" surface="fish"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="advmod"/>
+  <dep from="9" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="acl"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="2" to="8" type="punct"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="9" to="12" type="punct"/>
+  <dep from="9" to="13" type="cc"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="9" to="15" type="conj"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="dobj"/>
+  <dep from="15" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

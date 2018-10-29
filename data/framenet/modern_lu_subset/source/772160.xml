@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="772160">
+ <sentence>
+  Student brothers visit from Kuwait
+ </sentence>
+ <tokens>
+  <token id="1" lemma="student" pos="NN" surface="Student"/>
+  <token id="2" lemma="brother" pos="NNS" surface="brothers"/>
+  <token id="3" lemma="visit" pos="NN" surface="visit"/>
+  <token id="4" lemma="from" pos="IN" surface="from"/>
+  <token id="5" lemma="kuwait" pos="NNP" surface="Kuwait"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

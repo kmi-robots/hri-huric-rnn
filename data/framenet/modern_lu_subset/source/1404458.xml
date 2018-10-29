@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1404458">
+ <sentence>
+  The following day a fleet of Skodas transports us west across Czechoslovakia to Adrspach .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="follow" pos="VBG" surface="following"/>
+  <token id="3" lemma="day" pos="NN" surface="day"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="fleet" pos="NN" surface="fleet"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="skodas" pos="NNP" surface="Skodas"/>
+  <token id="8" lemma="transport" pos="VBZ" surface="transports"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="us"/>
+  <token id="10" lemma="west" pos="RB" surface="west"/>
+  <token id="11" lemma="across" pos="IN" surface="across"/>
+  <token id="12" lemma="czechoslovakia" pos="NNP" surface="Czechoslovakia"/>
+  <token id="13" lemma="to" pos="IN" surface="to"/>
+  <token id="14" lemma="adrspach" pos="NNP" surface="Adrspach"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="8" to="3" type="npadvmod"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="8" to="5" type="nsubj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="8" to="10" type="advmod"/>
+  <dep from="8" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="8" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="8" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Carrier">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Area">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

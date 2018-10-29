@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1238631">
+ <sentence>
+  The government-controlled Working People 's Daily reported on Jan. 29 , 1990 , that police and Army units had seized illegal drugs worth US$14,000,000 in 1989 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="government-controlled" pos="JJ" surface="government-controlled"/>
+  <token id="3" lemma="working" pos="NNP" surface="Working"/>
+  <token id="4" lemma="people" pos="NNPS" surface="People"/>
+  <token id="5" lemma="'s" pos="POS" surface="'s"/>
+  <token id="6" lemma="daily" pos="NNP" surface="Daily"/>
+  <token id="7" lemma="report" pos="VBD" surface="reported"/>
+  <token id="8" lemma="on" pos="IN" surface="on"/>
+  <token id="9" lemma="jan." pos="NNP" surface="Jan."/>
+  <token id="10" lemma="29" pos="CD" surface="29"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="1990" pos="CD" surface="1990"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="that" pos="DT" surface="that"/>
+  <token id="15" lemma="police" pos="NN" surface="police"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="army" pos="NNP" surface="Army"/>
+  <token id="18" lemma="unit" pos="NNS" surface="units"/>
+  <token id="19" lemma="have" pos="VBD" surface="had"/>
+  <token id="20" lemma="seize" pos="VBN" surface="seized"/>
+  <token id="21" lemma="illegal" pos="JJ" surface="illegal"/>
+  <token id="22" lemma="drug" pos="NNS" surface="drugs"/>
+  <token id="23" lemma="worth" pos="JJ" surface="worth"/>
+  <token id="24" lemma="us$14,000,000" pos="NNP" surface="US$14,000,000"/>
+  <token id="25" lemma="in" pos="IN" surface="in"/>
+  <token id="26" lemma="1989" pos="CD" surface="1989"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="det"/>
+  <dep from="4" to="2" type="amod"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="6" to="4" type="poss"/>
+  <dep from="4" to="5" type="case"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="9" to="10" type="nummod"/>
+  <dep from="9" to="11" type="punct"/>
+  <dep from="9" to="12" type="nummod"/>
+  <dep from="9" to="13" type="punct"/>
+  <dep from="18" to="14" type="det"/>
+  <dep from="18" to="15" type="nmod"/>
+  <dep from="15" to="16" type="cc"/>
+  <dep from="15" to="17" type="conj"/>
+  <dep from="20" to="18" type="nsubj"/>
+  <dep from="20" to="19" type="aux"/>
+  <dep from="7" to="20" type="ccomp"/>
+  <dep from="22" to="21" type="amod"/>
+  <dep from="20" to="22" type="dobj"/>
+  <dep from="22" to="23" type="amod"/>
+  <dep from="23" to="24" type="npadvmod"/>
+  <dep from="20" to="25" type="prep"/>
+  <dep from="25" to="26" type="pobj"/>
+  <dep from="7" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Taking">
+    <lexicalUnit>
+     <token id="20"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="21"/>
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="25"/>
+     <token id="26"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

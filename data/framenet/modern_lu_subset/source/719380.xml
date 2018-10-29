@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="719380">
+ <sentence>
+  They attach themselves with their mouthparts and then release a digestive enzyme secretion which eats into the skin .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="They"/>
+  <token id="2" lemma="attach" pos="VBP" surface="attach"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="themselves"/>
+  <token id="4" lemma="with" pos="IN" surface="with"/>
+  <token id="5" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="6" lemma="mouthpart" pos="NNS" surface="mouthparts"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="then" pos="RB" surface="then"/>
+  <token id="9" lemma="release" pos="VB" surface="release"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="digestive" pos="JJ" surface="digestive"/>
+  <token id="12" lemma="enzyme" pos="NN" surface="enzyme"/>
+  <token id="13" lemma="secretion" pos="NN" surface="secretion"/>
+  <token id="14" lemma="which" pos="WDT" surface="which"/>
+  <token id="15" lemma="eat" pos="VBZ" surface="eats"/>
+  <token id="16" lemma="into" pos="IN" surface="into"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="skin" pos="NN" surface="skin"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="6" to="5" type="poss"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="2" to="7" type="cc"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="2" to="9" type="conj"/>
+  <dep from="13" to="10" type="det"/>
+  <dep from="13" to="11" type="amod"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="9" to="13" type="dobj"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="13" to="15" type="relcl"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="2" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

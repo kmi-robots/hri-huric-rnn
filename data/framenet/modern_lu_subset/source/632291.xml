@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="632291">
+ <sentence>
+  On slaughtering days all the gates were carefully locked and a long wooden ramp placed against the cellar steps .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="on" pos="IN" surface="On"/>
+  <token id="2" lemma="slaughter" pos="VBG" surface="slaughtering"/>
+  <token id="3" lemma="day" pos="NNS" surface="days"/>
+  <token id="4" lemma="all" pos="PDT" surface="all"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="gate" pos="NNS" surface="gates"/>
+  <token id="7" lemma="be" pos="VBD" surface="were"/>
+  <token id="8" lemma="carefully" pos="RB" surface="carefully"/>
+  <token id="9" lemma="lock" pos="VBN" surface="locked"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="long" pos="JJ" surface="long"/>
+  <token id="13" lemma="wooden" pos="JJ" surface="wooden"/>
+  <token id="14" lemma="ramp" pos="NN" surface="ramp"/>
+  <token id="15" lemma="place" pos="VBN" surface="placed"/>
+  <token id="16" lemma="against" pos="IN" surface="against"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="cellar" pos="NN" surface="cellar"/>
+  <token id="19" lemma="step" pos="NNS" surface="steps"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="prep"/>
+  <dep from="1" to="2" type="pcomp"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="6" to="4" type="predet"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="9" to="6" type="nsubjpass"/>
+  <dep from="9" to="7" type="auxpass"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="14" to="11" type="det"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="9" to="14" type="conj"/>
+  <dep from="14" to="15" type="acl"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="19" to="17" type="det"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="16" to="19" type="pobj"/>
+  <dep from="9" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

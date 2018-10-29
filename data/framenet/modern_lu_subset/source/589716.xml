@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="589716">
+ <sentence>
+  If help is nowhere to be found , and you ca n't outrun whoever is chasing you , then substitute cunning for speed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="if" pos="IN" surface="If"/>
+  <token id="2" lemma="help" pos="NN" surface="help"/>
+  <token id="3" lemma="be" pos="VBZ" surface="is"/>
+  <token id="4" lemma="nowhere" pos="RB" surface="nowhere"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="be" pos="VB" surface="be"/>
+  <token id="7" lemma="find" pos="VBN" surface="found"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="11" lemma="ca" pos="MD" surface="ca"/>
+  <token id="12" lemma="n't" pos="RB" surface="n't"/>
+  <token id="13" lemma="outrun" pos="VB" surface="outrun"/>
+  <token id="14" lemma="whoever" pos="WP" surface="whoever"/>
+  <token id="15" lemma="be" pos="VBZ" surface="is"/>
+  <token id="16" lemma="chase" pos="VBG" surface="chasing"/>
+  <token id="17" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="then" pos="RB" surface="then"/>
+  <token id="20" lemma="substitute" pos="VB" surface="substitute"/>
+  <token id="21" lemma="cunning" pos="NN" surface="cunning"/>
+  <token id="22" lemma="for" pos="IN" surface="for"/>
+  <token id="23" lemma="speed" pos="NN" surface="speed"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="mark"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="20" to="3" type="advcl"/>
+  <dep from="3" to="4" type="advmod"/>
+  <dep from="7" to="5" type="aux"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="4" to="7" type="xcomp"/>
+  <dep from="3" to="8" type="punct"/>
+  <dep from="3" to="9" type="cc"/>
+  <dep from="13" to="10" type="nsubj"/>
+  <dep from="13" to="11" type="aux"/>
+  <dep from="13" to="12" type="neg"/>
+  <dep from="3" to="13" type="conj"/>
+  <dep from="16" to="14" type="nsubj"/>
+  <dep from="16" to="15" type="aux"/>
+  <dep from="13" to="16" type="ccomp"/>
+  <dep from="16" to="17" type="dobj"/>
+  <dep from="20" to="18" type="punct"/>
+  <dep from="20" to="19" type="advmod"/>
+  <dep from="0" to="20" type="root"/>
+  <dep from="20" to="21" type="dobj"/>
+  <dep from="21" to="22" type="prep"/>
+  <dep from="22" to="23" type="pobj"/>
+  <dep from="20" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

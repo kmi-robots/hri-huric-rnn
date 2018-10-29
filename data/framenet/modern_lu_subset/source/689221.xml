@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="689221">
+ <sentence>
+  He probed the puffy white bags under his eyes with a tentative finger .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="probe" pos="VBD" surface="probed"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="puffy" pos="JJ" surface="puffy"/>
+  <token id="5" lemma="white" pos="JJ" surface="white"/>
+  <token id="6" lemma="bag" pos="NNS" surface="bags"/>
+  <token id="7" lemma="under" pos="IN" surface="under"/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="9" lemma="eye" pos="NNS" surface="eyes"/>
+  <token id="10" lemma="with" pos="IN" surface="with"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="tentative" pos="JJ" surface="tentative"/>
+  <token id="13" lemma="finger" pos="NN" surface="finger"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="6" to="3" type="det"/>
+  <dep from="6" to="4" type="amod"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="2" to="6" type="dobj"/>
+  <dep from="2" to="7" type="prep"/>
+  <dep from="9" to="8" type="poss"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="2" to="10" type="prep"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="2" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="829771">
+ <sentence>
+  Garvey chortled and went on fastening his boots .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="garvey" pos="NNP" surface="Garvey"/>
+  <token id="2" lemma="chortle" pos="VBD" surface="chortled"/>
+  <token id="3" lemma="and" pos="CC" surface="and"/>
+  <token id="4" lemma="go" pos="VBD" surface="went"/>
+  <token id="5" lemma="on" pos="RP" surface="on"/>
+  <token id="6" lemma="fasten" pos="VBG" surface="fastening"/>
+  <token id="7" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="8" lemma="boot" pos="NNS" surface="boots"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pcomp"/>
+  <dep from="8" to="7" type="poss"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Closure">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Containing_object">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

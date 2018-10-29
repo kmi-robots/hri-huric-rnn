@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="589892">
+ <sentence>
+  Then , by a very unlucky chance , we were seen and chased by two pirate ships .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="then" pos="RB" surface="Then"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="by" pos="IN" surface="by"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="very" pos="RB" surface="very"/>
+  <token id="6" lemma="unlucky" pos="JJ" surface="unlucky"/>
+  <token id="7" lemma="chance" pos="NN" surface="chance"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="10" lemma="be" pos="VBD" surface="were"/>
+  <token id="11" lemma="see" pos="VBN" surface="seen"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="chase" pos="VBN" surface="chased"/>
+  <token id="14" lemma="by" pos="IN" surface="by"/>
+  <token id="15" lemma="two" pos="CD" surface="two"/>
+  <token id="16" lemma="pirate" pos="JJ" surface="pirate"/>
+  <token id="17" lemma="ship" pos="NNS" surface="ships"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="11" to="1" type="advmod"/>
+  <dep from="11" to="2" type="punct"/>
+  <dep from="11" to="3" type="prep"/>
+  <dep from="7" to="4" type="det"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="3" to="7" type="pobj"/>
+  <dep from="11" to="8" type="punct"/>
+  <dep from="11" to="9" type="nsubjpass"/>
+  <dep from="11" to="10" type="auxpass"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="11" to="13" type="conj"/>
+  <dep from="13" to="14" type="agent"/>
+  <dep from="17" to="15" type="nummod"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="14" to="17" type="pobj"/>
+  <dep from="11" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Cotheme">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

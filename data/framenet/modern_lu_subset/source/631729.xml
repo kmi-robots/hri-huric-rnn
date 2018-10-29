@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="631729">
+ <sentence>
+  Usually he parked on the road , but to work on the car he ran it into the factory yard and into an unfrequented spot in a corner .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="usually" pos="RB" surface="Usually"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="3" lemma="park" pos="VBD" surface="parked"/>
+  <token id="4" lemma="on" pos="IN" surface="on"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="road" pos="NN" surface="road"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="but" pos="CC" surface="but"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="work" pos="VB" surface="work"/>
+  <token id="11" lemma="on" pos="IN" surface="on"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="car" pos="NN" surface="car"/>
+  <token id="14" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="15" lemma="run" pos="VBD" surface="ran"/>
+  <token id="16" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="17" lemma="into" pos="IN" surface="into"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="factory" pos="NN" surface="factory"/>
+  <token id="20" lemma="yard" pos="NN" surface="yard"/>
+  <token id="21" lemma="and" pos="CC" surface="and"/>
+  <token id="22" lemma="into" pos="IN" surface="into"/>
+  <token id="23" lemma="an" pos="DT" surface="an"/>
+  <token id="24" lemma="unfrequented" pos="JJ" surface="unfrequented"/>
+  <token id="25" lemma="spot" pos="NN" surface="spot"/>
+  <token id="26" lemma="in" pos="IN" surface="in"/>
+  <token id="27" lemma="a" pos="DT" surface="a"/>
+  <token id="28" lemma="corner" pos="NN" surface="corner"/>
+  <token id="29" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="advmod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="3" to="7" type="punct"/>
+  <dep from="3" to="8" type="cc"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="15" to="10" type="advcl"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="3" to="15" type="conj"/>
+  <dep from="15" to="16" type="dobj"/>
+  <dep from="15" to="17" type="prep"/>
+  <dep from="20" to="18" type="det"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="17" to="20" type="pobj"/>
+  <dep from="17" to="21" type="cc"/>
+  <dep from="17" to="22" type="conj"/>
+  <dep from="25" to="23" type="det"/>
+  <dep from="25" to="24" type="amod"/>
+  <dep from="22" to="25" type="pobj"/>
+  <dep from="25" to="26" type="prep"/>
+  <dep from="28" to="27" type="det"/>
+  <dep from="26" to="28" type="pobj"/>
+  <dep from="15" to="29" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

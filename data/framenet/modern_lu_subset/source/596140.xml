@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="596140">
+ <sentence>
+  A Dunkirk he waited for us so we could tail him through Lille and Mons into Belgium .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="dunkirk" pos="NNP" surface="Dunkirk"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="4" lemma="wait" pos="VBD" surface="waited"/>
+  <token id="5" lemma="for" pos="IN" surface="for"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="us"/>
+  <token id="7" lemma="so" pos="IN" surface="so"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="9" lemma="could" pos="MD" surface="could"/>
+  <token id="10" lemma="tail" pos="VB" surface="tail"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="12" lemma="through" pos="IN" surface="through"/>
+  <token id="13" lemma="lille" pos="NNP" surface="Lille"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="mons" pos="NNPS" surface="Mons"/>
+  <token id="16" lemma="into" pos="IN" surface="into"/>
+  <token id="17" lemma="belgium" pos="NNP" surface="Belgium"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="2" to="4" type="relcl"/>
+  <dep from="4" to="5" type="dative"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="10" to="7" type="mark"/>
+  <dep from="10" to="8" type="nsubj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="dobj"/>
+  <dep from="10" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="10" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="10" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

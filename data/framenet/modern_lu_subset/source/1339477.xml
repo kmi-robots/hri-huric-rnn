@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1339477">
+ <sentence>
+  The police must surely have carried out a more thorough examination of the rooms since the discovery of the body .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="police" pos="NN" surface="police"/>
+  <token id="3" lemma="must" pos="MD" surface="must"/>
+  <token id="4" lemma="surely" pos="RB" surface="surely"/>
+  <token id="5" lemma="have" pos="VB" surface="have"/>
+  <token id="6" lemma="carry" pos="VBN" surface="carried"/>
+  <token id="7" lemma="out" pos="RP" surface="out"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="more" pos="RBR" surface="more"/>
+  <token id="10" lemma="thorough" pos="JJ" surface="thorough"/>
+  <token id="11" lemma="examination" pos="NN" surface="examination"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="room" pos="NNS" surface="rooms"/>
+  <token id="15" lemma="since" pos="IN" surface="since"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="discovery" pos="NN" surface="discovery"/>
+  <token id="18" lemma="of" pos="IN" surface="of"/>
+  <token id="19" lemma="the" pos="DT" surface="the"/>
+  <token id="20" lemma="body" pos="NN" surface="body"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="6" to="2" type="nsubj"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="6" to="4" type="advmod"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prt"/>
+  <dep from="11" to="8" type="det"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="6" to="11" type="dobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="6" to="15" type="prep"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="20" to="19" type="det"/>
+  <dep from="18" to="20" type="pobj"/>
+  <dep from="6" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Inspecting">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Inspector">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

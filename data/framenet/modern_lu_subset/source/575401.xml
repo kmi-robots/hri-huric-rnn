@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="575401">
+ <sentence>
+  Perishable goods would perish or would have to be warehoused at an additional cost .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="perishable" pos="JJ" surface="Perishable"/>
+  <token id="2" lemma="good" pos="NNS" surface="goods"/>
+  <token id="3" lemma="would" pos="MD" surface="would"/>
+  <token id="4" lemma="perish" pos="VB" surface="perish"/>
+  <token id="5" lemma="or" pos="CC" surface="or"/>
+  <token id="6" lemma="would" pos="MD" surface="would"/>
+  <token id="7" lemma="have" pos="VB" surface="have"/>
+  <token id="8" lemma="to" pos="TO" surface="to"/>
+  <token id="9" lemma="be" pos="VB" surface="be"/>
+  <token id="10" lemma="warehouse" pos="VBN" surface="warehoused"/>
+  <token id="11" lemma="at" pos="IN" surface="at"/>
+  <token id="12" lemma="an" pos="DT" surface="an"/>
+  <token id="13" lemma="additional" pos="JJ" surface="additional"/>
+  <token id="14" lemma="cost" pos="NN" surface="cost"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="4" to="7" type="conj"/>
+  <dep from="10" to="8" type="aux"/>
+  <dep from="10" to="9" type="auxpass"/>
+  <dep from="7" to="10" type="xcomp"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="4" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

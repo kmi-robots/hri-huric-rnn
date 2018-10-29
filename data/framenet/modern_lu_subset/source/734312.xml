@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="734312">
+ <sentence>
+  He bolts off , down the wet lawn , without a backward glance .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="bolt" pos="VBZ" surface="bolts"/>
+  <token id="3" lemma="off" pos="RP" surface="off"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="down" pos="IN" surface="down"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="wet" pos="JJ" surface="wet"/>
+  <token id="8" lemma="lawn" pos="NN" surface="lawn"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="without" pos="IN" surface="without"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="backward" pos="JJ" surface="backward"/>
+  <token id="13" lemma="glance" pos="NN" surface="glance"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prt"/>
+  <dep from="2" to="4" type="punct"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="2" to="9" type="punct"/>
+  <dep from="2" to="10" type="prep"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="2" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Direction">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

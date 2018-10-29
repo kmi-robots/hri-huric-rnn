@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4149304">
+ <sentence>
+  After more than an hour his solicitor arrived to talk to him .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="after" pos="IN" surface="After"/>
+  <token id="2" lemma="more" pos="JJR" surface="more"/>
+  <token id="3" lemma="than" pos="IN" surface="than"/>
+  <token id="4" lemma="an" pos="DT" surface="an"/>
+  <token id="5" lemma="hour" pos="NN" surface="hour"/>
+  <token id="6" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="7" lemma="solicitor" pos="NN" surface="solicitor"/>
+  <token id="8" lemma="arrive" pos="VBD" surface="arrived"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="talk" pos="VB" surface="talk"/>
+  <token id="11" lemma="to" pos="IN" surface="to"/>
+  <token id="12" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="prep"/>
+  <dep from="4" to="2" type="amod"/>
+  <dep from="4" to="3" type="quantmod"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="1" to="5" type="pobj"/>
+  <dep from="7" to="6" type="poss"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="8" to="10" type="advcl"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="8" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

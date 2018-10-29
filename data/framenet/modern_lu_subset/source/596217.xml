@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="596217">
+ <sentence>
+  Owen and Zeinab tailed along .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="owen" pos="NNP" surface="Owen"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="zeinab" pos="NNP" surface="Zeinab"/>
+  <token id="4" lemma="tail" pos="VBD" surface="tailed"/>
+  <token id="5" lemma="along" pos="RB" surface="along"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prt"/>
+  <dep from="4" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

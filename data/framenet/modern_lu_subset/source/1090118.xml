@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1090118">
+ <sentence>
+  With the gas disconnected , the light on top of the canopy was replaced in 1880 by a stone bowl donated by a Mr Ross .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="with" pos="IN" surface="With"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="gas" pos="NN" surface="gas"/>
+  <token id="4" lemma="disconnect" pos="VBN" surface="disconnected"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="light" pos="NN" surface="light"/>
+  <token id="8" lemma="on" pos="IN" surface="on"/>
+  <token id="9" lemma="top" pos="NN" surface="top"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="canopy" pos="NN" surface="canopy"/>
+  <token id="13" lemma="be" pos="VBD" surface="was"/>
+  <token id="14" lemma="replace" pos="VBN" surface="replaced"/>
+  <token id="15" lemma="in" pos="IN" surface="in"/>
+  <token id="16" lemma="1880" pos="CD" surface="1880"/>
+  <token id="17" lemma="by" pos="IN" surface="by"/>
+  <token id="18" lemma="a" pos="DT" surface="a"/>
+  <token id="19" lemma="stone" pos="NN" surface="stone"/>
+  <token id="20" lemma="bowl" pos="NN" surface="bowl"/>
+  <token id="21" lemma="donate" pos="VBN" surface="donated"/>
+  <token id="22" lemma="by" pos="IN" surface="by"/>
+  <token id="23" lemma="a" pos="DT" surface="a"/>
+  <token id="24" lemma="mr" pos="NNP" surface="Mr"/>
+  <token id="25" lemma="ross" pos="NNP" surface="Ross"/>
+  <token id="26" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="mark"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="14" to="4" type="advcl"/>
+  <dep from="14" to="5" type="punct"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="14" to="7" type="nsubjpass"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="14" to="13" type="auxpass"/>
+  <dep from="0" to="14" type="root"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="14" to="17" type="agent"/>
+  <dep from="20" to="18" type="det"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="17" to="20" type="pobj"/>
+  <dep from="20" to="21" type="acl"/>
+  <dep from="21" to="22" type="agent"/>
+  <dep from="25" to="23" type="det"/>
+  <dep from="25" to="24" type="compound"/>
+  <dep from="22" to="25" type="pobj"/>
+  <dep from="14" to="26" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+    <frameElement type="Donor">
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+     <token id="25"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

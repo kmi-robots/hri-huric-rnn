@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="719728">
+ <sentence>
+  Again , a bundle of drinking straws glued together provides a realistic model .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="again" pos="RB" surface="Again"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="bundle" pos="NN" surface="bundle"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="drinking" pos="NN" surface="drinking"/>
+  <token id="7" lemma="straw" pos="NNS" surface="straws"/>
+  <token id="8" lemma="glue" pos="VBN" surface="glued"/>
+  <token id="9" lemma="together" pos="RB" surface="together"/>
+  <token id="10" lemma="provide" pos="VBZ" surface="provides"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="realistic" pos="JJ" surface="realistic"/>
+  <token id="13" lemma="model" pos="NN" surface="model"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="advmod"/>
+  <dep from="10" to="2" type="punct"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="10" to="4" type="nsubj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="4" to="8" type="acl"/>
+  <dep from="8" to="9" type="advmod"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="dobj"/>
+  <dep from="10" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Items">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Result">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

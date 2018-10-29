@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770682">
+ <sentence>
+  In fact , we 've come straight round here from the police station .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="fact" pos="NN" surface="fact"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="5" lemma="'ve" pos="VBP" surface="'ve"/>
+  <token id="6" lemma="come" pos="VBN" surface="come"/>
+  <token id="7" lemma="straight" pos="RB" surface="straight"/>
+  <token id="8" lemma="round" pos="RB" surface="round"/>
+  <token id="9" lemma="here" pos="RB" surface="here"/>
+  <token id="10" lemma="from" pos="IN" surface="from"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="police" pos="NN" surface="police"/>
+  <token id="13" lemma="station" pos="NN" surface="station"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="6" to="3" type="punct"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="6" to="9" type="advmod"/>
+  <dep from="6" to="10" type="prep"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="6" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

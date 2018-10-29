@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1243428">
+ <sentence>
+  When you have filled it in , send it to the Customer Care Unit or hand it in at any post office .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="when" pos="WRB" surface="When"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="3" lemma="have" pos="VBP" surface="have"/>
+  <token id="4" lemma="fill" pos="VBN" surface="filled"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="6" lemma="in" pos="RP" surface="in"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="send" pos="VB" surface="send"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="customer" pos="NNP" surface="Customer"/>
+  <token id="13" lemma="care" pos="NNP" surface="Care"/>
+  <token id="14" lemma="unit" pos="NNP" surface="Unit"/>
+  <token id="15" lemma="or" pos="CC" surface="or"/>
+  <token id="16" lemma="hand" pos="VB" surface="hand"/>
+  <token id="17" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="18" lemma="in" pos="RP" surface="in"/>
+  <token id="19" lemma="at" pos="IN" surface="at"/>
+  <token id="20" lemma="any" pos="DT" surface="any"/>
+  <token id="21" lemma="post" pos="NN" surface="post"/>
+  <token id="22" lemma="office" pos="NN" surface="office"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="8" to="4" type="advcl"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="4" to="6" type="prt"/>
+  <dep from="8" to="7" type="punct"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="8" to="10" type="prep"/>
+  <dep from="14" to="11" type="det"/>
+  <dep from="14" to="12" type="compound"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="10" to="14" type="pobj"/>
+  <dep from="8" to="15" type="cc"/>
+  <dep from="8" to="16" type="conj"/>
+  <dep from="16" to="17" type="dobj"/>
+  <dep from="16" to="18" type="prt"/>
+  <dep from="16" to="19" type="prep"/>
+  <dep from="22" to="20" type="det"/>
+  <dep from="22" to="21" type="compound"/>
+  <dep from="19" to="22" type="pobj"/>
+  <dep from="8" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

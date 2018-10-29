@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780381">
+ <sentence>
+  ` Tomorrow we search the church and cross to the island . "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="``" surface="`"/>
+  <token id="2" lemma="tomorrow" pos="NN" surface="Tomorrow"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="4" lemma="search" pos="VBP" surface="search"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="church" pos="NN" surface="church"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="cross" pos="VB" surface="cross"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="island" pos="NN" surface="island"/>
+  <token id="12" lemma="." pos="." surface="."/>
+  <token id="13" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="punct"/>
+  <dep from="4" to="2" type="npadvmod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="4" to="7" type="cc"/>
+  <dep from="4" to="8" type="conj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="4" to="12" type="punct"/>
+  <dep from="4" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="398825">
+ <sentence>
+  It was the excuse for her deep delaying gaze into the looking-glass .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="It"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="excuse" pos="NN" surface="excuse"/>
+  <token id="5" lemma="for" pos="IN" surface="for"/>
+  <token id="6" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="7" lemma="deep" pos="JJ" surface="deep"/>
+  <token id="8" lemma="delaying" pos="NN" surface="delaying"/>
+  <token id="9" lemma="gaze" pos="NN" surface="gaze"/>
+  <token id="10" lemma="into" pos="IN" surface="into"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="looking-glass" pos="NN" surface="looking-glass"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="attr"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="poss"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="5" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="2" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

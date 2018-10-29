@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403375">
+ <sentence>
+  I peeped from behind prayer-folded hands
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="peep" pos="VBD" surface="peeped"/>
+  <token id="3" lemma="from" pos="IN" surface="from"/>
+  <token id="4" lemma="behind" pos="IN" surface="behind"/>
+  <token id="5" lemma="prayer-folded" pos="JJ" surface="prayer-folded"/>
+  <token id="6" lemma="hand" pos="NNS" surface="hands"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="4" to="6" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Location_of_protagonist">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

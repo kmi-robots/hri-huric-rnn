@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1402524">
+ <sentence>
+  PRISON conditions for two Britons jailed for illegal entry to Iraq have improved .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="prison" pos="NN" surface="PRISON"/>
+  <token id="2" lemma="condition" pos="NNS" surface="conditions"/>
+  <token id="3" lemma="for" pos="IN" surface="for"/>
+  <token id="4" lemma="two" pos="CD" surface="two"/>
+  <token id="5" lemma="britons" pos="NNPS" surface="Britons"/>
+  <token id="6" lemma="jail" pos="VBN" surface="jailed"/>
+  <token id="7" lemma="for" pos="IN" surface="for"/>
+  <token id="8" lemma="illegal" pos="JJ" surface="illegal"/>
+  <token id="9" lemma="entry" pos="NN" surface="entry"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="iraq" pos="NNP" surface="Iraq"/>
+  <token id="12" lemma="have" pos="VBP" surface="have"/>
+  <token id="13" lemma="improve" pos="VBN" surface="improved"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="13" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="nummod"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="5" to="6" type="acl"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="0" to="13" type="root"/>
+  <dep from="13" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Depictive">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

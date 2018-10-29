@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780858">
+ <sentence>
+  Dr O'Connor , 75 , has studied autism for the past 40 years .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="dr" pos="NNP" surface="Dr"/>
+  <token id="2" lemma="o'connor" pos="NNP" surface="O'Connor"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="75" pos="CD" surface="75"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="have" pos="VBZ" surface="has"/>
+  <token id="7" lemma="study" pos="VBN" surface="studied"/>
+  <token id="8" lemma="autism" pos="NN" surface="autism"/>
+  <token id="9" lemma="for" pos="IN" surface="for"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="past" pos="JJ" surface="past"/>
+  <token id="12" lemma="40" pos="CD" surface="40"/>
+  <token id="13" lemma="year" pos="NNS" surface="years"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="7" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="appos"/>
+  <dep from="2" to="5" type="punct"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="7" to="9" type="prep"/>
+  <dep from="13" to="10" type="det"/>
+  <dep from="13" to="11" type="amod"/>
+  <dep from="13" to="12" type="nummod"/>
+  <dep from="9" to="13" type="pobj"/>
+  <dep from="7" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

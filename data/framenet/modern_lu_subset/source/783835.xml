@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="783835">
+ <sentence>
+  The hull was made of overlapping wrought-iron plates riveted to metal frames .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="hull" pos="NN" surface="hull"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="make" pos="VBN" surface="made"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="overlap" pos="VBG" surface="overlapping"/>
+  <token id="7" lemma="wrought-iron" pos="JJ" surface="wrought-iron"/>
+  <token id="8" lemma="plate" pos="NNS" surface="plates"/>
+  <token id="9" lemma="rivet" pos="VBD" surface="riveted"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="metal" pos="NN" surface="metal"/>
+  <token id="12" lemma="frame" pos="NNS" surface="frames"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="8" to="9" type="acl"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="4" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

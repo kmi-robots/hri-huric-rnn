@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="631554">
+ <sentence>
+  Cars speed up and down the twisty road at all hours and residents and visitors frequently park vehicles on the road restricting access .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="car" pos="NNS" surface="Cars"/>
+  <token id="2" lemma="speed" pos="VBP" surface="speed"/>
+  <token id="3" lemma="up" pos="RP" surface="up"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="down" pos="IN" surface="down"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="twisty" pos="NN" surface="twisty"/>
+  <token id="8" lemma="road" pos="NN" surface="road"/>
+  <token id="9" lemma="at" pos="IN" surface="at"/>
+  <token id="10" lemma="all" pos="DT" surface="all"/>
+  <token id="11" lemma="hour" pos="NNS" surface="hours"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="resident" pos="NNS" surface="residents"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="visitor" pos="NNS" surface="visitors"/>
+  <token id="16" lemma="frequently" pos="RB" surface="frequently"/>
+  <token id="17" lemma="park" pos="VBP" surface="park"/>
+  <token id="18" lemma="vehicle" pos="NNS" surface="vehicles"/>
+  <token id="19" lemma="on" pos="IN" surface="on"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="road" pos="NN" surface="road"/>
+  <token id="22" lemma="restricting" pos="NN" surface="restricting"/>
+  <token id="23" lemma="access" pos="NN" surface="access"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prt"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="3" to="5" type="conj"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="2" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="2" to="12" type="cc"/>
+  <dep from="17" to="13" type="nsubj"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="13" to="15" type="conj"/>
+  <dep from="17" to="16" type="advmod"/>
+  <dep from="2" to="17" type="conj"/>
+  <dep from="17" to="18" type="dobj"/>
+  <dep from="17" to="19" type="prep"/>
+  <dep from="21" to="20" type="det"/>
+  <dep from="19" to="21" type="pobj"/>
+  <dep from="21" to="22" type="acl"/>
+  <dep from="22" to="23" type="dobj"/>
+  <dep from="17" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

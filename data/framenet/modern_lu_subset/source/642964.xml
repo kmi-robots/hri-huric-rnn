@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="642964">
+ <sentence>
+  There are no porters or pack animals in the region , and so all supplies were ferried in by regular helicopter deliveries .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="no" pos="DT" surface="no"/>
+  <token id="4" lemma="porter" pos="NNS" surface="porters"/>
+  <token id="5" lemma="or" pos="CC" surface="or"/>
+  <token id="6" lemma="pack" pos="VB" surface="pack"/>
+  <token id="7" lemma="animal" pos="NNS" surface="animals"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="region" pos="NN" surface="region"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="so" pos="RB" surface="so"/>
+  <token id="14" lemma="all" pos="DT" surface="all"/>
+  <token id="15" lemma="supply" pos="NNS" surface="supplies"/>
+  <token id="16" lemma="be" pos="VBD" surface="were"/>
+  <token id="17" lemma="ferry" pos="VBN" surface="ferried"/>
+  <token id="18" lemma="in" pos="IN" surface="in"/>
+  <token id="19" lemma="by" pos="IN" surface="by"/>
+  <token id="20" lemma="regular" pos="JJ" surface="regular"/>
+  <token id="21" lemma="helicopter" pos="NN" surface="helicopter"/>
+  <token id="22" lemma="delivery" pos="NNS" surface="deliveries"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="attr"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="4" to="7" type="conj"/>
+  <dep from="4" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="2" to="11" type="punct"/>
+  <dep from="2" to="12" type="cc"/>
+  <dep from="17" to="13" type="advmod"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="17" to="15" type="nsubjpass"/>
+  <dep from="17" to="16" type="auxpass"/>
+  <dep from="2" to="17" type="conj"/>
+  <dep from="17" to="18" type="prt"/>
+  <dep from="17" to="19" type="agent"/>
+  <dep from="22" to="20" type="amod"/>
+  <dep from="22" to="21" type="compound"/>
+  <dep from="19" to="22" type="pobj"/>
+  <dep from="17" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Means">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

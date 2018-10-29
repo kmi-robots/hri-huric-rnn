@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="781294">
+ <sentence>
+  Tawno Smith surveyed the new decor with only a partial satisfaction .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="tawno" pos="NNP" surface="Tawno"/>
+  <token id="2" lemma="smith" pos="NNP" surface="Smith"/>
+  <token id="3" lemma="survey" pos="VBD" surface="surveyed"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="new" pos="JJ" surface="new"/>
+  <token id="6" lemma="decor" pos="NN" surface="decor"/>
+  <token id="7" lemma="with" pos="IN" surface="with"/>
+  <token id="8" lemma="only" pos="RB" surface="only"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="partial" pos="JJ" surface="partial"/>
+  <token id="11" lemma="satisfaction" pos="NN" surface="satisfaction"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="prep"/>
+  <dep from="11" to="8" type="advmod"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="7" to="11" type="pobj"/>
+  <dep from="3" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

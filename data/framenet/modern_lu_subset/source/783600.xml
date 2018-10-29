@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="783600">
+ <sentence>
+  He was handcuffed to another prisoner and placed in an army , armoured personnel carrier .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="handcuff" pos="VBN" surface="handcuffed"/>
+  <token id="4" lemma="to" pos="IN" surface="to"/>
+  <token id="5" lemma="another" pos="DT" surface="another"/>
+  <token id="6" lemma="prisoner" pos="NN" surface="prisoner"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="place" pos="VBN" surface="placed"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="an" pos="DT" surface="an"/>
+  <token id="11" lemma="army" pos="NN" surface="army"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="armoured" pos="JJ" surface="armoured"/>
+  <token id="14" lemma="personnel" pos="NNS" surface="personnel"/>
+  <token id="15" lemma="carrier" pos="NN" surface="carrier"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="acomp"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="3" to="7" type="cc"/>
+  <dep from="3" to="8" type="conj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="punct"/>
+  <dep from="15" to="13" type="amod"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="11" to="15" type="appos"/>
+  <dep from="2" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

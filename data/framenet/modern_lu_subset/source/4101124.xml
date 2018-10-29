@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101124">
+ <sentence>
+  Other Hollywood stars came as well , simply because Las Vegas was the place to be .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="other" pos="JJ" surface="Other"/>
+  <token id="2" lemma="hollywood" pos="NNP" surface="Hollywood"/>
+  <token id="3" lemma="star" pos="NNS" surface="stars"/>
+  <token id="4" lemma="come" pos="VBD" surface="came"/>
+  <token id="5" lemma="as" pos="RB" surface="as"/>
+  <token id="6" lemma="well" pos="RB" surface="well"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="simply" pos="RB" surface="simply"/>
+  <token id="9" lemma="because" pos="IN" surface="because"/>
+  <token id="10" lemma="las" pos="NNP" surface="Las"/>
+  <token id="11" lemma="vegas" pos="NNP" surface="Vegas"/>
+  <token id="12" lemma="be" pos="VBD" surface="was"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="place" pos="NN" surface="place"/>
+  <token id="15" lemma="to" pos="TO" surface="to"/>
+  <token id="16" lemma="be" pos="VB" surface="be"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="amod"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="4" to="6" type="advmod"/>
+  <dep from="4" to="7" type="punct"/>
+  <dep from="12" to="8" type="advmod"/>
+  <dep from="12" to="9" type="mark"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="4" to="12" type="advcl"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="attr"/>
+  <dep from="16" to="15" type="aux"/>
+  <dep from="14" to="16" type="relcl"/>
+  <dep from="4" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

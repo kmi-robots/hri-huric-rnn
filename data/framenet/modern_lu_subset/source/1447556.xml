@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1447556">
+ <sentence>
+  Kolchinsky used a miniature transmitter to activate the door .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="kolchinsky" pos="NNP" surface="Kolchinsky"/>
+  <token id="2" lemma="use" pos="VBD" surface="used"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="miniature" pos="JJ" surface="miniature"/>
+  <token id="5" lemma="transmitter" pos="NN" surface="transmitter"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="activate" pos="VB" surface="activate"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="door" pos="NN" surface="door"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="2" to="7" type="xcomp"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="dobj"/>
+  <dep from="2" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_operational_state">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Device">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

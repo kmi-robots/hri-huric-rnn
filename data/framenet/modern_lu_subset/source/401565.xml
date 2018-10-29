@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="401565">
+ <sentence>
+  And the blush that rose , the helplessness , the looks of the other customers .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="and" pos="CC" surface="And"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="blush" pos="NN" surface="blush"/>
+  <token id="4" lemma="that" pos="WDT" surface="that"/>
+  <token id="5" lemma="rise" pos="VBD" surface="rose"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="helplessness" pos="NN" surface="helplessness"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="look" pos="NNS" surface="looks"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="other" pos="JJ" surface="other"/>
+  <token id="15" lemma="customer" pos="NNS" surface="customers"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="cc"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="3" to="5" type="relcl"/>
+  <dep from="3" to="6" type="punct"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="3" to="8" type="appos"/>
+  <dep from="3" to="9" type="punct"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="3" to="11" type="appos"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="12" to="15" type="pobj"/>
+  <dep from="3" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

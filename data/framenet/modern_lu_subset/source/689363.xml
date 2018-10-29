@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="689363">
+ <sentence>
+  We can therefore choose the depth to which we probe by using appropriate electron binding energies .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="We"/>
+  <token id="2" lemma="can" pos="MD" surface="can"/>
+  <token id="3" lemma="therefore" pos="RB" surface="therefore"/>
+  <token id="4" lemma="choose" pos="VB" surface="choose"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="depth" pos="NN" surface="depth"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="which" pos="WDT" surface="which"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="10" lemma="probe" pos="VBP" surface="probe"/>
+  <token id="11" lemma="by" pos="IN" surface="by"/>
+  <token id="12" lemma="use" pos="VBG" surface="using"/>
+  <token id="13" lemma="appropriate" pos="JJ" surface="appropriate"/>
+  <token id="14" lemma="electron" pos="NN" surface="electron"/>
+  <token id="15" lemma="binding" pos="JJ" surface="binding"/>
+  <token id="16" lemma="energy" pos="NNS" surface="energies"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="10" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="6" to="10" type="relcl"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pcomp"/>
+  <dep from="16" to="13" type="amod"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="12" to="16" type="dobj"/>
+  <dep from="4" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1447531">
+ <sentence>
+  There were occasions when a London crowd was activated by wider considerations .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBD" surface="were"/>
+  <token id="3" lemma="occasion" pos="NNS" surface="occasions"/>
+  <token id="4" lemma="when" pos="WRB" surface="when"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="london" pos="NNP" surface="London"/>
+  <token id="7" lemma="crowd" pos="NN" surface="crowd"/>
+  <token id="8" lemma="be" pos="VBD" surface="was"/>
+  <token id="9" lemma="activate" pos="VBN" surface="activated"/>
+  <token id="10" lemma="by" pos="IN" surface="by"/>
+  <token id="11" lemma="wide" pos="JJR" surface="wider"/>
+  <token id="12" lemma="consideration" pos="NNS" surface="considerations"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="attr"/>
+  <dep from="9" to="4" type="advmod"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="9" to="7" type="nsubjpass"/>
+  <dep from="9" to="8" type="auxpass"/>
+  <dep from="2" to="9" type="advcl"/>
+  <dep from="9" to="10" type="agent"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="2" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_operational_state">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Device">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

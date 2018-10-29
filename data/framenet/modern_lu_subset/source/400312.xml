@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="400312">
+ <sentence>
+  Before leaving the counter Maggie glanced to where the tall one was sitting .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="before" pos="IN" surface="Before"/>
+  <token id="2" lemma="leave" pos="VBG" surface="leaving"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="counter" pos="NN" surface="counter"/>
+  <token id="5" lemma="maggie" pos="NNP" surface="Maggie"/>
+  <token id="6" lemma="glance" pos="VBD" surface="glanced"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="where" pos="WRB" surface="where"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="tall" pos="JJ" surface="tall"/>
+  <token id="11" lemma="one" pos="NN" surface="one"/>
+  <token id="12" lemma="be" pos="VBD" surface="was"/>
+  <token id="13" lemma="sit" pos="VBG" surface="sitting"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="1" to="2" type="pcomp"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="4" to="5" type="appos"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="13" to="8" type="advmod"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="13" to="11" type="nsubj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="7" to="13" type="pcomp"/>
+  <dep from="6" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="State">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

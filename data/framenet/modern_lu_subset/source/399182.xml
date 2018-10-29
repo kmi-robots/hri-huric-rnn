@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="399182">
+ <sentence>
+  Cecil gazed about the office as if in search of inspiration .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="cecil" pos="NNP" surface="Cecil"/>
+  <token id="2" lemma="gaze" pos="VBD" surface="gazed"/>
+  <token id="3" lemma="about" pos="IN" surface="about"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="office" pos="NN" surface="office"/>
+  <token id="6" lemma="as" pos="IN" surface="as"/>
+  <token id="7" lemma="if" pos="IN" surface="if"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="search" pos="NN" surface="search"/>
+  <token id="10" lemma="of" pos="IN" surface="of"/>
+  <token id="11" lemma="inspiration" pos="NN" surface="inspiration"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="8" to="6" type="mark"/>
+  <dep from="8" to="7" type="mark"/>
+  <dep from="2" to="8" type="advcl"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="2" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

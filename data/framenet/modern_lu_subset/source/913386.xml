@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="913386">
+ <sentence>
+  Later on , permanent handrails may be fixed to the walls of the toilet , if necessary .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="later" pos="RB" surface="Later"/>
+  <token id="2" lemma="on" pos="RB" surface="on"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="permanent" pos="JJ" surface="permanent"/>
+  <token id="5" lemma="handrail" pos="NNS" surface="handrails"/>
+  <token id="6" lemma="may" pos="MD" surface="may"/>
+  <token id="7" lemma="be" pos="VB" surface="be"/>
+  <token id="8" lemma="fix" pos="VBN" surface="fixed"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="wall" pos="NNS" surface="walls"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="toilet" pos="NN" surface="toilet"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="if" pos="IN" surface="if"/>
+  <token id="17" lemma="necessary" pos="JJ" surface="necessary"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="advmod"/>
+  <dep from="8" to="2" type="advmod"/>
+  <dep from="8" to="3" type="punct"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="8" to="5" type="nsubjpass"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="8" to="15" type="punct"/>
+  <dep from="17" to="16" type="mark"/>
+  <dep from="8" to="17" type="advcl"/>
+  <dep from="8" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

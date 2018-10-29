@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="769517">
+ <sentence>
+  Now solder the flying leads to the board in the positions shown leaving these at least 300mm long to facilitate easy interconnection .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="now" pos="RB" surface="Now"/>
+  <token id="2" lemma="solder" pos="VB" surface="solder"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="fly" pos="VBG" surface="flying"/>
+  <token id="5" lemma="lead" pos="VBZ" surface="leads"/>
+  <token id="6" lemma="to" pos="IN" surface="to"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="board" pos="NN" surface="board"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="position" pos="NNS" surface="positions"/>
+  <token id="12" lemma="show" pos="VBN" surface="shown"/>
+  <token id="13" lemma="leave" pos="VBG" surface="leaving"/>
+  <token id="14" lemma="these" pos="DT" surface="these"/>
+  <token id="15" lemma="at" pos="IN" surface="at"/>
+  <token id="16" lemma="least" pos="JJS" surface="least"/>
+  <token id="17" lemma="300mm" pos="JJ" surface="300mm"/>
+  <token id="18" lemma="long" pos="RB" surface="long"/>
+  <token id="19" lemma="to" pos="TO" surface="to"/>
+  <token id="20" lemma="facilitate" pos="VB" surface="facilitate"/>
+  <token id="21" lemma="easy" pos="JJ" surface="easy"/>
+  <token id="22" lemma="interconnection" pos="NN" surface="interconnection"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="advmod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="5" to="12" type="acl"/>
+  <dep from="12" to="13" type="xcomp"/>
+  <dep from="17" to="14" type="det"/>
+  <dep from="16" to="15" type="advmod"/>
+  <dep from="17" to="16" type="advmod"/>
+  <dep from="13" to="17" type="dobj"/>
+  <dep from="13" to="18" type="advmod"/>
+  <dep from="20" to="19" type="aux"/>
+  <dep from="13" to="20" type="xcomp"/>
+  <dep from="22" to="21" type="amod"/>
+  <dep from="20" to="22" type="dobj"/>
+  <dep from="2" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

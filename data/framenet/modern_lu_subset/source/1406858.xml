@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1406858">
+ <sentence>
+  On 5 May 1951 passenger services were withdrawn from Barnton although coal was still conveyed to Davidsons Mains .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="on" pos="IN" surface="On"/>
+  <token id="2" lemma="5" pos="CD" surface="5"/>
+  <token id="3" lemma="may" pos="NNP" surface="May"/>
+  <token id="4" lemma="1951" pos="CD" surface="1951"/>
+  <token id="5" lemma="passenger" pos="NN" surface="passenger"/>
+  <token id="6" lemma="service" pos="NNS" surface="services"/>
+  <token id="7" lemma="be" pos="VBD" surface="were"/>
+  <token id="8" lemma="withdraw" pos="VBN" surface="withdrawn"/>
+  <token id="9" lemma="from" pos="IN" surface="from"/>
+  <token id="10" lemma="barnton" pos="NNP" surface="Barnton"/>
+  <token id="11" lemma="although" pos="IN" surface="although"/>
+  <token id="12" lemma="coal" pos="NN" surface="coal"/>
+  <token id="13" lemma="be" pos="VBD" surface="was"/>
+  <token id="14" lemma="still" pos="RB" surface="still"/>
+  <token id="15" lemma="convey" pos="VBN" surface="conveyed"/>
+  <token id="16" lemma="to" pos="IN" surface="to"/>
+  <token id="17" lemma="davidsons" pos="NNP" surface="Davidsons"/>
+  <token id="18" lemma="mains" pos="NNP" surface="Mains"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="prep"/>
+  <dep from="3" to="2" type="nummod"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="3" to="4" type="nummod"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="8" to="6" type="nsubjpass"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="15" to="11" type="mark"/>
+  <dep from="15" to="12" type="nsubjpass"/>
+  <dep from="15" to="13" type="auxpass"/>
+  <dep from="15" to="14" type="advmod"/>
+  <dep from="8" to="15" type="advcl"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="8" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

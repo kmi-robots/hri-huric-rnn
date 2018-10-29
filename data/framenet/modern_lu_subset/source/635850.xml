@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="635850">
+ <sentence>
+  Leftover carpet ( for when you reposition it ) can be tucked under the stair landing .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="leftover" pos="NN" surface="Leftover"/>
+  <token id="2" lemma="carpet" pos="NN" surface="carpet"/>
+  <token id="3" lemma="(" pos="-LRB-" surface="("/>
+  <token id="4" lemma="for" pos="IN" surface="for"/>
+  <token id="5" lemma="when" pos="WRB" surface="when"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="7" lemma="reposition" pos="VBP" surface="reposition"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="9" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="10" lemma="can" pos="MD" surface="can"/>
+  <token id="11" lemma="be" pos="VB" surface="be"/>
+  <token id="12" lemma="tuck" pos="VBN" surface="tucked"/>
+  <token id="13" lemma="under" pos="IN" surface="under"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="stair" pos="NN" surface="stair"/>
+  <token id="16" lemma="landing" pos="NN" surface="landing"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="12" to="2" type="nsubjpass"/>
+  <dep from="12" to="3" type="punct"/>
+  <dep from="12" to="4" type="prep"/>
+  <dep from="7" to="5" type="advmod"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="4" to="7" type="pcomp"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="12" to="9" type="punct"/>
+  <dep from="12" to="10" type="aux"/>
+  <dep from="12" to="11" type="auxpass"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="13" to="16" type="pobj"/>
+  <dep from="12" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

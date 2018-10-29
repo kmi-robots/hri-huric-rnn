@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780273">
+ <sentence>
+  We could have searched the seas to see if Bartholomew had survived . "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="We"/>
+  <token id="2" lemma="could" pos="MD" surface="could"/>
+  <token id="3" lemma="have" pos="VB" surface="have"/>
+  <token id="4" lemma="search" pos="VBN" surface="searched"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="sea" pos="NNS" surface="seas"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="see" pos="VB" surface="see"/>
+  <token id="9" lemma="if" pos="IN" surface="if"/>
+  <token id="10" lemma="bartholomew" pos="NNP" surface="Bartholomew"/>
+  <token id="11" lemma="have" pos="VBD" surface="had"/>
+  <token id="12" lemma="survive" pos="VBN" surface="survived"/>
+  <token id="13" lemma="." pos="." surface="."/>
+  <token id="14" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="4" to="8" type="advcl"/>
+  <dep from="12" to="9" type="mark"/>
+  <dep from="12" to="10" type="nsubj"/>
+  <dep from="12" to="11" type="aux"/>
+  <dep from="8" to="12" type="ccomp"/>
+  <dep from="4" to="13" type="punct"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="594154">
+ <sentence>
+  He took Weir 's arm and led him across the courtyard .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="take" pos="VBD" surface="took"/>
+  <token id="3" lemma="weir" pos="NNP" surface="Weir"/>
+  <token id="4" lemma="'s" pos="POS" surface="'s"/>
+  <token id="5" lemma="arm" pos="NN" surface="arm"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="lead" pos="VBD" surface="led"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="9" lemma="across" pos="IN" surface="across"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="courtyard" pos="NN" surface="courtyard"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="poss"/>
+  <dep from="3" to="4" type="case"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="2" to="6" type="cc"/>
+  <dep from="2" to="7" type="conj"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="7" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="2" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

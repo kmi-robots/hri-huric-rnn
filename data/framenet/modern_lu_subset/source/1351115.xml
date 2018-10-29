@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1351115">
+ <sentence>
+  I only hope I can make it . "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="only" pos="RB" surface="only"/>
+  <token id="3" lemma="hope" pos="VBP" surface="hope"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="5" lemma="can" pos="MD" surface="can"/>
+  <token id="6" lemma="make" pos="VB" surface="make"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="8" lemma="." pos="." surface="."/>
+  <token id="9" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="3" to="6" type="ccomp"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="3" to="8" type="punct"/>
+  <dep from="3" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="627577">
+ <sentence>
+  Horne anxiously unfolded the parchment and , begging the brother to bring a candle , hastily read the contents .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="horne" pos="NNP" surface="Horne"/>
+  <token id="2" lemma="anxiously" pos="RB" surface="anxiously"/>
+  <token id="3" lemma="unfold" pos="VBD" surface="unfolded"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="parchment" pos="NN" surface="parchment"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="beg" pos="VBG" surface="begging"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="brother" pos="NN" surface="brother"/>
+  <token id="11" lemma="to" pos="TO" surface="to"/>
+  <token id="12" lemma="bring" pos="VB" surface="bring"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="candle" pos="NN" surface="candle"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="hastily" pos="RB" surface="hastily"/>
+  <token id="17" lemma="read" pos="VB" surface="read"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="content" pos="NNS" surface="contents"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="cc"/>
+  <dep from="3" to="7" type="punct"/>
+  <dep from="3" to="8" type="advcl"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="12" to="11" type="aux"/>
+  <dep from="8" to="12" type="xcomp"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="dobj"/>
+  <dep from="3" to="15" type="punct"/>
+  <dep from="17" to="16" type="advmod"/>
+  <dep from="3" to="17" type="dep"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="17" to="19" type="dobj"/>
+  <dep from="3" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

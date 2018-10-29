@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="633111">
+ <sentence>
+  These graphics can then be enlarged or reduced and positioned anywhere on the page .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="these" pos="DT" surface="These"/>
+  <token id="2" lemma="graphic" pos="NNS" surface="graphics"/>
+  <token id="3" lemma="can" pos="MD" surface="can"/>
+  <token id="4" lemma="then" pos="RB" surface="then"/>
+  <token id="5" lemma="be" pos="VB" surface="be"/>
+  <token id="6" lemma="enlarge" pos="VBN" surface="enlarged"/>
+  <token id="7" lemma="or" pos="CC" surface="or"/>
+  <token id="8" lemma="reduce" pos="VBN" surface="reduced"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="position" pos="VBD" surface="positioned"/>
+  <token id="11" lemma="anywhere" pos="RB" surface="anywhere"/>
+  <token id="12" lemma="on" pos="IN" surface="on"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="page" pos="NN" surface="page"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="6" to="2" type="nsubjpass"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="6" to="4" type="advmod"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="cc"/>
+  <dep from="6" to="8" type="conj"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="12" to="11" type="advmod"/>
+  <dep from="10" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="6" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

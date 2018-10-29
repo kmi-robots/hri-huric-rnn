@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="628836">
+ <sentence>
+  Immerse the section or plaquette in boiling reagent for at least five minutes .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="immerse" pos="JJ" surface="Immerse"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="section" pos="NN" surface="section"/>
+  <token id="4" lemma="or" pos="CC" surface="or"/>
+  <token id="5" lemma="plaquette" pos="NN" surface="plaquette"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="boiling" pos="NN" surface="boiling"/>
+  <token id="8" lemma="reagent" pos="NN" surface="reagent"/>
+  <token id="9" lemma="for" pos="IN" surface="for"/>
+  <token id="10" lemma="at" pos="RB" surface="at"/>
+  <token id="11" lemma="least" pos="RBS" surface="least"/>
+  <token id="12" lemma="five" pos="CD" surface="five"/>
+  <token id="13" lemma="minute" pos="NNS" surface="minutes"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="dobj"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="3" to="5" type="conj"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="12" to="11" type="advmod"/>
+  <dep from="13" to="12" type="nummod"/>
+  <dep from="9" to="13" type="pobj"/>
+  <dep from="1" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

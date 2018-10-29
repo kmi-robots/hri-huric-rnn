@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="240151">
+ <sentence>
+  Aficionados of the finest wines tend to invest in en primeur purchases -- buying by the case before the wine is even bottled .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="aficionado" pos="NNS" surface="Aficionados"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="fine" pos="JJS" surface="finest"/>
+  <token id="5" lemma="wine" pos="NNS" surface="wines"/>
+  <token id="6" lemma="tend" pos="VBP" surface="tend"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="invest" pos="VB" surface="invest"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="en" pos="FW" surface="en"/>
+  <token id="11" lemma="primeur" pos="FW" surface="primeur"/>
+  <token id="12" lemma="purchase" pos="NNS" surface="purchases"/>
+  <token id="13" lemma="--" pos=":" surface="--"/>
+  <token id="14" lemma="buy" pos="VBG" surface="buying"/>
+  <token id="15" lemma="by" pos="IN" surface="by"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="case" pos="NN" surface="case"/>
+  <token id="18" lemma="before" pos="IN" surface="before"/>
+  <token id="19" lemma="the" pos="DT" surface="the"/>
+  <token id="20" lemma="wine" pos="NN" surface="wine"/>
+  <token id="21" lemma="be" pos="VBZ" surface="is"/>
+  <token id="22" lemma="even" pos="RB" surface="even"/>
+  <token id="23" lemma="bottled" pos="JJ" surface="bottled"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="pobj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="6" to="8" type="xcomp"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="intj"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="8" to="13" type="punct"/>
+  <dep from="8" to="14" type="advcl"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="23" to="18" type="mark"/>
+  <dep from="20" to="19" type="det"/>
+  <dep from="23" to="20" type="nsubjpass"/>
+  <dep from="23" to="21" type="auxpass"/>
+  <dep from="23" to="22" type="advmod"/>
+  <dep from="14" to="23" type="advcl"/>
+  <dep from="6" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

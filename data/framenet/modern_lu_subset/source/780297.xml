@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780297">
+ <sentence>
+  ` I searched the house for their mother but she was n't there . " .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="''" surface="`"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="3" lemma="search" pos="VBD" surface="searched"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="house" pos="NN" surface="house"/>
+  <token id="6" lemma="for" pos="IN" surface="for"/>
+  <token id="7" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="8" lemma="mother" pos="NN" surface="mother"/>
+  <token id="9" lemma="but" pos="CC" surface="but"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="11" lemma="be" pos="VBD" surface="was"/>
+  <token id="12" lemma="n't" pos="RB" surface="n't"/>
+  <token id="13" lemma="there" pos="RB" surface="there"/>
+  <token id="14" lemma="." pos="." surface="."/>
+  <token id="15" lemma='"' pos="''" surface='"'/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="punct"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="8" to="7" type="poss"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="11" to="9" type="cc"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="neg"/>
+  <dep from="11" to="13" type="advmod"/>
+  <dep from="11" to="14" type="punct"/>
+  <dep from="11" to="15" type="punct"/>
+  <dep from="11" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

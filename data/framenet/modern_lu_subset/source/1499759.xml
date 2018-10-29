@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1499759">
+ <sentence>
+  George spent the next weeks showing Bob Lamb around the herds of sheep .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="george" pos="NNP" surface="George"/>
+  <token id="2" lemma="spend" pos="VBD" surface="spent"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="next" pos="JJ" surface="next"/>
+  <token id="5" lemma="week" pos="NNS" surface="weeks"/>
+  <token id="6" lemma="show" pos="VBG" surface="showing"/>
+  <token id="7" lemma="bob" pos="NNP" surface="Bob"/>
+  <token id="8" lemma="lamb" pos="NNP" surface="Lamb"/>
+  <token id="9" lemma="around" pos="IN" surface="around"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="herd" pos="NNS" surface="herds"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="sheep" pos="NNS" surface="sheep"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="2" to="6" type="xcomp"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="6" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="2" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

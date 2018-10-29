@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="959634">
+ <sentence>
+  Mr Popple , upon returning home alone , found the spider floating in the toilet-bowl .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="mr" pos="NNP" surface="Mr"/>
+  <token id="2" lemma="popple" pos="NNP" surface="Popple"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="upon" pos="IN" surface="upon"/>
+  <token id="5" lemma="return" pos="VBG" surface="returning"/>
+  <token id="6" lemma="home" pos="RB" surface="home"/>
+  <token id="7" lemma="alone" pos="RB" surface="alone"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="find" pos="VBD" surface="found"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="spider" pos="NN" surface="spider"/>
+  <token id="12" lemma="float" pos="VBG" surface="floating"/>
+  <token id="13" lemma="in" pos="IN" surface="in"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="toilet-bowl" pos="NN" surface="toilet-bowl"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="9" to="2" type="nsubj"/>
+  <dep from="9" to="3" type="punct"/>
+  <dep from="9" to="4" type="prep"/>
+  <dep from="4" to="5" type="pcomp"/>
+  <dep from="5" to="6" type="advmod"/>
+  <dep from="5" to="7" type="advmod"/>
+  <dep from="9" to="8" type="punct"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="11" to="12" type="acl"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="9" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Area">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

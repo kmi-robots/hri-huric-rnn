@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1404683">
+ <sentence>
+  Once it had this raw patch on its nose and I went with Davey when he took it to the vet .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="once" pos="IN" surface="Once"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="3" lemma="have" pos="VBD" surface="had"/>
+  <token id="4" lemma="this" pos="DT" surface="this"/>
+  <token id="5" lemma="raw" pos="JJ" surface="raw"/>
+  <token id="6" lemma="patch" pos="NN" surface="patch"/>
+  <token id="7" lemma="on" pos="IN" surface="on"/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="9" lemma="nose" pos="NN" surface="nose"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="12" lemma="go" pos="VBD" surface="went"/>
+  <token id="13" lemma="with" pos="IN" surface="with"/>
+  <token id="14" lemma="davey" pos="NNP" surface="Davey"/>
+  <token id="15" lemma="when" pos="WRB" surface="when"/>
+  <token id="16" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="17" lemma="take" pos="VBD" surface="took"/>
+  <token id="18" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="19" lemma="to" pos="IN" surface="to"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="vet" pos="NN" surface="vet"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="mark"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="prep"/>
+  <dep from="9" to="8" type="poss"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="12" to="10" type="cc"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="17" to="15" type="advmod"/>
+  <dep from="17" to="16" type="nsubj"/>
+  <dep from="12" to="17" type="advcl"/>
+  <dep from="17" to="18" type="dobj"/>
+  <dep from="17" to="19" type="prep"/>
+  <dep from="21" to="20" type="det"/>
+  <dep from="19" to="21" type="pobj"/>
+  <dep from="12" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="19"/>
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

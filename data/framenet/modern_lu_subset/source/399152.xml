@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="399152">
+ <sentence>
+  Robyn gazed across at Anne .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="robyn" pos="NNP" surface="Robyn"/>
+  <token id="2" lemma="gaze" pos="VBD" surface="gazed"/>
+  <token id="3" lemma="across" pos="RP" surface="across"/>
+  <token id="4" lemma="at" pos="IN" surface="at"/>
+  <token id="5" lemma="anne" pos="NNP" surface="Anne"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prt"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

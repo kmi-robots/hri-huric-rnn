@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="240251">
+ <sentence>
+  NATURE 'S HEAT bottled by Oak
+ </sentence>
+ <tokens>
+  <token id="1" lemma="nature" pos="NNP" surface="NATURE"/>
+  <token id="2" lemma="'s" pos="POS" surface="'S"/>
+  <token id="3" lemma="heat" pos="NNP" surface="HEAT"/>
+  <token id="4" lemma="bottle" pos="VBN" surface="bottled"/>
+  <token id="5" lemma="by" pos="IN" surface="by"/>
+  <token id="6" lemma="oak" pos="NNP" surface="Oak"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="acl"/>
+  <dep from="4" to="5" type="agent"/>
+  <dep from="5" to="6" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

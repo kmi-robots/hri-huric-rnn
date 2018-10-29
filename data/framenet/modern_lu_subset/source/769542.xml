@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="769542">
+ <sentence>
+  Finally , the lead depositum plate was soldered into place .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="finally" pos="RB" surface="Finally"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="lead" pos="JJ" surface="lead"/>
+  <token id="5" lemma="depositum" pos="NN" surface="depositum"/>
+  <token id="6" lemma="plate" pos="NN" surface="plate"/>
+  <token id="7" lemma="be" pos="VBD" surface="was"/>
+  <token id="8" lemma="solder" pos="VBN" surface="soldered"/>
+  <token id="9" lemma="into" pos="IN" surface="into"/>
+  <token id="10" lemma="place" pos="NN" surface="place"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="advmod"/>
+  <dep from="8" to="2" type="punct"/>
+  <dep from="6" to="3" type="det"/>
+  <dep from="6" to="4" type="amod"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="8" to="6" type="nsubjpass"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="8" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

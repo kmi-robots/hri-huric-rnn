@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1049126">
+ <sentence>
+  In Dublin , many had plastered tantalising billboards over more subdued Irish Sunday paper advertising .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="dublin" pos="NNP" surface="Dublin"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="many" pos="JJ" surface="many"/>
+  <token id="5" lemma="have" pos="VBD" surface="had"/>
+  <token id="6" lemma="plaster" pos="VBN" surface="plastered"/>
+  <token id="7" lemma="tantalising" pos="NN" surface="tantalising"/>
+  <token id="8" lemma="billboard" pos="NNS" surface="billboards"/>
+  <token id="9" lemma="over" pos="IN" surface="over"/>
+  <token id="10" lemma="more" pos="RBR" surface="more"/>
+  <token id="11" lemma="subdued" pos="JJ" surface="subdued"/>
+  <token id="12" lemma="irish" pos="JJ" surface="Irish"/>
+  <token id="13" lemma="sunday" pos="NNP" surface="Sunday"/>
+  <token id="14" lemma="paper" pos="NN" surface="paper"/>
+  <token id="15" lemma="advertising" pos="NN" surface="advertising"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="6" to="3" type="punct"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="xcomp"/>
+  <dep from="6" to="8" type="npadvmod"/>
+  <dep from="6" to="9" type="prep"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="15" to="11" type="amod"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="15" to="13" type="compound"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="9" to="15" type="pobj"/>
+  <dep from="6" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

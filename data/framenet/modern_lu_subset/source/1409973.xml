@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1409973">
+ <sentence>
+  Raymond Buckey spent almost five years in prison before being released on bail in February 1989 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="raymond" pos="NNP" surface="Raymond"/>
+  <token id="2" lemma="buckey" pos="NNP" surface="Buckey"/>
+  <token id="3" lemma="spend" pos="VBD" surface="spent"/>
+  <token id="4" lemma="almost" pos="RB" surface="almost"/>
+  <token id="5" lemma="five" pos="CD" surface="five"/>
+  <token id="6" lemma="year" pos="NNS" surface="years"/>
+  <token id="7" lemma="in" pos="IN" surface="in"/>
+  <token id="8" lemma="prison" pos="NN" surface="prison"/>
+  <token id="9" lemma="before" pos="IN" surface="before"/>
+  <token id="10" lemma="be" pos="VBG" surface="being"/>
+  <token id="11" lemma="release" pos="VBN" surface="released"/>
+  <token id="12" lemma="on" pos="IN" surface="on"/>
+  <token id="13" lemma="bail" pos="NN" surface="bail"/>
+  <token id="14" lemma="in" pos="IN" surface="in"/>
+  <token id="15" lemma="february" pos="NNP" surface="February"/>
+  <token id="16" lemma="1989" pos="CD" surface="1989"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="3" to="9" type="prep"/>
+  <dep from="11" to="10" type="auxpass"/>
+  <dep from="9" to="11" type="pcomp"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="11" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="15" to="16" type="nummod"/>
+  <dep from="3" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Releasing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Circumstances">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

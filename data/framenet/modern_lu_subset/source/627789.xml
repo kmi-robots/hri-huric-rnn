@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="627789">
+ <sentence>
+  ` We intend to have the barrier brought down to block off the car park at nights , " he said .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="``" surface="`"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="We"/>
+  <token id="3" lemma="intend" pos="VBP" surface="intend"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="have" pos="VB" surface="have"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="barrier" pos="NN" surface="barrier"/>
+  <token id="8" lemma="bring" pos="VBN" surface="brought"/>
+  <token id="9" lemma="down" pos="RP" surface="down"/>
+  <token id="10" lemma="to" pos="TO" surface="to"/>
+  <token id="11" lemma="block" pos="VB" surface="block"/>
+  <token id="12" lemma="off" pos="RP" surface="off"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="car" pos="NN" surface="car"/>
+  <token id="15" lemma="park" pos="NN" surface="park"/>
+  <token id="16" lemma="at" pos="IN" surface="at"/>
+  <token id="17" lemma="night" pos="NNS" surface="nights"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma='"' pos="''" surface='"'/>
+  <token id="20" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="21" lemma="say" pos="VBD" surface="said"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="punct"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="21" to="3" type="ccomp"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="xcomp"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="5" to="8" type="ccomp"/>
+  <dep from="8" to="9" type="prt"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="8" to="11" type="advcl"/>
+  <dep from="11" to="12" type="prt"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="11" to="15" type="dobj"/>
+  <dep from="11" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="21" to="18" type="punct"/>
+  <dep from="21" to="19" type="punct"/>
+  <dep from="21" to="20" type="nsubj"/>
+  <dep from="0" to="21" type="root"/>
+  <dep from="21" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

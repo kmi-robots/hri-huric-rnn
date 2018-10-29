@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1090888">
+ <sentence>
+  During 1983 sales was split into Estates ( responsible for all public house operations ) and Marketing , and the Marketing Manager was given a seat on the Board .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="during" pos="IN" surface="During"/>
+  <token id="2" lemma="1983" pos="CD" surface="1983"/>
+  <token id="3" lemma="sale" pos="NNS" surface="sales"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="split" pos="VBN" surface="split"/>
+  <token id="6" lemma="into" pos="IN" surface="into"/>
+  <token id="7" lemma="estates" pos="NNPS" surface="Estates"/>
+  <token id="8" lemma="(" pos="-LRB-" surface="("/>
+  <token id="9" lemma="responsible" pos="JJ" surface="responsible"/>
+  <token id="10" lemma="for" pos="IN" surface="for"/>
+  <token id="11" lemma="all" pos="DT" surface="all"/>
+  <token id="12" lemma="public" pos="JJ" surface="public"/>
+  <token id="13" lemma="house" pos="NN" surface="house"/>
+  <token id="14" lemma="operation" pos="NNS" surface="operations"/>
+  <token id="15" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="marketing" pos="NN" surface="Marketing"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="and" pos="CC" surface="and"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="marketing" pos="NNP" surface="Marketing"/>
+  <token id="22" lemma="manager" pos="NNP" surface="Manager"/>
+  <token id="23" lemma="be" pos="VBD" surface="was"/>
+  <token id="24" lemma="give" pos="VBN" surface="given"/>
+  <token id="25" lemma="a" pos="DT" surface="a"/>
+  <token id="26" lemma="seat" pos="NN" surface="seat"/>
+  <token id="27" lemma="on" pos="IN" surface="on"/>
+  <token id="28" lemma="the" pos="DT" surface="the"/>
+  <token id="29" lemma="board" pos="NNP" surface="Board"/>
+  <token id="30" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="prep"/>
+  <dep from="3" to="2" type="nummod"/>
+  <dep from="5" to="3" type="nsubjpass"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="7" to="9" type="amod"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="14" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="10" to="14" type="pobj"/>
+  <dep from="7" to="15" type="punct"/>
+  <dep from="7" to="16" type="cc"/>
+  <dep from="7" to="17" type="conj"/>
+  <dep from="5" to="18" type="punct"/>
+  <dep from="5" to="19" type="cc"/>
+  <dep from="22" to="20" type="det"/>
+  <dep from="22" to="21" type="compound"/>
+  <dep from="24" to="22" type="nsubjpass"/>
+  <dep from="24" to="23" type="auxpass"/>
+  <dep from="5" to="24" type="conj"/>
+  <dep from="26" to="25" type="det"/>
+  <dep from="24" to="26" type="dobj"/>
+  <dep from="26" to="27" type="prep"/>
+  <dep from="29" to="28" type="det"/>
+  <dep from="27" to="29" type="pobj"/>
+  <dep from="24" to="30" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="24"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="25"/>
+     <token id="26"/>
+     <token id="27"/>
+     <token id="28"/>
+     <token id="29"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

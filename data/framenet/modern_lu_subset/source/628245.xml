@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="628245">
+ <sentence>
+  Donald would choke and spit and deposit the whole mouthful back on to the plate .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="donald" pos="NNP" surface="Donald"/>
+  <token id="2" lemma="would" pos="MD" surface="would"/>
+  <token id="3" lemma="choke" pos="VB" surface="choke"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="spit" pos="VB" surface="spit"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="deposit" pos="VB" surface="deposit"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="whole" pos="JJ" surface="whole"/>
+  <token id="10" lemma="mouthful" pos="JJ" surface="mouthful"/>
+  <token id="11" lemma="back" pos="RB" surface="back"/>
+  <token id="12" lemma="on" pos="IN" surface="on"/>
+  <token id="13" lemma="to" pos="IN" surface="to"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="plate" pos="NN" surface="plate"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="cc"/>
+  <dep from="3" to="5" type="conj"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="5" to="7" type="conj"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="7" to="10" type="dobj"/>
+  <dep from="12" to="11" type="advmod"/>
+  <dep from="7" to="12" type="advmod"/>
+  <dep from="7" to="13" type="prep"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="3" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

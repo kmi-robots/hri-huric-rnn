@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="631357">
+ <sentence>
+  The following companies are featured in a short season that packs sixteen events into three days .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="follow" pos="VBG" surface="following"/>
+  <token id="3" lemma="company" pos="NNS" surface="companies"/>
+  <token id="4" lemma="be" pos="VBP" surface="are"/>
+  <token id="5" lemma="feature" pos="VBN" surface="featured"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="short" pos="JJ" surface="short"/>
+  <token id="9" lemma="season" pos="NN" surface="season"/>
+  <token id="10" lemma="that" pos="WDT" surface="that"/>
+  <token id="11" lemma="pack" pos="VBZ" surface="packs"/>
+  <token id="12" lemma="sixteen" pos="CD" surface="sixteen"/>
+  <token id="13" lemma="event" pos="NNS" surface="events"/>
+  <token id="14" lemma="into" pos="IN" surface="into"/>
+  <token id="15" lemma="three" pos="CD" surface="three"/>
+  <token id="16" lemma="day" pos="NNS" surface="days"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="5" to="3" type="nsubjpass"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="6" to="9" type="pobj"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="9" to="11" type="relcl"/>
+  <dep from="13" to="12" type="nummod"/>
+  <dep from="11" to="13" type="dobj"/>
+  <dep from="11" to="14" type="prep"/>
+  <dep from="16" to="15" type="nummod"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="5" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

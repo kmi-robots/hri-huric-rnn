@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="626170">
+ <sentence>
+  Do n't change lanes unexpectedly or weave in and out of slow-moving traffic .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="do" pos="VB" surface="Do"/>
+  <token id="2" lemma="n't" pos="RB" surface="n't"/>
+  <token id="3" lemma="change" pos="VB" surface="change"/>
+  <token id="4" lemma="lane" pos="NNS" surface="lanes"/>
+  <token id="5" lemma="unexpectedly" pos="RB" surface="unexpectedly"/>
+  <token id="6" lemma="or" pos="CC" surface="or"/>
+  <token id="7" lemma="weave" pos="VB" surface="weave"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="out" pos="IN" surface="out"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="slow-mov" pos="VBG" surface="slow-moving"/>
+  <token id="13" lemma="traffic" pos="NN" surface="traffic"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="aux"/>
+  <dep from="3" to="2" type="neg"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="3" to="5" type="advmod"/>
+  <dep from="3" to="6" type="cc"/>
+  <dep from="3" to="7" type="conj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Path">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770955">
+ <sentence>
+  Too many companies enter foreign markets without analysing sufficiently either the customers or the competition in those markets .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="too" pos="RB" surface="Too"/>
+  <token id="2" lemma="many" pos="JJ" surface="many"/>
+  <token id="3" lemma="company" pos="NNS" surface="companies"/>
+  <token id="4" lemma="enter" pos="VBP" surface="enter"/>
+  <token id="5" lemma="foreign" pos="JJ" surface="foreign"/>
+  <token id="6" lemma="market" pos="NNS" surface="markets"/>
+  <token id="7" lemma="without" pos="IN" surface="without"/>
+  <token id="8" lemma="analyse" pos="VBG" surface="analysing"/>
+  <token id="9" lemma="sufficiently" pos="RB" surface="sufficiently"/>
+  <token id="10" lemma="either" pos="CC" surface="either"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="customer" pos="NNS" surface="customers"/>
+  <token id="13" lemma="or" pos="CC" surface="or"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="competition" pos="NN" surface="competition"/>
+  <token id="16" lemma="in" pos="IN" surface="in"/>
+  <token id="17" lemma="those" pos="DT" surface="those"/>
+  <token id="18" lemma="market" pos="NNS" surface="markets"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="advmod"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="7" to="8" type="pcomp"/>
+  <dep from="8" to="9" type="advmod"/>
+  <dep from="12" to="10" type="preconj"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="8" to="12" type="dobj"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="12" to="15" type="conj"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="4" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

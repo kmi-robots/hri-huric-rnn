@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="956244">
+ <sentence>
+  Discarded papers blew in the narrow street as they walked back to the car .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="discard" pos="VBN" surface="Discarded"/>
+  <token id="2" lemma="paper" pos="NNS" surface="papers"/>
+  <token id="3" lemma="blow" pos="VBD" surface="blew"/>
+  <token id="4" lemma="in" pos="IN" surface="in"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="narrow" pos="JJ" surface="narrow"/>
+  <token id="7" lemma="street" pos="NN" surface="street"/>
+  <token id="8" lemma="as" pos="IN" surface="as"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="10" lemma="walk" pos="VBD" surface="walked"/>
+  <token id="11" lemma="back" pos="RB" surface="back"/>
+  <token id="12" lemma="to" pos="IN" surface="to"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="car" pos="NN" surface="car"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="pobj"/>
+  <dep from="10" to="8" type="mark"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="3" to="10" type="advcl"/>
+  <dep from="10" to="11" type="advmod"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="3" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Area">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

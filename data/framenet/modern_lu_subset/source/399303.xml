@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="399303">
+ <sentence>
+  Irina gazed from Alexei to Jehana , and then back again .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="irina" pos="NNP" surface="Irina"/>
+  <token id="2" lemma="gaze" pos="VBN" surface="gazed"/>
+  <token id="3" lemma="from" pos="IN" surface="from"/>
+  <token id="4" lemma="alexei" pos="NNP" surface="Alexei"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="jehana" pos="NNP" surface="Jehana"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="then" pos="RB" surface="then"/>
+  <token id="10" lemma="back" pos="RB" surface="back"/>
+  <token id="11" lemma="again" pos="RB" surface="again"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="2" to="7" type="punct"/>
+  <dep from="2" to="8" type="cc"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="11" to="10" type="advmod"/>
+  <dep from="2" to="11" type="advmod"/>
+  <dep from="2" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="628089">
+ <sentence>
+  Detectives brought Gore back to Gloucestershire for questioning .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="detective" pos="NNS" surface="Detectives"/>
+  <token id="2" lemma="bring" pos="VBD" surface="brought"/>
+  <token id="3" lemma="gore" pos="NNP" surface="Gore"/>
+  <token id="4" lemma="back" pos="RB" surface="back"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="gloucestershire" pos="NNP" surface="Gloucestershire"/>
+  <token id="7" lemma="for" pos="IN" surface="for"/>
+  <token id="8" lemma="question" pos="VBG" surface="questioning"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="advmod"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="2" to="7" type="prep"/>
+  <dep from="7" to="8" type="pcomp"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

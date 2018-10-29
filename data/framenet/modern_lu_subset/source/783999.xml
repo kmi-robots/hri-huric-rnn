@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="783999">
+ <sentence>
+  Mr Chilchutt started by welding a different nose on to his Studebaker before squeezing a 400 horse-power Chevrolet V8 under the bonnet .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="mr" pos="NNP" surface="Mr"/>
+  <token id="2" lemma="chilchutt" pos="NNP" surface="Chilchutt"/>
+  <token id="3" lemma="start" pos="VBD" surface="started"/>
+  <token id="4" lemma="by" pos="IN" surface="by"/>
+  <token id="5" lemma="weld" pos="VBG" surface="welding"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="different" pos="JJ" surface="different"/>
+  <token id="8" lemma="nose" pos="NN" surface="nose"/>
+  <token id="9" lemma="on" pos="IN" surface="on"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="12" lemma="studebaker" pos="NNP" surface="Studebaker"/>
+  <token id="13" lemma="before" pos="IN" surface="before"/>
+  <token id="14" lemma="squeeze" pos="VBG" surface="squeezing"/>
+  <token id="15" lemma="a" pos="DT" surface="a"/>
+  <token id="16" lemma="400" pos="CD" surface="400"/>
+  <token id="17" lemma="horse-power" pos="JJ" surface="horse-power"/>
+  <token id="18" lemma="chevrolet" pos="NNP" surface="Chevrolet"/>
+  <token id="19" lemma="v8" pos="NN" surface="V8"/>
+  <token id="20" lemma="under" pos="IN" surface="under"/>
+  <token id="21" lemma="the" pos="DT" surface="the"/>
+  <token id="22" lemma="bonnet" pos="NN" surface="bonnet"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pcomp"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="dobj"/>
+  <dep from="5" to="9" type="prep"/>
+  <dep from="5" to="10" type="prep"/>
+  <dep from="12" to="11" type="poss"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="5" to="13" type="prep"/>
+  <dep from="13" to="14" type="pcomp"/>
+  <dep from="17" to="15" type="det"/>
+  <dep from="17" to="16" type="nummod"/>
+  <dep from="14" to="17" type="dobj"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="17" to="19" type="appos"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="22" to="21" type="det"/>
+  <dep from="20" to="22" type="pobj"/>
+  <dep from="3" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

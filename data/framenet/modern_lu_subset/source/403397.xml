@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403397">
+ <sentence>
+  She peeped in and a friendly voice greeted her .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="She"/>
+  <token id="2" lemma="peep" pos="VBD" surface="peeped"/>
+  <token id="3" lemma="in" pos="RP" surface="in"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="friendly" pos="JJ" surface="friendly"/>
+  <token id="7" lemma="voice" pos="NN" surface="voice"/>
+  <token id="8" lemma="greet" pos="VBD" surface="greeted"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="2" to="4" type="cc"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="2" to="8" type="conj"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="8" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

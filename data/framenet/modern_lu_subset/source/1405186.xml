@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1405186">
+ <sentence>
+  Mick and me must drive them all there .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="mick" pos="NNP" surface="Mick"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="4" lemma="must" pos="MD" surface="must"/>
+  <token id="5" lemma="drive" pos="VB" surface="drive"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="7" lemma="all" pos="DT" surface="all"/>
+  <token id="8" lemma="there" pos="RB" surface="there"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="6" to="7" type="appos"/>
+  <dep from="5" to="8" type="advmod"/>
+  <dep from="5" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

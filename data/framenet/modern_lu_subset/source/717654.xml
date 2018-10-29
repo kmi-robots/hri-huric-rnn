@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="717654">
+ <sentence>
+  Owners are told to start with a children 's toilet seat taped to an ordinary cat litter box .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="owner" pos="NNS" surface="Owners"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="tell" pos="VBN" surface="told"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="start" pos="VB" surface="start"/>
+  <token id="6" lemma="with" pos="IN" surface="with"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="child" pos="NNS" surface="children"/>
+  <token id="9" lemma="'s" pos="POS" surface="'s"/>
+  <token id="10" lemma="toilet" pos="NN" surface="toilet"/>
+  <token id="11" lemma="seat" pos="NN" surface="seat"/>
+  <token id="12" lemma="tap" pos="VBD" surface="taped"/>
+  <token id="13" lemma="to" pos="IN" surface="to"/>
+  <token id="14" lemma="an" pos="DT" surface="an"/>
+  <token id="15" lemma="ordinary" pos="JJ" surface="ordinary"/>
+  <token id="16" lemma="cat" pos="NN" surface="cat"/>
+  <token id="17" lemma="litter" pos="NN" surface="litter"/>
+  <token id="18" lemma="box" pos="NN" surface="box"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="xcomp"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="11" to="8" type="poss"/>
+  <dep from="8" to="9" type="case"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="6" to="11" type="pobj"/>
+  <dep from="11" to="12" type="acl"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="18" to="14" type="det"/>
+  <dep from="18" to="15" type="amod"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="13" to="18" type="pobj"/>
+  <dep from="3" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

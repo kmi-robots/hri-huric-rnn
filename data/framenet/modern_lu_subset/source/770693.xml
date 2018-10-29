@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770693">
+ <sentence>
+  Oh Polly , come away with me -- let me live with you !
+ </sentence>
+ <tokens>
+  <token id="1" lemma="oh" pos="UH" surface="Oh"/>
+  <token id="2" lemma="polly" pos="RB" surface="Polly"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="come" pos="VB" surface="come"/>
+  <token id="5" lemma="away" pos="RB" surface="away"/>
+  <token id="6" lemma="with" pos="IN" surface="with"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="8" lemma="--" pos=":" surface="--"/>
+  <token id="9" lemma="let" pos="VB" surface="let"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="11" lemma="live" pos="VB" surface="live"/>
+  <token id="12" lemma="with" pos="IN" surface="with"/>
+  <token id="13" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="14" lemma="!" pos="." surface="!"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="intj"/>
+  <dep from="4" to="2" type="advmod"/>
+  <dep from="4" to="3" type="punct"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="advmod"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="4" to="8" type="punct"/>
+  <dep from="4" to="9" type="dep"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="9" to="11" type="ccomp"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Source">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

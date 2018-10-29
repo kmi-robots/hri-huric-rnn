@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1289620">
+ <sentence>
+  I had six months to fill in before I go up to Cambridge .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="have" pos="VBD" surface="had"/>
+  <token id="3" lemma="six" pos="CD" surface="six"/>
+  <token id="4" lemma="month" pos="NNS" surface="months"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="fill" pos="VB" surface="fill"/>
+  <token id="7" lemma="in" pos="RP" surface="in"/>
+  <token id="8" lemma="before" pos="IN" surface="before"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="10" lemma="go" pos="VBP" surface="go"/>
+  <token id="11" lemma="up" pos="IN" surface="up"/>
+  <token id="12" lemma="to" pos="IN" surface="to"/>
+  <token id="13" lemma="cambridge" pos="NNP" surface="Cambridge"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="nummod"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="4" to="6" type="relcl"/>
+  <dep from="6" to="7" type="prt"/>
+  <dep from="10" to="8" type="mark"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="2" to="10" type="advcl"/>
+  <dep from="10" to="11" type="prt"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="2" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Direction">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

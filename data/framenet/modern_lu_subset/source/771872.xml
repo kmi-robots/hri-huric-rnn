@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="771872">
+ <sentence>
+  Perhaps you will change your mind about returning to publishing one day .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="perhaps" pos="RB" surface="Perhaps"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="3" lemma="will" pos="MD" surface="will"/>
+  <token id="4" lemma="change" pos="VB" surface="change"/>
+  <token id="5" lemma="-PRON-" pos="PRP$" surface="your"/>
+  <token id="6" lemma="mind" pos="NN" surface="mind"/>
+  <token id="7" lemma="about" pos="IN" surface="about"/>
+  <token id="8" lemma="return" pos="VBG" surface="returning"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="publish" pos="VBG" surface="publishing"/>
+  <token id="11" lemma="one" pos="CD" surface="one"/>
+  <token id="12" lemma="day" pos="NN" surface="day"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="poss"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="7" to="8" type="pcomp"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pcomp"/>
+  <dep from="12" to="11" type="nummod"/>
+  <dep from="10" to="12" type="npadvmod"/>
+  <dep from="4" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

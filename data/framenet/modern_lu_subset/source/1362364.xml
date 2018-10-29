@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1362364">
+ <sentence>
+  The placenta detaches itself from the uterine wall and , with other material , is forced out after the baby .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="placenta" pos="NN" surface="placenta"/>
+  <token id="3" lemma="detach" pos="VBZ" surface="detaches"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="itself"/>
+  <token id="5" lemma="from" pos="IN" surface="from"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="uterine" pos="JJ" surface="uterine"/>
+  <token id="8" lemma="wall" pos="NN" surface="wall"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="with" pos="IN" surface="with"/>
+  <token id="12" lemma="other" pos="JJ" surface="other"/>
+  <token id="13" lemma="material" pos="NN" surface="material"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="be" pos="VBZ" surface="is"/>
+  <token id="16" lemma="force" pos="VBN" surface="forced"/>
+  <token id="17" lemma="out" pos="RP" surface="out"/>
+  <token id="18" lemma="after" pos="IN" surface="after"/>
+  <token id="19" lemma="the" pos="DT" surface="the"/>
+  <token id="20" lemma="baby" pos="NN" surface="baby"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="3" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="3" to="9" type="cc"/>
+  <dep from="3" to="10" type="punct"/>
+  <dep from="16" to="11" type="prep"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="16" to="14" type="punct"/>
+  <dep from="16" to="15" type="auxpass"/>
+  <dep from="3" to="16" type="conj"/>
+  <dep from="16" to="17" type="prt"/>
+  <dep from="16" to="18" type="prep"/>
+  <dep from="20" to="19" type="det"/>
+  <dep from="18" to="20" type="pobj"/>
+  <dep from="16" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

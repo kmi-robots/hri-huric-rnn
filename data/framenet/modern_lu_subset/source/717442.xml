@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="717442">
+ <sentence>
+  Her elbows had been lashed together and she hung from the ceiling like a snared sparrow .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP$" surface="Her"/>
+  <token id="2" lemma="elbow" pos="NNS" surface="elbows"/>
+  <token id="3" lemma="have" pos="VBD" surface="had"/>
+  <token id="4" lemma="be" pos="VBN" surface="been"/>
+  <token id="5" lemma="lash" pos="VBN" surface="lashed"/>
+  <token id="6" lemma="together" pos="RB" surface="together"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="9" lemma="hang" pos="VBD" surface="hung"/>
+  <token id="10" lemma="from" pos="IN" surface="from"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="ceiling" pos="NN" surface="ceiling"/>
+  <token id="13" lemma="like" pos="IN" surface="like"/>
+  <token id="14" lemma="a" pos="DT" surface="a"/>
+  <token id="15" lemma="snare" pos="VBN" surface="snared"/>
+  <token id="16" lemma="sparrow" pos="NN" surface="sparrow"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="poss"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="advmod"/>
+  <dep from="5" to="7" type="cc"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="5" to="9" type="conj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="9" to="13" type="prep"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="13" to="16" type="pobj"/>
+  <dep from="9" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Items">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Result">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

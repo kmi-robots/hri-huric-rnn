@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="631897">
+ <sentence>
+  She flittered in the kitchen , piling crockery onto the table .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="She"/>
+  <token id="2" lemma="flitter" pos="VBD" surface="flittered"/>
+  <token id="3" lemma="in" pos="IN" surface="in"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="kitchen" pos="NN" surface="kitchen"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="pile" pos="VBG" surface="piling"/>
+  <token id="8" lemma="crockery" pos="NN" surface="crockery"/>
+  <token id="9" lemma="onto" pos="IN" surface="onto"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="table" pos="NN" surface="table"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="2" to="6" type="punct"/>
+  <dep from="2" to="7" type="advcl"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="7" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="2" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

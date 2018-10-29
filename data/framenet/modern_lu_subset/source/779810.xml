@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="779810">
+ <sentence>
+  Iris scrutinised her , eagle-eyed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="iri" pos="NNS" surface="Iris"/>
+  <token id="2" lemma="scrutinise" pos="VBD" surface="scrutinised"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="eagle-eyed" pos="JJ" surface="eagle-eyed"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="punct"/>
+  <dep from="2" to="5" type="advcl"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="241374">
+ <sentence>
+  Corbett agreed , telling Ranulf to accompany her whilst he stabled their horses at The Bull .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="corbett" pos="NNP" surface="Corbett"/>
+  <token id="2" lemma="agree" pos="VBD" surface="agreed"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="tell" pos="VBG" surface="telling"/>
+  <token id="5" lemma="ranulf" pos="NNP" surface="Ranulf"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="accompany" pos="VB" surface="accompany"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="9" lemma="whilst" pos="IN" surface="whilst"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="11" lemma="stable" pos="VBD" surface="stabled"/>
+  <token id="12" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="13" lemma="horse" pos="NNS" surface="horses"/>
+  <token id="14" lemma="at" pos="IN" surface="at"/>
+  <token id="15" lemma="the" pos="DT" surface="The"/>
+  <token id="16" lemma="bull" pos="NNP" surface="Bull"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="advcl"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="4" to="7" type="xcomp"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="11" to="9" type="mark"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="7" to="11" type="advcl"/>
+  <dep from="13" to="12" type="poss"/>
+  <dep from="11" to="13" type="dobj"/>
+  <dep from="11" to="14" type="prep"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="2" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

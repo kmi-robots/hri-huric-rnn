@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1406895">
+ <sentence>
+  A train service conveyed guests from the Bronwydd Arms station to Llwyfan Cerrig , where refreshments were provided .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="train" pos="NN" surface="train"/>
+  <token id="3" lemma="service" pos="NN" surface="service"/>
+  <token id="4" lemma="convey" pos="VBD" surface="conveyed"/>
+  <token id="5" lemma="guest" pos="NNS" surface="guests"/>
+  <token id="6" lemma="from" pos="IN" surface="from"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="bronwydd" pos="NNP" surface="Bronwydd"/>
+  <token id="9" lemma="arms" pos="NNP" surface="Arms"/>
+  <token id="10" lemma="station" pos="NN" surface="station"/>
+  <token id="11" lemma="to" pos="IN" surface="to"/>
+  <token id="12" lemma="llwyfan" pos="NNP" surface="Llwyfan"/>
+  <token id="13" lemma="cerrig" pos="NNP" surface="Cerrig"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="where" pos="WRB" surface="where"/>
+  <token id="16" lemma="refreshment" pos="NNS" surface="refreshments"/>
+  <token id="17" lemma="be" pos="VBD" surface="were"/>
+  <token id="18" lemma="provide" pos="VBN" surface="provided"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="4" to="6" type="prep"/>
+  <dep from="10" to="7" type="det"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="6" to="10" type="pobj"/>
+  <dep from="6" to="11" type="prep"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="13" to="14" type="punct"/>
+  <dep from="18" to="15" type="advmod"/>
+  <dep from="18" to="16" type="nsubjpass"/>
+  <dep from="18" to="17" type="auxpass"/>
+  <dep from="13" to="18" type="relcl"/>
+  <dep from="4" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Carrier">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

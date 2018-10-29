@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="720036">
+ <sentence>
+  Each word was cut out from different magazines and newsprint , and pasted to a square piece of card .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="each" pos="DT" surface="Each"/>
+  <token id="2" lemma="word" pos="NN" surface="word"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="cut" pos="VBN" surface="cut"/>
+  <token id="5" lemma="out" pos="RP" surface="out"/>
+  <token id="6" lemma="from" pos="IN" surface="from"/>
+  <token id="7" lemma="different" pos="JJ" surface="different"/>
+  <token id="8" lemma="magazine" pos="NNS" surface="magazines"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="newsprint" pos="NN" surface="newsprint"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="paste" pos="VBN" surface="pasted"/>
+  <token id="14" lemma="to" pos="IN" surface="to"/>
+  <token id="15" lemma="a" pos="DT" surface="a"/>
+  <token id="16" lemma="square" pos="JJ" surface="square"/>
+  <token id="17" lemma="piece" pos="NN" surface="piece"/>
+  <token id="18" lemma="of" pos="IN" surface="of"/>
+  <token id="19" lemma="card" pos="NN" surface="card"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prt"/>
+  <dep from="4" to="6" type="prep"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="cc"/>
+  <dep from="8" to="10" type="conj"/>
+  <dep from="4" to="11" type="punct"/>
+  <dep from="4" to="12" type="cc"/>
+  <dep from="4" to="13" type="conj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="17" to="15" type="det"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="14" to="17" type="pobj"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="18" to="19" type="pobj"/>
+  <dep from="4" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

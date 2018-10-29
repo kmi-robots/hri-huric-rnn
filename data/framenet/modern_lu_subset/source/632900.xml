@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="632900">
+ <sentence>
+  Aircraft have again been probing Falklands airspace and recently an Argentinian flag was planted on Southern Thule .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="aircraft" pos="NNS" surface="Aircraft"/>
+  <token id="2" lemma="have" pos="VBP" surface="have"/>
+  <token id="3" lemma="again" pos="RB" surface="again"/>
+  <token id="4" lemma="be" pos="VBN" surface="been"/>
+  <token id="5" lemma="probe" pos="VBG" surface="probing"/>
+  <token id="6" lemma="falklands" pos="NNP" surface="Falklands"/>
+  <token id="7" lemma="airspace" pos="NN" surface="airspace"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="recently" pos="RB" surface="recently"/>
+  <token id="10" lemma="an" pos="DT" surface="an"/>
+  <token id="11" lemma="argentinian" pos="JJ" surface="Argentinian"/>
+  <token id="12" lemma="flag" pos="NN" surface="flag"/>
+  <token id="13" lemma="be" pos="VBD" surface="was"/>
+  <token id="14" lemma="plant" pos="VBN" surface="planted"/>
+  <token id="15" lemma="on" pos="IN" surface="on"/>
+  <token id="16" lemma="southern" pos="NNP" surface="Southern"/>
+  <token id="17" lemma="thule" pos="NNP" surface="Thule"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="nsubj"/>
+  <dep from="5" to="2" type="aux"/>
+  <dep from="5" to="3" type="advmod"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="14" to="9" type="advmod"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="14" to="12" type="nsubjpass"/>
+  <dep from="14" to="13" type="auxpass"/>
+  <dep from="5" to="14" type="conj"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="5" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

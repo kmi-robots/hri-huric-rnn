@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="589163">
+ <sentence>
+  He was accompanied by 17 ministers representing all 13 parties in his government .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="accompany" pos="VBN" surface="accompanied"/>
+  <token id="4" lemma="by" pos="IN" surface="by"/>
+  <token id="5" lemma="17" pos="CD" surface="17"/>
+  <token id="6" lemma="minister" pos="NNS" surface="ministers"/>
+  <token id="7" lemma="represent" pos="VBG" surface="representing"/>
+  <token id="8" lemma="all" pos="DT" surface="all"/>
+  <token id="9" lemma="13" pos="CD" surface="13"/>
+  <token id="10" lemma="party" pos="NNS" surface="parties"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="13" lemma="government" pos="NN" surface="government"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="agent"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="6" to="7" type="acl"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="nummod"/>
+  <dep from="7" to="10" type="dobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="poss"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Cotheme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

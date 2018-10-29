@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="404645">
+ <sentence>
+  Benny shouted , drawing startled stares from some Marines .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="benny" pos="NNP" surface="Benny"/>
+  <token id="2" lemma="shout" pos="VBD" surface="shouted"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="draw" pos="VBG" surface="drawing"/>
+  <token id="5" lemma="startled" pos="JJ" surface="startled"/>
+  <token id="6" lemma="stare" pos="NNS" surface="stares"/>
+  <token id="7" lemma="from" pos="IN" surface="from"/>
+  <token id="8" lemma="some" pos="DT" surface="some"/>
+  <token id="9" lemma="marines" pos="NNPS" surface="Marines"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="advcl"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="2" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Manner">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Perceiver_agentive">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

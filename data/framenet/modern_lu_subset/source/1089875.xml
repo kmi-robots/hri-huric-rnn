@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1089875">
+ <sentence>
+  The event was sponsored by Mann Egerton , and the Chinese restaurant Zen generously donated the food .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="event" pos="NN" surface="event"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="sponsor" pos="VBN" surface="sponsored"/>
+  <token id="5" lemma="by" pos="IN" surface="by"/>
+  <token id="6" lemma="mann" pos="NNP" surface="Mann"/>
+  <token id="7" lemma="egerton" pos="NNP" surface="Egerton"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="chinese" pos="JJ" surface="Chinese"/>
+  <token id="12" lemma="restaurant" pos="NN" surface="restaurant"/>
+  <token id="13" lemma="zen" pos="NNP" surface="Zen"/>
+  <token id="14" lemma="generously" pos="RB" surface="generously"/>
+  <token id="15" lemma="donate" pos="VBD" surface="donated"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="food" pos="NN" surface="food"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="agent"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="4" to="8" type="punct"/>
+  <dep from="4" to="9" type="cc"/>
+  <dep from="13" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="15" to="13" type="nsubj"/>
+  <dep from="15" to="14" type="advmod"/>
+  <dep from="4" to="15" type="conj"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="dobj"/>
+  <dep from="15" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

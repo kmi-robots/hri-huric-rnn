@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="720402">
+ <sentence>
+  Otherwise tack a rug down lightly .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="otherwise" pos="RB" surface="Otherwise"/>
+  <token id="2" lemma="tack" pos="VB" surface="tack"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="rug" pos="NN" surface="rug"/>
+  <token id="5" lemma="down" pos="RB" surface="down"/>
+  <token id="6" lemma="lightly" pos="RB" surface="lightly"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="advmod"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="advmod"/>
+  <dep from="2" to="6" type="advmod"/>
+  <dep from="2" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="592936">
+ <sentence>
+  The Officers arrived with their wives and girlfriends , the children following behind .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="officers" pos="NNPS" surface="Officers"/>
+  <token id="3" lemma="arrive" pos="VBD" surface="arrived"/>
+  <token id="4" lemma="with" pos="IN" surface="with"/>
+  <token id="5" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="6" lemma="wife" pos="NNS" surface="wives"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="girlfriend" pos="NNS" surface="girlfriends"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="child" pos="NNS" surface="children"/>
+  <token id="12" lemma="follow" pos="VBG" surface="following"/>
+  <token id="13" lemma="behind" pos="RB" surface="behind"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="poss"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="6" to="7" type="cc"/>
+  <dep from="6" to="8" type="conj"/>
+  <dep from="3" to="9" type="punct"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="2" to="11" type="appos"/>
+  <dep from="11" to="12" type="acl"/>
+  <dep from="12" to="13" type="advmod"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

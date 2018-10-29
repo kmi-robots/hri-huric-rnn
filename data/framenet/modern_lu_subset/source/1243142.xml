@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1243142">
+ <sentence>
+  The report will be handed to the Public Accounts Committee in the New Year .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="report" pos="NN" surface="report"/>
+  <token id="3" lemma="will" pos="MD" surface="will"/>
+  <token id="4" lemma="be" pos="VB" surface="be"/>
+  <token id="5" lemma="hand" pos="VBN" surface="handed"/>
+  <token id="6" lemma="to" pos="IN" surface="to"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="public" pos="NNP" surface="Public"/>
+  <token id="9" lemma="accounts" pos="NNPS" surface="Accounts"/>
+  <token id="10" lemma="committee" pos="NNP" surface="Committee"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="new" pos="NNP" surface="New"/>
+  <token id="14" lemma="year" pos="NNP" surface="Year"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="10" to="7" type="det"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="6" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="5" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

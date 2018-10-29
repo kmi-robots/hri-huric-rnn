@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="704553">
+ <sentence>
+  Immunoprecipitates were treated with 1.0% deoxycholate and the released material assayed for DRTF1/E2F activity in gel retardation .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="immunoprecipitate" pos="NNS" surface="Immunoprecipitates"/>
+  <token id="2" lemma="be" pos="VBD" surface="were"/>
+  <token id="3" lemma="treat" pos="VBN" surface="treated"/>
+  <token id="4" lemma="with" pos="IN" surface="with"/>
+  <token id="5" lemma="1.0%" pos="CD" surface="1.0%"/>
+  <token id="6" lemma="deoxycholate" pos="NN" surface="deoxycholate"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="release" pos="VBN" surface="released"/>
+  <token id="10" lemma="material" pos="NN" surface="material"/>
+  <token id="11" lemma="assay" pos="VBN" surface="assayed"/>
+  <token id="12" lemma="for" pos="IN" surface="for"/>
+  <token id="13" lemma="drtf1/e2f" pos="CD" surface="DRTF1/E2F"/>
+  <token id="14" lemma="activity" pos="NN" surface="activity"/>
+  <token id="15" lemma="in" pos="IN" surface="in"/>
+  <token id="16" lemma="gel" pos="NN" surface="gel"/>
+  <token id="17" lemma="retardation" pos="NN" surface="retardation"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="nummod"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="3" to="7" type="cc"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="3" to="11" type="conj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="11" to="15" type="prep"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="11" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

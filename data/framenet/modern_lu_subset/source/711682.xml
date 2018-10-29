@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="711682">
+ <sentence>
+  Again beds were stripped and the bedclothes carried upstairs .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="again" pos="RB" surface="Again"/>
+  <token id="2" lemma="bed" pos="NNS" surface="beds"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="strip" pos="VBN" surface="stripped"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="bedclothe" pos="NNS" surface="bedclothes"/>
+  <token id="8" lemma="carry" pos="VBN" surface="carried"/>
+  <token id="9" lemma="upstairs" pos="RB" surface="upstairs"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="4" to="8" type="conj"/>
+  <dep from="8" to="9" type="advmod"/>
+  <dep from="8" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

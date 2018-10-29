@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1241116">
+ <sentence>
+  " You 'd better send yourself to Hoggatt 's if you want to get there by eight-thirty .
+ </sentence>
+ <tokens>
+  <token id="1" lemma='"' pos="``" surface='"'/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="You"/>
+  <token id="3" lemma="'d" pos="MD" surface="'d"/>
+  <token id="4" lemma="better" pos="RB" surface="better"/>
+  <token id="5" lemma="send" pos="VB" surface="send"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="yourself"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="hoggatt" pos="NNP" surface="Hoggatt"/>
+  <token id="9" lemma="'s" pos="POS" surface="'s"/>
+  <token id="10" lemma="if" pos="IN" surface="if"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="12" lemma="want" pos="VBP" surface="want"/>
+  <token id="13" lemma="to" pos="TO" surface="to"/>
+  <token id="14" lemma="get" pos="VB" surface="get"/>
+  <token id="15" lemma="there" pos="RB" surface="there"/>
+  <token id="16" lemma="by" pos="IN" surface="by"/>
+  <token id="17" lemma="eight-thirty" pos="NN" surface="eight-thirty"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="punct"/>
+  <dep from="5" to="2" type="nsubj"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="8" to="9" type="case"/>
+  <dep from="12" to="10" type="mark"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="5" to="12" type="advcl"/>
+  <dep from="14" to="13" type="aux"/>
+  <dep from="12" to="14" type="xcomp"/>
+  <dep from="14" to="15" type="advmod"/>
+  <dep from="14" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="5" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

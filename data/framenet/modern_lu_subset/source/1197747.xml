@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1197747">
+ <sentence>
+  While coasting downhill out of Abergwesyn , three cyclists in yellow and black wasp suits buzzed past .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="while" pos="IN" surface="While"/>
+  <token id="2" lemma="coast" pos="VBG" surface="coasting"/>
+  <token id="3" lemma="downhill" pos="RB" surface="downhill"/>
+  <token id="4" lemma="out" pos="IN" surface="out"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="abergwesyn" pos="NNP" surface="Abergwesyn"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="three" pos="CD" surface="three"/>
+  <token id="9" lemma="cyclist" pos="NNS" surface="cyclists"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="yellow" pos="JJ" surface="yellow"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="black" pos="JJ" surface="black"/>
+  <token id="14" lemma="wasp" pos="NN" surface="wasp"/>
+  <token id="15" lemma="suit" pos="NNS" surface="suits"/>
+  <token id="16" lemma="buzz" pos="VBN" surface="buzzed"/>
+  <token id="17" lemma="past" pos="RB" surface="past"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="mark"/>
+  <dep from="16" to="2" type="csubj"/>
+  <dep from="2" to="3" type="advmod"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="9" to="8" type="nummod"/>
+  <dep from="6" to="9" type="appos"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="15" to="11" type="amod"/>
+  <dep from="11" to="12" type="cc"/>
+  <dep from="11" to="13" type="conj"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="10" to="15" type="pobj"/>
+  <dep from="0" to="16" type="root"/>
+  <dep from="16" to="17" type="advmod"/>
+  <dep from="16" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Path">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

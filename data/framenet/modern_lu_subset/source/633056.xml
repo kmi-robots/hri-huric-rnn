@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="633056">
+ <sentence>
+  McGowan positioned himself between Jed and Creed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="mcgowan" pos="NNP" surface="McGowan"/>
+  <token id="2" lemma="position" pos="VBD" surface="positioned"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="himself"/>
+  <token id="4" lemma="between" pos="IN" surface="between"/>
+  <token id="5" lemma="jed" pos="NNP" surface="Jed"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="creed" pos="NNP" surface="Creed"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="5" to="7" type="conj"/>
+  <dep from="2" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

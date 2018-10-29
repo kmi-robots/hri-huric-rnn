@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="596840">
+ <sentence>
+  Reluctantly , Lou dragged herself upright and trailed behind Melissa .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="reluctantly" pos="RB" surface="Reluctantly"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="lou" pos="NNP" surface="Lou"/>
+  <token id="4" lemma="drag" pos="VBD" surface="dragged"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="herself"/>
+  <token id="6" lemma="upright" pos="JJ" surface="upright"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="trail" pos="VBD" surface="trailed"/>
+  <token id="9" lemma="behind" pos="IN" surface="behind"/>
+  <token id="10" lemma="melissa" pos="NNP" surface="Melissa"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="4" to="2" type="punct"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="4" to="6" type="oprd"/>
+  <dep from="4" to="7" type="cc"/>
+  <dep from="4" to="8" type="conj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="4" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

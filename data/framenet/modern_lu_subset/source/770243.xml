@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770243">
+ <sentence>
+  Now what I would like to do is come back and see you either next week or the week after .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="now" pos="RB" surface="Now"/>
+  <token id="2" lemma="what" pos="WP" surface="what"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="4" lemma="would" pos="MD" surface="would"/>
+  <token id="5" lemma="like" pos="VB" surface="like"/>
+  <token id="6" lemma="to" pos="TO" surface="to"/>
+  <token id="7" lemma="do" pos="VB" surface="do"/>
+  <token id="8" lemma="be" pos="VBZ" surface="is"/>
+  <token id="9" lemma="come" pos="VB" surface="come"/>
+  <token id="10" lemma="back" pos="RB" surface="back"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="see" pos="VB" surface="see"/>
+  <token id="13" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="14" lemma="either" pos="CC" surface="either"/>
+  <token id="15" lemma="next" pos="JJ" surface="next"/>
+  <token id="16" lemma="week" pos="NN" surface="week"/>
+  <token id="17" lemma="or" pos="CC" surface="or"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="week" pos="NN" surface="week"/>
+  <token id="20" lemma="after" pos="RB" surface="after"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="advmod"/>
+  <dep from="7" to="2" type="dobj"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="8" to="5" type="csubj"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="5" to="7" type="xcomp"/>
+  <dep from="9" to="8" type="auxpass"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="9" to="10" type="advmod"/>
+  <dep from="9" to="11" type="cc"/>
+  <dep from="9" to="12" type="conj"/>
+  <dep from="12" to="13" type="dobj"/>
+  <dep from="16" to="14" type="preconj"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="12" to="16" type="npadvmod"/>
+  <dep from="16" to="17" type="cc"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="16" to="19" type="conj"/>
+  <dep from="19" to="20" type="advmod"/>
+  <dep from="9" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

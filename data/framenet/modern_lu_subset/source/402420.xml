@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="402420">
+ <sentence>
+  After a moment , Jane walked slowly over to the secret door and looked through .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="after" pos="IN" surface="After"/>
+  <token id="2" lemma="a" pos="DT" surface="a"/>
+  <token id="3" lemma="moment" pos="NN" surface="moment"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="jane" pos="NNP" surface="Jane"/>
+  <token id="6" lemma="walk" pos="VBD" surface="walked"/>
+  <token id="7" lemma="slowly" pos="RB" surface="slowly"/>
+  <token id="8" lemma="over" pos="RB" surface="over"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="secret" pos="JJ" surface="secret"/>
+  <token id="12" lemma="door" pos="NN" surface="door"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="look" pos="VBD" surface="looked"/>
+  <token id="15" lemma="through" pos="IN" surface="through"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="6" to="4" type="punct"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="advmod"/>
+  <dep from="6" to="8" type="advmod"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="6" to="13" type="cc"/>
+  <dep from="6" to="14" type="conj"/>
+  <dep from="14" to="15" type="prt"/>
+  <dep from="6" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

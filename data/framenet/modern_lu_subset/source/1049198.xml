@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1049198">
+ <sentence>
+  The mandible should not be glued or plastered to the vault .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="mandible" pos="NN" surface="mandible"/>
+  <token id="3" lemma="should" pos="MD" surface="should"/>
+  <token id="4" lemma="not" pos="RB" surface="not"/>
+  <token id="5" lemma="be" pos="VB" surface="be"/>
+  <token id="6" lemma="glue" pos="VBN" surface="glued"/>
+  <token id="7" lemma="or" pos="CC" surface="or"/>
+  <token id="8" lemma="plaster" pos="VBN" surface="plastered"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="vault" pos="NN" surface="vault"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="6" to="2" type="nsubjpass"/>
+  <dep from="6" to="3" type="aux"/>
+  <dep from="6" to="4" type="neg"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="cc"/>
+  <dep from="6" to="8" type="conj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="6" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

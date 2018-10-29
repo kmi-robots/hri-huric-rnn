@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1090142">
+ <sentence>
+  Members were asked to donate baking to the Community Coffee Evening on 5th October .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="member" pos="NNS" surface="Members"/>
+  <token id="2" lemma="be" pos="VBD" surface="were"/>
+  <token id="3" lemma="ask" pos="VBN" surface="asked"/>
+  <token id="4" lemma="to" pos="TO" surface="to"/>
+  <token id="5" lemma="donate" pos="VB" surface="donate"/>
+  <token id="6" lemma="bake" pos="VBG" surface="baking"/>
+  <token id="7" lemma="to" pos="IN" surface="to"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="community" pos="NNP" surface="Community"/>
+  <token id="10" lemma="coffee" pos="NNP" surface="Coffee"/>
+  <token id="11" lemma="evening" pos="NNP" surface="Evening"/>
+  <token id="12" lemma="on" pos="IN" surface="on"/>
+  <token id="13" lemma="5th" pos="JJ" surface="5th"/>
+  <token id="14" lemma="october" pos="NNP" surface="October"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="3" to="5" type="xcomp"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="11" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="7" to="11" type="pobj"/>
+  <dep from="5" to="12" type="prep"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="3" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

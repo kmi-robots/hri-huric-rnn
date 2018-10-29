@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106143">
+ <sentence>
+  On top of a hill in the center of the city , it 's approached by a grand staircase .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="on" pos="IN" surface="On"/>
+  <token id="2" lemma="top" pos="NN" surface="top"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="hill" pos="NN" surface="hill"/>
+  <token id="6" lemma="in" pos="IN" surface="in"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="center" pos="NN" surface="center"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="city" pos="NN" surface="city"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="14" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="15" lemma="approach" pos="VBN" surface="approached"/>
+  <token id="16" lemma="by" pos="IN" surface="by"/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="grand" pos="JJ" surface="grand"/>
+  <token id="19" lemma="staircase" pos="NN" surface="staircase"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="15" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="15" to="12" type="punct"/>
+  <dep from="15" to="13" type="nsubjpass"/>
+  <dep from="15" to="14" type="auxpass"/>
+  <dep from="0" to="15" type="root"/>
+  <dep from="15" to="16" type="agent"/>
+  <dep from="19" to="17" type="det"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="16" to="19" type="pobj"/>
+  <dep from="15" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Path">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="667852">
+ <sentence>
+  Three cavalry companies gave pursuit , but were scattered when the warriors turned to defend a lava escarpment .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="three" pos="CD" surface="Three"/>
+  <token id="2" lemma="cavalry" pos="NN" surface="cavalry"/>
+  <token id="3" lemma="company" pos="NNS" surface="companies"/>
+  <token id="4" lemma="give" pos="VBD" surface="gave"/>
+  <token id="5" lemma="pursuit" pos="NN" surface="pursuit"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="but" pos="CC" surface="but"/>
+  <token id="8" lemma="be" pos="VBD" surface="were"/>
+  <token id="9" lemma="scatter" pos="VBN" surface="scattered"/>
+  <token id="10" lemma="when" pos="WRB" surface="when"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="warrior" pos="NNS" surface="warriors"/>
+  <token id="13" lemma="turn" pos="VBD" surface="turned"/>
+  <token id="14" lemma="to" pos="TO" surface="to"/>
+  <token id="15" lemma="defend" pos="VB" surface="defend"/>
+  <token id="16" lemma="a" pos="DT" surface="a"/>
+  <token id="17" lemma="lava" pos="NN" surface="lava"/>
+  <token id="18" lemma="escarpment" pos="NN" surface="escarpment"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nummod"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="4" to="6" type="punct"/>
+  <dep from="4" to="7" type="cc"/>
+  <dep from="9" to="8" type="auxpass"/>
+  <dep from="4" to="9" type="conj"/>
+  <dep from="13" to="10" type="advmod"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="9" to="13" type="advcl"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="13" to="15" type="xcomp"/>
+  <dep from="18" to="16" type="det"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="15" to="18" type="dobj"/>
+  <dep from="4" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

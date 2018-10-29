@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="778794">
+ <sentence>
+  Does the horse come to the stable door to investigate you , and perhaps give you a friendly nuzzle ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="do" pos="VBZ" surface="Does"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="horse" pos="NN" surface="horse"/>
+  <token id="4" lemma="come" pos="VB" surface="come"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="stable" pos="JJ" surface="stable"/>
+  <token id="8" lemma="door" pos="NN" surface="door"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="investigate" pos="VB" surface="investigate"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="perhaps" pos="RB" surface="perhaps"/>
+  <token id="15" lemma="give" pos="VB" surface="give"/>
+  <token id="16" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="friendly" pos="JJ" surface="friendly"/>
+  <token id="19" lemma="nuzzle" pos="NN" surface="nuzzle"/>
+  <token id="20" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="aux"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="4" to="10" type="advcl"/>
+  <dep from="10" to="11" type="dobj"/>
+  <dep from="4" to="12" type="punct"/>
+  <dep from="4" to="13" type="cc"/>
+  <dep from="15" to="14" type="advmod"/>
+  <dep from="4" to="15" type="conj"/>
+  <dep from="15" to="16" type="dative"/>
+  <dep from="19" to="17" type="det"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="15" to="19" type="dobj"/>
+  <dep from="4" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

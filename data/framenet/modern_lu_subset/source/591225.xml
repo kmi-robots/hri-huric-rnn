@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="591225">
+ <sentence>
+  Ruth enthused under her breath as the waiter escorted them to a table by the window .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="ruth" pos="NNP" surface="Ruth"/>
+  <token id="2" lemma="enthuse" pos="VBD" surface="enthused"/>
+  <token id="3" lemma="under" pos="IN" surface="under"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="5" lemma="breath" pos="NN" surface="breath"/>
+  <token id="6" lemma="as" pos="IN" surface="as"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="waiter" pos="NN" surface="waiter"/>
+  <token id="9" lemma="escort" pos="VBD" surface="escorted"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="11" lemma="to" pos="IN" surface="to"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="table" pos="NN" surface="table"/>
+  <token id="14" lemma="by" pos="IN" surface="by"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="window" pos="NN" surface="window"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="poss"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="9" to="6" type="mark"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="2" to="9" type="advcl"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="9" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="2" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

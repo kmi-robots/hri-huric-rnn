@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="783609">
+ <sentence>
+  The raiders then handcuffed Ann and Keith together and Mr Culling was forced to drive to his bank and hand over the cash .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="raider" pos="NNS" surface="raiders"/>
+  <token id="3" lemma="then" pos="RB" surface="then"/>
+  <token id="4" lemma="handcuff" pos="VBD" surface="handcuffed"/>
+  <token id="5" lemma="ann" pos="NNP" surface="Ann"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="keith" pos="NNP" surface="Keith"/>
+  <token id="8" lemma="together" pos="RB" surface="together"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="mr" pos="NNP" surface="Mr"/>
+  <token id="11" lemma="culling" pos="NNP" surface="Culling"/>
+  <token id="12" lemma="be" pos="VBD" surface="was"/>
+  <token id="13" lemma="force" pos="VBN" surface="forced"/>
+  <token id="14" lemma="to" pos="TO" surface="to"/>
+  <token id="15" lemma="drive" pos="VB" surface="drive"/>
+  <token id="16" lemma="to" pos="IN" surface="to"/>
+  <token id="17" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="18" lemma="bank" pos="NN" surface="bank"/>
+  <token id="19" lemma="and" pos="CC" surface="and"/>
+  <token id="20" lemma="hand" pos="NN" surface="hand"/>
+  <token id="21" lemma="over" pos="RP" surface="over"/>
+  <token id="22" lemma="the" pos="DT" surface="the"/>
+  <token id="23" lemma="cash" pos="NN" surface="cash"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="5" to="7" type="conj"/>
+  <dep from="4" to="8" type="advmod"/>
+  <dep from="4" to="9" type="cc"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="13" to="11" type="nsubjpass"/>
+  <dep from="13" to="12" type="auxpass"/>
+  <dep from="4" to="13" type="conj"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="13" to="15" type="xcomp"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="18" to="17" type="poss"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="15" to="19" type="cc"/>
+  <dep from="15" to="20" type="conj"/>
+  <dep from="20" to="21" type="prt"/>
+  <dep from="23" to="22" type="det"/>
+  <dep from="20" to="23" type="dobj"/>
+  <dep from="13" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Items">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Result">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

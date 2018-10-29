@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="779467">
+ <sentence>
+  I enclose an up-to-date CV for your perusal .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="enclose" pos="VBP" surface="enclose"/>
+  <token id="3" lemma="an" pos="DT" surface="an"/>
+  <token id="4" lemma="up-to-date" pos="NN" surface="up-to-date"/>
+  <token id="5" lemma="cv" pos="NN" surface="CV"/>
+  <token id="6" lemma="for" pos="IN" surface="for"/>
+  <token id="7" lemma="-PRON-" pos="PRP$" surface="your"/>
+  <token id="8" lemma="perusal" pos="NN" surface="perusal"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="2" to="6" type="dative"/>
+  <dep from="8" to="7" type="poss"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

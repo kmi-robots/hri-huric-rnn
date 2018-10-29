@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1289523">
+ <sentence>
+  ` We 'll go in my car , and you can navigate . "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="``" surface="`"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="We"/>
+  <token id="3" lemma="'ll" pos="MD" surface="'ll"/>
+  <token id="4" lemma="go" pos="VB" surface="go"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="7" lemma="car" pos="NN" surface="car"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="11" lemma="can" pos="MD" surface="can"/>
+  <token id="12" lemma="navigate" pos="VB" surface="navigate"/>
+  <token id="13" lemma="." pos="." surface="."/>
+  <token id="14" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="punct"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="poss"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="4" to="8" type="punct"/>
+  <dep from="4" to="9" type="cc"/>
+  <dep from="12" to="10" type="nsubj"/>
+  <dep from="12" to="11" type="aux"/>
+  <dep from="4" to="12" type="conj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="12" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Carrier">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

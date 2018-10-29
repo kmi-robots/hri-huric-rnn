@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="919985">
+ <sentence>
+  They put his body in Holy Trinity Church , down by the river Avon .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="They"/>
+  <token id="2" lemma="put" pos="VBD" surface="put"/>
+  <token id="3" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="4" lemma="body" pos="NN" surface="body"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="holy" pos="NNP" surface="Holy"/>
+  <token id="7" lemma="trinity" pos="NNP" surface="Trinity"/>
+  <token id="8" lemma="church" pos="NNP" surface="Church"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="down" pos="RB" surface="down"/>
+  <token id="11" lemma="by" pos="IN" surface="by"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="river" pos="NN" surface="river"/>
+  <token id="14" lemma="avon" pos="NNP" surface="Avon"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="poss"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="2" to="9" type="punct"/>
+  <dep from="2" to="10" type="advmod"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="2" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

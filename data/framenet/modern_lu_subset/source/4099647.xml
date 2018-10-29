@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4099647">
+ <sentence>
+  Ignoring the possibility that these trucks could be used by terrorists to transport biological or chemical weapons is irresponsible .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="ignore" pos="VBG" surface="Ignoring"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="possibility" pos="NN" surface="possibility"/>
+  <token id="4" lemma="that" pos="IN" surface="that"/>
+  <token id="5" lemma="these" pos="DT" surface="these"/>
+  <token id="6" lemma="truck" pos="NNS" surface="trucks"/>
+  <token id="7" lemma="could" pos="MD" surface="could"/>
+  <token id="8" lemma="be" pos="VB" surface="be"/>
+  <token id="9" lemma="use" pos="VBN" surface="used"/>
+  <token id="10" lemma="by" pos="IN" surface="by"/>
+  <token id="11" lemma="terrorist" pos="NNS" surface="terrorists"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="transport" pos="VB" surface="transport"/>
+  <token id="14" lemma="biological" pos="JJ" surface="biological"/>
+  <token id="15" lemma="or" pos="CC" surface="or"/>
+  <token id="16" lemma="chemical" pos="JJ" surface="chemical"/>
+  <token id="17" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="18" lemma="be" pos="VBZ" surface="is"/>
+  <token id="19" lemma="irresponsible" pos="JJ" surface="irresponsible"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="18" to="1" type="csubj"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="dobj"/>
+  <dep from="9" to="4" type="mark"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="9" to="6" type="nsubjpass"/>
+  <dep from="9" to="7" type="aux"/>
+  <dep from="9" to="8" type="auxpass"/>
+  <dep from="3" to="9" type="acl"/>
+  <dep from="9" to="10" type="agent"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="9" to="13" type="xcomp"/>
+  <dep from="17" to="14" type="amod"/>
+  <dep from="14" to="15" type="cc"/>
+  <dep from="14" to="16" type="conj"/>
+  <dep from="13" to="17" type="dobj"/>
+  <dep from="0" to="18" type="root"/>
+  <dep from="18" to="19" type="acomp"/>
+  <dep from="18" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

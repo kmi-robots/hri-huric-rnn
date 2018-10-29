@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="588859">
+ <sentence>
+  One sherpa , Tensing Norgay , accompanied Sir Edmund Hillary and became one the first men to climb Mount Everest .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="one" pos="CD" surface="One"/>
+  <token id="2" lemma="sherpa" pos="NN" surface="sherpa"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="tensing" pos="NNP" surface="Tensing"/>
+  <token id="5" lemma="norgay" pos="NNP" surface="Norgay"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="accompany" pos="VBN" surface="accompanied"/>
+  <token id="8" lemma="sir" pos="NNP" surface="Sir"/>
+  <token id="9" lemma="edmund" pos="NNP" surface="Edmund"/>
+  <token id="10" lemma="hillary" pos="NNP" surface="Hillary"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="become" pos="VBD" surface="became"/>
+  <token id="13" lemma="one" pos="CD" surface="one"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="first" pos="JJ" surface="first"/>
+  <token id="16" lemma="man" pos="NNS" surface="men"/>
+  <token id="17" lemma="to" pos="TO" surface="to"/>
+  <token id="18" lemma="climb" pos="VB" surface="climb"/>
+  <token id="19" lemma="mount" pos="NNP" surface="Mount"/>
+  <token id="20" lemma="everest" pos="NNP" surface="Everest"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nummod"/>
+  <dep from="7" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="2" to="5" type="appos"/>
+  <dep from="2" to="6" type="punct"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="10" to="8" type="compound"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="dobj"/>
+  <dep from="7" to="11" type="cc"/>
+  <dep from="7" to="12" type="conj"/>
+  <dep from="12" to="13" type="attr"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="12" to="16" type="dobj"/>
+  <dep from="18" to="17" type="aux"/>
+  <dep from="16" to="18" type="relcl"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="18" to="20" type="dobj"/>
+  <dep from="7" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

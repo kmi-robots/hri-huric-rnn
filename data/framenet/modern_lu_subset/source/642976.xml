@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="642976">
+ <sentence>
+  The rest were pulled from the water and ferried to safety .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="rest" pos="NN" surface="rest"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="pull" pos="VBN" surface="pulled"/>
+  <token id="5" lemma="from" pos="IN" surface="from"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="water" pos="NN" surface="water"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="ferry" pos="VBD" surface="ferried"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="safety" pos="NN" surface="safety"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="4" to="8" type="cc"/>
+  <dep from="4" to="9" type="conj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="4" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

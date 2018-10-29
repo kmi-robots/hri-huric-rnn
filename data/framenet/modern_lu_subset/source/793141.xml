@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="793141">
+ <sentence>
+  As she straightened up from tying her shoes , the pain struck .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="as" pos="IN" surface="As"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="3" lemma="straighten" pos="VBD" surface="straightened"/>
+  <token id="4" lemma="up" pos="RP" surface="up"/>
+  <token id="5" lemma="from" pos="IN" surface="from"/>
+  <token id="6" lemma="tie" pos="VBG" surface="tying"/>
+  <token id="7" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="8" lemma="shoe" pos="NNS" surface="shoes"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="pain" pos="NN" surface="pain"/>
+  <token id="12" lemma="strike" pos="VBD" surface="struck"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="mark"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="12" to="3" type="advcl"/>
+  <dep from="3" to="4" type="prt"/>
+  <dep from="3" to="5" type="prep"/>
+  <dep from="5" to="6" type="pcomp"/>
+  <dep from="8" to="7" type="poss"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="12" to="9" type="punct"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Closure">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Containing_object">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

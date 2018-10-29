@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="975502">
+ <sentence>
+  He would be patient , stalk her carefully right up to the bedroom door .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="would" pos="MD" surface="would"/>
+  <token id="3" lemma="be" pos="VB" surface="be"/>
+  <token id="4" lemma="patient" pos="JJ" surface="patient"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="stalk" pos="VB" surface="stalk"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="8" lemma="carefully" pos="RB" surface="carefully"/>
+  <token id="9" lemma="right" pos="RB" surface="right"/>
+  <token id="10" lemma="up" pos="IN" surface="up"/>
+  <token id="11" lemma="to" pos="IN" surface="to"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="bedroom" pos="NN" surface="bedroom"/>
+  <token id="14" lemma="door" pos="NN" surface="door"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="acomp"/>
+  <dep from="3" to="5" type="punct"/>
+  <dep from="3" to="6" type="conj"/>
+  <dep from="6" to="7" type="dobj"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="6" to="10" type="prt"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="compound"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="3" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

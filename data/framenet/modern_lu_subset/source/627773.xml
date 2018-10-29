@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="627773">
+ <sentence>
+  The sheep will have to be gathered up and brought down as soon as possible ! "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="sheep" pos="NN" surface="sheep"/>
+  <token id="3" lemma="will" pos="MD" surface="will"/>
+  <token id="4" lemma="have" pos="VB" surface="have"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="be" pos="VB" surface="be"/>
+  <token id="7" lemma="gather" pos="VBN" surface="gathered"/>
+  <token id="8" lemma="up" pos="RP" surface="up"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="bring" pos="VBD" surface="brought"/>
+  <token id="11" lemma="down" pos="RP" surface="down"/>
+  <token id="12" lemma="as" pos="RB" surface="as"/>
+  <token id="13" lemma="soon" pos="RB" surface="soon"/>
+  <token id="14" lemma="as" pos="IN" surface="as"/>
+  <token id="15" lemma="possible" pos="JJ" surface="possible"/>
+  <token id="16" lemma="!" pos="." surface="!"/>
+  <token id="17" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="aux"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="4" to="7" type="xcomp"/>
+  <dep from="7" to="8" type="prt"/>
+  <dep from="7" to="9" type="cc"/>
+  <dep from="7" to="10" type="conj"/>
+  <dep from="10" to="11" type="prt"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="10" to="13" type="advmod"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="amod"/>
+  <dep from="4" to="16" type="punct"/>
+  <dep from="4" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

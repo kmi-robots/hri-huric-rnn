@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="629161">
+ <sentence>
+  The trees are anchored by 20 metre polyurethane roots , formed by injecting liquid chemicals down a steel tube .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="tree" pos="NNS" surface="trees"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="anchor" pos="VBN" surface="anchored"/>
+  <token id="5" lemma="by" pos="IN" surface="by"/>
+  <token id="6" lemma="20" pos="CD" surface="20"/>
+  <token id="7" lemma="metre" pos="NN" surface="metre"/>
+  <token id="8" lemma="polyurethane" pos="NN" surface="polyurethane"/>
+  <token id="9" lemma="root" pos="NNS" surface="roots"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="form" pos="VBN" surface="formed"/>
+  <token id="12" lemma="by" pos="IN" surface="by"/>
+  <token id="13" lemma="inject" pos="VBG" surface="injecting"/>
+  <token id="14" lemma="liquid" pos="JJ" surface="liquid"/>
+  <token id="15" lemma="chemical" pos="NNS" surface="chemicals"/>
+  <token id="16" lemma="down" pos="IN" surface="down"/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="steel" pos="NN" surface="steel"/>
+  <token id="19" lemma="tube" pos="NN" surface="tube"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="agent"/>
+  <dep from="7" to="6" type="nummod"/>
+  <dep from="9" to="7" type="compound"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="5" to="9" type="pobj"/>
+  <dep from="9" to="10" type="punct"/>
+  <dep from="9" to="11" type="acl"/>
+  <dep from="11" to="12" type="agent"/>
+  <dep from="12" to="13" type="pcomp"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="13" to="15" type="dobj"/>
+  <dep from="13" to="16" type="prep"/>
+  <dep from="19" to="17" type="det"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="16" to="19" type="pobj"/>
+  <dep from="4" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

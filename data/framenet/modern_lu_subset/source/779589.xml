@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="779589">
+ <sentence>
+  Grant scanned the still empty passages behind them .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="grant" pos="NN" surface="Grant"/>
+  <token id="2" lemma="scan" pos="VBD" surface="scanned"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="still" pos="RB" surface="still"/>
+  <token id="5" lemma="empty" pos="JJ" surface="empty"/>
+  <token id="6" lemma="passage" pos="NNS" surface="passages"/>
+  <token id="7" lemma="behind" pos="IN" surface="behind"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="6" to="3" type="det"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="2" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

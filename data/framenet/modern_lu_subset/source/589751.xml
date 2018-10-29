@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="589751">
+ <sentence>
+  A stolen car being chased by the police at speeds of up to ninety miles an hour .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="steal" pos="VBN" surface="stolen"/>
+  <token id="3" lemma="car" pos="NN" surface="car"/>
+  <token id="4" lemma="be" pos="VBG" surface="being"/>
+  <token id="5" lemma="chase" pos="VBN" surface="chased"/>
+  <token id="6" lemma="by" pos="IN" surface="by"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="police" pos="NN" surface="police"/>
+  <token id="9" lemma="at" pos="IN" surface="at"/>
+  <token id="10" lemma="speed" pos="NNS" surface="speeds"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="up" pos="IN" surface="up"/>
+  <token id="13" lemma="to" pos="TO" surface="to"/>
+  <token id="14" lemma="ninety" pos="CD" surface="ninety"/>
+  <token id="15" lemma="mile" pos="NNS" surface="miles"/>
+  <token id="16" lemma="an" pos="DT" surface="an"/>
+  <token id="17" lemma="hour" pos="NN" surface="hour"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="5" to="3" type="nsubjpass"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="agent"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="5" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="14" to="12" type="quantmod"/>
+  <dep from="14" to="13" type="quantmod"/>
+  <dep from="15" to="14" type="nummod"/>
+  <dep from="11" to="15" type="pobj"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="npadvmod"/>
+  <dep from="5" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Cotheme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Speed">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="240103">
+ <sentence>
+  In October 1940 the army billeted an officer in one of the numerous spare rooms .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="october" pos="NNP" surface="October"/>
+  <token id="3" lemma="1940" pos="CD" surface="1940"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="army" pos="NN" surface="army"/>
+  <token id="6" lemma="billet" pos="VBD" surface="billeted"/>
+  <token id="7" lemma="an" pos="DT" surface="an"/>
+  <token id="8" lemma="officer" pos="NN" surface="officer"/>
+  <token id="9" lemma="in" pos="IN" surface="in"/>
+  <token id="10" lemma="one" pos="CD" surface="one"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="numerous" pos="JJ" surface="numerous"/>
+  <token id="14" lemma="spare" pos="JJ" surface="spare"/>
+  <token id="15" lemma="room" pos="NNS" surface="rooms"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="2" to="3" type="nummod"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="6" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="15" to="12" type="det"/>
+  <dep from="15" to="13" type="amod"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="11" to="15" type="pobj"/>
+  <dep from="6" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Time">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

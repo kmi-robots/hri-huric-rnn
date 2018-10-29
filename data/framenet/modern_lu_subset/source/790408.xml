@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="790408">
+ <sentence>
+  Léonie tied on an apron and hoisted herself on to a kitchen chair .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="léonie" pos="NNP" surface="Léonie"/>
+  <token id="2" lemma="tie" pos="VBD" surface="tied"/>
+  <token id="3" lemma="on" pos="IN" surface="on"/>
+  <token id="4" lemma="an" pos="DT" surface="an"/>
+  <token id="5" lemma="apron" pos="NN" surface="apron"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="hoist" pos="VBD" surface="hoisted"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="herself"/>
+  <token id="9" lemma="on" pos="RP" surface="on"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="kitchen" pos="NN" surface="kitchen"/>
+  <token id="13" lemma="chair" pos="NN" surface="chair"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="2" to="6" type="cc"/>
+  <dep from="2" to="7" type="conj"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="7" to="9" type="prt"/>
+  <dep from="7" to="10" type="prep"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="2" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="596663">
+ <sentence>
+  You would n't like to trail those two rather innocent-looking characters back to headquarters ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="You"/>
+  <token id="2" lemma="would" pos="MD" surface="would"/>
+  <token id="3" lemma="n't" pos="RB" surface="n't"/>
+  <token id="4" lemma="like" pos="VB" surface="like"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="trail" pos="VB" surface="trail"/>
+  <token id="7" lemma="those" pos="DT" surface="those"/>
+  <token id="8" lemma="two" pos="CD" surface="two"/>
+  <token id="9" lemma="rather" pos="RB" surface="rather"/>
+  <token id="10" lemma="innocent-look" pos="VBG" surface="innocent-looking"/>
+  <token id="11" lemma="character" pos="NNS" surface="characters"/>
+  <token id="12" lemma="back" pos="RB" surface="back"/>
+  <token id="13" lemma="to" pos="IN" surface="to"/>
+  <token id="14" lemma="headquarters" pos="NN" surface="headquarters"/>
+  <token id="15" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="neg"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="4" to="6" type="xcomp"/>
+  <dep from="11" to="7" type="det"/>
+  <dep from="11" to="8" type="nummod"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="6" to="11" type="dobj"/>
+  <dep from="6" to="12" type="advmod"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="4" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="771302">
+ <sentence>
+  The sudden entrance into hot sunlight caused Paige to shiver .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="sudden" pos="JJ" surface="sudden"/>
+  <token id="3" lemma="entrance" pos="NN" surface="entrance"/>
+  <token id="4" lemma="into" pos="IN" surface="into"/>
+  <token id="5" lemma="hot" pos="JJ" surface="hot"/>
+  <token id="6" lemma="sunlight" pos="NN" surface="sunlight"/>
+  <token id="7" lemma="cause" pos="VBD" surface="caused"/>
+  <token id="8" lemma="paige" pos="NNP" surface="Paige"/>
+  <token id="9" lemma="to" pos="TO" surface="to"/>
+  <token id="10" lemma="shiver" pos="VB" surface="shiver"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="7" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="10" to="8" type="nsubj"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="7" to="10" type="ccomp"/>
+  <dep from="7" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

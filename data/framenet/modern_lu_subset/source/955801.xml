@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="955801">
+ <sentence>
+  You see sailing boats gliding along , their huge sails gracefully bending to the wind .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="You"/>
+  <token id="2" lemma="see" pos="VBP" surface="see"/>
+  <token id="3" lemma="sailing" pos="NN" surface="sailing"/>
+  <token id="4" lemma="boat" pos="NNS" surface="boats"/>
+  <token id="5" lemma="glide" pos="VBG" surface="gliding"/>
+  <token id="6" lemma="along" pos="RB" surface="along"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="9" lemma="huge" pos="JJ" surface="huge"/>
+  <token id="10" lemma="sail" pos="NNS" surface="sails"/>
+  <token id="11" lemma="gracefully" pos="RB" surface="gracefully"/>
+  <token id="12" lemma="bend" pos="VBG" surface="bending"/>
+  <token id="13" lemma="to" pos="IN" surface="to"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="wind" pos="NN" surface="wind"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="12" to="2" type="ccomp"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="2" to="5" type="ccomp"/>
+  <dep from="5" to="6" type="advmod"/>
+  <dep from="12" to="7" type="punct"/>
+  <dep from="10" to="8" type="poss"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="12" to="10" type="nsubj"/>
+  <dep from="12" to="11" type="advmod"/>
+  <dep from="0" to="12" type="root"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="12" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="629196">
+ <sentence>
+  Eadmer inserted them at this point into his Historia Novorum .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="eadmer" pos="NNP" surface="Eadmer"/>
+  <token id="2" lemma="insert" pos="VBD" surface="inserted"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="4" lemma="at" pos="IN" surface="at"/>
+  <token id="5" lemma="this" pos="DT" surface="this"/>
+  <token id="6" lemma="point" pos="NN" surface="point"/>
+  <token id="7" lemma="into" pos="IN" surface="into"/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="9" lemma="historia" pos="NNP" surface="Historia"/>
+  <token id="10" lemma="novorum" pos="NNP" surface="Novorum"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="2" to="7" type="prep"/>
+  <dep from="10" to="8" type="poss"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

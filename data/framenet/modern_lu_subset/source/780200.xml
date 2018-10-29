@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780200">
+ <sentence>
+  It 's a word search .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="It"/>
+  <token id="2" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="word" pos="NN" surface="word"/>
+  <token id="5" lemma="search" pos="NN" surface="search"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="2" to="5" type="attr"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="398831">
+ <sentence>
+  The gaze of the bachelors , wrote Harsnet .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="gaze" pos="NN" surface="gaze"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="bachelor" pos="NNS" surface="bachelors"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="write" pos="VBD" surface="wrote"/>
+  <token id="8" lemma="harsnet" pos="NNP" surface="Harsnet"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="7" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="7" to="6" type="punct"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="7" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

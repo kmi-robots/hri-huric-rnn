@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="718056">
+ <sentence>
+  Cornelius unzipped his rucksack .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="cornelius" pos="NNP" surface="Cornelius"/>
+  <token id="2" lemma="unzip" pos="VBD" surface="unzipped"/>
+  <token id="3" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="4" lemma="rucksack" pos="NN" surface="rucksack"/>
+  <token id="5" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="poss"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Closure">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Containing_object">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Fastener">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

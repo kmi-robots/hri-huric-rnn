@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="821654">
+ <sentence>
+  Shallow-draught cabin cruisers were moored upstream of the bridge .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="shallow-draught" pos="JJ" surface="Shallow-draught"/>
+  <token id="2" lemma="cabin" pos="NN" surface="cabin"/>
+  <token id="3" lemma="cruiser" pos="NNS" surface="cruisers"/>
+  <token id="4" lemma="be" pos="VBD" surface="were"/>
+  <token id="5" lemma="moor" pos="VBN" surface="moored"/>
+  <token id="6" lemma="upstream" pos="RB" surface="upstream"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="bridge" pos="NN" surface="bridge"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="compound"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="5" to="3" type="nsubjpass"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="oprd"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="5" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4113345">
+ <sentence>
+  But Coleco bounced back with the introduction of the Cabbage Patch dolls , whose sales hit $600 million in 1985 .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="but" pos="CC" surface="But"/>
+  <token id="2" lemma="coleco" pos="NNP" surface="Coleco"/>
+  <token id="3" lemma="bounce" pos="VBD" surface="bounced"/>
+  <token id="4" lemma="back" pos="RP" surface="back"/>
+  <token id="5" lemma="with" pos="IN" surface="with"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="introduction" pos="NN" surface="introduction"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="cabbage" pos="NNP" surface="Cabbage"/>
+  <token id="11" lemma="patch" pos="NNP" surface="Patch"/>
+  <token id="12" lemma="doll" pos="NNS" surface="dolls"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="whose" pos="WP$" surface="whose"/>
+  <token id="15" lemma="sale" pos="NNS" surface="sales"/>
+  <token id="16" lemma="hit" pos="VBD" surface="hit"/>
+  <token id="17" lemma="$600" pos="CD" surface="$600"/>
+  <token id="18" lemma="million" pos="CD" surface="million"/>
+  <token id="19" lemma="in" pos="IN" surface="in"/>
+  <token id="20" lemma="1985" pos="CD" surface="1985"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="cc"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="advmod"/>
+  <dep from="3" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="12" to="9" type="det"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="8" to="12" type="pobj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="15" to="14" type="poss"/>
+  <dep from="16" to="15" type="nsubj"/>
+  <dep from="12" to="16" type="relcl"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="16" to="18" type="dobj"/>
+  <dep from="16" to="19" type="prep"/>
+  <dep from="19" to="20" type="pobj"/>
+  <dep from="3" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

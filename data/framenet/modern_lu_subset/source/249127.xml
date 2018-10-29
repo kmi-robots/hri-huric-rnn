@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="249127">
+ <sentence>
+  Eager hands unrolled the garlands of tinsel and draped them round t ] he branches .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="eager" pos="JJ" surface="Eager"/>
+  <token id="2" lemma="hand" pos="NNS" surface="hands"/>
+  <token id="3" lemma="unrolled" pos="JJ" surface="unrolled"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="garland" pos="NNS" surface="garlands"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="tinsel" pos="NN" surface="tinsel"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="drape" pos="VBD" surface="draped"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="11" lemma="round" pos="IN" surface="round"/>
+  <token id="12" lemma="t" pos="NN" surface="t"/>
+  <token id="13" lemma="]" pos="-RRB-" surface="]"/>
+  <token id="14" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="15" lemma="branch" pos="VBZ" surface="branches"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="3" to="8" type="cc"/>
+  <dep from="3" to="9" type="conj"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="dobj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="12" to="15" type="relcl"/>
+  <dep from="3" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

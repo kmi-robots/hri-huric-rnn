@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1210304">
+ <sentence>
+  Visualise your tee shot splitting the fairway and rolling into the perfect position .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="visualise" pos="VB" surface="Visualise"/>
+  <token id="2" lemma="-PRON-" pos="PRP$" surface="your"/>
+  <token id="3" lemma="tee" pos="NN" surface="tee"/>
+  <token id="4" lemma="shoot" pos="VBD" surface="shot"/>
+  <token id="5" lemma="splitting" pos="JJ" surface="splitting"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="fairway" pos="NN" surface="fairway"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="roll" pos="VBG" surface="rolling"/>
+  <token id="10" lemma="into" pos="IN" surface="into"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="perfect" pos="JJ" surface="perfect"/>
+  <token id="13" lemma="position" pos="NN" surface="position"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="advmod"/>
+  <dep from="3" to="2" type="poss"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="xcomp"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="5" to="8" type="cc"/>
+  <dep from="5" to="9" type="conj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="pobj"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

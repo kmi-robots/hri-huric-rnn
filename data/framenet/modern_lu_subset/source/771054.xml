@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="771054">
+ <sentence>
+  She would rather be Lily Valance and enter at the stage door .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="She"/>
+  <token id="2" lemma="would" pos="MD" surface="would"/>
+  <token id="3" lemma="rather" pos="RB" surface="rather"/>
+  <token id="4" lemma="be" pos="VB" surface="be"/>
+  <token id="5" lemma="lily" pos="NNP" surface="Lily"/>
+  <token id="6" lemma="valance" pos="NNP" surface="Valance"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="enter" pos="VBP" surface="enter"/>
+  <token id="9" lemma="at" pos="IN" surface="at"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="stage" pos="NN" surface="stage"/>
+  <token id="12" lemma="door" pos="NN" surface="door"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="4" to="6" type="attr"/>
+  <dep from="4" to="7" type="cc"/>
+  <dep from="4" to="8" type="conj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="4" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="790207">
+ <sentence>
+  It all began when a woman threatened to tie herself to a willow tree .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="It"/>
+  <token id="2" lemma="all" pos="DT" surface="all"/>
+  <token id="3" lemma="begin" pos="VBD" surface="began"/>
+  <token id="4" lemma="when" pos="WRB" surface="when"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="woman" pos="NN" surface="woman"/>
+  <token id="7" lemma="threaten" pos="VBD" surface="threatened"/>
+  <token id="8" lemma="to" pos="TO" surface="to"/>
+  <token id="9" lemma="tie" pos="VB" surface="tie"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="herself"/>
+  <token id="11" lemma="to" pos="IN" surface="to"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="willow" pos="JJ" surface="willow"/>
+  <token id="14" lemma="tree" pos="NN" surface="tree"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="appos"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="7" to="4" type="advmod"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="3" to="7" type="advcl"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="7" to="9" type="xcomp"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="9" to="11" type="prep"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="3" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

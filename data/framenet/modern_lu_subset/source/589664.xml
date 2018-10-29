@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="589664">
+ <sentence>
+  Afterwards he chased her back to the house , her screams of delighted laughter filling his ears .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="afterwards" pos="RB" surface="Afterwards"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="3" lemma="chase" pos="VBD" surface="chased"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="5" lemma="back" pos="RB" surface="back"/>
+  <token id="6" lemma="to" pos="IN" surface="to"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="house" pos="NN" surface="house"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="11" lemma="scream" pos="NNS" surface="screams"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="delighted" pos="JJ" surface="delighted"/>
+  <token id="14" lemma="laughter" pos="NN" surface="laughter"/>
+  <token id="15" lemma="fill" pos="VBG" surface="filling"/>
+  <token id="16" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="17" lemma="ear" pos="NNS" surface="ears"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="advmod"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="15" to="3" type="advcl"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="3" to="5" type="advmod"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="15" to="9" type="punct"/>
+  <dep from="11" to="10" type="poss"/>
+  <dep from="15" to="11" type="nsubj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="0" to="15" type="root"/>
+  <dep from="17" to="16" type="poss"/>
+  <dep from="15" to="17" type="dobj"/>
+  <dep from="15" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

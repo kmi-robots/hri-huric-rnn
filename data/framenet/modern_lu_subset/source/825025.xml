@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="825025">
+ <sentence>
+  Her brother Jeff was guiding them alongside the jetty now .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP$" surface="Her"/>
+  <token id="2" lemma="brother" pos="NN" surface="brother"/>
+  <token id="3" lemma="jeff" pos="NNP" surface="Jeff"/>
+  <token id="4" lemma="be" pos="VBD" surface="was"/>
+  <token id="5" lemma="guide" pos="VBG" surface="guiding"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="7" lemma="alongside" pos="IN" surface="alongside"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="jetty" pos="NN" surface="jetty"/>
+  <token id="10" lemma="now" pos="RB" surface="now"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="poss"/>
+  <dep from="5" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="appos"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="5" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="5" to="10" type="advmod"/>
+  <dep from="5" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="596738">
+ <sentence>
+  He saw about a dozen street ruffians trailing them through the streets .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="see" pos="VBD" surface="saw"/>
+  <token id="3" lemma="about" pos="IN" surface="about"/>
+  <token id="4" lemma="a" pos="DT" surface="a"/>
+  <token id="5" lemma="dozen" pos="NN" surface="dozen"/>
+  <token id="6" lemma="street" pos="NN" surface="street"/>
+  <token id="7" lemma="ruffian" pos="NNS" surface="ruffians"/>
+  <token id="8" lemma="trail" pos="VBG" surface="trailing"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="10" lemma="through" pos="IN" surface="through"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="street" pos="NNS" surface="streets"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="quantmod"/>
+  <dep from="5" to="4" type="quantmod"/>
+  <dep from="7" to="5" type="nummod"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="8" to="7" type="nsubj"/>
+  <dep from="2" to="8" type="ccomp"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="8" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="2" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

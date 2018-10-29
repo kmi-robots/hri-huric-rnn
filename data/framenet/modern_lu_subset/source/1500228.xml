@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1500228">
+ <sentence>
+  He leapt for one , swung around madly , and then half fell and half slid down it .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="leap" pos="VBD" surface="leapt"/>
+  <token id="3" lemma="for" pos="IN" surface="for"/>
+  <token id="4" lemma="one" pos="CD" surface="one"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="swing" pos="VBN" surface="swung"/>
+  <token id="7" lemma="around" pos="RP" surface="around"/>
+  <token id="8" lemma="madly" pos="RB" surface="madly"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="then" pos="RB" surface="then"/>
+  <token id="12" lemma="half" pos="NN" surface="half"/>
+  <token id="13" lemma="fall" pos="VBD" surface="fell"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="half" pos="RB" surface="half"/>
+  <token id="16" lemma="slide" pos="VBD" surface="slid"/>
+  <token id="17" lemma="down" pos="IN" surface="down"/>
+  <token id="18" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="2" to="5" type="punct"/>
+  <dep from="2" to="6" type="advcl"/>
+  <dep from="6" to="7" type="prt"/>
+  <dep from="6" to="8" type="advmod"/>
+  <dep from="6" to="9" type="punct"/>
+  <dep from="6" to="10" type="cc"/>
+  <dep from="13" to="11" type="advmod"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="6" to="13" type="conj"/>
+  <dep from="13" to="14" type="cc"/>
+  <dep from="16" to="15" type="nsubj"/>
+  <dep from="13" to="16" type="conj"/>
+  <dep from="16" to="17" type="prt"/>
+  <dep from="17" to="18" type="pobj"/>
+  <dep from="2" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

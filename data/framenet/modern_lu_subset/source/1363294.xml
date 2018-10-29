@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1363294">
+ <sentence>
+  You can not yoke the dragonfly and make it drive the corn-mill .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="You"/>
+  <token id="2" lemma="can" pos="MD" surface="can"/>
+  <token id="3" lemma="not" pos="RB" surface="not"/>
+  <token id="4" lemma="yoke" pos="VB" surface="yoke"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="dragonfly" pos="NN" surface="dragonfly"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="make" pos="VB" surface="make"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="10" lemma="drive" pos="VB" surface="drive"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="corn-mill" pos="NN" surface="corn-mill"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="neg"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="4" to="7" type="cc"/>
+  <dep from="4" to="8" type="conj"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="8" to="10" type="ccomp"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="4" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Item">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

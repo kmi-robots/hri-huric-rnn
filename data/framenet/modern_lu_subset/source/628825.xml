@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="628825">
+ <sentence>
+  The specimens were immersed in buffered formalin for a minimum of four days .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="specimen" pos="NNS" surface="specimens"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="immerse" pos="VBN" surface="immersed"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="buffered" pos="JJ" surface="buffered"/>
+  <token id="7" lemma="formalin" pos="NN" surface="formalin"/>
+  <token id="8" lemma="for" pos="IN" surface="for"/>
+  <token id="9" lemma="a" pos="DT" surface="a"/>
+  <token id="10" lemma="minimum" pos="NN" surface="minimum"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="four" pos="CD" surface="four"/>
+  <token id="13" lemma="day" pos="NNS" surface="days"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="4" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="nummod"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

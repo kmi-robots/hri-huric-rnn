@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403411">
+ <sentence>
+  The foreman was behind them peering between their shoulders , and there was a sniff of impatience .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="foreman" pos="NN" surface="foreman"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="behind" pos="IN" surface="behind"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="6" lemma="peer" pos="VBG" surface="peering"/>
+  <token id="7" lemma="between" pos="IN" surface="between"/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="9" lemma="shoulder" pos="NNS" surface="shoulders"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="there" pos="EX" surface="there"/>
+  <token id="13" lemma="be" pos="VBD" surface="was"/>
+  <token id="14" lemma="a" pos="DT" surface="a"/>
+  <token id="15" lemma="sniff" pos="NN" surface="sniff"/>
+  <token id="16" lemma="of" pos="IN" surface="of"/>
+  <token id="17" lemma="impatience" pos="NN" surface="impatience"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="3" to="6" type="advcl"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="poss"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="3" to="10" type="punct"/>
+  <dep from="3" to="11" type="cc"/>
+  <dep from="13" to="12" type="expl"/>
+  <dep from="3" to="13" type="conj"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="attr"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="13" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="State">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="627608">
+ <sentence>
+  The Apostle S. James was made Spain 's patron saint and according to legend , was brought by sea from Palestine and died martyred .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="apostle" pos="NNP" surface="Apostle"/>
+  <token id="3" lemma="s." pos="NNP" surface="S."/>
+  <token id="4" lemma="james" pos="NNP" surface="James"/>
+  <token id="5" lemma="be" pos="VBD" surface="was"/>
+  <token id="6" lemma="make" pos="VBN" surface="made"/>
+  <token id="7" lemma="spain" pos="NNP" surface="Spain"/>
+  <token id="8" lemma="'s" pos="POS" surface="'s"/>
+  <token id="9" lemma="patron" pos="NN" surface="patron"/>
+  <token id="10" lemma="saint" pos="NN" surface="saint"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="accord" pos="VBG" surface="according"/>
+  <token id="13" lemma="to" pos="IN" surface="to"/>
+  <token id="14" lemma="legend" pos="NN" surface="legend"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="be" pos="VBD" surface="was"/>
+  <token id="17" lemma="bring" pos="VBN" surface="brought"/>
+  <token id="18" lemma="by" pos="IN" surface="by"/>
+  <token id="19" lemma="sea" pos="NN" surface="sea"/>
+  <token id="20" lemma="from" pos="IN" surface="from"/>
+  <token id="21" lemma="palestine" pos="NNP" surface="Palestine"/>
+  <token id="22" lemma="and" pos="CC" surface="and"/>
+  <token id="23" lemma="die" pos="VBD" surface="died"/>
+  <token id="24" lemma="martyr" pos="VBN" surface="martyred"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="6" to="4" type="nsubjpass"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="10" to="7" type="poss"/>
+  <dep from="7" to="8" type="case"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="6" to="10" type="oprd"/>
+  <dep from="6" to="11" type="cc"/>
+  <dep from="6" to="12" type="conj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="17" to="15" type="punct"/>
+  <dep from="17" to="16" type="auxpass"/>
+  <dep from="6" to="17" type="conj"/>
+  <dep from="17" to="18" type="agent"/>
+  <dep from="18" to="19" type="pobj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="20" to="21" type="pobj"/>
+  <dep from="17" to="22" type="cc"/>
+  <dep from="17" to="23" type="conj"/>
+  <dep from="23" to="24" type="advcl"/>
+  <dep from="6" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

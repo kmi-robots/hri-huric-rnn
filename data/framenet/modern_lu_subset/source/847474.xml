@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="847474">
+ <sentence>
+  A quick glance across the Channel will confirm that AV delivers none of these .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="quick" pos="JJ" surface="quick"/>
+  <token id="3" lemma="glance" pos="NN" surface="glance"/>
+  <token id="4" lemma="across" pos="IN" surface="across"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="channel" pos="NNP" surface="Channel"/>
+  <token id="7" lemma="will" pos="MD" surface="will"/>
+  <token id="8" lemma="confirm" pos="VB" surface="confirm"/>
+  <token id="9" lemma="that" pos="IN" surface="that"/>
+  <token id="10" lemma="av" pos="NN" surface="AV"/>
+  <token id="11" lemma="deliver" pos="VBZ" surface="delivers"/>
+  <token id="12" lemma="none" pos="NN" surface="none"/>
+  <token id="13" lemma="of" pos="IN" surface="of"/>
+  <token id="14" lemma="these" pos="DT" surface="these"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="8" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="11" to="9" type="mark"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="8" to="11" type="ccomp"/>
+  <dep from="11" to="12" type="dobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="8" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Manner">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

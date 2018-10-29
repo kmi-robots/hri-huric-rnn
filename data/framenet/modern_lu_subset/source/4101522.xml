@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101522">
+ <sentence>
+  DID A LOT OF TRAVELING AND THEY ( OILSTATES ) MADE ME A SWEET OFFER TO COME BACK .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="do" pos="VBD" surface="DID"/>
+  <token id="2" lemma="a" pos="DT" surface="A"/>
+  <token id="3" lemma="lot" pos="NN" surface="LOT"/>
+  <token id="4" lemma="of" pos="IN" surface="OF"/>
+  <token id="5" lemma="travel" pos="VBG" surface="TRAVELING"/>
+  <token id="6" lemma="and" pos="CC" surface="AND"/>
+  <token id="7" lemma="they" pos="PRP" surface="THEY"/>
+  <token id="8" lemma="(" pos="-LRB-" surface="("/>
+  <token id="9" lemma="oilstate" pos="NNS" surface="OILSTATES"/>
+  <token id="10" lemma=")" pos="-RRB-" surface=")"/>
+  <token id="11" lemma="make" pos="VBD" surface="MADE"/>
+  <token id="12" lemma="me" pos="NNP" surface="ME"/>
+  <token id="13" lemma="a" pos="DT" surface="A"/>
+  <token id="14" lemma="sweet" pos="NNP" surface="SWEET"/>
+  <token id="15" lemma="offer" pos="NN" surface="OFFER"/>
+  <token id="16" lemma="to" pos="TO" surface="TO"/>
+  <token id="17" lemma="come" pos="VB" surface="COME"/>
+  <token id="18" lemma="back" pos="RB" surface="BACK"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="11" to="1" type="aux"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="11" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="5" to="7" type="conj"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="7" to="9" type="appos"/>
+  <dep from="7" to="10" type="punct"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="dative"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="nsubj"/>
+  <dep from="0" to="15" type="root"/>
+  <dep from="17" to="16" type="aux"/>
+  <dep from="15" to="17" type="xcomp"/>
+  <dep from="17" to="18" type="advmod"/>
+  <dep from="15" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

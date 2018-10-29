@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="399810">
+ <sentence>
+  Spend five or ten minutes glancing through the book .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="spend" pos="VB" surface="Spend"/>
+  <token id="2" lemma="five" pos="CD" surface="five"/>
+  <token id="3" lemma="or" pos="CC" surface="or"/>
+  <token id="4" lemma="ten" pos="CD" surface="ten"/>
+  <token id="5" lemma="minute" pos="NNS" surface="minutes"/>
+  <token id="6" lemma="glance" pos="VBG" surface="glancing"/>
+  <token id="7" lemma="through" pos="IN" surface="through"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="book" pos="NN" surface="book"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="5" to="2" type="nummod"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="1" to="5" type="dobj"/>
+  <dep from="1" to="6" type="xcomp"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="1" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Direction">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="240434">
+ <sentence>
+  Food must be bagged and boxed , and taken to the patient , for nothing nutritious will be otherwise provided .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="food" pos="NN" surface="Food"/>
+  <token id="2" lemma="must" pos="MD" surface="must"/>
+  <token id="3" lemma="be" pos="VB" surface="be"/>
+  <token id="4" lemma="bag" pos="VBN" surface="bagged"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="box" pos="VBN" surface="boxed"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="take" pos="VBN" surface="taken"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="patient" pos="NN" surface="patient"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="for" pos="IN" surface="for"/>
+  <token id="15" lemma="nothing" pos="NN" surface="nothing"/>
+  <token id="16" lemma="nutritious" pos="JJ" surface="nutritious"/>
+  <token id="17" lemma="will" pos="MD" surface="will"/>
+  <token id="18" lemma="be" pos="VB" surface="be"/>
+  <token id="19" lemma="otherwise" pos="RB" surface="otherwise"/>
+  <token id="20" lemma="provide" pos="VBN" surface="provided"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubjpass"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="4" to="6" type="conj"/>
+  <dep from="4" to="7" type="punct"/>
+  <dep from="4" to="8" type="cc"/>
+  <dep from="4" to="9" type="conj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="9" to="13" type="punct"/>
+  <dep from="9" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="15" to="16" type="amod"/>
+  <dep from="20" to="17" type="aux"/>
+  <dep from="20" to="18" type="auxpass"/>
+  <dep from="20" to="19" type="advmod"/>
+  <dep from="4" to="20" type="conj"/>
+  <dep from="4" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

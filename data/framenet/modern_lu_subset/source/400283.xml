@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="400283">
+ <sentence>
+  She hated anyone listening when she was talking to Alice .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="She"/>
+  <token id="2" lemma="hat" pos="VBD" surface="hated"/>
+  <token id="3" lemma="anyone" pos="NN" surface="anyone"/>
+  <token id="4" lemma="listen" pos="VBG" surface="listening"/>
+  <token id="5" lemma="when" pos="WRB" surface="when"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="7" lemma="be" pos="VBD" surface="was"/>
+  <token id="8" lemma="talk" pos="VBG" surface="talking"/>
+  <token id="9" lemma="to" pos="IN" surface="to"/>
+  <token id="10" lemma="alice" pos="NNP" surface="Alice"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="3" to="4" type="acl"/>
+  <dep from="8" to="5" type="advmod"/>
+  <dep from="8" to="6" type="nsubj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="2" to="8" type="advcl"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

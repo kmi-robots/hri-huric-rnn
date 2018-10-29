@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="240188">
+ <sentence>
+  Watch honey being produced and bottled .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="watch" pos="VB" surface="Watch"/>
+  <token id="2" lemma="honey" pos="NN" surface="honey"/>
+  <token id="3" lemma="be" pos="VBG" surface="being"/>
+  <token id="4" lemma="produce" pos="VBN" surface="produced"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="bottle" pos="VBN" surface="bottled"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="1" to="4" type="ccomp"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="4" to="6" type="conj"/>
+  <dep from="1" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

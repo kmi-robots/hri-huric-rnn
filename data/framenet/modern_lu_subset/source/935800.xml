@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="935800">
+ <sentence>
+  Music drifted from open windows and traffic droned down the King 's Road .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="music" pos="NN" surface="Music"/>
+  <token id="2" lemma="drift" pos="VBD" surface="drifted"/>
+  <token id="3" lemma="from" pos="IN" surface="from"/>
+  <token id="4" lemma="open" pos="JJ" surface="open"/>
+  <token id="5" lemma="window" pos="NNS" surface="windows"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="traffic" pos="NN" surface="traffic"/>
+  <token id="8" lemma="drone" pos="VBD" surface="droned"/>
+  <token id="9" lemma="down" pos="IN" surface="down"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="king" pos="NNP" surface="King"/>
+  <token id="12" lemma="'s" pos="POS" surface="'s"/>
+  <token id="13" lemma="road" pos="NNP" surface="Road"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="5" to="7" type="conj"/>
+  <dep from="2" to="8" type="conj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="13" to="11" type="poss"/>
+  <dep from="11" to="12" type="case"/>
+  <dep from="9" to="13" type="pobj"/>
+  <dep from="2" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

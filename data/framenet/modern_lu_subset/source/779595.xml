@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="779595">
+ <sentence>
+  Transend scan all titles in the library for all known viruses , so you can rest assured that our disks are secure .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="transend" pos="NN" surface="Transend"/>
+  <token id="2" lemma="scan" pos="VB" surface="scan"/>
+  <token id="3" lemma="all" pos="DT" surface="all"/>
+  <token id="4" lemma="title" pos="NNS" surface="titles"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="library" pos="NN" surface="library"/>
+  <token id="8" lemma="for" pos="IN" surface="for"/>
+  <token id="9" lemma="all" pos="DT" surface="all"/>
+  <token id="10" lemma="know" pos="VBN" surface="known"/>
+  <token id="11" lemma="virus" pos="NNS" surface="viruses"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="so" pos="IN" surface="so"/>
+  <token id="14" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="15" lemma="can" pos="MD" surface="can"/>
+  <token id="16" lemma="rest" pos="VB" surface="rest"/>
+  <token id="17" lemma="assure" pos="VBN" surface="assured"/>
+  <token id="18" lemma="that" pos="IN" surface="that"/>
+  <token id="19" lemma="-PRON-" pos="PRP$" surface="our"/>
+  <token id="20" lemma="disk" pos="NNS" surface="disks"/>
+  <token id="21" lemma="be" pos="VBP" surface="are"/>
+  <token id="22" lemma="secure" pos="JJ" surface="secure"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="2" to="8" type="prep"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="2" to="12" type="punct"/>
+  <dep from="16" to="13" type="mark"/>
+  <dep from="16" to="14" type="nsubj"/>
+  <dep from="16" to="15" type="aux"/>
+  <dep from="2" to="16" type="conj"/>
+  <dep from="16" to="17" type="advcl"/>
+  <dep from="21" to="18" type="mark"/>
+  <dep from="20" to="19" type="poss"/>
+  <dep from="21" to="20" type="nsubj"/>
+  <dep from="17" to="21" type="ccomp"/>
+  <dep from="21" to="22" type="acomp"/>
+  <dep from="2" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

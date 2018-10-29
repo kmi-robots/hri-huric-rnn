@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1243080">
+ <sentence>
+  Jill had already handed the gel-smeared paddles to Niall .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="jill" pos="NNP" surface="Jill"/>
+  <token id="2" lemma="have" pos="VBD" surface="had"/>
+  <token id="3" lemma="already" pos="RB" surface="already"/>
+  <token id="4" lemma="hand" pos="VBN" surface="handed"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="gel-smeared" pos="JJ" surface="gel-smeared"/>
+  <token id="7" lemma="paddle" pos="NNS" surface="paddles"/>
+  <token id="8" lemma="to" pos="IN" surface="to"/>
+  <token id="9" lemma="niall" pos="NNP" surface="Niall"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="nsubj"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="4" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="4" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Donor">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Recipient">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1243367">
+ <sentence>
+  Two hundred and fifty-four knives were handed in yesterday throughout Strathclyde .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="two" pos="CD" surface="Two"/>
+  <token id="2" lemma="hundred" pos="CD" surface="hundred"/>
+  <token id="3" lemma="and" pos="CC" surface="and"/>
+  <token id="4" lemma="fifty-four" pos="JJ" surface="fifty-four"/>
+  <token id="5" lemma="knife" pos="NNS" surface="knives"/>
+  <token id="6" lemma="be" pos="VBD" surface="were"/>
+  <token id="7" lemma="hand" pos="VBN" surface="handed"/>
+  <token id="8" lemma="in" pos="RP" surface="in"/>
+  <token id="9" lemma="yesterday" pos="NN" surface="yesterday"/>
+  <token id="10" lemma="throughout" pos="IN" surface="throughout"/>
+  <token id="11" lemma="strathclyde" pos="NNP" surface="Strathclyde"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="5" to="2" type="nummod"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="7" to="5" type="nsubjpass"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prt"/>
+  <dep from="7" to="9" type="npadvmod"/>
+  <dep from="7" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="7" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

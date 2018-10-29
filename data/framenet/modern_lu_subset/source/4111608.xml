@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4111608">
+ <sentence>
+  The aeroplane -- quite a small one -- was circling round far overhead .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="aeroplane" pos="NN" surface="aeroplane"/>
+  <token id="3" lemma="--" pos=":" surface="--"/>
+  <token id="4" lemma="quite" pos="PDT" surface="quite"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="small" pos="JJ" surface="small"/>
+  <token id="7" lemma="one" pos="NN" surface="one"/>
+  <token id="8" lemma="--" pos=":" surface="--"/>
+  <token id="9" lemma="be" pos="VBD" surface="was"/>
+  <token id="10" lemma="circle" pos="VBG" surface="circling"/>
+  <token id="11" lemma="round" pos="RB" surface="round"/>
+  <token id="12" lemma="far" pos="RB" surface="far"/>
+  <token id="13" lemma="overhead" pos="RB" surface="overhead"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="10" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="7" to="4" type="predet"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="2" to="7" type="appos"/>
+  <dep from="2" to="8" type="punct"/>
+  <dep from="10" to="9" type="aux"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="advmod"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="10" to="13" type="advmod"/>
+  <dep from="10" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Area">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Distance">
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Place">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="627559">
+ <sentence>
+  ` Yes , when we have a traditional music show , that 's all-Irish , they bring the instruments in here .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="``" surface="`"/>
+  <token id="2" lemma="yes" pos="UH" surface="Yes"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="when" pos="WRB" surface="when"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="6" lemma="have" pos="VBP" surface="have"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="traditional" pos="JJ" surface="traditional"/>
+  <token id="9" lemma="music" pos="NN" surface="music"/>
+  <token id="10" lemma="show" pos="NN" surface="show"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="that" pos="DT" surface="that"/>
+  <token id="13" lemma="be" pos="VBZ" surface="'s"/>
+  <token id="14" lemma="all-irish" pos="JJ" surface="all-Irish"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="17" lemma="bring" pos="VBP" surface="bring"/>
+  <token id="18" lemma="the" pos="DT" surface="the"/>
+  <token id="19" lemma="instrument" pos="NNS" surface="instruments"/>
+  <token id="20" lemma="in" pos="IN" surface="in"/>
+  <token id="21" lemma="here" pos="RB" surface="here"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="13" to="1" type="punct"/>
+  <dep from="13" to="2" type="intj"/>
+  <dep from="13" to="3" type="punct"/>
+  <dep from="6" to="4" type="advmod"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="13" to="6" type="advcl"/>
+  <dep from="10" to="7" type="det"/>
+  <dep from="10" to="8" type="amod"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="6" to="10" type="dobj"/>
+  <dep from="13" to="11" type="punct"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="17" to="13" type="ccomp"/>
+  <dep from="13" to="14" type="acomp"/>
+  <dep from="17" to="15" type="punct"/>
+  <dep from="17" to="16" type="nsubj"/>
+  <dep from="0" to="17" type="root"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="17" to="19" type="dobj"/>
+  <dep from="17" to="20" type="prep"/>
+  <dep from="17" to="21" type="advmod"/>
+  <dep from="17" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

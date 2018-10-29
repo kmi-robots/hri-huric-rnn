@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="632461">
+ <sentence>
+  Sarella swallowed t he delicious concoction placed before her without tasting it .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="sarella" pos="NNP" surface="Sarella"/>
+  <token id="2" lemma="swallow" pos="VBD" surface="swallowed"/>
+  <token id="3" lemma="t" pos="NN" surface="t"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="5" lemma="delicious" pos="JJ" surface="delicious"/>
+  <token id="6" lemma="concoction" pos="NN" surface="concoction"/>
+  <token id="7" lemma="place" pos="VBN" surface="placed"/>
+  <token id="8" lemma="before" pos="IN" surface="before"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="10" lemma="without" pos="IN" surface="without"/>
+  <token id="11" lemma="taste" pos="VBG" surface="tasting"/>
+  <token id="12" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="6" to="4" type="nmod"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="2" to="6" type="dobj"/>
+  <dep from="6" to="7" type="acl"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="7" to="10" type="prep"/>
+  <dep from="10" to="11" type="pcomp"/>
+  <dep from="11" to="12" type="dobj"/>
+  <dep from="2" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

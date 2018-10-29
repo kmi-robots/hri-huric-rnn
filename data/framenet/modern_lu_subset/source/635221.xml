@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="635221">
+ <sentence>
+  Susie Terhune scrabbled under her seat for the handgun stashed there .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="susie" pos="NNP" surface="Susie"/>
+  <token id="2" lemma="terhune" pos="NNP" surface="Terhune"/>
+  <token id="3" lemma="scrabble" pos="VBD" surface="scrabbled"/>
+  <token id="4" lemma="under" pos="IN" surface="under"/>
+  <token id="5" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="6" lemma="seat" pos="NN" surface="seat"/>
+  <token id="7" lemma="for" pos="IN" surface="for"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="handgun" pos="NN" surface="handgun"/>
+  <token id="10" lemma="stash" pos="VBD" surface="stashed"/>
+  <token id="11" lemma="there" pos="RB" surface="there"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="poss"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="3" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="acl"/>
+  <dep from="10" to="11" type="advmod"/>
+  <dep from="3" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

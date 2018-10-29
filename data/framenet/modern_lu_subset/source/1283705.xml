@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1283705">
+ <sentence>
+  Annual reports and other donor information literature clearly state that blood donations are used for all patients in NHS and other hospitals .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="annual" pos="JJ" surface="Annual"/>
+  <token id="2" lemma="report" pos="NNS" surface="reports"/>
+  <token id="3" lemma="and" pos="CC" surface="and"/>
+  <token id="4" lemma="other" pos="JJ" surface="other"/>
+  <token id="5" lemma="donor" pos="NN" surface="donor"/>
+  <token id="6" lemma="information" pos="NN" surface="information"/>
+  <token id="7" lemma="literature" pos="NN" surface="literature"/>
+  <token id="8" lemma="clearly" pos="RB" surface="clearly"/>
+  <token id="9" lemma="state" pos="VBP" surface="state"/>
+  <token id="10" lemma="that" pos="IN" surface="that"/>
+  <token id="11" lemma="blood" pos="NN" surface="blood"/>
+  <token id="12" lemma="donation" pos="NNS" surface="donations"/>
+  <token id="13" lemma="be" pos="VBP" surface="are"/>
+  <token id="14" lemma="use" pos="VBN" surface="used"/>
+  <token id="15" lemma="for" pos="IN" surface="for"/>
+  <token id="16" lemma="all" pos="DT" surface="all"/>
+  <token id="17" lemma="patient" pos="NNS" surface="patients"/>
+  <token id="18" lemma="in" pos="IN" surface="in"/>
+  <token id="19" lemma="nhs" pos="NNP" surface="NHS"/>
+  <token id="20" lemma="and" pos="CC" surface="and"/>
+  <token id="21" lemma="other" pos="JJ" surface="other"/>
+  <token id="22" lemma="hospital" pos="NNS" surface="hospitals"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="9" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="7" to="4" type="amod"/>
+  <dep from="6" to="5" type="compound"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="2" to="7" type="conj"/>
+  <dep from="9" to="8" type="advmod"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="14" to="10" type="mark"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="14" to="12" type="nsubjpass"/>
+  <dep from="14" to="13" type="auxpass"/>
+  <dep from="9" to="14" type="ccomp"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="18" to="19" type="pobj"/>
+  <dep from="19" to="20" type="cc"/>
+  <dep from="22" to="21" type="amod"/>
+  <dep from="19" to="22" type="conj"/>
+  <dep from="9" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

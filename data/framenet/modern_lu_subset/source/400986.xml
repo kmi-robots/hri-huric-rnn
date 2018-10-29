@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="400986">
+ <sentence>
+  There were concerned looks from burly matrons , and longing admiration from boys .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBD" surface="were"/>
+  <token id="3" lemma="concern" pos="VBN" surface="concerned"/>
+  <token id="4" lemma="look" pos="NNS" surface="looks"/>
+  <token id="5" lemma="from" pos="IN" surface="from"/>
+  <token id="6" lemma="burly" pos="JJ" surface="burly"/>
+  <token id="7" lemma="matron" pos="NNS" surface="matrons"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="longing" pos="NN" surface="longing"/>
+  <token id="11" lemma="admiration" pos="NN" surface="admiration"/>
+  <token id="12" lemma="from" pos="IN" surface="from"/>
+  <token id="13" lemma="boy" pos="NNS" surface="boys"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="acomp"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="4" to="8" type="punct"/>
+  <dep from="4" to="9" type="cc"/>
+  <dep from="4" to="10" type="conj"/>
+  <dep from="10" to="11" type="dobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="2" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Manner">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Perceiver_agentive">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

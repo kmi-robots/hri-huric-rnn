@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="821663">
+ <sentence>
+  Boats were moored to the main bank , mostly small powerboats with a few dinghies .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="boat" pos="NNS" surface="Boats"/>
+  <token id="2" lemma="be" pos="VBD" surface="were"/>
+  <token id="3" lemma="moor" pos="VBN" surface="moored"/>
+  <token id="4" lemma="to" pos="IN" surface="to"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="main" pos="JJ" surface="main"/>
+  <token id="7" lemma="bank" pos="NN" surface="bank"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="mostly" pos="RB" surface="mostly"/>
+  <token id="10" lemma="small" pos="JJ" surface="small"/>
+  <token id="11" lemma="powerboat" pos="NNS" surface="powerboats"/>
+  <token id="12" lemma="with" pos="IN" surface="with"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="few" pos="JJ" surface="few"/>
+  <token id="15" lemma="dinghy" pos="NNS" surface="dinghies"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="pobj"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="7" to="11" type="appos"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="12" to="15" type="pobj"/>
+  <dep from="3" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

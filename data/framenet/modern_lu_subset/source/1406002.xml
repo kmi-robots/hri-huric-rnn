@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1406002">
+ <sentence>
+  Urgent plans were being made at the London office to fly next of kin to Katmandu tomorrow .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="urgent" pos="JJ" surface="Urgent"/>
+  <token id="2" lemma="plan" pos="NNS" surface="plans"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="be" pos="VBG" surface="being"/>
+  <token id="5" lemma="make" pos="VBN" surface="made"/>
+  <token id="6" lemma="at" pos="IN" surface="at"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="london" pos="NNP" surface="London"/>
+  <token id="9" lemma="office" pos="NN" surface="office"/>
+  <token id="10" lemma="to" pos="TO" surface="to"/>
+  <token id="11" lemma="fly" pos="VB" surface="fly"/>
+  <token id="12" lemma="next" pos="RB" surface="next"/>
+  <token id="13" lemma="of" pos="IN" surface="of"/>
+  <token id="14" lemma="kin" pos="NN" surface="kin"/>
+  <token id="15" lemma="to" pos="IN" surface="to"/>
+  <token id="16" lemma="katmandu" pos="NNP" surface="Katmandu"/>
+  <token id="17" lemma="tomorrow" pos="NN" surface="tomorrow"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="aux"/>
+  <dep from="5" to="4" type="auxpass"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="9" to="7" type="det"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="6" to="9" type="pobj"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="5" to="11" type="advcl"/>
+  <dep from="11" to="12" type="advmod"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="11" to="15" type="prep"/>
+  <dep from="15" to="16" type="pobj"/>
+  <dep from="11" to="17" type="npadvmod"/>
+  <dep from="5" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

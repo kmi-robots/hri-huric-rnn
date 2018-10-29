@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="783929">
+ <sentence>
+  ` Lightweight dinghies should n't be used unless they are tethered to the shore , " said Peter Race .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="``" surface="`"/>
+  <token id="2" lemma="lightweight" pos="NNP" surface="Lightweight"/>
+  <token id="3" lemma="dinghy" pos="NNS" surface="dinghies"/>
+  <token id="4" lemma="should" pos="MD" surface="should"/>
+  <token id="5" lemma="n't" pos="RB" surface="n't"/>
+  <token id="6" lemma="be" pos="VB" surface="be"/>
+  <token id="7" lemma="use" pos="VBN" surface="used"/>
+  <token id="8" lemma="unless" pos="IN" surface="unless"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="10" lemma="be" pos="VBP" surface="are"/>
+  <token id="11" lemma="tether" pos="VBN" surface="tethered"/>
+  <token id="12" lemma="to" pos="IN" surface="to"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="shore" pos="NN" surface="shore"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma='"' pos="''" surface='"'/>
+  <token id="17" lemma="say" pos="VBD" surface="said"/>
+  <token id="18" lemma="peter" pos="NNP" surface="Peter"/>
+  <token id="19" lemma="race" pos="NNP" surface="Race"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="punct"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="7" to="3" type="nsubjpass"/>
+  <dep from="7" to="4" type="aux"/>
+  <dep from="7" to="5" type="neg"/>
+  <dep from="7" to="6" type="auxpass"/>
+  <dep from="17" to="7" type="ccomp"/>
+  <dep from="10" to="8" type="mark"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="7" to="10" type="advcl"/>
+  <dep from="10" to="11" type="acomp"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="17" to="15" type="punct"/>
+  <dep from="17" to="16" type="punct"/>
+  <dep from="0" to="17" type="root"/>
+  <dep from="19" to="18" type="compound"/>
+  <dep from="17" to="19" type="nsubj"/>
+  <dep from="17" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

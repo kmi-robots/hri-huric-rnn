@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1239575">
+ <sentence>
+  YOUTH hostel chiefs will learn today whether a £10,000 tip handed over by a tourist is genuine .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="youth" pos="NN" surface="YOUTH"/>
+  <token id="2" lemma="hostel" pos="NN" surface="hostel"/>
+  <token id="3" lemma="chief" pos="NNS" surface="chiefs"/>
+  <token id="4" lemma="will" pos="MD" surface="will"/>
+  <token id="5" lemma="learn" pos="VB" surface="learn"/>
+  <token id="6" lemma="today" pos="NN" surface="today"/>
+  <token id="7" lemma="whether" pos="IN" surface="whether"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="£10,000" pos="NNP" surface="£10,000"/>
+  <token id="10" lemma="tip" pos="NN" surface="tip"/>
+  <token id="11" lemma="hand" pos="VBD" surface="handed"/>
+  <token id="12" lemma="over" pos="RP" surface="over"/>
+  <token id="13" lemma="by" pos="IN" surface="by"/>
+  <token id="14" lemma="a" pos="DT" surface="a"/>
+  <token id="15" lemma="tourist" pos="NN" surface="tourist"/>
+  <token id="16" lemma="be" pos="VBZ" surface="is"/>
+  <token id="17" lemma="genuine" pos="JJ" surface="genuine"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="compound"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="npadvmod"/>
+  <dep from="16" to="7" type="mark"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="16" to="10" type="nsubj"/>
+  <dep from="10" to="11" type="acl"/>
+  <dep from="11" to="12" type="prt"/>
+  <dep from="11" to="13" type="agent"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="5" to="16" type="ccomp"/>
+  <dep from="16" to="17" type="acomp"/>
+  <dep from="5" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Donor">
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

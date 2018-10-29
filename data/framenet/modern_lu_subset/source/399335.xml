@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="399335">
+ <sentence>
+  Claudia gazed from the window .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="claudia" pos="NN" surface="Claudia"/>
+  <token id="2" lemma="gaze" pos="VBN" surface="gazed"/>
+  <token id="3" lemma="from" pos="IN" surface="from"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="window" pos="NN" surface="window"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="5" to="4" type="det"/>
+  <dep from="3" to="5" type="pobj"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Location_of_protagonist">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

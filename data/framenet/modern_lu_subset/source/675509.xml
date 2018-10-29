@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="675509">
+ <sentence>
+  Jakki was ushered into the star trailer .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="jakki" pos="NNP" surface="Jakki"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="usher" pos="VBN" surface="ushered"/>
+  <token id="4" lemma="into" pos="IN" surface="into"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="star" pos="NN" surface="star"/>
+  <token id="7" lemma="trailer" pos="NN" surface="trailer"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="4" to="7" type="pobj"/>
+  <dep from="3" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Cotheme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

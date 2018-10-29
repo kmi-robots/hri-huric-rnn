@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="636118">
+ <sentence>
+  Trim the edges and tuck around the body like a skirt .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="trim" pos="VB" surface="Trim"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="edge" pos="NNS" surface="edges"/>
+  <token id="4" lemma="and" pos="CC" surface="and"/>
+  <token id="5" lemma="tuck" pos="VB" surface="tuck"/>
+  <token id="6" lemma="around" pos="IN" surface="around"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="body" pos="NN" surface="body"/>
+  <token id="9" lemma="like" pos="IN" surface="like"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="skirt" pos="NN" surface="skirt"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="dobj"/>
+  <dep from="1" to="4" type="cc"/>
+  <dep from="1" to="5" type="conj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="5" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="1" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="633714">
+ <sentence>
+  ` Try that , " he recommended , setting it beneath her arm .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="''" surface="`"/>
+  <token id="2" lemma="try" pos="VB" surface="Try"/>
+  <token id="3" lemma="that" pos="DT" surface="that"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma='"' pos="''" surface='"'/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="7" lemma="recommend" pos="VBD" surface="recommended"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="set" pos="VBG" surface="setting"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="11" lemma="beneath" pos="IN" surface="beneath"/>
+  <token id="12" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="13" lemma="arm" pos="NN" surface="arm"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="punct"/>
+  <dep from="7" to="2" type="ccomp"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="7" to="4" type="punct"/>
+  <dep from="7" to="5" type="punct"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="7" to="9" type="advcl"/>
+  <dep from="9" to="10" type="dobj"/>
+  <dep from="9" to="11" type="prep"/>
+  <dep from="13" to="12" type="poss"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="7" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

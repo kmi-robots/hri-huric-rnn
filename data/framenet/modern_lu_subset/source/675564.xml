@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="675564">
+ <sentence>
+  ` Do n't worry , " said Greg Carey , who had returned from ushering out his fellow guest .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="``" surface="`"/>
+  <token id="2" lemma="do" pos="VB" surface="Do"/>
+  <token id="3" lemma="n't" pos="RB" surface="n't"/>
+  <token id="4" lemma="worry" pos="VB" surface="worry"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma='"' pos="''" surface='"'/>
+  <token id="7" lemma="say" pos="VBD" surface="said"/>
+  <token id="8" lemma="greg" pos="NNP" surface="Greg"/>
+  <token id="9" lemma="carey" pos="NNP" surface="Carey"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="who" pos="WP" surface="who"/>
+  <token id="12" lemma="have" pos="VBD" surface="had"/>
+  <token id="13" lemma="return" pos="VBN" surface="returned"/>
+  <token id="14" lemma="from" pos="IN" surface="from"/>
+  <token id="15" lemma="usher" pos="VBG" surface="ushering"/>
+  <token id="16" lemma="out" pos="RP" surface="out"/>
+  <token id="17" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="18" lemma="fellow" pos="JJ" surface="fellow"/>
+  <token id="19" lemma="guest" pos="NN" surface="guest"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="punct"/>
+  <dep from="4" to="2" type="aux"/>
+  <dep from="4" to="3" type="neg"/>
+  <dep from="7" to="4" type="ccomp"/>
+  <dep from="7" to="5" type="punct"/>
+  <dep from="7" to="6" type="punct"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="7" to="9" type="nsubj"/>
+  <dep from="9" to="10" type="punct"/>
+  <dep from="13" to="11" type="nsubj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="9" to="13" type="relcl"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pcomp"/>
+  <dep from="15" to="16" type="prt"/>
+  <dep from="19" to="17" type="poss"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="15" to="19" type="dobj"/>
+  <dep from="7" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Goal">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="17"/>
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

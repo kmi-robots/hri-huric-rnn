@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770800">
+ <sentence>
+  Farrel explained that he was an agricultural student and had come to lend a hand with the harvest .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="farrel" pos="NNP" surface="Farrel"/>
+  <token id="2" lemma="explain" pos="VBD" surface="explained"/>
+  <token id="3" lemma="that" pos="IN" surface="that"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="5" lemma="be" pos="VBD" surface="was"/>
+  <token id="6" lemma="an" pos="DT" surface="an"/>
+  <token id="7" lemma="agricultural" pos="JJ" surface="agricultural"/>
+  <token id="8" lemma="student" pos="NN" surface="student"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="have" pos="VBD" surface="had"/>
+  <token id="11" lemma="come" pos="VBN" surface="come"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="lend" pos="VB" surface="lend"/>
+  <token id="14" lemma="a" pos="DT" surface="a"/>
+  <token id="15" lemma="hand" pos="NN" surface="hand"/>
+  <token id="16" lemma="with" pos="IN" surface="with"/>
+  <token id="17" lemma="the" pos="DT" surface="the"/>
+  <token id="18" lemma="harvest" pos="NN" surface="harvest"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="mark"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="2" to="5" type="ccomp"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="attr"/>
+  <dep from="5" to="9" type="cc"/>
+  <dep from="11" to="10" type="aux"/>
+  <dep from="5" to="11" type="conj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="11" to="13" type="advcl"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="dobj"/>
+  <dep from="13" to="16" type="prep"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="2" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

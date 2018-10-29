@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1445951">
+ <sentence>
+  Today the obviously ancient framework sits alongside modern additions and reconstructions .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="today" pos="NN" surface="Today"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="obviously" pos="RB" surface="obviously"/>
+  <token id="4" lemma="ancient" pos="JJ" surface="ancient"/>
+  <token id="5" lemma="framework" pos="NN" surface="framework"/>
+  <token id="6" lemma="sit" pos="VBZ" surface="sits"/>
+  <token id="7" lemma="alongside" pos="IN" surface="alongside"/>
+  <token id="8" lemma="modern" pos="JJ" surface="modern"/>
+  <token id="9" lemma="addition" pos="NNS" surface="additions"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="reconstruction" pos="NNS" surface="reconstructions"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="npadvmod"/>
+  <dep from="5" to="2" type="det"/>
+  <dep from="5" to="3" type="amod"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="9" to="11" type="conj"/>
+  <dep from="6" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_located">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

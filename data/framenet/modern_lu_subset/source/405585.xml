@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="405585">
+ <sentence>
+  The maid who had woken her stared back without comprehension or interest .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="maid" pos="NN" surface="maid"/>
+  <token id="3" lemma="who" pos="WP" surface="who"/>
+  <token id="4" lemma="have" pos="VBD" surface="had"/>
+  <token id="5" lemma="wake" pos="VBN" surface="woken"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="7" lemma="star" pos="VBN" surface="stared"/>
+  <token id="8" lemma="back" pos="RB" surface="back"/>
+  <token id="9" lemma="without" pos="IN" surface="without"/>
+  <token id="10" lemma="comprehension" pos="NN" surface="comprehension"/>
+  <token id="11" lemma="or" pos="CC" surface="or"/>
+  <token id="12" lemma="interest" pos="NN" surface="interest"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="7" to="2" type="nsubj"/>
+  <dep from="5" to="3" type="nsubj"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="2" to="5" type="relcl"/>
+  <dep from="5" to="6" type="dobj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="advmod"/>
+  <dep from="7" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="10" to="11" type="cc"/>
+  <dep from="10" to="12" type="conj"/>
+  <dep from="7" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

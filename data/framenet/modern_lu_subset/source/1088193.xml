@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1088193">
+ <sentence>
+  ` Planets move in ellipses around the sun " is more precise than ` Planets move in closed loops around the sun " , and is consequently more falsifiable .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="``" surface="`"/>
+  <token id="2" lemma="planets" pos="NNPS" surface="Planets"/>
+  <token id="3" lemma="move" pos="VBP" surface="move"/>
+  <token id="4" lemma="in" pos="IN" surface="in"/>
+  <token id="5" lemma="ellipsis" pos="NNS" surface="ellipses"/>
+  <token id="6" lemma="around" pos="IN" surface="around"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="sun" pos="NN" surface="sun"/>
+  <token id="9" lemma='"' pos="``" surface='"'/>
+  <token id="10" lemma="be" pos="VBZ" surface="is"/>
+  <token id="11" lemma="more" pos="RBR" surface="more"/>
+  <token id="12" lemma="precise" pos="JJ" surface="precise"/>
+  <token id="13" lemma="than" pos="IN" surface="than"/>
+  <token id="14" lemma="`" pos="''" surface="`"/>
+  <token id="15" lemma="planets" pos="NNPS" surface="Planets"/>
+  <token id="16" lemma="move" pos="VBP" surface="move"/>
+  <token id="17" lemma="in" pos="IN" surface="in"/>
+  <token id="18" lemma="closed" pos="JJ" surface="closed"/>
+  <token id="19" lemma="loop" pos="NNS" surface="loops"/>
+  <token id="20" lemma="around" pos="IN" surface="around"/>
+  <token id="21" lemma="the" pos="DT" surface="the"/>
+  <token id="22" lemma="sun" pos="NN" surface="sun"/>
+  <token id="23" lemma='"' pos="''" surface='"'/>
+  <token id="24" lemma="," pos="," surface=","/>
+  <token id="25" lemma="and" pos="CC" surface="and"/>
+  <token id="26" lemma="be" pos="VBZ" surface="is"/>
+  <token id="27" lemma="consequently" pos="RB" surface="consequently"/>
+  <token id="28" lemma="more" pos="RBR" surface="more"/>
+  <token id="29" lemma="falsifiable" pos="JJ" surface="falsifiable"/>
+  <token id="30" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="punct"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="10" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="3" to="9" type="punct"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="12" to="11" type="advmod"/>
+  <dep from="10" to="12" type="acomp"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="16" to="14" type="punct"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="13" to="16" type="pobj"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="19" to="18" type="amod"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="22" to="21" type="det"/>
+  <dep from="20" to="22" type="pobj"/>
+  <dep from="16" to="23" type="punct"/>
+  <dep from="10" to="24" type="punct"/>
+  <dep from="10" to="25" type="cc"/>
+  <dep from="10" to="26" type="conj"/>
+  <dep from="29" to="27" type="advmod"/>
+  <dep from="29" to="28" type="advmod"/>
+  <dep from="26" to="29" type="acomp"/>
+  <dep from="10" to="30" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

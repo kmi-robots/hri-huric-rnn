@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="404451">
+ <sentence>
+  The setters ran away , sniffing the air excitedly .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="setter" pos="NNS" surface="setters"/>
+  <token id="3" lemma="run" pos="VBD" surface="ran"/>
+  <token id="4" lemma="away" pos="RB" surface="away"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="sniff" pos="VBG" surface="sniffing"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="air" pos="NN" surface="air"/>
+  <token id="9" lemma="excitedly" pos="RB" surface="excitedly"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="advmod"/>
+  <dep from="3" to="5" type="punct"/>
+  <dep from="3" to="6" type="advcl"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="6" to="9" type="advmod"/>
+  <dep from="3" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

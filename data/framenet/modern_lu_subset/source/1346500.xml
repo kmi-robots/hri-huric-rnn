@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1346500">
+ <sentence>
+  The procession will meander through downtown Atlanta and past City Hall before ending at Atlanta -Fulton County Stadium .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="procession" pos="NN" surface="procession"/>
+  <token id="3" lemma="will" pos="MD" surface="will"/>
+  <token id="4" lemma="meander" pos="VB" surface="meander"/>
+  <token id="5" lemma="through" pos="IN" surface="through"/>
+  <token id="6" lemma="downtown" pos="NN" surface="downtown"/>
+  <token id="7" lemma="atlanta" pos="NNP" surface="Atlanta"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="past" pos="JJ" surface="past"/>
+  <token id="10" lemma="city" pos="NNP" surface="City"/>
+  <token id="11" lemma="hall" pos="NNP" surface="Hall"/>
+  <token id="12" lemma="before" pos="IN" surface="before"/>
+  <token id="13" lemma="end" pos="VBG" surface="ending"/>
+  <token id="14" lemma="at" pos="IN" surface="at"/>
+  <token id="15" lemma="atlanta" pos="NNP" surface="Atlanta"/>
+  <token id="16" lemma="-fulton" pos="NNP" surface="-Fulton"/>
+  <token id="17" lemma="county" pos="NNP" surface="County"/>
+  <token id="18" lemma="stadium" pos="NNP" surface="Stadium"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="5" to="8" type="cc"/>
+  <dep from="5" to="9" type="conj"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="4" to="12" type="prep"/>
+  <dep from="12" to="13" type="pcomp"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="18" to="15" type="compound"/>
+  <dep from="18" to="16" type="punct"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="14" to="18" type="pobj"/>
+  <dep from="4" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

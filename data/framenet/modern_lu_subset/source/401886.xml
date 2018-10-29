@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="401886">
+ <sentence>
+  Jotan looked perplexed by her observation .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="jotan" pos="NNP" surface="Jotan"/>
+  <token id="2" lemma="look" pos="VBD" surface="looked"/>
+  <token id="3" lemma="perplex" pos="VBN" surface="perplexed"/>
+  <token id="4" lemma="by" pos="IN" surface="by"/>
+  <token id="5" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="6" lemma="observation" pos="NN" surface="observation"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="acomp"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="6" to="5" type="poss"/>
+  <dep from="4" to="6" type="pobj"/>
+  <dep from="2" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

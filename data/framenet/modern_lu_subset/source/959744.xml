@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="959744">
+ <sentence>
+  You see , we were coasting when I went to sleep ; I was floating , held by my seat belt .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="You"/>
+  <token id="2" lemma="see" pos="VBP" surface="see"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="5" lemma="be" pos="VBD" surface="were"/>
+  <token id="6" lemma="coast" pos="VBG" surface="coasting"/>
+  <token id="7" lemma="when" pos="WRB" surface="when"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="9" lemma="go" pos="VBD" surface="went"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="sleep" pos="NN" surface="sleep"/>
+  <token id="12" lemma=";" pos=":" surface=";"/>
+  <token id="13" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="14" lemma="be" pos="VBD" surface="was"/>
+  <token id="15" lemma="float" pos="VBG" surface="floating"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="hold" pos="VBN" surface="held"/>
+  <token id="18" lemma="by" pos="IN" surface="by"/>
+  <token id="19" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="20" lemma="seat" pos="NN" surface="seat"/>
+  <token id="21" lemma="belt" pos="NN" surface="belt"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="6" to="2" type="parataxis"/>
+  <dep from="6" to="3" type="punct"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="15" to="6" type="ccomp"/>
+  <dep from="9" to="7" type="advmod"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="6" to="9" type="advcl"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="15" to="12" type="punct"/>
+  <dep from="15" to="13" type="nsubj"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="0" to="15" type="root"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="15" to="17" type="conj"/>
+  <dep from="17" to="18" type="agent"/>
+  <dep from="21" to="19" type="poss"/>
+  <dep from="21" to="20" type="compound"/>
+  <dep from="18" to="21" type="pobj"/>
+  <dep from="15" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

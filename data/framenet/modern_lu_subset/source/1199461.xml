@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1199461">
+ <sentence>
+  Treat yourself to this cool and extravagant dessert
+ </sentence>
+ <tokens>
+  <token id="1" lemma="treat" pos="VB" surface="Treat"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="yourself"/>
+  <token id="3" lemma="to" pos="IN" surface="to"/>
+  <token id="4" lemma="this" pos="DT" surface="this"/>
+  <token id="5" lemma="cool" pos="JJ" surface="cool"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="extravagant" pos="JJ" surface="extravagant"/>
+  <token id="8" lemma="dessert" pos="NN" surface="dessert"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="dobj"/>
+  <dep from="1" to="3" type="prep"/>
+  <dep from="8" to="4" type="det"/>
+  <dep from="8" to="5" type="amod"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="5" to="7" type="conj"/>
+  <dep from="3" to="8" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Recipient">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

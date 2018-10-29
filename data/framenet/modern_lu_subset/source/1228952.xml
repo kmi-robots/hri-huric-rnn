@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1228952">
+ <sentence>
+  I think we should now talk of heads rolling along the Potomac .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="think" pos="VBP" surface="think"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="4" lemma="should" pos="MD" surface="should"/>
+  <token id="5" lemma="now" pos="RB" surface="now"/>
+  <token id="6" lemma="talk" pos="VB" surface="talk"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="head" pos="NNS" surface="heads"/>
+  <token id="9" lemma="roll" pos="VBG" surface="rolling"/>
+  <token id="10" lemma="along" pos="IN" surface="along"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="potomac" pos="NNP" surface="Potomac"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="6" to="3" type="nsubj"/>
+  <dep from="6" to="4" type="aux"/>
+  <dep from="6" to="5" type="advmod"/>
+  <dep from="2" to="6" type="ccomp"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="8" to="9" type="acl"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="2" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Path">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

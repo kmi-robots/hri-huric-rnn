@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1447609">
+ <sentence>
+  There are ions activated by thermal motion in blood and these are always subject to the Earth 's magnetic field .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="there" pos="EX" surface="There"/>
+  <token id="2" lemma="be" pos="VBP" surface="are"/>
+  <token id="3" lemma="ion" pos="NNS" surface="ions"/>
+  <token id="4" lemma="activate" pos="VBN" surface="activated"/>
+  <token id="5" lemma="by" pos="IN" surface="by"/>
+  <token id="6" lemma="thermal" pos="JJ" surface="thermal"/>
+  <token id="7" lemma="motion" pos="NN" surface="motion"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="blood" pos="NN" surface="blood"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="these" pos="DT" surface="these"/>
+  <token id="12" lemma="be" pos="VBP" surface="are"/>
+  <token id="13" lemma="always" pos="RB" surface="always"/>
+  <token id="14" lemma="subject" pos="JJ" surface="subject"/>
+  <token id="15" lemma="to" pos="IN" surface="to"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="earth" pos="NNP" surface="Earth"/>
+  <token id="18" lemma="'s" pos="POS" surface="'s"/>
+  <token id="19" lemma="magnetic" pos="JJ" surface="magnetic"/>
+  <token id="20" lemma="field" pos="NN" surface="field"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="expl"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="attr"/>
+  <dep from="3" to="4" type="acl"/>
+  <dep from="4" to="5" type="agent"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="2" to="10" type="cc"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="2" to="12" type="conj"/>
+  <dep from="12" to="13" type="advmod"/>
+  <dep from="12" to="14" type="acomp"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="20" to="17" type="poss"/>
+  <dep from="17" to="18" type="case"/>
+  <dep from="20" to="19" type="amod"/>
+  <dep from="15" to="20" type="pobj"/>
+  <dep from="12" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Change_operational_state">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Device">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Cause">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

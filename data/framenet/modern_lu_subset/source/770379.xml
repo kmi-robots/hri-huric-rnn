@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770379">
+ <sentence>
+  By 1914 , however , the situation was totally transformed : 96 per cent of London 's milk came by train .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="by" pos="IN" surface="By"/>
+  <token id="2" lemma="1914" pos="CD" surface="1914"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="however" pos="RB" surface="however"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="situation" pos="NN" surface="situation"/>
+  <token id="8" lemma="be" pos="VBD" surface="was"/>
+  <token id="9" lemma="totally" pos="RB" surface="totally"/>
+  <token id="10" lemma="transform" pos="VBN" surface="transformed"/>
+  <token id="11" lemma=":" pos=":" surface=":"/>
+  <token id="12" lemma="96" pos="CD" surface="96"/>
+  <token id="13" lemma="per" pos="NN" surface="per"/>
+  <token id="14" lemma="cent" pos="NN" surface="cent"/>
+  <token id="15" lemma="of" pos="IN" surface="of"/>
+  <token id="16" lemma="london" pos="NNP" surface="London"/>
+  <token id="17" lemma="'s" pos="POS" surface="'s"/>
+  <token id="18" lemma="milk" pos="NN" surface="milk"/>
+  <token id="19" lemma="come" pos="VBD" surface="came"/>
+  <token id="20" lemma="by" pos="IN" surface="by"/>
+  <token id="21" lemma="train" pos="NN" surface="train"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="10" to="3" type="punct"/>
+  <dep from="10" to="4" type="advmod"/>
+  <dep from="10" to="5" type="punct"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="10" to="7" type="nsubjpass"/>
+  <dep from="10" to="8" type="auxpass"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="19" to="12" type="nsubj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="18" to="16" type="poss"/>
+  <dep from="16" to="17" type="case"/>
+  <dep from="15" to="18" type="pobj"/>
+  <dep from="10" to="19" type="ccomp"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="20" to="21" type="pobj"/>
+  <dep from="10" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+    <frameElement type="Mode_of_transportation">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

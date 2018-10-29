@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="688959">
+ <sentence>
+  Imports : The composition of imports will be closely examined by a bank 's risk analyst .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="import" pos="NNS" surface="Imports"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="the" pos="DT" surface="The"/>
+  <token id="4" lemma="composition" pos="NN" surface="composition"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="import" pos="NNS" surface="imports"/>
+  <token id="7" lemma="will" pos="MD" surface="will"/>
+  <token id="8" lemma="be" pos="VB" surface="be"/>
+  <token id="9" lemma="closely" pos="RB" surface="closely"/>
+  <token id="10" lemma="examine" pos="VBN" surface="examined"/>
+  <token id="11" lemma="by" pos="IN" surface="by"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="bank" pos="NN" surface="bank"/>
+  <token id="14" lemma="'s" pos="POS" surface="'s"/>
+  <token id="15" lemma="risk" pos="NN" surface="risk"/>
+  <token id="16" lemma="analyst" pos="NN" surface="analyst"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="10" to="4" type="nsubjpass"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="10" to="7" type="aux"/>
+  <dep from="10" to="8" type="auxpass"/>
+  <dep from="10" to="9" type="advmod"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="agent"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="16" to="13" type="poss"/>
+  <dep from="13" to="14" type="case"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="11" to="16" type="pobj"/>
+  <dep from="10" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+    <frameElement type="Cognizer">
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

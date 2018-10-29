@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780580">
+ <sentence>
+  ` We 'll have more chance of finding it if we search separately , " Donna suggested .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="``" surface="`"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="We"/>
+  <token id="3" lemma="'ll" pos="MD" surface="'ll"/>
+  <token id="4" lemma="have" pos="VB" surface="have"/>
+  <token id="5" lemma="more" pos="JJR" surface="more"/>
+  <token id="6" lemma="chance" pos="NN" surface="chance"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="find" pos="VBG" surface="finding"/>
+  <token id="9" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="10" lemma="if" pos="IN" surface="if"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="we"/>
+  <token id="12" lemma="search" pos="VBP" surface="search"/>
+  <token id="13" lemma="separately" pos="RB" surface="separately"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma='"' pos="''" surface='"'/>
+  <token id="16" lemma="donna" pos="NNP" surface="Donna"/>
+  <token id="17" lemma="suggest" pos="VBD" surface="suggested"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="punct"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="17" to="4" type="ccomp"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pcomp"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="12" to="10" type="mark"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="8" to="12" type="advcl"/>
+  <dep from="12" to="13" type="advmod"/>
+  <dep from="17" to="14" type="punct"/>
+  <dep from="17" to="15" type="punct"/>
+  <dep from="17" to="16" type="nsubj"/>
+  <dep from="0" to="17" type="root"/>
+  <dep from="17" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

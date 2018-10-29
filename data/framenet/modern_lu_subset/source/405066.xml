@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="405066">
+ <sentence>
+  He stared slowly round the rest of the group .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="star" pos="VBD" surface="stared"/>
+  <token id="3" lemma="slowly" pos="RB" surface="slowly"/>
+  <token id="4" lemma="round" pos="RB" surface="round"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="rest" pos="NN" surface="rest"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="group" pos="NN" surface="group"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="2" to="4" type="advmod"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="2" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

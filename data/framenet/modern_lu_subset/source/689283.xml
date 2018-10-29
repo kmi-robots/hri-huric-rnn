@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="689283">
+ <sentence>
+  Her head ached , too , and she probed her scalp experimentally .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP$" surface="Her"/>
+  <token id="2" lemma="head" pos="NN" surface="head"/>
+  <token id="3" lemma="ache" pos="VBD" surface="ached"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="too" pos="RB" surface="too"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="9" lemma="probe" pos="VBD" surface="probed"/>
+  <token id="10" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="11" lemma="scalp" pos="NN" surface="scalp"/>
+  <token id="12" lemma="experimentally" pos="RB" surface="experimentally"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="poss"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="punct"/>
+  <dep from="3" to="5" type="advmod"/>
+  <dep from="3" to="6" type="punct"/>
+  <dep from="3" to="7" type="cc"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="3" to="9" type="conj"/>
+  <dep from="11" to="10" type="poss"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="9" to="12" type="advmod"/>
+  <dep from="9" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

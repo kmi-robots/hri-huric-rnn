@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="956338">
+ <sentence>
+  Eggs were stolen , the nest blew from its tree in a gale , attempts were made by vandals to cut down and to burn the nesting tree at Loch Garten .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="egg" pos="NNS" surface="Eggs"/>
+  <token id="2" lemma="be" pos="VBD" surface="were"/>
+  <token id="3" lemma="steal" pos="VBN" surface="stolen"/>
+  <token id="4" lemma="," pos="," surface=","/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="nest" pos="NN" surface="nest"/>
+  <token id="7" lemma="blow" pos="VBD" surface="blew"/>
+  <token id="8" lemma="from" pos="IN" surface="from"/>
+  <token id="9" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="10" lemma="tree" pos="NN" surface="tree"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="gale" pos="NN" surface="gale"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="attempt" pos="NNS" surface="attempts"/>
+  <token id="16" lemma="be" pos="VBD" surface="were"/>
+  <token id="17" lemma="make" pos="VBN" surface="made"/>
+  <token id="18" lemma="by" pos="IN" surface="by"/>
+  <token id="19" lemma="vandal" pos="NNS" surface="vandals"/>
+  <token id="20" lemma="to" pos="TO" surface="to"/>
+  <token id="21" lemma="cut" pos="VB" surface="cut"/>
+  <token id="22" lemma="down" pos="RP" surface="down"/>
+  <token id="23" lemma="and" pos="CC" surface="and"/>
+  <token id="24" lemma="to" pos="TO" surface="to"/>
+  <token id="25" lemma="burn" pos="VB" surface="burn"/>
+  <token id="26" lemma="the" pos="DT" surface="the"/>
+  <token id="27" lemma="nesting" pos="JJ" surface="nesting"/>
+  <token id="28" lemma="tree" pos="NN" surface="tree"/>
+  <token id="29" lemma="at" pos="IN" surface="at"/>
+  <token id="30" lemma="loch" pos="NNP" surface="Loch"/>
+  <token id="31" lemma="garten" pos="NNP" surface="Garten"/>
+  <token id="32" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="7" to="3" type="ccomp"/>
+  <dep from="7" to="4" type="punct"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="17" to="7" type="ccomp"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="poss"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="7" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="17" to="14" type="punct"/>
+  <dep from="17" to="15" type="nsubjpass"/>
+  <dep from="17" to="16" type="auxpass"/>
+  <dep from="0" to="17" type="root"/>
+  <dep from="17" to="18" type="agent"/>
+  <dep from="18" to="19" type="pobj"/>
+  <dep from="21" to="20" type="aux"/>
+  <dep from="17" to="21" type="advcl"/>
+  <dep from="21" to="22" type="prt"/>
+  <dep from="21" to="23" type="cc"/>
+  <dep from="25" to="24" type="aux"/>
+  <dep from="21" to="25" type="conj"/>
+  <dep from="28" to="26" type="det"/>
+  <dep from="28" to="27" type="compound"/>
+  <dep from="25" to="28" type="dobj"/>
+  <dep from="28" to="29" type="prep"/>
+  <dep from="31" to="30" type="compound"/>
+  <dep from="29" to="31" type="pobj"/>
+  <dep from="17" to="32" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Carrier">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

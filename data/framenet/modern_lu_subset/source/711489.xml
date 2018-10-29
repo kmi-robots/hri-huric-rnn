@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="711489">
+ <sentence>
+  Everybody in the district came out to watch the coffin being carried away .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="everybody" pos="NN" surface="Everybody"/>
+  <token id="2" lemma="in" pos="IN" surface="in"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="district" pos="NN" surface="district"/>
+  <token id="5" lemma="come" pos="VBD" surface="came"/>
+  <token id="6" lemma="out" pos="RP" surface="out"/>
+  <token id="7" lemma="to" pos="TO" surface="to"/>
+  <token id="8" lemma="watch" pos="VB" surface="watch"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="coffin" pos="NN" surface="coffin"/>
+  <token id="11" lemma="be" pos="VBG" surface="being"/>
+  <token id="12" lemma="carry" pos="VBN" surface="carried"/>
+  <token id="13" lemma="away" pos="RB" surface="away"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prt"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="5" to="8" type="advcl"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="12" to="10" type="nsubjpass"/>
+  <dep from="12" to="11" type="auxpass"/>
+  <dep from="8" to="12" type="ccomp"/>
+  <dep from="12" to="13" type="advmod"/>
+  <dep from="5" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1251871">
+ <sentence>
+  Most of the treasures were crated , but some rode in slings and cradles .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="most" pos="JJS" surface="Most"/>
+  <token id="2" lemma="of" pos="IN" surface="of"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="treasure" pos="NNS" surface="treasures"/>
+  <token id="5" lemma="be" pos="VBD" surface="were"/>
+  <token id="6" lemma="crate" pos="VBN" surface="crated"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="but" pos="CC" surface="but"/>
+  <token id="9" lemma="some" pos="DT" surface="some"/>
+  <token id="10" lemma="rode" pos="NN" surface="rode"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="sling" pos="NNS" surface="slings"/>
+  <token id="13" lemma="and" pos="CC" surface="and"/>
+  <token id="14" lemma="cradle" pos="NNS" surface="cradles"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="nsubjpass"/>
+  <dep from="1" to="2" type="prep"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="pobj"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="punct"/>
+  <dep from="6" to="8" type="cc"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="6" to="10" type="conj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="12" to="13" type="cc"/>
+  <dep from="12" to="14" type="conj"/>
+  <dep from="10" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

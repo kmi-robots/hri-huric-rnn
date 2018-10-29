@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403180">
+ <sentence>
+  Although he was forbidden to get out of bed he sneaked over every evening and peeped out , unable to resist looking .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="although" pos="IN" surface="Although"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="forbid" pos="VBN" surface="forbidden"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="get" pos="VB" surface="get"/>
+  <token id="7" lemma="out" pos="IN" surface="out"/>
+  <token id="8" lemma="of" pos="IN" surface="of"/>
+  <token id="9" lemma="bed" pos="NN" surface="bed"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="11" lemma="sneak" pos="VBD" surface="sneaked"/>
+  <token id="12" lemma="over" pos="IN" surface="over"/>
+  <token id="13" lemma="every" pos="DT" surface="every"/>
+  <token id="14" lemma="evening" pos="NN" surface="evening"/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="peep" pos="VBD" surface="peeped"/>
+  <token id="17" lemma="out" pos="RP" surface="out"/>
+  <token id="18" lemma="," pos="," surface=","/>
+  <token id="19" lemma="unable" pos="JJ" surface="unable"/>
+  <token id="20" lemma="to" pos="TO" surface="to"/>
+  <token id="21" lemma="resist" pos="VB" surface="resist"/>
+  <token id="22" lemma="look" pos="VBG" surface="looking"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="mark"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="11" to="4" type="advcl"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="4" to="6" type="xcomp"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="8" to="9" type="pobj"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="11" to="14" type="npadvmod"/>
+  <dep from="11" to="15" type="cc"/>
+  <dep from="11" to="16" type="conj"/>
+  <dep from="16" to="17" type="prt"/>
+  <dep from="16" to="18" type="punct"/>
+  <dep from="16" to="19" type="conj"/>
+  <dep from="21" to="20" type="aux"/>
+  <dep from="19" to="21" type="xcomp"/>
+  <dep from="21" to="22" type="xcomp"/>
+  <dep from="11" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="16"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

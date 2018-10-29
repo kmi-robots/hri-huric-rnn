@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770024">
+ <sentence>
+  Amy arrived home from school early one afternoon .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="amy" pos="NNP" surface="Amy"/>
+  <token id="2" lemma="arrive" pos="VBD" surface="arrived"/>
+  <token id="3" lemma="home" pos="RB" surface="home"/>
+  <token id="4" lemma="from" pos="IN" surface="from"/>
+  <token id="5" lemma="school" pos="NN" surface="school"/>
+  <token id="6" lemma="early" pos="RB" surface="early"/>
+  <token id="7" lemma="one" pos="CD" surface="one"/>
+  <token id="8" lemma="afternoon" pos="NN" surface="afternoon"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="advmod"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="8" to="6" type="advmod"/>
+  <dep from="8" to="7" type="nummod"/>
+  <dep from="2" to="8" type="npadvmod"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

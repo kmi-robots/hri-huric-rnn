@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="595420">
+ <sentence>
+  In one case in 1988 a Romanian border guard pursued a Romanian citizen into Hungarian territory and shot him .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="in" pos="IN" surface="In"/>
+  <token id="2" lemma="one" pos="CD" surface="one"/>
+  <token id="3" lemma="case" pos="NN" surface="case"/>
+  <token id="4" lemma="in" pos="IN" surface="in"/>
+  <token id="5" lemma="1988" pos="CD" surface="1988"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="romanian" pos="JJ" surface="Romanian"/>
+  <token id="8" lemma="border" pos="NN" surface="border"/>
+  <token id="9" lemma="guard" pos="NN" surface="guard"/>
+  <token id="10" lemma="pursue" pos="VBD" surface="pursued"/>
+  <token id="11" lemma="a" pos="DT" surface="a"/>
+  <token id="12" lemma="romanian" pos="JJ" surface="Romanian"/>
+  <token id="13" lemma="citizen" pos="NN" surface="citizen"/>
+  <token id="14" lemma="into" pos="IN" surface="into"/>
+  <token id="15" lemma="hungarian" pos="JJ" surface="Hungarian"/>
+  <token id="16" lemma="territory" pos="NN" surface="territory"/>
+  <token id="17" lemma="and" pos="CC" surface="and"/>
+  <token id="18" lemma="shoot" pos="VBD" surface="shot"/>
+  <token id="19" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="10" to="1" type="prep"/>
+  <dep from="3" to="2" type="nummod"/>
+  <dep from="1" to="3" type="pobj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="9" to="6" type="det"/>
+  <dep from="9" to="7" type="amod"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="dobj"/>
+  <dep from="10" to="14" type="prep"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="10" to="17" type="cc"/>
+  <dep from="10" to="18" type="conj"/>
+  <dep from="18" to="19" type="dobj"/>
+  <dep from="10" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

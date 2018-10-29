@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="404644">
+ <sentence>
+  Heidi was suddenly conscious of the stares from passing strangers .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="heidi" pos="NNP" surface="Heidi"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="suddenly" pos="RB" surface="suddenly"/>
+  <token id="4" lemma="conscious" pos="JJ" surface="conscious"/>
+  <token id="5" lemma="of" pos="IN" surface="of"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="stare" pos="NNS" surface="stares"/>
+  <token id="8" lemma="from" pos="IN" surface="from"/>
+  <token id="9" lemma="pass" pos="VBG" surface="passing"/>
+  <token id="10" lemma="stranger" pos="NNS" surface="strangers"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="2" to="4" type="acomp"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="4" to="8" type="prep"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Perceiver_agentive">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

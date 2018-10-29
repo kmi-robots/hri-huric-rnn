@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780206">
+ <sentence>
+  This tells you how much you can borrow so that you can concentrate your search within a given price range .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="this" pos="DT" surface="This"/>
+  <token id="2" lemma="tell" pos="VBZ" surface="tells"/>
+  <token id="3" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="4" lemma="how" pos="WRB" surface="how"/>
+  <token id="5" lemma="much" pos="JJ" surface="much"/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="7" lemma="can" pos="MD" surface="can"/>
+  <token id="8" lemma="borrow" pos="VB" surface="borrow"/>
+  <token id="9" lemma="so" pos="IN" surface="so"/>
+  <token id="10" lemma="that" pos="IN" surface="that"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="12" lemma="can" pos="MD" surface="can"/>
+  <token id="13" lemma="concentrate" pos="VB" surface="concentrate"/>
+  <token id="14" lemma="-PRON-" pos="PRP$" surface="your"/>
+  <token id="15" lemma="search" pos="NN" surface="search"/>
+  <token id="16" lemma="within" pos="IN" surface="within"/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="give" pos="VBN" surface="given"/>
+  <token id="19" lemma="price" pos="NN" surface="price"/>
+  <token id="20" lemma="range" pos="NN" surface="range"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="dobj"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="8" to="5" type="dobj"/>
+  <dep from="8" to="6" type="nsubj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="2" to="8" type="ccomp"/>
+  <dep from="13" to="9" type="mark"/>
+  <dep from="13" to="10" type="mark"/>
+  <dep from="13" to="11" type="nsubj"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="8" to="13" type="advcl"/>
+  <dep from="15" to="14" type="poss"/>
+  <dep from="13" to="15" type="dobj"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="20" to="17" type="det"/>
+  <dep from="20" to="18" type="amod"/>
+  <dep from="20" to="19" type="compound"/>
+  <dep from="16" to="20" type="pobj"/>
+  <dep from="2" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4137261">
+ <sentence>
+  The site lies miles from any paved road , accessible only via a treacherous network of desert roads .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="site" pos="NN" surface="site"/>
+  <token id="3" lemma="lie" pos="VBZ" surface="lies"/>
+  <token id="4" lemma="mile" pos="NNS" surface="miles"/>
+  <token id="5" lemma="from" pos="IN" surface="from"/>
+  <token id="6" lemma="any" pos="DT" surface="any"/>
+  <token id="7" lemma="paved" pos="JJ" surface="paved"/>
+  <token id="8" lemma="road" pos="NN" surface="road"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="accessible" pos="JJ" surface="accessible"/>
+  <token id="11" lemma="only" pos="RB" surface="only"/>
+  <token id="12" lemma="via" pos="IN" surface="via"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="treacherous" pos="JJ" surface="treacherous"/>
+  <token id="15" lemma="network" pos="NN" surface="network"/>
+  <token id="16" lemma="of" pos="IN" surface="of"/>
+  <token id="17" lemma="desert" pos="NN" surface="desert"/>
+  <token id="18" lemma="road" pos="NNS" surface="roads"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="dobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="10" to="9" type="punct"/>
+  <dep from="3" to="10" type="ccomp"/>
+  <dep from="12" to="11" type="advmod"/>
+  <dep from="10" to="12" type="prep"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="12" to="15" type="pobj"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="3" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_located">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

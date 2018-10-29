@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="594030">
+ <sentence>
+  Here at least she would not be hounded by her other creditors .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="here" pos="RB" surface="Here"/>
+  <token id="2" lemma="at" pos="IN" surface="at"/>
+  <token id="3" lemma="least" pos="JJS" surface="least"/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="5" lemma="would" pos="MD" surface="would"/>
+  <token id="6" lemma="not" pos="RB" surface="not"/>
+  <token id="7" lemma="be" pos="VB" surface="be"/>
+  <token id="8" lemma="hound" pos="VBN" surface="hounded"/>
+  <token id="9" lemma="by" pos="IN" surface="by"/>
+  <token id="10" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="11" lemma="other" pos="JJ" surface="other"/>
+  <token id="12" lemma="creditor" pos="NNS" surface="creditors"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="8" to="1" type="advmod"/>
+  <dep from="3" to="2" type="advmod"/>
+  <dep from="8" to="3" type="advmod"/>
+  <dep from="8" to="4" type="nsubjpass"/>
+  <dep from="8" to="5" type="aux"/>
+  <dep from="8" to="6" type="neg"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="8" to="9" type="agent"/>
+  <dep from="12" to="10" type="poss"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="8" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Cotheme">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

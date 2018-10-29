@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="405676">
+ <sentence>
+  Cornelius stared on in wonder .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="cornelius" pos="NNP" surface="Cornelius"/>
+  <token id="2" lemma="star" pos="VBD" surface="stared"/>
+  <token id="3" lemma="on" pos="RP" surface="on"/>
+  <token id="4" lemma="in" pos="IN" surface="in"/>
+  <token id="5" lemma="wonder" pos="NN" surface="wonder"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prt"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

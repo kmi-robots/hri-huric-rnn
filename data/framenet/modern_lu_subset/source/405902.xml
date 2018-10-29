@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="405902">
+ <sentence>
+  Bird watchers are travelling from miles around to view the latest addition to a clifftop nest .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="bird" pos="NN" surface="Bird"/>
+  <token id="2" lemma="watcher" pos="NNS" surface="watchers"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="travel" pos="VBG" surface="travelling"/>
+  <token id="5" lemma="from" pos="IN" surface="from"/>
+  <token id="6" lemma="mile" pos="NNS" surface="miles"/>
+  <token id="7" lemma="around" pos="RB" surface="around"/>
+  <token id="8" lemma="to" pos="TO" surface="to"/>
+  <token id="9" lemma="view" pos="VB" surface="view"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="late" pos="JJS" surface="latest"/>
+  <token id="12" lemma="addition" pos="NN" surface="addition"/>
+  <token id="13" lemma="to" pos="IN" surface="to"/>
+  <token id="14" lemma="a" pos="DT" surface="a"/>
+  <token id="15" lemma="clifftop" pos="JJ" surface="clifftop"/>
+  <token id="16" lemma="nest" pos="NN" surface="nest"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="6" to="7" type="advmod"/>
+  <dep from="9" to="8" type="aux"/>
+  <dep from="4" to="9" type="advcl"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="dobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="13" to="16" type="pobj"/>
+  <dep from="4" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="9"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

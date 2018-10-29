@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403421">
+ <sentence>
+  Opening her bedroom door , she peeped out .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="open" pos="VBG" surface="Opening"/>
+  <token id="2" lemma="-PRON-" pos="PRP$" surface="her"/>
+  <token id="3" lemma="bedroom" pos="NN" surface="bedroom"/>
+  <token id="4" lemma="door" pos="NN" surface="door"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="-PRON-" pos="PRP" surface="she"/>
+  <token id="7" lemma="peep" pos="VBD" surface="peeped"/>
+  <token id="8" lemma="out" pos="RP" surface="out"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="advcl"/>
+  <dep from="4" to="2" type="poss"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="1" to="4" type="dobj"/>
+  <dep from="7" to="5" type="punct"/>
+  <dep from="7" to="6" type="nsubj"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prt"/>
+  <dep from="7" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

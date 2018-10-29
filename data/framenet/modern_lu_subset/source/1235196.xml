@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1235196">
+ <sentence>
+  Come and tickle its tiny toes and admire its baby-blue eyes !
+ </sentence>
+ <tokens>
+  <token id="1" lemma="come" pos="VB" surface="Come"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="tickle" pos="VB" surface="tickle"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="5" lemma="tiny" pos="JJ" surface="tiny"/>
+  <token id="6" lemma="toe" pos="NNS" surface="toes"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="admire" pos="VB" surface="admire"/>
+  <token id="9" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="10" lemma="baby-blue" pos="JJ" surface="baby-blue"/>
+  <token id="11" lemma="eye" pos="NNS" surface="eyes"/>
+  <token id="12" lemma="!" pos="." surface="!"/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="1" to="3" type="conj"/>
+  <dep from="6" to="4" type="poss"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="cc"/>
+  <dep from="3" to="8" type="conj"/>
+  <dep from="11" to="9" type="poss"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="dobj"/>
+  <dep from="1" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Phenomenon">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

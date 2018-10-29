@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1090040">
+ <sentence>
+  Furniture and other equipment was donated by a wide range of supporters .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="furniture" pos="NN" surface="Furniture"/>
+  <token id="2" lemma="and" pos="CC" surface="and"/>
+  <token id="3" lemma="other" pos="JJ" surface="other"/>
+  <token id="4" lemma="equipment" pos="NN" surface="equipment"/>
+  <token id="5" lemma="be" pos="VBD" surface="was"/>
+  <token id="6" lemma="donate" pos="VBN" surface="donated"/>
+  <token id="7" lemma="by" pos="IN" surface="by"/>
+  <token id="8" lemma="a" pos="DT" surface="a"/>
+  <token id="9" lemma="wide" pos="JJ" surface="wide"/>
+  <token id="10" lemma="range" pos="NN" surface="range"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="supporter" pos="NNS" surface="supporters"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="6" to="1" type="nsubjpass"/>
+  <dep from="1" to="2" type="cc"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="1" to="4" type="conj"/>
+  <dep from="6" to="5" type="auxpass"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="agent"/>
+  <dep from="10" to="8" type="det"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="7" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="6" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Donor">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

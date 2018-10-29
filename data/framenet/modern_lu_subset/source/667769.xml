@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="667769">
+ <sentence>
+  Richard ignored these obvious sounds of pursuit .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="richard" pos="NNP" surface="Richard"/>
+  <token id="2" lemma="ignore" pos="VBD" surface="ignored"/>
+  <token id="3" lemma="these" pos="DT" surface="these"/>
+  <token id="4" lemma="obvious" pos="JJ" surface="obvious"/>
+  <token id="5" lemma="sound" pos="NNS" surface="sounds"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="pursuit" pos="NN" surface="pursuit"/>
+  <token id="8" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="2" to="8" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

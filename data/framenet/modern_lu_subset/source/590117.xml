@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="590117">
+ <sentence>
+  No-one was hurt inside , and French troops guarding the embassy chased away the attackers by firing shots in the air .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="no-one" pos="NNP" surface="No-one"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="hurt" pos="VBN" surface="hurt"/>
+  <token id="4" lemma="inside" pos="RB" surface="inside"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="french" pos="JJ" surface="French"/>
+  <token id="8" lemma="troop" pos="NNS" surface="troops"/>
+  <token id="9" lemma="guard" pos="VBG" surface="guarding"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="embassy" pos="NN" surface="embassy"/>
+  <token id="12" lemma="chase" pos="VBD" surface="chased"/>
+  <token id="13" lemma="away" pos="RB" surface="away"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="attacker" pos="NNS" surface="attackers"/>
+  <token id="16" lemma="by" pos="IN" surface="by"/>
+  <token id="17" lemma="fire" pos="VBG" surface="firing"/>
+  <token id="18" lemma="shot" pos="NNS" surface="shots"/>
+  <token id="19" lemma="in" pos="IN" surface="in"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="air" pos="NN" surface="air"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubjpass"/>
+  <dep from="3" to="2" type="auxpass"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="advmod"/>
+  <dep from="3" to="5" type="punct"/>
+  <dep from="3" to="6" type="cc"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="12" to="8" type="nsubj"/>
+  <dep from="8" to="9" type="acl"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="dobj"/>
+  <dep from="3" to="12" type="conj"/>
+  <dep from="12" to="13" type="advmod"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="12" to="15" type="dobj"/>
+  <dep from="12" to="16" type="prep"/>
+  <dep from="16" to="17" type="pcomp"/>
+  <dep from="17" to="18" type="dobj"/>
+  <dep from="17" to="19" type="prep"/>
+  <dep from="21" to="20" type="det"/>
+  <dep from="19" to="21" type="pobj"/>
+  <dep from="12" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

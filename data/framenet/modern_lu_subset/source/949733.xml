@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="949733">
+ <sentence>
+  Standard pistol-shaped dryers are still the most popular but many come with a diffuser attachment .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="standard" pos="JJ" surface="Standard"/>
+  <token id="2" lemma="pistol-shaped" pos="JJ" surface="pistol-shaped"/>
+  <token id="3" lemma="dryer" pos="NNS" surface="dryers"/>
+  <token id="4" lemma="be" pos="VBP" surface="are"/>
+  <token id="5" lemma="still" pos="RB" surface="still"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="most" pos="RBS" surface="most"/>
+  <token id="8" lemma="popular" pos="JJ" surface="popular"/>
+  <token id="9" lemma="but" pos="CC" surface="but"/>
+  <token id="10" lemma="many" pos="JJ" surface="many"/>
+  <token id="11" lemma="come" pos="VBP" surface="come"/>
+  <token id="12" lemma="with" pos="IN" surface="with"/>
+  <token id="13" lemma="a" pos="DT" surface="a"/>
+  <token id="14" lemma="diffuser" pos="NN" surface="diffuser"/>
+  <token id="15" lemma="attachment" pos="NN" surface="attachment"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="amod"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="advmod"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="advmod"/>
+  <dep from="4" to="8" type="acomp"/>
+  <dep from="4" to="9" type="cc"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="4" to="11" type="conj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="15" to="13" type="det"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="12" to="15" type="pobj"/>
+  <dep from="11" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

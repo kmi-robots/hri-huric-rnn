@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="629590">
+ <sentence>
+  Record insertion , deletion and update may involve high costs .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="record" pos="JJ" surface="Record"/>
+  <token id="2" lemma="insertion" pos="NN" surface="insertion"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="deletion" pos="NN" surface="deletion"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="update" pos="NN" surface="update"/>
+  <token id="7" lemma="may" pos="MD" surface="may"/>
+  <token id="8" lemma="involve" pos="VB" surface="involve"/>
+  <token id="9" lemma="high" pos="JJ" surface="high"/>
+  <token id="10" lemma="cost" pos="NNS" surface="costs"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="8" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="punct"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="4" to="5" type="cc"/>
+  <dep from="4" to="6" type="conj"/>
+  <dep from="8" to="7" type="aux"/>
+  <dep from="0" to="8" type="root"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="8" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

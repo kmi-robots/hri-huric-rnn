@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="771744">
+ <sentence>
+  Yorke , 21 today , was returning home from a charity event at 2am , the city 's magistrates heard .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="yorke" pos="NNP" surface="Yorke"/>
+  <token id="2" lemma="," pos="," surface=","/>
+  <token id="3" lemma="21" pos="CD" surface="21"/>
+  <token id="4" lemma="today" pos="NN" surface="today"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="be" pos="VBD" surface="was"/>
+  <token id="7" lemma="return" pos="VBG" surface="returning"/>
+  <token id="8" lemma="home" pos="RB" surface="home"/>
+  <token id="9" lemma="from" pos="IN" surface="from"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="charity" pos="NN" surface="charity"/>
+  <token id="12" lemma="event" pos="NN" surface="event"/>
+  <token id="13" lemma="at" pos="IN" surface="at"/>
+  <token id="14" lemma="2am" pos="NN" surface="2am"/>
+  <token id="15" lemma="," pos="," surface=","/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="city" pos="NN" surface="city"/>
+  <token id="18" lemma="'s" pos="POS" surface="'s"/>
+  <token id="19" lemma="magistrate" pos="NNS" surface="magistrates"/>
+  <token id="20" lemma="hear" pos="VBD" surface="heard"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="7" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="nummod"/>
+  <dep from="1" to="4" type="npadvmod"/>
+  <dep from="1" to="5" type="punct"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="20" to="7" type="ccomp"/>
+  <dep from="7" to="8" type="advmod"/>
+  <dep from="7" to="9" type="prep"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="13" to="14" type="pobj"/>
+  <dep from="20" to="15" type="punct"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="19" to="17" type="poss"/>
+  <dep from="17" to="18" type="case"/>
+  <dep from="20" to="19" type="nsubj"/>
+  <dep from="0" to="20" type="root"/>
+  <dep from="20" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="589468">
+ <sentence>
+  He chased the thief along the street in Reggio Emilia , Italy , tripped him up and grabbed it back .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="chase" pos="VBD" surface="chased"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="thief" pos="NN" surface="thief"/>
+  <token id="5" lemma="along" pos="IN" surface="along"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="street" pos="NN" surface="street"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="reggio" pos="NNP" surface="Reggio"/>
+  <token id="10" lemma="emilia" pos="NNP" surface="Emilia"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="italy" pos="NNP" surface="Italy"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="trip" pos="VBD" surface="tripped"/>
+  <token id="15" lemma="-PRON-" pos="PRP" surface="him"/>
+  <token id="16" lemma="up" pos="RP" surface="up"/>
+  <token id="17" lemma="and" pos="CC" surface="and"/>
+  <token id="18" lemma="grab" pos="VBD" surface="grabbed"/>
+  <token id="19" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="20" lemma="back" pos="RP" surface="back"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="10" to="12" type="appos"/>
+  <dep from="10" to="13" type="punct"/>
+  <dep from="2" to="14" type="conj"/>
+  <dep from="14" to="15" type="dobj"/>
+  <dep from="14" to="16" type="prt"/>
+  <dep from="14" to="17" type="cc"/>
+  <dep from="14" to="18" type="conj"/>
+  <dep from="18" to="19" type="dobj"/>
+  <dep from="18" to="20" type="advmod"/>
+  <dep from="2" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

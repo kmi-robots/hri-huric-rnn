@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1346527">
+ <sentence>
+  Roxanne killed six people during its first pass before moving into the Gulf of Mexico and meandering for days .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="roxanne" pos="NNP" surface="Roxanne"/>
+  <token id="2" lemma="kill" pos="VBD" surface="killed"/>
+  <token id="3" lemma="six" pos="CD" surface="six"/>
+  <token id="4" lemma="people" pos="NNS" surface="people"/>
+  <token id="5" lemma="during" pos="IN" surface="during"/>
+  <token id="6" lemma="-PRON-" pos="PRP$" surface="its"/>
+  <token id="7" lemma="first" pos="JJ" surface="first"/>
+  <token id="8" lemma="pass" pos="NN" surface="pass"/>
+  <token id="9" lemma="before" pos="IN" surface="before"/>
+  <token id="10" lemma="move" pos="VBG" surface="moving"/>
+  <token id="11" lemma="into" pos="IN" surface="into"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="gulf" pos="NNP" surface="Gulf"/>
+  <token id="14" lemma="of" pos="IN" surface="of"/>
+  <token id="15" lemma="mexico" pos="NNP" surface="Mexico"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="meander" pos="VBG" surface="meandering"/>
+  <token id="18" lemma="for" pos="IN" surface="for"/>
+  <token id="19" lemma="day" pos="NNS" surface="days"/>
+  <token id="20" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="nummod"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="8" to="6" type="poss"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="2" to="9" type="prep"/>
+  <dep from="9" to="10" type="pcomp"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="14" to="15" type="pobj"/>
+  <dep from="10" to="16" type="cc"/>
+  <dep from="10" to="17" type="conj"/>
+  <dep from="17" to="18" type="prep"/>
+  <dep from="18" to="19" type="pobj"/>
+  <dep from="2" to="20" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Duration">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

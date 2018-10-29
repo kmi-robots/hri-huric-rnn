@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="771523">
+ <sentence>
+  President Yeltsin overruled their objections on his return from holiday , and refused to accept Saburov 's resignation in protest .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="president" pos="NNP" surface="President"/>
+  <token id="2" lemma="yeltsin" pos="NNP" surface="Yeltsin"/>
+  <token id="3" lemma="overrule" pos="VBD" surface="overruled"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="5" lemma="objection" pos="NNS" surface="objections"/>
+  <token id="6" lemma="on" pos="IN" surface="on"/>
+  <token id="7" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="8" lemma="return" pos="NN" surface="return"/>
+  <token id="9" lemma="from" pos="IN" surface="from"/>
+  <token id="10" lemma="holiday" pos="NN" surface="holiday"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="refuse" pos="VBD" surface="refused"/>
+  <token id="14" lemma="to" pos="TO" surface="to"/>
+  <token id="15" lemma="accept" pos="VB" surface="accept"/>
+  <token id="16" lemma="saburov" pos="NNP" surface="Saburov"/>
+  <token id="17" lemma="'s" pos="POS" surface="'s"/>
+  <token id="18" lemma="resignation" pos="NN" surface="resignation"/>
+  <token id="19" lemma="in" pos="IN" surface="in"/>
+  <token id="20" lemma="protest" pos="NN" surface="protest"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="5" to="4" type="poss"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="3" to="6" type="prep"/>
+  <dep from="8" to="7" type="poss"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="3" to="11" type="punct"/>
+  <dep from="3" to="12" type="cc"/>
+  <dep from="3" to="13" type="conj"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="13" to="15" type="xcomp"/>
+  <dep from="18" to="16" type="poss"/>
+  <dep from="16" to="17" type="case"/>
+  <dep from="15" to="18" type="dobj"/>
+  <dep from="18" to="19" type="prep"/>
+  <dep from="19" to="20" type="pobj"/>
+  <dep from="3" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

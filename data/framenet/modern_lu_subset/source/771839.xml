@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="771839">
+ <sentence>
+  Persuade this rogue Devlin to return with you .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="persuade" pos="VB" surface="Persuade"/>
+  <token id="2" lemma="this" pos="DT" surface="this"/>
+  <token id="3" lemma="rogue" pos="JJ" surface="rogue"/>
+  <token id="4" lemma="devlin" pos="NNP" surface="Devlin"/>
+  <token id="5" lemma="to" pos="TO" surface="to"/>
+  <token id="6" lemma="return" pos="VB" surface="return"/>
+  <token id="7" lemma="with" pos="IN" surface="with"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="1" to="4" type="dobj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="1" to="6" type="xcomp"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="1" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

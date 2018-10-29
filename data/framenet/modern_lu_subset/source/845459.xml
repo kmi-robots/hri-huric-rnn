@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="845459">
+ <sentence>
+  A number of products are now packaged in recyclable materials .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="number" pos="NN" surface="number"/>
+  <token id="3" lemma="of" pos="IN" surface="of"/>
+  <token id="4" lemma="product" pos="NNS" surface="products"/>
+  <token id="5" lemma="be" pos="VBP" surface="are"/>
+  <token id="6" lemma="now" pos="RB" surface="now"/>
+  <token id="7" lemma="package" pos="VBN" surface="packaged"/>
+  <token id="8" lemma="in" pos="IN" surface="in"/>
+  <token id="9" lemma="recyclable" pos="JJ" surface="recyclable"/>
+  <token id="10" lemma="material" pos="NNS" surface="materials"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="7" to="2" type="nsubjpass"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="3" to="4" type="pobj"/>
+  <dep from="7" to="5" type="auxpass"/>
+  <dep from="7" to="6" type="advmod"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="7" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="770038">
+ <sentence>
+  Clarke had arrived there from London .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="clarke" pos="NNP" surface="Clarke"/>
+  <token id="2" lemma="have" pos="VBD" surface="had"/>
+  <token id="3" lemma="arrive" pos="VBN" surface="arrived"/>
+  <token id="4" lemma="there" pos="RB" surface="there"/>
+  <token id="5" lemma="from" pos="IN" surface="from"/>
+  <token id="6" lemma="london" pos="NNP" surface="London"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="advmod"/>
+  <dep from="3" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="3" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

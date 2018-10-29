@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="628402">
+ <sentence>
+  Probably the most important aspect of this add-in is that it enables you to embed live graphs in your worksheet .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="probably" pos="RB" surface="Probably"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="most" pos="RBS" surface="most"/>
+  <token id="4" lemma="important" pos="JJ" surface="important"/>
+  <token id="5" lemma="aspect" pos="NN" surface="aspect"/>
+  <token id="6" lemma="of" pos="IN" surface="of"/>
+  <token id="7" lemma="this" pos="DT" surface="this"/>
+  <token id="8" lemma="add-in" pos="NN" surface="add-in"/>
+  <token id="9" lemma="be" pos="VBZ" surface="is"/>
+  <token id="10" lemma="that" pos="IN" surface="that"/>
+  <token id="11" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="12" lemma="enable" pos="VBZ" surface="enables"/>
+  <token id="13" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="14" lemma="to" pos="TO" surface="to"/>
+  <token id="15" lemma="embed" pos="VB" surface="embed"/>
+  <token id="16" lemma="live" pos="JJ" surface="live"/>
+  <token id="17" lemma="graph" pos="NNS" surface="graphs"/>
+  <token id="18" lemma="in" pos="IN" surface="in"/>
+  <token id="19" lemma="-PRON-" pos="PRP$" surface="your"/>
+  <token id="20" lemma="worksheet" pos="NN" surface="worksheet"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="advmod"/>
+  <dep from="5" to="2" type="det"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="9" to="5" type="nsubj"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="6" to="7" type="pobj"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="12" to="10" type="mark"/>
+  <dep from="12" to="11" type="nsubj"/>
+  <dep from="9" to="12" type="ccomp"/>
+  <dep from="15" to="13" type="nsubj"/>
+  <dep from="15" to="14" type="aux"/>
+  <dep from="12" to="15" type="ccomp"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="15" to="17" type="dobj"/>
+  <dep from="15" to="18" type="prep"/>
+  <dep from="20" to="19" type="poss"/>
+  <dep from="18" to="20" type="pobj"/>
+  <dep from="9" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="15"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

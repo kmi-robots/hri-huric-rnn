@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780371">
+ <sentence>
+  The images are familiar : patrols are ambushed , villages are searched , and peasants are interrogated .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="image" pos="NNS" surface="images"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="familiar" pos="JJ" surface="familiar"/>
+  <token id="5" lemma=":" pos=":" surface=":"/>
+  <token id="6" lemma="patrol" pos="NNS" surface="patrols"/>
+  <token id="7" lemma="be" pos="VBP" surface="are"/>
+  <token id="8" lemma="ambush" pos="VBN" surface="ambushed"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="village" pos="NNS" surface="villages"/>
+  <token id="11" lemma="be" pos="VBP" surface="are"/>
+  <token id="12" lemma="search" pos="VBN" surface="searched"/>
+  <token id="13" lemma="," pos="," surface=","/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="peasant" pos="NNS" surface="peasants"/>
+  <token id="16" lemma="be" pos="VBP" surface="are"/>
+  <token id="17" lemma="interrogate" pos="VBN" surface="interrogated"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="acomp"/>
+  <dep from="3" to="5" type="punct"/>
+  <dep from="8" to="6" type="nsubjpass"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="3" to="8" type="conj"/>
+  <dep from="8" to="9" type="punct"/>
+  <dep from="12" to="10" type="nsubjpass"/>
+  <dep from="12" to="11" type="auxpass"/>
+  <dep from="8" to="12" type="conj"/>
+  <dep from="12" to="13" type="punct"/>
+  <dep from="12" to="14" type="cc"/>
+  <dep from="17" to="15" type="nsubjpass"/>
+  <dep from="17" to="16" type="auxpass"/>
+  <dep from="12" to="17" type="conj"/>
+  <dep from="17" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="12"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

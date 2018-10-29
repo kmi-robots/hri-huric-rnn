@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4098361">
+ <sentence>
+  QN : Did Jones arrive on a Sunday ?
+ </sentence>
+ <tokens>
+  <token id="1" lemma="qn" pos="NNP" surface="QN"/>
+  <token id="2" lemma=":" pos=":" surface=":"/>
+  <token id="3" lemma="do" pos="VBD" surface="Did"/>
+  <token id="4" lemma="jones" pos="NNP" surface="Jones"/>
+  <token id="5" lemma="arrive" pos="VB" surface="arrive"/>
+  <token id="6" lemma="on" pos="IN" surface="on"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="sunday" pos="NNP" surface="Sunday"/>
+  <token id="9" lemma="?" pos="." surface="?"/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="dep"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="5" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Time">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

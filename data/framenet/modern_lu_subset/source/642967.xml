@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="642967">
+ <sentence>
+  We revealed that Royal Engineers were being ferried around in canvas-topped lorries .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="We"/>
+  <token id="2" lemma="reveal" pos="VBD" surface="revealed"/>
+  <token id="3" lemma="that" pos="IN" surface="that"/>
+  <token id="4" lemma="royal" pos="NNP" surface="Royal"/>
+  <token id="5" lemma="engineers" pos="NNP" surface="Engineers"/>
+  <token id="6" lemma="be" pos="VBD" surface="were"/>
+  <token id="7" lemma="be" pos="VBG" surface="being"/>
+  <token id="8" lemma="ferry" pos="VBN" surface="ferried"/>
+  <token id="9" lemma="around" pos="RB" surface="around"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="canvas-topped" pos="JJ" surface="canvas-topped"/>
+  <token id="12" lemma="lorry" pos="NNS" surface="lorries"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="8" to="3" type="mark"/>
+  <dep from="5" to="4" type="compound"/>
+  <dep from="8" to="5" type="nsubjpass"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="auxpass"/>
+  <dep from="2" to="8" type="ccomp"/>
+  <dep from="8" to="9" type="advmod"/>
+  <dep from="8" to="10" type="prep"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="2" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Area">
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Constant_location">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

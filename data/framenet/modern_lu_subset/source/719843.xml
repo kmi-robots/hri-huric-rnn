@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="719843">
+ <sentence>
+  Chain your steering wheel to the clutch , brake pedal or a seat .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="chain" pos="VB" surface="Chain"/>
+  <token id="2" lemma="-PRON-" pos="PRP$" surface="your"/>
+  <token id="3" lemma="steering" pos="NN" surface="steering"/>
+  <token id="4" lemma="wheel" pos="NN" surface="wheel"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="clutch" pos="NN" surface="clutch"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="brake" pos="NN" surface="brake"/>
+  <token id="10" lemma="pedal" pos="NN" surface="pedal"/>
+  <token id="11" lemma="or" pos="CC" surface="or"/>
+  <token id="12" lemma="a" pos="DT" surface="a"/>
+  <token id="13" lemma="seat" pos="NN" surface="seat"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="4" to="2" type="poss"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="1" to="4" type="dobj"/>
+  <dep from="1" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="7" to="8" type="punct"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="7" to="10" type="conj"/>
+  <dep from="10" to="11" type="cc"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="10" to="13" type="conj"/>
+  <dep from="1" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

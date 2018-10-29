@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="961109">
+ <sentence>
+  Thwack -- the ball soared into the air and dropped into the nearest empty hole .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="thwack" pos="NN" surface="Thwack"/>
+  <token id="2" lemma="--" pos=":" surface="--"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="ball" pos="NN" surface="ball"/>
+  <token id="5" lemma="soar" pos="VBD" surface="soared"/>
+  <token id="6" lemma="into" pos="IN" surface="into"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="air" pos="NN" surface="air"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="drop" pos="VBD" surface="dropped"/>
+  <token id="11" lemma="into" pos="IN" surface="into"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="near" pos="JJS" surface="nearest"/>
+  <token id="14" lemma="empty" pos="JJ" surface="empty"/>
+  <token id="15" lemma="hole" pos="NN" surface="hole"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="1" to="2" type="punct"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="1" to="5" type="acl"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="5" to="9" type="cc"/>
+  <dep from="5" to="10" type="conj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="15" to="12" type="det"/>
+  <dep from="15" to="13" type="amod"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="11" to="15" type="pobj"/>
+  <dep from="5" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

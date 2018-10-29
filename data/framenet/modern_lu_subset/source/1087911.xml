@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1087911">
+ <sentence>
+  I went and stood in the sitting room doorway , but I could n't get any further -- my legs would n't move .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="go" pos="VBD" surface="went"/>
+  <token id="3" lemma="and" pos="CC" surface="and"/>
+  <token id="4" lemma="stand" pos="VBD" surface="stood"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="sit" pos="VBG" surface="sitting"/>
+  <token id="8" lemma="room" pos="NN" surface="room"/>
+  <token id="9" lemma="doorway" pos="NN" surface="doorway"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="but" pos="CC" surface="but"/>
+  <token id="12" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="13" lemma="could" pos="MD" surface="could"/>
+  <token id="14" lemma="n't" pos="RB" surface="n't"/>
+  <token id="15" lemma="get" pos="VB" surface="get"/>
+  <token id="16" lemma="any" pos="DT" surface="any"/>
+  <token id="17" lemma="further" pos="RB" surface="further"/>
+  <token id="18" lemma="--" pos=":" surface="--"/>
+  <token id="19" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="20" lemma="leg" pos="NNS" surface="legs"/>
+  <token id="21" lemma="would" pos="MD" surface="would"/>
+  <token id="22" lemma="n't" pos="RB" surface="n't"/>
+  <token id="23" lemma="move" pos="VB" surface="move"/>
+  <token id="24" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="23" to="2" type="ccomp"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="2" to="4" type="conj"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="9" to="6" type="det"/>
+  <dep from="9" to="7" type="amod"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="5" to="9" type="pobj"/>
+  <dep from="2" to="10" type="punct"/>
+  <dep from="2" to="11" type="cc"/>
+  <dep from="15" to="12" type="nsubj"/>
+  <dep from="15" to="13" type="aux"/>
+  <dep from="15" to="14" type="neg"/>
+  <dep from="2" to="15" type="conj"/>
+  <dep from="17" to="16" type="advmod"/>
+  <dep from="15" to="17" type="advmod"/>
+  <dep from="23" to="18" type="punct"/>
+  <dep from="20" to="19" type="poss"/>
+  <dep from="23" to="20" type="nsubj"/>
+  <dep from="23" to="21" type="aux"/>
+  <dep from="23" to="22" type="neg"/>
+  <dep from="0" to="23" type="root"/>
+  <dep from="23" to="24" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="23"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1282561">
+ <sentence>
+  The blood transfusion brought colour to my face and I am deeply indebted to some anonymous donor .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="blood" pos="NN" surface="blood"/>
+  <token id="3" lemma="transfusion" pos="NN" surface="transfusion"/>
+  <token id="4" lemma="bring" pos="VBD" surface="brought"/>
+  <token id="5" lemma="colour" pos="NN" surface="colour"/>
+  <token id="6" lemma="to" pos="IN" surface="to"/>
+  <token id="7" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="8" lemma="face" pos="NN" surface="face"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="11" lemma="be" pos="VBP" surface="am"/>
+  <token id="12" lemma="deeply" pos="RB" surface="deeply"/>
+  <token id="13" lemma="indebted" pos="JJ" surface="indebted"/>
+  <token id="14" lemma="to" pos="IN" surface="to"/>
+  <token id="15" lemma="some" pos="DT" surface="some"/>
+  <token id="16" lemma="anonymous" pos="JJ" surface="anonymous"/>
+  <token id="17" lemma="donor" pos="NN" surface="donor"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="dobj"/>
+  <dep from="4" to="6" type="prep"/>
+  <dep from="8" to="7" type="poss"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="4" to="9" type="cc"/>
+  <dep from="11" to="10" type="nsubj"/>
+  <dep from="4" to="11" type="conj"/>
+  <dep from="13" to="12" type="advmod"/>
+  <dep from="11" to="13" type="acomp"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="17" to="15" type="det"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="14" to="17" type="pobj"/>
+  <dep from="11" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Giving">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Manner">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Donor">
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

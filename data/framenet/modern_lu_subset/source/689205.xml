@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="689205">
+ <sentence>
+  A woman knelt beside Eva , gently probing the reason for the tears .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="woman" pos="NN" surface="woman"/>
+  <token id="3" lemma="kneel" pos="VBN" surface="knelt"/>
+  <token id="4" lemma="beside" pos="IN" surface="beside"/>
+  <token id="5" lemma="eva" pos="NNP" surface="Eva"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="gently" pos="RB" surface="gently"/>
+  <token id="8" lemma="probe" pos="VBG" surface="probing"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="reason" pos="NN" surface="reason"/>
+  <token id="11" lemma="for" pos="IN" surface="for"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="tear" pos="NNS" surface="tears"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="3" to="6" type="punct"/>
+  <dep from="8" to="7" type="advmod"/>
+  <dep from="3" to="8" type="advcl"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="det"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="3" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="8"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Ground">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="704359">
+ <sentence>
+  Yesterday Suzannah 's husband , building surveyor Peter Marshall , refused to comment .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="yesterday" pos="NN" surface="Yesterday"/>
+  <token id="2" lemma="suzannah" pos="NNP" surface="Suzannah"/>
+  <token id="3" lemma="'s" pos="POS" surface="'s"/>
+  <token id="4" lemma="husband" pos="NN" surface="husband"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="building" pos="NN" surface="building"/>
+  <token id="7" lemma="surveyor" pos="NN" surface="surveyor"/>
+  <token id="8" lemma="peter" pos="NNP" surface="Peter"/>
+  <token id="9" lemma="marshall" pos="NNP" surface="Marshall"/>
+  <token id="10" lemma="," pos="," surface=","/>
+  <token id="11" lemma="refuse" pos="VBD" surface="refused"/>
+  <token id="12" lemma="to" pos="TO" surface="to"/>
+  <token id="13" lemma="comment" pos="VB" surface="comment"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="11" to="1" type="npadvmod"/>
+  <dep from="4" to="2" type="poss"/>
+  <dep from="2" to="3" type="case"/>
+  <dep from="11" to="4" type="nsubj"/>
+  <dep from="4" to="5" type="punct"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="9" to="7" type="compound"/>
+  <dep from="9" to="8" type="compound"/>
+  <dep from="4" to="9" type="appos"/>
+  <dep from="4" to="10" type="punct"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="13" to="12" type="aux"/>
+  <dep from="11" to="13" type="xcomp"/>
+  <dep from="11" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="7"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Cognizer">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

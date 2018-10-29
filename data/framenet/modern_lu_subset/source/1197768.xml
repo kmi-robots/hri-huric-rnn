@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1197768">
+ <sentence>
+  A bus was coasting down the avenue and Nutty said , ` Quick !
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="bus" pos="NN" surface="bus"/>
+  <token id="3" lemma="be" pos="VBD" surface="was"/>
+  <token id="4" lemma="coast" pos="VBG" surface="coasting"/>
+  <token id="5" lemma="down" pos="IN" surface="down"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="avenue" pos="NN" surface="avenue"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="nutty" pos="NNP" surface="Nutty"/>
+  <token id="10" lemma="say" pos="VBD" surface="said"/>
+  <token id="11" lemma="," pos="," surface=","/>
+  <token id="12" lemma="`" pos="''" surface="`"/>
+  <token id="13" lemma="quick" pos="NNP" surface="Quick"/>
+  <token id="14" lemma="!" pos="." surface="!"/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prt"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="7" to="9" type="conj"/>
+  <dep from="4" to="10" type="parataxis"/>
+  <dep from="10" to="11" type="punct"/>
+  <dep from="10" to="12" type="punct"/>
+  <dep from="10" to="13" type="intj"/>
+  <dep from="4" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="401166">
+ <sentence>
+  Amelie looked despairingly around the crowded bus station at Arles .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="amelie" pos="NNP" surface="Amelie"/>
+  <token id="2" lemma="look" pos="VBD" surface="looked"/>
+  <token id="3" lemma="despairingly" pos="RB" surface="despairingly"/>
+  <token id="4" lemma="around" pos="IN" surface="around"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="crowded" pos="JJ" surface="crowded"/>
+  <token id="7" lemma="bus" pos="NN" surface="bus"/>
+  <token id="8" lemma="station" pos="NN" surface="station"/>
+  <token id="9" lemma="at" pos="IN" surface="at"/>
+  <token id="10" lemma="arles" pos="NNP" surface="Arles"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="advmod"/>
+  <dep from="2" to="4" type="prep"/>
+  <dep from="8" to="5" type="det"/>
+  <dep from="8" to="6" type="amod"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="4" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

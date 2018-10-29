@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="769763">
+ <sentence>
+  He was approaching from behind and slightly to the right of Sharpe .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="approach" pos="VBG" surface="approaching"/>
+  <token id="4" lemma="from" pos="IN" surface="from"/>
+  <token id="5" lemma="behind" pos="RB" surface="behind"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="slightly" pos="RB" surface="slightly"/>
+  <token id="8" lemma="to" pos="IN" surface="to"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="right" pos="NN" surface="right"/>
+  <token id="11" lemma="of" pos="IN" surface="of"/>
+  <token id="12" lemma="sharpe" pos="NNP" surface="Sharpe"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pcomp"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="5" to="7" type="conj"/>
+  <dep from="3" to="8" type="prep"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="3" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

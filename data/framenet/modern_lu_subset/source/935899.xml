@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="935899">
+ <sentence>
+  The familiar odours of onions and fat , roasted coffee and decaying fish drifted towards the Thames .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="familiar" pos="JJ" surface="familiar"/>
+  <token id="3" lemma="odour" pos="NNS" surface="odours"/>
+  <token id="4" lemma="of" pos="IN" surface="of"/>
+  <token id="5" lemma="onion" pos="NNS" surface="onions"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="fat" pos="JJ" surface="fat"/>
+  <token id="8" lemma="," pos="," surface=","/>
+  <token id="9" lemma="roasted" pos="JJ" surface="roasted"/>
+  <token id="10" lemma="coffee" pos="NN" surface="coffee"/>
+  <token id="11" lemma="and" pos="CC" surface="and"/>
+  <token id="12" lemma="decay" pos="VBG" surface="decaying"/>
+  <token id="13" lemma="fish" pos="NN" surface="fish"/>
+  <token id="14" lemma="drift" pos="VBD" surface="drifted"/>
+  <token id="15" lemma="towards" pos="IN" surface="towards"/>
+  <token id="16" lemma="the" pos="DT" surface="the"/>
+  <token id="17" lemma="thames" pos="NNPS" surface="Thames"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="14" to="3" type="nsubj"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="4" to="5" type="pobj"/>
+  <dep from="5" to="6" type="cc"/>
+  <dep from="5" to="7" type="conj"/>
+  <dep from="5" to="8" type="punct"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="5" to="10" type="conj"/>
+  <dep from="10" to="11" type="cc"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="conj"/>
+  <dep from="0" to="14" type="root"/>
+  <dep from="14" to="15" type="prep"/>
+  <dep from="17" to="16" type="det"/>
+  <dep from="15" to="17" type="pobj"/>
+  <dep from="14" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="14"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

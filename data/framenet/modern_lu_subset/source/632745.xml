@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="632745">
+ <sentence>
+  The IRA has admitted planting the firebombs which closed Milton Keynes shopping centre last Friday .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="ira" pos="NNP" surface="IRA"/>
+  <token id="3" lemma="have" pos="VBZ" surface="has"/>
+  <token id="4" lemma="admit" pos="VBN" surface="admitted"/>
+  <token id="5" lemma="plant" pos="VBG" surface="planting"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="firebomb" pos="NNS" surface="firebombs"/>
+  <token id="8" lemma="which" pos="WDT" surface="which"/>
+  <token id="9" lemma="close" pos="VBD" surface="closed"/>
+  <token id="10" lemma="milton" pos="NNP" surface="Milton"/>
+  <token id="11" lemma="keynes" pos="NNP" surface="Keynes"/>
+  <token id="12" lemma="shopping" pos="NN" surface="shopping"/>
+  <token id="13" lemma="centre" pos="NN" surface="centre"/>
+  <token id="14" lemma="last" pos="JJ" surface="last"/>
+  <token id="15" lemma="friday" pos="NNP" surface="Friday"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="xcomp"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="dobj"/>
+  <dep from="9" to="8" type="nsubj"/>
+  <dep from="7" to="9" type="relcl"/>
+  <dep from="11" to="10" type="compound"/>
+  <dep from="13" to="11" type="compound"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="9" to="13" type="dobj"/>
+  <dep from="15" to="14" type="amod"/>
+  <dep from="9" to="15" type="npadvmod"/>
+  <dep from="4" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+     <token id="15"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

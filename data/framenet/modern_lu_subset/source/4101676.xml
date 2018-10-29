@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4101676">
+ <sentence>
+  If necessary , I can come pick it up .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="if" pos="IN" surface="If"/>
+  <token id="2" lemma="necessary" pos="JJ" surface="necessary"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="5" lemma="can" pos="MD" surface="can"/>
+  <token id="6" lemma="come" pos="VB" surface="come"/>
+  <token id="7" lemma="pick" pos="VB" surface="pick"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="9" lemma="up" pos="RP" surface="up"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="mark"/>
+  <dep from="6" to="2" type="advcl"/>
+  <dep from="6" to="3" type="punct"/>
+  <dep from="6" to="4" type="nsubj"/>
+  <dep from="6" to="5" type="aux"/>
+  <dep from="7" to="6" type="aux"/>
+  <dep from="0" to="7" type="root"/>
+  <dep from="7" to="8" type="dobj"/>
+  <dep from="7" to="9" type="prt"/>
+  <dep from="7" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Event_description">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

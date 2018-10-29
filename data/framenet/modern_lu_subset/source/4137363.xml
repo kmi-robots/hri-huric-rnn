@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4137363">
+ <sentence>
+  Blood smeared the filthy floors , and bottles of urine lay under the beds .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="blood" pos="NN" surface="Blood"/>
+  <token id="2" lemma="smear" pos="VBD" surface="smeared"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="filthy" pos="JJ" surface="filthy"/>
+  <token id="5" lemma="floor" pos="NNS" surface="floors"/>
+  <token id="6" lemma="," pos="," surface=","/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="bottle" pos="NNS" surface="bottles"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="urine" pos="NN" surface="urine"/>
+  <token id="11" lemma="lie" pos="VBD" surface="lay"/>
+  <token id="12" lemma="under" pos="IN" surface="under"/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="bed" pos="NNS" surface="beds"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="2" to="6" type="punct"/>
+  <dep from="2" to="7" type="cc"/>
+  <dep from="11" to="8" type="nsubj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="2" to="11" type="conj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="11" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Being_located">
+    <lexicalUnit>
+     <token id="11"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+    </frameElement>
+    <frameElement type="Location">
+     <token id="12"/>
+     <token id="13"/>
+     <token id="14"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

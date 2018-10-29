@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1404421">
+ <sentence>
+  The eggs were collected in the Falkland Islands under licence from the British Antarctic Survey and transported by air to England .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="egg" pos="NNS" surface="eggs"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="collect" pos="VBN" surface="collected"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="falkland" pos="NNP" surface="Falkland"/>
+  <token id="8" lemma="islands" pos="NNPS" surface="Islands"/>
+  <token id="9" lemma="under" pos="IN" surface="under"/>
+  <token id="10" lemma="licence" pos="NN" surface="licence"/>
+  <token id="11" lemma="from" pos="IN" surface="from"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="british" pos="NNP" surface="British"/>
+  <token id="14" lemma="antarctic" pos="NNP" surface="Antarctic"/>
+  <token id="15" lemma="survey" pos="NNP" surface="Survey"/>
+  <token id="16" lemma="and" pos="CC" surface="and"/>
+  <token id="17" lemma="transport" pos="VBN" surface="transported"/>
+  <token id="18" lemma="by" pos="IN" surface="by"/>
+  <token id="19" lemma="air" pos="NN" surface="air"/>
+  <token id="20" lemma="to" pos="IN" surface="to"/>
+  <token id="21" lemma="england" pos="NNP" surface="England"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubjpass"/>
+  <dep from="4" to="3" type="auxpass"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="4" to="9" type="prep"/>
+  <dep from="9" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="15" to="12" type="det"/>
+  <dep from="15" to="13" type="compound"/>
+  <dep from="15" to="14" type="compound"/>
+  <dep from="11" to="15" type="pobj"/>
+  <dep from="4" to="16" type="cc"/>
+  <dep from="4" to="17" type="conj"/>
+  <dep from="17" to="18" type="agent"/>
+  <dep from="18" to="19" type="pobj"/>
+  <dep from="17" to="20" type="prep"/>
+  <dep from="20" to="21" type="pobj"/>
+  <dep from="4" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="18"/>
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

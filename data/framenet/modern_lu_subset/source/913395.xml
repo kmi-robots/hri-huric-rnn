@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="913395">
+ <sentence>
+  To fix sheet mirror to walls , you can either use clips screwed to the wall , screws or adhesive .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="to" pos="TO" surface="To"/>
+  <token id="2" lemma="fix" pos="VB" surface="fix"/>
+  <token id="3" lemma="sheet" pos="NN" surface="sheet"/>
+  <token id="4" lemma="mirror" pos="NN" surface="mirror"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="wall" pos="NNS" surface="walls"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="you"/>
+  <token id="9" lemma="can" pos="MD" surface="can"/>
+  <token id="10" lemma="either" pos="CC" surface="either"/>
+  <token id="11" lemma="use" pos="VB" surface="use"/>
+  <token id="12" lemma="clip" pos="NNS" surface="clips"/>
+  <token id="13" lemma="screw" pos="VBN" surface="screwed"/>
+  <token id="14" lemma="to" pos="IN" surface="to"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="wall" pos="NN" surface="wall"/>
+  <token id="17" lemma="," pos="," surface=","/>
+  <token id="18" lemma="screw" pos="NNS" surface="screws"/>
+  <token id="19" lemma="or" pos="CC" surface="or"/>
+  <token id="20" lemma="adhesive" pos="JJ" surface="adhesive"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="aux"/>
+  <dep from="11" to="2" type="advcl"/>
+  <dep from="4" to="3" type="compound"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="dative"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="11" to="7" type="punct"/>
+  <dep from="11" to="8" type="nsubj"/>
+  <dep from="11" to="9" type="aux"/>
+  <dep from="11" to="10" type="preconj"/>
+  <dep from="0" to="11" type="root"/>
+  <dep from="11" to="12" type="dobj"/>
+  <dep from="12" to="13" type="acl"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="16" to="17" type="punct"/>
+  <dep from="16" to="18" type="conj"/>
+  <dep from="18" to="19" type="cc"/>
+  <dep from="18" to="20" type="conj"/>
+  <dep from="11" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Item">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Agent">
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="634150">
+ <sentence>
+  He set down his sack and straightened his aching shoulders .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="set" pos="VBD" surface="set"/>
+  <token id="3" lemma="down" pos="RP" surface="down"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="5" lemma="sack" pos="NN" surface="sack"/>
+  <token id="6" lemma="and" pos="CC" surface="and"/>
+  <token id="7" lemma="straighten" pos="VBD" surface="straightened"/>
+  <token id="8" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="9" lemma="ache" pos="VBG" surface="aching"/>
+  <token id="10" lemma="shoulder" pos="NNS" surface="shoulders"/>
+  <token id="11" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prt"/>
+  <dep from="5" to="4" type="poss"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="2" to="6" type="cc"/>
+  <dep from="2" to="7" type="conj"/>
+  <dep from="10" to="8" type="poss"/>
+  <dep from="10" to="9" type="amod"/>
+  <dep from="7" to="10" type="dobj"/>
+  <dep from="2" to="11" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="4106307">
+ <sentence>
+  City buses also go to Shenzhen .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="city" pos="NN" surface="City"/>
+  <token id="2" lemma="bus" pos="NNS" surface="buses"/>
+  <token id="3" lemma="also" pos="RB" surface="also"/>
+  <token id="4" lemma="go" pos="VBP" surface="go"/>
+  <token id="5" lemma="to" pos="IN" surface="to"/>
+  <token id="6" lemma="shenzhen" pos="NNP" surface="Shenzhen"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="advmod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="4" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

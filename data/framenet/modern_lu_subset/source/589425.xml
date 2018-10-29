@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="589425">
+ <sentence>
+  He fired his pistol in the air and charged over the top as if he were chasing some errant fox .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="fire" pos="VBD" surface="fired"/>
+  <token id="3" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="4" lemma="pistol" pos="NN" surface="pistol"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="air" pos="NN" surface="air"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="charge" pos="VBN" surface="charged"/>
+  <token id="10" lemma="over" pos="IN" surface="over"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="top" pos="NN" surface="top"/>
+  <token id="13" lemma="as" pos="IN" surface="as"/>
+  <token id="14" lemma="if" pos="IN" surface="if"/>
+  <token id="15" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="16" lemma="be" pos="VBD" surface="were"/>
+  <token id="17" lemma="chase" pos="VBG" surface="chasing"/>
+  <token id="18" lemma="some" pos="DT" surface="some"/>
+  <token id="19" lemma="errant" pos="NN" surface="errant"/>
+  <token id="20" lemma="fox" pos="NN" surface="fox"/>
+  <token id="21" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="poss"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="2" to="8" type="cc"/>
+  <dep from="2" to="9" type="conj"/>
+  <dep from="9" to="10" type="prep"/>
+  <dep from="12" to="11" type="det"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="17" to="13" type="mark"/>
+  <dep from="17" to="14" type="mark"/>
+  <dep from="17" to="15" type="nsubj"/>
+  <dep from="17" to="16" type="aux"/>
+  <dep from="9" to="17" type="advcl"/>
+  <dep from="20" to="18" type="det"/>
+  <dep from="20" to="19" type="amod"/>
+  <dep from="17" to="20" type="dobj"/>
+  <dep from="2" to="21" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="17"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="15"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="18"/>
+     <token id="19"/>
+     <token id="20"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="633033">
+ <sentence>
+  Position the hat on the robot 's head and make decorative markings with the back of a knife .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="position" pos="VB" surface="Position"/>
+  <token id="2" lemma="the" pos="DT" surface="the"/>
+  <token id="3" lemma="hat" pos="NN" surface="hat"/>
+  <token id="4" lemma="on" pos="IN" surface="on"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="robot" pos="NN" surface="robot"/>
+  <token id="7" lemma="'s" pos="POS" surface="'s"/>
+  <token id="8" lemma="head" pos="NN" surface="head"/>
+  <token id="9" lemma="and" pos="CC" surface="and"/>
+  <token id="10" lemma="make" pos="VB" surface="make"/>
+  <token id="11" lemma="decorative" pos="JJ" surface="decorative"/>
+  <token id="12" lemma="marking" pos="NNS" surface="markings"/>
+  <token id="13" lemma="with" pos="IN" surface="with"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="back" pos="NN" surface="back"/>
+  <token id="16" lemma="of" pos="IN" surface="of"/>
+  <token id="17" lemma="a" pos="DT" surface="a"/>
+  <token id="18" lemma="knife" pos="NN" surface="knife"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="0" to="1" type="root"/>
+  <dep from="3" to="2" type="det"/>
+  <dep from="1" to="3" type="dobj"/>
+  <dep from="1" to="4" type="prep"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="8" to="6" type="poss"/>
+  <dep from="6" to="7" type="case"/>
+  <dep from="4" to="8" type="pobj"/>
+  <dep from="1" to="9" type="cc"/>
+  <dep from="1" to="10" type="conj"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="dobj"/>
+  <dep from="10" to="13" type="prep"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="18" to="17" type="det"/>
+  <dep from="16" to="18" type="pobj"/>
+  <dep from="1" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

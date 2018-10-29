@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="255250">
+ <sentence>
+  I jammed one finger in my ear against the fourth circle of hell that had just broken loose .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="jam" pos="VBD" surface="jammed"/>
+  <token id="3" lemma="one" pos="CD" surface="one"/>
+  <token id="4" lemma="finger" pos="NN" surface="finger"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="-PRON-" pos="PRP$" surface="my"/>
+  <token id="7" lemma="ear" pos="NN" surface="ear"/>
+  <token id="8" lemma="against" pos="IN" surface="against"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="fourth" pos="JJ" surface="fourth"/>
+  <token id="11" lemma="circle" pos="NN" surface="circle"/>
+  <token id="12" lemma="of" pos="IN" surface="of"/>
+  <token id="13" lemma="hell" pos="NN" surface="hell"/>
+  <token id="14" lemma="that" pos="WDT" surface="that"/>
+  <token id="15" lemma="have" pos="VBD" surface="had"/>
+  <token id="16" lemma="just" pos="RB" surface="just"/>
+  <token id="17" lemma="break" pos="VBN" surface="broken"/>
+  <token id="18" lemma="loose" pos="JJ" surface="loose"/>
+  <token id="19" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="nummod"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="7" to="6" type="poss"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="2" to="8" type="prep"/>
+  <dep from="11" to="9" type="det"/>
+  <dep from="11" to="10" type="amod"/>
+  <dep from="8" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="17" to="14" type="nsubj"/>
+  <dep from="17" to="15" type="aux"/>
+  <dep from="17" to="16" type="advmod"/>
+  <dep from="11" to="17" type="relcl"/>
+  <dep from="17" to="18" type="oprd"/>
+  <dep from="2" to="19" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

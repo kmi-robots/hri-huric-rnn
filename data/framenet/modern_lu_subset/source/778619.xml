@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="778619">
+ <sentence>
+  Only soil inspection reveals the horrid truth about your ailing pot plant
+ </sentence>
+ <tokens>
+  <token id="1" lemma="only" pos="RB" surface="Only"/>
+  <token id="2" lemma="soil" pos="NN" surface="soil"/>
+  <token id="3" lemma="inspection" pos="NN" surface="inspection"/>
+  <token id="4" lemma="reveal" pos="VBZ" surface="reveals"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="horrid" pos="NN" surface="horrid"/>
+  <token id="7" lemma="truth" pos="NN" surface="truth"/>
+  <token id="8" lemma="about" pos="IN" surface="about"/>
+  <token id="9" lemma="-PRON-" pos="PRP$" surface="your"/>
+  <token id="10" lemma="ailing" pos="JJ" surface="ailing"/>
+  <token id="11" lemma="pot" pos="NN" surface="pot"/>
+  <token id="12" lemma="plant" pos="NN" surface="plant"/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="advmod"/>
+  <dep from="3" to="2" type="compound"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="4" to="7" type="dobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="12" to="9" type="poss"/>
+  <dep from="12" to="10" type="amod"/>
+  <dep from="12" to="11" type="compound"/>
+  <dep from="8" to="12" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Inspecting">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="2"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

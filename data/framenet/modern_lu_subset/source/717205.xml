@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="717205">
+ <sentence>
+  If they are smaller , staple them together as a pad for rough calculations .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="if" pos="IN" surface="If"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="they"/>
+  <token id="3" lemma="be" pos="VBP" surface="are"/>
+  <token id="4" lemma="small" pos="JJR" surface="smaller"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="staple" pos="VB" surface="staple"/>
+  <token id="7" lemma="-PRON-" pos="PRP" surface="them"/>
+  <token id="8" lemma="together" pos="RB" surface="together"/>
+  <token id="9" lemma="as" pos="IN" surface="as"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="pad" pos="NN" surface="pad"/>
+  <token id="12" lemma="for" pos="IN" surface="for"/>
+  <token id="13" lemma="rough" pos="JJ" surface="rough"/>
+  <token id="14" lemma="calculation" pos="NNS" surface="calculations"/>
+  <token id="15" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="mark"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="acomp"/>
+  <dep from="7" to="5" type="punct"/>
+  <dep from="7" to="6" type="amod"/>
+  <dep from="3" to="7" type="dobj"/>
+  <dep from="3" to="8" type="advmod"/>
+  <dep from="3" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="11" to="12" type="prep"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="12" to="14" type="pobj"/>
+  <dep from="3" to="15" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Attaching">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Items">
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Result">
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Connector">
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

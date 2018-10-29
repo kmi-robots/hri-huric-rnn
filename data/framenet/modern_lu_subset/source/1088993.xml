@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1088993">
+ <sentence>
+  Clare Devenish eavesdropped unselfconsciously .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="clare" pos="NNP" surface="Clare"/>
+  <token id="2" lemma="devenish" pos="NNP" surface="Devenish"/>
+  <token id="3" lemma="eavesdrop" pos="VBD" surface="eavesdropped"/>
+  <token id="4" lemma="unselfconsciously" pos="RB" surface="unselfconsciously"/>
+  <token id="5" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="advmod"/>
+  <dep from="3" to="5" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

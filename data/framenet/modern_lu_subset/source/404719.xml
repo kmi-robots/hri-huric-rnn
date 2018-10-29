@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="404719">
+ <sentence>
+  He turned a brief cold stare on her .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="turn" pos="VBD" surface="turned"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="brief" pos="JJ" surface="brief"/>
+  <token id="5" lemma="cold" pos="JJ" surface="cold"/>
+  <token id="6" lemma="stare" pos="NN" surface="stare"/>
+  <token id="7" lemma="on" pos="IN" surface="on"/>
+  <token id="8" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="6" to="3" type="det"/>
+  <dep from="6" to="4" type="amod"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="2" to="6" type="dobj"/>
+  <dep from="2" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403490">
+ <sentence>
+  The demon that danced in Rose 's eyes , peeped out at her , irate , mystified .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="demon" pos="NN" surface="demon"/>
+  <token id="3" lemma="that" pos="WDT" surface="that"/>
+  <token id="4" lemma="dance" pos="VBD" surface="danced"/>
+  <token id="5" lemma="in" pos="IN" surface="in"/>
+  <token id="6" lemma="rose" pos="NNP" surface="Rose"/>
+  <token id="7" lemma="'s" pos="POS" surface="'s"/>
+  <token id="8" lemma="eye" pos="NNS" surface="eyes"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="peep" pos="VBD" surface="peeped"/>
+  <token id="11" lemma="out" pos="RP" surface="out"/>
+  <token id="12" lemma="at" pos="IN" surface="at"/>
+  <token id="13" lemma="-PRON-" pos="PRP" surface="her"/>
+  <token id="14" lemma="," pos="," surface=","/>
+  <token id="15" lemma="irate" pos="JJ" surface="irate"/>
+  <token id="16" lemma="," pos="," surface=","/>
+  <token id="17" lemma="mystified" pos="JJ" surface="mystified"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="10" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="2" to="4" type="relcl"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="8" to="6" type="poss"/>
+  <dep from="6" to="7" type="case"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="10" to="9" type="punct"/>
+  <dep from="0" to="10" type="root"/>
+  <dep from="10" to="11" type="prt"/>
+  <dep from="10" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="10" to="14" type="punct"/>
+  <dep from="10" to="15" type="advcl"/>
+  <dep from="15" to="16" type="punct"/>
+  <dep from="10" to="17" type="dep"/>
+  <dep from="10" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Direction">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

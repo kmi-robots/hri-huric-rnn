@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="675449">
+ <sentence>
+  Lydia watched Betty ushering the guests into the cottage .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="lydia" pos="NNP" surface="Lydia"/>
+  <token id="2" lemma="watch" pos="VBD" surface="watched"/>
+  <token id="3" lemma="betty" pos="NNP" surface="Betty"/>
+  <token id="4" lemma="usher" pos="VBG" surface="ushering"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="guest" pos="NNS" surface="guests"/>
+  <token id="7" lemma="into" pos="IN" surface="into"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="cottage" pos="NN" surface="cottage"/>
+  <token id="10" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="2" to="4" type="ccomp"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="4" to="7" type="prep"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="2" to="10" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="3"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

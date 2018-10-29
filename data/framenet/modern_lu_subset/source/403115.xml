@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="403115">
+ <sentence>
+  Carson took a peek into the brown paper on the Tube .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="carson" pos="NN" surface="Carson"/>
+  <token id="2" lemma="take" pos="VBD" surface="took"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="peek" pos="NN" surface="peek"/>
+  <token id="5" lemma="into" pos="IN" surface="into"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="brown" pos="JJ" surface="brown"/>
+  <token id="8" lemma="paper" pos="NN" surface="paper"/>
+  <token id="9" lemma="on" pos="IN" surface="on"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="tube" pos="NN" surface="Tube"/>
+  <token id="12" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="2" to="12" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Direction">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

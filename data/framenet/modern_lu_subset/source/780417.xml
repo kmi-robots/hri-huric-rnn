@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780417">
+ <sentence>
+  I have unsuccessfully been searching for a set of military rear bumpers .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="2" lemma="have" pos="VBP" surface="have"/>
+  <token id="3" lemma="unsuccessfully" pos="RB" surface="unsuccessfully"/>
+  <token id="4" lemma="be" pos="VBN" surface="been"/>
+  <token id="5" lemma="search" pos="VBG" surface="searching"/>
+  <token id="6" lemma="for" pos="IN" surface="for"/>
+  <token id="7" lemma="a" pos="DT" surface="a"/>
+  <token id="8" lemma="set" pos="NN" surface="set"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="military" pos="JJ" surface="military"/>
+  <token id="11" lemma="rear" pos="JJ" surface="rear"/>
+  <token id="12" lemma="bumper" pos="NNS" surface="bumpers"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="nsubj"/>
+  <dep from="5" to="2" type="aux"/>
+  <dep from="5" to="3" type="advmod"/>
+  <dep from="5" to="4" type="aux"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prep"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="12" to="10" type="amod"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="pobj"/>
+  <dep from="5" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Cognizer">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

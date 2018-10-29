@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1087851">
+ <sentence>
+  The powerful motor roared into life and the car moved smoothly past me and headed for town .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="powerful" pos="JJ" surface="powerful"/>
+  <token id="3" lemma="motor" pos="NN" surface="motor"/>
+  <token id="4" lemma="roar" pos="VBD" surface="roared"/>
+  <token id="5" lemma="into" pos="IN" surface="into"/>
+  <token id="6" lemma="life" pos="NN" surface="life"/>
+  <token id="7" lemma="and" pos="CC" surface="and"/>
+  <token id="8" lemma="the" pos="DT" surface="the"/>
+  <token id="9" lemma="car" pos="NN" surface="car"/>
+  <token id="10" lemma="move" pos="VBD" surface="moved"/>
+  <token id="11" lemma="smoothly" pos="RB" surface="smoothly"/>
+  <token id="12" lemma="past" pos="IN" surface="past"/>
+  <token id="13" lemma="-PRON-" pos="PRP" surface="me"/>
+  <token id="14" lemma="and" pos="CC" surface="and"/>
+  <token id="15" lemma="head" pos="VBD" surface="headed"/>
+  <token id="16" lemma="for" pos="IN" surface="for"/>
+  <token id="17" lemma="town" pos="NN" surface="town"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="4" to="3" type="nsubj"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+  <dep from="4" to="7" type="cc"/>
+  <dep from="9" to="8" type="det"/>
+  <dep from="10" to="9" type="nsubj"/>
+  <dep from="4" to="10" type="conj"/>
+  <dep from="10" to="11" type="advmod"/>
+  <dep from="10" to="12" type="prep"/>
+  <dep from="12" to="13" type="pobj"/>
+  <dep from="10" to="14" type="cc"/>
+  <dep from="10" to="15" type="conj"/>
+  <dep from="15" to="16" type="prep"/>
+  <dep from="16" to="17" type="pobj"/>
+  <dep from="10" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="11"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

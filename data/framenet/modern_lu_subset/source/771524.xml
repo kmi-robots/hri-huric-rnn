@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="771524">
+ <sentence>
+  Gamsakhurdia 's attempted return from exile
+ </sentence>
+ <tokens>
+  <token id="1" lemma="gamsakhurdia" pos="NNP" surface="Gamsakhurdia"/>
+  <token id="2" lemma="'s" pos="POS" surface="'s"/>
+  <token id="3" lemma="attempt" pos="VBN" surface="attempted"/>
+  <token id="4" lemma="return" pos="NN" surface="return"/>
+  <token id="5" lemma="from" pos="IN" surface="from"/>
+  <token id="6" lemma="exile" pos="NN" surface="exile"/>
+ </tokens>
+ <dependencies>
+  <dep from="4" to="1" type="poss"/>
+  <dep from="1" to="2" type="case"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="4" to="5" type="prep"/>
+  <dep from="5" to="6" type="pobj"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="4"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

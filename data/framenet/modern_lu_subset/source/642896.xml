@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="642896">
+ <sentence>
+  For example , viruses are a natural choice for ferrying the foreign DNA into animal cells .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="for" pos="IN" surface="For"/>
+  <token id="2" lemma="example" pos="NN" surface="example"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="virus" pos="NNS" surface="viruses"/>
+  <token id="5" lemma="be" pos="VBP" surface="are"/>
+  <token id="6" lemma="a" pos="DT" surface="a"/>
+  <token id="7" lemma="natural" pos="JJ" surface="natural"/>
+  <token id="8" lemma="choice" pos="NN" surface="choice"/>
+  <token id="9" lemma="for" pos="IN" surface="for"/>
+  <token id="10" lemma="ferry" pos="VBG" surface="ferrying"/>
+  <token id="11" lemma="the" pos="DT" surface="the"/>
+  <token id="12" lemma="foreign" pos="JJ" surface="foreign"/>
+  <token id="13" lemma="dna" pos="NN" surface="DNA"/>
+  <token id="14" lemma="into" pos="IN" surface="into"/>
+  <token id="15" lemma="animal" pos="NN" surface="animal"/>
+  <token id="16" lemma="cell" pos="NNS" surface="cells"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="prep"/>
+  <dep from="1" to="2" type="pobj"/>
+  <dep from="5" to="3" type="punct"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="attr"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="9" to="10" type="pcomp"/>
+  <dep from="13" to="11" type="det"/>
+  <dep from="13" to="12" type="amod"/>
+  <dep from="10" to="13" type="dobj"/>
+  <dep from="10" to="14" type="prep"/>
+  <dep from="16" to="15" type="compound"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="5" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

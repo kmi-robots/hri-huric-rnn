@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="769565">
+ <sentence>
+  Boys approaching the gymnasium from the chemistry labs had a clear view of the door .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="boy" pos="NNS" surface="Boys"/>
+  <token id="2" lemma="approach" pos="VBG" surface="approaching"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="gymnasium" pos="NN" surface="gymnasium"/>
+  <token id="5" lemma="from" pos="IN" surface="from"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="chemistry" pos="NN" surface="chemistry"/>
+  <token id="8" lemma="lab" pos="NNS" surface="labs"/>
+  <token id="9" lemma="have" pos="VBD" surface="had"/>
+  <token id="10" lemma="a" pos="DT" surface="a"/>
+  <token id="11" lemma="clear" pos="JJ" surface="clear"/>
+  <token id="12" lemma="view" pos="NN" surface="view"/>
+  <token id="13" lemma="of" pos="IN" surface="of"/>
+  <token id="14" lemma="the" pos="DT" surface="the"/>
+  <token id="15" lemma="door" pos="NN" surface="door"/>
+  <token id="16" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="9" to="1" type="nsubj"/>
+  <dep from="1" to="2" type="acl"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="5" to="8" type="pobj"/>
+  <dep from="0" to="9" type="root"/>
+  <dep from="12" to="10" type="det"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="9" to="12" type="dobj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="15" to="14" type="det"/>
+  <dep from="13" to="15" type="pobj"/>
+  <dep from="9" to="16" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Entering">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

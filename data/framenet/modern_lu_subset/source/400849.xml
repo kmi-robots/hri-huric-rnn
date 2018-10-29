@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="400849">
+ <sentence>
+  Blake took a last look at Victorian London .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="blake" pos="NNP" surface="Blake"/>
+  <token id="2" lemma="take" pos="VBD" surface="took"/>
+  <token id="3" lemma="a" pos="DT" surface="a"/>
+  <token id="4" lemma="last" pos="JJ" surface="last"/>
+  <token id="5" lemma="look" pos="NN" surface="look"/>
+  <token id="6" lemma="at" pos="IN" surface="at"/>
+  <token id="7" lemma="victorian" pos="JJ" surface="Victorian"/>
+  <token id="8" lemma="london" pos="NNP" surface="London"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="5" to="3" type="det"/>
+  <dep from="5" to="4" type="amod"/>
+  <dep from="2" to="5" type="dobj"/>
+  <dep from="2" to="6" type="prep"/>
+  <dep from="8" to="7" type="compound"/>
+  <dep from="6" to="8" type="pobj"/>
+  <dep from="2" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

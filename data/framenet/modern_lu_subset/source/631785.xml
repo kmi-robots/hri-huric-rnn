@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="631785">
+ <sentence>
+  ` I parked down the road "
+ </sentence>
+ <tokens>
+  <token id="1" lemma="`" pos="``" surface="`"/>
+  <token id="2" lemma="-PRON-" pos="PRP" surface="I"/>
+  <token id="3" lemma="park" pos="VBD" surface="parked"/>
+  <token id="4" lemma="down" pos="RP" surface="down"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="road" pos="NN" surface="road"/>
+  <token id="7" lemma='"' pos="''" surface='"'/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="punct"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prt"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="3" to="6" type="dobj"/>
+  <dep from="3" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

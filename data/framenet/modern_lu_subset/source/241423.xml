@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="241423">
+ <sentence>
+  They stabled their horses and did not enter the tavern but passed into a pleasant garden beyond .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="They"/>
+  <token id="2" lemma="stable" pos="VBD" surface="stabled"/>
+  <token id="3" lemma="-PRON-" pos="PRP$" surface="their"/>
+  <token id="4" lemma="horse" pos="NNS" surface="horses"/>
+  <token id="5" lemma="and" pos="CC" surface="and"/>
+  <token id="6" lemma="do" pos="VBD" surface="did"/>
+  <token id="7" lemma="not" pos="RB" surface="not"/>
+  <token id="8" lemma="enter" pos="VB" surface="enter"/>
+  <token id="9" lemma="the" pos="DT" surface="the"/>
+  <token id="10" lemma="tavern" pos="NN" surface="tavern"/>
+  <token id="11" lemma="but" pos="CC" surface="but"/>
+  <token id="12" lemma="pass" pos="VBD" surface="passed"/>
+  <token id="13" lemma="into" pos="IN" surface="into"/>
+  <token id="14" lemma="a" pos="DT" surface="a"/>
+  <token id="15" lemma="pleasant" pos="JJ" surface="pleasant"/>
+  <token id="16" lemma="garden" pos="NN" surface="garden"/>
+  <token id="17" lemma="beyond" pos="IN" surface="beyond"/>
+  <token id="18" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="poss"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="cc"/>
+  <dep from="8" to="6" type="aux"/>
+  <dep from="8" to="7" type="neg"/>
+  <dep from="2" to="8" type="conj"/>
+  <dep from="10" to="9" type="det"/>
+  <dep from="8" to="10" type="dobj"/>
+  <dep from="8" to="11" type="cc"/>
+  <dep from="8" to="12" type="conj"/>
+  <dep from="12" to="13" type="prep"/>
+  <dep from="16" to="14" type="det"/>
+  <dep from="16" to="15" type="amod"/>
+  <dep from="13" to="16" type="pobj"/>
+  <dep from="12" to="17" type="advmod"/>
+  <dep from="2" to="18" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="632977">
+ <sentence>
+  Position cake against the green parcel .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="position" pos="NN" surface="Position"/>
+  <token id="2" lemma="cake" pos="VB" surface="cake"/>
+  <token id="3" lemma="against" pos="IN" surface="against"/>
+  <token id="4" lemma="the" pos="DT" surface="the"/>
+  <token id="5" lemma="green" pos="JJ" surface="green"/>
+  <token id="6" lemma="parcel" pos="NN" surface="parcel"/>
+  <token id="7" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="prep"/>
+  <dep from="6" to="4" type="det"/>
+  <dep from="6" to="5" type="amod"/>
+  <dep from="3" to="6" type="pobj"/>
+  <dep from="2" to="7" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="1"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+     <token id="6"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

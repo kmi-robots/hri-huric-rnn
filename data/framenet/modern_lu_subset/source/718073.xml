@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="718073">
+ <sentence>
+  Curtius started unbuckling his gunbelt .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="curtius" pos="NNP" surface="Curtius"/>
+  <token id="2" lemma="start" pos="VBD" surface="started"/>
+  <token id="3" lemma="unbuckle" pos="VBG" surface="unbuckling"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="5" lemma="gunbelt" pos="NN" surface="gunbelt"/>
+  <token id="6" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="2" to="3" type="xcomp"/>
+  <dep from="5" to="4" type="poss"/>
+  <dep from="3" to="5" type="dobj"/>
+  <dep from="2" to="6" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Closure">
+    <lexicalUnit>
+     <token id="3"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Containing_object">
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Fastener">
+     <token id="3"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="629624">
+ <sentence>
+  He hat talked about his brother 's death , and for the first time ever someone had not laid the blame at his door .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="hat" pos="VBZ" surface="hat"/>
+  <token id="3" lemma="talk" pos="VBD" surface="talked"/>
+  <token id="4" lemma="about" pos="IN" surface="about"/>
+  <token id="5" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="6" lemma="brother" pos="NN" surface="brother"/>
+  <token id="7" lemma="'s" pos="POS" surface="'s"/>
+  <token id="8" lemma="death" pos="NN" surface="death"/>
+  <token id="9" lemma="," pos="," surface=","/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="for" pos="IN" surface="for"/>
+  <token id="12" lemma="the" pos="DT" surface="the"/>
+  <token id="13" lemma="first" pos="JJ" surface="first"/>
+  <token id="14" lemma="time" pos="NN" surface="time"/>
+  <token id="15" lemma="ever" pos="RB" surface="ever"/>
+  <token id="16" lemma="someone" pos="NN" surface="someone"/>
+  <token id="17" lemma="have" pos="VBD" surface="had"/>
+  <token id="18" lemma="not" pos="RB" surface="not"/>
+  <token id="19" lemma="lay" pos="VBN" surface="laid"/>
+  <token id="20" lemma="the" pos="DT" surface="the"/>
+  <token id="21" lemma="blame" pos="NN" surface="blame"/>
+  <token id="22" lemma="at" pos="IN" surface="at"/>
+  <token id="23" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="24" lemma="door" pos="NN" surface="door"/>
+  <token id="25" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="3" to="2" type="nsubj"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="6" to="5" type="poss"/>
+  <dep from="8" to="6" type="poss"/>
+  <dep from="6" to="7" type="case"/>
+  <dep from="4" to="8" type="pobj"/>
+  <dep from="3" to="9" type="punct"/>
+  <dep from="3" to="10" type="cc"/>
+  <dep from="19" to="11" type="prep"/>
+  <dep from="14" to="12" type="det"/>
+  <dep from="14" to="13" type="amod"/>
+  <dep from="11" to="14" type="pobj"/>
+  <dep from="19" to="15" type="advmod"/>
+  <dep from="19" to="16" type="nsubj"/>
+  <dep from="19" to="17" type="aux"/>
+  <dep from="19" to="18" type="neg"/>
+  <dep from="3" to="19" type="conj"/>
+  <dep from="21" to="20" type="det"/>
+  <dep from="19" to="21" type="dobj"/>
+  <dep from="19" to="22" type="prep"/>
+  <dep from="24" to="23" type="poss"/>
+  <dep from="22" to="24" type="pobj"/>
+  <dep from="19" to="25" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="19"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="16"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="20"/>
+     <token id="21"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="22"/>
+     <token id="23"/>
+     <token id="24"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

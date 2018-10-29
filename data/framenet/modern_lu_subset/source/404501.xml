@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="404501">
+ <sentence>
+  Maggie crossed the room , lifted the lid of the pot and sniffed at the contents .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="maggie" pos="NNP" surface="Maggie"/>
+  <token id="2" lemma="cross" pos="VBD" surface="crossed"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="room" pos="NN" surface="room"/>
+  <token id="5" lemma="," pos="," surface=","/>
+  <token id="6" lemma="lift" pos="VBD" surface="lifted"/>
+  <token id="7" lemma="the" pos="DT" surface="the"/>
+  <token id="8" lemma="lid" pos="NN" surface="lid"/>
+  <token id="9" lemma="of" pos="IN" surface="of"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="pot" pos="NN" surface="pot"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="sniff" pos="VBD" surface="sniffed"/>
+  <token id="14" lemma="at" pos="IN" surface="at"/>
+  <token id="15" lemma="the" pos="DT" surface="the"/>
+  <token id="16" lemma="content" pos="NNS" surface="contents"/>
+  <token id="17" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="punct"/>
+  <dep from="2" to="6" type="conj"/>
+  <dep from="8" to="7" type="det"/>
+  <dep from="6" to="8" type="dobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="6" to="12" type="cc"/>
+  <dep from="6" to="13" type="conj"/>
+  <dep from="13" to="14" type="prep"/>
+  <dep from="16" to="15" type="det"/>
+  <dep from="14" to="16" type="pobj"/>
+  <dep from="2" to="17" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="13"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="14"/>
+     <token id="15"/>
+     <token id="16"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

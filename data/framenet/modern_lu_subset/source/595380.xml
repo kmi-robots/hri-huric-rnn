@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="595380">
+ <sentence>
+  Police pursued the car along the A345 to Bulford village where it crashed .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="police" pos="NNS" surface="Police"/>
+  <token id="2" lemma="pursue" pos="VBD" surface="pursued"/>
+  <token id="3" lemma="the" pos="DT" surface="the"/>
+  <token id="4" lemma="car" pos="NN" surface="car"/>
+  <token id="5" lemma="along" pos="IN" surface="along"/>
+  <token id="6" lemma="the" pos="DT" surface="the"/>
+  <token id="7" lemma="a345" pos="NNP" surface="A345"/>
+  <token id="8" lemma="to" pos="IN" surface="to"/>
+  <token id="9" lemma="bulford" pos="NNP" surface="Bulford"/>
+  <token id="10" lemma="village" pos="NN" surface="village"/>
+  <token id="11" lemma="where" pos="WRB" surface="where"/>
+  <token id="12" lemma="-PRON-" pos="PRP" surface="it"/>
+  <token id="13" lemma="crash" pos="VBD" surface="crashed"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="nsubj"/>
+  <dep from="0" to="2" type="root"/>
+  <dep from="4" to="3" type="det"/>
+  <dep from="2" to="4" type="dobj"/>
+  <dep from="2" to="5" type="prep"/>
+  <dep from="7" to="6" type="det"/>
+  <dep from="5" to="7" type="pobj"/>
+  <dep from="2" to="8" type="prep"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="13" to="11" type="advmod"/>
+  <dep from="13" to="12" type="nsubj"/>
+  <dep from="10" to="13" type="relcl"/>
+  <dep from="2" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="2"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+    </frameElement>
+    <frameElement type="Cotheme">
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="5"/>
+     <token id="6"/>
+     <token id="7"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="8"/>
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+     <token id="13"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

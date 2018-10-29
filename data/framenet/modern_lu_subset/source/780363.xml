@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="780363">
+ <sentence>
+  Soviet technicians , supervising the building of new factories in China , were harassed and t heir rooms ransacked and searched .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="soviet" pos="JJ" surface="Soviet"/>
+  <token id="2" lemma="technician" pos="NNS" surface="technicians"/>
+  <token id="3" lemma="," pos="," surface=","/>
+  <token id="4" lemma="supervise" pos="VBG" surface="supervising"/>
+  <token id="5" lemma="the" pos="DT" surface="the"/>
+  <token id="6" lemma="building" pos="NN" surface="building"/>
+  <token id="7" lemma="of" pos="IN" surface="of"/>
+  <token id="8" lemma="new" pos="JJ" surface="new"/>
+  <token id="9" lemma="factory" pos="NNS" surface="factories"/>
+  <token id="10" lemma="in" pos="IN" surface="in"/>
+  <token id="11" lemma="china" pos="NNP" surface="China"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="be" pos="VBD" surface="were"/>
+  <token id="14" lemma="harass" pos="VBN" surface="harassed"/>
+  <token id="15" lemma="and" pos="CC" surface="and"/>
+  <token id="16" lemma="t" pos="NN" surface="t"/>
+  <token id="17" lemma="heir" pos="NN" surface="heir"/>
+  <token id="18" lemma="room" pos="NNS" surface="rooms"/>
+  <token id="19" lemma="ransack" pos="VBN" surface="ransacked"/>
+  <token id="20" lemma="and" pos="CC" surface="and"/>
+  <token id="21" lemma="search" pos="VBD" surface="searched"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="amod"/>
+  <dep from="14" to="2" type="nsubjpass"/>
+  <dep from="14" to="3" type="punct"/>
+  <dep from="14" to="4" type="advcl"/>
+  <dep from="6" to="5" type="det"/>
+  <dep from="4" to="6" type="dobj"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="9" to="8" type="amod"/>
+  <dep from="7" to="9" type="pobj"/>
+  <dep from="6" to="10" type="prep"/>
+  <dep from="10" to="11" type="pobj"/>
+  <dep from="14" to="12" type="punct"/>
+  <dep from="14" to="13" type="auxpass"/>
+  <dep from="0" to="14" type="root"/>
+  <dep from="14" to="15" type="cc"/>
+  <dep from="18" to="16" type="compound"/>
+  <dep from="18" to="17" type="compound"/>
+  <dep from="19" to="18" type="nsubj"/>
+  <dep from="14" to="19" type="conj"/>
+  <dep from="19" to="20" type="cc"/>
+  <dep from="19" to="21" type="conj"/>
+  <dep from="19" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Searching">
+    <lexicalUnit>
+     <token id="21"/>
+    </lexicalUnit>
+    <frameElement type="Ground">
+     <token id="17"/>
+     <token id="18"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

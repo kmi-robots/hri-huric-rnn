@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="400657">
+ <sentence>
+  A liberal spirit : he listened courteously and placidly to Presbyterian prayers .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="a" pos="DT" surface="A"/>
+  <token id="2" lemma="liberal" pos="JJ" surface="liberal"/>
+  <token id="3" lemma="spirit" pos="NN" surface="spirit"/>
+  <token id="4" lemma=":" pos=":" surface=":"/>
+  <token id="5" lemma="-PRON-" pos="PRP" surface="he"/>
+  <token id="6" lemma="listen" pos="VBD" surface="listened"/>
+  <token id="7" lemma="courteously" pos="RB" surface="courteously"/>
+  <token id="8" lemma="and" pos="CC" surface="and"/>
+  <token id="9" lemma="placidly" pos="RB" surface="placidly"/>
+  <token id="10" lemma="to" pos="IN" surface="to"/>
+  <token id="11" lemma="presbyterian" pos="JJ" surface="Presbyterian"/>
+  <token id="12" lemma="prayer" pos="NNS" surface="prayers"/>
+  <token id="13" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="det"/>
+  <dep from="3" to="2" type="amod"/>
+  <dep from="6" to="3" type="dep"/>
+  <dep from="6" to="4" type="punct"/>
+  <dep from="6" to="5" type="nsubj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="advmod"/>
+  <dep from="7" to="8" type="cc"/>
+  <dep from="7" to="9" type="conj"/>
+  <dep from="6" to="10" type="prep"/>
+  <dep from="12" to="11" type="amod"/>
+  <dep from="10" to="12" type="pobj"/>
+  <dep from="6" to="13" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Perception_active">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Perceiver_agentive">
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="7"/>
+     <token id="8"/>
+     <token id="9"/>
+    </frameElement>
+    <frameElement type="Phenomenon">
+     <token id="10"/>
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

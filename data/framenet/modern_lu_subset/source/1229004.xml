@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1229004">
+ <sentence>
+  He was working on a building site at Middle Barton in North Oxfordshire when a concrete mixer rolled back toward a workman .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="-PRON-" pos="PRP" surface="He"/>
+  <token id="2" lemma="be" pos="VBD" surface="was"/>
+  <token id="3" lemma="work" pos="VBG" surface="working"/>
+  <token id="4" lemma="on" pos="IN" surface="on"/>
+  <token id="5" lemma="a" pos="DT" surface="a"/>
+  <token id="6" lemma="building" pos="NN" surface="building"/>
+  <token id="7" lemma="site" pos="NN" surface="site"/>
+  <token id="8" lemma="at" pos="IN" surface="at"/>
+  <token id="9" lemma="middle" pos="NNP" surface="Middle"/>
+  <token id="10" lemma="barton" pos="NNP" surface="Barton"/>
+  <token id="11" lemma="in" pos="IN" surface="in"/>
+  <token id="12" lemma="north" pos="NNP" surface="North"/>
+  <token id="13" lemma="oxfordshire" pos="NNP" surface="Oxfordshire"/>
+  <token id="14" lemma="when" pos="WRB" surface="when"/>
+  <token id="15" lemma="a" pos="DT" surface="a"/>
+  <token id="16" lemma="concrete" pos="JJ" surface="concrete"/>
+  <token id="17" lemma="mixer" pos="NN" surface="mixer"/>
+  <token id="18" lemma="roll" pos="VBD" surface="rolled"/>
+  <token id="19" lemma="back" pos="RB" surface="back"/>
+  <token id="20" lemma="toward" pos="IN" surface="toward"/>
+  <token id="21" lemma="a" pos="DT" surface="a"/>
+  <token id="22" lemma="workman" pos="NN" surface="workman"/>
+  <token id="23" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="3" to="1" type="nsubj"/>
+  <dep from="3" to="2" type="aux"/>
+  <dep from="0" to="3" type="root"/>
+  <dep from="3" to="4" type="prep"/>
+  <dep from="7" to="5" type="det"/>
+  <dep from="7" to="6" type="compound"/>
+  <dep from="4" to="7" type="pobj"/>
+  <dep from="7" to="8" type="prep"/>
+  <dep from="10" to="9" type="compound"/>
+  <dep from="8" to="10" type="pobj"/>
+  <dep from="10" to="11" type="prep"/>
+  <dep from="13" to="12" type="compound"/>
+  <dep from="11" to="13" type="pobj"/>
+  <dep from="18" to="14" type="advmod"/>
+  <dep from="17" to="15" type="det"/>
+  <dep from="17" to="16" type="amod"/>
+  <dep from="18" to="17" type="nsubj"/>
+  <dep from="3" to="18" type="advcl"/>
+  <dep from="18" to="19" type="advmod"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="22" to="21" type="det"/>
+  <dep from="20" to="22" type="pobj"/>
+  <dep from="3" to="23" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Motion">
+    <lexicalUnit>
+     <token id="18"/>
+    </lexicalUnit>
+    <frameElement type="Path">
+     <token id="19"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="15"/>
+     <token id="16"/>
+     <token id="17"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="20"/>
+     <token id="21"/>
+     <token id="22"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

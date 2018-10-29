@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="582669">
+ <sentence>
+  All three were roughly hauled out , tied hand and foot and blindfolded .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="all" pos="DT" surface="All"/>
+  <token id="2" lemma="three" pos="CD" surface="three"/>
+  <token id="3" lemma="be" pos="VBD" surface="were"/>
+  <token id="4" lemma="roughly" pos="RB" surface="roughly"/>
+  <token id="5" lemma="haul" pos="VBN" surface="hauled"/>
+  <token id="6" lemma="out" pos="RP" surface="out"/>
+  <token id="7" lemma="," pos="," surface=","/>
+  <token id="8" lemma="tie" pos="VBN" surface="tied"/>
+  <token id="9" lemma="hand" pos="NN" surface="hand"/>
+  <token id="10" lemma="and" pos="CC" surface="and"/>
+  <token id="11" lemma="foot" pos="NN" surface="foot"/>
+  <token id="12" lemma="and" pos="CC" surface="and"/>
+  <token id="13" lemma="blindfold" pos="VBD" surface="blindfolded"/>
+  <token id="14" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="5" to="2" type="nsubjpass"/>
+  <dep from="5" to="3" type="auxpass"/>
+  <dep from="5" to="4" type="advmod"/>
+  <dep from="0" to="5" type="root"/>
+  <dep from="5" to="6" type="prt"/>
+  <dep from="5" to="7" type="punct"/>
+  <dep from="5" to="8" type="conj"/>
+  <dep from="8" to="9" type="dobj"/>
+  <dep from="9" to="10" type="cc"/>
+  <dep from="9" to="11" type="conj"/>
+  <dep from="8" to="12" type="cc"/>
+  <dep from="8" to="13" type="conj"/>
+  <dep from="5" to="14" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+    </frameElement>
+    <frameElement type="Source">
+     <token id="6"/>
+    </frameElement>
+    <frameElement type="Manner">
+     <token id="4"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

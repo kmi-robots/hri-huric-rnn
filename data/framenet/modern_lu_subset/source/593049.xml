@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="593049">
+ <sentence>
+  Nigel Carew and his men followed on foot .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="nigel" pos="NNP" surface="Nigel"/>
+  <token id="2" lemma="carew" pos="NNP" surface="Carew"/>
+  <token id="3" lemma="and" pos="CC" surface="and"/>
+  <token id="4" lemma="-PRON-" pos="PRP$" surface="his"/>
+  <token id="5" lemma="man" pos="NNS" surface="men"/>
+  <token id="6" lemma="follow" pos="VBD" surface="followed"/>
+  <token id="7" lemma="on" pos="IN" surface="on"/>
+  <token id="8" lemma="foot" pos="NN" surface="foot"/>
+  <token id="9" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="compound"/>
+  <dep from="6" to="2" type="nsubj"/>
+  <dep from="2" to="3" type="cc"/>
+  <dep from="5" to="4" type="poss"/>
+  <dep from="2" to="5" type="conj"/>
+  <dep from="0" to="6" type="root"/>
+  <dep from="6" to="7" type="prep"/>
+  <dep from="7" to="8" type="pobj"/>
+  <dep from="6" to="9" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Following">
+    <lexicalUnit>
+     <token id="6"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="1"/>
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+     <token id="5"/>
+    </frameElement>
+    <frameElement type="Mode_of_transportation">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

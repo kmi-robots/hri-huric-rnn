@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="1404416">
+ <sentence>
+  The Government has admitted that when nuclear weapons are transported by road an accident could lead to a leak of radiation .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="the" pos="DT" surface="The"/>
+  <token id="2" lemma="government" pos="NNP" surface="Government"/>
+  <token id="3" lemma="have" pos="VBZ" surface="has"/>
+  <token id="4" lemma="admit" pos="VBN" surface="admitted"/>
+  <token id="5" lemma="that" pos="IN" surface="that"/>
+  <token id="6" lemma="when" pos="WRB" surface="when"/>
+  <token id="7" lemma="nuclear" pos="JJ" surface="nuclear"/>
+  <token id="8" lemma="weapon" pos="NNS" surface="weapons"/>
+  <token id="9" lemma="be" pos="VBP" surface="are"/>
+  <token id="10" lemma="transport" pos="VBN" surface="transported"/>
+  <token id="11" lemma="by" pos="IN" surface="by"/>
+  <token id="12" lemma="road" pos="NN" surface="road"/>
+  <token id="13" lemma="an" pos="DT" surface="an"/>
+  <token id="14" lemma="accident" pos="NN" surface="accident"/>
+  <token id="15" lemma="could" pos="MD" surface="could"/>
+  <token id="16" lemma="lead" pos="VB" surface="lead"/>
+  <token id="17" lemma="to" pos="IN" surface="to"/>
+  <token id="18" lemma="a" pos="DT" surface="a"/>
+  <token id="19" lemma="leak" pos="NN" surface="leak"/>
+  <token id="20" lemma="of" pos="IN" surface="of"/>
+  <token id="21" lemma="radiation" pos="NN" surface="radiation"/>
+  <token id="22" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="2" to="1" type="det"/>
+  <dep from="4" to="2" type="nsubj"/>
+  <dep from="4" to="3" type="aux"/>
+  <dep from="0" to="4" type="root"/>
+  <dep from="16" to="5" type="mark"/>
+  <dep from="10" to="6" type="advmod"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="10" to="8" type="nsubjpass"/>
+  <dep from="10" to="9" type="auxpass"/>
+  <dep from="16" to="10" type="advcl"/>
+  <dep from="10" to="11" type="agent"/>
+  <dep from="11" to="12" type="pobj"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="16" to="14" type="nsubj"/>
+  <dep from="16" to="15" type="aux"/>
+  <dep from="4" to="16" type="ccomp"/>
+  <dep from="16" to="17" type="prep"/>
+  <dep from="19" to="18" type="det"/>
+  <dep from="17" to="19" type="pobj"/>
+  <dep from="19" to="20" type="prep"/>
+  <dep from="20" to="21" type="pobj"/>
+  <dep from="4" to="22" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Bringing">
+    <lexicalUnit>
+     <token id="10"/>
+    </lexicalUnit>
+    <frameElement type="Theme">
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Path">
+     <token id="11"/>
+     <token id="12"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>

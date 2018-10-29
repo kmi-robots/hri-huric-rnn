@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<command id="629243">
+ <sentence>
+  When a new guest inserts an authorised keycard into the lock , the room 's lock combination is immediately recoded , cancelling out the previous code .
+ </sentence>
+ <tokens>
+  <token id="1" lemma="when" pos="WRB" surface="When"/>
+  <token id="2" lemma="a" pos="DT" surface="a"/>
+  <token id="3" lemma="new" pos="JJ" surface="new"/>
+  <token id="4" lemma="guest" pos="NN" surface="guest"/>
+  <token id="5" lemma="insert" pos="NNS" surface="inserts"/>
+  <token id="6" lemma="an" pos="DT" surface="an"/>
+  <token id="7" lemma="authorised" pos="JJ" surface="authorised"/>
+  <token id="8" lemma="keycard" pos="NN" surface="keycard"/>
+  <token id="9" lemma="into" pos="IN" surface="into"/>
+  <token id="10" lemma="the" pos="DT" surface="the"/>
+  <token id="11" lemma="lock" pos="NN" surface="lock"/>
+  <token id="12" lemma="," pos="," surface=","/>
+  <token id="13" lemma="the" pos="DT" surface="the"/>
+  <token id="14" lemma="room" pos="NN" surface="room"/>
+  <token id="15" lemma="'s" pos="POS" surface="'s"/>
+  <token id="16" lemma="lock" pos="NN" surface="lock"/>
+  <token id="17" lemma="combination" pos="NN" surface="combination"/>
+  <token id="18" lemma="be" pos="VBZ" surface="is"/>
+  <token id="19" lemma="immediately" pos="RB" surface="immediately"/>
+  <token id="20" lemma="recode" pos="VBN" surface="recoded"/>
+  <token id="21" lemma="," pos="," surface=","/>
+  <token id="22" lemma="cancel" pos="VBG" surface="cancelling"/>
+  <token id="23" lemma="out" pos="RP" surface="out"/>
+  <token id="24" lemma="the" pos="DT" surface="the"/>
+  <token id="25" lemma="previous" pos="JJ" surface="previous"/>
+  <token id="26" lemma="code" pos="NN" surface="code"/>
+  <token id="27" lemma="." pos="." surface="."/>
+ </tokens>
+ <dependencies>
+  <dep from="5" to="1" type="advmod"/>
+  <dep from="4" to="2" type="det"/>
+  <dep from="4" to="3" type="amod"/>
+  <dep from="5" to="4" type="nsubj"/>
+  <dep from="20" to="5" type="advcl"/>
+  <dep from="8" to="6" type="det"/>
+  <dep from="8" to="7" type="amod"/>
+  <dep from="5" to="8" type="dobj"/>
+  <dep from="8" to="9" type="prep"/>
+  <dep from="11" to="10" type="det"/>
+  <dep from="9" to="11" type="pobj"/>
+  <dep from="20" to="12" type="punct"/>
+  <dep from="14" to="13" type="det"/>
+  <dep from="17" to="14" type="poss"/>
+  <dep from="14" to="15" type="case"/>
+  <dep from="17" to="16" type="compound"/>
+  <dep from="20" to="17" type="nsubjpass"/>
+  <dep from="20" to="18" type="auxpass"/>
+  <dep from="20" to="19" type="advmod"/>
+  <dep from="0" to="20" type="root"/>
+  <dep from="20" to="21" type="punct"/>
+  <dep from="20" to="22" type="advcl"/>
+  <dep from="22" to="23" type="prt"/>
+  <dep from="26" to="24" type="det"/>
+  <dep from="26" to="25" type="amod"/>
+  <dep from="22" to="26" type="dobj"/>
+  <dep from="20" to="27" type="punct"/>
+ </dependencies>
+ <semantics>
+  <frameSemantics>
+   <frame name="Placing">
+    <lexicalUnit>
+     <token id="5"/>
+    </lexicalUnit>
+    <frameElement type="Agent">
+     <token id="2"/>
+     <token id="3"/>
+     <token id="4"/>
+    </frameElement>
+    <frameElement type="Theme">
+     <token id="6"/>
+     <token id="7"/>
+     <token id="8"/>
+    </frameElement>
+    <frameElement type="Goal">
+     <token id="9"/>
+     <token id="10"/>
+     <token id="11"/>
+    </frameElement>
+   </frame>
+  </frameSemantics>
+ </semantics>
+</command>
