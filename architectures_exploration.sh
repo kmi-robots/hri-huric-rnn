@@ -3,7 +3,7 @@
 
 set -e
 
-export DATASET=huric_eb/modern_right
+export DATASET=huric/modern_right
 
 # now evaluate both intents and slots (mm-nn#2)
 # embedding size default=64

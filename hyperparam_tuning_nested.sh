@@ -9,7 +9,7 @@ CONF_FILES=configurations/conf_*.env
 
 
 # for HuRIC only
-export DATASET=huric_eb/modern_right
+export DATASET=huric/modern_right
 export MODE=cross_nested
 
 for f in $CONF_FILES

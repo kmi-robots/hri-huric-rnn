@@ -5,7 +5,7 @@
 
 set -e
 
-export DATASET=huric_eb/modern_right
+export DATASET=huric/modern_right
 # chosen architecture: three stages with attention
 export THREE_STAGES=true
 export ATTENTION=slots

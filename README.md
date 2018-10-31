@@ -40,7 +40,7 @@ Then reboot and check with `df -h`
 
 ## Amazon lex test
 
-Take [this file](data/huric_eb/modern/amazon/lexTrainBot.json.zip), that contains the 4 train folds, upload to amazon lex console, build the model and set an alias.
+Take [this file](data/huric/modern/amazon/lexTrainBot.json.zip), that contains the 4 train folds, upload to amazon lex console, build the model and set an alias.
 
 Then create an `.env` in the root folder file with content:
 ```
@@ -63,7 +63,7 @@ And look at the results in `lex/results`.
 2. Run the server `FLASK_APP=server.py flask run` (optionally add `--port PORT_NUMBER` to use another port)
 3. go to [localhost:5000/nlu?text=sentence](http://localhost:5000/nlu?text=sentence)
 
-(To test different models use the env variable `MODEL_PATH` like `MODEL_PATH=nlunetwork/results/train_all/conf_4/huric_eb/modern_right/ FLASK_APP=server.py flask run`)
+(To test different models use the env variable `MODEL_PATH` like `MODEL_PATH=nlunetwork/results/train_all/conf_4/huric/modern_right/ FLASK_APP=server.py flask run`)
 
 ## Notebooks
 

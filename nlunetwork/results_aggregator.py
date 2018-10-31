@@ -107,7 +107,7 @@ def plot_bars(main_path, aggregated):
         plt.barh(x, y, color='lightgrey')
         plt.yticks(x, labels, size='x-small', stretch='extra-condensed', color='black', ha='left')
         plt.tick_params(axis='y', direction='out', pad=-10, right=True)
-        
+
         #plt.legend(list(values.keys()), loc='lower right')
         plt.title(name)
         #plt.ylabel('f1')
@@ -127,7 +127,7 @@ def group_by_param_changing(aggregated):
             hyper_param_name, hyper_param_value = zip(*[s.split('=')[0], s.split('=')[1] for s in hyper_param_strings])
 """
 
-def main(folder, dataset_name='huric_eb/modern'):
+def main(folder, dataset_name='huric/modern'):
     main_path = Path(folder)
     aggregated = read_values(main_path, dataset_name)
 

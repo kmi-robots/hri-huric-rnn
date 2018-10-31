@@ -613,7 +613,7 @@ def modernize_huric_xml(source_path, dest_path):
         write_pretty_xml(new_command, dest_path, file_name)
 
 def speakers_split(source_folder, dest_folder):
-    # splits_subfolders = speakers_split('huric_eb/modern/source', 'huric_eb/speakers_split')
+    # splits_subfolders = speakers_split('huric/modern/source', 'huric/speakers_split')
     source_path = Path(source_folder)
     dest_path = Path(dest_folder)
     xml_file_names = sorted([x.name for x in source_path.iterdir() if x.is_file()])
@@ -1074,22 +1074,22 @@ def main():
     which = os.environ.get('DATASET', None)
     print(which)
 
-    if which == 'huric_eb':
-        modernize_huric_xml('huric_eb/source', 'huric_eb/modern/source')
-        res, spatial_res = huric_preprocess('huric_eb/modern', also_spatial=True)
-        alexa_prepare('huric_eb/modern_right', 'roo bot')
-        alexa_prepare('huric_eb/modern_right/spatial', 'office robot spatial')
-        lex_from_alexa('huric_eb/modern_right/amazon', 'kmi_EB')
-        lex_from_alexa('huric_eb/modern_right/spatial/amazon', 'spatial_EB')
+    if which == 'huric':
+        modernize_huric_xml('huric/source', 'huric/modern/source')
+        res, spatial_res = huric_preprocess('huric/modern', also_spatial=True)
+        alexa_prepare('huric/modern_right', 'roo bot')
+        alexa_prepare('huric/modern_right/spatial', 'office robot spatial')
+        lex_from_alexa('huric/modern_right/amazon', 'kmi_EB')
+        lex_from_alexa('huric/modern_right/spatial/amazon', 'spatial_EB')
         # for lex evaluation
-        alexa_prepare('huric_eb/modern_right', 'roo bot train', 'train_samples.json', 'alexa_train.json')
-        lex_from_alexa('huric_eb/modern_right/amazon', 'train_only', 'alexa_train.json', 'lexTrainBot.json')
+        alexa_prepare('huric/modern_right', 'roo bot train', 'train_samples.json', 'alexa_train.json')
+        lex_from_alexa('huric/modern_right/amazon', 'train_only', 'alexa_train.json', 'lexTrainBot.json')
 
-    elif which == 'huric_eb_speakers_split':
+    elif which == 'huric_speakers_split':
         # language-bias experiment
-        splits_subfolders = speakers_split('huric_eb/modern/source', 'huric_eb/speakers_split')
+        splits_subfolders = speakers_split('huric/modern/source', 'huric/speakers_split')
         for subfolder in splits_subfolders:
-            huric_preprocess('huric_eb/speakers_split/{}'.format(subfolder))
+            huric_preprocess('huric/speakers_split/{}'.format(subfolder))
 
     elif which == 'framenet':
         # TODO rename framenet_preprocess with 'fulltext'
@@ -1107,10 +1107,10 @@ def main():
         huric_preprocess('framenet/modern_lu_subset')
 
     elif which == 'combinations':
-        enrich_huric_with_framenet('huric_eb/modern_right/preprocessed', 'framenet/subset_both/preprocessed', 'huric_eb/with_framenet/preprocessed')
-        enrich_huric_with_framenet('huric_eb/modern_right/preprocessed', 'framenet/modern_lu_subset_right/preprocessed', 'huric_eb/with_framenet_lu/preprocessed')
-        #enrich_huric_with_framenet('huric_eb/modern_right/preprocessed', 'fate/subset_both/preprocessed', 'huric_eb/with_fate/preprocessed')
-        #enrich_huric_with_framenet('huric_eb/with_framenet/preprocessed', 'fate/subset_both/preprocessed', 'huric_eb/with_framenet_and_fate/preprocessed')
+        enrich_huric_with_framenet('huric/modern_right/preprocessed', 'framenet/subset_both/preprocessed', 'huric/with_framenet/preprocessed')
+        enrich_huric_with_framenet('huric/modern_right/preprocessed', 'framenet/modern_lu_subset_right/preprocessed', 'huric/with_framenet_lu/preprocessed')
+        #enrich_huric_with_framenet('huric/modern_right/preprocessed', 'fate/subset_both/preprocessed', 'huric/with_fate/preprocessed')
+        #enrich_huric_with_framenet('huric/with_framenet/preprocessed', 'fate/subset_both/preprocessed', 'huric/with_framenet_and_fate/preprocessed')
         # also enrich FATE with FrameNet
         #enrich_huric_with_framenet('fate/modern_both/preprocessed', 'framenet/modern_both/preprocessed', 'fate/with_framenet/preprocessed')
 

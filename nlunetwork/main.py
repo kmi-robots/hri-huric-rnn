@@ -43,7 +43,7 @@ def load_config(config_override_file_name=None):
     # the output folder
     config['OUTPUT_FOLDER'] = os.environ.get('OUTPUT_FOLDER')
     # the dataset used
-    config['DATASET'] = os.environ.get('DATASET', 'huric_eb/modern_right')
+    config['DATASET'] = os.environ.get('DATASET', 'huric/modern_right')
     # switches the behaviour between several train/test scenarios
     config['MODE'] = os.environ.get('MODE', 'dev_cross')
     # specific to test mode

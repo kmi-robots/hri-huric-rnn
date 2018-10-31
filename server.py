@@ -4,7 +4,7 @@ from nlunetwork import runtime
 
 app = Flask(__name__)
 
-default_model_path = 'nlunetwork/results/train_all/conf_4/huric_eb/with_framenet/'
+default_model_path = 'nlunetwork/results/train_all/conf_4/huric/with_framenet/'
 model_path = os.environ.get('MODEL_PATH', default_model_path)
 
 if not os.path.isfile(model_path + 'model_fold_0.ckpt.meta'):

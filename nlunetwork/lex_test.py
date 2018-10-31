@@ -11,10 +11,10 @@ from nlunetwork import metrics, data
 load_dotenv(find_dotenv())
 
 def load_test_set():
-    with open('data/huric_eb/modern/preprocessed/fold_5.json') as f:
+    with open('data/huric/modern/preprocessed/fold_5.json') as f:
         content = json.load(f)
     return content['data']
-    
+
 
 def call_lex(sentence):
     auth = AWSRequestsAuth(aws_access_key=os.environ['AWS_ACCESS_KEY'] ,
@@ -46,7 +46,7 @@ def find_slot_spans(words, lex_slots):
                         result[w_id] = 'B-{}'.format(slot_name)
                     elif start_idx > start_char_idx and start_idx < end_char_idx:
                         result[w_id] = 'I-{}'.format(slot_name)
-    
+
     return result
 
 def main():
