@@ -807,7 +807,7 @@ def write_pretty_xml(root_element, dst_path, file_name):
     with open('{}/{}'.format(dst_path, file_name), 'w') as out_file:
         out_file.write(pretty_string)
 
-def framenet_preprocess(folder, dest_path):
+def framenet_ft_preprocess(folder, dest_path):
     """Preprocesses the framenet corpus, taking only the frames from the HuRIC set. Produces in output a HuRIC formatted dataset on out_path"""
 
     ns = {'ns': '{http://framenet.icsi.berkeley.edu}'}
@@ -1091,24 +1091,27 @@ def main():
         for subfolder in splits_subfolders:
             huric_preprocess('huric/speakers_split/{}'.format(subfolder))
 
-    elif which == 'framenet':
-        # TODO rename framenet_preprocess with 'fulltext'
-        framenet_preprocess('framenet', 'framenet/modern/source')
-        huric_preprocess('framenet/modern')
-        huric_preprocess('framenet/modern', trim='both')
-    elif which == 'framenet_subset':
-        framenet_preprocess('framenet', 'framenet/modern/source')
-        create_subset_with_frames_mapped('framenet/modern/source', 'framenet/subset/source', frame_names_mappings)
-        huric_preprocess('framenet/subset')
-        huric_preprocess('framenet/subset', trim='both')
+    elif which == 'framenet_ft':
+        framenet_ft_preprocess('framenet', 'framenet/modern_ft/source')
+        huric_preprocess('framenet/modern_ft')
+        huric_preprocess('framenet/modern_ft', trim='both')
+    elif which == 'framenet_ft_subset':
+        framenet_ft_preprocess('framenet', 'framenet/modern_ft/source')
+        create_subset_with_frames_mapped('framenet/modern_ft/source', 'framenet/subset_ft/source', frame_names_mappings)
+        huric_preprocess('framenet/subset_ft')
+        huric_preprocess('framenet/subset_ft', trim='both')
 
-    elif which == 'framenet_subset_lu':
-        framenet_lu_preprocess('framenet', 'framenet/modern_lu_subset/source', frame_names_mappings)
-        huric_preprocess('framenet/modern_lu_subset')
+    elif which == 'framenet_lu_subset':
+        framenet_lu_preprocess('framenet', 'framenet/subset_lu/source', frame_names_mappings)
+        huric_preprocess('framenet/subset_lu')
+
+    elif which == 'framenet_all_subset':
+        # TODO
+        raise ValueError('my stupid programmer has to do that')
 
     elif which == 'combinations':
-        enrich_huric_with_framenet('huric/modern_right/preprocessed', 'framenet/subset_both/preprocessed', 'huric/with_framenet/preprocessed')
-        enrich_huric_with_framenet('huric/modern_right/preprocessed', 'framenet/modern_lu_subset_right/preprocessed', 'huric/with_framenet_lu/preprocessed')
+        enrich_huric_with_framenet('huric/modern_right/preprocessed', 'framenet/subset_ft_both/preprocessed', 'huric/with_framenet_ft/preprocessed')
+        enrich_huric_with_framenet('huric/modern_right/preprocessed', 'framenet/subset_lu_right/preprocessed', 'huric/with_framenet_lu/preprocessed')
         #enrich_huric_with_framenet('huric/modern_right/preprocessed', 'fate/subset_both/preprocessed', 'huric/with_fate/preprocessed')
         #enrich_huric_with_framenet('huric/with_framenet/preprocessed', 'fate/subset_both/preprocessed', 'huric/with_framenet_and_fate/preprocessed')
         # also enrich FATE with FrameNet
