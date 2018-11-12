@@ -20,17 +20,29 @@ from spacy.gold import tags_to_entities, iob_to_biluo
 from nlunetwork import data
 
 def load_json(folder, epoch=99):
-    json_location = Path(folder) / 'json' / 'epoch_{}'.format(epoch) / 'prediction_fold_full.json'
+    if epoch == None:
+        # loading directly the preprocessed files
+        json_location = Path(folder) / 'all_samples.json'
+    else:
+        json_location = Path(folder) / 'json' / 'epoch_{}'.format(epoch) / 'prediction_fold_full.json'
     with open(json_location) as f:
         content = json.load(f)
-    return sorted(content['samples'], key=lambda el: el['file'] if el.get('file', None) else 0)
+    samples = content.get('samples', None)
+    if not samples:
+        samples = content['data']
+    return sorted(samples, key=lambda el: el['file'] if el.get('file', None) else 0)
 
 def get_intent_attention_arrays(sentence_data):
     """returns true (lexical units) and pred attentions"""
     lexical_units = [0] * sentence_data['length']
+    more = [0] * sentence_data['length']
     for lu in sentence_data['lexical_unit_ids']:
         lexical_units[lu - sentence_data['start_token_id']] = 1
-    return lexical_units, sentence_data['intent_attentions']
+    for lu in sentence_data['lexical_unit_ids_more']:
+        index = lu - sentence_data['start_token_id']
+        if not lexical_units[index]:
+            more[index] = 1
+    return lexical_units, more, sentence_data.get('intent_attentions', [])
 
 #def get_bd_attention_arrays(sentence_data):
 #    return sentence_data['words'], sentence_data['slots_pred']
@@ -77,9 +89,9 @@ def display_align(row_labels, col_labels, values):
 def display_all(samples, display_bd=True, display_ac=True, display_slots=True, max_show=None):
     for idx, sample in enumerate(samples):
         print('true:', sample['intent_true'], 'pred:', sample['intent_pred'])
-        attentions_true, attentions_pred = get_intent_attention_arrays(sample)
-        display_sequences(['words', 'lexical_unit','attention_intent', 'slots_true', 'slots_pred'],
-                          [sample['words'], attentions_true, attentions_pred, sample['slots_true'], sample['slots_pred']])
+        attentions_true, disc, attentions_pred = get_intent_attention_arrays(sample)
+        display_sequences(['words', 'lexical_unit', 'disc','attention_intent', 'slots_true', 'slots_pred'],
+                          [sample['words'], attentions_true, disc, attentions_pred, sample['slots_true'], sample['slots_pred']])
         bd = data.slots_to_iob_only(sample['slots_pred'])
         ac = data.slots_to_types_only(sample['slots_pred'])
         if display_bd:
@@ -93,19 +105,40 @@ def display_all(samples, display_bd=True, display_ac=True, display_slots=True, m
         if max_show and idx > max_show:
             return
 
-def ad_align_accuracy_argmax(samples):
-    """Returns a measure of how many times the highest value of attention is captured by the Lexical Unit"""
-    true_lexical_units = [s['lexical_unit_ids'][0] - s['start_token_id'] for s in samples]
-    pred_lexical_units = [np.argmax(s['intent_attentions']) for s in samples]
-    compared = [1 if t == p else 0 for t, p in zip(true_lexical_units, pred_lexical_units)]
-    return sum(compared) / len(compared)
+def ad_align_accuracy_argmax(samples, which='lu'):
+    """Returns a measure of how many times the highest value of attention is captured by the Lexical Unit
+    which can be lu or more"""
+    if which == 'lu':
+        key = 'lexical_unit_ids'
+    elif which == 'more':
+        key = 'lexical_unit_ids_more'
+    else:
+        raise ValueError('invalid which' + str(which))
+    total = 0
+    for sample in samples:
+        true_lus = [v -sample['start_token_id'] for v in sample[key]]
+        n_lus = len(true_lus)
+        pred_lus = np.argpartition(sample['intent_attentions'], -n_lus)[-n_lus:]
+        compared = [1 if t in pred_lus else 0 for t in true_lus]
+        total += sum(compared) / len (compared)
+        #pred_lus = [np.argmax(s['intent_attentions']) for s in samples]
+    #true_lexical_units = [s[key][0] - s['start_token_id'] for s in samples]
+    #pred_lexical_units = [np.argmax(s['intent_attentions']) for s in samples]
+    #compared = [1 if t == p else 0 for t, p in zip(true_lexical_units, pred_lexical_units)]
+    return total / len(samples)
 
-def ad_average_attention(samples):
+def ad_average_attention(samples, which='lu'):
     """Returns the average value of attention on the Lexical Units"""
     total = 0.
+    if which == 'lu':
+        key = 'lexical_unit_ids'
+    elif which == 'more':
+        key = 'lexical_unit_ids_more'
+    else:
+        raise ValueError('invalid which' + str(which))
     for s in samples:
         # get the indexes of the lexical units in the sentence
-        true_lexical_units = [val - s['start_token_id'] for val in s['lexical_unit_ids']]
+        true_lexical_units = [val - s['start_token_id'] for val in s[key]]
         # get their value of attention (summing them if more than one LU is there)
         attn_val = np.sum(np.array(s['intent_attentions'])[true_lexical_units])
         total += attn_val
@@ -204,14 +237,22 @@ def get_additional_discriminators_idxs(samples, gold_missing):
         lu_lemma = gold_missing[s['file']]['lemmas'][lu_idx]
         additional = additional_per_lemma.get(lu_lemma, None)
         interesting = []
+        if 'intent_true' in s:
+            key_intent = 'intent_true'
+        else:
+            key_intent = 'intent'
         if additional:
             #this is an ambiguous LU lemma
-            interesting = [idx + s['start_token_id'] for idx, w in enumerate(s['words']) if w in additional[s['intent_true']]]
+            interesting = [idx + s['start_token_id'] for idx, w in enumerate(s['words']) if w in additional[s[key_intent]]]
 
         results[s['id']] = interesting
 
     return results
 
+def add_discriminators(samples, gold_missing):
+    additional = get_additional_discriminators_idxs(samples, gold_missing)
+    for s in samples:
+        s['lexical_unit_ids_more'] = s['lexical_unit_ids'] + additional[s['id']]
 
 def get_lu_pos(root, verbose=False):
     """Returns the POS for all the LU in the current document"""
@@ -505,12 +546,44 @@ def get_lemma_invoker(xmls):
     return result
 
 def get_attention_scores(samples, gold_missing):
+    add_discriminators(samples, gold_missing)
     result = {
         'ad': {
             'argmax': ad_align_accuracy_argmax(samples),
             'average': ad_average_attention(samples)
         },
+        'ad_more': {
+            'argmax': ad_align_accuracy_argmax(samples, 'more'),
+            'average': ad_average_attention(samples, 'more')
+        },
         'ai': get_attention_score_on_task(samples, gold_missing, 'bd'),
         'ac': get_attention_score_on_task(samples, gold_missing, 'ac')
     }
     return result
+
+def write_to_tsv(samples, out_path):
+    lines = [['id', 'huric_source_file', 'frame', 'sentence', 'lu', 'disc', 'lu+disc']]
+    for s in samples:
+        lus, discs, _ = get_intent_attention_arrays(s)
+        lus_and_discs = [1 if (lu or disc) else 0 for lu,disc in zip(lus, discs)]
+        int_array_to_str_array = lambda arr: [str(el) for el in arr]
+        lus = int_array_to_str_array(lus)
+        discs = int_array_to_str_array(discs)
+        lus_and_discs = int_array_to_str_array(lus_and_discs)
+        lines.append([str(s['id']), s['file'], s['intent'], ','.join(s['words']), ','.join(lus), ','.join(discs), ','.join(lus_and_discs)])
+    with open(out_path, 'w') as f:
+        f.write('\n'.join(['\t'.join(l) for l in lines]))
+
+
+if __name__ == '__main__':
+    import numpy as np
+
+    # put there the path to the results you want to show
+
+    HURIC_JSON_LOCATION='data/huric/modern_right/preprocessed'
+    HURIC_XML_LOCATION = 'data/huric/modern/source'
+    samples = load_json(HURIC_JSON_LOCATION, None)
+    gold_missing = get_samples_pos_and_lemmas_and_deps(HURIC_XML_LOCATION)
+    add_discriminators(samples, gold_missing)
+
+    write_to_tsv(samples, 'data/huric/modern_right/lu_and_disc.tsv')
