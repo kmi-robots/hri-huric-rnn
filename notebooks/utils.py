@@ -29,6 +29,7 @@ def load_json(folder, epoch=99):
         content = json.load(f)
     samples = content.get('samples', None)
     if not samples:
+        # in case looking directly at the preprocessed dataset
         samples = content['data']
     return sorted(samples, key=lambda el: el['file'] if el.get('file', None) else 0)
 
@@ -238,8 +239,10 @@ def get_additional_discriminators_idxs(samples, gold_missing):
         additional = additional_per_lemma.get(lu_lemma, None)
         interesting = []
         if 'intent_true' in s:
+            # predicted and gold in the same file
             key_intent = 'intent_true'
         else:
+            # only gold, directly looking at the preprocessed dataset
             key_intent = 'intent'
         if additional:
             #this is an ambiguous LU lemma
