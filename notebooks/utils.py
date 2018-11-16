@@ -1,6 +1,7 @@
 import json
 
 import math
+import csv
 import numpy as np
 from collections import defaultdict
 from itertools import groupby, product
@@ -577,9 +578,32 @@ def write_to_tsv(samples, out_path):
     with open(out_path, 'w') as f:
         f.write('\n'.join(['\t'.join(l) for l in lines]))
 
+def read_tsv(input_path, with_header=True, delimiter='\t'):
+    results = []
+    with open(input_path) as f:
+        if with_header:
+            reader = csv.DictReader(f, delimiter=delimiter)
+        else:
+            reader = csv.reader(f, delimiter=delimiter)
+        for row in reader:
+            results.append(row)
+    return results
+
+def load_attention_gold(path):
+    """this is the new function!!!"""
+    data = read_tsv(path)
+    return {el['id']: {
+        'frame': el['frame'],
+        'words': el['sentence'].split(','),
+        'lu': [int(v) for v in el['lu'].split(',')],
+        'disc': [int(v) for v in el['disc'].split(',')],
+        'disc2': [int(v) for v in el['disc2'].split(',')],
+        'lu+disc': [int(v) for v in el['lu+disc'].split(',')],
+        'lu+disc2': [int(v) for v in el['lu+disc2'].split(',')]
+    } for el in data}
+
 
 if __name__ == '__main__':
-    import numpy as np
 
     # put there the path to the results you want to show
 
